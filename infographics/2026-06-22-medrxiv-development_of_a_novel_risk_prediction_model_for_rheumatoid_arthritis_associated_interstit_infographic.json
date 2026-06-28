@@ -1,13 +1,13 @@
 {
-  "key_insight": "In RA patients, plasma proteomics plus machine learning identified a high-performing, interpretable model for predicting future RA-associated interstitial lung disease, with LAG3, NPC2, and LAMP3 emerging as top biomarkers.",
-  "clinical_relevance": "This work suggests a potential path toward earlier RA-ILD risk stratification, which could help focus monitoring on patients most likely to develop lung disease.",
+  "key_insight": "A plasma proteomics + machine learning approach identified LAG3, NPC2, and LAMP3 as top predictors of rheumatoid arthritis–associated interstitial lung disease (RA-ILD) risk.",
+  "clinical_relevance": "This work suggests a potential route to earlier RA-ILD risk stratification, which could help prioritize closer monitoring of high-risk patients.",
   "method": [
-    "Cox proportional hazards analysis of UK Biobank data linked baseline RA to incident ILD risk.",
-    "Mendelian randomization tested whether RA may causally increase ILD risk.",
-    "Olink plasma proteomics in 781 RA patients was used to train and compare 8 machine learning models, with SHAP used for interpretation."
+    "Used UK Biobank data to test whether rheumatoid arthritis is linked to incident ILD risk.",
+    "Screened 2,920 plasma proteins in 781 RA patients for ILD-associated signals.",
+    "Built and compared eight machine learning models, then used SHAP to interpret the best-performing model."
   ],
-  "evidence_signal": "The CatBoost model performed best, with AUC 0.884 (95% CI 0.773–0.996), and RA was associated with higher ILD risk in both Cox analysis and Mendelian randomization.",
-  "watch_item": "The biomarker findings need external validation and prospective testing before they can be used reliably in clinical risk prediction.",
+  "evidence_signal": "RA was associated with higher ILD risk in Cox analysis, Mendelian randomization supported a causal link, and CatBoost achieved the best discrimination with AUC 0.884 (95% CI 0.773-0.996).",
+  "watch_item": "The biomarker candidates and model performance need independent external validation before use in practice, especially because the sample size for proteomic modeling was modest.",
   "hashtags": [
     "#RheumatoidArthritis",
     "#InterstitialLungDisease",
@@ -19,6 +19,6 @@
   "paper_title": "Development of a Novel Risk Prediction Model for Rheumatoid Arthritis-Associated Interstitial Lung Disease (RA-ILD): A Longitudinal Study",
   "paper_date": "2026-06-22",
   "paper_category": "Target Biology",
-  "generated_at": "2026-06-28T05:53:44",
+  "generated_at": "2026-06-28T06:16:51",
   "generator": "openai"
 }

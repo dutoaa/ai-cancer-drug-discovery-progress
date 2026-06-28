@@ -1,24 +1,24 @@
 {
-  "key_insight": "DeepSpot-M is a multimodal foundation model that turns routine histology into a queryable, transcriptome-wide virtual spatial transcriptomics map, including genes not seen during training.",
-  "clinical_relevance": "This could make molecular profiling far more scalable across routine pathology slides, helping reveal tumor biology and biomarker signals in patients who do not receive physical spatial transcriptomics.",
+  "key_insight": "DeepSpot-M is a multimodal foundation model that turns histology into transcriptome-wide virtual spatial transcriptomics by querying genes with learned embeddings, including genes not seen during training.",
+  "clinical_relevance": "It could make spatial molecular profiling scalable on routine pathology slides, helping map tumor biology and discover biomarkers across many cancers without requiring every patient to undergo costly spatial assays.",
   "method": [
-    "Represents genes with embeddings from foundation models spanning DNA, RNA, proteins, single cells, and biomedical text.",
-    "Reformulates prediction as a gene-query task to span the full protein-coding transcriptome.",
-    "Uses test-time adaptation to transfer from pan-cancer training data to new cohorts and assays."
+    "Multimodal gene-query model built from foundation embeddings spanning DNA, RNA, proteins, single cells, and biomedical text.",
+    "Trained on a large pan-cancer dataset to predict spatial expression across the protein-coding transcriptome, including unseen genes.",
+    "Supports test-time adaptation and additional tasks such as transcriptome restoration, cross-species non-coding RNA inference, and variant-effect mapping."
   ],
-  "evidence_signal": "The abstract reports strong transfer to held-out cancers and a virtual atlas of 28,664 TCGA slides across 32 cancers, with recovery of a pan-cancer malignancy map.",
-  "watch_item": "Because outputs are computational inferences from histology, real-world utility will depend on robust external validation and careful control of cohort, stain, and site variability.",
+  "evidence_signal": "According to the abstract, it transferred to held-out cancers, outperformed specialized models trained on those cancers, and was used to generate a virtual atlas of 28,664 TCGA slides across 32 cancer types.",
+  "watch_item": "Performance and utility may vary across staining quality, tissue types, and cohorts, so real-world deployment will need careful external validation and workflow integration.",
   "hashtags": [
     "#SpatialTranscriptomics",
-    "#HistopathologyAI",
-    "#FoundationModel",
+    "#HistologyAI",
     "#CancerResearch",
+    "#FoundationModel",
     "#BiomarkerDiscovery"
   ],
   "paper_id": "2026-06-22-medrxiv-deepspot_m_a_multimodal_foundation_model_for_transcriptome_wide_virtual_spatial_transcript",
   "paper_title": "DeepSpot-M: a multimodal foundation model for transcriptome-wide virtual spatial transcriptomics from histology",
   "paper_date": "2026-06-22",
   "paper_category": "Target Biology",
-  "generated_at": "2026-06-28T05:53:32",
+  "generated_at": "2026-06-28T06:16:38",
   "generator": "openai"
 }

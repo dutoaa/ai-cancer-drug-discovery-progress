@@ -1,24 +1,24 @@
 {
-  "key_insight": "An open-source LLM pipeline can convert messy longitudinal liver disease notes into structured data at scale, enabling reconstruction of patient trajectories and risk patterns.",
-  "clinical_relevance": "This could help researchers mine routine clinical records for earlier liver cancer risk signals in chronic liver disease populations and support better surveillance studies.",
+  "key_insight": "Open-source LLMs can convert messy longitudinal liver disease notes into structured patient timelines at scale, enabling new cancer-risk research from routine clinical text.",
+  "clinical_relevance": "This approach may help identify and track chronic liver disease patients at higher risk of liver cancer earlier and more systematically using existing records.",
   "method": [
     "Manually annotated 507 reports from 30 patients across radiology, pathology, and transplant assessments.",
-    "Benchmarked four open-source LLMs against a regex baseline on 73 extraction tasks.",
-    "Tested constrained decoding versus unconstrained prompting before applying the final pipeline to 835 transplanted patients."
+    "Benchmarked four open-source LLMs against a regex baseline across 73 extraction tasks.",
+    "Used constrained decoding to force structured outputs, then applied the best pipeline to 835 transplant patients."
   ],
-  "evidence_signal": "Llama 3.3 70B achieved >90% accuracy on 59 of 73 tasks, and constrained decoding reached >99.9% format adherence across 5,590 prompt-output pairs.",
-  "watch_item": "Results come from a single-center transplant cohort, so external validation is needed before broader use across institutions and note types.",
+  "evidence_signal": "Llama 3.3 70B was strongest, with >90% accuracy on 59/73 tasks, >99.9% format adherence under constrained decoding, and 37,125 datapoints extracted from 22,493 reports.",
+  "watch_item": "Performance was tested in one center’s transplant cohort, so external validation is needed before broader clinical deployment.",
   "hashtags": [
+    "#AIinHealthcare",
     "#LLM",
-    "#ClinicalAI",
-    "#LiverDisease",
-    "#PrecisionOncology",
-    "#HealthData"
+    "#ClinicalNLP",
+    "#LiverCancer",
+    "#PrecisionOncology"
   ],
   "paper_id": "2026-06-22-medrxiv-llm_based_reconstruction_of_longitudinal_clinical_trajectories_in_chronic_liver_disease",
   "paper_title": "LLM-based reconstruction of longitudinal clinical trajectories in chronic liver disease.",
   "paper_date": "2026-06-22",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-06-28T05:53:37",
+  "generated_at": "2026-06-28T06:16:42",
   "generator": "openai"
 }

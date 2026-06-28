@@ -26,27 +26,27 @@
     ],
     "score": 69,
     "infographic": {
-      "key_insight": "Three commercial multimodal large language models showed non-deployment-ready performance on clinically actionable breast pathology tasks, with each vendor failing in a distinct way.",
-      "clinical_relevance": "These models may help as supervised draft generators, but they should not be used autonomously for treatment-determining breast cancer features such as subtype, grade, or HER2 status.",
+      "key_insight": "Three commercial multimodal LLMs showed vendor-specific but clinically unacceptable errors on breast pathology tasks, especially subtype and HER2 assessment.",
+      "clinical_relevance": "These models are not ready for autonomous diagnosis or treatment-determining breast pathology, but may be useful only as supervised drafting aids.",
       "method": [
-        "Evaluated Claude Sonnet 4.6, Gemini 2.5 Pro, and GPT-5.5 on 427 invasive breast cancer cases.",
-        "Each case used identical H&E image tiles and prompts, with subtype inferred in a second call.",
-        "Compared model outputs against institutional sign-out reports using concordance, sensitivity, specificity, kappa, and pairwise tests."
+        "427 invasive breast cancer cases were evaluated with identical H&E image tiles and prompts across Claude Sonnet 4.6, Gemini 2.5 Pro, and GPT-5.5.",
+        "Performance was compared against institutional pathology reports using concordance, sensitivity, specificity, Cohen’s kappa, and pairwise statistical tests.",
+        "Twelve prompt variants were tested across 4,056 total calls to probe whether prompt changes improved accuracy."
       ],
-      "evidence_signal": "Across 4,056 prompt variants, none of the 12 prompt settings rescued sensitivity, and vendor-specific error patterns persisted across histologic type, grade, and HER2 prediction.",
-      "watch_item": "Changing vendors changes the direction of error rather than eliminating it, so local validation and human oversight remain essential before any workflow use.",
+      "evidence_signal": "In the 427-case evaluation, the models failed in different fixed directions and did not reliably identify HER2-positive disease, with prompt variation not restoring sensitivity.",
+      "watch_item": "Performance may shift with vendor, prompt, or case mix, but changing systems appears to change the error pattern rather than solve the underlying reliability problem.",
       "hashtags": [
-        "#CancerAI",
+        "#BreastPathology",
+        "#MultimodalAI",
+        "#MedicalAI",
         "#PathologyAI",
-        "#BreastCancer",
-        "#MultimodalLLM",
-        "#ClinicalValidation"
+        "#CancerDiagnostics"
       ],
       "paper_id": "2026-06-22-medrxiv-three_multimodal_large_language_models_fail_at_clinically_actionable_breast_pathology_in_t",
       "paper_title": "Three multimodal large language models fail at clinically actionable breast pathology in three different directions",
       "paper_date": "2026-06-22",
       "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-06-28T05:53:27",
+      "generated_at": "2026-06-28T06:16:32",
       "generator": "openai"
     }
   },
@@ -77,27 +77,27 @@
     ],
     "score": 49,
     "infographic": {
-      "key_insight": "A multi-rank gut microbiome feature model found a measurable baseline signal for anti-PD-1 response in hepatocellular carcinoma, and the trained network was compressed into a lookup-table predictor for practical deployment.",
-      "clinical_relevance": "If externally validated, this approach could help identify likely responders before treatment starts and support earlier, more personalized immunotherapy planning in HCC.",
+      "key_insight": "A multi-rank microbiome feature model identified an 8-taxa gut signature that could predict anti-PD-1 response in hepatocellular carcinoma before treatment began.",
+      "clinical_relevance": "If validated externally, this approach could help stratify HCC patients earlier for immunotherapy planning using baseline stool microbiome data.",
       "method": [
-        "Reanalyzed 16S rRNA data from 35 HCC patients with 155 longitudinal samples.",
-        "Used multi-rank taxonomic pooling, log-transformation, and strict subject-level train-test splits to reduce leakage and preserve weak signals.",
-        "Distilled the neural network into a compact LUT with frozen centered log-ratio normalization and interpolation for standalone inference."
+        "Reanalyzed 16S rRNA data from 35 HCC patients across 155 longitudinal samples with strict subject-level train/test splits.",
+        "Used multi-rank taxonomic feature engineering plus log-transformation to retain informative low-abundance taxa.",
+        "Compressed the neural network into a 2,916-row lookup table with frozen CLR normalization and interpolation for standalone prediction."
       ],
-      "evidence_signal": "An 8-taxon neural network reached AUROC 0.784 ± 0.024 on held-out data and still separated responders from non-responders at baseline (AUROC 0.681 ± 0.056).",
-      "watch_item": "The baseline signal is promising but based on a small cohort and still needs prospective, external validation before clinical use.",
+      "evidence_signal": "The 8-taxa neural network achieved AUROC 0.784 ± 0.024 on held-out data and still separated responders from non-responders at baseline (AUROC 0.681 ± 0.056).",
+      "watch_item": "The baseline signal is promising but small and needs prospective external validation before clinical use, especially given the limited cohort size.",
       "hashtags": [
         "#PrecisionOncology",
-        "#HepatocellularCarcinoma",
-        "#MicrobiomeAI",
-        "#ImmunotherapyResponse",
-        "#BiomarkerDiscovery"
+        "#HCC",
+        "#Immunotherapy",
+        "#Microbiome",
+        "#AIinMedicine"
       ],
       "paper_id": "2026-06-22-medrxiv-early_prediction_of_anti_pd_1_response_in_hepatocellular_carcinoma_via_multi_rank_taxonomi",
       "paper_title": "Early Prediction of Anti-PD-1 Response in Hepatocellular Carcinoma via Multi-Rank Taxonomic Feature Engineering and a LUT-Based Prediction Vehicle",
       "paper_date": "2026-06-22",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-06-28T05:53:29",
+      "generated_at": "2026-06-28T06:16:35",
       "generator": "openai"
     }
   },
@@ -128,27 +128,27 @@
     ],
     "score": 48,
     "infographic": {
-      "key_insight": "DeepSpot-M is a multimodal foundation model that turns routine histology into a queryable, transcriptome-wide virtual spatial transcriptomics map, including genes not seen during training.",
-      "clinical_relevance": "This could make molecular profiling far more scalable across routine pathology slides, helping reveal tumor biology and biomarker signals in patients who do not receive physical spatial transcriptomics.",
+      "key_insight": "DeepSpot-M is a multimodal foundation model that turns histology into transcriptome-wide virtual spatial transcriptomics by querying genes with learned embeddings, including genes not seen during training.",
+      "clinical_relevance": "It could make spatial molecular profiling scalable on routine pathology slides, helping map tumor biology and discover biomarkers across many cancers without requiring every patient to undergo costly spatial assays.",
       "method": [
-        "Represents genes with embeddings from foundation models spanning DNA, RNA, proteins, single cells, and biomedical text.",
-        "Reformulates prediction as a gene-query task to span the full protein-coding transcriptome.",
-        "Uses test-time adaptation to transfer from pan-cancer training data to new cohorts and assays."
+        "Multimodal gene-query model built from foundation embeddings spanning DNA, RNA, proteins, single cells, and biomedical text.",
+        "Trained on a large pan-cancer dataset to predict spatial expression across the protein-coding transcriptome, including unseen genes.",
+        "Supports test-time adaptation and additional tasks such as transcriptome restoration, cross-species non-coding RNA inference, and variant-effect mapping."
       ],
-      "evidence_signal": "The abstract reports strong transfer to held-out cancers and a virtual atlas of 28,664 TCGA slides across 32 cancers, with recovery of a pan-cancer malignancy map.",
-      "watch_item": "Because outputs are computational inferences from histology, real-world utility will depend on robust external validation and careful control of cohort, stain, and site variability.",
+      "evidence_signal": "According to the abstract, it transferred to held-out cancers, outperformed specialized models trained on those cancers, and was used to generate a virtual atlas of 28,664 TCGA slides across 32 cancer types.",
+      "watch_item": "Performance and utility may vary across staining quality, tissue types, and cohorts, so real-world deployment will need careful external validation and workflow integration.",
       "hashtags": [
         "#SpatialTranscriptomics",
-        "#HistopathologyAI",
-        "#FoundationModel",
+        "#HistologyAI",
         "#CancerResearch",
+        "#FoundationModel",
         "#BiomarkerDiscovery"
       ],
       "paper_id": "2026-06-22-medrxiv-deepspot_m_a_multimodal_foundation_model_for_transcriptome_wide_virtual_spatial_transcript",
       "paper_title": "DeepSpot-M: a multimodal foundation model for transcriptome-wide virtual spatial transcriptomics from histology",
       "paper_date": "2026-06-22",
       "paper_category": "Target Biology",
-      "generated_at": "2026-06-28T05:53:32",
+      "generated_at": "2026-06-28T06:16:38",
       "generator": "openai"
     }
   },
@@ -179,27 +179,27 @@
     ],
     "score": 47,
     "infographic": {
-      "key_insight": "PICASA uses cross-attention on multi-patient single-cell RNA-seq to separate shared cell-type programs from patient-specific cancer signals.",
-      "clinical_relevance": "By isolating residual patient-specific expression patterns, the method may help reveal individualized tumor mechanisms and biomarkers relevant to precision oncology.",
+      "key_insight": "PICASA uses cross-attention on single-cell RNA-seq from multiple patients to separate shared cell-type signals from patient-specific cancer signatures.",
+      "clinical_relevance": "This could help researchers identify tumor heterogeneity and patient-specific molecular effects that may inform biomarker discovery and precision oncology studies.",
       "method": [
-        "Trains a cross-attention neural network on single-cell transcriptomic data from multiple patients.",
-        "Learns shared cell-type embeddings and cell-type-specific gene-gene interaction patterns.",
-        "Extracts residual signals after accounting for common cell-type effects to highlight patient-specific signatures."
+        "Cross-attention neural network learns transferable gene/feature embeddings across patients.",
+        "Models cell-type-common expression while isolating residual patient-specific signatures.",
+        "Highlights gene-gene interaction patterns and residuals that may reflect somatic changes such as CNVs."
       ],
-      "evidence_signal": "The abstract reports successful decomposition in three cancer datasets—breast, ovarian, and lung—and notes that many recovered patient-specific signatures were consistent with somatic/genetic features such as CNVs.",
-      "watch_item": "The approach assumes cell types are broadly shared across patients, so performance may be weaker when tumor composition differs substantially or shared cell-type assumptions do not hold.",
+      "evidence_signal": "The abstract reports successful decomposition in three cancer datasets—breast, ovarian, and lung—recovering cell-type commonality and patient-specific signatures.",
+      "watch_item": "Results rely on the assumption that cell types are widely shared across patients, so performance may drop when tumor composition or cell states differ substantially.",
       "hashtags": [
         "#PrecisionOncology",
-        "#SingleCellRNAseq",
-        "#CancerAI",
+        "#SingleCellRNASeq",
+        "#CancerHeterogeneity",
         "#CrossAttention",
-        "#TumorHeterogeneity"
+        "#Bioinformatics"
       ],
       "paper_id": "2026-06-22-medrxiv-decomposing_patient_heterogeneity_of_single_cell_cancer_data_by_cross_attention_neural_net",
       "paper_title": "Decomposing patient heterogeneity of single-cell cancer data by cross-attention neural networks",
       "paper_date": "2026-06-22",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-06-28T05:53:34",
+      "generated_at": "2026-06-28T06:16:40",
       "generator": "openai"
     }
   },
@@ -230,27 +230,27 @@
     ],
     "score": 47,
     "infographic": {
-      "key_insight": "An open-source LLM pipeline can convert messy longitudinal liver disease notes into structured data at scale, enabling reconstruction of patient trajectories and risk patterns.",
-      "clinical_relevance": "This could help researchers mine routine clinical records for earlier liver cancer risk signals in chronic liver disease populations and support better surveillance studies.",
+      "key_insight": "Open-source LLMs can convert messy longitudinal liver disease notes into structured patient timelines at scale, enabling new cancer-risk research from routine clinical text.",
+      "clinical_relevance": "This approach may help identify and track chronic liver disease patients at higher risk of liver cancer earlier and more systematically using existing records.",
       "method": [
         "Manually annotated 507 reports from 30 patients across radiology, pathology, and transplant assessments.",
-        "Benchmarked four open-source LLMs against a regex baseline on 73 extraction tasks.",
-        "Tested constrained decoding versus unconstrained prompting before applying the final pipeline to 835 transplanted patients."
+        "Benchmarked four open-source LLMs against a regex baseline across 73 extraction tasks.",
+        "Used constrained decoding to force structured outputs, then applied the best pipeline to 835 transplant patients."
       ],
-      "evidence_signal": "Llama 3.3 70B achieved >90% accuracy on 59 of 73 tasks, and constrained decoding reached >99.9% format adherence across 5,590 prompt-output pairs.",
-      "watch_item": "Results come from a single-center transplant cohort, so external validation is needed before broader use across institutions and note types.",
+      "evidence_signal": "Llama 3.3 70B was strongest, with >90% accuracy on 59/73 tasks, >99.9% format adherence under constrained decoding, and 37,125 datapoints extracted from 22,493 reports.",
+      "watch_item": "Performance was tested in one center’s transplant cohort, so external validation is needed before broader clinical deployment.",
       "hashtags": [
+        "#AIinHealthcare",
         "#LLM",
-        "#ClinicalAI",
-        "#LiverDisease",
-        "#PrecisionOncology",
-        "#HealthData"
+        "#ClinicalNLP",
+        "#LiverCancer",
+        "#PrecisionOncology"
       ],
       "paper_id": "2026-06-22-medrxiv-llm_based_reconstruction_of_longitudinal_clinical_trajectories_in_chronic_liver_disease",
       "paper_title": "LLM-based reconstruction of longitudinal clinical trajectories in chronic liver disease.",
       "paper_date": "2026-06-22",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-06-28T05:53:37",
+      "generated_at": "2026-06-28T06:16:42",
       "generator": "openai"
     }
   },
@@ -281,27 +281,27 @@
     ],
     "score": 44,
     "infographic": {
-      "key_insight": "Cross-platform proteomics of CSF and plasma from the Target ALS Global Natural History Study identified thousands of proteins and multiple differentially expressed candidates for ALS biomarker and drug-target discovery.",
-      "clinical_relevance": "These findings may help improve ALS biomarker development and support future therapeutic research, but they are early-stage and not yet clinically actionable.",
+      "key_insight": "Cross-platform proteomics of ALS biofluids revealed many candidate proteins and showed that mass spectrometry and Olink each capture partly overlapping, partly unique biomarker signals.",
+      "clinical_relevance": "These findings could help accelerate discovery of blood and CSF biomarkers and potential drug targets for amyotrophic lateral sclerosis, supporting future patient stratification and therapy development.",
       "method": [
-        "35-plex TMTpro mass spectrometry on CSF and plasma",
-        "Compared sporadic ALS samples with controls in a cross-sectional design",
-        "Benchmarked results against Olink proximity extension assay and validated select hits with immunoassay"
+        "TMTpro 35-plex mass spectrometry on CSF and plasma from the Target ALS Global Natural History Study",
+        "Compared sporadic ALS samples with controls in both biofluids",
+        "Cross-validated select proteins with orthogonal immunoassays and compared results with Olink proximity extension assay data"
       ],
-      "evidence_signal": "The study profiled 2,875 CSF proteins and 1,118 plasma proteins across control and sporadic ALS cohorts, identifying known and novel differentially expressed proteins with partial orthogonal validation.",
-      "watch_item": "Because this is an initial cross-sectional biomarker discovery study, findings need longitudinal replication and independent validation before use in practice.",
+      "evidence_signal": "The study identified 2,875 proteins in CSF and 1,118 in plasma, with differentially expressed proteins between controls and sALS and partial overlap across platforms.",
+      "watch_item": "This was an initial cross-sectional study, so biomarker candidates still need longitudinal validation and independent replication before clinical use.",
       "hashtags": [
         "#ALS",
         "#Proteomics",
         "#Biomarkers",
-        "#DrugDiscovery",
-        "#CerebrospinalFluid"
+        "#Biofluids",
+        "#DrugDiscovery"
       ],
       "paper_id": "2026-06-23-medrxiv-the_target_als_global_natural_history_study_cross_platform_proteomics_to_accelerate_bioflu",
       "paper_title": "The Target ALS Global Natural History Study: Cross-platform proteomics to accelerate biofluid biomarker and drug target discovery in amyotrophic lateral sclerosis",
       "paper_date": "2026-06-23",
       "paper_category": "Target Biology",
-      "generated_at": "2026-06-28T05:53:39",
+      "generated_at": "2026-06-28T06:16:46",
       "generator": "openai"
     }
   },
@@ -332,27 +332,27 @@
     ],
     "score": 41,
     "infographic": {
-      "key_insight": "This pilot trial tests whether a resilience-focused, virtual physical activity program can help adolescents with chronic musculoskeletal pain stay active despite pain-related barriers.",
-      "clinical_relevance": "If feasible and acceptable, PREP-Y could inform a future randomized study aimed at improving function, activity, and coping in teens with chronic pain.",
+      "key_insight": "This protocol tests whether a resilience-focused, virtual physical activity program can help adolescents with chronic musculoskeletal pain stay active despite pain.",
+      "clinical_relevance": "If feasible and acceptable, the intervention could support better pain-related functioning and physical activity engagement in adolescents with chronic pain.",
       "method": [
-        "40 adolescents aged 12–17 with chronic musculoskeletal pain",
-        "4 virtual intervention sessions targeting self-efficacy, motivation, coping, and pain resilience",
-        "Baseline, post-intervention, and 3-month follow-up with questionnaires, physical tests, and activity monitoring"
+        "Single-site, pilot phase 2, single-group non-randomized trial in 40 adolescents aged 12–17 years.",
+        "Four virtual intervention sessions targeting self-efficacy, motivation, adaptive coping, and mental flexibility.",
+        "Baseline, post-intervention, and 3-month follow-up measures include questionnaires, physical functioning tests, and activity monitoring."
       ],
-      "evidence_signal": "The abstract describes a pilot phase 2 single-group trial focused on feasibility and acceptability, with exploratory measures of activity, pain-related functioning, and resilience constructs rather than efficacy outcomes.",
-      "watch_item": "Because this is a small, non-randomized single-site pilot, results may not generalize and cannot establish causal effectiveness.",
+      "evidence_signal": "The abstract reports a feasibility-focused pilot design rather than efficacy results, with recruitment, retention, attendance, fidelity, and measure completion as primary outcomes.",
+      "watch_item": "Because this is a small, single-group pilot without randomization or a control arm, any changes in activity or pain outcomes will be preliminary and may not generalize widely.",
       "hashtags": [
         "#PediatricPain",
         "#PhysicalActivity",
+        "#AdolescentHealth",
         "#Resilience",
-        "#ClinicalTrial",
-        "#AdolescentHealth"
+        "#ClinicalTrial"
       ],
       "paper_id": "2026-06-22-medrxiv-resilience_factors_pain_and_physical_activity_in_adolescent_chronic_musculoskeletal_pain_d",
       "paper_title": "Resilience factors, pain, and physical activity in adolescent chronic musculoskeletal pain: design and protocol of a pilot phase 2 single-group, non-randomized clinical trial",
       "paper_date": "2026-06-22",
       "paper_category": "Clinical Translation",
-      "generated_at": "2026-06-28T05:53:41",
+      "generated_at": "2026-06-28T06:16:48",
       "generator": "openai"
     }
   },
@@ -362,7 +362,7 @@
     "date": "2026-06-22",
     "title": "Development of a Novel Risk Prediction Model for Rheumatoid Arthritis-Associated Interstitial Lung Disease (RA-ILD): A Longitudinal Study",
     "authors": "Lv, Y.-p.; Wang, S.-y.; Piao, H.-n.; Gong, Z.; Zeng, K.-q.; Zhong, Q.; Lei, S.-f.; Tong, M.; Ren, W.-y.; Wu, L.-f.",
-    "abstract": "ObjectivesInterstitial lung disease (ILD) is one of the most common and potentially most devastating extra-articular complication of rheumatoid arthritis (RA) and is associated with substantial morbidity and mortality. However, early identification tools remain limited. This study aimed to identify plasma protein biomarkers of RA-ILD and develop an interpretable machine learning model for risk prediction using data from the UK Biobank. MethodsWe evaluated the association between baseline RA and incident ILD risk using Cox proportional hazards models, followed by Mendelian randomization (MR) to assess causal relationship. We then analyzed 2,920 plasma proteins (Olink platform) from 781 RA patients. Proteins associated with ILD risk were identified and used to construct eight machine learning models, with performance assessed by ROC and decision curve analysis. The best-performing model was further interpreted using Shapley additive explanations (SHAP) to evaluate feature importance. ResultsRA patients had significantly higher ILD risk (HR: 4.425, 95% CI: 3.549-5.518). MR supported a causal association (OR: 1.227, 95% CI: 1.121-1.343). The CatBoost model showed the best performance, achieving an area under the curve (AUC) of 0.884 (95% CI: 0.773,0.996). The SHAP analysis identified LAG3, NPC2, and LAMP3 are the three most important plasma protein predictors of ILD development in patients with RA. ConclusionPlasma proteomics combined with machine learning may provide a promising approach for identifying biomarkers and predicting ILD risk in patients with RA. LAG3, NPC2, and LAMP3 may serve as candidate biomarkers for RA-ILD and warrant further validation. Graphical abstract O_FIG O_LINKSMALLFIG WIDTH=130 HEIGHT=200 SRC=\"FIGDIR/small/26355441v1_ufig1.gif\" ALT=\"Figure 1\"> View larger version (43K): org.highwire.dtl.DTLVardef@19f76a5org.highwire.dtl.DTLVardef@266b44org.highwire.dtl.DTLVardef@4c7e10org.highwire.dtl.DTLVardef@1e852be_HPS_FORMAT_FIGEXP M_FIG C_FIG",
+    "abstract": "ObjectivesInterstitial lung disease (ILD) is one of the most common and potentially most devastating extra-articular complication of rheumatoid arthritis (RA) and is associated with substantial morbidity and mortality. However, early identification tools remain limited. This study aimed to identify plasma protein biomarkers of RA-ILD and develop an interpretable machine learning model for risk prediction using data from the UK Biobank. MethodsWe evaluated the association between baseline RA and incident ILD risk using Cox proportional hazards models, followed by Mendelian randomization (MR) to assess causal relationship. We then analyzed 2,920 plasma proteins (Olink platform) from 781 RA patients. Proteins associated with ILD risk were identified and used to construct eight machine learning models, with performance assessed by ROC and decision curve analysis. The best-performing model was further interpreted using Shapley additive explanations (SHAP) to evaluate feature importance. ResultsRA patients had significantly higher ILD risk (HR: 4.425, 95% CI: 3.549-5.518). MR supported a causal association (OR: 1.227, 95% CI: 1.121-1.343). The CatBoost model showed the best performance, achieving an area under the curve (AUC) of 0.884 (95% CI: 0.773,0.996). The SHAP analysis identified LAG3, NPC2, and LAMP3 are the three most important plasma protein predictors of ILD development in patients with RA. ConclusionPlasma proteomics combined with machine learning may provide a promising approach for identifying biomarkers and predicting ILD risk in patients with RA. LAG3, NPC2, and LAMP3 may serve as candidate biomarkers for RA-ILD and warrant further validation. Graphical abstract O_FIG O_LINKSMALLFIG WIDTH=130 HEIGHT=200 SRC=\"FIGDIR/small/26355441v1_ufig1.gif\" ALT=\"Figure 1\"> View larger version (43K): org.highwire.dtl.DTLVardef@47193org.highwire.dtl.DTLVardef@1bc7636org.highwire.dtl.DTLVardef@1f4fa12org.highwire.dtl.DTLVardef@4dd592_HPS_FORMAT_FIGEXP M_FIG C_FIG",
     "category": "Target Biology",
     "source": "medRxiv",
     "published": "2026-06-22",
@@ -383,15 +383,15 @@
     ],
     "score": 41,
     "infographic": {
-      "key_insight": "In RA patients, plasma proteomics plus machine learning identified a high-performing, interpretable model for predicting future RA-associated interstitial lung disease, with LAG3, NPC2, and LAMP3 emerging as top biomarkers.",
-      "clinical_relevance": "This work suggests a potential path toward earlier RA-ILD risk stratification, which could help focus monitoring on patients most likely to develop lung disease.",
+      "key_insight": "A plasma proteomics + machine learning approach identified LAG3, NPC2, and LAMP3 as top predictors of rheumatoid arthritis–associated interstitial lung disease (RA-ILD) risk.",
+      "clinical_relevance": "This work suggests a potential route to earlier RA-ILD risk stratification, which could help prioritize closer monitoring of high-risk patients.",
       "method": [
-        "Cox proportional hazards analysis of UK Biobank data linked baseline RA to incident ILD risk.",
-        "Mendelian randomization tested whether RA may causally increase ILD risk.",
-        "Olink plasma proteomics in 781 RA patients was used to train and compare 8 machine learning models, with SHAP used for interpretation."
+        "Used UK Biobank data to test whether rheumatoid arthritis is linked to incident ILD risk.",
+        "Screened 2,920 plasma proteins in 781 RA patients for ILD-associated signals.",
+        "Built and compared eight machine learning models, then used SHAP to interpret the best-performing model."
       ],
-      "evidence_signal": "The CatBoost model performed best, with AUC 0.884 (95% CI 0.773–0.996), and RA was associated with higher ILD risk in both Cox analysis and Mendelian randomization.",
-      "watch_item": "The biomarker findings need external validation and prospective testing before they can be used reliably in clinical risk prediction.",
+      "evidence_signal": "RA was associated with higher ILD risk in Cox analysis, Mendelian randomization supported a causal link, and CatBoost achieved the best discrimination with AUC 0.884 (95% CI 0.773-0.996).",
+      "watch_item": "The biomarker candidates and model performance need independent external validation before use in practice, especially because the sample size for proteomic modeling was modest.",
       "hashtags": [
         "#RheumatoidArthritis",
         "#InterstitialLungDisease",
@@ -403,7 +403,7 @@
       "paper_title": "Development of a Novel Risk Prediction Model for Rheumatoid Arthritis-Associated Interstitial Lung Disease (RA-ILD): A Longitudinal Study",
       "paper_date": "2026-06-22",
       "paper_category": "Target Biology",
-      "generated_at": "2026-06-28T05:53:44",
+      "generated_at": "2026-06-28T06:16:51",
       "generator": "openai"
     }
   },
@@ -434,27 +434,27 @@
     ],
     "score": 38,
     "infographic": {
-      "key_insight": "MCH-Guard is a multimodal machine-learning framework that predicts cerebral microhemorrhage risk and stability in ADNI, with strong performance even from clinical history alone.",
-      "clinical_relevance": "This could help prioritize microhemorrhage and ARIA-H surveillance for anti-amyloid therapy by identifying higher-risk patients earlier and more equitably.",
+      "key_insight": "MCH-Guard is a multimodal machine-learning framework that stratifies cerebral microhemorrhage risk in Alzheimer’s disease using clinical, fluid, and imaging data, with strong performance even in a clinical-only model.",
+      "clinical_relevance": "It could support safer anti-amyloid therapy monitoring by identifying patients at higher risk for microhemorrhage and ARIA-H, including in settings with limited biomarker access.",
       "method": [
-        "Nested models combined demographics, clinical history, fluid biomarkers, and imaging.",
-        "The framework predicted baseline MCH presence, incident MCH, time-to-onset, and four-year risk.",
-        "A transient vascular instability phenotype was also modeled and linked to hepatic factors."
+        "Trained nested predictive models on ADNI data (N=813).",
+        "Integrated demographics/clinical history, fluid biomarkers, and imaging to predict baseline MCH, incidence, and stability.",
+        "Built longitudinal models for time-to-onset and four-year risk stratification, including a transient vascular instability phenotype."
       ],
-      "evidence_signal": "In ADNI (N=813), the comprehensive model reached AUC 0.86 for baseline MCH detection, while the minimal clinical-only model still achieved AUC 0.82 and longitudinal prediction reached R2=0.68.",
-      "watch_item": "Performance was evaluated in a single dataset, so external validation and careful interpretation are needed before real-world deployment.",
+      "evidence_signal": "In the abstract, the comprehensive model achieved AUC 0.86 for baseline MCH detection, while the minimal clinical-history model still performed well at AUC 0.82 and the time-to-onset model reached R2=0.68.",
+      "watch_item": "Performance was evaluated in ADNI and may need external validation before use in other populations or clinical workflows.",
       "hashtags": [
         "#MachineLearning",
         "#AlzheimersDisease",
         "#Microhemorrhage",
-        "#ARIAH",
-        "#Biomarkers"
+        "#Biomarkers",
+        "#ClinicalDecisionSupport"
       ],
       "paper_id": "2026-06-22-medrxiv-mch_guard_multimodal_machine_learning_framework_for_risk_stratification_of_cerebral_microh",
       "paper_title": "MCH-Guard: Multimodal Machine Learning Framework for Risk Stratification of Cerebral Microhemorrhage Risk in the Alzheimer's Disease Neuroimaging Initiative",
       "paper_date": "2026-06-22",
       "paper_category": "Target Biology",
-      "generated_at": "2026-06-28T05:53:46",
+      "generated_at": "2026-06-28T06:16:53",
       "generator": "openai"
     }
   }

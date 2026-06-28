@@ -1,24 +1,24 @@
 {
-  "key_insight": "A multi-rank gut microbiome feature model found a measurable baseline signal for anti-PD-1 response in hepatocellular carcinoma, and the trained network was compressed into a lookup-table predictor for practical deployment.",
-  "clinical_relevance": "If externally validated, this approach could help identify likely responders before treatment starts and support earlier, more personalized immunotherapy planning in HCC.",
+  "key_insight": "A multi-rank microbiome feature model identified an 8-taxa gut signature that could predict anti-PD-1 response in hepatocellular carcinoma before treatment began.",
+  "clinical_relevance": "If validated externally, this approach could help stratify HCC patients earlier for immunotherapy planning using baseline stool microbiome data.",
   "method": [
-    "Reanalyzed 16S rRNA data from 35 HCC patients with 155 longitudinal samples.",
-    "Used multi-rank taxonomic pooling, log-transformation, and strict subject-level train-test splits to reduce leakage and preserve weak signals.",
-    "Distilled the neural network into a compact LUT with frozen centered log-ratio normalization and interpolation for standalone inference."
+    "Reanalyzed 16S rRNA data from 35 HCC patients across 155 longitudinal samples with strict subject-level train/test splits.",
+    "Used multi-rank taxonomic feature engineering plus log-transformation to retain informative low-abundance taxa.",
+    "Compressed the neural network into a 2,916-row lookup table with frozen CLR normalization and interpolation for standalone prediction."
   ],
-  "evidence_signal": "An 8-taxon neural network reached AUROC 0.784 ± 0.024 on held-out data and still separated responders from non-responders at baseline (AUROC 0.681 ± 0.056).",
-  "watch_item": "The baseline signal is promising but based on a small cohort and still needs prospective, external validation before clinical use.",
+  "evidence_signal": "The 8-taxa neural network achieved AUROC 0.784 ± 0.024 on held-out data and still separated responders from non-responders at baseline (AUROC 0.681 ± 0.056).",
+  "watch_item": "The baseline signal is promising but small and needs prospective external validation before clinical use, especially given the limited cohort size.",
   "hashtags": [
     "#PrecisionOncology",
-    "#HepatocellularCarcinoma",
-    "#MicrobiomeAI",
-    "#ImmunotherapyResponse",
-    "#BiomarkerDiscovery"
+    "#HCC",
+    "#Immunotherapy",
+    "#Microbiome",
+    "#AIinMedicine"
   ],
   "paper_id": "2026-06-22-medrxiv-early_prediction_of_anti_pd_1_response_in_hepatocellular_carcinoma_via_multi_rank_taxonomi",
   "paper_title": "Early Prediction of Anti-PD-1 Response in Hepatocellular Carcinoma via Multi-Rank Taxonomic Feature Engineering and a LUT-Based Prediction Vehicle",
   "paper_date": "2026-06-22",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-06-28T05:53:29",
+  "generated_at": "2026-06-28T06:16:35",
   "generator": "openai"
 }

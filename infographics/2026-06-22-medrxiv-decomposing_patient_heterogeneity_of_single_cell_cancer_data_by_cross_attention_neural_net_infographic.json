@@ -1,24 +1,24 @@
 {
-  "key_insight": "PICASA uses cross-attention on multi-patient single-cell RNA-seq to separate shared cell-type programs from patient-specific cancer signals.",
-  "clinical_relevance": "By isolating residual patient-specific expression patterns, the method may help reveal individualized tumor mechanisms and biomarkers relevant to precision oncology.",
+  "key_insight": "PICASA uses cross-attention on single-cell RNA-seq from multiple patients to separate shared cell-type signals from patient-specific cancer signatures.",
+  "clinical_relevance": "This could help researchers identify tumor heterogeneity and patient-specific molecular effects that may inform biomarker discovery and precision oncology studies.",
   "method": [
-    "Trains a cross-attention neural network on single-cell transcriptomic data from multiple patients.",
-    "Learns shared cell-type embeddings and cell-type-specific gene-gene interaction patterns.",
-    "Extracts residual signals after accounting for common cell-type effects to highlight patient-specific signatures."
+    "Cross-attention neural network learns transferable gene/feature embeddings across patients.",
+    "Models cell-type-common expression while isolating residual patient-specific signatures.",
+    "Highlights gene-gene interaction patterns and residuals that may reflect somatic changes such as CNVs."
   ],
-  "evidence_signal": "The abstract reports successful decomposition in three cancer datasets—breast, ovarian, and lung—and notes that many recovered patient-specific signatures were consistent with somatic/genetic features such as CNVs.",
-  "watch_item": "The approach assumes cell types are broadly shared across patients, so performance may be weaker when tumor composition differs substantially or shared cell-type assumptions do not hold.",
+  "evidence_signal": "The abstract reports successful decomposition in three cancer datasets—breast, ovarian, and lung—recovering cell-type commonality and patient-specific signatures.",
+  "watch_item": "Results rely on the assumption that cell types are widely shared across patients, so performance may drop when tumor composition or cell states differ substantially.",
   "hashtags": [
     "#PrecisionOncology",
-    "#SingleCellRNAseq",
-    "#CancerAI",
+    "#SingleCellRNASeq",
+    "#CancerHeterogeneity",
     "#CrossAttention",
-    "#TumorHeterogeneity"
+    "#Bioinformatics"
   ],
   "paper_id": "2026-06-22-medrxiv-decomposing_patient_heterogeneity_of_single_cell_cancer_data_by_cross_attention_neural_net",
   "paper_title": "Decomposing patient heterogeneity of single-cell cancer data by cross-attention neural networks",
   "paper_date": "2026-06-22",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-06-28T05:53:34",
+  "generated_at": "2026-06-28T06:16:40",
   "generator": "openai"
 }

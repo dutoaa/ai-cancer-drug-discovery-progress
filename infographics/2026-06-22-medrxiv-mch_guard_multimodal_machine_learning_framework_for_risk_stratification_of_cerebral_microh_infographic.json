@@ -1,24 +1,24 @@
 {
-  "key_insight": "MCH-Guard is a multimodal machine-learning framework that predicts cerebral microhemorrhage risk and stability in ADNI, with strong performance even from clinical history alone.",
-  "clinical_relevance": "This could help prioritize microhemorrhage and ARIA-H surveillance for anti-amyloid therapy by identifying higher-risk patients earlier and more equitably.",
+  "key_insight": "MCH-Guard is a multimodal machine-learning framework that stratifies cerebral microhemorrhage risk in Alzheimer’s disease using clinical, fluid, and imaging data, with strong performance even in a clinical-only model.",
+  "clinical_relevance": "It could support safer anti-amyloid therapy monitoring by identifying patients at higher risk for microhemorrhage and ARIA-H, including in settings with limited biomarker access.",
   "method": [
-    "Nested models combined demographics, clinical history, fluid biomarkers, and imaging.",
-    "The framework predicted baseline MCH presence, incident MCH, time-to-onset, and four-year risk.",
-    "A transient vascular instability phenotype was also modeled and linked to hepatic factors."
+    "Trained nested predictive models on ADNI data (N=813).",
+    "Integrated demographics/clinical history, fluid biomarkers, and imaging to predict baseline MCH, incidence, and stability.",
+    "Built longitudinal models for time-to-onset and four-year risk stratification, including a transient vascular instability phenotype."
   ],
-  "evidence_signal": "In ADNI (N=813), the comprehensive model reached AUC 0.86 for baseline MCH detection, while the minimal clinical-only model still achieved AUC 0.82 and longitudinal prediction reached R2=0.68.",
-  "watch_item": "Performance was evaluated in a single dataset, so external validation and careful interpretation are needed before real-world deployment.",
+  "evidence_signal": "In the abstract, the comprehensive model achieved AUC 0.86 for baseline MCH detection, while the minimal clinical-history model still performed well at AUC 0.82 and the time-to-onset model reached R2=0.68.",
+  "watch_item": "Performance was evaluated in ADNI and may need external validation before use in other populations or clinical workflows.",
   "hashtags": [
     "#MachineLearning",
     "#AlzheimersDisease",
     "#Microhemorrhage",
-    "#ARIAH",
-    "#Biomarkers"
+    "#Biomarkers",
+    "#ClinicalDecisionSupport"
   ],
   "paper_id": "2026-06-22-medrxiv-mch_guard_multimodal_machine_learning_framework_for_risk_stratification_of_cerebral_microh",
   "paper_title": "MCH-Guard: Multimodal Machine Learning Framework for Risk Stratification of Cerebral Microhemorrhage Risk in the Alzheimer's Disease Neuroimaging Initiative",
   "paper_date": "2026-06-22",
   "paper_category": "Target Biology",
-  "generated_at": "2026-06-28T05:53:46",
+  "generated_at": "2026-06-28T06:16:53",
   "generator": "openai"
 }
