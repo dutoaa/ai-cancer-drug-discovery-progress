@@ -1,0 +1,24 @@
+{
+  "key_insight": "Three commercial multimodal large language models showed non-deployment-ready performance on clinically actionable breast pathology tasks, with each vendor failing in a distinct way.",
+  "clinical_relevance": "These models may help as supervised draft generators, but they should not be used autonomously for treatment-determining breast cancer features such as subtype, grade, or HER2 status.",
+  "method": [
+    "Evaluated Claude Sonnet 4.6, Gemini 2.5 Pro, and GPT-5.5 on 427 invasive breast cancer cases.",
+    "Each case used identical H&E image tiles and prompts, with subtype inferred in a second call.",
+    "Compared model outputs against institutional sign-out reports using concordance, sensitivity, specificity, kappa, and pairwise tests."
+  ],
+  "evidence_signal": "Across 4,056 prompt variants, none of the 12 prompt settings rescued sensitivity, and vendor-specific error patterns persisted across histologic type, grade, and HER2 prediction.",
+  "watch_item": "Changing vendors changes the direction of error rather than eliminating it, so local validation and human oversight remain essential before any workflow use.",
+  "hashtags": [
+    "#CancerAI",
+    "#PathologyAI",
+    "#BreastCancer",
+    "#MultimodalLLM",
+    "#ClinicalValidation"
+  ],
+  "paper_id": "2026-06-22-medrxiv-three_multimodal_large_language_models_fail_at_clinically_actionable_breast_pathology_in_t",
+  "paper_title": "Three multimodal large language models fail at clinically actionable breast pathology in three different directions",
+  "paper_date": "2026-06-22",
+  "paper_category": "Cancer AI Methods",
+  "generated_at": "2026-06-28T05:53:27",
+  "generator": "openai"
+}

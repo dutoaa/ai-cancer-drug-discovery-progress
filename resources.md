@@ -1,3 +1,76 @@
-# AI Cancer Drug Discovery Resources
+# AI Medicine Progress Public Resources
 
-The first generated resource inventory will appear after the daily collection workflow runs.
+Generated: 2026-06-28
+Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
+
+## 1. Three multimodal large language models fail at clinically actionable breast pathology in three different directions
+
+- Date: 2026-06-22
+- Category: Cancer AI Methods
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.18.26355928v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.18.26355928v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-06-22-medrxiv-three_multimodal_large_language_models_fail_at_clinically_actionable_breast_pathology_in_t_infographic.json
+
+## 2. Early Prediction of Anti-PD-1 Response in Hepatocellular Carcinoma via Multi-Rank Taxonomic Feature Engineering and a LUT-Based Prediction Vehicle
+
+- Date: 2026-06-22
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.1101/2025.05.15.25327728v2
+- PDF: https://www.medrxiv.org/content/10.1101/2025.05.15.25327728v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-06-22-medrxiv-early_prediction_of_anti_pd_1_response_in_hepatocellular_carcinoma_via_multi_rank_taxonomi_infographic.json
+
+## 3. DeepSpot-M: a multimodal foundation model for transcriptome-wide virtual spatial transcriptomics from histology
+
+- Date: 2026-06-22
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.19.26356060v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-06-22-medrxiv-deepspot_m_a_multimodal_foundation_model_for_transcriptome_wide_virtual_spatial_transcript_infographic.json
+
+## 4. Decomposing patient heterogeneity of single-cell cancer data by cross-attention neural networks
+
+- Date: 2026-06-22
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.1101/2025.06.04.25328900v2
+- PDF: https://www.medrxiv.org/content/10.1101/2025.06.04.25328900v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-06-22-medrxiv-decomposing_patient_heterogeneity_of_single_cell_cancer_data_by_cross_attention_neural_net_infographic.json
+
+## 5. LLM-based reconstruction of longitudinal clinical trajectories in chronic liver disease.
+
+- Date: 2026-06-22
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.02.10.26345124v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.02.10.26345124v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-06-22-medrxiv-llm_based_reconstruction_of_longitudinal_clinical_trajectories_in_chronic_liver_disease_infographic.json
+
+## 6. The Target ALS Global Natural History Study: Cross-platform proteomics to accelerate biofluid biomarker and drug target discovery in amyotrophic lateral sclerosis
+
+- Date: 2026-06-23
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.13.26355379v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.13.26355379v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-06-23-medrxiv-the_target_als_global_natural_history_study_cross_platform_proteomics_to_accelerate_bioflu_infographic.json
+
+## 7. Resilience factors, pain, and physical activity in adolescent chronic musculoskeletal pain: design and protocol of a pilot phase 2 single-group, non-randomized clinical trial
+
+- Date: 2026-06-22
+- Category: Clinical Translation
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.19.26356029v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.19.26356029v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-06-22-medrxiv-resilience_factors_pain_and_physical_activity_in_adolescent_chronic_musculoskeletal_pain_d_infographic.json
+
+## 8. Development of a Novel Risk Prediction Model for Rheumatoid Arthritis-Associated Interstitial Lung Disease (RA-ILD): A Longitudinal Study
+
+- Date: 2026-06-22
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.18.26355441v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.18.26355441v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-06-22-medrxiv-development_of_a_novel_risk_prediction_model_for_rheumatoid_arthritis_associated_interstit_infographic.json
+
+## 9. MCH-Guard: Multimodal Machine Learning Framework for Risk Stratification of Cerebral Microhemorrhage Risk in the Alzheimer's Disease Neuroimaging Initiative
+
+- Date: 2026-06-22
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.18.26355972v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.18.26355972v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-06-22-medrxiv-mch_guard_multimodal_machine_learning_framework_for_risk_stratification_of_cerebral_microh_infographic.json
