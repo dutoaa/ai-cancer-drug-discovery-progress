@@ -1,0 +1,869 @@
+[
+  {
+    "id": "2026-06-25-medrxiv-generalizable_ai_predicts_immunotherapy_outcomes_across_cancers_and_treatments",
+    "doi": "10.1101/2025.05.01.25326820",
+    "date": "2026-06-25",
+    "title": "Generalizable AI predicts immunotherapy outcomes across cancers and treatments",
+    "authors": "SHEN, W.; Moon, I.; Nguyen, T. H.; Li, M. M. R.; Huang, Y.; Nair, N.; Marbach, D.; Zitnik, M.",
+    "abstract": "Immune checkpoint inhibitors are standard across cancers, yet most patients do not respond and existing biomarkers generalize poorly across tumor types, drugs and clinical settings. We present CO_SCPLOWOMPASSC_SCPLOW, a pan-cancer foundation model that predicts immunotherapy response from bulk tumor transcriptomes using a concept-bottleneck transformer. CO_SCPLOWOMPASSC_SCPLOW encodes gene expression through 44 biologically grounded immune concepts representing immune cell states, tumor-microenvironment interactions, and signaling pathways. Trained on 10,184 tumors across 33 cancer types, CO_SCPLOWOMPASSC_SCPLOW outperforms 22 baseline methods in 16 independent clinical cohorts spanning seven cancers and six immune checkpoint inhibitors, increasing accuracy by 8.5% and area under the precision-recall curve by 15.7%, with minimal additional training. The model generalizes to unseen cancer types and treatments, supporting indication selection and patient stratification in early-phase clinical trials. In survival analyses, CO_SCPLOWOMPASSC_SCPLOW-stratified responders have longer overall survival (hazard ratio = 4.7, p < 0.0001). Personalized response maps connect gene expression to immune concepts, revealing mechanisms of response and resistance; in immune-inflamed non-responders, CO_SCPLOWOMPASSC_SCPLOW highlights programs including TGF-{beta} signaling, endothelial exclusion, CD4+ T cell dysfunction, and B cell deficiency. By combining interpretability with transfer learning, CO_SCPLOWOMPASSC_SCPLOW enables robust prediction and mechanistic insight to inform trial design and translational studies.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-25",
+    "updated": "2026-06-25",
+    "primary_category": "pharmacology and therapeutics",
+    "categories": [
+      "pharmacology and therapeutics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.05.01.25326820v4"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.05.01.25326820v4.full.pdf"
+      }
+    ],
+    "score": 84,
+    "infographic": {
+      "key_insight": "A pan-cancer foundation model using immune concepts can predict immunotherapy response across multiple cancers and checkpoint drugs while also showing biologically interpretable mechanisms.",
+      "clinical_relevance": "This could help match patients to immunotherapy and support early-phase trial selection, especially when existing biomarkers do not transfer well across tumor types or treatments.",
+      "method": [
+        "Trained a concept-bottleneck transformer on bulk tumor transcriptomes.",
+        "Encoded expression into 44 biologically grounded immune concepts.",
+        "Used transfer learning to generalize across cancers, drugs, and clinical settings."
+      ],
+      "evidence_signal": "Trained on 10,184 tumors across 33 cancer types and evaluated in 16 independent cohorts spanning seven cancers and six checkpoint inhibitors, outperforming 22 baselines.",
+      "watch_item": "Results are promising but prospective validation is still needed before routine clinical use, especially to confirm performance in new sites and patient populations.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#Immunotherapy",
+        "#AIinHealthcare",
+        "#CancerResearch",
+        "#TranslationalAI"
+      ],
+      "paper_id": "2026-06-25-medrxiv-generalizable_ai_predicts_immunotherapy_outcomes_across_cancers_and_treatments",
+      "paper_title": "Generalizable AI predicts immunotherapy outcomes across cancers and treatments",
+      "paper_date": "2026-06-25",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-06-30T10:27:46",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-24-medrxiv-predicting_chemotherapy_response_from_staging_laparoscopy_images",
+    "doi": "10.64898/2026.06.22.26356226",
+    "date": "2026-06-24",
+    "title": "Predicting Chemotherapy Response from Staging Laparoscopy Images",
+    "authors": "Schnelldorfer, T.; Castro, J.; Goldar-Najafi, A.; Nugent, F. W.; Gaikwad, B.",
+    "abstract": "BackgroundFor patients with metastatic gastrointestinal cancers, chemotherapy resistance is a common phenomenon that, if known in advance, would allow for individualized treatment decisions. This study aimed to test the feasibility of developing a deep learning computer vision system that uses laparoscopy images depicting peritoneal surface metastases (i.e., capturing the in-vivo optical appearance of metastases as a summary of their molecular makeup) to predict whether a patient is resistant to standard chemotherapy. MethodsThe retrospective observational feasibility study included 35 adult patients who underwent staging laparoscopy for non-colon gastrointestinal adenocarcinoma with biopsy-confirmed peritoneal surface metastases and who underwent chemotherapy as their only treatment modality. Chemotherapy resistance was determined based on each patients observed cancer-specific survival after controlling for confounders. ResultsOf 35 patients, 17 were assigned to the chemotherapy sensitive group and 18 to the chemotherapy resistant group. The study cohort provided 1010 laparoscopy image patches of 101 biopsy-confirmed metastases. A densely connected convolutional neural network with cross-validation provided the best results for correctly predicting chemotherapy resistance at the patient level (accuracy 0.80 (95%CI 0.63-0.92), sensitivity 0.72, specificity 0.88, AUC-ROC 0.78). Saliency maps demonstrated the systems trustworthiness. ConclusionIn this study, a prototype surgical computer vision system designed to determine chemotherapy resistance from operative images of peritoneal surface metastases demonstrated its technical feasibility. Further development and validation in a multi-institutional clinical study are pending.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-24",
+    "updated": "2026-06-24",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.22.26356226v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.22.26356226v1.full.pdf"
+      }
+    ],
+    "score": 69,
+    "infographic": {
+      "key_insight": "A deep learning model could read staging laparoscopy images of peritoneal metastases to predict which gastrointestinal cancer patients are likely to be resistant to chemotherapy.",
+      "clinical_relevance": "If validated, this approach could help personalize treatment planning before chemotherapy is started by identifying patients less likely to benefit from standard regimens.",
+      "method": [
+        "Retrospective feasibility study of 35 adults with non-colon gastrointestinal adenocarcinoma and biopsy-confirmed peritoneal metastases.",
+        "Used 1,010 image patches from 101 metastases captured during staging laparoscopy.",
+        "Trained a densely connected convolutional neural network and evaluated it with cross-validation."
+      ],
+      "evidence_signal": "At the patient level, the best model achieved 0.80 accuracy, 0.72 sensitivity, 0.88 specificity, and 0.78 AUC-ROC for predicting chemotherapy resistance.",
+      "watch_item": "This is a small single-study feasibility result, so external validation in larger multi-institutional cohorts is needed before clinical use.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#DeepLearning",
+        "#ComputerVision",
+        "#ChemotherapyResponse",
+        "#Laparoscopy"
+      ],
+      "paper_id": "2026-06-24-medrxiv-predicting_chemotherapy_response_from_staging_laparoscopy_images",
+      "paper_title": "Predicting Chemotherapy Response from Staging Laparoscopy Images",
+      "paper_date": "2026-06-24",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-06-30T10:27:49",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-25-medrxiv-stratified_cohorts_for_biomarker_assessment_and_trial_readiness_tmem175_scarb2_and_ctsb_in",
+    "doi": "10.64898/2026.06.23.26356322",
+    "date": "2026-06-25",
+    "title": "Stratified cohorts for biomarker assessment and trial readiness: TMEM175, SCARB2 and CTSB in Parkinson's disease",
+    "authors": "Sun, W.; Wurster, I.; Roeben, B.; Kemmner, R.; Mielke, M.; Zetterberg, H.; Lerche, S.; Hauser, A.-K.; Schulte, C.; Parchi, P.; Petzold, G. C.; Spottke, A.; Wuellner, U.; van Riesen, C.; Maass, F.; Falkenburger, B. H.; Mathias, B.; Zerr, I.; Duezel, E.; Lingor, P. H.; Wolff, A.; Levin, J.; Hermann, W.; Loehle, M.; Gan-Or, Z.; Brockmann, K.; Gasser, T.",
+    "abstract": "BackgroundLysosomal dysfunction plays a crucial role in the pathogenesis of Parkinsons disease (PD), particularly among GBA1 mutation carriers. Beyond GBA1, genes such as TMEM175, SCARB2, and CTSB identified in genome-wide association studies (GWAS) are also implicated in lysosomal pathways contributing to PD risk, although their functional effects in patients remain unclear. Proteins encoded by these lysosome-related genes have been explored as potential therapeutic targets in experimental models. Biomarker profiles, including clinical measures, -syn seeding activity, lysosomal proteins, and sphingolipids, may facilitate patient stratification and support therapeutic monitoring in future clinical trials. AimThe aim of this study is to investigate the impact of genetic variants of three lysosomal-related genes (TMEM175, SCARB2, and CTSB) on biomarker profiles in PD with and without GBA1 variants. Cross-sectional data from two German cohorts: the Tuebingen Parkinson Cohort (TUEPAC) and the DESCRIBE PD cohort of the German Center for Neurodegenerative Diseases were used as explorative cohorts, and data from Accelerating Medicines Partnership(R) Parkinsons Disease (AMP-PD) were used as a validation cohort. The ultimate goal is to provide new data for patient stratification based on genetics, which might serve as a readout for target engagement and treatment efficiency assessment. MethodsThree cohorts were analyzed: TUEPAC, DESCRIBE PD, and AMP-PD. TUEPAC and DESCRIBE PD were combined into a single German discovery cohort (TUEPAC-DESCRIBE-PD), while AMP-PD served as an independent validation cohort. Within each cohort, for subgroup analyses, PD patients were classified as the overall PD cohort (PDall), and further stratified by GBA1 mutation status into PD patients without GBA1 mutations (PDGBA1_wildtype), and PD patients carrying GBA1 mutations (PDGBA1). We evaluated cognitive and motor function, as well as depression using the Montreal Cognitive Assessment (MoCA), Unified Parkinson Disease Rating Scale-part I II (UPDRS III), and Beck Depression Inventory-II(BDI-II) scales. Analyzed biomarkers included CSF -syn seeding activity using seed amplification assay (SAA), CSF lysosomal protein levels of lysosomal integral membrane protein 2 (LIMP2), also known as SCARB2, cathepsin B (CTSB) and lysosome-associated membrane protein 2 (LAMP2), blood-based enzyme activity of the lysosomal glucocerebrosidase (GCase), and CSF sphingolipid profiles. PD patients carrying risk alleles in TMEM175, SCARB2, and CTSB were compared to non-carriers. ResultsGenotype-phenotype correlation analysis in TUEPAC-DESCRIBE-PD and AMP-PD revealed: (1) In PDall, the TMEM175 p.M393T risk variant was nominally associated with decreased cognitive function when adjusted for GBA1 mutation status in TUEPAC-DESCRIBE-PD; this association could not be replicated, although a similar trend was observed in the slightly smaller, but multicentric AMP-PD cohort; TMEM175 p.M393T was not significantly associated with BDI-I I or UPDRS-III scores in either cohort. (2) In PDGBA1_wildtype, GCase activity was significantly lower in PD patients with SCARB2 rs6812193 risk allele in TUEPAC-DESCRIBE-PD, while a similar but non-significant trend was observed in AMP-PD; (3) In PDall, CSF levels of CTSB were nominally lower in carriers of CTSB rs1293298 risk allele compared to carriers of CTSB rs1293298 protective allele in TUEPAC-DESCRIBE-PD; in PDGBA1_wildtype, LAMP2 was significantly lower in carriers of CTSB rs1293298 risk allele compared to carriers of CTSB rs1293298 protective allele in TUEPAC-DESCRIBE-PD; (4) In PDall, TMEM175 p.M393T risk allele was nominally associated with altered sphingolipid profiles across both TUEPAC-DESCRIBE-PD and AMP-PD cohorts. ConclusionThese findings demonstrate that genetic variants in lysosomal-related genes (TMEM175, SCARB2, and CTSB) have a functional impact on biomarker profiles in PD patients. Integrating genetic characterization with biochemical profiling provides a framework for patient stratification and may serve as a translational strategy to monitor target engagement and evaluate treatment efficacy in future clinical trials.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-06-25",
+    "updated": "2026-06-25",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356322v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356322v1.full.pdf"
+      }
+    ],
+    "score": 62,
+    "infographic": {
+      "key_insight": "Genetic variants in lysosome-related PD risk genes TMEM175, SCARB2, and CTSB were examined as potential markers to stratify Parkinson’s disease patients, especially across GBA1 mutation status.",
+      "clinical_relevance": "These biomarker profiles may help identify patient subgroups for future trial readiness and for monitoring target engagement and treatment response in Parkinson’s disease.",
+      "method": [
+        "Cross-sectional analysis in two German discovery cohorts (TUEPAC and DESCRIBE PD) plus AMP-PD validation",
+        "Patients stratified into PD overall, GBA1 wildtype, and GBA1 mutation carriers",
+        "Assessed cognition, motor function, depression, CSF α-syn seeding activity, lysosomal proteins, and sphingolipids"
+      ],
+      "evidence_signal": "The study used exploratory discovery cohorts with an independent validation cohort to compare biomarker and clinical profiles across genetically defined PD subgroups.",
+      "watch_item": "Findings are cross-sectional and exploratory, so they support association rather than causation or immediate clinical implementation.",
+      "hashtags": [
+        "#ParkinsonsDisease",
+        "#Biomarkers",
+        "#LysosomalPathway",
+        "#GBA1",
+        "#TrialReadiness"
+      ],
+      "paper_id": "2026-06-25-medrxiv-stratified_cohorts_for_biomarker_assessment_and_trial_readiness_tmem175_scarb2_and_ctsb_in",
+      "paper_title": "Stratified cohorts for biomarker assessment and trial readiness: TMEM175, SCARB2 and CTSB in Parkinson's disease",
+      "paper_date": "2026-06-25",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-06-30T10:27:51",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-24-medrxiv-alex_automatic_language_explanations_for_interpreting_treatment_effects_via_multi_agents",
+    "doi": "10.64898/2026.04.23.26351510",
+    "date": "2026-06-24",
+    "title": "ALEX: Automatic Language EXplanations for Interpreting Treatment Effects via Multi-Agents",
+    "authors": "Lu, M.; Kim, C.; Kwon, Y.; White, N. J.; Lee, S.-I.",
+    "abstract": "Precision medicine requires understanding how general treatment effects from randomized clinical trials should be applied to individual patients. Machine learning methods have shown some promise for estimating patient-level treatment effects, however, their clinical utility remains limited because they often fail to explain why responses to a given treatment vary across individuals. Here we present ALEX, an explainable AI (XAI)-driven, multi-agent framework that addresses this interpretability gap by translating the variables that drive precision predictions into data-grounded, natural-language clinical explanations. ALEX first independently identifies important subgroup treatment effects present in randomized clinical trials and then hands them to large language model (LLM) agents to produce contextualized and scrutinized clinical insights. Across five landmark randomized controlled trials, ALEX outperformed existing agentic methods on treatment explanation quality metrics consistent with the biomedical literature that aligned with blinded reviews by specialist physicians across the United States and Taiwan. In empirical case studies, ALEX provided key interpretable insights, such as identifying baseline glucose level as explaining the divergent findings between the ACCORD-BP and SPRINT trials, and proposed age as a novel and key effect modifier for pre-hospital tranexamic acid efficacy after trauma. These findings suggest that ALEX can help translate treatment effect heterogeneity into clinically grounded explanations that enable precision medicine.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-24",
+    "updated": "2026-06-24",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.23.26351510v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.23.26351510v2.full.pdf"
+      }
+    ],
+    "score": 53,
+    "infographic": {
+      "key_insight": "ALEX uses multi-agent AI to turn treatment-effect heterogeneity from randomized trials into natural-language explanations that identify why patients may respond differently.",
+      "clinical_relevance": "This could help precision oncology teams interpret subgroup effects more transparently and support more individualized treatment decisions.",
+      "method": [
+        "First detects important subgroup treatment effects in randomized clinical trials.",
+        "Then passes these signals to LLM agents that generate contextualized clinical explanations.",
+        "Uses a multi-agent XAI workflow to scrutinize and ground the explanations in data."
+      ],
+      "evidence_signal": "Across five randomized controlled trials, ALEX outperformed existing agentic methods on explanation-quality metrics and aligned with blinded physician reviews in the U.S. and Taiwan.",
+      "watch_item": "The approach still depends on the quality of the underlying trial data and LLM-generated interpretations, so explanations may need careful expert validation before real-world use.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#ExplainableAI",
+        "#ClinicalTrials",
+        "#MultiAgentAI",
+        "#TreatmentEffects"
+      ],
+      "paper_id": "2026-06-24-medrxiv-alex_automatic_language_explanations_for_interpreting_treatment_effects_via_multi_agents",
+      "paper_title": "ALEX: Automatic Language EXplanations for Interpreting Treatment Effects via Multi-Agents",
+      "paper_date": "2026-06-24",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-06-30T10:27:53",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-24-medrxiv-cervix_net_a_multi_branch_fusion_of_vision_transformer_and_convolutional_neural_networks_f",
+    "doi": "10.64898/2026.06.24.26356425",
+    "date": "2026-06-24",
+    "title": "CerViX-Net: A Multi-Branch Fusion of Vision Transformer and Convolutional Neural Networks for Cervical Cancer Detection using Cytology Images",
+    "authors": "De, S.",
+    "abstract": "Cervical cancer represents a pressing global health challenge, emphasizing the critical need for accurate and timely diagnostic methods to facilitate effective treatment and improve survival rates. In response to this challenge, the study presents CerViX-Net, an innovative classification framework designed to advance cervical cancer detection through enhanced computational efficiency and diagnostic accuracy. The development of CerViX-Net is motivated by the limitations of traditional diagnostic models, particularly in handling the computational and memory demands of large-scale data, while ensuring precise feature extraction and classification. CerViX-Net employs a hybrid deep learning architecture that combines the capabilities of ResNet50, EfficientNet-B0, and a Modified Vision Transformer (ViT) module. The ResNet50 branch extracts hierarchical features through stacked convolutional and identity blocks. In another path, the modified ViT module transforms image patches via linear projection, augments them with positional and class embeddings, and processes them using Parallel Transformer Encoder layers to model contextual relationships. Concurrently, EfficientNet-B0 utilizes MBConv blocks to extract multi-scale representations. The feature outputs from all three branches are integrated and passed through a classification head consisting of dropout layers and dense layers to ensure robust and accurate predictions. The proposed framework is rigorously evaluated on the Mendeley LBC dataset, achieving exceptional performance metrics with an accuracy of 99.69%, precision of 99.28%, recall of 99.48%, and an F1-score of 99.52%. The robustness of CerViX-Net is further validated on the SIPaKMeD and Herlev Pap Smear datasets, where it demonstrates comparable excellence, underscoring its efficacy and adaptability across diverse cytology datasets. Statistical validation using Friedmans test further reinforces its superiority over competing methods.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-24",
+    "updated": "2026-06-24",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.24.26356425v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.24.26356425v1.full.pdf"
+      }
+    ],
+    "score": 53,
+    "infographic": {
+      "key_insight": "CerViX-Net is a hybrid deep-learning system that fuses ResNet50, EfficientNet-B0, and a modified Vision Transformer to improve cervical cytology image classification.",
+      "clinical_relevance": "If validated in real-world workflows, this approach could support faster, more accurate cervical cancer screening from Pap smear images.",
+      "method": [
+        "ResNet50 branch extracts hierarchical convolutional features.",
+        "Modified ViT branch models patch-level context with transformer encoders.",
+        "EfficientNet-B0 branch captures multi-scale representations; all branches are fused for classification."
+      ],
+      "evidence_signal": "On the Mendeley LBC dataset, the model reported 99.69% accuracy, 99.28% precision, 99.48% recall, and a 99.52% F1-score, with supportive validation on SIPaKMeD and Herlev Pap Smear datasets.",
+      "watch_item": "The abstract does not provide details on external prospective validation, class imbalance handling, or how the model performs in routine clinical deployment.",
+      "hashtags": [
+        "#CervicalCancer",
+        "#DigitalPathology",
+        "#VisionTransformer",
+        "#DeepLearning",
+        "#PrecisionOncology"
+      ],
+      "paper_id": "2026-06-24-medrxiv-cervix_net_a_multi_branch_fusion_of_vision_transformer_and_convolutional_neural_networks_f",
+      "paper_title": "CerViX-Net: A Multi-Branch Fusion of Vision Transformer and Convolutional Neural Networks for Cervical Cancer Detection using Cytology Images",
+      "paper_date": "2026-06-24",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-06-30T10:27:56",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-25-medrxiv-human_il_34_deficiency_primes_microglia_toward_alzheimer_s_disease_associated_states",
+    "doi": "10.64898/2026.02.21.26346696",
+    "date": "2026-06-25",
+    "title": "Human IL-34 Deficiency Primes Microglia Toward Alzheimer's Disease-Associated States",
+    "authors": "Hernandez-Rasco, F.; Ruiz, R.; De Rojas, I.; Puerta Fuentes, R.; Garcia-Mayor, C.; Espinosa-Oliva, A. M.; Garcia-Revilla, J.; Bayon, P.; Rivera-Ramos, A.; Real Oualit, F.; Jimenez, S.; Saez, M.; de Pablos, R. M.; Zhao, F.; Olive, C.; Sanz, P.; Montalban, X.; Valero, S.; Cabo, A.; Fernandez, M. V.; Wells, A. M.; Cavazos, J. E.; Seshadri, S.; Boada, M.; Heneka, M.; Vitorica, F. J.; Manez, S.; Ramirez, A.; Venero, J. L.; Ruiz, A.",
+    "abstract": "BackgroundGenome-wide association studies (GWAS), with independent replication in large European consortia, have identified a common nonsense variant in IL-34 (Y213X) as a genetic risk factor for late-onset Alzheimers disease (AD). However, the biological consequences of this IL-34 mutation in humans, its prevalence in the population, and the mechanisms by which IL-34-Y213X alters microglial homeostasis, cerebrospinal fluid (CSF) proteomic networks, and amyloid pathology remain poorly understood. MethodsWe combined human genetics, cerebrospinal fluid (CSF) and serum proteomics, transcriptomics, large-scale phenome-wide association analyses, and preclinical experimental models to define the impact of human IL-34 deficiency. IL-34 concentrations were first quantified in CSF and serum from deeply phenotyped AD cohorts stratified by the common IL-34-Y213X nonsense variant. IL-34 levels and IL-34-Y213X status were then integrated with unbiased CSF proteomic networks and AD biomarkers. Transcriptomic profiling of purified microglia from IL-34 knockout mice was performed to assess disease-associated microglial programs. Using APP/PS1 mice lacking IL-34, we examined the effects of IL-34 deficiency on microglial survival, tiling, and plaque encapsulation. Finally, we performed postmortem analyses of temporal cortex from AD patients carrying IL-34-Y213X to assess microglial density, spatial organization, and plaque-associated responses. FindingsIL-34-Y213X was a strong, dose-dependent loss-of-function (LOF) allele that reduced IL-34 levels by up to 2.5 standard deviations in CSF and serum and was common in multiple populations. IL-34 deficiency reshaped CSF proteomic networks, downregulating axon guidance and microglial support modules while upregulating inflammatory and extracellular matrix signatures, and showed pleiotropic associations with neurological, inflammatory, and metabolic traits. Transcriptomic analysis of sorted microglia from healthy 9-month-old IL-34KO compare to wild-type mice revealed a profound pro-inflammatory and disease-associated microglial transcriptional program enriched for disease-associated microglia (DAM) signatures, inflammatory pathways, and AD risk genes including APOE, CLU, and CASS4. In APP/PS1 mice, genetic IL-34 deletion selectively depleted homeostatic gray-matter microglia, disrupted microglial tiling, and impaired plaque encapsulation, resulting in altered amyloid structure and enhancing neuritic injury. Concordantly, AD patients homozygous for IL-34-Y213X displayed markedly reduced cortical microglial density and increased microglial spatial dispersion, indicating a breakdown of the microglial network organization in the human brain. InterpretationA common human IL-34 LOF variant creates a naturally occurring model of IL-34 deficiency that links microglial survival, CSF network signatures, and amyloid pathology in both mice and humans. Importantly, IL-34 deficiency alone is sufficient to induce inflammatory, AD-associated microglial states beyond simply reducing microglial number. These findings identify IL-34/CSF1R signaling as a critical determinant of microglial resilience and a potential upstream pathway linking human genetic variation to AD susceptibility, highlighting IL-34-dependent pathways as promising targets for disease modification. FundingThis work was supported by grants from the Spanish Ministerio de Ciencia, Innovacion y Universidades/FEDER/UE (PID2024-157400OB-I00) and FORTALECE program (FORT23/00008; Instituto de Salud Carlos III, Spain) to RRL and JLV, ISCIII of Spain co-financed by FEDER funds (European Union) through grants PI24/00308 (JV) and CIBERNED collaborative grant 2022/01 to JV, PID2023-147125OB-I00 and CEX2023-001386-S (Severo Ochoa Programme) to SMTBC. A.R. is supported by STAR Award. University of Texas System. Tx, United States, The South Texas ADRC. National Institute of Aging. National Institutes of Health. USA. (P30AG066546), the Keith M. Orme and Pat Vigeon Orme Endowed Chair in Alzheimers and Neurodegenerative Diseases (2024-2025) and Patricia Ruth Frederick Distinguished Chair for Precision Therapeutics in Alzheimers and Neurodegenerative Diseases (2025-2028). AR is also supported by the Agency for Innovation and Entrepreneurship (VLAIO) grant N{degrees} PR067/21 for the HARPONE project and the ADAPTED project the EU/EFPIA Innovative Medicines Initiative Joint Undertaking Grant N{degrees} 115975 and CIBERNED (ISCIII).",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-06-25",
+    "updated": "2026-06-25",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.02.21.26346696v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.02.21.26346696v2.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "IL-34 loss-of-function primes microglia toward Alzheimer’s disease-associated, inflammatory states and alters CSF proteomic networks linked to neurodegeneration.",
+      "clinical_relevance": "The IL-34-Y213X variant may help identify people at higher AD risk and points to IL-34–microglia signaling as a potential biomarker or therapeutic axis.",
+      "method": [
+        "Human genetics plus CSF/serum proteomics in AD cohorts",
+        "Microglial transcriptomics in IL-34 knockout mice",
+        "APP/PS1 mouse and postmortem human brain analyses"
+      ],
+      "evidence_signal": "The abstract reports a dose-dependent IL-34-Y213X effect with up to 2.5 SD lower IL-34 in CSF and serum, alongside converging human, omics, and animal-model evidence.",
+      "watch_item": "Findings are associative and preclinical, so translation to diagnosis or treatment will require independent replication and functional validation.",
+      "hashtags": [
+        "#AlzheimersDisease",
+        "#Microglia",
+        "#IL34",
+        "#Biomarkers",
+        "#Neuroinflammation"
+      ],
+      "paper_id": "2026-06-25-medrxiv-human_il_34_deficiency_primes_microglia_toward_alzheimer_s_disease_associated_states",
+      "paper_title": "Human IL-34 Deficiency Primes Microglia Toward Alzheimer's Disease-Associated States",
+      "paper_date": "2026-06-25",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-06-30T10:27:58",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-24-medrxiv-in_vivo_glioma_viscosity_and_fluidity_as_clinical_tumor_markers_of_vimentin_expression_and",
+    "doi": "10.64898/2026.06.21.26356180",
+    "date": "2026-06-24",
+    "title": "In-vivo glioma viscosity and fluidity as clinical tumor markers of vimentin expression and collective cell migration",
+    "authors": "Shahryari, M.; Gottheil, P.; Herthum, H.; Meyer, T.; Hain, E. G.; Schnauss, J.; Siebert, E.; Prinz, V.; Kaes, J. A.; Sack, I.",
+    "abstract": "Reduced fluidity and viscosity have been demonstrated as biomechanical hallmarks of in vivo glioblastoma and are increasingly used as radiological imaging markers by magnetic resonance elastography (MRE). However, the biological origin and consequences of this unusual mechanical behavior remain unclear. Here, we show that two mechanisms which promote collective cell migration are present in patient gliomas and can be detected in vivo by MRE-based cerebral tomoelastography. Vimentin-driven extracellular matrix remodeling and cellular elongation, quantified by automated histological readings and nuclear aspect ratio (AR) measurements, correlate with decreased in-vivo tumor fluidity and viscosity. These observations in patients are supported by experiments in tissue-mimicking actin-vimentin gels, which mechanistically link the soft-solid viscoelastic signature of in vivo glioma to vimentins migration-promoting role and to AR-based observations of cellular elongation in unjammed cancer cell clusters. Taken together, our results suggest in-vivo bulk tumor viscosity as a noninvasive biomechanical marker of collective cell migration and invasiveness in brain tumors.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-24",
+    "updated": "2026-06-24",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.21.26356180v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.21.26356180v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "In vivo glioma tumors with lower fluidity and viscosity appear to reflect vimentin-linked extracellular matrix remodeling and collective cell migration.",
+      "clinical_relevance": "MRI-based mechanical imaging could provide a noninvasive biomarker of glioma invasiveness and tumor biology beyond standard anatomy-focused scans.",
+      "method": [
+        "MRE-based cerebral tomoelastography measured in vivo tumor fluidity and viscosity.",
+        "Automated histology quantified vimentin-associated extracellular matrix remodeling.",
+        "Nuclear aspect ratio measurements captured cellular elongation, with support from actin-vimentin gel experiments."
+      ],
+      "evidence_signal": "The abstract reports correlated patient imaging, histological quantification, and mechanistic tissue-mimicking gel experiments linking the viscoelastic signature to migration-related features.",
+      "watch_item": "These findings are correlational and need larger prospective validation before viscosity can be used as a routine clinical biomarker.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#Glioma",
+        "#MagneticResonanceElastography",
+        "#Biomarkers",
+        "#TumorMicroenvironment"
+      ],
+      "paper_id": "2026-06-24-medrxiv-in_vivo_glioma_viscosity_and_fluidity_as_clinical_tumor_markers_of_vimentin_expression_and",
+      "paper_title": "In-vivo glioma viscosity and fluidity as clinical tumor markers of vimentin expression and collective cell migration",
+      "paper_date": "2026-06-24",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-06-30T10:28:01",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-24-medrxiv-tcia_radiology_image_processing_for_ai_and_radiomics",
+    "doi": "10.64898/2026.06.15.26354651",
+    "date": "2026-06-24",
+    "title": "TCIA Radiology Image Processing for AI and Radiomics",
+    "authors": "Rich, J. M.; Kang, R.; Jin, D.; Subramanian, S.; Duddalwar, V.; Pachter, L.",
+    "abstract": "1We developed a standardized, reproducible preprocessing framework for computed tomography (CT) imaging data from multi-institutional repositories such as The Cancer Imaging Archive (TCIA), enabling consistent radiomics and artificial intelligence (AI) analyses. Imaging data from TCGA-KIRC patients available on TCIA were used as a representative heterogeneous dataset characterized by variation in acquisition protocols, inconsistent metadata, and differing image quality. The pipeline includes series filtering, DICOM-to-NIfTI conversion, orientation harmonization to a canonical coordinate system, voxel spacing normalization, intensity clipping and normalization, segmentation integration, and metadata validation, and is implemented in a reproducible, notebook-based framework compatible with common radiomics and deep learning workflows. This pipeline standardizes imaging data into analysis-ready volumes with consistent geometry, intensity distributions, and spatial alignment, reducing non-biological variability that can adversely affect radiomic feature stability and model performance. The modular design enables task-specific adaptation of individual preprocessing steps while maintaining overall consistency. Although demonstrated on TCIA, this framework is generalizable to other heterogeneous imaging datasets and provides a foundation for robust, large-scale computational imaging studies.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-24",
+    "updated": "2026-06-24",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.15.26354651v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.15.26354651v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "A standardized CT preprocessing pipeline can convert heterogeneous TCIA scans into analysis-ready, reproducible inputs for radiomics and AI.",
+      "clinical_relevance": "By reducing non-biological variation in imaging data, this framework can improve the robustness and comparability of computational imaging studies used in precision oncology.",
+      "method": [
+        "Filter relevant CT series and convert DICOM to NIfTI",
+        "Harmonize orientation, voxel spacing, and intensity values",
+        "Integrate segmentation and validate metadata in a notebook-based workflow"
+      ],
+      "evidence_signal": "The pipeline was demonstrated on heterogeneous TCGA-KIRC CT data from TCIA, showing how it addresses variation in acquisition, metadata, and image quality.",
+      "watch_item": "Performance may still depend on dataset-specific choices, and inconsistent source metadata or segmentation quality can affect downstream results.",
+      "hashtags": [
+        "#Radiomics",
+        "#AIinCancer",
+        "#PrecisionOncology",
+        "#MedicalImaging",
+        "#TCIA"
+      ],
+      "paper_id": "2026-06-24-medrxiv-tcia_radiology_image_processing_for_ai_and_radiomics",
+      "paper_title": "TCIA Radiology Image Processing for AI and Radiomics",
+      "paper_date": "2026-06-24",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-06-30T10:28:02",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-25-medrxiv-time_aware_contrastive_transformer_for_longitudinal_patient_representation_learning",
+    "doi": "10.64898/2026.06.23.26356236",
+    "date": "2026-06-25",
+    "title": "Time-Aware Contrastive Transformer for Longitudinal Patient Representation Learning",
+    "authors": "Heinolainen, A.; Tran, L.; Arora, A.; Silen, S.; Renkonen, R.; Koskinen, M.",
+    "abstract": "Learning high-quality longitudinal patient representations from irregular electronic health records (EHRs) is essential for understanding heterogeneity in time-evolving diseases such as cancer. Longitudinal patient representation learning methods often rely on external labels for downstream tasks or do not model the temporal dynamics between medical events explicitly, reducing the clinical applicability of learned disease trajectories. In this work, we propose the Time-Aware-Contrastive-Transformer (TACT), a transformer-based model that integrates explicit temporal modeling with a fully self-supervised contrastive learning framework. We introduce a sampling-based data augmentation work-flow that leverages hierarchical taxonomies of diagnoses and medications to enrich representation learning. Evaluated on a large real-world dataset, TACT demonstrates robust performance across patient representation and event embedding metrics and outperforms two time-aware transformer comparison models. Unlike the comparison models, TACT successfully bridges contrastive learning with medical hierarchies, allowing it to track precise disease trajectories and discover clinically actionable patient phenotypes. Consequently, this approach establishes a comprehensive framework for characterizing patient heterogeneity through the identification of potentially clinically meaningful subgroups with distinct progression profiles.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-25",
+    "updated": "2026-06-25",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356236v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356236v1.full.pdf"
+      }
+    ],
+    "score": 45,
+    "infographic": {
+      "key_insight": "TACT is a self-supervised, time-aware transformer that learns longitudinal patient representations from irregular EHRs by combining explicit temporal modeling with contrastive learning and medical hierarchies.",
+      "clinical_relevance": "By better capturing disease trajectories and patient subgroups, TACT could support precision oncology efforts such as phenotype discovery and risk stratification from real-world clinical data.",
+      "method": [
+        "Transformer-based longitudinal representation learning",
+        "Explicit temporal modeling of medical events",
+        "Sampling-based data augmentation using hierarchical diagnosis and medication taxonomies"
+      ],
+      "evidence_signal": "In a large real-world dataset, TACT outperformed two time-aware transformer baselines on patient representation and event embedding metrics.",
+      "watch_item": "Performance is shown on retrospective EHR data, so real-world clinical utility and generalizability will need external validation across hospitals and coding systems.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#EHR",
+        "#SelfSupervisedLearning",
+        "#TransformerModels",
+        "#ClinicalAI"
+      ],
+      "paper_id": "2026-06-25-medrxiv-time_aware_contrastive_transformer_for_longitudinal_patient_representation_learning",
+      "paper_title": "Time-Aware Contrastive Transformer for Longitudinal Patient Representation Learning",
+      "paper_date": "2026-06-25",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-06-30T10:28:04",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-24-medrxiv-generative_ai_avatar_videos_for_tobacco_prevention_on_social_media_a_randomized_controlled",
+    "doi": "10.64898/2026.06.22.26356232",
+    "date": "2026-06-24",
+    "title": "Generative AI avatar videos for tobacco prevention on social media: a randomized controlled trial",
+    "authors": "Merl, N. B.; Wies, C.; Schramm, F.; Winterstein, J. T.; Chanda, T.; Brinker, T. J.",
+    "abstract": "Short-form video platforms increasingly shape how young audiences encounter health information. Generative artificial intelligence can produce standardized avatar-based messages at scale, but randomized evidence for tobacco prevention is scarce. In this three-arm randomized online intervention study with pre-post assessment, participants aged 16 years or older were assigned to an AI avatar video emphasizing short-term smoking consequences, an AI avatar video presenting long-term cancer-related information matched to an American Cancer Society fact sheet, or the same fact sheet in written form. The primary outcome was post-intervention intention to avoid smoking and secondhand smoke exposure, adjusted for baseline intention. Among 400 randomized participants, 272 had complete data for the primary baseline-adjusted analysis. Intention increased from baseline to post-intervention in all conditions, with no statistically significant between-group differences. These findings support AI avatar videos as a scalable, social-media-compatible format for digital tobacco prevention, while not establishing superiority or equivalence.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-24",
+    "updated": "2026-06-24",
+    "primary_category": "public and global health",
+    "categories": [
+      "public and global health"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.22.26356232v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.22.26356232v1.full.pdf"
+      }
+    ],
+    "score": 44,
+    "infographic": {
+      "key_insight": "AI avatar videos can deliver scalable tobacco-prevention messages on social media, but this trial did not show they outperformed a written fact sheet.",
+      "clinical_relevance": "For youth-facing digital prevention, generative AI avatars may be a practical content format, though current evidence supports feasibility more than superior behavior-change impact.",
+      "method": [
+        "Three-arm randomized online intervention study with pre-post assessment",
+        "Participants aged 16+ were assigned to one of two AI avatar video messages or a written American Cancer Society fact sheet",
+        "Primary outcome: post-intervention intention to avoid smoking and secondhand smoke, adjusted for baseline intention"
+      ],
+      "evidence_signal": "Among 400 randomized participants, 272 were included in the complete baseline-adjusted analysis; intention improved in all groups, with no statistically significant between-group differences.",
+      "watch_item": "The study evaluated short-term intention rather than actual smoking behavior, so real-world prevention impact remains uncertain.",
+      "hashtags": [
+        "#AIHealth",
+        "#DigitalPrevention",
+        "#TobaccoPrevention",
+        "#RandomizedTrial",
+        "#PublicHealth"
+      ],
+      "paper_id": "2026-06-24-medrxiv-generative_ai_avatar_videos_for_tobacco_prevention_on_social_media_a_randomized_controlled",
+      "paper_title": "Generative AI avatar videos for tobacco prevention on social media: a randomized controlled trial",
+      "paper_date": "2026-06-24",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-06-30T10:28:07",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-24-medrxiv-deleterious_mitochondrial_heteroplasmy_drives_high_risk_clonal_hematopoiesis_and_hematolog",
+    "doi": "10.64898/2026.06.22.26356227",
+    "date": "2026-06-24",
+    "title": "Deleterious mitochondrial heteroplasmy drives high-risk clonal hematopoiesis and hematological malignancy",
+    "authors": "Arking, D. E.; McDonald, T.; Shi, W.; Puiu, D.; Arking, J. V.; Pasca, S.; Hong, Y. S.; Gondek, L.",
+    "abstract": "Mitochondrial DNA (mtDNA) heteroplasmy, the coexistence of multiple mtDNA variants within cells, accumulates with age and is associated with hematological malignancies and mortality. However, whether predicted deleterious heteroplasmies causally contribute to cancer or merely represent passenger mutations remains unresolved. Here, leveraging [~]36,000 first-degree relative pairs from the UK Biobank and All of Us Research Program cohorts, we deconvolute overall heteroplasmy metrics into those that are shared across family members (representing inherited variants) and those that are not (representing de novo variants) to establish a Mendelian randomization framework for assessing causality. We show that shared heteroplasmies exhibit strong purifying selection, with reduced predicted deleteriousness compared to not shared variants, and that 90% of an individuals deleterious heteroplasmy burden is somatically acquired. Critically, shared deleterious heteroplasmy burden, fixed at conception and thus temporally upstream of potential confounders, is significantly associated with hematological malignancies (RR=2.81, 95% CI 1.29-6.13), with effect sizes concordant with the not shared heteroplasmy burden. Furthermore, shared deleterious heteroplasmy specifically associates with high-risk clonal hematopoiesis of indeterminate potential (CHIP), particularly spliceosome mutations, suggesting mitochondrial dysfunction promotes clonal expansion of specific CHIP subtypes. Finally, we identify ultra-rare individual mtDNA variants associated with hematological malignancies, a hallmark of driver mutations. These findings establish mtDNA heteroplasmies, including inherited variants, as causal contributors to hematological malignancy risk and demonstrate that most disease-relevant burden is acquired during life, identifying potential opportunities for prevention and therapeutic intervention in individuals at elevated risk for hematological cancer, particularly of myeloid origin.",
+    "category": "Therapeutic Discovery",
+    "source": "medRxiv",
+    "published": "2026-06-24",
+    "updated": "2026-06-24",
+    "primary_category": "genetic and genomic medicine",
+    "categories": [
+      "genetic and genomic medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.22.26356227v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.22.26356227v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "Inherited and acquired deleterious mitochondrial DNA heteroplasmies are linked to higher risk of clonal hematopoiesis and hematological malignancy, suggesting a causal role in cancer development.",
+      "clinical_relevance": "This work points to mtDNA heteroplasmy as a potential risk biomarker for blood cancer susceptibility and a possible avenue for prevention-focused risk stratification.",
+      "method": [
+        "Analyzed ~36,000 first-degree relative pairs from UK Biobank and All of Us.",
+        "Separated shared heteroplasmies (inherited) from not shared heteroplasmies (de novo).",
+        "Used this framework to test whether deleterious mtDNA heteroplasmy predicts hematologic disease risk."
+      ],
+      "evidence_signal": "Shared deleterious heteroplasmy was associated with hematological malignancies (RR=2.81, 95% CI 1.29-6.13) and showed concordant effects with non-shared burden, supporting causality in the abstracted analyses.",
+      "watch_item": "Findings are associative and cohort-based, so clinical use would need independent validation, standardized heteroplasmy measurement, and careful control for ancestry and confounding.",
+      "hashtags": [
+        "#Mitochondria",
+        "#Heteroplasmy",
+        "#HematologicCancer",
+        "#ClonalHematopoiesis",
+        "#CancerGenomics"
+      ],
+      "paper_id": "2026-06-24-medrxiv-deleterious_mitochondrial_heteroplasmy_drives_high_risk_clonal_hematopoiesis_and_hematolog",
+      "paper_title": "Deleterious mitochondrial heteroplasmy drives high-risk clonal hematopoiesis and hematological malignancy",
+      "paper_date": "2026-06-24",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-06-30T10:28:09",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-24-medrxiv-beyond_single_biomarkers_a_graph_neural_network_framework_for_multivariable_prediction_of",
+    "doi": "10.64898/2026.06.21.26356202",
+    "date": "2026-06-24",
+    "title": "Beyond Single Biomarkers: A Graph Neural Network Framework for Multivariable Prediction of Clinical Outcomes from Brain Imaging",
+    "authors": "Esmaelpoor, J.; Kadkhodamohammadi, A.; Peng, T.; Jelfs, B.; Mao, D.; Ghafouri, A.; Shader, M.",
+    "abstract": "Understanding brain-behavior relationships requires models capturing the distributed, interactive, and multiscale nature of neural systems. Traditional univariate approaches and single-biomarker models are inherently limited in this context, as they fail to represent dependencies across regions and the hierarchical organization of brain networks. In this study, we propose a graph-based multivariable framework for brain imaging analysis that integrates key organizational principles of brain function--including segregation, integration, modularity, and temporal dynamics--within a unified graph neural network architecture. The framework represents brain data as hierarchical graphs, where node features encode regional activation and temporal variability, and graph structure captures interactions within and between functional modules. The proposed approach is evaluated using functional near-infrared spectroscopy (fNIRS) data as a case study, where subject-specific brain graphs are constructed from task-based recordings acquired shortly after cochlear implant activation to predict speech understanding outcomes one year later. Under leave-one-subject-out validation, the model demonstrates strong predictive performance (R = 0.73, p < 0.001), outperforming previously reported single-biomarker approaches. Perturbation-based analyses further show that predictions are driven by distributed patterns of activity and interaction across regions and modalities, rather than isolated features. These results illustrate the capability of the proposed framework to capture complex brain organization and highlight its potential as a generalizable platform for multivariable analysis and prediction in neuroimaging applications beyond the specific clinical use case considered here.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-06-24",
+    "updated": "2026-06-24",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.21.26356202v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.21.26356202v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "A graph neural network can improve outcome prediction by modeling brain imaging as a connected, multiscale system rather than relying on a single biomarker.",
+      "clinical_relevance": "This approach could help identify patients more likely to achieve better speech outcomes after cochlear implant activation, supporting more personalized follow-up and rehabilitation planning.",
+      "method": [
+        "Built hierarchical brain graphs from fNIRS recordings, with node features for regional activation and temporal variability.",
+        "Encoded interactions within and between functional modules using a graph neural network architecture.",
+        "Used perturbation analysis to test whether predictions depended on distributed signals rather than isolated regions."
+      ],
+      "evidence_signal": "In leave-one-subject-out validation, the model achieved strong prediction of one-year speech understanding outcomes (R = 0.73, p < 0.001) and outperformed prior single-biomarker methods.",
+      "watch_item": "The findings come from a specific fNIRS cochlear implant case study, so broader clinical use will need validation across larger, more diverse cohorts and imaging settings.",
+      "hashtags": [
+        "#BrainImaging",
+        "#GraphNeuralNetworks",
+        "#Neuroimaging",
+        "#ClinicalPrediction",
+        "#Biomarkers"
+      ],
+      "paper_id": "2026-06-24-medrxiv-beyond_single_biomarkers_a_graph_neural_network_framework_for_multivariable_prediction_of",
+      "paper_title": "Beyond Single Biomarkers: A Graph Neural Network Framework for Multivariable Prediction of Clinical Outcomes from Brain Imaging",
+      "paper_date": "2026-06-24",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-06-30T10:28:11",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-24-medrxiv-external_validation_and_calibration_assessment_of_explainable_machine_learning_models_for",
+    "doi": "10.64898/2026.06.14.26355639",
+    "date": "2026-06-24",
+    "title": "External Validation and Calibration Assessment of Explainable Machine Learning Models for GVHD Prediction After Allogeneic HSCT",
+    "authors": "Syed, N.; Ahmed, N.; Abuhaleeqa, M.; Al Kaabi, F. M.; Raza, A.; Al Zaki, A.; Sammour, F.; Alkhatib, Y.; Gopalakrishnan, D.; Afrooz, I.; Damlaj, M.; Abu Jazar, H.; Abdel-Razeq, H.; Halahleh, K.; Yaqub, M.; Hashmi, S.",
+    "abstract": "BackgroundGraft-versus-host disease (GVHD) remains a major determinant of morbidity and mortality following allogeneic hematopoietic stem cell transplantation (allo-HSCT). Existing GVHD prediction models demonstrate modest discrimination and limited generalizability, and calibration drift across external populations is rarely characterized despite its essential role in the clinical interpretability of predicted probabilities. ObjectivesTo develop and externally validate an explainable machine learning framework for predicting acute and chronic GVHD and associated overall survival in patients with acute myeloid leukemia (AML), acute lymphoblastic leukemia (ALL), and myelodysplastic syndromes (MDS) undergoing allo-HSCT, and to systematically characterize calibration across heterogeneous external validation cohorts to inform deployment requirements. Study DesignThe model was developed on three publicly available registry-derived datasets (N = 2,509) and externally validated across six independent cohorts (N = 14,788) comprising adult and pediatric allo-HSCT recipients, including a regional Middle Eastern cohort (UAE and Jordan). A standardized preprocessing pipeline harmonized heterogeneous datasets. Gradient boosting models (CatBoost) were used for binary GVHD prediction; exploratory overall survival analysis used a Cox proportional hazards model with predicted acute GVHD risk as a covariate. Discrimination (AUROC with bootstrap 95% CI), calibration (logistic recalibration intercept and slope with analytical 95% CI), and feature importance (SHapley Additive exPlanations, SHAP) were assessed in training out-of-fold and all external cohorts. ResultsIn internal validation, AUROC was 0.63 (95% CI 0.61-0.65) for acute GVHD and 0.72 (95% CI 0.70-0.74) for chronic GVHD. External validation demonstrated AUROC ranges of 0.51-0.57 (acute) and 0.54-0.64 (chronic), with consistent performance across disease subgroups despite substantial heterogeneity in transplant practices and feature availability. In exploratory survival analysis, the acute-GVHD-informed Cox model achieved a training-cohort C-index of 0.679 (95% CI 0.658-0.697); external C-indices ranged from 0.47-0.53. Calibration analysis identified systematic external risk overestimation (negative calibration intercept in 10 of 11 evaluable external cohort-target combinations) with heterogeneous slope drift requiring cohort-specific recalibration. Key predictors included recipient age, graft source, conditioning intensity, GVHD prophylaxis, and HLA match ratio. ConclusionsAn explainable, externally validated GVHD prediction framework was developed using heterogeneous registry-derived datasets, with systematic characterization of calibration drift across multiple external cohorts, an analysis rarely reported in prior GVHD prediction literature. Predictive performance was modest for acute GVHD and moderate for chronic GVHD, constrained by missing immunobiological variables and incomplete HLA characterization. Per-cohort recalibration is required before clinical deployment, with prospective validation and benchmarking against established GVHD risk scores identified as priority next steps.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-06-24",
+    "updated": "2026-06-24",
+    "primary_category": "hematology",
+    "categories": [
+      "hematology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.14.26355639v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.14.26355639v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "Explainable machine-learning models for GVHD prediction showed modest internal performance but only weak-to-moderate external discrimination, highlighting the challenge of transporting transplant risk models across centers.",
+      "clinical_relevance": "For allo-HSCT teams, the study suggests that predicted GVHD probabilities should be calibrated and revalidated locally before being used to support clinical decisions.",
+      "method": [
+        "Developed CatBoost models on 3 registry-derived datasets (N=2,509) for acute and chronic GVHD prediction.",
+        "Externally validated across 6 independent cohorts (N=14,788), including adult, pediatric, and Middle Eastern populations.",
+        "Assessed discrimination, calibration (intercept/slope), and interpretability with SHAP; explored overall survival with a Cox model using predicted acute-GVHD risk."
+      ],
+      "evidence_signal": "Internal AUROC was 0.63 for acute GVHD and 0.72 for chronic GVHD, while external AUROC ranged from 0.51-0.57 and 0.54-0.64; survival model external C-index was 0.47-0.53.",
+      "watch_item": "Calibration drift and heterogeneous feature availability across cohorts may limit real-world deployment unless models are locally recalibrated and prospectively tested.",
+      "hashtags": [
+        "#GVHD",
+        "#AlloHSCT",
+        "#MachineLearning",
+        "#ExternalValidation",
+        "#ClinicalPrediction"
+      ],
+      "paper_id": "2026-06-24-medrxiv-external_validation_and_calibration_assessment_of_explainable_machine_learning_models_for",
+      "paper_title": "External Validation and Calibration Assessment of Explainable Machine Learning Models for GVHD Prediction After Allogeneic HSCT",
+      "paper_date": "2026-06-24",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-06-30T10:28:14",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-24-medrxiv-five_year_breast_cancer_risk_prediction_from_screening_breast_ultrasound_using_deep_learni",
+    "doi": "10.64898/2026.06.21.26356188",
+    "date": "2026-06-24",
+    "title": "Five-Year Breast Cancer Risk Prediction From Screening Breast Ultrasound Using Deep Learning",
+    "authors": "Chen, Y.; Yang, H.; Xu, Y.; Soni, R.; Heacock, L.; Lis, M.; Stanek, A.; Puto, T.; Lewin, A. A.; Moy, L.; Schnabel, F. R.; Shen, Y.",
+    "abstract": "ObjectiveTo develop and evaluate a deep learning model for five-year breast cancer risk prediction from screening breast ultrasound (BUS) examinations. MethodsThis retrospective study included 295,298 breast ultrasound examinations from 122,072 women imaged between 2012 and 2020. Patients were split into training, validation, and test sets; the test set included screening examinations only. BUS-Risk-Net aggregated image features using attention-based multiple instance learning and combined them with age and ultrasound-estimated breast density to predict 2- to 5-year risk. Performance was compared with the full Tyrer-Cuzick model in a matched case-control cohort and with a reduced Tyrer-Cuzick model in the held-out test set. Risk stratification was evaluated within BI-RADS density categories. ResultsIn the matched case-control cohort (n = 240 women), BUS-Risk-Net achieved a 5-year AUC of 0.632 (95% CI, 0.562-0.702), versus 0.514 for the full Tyrer-Cuzick model (95% CI, 0.440-0.588; p = 0.04). Among 19,548 examinations from 9,015 women eligible for 5-year evaluation in the test set, BUS-Risk-Net achieved an AUC of 0.679 (95% CI, 0.653-0.706), versus 0.594 for the reduced Tyrer-Cuzick model (95% CI, 0.564-0.623; P < .001). Observed 5-year cancer incidence increased across AI-defined risk tiers within each BI-RADS density category, ranging from 0.0% to 5.8% after AI stratification, compared with 2.1% to 3.6% across density categories alone. DiscussionDeep learning models applied to screening breast ultrasound could enable long-term breast cancer risk prediction and stratify risk beyond breast density alone. External and prospective validation is needed before clinical use. Summary SentenceBUS-Risk-Net enabled long-term breast cancer risk prediction from screening ultrasound, outperformed the Tyrer-Cuzick-based comparators, and identified distinct 5-year risk groups with differing observed cancer incidence within each breast density category.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-24",
+    "updated": "2026-06-24",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.21.26356188v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.21.26356188v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "A deep learning model using screening breast ultrasound plus age and breast density can estimate a woman's 5-year breast cancer risk and separate higher- from lower-risk groups better than comparator risk models.",
+      "clinical_relevance": "If validated externally, this approach could help personalize breast cancer risk assessment during routine ultrasound screening beyond density alone.",
+      "method": [
+        "Retrospective study of 295,298 breast ultrasound exams from 122,072 women (2012–2020).",
+        "BUS-Risk-Net used attention-based multiple instance learning to aggregate image features and combined them with age and ultrasound-estimated breast density.",
+        "Performance was tested against Tyrer-Cuzick comparators and risk stratification was assessed within BI-RADS density groups."
+      ],
+      "evidence_signal": "In the held-out screening test set, BUS-Risk-Net achieved an AUC of 0.679 for 5-year risk, outperforming the reduced Tyrer-Cuzick model (AUC 0.594); similar benefit was seen in a matched case-control cohort.",
+      "watch_item": "The model is retrospective and single-system tested, so external and prospective validation are needed before clinical implementation.",
+      "hashtags": [
+        "#DeepLearning",
+        "#BreastCancerRisk",
+        "#UltrasoundAI",
+        "#PrecisionOncology",
+        "#RiskPrediction"
+      ],
+      "paper_id": "2026-06-24-medrxiv-five_year_breast_cancer_risk_prediction_from_screening_breast_ultrasound_using_deep_learni",
+      "paper_title": "Five-Year Breast Cancer Risk Prediction From Screening Breast Ultrasound Using Deep Learning",
+      "paper_date": "2026-06-24",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-06-30T10:28:16",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-24-medrxiv-automated_eye_tracking_for_parkinson_s_disease_diagnosis_a_proof_of_concept_cascade_classi",
+    "doi": "10.64898/2026.06.22.26355826",
+    "date": "2026-06-24",
+    "title": "Automated Eye-Tracking for Parkinson's Disease Diagnosis: A Proof-of-Concept Cascade Classifier Study Establishing Clinical Validity",
+    "authors": "Shill, H. A.; Menke, J. M.; Aslam, S.; Rieiro, H.; Waldorf, R.",
+    "abstract": "BackgroundParkinsons disease (PD) is a progressive neurodegenerative disorder of increasing prevalence, with diagnostic accuracy of approximately 26% in early symptomatic patients. There is a need for accurate, non-invasive biomarkers to aid in disease diagnosis. MethodsThis proof-of-concept study enrolled 90 participants (PD n = 30, other movement disorders [OM] n = 30, healthy controls [HC] n = 30) at a single institution. Participants completed two 10-minute eye-tracking sessions using the SaccadeDX 250-Hz binocular system. A two-level cascade classifier was fitted using elastic-net feature selection followed by logistic regression on the selected features, validated by 10-fold cross-validation. The cascade distinguished HC from movement disorders (Level 1) and PD from OM (Level 2), with the objective of establishing clinical validity -- that an eye-tracking signal correlates reliably with PD diagnosis. ResultsLevel 1 achieved an area under the curve (AUC) of 0.818 (95% CI: 0.71, 0.91), with a sensitivity of 83% and specificity of 63%. Level 2 achieved an AUC of 0.670 (95% CI: 0.52, 0.80), with a sensitivity of 68% and specificity of 63%. End-to-end PD detection achieved an AUC of 0.866 and an accuracy of 83.5%, meeting the prospectively specified accuracy threshold and the proof-of-concept AUC benchmark. Five adverse events were recorded (three cases of dizziness, one of nausea, and one of dry eyes); one participant withdrew from the study. ConclusionsClinical validity is established: a reproducible eye-tracking signal for PD is detectable using a two-level cascade classifier. A multi-center confirmatory study is warranted before assessment of clinical utility. Trial registrationClinicalTrials.gov NCT04925622.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-06-24",
+    "updated": "2026-06-24",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.22.26355826v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.22.26355826v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "A two-stage eye-tracking classifier could distinguish Parkinson’s disease from controls and other movement disorders with promising end-to-end diagnostic performance.",
+      "clinical_relevance": "The study suggests eye-tracking may serve as a non-invasive biomarker to support earlier, more objective Parkinson’s diagnosis, but it needs multicenter confirmation before clinical use.",
+      "method": [
+        "90 participants total: 30 Parkinson’s disease, 30 other movement disorders, 30 healthy controls.",
+        "Two 10-minute sessions on a 250-Hz binocular eye-tracking system.",
+        "Elastic-net feature selection followed by logistic regression in a two-level cascade classifier, evaluated with 10-fold cross-validation."
+      ],
+      "evidence_signal": "End-to-end Parkinson’s detection reached AUC 0.866 and 83.5% accuracy, with Level 1 AUC 0.818 and Level 2 AUC 0.670 in this proof-of-concept study.",
+      "watch_item": "Single-center, small-sample validation with modest Level 2 performance means results may not generalize without larger multicenter testing.",
+      "hashtags": [
+        "#ParkinsonsDisease",
+        "#EyeTracking",
+        "#Biomarker",
+        "#MachineLearning",
+        "#DiagnosticResearch"
+      ],
+      "paper_id": "2026-06-24-medrxiv-automated_eye_tracking_for_parkinson_s_disease_diagnosis_a_proof_of_concept_cascade_classi",
+      "paper_title": "Automated Eye-Tracking for Parkinson's Disease Diagnosis: A Proof-of-Concept Cascade Classifier Study Establishing Clinical Validity",
+      "paper_date": "2026-06-24",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-06-30T10:28:19",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-24-medrxiv-reducing_stillbirth_in_high_burden_settings_using_biomarkers_and_ultrasound_technologies_p",
+    "doi": "10.64898/2026.06.22.26356223",
+    "date": "2026-06-24",
+    "title": "Reducing stillbirth in high burden settings using biomarkers and ultrasound technologies: protocol for the multi-centre prospective iTECH cohort study",
+    "authors": "Ali, S.; Nakato, W.; Tumuhamye, J.; Nabweyambo, S.; Sande, O. J.; Bisoborwa, R. M.; Ganzevoort, W.; Gordijn, S. J.; Rijken, M. J.; Grobusch, K. K.; Byamugisha, J.; Papageorghiou, A. T.",
+    "abstract": "IntroductionStillbirth prevention requires reliable detection of potential causes for timely interventions. Currently, there is no effective screening strategy to identify fetuses at risk of stillbirth. Prognostic models have been proposed as a potential solution, but there is a shortage of robust, clinically applicable models in low- and middle-income countries. Early birth is frequently initiated without proper risk stratification, leading to increased neonatal and infant morbidity and mortality. This study aims to develop and validate multi-modal multivariable prediction models for stillbirth and pathologies that lead to stillbirth (preeclampsia & fetal growth restriction) using widely accessible and cost-effective markers. Stakeholder perspectives will also be assessed. Methods and analysisThis multi-center prospective cohort study is running in four high volume regional referral hospitals in Uganda: Kawempe, Hoima, Lira, and Mbale. We will enroll at least 6,075 pregnant women attending routine antenatal care (ANC), above 13 years of age, and {zeta}11 weeks of gestation. Data and biological samples will be collected at 11-23 weeks, 35-37 weeks and at birth in all women. In a subset of women, additional measurements will be obtained between 24-34 weeks and 38-42 weeks to allow for spread of the data across the full spectrum of pregnancy. This data will enable us to investigate the physiological changes with gestational development in healthy or unhealthy pregnancies, to guide future monitoring and management of women and establishment of reference values for novel markers. The placenta will be collected for histopathological analysis in women diagnosed with intrauterine fetal demise at {zeta}20 weeks of gestation, stillbirth nearmiss and their corresponding controls. Data on socio-demographics, obstetric history, current pregnancy conditions, and tests such as maternal hemodynamics, ultrasound, and biochemical markers will be collected from each participant, and used to develop regression and machine learning prediction models. Models will be validated and evaluated by comparing their calibration plots, precision and recall, F1 scores and accuracy, aiming for less complexity and reliable predictions. Emerging models will be translated into software as a medical device (SAMD), while taking into account user experiences, regulatory requirements, data pipelines in clinical workflows and user-friendly interfaces that facilitate access and the interpretation of outputs, to allow for seamless integration into existing electronic health information systems and decision support tools. To assess stakeholder perceptions, we will employ an exploratory qualitative component using focus group discussions, semi-structured and key informant interviews. The sample will include 81 purposively selected women and their partners who use maternity care services, local leaders and healthcare providers in and out of the four hospitals implementing iTECH in Uganda. Qualitative data will be audio recorded, transcribed verbatim and thematic analysis performed using Nvivo 12. Ethics and disseminationThe study protocol was approved by Makerere University School of Medicine Research Ethics Committee (Mak-SOMREC-2022-535) on March 1, 2023 and the Uganda National Council for Science and Technology (HS2762ES) on April 6, 2023. We will disseminate the findings through scientific publications, stakeholder engagements, Wellcome Leap program meetings, professional bodies, reproductive maternal newborn child and adolescent health coalition platform, Ministry of Health Uganda, district and hospital meetings, webinars, and conferences. Strengths and limitations of this studyO_LIlarge sample of women recruited from a general obstetric population to inform stillbirth and related outcomes prediction models based on multi-modality data. C_LIO_LImeasurements taken to help understand physiological changes with gestational development to guide future monitoring and management of pregnant women. C_LIO_LIhistopathology performed in selected cases and controls to contribute to the understanding of mechanisms that lead to stillbirth and refine model development. C_LIO_LIof active tracking mechanisms like phone calls, short message texts and locator forms to remind mothers of their scheduled appointments and mitigate participant drop-offs. C_LIO_LIcare for women included in this study may differ from that received by other women attending routine ANC: this may lead to lower adverse pregnancy outcome rates in this cohort than usual in the setting. C_LI",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-06-24",
+    "updated": "2026-06-24",
+    "primary_category": "obstetrics and gynecology",
+    "categories": [
+      "obstetrics and gynecology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.22.26356223v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.22.26356223v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "This study will build and validate multi-modal pregnancy risk models using biomarkers, ultrasound, and maternal data to better predict stillbirth and related conditions in high-burden settings.",
+      "clinical_relevance": "If successful, the models could help identify high-risk pregnancies earlier, supporting more targeted monitoring and potentially reducing preventable stillbirths and unnecessary early birth.",
+      "method": [
+        "Prospective multi-centre cohort across four high-volume referral hospitals in Uganda.",
+        "Enroll at least 6,075 pregnant women and collect data at multiple gestational timepoints.",
+        "Use clinical, hemodynamic, ultrasound, biochemical, and placental histopathology data to develop regression and machine-learning models."
+      ],
+      "evidence_signal": "Model performance will be assessed with calibration plots, precision, recall, F1 score, and accuracy, with validation planned in the study design.",
+      "watch_item": "Implementation may be limited if the resulting models are too resource-intensive or if missing data and local workflow constraints reduce real-world usability.",
+      "hashtags": [
+        "#StillbirthPrevention",
+        "#PregnancyResearch",
+        "#Biomarkers",
+        "#Ultrasound",
+        "#GlobalHealth"
+      ],
+      "paper_id": "2026-06-24-medrxiv-reducing_stillbirth_in_high_burden_settings_using_biomarkers_and_ultrasound_technologies_p",
+      "paper_title": "Reducing stillbirth in high burden settings using biomarkers and ultrasound technologies: protocol for the multi-centre prospective iTECH cohort study",
+      "paper_date": "2026-06-24",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-06-30T10:28:21",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-24-medrxiv-medgenesis_toward_a_world_model_for_autonomous_clinical_and_translational_research",
+    "doi": "10.64898/2026.06.14.26355612",
+    "date": "2026-06-24",
+    "title": "MedGenesis: Toward a World Model for Autonomous Clinical and Translational Research",
+    "authors": "Xiao, H.; Jiang, N.; Zhang, T.; Yin, Z.; Gui, T.; Zhang, Z.; Shao, K.; Ge, J.; Wei, R.; Pan, J.; Ma, J.; Yang, L.; Zhao, Z.; Zhou, J.; Fan, J.; Jiang, Y.; Torr, P.; Zheng, S.; Wu, Y. C.; Gao, Q.",
+    "abstract": "Clinical research advances slowly because its core tasks, from evidence synthesis to mechanistic validation, remain fragmented. We present MedGenesis, a clinical artificial intelligence (AI) scientist built on a world-model reasoning loop that jointly updates a Latent Hypothesis Space and a Latent Action Space under expected information gain (EIG), uncertainty reduction (UR), and a safety prior P(safe), and integrates longitudinal electronic health records (EHRs) via the Virtual Clinical Trajectory and Observation Representation (ViCTOR) for cohort retrieval, trajectory stratification, and time-to-event analysis. On two benchmarks--ClinicalResBench (1,697 expert-curated questions) and ClinicalRepBench (40 paper-reproduction tasks)--MedGenesis outperformed frontier language models and biomedical AI systems while reducing hallucination. Across 1 million patient observations spanning five clinical evidence formats, it generated traceable outputs across meta-analysis, randomized controlled trials, real-world trajectories, case-control studies, and case reports, with one wet-lab-coupled run nominating a 3-hydroxybutyrate- neutrophil axis modulating antitumor immunity. These results compress hypothesis-to-evidence cycles from years to hours, creating a continuous clinical discovery process.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-24",
+    "updated": "2026-06-24",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.14.26355612v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.14.26355612v1.full.pdf"
+      }
+    ],
+    "score": 39,
+    "infographic": {
+      "key_insight": "MedGenesis is a world-model-based clinical AI scientist that connects evidence synthesis, patient trajectory analysis, and hypothesis generation to speed up translational research.",
+      "clinical_relevance": "For precision oncology, it could help identify and rank mechanistic hypotheses and patient subgroups faster, potentially shortening the path from clinical data to testable cancer research ideas.",
+      "method": [
+        "Uses a world-model reasoning loop with a Latent Hypothesis Space and Latent Action Space",
+        "Optimizes expected information gain, uncertainty reduction, and a safety prior",
+        "Integrates longitudinal EHRs through ViCTOR for cohort retrieval, stratification, and time-to-event analysis"
+      ],
+      "evidence_signal": "In benchmarks, MedGenesis outperformed frontier language models and biomedical AI systems on 1,697 expert-curated questions and 40 paper-reproduction tasks, and it was tested across 1 million patient observations spanning five evidence formats.",
+      "watch_item": "The system’s outputs still require expert validation, especially before any wet-lab or clinical use, because benchmark gains do not guarantee real-world robustness or safety.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#MedicalAI",
+        "#ClinicalResearch",
+        "#DrugDiscovery",
+        "#TranslationalScience"
+      ],
+      "paper_id": "2026-06-24-medrxiv-medgenesis_toward_a_world_model_for_autonomous_clinical_and_translational_research",
+      "paper_title": "MedGenesis: Toward a World Model for Autonomous Clinical and Translational Research",
+      "paper_date": "2026-06-24",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-06-30T10:28:24",
+      "generator": "openai"
+    }
+  }
+]

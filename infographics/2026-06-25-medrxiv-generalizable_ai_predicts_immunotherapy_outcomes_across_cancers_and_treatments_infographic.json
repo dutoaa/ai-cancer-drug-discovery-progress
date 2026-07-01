@@ -1,24 +1,24 @@
 {
-  "key_insight": "A pan-cancer foundation model using immune concepts can predict immunotherapy response across multiple cancers and checkpoint drugs while also showing biologically interpretable mechanisms.",
-  "clinical_relevance": "This could help match patients to immunotherapy and support early-phase trial selection, especially when existing biomarkers do not transfer well across tumor types or treatments.",
+  "key_insight": "A pan-cancer foundation model using immune concepts can predict who will respond to immune checkpoint inhibitors across many cancers and treatments.",
+  "clinical_relevance": "This could help match patients to immunotherapy and support earlier trial selection and stratification when standard biomarkers do not generalize well.",
   "method": [
-    "Trained a concept-bottleneck transformer on bulk tumor transcriptomes.",
-    "Encoded expression into 44 biologically grounded immune concepts.",
-    "Used transfer learning to generalize across cancers, drugs, and clinical settings."
+    "Trained a concept-bottleneck transformer on bulk tumor transcriptomes from 10,184 tumors across 33 cancer types.",
+    "Encoded expression into 44 biologically grounded immune concepts covering cell states, microenvironment interactions, and signaling pathways.",
+    "Compared against 22 baseline methods and generated personalized response maps for interpretability."
   ],
-  "evidence_signal": "Trained on 10,184 tumors across 33 cancer types and evaluated in 16 independent cohorts spanning seven cancers and six checkpoint inhibitors, outperforming 22 baselines.",
-  "watch_item": "Results are promising but prospective validation is still needed before routine clinical use, especially to confirm performance in new sites and patient populations.",
+  "evidence_signal": "In 16 independent clinical cohorts across seven cancers and six checkpoint inhibitors, the model improved accuracy by 8.5% and AUPRC by 15.7%, with responders showing longer overall survival.",
+  "watch_item": "Performance was validated across retrospective cohorts, so prospective testing and real-world implementation are still needed before clinical use.",
   "hashtags": [
     "#PrecisionOncology",
     "#Immunotherapy",
-    "#AIinHealthcare",
+    "#AIinMedicine",
     "#CancerResearch",
-    "#TranslationalAI"
+    "#Biomarkers"
   ],
   "paper_id": "2026-06-25-medrxiv-generalizable_ai_predicts_immunotherapy_outcomes_across_cancers_and_treatments",
   "paper_title": "Generalizable AI predicts immunotherapy outcomes across cancers and treatments",
   "paper_date": "2026-06-25",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-06-30T10:27:46",
+  "generated_at": "2026-07-01T10:40:06",
   "generator": "openai"
 }
