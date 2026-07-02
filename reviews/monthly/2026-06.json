@@ -1,0 +1,72 @@
+{
+  "repo_title": "AI Medicine",
+  "period": "month",
+  "label": "2026-06",
+  "author": "William Sun with help from OpenAI",
+  "paper_count": 28,
+  "analysis": {
+    "executive_summary": "June 2026 showed a strong shift in AI medicine from isolated prediction models toward more generalizable, multimodal, and workflow-aware systems. In precision oncology, several papers pushed beyond single-task classifiers by using foundation models, concept bottlenecks, self-supervised longitudinal learning, and explainable multi-agent frameworks to improve transfer across cancers, treatments, and care settings. At the same time, multiple studies highlighted the current limits of commercial multimodal LLMs and the importance of calibration, external validation, and standardized preprocessing before clinical deployment. Outside oncology, target-biology work emphasized biomarker-driven stratification in neurodegeneration, Parkinson’s disease, ALS, RA-ILD, and stillbirth risk, while translational studies increasingly used omics, imaging, and EHR text extraction to build more actionable models. Overall, the month’s literature suggests the field is moving from proof-of-concept AI toward systems that integrate biological priors, longitudinal data, and deployment realism, even as robust prospective validation remains the major bottleneck.",
+    "major_themes": [
+      "Generalizable foundation models are increasingly central, especially for cross-cancer and cross-cohort prediction.",
+      "Multimodal learning is expanding from images alone to include transcriptomics, pathology, ultrasound, EHR text, proteomics, and clinical history.",
+      "Explainability is becoming more operational, with concept bottlenecks, natural-language explanations, and interpretable risk models.",
+      "External validation and calibration are now treated as first-class concerns for clinical readiness.",
+      "AI for pathology and radiology is maturing, but vendor models and no-code pipelines still need rigorous benchmarking.",
+      "Longitudinal modeling is gaining prominence for trajectory reconstruction, time-to-event prediction, and temporal disease dynamics.",
+      "Biology-informed AI is being used to connect model outputs to mechanisms, biomarkers, and trial stratification."
+    ],
+    "notable_papers": [
+      {
+        "title": "Generalizable AI predicts immunotherapy outcomes across cancers and treatments",
+        "why_it_matters": "A pan-cancer foundation model with biologically grounded concepts that improved immunotherapy prediction across multiple cancers and checkpoint inhibitors, showing strong cross-domain generalization."
+      },
+      {
+        "title": "MedGenesis: Toward a World Model for Autonomous Clinical and Translational Research",
+        "why_it_matters": "Pushes AI beyond prediction toward an autonomous research agent that reasons over hypotheses, actions, and EHR trajectories for clinical science workflows."
+      },
+      {
+        "title": "Three multimodal large language models fail at clinically actionable breast pathology in three different directions",
+        "why_it_matters": "A cautionary benchmark showing that flagship commercial MLLMs are not yet reliable for treatment-determining pathology tasks."
+      },
+      {
+        "title": "An Agentic, No Code Artificial Intelligence Workflow for Developing and Externally Validating a Thyroid Nodule Ultrasound Malignancy Classifier",
+        "why_it_matters": "Demonstrates a lower-barrier path to model development while still emphasizing external validation across multiple histologies."
+      },
+      {
+        "title": "DeepSpot-M: a multimodal foundation model for transcriptome-wide virtual spatial transcriptomics from histology",
+        "why_it_matters": "Extends virtual molecular imaging by predicting broad spatial transcriptomic patterns from histology and transferring across cancers and cohorts."
+      },
+      {
+        "title": "ALEX: Automatic Language EXplanations for Interpreting Treatment Effects via Multi-Agents",
+        "why_it_matters": "Shows how treatment-effect models can be translated into data-grounded language explanations for clinicians and trial interpretation."
+      },
+      {
+        "title": "Time-Aware Contrastive Transformer for Longitudinal Patient Representation Learning",
+        "why_it_matters": "Adds explicit temporal modeling and self-supervised contrastive learning for irregular EHR trajectories, a key step for longitudinal medicine."
+      },
+      {
+        "title": "External Validation and Calibration Assessment of Explainable Machine Learning Models for GVHD Prediction After Allogeneic HSCT",
+        "why_it_matters": "Highlights that clinical utility depends not only on discrimination but also on calibration across external cohorts."
+      }
+    ],
+    "field_progress": [
+      "Models are becoming more biologically structured, using concepts, pathways, embeddings, and multiscale priors rather than opaque feature stacks.",
+      "Validation standards are rising, with more studies reporting external cohorts, cross-institutional testing, and calibration analyses.",
+      "LLMs are moving into clinical information extraction and explanation generation, especially for longitudinal records and treatment-effect interpretation.",
+      "Computational pathology and imaging are broadening from classification to workflow support, risk prediction, and mechanistic linkage to tissue biology.",
+      "Biomarker discovery is increasingly paired with prediction, enabling models that aim to stratify patients for future trials rather than merely label disease.",
+      "The field is beginning to confront negative results and failure modes more directly, especially for commercial multimodal models and limited-data feasibility studies."
+    ],
+    "open_questions": [
+      "Which architecture choices best support true cross-disease generalization: concept bottlenecks, foundation embeddings, or task-specific fine-tuning?",
+      "How can calibration and uncertainty be maintained when models are transferred across institutions, scanners, assays, and treatment regimens?",
+      "What level of biological interpretability is sufficient for clinicians to trust AI-driven treatment recommendations?",
+      "Can agentic or multi-agent AI systems safely contribute to clinical research design without amplifying hallucination or bias?",
+      "Which multimodal combinations yield the greatest incremental value relative to added complexity and data requirements?",
+      "How should prospective trials be designed to test whether AI predictions actually improve patient outcomes and decision-making?"
+    ],
+    "outlook": "The next phase of AI medicine will likely be defined less by headline accuracy and more by whether models can survive transfer, explain their reasoning, and fit into real clinical workflows. June 2026’s literature suggests momentum is building toward foundation-style systems, multimodal clinical agents, and biomarker-linked prediction, but the decisive barrier remains prospective validation in representative populations. If the field can combine stronger evaluation standards with biologically grounded modeling and practical deployment pathways, many of these approaches could move from promising prototypes to clinically useful tools."
+  },
+  "markdown_file": "2026-06.md",
+  "generated_at": "2026-07-02T04:00:19"
+}
