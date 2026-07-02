@@ -1,0 +1,24 @@
+{
+  "key_insight": "In a real-world cancer registry task, larger LLMs generally matched human-abstraction labels better than smaller models, especially for simpler registry fields.",
+  "clinical_relevance": "LLMs could speed up cancer registry abstraction and reduce manual workload, but date-related and other high-precision fields still need careful human oversight.",
+  "method": [
+    "Evaluated 5 foundational LLMs with zero-shot prompting",
+    "Abstracted 8 registry variables from clinical reports",
+    "Tested across 5,939 patients and 7 cancer types"
+  ],
+  "evidence_signal": "Using hospital cancer registry data as ground truth, the best models reached about 0.8 F1 for low-cardinality variables and about 0.55 exact accuracy for diagnosis and treatment dates, improving to about 0.85 within ±30 days.",
+  "watch_item": "Performance varied by variable and cancer type, so deploying these models as standalone abstraction tools could introduce errors without validation and review workflows.",
+  "hashtags": [
+    "#CancerRegistry",
+    "#LargeLanguageModels",
+    "#PrecisionOncology",
+    "#ClinicalAI",
+    "#HealthInformatics"
+  ],
+  "paper_id": "2026-06-29-medrxiv-large_language_models_for_cancer_registry_abstraction_a_real_world_evaluation_across_model",
+  "paper_title": "Large language models for cancer registry abstraction: a real-world evaluation across models, variables, and cancer types",
+  "paper_date": "2026-06-29",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-02T09:54:56",
+  "generator": "openai"
+}

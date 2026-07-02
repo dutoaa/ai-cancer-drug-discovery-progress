@@ -1,52 +1,205 @@
 [
   {
-    "id": "2026-06-25-medrxiv-generalizable_ai_predicts_immunotherapy_outcomes_across_cancers_and_treatments",
-    "doi": "10.1101/2025.05.01.25326820",
-    "date": "2026-06-25",
-    "title": "Generalizable AI predicts immunotherapy outcomes across cancers and treatments",
-    "authors": "SHEN, W.; Moon, I.; Nguyen, T. H.; Li, M. M. R.; Huang, Y.; Nair, N.; Marbach, D.; Zitnik, M.",
-    "abstract": "Immune checkpoint inhibitors are standard across cancers, yet most patients do not respond and existing biomarkers generalize poorly across tumor types, drugs and clinical settings. We present CO_SCPLOWOMPASSC_SCPLOW, a pan-cancer foundation model that predicts immunotherapy response from bulk tumor transcriptomes using a concept-bottleneck transformer. CO_SCPLOWOMPASSC_SCPLOW encodes gene expression through 44 biologically grounded immune concepts representing immune cell states, tumor-microenvironment interactions, and signaling pathways. Trained on 10,184 tumors across 33 cancer types, CO_SCPLOWOMPASSC_SCPLOW outperforms 22 baseline methods in 16 independent clinical cohorts spanning seven cancers and six immune checkpoint inhibitors, increasing accuracy by 8.5% and area under the precision-recall curve by 15.7%, with minimal additional training. The model generalizes to unseen cancer types and treatments, supporting indication selection and patient stratification in early-phase clinical trials. In survival analyses, CO_SCPLOWOMPASSC_SCPLOW-stratified responders have longer overall survival (hazard ratio = 4.7, p < 0.0001). Personalized response maps connect gene expression to immune concepts, revealing mechanisms of response and resistance; in immune-inflamed non-responders, CO_SCPLOWOMPASSC_SCPLOW highlights programs including TGF-{beta} signaling, endothelial exclusion, CD4+ T cell dysfunction, and B cell deficiency. By combining interpretability with transfer learning, CO_SCPLOWOMPASSC_SCPLOW enables robust prediction and mechanistic insight to inform trial design and translational studies.",
+    "id": "2026-06-29-medrxiv-large_language_models_for_cancer_registry_abstraction_a_real_world_evaluation_across_model",
+    "doi": "10.64898/2026.06.25.26356626",
+    "date": "2026-06-29",
+    "title": "Large language models for cancer registry abstraction: a real-world evaluation across models, variables, and cancer types",
+    "authors": "Fuchs, J.; Satusky, M. J.; Leese, P. J.; Nag, S.; Zipple, I. W.; Baggett, C. D.; Lash, S.; Reeder-Hayes, K.; Wood, W. A.; Johnson, C. T.; Critchley, C.; Krishnamurthy, A. K.; Elston Lafata, J.; Thompson, C. A.; Troester, M. A.; Pfaff, E. R.",
+    "abstract": "Cancer registries enable cancer surveillance at the population level. These registries require significant human-time to read through many different parts of the electronic health record, including structured data and lengthy, free-text clinical reports, to abstract values for hundreds of required variables. Large language models (LLMs) offer the possibility to significantly improve this process by supporting and speeding up cancer registry data abstraction. However, it is unclear how well these models perform at real-world cancer registry abstraction involving multiple cancer types and large patient volumes. Here, we evaluate five foundational LLMs for their ability to reliably abstract cancer registry variables. We leverage hospital cancer registry data from a large regional health system as the ground truth and use LLMs to abstract from clinical reports eight registry variables for 5,939 patients with seven different cancer types. We use a zero-shot prompting strategy to compare LLM ability on commonly abstracted cancer variables with different data types. The results show that larger and more advanced models (Claude Sonnet 4.5, GPT-OSS-120b, GPT-OSS-20b) generally outperform smaller models (Gemma 12b, LLaMA 3.1 8b). The best performing models show F1 scores around 0.8 for cancer registry variables with low cardinality (grade, summary stage, laterality), with only slightly lower F1 scores for variables with high cardinality (primary site, regional nodes examined, regional nodes positive). On the more complex task of precise date extraction, all models showed decreased performance on both diagnosis and treatment dates (exact accuracy [~]0.55 for the best performing models), which increased to [~]0.85 for a tolerance within {+/-}30 days. These results quantify the performance of various models as well as the potential and limitations of LLMs in cancer registry abstraction tasks. Author SummaryCancer registries help us understand who gets cancer, how it is treated, and how outcomes change over time. Today, trained registrars read many parts of the medical record and manually enter hundreds of details, leading to significant delays before cancer researchers can use this data. We tested whether Large Language Models could help with this work. Using clinical reports from 5,939 patients across seven cancer types at a large regional comprehensive cancer center, we asked five different models to capture key cancer registry fields such as where the cancer started, how advanced it is, the tumors grade, and the date of diagnosis. In our study, larger models were generally more accurate than smaller ones, and some open-source models performed comparably to proprietary options. Dates were the hardest information to capture precisely. We provide a realistic benchmark for speeding registry workflows in consultation with cancer registrars.",
     "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-06-25",
-    "updated": "2026-06-25",
-    "primary_category": "pharmacology and therapeutics",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "health informatics",
     "categories": [
-      "pharmacology and therapeutics"
+      "health informatics"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.1101/2025.05.01.25326820v4"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356626v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.1101/2025.05.01.25326820v4.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356626v1.full.pdf"
       }
     ],
-    "score": 79,
+    "score": 70,
     "infographic": {
-      "key_insight": "A pan-cancer foundation model using immune concepts can predict who will respond to immune checkpoint inhibitors across many cancers and treatments.",
-      "clinical_relevance": "This could help match patients to immunotherapy and support earlier trial selection and stratification when standard biomarkers do not generalize well.",
+      "key_insight": "In a real-world cancer registry task, larger LLMs generally matched human-abstraction labels better than smaller models, especially for simpler registry fields.",
+      "clinical_relevance": "LLMs could speed up cancer registry abstraction and reduce manual workload, but date-related and other high-precision fields still need careful human oversight.",
       "method": [
-        "Trained a concept-bottleneck transformer on bulk tumor transcriptomes from 10,184 tumors across 33 cancer types.",
-        "Encoded expression into 44 biologically grounded immune concepts covering cell states, microenvironment interactions, and signaling pathways.",
-        "Compared against 22 baseline methods and generated personalized response maps for interpretability."
+        "Evaluated 5 foundational LLMs with zero-shot prompting",
+        "Abstracted 8 registry variables from clinical reports",
+        "Tested across 5,939 patients and 7 cancer types"
       ],
-      "evidence_signal": "In 16 independent clinical cohorts across seven cancers and six checkpoint inhibitors, the model improved accuracy by 8.5% and AUPRC by 15.7%, with responders showing longer overall survival.",
-      "watch_item": "Performance was validated across retrospective cohorts, so prospective testing and real-world implementation are still needed before clinical use.",
+      "evidence_signal": "Using hospital cancer registry data as ground truth, the best models reached about 0.8 F1 for low-cardinality variables and about 0.55 exact accuracy for diagnosis and treatment dates, improving to about 0.85 within ±30 days.",
+      "watch_item": "Performance varied by variable and cancer type, so deploying these models as standalone abstraction tools could introduce errors without validation and review workflows.",
+      "hashtags": [
+        "#CancerRegistry",
+        "#LargeLanguageModels",
+        "#PrecisionOncology",
+        "#ClinicalAI",
+        "#HealthInformatics"
+      ],
+      "paper_id": "2026-06-29-medrxiv-large_language_models_for_cancer_registry_abstraction_a_real_world_evaluation_across_model",
+      "paper_title": "Large language models for cancer registry abstraction: a real-world evaluation across models, variables, and cancer types",
+      "paper_date": "2026-06-29",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-02T09:54:56",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-pho_agents_a_large_language_model_powered_multi_agent_system_for_predicting_health_outcome",
+    "doi": "10.64898/2026.06.19.26355815",
+    "date": "2026-06-29",
+    "title": "PHO-Agents: A Large Language Model Powered Multi-Agent System for Predicting Health Outcomes",
+    "authors": "Shi, D.; Shugg, T.; Eadon, M. T.; Su, J.; Chen, Y.; Song, Q.",
+    "abstract": "ObjectivePredicting health outcomes from electronic health records (EHRs) is challenging because traditional models rely on structured data and often ignore external medical knowledge. We propose an approach that integrates structured EHR with text-based clinical evidence to improve prediction and interpretability. MethodsWe introduce PHO-Agents, a multi-agent system powered by large language models (LLMs) for health outcome prediction. Structured EHR sequences are encoded to produce attention-based representations and initial logits, which are converted into patient summaries by a data agent. A retrieval agent gathers relevant clinical guidelines. Research and practical doctor agents independently assess the patient, and a leader agent synthesizes their analyses. Outputs from the EHR-based model and the LLM agents are fused to generate final predictions and explanation reports. PHO-Agents was evaluated on three real-world cohorts: acute kidney injury (AKI) patients (in-hospital mortality), chronic kidney disease patients (AKI onset within two years), and cancer patients receiving immune checkpoint inhibitors (immune-related adverse events within one year). ResultsPHO-Agents outperformed single-agent and multi-agent LLM baselines across all cohorts. In the AKI mortality task, it achieved a PR-AUC of 90.20 {+/-} 2.07, compared with 56.46 {+/-} 2.98 for the best single-agent baseline. Similar gains were observed in the ICI and CKD cohorts. Ablation studies showed that both multi-agent reasoning and logit-level fusion contributed to performance improvements, and case analyses demonstrated clinically consistent explanations. ConclusionPHO-Agents integrates longitudinal EHR modeling with collaborative LLM reasoning, improving predictive performance, interpretability, and robustness across diverse clinical tasks. This hybrid approach offers a trustworthy strategy for real-world clinical decision support.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.19.26355815v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.19.26355815v1.full.pdf"
+      }
+    ],
+    "score": 62,
+    "infographic": {
+      "key_insight": "PHO-Agents combines structured EHR modeling with LLM-based multi-agent reasoning to improve health outcome prediction and explanation quality.",
+      "clinical_relevance": "For cancer patients on immune checkpoint inhibitors, the system aims to better flag immune-related adverse events and support more interpretable decision support.",
+      "method": [
+        "Encodes longitudinal EHR sequences into attention-based patient representations and initial prediction logits.",
+        "Uses a data agent to turn EHR signals into patient summaries, a retrieval agent to fetch relevant clinical guidelines, and research/doctor agents to analyze the case.",
+        "A leader agent synthesizes agent outputs, then fuses LLM reasoning with EHR model logits for final predictions and explanation reports."
+      ],
+      "evidence_signal": "Evaluated on three real-world cohorts and showed strong gains over baselines, including a PR-AUC of 90.20 ± 2.07 for AKI mortality versus 56.46 ± 2.98 for the best single-agent baseline.",
+      "watch_item": "The approach depends on reliable guideline retrieval and multi-agent LLM outputs, so performance and explainability may vary with data quality, prompt design, and deployment setting.",
       "hashtags": [
         "#PrecisionOncology",
-        "#Immunotherapy",
-        "#AIinMedicine",
-        "#CancerResearch",
-        "#Biomarkers"
+        "#LLMHealthAI",
+        "#ClinicalPrediction",
+        "#EHR",
+        "#MultiAgentAI"
       ],
-      "paper_id": "2026-06-25-medrxiv-generalizable_ai_predicts_immunotherapy_outcomes_across_cancers_and_treatments",
-      "paper_title": "Generalizable AI predicts immunotherapy outcomes across cancers and treatments",
-      "paper_date": "2026-06-25",
+      "paper_id": "2026-06-29-medrxiv-pho_agents_a_large_language_model_powered_multi_agent_system_for_predicting_health_outcome",
+      "paper_title": "PHO-Agents: A Large Language Model Powered Multi-Agent System for Predicting Health Outcomes",
+      "paper_date": "2026-06-29",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-01T10:40:06",
+      "generated_at": "2026-07-02T09:55:00",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-26-medrxiv-ai_enabled_proteomic_profiling_identifies_interpretable_diagnostic_biomarkers_for_gastric",
+    "doi": "10.64898/2026.06.24.26356417",
+    "date": "2026-06-26",
+    "title": "AI-enabled proteomic profiling identifies interpretable diagnostic biomarkers for gastric-type adenocarcinoma of the uterine cervix",
+    "authors": "Zhu, T.; Huang, H.; Yang, Z.; Ni, M.; Xi, Y.; Liu, Y.; Luo, W.; Tang, X.; Fan, X.; Yang, C.; Shen, Z.; Wang, J.; Tang, H.; Weng, Q.",
+    "abstract": "Gastric-type adenocarcinoma of the uterine cervix (GAS) is a rare, aggressive cervical cancer unrelated to HPV infection that is frequently misdiagnosed because it closely resembles both benign cervical glands and HPV-related cervical adenocarcinoma. This diagnostic confusion can lead to inappropriate treatment, highlighting the need for objective molecular markers. Here, we performed the systematic multi-center proteomic analysis of GAS, profiling 407 cervical tissue samples to map its molecular landscape. To overcome limited sample size and biological noise, we developed WEDGE. First, generative AI synthesizes realistic artificial proteomic profiles to augment the training data. Biologically informed network analysis then leverages known biological relationships to surface diagnostically meaningful patterns. WEDGE identified a two-protein signature, Pepsinogen C (PGC) and DNA Methyltransferase 1 (DNMT1), that distinguished GAS from HPV-related cervical cancer with 93% accuracy in the test cohort and 97% accuracy in an external proteomic cohort, outperforming existing biomarker-discovery methods. Tissue staining of an IHC validation cohort confirmed the expression patterns and reached a diagnostic accuracy of 87.9%. Beyond diagnosis, PGC independently predicted patient outcomes, and combining PGC with routine clinical features improved risk prediction (C-index 0.701). Together, these results establish an AI-driven framework for biomarker discovery and provide clinically relevant candidate tools for diagnosing and prognosticating for GAS. TeaserA graph-based proteomic framework prioritizes a two-protein IHC-amenable panel for gastric-type cervical adenocarcinoma.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-06-26",
+    "updated": "2026-06-26",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.24.26356417v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.24.26356417v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "An AI-guided proteomics workflow identified a simple two-protein biomarker panel, PGC and DNMT1, that can distinguish gastric-type cervical adenocarcinoma from HPV-related cervical cancer.",
+      "clinical_relevance": "This could improve diagnostic accuracy for a rare, aggressive cervical cancer that is often misdiagnosed, and PGC may also help with prognosis.",
+      "method": [
+        "Multi-center proteomic profiling of 407 cervical tissue samples",
+        "Generative AI created synthetic proteomic profiles to augment training data",
+        "Biologically informed network analysis prioritized interpretable biomarker candidates"
+      ],
+      "evidence_signal": "The two-protein signature achieved 93% accuracy in the test cohort and 97% in an external proteomic cohort, with 87.9% accuracy in IHC validation.",
+      "watch_item": "The biomarker panel needs broader prospective validation before routine clinical use, especially given the rarity and diagnostic complexity of GAS.",
+      "hashtags": [
+        "#Proteomics",
+        "#AIinBiomarkers",
+        "#CervicalCancer",
+        "#CancerDiagnosis",
+        "#TranslationalOncology"
+      ],
+      "paper_id": "2026-06-26-medrxiv-ai_enabled_proteomic_profiling_identifies_interpretable_diagnostic_biomarkers_for_gastric",
+      "paper_title": "AI-enabled proteomic profiling identifies interpretable diagnostic biomarkers for gastric-type adenocarcinoma of the uterine cervix",
+      "paper_date": "2026-06-26",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-07-02T09:55:03",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-6_month_recovery_after_mild_traumatic_brain_injury_in_older_adults_a_track_geri_study",
+    "doi": "10.64898/2026.06.25.26356520",
+    "date": "2026-06-29",
+    "title": "6-Month Recovery after Mild Traumatic Brain Injury in Older Adults: A TRACK-GERI Study",
+    "authors": "Rosen Lang, Y.; Puccio, A.; Yuh, E. L.; Lombardi, D.; Kuang, K.; Diaz Nelson, M.; Boscardin, W. J.; Huie, J. R.; Yaffe, K.; Okonkwo, D. O.; Diaz Arrastia, R.; Manley, G. T.; Gardner, R. C.; Transforming Research and Clinical Knowledge in Traumatic Brain Injury (TRACK-TBI) investigators,",
+    "abstract": "ImportanceOlder adults ([&ge;]65 years old) are the largest and fastest growing population of traumatic brain injury (TBI) victims. However, real-world evidence of 6-month functional outcomes is limited. ObjectiveTo describe 6-month functional outcomes in older adults after mild TBI (mTBI; presenting Glasgow Coma Scale score 13-15), by age group and preinjury cognitive status. To evaluate the performance of the Glasgow Outcome Scale-Extended (GOSE) as a geriatric mTBI clinical trial endpoint. DesignProspective cohort study; single-center pilot enrollment February 2018-April 2019; two-center enrollment October 2020-March 2025. SettingTwo U.S. level I trauma centers. ParticipantsOlder adults presenting within 72 hours of mTBI who received head CT, and their co-enrolled study-partner informants. Data curation and analysis were performed January 2023-November 2025. ExposuremTBI. Main outcome and measuresGOSE was assessed at 2 weeks and 6 months post-injury and weighted using inverse probability weighting to mitigate attrition bias. Reliable change index was used to estimate the proportions of GOSE improvement or deterioration from 2 weeks to 6 months versus a 9-item Activities of Daily Living survey (ADL, Supplemental Methods) and Functional Activities Questionnaire (FAQ). ResultsAmong 253 participants with mTBI, mean (SD) age was 77.3 (8.3) years, 129 (51%) were female, 68 (34%) had pre-injury mild cognitive impairment and 28 (15%) had pre-injury dementia (58 had unknown preinjury cognitive status). At 6 months, 14% died, 73% achieved home independence (GOSE 5+), and 17% achieved complete recovery (GOSE 8). Younger-old and persons without preinjury cognitive impairment had substantially better recovery (mortality 6-11%, home independence 84-86%, complete recovery 21-22%) versus oldest-old and those with pre-injury dementia (mortality 29-32%, home independence 23-52%, complete recovery 5-10%). GOSE detected the greatest proportion of reliable improvement or deterioration compared to ADL and FAQ, though low agreement reflects their complementary domains. Conclusions and RelevanceMost younger and cognitively-unimpaired older adults achieved favorable functional outcomes, however, more vulnerable older adults may suffer chronic disability after mTBI. GOSE effectively captures meaningful change in this population, while ADL and FAQ provide important complementary information. Findings underscore the need for age-appropriate prognostication and more inclusive geriatric TBI research and clinical trial design. Trial RegistrationNCT07296783 Key pointsO_ST_ABSQuestionC_ST_ABSWhat are the functional outcomes of older adults 6 months after mild TBI, by age group and preinjury cognitive status? FindingsMost older adults achieved home independence, though complete recovery was less common and mortality was notable. Younger-old and preinjury cognitively unimpaired individuals had substantially better recovery, with lower mortality and higher rates of home independence and complete recovery, compared to the oldest-old and those who had dementia preinjury. Meaning6 months after mild TBI, the younger-old and cognitively-resilient have high potential for favorable outcome, while the older-old and cognitively-vulnerable are at high risk for mortality or chronic disability.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356520v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356520v1.full.pdf"
+      }
+    ],
+    "score": 56,
+    "infographic": {
+      "key_insight": "Older adults with mild TBI often recover well by 6 months, but outcomes are much worse in the oldest patients and those with pre-injury cognitive impairment.",
+      "clinical_relevance": "GOSE may be a useful trial endpoint for geriatric mTBI because it captured more change over time than ADL or FAQ measures in this study.",
+      "method": [
+        "Prospective cohort study at two U.S. level I trauma centers",
+        "Enrolled adults ≥65 years presenting within 72 hours of mild TBI with head CT",
+        "Assessed GOSE at 2 weeks and 6 months, with weighting to reduce attrition bias"
+      ],
+      "evidence_signal": "In 253 participants, 6-month outcomes showed 14% mortality, 73% home independence, and 17% complete recovery, with better results in younger-old and cognitively unimpaired groups.",
+      "watch_item": "Single-center pilot plus later two-center enrollment, substantial unknown pre-injury cognitive status, and attrition-adjusted analyses mean results may not generalize to all older mTBI patients.",
+      "hashtags": [
+        "#TBI",
+        "#Geriatrics",
+        "#MildTBI",
+        "#FunctionalOutcomes",
+        "#ClinicalResearch"
+      ],
+      "paper_id": "2026-06-29-medrxiv-6_month_recovery_after_mild_traumatic_brain_injury_in_older_adults_a_track_geri_study",
+      "paper_title": "6-Month Recovery after Mild Traumatic Brain Injury in Older Adults: A TRACK-GERI Study",
+      "paper_date": "2026-06-29",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-07-02T09:55:06",
       "generator": "openai"
     }
   },
@@ -75,43 +228,43 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356395v1.full.pdf"
       }
     ],
-    "score": 60,
+    "score": 55,
     "infographic": {
-      "key_insight": "A no-code autonomous AI workflow built a calibrated thyroid nodule ultrasound classifier that performed strongly on both internal and external validation, including multiple thyroid cancer histologies.",
-      "clinical_relevance": "The approach could make medical AI development more accessible and reproducible, but it is not ready for clinical use without prospective validation and local recalibration.",
+      "key_insight": "An autonomous, no-code AI workflow built a calibrated thyroid nodule ultrasound classifier that performed strongly in both internal and external validation.",
+      "clinical_relevance": "The study suggests that accessible AI tools could help develop reproducible malignancy classifiers for thyroid nodules, including across multiple cancer histologies.",
       "method": [
-        "Autonomous no-code agent (Hugging Face ML-Intern) reviewed the dataset, selected the model, trained it, and calibrated predictions.",
-        "Used the open-source TN5000 ultrasound dataset with 3,500 training, 500 validation, and 1,000 test images.",
-        "Externally validated the trained ResNet-18 model on 232 nodules from the University of Colorado cohort."
+        "Used the no-code Hugging Face ML-Intern agent to autonomously review data, choose/train a model, and calibrate probabilities.",
+        "Trained a ResNet-18 on the TN5000 ultrasound dataset (3500 training, 500 validation, 1000 test images).",
+        "Externally validated the model on 232 nodules from the University of Colorado, including several thyroid cancer subtypes."
       ],
-      "evidence_signal": "The model achieved AUROC 0.94 on the internal test set and 0.90 on external validation, with sensitivity 0.92 and specificity 0.68 on the external cohort.",
-      "watch_item": "External performance was lower than internal performance, and the model still needs prospective testing and site-specific recalibration before use.",
+      "evidence_signal": "Performance was strong on internal testing (AUROC 0.94) and remained high on external validation (AUROC 0.90), with sensitivity 0.92 and specificity 0.68.",
+      "watch_item": "Prospective validation and local recalibration are still needed before clinical use, especially given the moderate external specificity and single-site external cohort.",
       "hashtags": [
         "#ArtificialIntelligence",
         "#PrecisionOncology",
-        "#Ultrasound",
-        "#ThyroidCancer",
-        "#MedicalAI"
+        "#ThyroidNodule",
+        "#MedicalImaging",
+        "#ExternalValidation"
       ],
       "paper_id": "2026-06-26-medrxiv-an_agentic_no_code_artificial_intelligence_workflow_for_developing_and_externally_validati",
       "paper_title": "An Agentic, No Code Artificial Intelligence Workflow for Developing and Externally Validating a Thyroid Nodule Ultrasound Malignancy Classifier",
       "paper_date": "2026-06-26",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-01T10:40:08",
+      "generated_at": "2026-07-02T09:55:10",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-06-25-medrxiv-stratified_cohorts_for_biomarker_assessment_and_trial_readiness_tmem175_scarb2_and_ctsb_in",
-    "doi": "10.64898/2026.06.23.26356322",
-    "date": "2026-06-25",
-    "title": "Stratified cohorts for biomarker assessment and trial readiness: TMEM175, SCARB2 and CTSB in Parkinson's disease",
-    "authors": "Sun, W.; Wurster, I.; Roeben, B.; Kemmner, R.; Mielke, M.; Zetterberg, H.; Lerche, S.; Hauser, A.-K.; Schulte, C.; Parchi, P.; Petzold, G. C.; Spottke, A.; Wuellner, U.; van Riesen, C.; Maass, F.; Falkenburger, B. H.; Mathias, B.; Zerr, I.; Duezel, E.; Lingor, P. H.; Wolff, A.; Levin, J.; Hermann, W.; Loehle, M.; Gan-Or, Z.; Brockmann, K.; Gasser, T.",
-    "abstract": "BackgroundLysosomal dysfunction plays a crucial role in the pathogenesis of Parkinsons disease (PD), particularly among GBA1 mutation carriers. Beyond GBA1, genes such as TMEM175, SCARB2, and CTSB identified in genome-wide association studies (GWAS) are also implicated in lysosomal pathways contributing to PD risk, although their functional effects in patients remain unclear. Proteins encoded by these lysosome-related genes have been explored as potential therapeutic targets in experimental models. Biomarker profiles, including clinical measures, -syn seeding activity, lysosomal proteins, and sphingolipids, may facilitate patient stratification and support therapeutic monitoring in future clinical trials. AimThe aim of this study is to investigate the impact of genetic variants of three lysosomal-related genes (TMEM175, SCARB2, and CTSB) on biomarker profiles in PD with and without GBA1 variants. Cross-sectional data from two German cohorts: the Tuebingen Parkinson Cohort (TUEPAC) and the DESCRIBE PD cohort of the German Center for Neurodegenerative Diseases were used as explorative cohorts, and data from Accelerating Medicines Partnership(R) Parkinsons Disease (AMP-PD) were used as a validation cohort. The ultimate goal is to provide new data for patient stratification based on genetics, which might serve as a readout for target engagement and treatment efficiency assessment. MethodsThree cohorts were analyzed: TUEPAC, DESCRIBE PD, and AMP-PD. TUEPAC and DESCRIBE PD were combined into a single German discovery cohort (TUEPAC-DESCRIBE-PD), while AMP-PD served as an independent validation cohort. Within each cohort, for subgroup analyses, PD patients were classified as the overall PD cohort (PDall), and further stratified by GBA1 mutation status into PD patients without GBA1 mutations (PDGBA1_wildtype), and PD patients carrying GBA1 mutations (PDGBA1). We evaluated cognitive and motor function, as well as depression using the Montreal Cognitive Assessment (MoCA), Unified Parkinson Disease Rating Scale-part I II (UPDRS III), and Beck Depression Inventory-II(BDI-II) scales. Analyzed biomarkers included CSF -syn seeding activity using seed amplification assay (SAA), CSF lysosomal protein levels of lysosomal integral membrane protein 2 (LIMP2), also known as SCARB2, cathepsin B (CTSB) and lysosome-associated membrane protein 2 (LAMP2), blood-based enzyme activity of the lysosomal glucocerebrosidase (GCase), and CSF sphingolipid profiles. PD patients carrying risk alleles in TMEM175, SCARB2, and CTSB were compared to non-carriers. ResultsGenotype-phenotype correlation analysis in TUEPAC-DESCRIBE-PD and AMP-PD revealed: (1) In PDall, the TMEM175 p.M393T risk variant was nominally associated with decreased cognitive function when adjusted for GBA1 mutation status in TUEPAC-DESCRIBE-PD; this association could not be replicated, although a similar trend was observed in the slightly smaller, but multicentric AMP-PD cohort; TMEM175 p.M393T was not significantly associated with BDI-I I or UPDRS-III scores in either cohort. (2) In PDGBA1_wildtype, GCase activity was significantly lower in PD patients with SCARB2 rs6812193 risk allele in TUEPAC-DESCRIBE-PD, while a similar but non-significant trend was observed in AMP-PD; (3) In PDall, CSF levels of CTSB were nominally lower in carriers of CTSB rs1293298 risk allele compared to carriers of CTSB rs1293298 protective allele in TUEPAC-DESCRIBE-PD; in PDGBA1_wildtype, LAMP2 was significantly lower in carriers of CTSB rs1293298 risk allele compared to carriers of CTSB rs1293298 protective allele in TUEPAC-DESCRIBE-PD; (4) In PDall, TMEM175 p.M393T risk allele was nominally associated with altered sphingolipid profiles across both TUEPAC-DESCRIBE-PD and AMP-PD cohorts. ConclusionThese findings demonstrate that genetic variants in lysosomal-related genes (TMEM175, SCARB2, and CTSB) have a functional impact on biomarker profiles in PD patients. Integrating genetic characterization with biochemical profiling provides a framework for patient stratification and may serve as a translational strategy to monitor target engagement and evaluate treatment efficacy in future clinical trials.",
-    "category": "Target Biology",
+    "id": "2026-06-28-medrxiv-routine_implementation_of_synuclein_seed_amplification_assays_reveals_high_diagnostic_perf",
+    "doi": "10.64898/2026.04.21.26351389",
+    "date": "2026-06-28",
+    "title": "Routine implementation of α-synuclein Seed Amplification Assays reveals high diagnostic performance and the limited value of Alzheimer disease fluid biomarkers for detecting α-synuclein co-pathology",
+    "authors": "Jourdan, O.; Duchiron, M.; Torrent, J.; Turpinat, C.; Mondesert, E.; Busto, G.; Morchikh, M.; Dornadic, M.; Delaby, C.; Hirtz, C.; Thizy, L.; Barnier-Figue, G.; Perrein, F.; Jurici, S.; Gabelle, A.; Bennys, K.; Lehmann, S.",
+    "abstract": "BackgroundIn neurodegenerative diseases, the diagnostic value of -synuclein seed amplification assay (SAA) in routine clinical practice and its relationship with cognitive performance and fluid biomarkers remains incompletely characterized. In addition, although Alzheimer disease (AD) CSF and blood biomarkers accurately detect amyloid and tau pathology, their ability to identify concomitant -synuclein (Syn) pathology remains unknown. MethodsWe included 398 patients from the multicenter memory clinic ALZAN cohort. All participants underwent CSF and blood sampling with measurement of CSF biomarkers (A{beta}42/40, tau, p-tau181) and plasma biomarkers (A{beta}42/40, p-tau181, p-tau217, GFAP, NfL). Cognitive assessment was performed using the Mini-Mental State Examination (MMSE). Clinical diagnoses were independently confirmed by two senior neurologists. Syn status was determined by SAA (RT-QuIC). ResultsOf 398 patients, 19/20 patients with Lewy body dementia (LBD) (95.0%) and 32/203 patients with AD (15.8%) were SAA+. SAA-positivity presented a sensitivity of 95.0% (95%CI, 75.1-99.9), a specificity of 93.1% (95%CI, 88.3-96.4) for distinguishing LBD from patients without LBD or AD. In the entire cohort, SAA+ patients showed lower MMSE scores (p<0.01), lower CSF A{beta}42/40 ratio (p<0.01), and elevated plasma GFAP (p<0.05). However, within the AD subgroup, only CSF A{beta}42/40 differed marginally between SAA+ and SAA- patients, whereas CSF total tau, CSF p-tau181, plasma p-tau217, p-tau181, GFAP, and NfL showed no significant differences. ConclusionsSAA accurately detects Syn pathology in routine memory clinic practice that is not captured by current AD CSF and blood biomarkers. These findings support SAA as a complementary biomarker for routine diagnosis and patient stratification. What is already known on this topic-synuclein seed amplification assay (SAA) has shown high sensitivity and specificity for detecting Lewy body dementia (LBD) in research cohorts, and -synuclein co-pathology is frequently observed in Alzheimers disease (AD). However, it remains unknown whether currently available AD CSF and blood biomarkers can identify patients with -synuclein pathology in routine clinical practice. What this study addsIn a prospective multicenter memory clinic cohort, SAA showed high sensitivity (95.0%) and specificity (93.5%) for identifying clinically diagnosed LBD and detected Syn co-pathology in 15.8% of AD patients. Current AD CSF and blood biomarkers did not discriminate between SAA-positive and SAA-negative patients, providing little information on concomitant Syn pathology. How this study might affect research, practice or policySAA provides unique biological information by improving the detection of LBD and identifying AD patients with concomitant Syn co-pathology that is not captured by current CSF and blood biomarkers, thereby improving patient stratification and informing future precision medicine approaches and therapeutic trials.",
+    "category": "Therapeutic Discovery",
     "source": "medRxiv",
-    "published": "2026-06-25",
-    "updated": "2026-06-25",
+    "published": "2026-06-28",
+    "updated": "2026-06-28",
     "primary_category": "neurology",
     "categories": [
       "neurology"
@@ -119,36 +272,36 @@
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356322v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351389v2"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356322v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351389v2.full.pdf"
       }
     ],
-    "score": 57,
+    "score": 51,
     "infographic": {
-      "key_insight": "Genetic variation in lysosome-related PD genes TMEM175, SCARB2, and CTSB may help stratify Parkinson’s disease patients by biomarker profile, especially in the context of GBA1 status.",
-      "clinical_relevance": "If validated, this could support more precise patient selection and biomarker-based monitoring in future Parkinson’s trials, rather than changing routine care today.",
+      "key_insight": "α-synuclein seed amplification assay (SAA) shows strong real-world ability to detect α-synuclein pathology in memory clinic patients, while standard Alzheimer fluid biomarkers add little for identifying co-pathology.",
+      "clinical_relevance": "Routine SAA testing could improve diagnostic stratification, especially for Lewy body dementia and Alzheimer disease patients with hidden α-synuclein co-pathology.",
       "method": [
-        "Cross-sectional analysis of two German PD cohorts combined as discovery set (TUEPAC-DESCRIBE-PD).",
-        "Independent validation in AMP-PD.",
-        "Compared PD subgroups by GBA1 mutation status using clinical scales plus CSF/biomarker measures including alpha-syn seeding activity, lysosomal proteins, and sphingolipids."
+        "398 patients from the multicenter ALZAN memory clinic cohort",
+        "CSF and plasma Alzheimer biomarkers measured alongside α-synuclein RT-QuIC SAA",
+        "Cognitive status assessed with MMSE and diagnoses confirmed by two senior neurologists"
       ],
-      "evidence_signal": "The study used exploratory discovery cohorts with an independent validation cohort, evaluating clinical and biomarker readouts across stratified PD groups.",
-      "watch_item": "Findings are cross-sectional and exploratory, so they may not prove causality or be directly ready for clinical implementation without longitudinal replication.",
+      "evidence_signal": "In the cohort, SAA was positive in 95.0% of Lewy body dementia cases and 15.8% of Alzheimer disease cases, with reported sensitivity of 95.0% and specificity of 93.1% for distinguishing LBD from non-LBD/non-AD patients.",
+      "watch_item": "Findings come from a memory clinic cohort and do not prove that AD CSF or blood biomarkers are useful for detecting α-synuclein co-pathology in broader or earlier-stage populations.",
       "hashtags": [
-        "#ParkinsonsDisease",
-        "#Biomarkers",
-        "#Genetics",
-        "#LysosomalPathway",
-        "#ClinicalTrials"
+        "#AlphaSynuclein",
+        "#SeedAmplificationAssay",
+        "#LewyBodyDementia",
+        "#AlzheimersBiomarkers",
+        "#Neurodegeneration"
       ],
-      "paper_id": "2026-06-25-medrxiv-stratified_cohorts_for_biomarker_assessment_and_trial_readiness_tmem175_scarb2_and_ctsb_in",
-      "paper_title": "Stratified cohorts for biomarker assessment and trial readiness: TMEM175, SCARB2 and CTSB in Parkinson's disease",
-      "paper_date": "2026-06-25",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-07-01T10:40:11",
+      "paper_id": "2026-06-28-medrxiv-routine_implementation_of_synuclein_seed_amplification_assays_reveals_high_diagnostic_perf",
+      "paper_title": "Routine implementation of α-synuclein Seed Amplification Assays reveals high diagnostic performance and the limited value of Alzheimer disease fluid biomarkers for detecting α-synuclein co-pathology",
+      "paper_date": "2026-06-28",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-07-02T09:55:13",
       "generator": "openai"
     }
   },
@@ -177,131 +330,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.06.16.26355436v1.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 41,
     "infographic": {
-      "key_insight": "A brief, hybrid Acceptance and Commitment Therapy (ACT) program was feasible, acceptable, and showed early signals of improved psychological well-being for people at risk of inherited prion disease.",
-      "clinical_relevance": "This supports a scalable psychosocial intervention option for individuals living with genetic neurodegenerative risk, where supportive care is currently limited.",
+      "key_insight": "A brief Acceptance and Commitment Therapy (ACT) program was feasible and well accepted for people at risk of inherited prion disease, with early signs of improved psychological well-being.",
+      "clinical_relevance": "This suggests scalable, low-burden psychological support may help address distress in individuals identified as genetically at risk for neurodegenerative disease.",
       "method": [
-        "23 adults at risk of inherited prion disease completed a 5-hour group ACT workshop plus an individual booster session.",
-        "Feasibility, acceptability, and psychological outcomes were tracked at baseline, 1 month, and 3 months.",
-        "Semi-structured interviews were used to capture participant experiences and practical needs."
+        "Single 5-hour face-to-face ACT workshop",
+        "One individual booster session",
+        "Outcomes measured at baseline, 1 month, and 3 months plus qualitative interviews"
       ],
-      "evidence_signal": "All prespecified feasibility targets were met, and quantitative follow-up showed improvements in psychological quality of life and behavioral awareness, with stronger effects in participants with higher baseline depressive symptoms.",
-      "watch_item": "This was a small feasibility study without a control group, so the findings are preliminary and need controlled testing before broader implementation.",
+      "evidence_signal": "In a 23-participant feasibility study, all predefined feasibility criteria were met, retention at 3 months was 79%, missing data were low (10%), and acceptability was reported as high.",
+      "watch_item": "Findings are preliminary from a small, single-clinic study without a control group, so effectiveness and generalizability remain uncertain.",
       "hashtags": [
         "#AcceptanceAndCommitmentTherapy",
         "#PsychologicalFlexibility",
-        "#RareDiseaseSupport",
+        "#NeurodegenerativeDisease",
         "#FeasibilityStudy",
-        "#MentalHealthIntervention"
+        "#MentalHealthSupport"
       ],
       "paper_id": "2026-06-26-medrxiv-a_brief_acceptance_and_commitment_therapy_intervention_to_support_those_living_at_risk_of",
       "paper_title": "A Brief Acceptance and Commitment Therapy Intervention to Support Those Living At Risk of Inherited Prion Disease",
       "paper_date": "2026-06-26",
       "paper_category": "Target Biology",
-      "generated_at": "2026-07-01T10:40:13",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-25-medrxiv-human_il_34_deficiency_primes_microglia_toward_alzheimer_s_disease_associated_states",
-    "doi": "10.64898/2026.02.21.26346696",
-    "date": "2026-06-25",
-    "title": "Human IL-34 Deficiency Primes Microglia Toward Alzheimer's Disease-Associated States",
-    "authors": "Hernandez-Rasco, F.; Ruiz, R.; De Rojas, I.; Puerta Fuentes, R.; Garcia-Mayor, C.; Espinosa-Oliva, A. M.; Garcia-Revilla, J.; Bayon, P.; Rivera-Ramos, A.; Real Oualit, F.; Jimenez, S.; Saez, M.; de Pablos, R. M.; Zhao, F.; Olive, C.; Sanz, P.; Montalban, X.; Valero, S.; Cabo, A.; Fernandez, M. V.; Wells, A. M.; Cavazos, J. E.; Seshadri, S.; Boada, M.; Heneka, M.; Vitorica, F. J.; Manez, S.; Ramirez, A.; Venero, J. L.; Ruiz, A.",
-    "abstract": "BackgroundGenome-wide association studies (GWAS), with independent replication in large European consortia, have identified a common nonsense variant in IL-34 (Y213X) as a genetic risk factor for late-onset Alzheimers disease (AD). However, the biological consequences of this IL-34 mutation in humans, its prevalence in the population, and the mechanisms by which IL-34-Y213X alters microglial homeostasis, cerebrospinal fluid (CSF) proteomic networks, and amyloid pathology remain poorly understood. MethodsWe combined human genetics, cerebrospinal fluid (CSF) and serum proteomics, transcriptomics, large-scale phenome-wide association analyses, and preclinical experimental models to define the impact of human IL-34 deficiency. IL-34 concentrations were first quantified in CSF and serum from deeply phenotyped AD cohorts stratified by the common IL-34-Y213X nonsense variant. IL-34 levels and IL-34-Y213X status were then integrated with unbiased CSF proteomic networks and AD biomarkers. Transcriptomic profiling of purified microglia from IL-34 knockout mice was performed to assess disease-associated microglial programs. Using APP/PS1 mice lacking IL-34, we examined the effects of IL-34 deficiency on microglial survival, tiling, and plaque encapsulation. Finally, we performed postmortem analyses of temporal cortex from AD patients carrying IL-34-Y213X to assess microglial density, spatial organization, and plaque-associated responses. FindingsIL-34-Y213X was a strong, dose-dependent loss-of-function (LOF) allele that reduced IL-34 levels by up to 2.5 standard deviations in CSF and serum and was common in multiple populations. IL-34 deficiency reshaped CSF proteomic networks, downregulating axon guidance and microglial support modules while upregulating inflammatory and extracellular matrix signatures, and showed pleiotropic associations with neurological, inflammatory, and metabolic traits. Transcriptomic analysis of sorted microglia from healthy 9-month-old IL-34KO compare to wild-type mice revealed a profound pro-inflammatory and disease-associated microglial transcriptional program enriched for disease-associated microglia (DAM) signatures, inflammatory pathways, and AD risk genes including APOE, CLU, and CASS4. In APP/PS1 mice, genetic IL-34 deletion selectively depleted homeostatic gray-matter microglia, disrupted microglial tiling, and impaired plaque encapsulation, resulting in altered amyloid structure and enhancing neuritic injury. Concordantly, AD patients homozygous for IL-34-Y213X displayed markedly reduced cortical microglial density and increased microglial spatial dispersion, indicating a breakdown of the microglial network organization in the human brain. InterpretationA common human IL-34 LOF variant creates a naturally occurring model of IL-34 deficiency that links microglial survival, CSF network signatures, and amyloid pathology in both mice and humans. Importantly, IL-34 deficiency alone is sufficient to induce inflammatory, AD-associated microglial states beyond simply reducing microglial number. These findings identify IL-34/CSF1R signaling as a critical determinant of microglial resilience and a potential upstream pathway linking human genetic variation to AD susceptibility, highlighting IL-34-dependent pathways as promising targets for disease modification. FundingThis work was supported by grants from the Spanish Ministerio de Ciencia, Innovacion y Universidades/FEDER/UE (PID2024-157400OB-I00) and FORTALECE program (FORT23/00008; Instituto de Salud Carlos III, Spain) to RRL and JLV, ISCIII of Spain co-financed by FEDER funds (European Union) through grants PI24/00308 (JV) and CIBERNED collaborative grant 2022/01 to JV, PID2023-147125OB-I00 and CEX2023-001386-S (Severo Ochoa Programme) to SMTBC. A.R. is supported by STAR Award. University of Texas System. Tx, United States, The South Texas ADRC. National Institute of Aging. National Institutes of Health. USA. (P30AG066546), the Keith M. Orme and Pat Vigeon Orme Endowed Chair in Alzheimers and Neurodegenerative Diseases (2024-2025) and Patricia Ruth Frederick Distinguished Chair for Precision Therapeutics in Alzheimers and Neurodegenerative Diseases (2025-2028). AR is also supported by the Agency for Innovation and Entrepreneurship (VLAIO) grant N{degrees} PR067/21 for the HARPONE project and the ADAPTED project the EU/EFPIA Innovative Medicines Initiative Joint Undertaking Grant N{degrees} 115975 and CIBERNED (ISCIII).",
-    "category": "Target Biology",
-    "source": "medRxiv",
-    "published": "2026-06-25",
-    "updated": "2026-06-25",
-    "primary_category": "neurology",
-    "categories": [
-      "neurology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.02.21.26346696v2"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.02.21.26346696v2.full.pdf"
-      }
-    ],
-    "score": 41,
-    "infographic": {
-      "key_insight": "A loss-of-function IL-34 variant appears to lower IL-34 levels and push microglia toward Alzheimer’s disease-associated, inflammatory states linked to amyloid pathology.",
-      "clinical_relevance": "These findings suggest IL-34 may be a human genetic modifier of neuroinflammation and microglial health in Alzheimer’s disease, making it a potential biomarker or target for future study.",
-      "method": [
-        "Measured IL-34 in CSF and serum from deeply phenotyped AD cohorts stratified by IL-34-Y213X genotype.",
-        "Integrated IL-34 status with CSF proteomics, transcriptomics, and phenome-wide association analyses.",
-        "Tested IL-34 deficiency in mouse microglia, APP/PS1 mice, and postmortem human AD cortex."
-      ],
-      "evidence_signal": "The abstract reports multi-cohort human genetics plus biomarker, proteomic, transcriptomic, mouse, and postmortem tissue data showing consistent effects of IL-34 deficiency on microglial and AD-related signatures.",
-      "watch_item": "Associations and mouse-model effects are strong but do not by themselves prove that restoring IL-34 will safely improve human Alzheimer’s outcomes.",
-      "hashtags": [
-        "#AlzheimersDisease",
-        "#Microglia",
-        "#IL34",
-        "#Neuroinflammation",
-        "#HumanGenetics"
-      ],
-      "paper_id": "2026-06-25-medrxiv-human_il_34_deficiency_primes_microglia_toward_alzheimer_s_disease_associated_states",
-      "paper_title": "Human IL-34 Deficiency Primes Microglia Toward Alzheimer's Disease-Associated States",
-      "paper_date": "2026-06-25",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-07-01T10:40:17",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-25-medrxiv-time_aware_contrastive_transformer_for_longitudinal_patient_representation_learning",
-    "doi": "10.64898/2026.06.23.26356236",
-    "date": "2026-06-25",
-    "title": "Time-Aware Contrastive Transformer for Longitudinal Patient Representation Learning",
-    "authors": "Heinolainen, A.; Tran, L.; Arora, A.; Silen, S.; Renkonen, R.; Koskinen, M.",
-    "abstract": "Learning high-quality longitudinal patient representations from irregular electronic health records (EHRs) is essential for understanding heterogeneity in time-evolving diseases such as cancer. Longitudinal patient representation learning methods often rely on external labels for downstream tasks or do not model the temporal dynamics between medical events explicitly, reducing the clinical applicability of learned disease trajectories. In this work, we propose the Time-Aware-Contrastive-Transformer (TACT), a transformer-based model that integrates explicit temporal modeling with a fully self-supervised contrastive learning framework. We introduce a sampling-based data augmentation work-flow that leverages hierarchical taxonomies of diagnoses and medications to enrich representation learning. Evaluated on a large real-world dataset, TACT demonstrates robust performance across patient representation and event embedding metrics and outperforms two time-aware transformer comparison models. Unlike the comparison models, TACT successfully bridges contrastive learning with medical hierarchies, allowing it to track precise disease trajectories and discover clinically actionable patient phenotypes. Consequently, this approach establishes a comprehensive framework for characterizing patient heterogeneity through the identification of potentially clinically meaningful subgroups with distinct progression profiles.",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-06-25",
-    "updated": "2026-06-25",
-    "primary_category": "health informatics",
-    "categories": [
-      "health informatics"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356236v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356236v1.full.pdf"
-      }
-    ],
-    "score": 40,
-    "infographic": {
-      "key_insight": "TACT is a self-supervised, time-aware transformer that learns longitudinal patient representations from irregular EHRs by combining explicit temporal modeling with contrastive learning and medical taxonomies.",
-      "clinical_relevance": "By better tracking disease trajectories and patient heterogeneity, TACT could help identify clinically meaningful subgroups and support precision oncology research.",
-      "method": [
-        "Transformer model with explicit temporal encoding for irregular event sequences",
-        "Fully self-supervised contrastive learning for patient representation and event embeddings",
-        "Sampling-based augmentation using hierarchical diagnosis and medication taxonomies"
-      ],
-      "evidence_signal": "On a large real-world dataset, TACT outperformed two time-aware transformer baselines on patient representation and event embedding metrics.",
-      "watch_item": "Results are from retrospective EHR data, so external validation and careful handling of taxonomy quality, missingness, and site-specific coding differences are important.",
-      "hashtags": [
-        "#PrecisionOncology",
-        "#EHR",
-        "#SelfSupervisedLearning",
-        "#Transformers",
-        "#TemporalModeling"
-      ],
-      "paper_id": "2026-06-25-medrxiv-time_aware_contrastive_transformer_for_longitudinal_patient_representation_learning",
-      "paper_title": "Time-Aware Contrastive Transformer for Longitudinal Patient Representation Learning",
-      "paper_date": "2026-06-25",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-01T10:40:19",
+      "generated_at": "2026-07-02T09:55:17",
       "generator": "openai"
     }
   }

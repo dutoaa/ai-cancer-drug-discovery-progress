@@ -1,0 +1,24 @@
+{
+  "key_insight": "PHO-Agents combines structured EHR modeling with LLM-based multi-agent reasoning to improve health outcome prediction and explanation quality.",
+  "clinical_relevance": "For cancer patients on immune checkpoint inhibitors, the system aims to better flag immune-related adverse events and support more interpretable decision support.",
+  "method": [
+    "Encodes longitudinal EHR sequences into attention-based patient representations and initial prediction logits.",
+    "Uses a data agent to turn EHR signals into patient summaries, a retrieval agent to fetch relevant clinical guidelines, and research/doctor agents to analyze the case.",
+    "A leader agent synthesizes agent outputs, then fuses LLM reasoning with EHR model logits for final predictions and explanation reports."
+  ],
+  "evidence_signal": "Evaluated on three real-world cohorts and showed strong gains over baselines, including a PR-AUC of 90.20 ± 2.07 for AKI mortality versus 56.46 ± 2.98 for the best single-agent baseline.",
+  "watch_item": "The approach depends on reliable guideline retrieval and multi-agent LLM outputs, so performance and explainability may vary with data quality, prompt design, and deployment setting.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#LLMHealthAI",
+    "#ClinicalPrediction",
+    "#EHR",
+    "#MultiAgentAI"
+  ],
+  "paper_id": "2026-06-29-medrxiv-pho_agents_a_large_language_model_powered_multi_agent_system_for_predicting_health_outcome",
+  "paper_title": "PHO-Agents: A Large Language Model Powered Multi-Agent System for Predicting Health Outcomes",
+  "paper_date": "2026-06-29",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-02T09:55:00",
+  "generator": "openai"
+}

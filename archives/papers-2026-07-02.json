@@ -1,0 +1,308 @@
+[
+  {
+    "id": "2026-06-25-medrxiv-generalizable_ai_predicts_immunotherapy_outcomes_across_cancers_and_treatments",
+    "doi": "10.1101/2025.05.01.25326820",
+    "date": "2026-06-25",
+    "title": "Generalizable AI predicts immunotherapy outcomes across cancers and treatments",
+    "authors": "SHEN, W.; Moon, I.; Nguyen, T. H.; Li, M. M. R.; Huang, Y.; Nair, N.; Marbach, D.; Zitnik, M.",
+    "abstract": "Immune checkpoint inhibitors are standard across cancers, yet most patients do not respond and existing biomarkers generalize poorly across tumor types, drugs and clinical settings. We present CO_SCPLOWOMPASSC_SCPLOW, a pan-cancer foundation model that predicts immunotherapy response from bulk tumor transcriptomes using a concept-bottleneck transformer. CO_SCPLOWOMPASSC_SCPLOW encodes gene expression through 44 biologically grounded immune concepts representing immune cell states, tumor-microenvironment interactions, and signaling pathways. Trained on 10,184 tumors across 33 cancer types, CO_SCPLOWOMPASSC_SCPLOW outperforms 22 baseline methods in 16 independent clinical cohorts spanning seven cancers and six immune checkpoint inhibitors, increasing accuracy by 8.5% and area under the precision-recall curve by 15.7%, with minimal additional training. The model generalizes to unseen cancer types and treatments, supporting indication selection and patient stratification in early-phase clinical trials. In survival analyses, CO_SCPLOWOMPASSC_SCPLOW-stratified responders have longer overall survival (hazard ratio = 4.7, p < 0.0001). Personalized response maps connect gene expression to immune concepts, revealing mechanisms of response and resistance; in immune-inflamed non-responders, CO_SCPLOWOMPASSC_SCPLOW highlights programs including TGF-{beta} signaling, endothelial exclusion, CD4+ T cell dysfunction, and B cell deficiency. By combining interpretability with transfer learning, CO_SCPLOWOMPASSC_SCPLOW enables robust prediction and mechanistic insight to inform trial design and translational studies.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-25",
+    "updated": "2026-06-25",
+    "primary_category": "pharmacology and therapeutics",
+    "categories": [
+      "pharmacology and therapeutics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.05.01.25326820v4"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.05.01.25326820v4.full.pdf"
+      }
+    ],
+    "score": 79,
+    "infographic": {
+      "key_insight": "A pan-cancer foundation model using immune concepts can predict who will respond to immune checkpoint inhibitors across many cancers and treatments.",
+      "clinical_relevance": "This could help match patients to immunotherapy and support earlier trial selection and stratification when standard biomarkers do not generalize well.",
+      "method": [
+        "Trained a concept-bottleneck transformer on bulk tumor transcriptomes from 10,184 tumors across 33 cancer types.",
+        "Encoded expression into 44 biologically grounded immune concepts covering cell states, microenvironment interactions, and signaling pathways.",
+        "Compared against 22 baseline methods and generated personalized response maps for interpretability."
+      ],
+      "evidence_signal": "In 16 independent clinical cohorts across seven cancers and six checkpoint inhibitors, the model improved accuracy by 8.5% and AUPRC by 15.7%, with responders showing longer overall survival.",
+      "watch_item": "Performance was validated across retrospective cohorts, so prospective testing and real-world implementation are still needed before clinical use.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#Immunotherapy",
+        "#AIinMedicine",
+        "#CancerResearch",
+        "#Biomarkers"
+      ],
+      "paper_id": "2026-06-25-medrxiv-generalizable_ai_predicts_immunotherapy_outcomes_across_cancers_and_treatments",
+      "paper_title": "Generalizable AI predicts immunotherapy outcomes across cancers and treatments",
+      "paper_date": "2026-06-25",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-01T10:40:06",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-26-medrxiv-an_agentic_no_code_artificial_intelligence_workflow_for_developing_and_externally_validati",
+    "doi": "10.64898/2026.06.23.26356395",
+    "date": "2026-06-26",
+    "title": "An Agentic, No Code Artificial Intelligence Workflow for Developing and Externally Validating a Thyroid Nodule Ultrasound Malignancy Classifier",
+    "authors": "Thomas, J.; Pozdeyev, N.",
+    "abstract": "Convolutional neural networks (CNNs) can classify thyroid nodules on ultrasound, yet published models are seldom available for independent testing, require machine-learning expertise to develop and deploy, and are validated mostly on papillary thyroid carcinoma. ObjectiveTo test whether an autonomous (\"agentic\"), no-code artificial intelligence (AI) agent can develop a calibrated thyroid-nodule malignancy classifier, and to validate it internally and on an external cohort spanning multiple cancer histologies. MethodsThis is a retrospective, computational diagnostic study with prespecified endpoints. A no-code agent (Hugging Face ML-Intern) autonomously reviewed data, selected and trained the model and calibrated probabilities, using the open-source TN5000 dataset (3500 training, 500 validation, and 1000 test images). The trained ResNet-18 model was externally validated on 232 nodules from the University of Colorado, including follicular, medullary, oncocytic, and follicular-variant of papillary carcinomas. ResultsOn the internal test set, an agentic AI model achieved AUROC 0.94 (95% CI, 0.920-0.953), sensitivity 0.90, and specificity 0.80. On external validation, agentic AI model achieved an AUROC of 0.90 (95% CI, 0.850-0.936), sensitivity of 0.92, and specificity of 0.68, negative predictive value of 0.96, and positive predictive value of 0.52, exceeding the performance of a previously published classifier on the same cohort (AUROC of 0.83). ConclusionsAn agentic, no-code AI workflow produced a calibrated, externally validated thyroid nodule classifier, supporting accessible, reproducible, and independently testable medical AI development. Prospective validation and local recalibration are required before clinical use.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-26",
+    "updated": "2026-06-26",
+    "primary_category": "endocrinology",
+    "categories": [
+      "endocrinology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356395v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356395v1.full.pdf"
+      }
+    ],
+    "score": 60,
+    "infographic": {
+      "key_insight": "A no-code autonomous AI workflow built a calibrated thyroid nodule ultrasound classifier that performed strongly on both internal and external validation, including multiple thyroid cancer histologies.",
+      "clinical_relevance": "The approach could make medical AI development more accessible and reproducible, but it is not ready for clinical use without prospective validation and local recalibration.",
+      "method": [
+        "Autonomous no-code agent (Hugging Face ML-Intern) reviewed the dataset, selected the model, trained it, and calibrated predictions.",
+        "Used the open-source TN5000 ultrasound dataset with 3,500 training, 500 validation, and 1,000 test images.",
+        "Externally validated the trained ResNet-18 model on 232 nodules from the University of Colorado cohort."
+      ],
+      "evidence_signal": "The model achieved AUROC 0.94 on the internal test set and 0.90 on external validation, with sensitivity 0.92 and specificity 0.68 on the external cohort.",
+      "watch_item": "External performance was lower than internal performance, and the model still needs prospective testing and site-specific recalibration before use.",
+      "hashtags": [
+        "#ArtificialIntelligence",
+        "#PrecisionOncology",
+        "#Ultrasound",
+        "#ThyroidCancer",
+        "#MedicalAI"
+      ],
+      "paper_id": "2026-06-26-medrxiv-an_agentic_no_code_artificial_intelligence_workflow_for_developing_and_externally_validati",
+      "paper_title": "An Agentic, No Code Artificial Intelligence Workflow for Developing and Externally Validating a Thyroid Nodule Ultrasound Malignancy Classifier",
+      "paper_date": "2026-06-26",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-01T10:40:08",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-25-medrxiv-stratified_cohorts_for_biomarker_assessment_and_trial_readiness_tmem175_scarb2_and_ctsb_in",
+    "doi": "10.64898/2026.06.23.26356322",
+    "date": "2026-06-25",
+    "title": "Stratified cohorts for biomarker assessment and trial readiness: TMEM175, SCARB2 and CTSB in Parkinson's disease",
+    "authors": "Sun, W.; Wurster, I.; Roeben, B.; Kemmner, R.; Mielke, M.; Zetterberg, H.; Lerche, S.; Hauser, A.-K.; Schulte, C.; Parchi, P.; Petzold, G. C.; Spottke, A.; Wuellner, U.; van Riesen, C.; Maass, F.; Falkenburger, B. H.; Mathias, B.; Zerr, I.; Duezel, E.; Lingor, P. H.; Wolff, A.; Levin, J.; Hermann, W.; Loehle, M.; Gan-Or, Z.; Brockmann, K.; Gasser, T.",
+    "abstract": "BackgroundLysosomal dysfunction plays a crucial role in the pathogenesis of Parkinsons disease (PD), particularly among GBA1 mutation carriers. Beyond GBA1, genes such as TMEM175, SCARB2, and CTSB identified in genome-wide association studies (GWAS) are also implicated in lysosomal pathways contributing to PD risk, although their functional effects in patients remain unclear. Proteins encoded by these lysosome-related genes have been explored as potential therapeutic targets in experimental models. Biomarker profiles, including clinical measures, -syn seeding activity, lysosomal proteins, and sphingolipids, may facilitate patient stratification and support therapeutic monitoring in future clinical trials. AimThe aim of this study is to investigate the impact of genetic variants of three lysosomal-related genes (TMEM175, SCARB2, and CTSB) on biomarker profiles in PD with and without GBA1 variants. Cross-sectional data from two German cohorts: the Tuebingen Parkinson Cohort (TUEPAC) and the DESCRIBE PD cohort of the German Center for Neurodegenerative Diseases were used as explorative cohorts, and data from Accelerating Medicines Partnership(R) Parkinsons Disease (AMP-PD) were used as a validation cohort. The ultimate goal is to provide new data for patient stratification based on genetics, which might serve as a readout for target engagement and treatment efficiency assessment. MethodsThree cohorts were analyzed: TUEPAC, DESCRIBE PD, and AMP-PD. TUEPAC and DESCRIBE PD were combined into a single German discovery cohort (TUEPAC-DESCRIBE-PD), while AMP-PD served as an independent validation cohort. Within each cohort, for subgroup analyses, PD patients were classified as the overall PD cohort (PDall), and further stratified by GBA1 mutation status into PD patients without GBA1 mutations (PDGBA1_wildtype), and PD patients carrying GBA1 mutations (PDGBA1). We evaluated cognitive and motor function, as well as depression using the Montreal Cognitive Assessment (MoCA), Unified Parkinson Disease Rating Scale-part I II (UPDRS III), and Beck Depression Inventory-II(BDI-II) scales. Analyzed biomarkers included CSF -syn seeding activity using seed amplification assay (SAA), CSF lysosomal protein levels of lysosomal integral membrane protein 2 (LIMP2), also known as SCARB2, cathepsin B (CTSB) and lysosome-associated membrane protein 2 (LAMP2), blood-based enzyme activity of the lysosomal glucocerebrosidase (GCase), and CSF sphingolipid profiles. PD patients carrying risk alleles in TMEM175, SCARB2, and CTSB were compared to non-carriers. ResultsGenotype-phenotype correlation analysis in TUEPAC-DESCRIBE-PD and AMP-PD revealed: (1) In PDall, the TMEM175 p.M393T risk variant was nominally associated with decreased cognitive function when adjusted for GBA1 mutation status in TUEPAC-DESCRIBE-PD; this association could not be replicated, although a similar trend was observed in the slightly smaller, but multicentric AMP-PD cohort; TMEM175 p.M393T was not significantly associated with BDI-I I or UPDRS-III scores in either cohort. (2) In PDGBA1_wildtype, GCase activity was significantly lower in PD patients with SCARB2 rs6812193 risk allele in TUEPAC-DESCRIBE-PD, while a similar but non-significant trend was observed in AMP-PD; (3) In PDall, CSF levels of CTSB were nominally lower in carriers of CTSB rs1293298 risk allele compared to carriers of CTSB rs1293298 protective allele in TUEPAC-DESCRIBE-PD; in PDGBA1_wildtype, LAMP2 was significantly lower in carriers of CTSB rs1293298 risk allele compared to carriers of CTSB rs1293298 protective allele in TUEPAC-DESCRIBE-PD; (4) In PDall, TMEM175 p.M393T risk allele was nominally associated with altered sphingolipid profiles across both TUEPAC-DESCRIBE-PD and AMP-PD cohorts. ConclusionThese findings demonstrate that genetic variants in lysosomal-related genes (TMEM175, SCARB2, and CTSB) have a functional impact on biomarker profiles in PD patients. Integrating genetic characterization with biochemical profiling provides a framework for patient stratification and may serve as a translational strategy to monitor target engagement and evaluate treatment efficacy in future clinical trials.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-06-25",
+    "updated": "2026-06-25",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356322v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356322v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "Genetic variation in lysosome-related PD genes TMEM175, SCARB2, and CTSB may help stratify Parkinson’s disease patients by biomarker profile, especially in the context of GBA1 status.",
+      "clinical_relevance": "If validated, this could support more precise patient selection and biomarker-based monitoring in future Parkinson’s trials, rather than changing routine care today.",
+      "method": [
+        "Cross-sectional analysis of two German PD cohorts combined as discovery set (TUEPAC-DESCRIBE-PD).",
+        "Independent validation in AMP-PD.",
+        "Compared PD subgroups by GBA1 mutation status using clinical scales plus CSF/biomarker measures including alpha-syn seeding activity, lysosomal proteins, and sphingolipids."
+      ],
+      "evidence_signal": "The study used exploratory discovery cohorts with an independent validation cohort, evaluating clinical and biomarker readouts across stratified PD groups.",
+      "watch_item": "Findings are cross-sectional and exploratory, so they may not prove causality or be directly ready for clinical implementation without longitudinal replication.",
+      "hashtags": [
+        "#ParkinsonsDisease",
+        "#Biomarkers",
+        "#Genetics",
+        "#LysosomalPathway",
+        "#ClinicalTrials"
+      ],
+      "paper_id": "2026-06-25-medrxiv-stratified_cohorts_for_biomarker_assessment_and_trial_readiness_tmem175_scarb2_and_ctsb_in",
+      "paper_title": "Stratified cohorts for biomarker assessment and trial readiness: TMEM175, SCARB2 and CTSB in Parkinson's disease",
+      "paper_date": "2026-06-25",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-07-01T10:40:11",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-26-medrxiv-a_brief_acceptance_and_commitment_therapy_intervention_to_support_those_living_at_risk_of",
+    "doi": "10.64898/2026.06.16.26355436",
+    "date": "2026-06-26",
+    "title": "A Brief Acceptance and Commitment Therapy Intervention to Support Those Living At Risk of Inherited Prion Disease",
+    "authors": "Brien, R.; Dindo, L.; Williams, R.; Pauli, L.; Marsh, B.; Collinge, J.; Mead, S.; Chan, E.",
+    "abstract": "Living at risk of a neurodegenerative condition such as inherited prion disease (IPD) is associated with substantial psychological burden, yet evidence-based supportive interventions are lacking. This unmet need is likely to grow as advances in biomarkers and predictive testing lead to increasing identification of individuals in pre-symptomatic stages of neurodegenerative disease. Acceptance and Commitment Therapy (ACT), a transdiagnostic intervention targeting psychological flexibility, has shown promise in chronic health contexts but has not been evaluated in individuals at genetic risk. We conducted a feasibility and acceptability study of a brief, group-based ACT intervention in adults at risk of IPD recruited through the UK National Prion Clinic. The intervention comprised a single 5-hour, face-to-face workshop followed by an individual booster session. Prespecified feasibility and acceptability criteria were assessed alongside secondary psychological outcomes at baseline, 1 month, and 3 months post-intervention, complemented by semi-structured qualitative interviews. Twenty-three participants completed the intervention. All predefined feasibility criteria were met, including recruitment (58%), intervention completion (80%), retention at 3 months (79%), and low missing data (10%). Acceptability was high, with all participants reporting the intervention as useful and appropriate. Quantitative analyses demonstrated improvements in psychological quality of life and behavioural awareness at 3 months, with larger effects observed in participants with elevated baseline depressive symptoms. Qualitative findings highlighted the importance of peer connection, experiential learning, and practical strategies for managing uncertainty. These findings demonstrate that a brief, hybrid ACT intervention is feasible and acceptable for individuals living at risk of IPD and provide preliminary evidence for improving psychological well-being. As the population of individuals identified as at risk for neurodegenerative disease continues to expand, scalable psychological interventions that address cost and time barriers may represent an important component of future clinical care.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-06-26",
+    "updated": "2026-06-26",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.16.26355436v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.16.26355436v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "A brief, hybrid Acceptance and Commitment Therapy (ACT) program was feasible, acceptable, and showed early signals of improved psychological well-being for people at risk of inherited prion disease.",
+      "clinical_relevance": "This supports a scalable psychosocial intervention option for individuals living with genetic neurodegenerative risk, where supportive care is currently limited.",
+      "method": [
+        "23 adults at risk of inherited prion disease completed a 5-hour group ACT workshop plus an individual booster session.",
+        "Feasibility, acceptability, and psychological outcomes were tracked at baseline, 1 month, and 3 months.",
+        "Semi-structured interviews were used to capture participant experiences and practical needs."
+      ],
+      "evidence_signal": "All prespecified feasibility targets were met, and quantitative follow-up showed improvements in psychological quality of life and behavioral awareness, with stronger effects in participants with higher baseline depressive symptoms.",
+      "watch_item": "This was a small feasibility study without a control group, so the findings are preliminary and need controlled testing before broader implementation.",
+      "hashtags": [
+        "#AcceptanceAndCommitmentTherapy",
+        "#PsychologicalFlexibility",
+        "#RareDiseaseSupport",
+        "#FeasibilityStudy",
+        "#MentalHealthIntervention"
+      ],
+      "paper_id": "2026-06-26-medrxiv-a_brief_acceptance_and_commitment_therapy_intervention_to_support_those_living_at_risk_of",
+      "paper_title": "A Brief Acceptance and Commitment Therapy Intervention to Support Those Living At Risk of Inherited Prion Disease",
+      "paper_date": "2026-06-26",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-07-01T10:40:13",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-25-medrxiv-human_il_34_deficiency_primes_microglia_toward_alzheimer_s_disease_associated_states",
+    "doi": "10.64898/2026.02.21.26346696",
+    "date": "2026-06-25",
+    "title": "Human IL-34 Deficiency Primes Microglia Toward Alzheimer's Disease-Associated States",
+    "authors": "Hernandez-Rasco, F.; Ruiz, R.; De Rojas, I.; Puerta Fuentes, R.; Garcia-Mayor, C.; Espinosa-Oliva, A. M.; Garcia-Revilla, J.; Bayon, P.; Rivera-Ramos, A.; Real Oualit, F.; Jimenez, S.; Saez, M.; de Pablos, R. M.; Zhao, F.; Olive, C.; Sanz, P.; Montalban, X.; Valero, S.; Cabo, A.; Fernandez, M. V.; Wells, A. M.; Cavazos, J. E.; Seshadri, S.; Boada, M.; Heneka, M.; Vitorica, F. J.; Manez, S.; Ramirez, A.; Venero, J. L.; Ruiz, A.",
+    "abstract": "BackgroundGenome-wide association studies (GWAS), with independent replication in large European consortia, have identified a common nonsense variant in IL-34 (Y213X) as a genetic risk factor for late-onset Alzheimers disease (AD). However, the biological consequences of this IL-34 mutation in humans, its prevalence in the population, and the mechanisms by which IL-34-Y213X alters microglial homeostasis, cerebrospinal fluid (CSF) proteomic networks, and amyloid pathology remain poorly understood. MethodsWe combined human genetics, cerebrospinal fluid (CSF) and serum proteomics, transcriptomics, large-scale phenome-wide association analyses, and preclinical experimental models to define the impact of human IL-34 deficiency. IL-34 concentrations were first quantified in CSF and serum from deeply phenotyped AD cohorts stratified by the common IL-34-Y213X nonsense variant. IL-34 levels and IL-34-Y213X status were then integrated with unbiased CSF proteomic networks and AD biomarkers. Transcriptomic profiling of purified microglia from IL-34 knockout mice was performed to assess disease-associated microglial programs. Using APP/PS1 mice lacking IL-34, we examined the effects of IL-34 deficiency on microglial survival, tiling, and plaque encapsulation. Finally, we performed postmortem analyses of temporal cortex from AD patients carrying IL-34-Y213X to assess microglial density, spatial organization, and plaque-associated responses. FindingsIL-34-Y213X was a strong, dose-dependent loss-of-function (LOF) allele that reduced IL-34 levels by up to 2.5 standard deviations in CSF and serum and was common in multiple populations. IL-34 deficiency reshaped CSF proteomic networks, downregulating axon guidance and microglial support modules while upregulating inflammatory and extracellular matrix signatures, and showed pleiotropic associations with neurological, inflammatory, and metabolic traits. Transcriptomic analysis of sorted microglia from healthy 9-month-old IL-34KO compare to wild-type mice revealed a profound pro-inflammatory and disease-associated microglial transcriptional program enriched for disease-associated microglia (DAM) signatures, inflammatory pathways, and AD risk genes including APOE, CLU, and CASS4. In APP/PS1 mice, genetic IL-34 deletion selectively depleted homeostatic gray-matter microglia, disrupted microglial tiling, and impaired plaque encapsulation, resulting in altered amyloid structure and enhancing neuritic injury. Concordantly, AD patients homozygous for IL-34-Y213X displayed markedly reduced cortical microglial density and increased microglial spatial dispersion, indicating a breakdown of the microglial network organization in the human brain. InterpretationA common human IL-34 LOF variant creates a naturally occurring model of IL-34 deficiency that links microglial survival, CSF network signatures, and amyloid pathology in both mice and humans. Importantly, IL-34 deficiency alone is sufficient to induce inflammatory, AD-associated microglial states beyond simply reducing microglial number. These findings identify IL-34/CSF1R signaling as a critical determinant of microglial resilience and a potential upstream pathway linking human genetic variation to AD susceptibility, highlighting IL-34-dependent pathways as promising targets for disease modification. FundingThis work was supported by grants from the Spanish Ministerio de Ciencia, Innovacion y Universidades/FEDER/UE (PID2024-157400OB-I00) and FORTALECE program (FORT23/00008; Instituto de Salud Carlos III, Spain) to RRL and JLV, ISCIII of Spain co-financed by FEDER funds (European Union) through grants PI24/00308 (JV) and CIBERNED collaborative grant 2022/01 to JV, PID2023-147125OB-I00 and CEX2023-001386-S (Severo Ochoa Programme) to SMTBC. A.R. is supported by STAR Award. University of Texas System. Tx, United States, The South Texas ADRC. National Institute of Aging. National Institutes of Health. USA. (P30AG066546), the Keith M. Orme and Pat Vigeon Orme Endowed Chair in Alzheimers and Neurodegenerative Diseases (2024-2025) and Patricia Ruth Frederick Distinguished Chair for Precision Therapeutics in Alzheimers and Neurodegenerative Diseases (2025-2028). AR is also supported by the Agency for Innovation and Entrepreneurship (VLAIO) grant N{degrees} PR067/21 for the HARPONE project and the ADAPTED project the EU/EFPIA Innovative Medicines Initiative Joint Undertaking Grant N{degrees} 115975 and CIBERNED (ISCIII).",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-06-25",
+    "updated": "2026-06-25",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.02.21.26346696v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.02.21.26346696v2.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "A loss-of-function IL-34 variant appears to lower IL-34 levels and push microglia toward Alzheimer’s disease-associated, inflammatory states linked to amyloid pathology.",
+      "clinical_relevance": "These findings suggest IL-34 may be a human genetic modifier of neuroinflammation and microglial health in Alzheimer’s disease, making it a potential biomarker or target for future study.",
+      "method": [
+        "Measured IL-34 in CSF and serum from deeply phenotyped AD cohorts stratified by IL-34-Y213X genotype.",
+        "Integrated IL-34 status with CSF proteomics, transcriptomics, and phenome-wide association analyses.",
+        "Tested IL-34 deficiency in mouse microglia, APP/PS1 mice, and postmortem human AD cortex."
+      ],
+      "evidence_signal": "The abstract reports multi-cohort human genetics plus biomarker, proteomic, transcriptomic, mouse, and postmortem tissue data showing consistent effects of IL-34 deficiency on microglial and AD-related signatures.",
+      "watch_item": "Associations and mouse-model effects are strong but do not by themselves prove that restoring IL-34 will safely improve human Alzheimer’s outcomes.",
+      "hashtags": [
+        "#AlzheimersDisease",
+        "#Microglia",
+        "#IL34",
+        "#Neuroinflammation",
+        "#HumanGenetics"
+      ],
+      "paper_id": "2026-06-25-medrxiv-human_il_34_deficiency_primes_microglia_toward_alzheimer_s_disease_associated_states",
+      "paper_title": "Human IL-34 Deficiency Primes Microglia Toward Alzheimer's Disease-Associated States",
+      "paper_date": "2026-06-25",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-07-01T10:40:17",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-25-medrxiv-time_aware_contrastive_transformer_for_longitudinal_patient_representation_learning",
+    "doi": "10.64898/2026.06.23.26356236",
+    "date": "2026-06-25",
+    "title": "Time-Aware Contrastive Transformer for Longitudinal Patient Representation Learning",
+    "authors": "Heinolainen, A.; Tran, L.; Arora, A.; Silen, S.; Renkonen, R.; Koskinen, M.",
+    "abstract": "Learning high-quality longitudinal patient representations from irregular electronic health records (EHRs) is essential for understanding heterogeneity in time-evolving diseases such as cancer. Longitudinal patient representation learning methods often rely on external labels for downstream tasks or do not model the temporal dynamics between medical events explicitly, reducing the clinical applicability of learned disease trajectories. In this work, we propose the Time-Aware-Contrastive-Transformer (TACT), a transformer-based model that integrates explicit temporal modeling with a fully self-supervised contrastive learning framework. We introduce a sampling-based data augmentation work-flow that leverages hierarchical taxonomies of diagnoses and medications to enrich representation learning. Evaluated on a large real-world dataset, TACT demonstrates robust performance across patient representation and event embedding metrics and outperforms two time-aware transformer comparison models. Unlike the comparison models, TACT successfully bridges contrastive learning with medical hierarchies, allowing it to track precise disease trajectories and discover clinically actionable patient phenotypes. Consequently, this approach establishes a comprehensive framework for characterizing patient heterogeneity through the identification of potentially clinically meaningful subgroups with distinct progression profiles.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-25",
+    "updated": "2026-06-25",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356236v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356236v1.full.pdf"
+      }
+    ],
+    "score": 40,
+    "infographic": {
+      "key_insight": "TACT is a self-supervised, time-aware transformer that learns longitudinal patient representations from irregular EHRs by combining explicit temporal modeling with contrastive learning and medical taxonomies.",
+      "clinical_relevance": "By better tracking disease trajectories and patient heterogeneity, TACT could help identify clinically meaningful subgroups and support precision oncology research.",
+      "method": [
+        "Transformer model with explicit temporal encoding for irregular event sequences",
+        "Fully self-supervised contrastive learning for patient representation and event embeddings",
+        "Sampling-based augmentation using hierarchical diagnosis and medication taxonomies"
+      ],
+      "evidence_signal": "On a large real-world dataset, TACT outperformed two time-aware transformer baselines on patient representation and event embedding metrics.",
+      "watch_item": "Results are from retrospective EHR data, so external validation and careful handling of taxonomy quality, missingness, and site-specific coding differences are important.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#EHR",
+        "#SelfSupervisedLearning",
+        "#Transformers",
+        "#TemporalModeling"
+      ],
+      "paper_id": "2026-06-25-medrxiv-time_aware_contrastive_transformer_for_longitudinal_patient_representation_learning",
+      "paper_title": "Time-Aware Contrastive Transformer for Longitudinal Patient Representation Learning",
+      "paper_date": "2026-06-25",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-01T10:40:19",
+      "generator": "openai"
+    }
+  }
+]
