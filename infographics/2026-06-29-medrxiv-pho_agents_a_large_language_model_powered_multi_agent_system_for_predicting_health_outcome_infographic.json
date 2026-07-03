@@ -1,24 +1,24 @@
 {
-  "key_insight": "PHO-Agents combines structured EHR modeling with LLM-based multi-agent reasoning to improve health outcome prediction and explanation quality.",
-  "clinical_relevance": "For cancer patients on immune checkpoint inhibitors, the system aims to better flag immune-related adverse events and support more interpretable decision support.",
+  "key_insight": "PHO-Agents combines structured EHR modeling with LLM-based multi-agent clinical reasoning to improve health outcome prediction and explanation quality.",
+  "clinical_relevance": "This hybrid system could support more trustworthy risk stratification and decision support for patients, including those receiving cancer immunotherapy.",
   "method": [
-    "Encodes longitudinal EHR sequences into attention-based patient representations and initial prediction logits.",
-    "Uses a data agent to turn EHR signals into patient summaries, a retrieval agent to fetch relevant clinical guidelines, and research/doctor agents to analyze the case.",
-    "A leader agent synthesizes agent outputs, then fuses LLM reasoning with EHR model logits for final predictions and explanation reports."
+    "Encoded longitudinal EHR sequences into attention-based patient representations and initial prediction logits.",
+    "Converted EHR outputs into patient summaries for a data agent, then used retrieval, research, doctor, and leader agents to review clinical evidence.",
+    "Fused EHR model outputs with LLM agent analyses to generate final predictions and explanation reports."
   ],
-  "evidence_signal": "Evaluated on three real-world cohorts and showed strong gains over baselines, including a PR-AUC of 90.20 ± 2.07 for AKI mortality versus 56.46 ± 2.98 for the best single-agent baseline.",
-  "watch_item": "The approach depends on reliable guideline retrieval and multi-agent LLM outputs, so performance and explainability may vary with data quality, prompt design, and deployment setting.",
+  "evidence_signal": "Evaluated on three real-world cohorts (AKI mortality, CKD-related AKI onset, and immune-related adverse events in cancer patients), with PHO-Agents outperforming single-agent and multi-agent LLM baselines; in AKI mortality it achieved PR-AUC 90.20 ± 2.07 versus 56.46 ± 2.98 for the best single-agent baseline.",
+  "watch_item": "Promising results still need careful validation for workflow integration, calibration, and generalization across sites, populations, and clinical settings.",
   "hashtags": [
     "#PrecisionOncology",
-    "#LLMHealthAI",
-    "#ClinicalPrediction",
+    "#LLM",
+    "#MultiAgentAI",
     "#EHR",
-    "#MultiAgentAI"
+    "#ClinicalDecisionSupport"
   ],
   "paper_id": "2026-06-29-medrxiv-pho_agents_a_large_language_model_powered_multi_agent_system_for_predicting_health_outcome",
   "paper_title": "PHO-Agents: A Large Language Model Powered Multi-Agent System for Predicting Health Outcomes",
   "paper_date": "2026-06-29",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-02T09:55:00",
+  "generated_at": "2026-07-03T09:52:25",
   "generator": "openai"
 }

@@ -1,0 +1,359 @@
+[
+  {
+    "id": "2026-06-29-medrxiv-large_language_models_for_cancer_registry_abstraction_a_real_world_evaluation_across_model",
+    "doi": "10.64898/2026.06.25.26356626",
+    "date": "2026-06-29",
+    "title": "Large language models for cancer registry abstraction: a real-world evaluation across models, variables, and cancer types",
+    "authors": "Fuchs, J.; Satusky, M. J.; Leese, P. J.; Nag, S.; Zipple, I. W.; Baggett, C. D.; Lash, S.; Reeder-Hayes, K.; Wood, W. A.; Johnson, C. T.; Critchley, C.; Krishnamurthy, A. K.; Elston Lafata, J.; Thompson, C. A.; Troester, M. A.; Pfaff, E. R.",
+    "abstract": "Cancer registries enable cancer surveillance at the population level. These registries require significant human-time to read through many different parts of the electronic health record, including structured data and lengthy, free-text clinical reports, to abstract values for hundreds of required variables. Large language models (LLMs) offer the possibility to significantly improve this process by supporting and speeding up cancer registry data abstraction. However, it is unclear how well these models perform at real-world cancer registry abstraction involving multiple cancer types and large patient volumes. Here, we evaluate five foundational LLMs for their ability to reliably abstract cancer registry variables. We leverage hospital cancer registry data from a large regional health system as the ground truth and use LLMs to abstract from clinical reports eight registry variables for 5,939 patients with seven different cancer types. We use a zero-shot prompting strategy to compare LLM ability on commonly abstracted cancer variables with different data types. The results show that larger and more advanced models (Claude Sonnet 4.5, GPT-OSS-120b, GPT-OSS-20b) generally outperform smaller models (Gemma 12b, LLaMA 3.1 8b). The best performing models show F1 scores around 0.8 for cancer registry variables with low cardinality (grade, summary stage, laterality), with only slightly lower F1 scores for variables with high cardinality (primary site, regional nodes examined, regional nodes positive). On the more complex task of precise date extraction, all models showed decreased performance on both diagnosis and treatment dates (exact accuracy [~]0.55 for the best performing models), which increased to [~]0.85 for a tolerance within {+/-}30 days. These results quantify the performance of various models as well as the potential and limitations of LLMs in cancer registry abstraction tasks. Author SummaryCancer registries help us understand who gets cancer, how it is treated, and how outcomes change over time. Today, trained registrars read many parts of the medical record and manually enter hundreds of details, leading to significant delays before cancer researchers can use this data. We tested whether Large Language Models could help with this work. Using clinical reports from 5,939 patients across seven cancer types at a large regional comprehensive cancer center, we asked five different models to capture key cancer registry fields such as where the cancer started, how advanced it is, the tumors grade, and the date of diagnosis. In our study, larger models were generally more accurate than smaller ones, and some open-source models performed comparably to proprietary options. Dates were the hardest information to capture precisely. We provide a realistic benchmark for speeding registry workflows in consultation with cancer registrars.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356626v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356626v1.full.pdf"
+      }
+    ],
+    "score": 70,
+    "infographic": {
+      "key_insight": "In a real-world cancer registry task, larger LLMs generally matched human-abstraction labels better than smaller models, especially for simpler registry fields.",
+      "clinical_relevance": "LLMs could speed up cancer registry abstraction and reduce manual workload, but date-related and other high-precision fields still need careful human oversight.",
+      "method": [
+        "Evaluated 5 foundational LLMs with zero-shot prompting",
+        "Abstracted 8 registry variables from clinical reports",
+        "Tested across 5,939 patients and 7 cancer types"
+      ],
+      "evidence_signal": "Using hospital cancer registry data as ground truth, the best models reached about 0.8 F1 for low-cardinality variables and about 0.55 exact accuracy for diagnosis and treatment dates, improving to about 0.85 within ±30 days.",
+      "watch_item": "Performance varied by variable and cancer type, so deploying these models as standalone abstraction tools could introduce errors without validation and review workflows.",
+      "hashtags": [
+        "#CancerRegistry",
+        "#LargeLanguageModels",
+        "#PrecisionOncology",
+        "#ClinicalAI",
+        "#HealthInformatics"
+      ],
+      "paper_id": "2026-06-29-medrxiv-large_language_models_for_cancer_registry_abstraction_a_real_world_evaluation_across_model",
+      "paper_title": "Large language models for cancer registry abstraction: a real-world evaluation across models, variables, and cancer types",
+      "paper_date": "2026-06-29",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-02T09:54:56",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-pho_agents_a_large_language_model_powered_multi_agent_system_for_predicting_health_outcome",
+    "doi": "10.64898/2026.06.19.26355815",
+    "date": "2026-06-29",
+    "title": "PHO-Agents: A Large Language Model Powered Multi-Agent System for Predicting Health Outcomes",
+    "authors": "Shi, D.; Shugg, T.; Eadon, M. T.; Su, J.; Chen, Y.; Song, Q.",
+    "abstract": "ObjectivePredicting health outcomes from electronic health records (EHRs) is challenging because traditional models rely on structured data and often ignore external medical knowledge. We propose an approach that integrates structured EHR with text-based clinical evidence to improve prediction and interpretability. MethodsWe introduce PHO-Agents, a multi-agent system powered by large language models (LLMs) for health outcome prediction. Structured EHR sequences are encoded to produce attention-based representations and initial logits, which are converted into patient summaries by a data agent. A retrieval agent gathers relevant clinical guidelines. Research and practical doctor agents independently assess the patient, and a leader agent synthesizes their analyses. Outputs from the EHR-based model and the LLM agents are fused to generate final predictions and explanation reports. PHO-Agents was evaluated on three real-world cohorts: acute kidney injury (AKI) patients (in-hospital mortality), chronic kidney disease patients (AKI onset within two years), and cancer patients receiving immune checkpoint inhibitors (immune-related adverse events within one year). ResultsPHO-Agents outperformed single-agent and multi-agent LLM baselines across all cohorts. In the AKI mortality task, it achieved a PR-AUC of 90.20 {+/-} 2.07, compared with 56.46 {+/-} 2.98 for the best single-agent baseline. Similar gains were observed in the ICI and CKD cohorts. Ablation studies showed that both multi-agent reasoning and logit-level fusion contributed to performance improvements, and case analyses demonstrated clinically consistent explanations. ConclusionPHO-Agents integrates longitudinal EHR modeling with collaborative LLM reasoning, improving predictive performance, interpretability, and robustness across diverse clinical tasks. This hybrid approach offers a trustworthy strategy for real-world clinical decision support.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.19.26355815v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.19.26355815v1.full.pdf"
+      }
+    ],
+    "score": 62,
+    "infographic": {
+      "key_insight": "PHO-Agents combines structured EHR modeling with LLM-based multi-agent reasoning to improve health outcome prediction and explanation quality.",
+      "clinical_relevance": "For cancer patients on immune checkpoint inhibitors, the system aims to better flag immune-related adverse events and support more interpretable decision support.",
+      "method": [
+        "Encodes longitudinal EHR sequences into attention-based patient representations and initial prediction logits.",
+        "Uses a data agent to turn EHR signals into patient summaries, a retrieval agent to fetch relevant clinical guidelines, and research/doctor agents to analyze the case.",
+        "A leader agent synthesizes agent outputs, then fuses LLM reasoning with EHR model logits for final predictions and explanation reports."
+      ],
+      "evidence_signal": "Evaluated on three real-world cohorts and showed strong gains over baselines, including a PR-AUC of 90.20 ± 2.07 for AKI mortality versus 56.46 ± 2.98 for the best single-agent baseline.",
+      "watch_item": "The approach depends on reliable guideline retrieval and multi-agent LLM outputs, so performance and explainability may vary with data quality, prompt design, and deployment setting.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#LLMHealthAI",
+        "#ClinicalPrediction",
+        "#EHR",
+        "#MultiAgentAI"
+      ],
+      "paper_id": "2026-06-29-medrxiv-pho_agents_a_large_language_model_powered_multi_agent_system_for_predicting_health_outcome",
+      "paper_title": "PHO-Agents: A Large Language Model Powered Multi-Agent System for Predicting Health Outcomes",
+      "paper_date": "2026-06-29",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-02T09:55:00",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-26-medrxiv-ai_enabled_proteomic_profiling_identifies_interpretable_diagnostic_biomarkers_for_gastric",
+    "doi": "10.64898/2026.06.24.26356417",
+    "date": "2026-06-26",
+    "title": "AI-enabled proteomic profiling identifies interpretable diagnostic biomarkers for gastric-type adenocarcinoma of the uterine cervix",
+    "authors": "Zhu, T.; Huang, H.; Yang, Z.; Ni, M.; Xi, Y.; Liu, Y.; Luo, W.; Tang, X.; Fan, X.; Yang, C.; Shen, Z.; Wang, J.; Tang, H.; Weng, Q.",
+    "abstract": "Gastric-type adenocarcinoma of the uterine cervix (GAS) is a rare, aggressive cervical cancer unrelated to HPV infection that is frequently misdiagnosed because it closely resembles both benign cervical glands and HPV-related cervical adenocarcinoma. This diagnostic confusion can lead to inappropriate treatment, highlighting the need for objective molecular markers. Here, we performed the systematic multi-center proteomic analysis of GAS, profiling 407 cervical tissue samples to map its molecular landscape. To overcome limited sample size and biological noise, we developed WEDGE. First, generative AI synthesizes realistic artificial proteomic profiles to augment the training data. Biologically informed network analysis then leverages known biological relationships to surface diagnostically meaningful patterns. WEDGE identified a two-protein signature, Pepsinogen C (PGC) and DNA Methyltransferase 1 (DNMT1), that distinguished GAS from HPV-related cervical cancer with 93% accuracy in the test cohort and 97% accuracy in an external proteomic cohort, outperforming existing biomarker-discovery methods. Tissue staining of an IHC validation cohort confirmed the expression patterns and reached a diagnostic accuracy of 87.9%. Beyond diagnosis, PGC independently predicted patient outcomes, and combining PGC with routine clinical features improved risk prediction (C-index 0.701). Together, these results establish an AI-driven framework for biomarker discovery and provide clinically relevant candidate tools for diagnosing and prognosticating for GAS. TeaserA graph-based proteomic framework prioritizes a two-protein IHC-amenable panel for gastric-type cervical adenocarcinoma.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-06-26",
+    "updated": "2026-06-26",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.24.26356417v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.24.26356417v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "An AI-guided proteomics workflow identified a simple two-protein biomarker panel, PGC and DNMT1, that can distinguish gastric-type cervical adenocarcinoma from HPV-related cervical cancer.",
+      "clinical_relevance": "This could improve diagnostic accuracy for a rare, aggressive cervical cancer that is often misdiagnosed, and PGC may also help with prognosis.",
+      "method": [
+        "Multi-center proteomic profiling of 407 cervical tissue samples",
+        "Generative AI created synthetic proteomic profiles to augment training data",
+        "Biologically informed network analysis prioritized interpretable biomarker candidates"
+      ],
+      "evidence_signal": "The two-protein signature achieved 93% accuracy in the test cohort and 97% in an external proteomic cohort, with 87.9% accuracy in IHC validation.",
+      "watch_item": "The biomarker panel needs broader prospective validation before routine clinical use, especially given the rarity and diagnostic complexity of GAS.",
+      "hashtags": [
+        "#Proteomics",
+        "#AIinBiomarkers",
+        "#CervicalCancer",
+        "#CancerDiagnosis",
+        "#TranslationalOncology"
+      ],
+      "paper_id": "2026-06-26-medrxiv-ai_enabled_proteomic_profiling_identifies_interpretable_diagnostic_biomarkers_for_gastric",
+      "paper_title": "AI-enabled proteomic profiling identifies interpretable diagnostic biomarkers for gastric-type adenocarcinoma of the uterine cervix",
+      "paper_date": "2026-06-26",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-07-02T09:55:03",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-medrxiv-6_month_recovery_after_mild_traumatic_brain_injury_in_older_adults_a_track_geri_study",
+    "doi": "10.64898/2026.06.25.26356520",
+    "date": "2026-06-29",
+    "title": "6-Month Recovery after Mild Traumatic Brain Injury in Older Adults: A TRACK-GERI Study",
+    "authors": "Rosen Lang, Y.; Puccio, A.; Yuh, E. L.; Lombardi, D.; Kuang, K.; Diaz Nelson, M.; Boscardin, W. J.; Huie, J. R.; Yaffe, K.; Okonkwo, D. O.; Diaz Arrastia, R.; Manley, G. T.; Gardner, R. C.; Transforming Research and Clinical Knowledge in Traumatic Brain Injury (TRACK-TBI) investigators,",
+    "abstract": "ImportanceOlder adults ([&ge;]65 years old) are the largest and fastest growing population of traumatic brain injury (TBI) victims. However, real-world evidence of 6-month functional outcomes is limited. ObjectiveTo describe 6-month functional outcomes in older adults after mild TBI (mTBI; presenting Glasgow Coma Scale score 13-15), by age group and preinjury cognitive status. To evaluate the performance of the Glasgow Outcome Scale-Extended (GOSE) as a geriatric mTBI clinical trial endpoint. DesignProspective cohort study; single-center pilot enrollment February 2018-April 2019; two-center enrollment October 2020-March 2025. SettingTwo U.S. level I trauma centers. ParticipantsOlder adults presenting within 72 hours of mTBI who received head CT, and their co-enrolled study-partner informants. Data curation and analysis were performed January 2023-November 2025. ExposuremTBI. Main outcome and measuresGOSE was assessed at 2 weeks and 6 months post-injury and weighted using inverse probability weighting to mitigate attrition bias. Reliable change index was used to estimate the proportions of GOSE improvement or deterioration from 2 weeks to 6 months versus a 9-item Activities of Daily Living survey (ADL, Supplemental Methods) and Functional Activities Questionnaire (FAQ). ResultsAmong 253 participants with mTBI, mean (SD) age was 77.3 (8.3) years, 129 (51%) were female, 68 (34%) had pre-injury mild cognitive impairment and 28 (15%) had pre-injury dementia (58 had unknown preinjury cognitive status). At 6 months, 14% died, 73% achieved home independence (GOSE 5+), and 17% achieved complete recovery (GOSE 8). Younger-old and persons without preinjury cognitive impairment had substantially better recovery (mortality 6-11%, home independence 84-86%, complete recovery 21-22%) versus oldest-old and those with pre-injury dementia (mortality 29-32%, home independence 23-52%, complete recovery 5-10%). GOSE detected the greatest proportion of reliable improvement or deterioration compared to ADL and FAQ, though low agreement reflects their complementary domains. Conclusions and RelevanceMost younger and cognitively-unimpaired older adults achieved favorable functional outcomes, however, more vulnerable older adults may suffer chronic disability after mTBI. GOSE effectively captures meaningful change in this population, while ADL and FAQ provide important complementary information. Findings underscore the need for age-appropriate prognostication and more inclusive geriatric TBI research and clinical trial design. Trial RegistrationNCT07296783 Key pointsO_ST_ABSQuestionC_ST_ABSWhat are the functional outcomes of older adults 6 months after mild TBI, by age group and preinjury cognitive status? FindingsMost older adults achieved home independence, though complete recovery was less common and mortality was notable. Younger-old and preinjury cognitively unimpaired individuals had substantially better recovery, with lower mortality and higher rates of home independence and complete recovery, compared to the oldest-old and those who had dementia preinjury. Meaning6 months after mild TBI, the younger-old and cognitively-resilient have high potential for favorable outcome, while the older-old and cognitively-vulnerable are at high risk for mortality or chronic disability.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-06-29",
+    "updated": "2026-06-29",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356520v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356520v1.full.pdf"
+      }
+    ],
+    "score": 56,
+    "infographic": {
+      "key_insight": "Older adults with mild TBI often recover well by 6 months, but outcomes are much worse in the oldest patients and those with pre-injury cognitive impairment.",
+      "clinical_relevance": "GOSE may be a useful trial endpoint for geriatric mTBI because it captured more change over time than ADL or FAQ measures in this study.",
+      "method": [
+        "Prospective cohort study at two U.S. level I trauma centers",
+        "Enrolled adults ≥65 years presenting within 72 hours of mild TBI with head CT",
+        "Assessed GOSE at 2 weeks and 6 months, with weighting to reduce attrition bias"
+      ],
+      "evidence_signal": "In 253 participants, 6-month outcomes showed 14% mortality, 73% home independence, and 17% complete recovery, with better results in younger-old and cognitively unimpaired groups.",
+      "watch_item": "Single-center pilot plus later two-center enrollment, substantial unknown pre-injury cognitive status, and attrition-adjusted analyses mean results may not generalize to all older mTBI patients.",
+      "hashtags": [
+        "#TBI",
+        "#Geriatrics",
+        "#MildTBI",
+        "#FunctionalOutcomes",
+        "#ClinicalResearch"
+      ],
+      "paper_id": "2026-06-29-medrxiv-6_month_recovery_after_mild_traumatic_brain_injury_in_older_adults_a_track_geri_study",
+      "paper_title": "6-Month Recovery after Mild Traumatic Brain Injury in Older Adults: A TRACK-GERI Study",
+      "paper_date": "2026-06-29",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-07-02T09:55:06",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-26-medrxiv-an_agentic_no_code_artificial_intelligence_workflow_for_developing_and_externally_validati",
+    "doi": "10.64898/2026.06.23.26356395",
+    "date": "2026-06-26",
+    "title": "An Agentic, No Code Artificial Intelligence Workflow for Developing and Externally Validating a Thyroid Nodule Ultrasound Malignancy Classifier",
+    "authors": "Thomas, J.; Pozdeyev, N.",
+    "abstract": "Convolutional neural networks (CNNs) can classify thyroid nodules on ultrasound, yet published models are seldom available for independent testing, require machine-learning expertise to develop and deploy, and are validated mostly on papillary thyroid carcinoma. ObjectiveTo test whether an autonomous (\"agentic\"), no-code artificial intelligence (AI) agent can develop a calibrated thyroid-nodule malignancy classifier, and to validate it internally and on an external cohort spanning multiple cancer histologies. MethodsThis is a retrospective, computational diagnostic study with prespecified endpoints. A no-code agent (Hugging Face ML-Intern) autonomously reviewed data, selected and trained the model and calibrated probabilities, using the open-source TN5000 dataset (3500 training, 500 validation, and 1000 test images). The trained ResNet-18 model was externally validated on 232 nodules from the University of Colorado, including follicular, medullary, oncocytic, and follicular-variant of papillary carcinomas. ResultsOn the internal test set, an agentic AI model achieved AUROC 0.94 (95% CI, 0.920-0.953), sensitivity 0.90, and specificity 0.80. On external validation, agentic AI model achieved an AUROC of 0.90 (95% CI, 0.850-0.936), sensitivity of 0.92, and specificity of 0.68, negative predictive value of 0.96, and positive predictive value of 0.52, exceeding the performance of a previously published classifier on the same cohort (AUROC of 0.83). ConclusionsAn agentic, no-code AI workflow produced a calibrated, externally validated thyroid nodule classifier, supporting accessible, reproducible, and independently testable medical AI development. Prospective validation and local recalibration are required before clinical use.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-06-26",
+    "updated": "2026-06-26",
+    "primary_category": "endocrinology",
+    "categories": [
+      "endocrinology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356395v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.23.26356395v1.full.pdf"
+      }
+    ],
+    "score": 55,
+    "infographic": {
+      "key_insight": "An autonomous, no-code AI workflow built a calibrated thyroid nodule ultrasound classifier that performed strongly in both internal and external validation.",
+      "clinical_relevance": "The study suggests that accessible AI tools could help develop reproducible malignancy classifiers for thyroid nodules, including across multiple cancer histologies.",
+      "method": [
+        "Used the no-code Hugging Face ML-Intern agent to autonomously review data, choose/train a model, and calibrate probabilities.",
+        "Trained a ResNet-18 on the TN5000 ultrasound dataset (3500 training, 500 validation, 1000 test images).",
+        "Externally validated the model on 232 nodules from the University of Colorado, including several thyroid cancer subtypes."
+      ],
+      "evidence_signal": "Performance was strong on internal testing (AUROC 0.94) and remained high on external validation (AUROC 0.90), with sensitivity 0.92 and specificity 0.68.",
+      "watch_item": "Prospective validation and local recalibration are still needed before clinical use, especially given the moderate external specificity and single-site external cohort.",
+      "hashtags": [
+        "#ArtificialIntelligence",
+        "#PrecisionOncology",
+        "#ThyroidNodule",
+        "#MedicalImaging",
+        "#ExternalValidation"
+      ],
+      "paper_id": "2026-06-26-medrxiv-an_agentic_no_code_artificial_intelligence_workflow_for_developing_and_externally_validati",
+      "paper_title": "An Agentic, No Code Artificial Intelligence Workflow for Developing and Externally Validating a Thyroid Nodule Ultrasound Malignancy Classifier",
+      "paper_date": "2026-06-26",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-02T09:55:10",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-28-medrxiv-routine_implementation_of_synuclein_seed_amplification_assays_reveals_high_diagnostic_perf",
+    "doi": "10.64898/2026.04.21.26351389",
+    "date": "2026-06-28",
+    "title": "Routine implementation of α-synuclein Seed Amplification Assays reveals high diagnostic performance and the limited value of Alzheimer disease fluid biomarkers for detecting α-synuclein co-pathology",
+    "authors": "Jourdan, O.; Duchiron, M.; Torrent, J.; Turpinat, C.; Mondesert, E.; Busto, G.; Morchikh, M.; Dornadic, M.; Delaby, C.; Hirtz, C.; Thizy, L.; Barnier-Figue, G.; Perrein, F.; Jurici, S.; Gabelle, A.; Bennys, K.; Lehmann, S.",
+    "abstract": "BackgroundIn neurodegenerative diseases, the diagnostic value of -synuclein seed amplification assay (SAA) in routine clinical practice and its relationship with cognitive performance and fluid biomarkers remains incompletely characterized. In addition, although Alzheimer disease (AD) CSF and blood biomarkers accurately detect amyloid and tau pathology, their ability to identify concomitant -synuclein (Syn) pathology remains unknown. MethodsWe included 398 patients from the multicenter memory clinic ALZAN cohort. All participants underwent CSF and blood sampling with measurement of CSF biomarkers (A{beta}42/40, tau, p-tau181) and plasma biomarkers (A{beta}42/40, p-tau181, p-tau217, GFAP, NfL). Cognitive assessment was performed using the Mini-Mental State Examination (MMSE). Clinical diagnoses were independently confirmed by two senior neurologists. Syn status was determined by SAA (RT-QuIC). ResultsOf 398 patients, 19/20 patients with Lewy body dementia (LBD) (95.0%) and 32/203 patients with AD (15.8%) were SAA+. SAA-positivity presented a sensitivity of 95.0% (95%CI, 75.1-99.9), a specificity of 93.1% (95%CI, 88.3-96.4) for distinguishing LBD from patients without LBD or AD. In the entire cohort, SAA+ patients showed lower MMSE scores (p<0.01), lower CSF A{beta}42/40 ratio (p<0.01), and elevated plasma GFAP (p<0.05). However, within the AD subgroup, only CSF A{beta}42/40 differed marginally between SAA+ and SAA- patients, whereas CSF total tau, CSF p-tau181, plasma p-tau217, p-tau181, GFAP, and NfL showed no significant differences. ConclusionsSAA accurately detects Syn pathology in routine memory clinic practice that is not captured by current AD CSF and blood biomarkers. These findings support SAA as a complementary biomarker for routine diagnosis and patient stratification. What is already known on this topic-synuclein seed amplification assay (SAA) has shown high sensitivity and specificity for detecting Lewy body dementia (LBD) in research cohorts, and -synuclein co-pathology is frequently observed in Alzheimers disease (AD). However, it remains unknown whether currently available AD CSF and blood biomarkers can identify patients with -synuclein pathology in routine clinical practice. What this study addsIn a prospective multicenter memory clinic cohort, SAA showed high sensitivity (95.0%) and specificity (93.5%) for identifying clinically diagnosed LBD and detected Syn co-pathology in 15.8% of AD patients. Current AD CSF and blood biomarkers did not discriminate between SAA-positive and SAA-negative patients, providing little information on concomitant Syn pathology. How this study might affect research, practice or policySAA provides unique biological information by improving the detection of LBD and identifying AD patients with concomitant Syn co-pathology that is not captured by current CSF and blood biomarkers, thereby improving patient stratification and informing future precision medicine approaches and therapeutic trials.",
+    "category": "Therapeutic Discovery",
+    "source": "medRxiv",
+    "published": "2026-06-28",
+    "updated": "2026-06-28",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351389v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351389v2.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "α-synuclein seed amplification assay (SAA) shows strong real-world ability to detect α-synuclein pathology in memory clinic patients, while standard Alzheimer fluid biomarkers add little for identifying co-pathology.",
+      "clinical_relevance": "Routine SAA testing could improve diagnostic stratification, especially for Lewy body dementia and Alzheimer disease patients with hidden α-synuclein co-pathology.",
+      "method": [
+        "398 patients from the multicenter ALZAN memory clinic cohort",
+        "CSF and plasma Alzheimer biomarkers measured alongside α-synuclein RT-QuIC SAA",
+        "Cognitive status assessed with MMSE and diagnoses confirmed by two senior neurologists"
+      ],
+      "evidence_signal": "In the cohort, SAA was positive in 95.0% of Lewy body dementia cases and 15.8% of Alzheimer disease cases, with reported sensitivity of 95.0% and specificity of 93.1% for distinguishing LBD from non-LBD/non-AD patients.",
+      "watch_item": "Findings come from a memory clinic cohort and do not prove that AD CSF or blood biomarkers are useful for detecting α-synuclein co-pathology in broader or earlier-stage populations.",
+      "hashtags": [
+        "#AlphaSynuclein",
+        "#SeedAmplificationAssay",
+        "#LewyBodyDementia",
+        "#AlzheimersBiomarkers",
+        "#Neurodegeneration"
+      ],
+      "paper_id": "2026-06-28-medrxiv-routine_implementation_of_synuclein_seed_amplification_assays_reveals_high_diagnostic_perf",
+      "paper_title": "Routine implementation of α-synuclein Seed Amplification Assays reveals high diagnostic performance and the limited value of Alzheimer disease fluid biomarkers for detecting α-synuclein co-pathology",
+      "paper_date": "2026-06-28",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-07-02T09:55:13",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-26-medrxiv-a_brief_acceptance_and_commitment_therapy_intervention_to_support_those_living_at_risk_of",
+    "doi": "10.64898/2026.06.16.26355436",
+    "date": "2026-06-26",
+    "title": "A Brief Acceptance and Commitment Therapy Intervention to Support Those Living At Risk of Inherited Prion Disease",
+    "authors": "Brien, R.; Dindo, L.; Williams, R.; Pauli, L.; Marsh, B.; Collinge, J.; Mead, S.; Chan, E.",
+    "abstract": "Living at risk of a neurodegenerative condition such as inherited prion disease (IPD) is associated with substantial psychological burden, yet evidence-based supportive interventions are lacking. This unmet need is likely to grow as advances in biomarkers and predictive testing lead to increasing identification of individuals in pre-symptomatic stages of neurodegenerative disease. Acceptance and Commitment Therapy (ACT), a transdiagnostic intervention targeting psychological flexibility, has shown promise in chronic health contexts but has not been evaluated in individuals at genetic risk. We conducted a feasibility and acceptability study of a brief, group-based ACT intervention in adults at risk of IPD recruited through the UK National Prion Clinic. The intervention comprised a single 5-hour, face-to-face workshop followed by an individual booster session. Prespecified feasibility and acceptability criteria were assessed alongside secondary psychological outcomes at baseline, 1 month, and 3 months post-intervention, complemented by semi-structured qualitative interviews. Twenty-three participants completed the intervention. All predefined feasibility criteria were met, including recruitment (58%), intervention completion (80%), retention at 3 months (79%), and low missing data (10%). Acceptability was high, with all participants reporting the intervention as useful and appropriate. Quantitative analyses demonstrated improvements in psychological quality of life and behavioural awareness at 3 months, with larger effects observed in participants with elevated baseline depressive symptoms. Qualitative findings highlighted the importance of peer connection, experiential learning, and practical strategies for managing uncertainty. These findings demonstrate that a brief, hybrid ACT intervention is feasible and acceptable for individuals living at risk of IPD and provide preliminary evidence for improving psychological well-being. As the population of individuals identified as at risk for neurodegenerative disease continues to expand, scalable psychological interventions that address cost and time barriers may represent an important component of future clinical care.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-06-26",
+    "updated": "2026-06-26",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.16.26355436v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.16.26355436v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "A brief Acceptance and Commitment Therapy (ACT) program was feasible and well accepted for people at risk of inherited prion disease, with early signs of improved psychological well-being.",
+      "clinical_relevance": "This suggests scalable, low-burden psychological support may help address distress in individuals identified as genetically at risk for neurodegenerative disease.",
+      "method": [
+        "Single 5-hour face-to-face ACT workshop",
+        "One individual booster session",
+        "Outcomes measured at baseline, 1 month, and 3 months plus qualitative interviews"
+      ],
+      "evidence_signal": "In a 23-participant feasibility study, all predefined feasibility criteria were met, retention at 3 months was 79%, missing data were low (10%), and acceptability was reported as high.",
+      "watch_item": "Findings are preliminary from a small, single-clinic study without a control group, so effectiveness and generalizability remain uncertain.",
+      "hashtags": [
+        "#AcceptanceAndCommitmentTherapy",
+        "#PsychologicalFlexibility",
+        "#NeurodegenerativeDisease",
+        "#FeasibilityStudy",
+        "#MentalHealthSupport"
+      ],
+      "paper_id": "2026-06-26-medrxiv-a_brief_acceptance_and_commitment_therapy_intervention_to_support_those_living_at_risk_of",
+      "paper_title": "A Brief Acceptance and Commitment Therapy Intervention to Support Those Living At Risk of Inherited Prion Disease",
+      "paper_date": "2026-06-26",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-07-02T09:55:17",
+      "generator": "openai"
+    }
+  }
+]
