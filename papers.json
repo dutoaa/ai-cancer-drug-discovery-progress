@@ -1,5 +1,730 @@
 [
   {
+    "id": "2026-07-01-arxiv-clinrag_graph_clinical_prior_retrieval_augmented_graph_model_with_domain_adversarial_learn",
+    "arxiv_id": "2607.00798v1",
+    "date": "2026-07-01",
+    "title": "ClinRAG-GRAPH: Clinical-prior Retrieval-Augmented Graph Model with Domain Adversarial Learning for Breast pCR Prediction",
+    "authors": "Yaofei Duan, Yuhao Huang, Tianyu Zhang, Yuan Gao, Luyi Han, Xin Wang",
+    "abstract": "Neoadjuvant chemotherapy (NAC) response prediction is clinically important for treatment stratification in breast cancer. However, robust pre-treatment pathological complete response (pCR) prediction remains challenging due to insufficient cross-modal modeling, multicenter imaging heterogeneity, and weak evidence-grounded interpretability. We propose ClinRAG-GRAPH, a Clinically informed Retrieval-Augmented Generation Graph framework, for pre-treatment pCR prediction from DCE-MRI, structured clinical variables, and biopsy-derived pathological biomarkers. ClinRAG-GRAPH constructs an intra-patient clinical-prior graph and applies a prior-guided relation-aware graph convolutional network for structured multimodal representation learning. To improve cross-center robustness, we introduce a dual-branch domain-adversarial learning strategy to suppress protocol-related MRI bias while preserving pCR-relevant features. To enhance interpretability, we further incorporate large language model (LLM)-driven subgraph RAG module that retrieves clinically analogous historical cases and integrates retrieved evidence for pCR inference. We assemble a large-scale multicenter NAC breast cancer cohort for extensive validation, drawing from two public sources and three in-house centers.Results show that ClinRAG-GRAPH achieves AUCs of 0.815 on the internal test set and 0.774/0.712 on two external test sets, demonstrating robust pre-treatment pCR prediction across centers. The code is available at the anonymized https://github.com/miccai26-1181/ClinRAG-GRAPH.",
+    "category": "Precision Oncology",
+    "source": "arXiv",
+    "published": "2026-07-01T11:28:01Z",
+    "updated": "2026-07-01T11:28:01Z",
+    "primary_category": "cs.CV",
+    "categories": [
+      "cs.CV"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.00798v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.00798v1"
+      }
+    ],
+    "score": 83,
+    "infographic": {
+      "key_insight": "ClinRAG-GRAPH combines imaging, clinical, and biopsy data with graph-based learning and LLM-guided retrieval to improve pre-treatment breast pCR prediction.",
+      "clinical_relevance": "If validated, this approach could help stratify breast cancer patients before neoadjuvant chemotherapy and support more personalized treatment planning.",
+      "method": [
+        "Builds an intra-patient clinical-prior graph from DCE-MRI, structured clinical variables, and pathology biomarkers.",
+        "Uses a prior-guided relation-aware GCN to learn multimodal representations.",
+        "Adds domain-adversarial learning and LLM-based subgraph retrieval to improve robustness and interpretability."
+      ],
+      "evidence_signal": "The model reported AUCs of 0.815 on the internal test set and 0.774/0.712 on two external test sets across multicenter cohorts.",
+      "watch_item": "Performance may still depend on imaging protocol consistency, site-specific data quality, and the reliability of retrieved historical cases for explanation.",
+      "hashtags": [
+        "#BreastCancer",
+        "#PrecisionOncology",
+        "#MRI",
+        "#GraphAI",
+        "#ExplainableAI"
+      ],
+      "paper_id": "2026-07-01-arxiv-clinrag_graph_clinical_prior_retrieval_augmented_graph_model_with_domain_adversarial_learn",
+      "paper_title": "ClinRAG-GRAPH: Clinical-prior Retrieval-Augmented Graph Model with Domain Adversarial Learning for Breast pCR Prediction",
+      "paper_date": "2026-07-01",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-04T09:13:48",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-01-arxiv-explainable_ai_for_cancer_drug_response_prediction_beyond_univariate_feature_attributions",
+    "arxiv_id": "2607.00931v1",
+    "date": "2026-07-01",
+    "title": "Explainable AI for Cancer Drug Response Prediction: Beyond Univariate Feature Attributions",
+    "authors": "Martino Ciaperoni, Margherita Lalli, Simone Piaggesi, Martina Varisco, Francesco Carli, Riccardo Guidotti",
+    "abstract": "Predicting cancer drug response from transcriptomic profiles is a cornerstone of precision oncology, yet the scientific value of machine learning models hinges not solely on predictive accuracy, but also on their capacity to generate reliable biological insights. Current explainability approaches in this setting are computationally costly, lack robustness, and reduce complex drug response to univariate gene importance scores, overlooking the coordinated gene activity that drives sensitivity and resistance. In this work, we present ILLUME+, a scalable post-hoc explainability framework that moves beyond single-gene assessments to capture multiple, complementary forms of explanation. Integrated into our end-to-end pipeline, ILLUME+ produces more stable gene importance scores than existing baselines, recovers established drug-gene associations and mechanisms of action, and enables AI-assisted hypothesis generation to uncover novel interaction-driven molecular signals in cancer biology.",
+    "category": "Precision Oncology",
+    "source": "arXiv",
+    "published": "2026-07-01T13:34:04Z",
+    "updated": "2026-07-01T13:34:04Z",
+    "primary_category": "cs.LG",
+    "categories": [
+      "cs.LG"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.00931v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.00931v1"
+      }
+    ],
+    "score": 81,
+    "infographic": {
+      "key_insight": "ILLUME+ is a scalable explainable-AI framework that goes beyond single-gene rankings to uncover more stable, biologically meaningful patterns behind cancer drug response prediction.",
+      "clinical_relevance": "By revealing drug-gene associations and interaction-driven signals, this approach may improve the interpretability of precision-oncology models and support hypothesis generation for targeted therapy research.",
+      "method": [
+        "Post-hoc explainability framework integrated into an end-to-end drug-response prediction pipeline",
+        "Produces multiple complementary explanation types instead of only univariate gene importance scores",
+        "Designed to improve stability and capture coordinated gene activity linked to sensitivity and resistance"
+      ],
+      "evidence_signal": "According to the abstract, ILLUME+ generated more stable gene-importance scores than baseline explainers and recovered known drug-gene mechanisms while also surfacing novel interaction-based hypotheses.",
+      "watch_item": "As a post-hoc explanation method, its biological insights still depend on the quality of the underlying transcriptomic data and predictive model, and extra validation is needed before any translational use.",
+      "hashtags": [
+        "#ExplainableAI",
+        "#PrecisionOncology",
+        "#CancerResearch",
+        "#DrugResponse",
+        "#Bioinformatics"
+      ],
+      "paper_id": "2026-07-01-arxiv-explainable_ai_for_cancer_drug_response_prediction_beyond_univariate_feature_attributions",
+      "paper_title": "Explainable AI for Cancer Drug Response Prediction: Beyond Univariate Feature Attributions",
+      "paper_date": "2026-07-01",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-04T09:13:50",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-02-arxiv-predicting_early_stages_of_alzheimer_s_disease_and_identifying_key_biomarkers_using_deep_a",
+    "arxiv_id": "2607.02142v1",
+    "date": "2026-07-02",
+    "title": "Predicting Early Stages Of Alzheimer's Disease And Identifying Key Biomarkers Using Deep Artificial Neural Network And Ensemble Of Machine Learning Methodologies",
+    "authors": "Debopriya Ghosh",
+    "abstract": "Alzheimers disease (AD) is a brain disorder that develops slowly and mainly affects memory, thinking, language, and daily activities. It is one of the most common causes of dementia and creates many difficulties for patients as well as their families. In the early stage, the symptoms are often mild and may look like normal ageing. For this reason, many people are diagnosed late, when the disease has already progressed. At present, there is no complete cure for AD. Still, early detection can help doctors manage the condition better and take suitable steps at the right time. In this study, a machine learning model is proposed to detect the early stages of Alzheimers disease using clinical details, neuropsychological test scores, and neuroimaging-related measures. The data used in this work is collected from the Alzheimers Disease Neuroimaging Initiative (ADNI). As the dataset has missing values, iterative imputation is applied to fill them. The dataset also has class imbalance, which is handled using Borderline SVM-SMOTE. After that, feature selection is carried out using wrapper-based and embedded methods so that only important features are used for training. The selected features are divided into training and testing sets, and feature scaling is applied. A stacking ensemble model is developed using Logistic Regression, Extra Trees, Bagging KNN, and LightGBM as base classifiers. Along with this, an artificial neural network is also trained on the same dataset. The performance of these models is compared using precision, recall, F1-score, and AUC-ROC. This study aims to find the best classifier and also identify important biomarkers that may help in the early diagnosis of Alzheimers disease.",
+    "category": "Target Biology",
+    "source": "arXiv",
+    "published": "2026-07-02T13:20:34Z",
+    "updated": "2026-07-02T13:20:34Z",
+    "primary_category": "cs.LG",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "cs.CV",
+      "cs.NE",
+      "eess.IV"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.02142v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.02142v1"
+      }
+    ],
+    "score": 72,
+    "infographic": {
+      "key_insight": "A machine-learning pipeline combining imputation, imbalance handling, feature selection, and ensemble modeling was used to predict early Alzheimer’s disease and highlight potential biomarkers.",
+      "clinical_relevance": "If validated, this approach could support earlier identification of Alzheimer’s-related changes before symptoms become severe, helping guide timely clinical follow-up.",
+      "method": [
+        "Used ADNI clinical, neuropsychological, and neuroimaging-related data.",
+        "Filled missing values with iterative imputation and addressed class imbalance with Borderline SVM-SMOTE.",
+        "Compared a stacking ensemble and an artificial neural network after feature selection and scaling."
+      ],
+      "evidence_signal": "Model performance was evaluated using precision, recall, F1-score, and AUC-ROC on selected features from the ADNI dataset.",
+      "watch_item": "The abstract does not report external validation, so real-world generalizability and biomarker robustness remain uncertain.",
+      "hashtags": [
+        "#AlzheimersDisease",
+        "#MachineLearning",
+        "#Biomarkers",
+        "#EarlyDetection",
+        "#DeepLearning"
+      ],
+      "paper_id": "2026-07-02-arxiv-predicting_early_stages_of_alzheimer_s_disease_and_identifying_key_biomarkers_using_deep_a",
+      "paper_title": "Predicting Early Stages Of Alzheimer's Disease And Identifying Key Biomarkers Using Deep Artificial Neural Network And Ensemble Of Machine Learning Methodologies",
+      "paper_date": "2026-07-02",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-07-04T09:13:53",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-02-arxiv-molsight_a_graph_aware_vision_language_model_for_unified_chemical_image_understanding",
+    "arxiv_id": "2607.01982v1",
+    "date": "2026-07-02",
+    "title": "MolSight: A Graph-Aware Vision-Language Model for Unified Chemical Image Understanding",
+    "authors": "Wenda Wang, Yihan Tong, Yuwei Hu, Zhewei Wei",
+    "abstract": "Using molecular large language models (LLMs) as a unified framework for understanding molecular structures and functions is emerging as a new trend in tasks such as molecular design and drug discovery. However, these models struggle to fully capture the visual representation of molecular structures, limiting their potential. While existing molecular vision-language models (VLMs) show promise, they still face challenges in structural alignment and lack the necessary topological modeling for accurate molecular understanding. To address this, we propose MolSight, a graph-aware vision-language model framework designed to enhance the understanding of molecular images by VLMs. MolSight integrates a Molecular Topology Module to inject chemical-bond adjacency information into vision tokens, and a Molecular Grounding Module to align visual features with chemical symbolic semantics. Our experiments demonstrate that MolSight significantly outperforms existing VLMs, molecular LLMs, and specialized tools across multiple chemical visual understanding tasks, achieving a new level of molecular image reasoning.",
+    "category": "Therapeutic Discovery",
+    "source": "arXiv",
+    "published": "2026-07-02T10:13:19Z",
+    "updated": "2026-07-02T10:13:19Z",
+    "primary_category": "cs.CV",
+    "categories": [
+      "cs.CV",
+      "cs.AI",
+      "q-bio.BM"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.01982v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.01982v1"
+      }
+    ],
+    "score": 69,
+    "infographic": {
+      "key_insight": "MolSight adds graph-aware chemical topology and grounding to a vision-language model, improving how molecular images are interpreted and reasoned about.",
+      "clinical_relevance": "Better molecular image understanding could speed up early-stage drug discovery and support more accurate analysis of chemical structures relevant to cancer therapeutics.",
+      "method": [
+        "Injects chemical-bond adjacency into vision tokens with a Molecular Topology Module",
+        "Aligns visual features with symbolic chemical semantics using a Molecular Grounding Module",
+        "Targets unified understanding of molecular images across multiple chemical visual tasks"
+      ],
+      "evidence_signal": "The abstract reports that MolSight outperforms existing VLMs, molecular LLMs, and specialized tools across multiple chemical visual understanding tasks.",
+      "watch_item": "Performance gains in abstract-level benchmarks may not fully translate to diverse real-world molecular image formats or downstream discovery workflows.",
+      "hashtags": [
+        "#AIforDrugDiscovery",
+        "#MolecularVisionLanguage",
+        "#ChemicalInformatics",
+        "#CancerResearch",
+        "#GraphNeuralNetworks"
+      ],
+      "paper_id": "2026-07-02-arxiv-molsight_a_graph_aware_vision_language_model_for_unified_chemical_image_understanding",
+      "paper_title": "MolSight: A Graph-Aware Vision-Language Model for Unified Chemical Image Understanding",
+      "paper_date": "2026-07-02",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-07-04T09:13:55",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-01-arxiv-a_novel_machine_learning_approach_for_central_nervous_system_tumor_classification_from_dna",
+    "arxiv_id": "2607.01307v1",
+    "date": "2026-07-01",
+    "title": "A Novel Machine Learning Approach for Central Nervous System Tumor Classification from DNA Methylation",
+    "authors": "Paulo R. Ferreira, Lucas Coutinho Freitas, Laís dos Santos Gonçalves, William Borges Domingues, Lucas Petitemberte de Souza, Mariana B. Michalowski",
+    "abstract": "NA methylation profiling has become a powerful approach for central nervous system (CNS) tumor classification, yet important challenges remain regarding cross-cohort transferability, methodological correctness, and robust multiclass evaluation. In this work, we propose a novel and methodologically rigorous machine-learning approach for methylation-based CNS tumor classification that combines Sparse Random Projection for dimensionality reduction with multinomial logistic regression for classification. We evaluate the proposed approach in the same general experimental setting established by a widely used reference classifier. On the 2,801-sample reference cohort, our method achieves a mean accuracy of 96\\% under stratified 3-fold cross-validation. On the independent 1,104-sample clinical evaluation cohort, it reaches 86\\% accuracy at the 91-class level and 93\\% when predictions are evaluated at the methylation class family level. These results improve upon the corresponding state-of-the-art reference figures of 82\\% class-level concordance and 88\\% family-level concordance, yielding absolute gains of approximately 4 and 5 percentage points, respectively. This improvement is clinically relevant: in a diagnostic setting, a 5-point increase in correct tumor classification can directly affect cancer subtype assignment and, in turn, influence treatment selection and downstream clinical decision-making. Our results show that the proposed model, grounded in stronger methodological practice in machine learning, consistently outperforms the previous state of the art across evaluation settings and can materially improve the reliability of CNS tumor classification.",
+    "category": "Precision Oncology",
+    "source": "arXiv",
+    "published": "2026-07-01T16:57:58Z",
+    "updated": "2026-07-01T16:57:58Z",
+    "primary_category": "cs.LG",
+    "categories": [
+      "cs.LG",
+      "q-bio.GN"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.01307v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.01307v1"
+      }
+    ],
+    "score": 69,
+    "infographic": {
+      "key_insight": "A sparse random projection plus multinomial logistic regression model improved CNS tumor classification from DNA methylation data, outperforming a prior reference approach.",
+      "clinical_relevance": "More accurate tumor subtype assignment could support better-informed diagnostic classification and downstream treatment decisions in CNS oncology.",
+      "method": [
+        "Sparse Random Projection used to reduce high-dimensional methylation features",
+        "Multinomial logistic regression used for multiclass tumor classification",
+        "Evaluated against a widely used reference classifier in the same experimental setting"
+      ],
+      "evidence_signal": "The model achieved 96% mean accuracy in stratified 3-fold cross-validation on 2,801 reference samples and 86% class-level accuracy, rising to 93% at the family level, on 1,104 independent clinical samples.",
+      "watch_item": "Performance gains may not fully generalize across institutions, assay platforms, or real-world deployment settings without further external validation.",
+      "hashtags": [
+        "#CNSTumor",
+        "#DNA Methylation",
+        "#MachineLearning",
+        "#PrecisionOncology",
+        "#CancerClassification"
+      ],
+      "paper_id": "2026-07-01-arxiv-a_novel_machine_learning_approach_for_central_nervous_system_tumor_classification_from_dna",
+      "paper_title": "A Novel Machine Learning Approach for Central Nervous System Tumor Classification from DNA Methylation",
+      "paper_date": "2026-07-01",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-04T09:13:57",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-01-arxiv-foundation_models_vs_radiomics_for_lung_computed_tomography_a_benchmark_of_feature_extract",
+    "arxiv_id": "2607.01001v1",
+    "date": "2026-07-01",
+    "title": "Foundation Models vs. Radiomics for Lung Computed Tomography: A Benchmark of Feature Extractors, Classification Heads, and Segmentation Choices",
+    "authors": "Nils Neukirch, Martin Maurer, Nils Strodthoff",
+    "abstract": "Radiomics is the established approach for CT-based lung cancer phenotyping, yet comparisons with foundation models rarely isolate contributions of feature extractor, classification head, and segmentation choice, or test cross-cohort robustness. We benchmark five feature extractors (Curia, Curia-2, DINOv3, Radiomics2D, Radiomics3D), seven classification heads (TabPFN, TabICL, XGBoost, CatBoost, Random Forest, logistic regression, Ridge), and three segmentation regimes on five tasks: tumor volume and stage classification, 2-year survival prediction, histology classification, and age prediction. Models are trained on LUNG1 (n=338) and evaluated on an internal test set (n=84) and the external LUNG2 cohort (n=211), with worst-case cross-cohort performance as the primary metric. The dominant design factor is task-dependent: segmentation drives volume and stage classification, while classifier choice drives survival, histology, and age prediction. Radiomics is competitive for tumor volume, tumor stage and survival (partly due to label-derivation effects for the former); Curia variants reach comparable peak scores for survival; DINOv3 falls slightly short across tasks. Patch and slice aggregation have negligible impact. We recommend Curia with tumor segmentation and a CatBoost head as a safe default, achieving the best mean rank across the three primary clinical tasks, though task-specific selection consistently outperforms any cross-task default. When tumor delineations are unavailable, Curia-2 with lung segmentation and logistic regression offers a competitive alternative. All pipelines use a two-stage design suited to small cohort sizes where end-to-end fine-tuning would risk overfitting.",
+    "category": "Precision Oncology",
+    "source": "arXiv",
+    "published": "2026-07-01T14:37:30Z",
+    "updated": "2026-07-01T14:37:30Z",
+    "primary_category": "cs.CV",
+    "categories": [
+      "cs.CV",
+      "cs.LG"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.01001v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.01001v1"
+      }
+    ],
+    "score": 69,
+    "infographic": {
+      "key_insight": "For lung CT phenotyping, the best-performing pipeline depends more on the task than on a single universally superior model: segmentation matters most for tumor volume and stage, while the classifier head matters most for survival, histology, and age prediction.",
+      "clinical_relevance": "A two-stage, non-end-to-end workflow can be a practical default for small cohorts, with Curia plus tumor segmentation and CatBoost giving the strongest overall balance across the main clinical tasks.",
+      "method": [
+        "Benchmarked 5 feature extractors, 7 classifier heads, and 3 segmentation regimes.",
+        "Compared radiomics and foundation-model features across 5 CT prediction tasks.",
+        "Evaluated worst-case cross-cohort performance on internal LUNG1 and external LUNG2 cohorts."
+      ],
+      "evidence_signal": "Models were trained on LUNG1 (n=338) and tested on an internal set (n=84) plus external LUNG2 (n=211), with worst-case cross-cohort performance used as the primary benchmark.",
+      "watch_item": "The reported radiomics advantage for some endpoints may partly reflect label-derivation effects, so results should be interpreted cautiously when transferring to new settings.",
+      "hashtags": [
+        "#LungCT",
+        "#Radiomics",
+        "#FoundationModels",
+        "#PrecisionOncology",
+        "#MedicalAI"
+      ],
+      "paper_id": "2026-07-01-arxiv-foundation_models_vs_radiomics_for_lung_computed_tomography_a_benchmark_of_feature_extract",
+      "paper_title": "Foundation Models vs. Radiomics for Lung Computed Tomography: A Benchmark of Feature Extractors, Classification Heads, and Segmentation Choices",
+      "paper_date": "2026-07-01",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-04T09:13:59",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-01-medrxiv-hggt_heterogeneous_gated_graph_transformer_for_predicting_clinical_trial_success",
+    "doi": "10.64898/2026.06.28.26356795",
+    "date": "2026-07-01",
+    "title": "HGGT：Heterogeneous Gated Graph Transformer for Predicting Clinical Trial Success",
+    "authors": "Qian, L.; Lu, X.; Haris, P.; Yang, Y.",
+    "abstract": "Clinical trials are critical milestones in the drug development pipeline, yet their high failure rates and substantial costs underscore the need for robust predictive models. This study introduces a Heterogeneous Gated Graph Transformer (HGGT) model tailored to predict clinical trial success. Unlike existing methods that typically model trial-related entities in isolation or with homogeneous graphs, HGGT explicitly models the rich heterogeneous relationships among trials, diseases, drugs, genes, targets, abstracts, and eligibility criteria through a gated graph transformer architecture, which dynamically learns and weights multi-type relational interactions to capture complex biological and clinical dependencies. By integrating heterogeneous graph representation with transformer-based context modeling, HGGT effectively captures non-linear, multi-scale interactions across biomedical entities, leading to improved predictive performance for trial success. Experimental results demonstrate that the HGGT model achieves strong performance, with the highest PR-AUC, F1 score, and ROC-AUC across three phases. These findings highlight the potential of graph-based deep learning approaches in optimizing clinical trial design and resource allocation, ultimately accelerating the translation of novel therapies into clinical practice.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.28.26356795v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.28.26356795v1.full.pdf"
+      }
+    ],
+    "score": 69,
+    "infographic": {
+      "key_insight": "HGGT uses a heterogeneous gated graph transformer to model how trials, diseases, drugs, genes, targets, abstracts, and eligibility criteria interact, improving prediction of clinical trial success.",
+      "clinical_relevance": "By better forecasting trial outcomes, this approach could help prioritize stronger study designs and allocate development resources more efficiently in oncology and other therapeutic areas.",
+      "method": [
+        "Builds a heterogeneous graph from trial-related biomedical entities and their relationships.",
+        "Uses gated transformer layers to weight multi-type interactions dynamically.",
+        "Combines graph representation learning with contextual modeling from text and structured trial data."
+      ],
+      "evidence_signal": "The abstract reports the model achieved the highest PR-AUC, F1 score, and ROC-AUC across three phases.",
+      "watch_item": "Performance gains in retrospective evaluation may not fully translate to prospective trial settings or generalize across different data sources.",
+      "hashtags": [
+        "#ClinicalTrials",
+        "#GraphAI",
+        "#DrugDiscovery",
+        "#BiomedicalAI",
+        "#PredictiveModeling"
+      ],
+      "paper_id": "2026-07-01-medrxiv-hggt_heterogeneous_gated_graph_transformer_for_predicting_clinical_trial_success",
+      "paper_title": "HGGT：Heterogeneous Gated Graph Transformer for Predicting Clinical Trial Success",
+      "paper_date": "2026-07-01",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-07-04T09:14:01",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-02-arxiv-multimodal_fusion_for_fine_grained_classification_of_breast_fibroadenoma_and_phyllodes_tum",
+    "arxiv_id": "2607.02091v1",
+    "date": "2026-07-02",
+    "title": "Multimodal Fusion for Fine-Grained Classification of Breast Fibroadenoma and Phyllodes Tumors",
+    "authors": "Chuxi Nan, Di Wu, Hongming Guo, Ning Cao, Xiaohui Zhu, Zhaoting Shi",
+    "abstract": "Breast fibroadenoma (FA) and phyllodes tumor (PT) are fibroepithelial breast lesions with highly overlapping appearances on B-mode ultrasound, making benign and borderline PT prone to being misclassified as FA and complicating preoperative decision-making. Existing computer-aided diagnosis methods commonly rely on single-modal imaging features and insufficiently exploit complementary clinical and textual information. To address this limitation, we construct the FAPT-M Dataset, a pathology-confirmed multimodal dataset comprising 910 patients with strictly reviewed ultrasound images, structured clinical attributes, and ultrasound diagnostic descriptions. Based on this dataset, we propose a clinically guided multimodal framework that integrates DenseNet-based visual encoding, CLIP-inspired text encoding, and lightweight clinical encoding, and further introduces clinical-conditioned adaptive modulation, cross-modal Transformer fusion, and dual-path representation learning to improve feature alignment and multimodal interaction. Under patient-level five-fold cross-validation, the proposed method achieves an accuracy of 77.64%, F1-score of 73.38%, and AUC of 89.74%, outperforming representative CNN-, Transformer-, and vision-language-based baselines. Ablation studies and class-balanced evaluations further confirm the contribution of three-modality fusion and the key architectural components. Overall, this work provides an effective multimodal approach for fine-grained FA-PT classification and establishes a high-quality benchmark for multimodal breast ultrasound analysis.",
+    "category": "Precision Oncology",
+    "source": "arXiv",
+    "published": "2026-07-02T12:30:08Z",
+    "updated": "2026-07-02T12:30:08Z",
+    "primary_category": "cs.CV",
+    "categories": [
+      "cs.CV"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.02091v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.02091v1"
+      }
+    ],
+    "score": 66,
+    "infographic": {
+      "key_insight": "A clinically guided multimodal model that combines ultrasound images, text descriptions, and structured clinical data improves fine-grained differentiation between breast fibroadenoma and phyllodes tumors.",
+      "clinical_relevance": "Better preoperative classification may help reduce misclassification of borderline or benign phyllodes tumors as fibroadenoma and support more informed surgical planning.",
+      "method": [
+        "Built the FAPT-M Dataset with 910 pathology-confirmed patients and multimodal inputs.",
+        "Used DenseNet for image encoding, CLIP-inspired text encoding, and lightweight clinical feature encoding.",
+        "Added clinical-conditioned modulation, cross-modal Transformer fusion, and dual-path representation learning."
+      ],
+      "evidence_signal": "On patient-level five-fold cross-validation, the model achieved 77.64% accuracy, 73.38% F1-score, and 89.74% AUC, outperforming representative CNN, Transformer, and vision-language baselines.",
+      "watch_item": "The dataset comes from a specific cohort and the approach will need external validation and real-world workflow testing before broader deployment.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#BreastUltrasound",
+        "#MultimodalAI",
+        "#MedicalImagingAI",
+        "#TumorClassification"
+      ],
+      "paper_id": "2026-07-02-arxiv-multimodal_fusion_for_fine_grained_classification_of_breast_fibroadenoma_and_phyllodes_tum",
+      "paper_title": "Multimodal Fusion for Fine-Grained Classification of Breast Fibroadenoma and Phyllodes Tumors",
+      "paper_date": "2026-07-02",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-04T09:14:03",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-01-medrxiv-plasma_proteomics_linking_primary_and_secondary_diseases_insights_into_molecular_mediation",
+    "doi": "10.1101/2025.08.29.25334726",
+    "date": "2026-07-01",
+    "title": "Plasma Proteomics Linking Primary and Secondary diseases: Insights into Molecular Mediation from UK Biobank Data",
+    "authors": "qian, h.; Wu, C.; Li, B.; Rosenzweig, A.; Wang, M.",
+    "abstract": "BackgroundDiabetes, hypertension, and dyslipidemia are major risk factors for cardiovascular, neurological, renal, and pulmonary diseases, yet clinically accessible molecular mediators linking these cardiometabolic conditions to downstream complications remain unclear. MethodsWe analyzed plasma proteomic data from 53,030 UK Biobank participants with longitudinal follow-up. Mediation analysis evaluated circulating proteins linking three primary cardiometabolic diseases to 18 secondary outcomes. Mendelian randomization assessed potential causal relationships, and machine learning evaluated the predictive value of identified mediators. FindingsWe identified 998 significant mediation pathways involving 337 unique plasma proteins. GDF15 consistently mediated associations between diabetes and cardiovascular diseases, and ACE2 linked poorly controlled diabetes to increased risk of nerve root and plexus disorders. Mediators were enriched in receptor-mediated signaling and molecular interaction pathways. Mendelian randomization supported potential causal roles for 44 proteins. Incorporating mediator proteins into machine learning models improved prediction of secondary disease risk beyond traditional clinical factors and other plasma proteins. ConclusionsPlasma proteins help mediate progression from cardiometabolic diseases to downstream complications. These findings provide a molecular map of disease mediation pathways, nominate biomarkers and therapeutic targets, and support improved risk stratification and targeted intervention. FundingThis study was supported by the National Institutes of Health, the American Heart Association, and institutional funding.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "primary_category": "endocrinology",
+    "categories": [
+      "endocrinology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.08.29.25334726v3"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.08.29.25334726v3.full.pdf"
+      }
+    ],
+    "score": 64,
+    "infographic": {
+      "key_insight": "In UK Biobank data, plasma proteins such as GDF15 and ACE2 appear to mediate pathways from cardiometabolic disease to later cardiovascular, neurologic, renal, and pulmonary complications.",
+      "clinical_relevance": "If validated, these mediator proteins could improve risk stratification and suggest new biomarker-guided targets for preventing downstream disease.",
+      "method": [
+        "Mediation analysis across 53,030 participants linked 3 primary cardiometabolic diseases to 18 secondary outcomes.",
+        "Mendelian randomization tested whether identified proteins may have causal roles.",
+        "Machine learning assessed whether adding mediator proteins improved prediction versus clinical factors alone."
+      ],
+      "evidence_signal": "The study reported 998 significant mediation pathways involving 337 unique proteins, with 44 proteins supported by Mendelian randomization and improved predictive performance when mediators were added to models.",
+      "watch_item": "These findings are observational and biomarker-based, so clinical utility and therapeutic targeting still require independent replication and prospective validation.",
+      "hashtags": [
+        "#PlasmaProteomics",
+        "#Biomarkers",
+        "#MediationAnalysis",
+        "#MendelianRandomization",
+        "#RiskPrediction"
+      ],
+      "paper_id": "2026-07-01-medrxiv-plasma_proteomics_linking_primary_and_secondary_diseases_insights_into_molecular_mediation",
+      "paper_title": "Plasma Proteomics Linking Primary and Secondary diseases: Insights into Molecular Mediation from UK Biobank Data",
+      "paper_date": "2026-07-01",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-07-04T09:14:07",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-01-medrxiv-automated_melanoma_screening_a_machine_learning_pipeline_for_mole_detection_boundary_segme",
+    "doi": "10.64898/2026.06.29.26356601",
+    "date": "2026-07-01",
+    "title": "Automated Melanoma Screening: A Machine Learning Pipeline for Mole Detection, Boundary Segmentation, and ABCD(E) Feature Extraction",
+    "authors": "Abdolahnejad, M.; Pascazi, E.; Lee, M.; Cheng, J.; Poon, F.; Kyeremeh, M.; Chan, H. O.; Joshi, R.; Hong, C.",
+    "abstract": "Early detection of suspicious moles remains the most effective means of reducing mortality from skin cancer, yet systematic screening is constrained by the time and expertise required for manual mole assessment. This paper presents an end-to-end computational pipeline that utilizes wide-angle skin photographs (including consumer-grade smartphone images) and produces quantitative ABCD (Asymmetry, Border irregularity, Color variegation, Diameter) feature scores for every detected mole. The pipeline operates in four stages: mole detection via adaptive thresholding and blob analysis, super-resolution enhancement using EDSR, false-positive filtering using a brightness-based statistical criterion, and lesion segmentation using the Boundary Attention Mapper (BAM). BAM generates high-resolution segmentation masks by fusing early-layer activations with GradCAM heatmaps from a trained EfficientNet-B7 classifier, achieving 90.45% accuracy on the ISIC2017 dataset, outperforming both conventional GradCAM (87.78%) and dedicated segmentation architectures, including DeepLabv3 and SAM v2 by more than 5 percentage points in Dice score. The EfficientNet-B7 backbone achieves a micro-average AUC of 0.97 across eight lesion classes, with a melanoma AUC of 0.99. Color quantification uses K-means clustering with a threshold calibrated on the PH2 dataset (MSE = 1.425). Applied to 87 wide-angle images, the mole detection module achieved an F1 score of 86%. The system outputs a structured CSV of per-lesion ABCD scores suitable for clinical triage and longitudinal tracking. A clinical validation study with dermatologists and surgeons is underway to assess concordance between automated and expert assessments.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-01",
+    "updated": "2026-07-01",
+    "primary_category": "dermatology",
+    "categories": [
+      "dermatology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.29.26356601v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.29.26356601v1.full.pdf"
+      }
+    ],
+    "score": 64,
+    "infographic": {
+      "key_insight": "An end-to-end machine learning pipeline can detect moles in wide-angle skin photos, segment lesions, and extract ABCD(E)-style features to support automated melanoma screening.",
+      "clinical_relevance": "The system is designed to help triage suspicious lesions and standardize mole assessment, especially when expert review time is limited.",
+      "method": [
+        "Adaptive thresholding + blob analysis to detect candidate moles",
+        "EDSR super-resolution and brightness-based filtering to reduce false positives",
+        "BAM lesion segmentation with EfficientNet-B7 + GradCAM fusion, then K-means color scoring for ABCD feature output"
+      ],
+      "evidence_signal": "In the abstract, BAM reached 90.45% accuracy on ISIC2017, EfficientNet-B7 achieved melanoma AUC 0.99, and mole detection on 87 wide-angle images achieved F1 = 86%.",
+      "watch_item": "Performance was reported on specific datasets and a small set of wide-angle images, so broader real-world validation and expert concordance are still needed.",
+      "hashtags": [
+        "#MelanomaScreening",
+        "#MachineLearning",
+        "#DermatologyAI",
+        "#MedicalImaging",
+        "#PrecisionOncology"
+      ],
+      "paper_id": "2026-07-01-medrxiv-automated_melanoma_screening_a_machine_learning_pipeline_for_mole_detection_boundary_segme",
+      "paper_title": "Automated Melanoma Screening: A Machine Learning Pipeline for Mole Detection, Boundary Segmentation, and ABCD(E) Feature Extraction",
+      "paper_date": "2026-07-01",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-04T09:14:09",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-30-arxiv-fully_automated_high_precision_segmentation_of_retinal_atrophy_and_ellipsoid_zone_thicknes",
+    "arxiv_id": "2606.31502v1",
+    "date": "2026-06-30",
+    "title": "Fully Automated High-Precision Segmentation of Retinal Atrophy and Ellipsoid Zone Thickness in OCT: A Reliable Tool for Real-World GA Monitoring",
+    "authors": "Wolf-Dieter Vogl, Hlynur Skulason, Oliver Leingang, Ursula Schmidt-Erfurth, Amir Sadeghipour, Ariadne Whitby",
+    "abstract": "Geographic atrophy (GA) secondary to age-related macular degeneration (AMD) requires precise monitoring of relevant structural biomarkers to assess disease stage, progression, and treatment response. This paper presents a fully automated, deep learning-based framework for the high-precision, pixel-wise segmentation of key biomarkers in optical coherence tomography (OCT) imaging: retinal pigment epithelium (RPE) loss, ellipsoid zone (EZ) loss, and EZ thinning. The proposed pipeline uses three specialized semantic segmentation models to delineate RPE loss, EZ boundaries (including interruptions), and Bruch's membrane. To ensure robustness and generalizability, the models were developed on a diverse dataset of 298 SD-OCT volumes representing the full phenotypic spectrum of AMD (GA:222, intermediate AMD: 40, neovascular AMD: 17, healthy: 19) and validated on an independent external dataset (n=43). The comprehensive evaluation was further strengthened using additional datasets to assess repeatability, inter-reader reliability, the impact of B-scan density on measurement accuracy, and subgroup performance stratified by lesion size. Results demonstrated high segmentation accuracy (Dice RPE loss: 0.88, Dice EZ loss: 0.87, Pearson's r > 0.99). Total EZ thickness measurements exhibited a sub-pixel average deviation of 2.15 $μm$, and segmentation reliability was confirmed by a strong reproducibility score (ICC > 0.98). By accurately and consistently quantifying outer photoreceptor degeneration and RPE loss, this fully automated framework provides a highly reliable tool for GA assessment in both clinical trials and routine real-world ophthalmic care.",
+    "category": "Target Biology",
+    "source": "arXiv",
+    "published": "2026-06-30T11:21:57Z",
+    "updated": "2026-06-30T11:21:57Z",
+    "primary_category": "cs.CV",
+    "categories": [
+      "cs.CV"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.31502v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.31502v1"
+      }
+    ],
+    "score": 64,
+    "infographic": {
+      "key_insight": "A fully automated deep learning pipeline can precisely segment retinal atrophy and ellipsoid zone changes on OCT to quantify geographic atrophy biomarkers at pixel level.",
+      "clinical_relevance": "This could improve real-world monitoring of GA in AMD by making structural biomarker measurement more consistent, repeatable, and scalable for trials and routine care.",
+      "method": [
+        "Three semantic segmentation models detect RPE loss, EZ loss/interruptions, and Bruch's membrane",
+        "Trained on 298 diverse SD-OCT volumes spanning GA, intermediate AMD, neovascular AMD, and healthy eyes",
+        "Validated with an external dataset and additional repeatability, reader-reliability, and density-sensitivity analyses"
+      ],
+      "evidence_signal": "The abstract reports strong performance, including Dice scores of 0.88 for RPE loss and 0.87 for EZ loss, Pearson's r > 0.99, sub-pixel EZ thickness deviation of 2.15 µm, and ICC > 0.98.",
+      "watch_item": "Performance was strong in validation, but real-world deployment still depends on scanner/site consistency, image quality, and careful calibration across different OCT acquisition protocols.",
+      "hashtags": [
+        "#OCT",
+        "#GeographicAtrophy",
+        "#AMD",
+        "#DeepLearning",
+        "#BiomarkerImaging"
+      ],
+      "paper_id": "2026-06-30-arxiv-fully_automated_high_precision_segmentation_of_retinal_atrophy_and_ellipsoid_zone_thicknes",
+      "paper_title": "Fully Automated High-Precision Segmentation of Retinal Atrophy and Ellipsoid Zone Thickness in OCT: A Reliable Tool for Real-World GA Monitoring",
+      "paper_date": "2026-06-30",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-07-04T09:14:12",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-arxiv-data_efficient_multimodal_alignment_for_histopathology_based_molecular_prediction",
+    "arxiv_id": "2606.29949v1",
+    "date": "2026-06-29",
+    "title": "Data-Efficient Multimodal Alignment for Histopathology-based Molecular Prediction",
+    "authors": "Dominik Winter, Dominik Vonficht, Loïc Le Bescond, Christian Gebbe, Marco Rosati, Richard J. Chen",
+    "abstract": "H&E-stained whole-slide images offer cohort-scale availability and rich spatial context but lack molecular specificity, whereas bulk RNA-seq provides transcriptome-wide resolution at high cost with limited archival availability. We show that training a lightweight alignment module atop frozen histopathology and RNA-Seq foundation models enables open-vocabulary molecular prompting -- querying H&E slides with gene-set signatures to predict pathway activity without sequencing or end-to-end retraining. Using contrastive learning on a multi-cancer cohort (N=1,720), we achieve a 25-fold improvement in retrieval over baseline methods. Systematic analysis reveals a graduated predictability spectrum: morphologically grounded programs (cell-cycle programs, immune-related) are most reliably predicted (R^2>0.5), while predicting pathways with no morphological footprint remains challenging as expected. We validate clinical utility on the POSEIDON clinical trial: H&E-predicted squamous cell carcinoma scores recapitulate NSCLC subtype identity and predicted IFN-gamma mirror PD-L1 tumor-cell expression groups. Furthermore, genesets describing immune activation and fibrosis predict known tumor microenvironment archetypes from histology alone. We further validate generalization of our approach across unseen cohorts and demonstrate data-efficient domain adaptation, establishing a slide-native framework for molecular analysis on H&E images.",
+    "category": "Precision Oncology",
+    "source": "arXiv",
+    "published": "2026-06-29T08:24:53Z",
+    "updated": "2026-06-29T08:24:53Z",
+    "primary_category": "eess.IV",
+    "categories": [
+      "eess.IV",
+      "cs.AI",
+      "q-bio.GN"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.29949v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.29949v1"
+      }
+    ],
+    "score": 64,
+    "infographic": {
+      "key_insight": "A lightweight alignment layer can connect frozen H&E histopathology and RNA-seq models so gene-set and pathway activity can be inferred directly from slide images without new sequencing or end-to-end retraining.",
+      "clinical_relevance": "This could help stratify tumors and estimate molecular states from routinely available pathology slides, supporting faster and cheaper precision-oncology workflows.",
+      "method": [
+        "Contrastive learning aligns frozen histopathology and RNA-seq foundation models.",
+        "Open-vocabulary molecular prompting queries H&E slides with gene-set signatures.",
+        "Data-efficient domain adaptation enables transfer across cohorts without retraining the full model."
+      ],
+      "evidence_signal": "In a multi-cancer cohort of 1,720 samples, the approach achieved a 25-fold retrieval improvement over baseline methods and was validated on external cohorts and the POSEIDON clinical trial.",
+      "watch_item": "Predictions remain limited for pathways with little or no morphological footprint, so performance may vary by biology and should be validated before use in new settings.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#Histopathology",
+        "#MultimodalAI",
+        "#MolecularPrediction",
+        "#CancerResearch"
+      ],
+      "paper_id": "2026-06-29-arxiv-data_efficient_multimodal_alignment_for_histopathology_based_molecular_prediction",
+      "paper_title": "Data-Efficient Multimodal Alignment for Histopathology-based Molecular Prediction",
+      "paper_date": "2026-06-29",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-04T09:14:14",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-01-arxiv-echorisk_a_multicentre_echocardiography_dataset_and_benchmark_for_cardio_oncology",
+    "arxiv_id": "2607.01039v1",
+    "date": "2026-07-01",
+    "title": "EchoRisk: A Multicentre Echocardiography Dataset and Benchmark for Cardio-Oncology",
+    "authors": "Grigorios Kalliatakis, Georgia Karanasiou, Georgios Manikis, Manolis Tsiknakis, Dimitrios Fotiadis, Dorothea Tsekoura",
+    "abstract": "Therapy-induced cardiotoxicity is the leading non-oncological cause of treatment interruption in breast cancer patients, yet early, automated risk stratification from routine cardiac imaging remains an unsolved problem. We present EchoRisk, the first curated, multicentre, longitudinal echocardiography dataset with explicit cardiotoxicity labels, released as the primary technical reference for the EchoRisk-MICCAI 2026 challenge. The dataset comprises 422 patients enrolled in the EU-funded CARDIOCARE prospective study across five European sites, yielding 2,159 echocardiography videos across 1,123 clinical exams acquired at up to five longitudinal timepoints, alongside a dedicated cohort of 280 patients with baseline imaging for early cardiotoxicity prediction. Three clinically grounded tasks are defined: automated estimation of left ventricular ejection fraction from cine video (Task 1), classification of LV dysfunction from longitudinal imaging (Task 2), and early prediction of therapy-induced cardiotoxicity from pre-therapy baseline echocardiography alone (Task 3). For each task we specify the evaluation protocol, primary and secondary metrics, and ranking procedure. We establish baseline performance using an R(2+1)D video backbone with LSTM aggregation trained from Kinetics-400 pretrained weights, demonstrating strong discriminative performance for cardiac functional assessment and LV dysfunction classification, while early cardiotoxicity prediction from a single pre-therapy video remains a significant open problem for the community. The dataset, evaluation code, and baseline implementations are publicly available to serve as a benchmark for further collaboration, comparison, and the creation of task-specific architectures in cardio-oncology.",
+    "category": "Precision Oncology",
+    "source": "arXiv",
+    "published": "2026-07-01T15:05:10Z",
+    "updated": "2026-07-01T15:05:10Z",
+    "primary_category": "cs.CV",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.01039v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.01039v1"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "EchoRisk introduces the first multicentre, longitudinal echocardiography benchmark with explicit cardiotoxicity labels to support automated cardio-oncology risk prediction.",
+      "clinical_relevance": "The resource could help standardize earlier detection of therapy-induced cardiac dysfunction in breast cancer patients, potentially supporting more timely treatment decisions.",
+      "method": [
+        "422 patients from 5 European sites in the CARDIOCARE study",
+        "2,159 echocardiography videos across 1,123 exams at up to 5 timepoints",
+        "Three tasks: LVEF estimation, LV dysfunction classification, and baseline-only early cardiotoxicity prediction"
+      ],
+      "evidence_signal": "The abstract reports benchmark evaluation with task-specific metrics and a baseline R(2+1)D plus LSTM model, which performed strongly for functional assessment and LV dysfunction but remained challenging for early prediction.",
+      "watch_item": "Generalization may be limited by site-specific imaging variation and the difficulty of predicting cardiotoxicity from a single pre-therapy video.",
+      "hashtags": [
+        "#CardioOncology",
+        "#Echocardiography",
+        "#MedicalAI",
+        "#PrecisionOncology",
+        "#CancerResearch"
+      ],
+      "paper_id": "2026-07-01-arxiv-echorisk_a_multicentre_echocardiography_dataset_and_benchmark_for_cardio_oncology",
+      "paper_title": "EchoRisk: A Multicentre Echocardiography Dataset and Benchmark for Cardio-Oncology",
+      "paper_date": "2026-07-01",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-04T09:14:16",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-06-29-arxiv-caresai_at_ct_deb26_detecting_dosing_errors_in_clinical_trials_using_domain_specific_trans",
+    "arxiv_id": "2606.30236v1",
+    "date": "2026-06-29",
+    "title": "CaresAI at CT-DEB26: Detecting Dosing Errors In Clinical Trials Using Domain-Specific Transformer Embeddings and Classification Models",
+    "authors": "Leon Hamnett, Favour Igwezeke, Joseph Itopa Abubakar, Mary Adetutu Adewunmi",
+    "abstract": "Medication errors, particularly dosing errors in clinical trials (CT), can lead to patient harm, adverse drug events and worse patient outcomes. Dosing errors are preventable, and early identification can improve trial integrity and mitigate subsequent clinical and financial burden. This study aims to detect dosing errors within CT protocols by evaluating text representations of trial information using transformer-based language models trained on biomedical corpora. CT textual data was encoded using several models, including ClinicalBERT, PubMedBERT, BioBERT, and MedCPT, and integrated with categorical features. These text embeddings were used as input to classical machine learning models and neural network architectures within an experimental framework. Performance was primarily assessed using ROC-AUC with respect to predicting dosage error. Under a logistic regression baseline, BioBERT consistently outperformed alternative encoders, achieving an ROC-AUC of 0.794, a 3.95% improvement over the ClinicalBERT baseline. Combining multiple embeddings did not yield improvements, indicating that domain alignment outweighs representational stacking. Gradient boosting models, support vector classifiers, logistic regression, and residual neural networks achieved the strongest performance for predicting dosage error, achieving ROC-AUCs: 0.821 to 0.853. Overall, the integration of domain-specific transformer embeddings with structured metadata enables discrimination of trials meeting a predefined elevated dosing error risk criterion, advancing safety monitoring and supporting informed regulatory decision-making.",
+    "category": "Clinical Translation",
+    "source": "arXiv",
+    "published": "2026-06-29T12:46:49Z",
+    "updated": "2026-06-29T12:46:49Z",
+    "primary_category": "cs.CL",
+    "categories": [
+      "cs.CL"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.30236v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2606.30236v1"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "Domain-specific biomedical transformer embeddings, especially BioBERT, improved detection of elevated dosing-error risk in clinical trial text.",
+      "clinical_relevance": "Better automated screening of trial protocols could help flag dosing risks earlier, supporting safer trial oversight and review workflows.",
+      "method": [
+        "Encoded clinical-trial text with ClinicalBERT, PubMedBERT, BioBERT, and MedCPT plus categorical metadata.",
+        "Fed embeddings into classical models and neural networks, including logistic regression, gradient boosting, SVC, and a residual neural network.",
+        "Compared models using ROC-AUC to predict dosage error risk."
+      ],
+      "evidence_signal": "BioBERT achieved ROC-AUC 0.794 with logistic regression, outperforming ClinicalBERT by 3.95%, while top models reached ROC-AUC 0.821–0.853.",
+      "watch_item": "The findings are based on model performance in an experimental setting, so external validation and real-world workflow testing are still needed before deployment.",
+      "hashtags": [
+        "#ClinicalTrials",
+        "#MedicationSafety",
+        "#BioBERT",
+        "#Transformers",
+        "#AIinHealthcare"
+      ],
+      "paper_id": "2026-06-29-arxiv-caresai_at_ct_deb26_detecting_dosing_errors_in_clinical_trials_using_domain_specific_trans",
+      "paper_title": "CaresAI at CT-DEB26: Detecting Dosing Errors In Clinical Trials Using Domain-Specific Transformer Embeddings and Classification Models",
+      "paper_date": "2026-06-29",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-07-04T09:14:18",
+      "generator": "openai"
+    }
+  },
+  {
     "id": "2026-06-29-medrxiv-the_urinary_metabolite_based_lung_cancer_index_ulci_an_interpretable_machine_learning_risk",
     "doi": "10.64898/2026.06.26.26356700",
     "date": "2026-06-29",
@@ -24,29 +749,81 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356700v1.full.pdf"
       }
     ],
-    "score": 67,
+    "score": 62,
     "infographic": {
-      "key_insight": "An interpretable urinary metabolite machine-learning score (uLCI) can non-invasively detect lung cancer and track increasing risk across disease stages.",
-      "clinical_relevance": "If validated in broader real-world settings, uLCI could complement imaging by helping identify lung cancer earlier and potentially triage patients more efficiently.",
+      "key_insight": "A urinary-metabolite machine-learning score (uLCI) using four metabolites plus age, race, and smoking can non-invasively detect lung cancer and track risk across stages.",
+      "clinical_relevance": "If validated further, uLCI could complement LDCT screening by offering an interpretable urine-based risk test with potential use beyond smoking-eligible populations.",
       "method": [
-        "Combined 4 urinary metabolites with age, race, and smoking status.",
-        "Built the score using Lasso-regularized logistic regression.",
-        "Developed in one cohort and tested without refitting in an independent validation cohort."
+        "Lasso-regularized logistic regression combined creatine riboside, N-acetylneuraminic acid, 27-nor-5β-cholestane-3,7,12,24,25-pentol, cortisol sulfate, and clinical variables.",
+        "Developed in the NCI-MD cohort with 10-fold cross-validation and tested without refitting in an independent Colorado cohort.",
+        "Evaluated discrimination, stage-wise trends, reclassification, and post-resection survival association."
       ],
-      "evidence_signal": "The model achieved AUC 0.906 in the development cohort and 0.748 in the independent cohort, with monotonic stage-wise increases and added value over clinical variables.",
-      "watch_item": "Performance dropped in the external cohort, so further validation is needed before routine implementation across diverse populations and clinical settings.",
+      "evidence_signal": "uLCI achieved AUC 0.906 in development and 0.748 in independent validation, with monotonic stage-wise increases and preserved stage-specific discrimination.",
+      "watch_item": "Performance dropped in external validation, so broader prospective testing, calibration review, and real-world implementation studies are still needed.",
       "hashtags": [
         "#LungCancer",
         "#Biomarkers",
         "#MachineLearning",
         "#EarlyDetection",
-        "#PrecisionOncology"
+        "#UrineTest"
       ],
       "paper_id": "2026-06-29-medrxiv-the_urinary_metabolite_based_lung_cancer_index_ulci_an_interpretable_machine_learning_risk",
       "paper_title": "The urinary-metabolite-based lung cancer index (uLCI): an interpretable machine-learning risk model for early-stage disease",
       "paper_date": "2026-06-29",
       "paper_category": "Clinical Translation",
-      "generated_at": "2026-07-03T09:52:14",
+      "generated_at": "2026-07-04T09:14:20",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-02-arxiv-an_additive_mlp_gnn_framework_for_characterizing_chemical_and_structural_contributions_to",
+    "arxiv_id": "2607.02212v1",
+    "date": "2026-07-02",
+    "title": "An Additive MLP-GNN Framework for Characterizing Chemical and Structural Contributions to Aqueous Solubility",
+    "authors": "Sampreeti Bhattacharya, Arkaprava Roy",
+    "abstract": "Aqueous solubility is a key property in early-stage drug discovery, but most predictive models merge physicochemical descriptors and molecular graph information into a single representation, obscuring whether a prediction is driven by global chemistry, molecular structure, or both. We present an additive deep-learning framework that keeps these two sources of information separate throughout training: physicochemical descriptors are encoded by a multilayer perceptron (the chemical branch) and molecular graph topology by a graph neural network (the structural branch), with the two outputs combined only at the prediction stage through an additive model with an optional multiplicative interaction. This design provides a direct decomposition of chemical and structural components that can be examined separately after training. Furthermore, pretraining on the larger AqSolDB dataset and fine-tuning on the smaller BigSolDB2 dataset substantially improve accuracy and reduce run-to-run variations, indicating generalizability of the learned features from the data-rich settings. We further interpret the fitted model using best linear projections of the branch outputs, molecule-level embedding summaries across solubility classes, and atom-level GNNExplainer masks aggregated over functional groups. These analyses show that the chemical branch aligns with familiar physicochemical descriptors, while the structural branch captures graph-topological and functional-group patterns associated with solubility. Across both datasets, the framework attains competitive predictive performance while making the distinct roles of chemical and structural information more transparent.",
+    "category": "Therapeutic Discovery",
+    "source": "arXiv",
+    "published": "2026-07-02T14:21:44Z",
+    "updated": "2026-07-02T14:21:44Z",
+    "primary_category": "stat.ML",
+    "categories": [
+      "stat.ML",
+      "cs.LG"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.02212v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.02212v1"
+      }
+    ],
+    "score": 60,
+    "infographic": {
+      "key_insight": "Separating physicochemical descriptors and molecular graph structure into two additive branches makes aqueous solubility predictions more interpretable, showing what comes from chemistry versus topology.",
+      "clinical_relevance": "Better solubility prediction can help early drug discovery by flagging compounds with formulation or developability risks sooner, before costly downstream testing.",
+      "method": [
+        "Chemical branch: multilayer perceptron on physicochemical descriptors",
+        "Structural branch: graph neural network on molecular graphs",
+        "Additive fusion at prediction time, with optional multiplicative interaction"
+      ],
+      "evidence_signal": "The model was pretrained on the larger AqSolDB dataset and fine-tuned on the smaller BigSolDB2 dataset, which improved accuracy and reduced run-to-run variation while remaining competitive in both datasets.",
+      "watch_item": "Interpretability findings depend on post hoc projections and GNNExplainer masks, so the chemical-versus-structural split should be treated as informative rather than definitive causality.",
+      "hashtags": [
+        "#DrugDiscovery",
+        "#AqueousSolubility",
+        "#GraphNeuralNetworks",
+        "#MolecularAI",
+        "#InterpretableML"
+      ],
+      "paper_id": "2026-07-02-arxiv-an_additive_mlp_gnn_framework_for_characterizing_chemical_and_structural_contributions_to",
+      "paper_title": "An Additive MLP-GNN Framework for Characterizing Chemical and Structural Contributions to Aqueous Solubility",
+      "paper_date": "2026-07-02",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-07-04T09:14:23",
       "generator": "openai"
     }
   },
@@ -75,233 +852,189 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356626v1.full.pdf"
       }
     ],
-    "score": 65,
+    "score": 60,
     "infographic": {
-      "key_insight": "Large language models can speed up cancer registry abstraction, with the strongest models performing well on many structured variables but struggling more with exact date extraction.",
-      "clinical_relevance": "This could reduce manual registrar workload and shorten the time needed to turn clinical records into usable population-level cancer surveillance data.",
+      "key_insight": "Large language models can help automate cancer registry abstraction, with the best models performing well on simpler registry variables and more moderately on complex date extraction.",
+      "clinical_relevance": "If validated and integrated carefully, LLMs could reduce manual chart-review burden for cancer registries and speed up population-level cancer surveillance.",
       "method": [
-        "Evaluated 5 foundation LLMs in zero-shot prompting",
-        "Abstracted 8 registry variables from clinical reports",
-        "Tested 5,939 patients across 7 cancer types against hospital registry ground truth"
+        "Evaluated five foundation LLMs using zero-shot prompting",
+        "Abstracted eight registry variables from clinical reports",
+        "Tested on 5,939 patients across seven cancer types"
       ],
-      "evidence_signal": "Across a large real-world dataset, the best models reached about 0.8 F1 on low- and high-cardinality registry variables, while exact date accuracy was about 0.55 and improved to about 0.85 with a ±30-day tolerance.",
-      "watch_item": "Performance was uneven across variable types, so human review and careful validation are still needed before deployment in registry workflows.",
+      "evidence_signal": "In a real-world hospital registry benchmark, top models reached about 0.8 F1 for low-cardinality variables and about 0.55 exact accuracy for diagnosis and treatment dates, improving to about 0.85 within a ±30-day window.",
+      "watch_item": "Performance was lower for precise date extraction, so human review and workflow validation remain important before routine use.",
       "hashtags": [
         "#CancerRegistry",
         "#LargeLanguageModels",
         "#PrecisionOncology",
-        "#MedicalAI",
-        "#ClinicalNLP"
+        "#ClinicalAI",
+        "#HealthData"
       ],
       "paper_id": "2026-06-29-medrxiv-large_language_models_for_cancer_registry_abstraction_a_real_world_evaluation_across_model",
       "paper_title": "Large language models for cancer registry abstraction: a real-world evaluation across models, variables, and cancer types",
       "paper_date": "2026-06-29",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-03T09:52:17",
+      "generated_at": "2026-07-04T09:14:25",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-06-29-medrxiv-efficacy_inference_in_early_phase_non_controlled_clinical_trials_via_bayesian_biomarker_de",
-    "doi": "10.64898/2026.06.26.26356652",
-    "date": "2026-06-29",
-    "title": "Efficacy inference in early-phase non-controlled clinical trials via Bayesian biomarker deconvolution",
-    "authors": "Humphries, C.; Kilpatrick, A. M.; Cartwright, J. A.; Potter, C.; Fernando, A. J.; Candela, M. E.; Man, J.; Aird, R.; Simpson, K. J.; Lyall, M. J.; Starkey Lewis, P.; Rodriguez, A.; Weir, C. J.; Dear, J. W.; Forbes, S. J.; Schumacher, L. J.",
-    "abstract": "Early-phase clinical trials of therapies for acute organ injury are typically small, uncontrolled, and must infer treatment activity using only tissue-damage biomarker changes over time. Interpretation is confounded by the temporal overlap of ongoing tissue damage and biomarker clearance. We address this with a Bayesian deconvolution framework that fits individual patient biomarker trajectories with an exponentially-modified Gaussian model. This model separates injury kinetics (peak release rate, injury duration, time to peak) from biomarker clearance, using a historic cohort as a null distribution. In a simulated phase 1 dose-escalation regenerative therapy trial, the framework reduces the minimum detectable treatment effect from 67.5% to 24.5% (a 2.76-fold improvement) and supports dose selection. Applied to published case-series data for another therapeutic, the framework recovers per-patient pharmacodynamic signatures consistent with pre-clinical mechanistic studies and supports smaller prospective clinical trial design. With indication-specific recalibration, the framework architecture conceptually transfers to other acute organ injuries where serum biomarkers reflect tissue damage. This offers a route to significantly reducing clinical trial sizes, supporting therapy dose-finding in non-controlled clinical trials, and identifying pharmacodynamic signatures.",
-    "category": "Clinical Translation",
-    "source": "medRxiv",
-    "published": "2026-06-29",
-    "updated": "2026-06-29",
-    "primary_category": "pharmacology and therapeutics",
+    "id": "2026-07-01-arxiv-enhancing_prostate_cancer_segmentation_for_multi_domain_generalization_using_a_novel_paral",
+    "arxiv_id": "2607.00370v1",
+    "date": "2026-07-01",
+    "title": "Enhancing Prostate Cancer Segmentation for Multi-Domain Generalization using a novel Parallel-Route Coherent Mixup Regularization Training",
+    "authors": "Josiah Simeth, Sudharsan Madhavan, Victoria Brennan, Sean McBride, James Janopaul-Naylor, Justin Haseltine",
+    "abstract": "MRI guided adaptive radiotherapy (MRgART) for prostate cancer (PCa) targets tumors while sparing organs from unnecessary radiation. Daily treatment adaptation requires accurate segmentation of tumors and organs. Manual delineation can be time and cost prohibitive. Deep learning segmentation methods have limited success applied to datasets distinct from training, hampering generalizability and adoption of MRgART. We develop a novel parallel route coherent mixup (PaRC-mix) training approach for single source to multi-domain generalization. PaRC-mix creates feature augmentations at multiple network layers through linear combination of features from different training samples in a batch. PaRC-mix training was implemented on two deep and residually connected networks, a multiple resolution residual network (MRRN) and UNet++ to segment PCa dominant intraprostatic lesions from apparent diffusion coefficient images. Models were trained on 2,029 samples from 3.0T GE MRI and tested on 1,547 PCa samples from 5 datasets acquired using 3T Siemens, 3T Philips, and 1.5T Elekta Unity MR-Linac scanners. PaRC-mix training led to significantly more accurate tumor detection and segmentation for both networks compared to training without mixup as well as input-mix training. PaRC-mix also achieved better recall to precision tradeoff than mixup applied only on the network backbone or input-mixup. Using a normalized composite DSC, HD95, and MSD score the accuracy gap between aggressive and non-aggressive lesions decreased from 21.1 and 19.5 for MRRN and UNet++ models trained without mixup to 5.2 and 7.9 with same models trained with PaRC-mix. This paper presents an easy to implement network agnostic approach to feature augmentation in multi-stream networks that enhances generalizability for the difficult problem of prostate cancer lesion segmentation.",
+    "category": "Precision Oncology",
+    "source": "arXiv",
+    "published": "2026-07-01T03:10:14Z",
+    "updated": "2026-07-01T03:10:14Z",
+    "primary_category": "eess.IV",
     "categories": [
-      "pharmacology and therapeutics"
+      "eess.IV"
     ],
     "links": [
       {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356652v1"
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.00370v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356652v1.full.pdf"
+        "url": "https://arxiv.org/pdf/2607.00370v1"
       }
     ],
     "score": 58,
     "infographic": {
-      "key_insight": "A Bayesian deconvolution model can separate true treatment-related biomarker effects from natural biomarker clearance in early-phase, non-controlled trials.",
-      "clinical_relevance": "This could help researchers infer whether a therapy is working, estimate dose response, and design smaller prospective trials for acute organ injury studies.",
+      "key_insight": "Parallel-route coherent mixup (PaRC-mix) improved prostate MRI lesion segmentation generalization across scanners and institutions by augmenting features at multiple network layers, not just at the input.",
+      "clinical_relevance": "Better cross-domain segmentation could support more reliable MR-guided adaptive radiotherapy planning for prostate cancer, where accurate daily delineation is critical.",
       "method": [
-        "Fits individual biomarker trajectories with an exponentially modified Gaussian model.",
-        "Separates injury kinetics from biomarker clearance using a historic cohort as the null reference.",
-        "Uses simulation and published case-series data to test dose detection and pharmacodynamic signatures."
+        "Trained MRRN and UNet++ models with PaRC-mix feature mixing at multiple layers.",
+        "Used ADC MRI to segment dominant intraprostatic lesions from 3.0T GE training data.",
+        "Compared against no-mixup, input-mixup, and backbone-only mixup baselines."
       ],
-      "evidence_signal": "In simulation, the framework lowered the minimum detectable treatment effect from 67.5% to 24.5% and was then applied to published case-series data to recover signatures consistent with pre-clinical findings.",
-      "watch_item": "Performance depends on good historical control data and indication-specific recalibration, so results may not transfer reliably without local validation.",
+      "evidence_signal": "Models were trained on 2,029 samples from one MRI source and tested on 1,547 samples from five external datasets spanning Siemens, Philips, and MR-Linac scanners, with PaRC-mix outperforming comparison methods on segmentation metrics and recall-precision balance.",
+      "watch_item": "Results come from retrospective multi-domain testing on one lesion segmentation task, so broader clinical deployment will still need prospective validation and site-specific implementation checks.",
       "hashtags": [
-        "#BayesianModeling",
-        "#Biomarkers",
-        "#ClinicalTrials",
-        "#DoseFinding",
-        "#TranslationalResearch"
+        "#PrecisionOncology",
+        "#ProstateCancer",
+        "#MRI",
+        "#MedicalAI",
+        "#Radiotherapy"
       ],
-      "paper_id": "2026-06-29-medrxiv-efficacy_inference_in_early_phase_non_controlled_clinical_trials_via_bayesian_biomarker_de",
-      "paper_title": "Efficacy inference in early-phase non-controlled clinical trials via Bayesian biomarker deconvolution",
-      "paper_date": "2026-06-29",
-      "paper_category": "Clinical Translation",
-      "generated_at": "2026-07-03T09:52:19",
+      "paper_id": "2026-07-01-arxiv-enhancing_prostate_cancer_segmentation_for_multi_domain_generalization_using_a_novel_paral",
+      "paper_title": "Enhancing Prostate Cancer Segmentation for Multi-Domain Generalization using a novel Parallel-Route Coherent Mixup Regularization Training",
+      "paper_date": "2026-07-01",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-04T09:14:27",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-06-29-medrxiv-pho_agents_a_large_language_model_powered_multi_agent_system_for_predicting_health_outcome",
-    "doi": "10.64898/2026.06.19.26355815",
+    "id": "2026-06-29-arxiv-beyond_drug_discovery_the_nanotechnology_molecular_optimization_nmo_benchmark",
+    "arxiv_id": "2606.30170v1",
     "date": "2026-06-29",
-    "title": "PHO-Agents: A Large Language Model Powered Multi-Agent System for Predicting Health Outcomes",
-    "authors": "Shi, D.; Shugg, T.; Eadon, M. T.; Su, J.; Chen, Y.; Song, Q.",
-    "abstract": "ObjectivePredicting health outcomes from electronic health records (EHRs) is challenging because traditional models rely on structured data and often ignore external medical knowledge. We propose an approach that integrates structured EHR with text-based clinical evidence to improve prediction and interpretability. MethodsWe introduce PHO-Agents, a multi-agent system powered by large language models (LLMs) for health outcome prediction. Structured EHR sequences are encoded to produce attention-based representations and initial logits, which are converted into patient summaries by a data agent. A retrieval agent gathers relevant clinical guidelines. Research and practical doctor agents independently assess the patient, and a leader agent synthesizes their analyses. Outputs from the EHR-based model and the LLM agents are fused to generate final predictions and explanation reports. PHO-Agents was evaluated on three real-world cohorts: acute kidney injury (AKI) patients (in-hospital mortality), chronic kidney disease patients (AKI onset within two years), and cancer patients receiving immune checkpoint inhibitors (immune-related adverse events within one year). ResultsPHO-Agents outperformed single-agent and multi-agent LLM baselines across all cohorts. In the AKI mortality task, it achieved a PR-AUC of 90.20 {+/-} 2.07, compared with 56.46 {+/-} 2.98 for the best single-agent baseline. Similar gains were observed in the ICI and CKD cohorts. Ablation studies showed that both multi-agent reasoning and logit-level fusion contributed to performance improvements, and case analyses demonstrated clinically consistent explanations. ConclusionPHO-Agents integrates longitudinal EHR modeling with collaborative LLM reasoning, improving predictive performance, interpretability, and robustness across diverse clinical tasks. This hybrid approach offers a trustworthy strategy for real-world clinical decision support.",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-06-29",
-    "updated": "2026-06-29",
-    "primary_category": "health informatics",
+    "title": "Beyond Drug Discovery: The Nanotechnology Molecular Optimization (NMO) Benchmark",
+    "authors": "Matthias Blaschke, Daniel Kienzle, Zsuzsanna Koczor-Benda, Julian Lorenz, Rainer Lienhart, Fabian Pauly",
+    "abstract": "Generative molecular design is shaped by simple proxy benchmarks for drug-like properties and models pretrained on large pharmaceutical datasets. This combination yields strong benchmark metrics but limits transferability to domains structurally distinct from drug discovery. To overcome this limitation and drive discovery toward real, scientifically grounded targets, we introduce the Nanotechnology Molecular Optimization (NMO) Benchmark, which bridges machine learning (ML) and quantum materials science. NMO acts simultaneously as a rigorous testbed for the ML community and a discovery engine for nanotechnology research. The suite replaces proxy oracles with quantum simulations and introduces strict protocols that prioritize scientific utility over leaderboard-oriented overfitting. The physics-based NMO tasks impose hard structural constraints and rugged fitness landscapes, posing fundamentally new requirements on generative models. Notably, advanced molecular optimization methods underperform much simpler approaches on the NMO tasks. We develop a new baseline method identifying the critical components to solve the NMO tasks, including a novel representation for modeling structural constraints and a domain-agnostic pretraining strategy to eliminate pharmaceutical dataset bias. Our results surpass state-of-the-art physical properties and reveal previously unknown structural motifs, offering new insights for the nanotechnology community and demonstrating that ML can drive genuine scientific discovery.",
+    "category": "Therapeutic Discovery",
+    "source": "arXiv",
+    "published": "2026-06-29T11:46:48Z",
+    "updated": "2026-06-29T11:46:48Z",
+    "primary_category": "cs.LG",
     "categories": [
-      "health informatics"
+      "cs.LG",
+      "cond-mat.mes-hall",
+      "cond-mat.mtrl-sci",
+      "cs.AI",
+      "cs.CE"
     ],
     "links": [
       {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.19.26355815v1"
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2606.30170v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.19.26355815v1.full.pdf"
+        "url": "https://arxiv.org/pdf/2606.30170v1"
       }
     ],
     "score": 57,
     "infographic": {
-      "key_insight": "PHO-Agents combines structured EHR modeling with LLM-based multi-agent clinical reasoning to improve health outcome prediction and explanation quality.",
-      "clinical_relevance": "This hybrid system could support more trustworthy risk stratification and decision support for patients, including those receiving cancer immunotherapy.",
+      "key_insight": "The paper introduces the Nanotechnology Molecular Optimization (NMO) Benchmark, showing that physics-based molecular design tasks can better test and improve generative models beyond drug-discovery proxies.",
+      "clinical_relevance": "Indirect: the benchmark is not a cancer drug candidate study, but methods that generalize to harder, more realistic molecular design problems could eventually support therapeutic discovery.",
       "method": [
-        "Encoded longitudinal EHR sequences into attention-based patient representations and initial prediction logits.",
-        "Converted EHR outputs into patient summaries for a data agent, then used retrieval, research, doctor, and leader agents to review clinical evidence.",
-        "Fused EHR model outputs with LLM agent analyses to generate final predictions and explanation reports."
+        "Replaces proxy property oracles with quantum simulations",
+        "Uses strict protocols with hard structural constraints and rugged fitness landscapes",
+        "Introduces a new baseline with structural-constraint modeling and domain-agnostic pretraining"
       ],
-      "evidence_signal": "Evaluated on three real-world cohorts (AKI mortality, CKD-related AKI onset, and immune-related adverse events in cancer patients), with PHO-Agents outperforming single-agent and multi-agent LLM baselines; in AKI mortality it achieved PR-AUC 90.20 ± 2.07 versus 56.46 ± 2.98 for the best single-agent baseline.",
-      "watch_item": "Promising results still need careful validation for workflow integration, calibration, and generalization across sites, populations, and clinical settings.",
+      "evidence_signal": "Across the NMO tasks, more advanced molecular optimization methods underperformed simpler approaches, while the new baseline improved physical-property results and uncovered previously unknown structural motifs.",
+      "watch_item": "The benchmark is domain-specific to nanotechnology, so gains may not transfer directly to clinical drug-discovery settings without further validation.",
       "hashtags": [
-        "#PrecisionOncology",
-        "#LLM",
-        "#MultiAgentAI",
-        "#EHR",
-        "#ClinicalDecisionSupport"
+        "#AI4Science",
+        "#MolecularDesign",
+        "#QuantumSimulation",
+        "#Benchmarking",
+        "#Nanotechnology"
       ],
-      "paper_id": "2026-06-29-medrxiv-pho_agents_a_large_language_model_powered_multi_agent_system_for_predicting_health_outcome",
-      "paper_title": "PHO-Agents: A Large Language Model Powered Multi-Agent System for Predicting Health Outcomes",
+      "paper_id": "2026-06-29-arxiv-beyond_drug_discovery_the_nanotechnology_molecular_optimization_nmo_benchmark",
+      "paper_title": "Beyond Drug Discovery: The Nanotechnology Molecular Optimization (NMO) Benchmark",
       "paper_date": "2026-06-29",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-03T09:52:25",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-29-medrxiv-6_month_recovery_after_mild_traumatic_brain_injury_in_older_adults_a_track_geri_study",
-    "doi": "10.64898/2026.06.25.26356520",
-    "date": "2026-06-29",
-    "title": "6-Month Recovery after Mild Traumatic Brain Injury in Older Adults: A TRACK-GERI Study",
-    "authors": "Rosen Lang, Y.; Puccio, A.; Yuh, E. L.; Lombardi, D.; Kuang, K.; Diaz Nelson, M.; Boscardin, W. J.; Huie, J. R.; Yaffe, K.; Okonkwo, D. O.; Diaz Arrastia, R.; Manley, G. T.; Gardner, R. C.; Transforming Research and Clinical Knowledge in Traumatic Brain Injury (TRACK-TBI) investigators,",
-    "abstract": "ImportanceOlder adults ([&ge;]65 years old) are the largest and fastest growing population of traumatic brain injury (TBI) victims. However, real-world evidence of 6-month functional outcomes is limited. ObjectiveTo describe 6-month functional outcomes in older adults after mild TBI (mTBI; presenting Glasgow Coma Scale score 13-15), by age group and preinjury cognitive status. To evaluate the performance of the Glasgow Outcome Scale-Extended (GOSE) as a geriatric mTBI clinical trial endpoint. DesignProspective cohort study; single-center pilot enrollment February 2018-April 2019; two-center enrollment October 2020-March 2025. SettingTwo U.S. level I trauma centers. ParticipantsOlder adults presenting within 72 hours of mTBI who received head CT, and their co-enrolled study-partner informants. Data curation and analysis were performed January 2023-November 2025. ExposuremTBI. Main outcome and measuresGOSE was assessed at 2 weeks and 6 months post-injury and weighted using inverse probability weighting to mitigate attrition bias. Reliable change index was used to estimate the proportions of GOSE improvement or deterioration from 2 weeks to 6 months versus a 9-item Activities of Daily Living survey (ADL, Supplemental Methods) and Functional Activities Questionnaire (FAQ). ResultsAmong 253 participants with mTBI, mean (SD) age was 77.3 (8.3) years, 129 (51%) were female, 68 (34%) had pre-injury mild cognitive impairment and 28 (15%) had pre-injury dementia (58 had unknown preinjury cognitive status). At 6 months, 14% died, 73% achieved home independence (GOSE 5+), and 17% achieved complete recovery (GOSE 8). Younger-old and persons without preinjury cognitive impairment had substantially better recovery (mortality 6-11%, home independence 84-86%, complete recovery 21-22%) versus oldest-old and those with pre-injury dementia (mortality 29-32%, home independence 23-52%, complete recovery 5-10%). GOSE detected the greatest proportion of reliable improvement or deterioration compared to ADL and FAQ, though low agreement reflects their complementary domains. Conclusions and RelevanceMost younger and cognitively-unimpaired older adults achieved favorable functional outcomes, however, more vulnerable older adults may suffer chronic disability after mTBI. GOSE effectively captures meaningful change in this population, while ADL and FAQ provide important complementary information. Findings underscore the need for age-appropriate prognostication and more inclusive geriatric TBI research and clinical trial design. Trial RegistrationNCT07296783 Key pointsO_ST_ABSQuestionC_ST_ABSWhat are the functional outcomes of older adults 6 months after mild TBI, by age group and preinjury cognitive status? FindingsMost older adults achieved home independence, though complete recovery was less common and mortality was notable. Younger-old and preinjury cognitively unimpaired individuals had substantially better recovery, with lower mortality and higher rates of home independence and complete recovery, compared to the oldest-old and those who had dementia preinjury. Meaning6 months after mild TBI, the younger-old and cognitively-resilient have high potential for favorable outcome, while the older-old and cognitively-vulnerable are at high risk for mortality or chronic disability.",
-    "category": "Clinical Translation",
-    "source": "medRxiv",
-    "published": "2026-06-29",
-    "updated": "2026-06-29",
-    "primary_category": "neurology",
-    "categories": [
-      "neurology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356520v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.25.26356520v1.full.pdf"
-      }
-    ],
-    "score": 51,
-    "infographic": {
-      "key_insight": "In older adults with mild traumatic brain injury, 6-month recovery varied strongly by age and pre-injury cognitive status, with worse outcomes in the oldest-old and those with dementia.",
-      "clinical_relevance": "GOSE may be a useful 6-month functional endpoint for geriatric mTBI studies, but outcomes should be interpreted alongside cognitive baseline and complementary disability measures.",
-      "method": [
-        "Prospective cohort at two U.S. level I trauma centers",
-        "Older adults (65+) presenting within 72 hours of mTBI and receiving head CT",
-        "GOSE assessed at 2 weeks and 6 months, with weighting to reduce attrition bias"
-      ],
-      "evidence_signal": "Among 253 participants, 14% died by 6 months, 73% reached home independence, and 17% achieved complete recovery; GOSE captured more reliable change than ADL or FAQ in this sample.",
-      "watch_item": "Single-center pilot and later two-center enrollment, plus substantial unknown pre-injury cognitive status, may limit generalizability and endpoint interpretation.",
-      "hashtags": [
-        "#TBI",
-        "#OlderAdults",
-        "#Geriatrics",
-        "#FunctionalRecovery",
-        "#ClinicalTrials"
-      ],
-      "paper_id": "2026-06-29-medrxiv-6_month_recovery_after_mild_traumatic_brain_injury_in_older_adults_a_track_geri_study",
-      "paper_title": "6-Month Recovery after Mild Traumatic Brain Injury in Older Adults: A TRACK-GERI Study",
-      "paper_date": "2026-06-29",
-      "paper_category": "Clinical Translation",
-      "generated_at": "2026-07-03T09:52:29",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-06-28-medrxiv-routine_implementation_of_synuclein_seed_amplification_assays_reveals_high_diagnostic_perf",
-    "doi": "10.64898/2026.04.21.26351389",
-    "date": "2026-06-28",
-    "title": "Routine implementation of α-synuclein Seed Amplification Assays reveals high diagnostic performance and the limited value of Alzheimer disease fluid biomarkers for detecting α-synuclein co-pathology",
-    "authors": "Jourdan, O.; Duchiron, M.; Torrent, J.; Turpinat, C.; Mondesert, E.; Busto, G.; Morchikh, M.; Dornadic, M.; Delaby, C.; Hirtz, C.; Thizy, L.; Barnier-Figue, G.; Perrein, F.; Jurici, S.; Gabelle, A.; Bennys, K.; Lehmann, S.",
-    "abstract": "BackgroundIn neurodegenerative diseases, the diagnostic value of -synuclein seed amplification assay (SAA) in routine clinical practice and its relationship with cognitive performance and fluid biomarkers remains incompletely characterized. In addition, although Alzheimer disease (AD) CSF and blood biomarkers accurately detect amyloid and tau pathology, their ability to identify concomitant -synuclein (Syn) pathology remains unknown. MethodsWe included 398 patients from the multicenter memory clinic ALZAN cohort. All participants underwent CSF and blood sampling with measurement of CSF biomarkers (A{beta}42/40, tau, p-tau181) and plasma biomarkers (A{beta}42/40, p-tau181, p-tau217, GFAP, NfL). Cognitive assessment was performed using the Mini-Mental State Examination (MMSE). Clinical diagnoses were independently confirmed by two senior neurologists. Syn status was determined by SAA (RT-QuIC). ResultsOf 398 patients, 19/20 patients with Lewy body dementia (LBD) (95.0%) and 32/203 patients with AD (15.8%) were SAA+. SAA-positivity presented a sensitivity of 95.0% (95%CI, 75.1-99.9), a specificity of 93.1% (95%CI, 88.3-96.4) for distinguishing LBD from patients without LBD or AD. In the entire cohort, SAA+ patients showed lower MMSE scores (p<0.01), lower CSF A{beta}42/40 ratio (p<0.01), and elevated plasma GFAP (p<0.05). However, within the AD subgroup, only CSF A{beta}42/40 differed marginally between SAA+ and SAA- patients, whereas CSF total tau, CSF p-tau181, plasma p-tau217, p-tau181, GFAP, and NfL showed no significant differences. ConclusionsSAA accurately detects Syn pathology in routine memory clinic practice that is not captured by current AD CSF and blood biomarkers. These findings support SAA as a complementary biomarker for routine diagnosis and patient stratification. What is already known on this topic-synuclein seed amplification assay (SAA) has shown high sensitivity and specificity for detecting Lewy body dementia (LBD) in research cohorts, and -synuclein co-pathology is frequently observed in Alzheimers disease (AD). However, it remains unknown whether currently available AD CSF and blood biomarkers can identify patients with -synuclein pathology in routine clinical practice. What this study addsIn a prospective multicenter memory clinic cohort, SAA showed high sensitivity (95.0%) and specificity (93.5%) for identifying clinically diagnosed LBD and detected Syn co-pathology in 15.8% of AD patients. Current AD CSF and blood biomarkers did not discriminate between SAA-positive and SAA-negative patients, providing little information on concomitant Syn pathology. How this study might affect research, practice or policySAA provides unique biological information by improving the detection of LBD and identifying AD patients with concomitant Syn co-pathology that is not captured by current CSF and blood biomarkers, thereby improving patient stratification and informing future precision medicine approaches and therapeutic trials.",
-    "category": "Therapeutic Discovery",
-    "source": "medRxiv",
-    "published": "2026-06-28",
-    "updated": "2026-06-28",
-    "primary_category": "neurology",
-    "categories": [
-      "neurology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351389v2"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351389v2.full.pdf"
-      }
-    ],
-    "score": 46,
-    "infographic": {
-      "key_insight": "Routine α-synuclein seed amplification assays (SAA) accurately detect α-synuclein pathology in memory-clinic patients and add information not captured by standard Alzheimer disease fluid biomarkers.",
-      "clinical_relevance": "SAA may improve diagnostic stratification for Lewy body dementia and Alzheimer disease with co-pathology, supporting its use as a complementary routine biomarker.",
-      "method": [
-        "398 patients from the multicenter ALZAN memory clinic cohort were analyzed.",
-        "CSF and plasma biomarkers for amyloid, tau, GFAP, and NfL were measured alongside MMSE.",
-        "Synuclein status was determined using RT-QuIC seed amplification assay and compared with expert clinical diagnoses."
-      ],
-      "evidence_signal": "In the cohort, SAA was positive in 95.0% of Lewy body dementia cases and 15.8% of Alzheimer disease cases, with high sensitivity and specificity for distinguishing LBD from non-LBD/non-AD patients.",
-      "watch_item": "Findings are based on a memory-clinic cohort and do not show that current AD fluid biomarkers reliably identify α-synuclein co-pathology within Alzheimer disease.",
-      "hashtags": [
-        "#AlphaSynuclein",
-        "#SeedAmplificationAssay",
-        "#LewyBodyDementia",
-        "#AlzheimersBiomarkers",
-        "#MemoryClinic"
-      ],
-      "paper_id": "2026-06-28-medrxiv-routine_implementation_of_synuclein_seed_amplification_assays_reveals_high_diagnostic_perf",
-      "paper_title": "Routine implementation of α-synuclein Seed Amplification Assays reveals high diagnostic performance and the limited value of Alzheimer disease fluid biomarkers for detecting α-synuclein co-pathology",
-      "paper_date": "2026-06-28",
       "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-07-03T09:52:32",
+      "generated_at": "2026-07-04T09:14:29",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-01-arxiv-predicting_lethal_outcome_cause_and_understanding_key_biomarkers_linked_with_acute_myocard",
+    "arxiv_id": "2607.00472v1",
+    "date": "2026-07-01",
+    "title": "Predicting Lethal Outcome (Cause) And Understanding Key Biomarkers Linked With Acute Myocardial Infarction Using Deep Artificial Neural Network And Ensemble Of Machine Learning Methodologies",
+    "authors": "Sagnik Ghosh",
+    "abstract": "Cardiovascular disease is still one of the main causes of death around the world. Acute myocardial infarction (MI), or heart attack, claims millions of lives each year. MI happens when blood flow to the coronary arteries is blocked or reduced, which causes permanent damage to the heart muscle. Without treatment, this can lead to cardiac arrest, where the heart stops pumping blood to the organs, resulting in organ failure and death. Even survivors often face serious problems like heart failure, pulmonary edema, and asystole. Research shows that 5 to 10 percent of survivors die within the first year after an MI, and nearly half need to be hospitalized again. Early thrombolytic treatment leads to better outcomes, so there is a clear need for faster and more accurate ways to diagnose MI. Right now, doctors usually review patient history and use their own experience to find the causes of MI. This process takes a lot of time and can be inconsistent. Detecting MI accurately and quickly can help patients take better care of themselves and prevent fatal events. In this study, we introduce an automated model to predict deadly outcomes of MI and help doctors understand important biomarkers linked to its complications. This approach aims to make diagnosis clearer, faster, and more affordable. The process includes preparing the data, filling in missing values, and handling imbalanced data using SVMSMOTE, ADASYN, and class-weighted methods. We use wrapper and embedded feature selection to find the most important variables, then scale the features for consistency. The model combines Logistic Regression, Random Forest, Light-GBM, and Bagging SVM, and is further improved with an artificial neural network to increase accuracy. We evaluate all models using precision, recall, and other key measures to find the best option for clinical use.",
+    "category": "Target Biology",
+    "source": "arXiv",
+    "published": "2026-07-01T05:46:45Z",
+    "updated": "2026-07-01T05:46:45Z",
+    "primary_category": "eess.IV",
+    "categories": [
+      "eess.IV",
+      "cs.AI",
+      "cs.CV",
+      "cs.LG"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.00472v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.00472v1"
+      }
+    ],
+    "score": 56,
+    "infographic": {
+      "key_insight": "A hybrid machine-learning and deep-learning pipeline was built to predict lethal outcomes after acute myocardial infarction and identify key biomarkers linked to complications.",
+      "clinical_relevance": "If validated, this kind of model could help clinicians flag high-risk MI patients earlier and support faster, more consistent decision-making.",
+      "method": [
+        "Preprocessed data with missing-value handling and imbalance correction using SVMSMOTE, ADASYN, and class-weighted methods.",
+        "Selected important features with wrapper and embedded methods, then standardized inputs.",
+        "Combined Logistic Regression, Random Forest, LightGBM, Bagging SVM, and an artificial neural network for final prediction."
+      ],
+      "evidence_signal": "The abstract reports evaluation across precision, recall, and other performance metrics to compare model options for clinical use.",
+      "watch_item": "Performance may not generalize without external validation, and imbalanced clinical data can still bias predictions despite resampling.",
+      "hashtags": [
+        "#MachineLearning",
+        "#DeepLearning",
+        "#MyocardialInfarction",
+        "#Biomarkers",
+        "#PredictiveModeling"
+      ],
+      "paper_id": "2026-07-01-arxiv-predicting_lethal_outcome_cause_and_understanding_key_biomarkers_linked_with_acute_myocard",
+      "paper_title": "Predicting Lethal Outcome (Cause) And Understanding Key Biomarkers Linked With Acute Myocardial Infarction Using Deep Artificial Neural Network And Ensemble Of Machine Learning Methodologies",
+      "paper_date": "2026-07-01",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-07-04T09:14:31",
       "generator": "openai"
     }
   }

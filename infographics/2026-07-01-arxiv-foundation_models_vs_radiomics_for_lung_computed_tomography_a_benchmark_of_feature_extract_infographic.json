@@ -1,0 +1,24 @@
+{
+  "key_insight": "For lung CT phenotyping, the best-performing pipeline depends more on the task than on a single universally superior model: segmentation matters most for tumor volume and stage, while the classifier head matters most for survival, histology, and age prediction.",
+  "clinical_relevance": "A two-stage, non-end-to-end workflow can be a practical default for small cohorts, with Curia plus tumor segmentation and CatBoost giving the strongest overall balance across the main clinical tasks.",
+  "method": [
+    "Benchmarked 5 feature extractors, 7 classifier heads, and 3 segmentation regimes.",
+    "Compared radiomics and foundation-model features across 5 CT prediction tasks.",
+    "Evaluated worst-case cross-cohort performance on internal LUNG1 and external LUNG2 cohorts."
+  ],
+  "evidence_signal": "Models were trained on LUNG1 (n=338) and tested on an internal set (n=84) plus external LUNG2 (n=211), with worst-case cross-cohort performance used as the primary benchmark.",
+  "watch_item": "The reported radiomics advantage for some endpoints may partly reflect label-derivation effects, so results should be interpreted cautiously when transferring to new settings.",
+  "hashtags": [
+    "#LungCT",
+    "#Radiomics",
+    "#FoundationModels",
+    "#PrecisionOncology",
+    "#MedicalAI"
+  ],
+  "paper_id": "2026-07-01-arxiv-foundation_models_vs_radiomics_for_lung_computed_tomography_a_benchmark_of_feature_extract",
+  "paper_title": "Foundation Models vs. Radiomics for Lung Computed Tomography: A Benchmark of Feature Extractors, Classification Heads, and Segmentation Choices",
+  "paper_date": "2026-07-01",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-04T09:13:59",
+  "generator": "openai"
+}

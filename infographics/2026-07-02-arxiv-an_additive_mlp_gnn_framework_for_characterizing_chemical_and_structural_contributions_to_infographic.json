@@ -1,0 +1,24 @@
+{
+  "key_insight": "Separating physicochemical descriptors and molecular graph structure into two additive branches makes aqueous solubility predictions more interpretable, showing what comes from chemistry versus topology.",
+  "clinical_relevance": "Better solubility prediction can help early drug discovery by flagging compounds with formulation or developability risks sooner, before costly downstream testing.",
+  "method": [
+    "Chemical branch: multilayer perceptron on physicochemical descriptors",
+    "Structural branch: graph neural network on molecular graphs",
+    "Additive fusion at prediction time, with optional multiplicative interaction"
+  ],
+  "evidence_signal": "The model was pretrained on the larger AqSolDB dataset and fine-tuned on the smaller BigSolDB2 dataset, which improved accuracy and reduced run-to-run variation while remaining competitive in both datasets.",
+  "watch_item": "Interpretability findings depend on post hoc projections and GNNExplainer masks, so the chemical-versus-structural split should be treated as informative rather than definitive causality.",
+  "hashtags": [
+    "#DrugDiscovery",
+    "#AqueousSolubility",
+    "#GraphNeuralNetworks",
+    "#MolecularAI",
+    "#InterpretableML"
+  ],
+  "paper_id": "2026-07-02-arxiv-an_additive_mlp_gnn_framework_for_characterizing_chemical_and_structural_contributions_to",
+  "paper_title": "An Additive MLP-GNN Framework for Characterizing Chemical and Structural Contributions to Aqueous Solubility",
+  "paper_date": "2026-07-02",
+  "paper_category": "Therapeutic Discovery",
+  "generated_at": "2026-07-04T09:14:23",
+  "generator": "openai"
+}
