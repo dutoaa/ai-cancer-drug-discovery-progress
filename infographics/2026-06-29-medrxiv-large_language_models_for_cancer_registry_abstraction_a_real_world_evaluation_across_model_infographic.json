@@ -1,24 +1,24 @@
 {
-  "key_insight": "Large language models can help automate cancer registry abstraction, with the best models performing well on simpler registry variables and more moderately on complex date extraction.",
-  "clinical_relevance": "If validated and integrated carefully, LLMs could reduce manual chart-review burden for cancer registries and speed up population-level cancer surveillance.",
+  "key_insight": "Large language models can help abstract cancer registry variables from clinical records, with the strongest models performing best on simpler registry fields and less well on exact date extraction.",
+  "clinical_relevance": "If validated in practice, these models could reduce manual registrar workload and speed cancer surveillance data entry across multiple cancer types.",
   "method": [
-    "Evaluated five foundation LLMs using zero-shot prompting",
-    "Abstracted eight registry variables from clinical reports",
-    "Tested on 5,939 patients across seven cancer types"
+    "Evaluated five foundation LLMs on real-world cancer registry abstraction tasks",
+    "Used zero-shot prompting on eight registry variables from clinical reports",
+    "Tested 5,939 patients across seven cancer types against hospital registry ground truth"
   ],
-  "evidence_signal": "In a real-world hospital registry benchmark, top models reached about 0.8 F1 for low-cardinality variables and about 0.55 exact accuracy for diagnosis and treatment dates, improving to about 0.85 within a ±30-day window.",
-  "watch_item": "Performance was lower for precise date extraction, so human review and workflow validation remain important before routine use.",
+  "evidence_signal": "In a large evaluation, top models reached about F1 ~0.8 for low-cardinality variables, around 0.55 exact accuracy for diagnosis/treatment dates, and about 0.85 accuracy when a ±30-day tolerance was allowed.",
+  "watch_item": "Performance varied by model and variable, so real deployment would still need human oversight, especially for high-stakes fields like exact dates and high-cardinality entries.",
   "hashtags": [
+    "#AIinHealthcare",
     "#CancerRegistry",
     "#LargeLanguageModels",
     "#PrecisionOncology",
-    "#ClinicalAI",
     "#HealthData"
   ],
   "paper_id": "2026-06-29-medrxiv-large_language_models_for_cancer_registry_abstraction_a_real_world_evaluation_across_model",
   "paper_title": "Large language models for cancer registry abstraction: a real-world evaluation across models, variables, and cancer types",
   "paper_date": "2026-06-29",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-04T09:14:25",
+  "generated_at": "2026-07-05T09:35:43",
   "generator": "openai"
 }

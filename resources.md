@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-04
+Generated: 2026-07-05
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. ClinRAG-GRAPH: Clinical-prior Retrieval-Augmented Graph Model with Domain Adversarial Learning for Breast pCR Prediction

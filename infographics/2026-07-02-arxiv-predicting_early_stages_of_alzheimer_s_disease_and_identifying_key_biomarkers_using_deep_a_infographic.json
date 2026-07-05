@@ -1,24 +1,24 @@
 {
-  "key_insight": "A machine-learning pipeline combining imputation, imbalance handling, feature selection, and ensemble modeling was used to predict early Alzheimer’s disease and highlight potential biomarkers.",
-  "clinical_relevance": "If validated, this approach could support earlier identification of Alzheimer’s-related changes before symptoms become severe, helping guide timely clinical follow-up.",
+  "key_insight": "A machine-learning pipeline combining imputation, imbalance handling, feature selection, and ensemble/ANN models was built to predict early Alzheimer’s disease and highlight key biomarkers.",
+  "clinical_relevance": "Earlier identification of likely Alzheimer’s cases could support timelier assessment and care planning, especially when symptoms are still subtle.",
   "method": [
     "Used ADNI clinical, neuropsychological, and neuroimaging-related data.",
-    "Filled missing values with iterative imputation and addressed class imbalance with Borderline SVM-SMOTE.",
-    "Compared a stacking ensemble and an artificial neural network after feature selection and scaling."
+    "Applied iterative imputation and Borderline SVM-SMOTE to address missing values and class imbalance.",
+    "Trained a stacking ensemble (Logistic Regression, Extra Trees, Bagging KNN, LightGBM) and an artificial neural network after feature selection and scaling."
   ],
-  "evidence_signal": "Model performance was evaluated using precision, recall, F1-score, and AUC-ROC on selected features from the ADNI dataset.",
-  "watch_item": "The abstract does not report external validation, so real-world generalizability and biomarker robustness remain uncertain.",
+  "evidence_signal": "Models were compared using precision, recall, F1-score, and AUC-ROC on train/test splits of the processed ADNI dataset.",
+  "watch_item": "Because the approach depends on retrospective ADNI data and complex preprocessing, external validation is needed before real-world use.",
   "hashtags": [
     "#AlzheimersDisease",
     "#MachineLearning",
     "#Biomarkers",
-    "#EarlyDetection",
-    "#DeepLearning"
+    "#Neuroimaging",
+    "#EarlyDetection"
   ],
   "paper_id": "2026-07-02-arxiv-predicting_early_stages_of_alzheimer_s_disease_and_identifying_key_biomarkers_using_deep_a",
   "paper_title": "Predicting Early Stages Of Alzheimer's Disease And Identifying Key Biomarkers Using Deep Artificial Neural Network And Ensemble Of Machine Learning Methodologies",
   "paper_date": "2026-07-02",
   "paper_category": "Target Biology",
-  "generated_at": "2026-07-04T09:13:53",
+  "generated_at": "2026-07-05T09:35:14",
   "generator": "openai"
 }

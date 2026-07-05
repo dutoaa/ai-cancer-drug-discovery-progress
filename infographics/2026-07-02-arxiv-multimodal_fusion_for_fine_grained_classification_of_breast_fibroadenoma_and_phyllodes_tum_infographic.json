@@ -1,24 +1,24 @@
 {
-  "key_insight": "A clinically guided multimodal model that combines ultrasound images, text descriptions, and structured clinical data improves fine-grained differentiation between breast fibroadenoma and phyllodes tumors.",
-  "clinical_relevance": "Better preoperative classification may help reduce misclassification of borderline or benign phyllodes tumors as fibroadenoma and support more informed surgical planning.",
+  "key_insight": "A clinically guided multimodal model combining ultrasound images, clinical data, and text improves fine-grained differentiation of breast fibroadenoma and phyllodes tumors.",
+  "clinical_relevance": "Better preoperative classification of these look-alike fibroepithelial lesions may support more appropriate surgical planning and reduce misclassification of borderline phyllodes tumors as fibroadenomas.",
   "method": [
-    "Built the FAPT-M Dataset with 910 pathology-confirmed patients and multimodal inputs.",
-    "Used DenseNet for image encoding, CLIP-inspired text encoding, and lightweight clinical feature encoding.",
-    "Added clinical-conditioned modulation, cross-modal Transformer fusion, and dual-path representation learning."
+    "DenseNet encodes ultrasound images, while separate lightweight encoders process clinical attributes and ultrasound report text.",
+    "A CLIP-inspired text branch plus clinical-conditioned adaptive modulation improves cross-modal alignment.",
+    "Cross-modal Transformer fusion and dual-path representation learning strengthen interaction across modalities."
   ],
-  "evidence_signal": "On patient-level five-fold cross-validation, the model achieved 77.64% accuracy, 73.38% F1-score, and 89.74% AUC, outperforming representative CNN, Transformer, and vision-language baselines.",
-  "watch_item": "The dataset comes from a specific cohort and the approach will need external validation and real-world workflow testing before broader deployment.",
+  "evidence_signal": "Using a pathology-confirmed FAPT-M dataset of 910 patients with patient-level five-fold cross-validation, the model reached 77.64% accuracy, 73.38% F1-score, and 89.74% AUC.",
+  "watch_item": "The dataset is single-benchmark and retrospective, so broader external validation and real-world workflow testing are needed before clinical adoption.",
   "hashtags": [
-    "#PrecisionOncology",
     "#BreastUltrasound",
     "#MultimodalAI",
-    "#MedicalImagingAI",
-    "#TumorClassification"
+    "#PrecisionOncology",
+    "#DeepLearning",
+    "#MedicalImaging"
   ],
   "paper_id": "2026-07-02-arxiv-multimodal_fusion_for_fine_grained_classification_of_breast_fibroadenoma_and_phyllodes_tum",
   "paper_title": "Multimodal Fusion for Fine-Grained Classification of Breast Fibroadenoma and Phyllodes Tumors",
   "paper_date": "2026-07-02",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-04T09:14:03",
+  "generated_at": "2026-07-05T09:35:24",
   "generator": "openai"
 }

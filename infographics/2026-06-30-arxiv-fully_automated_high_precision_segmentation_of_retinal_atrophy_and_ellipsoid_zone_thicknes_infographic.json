@@ -1,24 +1,24 @@
 {
-  "key_insight": "A fully automated deep learning pipeline can precisely segment retinal atrophy and ellipsoid zone changes on OCT to quantify geographic atrophy biomarkers at pixel level.",
-  "clinical_relevance": "This could improve real-world monitoring of GA in AMD by making structural biomarker measurement more consistent, repeatable, and scalable for trials and routine care.",
+  "key_insight": "A fully automated OCT deep-learning pipeline can precisely segment retinal atrophy and ellipsoid zone changes to monitor geographic atrophy progression in AMD.",
+  "clinical_relevance": "This could improve real-world tracking of disease stage and treatment response by providing consistent, high-resolution biomarker measurements from routine OCT scans.",
   "method": [
-    "Three semantic segmentation models detect RPE loss, EZ loss/interruptions, and Bruch's membrane",
-    "Trained on 298 diverse SD-OCT volumes spanning GA, intermediate AMD, neovascular AMD, and healthy eyes",
-    "Validated with an external dataset and additional repeatability, reader-reliability, and density-sensitivity analyses"
+    "Three semantic segmentation models were trained to identify RPE loss, EZ loss/boundaries, and Bruch’s membrane.",
+    "The system was developed on 298 diverse SD-OCT volumes spanning multiple AMD phenotypes and healthy eyes.",
+    "Performance was validated externally and tested for repeatability, reader agreement, scan density effects, and lesion-size subgroups."
   ],
-  "evidence_signal": "The abstract reports strong performance, including Dice scores of 0.88 for RPE loss and 0.87 for EZ loss, Pearson's r > 0.99, sub-pixel EZ thickness deviation of 2.15 µm, and ICC > 0.98.",
-  "watch_item": "Performance was strong in validation, but real-world deployment still depends on scanner/site consistency, image quality, and careful calibration across different OCT acquisition protocols.",
+  "evidence_signal": "The abstract reports strong accuracy and reliability, including Dice scores of 0.88 for RPE loss and 0.87 for EZ loss, Pearson’s r > 0.99, sub-pixel EZ thickness deviation of 2.15 µm, and ICC > 0.98.",
+  "watch_item": "Generalizability still depends on OCT device consistency, scan protocol quality, and careful validation before broad deployment in different clinical settings.",
   "hashtags": [
     "#OCT",
     "#GeographicAtrophy",
     "#AMD",
     "#DeepLearning",
-    "#BiomarkerImaging"
+    "#Biomarkers"
   ],
   "paper_id": "2026-06-30-arxiv-fully_automated_high_precision_segmentation_of_retinal_atrophy_and_ellipsoid_zone_thicknes",
   "paper_title": "Fully Automated High-Precision Segmentation of Retinal Atrophy and Ellipsoid Zone Thickness in OCT: A Reliable Tool for Real-World GA Monitoring",
   "paper_date": "2026-06-30",
   "paper_category": "Target Biology",
-  "generated_at": "2026-07-04T09:14:12",
+  "generated_at": "2026-07-05T09:35:31",
   "generator": "openai"
 }

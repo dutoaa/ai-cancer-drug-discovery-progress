@@ -1,24 +1,24 @@
 {
-  "key_insight": "An end-to-end machine learning pipeline can detect moles in wide-angle skin photos, segment lesions, and extract ABCD(E)-style features to support automated melanoma screening.",
-  "clinical_relevance": "The system is designed to help triage suspicious lesions and standardize mole assessment, especially when expert review time is limited.",
+  "key_insight": "This pipeline automatically detects moles in wide-angle skin photos, segments lesion boundaries, and converts each lesion into ABCD(E)-style quantitative scores for screening support.",
+  "clinical_relevance": "It could help standardize melanoma triage and longitudinal mole tracking, especially in settings with limited specialist access or when using smartphone images.",
   "method": [
-    "Adaptive thresholding + blob analysis to detect candidate moles",
-    "EDSR super-resolution and brightness-based filtering to reduce false positives",
-    "BAM lesion segmentation with EfficientNet-B7 + GradCAM fusion, then K-means color scoring for ABCD feature output"
+    "Adaptive thresholding and blob analysis to detect candidate moles",
+    "EDSR super-resolution plus brightness-based filtering to reduce false positives",
+    "BAM segmentation using EfficientNet-B7 activations and GradCAM, followed by K-means color scoring"
   ],
-  "evidence_signal": "In the abstract, BAM reached 90.45% accuracy on ISIC2017, EfficientNet-B7 achieved melanoma AUC 0.99, and mole detection on 87 wide-angle images achieved F1 = 86%.",
-  "watch_item": "Performance was reported on specific datasets and a small set of wide-angle images, so broader real-world validation and expert concordance are still needed.",
+  "evidence_signal": "In the abstract, the system reports 86% F1 for mole detection on 87 wide-angle images, 90.45% accuracy on ISIC2017 for BAM, and melanoma AUC of 0.99 for the EfficientNet-B7 classifier.",
+  "watch_item": "The reported performance is promising, but the pipeline still needs external clinical validation and dermatologist concordance testing before real-world use.",
   "hashtags": [
     "#MelanomaScreening",
+    "#AIinDermatology",
     "#MachineLearning",
-    "#DermatologyAI",
-    "#MedicalImaging",
-    "#PrecisionOncology"
+    "#SkinCancer",
+    "#DigitalPathology"
   ],
   "paper_id": "2026-07-01-medrxiv-automated_melanoma_screening_a_machine_learning_pipeline_for_mole_detection_boundary_segme",
   "paper_title": "Automated Melanoma Screening: A Machine Learning Pipeline for Mole Detection, Boundary Segmentation, and ABCD(E) Feature Extraction",
   "paper_date": "2026-07-01",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-04T09:14:09",
+  "generated_at": "2026-07-05T09:35:28",
   "generator": "openai"
 }

@@ -1,17 +1,17 @@
 {
-  "key_insight": "For lung CT phenotyping, the best-performing pipeline depends more on the task than on a single universally superior model: segmentation matters most for tumor volume and stage, while the classifier head matters most for survival, histology, and age prediction.",
-  "clinical_relevance": "A two-stage, non-end-to-end workflow can be a practical default for small cohorts, with Curia plus tumor segmentation and CatBoost giving the strongest overall balance across the main clinical tasks.",
+  "key_insight": "Across lung CT tasks, the best model setup depends more on the task and segmentation choice than on any single foundation model, with classifier choice especially important for survival, histology, and age prediction.",
+  "clinical_relevance": "For practical lung cancer phenotyping, Curia with tumor segmentation and a CatBoost head is the safest overall default, while tumor-segmentation choices matter most for volume and stage assessment.",
   "method": [
-    "Benchmarked 5 feature extractors, 7 classifier heads, and 3 segmentation regimes.",
-    "Compared radiomics and foundation-model features across 5 CT prediction tasks.",
-    "Evaluated worst-case cross-cohort performance on internal LUNG1 and external LUNG2 cohorts."
+    "Benchmarked 5 feature extractors: Curia, Curia-2, DINOv3, Radiomics2D, Radiomics3D",
+    "Compared 7 classification heads and 3 segmentation regimes across 5 tasks",
+    "Used LUNG1 for training and internal/external test cohorts to assess cross-cohort robustness"
   ],
-  "evidence_signal": "Models were trained on LUNG1 (n=338) and tested on an internal set (n=84) plus external LUNG2 (n=211), with worst-case cross-cohort performance used as the primary benchmark.",
-  "watch_item": "The reported radiomics advantage for some endpoints may partly reflect label-derivation effects, so results should be interpreted cautiously when transferring to new settings.",
+  "evidence_signal": "Models were trained on LUNG1 (n=338) and tested on an internal set (n=84) plus external LUNG2 (n=211), with worst-case cross-cohort performance as the main metric.",
+  "watch_item": "Results are cohort-dependent and some gains may reflect label-derivation effects, so the recommended default should still be validated task-by-task before deployment.",
   "hashtags": [
-    "#LungCT",
-    "#Radiomics",
     "#FoundationModels",
+    "#Radiomics",
+    "#LungCT",
     "#PrecisionOncology",
     "#MedicalAI"
   ],
@@ -19,6 +19,6 @@
   "paper_title": "Foundation Models vs. Radiomics for Lung Computed Tomography: A Benchmark of Feature Extractors, Classification Heads, and Segmentation Choices",
   "paper_date": "2026-07-01",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-04T09:13:59",
+  "generated_at": "2026-07-05T09:35:19",
   "generator": "openai"
 }

@@ -1,24 +1,24 @@
 {
-  "key_insight": "HGGT uses a heterogeneous gated graph transformer to model how trials, diseases, drugs, genes, targets, abstracts, and eligibility criteria interact, improving prediction of clinical trial success.",
-  "clinical_relevance": "By better forecasting trial outcomes, this approach could help prioritize stronger study designs and allocate development resources more efficiently in oncology and other therapeutic areas.",
+  "key_insight": "HGGT uses a heterogeneous gated graph transformer to model complex relationships among trials, diseases, drugs, genes, targets, abstracts, and eligibility criteria for better clinical trial success prediction.",
+  "clinical_relevance": "A more accurate trial-success predictor could help prioritize designs and resource allocation, potentially improving how oncology and other therapeutic trials are planned.",
   "method": [
-    "Builds a heterogeneous graph from trial-related biomedical entities and their relationships.",
-    "Uses gated transformer layers to weight multi-type interactions dynamically.",
-    "Combines graph representation learning with contextual modeling from text and structured trial data."
+    "Builds a heterogeneous biomedical graph across trial-related entities",
+    "Applies gated transformer layers to weight multi-type relationships dynamically",
+    "Combines graph representation learning with context modeling from text and trial metadata"
   ],
-  "evidence_signal": "The abstract reports the model achieved the highest PR-AUC, F1 score, and ROC-AUC across three phases.",
-  "watch_item": "Performance gains in retrospective evaluation may not fully translate to prospective trial settings or generalize across different data sources.",
+  "evidence_signal": "The abstract reports that HGGT achieved the highest PR-AUC, F1 score, and ROC-AUC across three phases in evaluation.",
+  "watch_item": "Performance is promising, but real-world use will depend on external validation, data quality, and how well the model generalizes across trial settings.",
   "hashtags": [
+    "#AIinDrugDiscovery",
     "#ClinicalTrials",
-    "#GraphAI",
-    "#DrugDiscovery",
+    "#GraphTransformer",
     "#BiomedicalAI",
-    "#PredictiveModeling"
+    "#CancerResearch"
   ],
   "paper_id": "2026-07-01-medrxiv-hggt_heterogeneous_gated_graph_transformer_for_predicting_clinical_trial_success",
   "paper_title": "HGGT：Heterogeneous Gated Graph Transformer for Predicting Clinical Trial Success",
   "paper_date": "2026-07-01",
   "paper_category": "Clinical Translation",
-  "generated_at": "2026-07-04T09:14:01",
+  "generated_at": "2026-07-05T09:35:22",
   "generator": "openai"
 }
