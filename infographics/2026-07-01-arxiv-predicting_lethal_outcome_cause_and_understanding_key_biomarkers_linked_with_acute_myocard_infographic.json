@@ -1,17 +1,17 @@
 {
-  "key_insight": "An ensemble deep-learning pipeline was built to predict lethal outcomes after acute myocardial infarction and identify the biomarkers most associated with severe complications.",
-  "clinical_relevance": "If validated, this approach could support faster risk stratification and more consistent early decision-making for patients with MI.",
+  "key_insight": "An ensemble machine-learning pipeline with feature selection and a neural network was built to predict lethal outcomes after acute myocardial infarction and highlight key biomarkers linked to complications.",
+  "clinical_relevance": "If validated, this kind of automated risk model could support faster, more consistent triage and prognosis assessment for MI patients.",
   "method": [
-    "Preprocessed clinical data with missing-value handling and imbalance correction using SVMSMOTE, ADASYN, and class-weighted methods.",
-    "Selected important features using wrapper and embedded methods, then standardized inputs for modeling.",
-    "Combined Logistic Regression, Random Forest, LightGBM, Bagging SVM, and an artificial neural network to improve prediction performance."
+    "Cleaned and imputed the dataset, then addressed class imbalance with SVMSMOTE, ADASYN, and class-weighting.",
+    "Used wrapper and embedded feature selection to identify the most informative variables before feature scaling.",
+    "Combined Logistic Regression, Random Forest, LightGBM, and Bagging SVM, then refined performance with an artificial neural network."
   ],
-  "evidence_signal": "The abstract reports model evaluation with precision, recall, and other performance metrics to compare methods and identify the best clinical candidate.",
-  "watch_item": "The abstract does not provide external validation or deployment details, so real-world robustness and generalizability remain uncertain.",
+  "evidence_signal": "The abstract reports evaluation with precision, recall, and other classification metrics to compare models and identify the strongest candidate for clinical use.",
+  "watch_item": "Performance may not generalize well without external validation and careful checking for bias, missing-data effects, and real-world clinical workflow fit.",
   "hashtags": [
-    "#MyocardialInfarction",
     "#MachineLearning",
-    "#DeepLearning",
+    "#MedicalAI",
+    "#MyocardialInfarction",
     "#RiskPrediction",
     "#Biomarkers"
   ],
@@ -19,6 +19,6 @@
   "paper_title": "Predicting Lethal Outcome (Cause) And Understanding Key Biomarkers Linked With Acute Myocardial Infarction Using Deep Artificial Neural Network And Ensemble Of Machine Learning Methodologies",
   "paper_date": "2026-07-01",
   "paper_category": "Target Biology",
-  "generated_at": "2026-07-05T09:35:50",
+  "generated_at": "2026-07-06T11:24:49",
   "generator": "openai"
 }

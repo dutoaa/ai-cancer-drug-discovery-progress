@@ -1,24 +1,24 @@
 {
-  "key_insight": "Parallel-route coherent mixup (PaRC-mix) improves prostate lesion segmentation generalization across MRI scanner domains by augmenting features at multiple network layers.",
-  "clinical_relevance": "Better cross-site segmentation could support more reliable MRI-guided adaptive radiotherapy for prostate cancer, where accurate daily delineation is essential.",
+  "key_insight": "Parallel-route coherent mixup (PaRC-mix) improved prostate lesion segmentation by training the network to generalize better across MRI scanners and sites.",
+  "clinical_relevance": "Better cross-domain segmentation could support more reliable MR-guided adaptive radiotherapy for prostate cancer by reducing manual contouring burden and improving daily treatment adaptation.",
   "method": [
     "Trained two segmentation models: MRRN and UNet++.",
-    "Applied PaRC-mix to create linear feature combinations at multiple network layers using samples from the same batch.",
-    "Compared against no-mixup and input-mixup approaches for dominant intraprostatic lesion segmentation on ADC MRI."
+    "Applied PaRC-mix feature augmentation at multiple network layers by mixing samples within a batch.",
+    "Compared against no mixup, input mixup, and backbone-only mixup for tumor segmentation on ADC MRI."
   ],
-  "evidence_signal": "Models trained on 2,029 samples from 3.0T GE MRI were tested on 1,547 samples from five external datasets spanning 3T Siemens, 3T Philips, and 1.5T Elekta Unity scanners, with PaRC-mix improving detection, segmentation, and composite accuracy metrics.",
-  "watch_item": "Results are promising but remain specific to one prostate lesion task and MRI domain setup, so broader clinical adoption would need validation across additional centers, protocols, and targets.",
+  "evidence_signal": "Models were trained on 2,029 samples from 3.0T GE MRI and tested on 1,547 prostate cancer samples from five external datasets spanning 3T Siemens, 3T Philips, and 1.5T Elekta Unity scanners, with PaRC-mix improving detection/segmentation and narrowing performance gaps between lesion groups.",
+  "watch_item": "Results are promising but still need broader validation before routine clinical use, especially across additional scanners, protocols, and real-world deployment settings.",
   "hashtags": [
+    "#PrecisionOncology",
     "#ProstateCancer",
     "#MRI",
-    "#Segmentation",
-    "#Radiotherapy",
-    "#Generalization"
+    "#DeepLearning",
+    "#MedicalImaging"
   ],
   "paper_id": "2026-07-01-arxiv-enhancing_prostate_cancer_segmentation_for_multi_domain_generalization_using_a_novel_paral",
   "paper_title": "Enhancing Prostate Cancer Segmentation for Multi-Domain Generalization using a novel Parallel-Route Coherent Mixup Regularization Training",
   "paper_date": "2026-07-01",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-05T09:35:46",
+  "generated_at": "2026-07-06T11:24:44",
   "generator": "openai"
 }

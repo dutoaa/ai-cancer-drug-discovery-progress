@@ -1,24 +1,24 @@
 {
-  "key_insight": "The paper argues that drug-discovery-style benchmarks can mislead generative molecular design, and introduces the physics-based NMO benchmark to test models on real nanotechnology optimization tasks with quantum simulation ground truth.",
-  "clinical_relevance": "Indirect: the benchmark is not a cancer therapy study itself, but it may improve how generative AI methods are validated before being applied to future therapeutic or materials discovery problems.",
+  "key_insight": "The paper introduces the Nanotechnology Molecular Optimization (NMO) Benchmark, replacing drug-like proxy tests with physics-based quantum simulation tasks to better evaluate and guide generative molecular design for nanotechnology.",
+  "clinical_relevance": "Indirectly relevant to drug discovery because it challenges benchmark-bias in generative modeling, but it is focused on nanotechnology rather than a cancer therapeutic candidate or clinical application.",
   "method": [
-    "Replaces proxy property oracles with quantum simulations as the evaluation target.",
-    "Adds strict protocols and hard structural constraints to reduce leaderboard overfitting.",
-    "Introduces a baseline using a constraint-aware representation plus domain-agnostic pretraining to avoid pharma dataset bias."
+    "Uses quantum simulations as the oracle instead of simple proxy property scores.",
+    "Imposes strict structural constraints and rugged fitness landscapes to stress-test generative models.",
+    "Introduces a new baseline with a constraint-aware molecular representation and domain-agnostic pretraining to reduce pharmaceutical dataset bias."
   ],
-  "evidence_signal": "According to the abstract, advanced molecular optimization methods underperformed much simpler approaches on NMO, while the new baseline surpassed prior state-of-the-art physical properties and uncovered previously unknown structural motifs.",
-  "watch_item": "Because the tasks are physics-based and structurally constrained, results may not transfer directly to standard drug-design pipelines or clinical contexts without further validation.",
+  "evidence_signal": "The abstract reports that advanced molecular optimization methods underperform much simpler approaches on NMO tasks, while the new baseline surpasses prior state-of-the-art physical properties and reveals previously unknown structural motifs.",
+  "watch_item": "Because the benchmark is physics-based and highly specialized, results may not transfer directly to drug-discovery settings or to models not designed for hard structural constraints.",
   "hashtags": [
-    "#AIinScience",
     "#MolecularOptimization",
-    "#QuantumMaterials",
-    "#GenerativeModels",
+    "#GenerativeAI",
+    "#QuantumSimulation",
+    "#Nanotechnology",
     "#Benchmarking"
   ],
   "paper_id": "2026-06-29-arxiv-beyond_drug_discovery_the_nanotechnology_molecular_optimization_nmo_benchmark",
   "paper_title": "Beyond Drug Discovery: The Nanotechnology Molecular Optimization (NMO) Benchmark",
   "paper_date": "2026-06-29",
   "paper_category": "Therapeutic Discovery",
-  "generated_at": "2026-07-05T09:35:48",
+  "generated_at": "2026-07-06T11:24:46",
   "generator": "openai"
 }

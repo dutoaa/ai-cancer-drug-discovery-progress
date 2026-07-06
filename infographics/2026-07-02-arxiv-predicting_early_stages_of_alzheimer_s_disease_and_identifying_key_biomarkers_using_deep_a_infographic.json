@@ -1,24 +1,24 @@
 {
-  "key_insight": "A machine-learning pipeline combining imputation, imbalance handling, feature selection, and ensemble/ANN models was built to predict early Alzheimer’s disease and highlight key biomarkers.",
-  "clinical_relevance": "Earlier identification of likely Alzheimer’s cases could support timelier assessment and care planning, especially when symptoms are still subtle.",
+  "key_insight": "A stacked machine-learning and neural-network approach can help detect early Alzheimer’s disease from clinical, cognitive, and neuroimaging-derived data while highlighting potentially important biomarkers.",
+  "clinical_relevance": "Earlier identification of likely early-stage Alzheimer’s disease could support timelier evaluation and care planning, though it is not a standalone diagnostic tool.",
   "method": [
-    "Used ADNI clinical, neuropsychological, and neuroimaging-related data.",
-    "Applied iterative imputation and Borderline SVM-SMOTE to address missing values and class imbalance.",
-    "Trained a stacking ensemble (Logistic Regression, Extra Trees, Bagging KNN, LightGBM) and an artificial neural network after feature selection and scaling."
+    "Used ADNI data with iterative imputation to handle missing values and Borderline SVM-SMOTE to address class imbalance.",
+    "Performed wrapper-based and embedded feature selection to keep only the most informative variables.",
+    "Trained a stacking ensemble (Logistic Regression, Extra Trees, Bagging KNN, LightGBM) and an artificial neural network, then compared performance."
   ],
-  "evidence_signal": "Models were compared using precision, recall, F1-score, and AUC-ROC on train/test splits of the processed ADNI dataset.",
-  "watch_item": "Because the approach depends on retrospective ADNI data and complex preprocessing, external validation is needed before real-world use.",
+  "evidence_signal": "Model performance was assessed with precision, recall, F1-score, and AUC-ROC on selected features split into training and testing sets.",
+  "watch_item": "The approach depends on retrospective ADNI data and careful external validation is needed before generalizing to real-world clinical settings.",
   "hashtags": [
     "#AlzheimersDisease",
     "#MachineLearning",
     "#Biomarkers",
-    "#Neuroimaging",
-    "#EarlyDetection"
+    "#EarlyDetection",
+    "#Neuroimaging"
   ],
   "paper_id": "2026-07-02-arxiv-predicting_early_stages_of_alzheimer_s_disease_and_identifying_key_biomarkers_using_deep_a",
   "paper_title": "Predicting Early Stages Of Alzheimer's Disease And Identifying Key Biomarkers Using Deep Artificial Neural Network And Ensemble Of Machine Learning Methodologies",
   "paper_date": "2026-07-02",
   "paper_category": "Target Biology",
-  "generated_at": "2026-07-05T09:35:14",
+  "generated_at": "2026-07-06T11:24:19",
   "generator": "openai"
 }

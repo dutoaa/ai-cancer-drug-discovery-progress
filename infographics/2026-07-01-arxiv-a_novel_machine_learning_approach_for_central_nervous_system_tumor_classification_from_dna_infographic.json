@@ -1,24 +1,24 @@
 {
-  "key_insight": "A sparse random projection plus multinomial logistic regression model improved DNA methylation-based CNS tumor classification over the reference approach.",
-  "clinical_relevance": "Better classification accuracy could improve tumor subtype assignment and support more reliable downstream treatment decisions.",
+  "key_insight": "A sparse random projection plus multinomial logistic regression model improved CNS tumor classification from DNA methylation data over a reference classifier.",
+  "clinical_relevance": "Better tumor subtype assignment could support more reliable diagnostic decisions and downstream treatment selection in CNS cancers.",
   "method": [
     "Reduced high-dimensional methylation features with Sparse Random Projection.",
-    "Used multinomial logistic regression for multiclass tumor classification.",
-    "Benchmarked performance with stratified cross-validation and an independent clinical cohort."
+    "Classified tumors using multinomial logistic regression in a multiclass setting.",
+    "Compared performance against a widely used reference classifier under the same experimental setup."
   ],
-  "evidence_signal": "The model reached 96% mean accuracy in 3-fold cross-validation on 2,801 reference samples and 86% class-level accuracy on 1,104 independent clinical samples, rising to 93% at the family level.",
-  "watch_item": "Performance was reported on specific cohorts, so external validation across additional sites and platforms is still important before broad implementation.",
+  "evidence_signal": "The model achieved 96% mean accuracy in stratified 3-fold cross-validation on 2,801 reference samples and 86% accuracy on 1,104 independent clinical samples, rising to 93% at the methylation family level.",
+  "watch_item": "Performance is reported on specific cohorts and evaluation settings, so external validation and real-world deployment testing are still needed.",
   "hashtags": [
     "#PrecisionOncology",
+    "#CNSTumors",
     "#DNA_Methylation",
-    "#CancerClassification",
     "#MachineLearning",
-    "#CNSTumors"
+    "#CancerDiagnostics"
   ],
   "paper_id": "2026-07-01-arxiv-a_novel_machine_learning_approach_for_central_nervous_system_tumor_classification_from_dna",
   "paper_title": "A Novel Machine Learning Approach for Central Nervous System Tumor Classification from DNA Methylation",
   "paper_date": "2026-07-01",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-05T09:35:17",
+  "generated_at": "2026-07-06T11:24:22",
   "generator": "openai"
 }

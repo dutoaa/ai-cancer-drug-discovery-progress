@@ -1,0 +1,24 @@
+{
+  "key_insight": "AEGIS is a multi-task mammography AI that uses JEPA pre-training and supervised fine-tuning to detect breast cancer and assess breast density in one model.",
+  "clinical_relevance": "The system may help prioritize suspicious mammograms and support density reporting, with performance approaching strong clinical screening benchmarks in internal and external evaluations.",
+  "method": [
+    "Pre-trained three Vision Transformer sizes (Small/Base/Large) with self-supervised JEPA on 71,103 mammography studies from 14 sites.",
+    "Fine-tuned the models for breast cancer triage and BI-RADS density classification using progressive resolution scaling up to 2048×1536.",
+    "Evaluated on a curated test set and externally on VinDr-Mammo, including an ensemble with an FDA-cleared baseline."
+  ],
+  "evidence_signal": "On a 785-study test set, the largest model reached 0.949 AUC for cancer triage, 93% sensitivity, 75% specificity, and 0.953 AUC for binary density classification; external zero-shot triage AUC on VinDr-Mammo was 0.871.",
+  "watch_item": "Performance was measured on curated and external datasets, but real-world deployment would still require prospective validation, workflow integration, and careful review of differences in reference standards and population shift.",
+  "hashtags": [
+    "#MammographyAI",
+    "#BreastCancerDetection",
+    "#VisionTransformer",
+    "#SelfSupervisedLearning",
+    "#MedicalAI"
+  ],
+  "paper_id": "2026-06-30-arxiv-aegis_a_multi_task_joint_embedding_predictive_architecture_for_mammography",
+  "paper_title": "AEGIS: A Multi-Task Joint-Embedding Predictive Architecture for Mammography",
+  "paper_date": "2026-06-30",
+  "paper_category": "Therapeutic Discovery",
+  "generated_at": "2026-07-06T11:24:55",
+  "generator": "openai"
+}

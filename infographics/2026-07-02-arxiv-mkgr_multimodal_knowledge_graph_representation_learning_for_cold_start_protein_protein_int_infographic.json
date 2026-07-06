@@ -1,0 +1,24 @@
+{
+  "key_insight": "MKGR improves cold-start protein-protein interaction prediction by combining protein sequence features with multiple biomedical knowledge graphs so the model can still reason about proteins with no training-network edges.",
+  "clinical_relevance": "Better PPI prediction can support target biology, disease-mechanism research, and downstream drug discovery when interaction data are sparse or incomplete.",
+  "method": [
+    "Region-aware sequence encoder captures context from structurally informed protein sequence regions.",
+    "Graph attention encoders learn protein embeddings from four modality-specific knowledge graphs: protein-drug, protein-disease, protein-miRNA, and protein-lncRNA.",
+    "A bridge reconstruction loss and pair-level gating module fuse sequence and graph evidence for each protein pair."
+  ],
+  "evidence_signal": "The abstract reports evaluation on two benchmark datasets in novel-old and novel-novel cold-start settings, with MKGR outperforming sequence, network, and knowledge-graph baselines on ACC, F1, AUC, AUPR, and MCC.",
+  "watch_item": "Performance is benchmark-based, so real-world utility may depend on how well the multimodal graphs and sequence annotations generalize to new proteins and datasets.",
+  "hashtags": [
+    "#PPI",
+    "#ColdStartLearning",
+    "#KnowledgeGraphs",
+    "#ProteinRepresentation",
+    "#Bioinformatics"
+  ],
+  "paper_id": "2026-07-02-arxiv-mkgr_multimodal_knowledge_graph_representation_learning_for_cold_start_protein_protein_int",
+  "paper_title": "MKGR: Multimodal Knowledge-Graph Representation Learning for Cold-Start Protein-Protein Interaction Prediction",
+  "paper_date": "2026-07-02",
+  "paper_category": "Target Biology",
+  "generated_at": "2026-07-06T11:25:03",
+  "generator": "openai"
+}

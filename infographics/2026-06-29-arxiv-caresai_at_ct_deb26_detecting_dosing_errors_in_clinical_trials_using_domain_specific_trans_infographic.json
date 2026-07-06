@@ -1,24 +1,24 @@
 {
-  "key_insight": "Domain-specific biomedical transformer embeddings, especially BioBERT, improved detection of dosing-error risk in clinical trial protocols.",
-  "clinical_relevance": "This approach could help flag potentially unsafe trial dosing earlier, supporting trial safety review and regulatory oversight.",
+  "key_insight": "Domain-specific biomedical transformer embeddings, especially BioBERT, improved detection of dosing-error risk in clinical trial protocols compared with a ClinicalBERT baseline.",
+  "clinical_relevance": "A structured text-plus-metadata screening approach could help flag trials with elevated dosing-error risk earlier, supporting safety monitoring and review workflows.",
   "method": [
-    "Encoded trial text with ClinicalBERT, PubMedBERT, BioBERT, and MedCPT.",
-    "Combined embeddings with structured categorical metadata.",
-    "Tested classical ML and neural models, including logistic regression, SVC, gradient boosting, and residual neural networks."
+    "Encoded clinical trial text with ClinicalBERT, PubMedBERT, BioBERT, and MedCPT",
+    "Combined embeddings with categorical metadata features",
+    "Compared classical ML and neural models, including logistic regression, gradient boosting, SVC, and residual networks"
   ],
-  "evidence_signal": "BioBERT achieved ROC-AUC 0.794 under logistic regression, and the strongest models reached ROC-AUC 0.821 to 0.853 for predicting dosage error.",
-  "watch_item": "Performance was evaluated on trial text classification, so real-world deployment would still need external validation and careful integration into clinical workflows.",
+  "evidence_signal": "Using ROC-AUC for evaluation, BioBERT reached 0.794 with logistic regression, and the best models achieved ROC-AUCs from 0.821 to 0.853.",
+  "watch_item": "Results are based on model benchmarking rather than prospective deployment, so real-world performance and generalizability still need validation.",
   "hashtags": [
     "#ClinicalTrials",
-    "#PatientSafety",
+    "#MedicationSafety",
     "#BioBERT",
-    "#Transformers",
-    "#DrugSafety"
+    "#TransformerModels",
+    "#AIinHealthcare"
   ],
   "paper_id": "2026-06-29-arxiv-caresai_at_ct_deb26_detecting_dosing_errors_in_clinical_trials_using_domain_specific_trans",
   "paper_title": "CaresAI at CT-DEB26: Detecting Dosing Errors In Clinical Trials Using Domain-Specific Transformer Embeddings and Classification Models",
   "paper_date": "2026-06-29",
   "paper_category": "Clinical Translation",
-  "generated_at": "2026-07-05T09:35:37",
+  "generated_at": "2026-07-06T11:24:35",
   "generator": "openai"
 }

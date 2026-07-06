@@ -1,24 +1,24 @@
 {
-  "key_insight": "An additive MLP-GNN model can separate physicochemical and structural drivers of aqueous solubility, making predictions more interpretable without sacrificing performance.",
-  "clinical_relevance": "Improved solubility prediction can help prioritize drug-like compounds earlier in discovery by flagging candidates more likely to have developable formulations.",
+  "key_insight": "Separating physicochemical descriptors and molecular graph structure into two additive branches makes aqueous solubility predictions more interpretable by showing what comes from chemistry versus topology.",
+  "clinical_relevance": "More transparent solubility prediction can help early drug discovery prioritize compounds with better developability, though it does not by itself determine clinical suitability.",
   "method": [
-    "Encode physicochemical descriptors with an MLP (chemical branch).",
-    "Encode molecular graphs with a GNN (structural branch).",
-    "Combine branch outputs additively at prediction time, with an optional interaction term, and interpret each branch separately."
+    "Chemical branch: multilayer perceptron encodes physicochemical descriptors",
+    "Structural branch: graph neural network encodes molecular graph topology",
+    "Outputs are combined additively, with an optional multiplicative interaction"
   ],
   "evidence_signal": "Pretraining on AqSolDB and fine-tuning on BigSolDB2 improved accuracy and reduced run-to-run variability, with competitive performance across both datasets.",
-  "watch_item": "Interpretability depends on the quality and domain coverage of the training data, so the learned chemical and structural attributions may not transfer cleanly to novel chemistries.",
+  "watch_item": "Interpretability is model-based and dataset-dependent, so the decomposition may not fully generalize to other chemistry spaces or experimental solubility conditions.",
   "hashtags": [
-    "#AIDrugDiscovery",
-    "#SolubilityPrediction",
+    "#AqueousSolubility",
     "#GraphNeuralNetworks",
-    "#MoleculeML",
+    "#MolecularML",
+    "#DrugDiscovery",
     "#InterpretableAI"
   ],
   "paper_id": "2026-07-02-arxiv-an_additive_mlp_gnn_framework_for_characterizing_chemical_and_structural_contributions_to",
   "paper_title": "An Additive MLP-GNN Framework for Characterizing Chemical and Structural Contributions to Aqueous Solubility",
   "paper_date": "2026-07-02",
   "paper_category": "Therapeutic Discovery",
-  "generated_at": "2026-07-05T09:35:41",
+  "generated_at": "2026-07-06T11:24:38",
   "generator": "openai"
 }
