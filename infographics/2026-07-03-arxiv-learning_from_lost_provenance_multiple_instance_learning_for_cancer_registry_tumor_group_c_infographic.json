@@ -1,0 +1,24 @@
+{
+  "key_insight": "Attention-Based Multiple Instance Learning can recover useful per-report signals from patient-level registry labels, turning routine operational data into training data for tumor group classification.",
+  "clinical_relevance": "This could help cancer registries automate pathology report coding and reduce manual workload without needing large-scale new annotation efforts.",
+  "method": [
+    "Used ABMIL to link patient-level labels back to the set of pathology reports that likely informed them.",
+    "Distilled a large noisy corpus into a smaller, higher-quality per-report training dataset.",
+    "Fine-tuned a classifier on the distilled data and compared it with established baselines."
+  ],
+  "evidence_signal": "On BC Cancer Registry tumor group classification, the distilled model achieved a macro F1 of 0.83 and outperformed baseline methods across most tumor groups.",
+  "watch_item": "Because the approach infers report-level labels from weak patient-level supervision, performance may depend on label quality, report consistency, and careful validation before deployment.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#CancerRegistry",
+    "#DeepLearning",
+    "#MultipleInstanceLearning",
+    "#PathologyAI"
+  ],
+  "paper_id": "2026-07-03-arxiv-learning_from_lost_provenance_multiple_instance_learning_for_cancer_registry_tumor_group_c",
+  "paper_title": "Learning from Lost Provenance: Multiple Instance Learning for Cancer Registry Tumor Group Classification",
+  "paper_date": "2026-07-03",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-07T10:19:55",
+  "generator": "openai"
+}

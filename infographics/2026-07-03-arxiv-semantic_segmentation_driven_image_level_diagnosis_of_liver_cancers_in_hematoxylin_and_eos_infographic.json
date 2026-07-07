@@ -1,0 +1,24 @@
+{
+  "key_insight": "A semantic segmentation model can turn H&E histopathology images into reliable image-level liver cancer diagnoses by identifying the dominant tissue class in each slide.",
+  "clinical_relevance": "This approach may help pathologists prioritize immunohistochemical marker selection, potentially lowering diagnostic cost and turnaround time while supporting more consistent workflows.",
+  "method": [
+    "Used nnU-Net for semantic segmentation on H&E liver histopathology images.",
+    "Applied stain normalization to reduce variability from preparation and scanning differences.",
+    "Converted pixel-level segmentation outputs into image-level diagnosis by selecting the dominant predicted class."
+  ],
+  "evidence_signal": "In five-fold cross-validation, the model achieved balanced accuracy of 0.975 for HCC, 0.950 for CCA, and 1.000 for CMA on a dataset of 170 images with pixel-level annotations.",
+  "watch_item": "The study relies on a relatively small, single-dataset cohort and assumes each image contains only one cancer type, so broader validation across sites and mixed/ambiguous cases is needed.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#Histopathology",
+    "#LiverCancer",
+    "#DeepLearning",
+    "#DigitalPathology"
+  ],
+  "paper_id": "2026-07-03-arxiv-semantic_segmentation_driven_image_level_diagnosis_of_liver_cancers_in_hematoxylin_and_eos",
+  "paper_title": "Semantic Segmentation-Driven Image-Level Diagnosis of Liver Cancers in Hematoxylin and Eosin Histopathology Images",
+  "paper_date": "2026-07-03",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-07T10:19:48",
+  "generator": "openai"
+}

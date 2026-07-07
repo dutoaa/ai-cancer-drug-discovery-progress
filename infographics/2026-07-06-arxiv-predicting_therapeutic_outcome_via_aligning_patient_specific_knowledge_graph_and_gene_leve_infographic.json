@@ -1,0 +1,24 @@
+{
+  "key_insight": "PREDIKTOR predicts patient-specific drug response by aligning a personalized tumor network view with a simulated drug-induced transcriptomic change in a shared latent space.",
+  "clinical_relevance": "This could help match cancer patients to therapies using pre-treatment data while also providing mechanistic, interpretable signals about why a drug may work or fail.",
+  "method": [
+    "Builds a patient-specific gene regulatory network from tumor expression and adds drug-target links from DrugBank.",
+    "Uses a frozen gene-gene attention model pretrained on LINCS L1000 to simulate post-treatment expression changes.",
+    "Aligns both views with a CLIP-style contrastive objective, then classifies response from the combined embedding."
+  ],
+  "evidence_signal": "The model outperformed state-of-the-art baselines on TCGA across patient-, drug-, and tissue-split evaluations and transferred zero-shot to I-SPY2 with a 5.6% AUROC gain.",
+  "watch_item": "Because one view is pretrained and the other relies on inferred network structure, real-world deployment may depend on robustness across cohorts and the quality of input transcriptomic data.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#AIinCancer",
+    "#DrugResponse",
+    "#Transcriptomics",
+    "#KnowledgeGraph"
+  ],
+  "paper_id": "2026-07-06-arxiv-predicting_therapeutic_outcome_via_aligning_patient_specific_knowledge_graph_and_gene_leve",
+  "paper_title": "Predicting Therapeutic Outcome via Aligning Patient-Specific Knowledge Graph and Gene-Level Perturbation Representations",
+  "paper_date": "2026-07-06",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-07T10:19:08",
+  "generator": "openai"
+}

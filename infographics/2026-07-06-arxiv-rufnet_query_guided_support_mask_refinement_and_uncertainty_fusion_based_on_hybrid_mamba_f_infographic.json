@@ -1,0 +1,24 @@
+{
+  "key_insight": "RUFNet improves few-shot brain tumor segmentation by refining noisy support masks and fusing predictions with uncertainty-aware, query-guided priors using a Hybrid Mamba backbone.",
+  "clinical_relevance": "Better segmentation robustness could support more reliable tumor delineation for downstream neuro-oncology imaging workflows, especially when labeled examples are scarce.",
+  "method": [
+    "Hybrid Mamba interaction backbone for efficient support-query feature exchange with linear complexity.",
+    "Attention-Guided Mask Refinement (AGMR) uses query features to recalibrate noisy support masks and improve prototype consistency.",
+    "Uncertainty-Aware Posterior Fusion (UAPF) estimates pixel-wise variance and adaptively balances few-shot predictions with query-aligned priors."
+  ],
+  "evidence_signal": "On BraTS 2020, the model achieved Dice scores of 84.3% in 1-way 1-shot and 86.1% in 1-way 5-shot settings, outperforming compared state-of-the-art methods.",
+  "watch_item": "Performance is reported on a specific benchmark, so generalization to other scanners, tumor subtypes, and clinical settings still needs validation.",
+  "hashtags": [
+    "#FewShotLearning",
+    "#BrainTumorSegmentation",
+    "#MedicalImagingAI",
+    "#Mamba",
+    "#PrecisionOncology"
+  ],
+  "paper_id": "2026-07-06-arxiv-rufnet_query_guided_support_mask_refinement_and_uncertainty_fusion_based_on_hybrid_mamba_f",
+  "paper_title": "RUFNet: Query-Guided Support Mask Refinement and Uncertainty Fusion based on Hybrid Mamba for Few-Shot Brain Tumor Segmentation",
+  "paper_date": "2026-07-06",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-07T10:19:50",
+  "generator": "openai"
+}

@@ -1,0 +1,24 @@
+{
+  "key_insight": "For echocardiography segmentation with partially labelled data, the best loss function depends on the missing-label pattern: aBCE and marginal loss work well when one label is missing, while marginal loss is strongest when multiple labels are missing.",
+  "clinical_relevance": "Choosing the right loss function could improve the reliability of automated heart-structure segmentation across hospitals and datasets, supporting more consistent cardiac biomarker measurement.",
+  "method": [
+    "Compared adaptive categorical cross entropy (aCCE), marginal loss, and adaptive binary cross entropy (aBCE).",
+    "Tested intra-domain vs inter-domain segmentation settings with single and multiple missing labels.",
+    "Evaluated different proportions of fully labelled and partially labelled training data across network architectures."
+  ],
+  "evidence_signal": "The abstract reports a comprehensive comparison across multiple scenarios and finds all three losses perform well in intra-domain tasks, with marginal loss generally leading in harder inter-domain, multi-missing-label cases.",
+  "watch_item": "Results are specific to echocardiography segmentation setups, so performance may not transfer directly to other imaging tasks, label structures, or annotation protocols.",
+  "hashtags": [
+    "#Echocardiography",
+    "#Segmentation",
+    "#DeepLearning",
+    "#PartialLabels",
+    "#MedicalImaging"
+  ],
+  "paper_id": "2026-07-06-arxiv-comparison_of_loss_functions_for_robust_deep_learning_based_echocardiography_segmentation",
+  "paper_title": "Comparison of Loss Functions for Robust Deep Learning-based Echocardiography Segmentation when Learning with Partially Labelled Data from Multiple Domains",
+  "paper_date": "2026-07-06",
+  "paper_category": "Target Biology",
+  "generated_at": "2026-07-07T10:19:31",
+  "generator": "openai"
+}

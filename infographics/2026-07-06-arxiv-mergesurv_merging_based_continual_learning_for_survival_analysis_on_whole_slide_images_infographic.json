@@ -1,0 +1,24 @@
+{
+  "key_insight": "MergeSurv shows that sequentially merging task-specific pathology models can support continual survival prediction on whole-slide images without storing prior data.",
+  "clinical_relevance": "This could help pathology teams adapt prognosis models across cancer cohorts more efficiently while preserving privacy and reducing retraining costs.",
+  "method": [
+    "Fine-tune a foundation model separately on each cancer cohort/task.",
+    "Merge learned parameters sequentially into one unified model.",
+    "Compare One-for-All (OFA) and Voting-Expert Aggregation (VEA) inference strategies."
+  ],
+  "evidence_signal": "In experiments on four TCGA cohorts, MergeSurv outperformed naive fine-tuning and representative continual learning baselines while reducing catastrophic forgetting.",
+  "watch_item": "Performance and stability may depend on how well parameter merging transfers across cohorts, so deployment across very different tumor types may need careful validation.",
+  "hashtags": [
+    "#ComputationalPathology",
+    "#ContinualLearning",
+    "#SurvivalAnalysis",
+    "#WholeSlideImages",
+    "#CancerAI"
+  ],
+  "paper_id": "2026-07-06-arxiv-mergesurv_merging_based_continual_learning_for_survival_analysis_on_whole_slide_images",
+  "paper_title": "MergeSurv: Merging-Based Continual Learning for Survival Analysis on Whole-Slide Images",
+  "paper_date": "2026-07-06",
+  "paper_category": "Clinical Translation",
+  "generated_at": "2026-07-07T10:19:52",
+  "generator": "openai"
+}

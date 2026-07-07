@@ -1,24 +1,24 @@
 {
-  "key_insight": "ClinRAG-GRAPH combines multimodal breast cancer data, graph learning, and evidence retrieval to improve pre-treatment prediction of pathologic complete response after neoadjuvant chemotherapy.",
-  "clinical_relevance": "If validated further, the approach could help stratify patients earlier and support more personalized treatment decisions before therapy starts.",
+  "key_insight": "ClinRAG-GRAPH combines multimodal graph learning, domain-adversarial robustness, and LLM-based retrieval to improve pre-treatment prediction of breast pCR after neoadjuvant chemotherapy.",
+  "clinical_relevance": "If validated further, this approach could help stratify breast cancer patients before treatment and support more personalized NAC decisions.",
   "method": [
     "Builds an intra-patient clinical-prior graph from DCE-MRI, clinical variables, and biopsy biomarkers",
     "Uses a prior-guided relation-aware graph convolutional network for multimodal representation learning",
-    "Adds dual-branch domain-adversarial learning plus LLM-driven subgraph retrieval for robustness and interpretability"
+    "Adds dual-branch domain-adversarial learning and LLM-driven subgraph retrieval for robustness and interpretability"
   ],
-  "evidence_signal": "In multicenter validation, the model achieved AUC 0.815 on the internal test set and 0.774/0.712 on two external test sets.",
-  "watch_item": "External performance is lower than internal performance, so broader prospective validation and careful handling of center-specific MRI heterogeneity are still needed.",
+  "evidence_signal": "In a multicenter cohort from two public sources and three in-house centers, the model achieved AUC 0.815 internally and 0.774/0.712 on two external test sets.",
+  "watch_item": "External performance is lower than internal performance, so real-world deployment would still need prospective validation and careful handling of imaging protocol differences.",
   "hashtags": [
-    "#BreastCancer",
     "#PrecisionOncology",
-    "#AIinMedicine",
+    "#BreastCancer",
+    "#NeoadjuvantChemotherapy",
     "#GraphLearning",
-    "#MedicalImaging"
+    "#MultimodalAI"
   ],
   "paper_id": "2026-07-01-arxiv-clinrag_graph_clinical_prior_retrieval_augmented_graph_model_with_domain_adversarial_learn",
   "paper_title": "ClinRAG-GRAPH: Clinical-prior Retrieval-Augmented Graph Model with Domain Adversarial Learning for Breast pCR Prediction",
   "paper_date": "2026-07-01",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-06T11:24:14",
+  "generated_at": "2026-07-07T10:19:36",
   "generator": "openai"
 }

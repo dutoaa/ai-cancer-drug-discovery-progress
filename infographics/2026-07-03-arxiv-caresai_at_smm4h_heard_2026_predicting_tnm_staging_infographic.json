@@ -1,0 +1,24 @@
+{
+  "key_insight": "The study shows that combining clinical language models with traditional text features can improve independent TNM stage prediction from pathology reports.",
+  "clinical_relevance": "Accurate TNM staging extraction from pathology text could support faster cancer data abstraction and more consistent oncology analytics, but it is not ready for clinical deployment.",
+  "method": [
+    "Framed TNM staging as three multi-label classification tasks: T, N, and M.",
+    "Compared TF-IDF with embeddings from ClinicalBERT, BioBERT, and PubMedBERT.",
+    "Used Logistic Regression, LightGBM, FFNN, and Wide Residual Networks for prediction."
+  ],
+  "evidence_signal": "LightGBM with TF-IDF performed best in training (AUROC up to 0.9524 for N), while test performance was mixed and dropped across evaluation sets.",
+  "watch_item": "Generalizability remains limited due to class imbalance and the difficulty of modeling long, complex clinical documents.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#TNMStaging",
+    "#ClinicalNLP",
+    "#PathologyAI",
+    "#CancerAnalytics"
+  ],
+  "paper_id": "2026-07-03-arxiv-caresai_at_smm4h_heard_2026_predicting_tnm_staging",
+  "paper_title": "CaresAI at SMM4H-HeaRD 2026: Predicting TNM Staging",
+  "paper_date": "2026-07-03",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-07T10:19:17",
+  "generator": "openai"
+}

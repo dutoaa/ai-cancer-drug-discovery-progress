@@ -1,9 +1,89 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-06
+Generated: 2026-07-07
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
-## 1. ClinRAG-GRAPH: Clinical-prior Retrieval-Augmented Graph Model with Domain Adversarial Learning for Breast pCR Prediction
+## 1. Predicting Therapeutic Outcome via Aligning Patient-Specific Knowledge Graph and Gene-Level Perturbation Representations
+
+- Date: 2026-07-06
+- Category: Precision Oncology
+- Source: arXiv - https://arxiv.org/abs/2607.04557v1
+- PDF: https://arxiv.org/pdf/2607.04557v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-predicting_therapeutic_outcome_via_aligning_patient_specific_knowledge_graph_and_gene_leve_infographic.json
+
+## 2. Parenclitic hypergraphs and their application in personalized cancer therapy
+
+- Date: 2026-07-06
+- Category: Precision Oncology
+- Source: arXiv - https://arxiv.org/abs/2607.04938v1
+- PDF: https://arxiv.org/pdf/2607.04938v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-parenclitic_hypergraphs_and_their_application_in_personalized_cancer_therapy_infographic.json
+
+## 3. Graph Representation Learning of Longitudinal Medical Imaging Trajectories for Treatment Response Prediction
+
+- Date: 2026-07-06
+- Category: Precision Oncology
+- Source: arXiv - https://arxiv.org/abs/2607.04912v1
+- PDF: https://arxiv.org/pdf/2607.04912v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-graph_representation_learning_of_longitudinal_medical_imaging_trajectories_for_treatment_r_infographic.json
+
+## 4. CaresAI at SMM4H-HeaRD 2026: Predicting TNM Staging
+
+- Date: 2026-07-03
+- Category: Precision Oncology
+- Source: arXiv - https://arxiv.org/abs/2607.03466v1
+- PDF: https://arxiv.org/pdf/2607.03466v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-03-arxiv-caresai_at_smm4h_heard_2026_predicting_tnm_staging_infographic.json
+
+## 5. Multi-Large Language Model Orchestrated Severity Assessment of Clinical Records (MOSAIC)
+
+- Date: 2026-07-06
+- Category: Clinical Translation
+- Source: arXiv - https://arxiv.org/abs/2607.05032v1
+- PDF: https://arxiv.org/pdf/2607.05032v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-multi_large_language_model_orchestrated_severity_assessment_of_clinical_records_mosaic_infographic.json
+
+## 6. MARLIN: De Novo Molecular Structure Elucidation from Tandem Mass Spectra without a Ground-Truth Formula
+
+- Date: 2026-07-06
+- Category: Therapeutic Discovery
+- Source: arXiv - https://arxiv.org/abs/2607.04774v1
+- PDF: https://arxiv.org/pdf/2607.04774v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-marlin_de_novo_molecular_structure_elucidation_from_tandem_mass_spectra_without_a_ground_t_infographic.json
+
+## 7. GLOW-FDG: Generalized cancer LesiOn Whole-body segmentation model for $^{18}$F-FDG-PET/CT
+
+- Date: 2026-07-04
+- Category: Precision Oncology
+- Source: arXiv - https://arxiv.org/abs/2607.03931v1
+- PDF: https://arxiv.org/pdf/2607.03931v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-04-arxiv-glow_fdg_generalized_cancer_lesion_whole_body_segmentation_model_for_18_f_fdg_pet_ct_infographic.json
+
+## 8. Biologically Informed Deep Neural Networks for Multi-Omic Integration, Pathway Activity Inference and Risk Stratification in Cancer
+
+- Date: 2026-07-06
+- Category: Target Biology
+- Source: arXiv - https://arxiv.org/abs/2607.05306v1
+- PDF: https://arxiv.org/pdf/2607.05306v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-biologically_informed_deep_neural_networks_for_multi_omic_integration_pathway_activity_inf_infographic.json
+
+## 9. Comparison of Loss Functions for Robust Deep Learning-based Echocardiography Segmentation when Learning with Partially Labelled Data from Multiple Domains
+
+- Date: 2026-07-06
+- Category: Target Biology
+- Source: arXiv - https://arxiv.org/abs/2607.05008v1
+- PDF: https://arxiv.org/pdf/2607.05008v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-comparison_of_loss_functions_for_robust_deep_learning_based_echocardiography_segmentation_infographic.json
+
+## 10. URSA: Chemistry-Aware Benchmark for Utilitarian Retrosynthesis Assessment
+
+- Date: 2026-07-06
+- Category: Therapeutic Discovery
+- Source: arXiv - https://arxiv.org/abs/2607.04688v1
+- PDF: https://arxiv.org/pdf/2607.04688v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-ursa_chemistry_aware_benchmark_for_utilitarian_retrosynthesis_assessment_infographic.json
+
+## 11. ClinRAG-GRAPH: Clinical-prior Retrieval-Augmented Graph Model with Domain Adversarial Learning for Breast pCR Prediction
 
 - Date: 2026-07-01
 - Category: Precision Oncology
@@ -11,7 +91,7 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://arxiv.org/pdf/2607.00798v1
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-01-arxiv-clinrag_graph_clinical_prior_retrieval_augmented_graph_model_with_domain_adversarial_learn_infographic.json
 
-## 2. Explainable AI for Cancer Drug Response Prediction: Beyond Univariate Feature Attributions
+## 12. Explainable AI for Cancer Drug Response Prediction: Beyond Univariate Feature Attributions
 
 - Date: 2026-07-01
 - Category: Precision Oncology
@@ -19,146 +99,66 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://arxiv.org/pdf/2607.00931v1
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-01-arxiv-explainable_ai_for_cancer_drug_response_prediction_beyond_univariate_feature_attributions_infographic.json
 
-## 3. Predicting Early Stages Of Alzheimer's Disease And Identifying Key Biomarkers Using Deep Artificial Neural Network And Ensemble Of Machine Learning Methodologies
+## 13. Causal-RetiGraph: Cross-Cohort Retinal Support and Same-Subject Pathway Analysis for Diabetic Retinopathy
 
-- Date: 2026-07-02
+- Date: 2026-07-06
 - Category: Target Biology
-- Source: arXiv - https://arxiv.org/abs/2607.02142v1
-- PDF: https://arxiv.org/pdf/2607.02142v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-02-arxiv-predicting_early_stages_of_alzheimer_s_disease_and_identifying_key_biomarkers_using_deep_a_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.05204v1
+- PDF: https://arxiv.org/pdf/2607.05204v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-causal_retigraph_cross_cohort_retinal_support_and_same_subject_pathway_analysis_for_diabet_infographic.json
 
-## 4. A Novel Machine Learning Approach for Central Nervous System Tumor Classification from DNA Methylation
-
-- Date: 2026-07-01
-- Category: Precision Oncology
-- Source: arXiv - https://arxiv.org/abs/2607.01307v1
-- PDF: https://arxiv.org/pdf/2607.01307v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-01-arxiv-a_novel_machine_learning_approach_for_central_nervous_system_tumor_classification_from_dna_infographic.json
-
-## 5. Foundation Models vs. Radiomics for Lung Computed Tomography: A Benchmark of Feature Extractors, Classification Heads, and Segmentation Choices
+## 14. Automating neoantigen selection for personalized cancer vaccine design
 
 - Date: 2026-07-01
 - Category: Precision Oncology
-- Source: arXiv - https://arxiv.org/abs/2607.01001v1
-- PDF: https://arxiv.org/pdf/2607.01001v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-01-arxiv-foundation_models_vs_radiomics_for_lung_computed_tomography_a_benchmark_of_feature_extract_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.24.26356293v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.24.26356293v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-01-medrxiv-automating_neoantigen_selection_for_personalized_cancer_vaccine_design_infographic.json
 
-## 6. Multimodal Fusion for Fine-Grained Classification of Breast Fibroadenoma and Phyllodes Tumors
+## 15. An Interpretable Deep Learning Framework for Discovery and Clinical Validation of Deep Radiomic Signatures in Tumor Classification
 
-- Date: 2026-07-02
+- Date: 2026-07-03
 - Category: Precision Oncology
-- Source: arXiv - https://arxiv.org/abs/2607.02091v1
-- PDF: https://arxiv.org/pdf/2607.02091v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-02-arxiv-multimodal_fusion_for_fine_grained_classification_of_breast_fibroadenoma_and_phyllodes_tum_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.03593v1
+- PDF: https://arxiv.org/pdf/2607.03593v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-03-arxiv-an_interpretable_deep_learning_framework_for_discovery_and_clinical_validation_of_deep_rad_infographic.json
 
-## 7. MolSight: A Graph-Aware Vision-Language Model for Unified Chemical Image Understanding
+## 16. Semantic Segmentation-Driven Image-Level Diagnosis of Liver Cancers in Hematoxylin and Eosin Histopathology Images
 
-- Date: 2026-07-02
-- Category: Therapeutic Discovery
-- Source: arXiv - https://arxiv.org/abs/2607.01982v1
-- PDF: https://arxiv.org/pdf/2607.01982v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-02-arxiv-molsight_a_graph_aware_vision_language_model_for_unified_chemical_image_understanding_infographic.json
-
-## 8. EchoRisk: A Multicentre Echocardiography Dataset and Benchmark for Cardio-Oncology
-
-- Date: 2026-07-01
+- Date: 2026-07-03
 - Category: Precision Oncology
-- Source: arXiv - https://arxiv.org/abs/2607.01039v1
-- PDF: https://arxiv.org/pdf/2607.01039v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-01-arxiv-echorisk_a_multicentre_echocardiography_dataset_and_benchmark_for_cardio_oncology_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.03253v1
+- PDF: https://arxiv.org/pdf/2607.03253v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-03-arxiv-semantic_segmentation_driven_image_level_diagnosis_of_liver_cancers_in_hematoxylin_and_eos_infographic.json
 
-## 9. CaresAI at CT-DEB26: Detecting Dosing Errors In Clinical Trials Using Domain-Specific Transformer Embeddings and Classification Models
+## 17. RUFNet: Query-Guided Support Mask Refinement and Uncertainty Fusion based on Hybrid Mamba for Few-Shot Brain Tumor Segmentation
 
-- Date: 2026-06-29
+- Date: 2026-07-06
+- Category: Precision Oncology
+- Source: arXiv - https://arxiv.org/abs/2607.05035v1
+- PDF: https://arxiv.org/pdf/2607.05035v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-rufnet_query_guided_support_mask_refinement_and_uncertainty_fusion_based_on_hybrid_mamba_f_infographic.json
+
+## 18. MergeSurv: Merging-Based Continual Learning for Survival Analysis on Whole-Slide Images
+
+- Date: 2026-07-06
 - Category: Clinical Translation
-- Source: arXiv - https://arxiv.org/abs/2606.30236v1
-- PDF: https://arxiv.org/pdf/2606.30236v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-06-29-arxiv-caresai_at_ct_deb26_detecting_dosing_errors_in_clinical_trials_using_domain_specific_trans_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.04747v1
+- PDF: https://arxiv.org/pdf/2607.04747v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-mergesurv_merging_based_continual_learning_for_survival_analysis_on_whole_slide_images_infographic.json
 
-## 10. An Additive MLP-GNN Framework for Characterizing Chemical and Structural Contributions to Aqueous Solubility
+## 19. Learning from Lost Provenance: Multiple Instance Learning for Cancer Registry Tumor Group Classification
 
-- Date: 2026-07-02
-- Category: Therapeutic Discovery
-- Source: arXiv - https://arxiv.org/abs/2607.02212v1
-- PDF: https://arxiv.org/pdf/2607.02212v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-02-arxiv-an_additive_mlp_gnn_framework_for_characterizing_chemical_and_structural_contributions_to_infographic.json
-
-## 11. Fully Automated High-Precision Segmentation of Retinal Atrophy and Ellipsoid Zone Thickness in OCT: A Reliable Tool for Real-World GA Monitoring
-
-- Date: 2026-06-30
-- Category: Target Biology
-- Source: arXiv - https://arxiv.org/abs/2606.31502v1
-- PDF: https://arxiv.org/pdf/2606.31502v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-06-30-arxiv-fully_automated_high_precision_segmentation_of_retinal_atrophy_and_ellipsoid_zone_thicknes_infographic.json
-
-## 12. Enhancing Prostate Cancer Segmentation for Multi-Domain Generalization using a novel Parallel-Route Coherent Mixup Regularization Training
-
-- Date: 2026-07-01
+- Date: 2026-07-03
 - Category: Precision Oncology
-- Source: arXiv - https://arxiv.org/abs/2607.00370v1
-- PDF: https://arxiv.org/pdf/2607.00370v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-01-arxiv-enhancing_prostate_cancer_segmentation_for_multi_domain_generalization_using_a_novel_paral_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.03481v1
+- PDF: https://arxiv.org/pdf/2607.03481v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-03-arxiv-learning_from_lost_provenance_multiple_instance_learning_for_cancer_registry_tumor_group_c_infographic.json
 
-## 13. Beyond Drug Discovery: The Nanotechnology Molecular Optimization (NMO) Benchmark
+## 20. Rethinking Scientific Discovery in an Agentic Era
 
-- Date: 2026-06-29
+- Date: 2026-07-04
 - Category: Therapeutic Discovery
-- Source: arXiv - https://arxiv.org/abs/2606.30170v1
-- PDF: https://arxiv.org/pdf/2606.30170v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-06-29-arxiv-beyond_drug_discovery_the_nanotechnology_molecular_optimization_nmo_benchmark_infographic.json
-
-## 14. Predicting Lethal Outcome (Cause) And Understanding Key Biomarkers Linked With Acute Myocardial Infarction Using Deep Artificial Neural Network And Ensemble Of Machine Learning Methodologies
-
-- Date: 2026-07-01
-- Category: Target Biology
-- Source: arXiv - https://arxiv.org/abs/2607.00472v1
-- PDF: https://arxiv.org/pdf/2607.00472v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-01-arxiv-predicting_lethal_outcome_cause_and_understanding_key_biomarkers_linked_with_acute_myocard_infographic.json
-
-## 15. Enerzyme: A Framework for Efficient Training of Reactive Neural Network Potentials for Enzyme Catalysis with Application to Methyltransferases
-
-- Date: 2026-07-01
-- Category: Therapeutic Discovery
-- Source: arXiv - https://arxiv.org/abs/2607.01362v1
-- PDF: https://arxiv.org/pdf/2607.01362v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-01-arxiv-enerzyme_a_framework_for_efficient_training_of_reactive_neural_network_potentials_for_enzy_infographic.json
-
-## 16. AEGIS: A Multi-Task Joint-Embedding Predictive Architecture for Mammography
-
-- Date: 2026-06-30
-- Category: Therapeutic Discovery
-- Source: arXiv - https://arxiv.org/abs/2607.00277v1
-- PDF: https://arxiv.org/pdf/2607.00277v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-06-30-arxiv-aegis_a_multi_task_joint_embedding_predictive_architecture_for_mammography_infographic.json
-
-## 17. Cross-Audit Projection for Model Risk Prediction
-
-- Date: 2026-07-02
-- Category: Precision Oncology
-- Source: arXiv - https://arxiv.org/abs/2607.02328v1
-- PDF: https://arxiv.org/pdf/2607.02328v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-02-arxiv-cross_audit_projection_for_model_risk_prediction_infographic.json
-
-## 18. HistoSeg++: Delving deeper with attention and multiscale feature fusion for biomarker segmentation
-
-- Date: 2026-07-02
-- Category: Target Biology
-- Source: arXiv - https://arxiv.org/abs/2607.01675v1
-- PDF: https://arxiv.org/pdf/2607.01675v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-02-arxiv-histoseg_delving_deeper_with_attention_and_multiscale_feature_fusion_for_biomarker_segment_infographic.json
-
-## 19. MKGR: Multimodal Knowledge-Graph Representation Learning for Cold-Start Protein-Protein Interaction Prediction
-
-- Date: 2026-07-02
-- Category: Target Biology
-- Source: arXiv - https://arxiv.org/abs/2607.01627v1
-- PDF: https://arxiv.org/pdf/2607.01627v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-02-arxiv-mkgr_multimodal_knowledge_graph_representation_learning_for_cold_start_protein_protein_int_infographic.json
-
-## 20. CALM: Interpretable Cross-Modal Alignment for Biomarker Discovery from Unpaired Data
-
-- Date: 2026-07-02
-- Category: Target Biology
-- Source: arXiv - https://arxiv.org/abs/2607.01656v1
-- PDF: https://arxiv.org/pdf/2607.01656v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-02-arxiv-calm_interpretable_cross_modal_alignment_for_biomarker_discovery_from_unpaired_data_infographic.json
+- Source: arXiv - https://arxiv.org/abs/2607.03863v1
+- PDF: https://arxiv.org/pdf/2607.03863v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-04-arxiv-rethinking_scientific_discovery_in_an_agentic_era_infographic.json
