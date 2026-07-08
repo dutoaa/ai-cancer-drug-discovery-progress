@@ -1,0 +1,24 @@
+{
+  "key_insight": "TumorCLIP combines MRI image features with radiology-informed text prototypes to make brain tumor classification more accurate and more interpretable.",
+  "clinical_relevance": "This could support more reliable MRI-based tumor subtype classification and improve confidence in model outputs for clinical workflow use.",
+  "method": [
+    "Benchmark eight visual backbones with standardized optimizer and learning-rate tuning.",
+    "Use DenseNet121 as the visual encoder and fuse it with frozen CLIP-derived radiology text prototypes.",
+    "Apply a lightweight Tip-Adapter-style CLIP fusion for concept-level reasoning and few-shot/zero-shot support."
+  ],
+  "evidence_signal": "On the test set, TumorCLIP reached 98.5% accuracy and a 96.9% positive semantic margin rate, outperforming the unimodal DenseNet121 baseline.",
+  "watch_item": "Results come from a specific MRI classification setup, so external validation across scanners, sites, and tumor distributions is still needed before broad deployment.",
+  "hashtags": [
+    "#CancerAI",
+    "#MedicalImaging",
+    "#BrainTumor",
+    "#VisionLanguage",
+    "#ExplainableAI"
+  ],
+  "paper_id": "2026-07-02-medrxiv-tumorclip_radiology_informed_vision_language_alignment_for_interpretable_mri_based_brain_t",
+  "paper_title": "TumorCLIP: Radiology-informed vision-language alignment for interpretable MRI-based brain tumor classification",
+  "paper_date": "2026-07-02",
+  "paper_category": "Cancer AI Methods",
+  "generated_at": "2026-07-08T09:24:11",
+  "generator": "openai"
+}
