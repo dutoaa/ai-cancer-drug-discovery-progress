@@ -1,0 +1,24 @@
+{
+  "key_insight": "A token-based dual-view transformer can better combine CC and MLO mammography information by using dedicated fusion tokens and repeated cross-view interaction at multiple depths.",
+  "clinical_relevance": "This approach may improve breast cancer image classification from routine mammograms by preserving view-specific detail while more effectively integrating complementary breast views.",
+  "method": [
+    "Freeze a vision transformer backbone and adapt it with prompt-based learning.",
+    "Insert cross-attention fusion modules at multiple transformer layers.",
+    "Use dedicated fusion tokens to carry bidirectional CC-MLO information and reintegrate them into the token sequence."
+  ],
+  "evidence_signal": "On VinDr-Mammo and CMMD, the method outperformed linear probing, prompt-only adaptation, and conventional fusion baselines, reaching 50.40% F1 and 0.8090 AUC on VinDr-Mammo BI-RADS classification.",
+  "watch_item": "Results are promising but still depend on retrospective dataset benchmarks and should be validated on broader external cohorts and real-world clinical workflows.",
+  "hashtags": [
+    "#BreastCancerAI",
+    "#Mammography",
+    "#VisionTransformer",
+    "#MultiViewLearning",
+    "#PrecisionOncology"
+  ],
+  "paper_id": "2026-07-07-arxiv-token_based_dual_view_fusion_and_adaptation_of_large_vision_models_for_breast_cancer_class",
+  "paper_title": "Token-Based Dual-view Fusion and Adaptation of Large Vision Models for Breast Cancer Classification",
+  "paper_date": "2026-07-07",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-09T10:18:57",
+  "generator": "openai"
+}

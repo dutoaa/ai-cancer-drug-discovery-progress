@@ -1,24 +1,24 @@
 {
-  "key_insight": "A graph-based spatio-temporal model using longitudinal MRI scans can better predict individualized breast cancer response to neoadjuvant chemotherapy than standard imaging baselines.",
-  "clinical_relevance": "If validated, this approach could help identify which patients are more likely to achieve pathological complete response and support more tailored treatment planning.",
+  "key_insight": "A graph-based 3D spatio-temporal model can learn breast MRI treatment trajectories to better predict pathological complete response after neoadjuvant chemotherapy.",
+  "clinical_relevance": "If validated, this approach could help personalize treatment planning by identifying patients more likely to respond to neoadjuvant therapy.",
   "method": [
-    "Models each patient’s MRI timepoints as a relational graph over time.",
-    "Uses a state-of-the-art graph neural network to learn treatment trajectory patterns.",
-    "Adds three self-supervised objectives to improve representation learning from limited labeled data."
+    "Uses a state-of-the-art graph neural network to model relationships across longitudinal imaging timepoints.",
+    "Adds three self-supervised objectives to learn complementary treatment-trajectory representations.",
+    "Evaluates the effect of scan count and inter-scan time differences on prediction performance."
   ],
-  "evidence_signal": "In a cohort of 585 ISPY-2 breast cancer patients, the method outperformed vision and self-supervised baselines across multiple classification metrics.",
-  "watch_item": "Performance was shown on a public retrospective dataset, so external validation and real-world prospective testing are still needed before broader use.",
+  "evidence_signal": "In 585 patients from the public ISPY-2 dataset, the method outperformed vision and self-supervised baselines across multiple classification metrics.",
+  "watch_item": "Performance was shown on one public cohort, so external validation and real-world deployment testing are still needed.",
   "hashtags": [
-    "#BreastCancer",
     "#PrecisionOncology",
+    "#BreastCancer",
     "#MedicalImagingAI",
     "#GraphNeuralNetworks",
-    "#TreatmentResponsePrediction"
+    "#SelfSupervisedLearning"
   ],
   "paper_id": "2026-07-06-arxiv-graph_representation_learning_of_longitudinal_medical_imaging_trajectories_for_treatment_r",
   "paper_title": "Graph Representation Learning of Longitudinal Medical Imaging Trajectories for Treatment Response Prediction",
   "paper_date": "2026-07-06",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-07T10:19:13",
+  "generated_at": "2026-07-09T10:18:47",
   "generator": "openai"
 }

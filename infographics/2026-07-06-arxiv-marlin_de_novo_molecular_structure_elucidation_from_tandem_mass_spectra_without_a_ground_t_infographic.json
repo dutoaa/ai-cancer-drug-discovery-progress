@@ -1,24 +1,24 @@
 {
-  "key_insight": "MARLIN can infer likely molecular structures directly from tandem mass spectra without first knowing the molecular formula, removing a major bottleneck in de novo metabolite identification.",
-  "clinical_relevance": "By improving identification of unknown small molecules, this could support biomarker discovery, natural product research, and therapeutic discovery workflows where standard libraries fail.",
+  "key_insight": "MARLIN can infer small-molecule structures directly from tandem mass spectra without needing a ground-truth molecular formula, which is a major step toward de novo identification of novel compounds.",
+  "clinical_relevance": "By improving identification of previously unseen metabolites and natural products, this approach could support earlier biomarker discovery and therapeutic lead finding from untargeted mass spectrometry data.",
   "method": [
     "Self-supervised encoder predicts a molecular fingerprint from raw MS/MS peaks.",
-    "Block-diffusion language model generates candidate structures using the fingerprint plus measured precursor mass.",
-    "A mass-shell constraint and exact ppm mass matching keep candidates consistent with the observed mass, while a diversity mechanism reduces mode collapse."
+    "Block-diffusion language model generates candidate structures from the fingerprint plus measured precursor mass.",
+    "A mass-shell constraint and exact mass agreement filter keep candidates physically consistent while preserving diversity."
   ],
-  "evidence_signal": "On the NPLIB1 benchmark, MARLIN was the strongest formula-free method across exact-match accuracy, structural distance, and fingerprint similarity, and it recovered the correct molecular formula about as often as a dedicated predictor.",
-  "watch_item": "Performance is benchmark-based, so real-world utility will depend on robustness to noisy spectra, diverse instruments, and truly novel chemistries outside the evaluation set.",
+  "evidence_signal": "In the NPLIB1 benchmark, MARLIN was the strongest formula-free method across exact-match accuracy, structural distance, and fingerprint similarity, and it recovered the correct molecular formula about as often as a dedicated predictor.",
+  "watch_item": "Performance is benchmark-based, so real-world robustness may depend on instrument differences, noisy spectra, and how well the mass-shell and fingerprint predictions generalize to novel chemistries.",
   "hashtags": [
     "#MassSpectrometry",
-    "#DeNovoDiscovery",
-    "#MolecularStructure",
+    "#DeNovoElucidation",
+    "#Metabolomics",
     "#DrugDiscovery",
-    "#MachineLearning"
+    "#AIforScience"
   ],
   "paper_id": "2026-07-06-arxiv-marlin_de_novo_molecular_structure_elucidation_from_tandem_mass_spectra_without_a_ground_t",
   "paper_title": "MARLIN: De Novo Molecular Structure Elucidation from Tandem Mass Spectra without a Ground-Truth Formula",
   "paper_date": "2026-07-06",
   "paper_category": "Therapeutic Discovery",
-  "generated_at": "2026-07-07T10:19:22",
+  "generated_at": "2026-07-09T10:19:00",
   "generator": "openai"
 }

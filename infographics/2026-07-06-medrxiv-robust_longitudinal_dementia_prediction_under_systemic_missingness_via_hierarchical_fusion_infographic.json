@@ -1,0 +1,24 @@
+{
+  "key_insight": "A hierarchical Transformer with test-time adaptation can better predict longitudinal dementia progression when important biomarkers are missing at external test sites.",
+  "clinical_relevance": "This approach may improve the reliability of longitudinal dementia risk and progression forecasting across hospitals or cohorts that do not collect the same biomarkers.",
+  "method": [
+    "Stage 1 learns biomarker-specific temporal patterns from irregular longitudinal observations without imputation.",
+    "Stage 2 fuses biomarker streams with cross-feature attention and simulated modality dropout to handle systemic missingness.",
+    "A lightweight test-time adaptation step calibrates predictions for each individual at inference."
+  ],
+  "evidence_signal": "Trained on ADNI and tested on three external cohorts (2,316 participants, 13,205 timepoints), ProFuse-TTA was best in 8 of 9 cross-dataset settings and ranked first in 14 of 15 ablation scenarios.",
+  "watch_item": "Performance was validated under controlled experimental missingness and external cohorts, but real-world deployment still needs careful checking for site-specific data quality, workflow fit, and robustness to unseen missingness patterns.",
+  "hashtags": [
+    "#DementiaPrediction",
+    "#LongitudinalModeling",
+    "#TransformerAI",
+    "#MissingDataRobustness",
+    "#TestTimeAdaptation"
+  ],
+  "paper_id": "2026-07-06-medrxiv-robust_longitudinal_dementia_prediction_under_systemic_missingness_via_hierarchical_fusion",
+  "paper_title": "Robust Longitudinal Dementia Prediction under Systemic Missingness via Hierarchical Fusion and Test-Time Adaptation",
+  "paper_date": "2026-07-06",
+  "paper_category": "Cancer AI Methods",
+  "generated_at": "2026-07-09T10:19:11",
+  "generator": "openai"
+}

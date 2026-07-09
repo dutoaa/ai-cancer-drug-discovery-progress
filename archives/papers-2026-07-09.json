@@ -1,0 +1,359 @@
+[
+  {
+    "id": "2026-07-02-medrxiv-gutcore_an_endoscopy_foundation_model_for_whole_case_gastric_cancer_analysis",
+    "doi": "10.64898/2026.07.01.26356993",
+    "date": "2026-07-02",
+    "title": "GutCore: An Endoscopy Foundation Model for Whole-Case Gastric Cancer Analysis",
+    "authors": "Kim, S.; Yoo, H.; Yoo, S.-K.; Lee, J.; Min, Y. W.; Lee, H.",
+    "abstract": "Background and AimsEndoscopic artificial intelligence is commonly validated on selected single images, whereas gastric cancer interpretation requires integrating whole examinations. We developed GutCore and evaluated whether whole-case endoscopic images could be used for patient-level assessment of gastric cancer depth, biomarkers, and prognosis. MethodsGutCore was pretrained on 5.6 million de-identified endoscopic images from more than ten hospitals. We compared it with five general, medical, and endoscopy-specific foundation models using open image-level datasets and an internal tertiary-center cohort of 11,035 de-identified endoscopic examinations (2019-2023): 8,049 with early or advanced gastric cancer and 2,986 with benign gastritis or intestinal metaplasia. All examination images were aggregated for patient-level assessment of cancer status, invasion depth, molecular biomarkers, and overall survival. ResultsAggregating all stored images from each examination enabled patient-level gastric cancer assessment without selecting representative frames. GutCore achieved AUCs of 0.995 for cancer detection, 0.960 for muscularis propria invasion, and 0.804 for SM2-or-deeper invasion. Prediction of tissue-defined biomarker status was strongest for Epstein-Barr virus status and MLH1 loss (AUC, 0.831 and 0.854), with lower HER2 performance (AUC, 0.673). In the held-out advanced gastric cancer test set, GutCore-derived risk groups showed marked survival separation (log-rank P < .0001; high-risk vs low-risk hazard ratio, 13.18; 95% CI, 6.06-28.66), with stratification persisting within pathological stage II and III disease. External frame-level benchmarks showed strong performance for anatomical landmark recognition, disease grading, and segmentation. ConclusionsGutCore supported whole-case patient-level gastric cancer assessment using routinely stored endoscopic images. Further validation in independent clinical cohorts is needed to establish generalizability and clinical utility.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-02",
+    "updated": "2026-07-02",
+    "primary_category": "gastroenterology",
+    "categories": [
+      "gastroenterology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.01.26356993v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.01.26356993v1.full.pdf"
+      }
+    ],
+    "score": 55,
+    "infographic": {
+      "key_insight": "GutCore is a foundation model that uses whole endoscopy examinations, not just single frames, to assess gastric cancer presence, invasion depth, biomarkers, and prognosis at the patient level.",
+      "clinical_relevance": "This approach could help endoscopy teams better triage gastric cancer cases and estimate risk from routine stored images, but it still needs external validation before clinical use.",
+      "method": [
+        "Pretrained on 5.6 million de-identified endoscopic images from more than 10 hospitals.",
+        "Evaluated on 11,035 internal endoscopic examinations with cancer and benign control cases.",
+        "Aggregated all images from each exam to predict cancer status, invasion depth, biomarkers, and survival risk."
+      ],
+      "evidence_signal": "GutCore achieved very high patient-level AUCs for cancer detection (0.995) and muscularis propria invasion (0.960), and it separated survival in advanced gastric cancer with a log-rank P < .0001.",
+      "watch_item": "Performance varied by biomarker and the study was retrospective, so generalizability and real-world workflow impact remain unproven.",
+      "hashtags": [
+        "#GastricCancer",
+        "#EndoscopyAI",
+        "#FoundationModel",
+        "#PrecisionOncology",
+        "#MedicalAI"
+      ],
+      "paper_id": "2026-07-02-medrxiv-gutcore_an_endoscopy_foundation_model_for_whole_case_gastric_cancer_analysis",
+      "paper_title": "GutCore: An Endoscopy Foundation Model for Whole-Case Gastric Cancer Analysis",
+      "paper_date": "2026-07-02",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-08T09:24:04",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-02-medrxiv-a_multicenter_swedish_histopathology_image_dataset_of_pediatric_central_nervous_system_tum",
+    "doi": "10.64898/2026.06.15.26355523",
+    "date": "2026-07-02",
+    "title": "A Multicenter Swedish Histopathology Image Dataset of Pediatric Central Nervous System Tumors",
+    "authors": "Nyman, P.; Tampu, I. E.; Shamikh, A.; Prochazka, G.; Blystad, I.; Basmaci, E.; Diaz de Stahl, T.; Augustsson, P.; Zielinska-Chomej, K.; Cao, D.; von Salome, J.; Ardalan, A.; Somarajan, P. R.; Ljungman, G.; Lundberg, P.; Sandgren, J.; Haj-Hosseini, N.",
+    "abstract": "Refined detection methods, more detailed tumor characterization, and adequate distinction between different pediatric tumor subtypes are necessary to improve diagnosis and treatment, enable precision medicine, and advance patient prognosis. However, the application of computational approaches to pediatric brain tumors remains limited, largely due to the lack of accessible datasets. To address part of this gap, we provide whole slide images (WSIs) of hematoxylin and eosin (H&E)- stained tissue sections from pediatric central nervous system (CNS) samples collected in Sweden in 2013 to 2023. These data represent a population-based national cohort encompassing all six pediatric oncology centers in Sweden and are available through the Swedish Childhood Tumor Biobank (BTB). The dataset includes 1,446 WSIs of sufficient image quality with confirmed CNS tumor diagnoses, derived from 537 unique subjects (562 subject-diagnosis pair cases). In addition, diagnostic-relevant clinical information is included. Corresponding whole-genome sequencing (WGS), whole-transcriptome sequencing (WTS), and methylation array data are available upon application for most tumor samples through separate resources at BTB. This H&E dataset has been specifically curated to support artificial intelligence-based analyses, while also serving broader applications in medical research and education. When combined with matched molecular data, it provides a valuable resource for advancing multimodal and precision diagnostic approaches in the pediatric population. Refined detection methods, more detailed tumor mapping and adequate distinction between different subtypes of pediatric tumors are necessary to improve treatment, enable precision medicine and improve patient prognosis. Application of computational algorithms for pediatric brain tumors remained limited mainly due to the scarcity of curated pediatric histology brain tumor data sets. To enable the development of AI models comprehensive datasets covering a wide range of pediatric brain tumors are needed.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-02",
+    "updated": "2026-07-02",
+    "primary_category": "pathology",
+    "categories": [
+      "pathology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.15.26355523v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.15.26355523v2.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "This study releases a large, multicenter Swedish pediatric CNS tumor histopathology dataset to help train AI models for more accurate tumor detection and subtype classification.",
+      "clinical_relevance": "By enabling better histology-based and multimodal analysis, the resource may support more precise diagnosis and improve pediatric brain tumor research and treatment planning.",
+      "method": [
+        "Collected H&E whole-slide images from pediatric CNS tumor samples across all six Swedish pediatric oncology centers (2013–2023).",
+        "Curated 1,446 quality-controlled WSIs from 537 unique subjects with confirmed diagnoses.",
+        "Linked diagnostic clinical information, with matched WGS, WTS, and methylation data available through separate biobank resources for many cases."
+      ],
+      "evidence_signal": "The abstract reports 1,446 sufficient-quality WSIs from 562 subject-diagnosis pairs, making this a substantial national cohort resource for AI and multimodal studies.",
+      "watch_item": "As a curated retrospective dataset, performance may not generalize without external validation across scanners, sites, and rare tumor subtypes.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#PediatricCancer",
+        "#PathologyAI",
+        "#BrainTumorResearch",
+        "#MedicalImaging"
+      ],
+      "paper_id": "2026-07-02-medrxiv-a_multicenter_swedish_histopathology_image_dataset_of_pediatric_central_nervous_system_tum",
+      "paper_title": "A Multicenter Swedish Histopathology Image Dataset of Pediatric Central Nervous System Tumors",
+      "paper_date": "2026-07-02",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-08T09:24:06",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-02-medrxiv-algorithmic_implementation_of_pancreatic_cancer_staging_guidelines_comparison_with_a_retri",
+    "doi": "10.64898/2026.06.30.26356912",
+    "date": "2026-07-02",
+    "title": "Algorithmic implementation of pancreatic cancer staging guidelines: comparison with a retrieval-augmented large language model",
+    "authors": "Komaba, A.; Amakawa, A.; Tozuka, R.; Sato, J.; Fujihara, K.; Emoto, M.; Sawada, S.; Kasai, S.; Sakamoto, K.; Shimura, K.; Johno, Y.; Nakamoto, K.; Ichikawa, S.; Johno, H.",
+    "abstract": "PurposeTo implement a comprehensive knowledge-based algorithm (KBA) for pancreatic cancer staging based on the current Japanese guidelines and to evaluate its performance as a clinical decision support system in comparison with a retrieval-augmented large language model (LLM) system. Materials and methodsA KBA covering TNM classification, stage classification, and resectability classification was implemented as a web application. The correctness of the system outputs was exhaustively verified for all possible inputs. Subsequently, six non-board-certified radiologists performed pancreatic cancer staging for 12 simulated cases with imaging findings under three conditions: unassisted, LLM-assisted, and KBA-assisted. Staging accuracy and staging time were compared among the three conditions using pairwise proportion z-tests and Welchs t-tests, respectively. ResultsIn the comparative experiment, staging accuracy was 81.9%, 80.6%, and 98.6% in the unassisted, LLM-assisted, and KBA-assisted conditions, respectively. Mean staging time was 229.2, 401.9, and 196.2 s, respectively. The KBA-assisted condition showed higher accuracy than both the unassisted and LLM-assisted conditions (both p<0.001). Staging time was longer in the LLM-assisted condition than in the other two conditions (both p<0.001). ConclusionA comprehensive KBA for pancreatic cancer staging based on the current Japanese guidelines was implemented and exhaustively verified. In a preliminary comparative experiment, KBA assistance improved staging accuracy without increasing staging time, whereas LLM assistance increased staging time without improving staging accuracy. These findings suggest that verified KBA systems may be feasible and useful for clinical tasks governed by explicit guideline-based rules. Secondary AbstractA comprehensive knowledge-based algorithm (KBA) for pancreatic cancer staging was implemented and exhaustively verified. In a preliminary comparative experiment involving six radiologists and 12 simulated cases, KBA assistance improved staging accuracy without increasing staging time, whereas retrieval-augmented large language model (LLM) assistance increased staging time without improving staging accuracy.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-02",
+    "updated": "2026-07-02",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.30.26356912v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.30.26356912v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "A verified knowledge-based algorithm for pancreatic cancer staging outperformed a retrieval-augmented LLM on accuracy while also being faster in a simulated comparison.",
+      "clinical_relevance": "For guideline-driven staging tasks, deterministic rule-based decision support may be more reliable and efficient than LLM assistance in clinical workflows.",
+      "method": [
+        "Implemented a web-based knowledge-based algorithm covering TNM, stage, and resectability classification using current Japanese guidelines.",
+        "Exhaustively checked the system’s outputs across all possible inputs.",
+        "Compared unassisted, LLM-assisted, and KBA-assisted staging by six non-board-certified radiologists across 12 simulated cases."
+      ],
+      "evidence_signal": "In the comparative experiment, KBA assistance achieved 98.6% staging accuracy and 196.2 s mean staging time, versus 81.9%/229.2 s unassisted and 80.6%/401.9 s with LLM assistance.",
+      "watch_item": "Results come from a small simulated-case study, so real-world performance, generalizability, and workflow integration still need validation.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#PancreaticCancer",
+        "#ClinicalDecisionSupport",
+        "#GuidelineBasedAI",
+        "#HealthAI"
+      ],
+      "paper_id": "2026-07-02-medrxiv-algorithmic_implementation_of_pancreatic_cancer_staging_guidelines_comparison_with_a_retri",
+      "paper_title": "Algorithmic implementation of pancreatic cancer staging guidelines: comparison with a retrieval-augmented large language model",
+      "paper_date": "2026-07-02",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-08T09:24:09",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-02-medrxiv-tumorclip_radiology_informed_vision_language_alignment_for_interpretable_mri_based_brain_t",
+    "doi": "10.64898/2026.03.11.26348155",
+    "date": "2026-07-02",
+    "title": "TumorCLIP: Radiology-informed vision-language alignment for interpretable MRI-based brain tumor classification",
+    "authors": "Jia, Y.; Niu, J.; Qie, Z.; Li, Z.; Laine, A. F.; Guo, J.",
+    "abstract": "Accurate classification of brain tumors from MRI is critical for guiding clinical decision-making; however, existing deep learning models are often hindered by limited interpretability and pronounced sensitivity to hyperparameter selection, which constrain their reliability in medical settings. To address these challenges, we propose TumorCLIP, a lightweight and training-efficient vision-language framework that integrates radiology-informed text prototypes with a DenseNet-based visual encoder to sup-port clinically meaningful semantic reasoning, fused via a Tip-Adapter mechanism. TumorCLIP does not aim to introduce a new vision-language model architecture. Instead, its contribution lies in the integration of radiology-informed text proto-types tailored to MRI interpretation, a systematic evaluation of backbone stability across diverse visual architectures, and a lightweight, training-efficient CLIP-based fusion framework designed for medical imaging applications. We first conduct a com-prehensive unimodal benchmark across eight representative visual backbones (EfficientNet-B0, MobileNetV3-Large, ResNet50, DenseNet121, ViT, DeiT, Swin Transformer, and MambaOut) using a standardized optimizer and learning-rate grid search, revealing performance swings exceeding 60 percentage points depending on hyperparameter choices. DenseNet121 shows the strongest stability-accuracy trade-off within our evaluated optimizer and learning-rate grid (97.6%). Leveraging this foundation, TumorCLIP fuses image features with frozen CLIP-derived text prototypes, achieving concept-level explainability, architectural support for zero-shot and few-shot inference, and enhanced classification of minority tumor classes. On the test set, Tu-morCLIP attains 98.5% accuracy and reduces inter-class misclassification compared to the unimodal DenseNet121 baseline. Semantic interpretability analysis further confirms that TumorCLIP achieves a positive semantic margin rate of 96.9% across all tumor categories, compared to 42.1% for the unimodal baseline, demonstrating that its embeddings are both discriminative and radiologically meaningful. Importantly, under cross-dataset evaluation, it demonstrates improved robustness with smaller performance degradation across tumor categories, particularly for clinically heterogeneous classes such as glioma. These results suggest that the framework maintains strong predictive performance while providing an explicit radiology-informed semantic reference page. TumorCLIP therefore provides a practical, interpretable, and data-efficient alternative to conventional visual classifiers. It highlights the role of radiology-aware vision-language alignment in MRI-based brain tumor classification. All results are reported within the evaluated datasets and training protocols.",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-07-02",
+    "updated": "2026-07-02",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.03.11.26348155v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.03.11.26348155v2.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "TumorCLIP combines MRI image features with radiology-informed text prototypes to make brain tumor classification more accurate and more interpretable.",
+      "clinical_relevance": "This could support more reliable MRI-based tumor subtype classification and improve confidence in model outputs for clinical workflow use.",
+      "method": [
+        "Benchmark eight visual backbones with standardized optimizer and learning-rate tuning.",
+        "Use DenseNet121 as the visual encoder and fuse it with frozen CLIP-derived radiology text prototypes.",
+        "Apply a lightweight Tip-Adapter-style CLIP fusion for concept-level reasoning and few-shot/zero-shot support."
+      ],
+      "evidence_signal": "On the test set, TumorCLIP reached 98.5% accuracy and a 96.9% positive semantic margin rate, outperforming the unimodal DenseNet121 baseline.",
+      "watch_item": "Results come from a specific MRI classification setup, so external validation across scanners, sites, and tumor distributions is still needed before broad deployment.",
+      "hashtags": [
+        "#CancerAI",
+        "#MedicalImaging",
+        "#BrainTumor",
+        "#VisionLanguage",
+        "#ExplainableAI"
+      ],
+      "paper_id": "2026-07-02-medrxiv-tumorclip_radiology_informed_vision_language_alignment_for_interpretable_mri_based_brain_t",
+      "paper_title": "TumorCLIP: Radiology-informed vision-language alignment for interpretable MRI-based brain tumor classification",
+      "paper_date": "2026-07-02",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-07-08T09:24:11",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-02-medrxiv-developing_an_omop_standardized_prostate_cancer_database_and_improving_data_quality_using",
+    "doi": "10.64898/2026.06.30.26356984",
+    "date": "2026-07-02",
+    "title": "Developing an OMOP-Standardized Prostate Cancer Database and Improving Data Quality Using NLP and PSA-Based Algorithms",
+    "authors": "Wang, J.; Jackson, J. C.; Garza, A.; Nalla, S.; Ninnemann, T.; Zhang, Y.; Kuo, Y.-F.",
+    "abstract": "ObjectiveTo develop and evaluate an Observational Medical Outcomes Partnership- (OMOP-) standardized prostate cancer database from the University of Texas Medical Branch (UTMB) Epic Electronic Health Record (EHR) and improve data quality using natural language processing(NLP) and prostate-specific antigen- (PSA) based algorithms. Materials and MethodsWe built a data pipeline to transform UTMB Epic EHR data (2010-2021) into OMOP Common Data Model (CDM) v5.4. Data quality was assessed by comparing the OMOP-standardized data with Galveston Cancer Registry data using availability agreement, Cohens kappa and Intraclass Correlation Coefficient. NLP was used to extract PSA, Gleason score, and cancer stage from clinical text, and PSA-based algorithms were used to identify missing treatment and biochemical recurrence. ResultsWe extracted 815 analytic cases from UTMB EHR. Among them, 700 (85.9%) were complete and concordant with the cancer registry. PSA showed excellent value agreement. Structured Gleason score and stage data were sparse (n<20), but NLP greately improved capture. Treatment agreement was good compared with the cancer registry and improved slightly for radical prostatectomy after applying a PSA-based algorithm. Using PSA trajectories, we identified 60 cases of biochemical recurrence. DiscussionThe OMOP-standardized data from UTMB showed good agreement with the cancer registry. However, structured EHR fields incompletely captured diagnosis, pathology, and treatment details. NLP and PSA-based algorithms substantially improved data capture. Manual review also revealed errors in registry data, showing that OMOP-standardized EHR data can complement and help improve cancer registry quality. ConclusionOMOP standardization combined with NLP and PSA-based algorithms improved prostate cancer data quality and research readiness.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-02",
+    "updated": "2026-07-02",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.30.26356984v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.30.26356984v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "An OMOP-standardized prostate cancer database plus NLP and PSA-based algorithms greatly improved capture of key clinical details from EHR data.",
+      "clinical_relevance": "This approach can make real-world prostate cancer datasets more complete and reliable for research, quality checks, and registry support.",
+      "method": [
+        "Converted UTMB Epic EHR data (2010-2021) into OMOP CDM v5.4.",
+        "Used NLP to extract PSA, Gleason score, and cancer stage from clinical notes.",
+        "Applied PSA-based algorithms to identify missing treatment information and biochemical recurrence."
+      ],
+      "evidence_signal": "Of 815 analytic cases, 700 (85.9%) were complete and concordant with the cancer registry; PSA agreement was excellent, and NLP materially improved sparse structured Gleason and stage data.",
+      "watch_item": "Performance depends on local data quality and charting patterns, so NLP and rule-based algorithms may need site-specific validation before broader use.",
+      "hashtags": [
+        "#ProstateCancer",
+        "#OMOP",
+        "#NLP",
+        "#EHRData",
+        "#DataQuality"
+      ],
+      "paper_id": "2026-07-02-medrxiv-developing_an_omop_standardized_prostate_cancer_database_and_improving_data_quality_using",
+      "paper_title": "Developing an OMOP-Standardized Prostate Cancer Database and Improving Data Quality Using NLP and PSA-Based Algorithms",
+      "paper_date": "2026-07-02",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-08T09:24:14",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-02-medrxiv-managing_ai_enabled_uncertainty_in_clinical_ai_deployment_mixed_methods_study_of_governanc",
+    "doi": "10.64898/2026.02.04.26345355",
+    "date": "2026-07-02",
+    "title": "Managing AI-Enabled Uncertainty in Clinical AI Deployment: Mixed-Methods Study of Governance, Workflow, and Organizational Learning in an ICU Decision Support Pilot",
+    "authors": "Althammer, A.; Hummel, A.; Steghoefer, J.-P.; Reichel, F.; Kolonko, J.; Hatfield, S.; Fischer, M.; Schloegl-Flierl, K.; Ziethmann, P.; Weiss, M.; Simon, P.; Moegerlein, M.; Mamtschur, E.; Spring, O.; Shmygalev, S.; Ortmann, N.; Raffler, J.; Hinske, L. C.; Brunner, J. O.; Heller, A. R.; Bartenschlager, C.",
+    "abstract": "BackgroundHealth care organizations are increasingly required to make strategic decisions about artificial intelligence (AI) systems before their clinical value, operational consequences, governance requirements, and workforce implications are fully known. Clinical AI pilots can reduce this uncertainty only if they generate management-relevant evidence beyond retrospective model performance, including evidence on workflow fit, governance architecture, user interaction, accountability, and continuous learning. ObjectiveThis study aimed to examine how a prospective intensive care unit (ICU) deployment of an AI-based clinical decision support system (CDSS) surfaced organizational and governance-related uncertainties, and to derive a transferable management toolbox for early-stage clinical AI deployment. MethodsWe conducted a prospective, single-center mixed-methods implementation evaluation of a machine-learning-based CDSS for ICU length-of-stay prediction in a surgical ICU at a German university hospital. The study included 267 consecutive ICU stays and was approved by the LMU Munich Institutional Review Board (Project No. 24-0336) and registered with the German Clinical Trials Register (DRKS00037851). The evaluation combined five management-relevant domains: workflow integration and operational adoption, governance architecture and data-protection effects, live bedside benchmarking as a continuous learning mechanism, embedded ethics and accountability design, and human-AI interaction with user heterogeneity assessed using the Psychological Assessment of AI-based Decision Support Systems instrument. ResultsThe deployment showed that AI-enabled uncertainty was generated primarily at the interface between the CDSS and its organizational setting. A low-burden \"glance-and-judge\" workflow enabled routine use among consultants and resident physicians, with usage proportions of 72% (191/267) and 61% (162/267), respectively. Governance requirements led to an air-gapped architecture with once-daily data refreshes, enabling compliant use but creating operational latency; outdated case-list entries occurred in 4 of 148 benchmarked stays (2.7%). Live benchmarking functioned as a feedback loop and supported exploratory model refinement, with CDSS mean absolute error decreasing from 5.95 to 4.12 days after the first model update. Embedded ethics informed onboarding, accountability framing, interface wording, and explainability design. Human-AI interaction assessment suggested heterogeneous user archetypes with distinct change-management needs. ConclusionsClinical AI deployment should be managed as an organizational learning process rather than as a purely technical implementation. The relevant management object is the deployed sociotechnical system, including workflow, governance architecture, feedback loops, ethics, and user interaction. We propose a Governance-Aware AI Management toolbox that helps administrators and digital health officers distinguish solvable implementation-design uncertainty from true lack of clinical value, and supports staged, evidence-based decisions about scaling, investment, and definitive evaluation.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-07-02",
+    "updated": "2026-07-02",
+    "primary_category": "intensive care and critical care medicine",
+    "categories": [
+      "intensive care and critical care medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.02.04.26345355v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.02.04.26345355v2.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "A prospective ICU AI pilot showed that the biggest challenge was not model performance alone, but how the system fit into workflow, governance, accountability, and learning processes.",
+      "clinical_relevance": "For hospital teams considering clinical AI, the study suggests early pilots should be designed to generate operational and governance evidence, not just prediction metrics.",
+      "method": [
+        "Prospective, single-center mixed-methods implementation evaluation in a surgical ICU.",
+        "Evaluated workflow integration, governance/data protection, live benchmarking, ethics/accountability, and human-AI interaction.",
+        "Included 267 consecutive ICU stays and a bedside user-heterogeneity assessment instrument."
+      ],
+      "evidence_signal": "Among 267 ICU stays, consultants used the tool in 72% and residents in 61%; live benchmarking also revealed occasional latency-related inconsistencies in the daily updated case list.",
+      "watch_item": "Air-gapped governance and once-daily data refreshes improved compliance but introduced operational delay, so real-time usability may be limited in fast-changing settings.",
+      "hashtags": [
+        "#ClinicalAI",
+        "#ICU",
+        "#HealthSystems",
+        "#AIgovernance",
+        "#ImplementationScience"
+      ],
+      "paper_id": "2026-07-02-medrxiv-managing_ai_enabled_uncertainty_in_clinical_ai_deployment_mixed_methods_study_of_governanc",
+      "paper_title": "Managing AI-Enabled Uncertainty in Clinical AI Deployment: Mixed-Methods Study of Governance, Workflow, and Organizational Learning in an ICU Decision Support Pilot",
+      "paper_date": "2026-07-02",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-07-08T09:24:16",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-02-medrxiv-consensus_recommendations_for_the_clinical_management_of_wolfram_syndrome_using_a_delphi_m",
+    "doi": "10.64898/2026.07.02.26357130",
+    "date": "2026-07-02",
+    "title": "Consensus Recommendations for the Clinical Management of Wolfram syndrome Using a Delphi Method",
+    "authors": "Urano, F.; Elliott, J.; Ahmadi, S.; Yu Wai Man, P.; Gladstone, S.; Gebel, S.; Lynch, T.; Barrett, T.; International Wolfram Syndrome Clinical Guidelines Consortium,",
+    "abstract": "BackgroundWolfram syndrome is a rare neurodegenerative disorder, most commonly caused by pathogenic variants in WFS1, while cases due to CISD2 are exceedingly rare. The estimated prevalence is 1 in 160,000 to 770,000 individuals worldwide. In these clinical guidelines, disorders caused by WFS1 are referred to as WFS1-Wolfram syndrome, and those caused by CISD2 as CISD2-Wolfram syndrome. Historically, it has been characterized by early-onset, antibody-negative, insulin-dependent diabetes mellitus, progressive optic atrophy, sensorineural hearing loss, arginine vasopressin deficiency, and brainstem and cerebellar atrophy. More recently, partial and late onset forms have been identified. There are currently no licensed disease-modifying treatments, and international clinical guidelines have not previously been established. MethodsAn international steering committee systematically reviewed 273 peer-reviewed publications and generated draft consensus statements across six clinical domains. These statements were evaluated by international specialists in endocrinology, clinical genetics, neurology, ophthalmology and neuro-ophthalmology, psychiatry, and urology, drawn from North America, Europe, Latin America, Oceania, and Asia, using a modified three-round Delphi process. Additional feedback was incorporated from nurses specializing in multidisciplinary Wolfram syndrome care, from leaders of international patient organizations, and from specialists in the genetic diagnosis of monogenic diabetes. Structured feedback from patients and families was gathered through multiple international patient advocacy organizations. Consensus was defined as [&ge;]80% agreement. ResultsAll 35 final consensus statements reached the pre-specified consensus threshold of [&ge;]80% agreement, spanning diagnosis and genetic testing, multidisciplinary care organization, neuro-ophthalmology, neurology, endocrinology, urology, gastroenterology, and psychiatry. ConclusionsThese guidelines are the first international clinical consensus for Wolfram syndrome and provide actionable recommendations for clinicians worldwide. Implementation should be accompanied by a prospective audit to expand the evidence base and support future iterations.",
+    "category": "Therapeutic Discovery",
+    "source": "medRxiv",
+    "published": "2026-07-02",
+    "updated": "2026-07-02",
+    "primary_category": "genetic and genomic medicine",
+    "categories": [
+      "genetic and genomic medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.02.26357130v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.02.26357130v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "This paper establishes the first international consensus guidelines for diagnosing and managing Wolfram syndrome using a Delphi process across multiple specialties.",
+      "clinical_relevance": "The recommendations aim to standardize multidisciplinary care for patients with WFS1- and CISD2-related Wolfram syndrome worldwide, where no licensed disease-modifying treatment currently exists.",
+      "method": [
+        "Systematic review of 273 peer-reviewed publications",
+        "Drafted consensus statements across 6 clinical domains",
+        "Validated through a 3-round modified Delphi process with international experts, patients, families, and advocacy groups"
+      ],
+      "evidence_signal": "All 35 final consensus statements met the pre-specified threshold of at least 80% agreement among international reviewers and stakeholders.",
+      "watch_item": "The guidelines are consensus-based rather than trial-derived, so prospective audit and real-world validation will be important during implementation.",
+      "hashtags": [
+        "#WolframSyndrome",
+        "#ClinicalGuidelines",
+        "#DelphiConsensus",
+        "#RareDisease",
+        "#MultidisciplinaryCare"
+      ],
+      "paper_id": "2026-07-02-medrxiv-consensus_recommendations_for_the_clinical_management_of_wolfram_syndrome_using_a_delphi_m",
+      "paper_title": "Consensus Recommendations for the Clinical Management of Wolfram syndrome Using a Delphi Method",
+      "paper_date": "2026-07-02",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-07-08T09:24:19",
+      "generator": "openai"
+    }
+  }
+]

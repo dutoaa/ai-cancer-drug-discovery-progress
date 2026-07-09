@@ -1,0 +1,24 @@
+{
+  "key_insight": "Standard (marginal) conformal prediction can still miss the minority class badly on imbalanced drug-discovery datasets, while class-conditional (Mondrian) conformal prediction restores per-class reliability.",
+  "clinical_relevance": "For screening pipelines, this means rare but important positives may be under-protected unless coverage is checked by class, not just overall.",
+  "method": [
+    "Tested marginal conformal prediction on imbalanced molecular classification tasks",
+    "Compared multiple model types: random forest, graph network, and frozen chemical language model",
+    "Applied class-conditional (Mondrian) conformal prediction as a fix"
+  ],
+  "evidence_signal": "Across four datasets, overall 90% coverage was met but minority-class coverage fell as low as 64.8% and 4.2%; the problem persisted across architectures and scaffold splits, and Mondrian conformal prediction restored minority coverage to target.",
+  "watch_item": "Improving minority-class coverage can increase prediction-set size, so implementation should balance reliability with screening throughput and review the impact on abstention rates.",
+  "hashtags": [
+    "#ConformalPrediction",
+    "#VirtualScreening",
+    "#DrugDiscovery",
+    "#ImbalancedData",
+    "#MachineLearning"
+  ],
+  "paper_id": "2026-07-07-arxiv-a_quiet_failure_in_calibrated_virtual_screening_marginal_conformal_prediction_under_covers",
+  "paper_title": "A Quiet Failure in Calibrated Virtual Screening: Marginal Conformal Prediction Under-Covers the Minority Class, and a Class-Conditional Fix Recovers It",
+  "paper_date": "2026-07-07",
+  "paper_category": "Therapeutic Discovery",
+  "generated_at": "2026-07-09T10:19:08",
+  "generator": "openai"
+}

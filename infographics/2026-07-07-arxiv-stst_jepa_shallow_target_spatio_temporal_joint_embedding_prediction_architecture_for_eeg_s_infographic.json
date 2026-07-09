@@ -1,0 +1,24 @@
+{
+  "key_insight": "STST-JEPA is a self-supervised EEG transformer that learns transferable brain-age representations from large unlabeled datasets using masked spatiotemporal prediction.",
+  "clinical_relevance": "The approach could support scalable EEG-based biomarkers such as age estimation and related cognitive or psychiatric signals, especially where labeled data are limited.",
+  "method": [
+    "Pretrained on 47,703 resting-state and task EEG sessions from ages 5–81.",
+    "Uses a JEPA-style latent prediction objective with an EMA tokenizer target plus an auxiliary reconstruction loss.",
+    "Trains on 30-second multi-channel windows with spatiotemporal block masking, then evaluates with a lightweight probe or fine-tuning."
+  ],
+  "evidence_signal": "A frozen-embedding probe achieved 3.06 years MAE and r = 0.924 on 3,367 held-out sessions; light fine-tuning also reached top leaderboard results for sex, age, and psychopathology tasks.",
+  "watch_item": "Performance was demonstrated on specific datasets and leaderboard settings, so cross-site generalization and real-world deployment robustness still need careful validation.",
+  "hashtags": [
+    "#EEG",
+    "#SelfSupervisedLearning",
+    "#BrainAge",
+    "#TransformerModels",
+    "#Biomarkers"
+  ],
+  "paper_id": "2026-07-07-arxiv-stst_jepa_shallow_target_spatio_temporal_joint_embedding_prediction_architecture_for_eeg_s",
+  "paper_title": "STST-JEPA: Shallow-Target Spatio-Temporal Joint Embedding Prediction Architecture For EEG Self-Supervised Learning",
+  "paper_date": "2026-07-07",
+  "paper_category": "Target Biology",
+  "generated_at": "2026-07-09T10:18:42",
+  "generator": "openai"
+}
