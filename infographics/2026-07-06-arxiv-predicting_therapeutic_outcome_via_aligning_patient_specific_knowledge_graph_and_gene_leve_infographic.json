@@ -1,24 +1,24 @@
 {
-  "key_insight": "PREDIKTOR improves therapeutic response prediction by aligning a patient-specific knowledge graph with a simulated drug-induced transcriptomic perturbation view.",
-  "clinical_relevance": "This could help identify which cancer patients are more likely to benefit from a given drug before treatment, with added interpretability for mechanism-focused decision support.",
+  "key_insight": "PREDIKTOR predicts cancer therapy response by aligning a patient-specific knowledge graph with a learned drug-induced transcriptomic perturbation view.",
+  "clinical_relevance": "It aims to improve precision oncology by making pre-treatment drug response prediction more accurate, interpretable, and transferable across patients and trials.",
   "method": [
-    "Builds an individualized gene regulatory network from each patient’s tumor expression and adds drug-target links from DrugBank.",
-    "Uses a graph neural encoder for a mechanistic patient-drug embedding and a frozen LINCS-pretrained model to simulate post-perturbation gene expression.",
-    "Aligns both views in a shared latent space with contrastive learning, then combines them for response classification."
+    "Builds an individualized gene regulatory network from tumor expression and adds drug-target links from DrugBank.",
+    "Uses a graph neural encoder for a mechanistic drug-centered embedding and a pretrained LINCS-based model to simulate post-treatment gene expression.",
+    "Aligns both views with a CLIP-style contrastive loss and classifies response from the combined representation."
   ],
-  "evidence_signal": "On TCGA, the model outperformed state-of-the-art baselines under patient-, drug-, and tissue-split tests and transferred zero-shot to I-SPY2, improving AUROC by 5.6%.",
-  "watch_item": "Because the approach relies on pretrained perturbation models and inferred networks, performance may depend on data quality and external validation before clinical use.",
+  "evidence_signal": "The model outperformed strong baselines on TCGA across patient-, drug-, and tissue-split tests and transferred zero-shot to I-SPY2, improving AUROC by 5.6%.",
+  "watch_item": "Performance depends on the quality of inferred networks and pretrained perturbation models, so external validation and robustness checks are important before clinical use.",
   "hashtags": [
     "#PrecisionOncology",
-    "#AIinCancer",
-    "#DrugResponsePrediction",
-    "#KnowledgeGraphs",
+    "#CancerAI",
+    "#DrugResponse",
+    "#KnowledgeGraph",
     "#Transcriptomics"
   ],
   "paper_id": "2026-07-06-arxiv-predicting_therapeutic_outcome_via_aligning_patient_specific_knowledge_graph_and_gene_leve",
   "paper_title": "Predicting Therapeutic Outcome via Aligning Patient-Specific Knowledge Graph and Gene-Level Perturbation Representations",
   "paper_date": "2026-07-06",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-09T10:18:32",
+  "generated_at": "2026-07-10T10:15:22",
   "generator": "openai"
 }

@@ -1,0 +1,24 @@
+{
+  "key_insight": "ProsMAE uses multi-source masked autoencoder pretraining on diverse histopathology tiles to learn more robust prostate cancer representations for ISUP grade classification.",
+  "clinical_relevance": "If validated more broadly, this approach could improve computer-aided prostate pathology grading by making models less sensitive to stain, scanner, and tissue variation.",
+  "method": [
+    "Pretrain a masked autoencoder on tiles from PANDA, CAMELYON17, and BRACS.",
+    "Transfer the learned encoder to ISUP grade classification with a frozen backbone and linear head.",
+    "Compare against a vanilla MAE frozen linear-probe baseline."
+  ],
+  "evidence_signal": "On a disjoint PANDA split, ProsMAE achieved a higher mean validation quadratic weighted kappa than the baseline, but the abstract notes that repeated-split testing is still needed.",
+  "watch_item": "The reported gain comes from a single split setup, so robustness across different split compositions and external cohorts remains uncertain.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#ComputationalPathology",
+    "#HistopathologyAI",
+    "#MaskedAutoencoder",
+    "#ProstateCancer"
+  ],
+  "paper_id": "2026-07-09-arxiv-prosmae_multi_source_mae_pretraining_for_isup_grade_classification",
+  "paper_title": "ProsMAE: Multi-Source MAE Pretraining for ISUP Grade Classification",
+  "paper_date": "2026-07-09",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-10T10:15:32",
+  "generator": "openai"
+}

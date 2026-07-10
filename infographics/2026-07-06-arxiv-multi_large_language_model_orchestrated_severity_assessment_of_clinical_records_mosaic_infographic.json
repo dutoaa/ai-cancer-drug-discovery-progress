@@ -1,24 +1,24 @@
 {
-  "key_insight": "MOSAIC is a two-phase multi-LLM system that can synthesize EHR evidence into severity phenotypes and, in type 2 diabetes, it captured dimensions beyond standard rule-based scores.",
-  "clinical_relevance": "It may help produce richer, more clinically meaningful severity stratification from structured records, but it remains a research framework rather than a deployable clinical tool.",
+  "key_insight": "MOSAIC shows that an orchestrated multi-LLM system can synthesize EHR evidence into nuanced disease-severity phenotypes that go beyond fixed rule-based scoring.",
+  "clinical_relevance": "If validated more broadly, this approach could support more complete severity stratification from routine EHR data and help align risk assessment with outcomes.",
   "method": [
-    "Agentic two-phase LLM workflow for severity phenotyping",
-    "Compared open-weight vs proprietary pipelines on SyntheticMass EHR data",
-    "Benchmarked against three rule-based ground truths and outcome associations"
+    "Two-phase agentic LLM framework for severity phenotyping",
+    "Tested in type 2 diabetes using SyntheticMass synthetic EHR data",
+    "Compared against three algorithmic severity scores plus mortality and complication outcomes"
   ],
-  "evidence_signal": "On SyntheticMass, open-weight MOSAIC closely matched the proprietary version (weighted kappa 0.773) and showed moderate-to-fair agreement with established severity scores while also separating mortality and complication risk.",
-  "watch_item": "Performance was evaluated mainly in synthetic type 2 diabetes data, so external validation on real-world EHRs and across diseases is still needed.",
+  "evidence_signal": "Open-weight MOSAIC closely matched the proprietary pipeline (weighted kappa 0.773) and showed moderate-to-fair agreement with existing scores, while agent-based tiers separated mortality and complications with log-rank p < 0.001.",
+  "watch_item": "Results were shown in synthetic data and T2D, so real-world generalizability, bias, and safe deployment need further validation.",
   "hashtags": [
-    "#LargeLanguageModels",
+    "#LLM",
     "#EHR",
-    "#ClinicalPhenotyping",
-    "#SeverityAssessment",
+    "#SeverityPhenotyping",
+    "#ClinicalAI",
     "#DigitalHealth"
   ],
   "paper_id": "2026-07-06-arxiv-multi_large_language_model_orchestrated_severity_assessment_of_clinical_records_mosaic",
   "paper_title": "Multi-Large Language Model Orchestrated Severity Assessment of Clinical Records (MOSAIC)",
   "paper_date": "2026-07-06",
   "paper_category": "Clinical Translation",
-  "generated_at": "2026-07-09T10:18:55",
+  "generated_at": "2026-07-10T10:15:44",
   "generator": "openai"
 }

@@ -1,24 +1,24 @@
 {
-  "key_insight": "Compass shows that prostate cancer detection with micro-ultrasound improves when the AI uses multi-view video context instead of single images.",
-  "clinical_relevance": "This could help AI tools better match expert micro-ultrasound reading and support more accurate prostate cancer assessment during biopsy workflows.",
+  "key_insight": "Compass improves prostate cancer detection by analyzing micro-ultrasound as a multi-view video stream rather than isolated frames, capturing rotational sweep context like expert readers do.",
+  "clinical_relevance": "This approach could help clinicians better distinguish suspicious prostate regions during micro-ultrasound exams and complement human interpretation in prostate cancer diagnosis.",
   "method": [
-    "Models micro-ultrasound as a stream of 2D frames across a full study",
-    "Combines rotational sweep videos with biopsy-acquired frames",
-    "Uses angle-conditioned transformer aggregation plus frame-level and study-level risk prediction"
+    "Models rotational sweep videos and biopsy-time micro-ultrasound frames together",
+    "Uses a transformer conditioned on probe rotational angle to aggregate evidence across the study",
+    "Outputs both frame-level and study-level risk scores"
   ],
-  "evidence_signal": "The method was trained and evaluated on a multi-center clinical trial dataset of micro-ultrasound studies and compared against published AI baselines and clinical expert risk scores.",
-  "watch_item": "Performance depends on consistent video capture and probe-angle metadata, which may complicate real-world deployment and generalization.",
+  "evidence_signal": "The model was trained and evaluated on a multi-center clinical trial dataset of micro-ultrasound studies and compared against published AI baselines and expert risk scores.",
+  "watch_item": "Performance depends on high-quality, well-registered video acquisition and multi-center validation before routine clinical deployment.",
   "hashtags": [
     "#PrecisionOncology",
-    "#MicroUltrasound",
     "#ProstateCancer",
-    "#AIinMedicine",
-    "#MedicalImaging"
+    "#MicroUltrasound",
+    "#MedicalAI",
+    "#Transformers"
   ],
   "paper_id": "2026-07-08-arxiv-compass_prostate_cancer_detection_needs_multi_view_context",
   "paper_title": "Compass: Prostate Cancer Detection Needs Multi-View Context",
   "paper_date": "2026-07-08",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-09T10:18:27",
+  "generated_at": "2026-07-10T10:15:12",
   "generator": "openai"
 }

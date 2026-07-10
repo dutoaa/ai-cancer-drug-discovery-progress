@@ -1,24 +1,24 @@
 {
   "key_insight": "AA-ViT uses anatomical, structural, and frequency guidance in a vision transformer to synthesize contrast-enhanced brain MRI from pre-contrast scans while better preserving tumour and tissue boundaries.",
-  "clinical_relevance": "If validated further, this could improve lesion visibility without gadolinium, potentially reducing cost, scan time, and contrast-agent risk for some brain MRI patients.",
+  "clinical_relevance": "If validated further, the approach could reduce reliance on gadolinium-based contrast agents, shorten imaging workflows, and improve access for patients who cannot receive contrast.",
   "method": [
-    "Inputs T1, T2, and FLAIR pre-contrast MRI",
-    "Vision transformer guided by anatomy plus structural/frequency cues",
-    "Designed to improve boundary and fine-detail preservation in CEMRI synthesis"
+    "Input pre-contrast T1, T2, and FLAIR MRI",
+    "Anatomically aware vision transformer with structural and frequency guidance",
+    "Generates synthetic post-contrast brain MRI for lesion visualization"
   ],
-  "evidence_signal": "On BraTS 2021, the method outperformed state-of-the-art approaches on PSNR and SSIM, and 3 clinicians scored 19 randomly selected cases a mean of 3.94/5.",
-  "watch_item": "Clinical use still needs broader prospective validation, especially to confirm performance across scanners, tumour types, and real-world workflows.",
+  "evidence_signal": "On the BraTS 2021 dataset, the model reported higher PSNR and SSIM than prior methods and received a mean clinical rating of 3.94/5 from three neuroradiologists and one neurosurgeon across 19 cases.",
+  "watch_item": "The clinical evaluation was small and preliminary, so broader multi-site validation is needed before real-world implementation.",
   "hashtags": [
     "#BrainMRI",
-    "#VisionTransformer",
     "#MedicalAI",
+    "#VisionTransformer",
     "#RadiologyAI",
-    "#Glioma"
+    "#PrecisionOncology"
   ],
   "paper_id": "2026-07-08-arxiv-aa_vit_anatomically_aware_vision_transformer_with_structural_and_frequency_guidance_for_co",
   "paper_title": "AA-ViT: Anatomically Aware Vision Transformer with Structural and Frequency Guidance for Contrast Enhanced Brain MRI Synthesis",
   "paper_date": "2026-07-08",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-09T10:18:20",
+  "generated_at": "2026-07-10T10:15:01",
   "generator": "openai"
 }

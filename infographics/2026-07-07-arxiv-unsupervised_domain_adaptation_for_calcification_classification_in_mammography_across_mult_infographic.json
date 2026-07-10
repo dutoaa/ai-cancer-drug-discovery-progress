@@ -1,24 +1,24 @@
 {
-  "key_insight": "Unsupervised style-transfer domain adaptation can improve calcification classification generalization across mammography sites and vendors.",
-  "clinical_relevance": "This approach could help CAD systems stay more reliable when deployed on images from hospitals and scanner types not seen during training.",
+  "key_insight": "Style-transfer-based unsupervised domain adaptation plus a Swin Transformer V2 classifier improved calcification malignancy classification across mammography sites with different vendors and image types.",
+  "clinical_relevance": "This approach could make mammography AI more reliable when deployed at new hospitals or on different imaging systems, helping reduce performance drops from dataset shift.",
   "method": [
-    "Used AdaIN and CycleGAN to create vendor- and technique-specific training samples without extra labels.",
-    "Trained a supervised classifier with Swin Transformer V2 as the backbone.",
-    "Compared performance across multi-site mammography datasets with external validation."
+    "Unsupervised domain adaptation using AdaIN and CycleGAN to create vendor- and technique-specific training samples without extra labels",
+    "Supervised calcification classification with Swin Transformer V2 as the backbone",
+    "Tested across multi-site mammography datasets including full-field digital mammography and synthetic 2D DBT-derived images"
   ],
-  "evidence_signal": "The model was cross-validated on OPTIMAM (n=2994) and externally validated on EMBED (n=125) and Duke Calcification Dataset v1 (n=788), improving AUC from 0.68 to 0.72 on EMBED and from 0.68 to 0.73 on Duke.",
-  "watch_item": "Improvements were modest, so real-world deployment still needs broader prospective validation across additional sites, vendors, and imaging protocols.",
+  "evidence_signal": "Evaluated on OPTIMAM cross-validation (n=2994) with external validation on EMBED (n=125) and Duke Calcification Dataset v1 (n=788), improving AUC from 0.68 to 0.72 on EMBED and from 0.68 to 0.73 on Duke.",
+  "watch_item": "Performance gains were modest, so real-world impact may still depend on robust external validation, careful calibration, and checking that generated images do not introduce artifacts or bias.",
   "hashtags": [
     "#CancerAI",
     "#Mammography",
     "#DomainAdaptation",
-    "#DeepLearning",
+    "#SwinTransformer",
     "#MedicalImaging"
   ],
   "paper_id": "2026-07-07-arxiv-unsupervised_domain_adaptation_for_calcification_classification_in_mammography_across_mult",
   "paper_title": "Unsupervised Domain Adaptation for Calcification Classification in Mammography Across Multi-Site Datasets",
   "paper_date": "2026-07-07",
   "paper_category": "Cancer AI Methods",
-  "generated_at": "2026-07-09T10:18:35",
+  "generated_at": "2026-07-10T10:15:26",
   "generator": "openai"
 }

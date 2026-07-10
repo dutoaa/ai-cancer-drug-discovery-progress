@@ -1,24 +1,24 @@
 {
-  "key_insight": "CaresAI predicts TNM pathology-stage labels from TCGA reports using text features and embeddings, with combined representations improving classification performance.",
-  "clinical_relevance": "The approach could help automate cancer staging from pathology text, but it remains a research baseline rather than a deployable clinical tool.",
+  "key_insight": "A hybrid machine-learning pipeline using clinical text embeddings and TF-IDF can predict TNM staging from pathology reports, with the best results coming from LightGBM on TF-IDF features.",
+  "clinical_relevance": "This work could help automate cancer staging extraction from pathology reports to support oncology workflows, but it is still a research baseline rather than a clinical tool.",
   "method": [
-    "Used TF-IDF plus ClinicalBERT, BioBERT, and PubMedBERT embeddings",
-    "Compared Logistic Regression, LightGBM, FFNN, and Wide Residual Networks",
-    "Framed T, N, and M as separate multi-label classification tasks"
+    "Compared TF-IDF with ClinicalBERT, BioBERT, and PubMedBERT embeddings",
+    "Trained Logistic Regression, LightGBM, FFNN, and Wide Residual Networks",
+    "Evaluated T, N, and M staging as separate multi-label classification tasks"
   ],
-  "evidence_signal": "Best training performance came from LightGBM with TF-IDF (AUROC 0.9368 T, 0.9524 N, 0.8311 M), while Codabench test Macro-F1 varied widely across sets, indicating unstable generalization.",
-  "watch_item": "Performance dropped on evaluation and the authors note sensitivity to class imbalance and long clinical documents, so real-world use needs further validation.",
+  "evidence_signal": "In training, LightGBM with TF-IDF achieved the strongest AUROC and F1 across stages, while Codabench test results were strong but showed a drop in macro-F1 on the second test set.",
+  "watch_item": "Generalizability remains a concern because performance declined on later test data, likely reflecting class imbalance and the difficulty of long clinical documents.",
   "hashtags": [
     "#PrecisionOncology",
     "#TNMStaging",
     "#ClinicalNLP",
-    "#BioBERT",
-    "#CancerAI"
+    "#CancerPathology",
+    "#MachineLearning"
   ],
   "paper_id": "2026-07-03-arxiv-caresai_at_smm4h_heard_2026_predicting_tnm_staging",
   "paper_title": "CaresAI at SMM4H-HeaRD 2026: Predicting TNM Staging",
   "paper_date": "2026-07-03",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-09T10:18:52",
+  "generated_at": "2026-07-10T10:15:41",
   "generator": "openai"
 }
