@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-10
+Generated: 2026-07-11
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. DrugGen 2: A disease-aware language model for enhancing drug discovery
@@ -51,7 +51,15 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://arxiv.org/pdf/2607.07708v1
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-08-arxiv-accurate_interdisciplinary_and_transparent_structure_property_understanding_with_deep_nati_infographic.json
 
-## 7. Compass: Prostate Cancer Detection Needs Multi-View Context
+## 7. Progression as Latent Drift: Generative Forecasting of Slow-Evolving Pathologies
+
+- Date: 2026-07-09
+- Category: Target Biology
+- Source: arXiv - https://arxiv.org/abs/2607.08270v1
+- PDF: https://arxiv.org/pdf/2607.08270v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-09-arxiv-progression_as_latent_drift_generative_forecasting_of_slow_evolving_pathologies_infographic.json
+
+## 8. Compass: Prostate Cancer Detection Needs Multi-View Context
 
 - Date: 2026-07-08
 - Category: Precision Oncology
@@ -59,7 +67,7 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://arxiv.org/pdf/2607.06919v1
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-08-arxiv-compass_prostate_cancer_detection_needs_multi_view_context_infographic.json
 
-## 8. The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology
+## 9. The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology
 
 - Date: 2026-07-07
 - Category: Precision Oncology
@@ -67,21 +75,13 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://arxiv.org/pdf/2607.06531v1
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-07-arxiv-the_large_cancer_assistant_lca_a_model_agnostic_orchestration_framework_for_scalable_clini_infographic.json
 
-## 9. CT-CLIP Representations for Multimodal Lung Cancer Survival Prediction
+## 10. CT-CLIP Representations for Multimodal Lung Cancer Survival Prediction
 
 - Date: 2026-07-09
 - Category: Precision Oncology
 - Source: arXiv - https://arxiv.org/abs/2607.08503v1
 - PDF: https://arxiv.org/pdf/2607.08503v1
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-09-arxiv-ct_clip_representations_for_multimodal_lung_cancer_survival_prediction_infographic.json
-
-## 10. Progression as Latent Drift: Generative Forecasting of Slow-Evolving Pathologies
-
-- Date: 2026-07-09
-- Category: Target Biology
-- Source: arXiv - https://arxiv.org/abs/2607.08270v1
-- PDF: https://arxiv.org/pdf/2607.08270v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-09-arxiv-progression_as_latent_drift_generative_forecasting_of_slow_evolving_pathologies_infographic.json
 
 ## 11. Predicting Therapeutic Outcome via Aligning Patient-Specific Knowledge Graph and Gene-Level Perturbation Representations
 
@@ -139,15 +139,7 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://arxiv.org/pdf/2607.06129v1
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-07-arxiv-characterization_of_dlbcl_cell_of_origin_phenotypes_based_on_tumor_microenvironment_featur_infographic.json
 
-## 18. CaresAI at SMM4H-HeaRD 2026: Predicting TNM Staging
-
-- Date: 2026-07-03
-- Category: Precision Oncology
-- Source: arXiv - https://arxiv.org/abs/2607.03466v1
-- PDF: https://arxiv.org/pdf/2607.03466v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-03-arxiv-caresai_at_smm4h_heard_2026_predicting_tnm_staging_infographic.json
-
-## 19. Multi-Large Language Model Orchestrated Severity Assessment of Clinical Records (MOSAIC)
+## 18. Multi-Large Language Model Orchestrated Severity Assessment of Clinical Records (MOSAIC)
 
 - Date: 2026-07-06
 - Category: Clinical Translation
@@ -155,10 +147,18 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://arxiv.org/pdf/2607.05032v1
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-multi_large_language_model_orchestrated_severity_assessment_of_clinical_records_mosaic_infographic.json
 
-## 20. SHIFT: Survival Prediction from Incomplete and Heterogeneous Genomic Data
+## 19. SHIFT: Survival Prediction from Incomplete and Heterogeneous Genomic Data
 
 - Date: 2026-07-04
 - Category: Precision Oncology
 - Source: arXiv - https://arxiv.org/abs/2607.07725v1
 - PDF: https://arxiv.org/pdf/2607.07725v1
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-04-arxiv-shift_survival_prediction_from_incomplete_and_heterogeneous_genomic_data_infographic.json
+
+## 20. Token-Based Dual-view Fusion and Adaptation of Large Vision Models for Breast Cancer Classification
+
+- Date: 2026-07-07
+- Category: Precision Oncology
+- Source: arXiv - https://arxiv.org/abs/2607.06309v1
+- PDF: https://arxiv.org/pdf/2607.06309v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-07-arxiv-token_based_dual_view_fusion_and_adaptation_of_large_vision_models_for_breast_cancer_class_infographic.json

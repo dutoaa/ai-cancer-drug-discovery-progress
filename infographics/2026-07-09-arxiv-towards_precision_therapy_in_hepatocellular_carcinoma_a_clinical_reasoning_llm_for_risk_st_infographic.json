@@ -1,24 +1,24 @@
 {
-  "key_insight": "HCC-STAR is a clinician-aligned LLM that turns HCC EMR narratives into risk stratification, guideline-consistent treatment ranking, and survival estimates.",
-  "clinical_relevance": "It may support faster, more consistent treatment decisions in hepatocellular carcinoma by combining staging, evidence-based reasoning, and personalized prognosis.",
+  "key_insight": "HCC-STAR is a clinically aligned LLM that turns routine HCC EMR narratives into risk staging, guideline-consistent treatment rankings, and individualized survival estimates.",
+  "clinical_relevance": "In a multi-center evaluation, it aimed to improve precision treatment guidance beyond coarse staging systems and support faster, more accurate physician decision-making.",
   "method": [
-    "Curated ~30,000 HCC cases from SEER and expanded them into EMR-style narratives with clinician-validated prompt-based augmentation.",
-    "Built a knowledge-aligned reasoning framework with step-verifiable composite rewards to improve clinical reasoning beyond guideline memorization.",
-    "Tested on a multi-center cohort of 6,668 patients from 12 hospitals in China and compared against guidelines and leading AI models."
+    "Trained on ~30,000 SEER-derived HCC cases expanded into EMR-style narratives with clinician-validated prompt-based augmentation.",
+    "Used a knowledge-aligned reasoning framework with step-verifiable composite rewards.",
+    "Output risk-score staging, ranked treatment options with rationales, and survival estimates."
   ],
-  "evidence_signal": "In the abstract, HCC-STAR outperformed guidelines and competitive models in treatment recommendation and risk stratification, with clinician reviewers rating its justifications as trustworthy.",
-  "watch_item": "The results come from retrospective and hypothetical survival analyses, so prospective validation and careful workflow integration are still needed before real-world use.",
+  "evidence_signal": "In 6,668 patients across 12 Chinese hospitals, HCC-STAR reportedly outperformed guideline baselines and competitive models on treatment recommendation and risk stratification, with clinician ratings favoring its reasoning quality.",
+  "watch_item": "Promising results come from retrospective, multi-center evaluation, so real-world safety, generalizability, and workflow integration still need prospective validation.",
   "hashtags": [
     "#HCC",
     "#PrecisionOncology",
     "#ClinicalAI",
     "#LLM",
-    "#DecisionSupport"
+    "#TreatmentGuidance"
   ],
   "paper_id": "2026-07-09-arxiv-towards_precision_therapy_in_hepatocellular_carcinoma_a_clinical_reasoning_llm_for_risk_st",
   "paper_title": "Towards Precision Therapy in Hepatocellular Carcinoma: A Clinical-Reasoning LLM for Risk Stratification and Treatment Guidance",
   "paper_date": "2026-07-09",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-10T10:15:04",
+  "generated_at": "2026-07-11T08:42:45",
   "generator": "openai"
 }

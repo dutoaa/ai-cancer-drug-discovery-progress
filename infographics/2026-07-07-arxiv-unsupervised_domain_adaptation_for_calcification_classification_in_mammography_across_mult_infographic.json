@@ -1,24 +1,24 @@
 {
-  "key_insight": "Style-transfer-based unsupervised domain adaptation plus a Swin Transformer V2 classifier improved calcification malignancy classification across mammography sites with different vendors and image types.",
-  "clinical_relevance": "This approach could make mammography AI more reliable when deployed at new hospitals or on different imaging systems, helping reduce performance drops from dataset shift.",
+  "key_insight": "Unsupervised style-transfer domain adaptation improved mammography calcification classification across sites by helping a Swin Transformer generalize to unseen vendors and imaging techniques.",
+  "clinical_relevance": "Better cross-site generalization could make AI-assisted breast imaging more reliable when deployed across hospitals with different scanners and acquisition protocols.",
   "method": [
-    "Unsupervised domain adaptation using AdaIN and CycleGAN to create vendor- and technique-specific training samples without extra labels",
-    "Supervised calcification classification with Swin Transformer V2 as the backbone",
-    "Tested across multi-site mammography datasets including full-field digital mammography and synthetic 2D DBT-derived images"
+    "Used AdaIN and CycleGAN to create vendor- and technique-specific synthetic training samples without extra annotations.",
+    "Trained a supervised classifier with Swin Transformer V2 as the backbone.",
+    "Compared performance across OPTIMAM, EMBED, and Duke calcification datasets."
   ],
-  "evidence_signal": "Evaluated on OPTIMAM cross-validation (n=2994) with external validation on EMBED (n=125) and Duke Calcification Dataset v1 (n=788), improving AUC from 0.68 to 0.72 on EMBED and from 0.68 to 0.73 on Duke.",
-  "watch_item": "Performance gains were modest, so real-world impact may still depend on robust external validation, careful calibration, and checking that generated images do not introduce artifacts or bias.",
+  "evidence_signal": "On external validation, the approach increased AUC from 0.68 to 0.72 on EMBED and from 0.68 to 0.73 on the Duke Calcification Dataset after training on OPTIMAM.",
+  "watch_item": "Results are promising but still depend on synthetic style transfer and relatively small external test sets, so real-world robustness and calibration need further validation.",
   "hashtags": [
     "#CancerAI",
     "#Mammography",
     "#DomainAdaptation",
-    "#SwinTransformer",
+    "#DeepLearning",
     "#MedicalImaging"
   ],
   "paper_id": "2026-07-07-arxiv-unsupervised_domain_adaptation_for_calcification_classification_in_mammography_across_mult",
   "paper_title": "Unsupervised Domain Adaptation for Calcification Classification in Mammography Across Multi-Site Datasets",
   "paper_date": "2026-07-07",
   "paper_category": "Cancer AI Methods",
-  "generated_at": "2026-07-10T10:15:26",
+  "generated_at": "2026-07-11T08:43:06",
   "generator": "openai"
 }

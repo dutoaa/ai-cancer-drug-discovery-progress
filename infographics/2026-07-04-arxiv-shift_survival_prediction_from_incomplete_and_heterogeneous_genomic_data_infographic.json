@@ -1,24 +1,24 @@
 {
-  "key_insight": "SHIFT predicts survival directly from incomplete genomic profiles by using missingness-aware transformer attention instead of filling in absent genes.",
-  "clinical_relevance": "This could make multi-center precision oncology models more robust when sequencing panels differ across hospitals, improving external transfer without discarding incomplete patients.",
+  "key_insight": "SHIFT is a missingness-aware transformer that can predict survival directly from incomplete genomic profiles, avoiding test-time imputation and reducing the need to drop patients or genes.",
+  "clinical_relevance": "It could help precision oncology models generalize across hospitals with different sequencing panels, making multi-center survival prediction more practical.",
   "method": [
-    "Represents each genomic feature separately and applies masked self-attention with a feature-availability mask.",
-    "Trains with variable-rate feature masking to simulate heterogeneous missingness patterns.",
-    "Uses a single model across differing feature sets without test-time imputation."
+    "Represents each genomic feature separately and applies masked self-attention.",
+    "Uses a feature-availability mask so predictions rely only on observed inputs.",
+    "Trains with variable-rate feature masking to handle heterogeneous missingness patterns."
   ],
-  "evidence_signal": "In glioblastoma and lung squamous cell carcinoma, including external validation across multiple cohorts and severe panel mismatch, SHIFT generalized well and compared favorably with standard survival and imputation-based baselines.",
-  "watch_item": "Performance may still depend on how well training data capture the real-world pattern of missingness and on careful validation before deployment across new sites.",
+  "evidence_signal": "In glioblastoma and lung squamous cell carcinoma, including external validation across multiple cohorts with severe panel mismatch, SHIFT outperformed or matched standard survival baselines and imputation-based methods.",
+  "watch_item": "Performance may still depend on how representative the training cohorts are, and real-world deployment requires careful handling of site-specific panel differences and missingness patterns.",
   "hashtags": [
     "#PrecisionOncology",
     "#SurvivalPrediction",
-    "#GenomicData",
+    "#TransformerAI",
     "#MissingData",
-    "#TransformerModel"
+    "#Genomics"
   ],
   "paper_id": "2026-07-04-arxiv-shift_survival_prediction_from_incomplete_and_heterogeneous_genomic_data",
   "paper_title": "SHIFT: Survival Prediction from Incomplete and Heterogeneous Genomic Data",
   "paper_date": "2026-07-04",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-10T10:15:46",
+  "generated_at": "2026-07-11T08:43:25",
   "generator": "openai"
 }

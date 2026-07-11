@@ -1,24 +1,24 @@
 {
-  "key_insight": "DrugGen-2 is a disease-aware generative model that combines disease ontology and protein sequence context to design new small molecules more effectively than prior baselines.",
-  "clinical_relevance": "By incorporating disease context, this approach may better support discovery and repurposing of candidate drugs for complex disease settings, potentially improving lead prioritization.",
+  "key_insight": "DrugGen-2 is a disease-aware generative model that combines disease ontology and target protein sequences to design small molecules with improved predicted drug-binding performance.",
+  "clinical_relevance": "By incorporating disease context into molecule generation, it may help prioritize new or repurposed compounds for more targeted therapeutic discovery.",
   "method": [
-    "Fine-tuned a GPT-2 model on approved drug–disease–target data.",
-    "Used supervised fine-tuning followed by GRPO reinforcement learning.",
+    "Fine-tuned a pre-trained GPT-2 model on approved drug–disease–target data.",
+    "Used a two-step training strategy: supervised fine-tuning followed by GRPO reinforcement learning.",
     "Optimized rewards for chemical validity, novelty, diversity, and predicted binding affinity."
   ],
-  "evidence_signal": "In evaluations on five diabetic nephropathy–relevant protein targets, DrugGen-2 outperformed DrugGPT and DrugGen, with docking candidates showing predicted affinities as strong as -9.917 versus -8.283 for a reference drug.",
-  "watch_item": "Results rely on predicted affinity and docking rather than experimental validation, so real-world effectiveness and safety remain unconfirmed.",
+  "evidence_signal": "In evaluation on five diabetic nephropathy-related protein targets, DrugGen-2 outperformed DrugGPT and DrugGen, generating more unique molecules and achieving stronger predicted affinities, with docking hits as low as -9.917 compared with enalapril at -8.283.",
+  "watch_item": "Results are based on predicted affinity and docking rather than experimental wet-lab validation, so real-world potency and safety remain unconfirmed.",
   "hashtags": [
-    "#DrugDiscovery",
-    "#AIGenerativeModel",
-    "#MolecularDesign",
-    "#DrugRepurposing",
-    "#Bioinformatics"
+    "#AIDrugDiscovery",
+    "#GenerativeModel",
+    "#DrugDesign",
+    "#TherapeuticDiscovery",
+    "#MolecularDocking"
   ],
   "paper_id": "2026-07-09-arxiv-druggen_2_a_disease_aware_language_model_for_enhancing_drug_discovery",
   "paper_title": "DrugGen 2: A disease-aware language model for enhancing drug discovery",
   "paper_date": "2026-07-09",
   "paper_category": "Therapeutic Discovery",
-  "generated_at": "2026-07-10T10:14:55",
+  "generated_at": "2026-07-11T08:42:37",
   "generator": "openai"
 }

@@ -1,13 +1,13 @@
 {
-  "key_insight": "A token-based dual-view transformer can better combine CC and MLO mammography information by using dedicated fusion tokens and repeated cross-view interaction at multiple depths.",
-  "clinical_relevance": "This approach may improve breast cancer image classification from routine mammograms by preserving view-specific detail while more effectively integrating complementary breast views.",
+  "key_insight": "A token-based dual-view framework improves breast cancer mammography classification by using dedicated fusion tokens to exchange information between CC and MLO views across multiple transformer depths.",
+  "clinical_relevance": "Better integration of standard mammography views may help support more accurate BI-RADS classification and lesion assessment in screening and diagnostic workflows.",
   "method": [
-    "Freeze a vision transformer backbone and adapt it with prompt-based learning.",
-    "Insert cross-attention fusion modules at multiple transformer layers.",
-    "Use dedicated fusion tokens to carry bidirectional CC-MLO information and reintegrate them into the token sequence."
+    "Freezes a vision transformer backbone and adds prompt-based adaptation for each view.",
+    "Uses dedicated fusion tokens to carry bidirectional CC↔MLO information via cross-attention.",
+    "Inserts fusion modules at multiple depths so shared information is refined progressively through the encoder."
   ],
-  "evidence_signal": "On VinDr-Mammo and CMMD, the method outperformed linear probing, prompt-only adaptation, and conventional fusion baselines, reaching 50.40% F1 and 0.8090 AUC on VinDr-Mammo BI-RADS classification.",
-  "watch_item": "Results are promising but still depend on retrospective dataset benchmarks and should be validated on broader external cohorts and real-world clinical workflows.",
+  "evidence_signal": "On VinDr-Mammo and CMMD, the method outperformed linear probing, prompt-only adaptation, and fusion baselines; on VinDr-Mammo BI-RADS classification it reached 50.40% F1-score and 0.8090 AUC.",
+  "watch_item": "Results are benchmark-based and should be validated externally across diverse scanners, populations, and clinical settings before broad deployment.",
   "hashtags": [
     "#BreastCancerAI",
     "#Mammography",
@@ -19,6 +19,6 @@
   "paper_title": "Token-Based Dual-view Fusion and Adaptation of Large Vision Models for Breast Cancer Classification",
   "paper_date": "2026-07-07",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-09T10:18:57",
+  "generated_at": "2026-07-11T08:43:27",
   "generator": "openai"
 }
