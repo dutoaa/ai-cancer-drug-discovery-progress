@@ -1,24 +1,24 @@
 {
-  "key_insight": "PREDIKTOR predicts patient drug response by aligning a personalized tumor knowledge graph with a simulated transcriptomic perturbation view in a shared latent space.",
-  "clinical_relevance": "This could help identify which cancer treatments are more likely to work for a specific patient before therapy, with added interpretability for mechanism-based decision support.",
+  "key_insight": "PREDIKTOR predicts a patient’s drug response by aligning two complementary views: a personalized gene-regulatory knowledge graph and a simulated post-treatment transcriptomic perturbation profile.",
+  "clinical_relevance": "The approach could help identify which cancer patients are more likely to benefit from a therapy before treatment, while also offering mechanistic explanations for the prediction.",
   "method": [
-    "Builds a patient-specific gene regulatory network from tumor expression and adds drug-target links from DrugBank.",
-    "Uses a graph neural encoder to create a mechanistically grounded drug-patient embedding.",
-    "Aligns that embedding with a frozen LINCS-based gene-level perturbation model using contrastive learning, then classifies response."
+    "Builds a patient-specific gene network from tumor expression and adds drug-target links from DrugBank.",
+    "Uses a graph neural encoder for a mechanistic drug-centered embedding and a frozen LINCS L1000 model to simulate perturbation profiles.",
+    "Aligns both representations with a CLIP-style contrastive loss and combines them for response classification."
   ],
-  "evidence_signal": "Across TCGA patient-, drug-, and tissue-split tests, the model outperformed baselines and also transferred zero-shot to I-SPY2 with a 5.6% AUROC gain.",
-  "watch_item": "The framework depends on high-quality transcriptomic data and pretrained perturbation models, so performance may vary when patient data are sparse, noisy, or out of distribution.",
+  "evidence_signal": "In TCGA evaluations across patient-, drug-, and tissue-split settings, the model outperformed state-of-the-art baselines and improved zero-shot AUROC by 5.6% on I-SPY2.",
+  "watch_item": "Performance depends on high-quality transcriptomic input and knowledge-graph construction, so generalization may vary when data are sparse or patient biology is outside the training distribution.",
   "hashtags": [
     "#PrecisionOncology",
-    "#CancerAI",
     "#DrugResponsePrediction",
     "#KnowledgeGraphs",
-    "#Transcriptomics"
+    "#Transcriptomics",
+    "#AIinCancer"
   ],
   "paper_id": "2026-07-06-arxiv-predicting_therapeutic_outcome_via_aligning_patient_specific_knowledge_graph_and_gene_leve",
   "paper_title": "Predicting Therapeutic Outcome via Aligning Patient-Specific Knowledge Graph and Gene-Level Perturbation Representations",
   "paper_date": "2026-07-06",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-11T08:43:04",
+  "generated_at": "2026-07-12T08:59:06",
   "generator": "openai"
 }

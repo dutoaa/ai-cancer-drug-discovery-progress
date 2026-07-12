@@ -1,24 +1,24 @@
 {
-  "key_insight": "A Monte Carlo simulation framework can turn published aggregate rare-cancer trial data into patient-level risk predictions, demonstrated in Ewing sarcoma.",
-  "clinical_relevance": "This could help refine survivorship surveillance, recurrence-risk stratification, and future trial design when individual-level data are unavailable.",
+  "key_insight": "A Monte Carlo framework can turn published aggregate trial results into patient-level risk predictions for rare cancers, demonstrated in Ewing sarcoma with multi-timepoint biomarker and treatment modeling.",
+  "clinical_relevance": "This could help refine survivorship surveillance and future trial stratification, but it is not yet a substitute for patient-specific validated clinical decision support.",
   "method": [
-    "Six-stage discrete-event Monte Carlo simulation",
-    "Integrates genetic risk, serial biomarkers, ctDNA-MRD, and treatment-related mortality",
-    "Models long-term toxicity across five organ systems"
+    "Six-stage discrete-event Monte Carlo simulation built from published Ewing sarcoma trial data.",
+    "Integrates genetic risk, serial biomarker dynamics, post-surgical ctDNA-MRD, and treatment-related mortality as a competing risk.",
+    "Adds organ-specific long-term toxicity projections from chemotherapy and radiation exposure."
   ],
-  "evidence_signal": "In Ewing sarcoma, the framework was validated against data from more than 3,400 patients, with 3.2% mean absolute error across 23 efficacy endpoints and all 20 toxicity endpoints within published confidence intervals.",
-  "watch_item": "The approach is validated on one rare cancer using published aggregate data, so transfer to other cancers and real-world patient-level use still needs prospective validation.",
+  "evidence_signal": "Validated against data from more than 3,400 patients, the model reported 3.2% mean absolute error across 23 efficacy endpoints and stayed within published confidence intervals for all 20 toxicity endpoints.",
+  "watch_item": "The framework is validated on aggregate trial data, so transfer to other rare cancers and real-world patient-level use still needs prospective validation.",
   "hashtags": [
     "#RareCancer",
     "#EwingSarcoma",
-    "#MonteCarlo",
-    "#RiskStratification",
-    "#ctDNAMRD"
+    "#ctDNAMRD",
+    "#MonteCarloModeling",
+    "#PrecisionOncology"
   ],
   "paper_id": "2026-07-07-medrxiv-multi_timepoint_risk_stratification_in_rare_cancers_a_computational_framework_validated_ag",
   "paper_title": "Multi-Timepoint Risk Stratification in Rare Cancers: A Computational Framework Validated against Published Ewing Sarcoma Trial Data",
   "paper_date": "2026-07-07",
   "paper_category": "Target Biology",
-  "generated_at": "2026-07-11T08:42:47",
+  "generated_at": "2026-07-12T08:58:51",
   "generator": "openai"
 }

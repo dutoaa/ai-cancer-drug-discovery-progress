@@ -1,24 +1,24 @@
 {
-  "key_insight": "STST-JEPA is a self-supervised EEG foundation model that learns from large unlabeled datasets and can predict age, sex, and psychopathology signals from short EEG windows.",
-  "clinical_relevance": "If validated further, this kind of EEG representation learning could support scalable brain-age and neuropsychiatric screening across diverse recording sites and age ranges.",
+  "key_insight": "STST-JEPA is a self-supervised EEG foundation model that learns from large unlabeled resting-state and task recordings to improve brain-age prediction across a wide age range.",
+  "clinical_relevance": "The approach could support scalable EEG-based biomarkers for neurological and psychiatric burden, but it is still research-stage and not a clinical decision tool.",
   "method": [
-    "Pretrained a transformer on 47,703 EEG sessions from ages 5–81 using masked spatiotemporal prediction.",
-    "Combined latent-token prediction against an EMA target with an auxiliary signal-reconstruction loss.",
-    "Evaluated frozen embeddings with a lightweight probe and also fine-tuned final layers for leaderboard tasks."
+    "Pretrained on 47,703 EEG sessions spanning ages 5–81 from brain.space and HBN.",
+    "Uses a joint embedding prediction objective with masked-token prediction against an EMA target plus an auxiliary reconstruction loss.",
+    "Trained on 30-second multi-channel windows with spatiotemporal block masking and then evaluated with a lightweight probe or limited finetuning."
   ],
-  "evidence_signal": "On 3,367 held-out sessions, the frozen-embedding probe achieved 3.06 years MAE for age regression (r = 0.924), and fine-tuning led to strong leaderboard performance including 0.911 balanced accuracy for sex classification.",
-  "watch_item": "Results come from specific public datasets and tasks, so broader clinical generalization across devices, montages, and real-world settings still needs validation.",
+  "evidence_signal": "On 3,367 held-out sessions, a frozen-embedding probe reached 3.06 years MAE and r = 0.924 for age regression, and finetuned models ranked first on public EEG benchmark tasks.",
+  "watch_item": "Performance is reported on specific datasets and benchmarks, so cross-site generalization and robustness to montage differences still need careful external validation.",
   "hashtags": [
     "#EEG",
     "#SelfSupervisedLearning",
     "#BrainAge",
-    "#TransformerModels",
+    "#FoundationModel",
     "#NeuroAI"
   ],
   "paper_id": "2026-07-07-arxiv-stst_jepa_shallow_target_spatio_temporal_joint_embedding_prediction_architecture_for_eeg_s",
   "paper_title": "STST-JEPA: Shallow-Target Spatio-Temporal Joint Embedding Prediction Architecture For EEG Self-Supervised Learning",
   "paper_date": "2026-07-07",
   "paper_category": "Target Biology",
-  "generated_at": "2026-07-11T08:43:09",
+  "generated_at": "2026-07-12T08:59:13",
   "generator": "openai"
 }

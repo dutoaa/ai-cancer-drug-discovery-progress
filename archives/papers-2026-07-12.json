@@ -26,29 +26,29 @@
         "url": "https://arxiv.org/pdf/2607.08404v1"
       }
     ],
-    "score": 79,
+    "score": 84,
     "infographic": {
-      "key_insight": "DrugGen-2 is a disease-aware generative model that conditions molecule design on both disease ontology and target protein sequences to improve small-molecule discovery.",
-      "clinical_relevance": "By incorporating disease context, the model may better support discovery of candidate compounds for disease-specific targets and drug repurposing efforts.",
+      "key_insight": "DrugGen-2 is a disease-aware generative model that combines disease ontology and target protein sequences to design small molecules with improved predicted drug-binding performance.",
+      "clinical_relevance": "By incorporating disease context into molecule generation, it may help prioritize new or repurposed compounds for more targeted therapeutic discovery.",
       "method": [
-        "Fine-tuned a GPT-2 model on approved drug–disease–target data",
-        "Used supervised fine-tuning followed by GRPO reinforcement learning",
-        "Optimized rewards for chemical validity, novelty, diversity, and predicted binding affinity"
+        "Fine-tuned a pre-trained GPT-2 model on approved drug–disease–target data.",
+        "Used a two-step training strategy: supervised fine-tuning followed by GRPO reinforcement learning.",
+        "Optimized rewards for chemical validity, novelty, diversity, and predicted binding affinity."
       ],
-      "evidence_signal": "In evaluation on five diabetic nephropathy-related protein targets, DrugGen-2 outperformed DrugGPT and DrugGen and produced docking candidates with predicted affinities as strong as -9.917, better than the enalapril reference on ACE.",
-      "watch_item": "Findings rely on predicted affinity and docking rather than experimental validation, so real-world biological activity remains unconfirmed.",
+      "evidence_signal": "In evaluation on five diabetic nephropathy-related protein targets, DrugGen-2 outperformed DrugGPT and DrugGen, generating more unique molecules and achieving stronger predicted affinities, with docking hits as low as -9.917 compared with enalapril at -8.283.",
+      "watch_item": "Results are based on predicted affinity and docking rather than experimental wet-lab validation, so real-world potency and safety remain unconfirmed.",
       "hashtags": [
         "#AIDrugDiscovery",
-        "#GenerativeChemistry",
-        "#DrugRepurposing",
-        "#DiseaseAwareAI",
-        "#MolecularDesign"
+        "#GenerativeModel",
+        "#DrugDesign",
+        "#TherapeuticDiscovery",
+        "#MolecularDocking"
       ],
       "paper_id": "2026-07-09-arxiv-druggen_2_a_disease_aware_language_model_for_enhancing_drug_discovery",
       "paper_title": "DrugGen 2: A disease-aware language model for enhancing drug discovery",
       "paper_date": "2026-07-09",
       "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-07-12T08:58:41",
+      "generated_at": "2026-07-11T08:42:37",
       "generator": "openai"
     }
   },
@@ -77,17 +77,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.01.09.26343779v2.full.pdf"
       }
     ],
-    "score": 78,
+    "score": 83,
     "infographic": {
-      "key_insight": "A multimodal pre-treatment signature combining clinical, immune, soluble, pathology, transcriptomic, and genomic features predicted primary resistance to anti-PD-(L)1 therapy better than any single biomarker in advanced NSCLC.",
-      "clinical_relevance": "This approach may help identify patients unlikely to benefit from anti-PD-(L)1 therapy before treatment starts, supporting more personalized first-line and later-line treatment decisions.",
+      "key_insight": "A multimodal pretreatment signature outperformed single biomarkers for predicting primary resistance to anti-PD-(L)1 therapy in advanced NSCLC, but the effect was only moderate.",
+      "clinical_relevance": "This work suggests that combining clinical, immune, tumor, and molecular features may better stratify patients before immunotherapy than PD-L1 or TMB alone.",
       "method": [
-        "Prospective multicentre study in 439 advanced NSCLC patients across 17 centers.",
-        "Pre-treatment profiling across six layers: clinical data, routine labs, circulating immune phenotyping, soluble vascular markers, digital pathology, transcriptomics, and genomics.",
-        "Benchmarked 36 feature-selection methods and 10 machine-learning models with .632 optimism correction."
+        "Prospective multicentre study across 17 centers in advanced NSCLC.",
+        "Pretreatment profiling across six layers: clinical, routine labs, circulating immune markers, tumor digital pathology, transcriptomics, and genomics.",
+        "Compared 36 feature-selection methods and 10 machine-learning models using .632 optimism correction."
       ],
-      "evidence_signal": "The final multimodal model achieved an optimism-corrected AUROC of 0.73 ± 0.05 and PPV of 0.63 ± 0.07 overall, outperforming PD-L1 and TMB alone.",
-      "watch_item": "The model is promising but needs external validation and practical simplification before routine clinical implementation, especially given treatment-setting-dependent features.",
+      "evidence_signal": "In 435 evaluable patients, the multimodal model reached an optimism-corrected AUROC of 0.73±0.05 and PPV of 0.63±0.07, versus PPV 0.36 for PD-L1 and 0.35 for TMB.",
+      "watch_item": "The signature is complex and only moderately predictive, so external validation and practical assay standardization are still needed before routine use.",
       "hashtags": [
         "#NSCLC",
         "#Immunotherapy",
@@ -99,7 +99,7 @@
       "paper_title": "Multimodal profiling for prediction of primary resistance to anti-PD-(L)1 therapy in advanced non-small-cell lung cancer: the prospective PIONeeR biomarkers study",
       "paper_date": "2026-07-07",
       "paper_category": "Target Biology",
-      "generated_at": "2026-07-12T08:58:44",
+      "generated_at": "2026-07-11T08:42:40",
       "generator": "openai"
     }
   },
@@ -128,29 +128,29 @@
         "url": "https://arxiv.org/pdf/2607.07553v1"
       }
     ],
-    "score": 76,
+    "score": 81,
     "infographic": {
-      "key_insight": "AA-ViT uses anatomy-aware transformer guidance to synthesize contrast-enhanced brain MRI from standard MRI while better preserving lesion and tissue boundaries.",
-      "clinical_relevance": "This could improve tumour visibility when gadolinium contrast is not feasible, potentially reducing scan burden, cost, and contrast-agent risk.",
+      "key_insight": "AA-ViT uses anatomy-, structure-, and frequency-aware transformers to synthesize contrast-enhanced brain MRI from non-contrast scans while better preserving lesion and tissue boundaries.",
+      "clinical_relevance": "If validated further, this could reduce reliance on gadolinium contrast, shorten scan workflows, and improve access to post-contrast-like imaging when contrast agents are unsuitable.",
       "method": [
-        "Vision Transformer for CEMRI synthesis from T1, T2, and FLAIR inputs",
-        "Adds structural guidance to preserve anatomical and tumour boundaries",
-        "Adds frequency guidance to improve fine-detail realism"
+        "Input pre-contrast MRI modalities: T1, T2, and FLAIR",
+        "Use a vision transformer guided by anatomical structure and frequency cues",
+        "Generate synthetic contrast-enhanced MRI for lesion visibility preservation"
       ],
-      "evidence_signal": "On BraTS 2021, the model outperformed state-of-the-art methods on PSNR and SSIM, and three neuroradiologists plus one neurosurgeon gave a mean clinical score of 3.94/5 across 19 cases.",
-      "watch_item": "The clinical validation is preliminary and limited to a small retrospective sample, so broader external testing and safety checks are still needed.",
+      "evidence_signal": "On BraTS 2021, the model outperformed state-of-the-art methods on PSNR and SSIM and received a mean clinical rating of 3.94/5 from three neuroradiologists and one neurosurgeon across 19 cases.",
+      "watch_item": "This is a synthesis model, not a replacement for true contrast imaging; performance, generalizability, and safety need broader external validation before clinical use.",
       "hashtags": [
         "#BrainMRI",
-        "#MedicalAI",
         "#VisionTransformer",
-        "#Radiology",
-        "#CancerImaging"
+        "#MedicalImagingAI",
+        "#RadiologyAI",
+        "#PrecisionOncology"
       ],
       "paper_id": "2026-07-08-arxiv-aa_vit_anatomically_aware_vision_transformer_with_structural_and_frequency_guidance_for_co",
       "paper_title": "AA-ViT: Anatomically Aware Vision Transformer with Structural and Frequency Guidance for Contrast Enhanced Brain MRI Synthesis",
       "paper_date": "2026-07-08",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-12T08:58:46",
+      "generated_at": "2026-07-11T08:42:43",
       "generator": "openai"
     }
   },
@@ -179,29 +179,29 @@
         "url": "https://arxiv.org/pdf/2607.08602v1"
       }
     ],
-    "score": 75,
+    "score": 80,
     "infographic": {
-      "key_insight": "HCC-STAR is a clinically aligned LLM that turns routine EMR narratives into risk stratification, guideline-consistent treatment rankings, and individualized survival estimates for hepatocellular carcinoma.",
-      "clinical_relevance": "The approach aims to reduce within-stage variability missed by standard staging systems and support faster, more accurate treatment decisions in precision oncology workflows.",
+      "key_insight": "HCC-STAR is a clinically aligned LLM that turns routine HCC EMR narratives into risk staging, guideline-consistent treatment rankings, and individualized survival estimates.",
+      "clinical_relevance": "In a multi-center evaluation, it aimed to improve precision treatment guidance beyond coarse staging systems and support faster, more accurate physician decision-making.",
       "method": [
         "Trained on ~30,000 SEER-derived HCC cases expanded into EMR-style narratives with clinician-validated prompt-based augmentation.",
-        "Used a knowledge-aligned reasoning framework optimized with a step-verifiable composite reward.",
-        "Generated risk scores, ranked treatment options, and survival estimates from routine clinical text."
+        "Used a knowledge-aligned reasoning framework with step-verifiable composite rewards.",
+        "Output risk-score staging, ranked treatment options with rationales, and survival estimates."
       ],
-      "evidence_signal": "In a multi-center cohort of 6,668 patients from 12 hospitals, HCC-STAR outperformed guidelines and competitive models on treatment recommendation and risk stratification, with clinician reviewers rating its reasoning as trustworthy.",
-      "watch_item": "The results are promising but depend on retrospective data, narrative-quality inputs, and external validation before routine deployment across different health systems.",
+      "evidence_signal": "In 6,668 patients across 12 Chinese hospitals, HCC-STAR reportedly outperformed guideline baselines and competitive models on treatment recommendation and risk stratification, with clinician ratings favoring its reasoning quality.",
+      "watch_item": "Promising results come from retrospective, multi-center evaluation, so real-world safety, generalizability, and workflow integration still need prospective validation.",
       "hashtags": [
-        "#HepatocellularCarcinoma",
+        "#HCC",
         "#PrecisionOncology",
         "#ClinicalAI",
-        "#LLMforMedicine",
+        "#LLM",
         "#TreatmentGuidance"
       ],
       "paper_id": "2026-07-09-arxiv-towards_precision_therapy_in_hepatocellular_carcinoma_a_clinical_reasoning_llm_for_risk_st",
       "paper_title": "Towards Precision Therapy in Hepatocellular Carcinoma: A Clinical-Reasoning LLM for Risk Stratification and Treatment Guidance",
       "paper_date": "2026-07-09",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-12T08:58:49",
+      "generated_at": "2026-07-11T08:42:45",
       "generator": "openai"
     }
   },
@@ -230,29 +230,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.07.03.26357236v1.full.pdf"
       }
     ],
-    "score": 70,
+    "score": 75,
     "infographic": {
-      "key_insight": "A Monte Carlo framework can turn published aggregate trial results into patient-level risk predictions for rare cancers, demonstrated in Ewing sarcoma with multi-timepoint biomarker and treatment modeling.",
-      "clinical_relevance": "This could help refine survivorship surveillance and future trial stratification, but it is not yet a substitute for patient-specific validated clinical decision support.",
+      "key_insight": "A Monte Carlo simulation framework can turn published aggregate rare-cancer trial data into patient-level risk predictions, demonstrated in Ewing sarcoma.",
+      "clinical_relevance": "This could help refine survivorship surveillance, recurrence-risk stratification, and future trial design when individual-level data are unavailable.",
       "method": [
-        "Six-stage discrete-event Monte Carlo simulation built from published Ewing sarcoma trial data.",
-        "Integrates genetic risk, serial biomarker dynamics, post-surgical ctDNA-MRD, and treatment-related mortality as a competing risk.",
-        "Adds organ-specific long-term toxicity projections from chemotherapy and radiation exposure."
+        "Six-stage discrete-event Monte Carlo simulation",
+        "Integrates genetic risk, serial biomarkers, ctDNA-MRD, and treatment-related mortality",
+        "Models long-term toxicity across five organ systems"
       ],
-      "evidence_signal": "Validated against data from more than 3,400 patients, the model reported 3.2% mean absolute error across 23 efficacy endpoints and stayed within published confidence intervals for all 20 toxicity endpoints.",
-      "watch_item": "The framework is validated on aggregate trial data, so transfer to other rare cancers and real-world patient-level use still needs prospective validation.",
+      "evidence_signal": "In Ewing sarcoma, the framework was validated against data from more than 3,400 patients, with 3.2% mean absolute error across 23 efficacy endpoints and all 20 toxicity endpoints within published confidence intervals.",
+      "watch_item": "The approach is validated on one rare cancer using published aggregate data, so transfer to other cancers and real-world patient-level use still needs prospective validation.",
       "hashtags": [
         "#RareCancer",
         "#EwingSarcoma",
-        "#ctDNAMRD",
-        "#MonteCarloModeling",
-        "#PrecisionOncology"
+        "#MonteCarlo",
+        "#RiskStratification",
+        "#ctDNAMRD"
       ],
       "paper_id": "2026-07-07-medrxiv-multi_timepoint_risk_stratification_in_rare_cancers_a_computational_framework_validated_ag",
       "paper_title": "Multi-Timepoint Risk Stratification in Rare Cancers: A Computational Framework Validated against Published Ewing Sarcoma Trial Data",
       "paper_date": "2026-07-07",
       "paper_category": "Target Biology",
-      "generated_at": "2026-07-12T08:58:51",
+      "generated_at": "2026-07-11T08:42:47",
       "generator": "openai"
     }
   },
@@ -284,29 +284,29 @@
         "url": "https://arxiv.org/pdf/2607.07708v1"
       }
     ],
-    "score": 68,
+    "score": 73,
     "infographic": {
-      "key_insight": "SciReasoner turns structural data into explicit, inspectable tokens so a foundation model can reason about proteins, molecules, and crystals while improving prediction accuracy.",
-      "clinical_relevance": "Although not a cancer-specific drug study, the approach could support earlier-stage therapeutic discovery by making structure-based target and molecule reasoning more transparent and reliable.",
+      "key_insight": "SciReasoner is a multimodal foundation model that turns structural information in proteins, molecules, and crystals into explicit tokens so it can both predict and explain structure-property relationships.",
+      "clinical_relevance": "The work could support faster target interpretation and drug discovery workflows by improving protein function annotation and chemical reasoning, but it is a research model rather than a validated clinical tool.",
       "method": [
-        "Discretizes coordinates, bonding/topology, and periodic connectivity into a unified structure-aware vocabulary.",
-        "Uses structural tokens as addressable evidence units during multimodal reasoning.",
-        "Applies the model across proteins, small molecules, and inorganic crystals for prediction and trace generation."
+        "Discretizes coordinates, topologies, and periodic connectivities into a unified structure-aware vocabulary.",
+        "Uses structural tokens as addressable evidence units during reasoning across proteins, small molecules, and inorganic crystals.",
+        "Trains and evaluates on multimodal benchmarks covering biology, chemistry, and materials science."
       ],
-      "evidence_signal": "Across 86 benchmarks, SciReasoner reports state-of-the-art performance on 67 tasks, with expert reviewers preferring or rating its reasoning traces comparable to a frontier large language model in 98% of cases.",
-      "watch_item": "The reported gains are benchmark-based, so real-world impact in drug discovery will still depend on prospective validation, robustness, and integration into scientific workflows.",
+      "evidence_signal": "Across 86 benchmarks, SciReasoner reports state-of-the-art performance on 67 tasks, and double-blind experts preferred or found its reasoning traces comparable to a frontier LLM in 98% of cases.",
+      "watch_item": "Performance gains come from benchmark evaluation, so real-world deployment still needs external validation, domain-specific calibration, and careful checking of trace reliability.",
       "hashtags": [
-        "#AI4DrugDiscovery",
-        "#StructuralBiology",
-        "#FoundationModels",
-        "#InterpretableAI",
-        "#TherapeuticDiscovery"
+        "#AIinDrugDiscovery",
+        "#ProteinScience",
+        "#MultimodalAI",
+        "#ScientificReasoning",
+        "#FoundationModels"
       ],
       "paper_id": "2026-07-08-arxiv-accurate_interdisciplinary_and_transparent_structure_property_understanding_with_deep_nati",
       "paper_title": "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
       "paper_date": "2026-07-08",
       "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-07-12T08:58:53",
+      "generated_at": "2026-07-11T08:42:50",
       "generator": "openai"
     }
   },
@@ -335,29 +335,29 @@
         "url": "https://arxiv.org/pdf/2607.08270v1"
       }
     ],
-    "score": 67,
+    "score": 72,
     "infographic": {
-      "key_insight": "Latent Drift forecasts slow disease progression by modeling subtle anatomical change in a compressed latent space instead of trying to regenerate full MRI volumes directly.",
-      "clinical_relevance": "This could support earlier detection of neurodegenerative progression, more targeted intervention planning, and better design of longitudinal clinical trials.",
+      "key_insight": "Latent Drift forecasts slow disease progression by modeling anatomical change in a compressed latent space, helping the model focus on subtle drift instead of reproducing static baseline MRI anatomy.",
+      "clinical_relevance": "This could improve earlier prediction of neurodegenerative progression and support better-targeted interventions and more informative clinical trial design.",
       "method": [
-        "Learn a latent representation of progression rather than predicting pixel-level anatomy.",
-        "Use Finite Scalar Quantization to reduce nuisance noise and preserve consistent drift.",
-        "Compare against diffusion and autoregressive transformer baselines for patient-specific forecasting."
+        "Learns progression in a semantic latent representation rather than full-resolution images",
+        "Uses Finite Scalar Quantization to reduce nuisance noise and preserve consistent structural drift",
+        "Addresses two failure modes: identity collapse and the continuous interpolation trap"
       ],
-      "evidence_signal": "On longitudinal 3D brain MRI, the method improved generative fidelity and clinically relevant metrics over diffusion and autoregressive transformer baselines.",
-      "watch_item": "Because it is trained on subtle longitudinal MRI changes, performance may depend on data quality, scan consistency, and careful validation before real-world deployment.",
+      "evidence_signal": "In longitudinal 3D brain MRI experiments, Latent Drift outperformed diffusion and autoregressive transformer baselines on generative fidelity and clinically relevant evaluation metrics.",
+      "watch_item": "Performance may depend on the quality and scale of longitudinal MRI data, and latent forecasts still need careful validation before being used in real-world clinical workflows.",
       "hashtags": [
         "#Neuroimaging",
-        "#MRI",
+        "#LongitudinalMRI",
         "#GenerativeAI",
         "#DiseaseProgression",
-        "#LongitudinalForecasting"
+        "#Biomarkers"
       ],
       "paper_id": "2026-07-09-arxiv-progression_as_latent_drift_generative_forecasting_of_slow_evolving_pathologies",
       "paper_title": "Progression as Latent Drift: Generative Forecasting of Slow-Evolving Pathologies",
       "paper_date": "2026-07-09",
       "paper_category": "Target Biology",
-      "generated_at": "2026-07-12T08:58:55",
+      "generated_at": "2026-07-11T08:42:53",
       "generator": "openai"
     }
   },
@@ -387,29 +387,29 @@
         "url": "https://arxiv.org/pdf/2607.06919v1"
       }
     ],
-    "score": 65,
+    "score": 70,
     "infographic": {
-      "key_insight": "Compass improves prostate cancer detection by analyzing micro-ultrasound as a multi-view video stream rather than isolated frames, capturing spatial and rotational context.",
-      "clinical_relevance": "The approach could help complement expert micro-ultrasound reading by better estimating cancer risk during prostate biopsy workflows.",
+      "key_insight": "Compass improves prostate cancer detection by analyzing micro-ultrasound as a multi-view video sequence rather than isolated single images.",
+      "clinical_relevance": "This approach may help align AI assessment with how expert readers interpret full micro-ultrasound studies, potentially improving biopsy targeting and diagnostic support.",
       "method": [
-        "Models continuous rotational sweep videos and biopsy-time micro-ultrasound frames together",
+        "Models continuous rotational sweep videos and biopsy-time frames as a stream of 2D images",
         "Uses a transformer conditioned on probe rotational angle to aggregate evidence across the study",
         "Outputs both frame-level and study-level risk scores"
       ],
-      "evidence_signal": "The model was trained and tested on a multi-center clinical trial dataset and compared against published AI baselines and expert risk scores.",
-      "watch_item": "Performance may depend on consistent video acquisition, probe angle recording, and access to multi-center data similar to the training setting.",
+      "evidence_signal": "The model was trained and evaluated on a multi-center clinical trial dataset of micro-ultrasound studies and compared against literature baselines and expert risk scores.",
+      "watch_item": "Performance depends on multi-center video-quality consistency and accurate angle-aware sequence capture, which may affect real-world implementation.",
       "hashtags": [
-        "#PrecisionOncology",
         "#ProstateCancer",
         "#MicroUltrasound",
         "#AIinMedicine",
+        "#PrecisionOncology",
         "#MedicalImaging"
       ],
       "paper_id": "2026-07-08-arxiv-compass_prostate_cancer_detection_needs_multi_view_context",
       "paper_title": "Compass: Prostate Cancer Detection Needs Multi-View Context",
       "paper_date": "2026-07-08",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-12T08:58:57",
+      "generated_at": "2026-07-11T08:42:55",
       "generator": "openai"
     }
   },
@@ -439,29 +439,29 @@
         "url": "https://arxiv.org/pdf/2607.06531v1"
       }
     ],
-    "score": 65,
+    "score": 70,
     "infographic": {
-      "key_insight": "The Large Cancer Assistant (LCA) is a model-agnostic orchestration framework that separates multimodal data handling from AI inference to make oncology decision support more modular and scalable.",
-      "clinical_relevance": "If validated in real-world settings, this approach could help hospitals integrate changing AI models and data sources without redesigning the entire clinical workflow.",
+      "key_insight": "The Large Cancer Assistant (LCA) is a model-agnostic orchestration framework that separates multimodal data routing from AI inference to make oncology decision support more scalable and flexible.",
+      "clinical_relevance": "It could help hospitals plug different AI models into clinical workflows without redesigning the whole system, supporting more adaptable decision support in cancer care.",
       "method": [
-        "Formalizes orchestration as a 7-tuple architecture with algorithmic impermeability.",
-        "Uses an Entry Theory and Geometric Deep Learning to standardize multimodal patient data.",
-        "Routes data through a Cancer Switching Module and outputs a Standardized Intermediate Payload (SIP)."
+        "Formalized the system as a 7-tuple architecture with “algorithmic impermeability” to keep orchestration independent of model internals.",
+        "Used an Entry Theory based on geometric deep learning to standardize multimodal patient data.",
+        "Routed outputs through a Standardized Intermediate Payload (SIP) and a Cancer Switching Module to decouple AI from hospital IT systems."
       ],
-      "evidence_signal": "A proof-of-concept tested four technical scenarios and reported negligible orchestration overhead, invariant routing during model swaps, 100% recall for targeted supplementary data requests under injected anomalies, and multi-protocol execution.",
-      "watch_item": "The results are based on a proof-of-concept, so clinical utility, robustness across hospitals, and EMR interoperability still need real-world validation.",
+      "evidence_signal": "In a proof-of-concept evaluation, the framework showed negligible orchestration overhead, invariant routing during model swaps, 100% recall for targeted supplementary data requests under anomalies, and successful multi-protocol execution.",
+      "watch_item": "The results come from a proof-of-concept orchestration test, so real-world clinical integration, robustness, and interoperability still need broader validation.",
       "hashtags": [
         "#PrecisionOncology",
-        "#ClinicalAI",
-        "#DecisionSupport",
-        "#HealthInformatics",
-        "#ModelAgnostic"
+        "#AICare",
+        "#ClinicalDecisionSupport",
+        "#GeometricDeepLearning",
+        "#Interoperability"
       ],
       "paper_id": "2026-07-07-arxiv-the_large_cancer_assistant_lca_a_model_agnostic_orchestration_framework_for_scalable_clini",
       "paper_title": "The Large Cancer Assistant (LCA): A Model-Agnostic Orchestration Framework for Scalable Clinical Decision Support in Oncology",
       "paper_date": "2026-07-07",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-12T08:58:59",
+      "generated_at": "2026-07-11T08:42:58",
       "generator": "openai"
     }
   },
@@ -490,80 +490,29 @@
         "url": "https://arxiv.org/pdf/2607.08503v1"
       }
     ],
-    "score": 63,
+    "score": 68,
     "infographic": {
-      "key_insight": "A frozen CT-CLIP foundation model paired with a lightweight survival head can improve lung cancer survival prediction from pretreatment CT plus clinical data in a small cohort.",
-      "clinical_relevance": "This suggests domain-specific multimodal AI may help identify higher- and lower-risk patients for prognosis support when curated outcome data are limited.",
+      "key_insight": "A frozen CT-CLIP foundation model, paired with a lightweight survival head, can improve multimodal lung cancer survival prediction using limited patient data.",
+      "clinical_relevance": "This approach may help stratify pretreatment lung cancer patients into higher- and lower-risk groups to support prognosis-informed treatment planning.",
       "method": [
-        "Evaluated CT-CLIP as a feature extractor for pretreatment CT images and clinical variables.",
+        "Used pretreatment CT images plus clinical variables from 242 lung cancer patients.",
         "Compared frozen encoders, full fine-tuning, and low-rank adaptation.",
-        "Ran modality ablations and benchmarked against clinical and multimodal baselines."
+        "Benchmarked against clinical-only and other multimodal baselines with modality ablations."
       ],
-      "evidence_signal": "The study analyzed 242 diagnosed lung cancer patients and found the frozen CT-CLIP approach outperformed the clinical baseline and was comparable to or better than other multimodal methods.",
-      "watch_item": "The dataset is relatively small and retrospective, so performance and risk-group separation should be validated externally before clinical use.",
+      "evidence_signal": "In a 242-patient cohort, the frozen CT-CLIP setup outperformed the clinical baseline and was comparable to or better than other multimodal approaches.",
+      "watch_item": "The study is based on a relatively small, curated cohort, so broader validation is needed before routine clinical implementation.",
       "hashtags": [
         "#PrecisionOncology",
         "#LungCancer",
         "#SurvivalPrediction",
-        "#MultimodalAI",
-        "#MedicalImaging"
+        "#MedicalAI",
+        "#MultimodalLearning"
       ],
       "paper_id": "2026-07-09-arxiv-ct_clip_representations_for_multimodal_lung_cancer_survival_prediction",
       "paper_title": "CT-CLIP Representations for Multimodal Lung Cancer Survival Prediction",
       "paper_date": "2026-07-09",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-12T08:59:01",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-08-medrxiv-retina_derived_quantitative_biomarkers_of_brain_health",
-    "doi": "10.64898/2026.07.05.26357344",
-    "date": "2026-07-08",
-    "title": "Retina-derived Quantitative Biomarkers of Brain Health",
-    "authors": "Ma, T.; Yan, T.; Sun, J.; Wu, N.; Xu, M.; Zhang, R.; Zeng, N.; Sun, Q.; Hui, Y.; Wu, Y.; Wang, Z.; Wong, T. Y.; Lv, H.; Qiao, H.",
-    "abstract": "Accurate and scalable assessment of quantitative neuroimaging biomarkers, such as white matter hyperintensities (WMH) and hippocampal (HIP) volumes, is essential for understanding and monitoring brain health, preventing neurological diseases and improving healthspan. However, population-level evaluation of these neuroimaging biomarkers relies on inaccessible, costly and time-consuming magnetic resonance imaging (MRI). Here we propose RetiBrain, a cross-modal deep learning framework that predicts these neuroimaging biomarkers from retinal color fundus photography (CFP) images. By distilling latent structural representations from MRI-based models into a CFP-based model, RetiBrain establishes biologically grounded eye-to-brain mapping. In a CFP-MRI paired cohort, RetiBrain accurately estimates six WMH- and HIP-related biomarkers and outperforms the state-of-the-art retinal foundation model RETFound, improving the mean Pearson correlation coefficient by 0.309 (from 0.240 to 0.549) and achieving a coefficient of 0.640 for periventricular WMH prediction. By integrating structural, topological and geometric feature analyses from CFP images, RetiBrain identifies interpretable retinal representations associated with neurodegeneration and cerebrovascular injury, hallmarks of major neurological diseases such as dementia and stroke. In a longitudinal cohort comprising 2,082 participants (4,164 CFP images with up to 15 years of follow-up), RetiBrain-predicted neuroimaging biomarkers robustly estimated neurological disease risk, as illustrated by dementia prediction (AUROC of 0.824, hazard ratio 2.500 per standard deviation increase, 95% CI: 2.201-2.840). RetiBrain provides a robust, scalable, cost-effective and convenient approach for the assessment of neuroimaging biomarkers, and has potential for long-term brain health monitoring in large-scale general population settings.",
-    "category": "Cancer AI Methods",
-    "source": "medRxiv",
-    "published": "2026-07-08",
-    "updated": "2026-07-08",
-    "primary_category": "public and global health",
-    "categories": [
-      "public and global health"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.05.26357344v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.05.26357344v1.full.pdf"
-      }
-    ],
-    "score": 63,
-    "infographic": {
-      "key_insight": "RetiBrain uses retinal fundus photos to estimate MRI-derived brain-health biomarkers, linking eye images to indicators of neurodegeneration and cerebrovascular injury.",
-      "clinical_relevance": "This could enable cheaper, scalable, noninvasive population screening and longitudinal monitoring of brain-health risk without immediate MRI access.",
-      "method": [
-        "Cross-modal deep learning distills MRI-based latent representations into a fundus-photo model.",
-        "Predicts six WMH- and hippocampal-related biomarkers from color fundus photographs.",
-        "Uses structural, topological, and geometric retinal features to improve interpretability."
-      ],
-      "evidence_signal": "In a CFP-MRI paired cohort, the model improved mean Pearson correlation from 0.240 to 0.549 over RETFound, reached 0.640 for periventricular WMH prediction, and in a longitudinal cohort of 2,082 participants achieved dementia prediction AUROC 0.824.",
-      "watch_item": "Performance comes from paired-cohort retrospective evaluation, so external validation and prospective testing are needed before real-world deployment.",
-      "hashtags": [
-        "#AIinHealth",
-        "#RetinaToBrain",
-        "#Neuroimaging",
-        "#DeepLearning",
-        "#Biomarkers"
-      ],
-      "paper_id": "2026-07-08-medrxiv-retina_derived_quantitative_biomarkers_of_brain_health",
-      "paper_title": "Retina-derived Quantitative Biomarkers of Brain Health",
-      "paper_date": "2026-07-08",
-      "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-07-12T08:59:03",
+      "generated_at": "2026-07-11T08:43:01",
       "generator": "openai"
     }
   },
@@ -594,80 +543,29 @@
         "url": "https://arxiv.org/pdf/2607.04557v1"
       }
     ],
-    "score": 59,
+    "score": 64,
     "infographic": {
-      "key_insight": "PREDIKTOR predicts a patient’s drug response by aligning two complementary views: a personalized gene-regulatory knowledge graph and a simulated post-treatment transcriptomic perturbation profile.",
-      "clinical_relevance": "The approach could help identify which cancer patients are more likely to benefit from a therapy before treatment, while also offering mechanistic explanations for the prediction.",
+      "key_insight": "PREDIKTOR predicts patient drug response by aligning a personalized tumor knowledge graph with a simulated transcriptomic perturbation view in a shared latent space.",
+      "clinical_relevance": "This could help identify which cancer treatments are more likely to work for a specific patient before therapy, with added interpretability for mechanism-based decision support.",
       "method": [
-        "Builds a patient-specific gene network from tumor expression and adds drug-target links from DrugBank.",
-        "Uses a graph neural encoder for a mechanistic drug-centered embedding and a frozen LINCS L1000 model to simulate perturbation profiles.",
-        "Aligns both representations with a CLIP-style contrastive loss and combines them for response classification."
+        "Builds a patient-specific gene regulatory network from tumor expression and adds drug-target links from DrugBank.",
+        "Uses a graph neural encoder to create a mechanistically grounded drug-patient embedding.",
+        "Aligns that embedding with a frozen LINCS-based gene-level perturbation model using contrastive learning, then classifies response."
       ],
-      "evidence_signal": "In TCGA evaluations across patient-, drug-, and tissue-split settings, the model outperformed state-of-the-art baselines and improved zero-shot AUROC by 5.6% on I-SPY2.",
-      "watch_item": "Performance depends on high-quality transcriptomic input and knowledge-graph construction, so generalization may vary when data are sparse or patient biology is outside the training distribution.",
+      "evidence_signal": "Across TCGA patient-, drug-, and tissue-split tests, the model outperformed baselines and also transferred zero-shot to I-SPY2 with a 5.6% AUROC gain.",
+      "watch_item": "The framework depends on high-quality transcriptomic data and pretrained perturbation models, so performance may vary when patient data are sparse, noisy, or out of distribution.",
       "hashtags": [
         "#PrecisionOncology",
+        "#CancerAI",
         "#DrugResponsePrediction",
         "#KnowledgeGraphs",
-        "#Transcriptomics",
-        "#AIinCancer"
+        "#Transcriptomics"
       ],
       "paper_id": "2026-07-06-arxiv-predicting_therapeutic_outcome_via_aligning_patient_specific_knowledge_graph_and_gene_leve",
       "paper_title": "Predicting Therapeutic Outcome via Aligning Patient-Specific Knowledge Graph and Gene-Level Perturbation Representations",
       "paper_date": "2026-07-06",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-12T08:59:06",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-08-medrxiv-ai_derived_ecg_age_gap_as_a_digital_biomarker_for_cardiovascular_risk_external_validation",
-    "doi": "10.64898/2026.03.24.26349186",
-    "date": "2026-07-08",
-    "title": "AI-Derived ECG Age Gap as a Digital Biomarker for Cardiovascular Risk: External Validation in Hospital and Community-Based Prospective Cohorts",
-    "authors": "Huang, S.; Nie, G.; Liu, H.; Xie, D.; Li, J.; Tang, G.; He, C.; Zhao, Q.; Zhang, D.; Jiang, J.; Zhang, H.; Xue, Z.; Wang, G.; Chen, S.; Lin, L.; Xie, J.; Xu, Q.; Wu, S.; Chen, K.; Zhang, L.; Hong, S.",
-    "abstract": "Cardiovascular diseases remain the leading cause of global mortality, and early risk stratification is critical for improving prognosis. Artificial intelligence-derived electrocardiography (AI-ECG) provides a promising approach to derive cardiac biological age as a non-invasive digital biomarker. This study developed an AI-ECG framework based on the ECGFounder foundation model to quantify cardiac biological aging and predict cardiovascular risk. A total of 67,824 ECGs from 63,512 UK Biobank participants were included. The model was trained on a development cohort of healthy individuals (n = 26,871), and evaluated in an independent clinical evaluation cohort (n = 40,953). Cox proportional hazards models were used to assess the association between the AI-ECG age gap and MACCE, as well as other secondary outcomes. External validation was further conducted in an inpatient cohort from Tianjin Medical University Second Hospital (n = 55,860) and the Kailuan community-based prospective cohort (n = 27,065). The model demonstrated good agreement between predicted and calendar age in the development cohort (r = 0.55; MAE = 5.12 years). In the clinical cohort, after adjusting for clinical comorbidities, each 1-year increase in the age gap was associated with a significant 13% higher risk of MACCE (HR = 1.13, 95% CI: 1.11-1.14). Individuals with an overestimated age gap (> 6 years) exhibited substantially elevated risks of MACCE (HR 4.51) and other major cardiovascular outcomes, whereas those with an underestimated age gap ( <- 6 years) showed a significantly lower risk of MACCE (HR 0.46) alongside protective effects across other outcomes. In the external cohort, the AI-ECG age gap remained significantly associated with multiple downstream cardiovascular and cardiometabolic outcomes. The AI-ECG age gap effectively quantifies occult accelerated cardiac aging. As a non-invasive digital biomarker, it has substantial potential for cardiovascular risk stratification in broad populations.",
-    "category": "Target Biology",
-    "source": "medRxiv",
-    "published": "2026-07-08",
-    "updated": "2026-07-08",
-    "primary_category": "health informatics",
-    "categories": [
-      "health informatics"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.03.24.26349186v3"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.03.24.26349186v3.full.pdf"
-      }
-    ],
-    "score": 57,
-    "infographic": {
-      "key_insight": "An AI-based ECG age gap can estimate “biological cardiac age” and identify people at higher cardiovascular risk beyond calendar age.",
-      "clinical_relevance": "This non-invasive digital biomarker could help stratify cardiovascular risk in large populations and support earlier preventive attention.",
-      "method": [
-        "Trained an AI-ECG model using the ECGFounder foundation model on 26,871 healthy UK Biobank ECGs.",
-        "Validated the model in 40,953 independent UK Biobank clinical ECGs with Cox regression for MACCE and related outcomes.",
-        "Externally tested performance in a hospital cohort (55,860) and a community cohort (27,065)."
-      ],
-      "evidence_signal": "The model showed moderate age prediction accuracy (r = 0.55; MAE = 5.12 years) and each 1-year increase in age gap was linked to a 13% higher MACCE risk in the clinical cohort.",
-      "watch_item": "Because the biomarker was validated in cohort data, real-world adoption will require careful calibration, external generalizability checks, and prospective utility testing.",
-      "hashtags": [
-        "#AIECG",
-        "#DigitalBiomarker",
-        "#CardiovascularRisk",
-        "#BiologicalAge",
-        "#RiskStratification"
-      ],
-      "paper_id": "2026-07-08-medrxiv-ai_derived_ecg_age_gap_as_a_digital_biomarker_for_cardiovascular_risk_external_validation",
-      "paper_title": "AI-Derived ECG Age Gap as a Digital Biomarker for Cardiovascular Risk: External Validation in Hospital and Community-Based Prospective Cohorts",
-      "paper_date": "2026-07-08",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-07-12T08:59:08",
+      "generated_at": "2026-07-11T08:43:04",
       "generator": "openai"
     }
   },
@@ -696,17 +594,17 @@
         "url": "https://arxiv.org/pdf/2607.06549v1"
       }
     ],
-    "score": 57,
+    "score": 62,
     "infographic": {
-      "key_insight": "Unsupervised style-transfer domain adaptation plus a Swin Transformer V2 classifier improved calcification malignancy classification across mammography sites and vendors.",
-      "clinical_relevance": "This could make mammography CAD models more robust when deployed across hospitals, imaging systems, and acquisition techniques.",
+      "key_insight": "Unsupervised style-transfer domain adaptation improved mammography calcification classification across sites by helping a Swin Transformer generalize to unseen vendors and imaging techniques.",
+      "clinical_relevance": "Better cross-site generalization could make AI-assisted breast imaging more reliable when deployed across hospitals with different scanners and acquisition protocols.",
       "method": [
-        "Generated vendor- and technique-specific training samples using AdaIN and CycleGAN without extra annotations.",
-        "Trained a supervised Swin Transformer V2 classifier for benign vs malignant calcification classification.",
-        "Tested cross-validation on OPTIMAM and external validation on EMBED and Duke Calcification Dataset v1."
+        "Used AdaIN and CycleGAN to create vendor- and technique-specific synthetic training samples without extra annotations.",
+        "Trained a supervised classifier with Swin Transformer V2 as the backbone.",
+        "Compared performance across OPTIMAM, EMBED, and Duke calcification datasets."
       ],
-      "evidence_signal": "The model improved external AUC from 0.68 to 0.72 on EMBED and from 0.68 to 0.73 on the Duke Calcification Dataset, using multi-site mammography datasets totaling 3,907 cases across evaluation sets described in the abstract.",
-      "watch_item": "Performance gains were shown on limited external cohorts, so broader validation across more sites, vendors, and acquisition protocols is still needed.",
+      "evidence_signal": "On external validation, the approach increased AUC from 0.68 to 0.72 on EMBED and from 0.68 to 0.73 on the Duke Calcification Dataset after training on OPTIMAM.",
+      "watch_item": "Results are promising but still depend on synthetic style transfer and relatively small external test sets, so real-world robustness and calibration need further validation.",
       "hashtags": [
         "#CancerAI",
         "#Mammography",
@@ -718,7 +616,7 @@
       "paper_title": "Unsupervised Domain Adaptation for Calcification Classification in Mammography Across Multi-Site Datasets",
       "paper_date": "2026-07-07",
       "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-07-12T08:59:10",
+      "generated_at": "2026-07-11T08:43:06",
       "generator": "openai"
     }
   },
@@ -748,29 +646,29 @@
         "url": "https://arxiv.org/pdf/2607.06629v2"
       }
     ],
-    "score": 57,
+    "score": 62,
     "infographic": {
-      "key_insight": "STST-JEPA is a self-supervised EEG foundation model that learns from large unlabeled resting-state and task recordings to improve brain-age prediction across a wide age range.",
-      "clinical_relevance": "The approach could support scalable EEG-based biomarkers for neurological and psychiatric burden, but it is still research-stage and not a clinical decision tool.",
+      "key_insight": "STST-JEPA is a self-supervised EEG foundation model that learns from large unlabeled datasets and can predict age, sex, and psychopathology signals from short EEG windows.",
+      "clinical_relevance": "If validated further, this kind of EEG representation learning could support scalable brain-age and neuropsychiatric screening across diverse recording sites and age ranges.",
       "method": [
-        "Pretrained on 47,703 EEG sessions spanning ages 5–81 from brain.space and HBN.",
-        "Uses a joint embedding prediction objective with masked-token prediction against an EMA target plus an auxiliary reconstruction loss.",
-        "Trained on 30-second multi-channel windows with spatiotemporal block masking and then evaluated with a lightweight probe or limited finetuning."
+        "Pretrained a transformer on 47,703 EEG sessions from ages 5–81 using masked spatiotemporal prediction.",
+        "Combined latent-token prediction against an EMA target with an auxiliary signal-reconstruction loss.",
+        "Evaluated frozen embeddings with a lightweight probe and also fine-tuned final layers for leaderboard tasks."
       ],
-      "evidence_signal": "On 3,367 held-out sessions, a frozen-embedding probe reached 3.06 years MAE and r = 0.924 for age regression, and finetuned models ranked first on public EEG benchmark tasks.",
-      "watch_item": "Performance is reported on specific datasets and benchmarks, so cross-site generalization and robustness to montage differences still need careful external validation.",
+      "evidence_signal": "On 3,367 held-out sessions, the frozen-embedding probe achieved 3.06 years MAE for age regression (r = 0.924), and fine-tuning led to strong leaderboard performance including 0.911 balanced accuracy for sex classification.",
+      "watch_item": "Results come from specific public datasets and tasks, so broader clinical generalization across devices, montages, and real-world settings still needs validation.",
       "hashtags": [
         "#EEG",
         "#SelfSupervisedLearning",
         "#BrainAge",
-        "#FoundationModel",
+        "#TransformerModels",
         "#NeuroAI"
       ],
       "paper_id": "2026-07-07-arxiv-stst_jepa_shallow_target_spatio_temporal_joint_embedding_prediction_architecture_for_eeg_s",
       "paper_title": "STST-JEPA: Shallow-Target Spatio-Temporal Joint Embedding Prediction Architecture For EEG Self-Supervised Learning",
       "paper_date": "2026-07-07",
       "paper_category": "Target Biology",
-      "generated_at": "2026-07-12T08:59:13",
+      "generated_at": "2026-07-11T08:43:09",
       "generator": "openai"
     }
   },
@@ -801,29 +699,29 @@
         "url": "https://arxiv.org/pdf/2607.08162v1"
       }
     ],
-    "score": 55,
+    "score": 60,
     "infographic": {
-      "key_insight": "ProsMAE uses multi-source masked autoencoder pretraining on diverse histopathology tiles to learn more robust representations for prostate ISUP grade classification.",
-      "clinical_relevance": "If validated more broadly, this approach could improve computational pathology models that support more consistent prostate cancer grading across variable scanners, stains, and tissue artifacts.",
+      "key_insight": "ProsMAE uses multi-source masked autoencoder pretraining on diverse histopathology tiles to build more robust representations for prostate ISUP grade classification.",
+      "clinical_relevance": "This approach may improve computational pathology models that support prostate cancer grading, but it is still a research method rather than a clinical decision tool.",
       "method": [
-        "Pretrained a masked autoencoder on tiles from PANDA, CAMELYON17, and BRACS.",
-        "Transferred the encoder to ISUP grade classification with a frozen-encoder linear probe (ProsCLS).",
-        "Compared against a vanilla MAE baseline on a disjoint PANDA split."
+        "Pretrained a MAE encoder on tiles from PANDA, CAMELYON17, and BRACS to capture diverse tissue morphology and staining conditions.",
+        "Transferred the frozen encoder to ISUP grade classification with a linear probe head in ProsCLS.",
+        "Compared performance against a vanilla MAE frozen linear-probe baseline."
       ],
-      "evidence_signal": "In the abstract, ProsMAE achieved a higher mean validation quadratic weighted kappa than the vanilla MAE frozen linear-probe baseline on the evaluated disjoint PANDA split.",
-      "watch_item": "The abstract notes that repeated-split evaluation is still needed to confirm robustness across different split compositions.",
+      "evidence_signal": "On the evaluated disjoint PANDA split, ProsMAE achieved a higher mean validation quadratic weighted kappa than the vanilla MAE baseline.",
+      "watch_item": "The abstract notes that repeated-split evaluation is still needed, so robustness across different train/validation splits remains uncertain.",
       "hashtags": [
         "#PrecisionOncology",
         "#ComputationalPathology",
         "#MaskedAutoencoder",
-        "#Histopathology",
-        "#ProstateCancer"
+        "#ProstateCancer",
+        "#HistopathologyAI"
       ],
       "paper_id": "2026-07-09-arxiv-prosmae_multi_source_mae_pretraining_for_isup_grade_classification",
       "paper_title": "ProsMAE: Multi-Source MAE Pretraining for ISUP Grade Classification",
       "paper_date": "2026-07-09",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-12T08:59:15",
+      "generated_at": "2026-07-11T08:43:12",
       "generator": "openai"
     }
   },
@@ -853,29 +751,29 @@
         "url": "https://arxiv.org/pdf/2607.04938v1"
       }
     ],
-    "score": 55,
+    "score": 60,
     "infographic": {
-      "key_insight": "Paraclenitic hypergraphs extend parenclitic networks to detect abnormal higher-order correlation patterns, enabling patient-specific system-level signals in cancer.",
-      "clinical_relevance": "The approach may help identify personalized therapeutic targets from patient-derived organoids, supporting precision oncology research rather than direct clinical decision-making.",
+      "key_insight": "Parenclitic hypergraphs extend parenclitic networks to higher-order interactions, helping detect disease-related anomalies in patient-specific correlation patterns for precision oncology.",
+      "clinical_relevance": "In patient-derived cancer organoids, the approach may help identify personalized therapeutic targets by highlighting abnormal gene-expression relationships linked to tumor progression.",
       "method": [
-        "Build a higher-order parenclitic hypergraph from gene-expression correlations against a healthy reference population.",
-        "Flag interaction patterns that deviate from expected correlations across multiple interaction orders.",
-        "Apply the framework to synthetic, benchmark, and patient-derived cancer organoid datasets over time."
+        "Built a higher-order anomaly detection framework for arbitrary interaction orders",
+        "Validated the approach on synthetic and benchmark datasets",
+        "Applied it to temporal gene-expression data from healthy and cancerous organoids"
       ],
-      "evidence_signal": "The abstract reports validation on synthetic and benchmark datasets and application to patient-derived organoids, where the method reproduced known oncogenic signatures and uncovered a new candidate target.",
-      "watch_item": "The finding is based on organoid and correlation-pattern analyses, so clinical utility and target validity still need experimental and translational confirmation.",
+      "evidence_signal": "The abstract reports successful validation on synthetic and benchmark data, plus recovery of known oncogenic signatures and identification of a previously unrecognized candidate target in organoid-based analyses.",
+      "watch_item": "The method is promising but still needs broader validation and careful assessment before translation into clinical decision-making.",
       "hashtags": [
         "#PrecisionOncology",
         "#CancerResearch",
-        "#SinglePatientData",
-        "#SystemsBiology",
-        "#Organoids"
+        "#SinglePatientModels",
+        "#GeneExpression",
+        "#SystemsBiology"
       ],
       "paper_id": "2026-07-06-arxiv-parenclitic_hypergraphs_and_their_application_in_personalized_cancer_therapy",
       "paper_title": "Parenclitic hypergraphs and their application in personalized cancer therapy",
       "paper_date": "2026-07-06",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-12T08:59:17",
+      "generated_at": "2026-07-11T08:43:15",
       "generator": "openai"
     }
   },
@@ -906,21 +804,21 @@
         "url": "https://arxiv.org/pdf/2607.04912v1"
       }
     ],
-    "score": 54,
+    "score": 59,
     "infographic": {
-      "key_insight": "A graph neural network that models longitudinal breast MRI timepoints, plus self-supervised trajectory learning, can better predict neoadjuvant chemotherapy response than standard baselines.",
-      "clinical_relevance": "More accurate pCR prediction could help clinicians better estimate which breast cancer patients are likely to benefit from neoadjuvant chemotherapy and support more individualized treatment planning.",
+      "key_insight": "A graph-based spatio-temporal learning framework can model breast MRI treatment trajectories to better predict neoadjuvant chemotherapy response.",
+      "clinical_relevance": "If validated, this approach could help identify patients more likely to achieve pathological complete response and support more personalized treatment planning.",
       "method": [
-        "Built a 3D spatio-temporal imaging framework for serial DCE-MRI scans.",
-        "Used graph neural network relational modeling to capture interactions across timepoints.",
-        "Added three self-supervised objectives to learn treatment-trajectory representations without labels."
+        "Uses a graph neural network to capture relationships across multiple DCE-MRI timepoints.",
+        "Adds three self-supervised objectives to learn richer longitudinal trajectory representations.",
+        "Tests the impact of scan count and inter-scan time differences on prediction performance."
       ],
-      "evidence_signal": "In 585 ISPY-2 patients, the method outperformed vision and self-supervised baselines across multiple classification metrics, with ablation studies examining timepoints and inter-scan time differences.",
-      "watch_item": "Performance was evaluated on a specific public cohort, so external validation and consistent availability of multiple MRI timepoints may be needed before broad clinical use.",
+      "evidence_signal": "Evaluated on 585 patients from the public ISPY-2 dataset, the method outperformed vision and self-supervised baselines across multiple classification metrics.",
+      "watch_item": "Performance is reported on a single public cohort, so external validation and real-world generalizability remain important.",
       "hashtags": [
-        "#PrecisionOncology",
         "#BreastCancer",
-        "#MedicalImaging",
+        "#PrecisionOncology",
+        "#MedicalImagingAI",
         "#GraphNeuralNetworks",
         "#SelfSupervisedLearning"
       ],
@@ -928,7 +826,7 @@
       "paper_title": "Graph Representation Learning of Longitudinal Medical Imaging Trajectories for Treatment Response Prediction",
       "paper_date": "2026-07-06",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-12T08:59:19",
+      "generated_at": "2026-07-11T08:43:17",
       "generator": "openai"
     }
   },
@@ -957,29 +855,29 @@
         "url": "https://arxiv.org/pdf/2607.06129v1"
       }
     ],
-    "score": 53,
+    "score": 58,
     "infographic": {
-      "key_insight": "A deep learning pipeline can quantify tumor microenvironment features in DLBCL and distinguish GCB from ABC/non-GCB phenotypes based on cell composition and spatial organization.",
-      "clinical_relevance": "This approach may help refine lymphoma risk stratification beyond the Hans classifier by adding microenvironment context that could support more detailed subtype assessment.",
+      "key_insight": "A deep learning pipeline can quantify DLBCL tumor microenvironment features and reveal subtype-specific differences between GCB and ABC tumors, including stronger immune-cell involvement and ABC–M2 macrophage interactions.",
+      "clinical_relevance": "These tumor microenvironment signatures could help refine DLBCL risk stratification beyond the Hans classifier and support more detailed subtype characterization in precision oncology.",
       "method": [
-        "Automated analysis of multiplexed tumor images with deep learning",
-        "Quantification of cell composition, morphology, and spatial relationships",
-        "Comparison of microenvironment features between GCB and ABC tumors"
+        "Unbiased deep learning analysis of multiplexed tumor images from a DLBCL patient cohort",
+        "Quantification of cell composition, morphology, and spatial organization in the tumor microenvironment",
+        "Comparison of microenvironment features between GCB and ABC/non-GCB tumors"
       ],
-      "evidence_signal": "The abstract reports cohort-level differences, including higher immune cell proportions in ABC tumors and stronger interaction with M2 macrophages.",
-      "watch_item": "Findings are based on retrospective image analysis from a specific DLBCL cohort, so external validation and standardization are needed before broader use.",
+      "evidence_signal": "The abstract reports cohort-based image analysis showing altered cell population proportions and preferential ABC interaction with M2 macrophages, but it does not provide performance metrics or validation results.",
+      "watch_item": "Findings are based on image-derived associations from a patient cohort, so broader validation and standardization would be needed before clinical implementation.",
       "hashtags": [
         "#DLBCL",
-        "#TumorMicroenvironment",
-        "#DeepLearning",
         "#PrecisionOncology",
-        "#PathologyAI"
+        "#TumorMicroenvironment",
+        "#DeepLearningPathology",
+        "#CancerResearch"
       ],
       "paper_id": "2026-07-07-arxiv-characterization_of_dlbcl_cell_of_origin_phenotypes_based_on_tumor_microenvironment_featur",
       "paper_title": "Characterization of DLBCL cell of origin-phenotypes based on tumor microenvironment features",
       "paper_date": "2026-07-07",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-12T08:59:21",
+      "generated_at": "2026-07-11T08:43:20",
       "generator": "openai"
     }
   },
@@ -1008,29 +906,134 @@
         "url": "https://arxiv.org/pdf/2607.05032v1"
       }
     ],
-    "score": 52,
+    "score": 57,
     "infographic": {
-      "key_insight": "MOSAIC is a two-phase multi-LLM system that can synthesize EHR evidence into multidimensional severity phenotypes, showing that agentic LLMs can go beyond fixed rule-based scoring.",
-      "clinical_relevance": "For type 2 diabetes, this approach could help stratify disease severity more richly than existing algorithms and may support risk assessment from routinely collected records.",
+      "key_insight": "An agentic multi-LLM system can synthesize EHR evidence into multidimensional disease severity phenotypes that align with established T2D severity measures and clinical outcomes.",
+      "clinical_relevance": "This suggests LLM-based severity scoring could help stratify patients beyond rule-based indices, potentially supporting research and risk enrichment workflows in chronic disease.",
       "method": [
-        "Agentic two-phase LLM framework for severity phenotyping",
-        "Tested on synthetic EHR cohorts for type 2 diabetes",
-        "Compared with multiple algorithmic severity scores and outcome associations"
+        "Two-phase agentic LLM framework (MOSAIC) built for severity phenotyping",
+        "Evaluated in type 2 diabetes on SyntheticMass EHR data using open-weight and closed-weight pipelines",
+        "Compared against algorithmic ground truths and outcomes including mortality and complications"
       ],
-      "evidence_signal": "On SyntheticMass, open-weight MOSAIC closely matched the proprietary version (weighted kappa 0.773) and showed moderate-to-fair agreement with established scores while separating mortality and complication outcomes.",
-      "watch_item": "Results were based on synthetic data and a single proof-of-concept disease, so real-world validation and robustness testing are still needed before implementation.",
+      "evidence_signal": "On SyntheticMass, open-weight MOSAIC closely matched the proprietary pipeline (weighted kappa 0.773) and showed moderate-to-fair agreement with established comparators while separating mortality and complication risk strata.",
+      "watch_item": "Performance was demonstrated in synthetic T2D data, so real-world validation, generalizability, and safe deployment controls are still needed.",
       "hashtags": [
         "#LLM",
         "#EHR",
         "#SeverityPhenotyping",
-        "#Diabetes",
-        "#ClinicalAI"
+        "#ClinicalAI",
+        "#Diabetes"
       ],
       "paper_id": "2026-07-06-arxiv-multi_large_language_model_orchestrated_severity_assessment_of_clinical_records_mosaic",
       "paper_title": "Multi-Large Language Model Orchestrated Severity Assessment of Clinical Records (MOSAIC)",
       "paper_date": "2026-07-06",
       "paper_category": "Clinical Translation",
-      "generated_at": "2026-07-12T08:59:24",
+      "generated_at": "2026-07-11T08:43:22",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-04-arxiv-shift_survival_prediction_from_incomplete_and_heterogeneous_genomic_data",
+    "arxiv_id": "2607.07725v1",
+    "date": "2026-07-04",
+    "title": "SHIFT: Survival Prediction from Incomplete and Heterogeneous Genomic Data",
+    "authors": "Muhammet Sami Yavuz, Ayhan Can Erdur, Sabri Mustafa Kahya, Benedikt Wiestler, Jana Lipkova",
+    "abstract": "Genomic prediction models often fail to transfer across institutions because sequencing panels differ across sites, creating structural feature missingness at deployment. Existing approaches to this challenge typically restrict analysis to genes shared across cohorts, exclude patients with incomplete profiles, or rely on test-time imputation, all of which can reduce robustness and limit the use of multi-center data. We propose Survival prediction Handling Incomplete Features using Transformer (SHIFT), a missingness-aware survival model that directly predicts from incomplete genomic inputs without test-time imputation. SHIFT represents each genomic feature separately and uses masked self-attention, along with a feature-availability mask, so that predictions are based only on observed inputs. Further, we introduce variable-rate feature masking during training to improve robustness to heterogeneous missingness patterns. We evaluate the approach on glioblastoma and lung squamous cell carcinoma with external validation across multiple cohorts, including a challenging setting with severe cross-cohort panel mismatch. Across these settings, SHIFT shows strong generalization and compares favorably with standard survival baselines and imputation-based approaches, while using a single model across differing feature sets. We also find that incorporating patients from incomplete cohorts during development can improve performance on external data, suggesting that partially observed cohorts need not be excluded from model building. These results support missingness-aware modeling as a practical strategy for multi-center survival prediction in precision oncology.",
+    "category": "Precision Oncology",
+    "source": "arXiv",
+    "published": "2026-07-04T21:04:57Z",
+    "updated": "2026-07-04T21:04:57Z",
+    "primary_category": "cs.LG",
+    "categories": [
+      "cs.LG",
+      "cs.AI",
+      "q-bio.GN"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.07725v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.07725v1"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "SHIFT is a missingness-aware transformer that can predict survival directly from incomplete genomic profiles, avoiding test-time imputation and reducing the need to drop patients or genes.",
+      "clinical_relevance": "It could help precision oncology models generalize across hospitals with different sequencing panels, making multi-center survival prediction more practical.",
+      "method": [
+        "Represents each genomic feature separately and applies masked self-attention.",
+        "Uses a feature-availability mask so predictions rely only on observed inputs.",
+        "Trains with variable-rate feature masking to handle heterogeneous missingness patterns."
+      ],
+      "evidence_signal": "In glioblastoma and lung squamous cell carcinoma, including external validation across multiple cohorts with severe panel mismatch, SHIFT outperformed or matched standard survival baselines and imputation-based methods.",
+      "watch_item": "Performance may still depend on how representative the training cohorts are, and real-world deployment requires careful handling of site-specific panel differences and missingness patterns.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#SurvivalPrediction",
+        "#TransformerAI",
+        "#MissingData",
+        "#Genomics"
+      ],
+      "paper_id": "2026-07-04-arxiv-shift_survival_prediction_from_incomplete_and_heterogeneous_genomic_data",
+      "paper_title": "SHIFT: Survival Prediction from Incomplete and Heterogeneous Genomic Data",
+      "paper_date": "2026-07-04",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-11T08:43:25",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-07-arxiv-token_based_dual_view_fusion_and_adaptation_of_large_vision_models_for_breast_cancer_class",
+    "arxiv_id": "2607.06309v1",
+    "date": "2026-07-07",
+    "title": "Token-Based Dual-view Fusion and Adaptation of Large Vision Models for Breast Cancer Classification",
+    "authors": "Aysan Ghayouri Pirsoltan, Shima Babakordi, Mohammad Reza Mohammadi",
+    "abstract": "Accurate breast cancer classification from mammography requires effective integration of complementary information from craniocaudal (CC) and mediolateral oblique (MLO) views, which provide a more complete characterization of breast abnormalities. However, existing multi-view learning approaches typically rely on feature-level aggregation or single-stage cross-attention, which can entangle view-specific and shared representations and restrict interaction to limited network depths. To address these limitations, we propose a token-centric dual-view learning framework that unifies prompt-based adaptation and cross-view fusion within a frozen vision transformer backbone. The framework reformulates inter-view interaction as structured token-level communication, where dedicated fusion tokens explicitly encode bidirectional information exchange between CC and MLO views via cross-attention, serving as intermediate carriers of cross-view dependencies rather than relying on direct feature fusion. Unlike conventional methods that apply fusion at a single layer, fusion modules are inserted at multiple transformer depths, enabling progressive and repeated interaction across the encoder hierarchy. Fusion tokens are reintegrated into the token sequence and refined by subsequent transformer layers, facilitating hierarchical propagation of complementary information while preserving view-specific structure. Experiments on VinDr-Mammo and CMMD datasets demonstrate consistent improvements over linear probing, prompt-only adaptation, and conventional fusion baselines. On the VinDr-Mammo BI-RADS classification task, the framework achieves 50.40% F1-score and 0.8090 AUC, including a 0.10 AUC improvement over a dual-view fusion baseline in the binary setting. Ablation studies further validate the effectiveness of token-based fusion and multi-depth interaction design.",
+    "category": "Precision Oncology",
+    "source": "arXiv",
+    "published": "2026-07-07T14:11:54Z",
+    "updated": "2026-07-07T14:11:54Z",
+    "primary_category": "cs.CV",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ],
+    "links": [
+      {
+        "title": "arXiv",
+        "url": "https://arxiv.org/abs/2607.06309v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://arxiv.org/pdf/2607.06309v1"
+      }
+    ],
+    "score": 56,
+    "infographic": {
+      "key_insight": "A token-based dual-view framework improves breast cancer mammography classification by using dedicated fusion tokens to exchange information between CC and MLO views across multiple transformer depths.",
+      "clinical_relevance": "Better integration of standard mammography views may help support more accurate BI-RADS classification and lesion assessment in screening and diagnostic workflows.",
+      "method": [
+        "Freezes a vision transformer backbone and adds prompt-based adaptation for each view.",
+        "Uses dedicated fusion tokens to carry bidirectional CC↔MLO information via cross-attention.",
+        "Inserts fusion modules at multiple depths so shared information is refined progressively through the encoder."
+      ],
+      "evidence_signal": "On VinDr-Mammo and CMMD, the method outperformed linear probing, prompt-only adaptation, and fusion baselines; on VinDr-Mammo BI-RADS classification it reached 50.40% F1-score and 0.8090 AUC.",
+      "watch_item": "Results are benchmark-based and should be validated externally across diverse scanners, populations, and clinical settings before broad deployment.",
+      "hashtags": [
+        "#BreastCancerAI",
+        "#Mammography",
+        "#VisionTransformer",
+        "#MultiViewLearning",
+        "#PrecisionOncology"
+      ],
+      "paper_id": "2026-07-07-arxiv-token_based_dual_view_fusion_and_adaptation_of_large_vision_models_for_breast_cancer_class",
+      "paper_title": "Token-Based Dual-view Fusion and Adaptation of Large Vision Models for Breast Cancer Classification",
+      "paper_date": "2026-07-07",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-11T08:43:27",
       "generator": "openai"
     }
   }

@@ -1,24 +1,24 @@
 {
-  "key_insight": "Latent Drift forecasts slow disease progression by modeling anatomical change in a compressed latent space, helping the model focus on subtle drift instead of reproducing static baseline MRI anatomy.",
-  "clinical_relevance": "This could improve earlier prediction of neurodegenerative progression and support better-targeted interventions and more informative clinical trial design.",
+  "key_insight": "Latent Drift forecasts slow disease progression by modeling subtle anatomical change in a compressed latent space instead of trying to regenerate full MRI volumes directly.",
+  "clinical_relevance": "This could support earlier detection of neurodegenerative progression, more targeted intervention planning, and better design of longitudinal clinical trials.",
   "method": [
-    "Learns progression in a semantic latent representation rather than full-resolution images",
-    "Uses Finite Scalar Quantization to reduce nuisance noise and preserve consistent structural drift",
-    "Addresses two failure modes: identity collapse and the continuous interpolation trap"
+    "Learn a latent representation of progression rather than predicting pixel-level anatomy.",
+    "Use Finite Scalar Quantization to reduce nuisance noise and preserve consistent drift.",
+    "Compare against diffusion and autoregressive transformer baselines for patient-specific forecasting."
   ],
-  "evidence_signal": "In longitudinal 3D brain MRI experiments, Latent Drift outperformed diffusion and autoregressive transformer baselines on generative fidelity and clinically relevant evaluation metrics.",
-  "watch_item": "Performance may depend on the quality and scale of longitudinal MRI data, and latent forecasts still need careful validation before being used in real-world clinical workflows.",
+  "evidence_signal": "On longitudinal 3D brain MRI, the method improved generative fidelity and clinically relevant metrics over diffusion and autoregressive transformer baselines.",
+  "watch_item": "Because it is trained on subtle longitudinal MRI changes, performance may depend on data quality, scan consistency, and careful validation before real-world deployment.",
   "hashtags": [
     "#Neuroimaging",
-    "#LongitudinalMRI",
+    "#MRI",
     "#GenerativeAI",
     "#DiseaseProgression",
-    "#Biomarkers"
+    "#LongitudinalForecasting"
   ],
   "paper_id": "2026-07-09-arxiv-progression_as_latent_drift_generative_forecasting_of_slow_evolving_pathologies",
   "paper_title": "Progression as Latent Drift: Generative Forecasting of Slow-Evolving Pathologies",
   "paper_date": "2026-07-09",
   "paper_category": "Target Biology",
-  "generated_at": "2026-07-11T08:42:53",
+  "generated_at": "2026-07-12T08:58:55",
   "generator": "openai"
 }

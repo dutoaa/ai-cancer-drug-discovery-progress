@@ -1,17 +1,17 @@
 {
-  "key_insight": "A graph-based spatio-temporal learning framework can model breast MRI treatment trajectories to better predict neoadjuvant chemotherapy response.",
-  "clinical_relevance": "If validated, this approach could help identify patients more likely to achieve pathological complete response and support more personalized treatment planning.",
+  "key_insight": "A graph neural network that models longitudinal breast MRI timepoints, plus self-supervised trajectory learning, can better predict neoadjuvant chemotherapy response than standard baselines.",
+  "clinical_relevance": "More accurate pCR prediction could help clinicians better estimate which breast cancer patients are likely to benefit from neoadjuvant chemotherapy and support more individualized treatment planning.",
   "method": [
-    "Uses a graph neural network to capture relationships across multiple DCE-MRI timepoints.",
-    "Adds three self-supervised objectives to learn richer longitudinal trajectory representations.",
-    "Tests the impact of scan count and inter-scan time differences on prediction performance."
+    "Built a 3D spatio-temporal imaging framework for serial DCE-MRI scans.",
+    "Used graph neural network relational modeling to capture interactions across timepoints.",
+    "Added three self-supervised objectives to learn treatment-trajectory representations without labels."
   ],
-  "evidence_signal": "Evaluated on 585 patients from the public ISPY-2 dataset, the method outperformed vision and self-supervised baselines across multiple classification metrics.",
-  "watch_item": "Performance is reported on a single public cohort, so external validation and real-world generalizability remain important.",
+  "evidence_signal": "In 585 ISPY-2 patients, the method outperformed vision and self-supervised baselines across multiple classification metrics, with ablation studies examining timepoints and inter-scan time differences.",
+  "watch_item": "Performance was evaluated on a specific public cohort, so external validation and consistent availability of multiple MRI timepoints may be needed before broad clinical use.",
   "hashtags": [
-    "#BreastCancer",
     "#PrecisionOncology",
-    "#MedicalImagingAI",
+    "#BreastCancer",
+    "#MedicalImaging",
     "#GraphNeuralNetworks",
     "#SelfSupervisedLearning"
   ],
@@ -19,6 +19,6 @@
   "paper_title": "Graph Representation Learning of Longitudinal Medical Imaging Trajectories for Treatment Response Prediction",
   "paper_date": "2026-07-06",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-11T08:43:17",
+  "generated_at": "2026-07-12T08:59:19",
   "generator": "openai"
 }

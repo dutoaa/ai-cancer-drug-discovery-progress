@@ -1,24 +1,24 @@
 {
-  "key_insight": "ProsMAE uses multi-source masked autoencoder pretraining on diverse histopathology tiles to build more robust representations for prostate ISUP grade classification.",
-  "clinical_relevance": "This approach may improve computational pathology models that support prostate cancer grading, but it is still a research method rather than a clinical decision tool.",
+  "key_insight": "ProsMAE uses multi-source masked autoencoder pretraining on diverse histopathology tiles to learn more robust representations for prostate ISUP grade classification.",
+  "clinical_relevance": "If validated more broadly, this approach could improve computational pathology models that support more consistent prostate cancer grading across variable scanners, stains, and tissue artifacts.",
   "method": [
-    "Pretrained a MAE encoder on tiles from PANDA, CAMELYON17, and BRACS to capture diverse tissue morphology and staining conditions.",
-    "Transferred the frozen encoder to ISUP grade classification with a linear probe head in ProsCLS.",
-    "Compared performance against a vanilla MAE frozen linear-probe baseline."
+    "Pretrained a masked autoencoder on tiles from PANDA, CAMELYON17, and BRACS.",
+    "Transferred the encoder to ISUP grade classification with a frozen-encoder linear probe (ProsCLS).",
+    "Compared against a vanilla MAE baseline on a disjoint PANDA split."
   ],
-  "evidence_signal": "On the evaluated disjoint PANDA split, ProsMAE achieved a higher mean validation quadratic weighted kappa than the vanilla MAE baseline.",
-  "watch_item": "The abstract notes that repeated-split evaluation is still needed, so robustness across different train/validation splits remains uncertain.",
+  "evidence_signal": "In the abstract, ProsMAE achieved a higher mean validation quadratic weighted kappa than the vanilla MAE frozen linear-probe baseline on the evaluated disjoint PANDA split.",
+  "watch_item": "The abstract notes that repeated-split evaluation is still needed to confirm robustness across different split compositions.",
   "hashtags": [
     "#PrecisionOncology",
     "#ComputationalPathology",
     "#MaskedAutoencoder",
-    "#ProstateCancer",
-    "#HistopathologyAI"
+    "#Histopathology",
+    "#ProstateCancer"
   ],
   "paper_id": "2026-07-09-arxiv-prosmae_multi_source_mae_pretraining_for_isup_grade_classification",
   "paper_title": "ProsMAE: Multi-Source MAE Pretraining for ISUP Grade Classification",
   "paper_date": "2026-07-09",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-11T08:43:12",
+  "generated_at": "2026-07-12T08:59:15",
   "generator": "openai"
 }
