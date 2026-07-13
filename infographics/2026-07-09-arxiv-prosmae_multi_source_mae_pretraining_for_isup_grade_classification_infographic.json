@@ -1,24 +1,24 @@
 {
-  "key_insight": "ProsMAE uses multi-source masked autoencoder pretraining on diverse histopathology tiles to learn more robust representations for prostate ISUP grade classification.",
-  "clinical_relevance": "If validated more broadly, this approach could improve computational pathology models that support more consistent prostate cancer grading across variable scanners, stains, and tissue artifacts.",
+  "key_insight": "ProsMAE improves histopathology representation learning by pretraining a masked autoencoder on multi-source whole slide image tiles from diverse cancers and then transferring the frozen encoder for ISUP grade classification.",
+  "clinical_relevance": "This approach may help build more robust prostate cancer grading models that generalize better across stain, scanner, and tissue variation, supporting computational pathology workflows.",
   "method": [
-    "Pretrained a masked autoencoder on tiles from PANDA, CAMELYON17, and BRACS.",
-    "Transferred the encoder to ISUP grade classification with a frozen-encoder linear probe (ProsCLS).",
-    "Compared against a vanilla MAE baseline on a disjoint PANDA split."
+    "Pretrained a MAE encoder on tiles from PANDA, CAMELYON17, and BRACS to capture diverse morphology.",
+    "Transferred the encoder to ISUP grade classification via ProsCLS with a frozen backbone and linear head.",
+    "Compared against a vanilla MAE frozen linear-probe baseline on a disjoint PANDA split."
   ],
-  "evidence_signal": "In the abstract, ProsMAE achieved a higher mean validation quadratic weighted kappa than the vanilla MAE frozen linear-probe baseline on the evaluated disjoint PANDA split.",
-  "watch_item": "The abstract notes that repeated-split evaluation is still needed to confirm robustness across different split compositions.",
+  "evidence_signal": "On the evaluated disjoint PANDA split, ProsMAE achieved a higher mean validation quadratic weighted kappa (QWK) than the vanilla MAE baseline.",
+  "watch_item": "The findings are based on split-specific validation results, so repeated-split testing is still needed to confirm robustness and generalizability.",
   "hashtags": [
     "#PrecisionOncology",
-    "#ComputationalPathology",
-    "#MaskedAutoencoder",
     "#Histopathology",
+    "#MaskedAutoencoder",
+    "#ComputationalPathology",
     "#ProstateCancer"
   ],
   "paper_id": "2026-07-09-arxiv-prosmae_multi_source_mae_pretraining_for_isup_grade_classification",
   "paper_title": "ProsMAE: Multi-Source MAE Pretraining for ISUP Grade Classification",
   "paper_date": "2026-07-09",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-12T08:59:15",
+  "generated_at": "2026-07-13T10:18:00",
   "generator": "openai"
 }

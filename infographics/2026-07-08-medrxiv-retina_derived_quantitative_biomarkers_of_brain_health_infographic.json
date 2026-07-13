@@ -1,24 +1,24 @@
 {
-  "key_insight": "RetiBrain uses retinal fundus photos to estimate MRI-derived brain-health biomarkers, linking eye images to indicators of neurodegeneration and cerebrovascular injury.",
-  "clinical_relevance": "This could enable cheaper, scalable, noninvasive population screening and longitudinal monitoring of brain-health risk without immediate MRI access.",
+  "key_insight": "RetiBrain uses retinal fundus photos to predict MRI-derived brain health biomarkers, linking eye images to neurodegeneration- and cerebrovascular-related risk.",
+  "clinical_relevance": "If validated broadly, this low-cost, scalable imaging approach could support population screening and longitudinal monitoring of brain health without MRI.",
   "method": [
-    "Cross-modal deep learning distills MRI-based latent representations into a fundus-photo model.",
-    "Predicts six WMH- and hippocampal-related biomarkers from color fundus photographs.",
-    "Uses structural, topological, and geometric retinal features to improve interpretability."
+    "Cross-modal deep learning distills MRI-based latent representations into a retinal image model.",
+    "Predicts six WMH- and hippocampal-volume biomarkers from color fundus photography.",
+    "Adds interpretable retinal structure analyses to connect image features with brain injury patterns."
   ],
-  "evidence_signal": "In a CFP-MRI paired cohort, the model improved mean Pearson correlation from 0.240 to 0.549 over RETFound, reached 0.640 for periventricular WMH prediction, and in a longitudinal cohort of 2,082 participants achieved dementia prediction AUROC 0.824.",
-  "watch_item": "Performance comes from paired-cohort retrospective evaluation, so external validation and prospective testing are needed before real-world deployment.",
+  "evidence_signal": "In a paired CFP-MRI cohort, the model improved mean Pearson correlation from 0.240 to 0.549 versus RETFound and reached 0.640 for periventricular WMH prediction; in a longitudinal cohort it predicted dementia risk with AUROC 0.824.",
+  "watch_item": "Results come from retrospective cohorts, so external validation and assessment of fairness across devices, sites, and populations are still needed.",
   "hashtags": [
-    "#AIinHealth",
-    "#RetinaToBrain",
-    "#Neuroimaging",
-    "#DeepLearning",
-    "#Biomarkers"
+    "#AIinHealthcare",
+    "#RetinaAI",
+    "#BrainHealth",
+    "#MedicalImaging",
+    "#DigitalBiomarkers"
   ],
   "paper_id": "2026-07-08-medrxiv-retina_derived_quantitative_biomarkers_of_brain_health",
   "paper_title": "Retina-derived Quantitative Biomarkers of Brain Health",
   "paper_date": "2026-07-08",
   "paper_category": "Cancer AI Methods",
-  "generated_at": "2026-07-12T08:59:03",
+  "generated_at": "2026-07-13T10:17:44",
   "generator": "openai"
 }

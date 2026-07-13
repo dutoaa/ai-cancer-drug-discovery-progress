@@ -1,0 +1,24 @@
+{
+  "key_insight": "SuG combines generalist vision-language learning with specialist segmentation priors to improve comprehensive medical image understanding and lesion grounding.",
+  "clinical_relevance": "This approach could support more accurate, spatially interpretable diagnosis across chest and abdominal CT, including difficult tumor-related cases.",
+  "method": [
+    "Aligns vision-language learning with multiple specialist segmentors.",
+    "Uses anatomy, class-specific lesion, and class-agnostic lesion masks as spatial priors.",
+    "Calibrates text-conditioned attention to focus on clinically relevant regions."
+  ],
+  "evidence_signal": "The model was evaluated on CT-RATE, Merlin, MedVL-CT69K, and several in-house tumor datasets, where it achieved state-of-the-art results and strong lesion grounding.",
+  "watch_item": "Performance gains may depend on access to high-quality segmentation experts and may be harder to reproduce in settings without comparable CT annotations or specialist models.",
+  "hashtags": [
+    "#MedicalAI",
+    "#VisionLanguage",
+    "#CTImaging",
+    "#TumorDiagnosis",
+    "#PrecisionOncology"
+  ],
+  "paper_id": "2026-07-10-arxiv-super_generalist_towards_comprehensive_and_accurate_medical_image_understanding_via_genera",
+  "paper_title": "Super-Generalist: Towards Comprehensive and Accurate Medical Image Understanding via Generalist-Specialist Synergy",
+  "paper_date": "2026-07-10",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-13T10:17:57",
+  "generator": "openai"
+}

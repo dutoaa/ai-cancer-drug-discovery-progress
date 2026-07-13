@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-12
+Generated: 2026-07-13
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. DrugGen 2: A disease-aware language model for enhancing drug discovery
@@ -35,7 +35,15 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://arxiv.org/pdf/2607.08602v1
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-09-arxiv-towards_precision_therapy_in_hepatocellular_carcinoma_a_clinical_reasoning_llm_for_risk_st_infographic.json
 
-## 5. Multi-Timepoint Risk Stratification in Rare Cancers: A Computational Framework Validated against Published Ewing Sarcoma Trial Data
+## 5. SAGEAgent: A Self-Evolving Agent for Cost-Aware Modality Acquisition in Multimodal Survival Prediction
+
+- Date: 2026-07-10
+- Category: Precision Oncology
+- Source: arXiv - https://arxiv.org/abs/2607.09521v1
+- PDF: https://arxiv.org/pdf/2607.09521v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-10-arxiv-sageagent_a_self_evolving_agent_for_cost_aware_modality_acquisition_in_multimodal_survival_infographic.json
+
+## 6. Multi-Timepoint Risk Stratification in Rare Cancers: A Computational Framework Validated against Published Ewing Sarcoma Trial Data
 
 - Date: 2026-07-07
 - Category: Target Biology
@@ -43,21 +51,13 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.07.03.26357236v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-07-medrxiv-multi_timepoint_risk_stratification_in_rare_cancers_a_computational_framework_validated_ag_infographic.json
 
-## 6. Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning
+## 7. Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning
 
 - Date: 2026-07-08
 - Category: Therapeutic Discovery
 - Source: arXiv - https://arxiv.org/abs/2607.07708v1
 - PDF: https://arxiv.org/pdf/2607.07708v1
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-08-arxiv-accurate_interdisciplinary_and_transparent_structure_property_understanding_with_deep_nati_infographic.json
-
-## 7. Progression as Latent Drift: Generative Forecasting of Slow-Evolving Pathologies
-
-- Date: 2026-07-09
-- Category: Target Biology
-- Source: arXiv - https://arxiv.org/abs/2607.08270v1
-- PDF: https://arxiv.org/pdf/2607.08270v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-09-arxiv-progression_as_latent_drift_generative_forecasting_of_slow_evolving_pathologies_infographic.json
 
 ## 8. Compass: Prostate Cancer Detection Needs Multi-View Context
 
@@ -91,13 +91,13 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.07.05.26357344v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-08-medrxiv-retina_derived_quantitative_biomarkers_of_brain_health_infographic.json
 
-## 12. Predicting Therapeutic Outcome via Aligning Patient-Specific Knowledge Graph and Gene-Level Perturbation Representations
+## 12. Progression as Latent Drift: Generative Forecasting of Slow-Evolving Pathologies
 
-- Date: 2026-07-06
-- Category: Precision Oncology
-- Source: arXiv - https://arxiv.org/abs/2607.04557v1
-- PDF: https://arxiv.org/pdf/2607.04557v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-predicting_therapeutic_outcome_via_aligning_patient_specific_knowledge_graph_and_gene_leve_infographic.json
+- Date: 2026-07-09
+- Category: Target Biology
+- Source: arXiv - https://arxiv.org/abs/2607.08270v1
+- PDF: https://arxiv.org/pdf/2607.08270v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-09-arxiv-progression_as_latent_drift_generative_forecasting_of_slow_evolving_pathologies_infographic.json
 
 ## 13. AI-Derived ECG Age Gap as a Digital Biomarker for Cardiovascular Risk: External Validation in Hospital and Community-Based Prospective Cohorts
 
@@ -123,7 +123,23 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://arxiv.org/pdf/2607.06629v2
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-07-arxiv-stst_jepa_shallow_target_spatio_temporal_joint_embedding_prediction_architecture_for_eeg_s_infographic.json
 
-## 16. ProsMAE: Multi-Source MAE Pretraining for ISUP Grade Classification
+## 16. A generator-matrix causal-inference framework separates measurable aging biomarkers from mortality-driving latent dynamics in humans
+
+- Date: 2026-07-09
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.05.26356402v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.05.26356402v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-09-medrxiv-a_generator_matrix_causal_inference_framework_separates_measurable_aging_biomarkers_from_m_infographic.json
+
+## 17. Super-Generalist: Towards Comprehensive and Accurate Medical Image Understanding via Generalist-Specialist Synergy
+
+- Date: 2026-07-10
+- Category: Precision Oncology
+- Source: arXiv - https://arxiv.org/abs/2607.09135v1
+- PDF: https://arxiv.org/pdf/2607.09135v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-10-arxiv-super_generalist_towards_comprehensive_and_accurate_medical_image_understanding_via_genera_infographic.json
+
+## 18. ProsMAE: Multi-Source MAE Pretraining for ISUP Grade Classification
 
 - Date: 2026-07-09
 - Category: Precision Oncology
@@ -131,7 +147,7 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://arxiv.org/pdf/2607.08162v1
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-09-arxiv-prosmae_multi_source_mae_pretraining_for_isup_grade_classification_infographic.json
 
-## 17. Parenclitic hypergraphs and their application in personalized cancer therapy
+## 19. Parenclitic hypergraphs and their application in personalized cancer therapy
 
 - Date: 2026-07-06
 - Category: Precision Oncology
@@ -139,26 +155,10 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://arxiv.org/pdf/2607.04938v1
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-parenclitic_hypergraphs_and_their_application_in_personalized_cancer_therapy_infographic.json
 
-## 18. Graph Representation Learning of Longitudinal Medical Imaging Trajectories for Treatment Response Prediction
+## 20. TheBioCollection: Unified Pre-Training Scale LLM Corpus for Biology
 
-- Date: 2026-07-06
-- Category: Precision Oncology
-- Source: arXiv - https://arxiv.org/abs/2607.04912v1
-- PDF: https://arxiv.org/pdf/2607.04912v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-graph_representation_learning_of_longitudinal_medical_imaging_trajectories_for_treatment_r_infographic.json
-
-## 19. Characterization of DLBCL cell of origin-phenotypes based on tumor microenvironment features
-
-- Date: 2026-07-07
-- Category: Precision Oncology
-- Source: arXiv - https://arxiv.org/abs/2607.06129v1
-- PDF: https://arxiv.org/pdf/2607.06129v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-07-arxiv-characterization_of_dlbcl_cell_of_origin_phenotypes_based_on_tumor_microenvironment_featur_infographic.json
-
-## 20. Multi-Large Language Model Orchestrated Severity Assessment of Clinical Records (MOSAIC)
-
-- Date: 2026-07-06
-- Category: Clinical Translation
-- Source: arXiv - https://arxiv.org/abs/2607.05032v1
-- PDF: https://arxiv.org/pdf/2607.05032v1
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-06-arxiv-multi_large_language_model_orchestrated_severity_assessment_of_clinical_records_mosaic_infographic.json
+- Date: 2026-07-09
+- Category: Target Biology
+- Source: arXiv - https://arxiv.org/abs/2607.08803v1
+- PDF: https://arxiv.org/pdf/2607.08803v1
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-09-arxiv-thebiocollection_unified_pre_training_scale_llm_corpus_for_biology_infographic.json

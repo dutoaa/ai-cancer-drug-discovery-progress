@@ -1,24 +1,24 @@
 {
-  "key_insight": "An AI-based ECG age gap can estimate “biological cardiac age” and identify people at higher cardiovascular risk beyond calendar age.",
-  "clinical_relevance": "This non-invasive digital biomarker could help stratify cardiovascular risk in large populations and support earlier preventive attention.",
+  "key_insight": "An AI-ECG “age gap” measure can identify accelerated cardiac aging and is strongly associated with higher future cardiovascular event risk.",
+  "clinical_relevance": "This non-invasive digital biomarker could help stratify cardiovascular risk across hospital and community populations before overt disease develops.",
   "method": [
-    "Trained an AI-ECG model using the ECGFounder foundation model on 26,871 healthy UK Biobank ECGs.",
-    "Validated the model in 40,953 independent UK Biobank clinical ECGs with Cox regression for MACCE and related outcomes.",
-    "Externally tested performance in a hospital cohort (55,860) and a community cohort (27,065)."
+    "Trained an ECGFounder-based AI model on healthy UK Biobank ECGs to predict biological cardiac age.",
+    "Validated the model in independent clinical and external inpatient/community cohorts.",
+    "Used Cox proportional hazards models to test links between ECG age gap and cardiovascular outcomes."
   ],
-  "evidence_signal": "The model showed moderate age prediction accuracy (r = 0.55; MAE = 5.12 years) and each 1-year increase in age gap was linked to a 13% higher MACCE risk in the clinical cohort.",
-  "watch_item": "Because the biomarker was validated in cohort data, real-world adoption will require careful calibration, external generalizability checks, and prospective utility testing.",
+  "evidence_signal": "In UK Biobank, predicted age aligned moderately with calendar age (r = 0.55; MAE = 5.12 years), and each 1-year increase in age gap was associated with a 13% higher MACCE risk (HR 1.13, 95% CI 1.11-1.14).",
+  "watch_item": "The age-gap metric shows strong association, but real-world use will need prospective impact testing, calibration across settings, and clear thresholds to avoid misclassification.",
   "hashtags": [
     "#AIECG",
-    "#DigitalBiomarker",
     "#CardiovascularRisk",
-    "#BiologicalAge",
-    "#RiskStratification"
+    "#DigitalBiomarker",
+    "#CardiacAging",
+    "#ExternalValidation"
   ],
   "paper_id": "2026-07-08-medrxiv-ai_derived_ecg_age_gap_as_a_digital_biomarker_for_cardiovascular_risk_external_validation",
   "paper_title": "AI-Derived ECG Age Gap as a Digital Biomarker for Cardiovascular Risk: External Validation in Hospital and Community-Based Prospective Cohorts",
   "paper_date": "2026-07-08",
   "paper_category": "Target Biology",
-  "generated_at": "2026-07-12T08:59:08",
+  "generated_at": "2026-07-13T10:17:48",
   "generator": "openai"
 }

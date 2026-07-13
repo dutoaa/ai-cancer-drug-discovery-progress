@@ -1,24 +1,24 @@
 {
-  "key_insight": "A frozen CT-CLIP foundation model paired with a lightweight survival head can improve lung cancer survival prediction from pretreatment CT plus clinical data in a small cohort.",
-  "clinical_relevance": "This suggests domain-specific multimodal AI may help identify higher- and lower-risk patients for prognosis support when curated outcome data are limited.",
+  "key_insight": "A frozen CT-CLIP foundation model with a lightweight survival head can improve multimodal lung cancer survival prediction from pretreatment CT and clinical data.",
+  "clinical_relevance": "This approach may help identify higher- and lower-risk lung cancer patients more accurately when curated imaging datasets are small.",
   "method": [
-    "Evaluated CT-CLIP as a feature extractor for pretreatment CT images and clinical variables.",
-    "Compared frozen encoders, full fine-tuning, and low-rank adaptation.",
-    "Ran modality ablations and benchmarked against clinical and multimodal baselines."
+    "Evaluated CT-CLIP as a feature extractor for pretreatment CT images.",
+    "Combined imaging representations with clinical variables for survival prediction.",
+    "Compared frozen encoders, full fine-tuning, LoRA, and modality ablations against clinical and multimodal baselines."
   ],
-  "evidence_signal": "The study analyzed 242 diagnosed lung cancer patients and found the frozen CT-CLIP approach outperformed the clinical baseline and was comparable to or better than other multimodal methods.",
-  "watch_item": "The dataset is relatively small and retrospective, so performance and risk-group separation should be validated externally before clinical use.",
+  "evidence_signal": "The study analyzed 242 diagnosed lung cancer patients and found that frozen CT-CLIP with a trainable survival head outperformed the clinical baseline and was comparable to or better than other multimodal methods.",
+  "watch_item": "Results come from a relatively small cohort, so broader validation is needed before real-world implementation.",
   "hashtags": [
-    "#PrecisionOncology",
     "#LungCancer",
     "#SurvivalPrediction",
+    "#Radiomics",
     "#MultimodalAI",
-    "#MedicalImaging"
+    "#PrecisionOncology"
   ],
   "paper_id": "2026-07-09-arxiv-ct_clip_representations_for_multimodal_lung_cancer_survival_prediction",
   "paper_title": "CT-CLIP Representations for Multimodal Lung Cancer Survival Prediction",
   "paper_date": "2026-07-09",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-12T08:59:01",
+  "generated_at": "2026-07-13T10:17:41",
   "generator": "openai"
 }

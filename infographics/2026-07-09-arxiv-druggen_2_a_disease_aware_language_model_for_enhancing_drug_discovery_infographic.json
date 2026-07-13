@@ -1,24 +1,24 @@
 {
-  "key_insight": "DrugGen-2 is a disease-aware generative model that conditions molecule design on both disease ontology and target protein sequences to improve small-molecule discovery.",
-  "clinical_relevance": "By incorporating disease context, the model may better support discovery of candidate compounds for disease-specific targets and drug repurposing efforts.",
+  "key_insight": "DrugGen-2 is a disease-aware generative model that combines disease ontology and protein sequence context to design small molecules for drug discovery.",
+  "clinical_relevance": "By incorporating disease context, it may improve early-stage hit generation and drug repurposing for disease-specific targets, but it remains a preclinical computational tool.",
   "method": [
-    "Fine-tuned a GPT-2 model on approved drug–disease–target data",
-    "Used supervised fine-tuning followed by GRPO reinforcement learning",
-    "Optimized rewards for chemical validity, novelty, diversity, and predicted binding affinity"
+    "Fine-tuned a pretrained GPT-2 model on approved drug–disease–target data.",
+    "Used supervised fine-tuning followed by GRPO reinforcement learning.",
+    "Optimized for chemical validity, novelty, diversity, and predicted binding affinity."
   ],
-  "evidence_signal": "In evaluation on five diabetic nephropathy-related protein targets, DrugGen-2 outperformed DrugGPT and DrugGen and produced docking candidates with predicted affinities as strong as -9.917, better than the enalapril reference on ACE.",
-  "watch_item": "Findings rely on predicted affinity and docking rather than experimental validation, so real-world biological activity remains unconfirmed.",
+  "evidence_signal": "In evaluation on five diabetic nephropathy–relevant protein targets, DrugGen-2 outperformed DrugGPT and DrugGen and produced stronger predicted affinities in docking, including scores better than enalapril at ACE.",
+  "watch_item": "Findings are based on computational prediction and docking, so real-world efficacy, safety, and synthesis feasibility still need experimental validation.",
   "hashtags": [
     "#AIDrugDiscovery",
     "#GenerativeChemistry",
     "#DrugRepurposing",
-    "#DiseaseAwareAI",
-    "#MolecularDesign"
+    "#MolecularDesign",
+    "#DiabeticNephropathy"
   ],
   "paper_id": "2026-07-09-arxiv-druggen_2_a_disease_aware_language_model_for_enhancing_drug_discovery",
   "paper_title": "DrugGen 2: A disease-aware language model for enhancing drug discovery",
   "paper_date": "2026-07-09",
   "paper_category": "Therapeutic Discovery",
-  "generated_at": "2026-07-12T08:58:41",
+  "generated_at": "2026-07-13T10:17:17",
   "generator": "openai"
 }
