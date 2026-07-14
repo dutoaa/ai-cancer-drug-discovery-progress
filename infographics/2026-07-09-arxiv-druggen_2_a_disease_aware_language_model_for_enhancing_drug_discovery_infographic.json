@@ -1,24 +1,24 @@
 {
-  "key_insight": "DrugGen-2 is a disease-aware generative model that combines disease ontology and protein sequence context to design small molecules for drug discovery.",
-  "clinical_relevance": "By incorporating disease context, it may improve early-stage hit generation and drug repurposing for disease-specific targets, but it remains a preclinical computational tool.",
+  "key_insight": "DrugGen-2 is a disease-aware generative model that uses disease ontology plus target protein sequences to design new small molecules for drug discovery.",
+  "clinical_relevance": "By incorporating disease context, the approach may better prioritize candidate compounds for targets involved in complex diseases and support more informed lead generation.",
   "method": [
-    "Fine-tuned a pretrained GPT-2 model on approved drug–disease–target data.",
+    "Fine-tuned a pretrained GPT-2 model on approved drugs linked to diseases and targets.",
     "Used supervised fine-tuning followed by GRPO reinforcement learning.",
     "Optimized for chemical validity, novelty, diversity, and predicted binding affinity."
   ],
-  "evidence_signal": "In evaluation on five diabetic nephropathy–relevant protein targets, DrugGen-2 outperformed DrugGPT and DrugGen and produced stronger predicted affinities in docking, including scores better than enalapril at ACE.",
-  "watch_item": "Findings are based on computational prediction and docking, so real-world efficacy, safety, and synthesis feasibility still need experimental validation.",
+  "evidence_signal": "In evaluations on five targets relevant to diabetic nephropathy, DrugGen-2 outperformed DrugGPT and DrugGen, generated more unique molecules, and achieved stronger predicted docking affinities than reference drugs in several cases.",
+  "watch_item": "Results rely on predicted affinity and docking rather than experimental validation, so real-world activity, safety, and developability remain unconfirmed.",
   "hashtags": [
-    "#AIDrugDiscovery",
-    "#GenerativeChemistry",
-    "#DrugRepurposing",
+    "#AIforDrugDiscovery",
+    "#GenerativeAI",
     "#MolecularDesign",
-    "#DiabeticNephropathy"
+    "#DrugRepurposing",
+    "#PrecisionMedicine"
   ],
   "paper_id": "2026-07-09-arxiv-druggen_2_a_disease_aware_language_model_for_enhancing_drug_discovery",
   "paper_title": "DrugGen 2: A disease-aware language model for enhancing drug discovery",
   "paper_date": "2026-07-09",
   "paper_category": "Therapeutic Discovery",
-  "generated_at": "2026-07-13T10:17:17",
+  "generated_at": "2026-07-14T09:00:06",
   "generator": "openai"
 }

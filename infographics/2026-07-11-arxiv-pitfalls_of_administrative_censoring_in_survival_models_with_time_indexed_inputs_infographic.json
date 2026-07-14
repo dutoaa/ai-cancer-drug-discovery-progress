@@ -1,0 +1,24 @@
+{
+  "key_insight": "Survival models using time-indexed clinical inputs can accidentally learn how much follow-up was available from the record date, not the patient’s true event risk.",
+  "clinical_relevance": "For cancer and other clinical prediction tasks, this can make model performance look better than it really is unless the study design allows enough follow-up after the newest inputs.",
+  "method": [
+    "Defined and analyzed administrative-cutoff leakage as a distinct failure mode in survival prediction.",
+    "Used simulations to test how leakage affects fixed-horizon AUC and Harrell’s C-index under realistic follow-up patterns.",
+    "Validated the phenomenon in a real mammography cohort."
+  ],
+  "evidence_signal": "The abstract reports simulation results plus a real-world mammography cohort showing inflated AUC and affected C-index when recent records have less potential follow-up.",
+  "watch_item": "A model may appear strong in retrospective testing if input dates encode follow-up length; datasets should provide at least the full prediction horizon after the latest input date.",
+  "hashtags": [
+    "#SurvivalAnalysis",
+    "#CancerAI",
+    "#ModelBias",
+    "#Censoring",
+    "#ClinicalPrediction"
+  ],
+  "paper_id": "2026-07-11-arxiv-pitfalls_of_administrative_censoring_in_survival_models_with_time_indexed_inputs",
+  "paper_title": "Pitfalls of Administrative Censoring in Survival Models with Time-Indexed Inputs",
+  "paper_date": "2026-07-11",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-14T09:00:47",
+  "generator": "openai"
+}

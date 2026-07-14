@@ -1,0 +1,24 @@
+{
+  "key_insight": "A class-conditioned β-CVAE can generate Raman spectra that are useful for augmenting small glioma datasets and improving downstream classification.",
+  "clinical_relevance": "This approach may help make Raman-based glioma biomarker classification more robust when patient data are scarce and imbalanced.",
+  "method": [
+    "Built a conditional variational autoencoder to create synthetic Raman spectra by glioma class.",
+    "Tested binary IDH-status and 6-class methylation subtype classification.",
+    "Compared train-on-synthetic, train-on-synthetic-plus-real, and test-on-real under patient-isolated cross-validation."
+  ],
+  "evidence_signal": "The abstract reports 58 tumor samples and finds synthetic-only models underperform real-data models, while adding synthetic spectra consistently improves performance.",
+  "watch_item": "There is a substantial domain gap between synthetic and real spectra, so gains depend on careful validation and may not transfer across acquisition settings.",
+  "hashtags": [
+    "#RamanSpectroscopy",
+    "#Glioma",
+    "#SyntheticData",
+    "#DeepLearning",
+    "#PrecisionOncology"
+  ],
+  "paper_id": "2026-07-11-arxiv-generative_augmentation_of_raman_spectra_for_glioma_classification",
+  "paper_title": "Generative Augmentation of Raman Spectra for Glioma Classification",
+  "paper_date": "2026-07-11",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-14T09:00:21",
+  "generator": "openai"
+}

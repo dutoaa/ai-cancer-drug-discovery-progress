@@ -1,0 +1,24 @@
+{
+  "key_insight": "Across 15 foundation-model backbones, mammography-specific models performed best on out-of-distribution mammography tasks, but robustness depended on the dataset rather than mammography pretraining alone.",
+  "clinical_relevance": "This suggests that choosing imaging features for breast cancer support tools should prioritize external validation across multiple sites and datasets, not just in-domain accuracy.",
+  "method": [
+    "Benchmarked 15 frozen foundation-model backbones with a linear probe.",
+    "Trained on 3 source datasets and tested on 12 label-harmonized OOD datasets.",
+    "Compared performance across breast density, BI-RADS severity, and cancer status."
+  ],
+  "evidence_signal": "The study used a unified frozen-backbone, linear-probe protocol with multi-dataset OOD testing, revealing heterogeneous dataset-level performance even for top models.",
+  "watch_item": "Results may not transfer reliably without dataset-level external validation, since strong average OOD performance did not guarantee consistent performance across individual datasets.",
+  "hashtags": [
+    "#MammographyAI",
+    "#FoundationModels",
+    "#OutOfDistribution",
+    "#BreastCancerAI",
+    "#MedicalImaging"
+  ],
+  "paper_id": "2026-07-11-arxiv-benchmarking_the_robustness_of_foundation_models_for_mammography_under_domain_shift",
+  "paper_title": "Benchmarking the Robustness of Foundation Models for Mammography under Domain Shift",
+  "paper_date": "2026-07-11",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-14T09:00:39",
+  "generator": "openai"
+}

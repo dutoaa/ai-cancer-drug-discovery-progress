@@ -1,0 +1,24 @@
+{
+  "key_insight": "TVT-PAPD improves self-supervised whole-slide image classification by adding pathology-aware prototype distillation so the model learns tissue morphology patterns that are more clinically meaningful than generic visual features.",
+  "clinical_relevance": "This approach could help pathology workflows by producing more robust, transferable slide representations for glioma subtype classification and cross-cohort analysis.",
+  "method": [
+    "Uses a Tiny Vision Transformer (TVT) as the backbone for efficient WSI representation learning.",
+    "Adds a Pathology-Aware Prototype Distillation (PAPD) module with a learnable prototype bank to preserve representative morphology patterns.",
+    "Encourages semantically similar tissue regions to map to consistent, discriminative latent features."
+  ],
+  "evidence_signal": "On TCGA LGG/GBM and IPD-Brain datasets, the method achieved weighted F1-scores of 93.02% and 90.23%, with strong cross-cohort generalization across independent glioma datasets.",
+  "watch_item": "The results are promising but come from specific glioma datasets, so broader validation across more cancer types, scanners, and institutions is still needed.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#DigitalPathology",
+    "#SelfSupervisedLearning",
+    "#VisionTransformer",
+    "#GliomaClassification"
+  ],
+  "paper_id": "2026-07-11-arxiv-tvt_papd_pathology_aware_prototype_distillation_for_self_supervised_whole_slide_image_clas",
+  "paper_title": "TVT-PAPD: Pathology-Aware Prototype Distillation for Self-Supervised Whole Slide Image Classification",
+  "paper_date": "2026-07-11",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-14T09:00:31",
+  "generator": "openai"
+}

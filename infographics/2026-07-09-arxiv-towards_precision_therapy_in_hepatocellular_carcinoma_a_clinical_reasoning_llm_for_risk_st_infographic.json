@@ -1,24 +1,24 @@
 {
-  "key_insight": "HCC-STAR is a clinically aligned LLM that turns routine HCC EMR text into risk staging, guideline-consistent treatment rankings, and individualized survival estimates.",
-  "clinical_relevance": "It may help clinicians stratify hepatocellular carcinoma more precisely and support faster, more evidence-based treatment decisions, but it is a decision-support tool rather than a substitute for clinical judgment.",
+  "key_insight": "HCC-STAR is a clinically aligned large language model that reads EMR narratives to stratify hepatocellular carcinoma risk and generate ranked, guideline-consistent treatment guidance with evidence-backed rationales.",
+  "clinical_relevance": "It could help clinicians make faster, more individualized HCC treatment decisions by reducing within-stage ambiguity and supporting precision therapy workflows.",
   "method": [
-    "Curated ~30,000 HCC cases from SEER and expanded them into EMR-style narratives with clinician-validated prompt augmentation.",
-    "Built a knowledge-aligned reasoning framework optimized with a step-verifiable composite reward.",
-    "Evaluated the model on a multi-center cohort of 6,668 patients from 12 hospitals in China against guidelines and competitive LLMs."
+    "Trained on ~30,000 HCC cases from SEER, then expanded into EMR-style narratives using clinician-validated prompt-based augmentation.",
+    "Optimized with a knowledge-aligned reasoning framework and a step-verifiable composite reward to encourage explainable, guideline-consistent outputs.",
+    "Evaluated against guidelines, competitive models, and clinicians for staging, treatment recommendation, and survival estimation."
   ],
-  "evidence_signal": "In multi-center testing, HCC-STAR outperformed clinical guidelines and models such as GPT-5 and Gemini-2.5 Pro on treatment recommendation and risk stratification, with blinded specialists rating its reasoning as trustworthy.",
-  "watch_item": "Performance is based on retrospective and hypothetical analyses, so external prospective validation and careful integration into real-world workflows are still needed.",
+  "evidence_signal": "In a multi-center cohort of 6,668 patients from 12 hospitals in China, HCC-STAR outperformed clinical guidelines and models including GPT-5 and Gemini-2.5 Pro, with blinded specialists rating its reasoning as trustworthy.",
+  "watch_item": "As with any decision-support system, real-world deployment will require careful validation for generalizability, workflow fit, and safe use alongside—not instead of—clinician judgment.",
   "hashtags": [
-    "#HCC",
+    "#HepatocellularCarcinoma",
     "#PrecisionOncology",
-    "#LLM",
-    "#ClinicalDecisionSupport",
-    "#CancerAI"
+    "#ClinicalAI",
+    "#DecisionSupport",
+    "#LLMInHealthcare"
   ],
   "paper_id": "2026-07-09-arxiv-towards_precision_therapy_in_hepatocellular_carcinoma_a_clinical_reasoning_llm_for_risk_st",
   "paper_title": "Towards Precision Therapy in Hepatocellular Carcinoma: A Clinical-Reasoning LLM for Risk Stratification and Treatment Guidance",
   "paper_date": "2026-07-09",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-13T10:17:24",
+  "generated_at": "2026-07-14T09:00:14",
   "generator": "openai"
 }

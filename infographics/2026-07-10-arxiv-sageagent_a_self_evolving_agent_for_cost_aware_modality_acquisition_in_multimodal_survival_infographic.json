@@ -1,13 +1,13 @@
 {
-  "key_insight": "SAGEAgent learns to decide, step by step, whether the next diagnostic modality is worth the added burden for survival prediction.",
-  "clinical_relevance": "It could help oncology workflows tailor workups by reducing unnecessary testing while preserving prediction performance.",
+  "key_insight": "SAGEAgent treats multimodal survival prediction as a sequential decision problem, learning when to stop or continue collecting diagnostic data to balance accuracy with patient burden.",
+  "clinical_relevance": "This approach could help oncology teams avoid unnecessary tests by supporting cost-aware, ordered modality acquisition while still aiming for reliable survival estimates.",
   "method": [
-    "LLM-based agent for sequential modality acquisition",
-    "Uses clinical tools to convert numeric outputs into text",
-    "Combines episodic memory of similar cases with semantic memory of reusable decision patterns"
+    "LLM-based clinical agent decides the next modality to acquire for each patient.",
+    "Uses clinical tools to convert numeric predictions into text, plus episodic memory for similar cases and semantic memory for reusable decision patterns.",
+    "Optimizes over an ordered diagnostic workflow with escalating burden, from demographics to genomics."
   ],
-  "evidence_signal": "In a glioma cohort spanning TCGA-LGG, TCGA-GBM, and BraTS with four modalities, the approach matched competitive survival prediction accuracy while cutting average acquisition burden by 55%.",
-  "watch_item": "Performance depends on the ordered availability of modalities and retrospective cohort data, so real-world validation is needed before workflow use.",
+  "evidence_signal": "On a glioma cohort spanning TCGA-LGG, TCGA-GBM, and BraTS with four modalities, SAGEAgent matched competitive survival prediction performance while reducing average acquisition burden by 55%.",
+  "watch_item": "The workflow is evaluated in a specific glioma setting, so broader validation is needed before use across other cancers, institutions, and real clinical workflows.",
   "hashtags": [
     "#PrecisionOncology",
     "#MultimodalAI",
@@ -19,6 +19,6 @@
   "paper_title": "SAGEAgent: A Self-Evolving Agent for Cost-Aware Modality Acquisition in Multimodal Survival Prediction",
   "paper_date": "2026-07-10",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-13T10:17:27",
+  "generated_at": "2026-07-14T09:00:19",
   "generator": "openai"
 }
