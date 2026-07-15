@@ -1,24 +1,24 @@
 {
-  "key_insight": "Most mortality-driving aging dynamics appear latent rather than captured by current blood biomarkers, and only some known causal proteins show support in the causal-inference tests.",
-  "clinical_relevance": "This suggests many aging biomarkers may be better for prediction than for identifying true intervention targets, so causal validation is needed before translation.",
+  "key_insight": "Aging-related mortality appears to be driven mostly by latent dynamics that standard blood biomarkers do not capture, while some measurable markers may predict aging without proving causality.",
+  "clinical_relevance": "This framework may help separate biomarkers useful for risk prediction from those that truly reflect modifiable biological drivers of mortality and aging.",
   "method": [
-    "Markov generator-matrix model with death as an absorbing state, fit to NHANES and replicated in HRS.",
-    "Two-platform cis-pQTL Mendelian randomization plus colocalization against parental-lifespan GWAS.",
-    "Clock comparison in cellular reprogramming using Horvath and DamAge."
+    "Built a Markov generator-matrix model with death as an absorbing state using biomarker and mortality data.",
+    "Tested causality with cis-pQTL Mendelian randomization plus colocalization against parental-lifespan GWAS.",
+    "Compared aging clocks before and after cellular reprogramming to assess reversibility."
   ],
-  "evidence_signal": "The abstract reports ~92% of Gompertz acceleration attributed to a latent component in NHANES and HRS, with known causal proteins detected but the measured latent proxies largely null.",
-  "watch_item": "Causal claims depend on the quality of instrument selection, colocalization, and the assumption that the public cohorts and biomarker panels capture the relevant biology.",
+  "evidence_signal": "The model attributed about 92% of Gompertz acceleration to latent components in both NHANES (92.5%) and HRS (91.6%), while MR recovered known causal proteins but found the latent biomarker axes largely null.",
+  "watch_item": "The latent component is inferred statistically from available public datasets, so it may not directly translate into actionable biological targets without further experimental validation.",
   "hashtags": [
-    "#AgingResearch",
+    "#AgingBiology",
     "#Biomarkers",
     "#MendelianRandomization",
-    "#Geroscience",
-    "#CausalInference"
+    "#EpigeneticClocks",
+    "#MortalityRisk"
   ],
   "paper_id": "2026-07-09-medrxiv-a_generator_matrix_causal_inference_framework_separates_measurable_aging_biomarkers_from_m",
   "paper_title": "A generator-matrix causal-inference framework separates measurable aging biomarkers from mortality-driving latent dynamics in humans",
   "paper_date": "2026-07-09",
   "paper_category": "Target Biology",
-  "generated_at": "2026-07-13T10:17:55",
+  "generated_at": "2026-07-15T09:07:33",
   "generator": "openai"
 }
