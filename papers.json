@@ -1,5 +1,107 @@
 [
   {
+    "id": "2026-07-10-medrxiv-assessment_of_zero_shot_large_language_model_llm_assisted_clinical_trial_matching_processe",
+    "doi": "10.64898/2026.07.06.26354647",
+    "date": "2026-07-10",
+    "title": "Assessment of Zero-Shot Large Language Model (LLM) Assisted Clinical Trial Matching Processes: A Metastatic Cancer Use Case",
+    "authors": "Weng, Y.; Yalamaddi, H.; Fu, D.; Mishra, A.; Bunning, B. J.; Martin, A. B.; Hope, J.; Charu, V.; Kurian, A.; Desai, M.",
+    "abstract": "IntroductionFor oncology patients with limited treatment options, clinical trials may be a critical lifesaving pathway. Identifying relevant trials, however, is a time-consuming and difficult task. Several patient-trial matching processes incorporating large language models (LLMs) have been proposed to alleviate the burden on patients and oncologists. We aim to explore the benefits and practical challenges of zero-shot LLM-assisted trial matching processes by analyzing the results for a single pancreatic cancer patient. Materials and MethodsThe results of a simple zero-shot LLM-assisted clinical trial matching process for our patient were compared to those of a \"human benchmark,\" which was developed manually by two of the authors interfacing directly with ClinicalTrials.gov. Performance metrics - sensitivity, specificity, precision, and accuracy - were calculated. In addition, a qualitative content analysis (QCA) of LLM reasoning text was done to identify patterns in \"errors,\" which we define as a human-LLM discrepancy in final patient eligibility. Implications and severity of errors are discussed. ResultsThe zero-shot LLM-assisted process returned potential trials with a sensitivity, specificity, and precision of 81.1%, 89.3%, and 86.5% respectively compared to the human benchmark. Qualitative error analyses revealed that about 73% of errors could potentially be alleviated with improved prompting and information access. Overall performance seemed comparable to that of human reviewers. ConclusionThe results from this preliminary real-world case study provide additional evidence to the literature in support of the integration of LLMs in clinical trial matching to provide benefit to patients with metastatic cancer with limited options.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.06.26354647v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.06.26354647v1.full.pdf"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "A zero-shot LLM-assisted workflow matched clinical trials for a metastatic pancreatic cancer case with performance close to a human-reviewed benchmark.",
+      "clinical_relevance": "This suggests LLMs could help speed up trial matching for patients with limited treatment options, potentially reducing manual screening burden.",
+      "method": [
+        "Compared zero-shot LLM-assisted trial eligibility results against a manually built human benchmark using ClinicalTrials.gov.",
+        "Calculated sensitivity, specificity, precision, and accuracy for the LLM-assisted matching process.",
+        "Performed qualitative content analysis of LLM reasoning text to examine mismatch patterns and likely error causes."
+      ],
+      "evidence_signal": "In this single-patient case study, the LLM-assisted process achieved 81.1% sensitivity, 89.3% specificity, and 86.5% precision versus the human benchmark.",
+      "watch_item": "Findings come from one real-world case, so broader reliability, workflow integration, and safety need validation before routine use.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#ClinicalTrials",
+        "#LargeLanguageModels",
+        "#CancerResearch",
+        "#AIinHealthcare"
+      ],
+      "paper_id": "2026-07-10-medrxiv-assessment_of_zero_shot_large_language_model_llm_assisted_clinical_trial_matching_processe",
+      "paper_title": "Assessment of Zero-Shot Large Language Model (LLM) Assisted Clinical Trial Matching Processes: A Metastatic Cancer Use Case",
+      "paper_date": "2026-07-10",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-16T09:08:27",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-10-medrxiv-assessing_ai_and_neurologist_diagnostic_reasoning_against_neuropathological_ground_truth",
+    "doi": "10.64898/2026.07.07.26356930",
+    "date": "2026-07-10",
+    "title": "Assessing AI and Neurologist Diagnostic Reasoning Against Neuropathological Ground Truth",
+    "authors": "Leng, Y.; Noori, A.; Dickson, J. R.; Serrano-Pozo, A.; Avetisyan, M.; Rodriguez, D.; Rosenberg, E. S.; He, Y.; Oakley, D. H.; Khurana, V. S.; Hyman, B. T.; Frosch, M. P.; Das, S.",
+    "abstract": "BACKGROUNDAccurate differential diagnosis of complex neurological disorders remains challenging due to overlapping clinical features and heterogeneous disease presentations. Although large language models (LLMs) show promise in clinical reasoning, prior studies benchmark performance against clinician consensus rather than biological ground truth. A neuropathologically confirmed benchmark dataset for evaluating diagnostic AI in neurology is currently lacking. METHODSWe introduce NeuroBench, a curated benchmark of complex neurological cases with neuropathologically confirmed gold-standard diagnoses, and DIAGNO, a confidence-aware LLM-based system for neurological diagnosis. NeuroBench comprises 203 retrospective case summaries from the Massachusetts General Hospital Brain Cutting Conference with corresponding autopsy-confirmed diagnoses. DIAGNO generated top-3 differential diagnoses, employing retrieval-augmented generation (RAG) for lower-confidence cases. Performance was assessed by three independent blinded adjudicators who evaluated both DIAGNO and neurologists against neuropathological ground truth. RESULTSNeuroBench encompassed 79 unique neuropathological diagnoses, spanning conditions including cerebrovascular disease, brain tumors, neurological infections, and various neurodegenerative and inflammatory disorders. DIAGNO matched or outperformed neurologists in top-3 accuracy (0.67 versus 0.63) and taxonomy-level accuracy (0.74 versus 0.66). In cases of disagreement, DIAGNO was more often correct than neurologists (29 versus 19 cases). Diagnostic concordance between DIAGNO and neurologists was high (90% agreement in top-3 predictions), even when both were incorrect, suggesting strong alignment in diagnostic reasoning. On NeuroBench, DIAGNO also outperformed GPT-4o baseline and DeepSeek R1 across all top-k accuracy metrics. In a real-world evaluation on eight complex cases with differentials from Mass General Brigham, neurologists rated DIAGNOs reasoning favorably (mean 4.03/5) across multiple dimensions of clinical utility and safety. CONCLUSIONSNeuroBench establishes neuropathological confirmation as the appropriate standard for evaluating diagnostic AI in neurology, moving beyond clinician-referenced benchmarking to define the ceiling of diagnostic accuracy. Evaluated against this standard, DIAGNO achieved expert-level diagnostic performance and received favorable clinician ratings in real-world applications, supporting its potential as a clinical decision-support tool in neurology.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.07.26356930v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.07.26356930v1.full.pdf"
+      }
+    ],
+    "score": 53,
+    "infographic": {
+      "key_insight": "A neuropathology-confirmed benchmark found that a confidence-aware LLM system for neurological diagnosis matched or slightly outperformed neurologists on top-3 differential accuracy.",
+      "clinical_relevance": "The study suggests AI could help support expert diagnostic reasoning in complex neurological cases, but performance should be judged against biological ground truth rather than clinician consensus alone.",
+      "method": [
+        "Built NeuroBench from 203 retrospective Massachusetts General Hospital Brain Cutting Conference cases with autopsy-confirmed diagnoses.",
+        "Tested DIAGNO, an LLM-based diagnostic system using confidence-aware retrieval-augmented generation for lower-confidence cases.",
+        "Compared DIAGNO, neurologists, GPT-4o, and DeepSeek R1 using blinded adjudicators against neuropathological ground truth."
+      ],
+      "evidence_signal": "On NeuroBench, DIAGNO reached 0.67 top-3 accuracy and 0.74 taxonomy-level accuracy, with stronger performance than neurologists in disagreement cases and high 90% top-3 concordance.",
+      "watch_item": "This is a retrospective benchmark from a single-center autopsy cohort, so generalization to live clinical settings and prospective use still needs validation.",
+      "hashtags": [
+        "#AIinHealthcare",
+        "#Neurology",
+        "#LLM",
+        "#DiagnosticAI",
+        "#PrecisionMedicine"
+      ],
+      "paper_id": "2026-07-10-medrxiv-assessing_ai_and_neurologist_diagnostic_reasoning_against_neuropathological_ground_truth",
+      "paper_title": "Assessing AI and Neurologist Diagnostic Reasoning Against Neuropathological Ground Truth",
+      "paper_date": "2026-07-10",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-16T09:08:30",
+      "generator": "openai"
+    }
+  },
+  {
     "id": "2026-07-10-medrxiv-machine_learning_models_for_osteoporosis_prediction_a_systematic_review_and_meta_analysis",
     "doi": "10.64898/2026.07.03.26357134",
     "date": "2026-07-10",
@@ -24,233 +126,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.07.03.26357134v1.full.pdf"
       }
     ],
-    "score": 52,
+    "score": 47,
     "infographic": {
-      "key_insight": "Machine learning models showed strong overall performance for predicting osteoporosis risk, especially deep learning and imaging-based approaches.",
-      "clinical_relevance": "These models may help identify adults at higher risk of osteoporosis or low bone mineral density earlier, supporting targeted screening and prevention efforts.",
+      "key_insight": "Machine learning models show strong overall accuracy for predicting osteoporosis, with deep learning and imaging-based approaches performing best.",
+      "clinical_relevance": "These models could help identify adults at higher risk of osteoporosis or low bone density earlier, potentially supporting screening and prevention workflows.",
       "method": [
-        "Systematic review of studies published from Jan 2020 to Feb 2026",
-        "Meta-analysis pooled AUCs using random-effects models with logit transformation",
-        "Subgroups compared data type, model class, external validation, and population type"
+        "Systematic review and meta-analysis of 33 studies (27 pooled) published from 2020 to 2026",
+        "Compared performance across ML types, data sources, validation strategies, and population groups",
+        "Pooled AUCs using random-effects meta-analysis with PROBAST quality assessment"
       ],
-      "evidence_signal": "Across 27 studies in meta-analysis, pooled AUC was 0.879, with imaging models, deep learning, and internally validated models performing best; heterogeneity was very high (I2 = 99.5%).",
-      "watch_item": "Results should be interpreted cautiously because most studies had limited external validation, substantial heterogeneity, and publication bias was detected.",
+      "evidence_signal": "The pooled AUC was 0.879 overall, with imaging-based models outperforming clinical data models and substantial heterogeneity across studies.",
+      "watch_item": "Performance was lower in externally validated models, and significant publication bias plus ML-specific bias not fully captured by PROBAST limit real-world certainty.",
       "hashtags": [
         "#MachineLearning",
         "#DeepLearning",
         "#Osteoporosis",
-        "#MedicalAI",
+        "#PredictionModels",
         "#SystematicReview"
       ],
       "paper_id": "2026-07-10-medrxiv-machine_learning_models_for_osteoporosis_prediction_a_systematic_review_and_meta_analysis",
       "paper_title": "Machine Learning Models for Osteoporosis Prediction: A Systematic Review and Meta-Analysis",
       "paper_date": "2026-07-10",
       "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-07-15T09:07:14",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-09-medrxiv-plasma_proteomics_linking_primary_and_secondary_diseases_insights_into_molecular_mediation",
-    "doi": "10.1101/2025.08.29.25334726",
-    "date": "2026-07-09",
-    "title": "Plasma Proteomics Linking Primary and Secondary diseases: Insights into Molecular Mediation from UK Biobank Data",
-    "authors": "qian, h.; Wu, C.; Li, B.; Rosenzweig, A.; Wang, M.",
-    "abstract": "BackgroundDiabetes, hypertension, and dyslipidemia are major risk factors for cardiovascular, neurological, renal, and pulmonary diseases, yet clinically accessible molecular mediators linking these cardiometabolic conditions to downstream complications remain unclear. MethodsWe analyzed plasma proteomic data from 53,030 UK Biobank participants with longitudinal follow-up. Mediation analysis evaluated circulating proteins linking three primary cardiometabolic diseases to 18 secondary outcomes. Mendelian randomization assessed potential causal relationships, and machine learning evaluated the predictive value of identified mediators. FindingsWe identified 998 significant mediation pathways involving 337 unique plasma proteins. GDF15 consistently mediated associations between diabetes and cardiovascular diseases, and ACE2 linked poorly controlled diabetes to increased risk of nerve root and plexus disorders. Mediators were enriched in receptor-mediated signaling and molecular interaction pathways. Mendelian randomization supported potential causal roles for 44 proteins. Incorporating mediator proteins into machine learning models improved prediction of secondary disease risk beyond traditional clinical factors and other plasma proteins. ConclusionsPlasma proteins help mediate progression from cardiometabolic diseases to downstream complications. These findings provide a molecular map of disease mediation pathways, nominate biomarkers and therapeutic targets, and support improved risk stratification and targeted intervention. FundingThis study was supported by the National Institutes of Health, the American Heart Association, and institutional funding.",
-    "category": "Target Biology",
-    "source": "medRxiv",
-    "published": "2026-07-09",
-    "updated": "2026-07-09",
-    "primary_category": "endocrinology",
-    "categories": [
-      "endocrinology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.1101/2025.08.29.25334726v4"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.1101/2025.08.29.25334726v4.full.pdf"
-      }
-    ],
-    "score": 49,
-    "infographic": {
-      "key_insight": "Large-scale plasma proteomics in UK Biobank identified hundreds of proteins that may mediate how cardiometabolic diseases progress to downstream cardiovascular, neurological, renal, and pulmonary complications.",
-      "clinical_relevance": "These mediator proteins could improve risk stratification and highlight biomarker or therapeutic targets for people with diabetes, hypertension, and dyslipidemia.",
-      "method": [
-        "Analyzed plasma proteomic data from 53,030 UK Biobank participants with longitudinal follow-up.",
-        "Ran mediation analyses linking three primary cardiometabolic diseases to 18 secondary outcomes.",
-        "Used Mendelian randomization and machine learning to test potential causality and predictive value."
-      ],
-      "evidence_signal": "The study found 998 significant mediation pathways involving 337 unique proteins, with 44 proteins supported by Mendelian randomization and improved prediction when mediators were added to models.",
-      "watch_item": "These findings are largely associative and need external validation and prospective testing before clinical use.",
-      "hashtags": [
-        "#PlasmaProteomics",
-        "#UKBiobank",
-        "#CardiometabolicDisease",
-        "#Biomarkers",
-        "#MendelianRandomization"
-      ],
-      "paper_id": "2026-07-09-medrxiv-plasma_proteomics_linking_primary_and_secondary_diseases_insights_into_molecular_mediation",
-      "paper_title": "Plasma Proteomics Linking Primary and Secondary diseases: Insights into Molecular Mediation from UK Biobank Data",
-      "paper_date": "2026-07-09",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-07-15T09:07:17",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-09-medrxiv-multi_omics_and_network_propagation_reveal_latent_innate_immune_programmes_stratifying_hig",
-    "doi": "10.64898/2026.06.26.26356680",
-    "date": "2026-07-09",
-    "title": "Multi-omics and network propagation reveal latent innate immune programmes stratifying high-risk thrombotic primary antiphospholipid syndrome",
-    "authors": "Sasikumar, S.; Baltsiotis, M.; Verrou, K.-M.; Rouni, G.; Sfikakis, P. P.; Samiotaki, M.; Petsalaki, E.; Tektonidou, M. G.",
-    "abstract": "ObjectivesThrombotic primary antiphospholipid syndrome (thrPAPS) outcomes are associated with thrombosis type (arterial versus venous), recurrence, and antiphospholipid antibody (aPL) profile (single versus triple-aPL). We investigated molecular signatures underlying disease status and high-risk phenotypes. MethodsWe performed whole-blood transcriptomics and mass spectrometry-based plasma proteomics in patients with thrPAPS and age/sex-matched healthy controls. Analyses included differential expression, pathway enrichment, weighted gene co-expression network analysis (WGCNA) and machine learning. Multi-Omics Factor Analysis (MOFA2) and network propagation were applied to identify latent molecular programmes associated with high-risk phenotypes. ResultsTranscriptomic and WGCNA analyses revealed an interferon-associated module associated with high-risk phenotypes. Plasma proteomics distinguished thrPAPS from healthy controls through a coordinated thromboinflammatory signature encompassing complement, acute-phase, platelet, and coagulation-associated pathways. Complement factor D, a rate-limiting enzyme of the alternative complement pathway, discriminated recurrent from single-event thrPAPS (AUC = 0.79) and correlated with thrombotic event count (Spearmans {rho} = 0.62, p < 0.001). Mixed arterial/venous phenotype showed the greatest degree of subgroup-specific dysregulation, including complement and coagulation/fibrinolysis-related proteins. MOFA2 identified a proteome-dominant latent factor that increased with aPL burden (Spearmans {rho} = 0.33, p = 0.017) and was enriched for complement cascade proteins. Network propagation embedded this signature within immune-cell signalling (STAT-1, PI3K-AKT, MAPK8, SRC), N-linked glycosylation, and mitochondrial oxidative phosphorylation. Longitudinal profiling identified reactive oxygen species-associated proteins during active disease. ConclusionsThrPAPS is characterised by a complement-, interferon and platelet-driven thromboinflammatory programme that scales with aPL and thrombosis burden, converging on innate immune activation as a central feature of high-risk disease. WHAT IS ALREADY KNOWN ON THIS TOPICO_LIThrombotic primary antiphospholipid syndrome (thrPAPS) is a rare and potentially fatal autoimmune disorder carrying a high risk of thrombotic recurrence, often despite adequate anticoagulant treatment, and an increased mortality risk. A few previous studies investigated transcriptomics or proteomics in antiphospholipid syndrome, but many included mixed populations of various antiphospholipid syndrome groups (obstetric, thrombotic, or microvascular APS and/or asymptomatic antiphospholipid antibody carriers) or both primary and secondary antiphospholipid syndrome. C_LIO_LIThe molecular programmes linking circulating proteomic changes to cellular transcriptional states in patients with exclusively primary antiphospholipid syndrome and a history of thrombosis remain uncertain, as do the associations with high-risk phenotypes associated with poor outcomes. C_LI WHAT THIS STUDY ADDSO_LIThis study integrates, for the first time, plasma proteomics with whole-blood transcriptomics to identify molecular determinants of high-risk phenotypes associated with worse outcomes. Plasma proteomics separated thrPAPS from healthy controls through a coordinated thromboinflammatory signature spanning complement, acute-phase, platelet, and coagulation-associated pathways, with this signature reproducing consistently across differential abundance, co-expression network, and latent-factor analyses. C_LIO_LIComplement factor D (CFD), the rate-limiting enzyme of the alternative complement pathway, emerged as a quantitative correlate of thrombotic burden (Spearman {rho} = 0.62, p < 0.001) and discriminated recurrent from single-event disease (AUC = 0.79), nominating it as a mechanistically anchored candidate marker of recurrence risk for future validation. C_LIO_LITranscriptomic and WGCNA analyses revealed an interferon-associated module associated with high-risk phenotypes. Multi-omics factor analysis identified a proteome-dominant latent programme that increased monotonically with aPL burden and was enriched for the complement cascade; network propagation embedded this programme within innate immune-receptor signalling (STAT1, SRC, PI3K-AKT, MAPK8), linking circulating signatures to interferon-associated transcriptional states identified within the same cohort. C_LIO_LILongitudinal paired sampling of active versus non-active disease identified reactive oxygen species-associated proteins as features of disease activity C_LI HOW THIS STUDY MIGHT AFFECT RESEARCH, PRACTICE OR POLICYO_LIThese findings provide a molecular framework for stratifying high-risk thrPAPS phenotypes. The identified proteomic and multi-omics integration markers and pathways may inform future biomarker validation studies and guide the development of personalised, targeted therapeutics. C_LI",
-    "category": "Target Biology",
-    "source": "medRxiv",
-    "published": "2026-07-09",
-    "updated": "2026-07-09",
-    "primary_category": "rheumatology",
-    "categories": [
-      "rheumatology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356680v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.26.26356680v1.full.pdf"
-      }
-    ],
-    "score": 49,
-    "infographic": {
-      "key_insight": "This study shows that high-risk thrombotic primary antiphospholipid syndrome is marked by a complement-, interferon-, and platelet-driven innate immune programme that intensifies with thrombosis and antiphospholipid antibody burden.",
-      "clinical_relevance": "The findings suggest blood-based molecular signatures could help stratify patients with thrPAPS into higher-risk subgroups, potentially informing closer monitoring and future biomarker-guided management research.",
-      "method": [
-        "Whole-blood transcriptomics and plasma proteomics in thrPAPS patients vs age/sex-matched healthy controls",
-        "Differential expression, pathway enrichment, WGCNA, MOFA2, and network propagation to identify shared and latent programmes",
-        "Machine learning and longitudinal profiling to link signatures with recurrent events and disease activity"
-      ],
-      "evidence_signal": "The abstract reports that complement factor D discriminated recurrent from single-event thrPAPS with AUC 0.79 and correlated with thrombotic event count (Spearman rho 0.62, p < 0.001).",
-      "watch_item": "These are biomarker-discovery results from a patient cohort, so the signals need external validation and prospective testing before being used in practice.",
-      "hashtags": [
-        "#ThromboticAPS",
-        "#MultiOmics",
-        "#Biomarkers",
-        "#ComplementSystem",
-        "#InnateImmunity"
-      ],
-      "paper_id": "2026-07-09-medrxiv-multi_omics_and_network_propagation_reveal_latent_innate_immune_programmes_stratifying_hig",
-      "paper_title": "Multi-omics and network propagation reveal latent innate immune programmes stratifying high-risk thrombotic primary antiphospholipid syndrome",
-      "paper_date": "2026-07-09",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-07-15T09:07:20",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-09-medrxiv-spatial_transcriptomics_and_machine_learning_define_exhaustion_like_bone_marrow_t_cell_isl",
-    "doi": "10.64898/2026.06.30.26356926",
-    "date": "2026-07-09",
-    "title": "Spatial transcriptomics and machine learning define exhaustion-like bone marrow T-cell islands associated with myeloma progression and clinical risk",
-    "authors": "Li, X.; Jiang, X.; Dong, Q.; Wu, J.; Li, Y.; Zhang, Y.; Zhong, L.",
-    "abstract": "BackgroundMultiple myeloma (MM) progression is accompanied by remodeling of the bone marrow immune microenvironment. Local interactions among malignant plasma cells, stromal cells, myeloid cells, and immune cells not only support tumor cell survival, expansion, and immune escape, but are also closely associated with disease progression, therapeutic response, and clinical prognosis. Moreover, T cell exhaustion is a common T cells dysfunction in MM and limited efficacy of T cell-targeting therapies. However, the in situ organization and clinical significance of exhausted T cells in MM patients bone marrow remain insufficiently understood. MethodsIn this study, we analyzed bone marrow Xenium 5K spatial transcriptomics data from control (Ctrl), monoclonal gammopathy of undetermined significance (MGUS), smoldering myeloma (SM), and MM samples. After canonical multi-sample integration and celltype annotation, we used Gaussian mixture model (GMM)-based spatial partitioning, and multilayer perceptron (MLP) machine learning for systematic characterization the T cell microenvironment in MM bone marrow. ResultsOur results showed that exhaustion-like T cells increased during MM progression and formed spatially discrete T cell-enriched regions in the bone marrow, which we defined as exhaustion-like bone marrow T cell islands (eBM-TIs). These niches were mainly characterized by enhanced T cell-plasma cell communication associated with upregulated Galectin signaling. Pseudobulk analysis further showed enhanced IFN-related signaling in eBM-TIs, accompanied by upregulation of CXCR3 ligands such as CXCL9 and CXCL10, suggesting that the IFN-CXCL9/10 axis may contribute to T cell chemotaxis, maintenance of chronic inflammation, and formation of exhaustion-like states. By transferring spatial niche labels to scRNA-seq cohorts with available clinical staging information using MLP, we further found that the proportion of eBM-TI-like T cells was associated with higher disease risk and unfavorable prognostic outcomes. ConclusionsIn summary, this study identifies eBM-TIs as a spatial niche in the MM bone marrow. These niches represent an important immune unit linking chronic inflammation, T cell exhaustion, and clinical risk, and may serve as a potential biomarker of MM disease progression.",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-07-09",
-    "updated": "2026-07-09",
-    "primary_category": "hematology",
-    "categories": [
-      "hematology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.30.26356926v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.30.26356926v1.full.pdf"
-      }
-    ],
-    "score": 49,
-    "infographic": {
-      "key_insight": "This study identifies exhaustion-like bone marrow T-cell islands (eBM-TIs) as a spatial immune niche that expands with multiple myeloma progression and is linked to chronic inflammatory signaling.",
-      "clinical_relevance": "The proportion of eBM-TI-like T cells was associated with higher disease risk and worse prognostic outcomes, suggesting potential value as a spatial biomarker for myeloma risk stratification.",
-      "method": [
-        "Analyzed Xenium 5K bone marrow spatial transcriptomics from control, MGUS, smoldering myeloma, and multiple myeloma samples.",
-        "Used Gaussian mixture model (GMM) spatial partitioning plus multi-sample integration and cell-type annotation to define T-cell niches.",
-        "Applied multilayer perceptron (MLP) transfer to scRNA-seq cohorts with clinical staging information."
-      ],
-      "evidence_signal": "The abstract reports that exhaustion-like T cells increased across disease progression, formed spatially discrete islands, and showed IFN-related and CXCR3 ligand (CXCL9/CXCL10) signaling linked to clinical risk.",
-      "watch_item": "The findings are based on spatial transcriptomics and computational label transfer, so independent validation in larger patient cohorts is needed before clinical use.",
-      "hashtags": [
-        "#MultipleMyeloma",
-        "#SpatialTranscriptomics",
-        "#TCellExhaustion",
-        "#PrecisionOncology",
-        "#CancerImmunology"
-      ],
-      "paper_id": "2026-07-09-medrxiv-spatial_transcriptomics_and_machine_learning_define_exhaustion_like_bone_marrow_t_cell_isl",
-      "paper_title": "Spatial transcriptomics and machine learning define exhaustion-like bone marrow T-cell islands associated with myeloma progression and clinical risk",
-      "paper_date": "2026-07-09",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-15T09:07:23",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-09-medrxiv-standardized_repeatable_ulcerative_colitis_histology_scoring_and_endpoint_assessment_using",
-    "doi": "10.64898/2026.06.09.26355212",
-    "date": "2026-07-09",
-    "title": "Standardized, repeatable ulcerative colitis histology scoring and endpoint assessment using an automated, foundation model-based tool",
-    "authors": "Tahir, W.; Shamshoian, J.; Tauber, J.; Clinton, L. K.; Griffin, M.; Shah, C.; Singh, G.; Fahy, D.; Sucipto, K.; Brosnan-Cashman, J.; Altepeter, T. A.; Bhattacharya, S.; Crandall, W.; Duan, C.; Gale, J. D.; Gupta, V.; Haarmann, H.; Harpaz, N.; Hooper, A. T.; Horowitz, J.; Hurtado-Lorenzo, A.; Hussaini, B. E.; Jairath, V.; Jones, A.; Kostiuk, B.; Laroux, F. S.; Lissoos, T.; McBride, R. B.; Najdawi, F.; Nayyar, A.; Osterman, M. T.; Panchal, P.; Ruane, D.; Travis, S.; Wilson, L.; Jayson, C.",
-    "abstract": "In clinical trials for ulcerative colitis (UC), pathologists assess disease severity through standardized histological indices, including the Geboes Score, Robarts Histopathology Index (RHI), and Nancy Histologic Index (NHI). Despite strong associations with clinical outcomes, histologic scoring suffers from inter- and intra-reader variability, and consensus criteria for histologic remission remain uncertain. Through a consortium approach, we developed an artificial intelligence-based measurement (AIM) tool for scoring histology in UC mucosal biopsies (AIM-HI UC). This model, trained on a large dataset of UC biopsies (N=10,230), utilizes additive multiple instance learning models leveraging PLUTO, a pathology foundation model, that predict each of the Geboes subgrades, from which the Geboes grade-level score, RHI, and NHI can be calculated. Evaluation of this model on a standalone verification set including clinical trial specimens established algorithm non-inferiority and/or superiority relative to standard qualified pathologists through comparison of algorithm-consensus and pathologist-consensus agreement metrics (non-inferior if difference >-0.1, superior if difference >0, inclusive of confidence intervals). AIM-HI UC was determined to be non-inferior to pathologists (N=3) for the prediction of all seven Geboes subgrades, grade-level Geboes, RHI, NHI, histologic improvement (GS<3.1), 2A histologic remission (GS<2A.0), and 2B histologic remission (GS<2B.0). AIM-HI UC was superior to pathologists for several Geboes subgrades (GS 0, GS 1, GS 2B, and GS 5), as well as grade-level Geboes, RHI, and positive percent agreement of 2A histologic remission. The model was shown to be greater than 99% repeatable for all histologic scoring metrics examined. Model-derived scores were shown to strongly correlate with canonical histologic features of inflammation, including the proportion of total epithelium that is inflamed (Spearman r=0.83; p<0.01), the proportion of neutrophils localized within crypt epithelium (Spearman r=0.83, p<0.01), and the amount of mucosal area classified as erosion or ulceration (Spearman r=0.80, p<0.01). Overall, these results suggest that AIM-HI UC has the potential to improve consistency of UC histology interpretation, providing a path toward standardization of UC histology scoring in clinical trials.",
-    "category": "Clinical Translation",
-    "source": "medRxiv",
-    "published": "2026-07-09",
-    "updated": "2026-07-09",
-    "primary_category": "pathology",
-    "categories": [
-      "pathology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.09.26355212v2"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.09.26355212v2.full.pdf"
-      }
-    ],
-    "score": 47,
-    "infographic": {
-      "key_insight": "An AI-based pathology tool can score ulcerative colitis biopsy histology with pathologist-level consistency and repeatability across standard remission and severity indices.",
-      "clinical_relevance": "If validated in practice, this could standardize histology assessment in UC trials and reduce reader variability when measuring treatment response.",
-      "method": [
-        "Trained on 10,230 UC biopsy slides using a foundation-model + multiple instance learning approach",
-        "Predicted Geboes subgrades, then derived Geboes grade-level score, Robarts Histopathology Index (RHI), and Nancy Histologic Index (NHI)",
-        "Benchmarked against consensus pathologist reads on an independent verification set"
-      ],
-      "evidence_signal": "On a standalone verification set, the model was non-inferior to 3 pathologists for all seven Geboes subgrades and key endpoints, and it showed >99% repeatability across scoring metrics.",
-      "watch_item": "Performance was shown on a verification dataset, so broader real-world generalization, workflow integration, and regulatory validation still need confirmation.",
-      "hashtags": [
-        "#UlcerativeColitis",
-        "#DigitalPathology",
-        "#ArtificialIntelligence",
-        "#Histology",
-        "#ClinicalTrials"
-      ],
-      "paper_id": "2026-07-09-medrxiv-standardized_repeatable_ulcerative_colitis_histology_scoring_and_endpoint_assessment_using",
-      "paper_title": "Standardized, repeatable ulcerative colitis histology scoring and endpoint assessment using an automated, foundation model-based tool",
-      "paper_date": "2026-07-09",
-      "paper_category": "Clinical Translation",
-      "generated_at": "2026-07-15T09:07:26",
+      "generated_at": "2026-07-16T09:08:32",
       "generator": "openai"
     }
   },
@@ -279,131 +177,80 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.07.06.26357359v1.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 41,
     "infographic": {
-      "key_insight": "OmicFormer is a Transformer model that bakes in statistical priors about omics features to improve disease and trait prediction across diverse datasets.",
-      "clinical_relevance": "By improving robustness under distribution shift, the approach could support more reliable omics-based risk prediction and biomarker discovery in precision medicine settings.",
+      "key_insight": "OmicFormer is a Transformer that builds in statistical priors about feature-label and feature-feature relationships to make omics-based disease and trait prediction more accurate and more robust across cohorts.",
+      "clinical_relevance": "By improving generalization under distribution shifts, this approach could support more dependable biomarker-based risk prediction and precision medicine applications across diverse populations.",
       "method": [
-        "Uses a Transformer architecture tailored for high-dimensional omics data.",
-        "Integrates two priors: feature-label associations and feature-feature dependencies.",
-        "Learns local and long-range biological interactions to boost generalization."
+        "Uses a Transformer backbone for high-dimensional omics representation learning",
+        "Injects two priors: feature-label associations and feature-feature dependencies",
+        "Captures both local and long-range biological interactions that standard models may miss"
       ],
-      "evidence_signal": "In 500,000 UK Biobank participants, OmicFormer outperformed strong baselines across 450 disease and 900 trait tasks, and also improved generalization in independent proteomics and multi-site neuroimaging cohorts.",
-      "watch_item": "Performance gains need careful validation across additional populations and assay types, since omics predictions can still be affected by cohort shift, platform differences, and label quality.",
+      "evidence_signal": "The model was evaluated on 500,000 UK Biobank participants across 450 disease and 900 trait prediction tasks, and it also generalized well in independent proteomics and multi-site neuroimaging cohorts.",
+      "watch_item": "Performance gains are shown in retrospective benchmarking, so prospective validation and careful handling of cohort bias are still needed before real-world deployment.",
       "hashtags": [
-        "#Omics",
-        "#TransformerAI",
+        "#OmicsAI",
+        "#TransformerModel",
         "#PrecisionMedicine",
         "#Biomarkers",
-        "#Generalization"
+        "#GeneralizableAI"
       ],
       "paper_id": "2026-07-10-medrxiv-omicformer_a_statistical_priors_informed_transformer_for_accurate_and_generalizable_omics",
       "paper_title": "OmicFormer: a statistical priors-informed transformer for accurate and generalizable omics prediction of diseases and complex traits",
       "paper_date": "2026-07-10",
       "paper_category": "Target Biology",
-      "generated_at": "2026-07-15T09:07:28",
+      "generated_at": "2026-07-16T09:08:35",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-07-09-medrxiv-an_epigenetic_speedometer_to_measure_pace_of_aging_framinghampace",
-    "doi": "10.64898/2026.07.07.26357388",
-    "date": "2026-07-09",
-    "title": "An epigenetic speedometer to measure Pace of Aging: FraminghamPACE",
-    "authors": "Marella, W. T.; Ryan, C. P.; Corcoran, D.; Indik, C. E.; Furuya, A.; Kobor, M. S.; Sugden, K.; Caspi, A.; Moffitt, T.; Belsky, D. W.",
-    "abstract": "Geroscience clinical trials need biomarker surrogate endpoints for healthspan. Leading candidates are omics-based composites developed from machine learning analysis of aging phenotypes including calendar age, survival, functional capacity, and Pace of Aging. Existing Pace of Aging biomarkers were developed in the Dunedin Longitudinal Study, limiting inference about strengths/weaknesses of the method as distinct from the Study, a unique single-year birth cohort followed through midlife with near-perfect retention and uniform measurement of multi-organ-system function across two decades of follow-up. We adapted our Pace of Aging method for mixed-age cohorts with variable follow-up of organ-function measures and applied it to develop a novel DNA methylation biomarker of Pace of Aging in data from the Framingham Heart Study Offspring Cohort, FraminghamPACE. Validation analyses across four independent cohorts and one clinical trial establish advantages for the Pace of Aging method in developing biomarkers that are both predictive of healthspan and responsive to geroprotective intervention.",
-    "category": "Clinical Translation",
-    "source": "medRxiv",
-    "published": "2026-07-09",
-    "updated": "2026-07-09",
-    "primary_category": "health informatics",
-    "categories": [
-      "health informatics"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.07.26357388v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.07.26357388v1.full.pdf"
-      }
-    ],
-    "score": 46,
-    "infographic": {
-      "key_insight": "FraminghamPACE is a new DNA methylation “speedometer” designed to estimate the Pace of Aging in mixed-age cohorts and better support healthspan research.",
-      "clinical_relevance": "It may help identify biomarker surrogate endpoints for geroscience trials by predicting healthspan and detecting response to geroprotective interventions.",
-      "method": [
-        "Adapted a Pace of Aging machine-learning framework for cohorts with variable follow-up.",
-        "Built the biomarker using Framingham Heart Study Offspring Cohort DNA methylation data.",
-        "Evaluated performance across four independent cohorts and one clinical trial."
-      ],
-      "evidence_signal": "The abstract reports validation across four external cohorts plus one clinical trial, supporting both predictive value for healthspan and responsiveness to intervention.",
-      "watch_item": "As a new biomarker, it still needs careful validation across more diverse populations and trial settings before broad implementation.",
-      "hashtags": [
-        "#AgingBiomarker",
-        "#Epigenetics",
-        "#PaceOfAging",
-        "#Geroscience",
-        "#ClinicalTrials"
-      ],
-      "paper_id": "2026-07-09-medrxiv-an_epigenetic_speedometer_to_measure_pace_of_aging_framinghampace",
-      "paper_title": "An epigenetic speedometer to measure Pace of Aging: FraminghamPACE",
-      "paper_date": "2026-07-09",
-      "paper_category": "Clinical Translation",
-      "generated_at": "2026-07-15T09:07:30",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-09-medrxiv-a_generator_matrix_causal_inference_framework_separates_measurable_aging_biomarkers_from_m",
-    "doi": "10.64898/2026.07.05.26356402",
-    "date": "2026-07-09",
-    "title": "A generator-matrix causal-inference framework separates measurable aging biomarkers from mortality-driving latent dynamics in humans",
-    "authors": "Tanigawa, M.; Iwaki, T.",
-    "abstract": "A central challenge in computational geroscience is to distinguish molecular quantities that predict mortality from those that causally drive it. Epigenetic clocks and aging biomarkers are increasingly used as if they were that mechanism, yet this is rarely tested directly. This distinction also bears on competing theories of aging: damage/reliability (A), hyperfunction/mTOR-IIS (B-1), and information loss (B-2). Although individual aging proteins have been tested piecemeal, no study has asked, in one framework, what fraction of mortality is measurable, whether it is causal, and whether it is reversible. Using only public, de-identified data, we evaluate this three ways. First, a Markov generator-matrix model of hallmark-load dynamics with death as an absorbing state, fitted by Bayesian inference through a joint biomarker-and-mortality likelihood to NHANES with linked mortality (n=23,844) and replicated in the Health and Retirement Study (HRS), decomposes Gompertz acceleration into visible (measured-biomarker-driven) and latent components. Second, a positive-control-calibrated, two-platform cis-pQTL Mendelian-randomization and colocalization design (UKB-PPP, de-CODE) against parental-lifespan GWAS tests whether the latents measurable components are causal. Third, a clock battery (Horvath, chronological; DamAge, causality-enriched damage) tests reversibility in cellular reprogramming. Within the model, [~]92% of Gompertz acceleration is assigned to a latent component not captured by measured blood-biomarker axes (NHANES 92.5%, HRS 91.6%); the latent is partly encoded in DNA-methylation signatures but not transcription. The known causal proteins are detected (LPA p=9x10-{superscript 1}{superscript 2}; IL6R p=2.8x10-), yet the latents components, across inflammatory, renal and growth-signalling (IGFBP3, IGF-1) axes, are null and do not colocalize on either platform. Reprogramming reverses the chronological clock (-11 to -22 yr) but not the causality-enriched damage clock. The model-inferred mortality-driving component is largely latent to accessible biomarkers; its measurable molecular proxies show no supported causal effect where the design detects known causes; and the causality-enriched damage-clock signal is resistant to partial reprogramming. Author summaryAging \"clocks\" and blood biomarkers are increasingly used as if they measured the process that makes us age and die, yet a thermometer reflects a fever without causing it. We asked whether the molecular quantities we can measure are the cause of mortality or merely downstream markers, and built a computational framework that tests this in three independent ways. First, a dynamical reliability model that treats death as an absorbing state, fitted to two large population datasets, indicated that roughly 92% of how fast mortality rises with age is not captured by the blood biomarkers we can measure. Second, a genetic causal test (a natural experiment using inherited gene variants), calibrated with proteins already known to affect lifespan, showed that the measurable markers, across inflammation, growth signalling and the epigenetic clock, do not causally change human lifespan, whereas the known-causal proteins do. Third, cellular \"rejuvenation\" reversed a chronological clock but not a causality-enriched damage clock. Collectively, these results indicate that popular aging measures track mortality risk rather than its cause, and we provide a reusable computational framework for telling the two apart.",
+    "id": "2026-07-10-medrxiv-biomarker_informed_csf_proteomics_reveals_enpp2_lpa_lipid_signaling_associated_with_alzhei",
+    "doi": "10.64898/2026.07.08.26357565",
+    "date": "2026-07-10",
+    "title": "Biomarker-informed CSF proteomics reveals ENPP2-LPA lipid signaling associated with Alzheimer's disease",
+    "authors": "Qiao, M.; Bhattarai, P.; Yilmaz, E.; Rookyard, A.; Das, L. A.; Jain, A.; Reyes-Dumeyer, D.; Lee, A. J.; Lantigua, R. A.; Medrano, M.; Rivera, D.; Honig, L. S.; Brown, L.; Kizil, C.; Mayeux, R.; Vardarajan, B. N.",
+    "abstract": "BackgroundAlzheimers disease (AD) involves complex molecular alterations in the cerebrospinal fluid (CSF) proteome, yet the links between these protein changes and hallmark AD pathology remain incompletely defined. We investigated the relationship between the CSF proteome with CSF biomarkers of Alzheimers disease (AD). MethodsCSF was collected in 500 individuals of non-Hispanic white, African Americans, and Caribbean Hispanic individuals. CSF biomarkers of AD were measured including P-tau181, A{beta}40, A{beta}42, total-tau, neurofilament light chain (NfL) and glial fibrillary acidic protein (GFAP). CSF was depleted of abundant proteins followed by precipitation, cysteine reduction/alkylation, and proteolytic cleavage by trypsin. Peptides were measured using a Q-Exactive HF mass spectrometer (Thermo Scientific). Association of individual and co-abundant modules of proteins were tested using evelated CSF P-tau181 and reduced A{beta}42/A{beta}40 to confirm the diagnosis of AD. We validated results in CSF from 397 participants in the Accelerated Medicine Partnership-Alzheimers Disease cohort. Associated proteins were functionally validated in postmortem human brains and zebrafish. ResultsWe detected 1030 proteins, yielding an overall data completeness value of 97%. CSF levels of 75 (7.3%) proteins were significantly associated with CSF P-tau181 levels after multiple testing correction. Notably phospholipase D3 (PLD3, p=2.41E-09), apoE (p=4.25e-08) and osteopontin (OPN p=1.4E-16) were increased and autotaxin (ATX/ENPP2, p= 8.39E-09) and ceruloplasmin (CP) (p=2.72E-07) were lower among individuals with high P-tau181 levels. These proteins were also associated with CSF A{beta}42/A{beta}40 ratio and total tau levels but not with NfL. OPN was also associated with CSF levels of GFAP (p=1.32e-05). Among proteins associated with P-tau181 levels, pathways related to axon development (p=2.4E-12), axonogenesis (p=1.45E-11) and regulation of axonogenesis (p=5.1E-09) were enriched. Immunostaining on postmortem human and zebrafish brain found that ENPP2 expression, the gene encoding ATX, was significantly reduced in AD brain and in the amyloidosis model in zebrafish. Reduced ENPP2 expression was consistent with reduced lysophosphatidic acid (LPA) levels in the CSF of individuals with AD. LPA administration into zebrafish CSF reduced the pathological changes in synapses and vasculature due to A{beta}42. ConclusionUnbiased profiling of circulating CSF proteins among individuals with antemortem diagnosis of AD, identified key proteins PLD3, apoE, OPN, ATX, and ceruloplasmin. Validation in postmortem human brains and zebrafish models support potential roles in endosomal sorting and APP processing, inflammation, angiogenesis, lipid transport, and oxidative stress. One sentence summaryReduced autotaxin and lysophosphatidic acid were among 75 cerebrospinal fluid (CSF) proteins associated with biomarker-defined Alzheimers disease pathology.",
     "category": "Target Biology",
     "source": "medRxiv",
-    "published": "2026-07-09",
-    "updated": "2026-07-09",
-    "primary_category": "geriatric medicine",
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "primary_category": "neurology",
     "categories": [
-      "geriatric medicine"
+      "neurology"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.05.26356402v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.08.26357565v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.05.26356402v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.08.26357565v1.full.pdf"
       }
     ],
     "score": 41,
     "infographic": {
-      "key_insight": "Aging-related mortality appears to be driven mostly by latent dynamics that standard blood biomarkers do not capture, while some measurable markers may predict aging without proving causality.",
-      "clinical_relevance": "This framework may help separate biomarkers useful for risk prediction from those that truly reflect modifiable biological drivers of mortality and aging.",
+      "key_insight": "CSF proteomics linked elevated AD tau pathology to a distinct protein signature, highlighting ENPP2/autotaxin-LPA lipid signaling as a reduced pathway in Alzheimer’s disease.",
+      "clinical_relevance": "This biomarker-linked protein network could help improve understanding of AD biology and support future CSF-based stratification or target discovery.",
       "method": [
-        "Built a Markov generator-matrix model with death as an absorbing state using biomarker and mortality data.",
-        "Tested causality with cis-pQTL Mendelian randomization plus colocalization against parental-lifespan GWAS.",
-        "Compared aging clocks before and after cellular reprogramming to assess reversibility."
+        "Analyzed CSF from 500 diverse participants using mass spectrometry proteomics.",
+        "Tested associations between 1,030 CSF proteins and AD biomarkers including P-tau181, Aβ42/Aβ40, total tau, NfL, and GFAP.",
+        "Validated findings in an independent AMP-AD CSF cohort and in postmortem human brain plus zebrafish models."
       ],
-      "evidence_signal": "The model attributed about 92% of Gompertz acceleration to latent components in both NHANES (92.5%) and HRS (91.6%), while MR recovered known causal proteins but found the latent biomarker axes largely null.",
-      "watch_item": "The latent component is inferred statistically from available public datasets, so it may not directly translate into actionable biological targets without further experimental validation.",
+      "evidence_signal": "The study identified 75 proteins significantly associated with CSF P-tau181 after multiple-testing correction, with independent validation and functional support for ENPP2 reduction.",
+      "watch_item": "Findings are biomarker-association based and need further mechanistic and prospective clinical validation before they can be used for diagnosis or treatment decisions.",
       "hashtags": [
-        "#AgingBiology",
+        "#AlzheimersDisease",
+        "#CSFProteomics",
         "#Biomarkers",
-        "#MendelianRandomization",
-        "#EpigeneticClocks",
-        "#MortalityRisk"
+        "#ENPP2",
+        "#LipidSignaling"
       ],
-      "paper_id": "2026-07-09-medrxiv-a_generator_matrix_causal_inference_framework_separates_measurable_aging_biomarkers_from_m",
-      "paper_title": "A generator-matrix causal-inference framework separates measurable aging biomarkers from mortality-driving latent dynamics in humans",
-      "paper_date": "2026-07-09",
+      "paper_id": "2026-07-10-medrxiv-biomarker_informed_csf_proteomics_reveals_enpp2_lpa_lipid_signaling_associated_with_alzhei",
+      "paper_title": "Biomarker-informed CSF proteomics reveals ENPP2-LPA lipid signaling associated with Alzheimer's disease",
+      "paper_date": "2026-07-10",
       "paper_category": "Target Biology",
-      "generated_at": "2026-07-15T09:07:33",
+      "generated_at": "2026-07-16T09:08:39",
       "generator": "openai"
     }
   }

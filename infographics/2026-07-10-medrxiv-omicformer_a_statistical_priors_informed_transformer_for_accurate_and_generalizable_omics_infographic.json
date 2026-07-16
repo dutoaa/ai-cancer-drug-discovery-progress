@@ -1,24 +1,24 @@
 {
-  "key_insight": "OmicFormer is a Transformer model that bakes in statistical priors about omics features to improve disease and trait prediction across diverse datasets.",
-  "clinical_relevance": "By improving robustness under distribution shift, the approach could support more reliable omics-based risk prediction and biomarker discovery in precision medicine settings.",
+  "key_insight": "OmicFormer is a Transformer that builds in statistical priors about feature-label and feature-feature relationships to make omics-based disease and trait prediction more accurate and more robust across cohorts.",
+  "clinical_relevance": "By improving generalization under distribution shifts, this approach could support more dependable biomarker-based risk prediction and precision medicine applications across diverse populations.",
   "method": [
-    "Uses a Transformer architecture tailored for high-dimensional omics data.",
-    "Integrates two priors: feature-label associations and feature-feature dependencies.",
-    "Learns local and long-range biological interactions to boost generalization."
+    "Uses a Transformer backbone for high-dimensional omics representation learning",
+    "Injects two priors: feature-label associations and feature-feature dependencies",
+    "Captures both local and long-range biological interactions that standard models may miss"
   ],
-  "evidence_signal": "In 500,000 UK Biobank participants, OmicFormer outperformed strong baselines across 450 disease and 900 trait tasks, and also improved generalization in independent proteomics and multi-site neuroimaging cohorts.",
-  "watch_item": "Performance gains need careful validation across additional populations and assay types, since omics predictions can still be affected by cohort shift, platform differences, and label quality.",
+  "evidence_signal": "The model was evaluated on 500,000 UK Biobank participants across 450 disease and 900 trait prediction tasks, and it also generalized well in independent proteomics and multi-site neuroimaging cohorts.",
+  "watch_item": "Performance gains are shown in retrospective benchmarking, so prospective validation and careful handling of cohort bias are still needed before real-world deployment.",
   "hashtags": [
-    "#Omics",
-    "#TransformerAI",
+    "#OmicsAI",
+    "#TransformerModel",
     "#PrecisionMedicine",
     "#Biomarkers",
-    "#Generalization"
+    "#GeneralizableAI"
   ],
   "paper_id": "2026-07-10-medrxiv-omicformer_a_statistical_priors_informed_transformer_for_accurate_and_generalizable_omics",
   "paper_title": "OmicFormer: a statistical priors-informed transformer for accurate and generalizable omics prediction of diseases and complex traits",
   "paper_date": "2026-07-10",
   "paper_category": "Target Biology",
-  "generated_at": "2026-07-15T09:07:28",
+  "generated_at": "2026-07-16T09:08:35",
   "generator": "openai"
 }
