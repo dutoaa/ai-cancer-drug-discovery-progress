@@ -1,0 +1,257 @@
+[
+  {
+    "id": "2026-07-10-medrxiv-assessment_of_zero_shot_large_language_model_llm_assisted_clinical_trial_matching_processe",
+    "doi": "10.64898/2026.07.06.26354647",
+    "date": "2026-07-10",
+    "title": "Assessment of Zero-Shot Large Language Model (LLM) Assisted Clinical Trial Matching Processes: A Metastatic Cancer Use Case",
+    "authors": "Weng, Y.; Yalamaddi, H.; Fu, D.; Mishra, A.; Bunning, B. J.; Martin, A. B.; Hope, J.; Charu, V.; Kurian, A.; Desai, M.",
+    "abstract": "IntroductionFor oncology patients with limited treatment options, clinical trials may be a critical lifesaving pathway. Identifying relevant trials, however, is a time-consuming and difficult task. Several patient-trial matching processes incorporating large language models (LLMs) have been proposed to alleviate the burden on patients and oncologists. We aim to explore the benefits and practical challenges of zero-shot LLM-assisted trial matching processes by analyzing the results for a single pancreatic cancer patient. Materials and MethodsThe results of a simple zero-shot LLM-assisted clinical trial matching process for our patient were compared to those of a \"human benchmark,\" which was developed manually by two of the authors interfacing directly with ClinicalTrials.gov. Performance metrics - sensitivity, specificity, precision, and accuracy - were calculated. In addition, a qualitative content analysis (QCA) of LLM reasoning text was done to identify patterns in \"errors,\" which we define as a human-LLM discrepancy in final patient eligibility. Implications and severity of errors are discussed. ResultsThe zero-shot LLM-assisted process returned potential trials with a sensitivity, specificity, and precision of 81.1%, 89.3%, and 86.5% respectively compared to the human benchmark. Qualitative error analyses revealed that about 73% of errors could potentially be alleviated with improved prompting and information access. Overall performance seemed comparable to that of human reviewers. ConclusionThe results from this preliminary real-world case study provide additional evidence to the literature in support of the integration of LLMs in clinical trial matching to provide benefit to patients with metastatic cancer with limited options.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.06.26354647v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.06.26354647v1.full.pdf"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "A zero-shot LLM-assisted workflow matched clinical trials for a metastatic pancreatic cancer case with performance close to a human-reviewed benchmark.",
+      "clinical_relevance": "This suggests LLMs could help speed up trial matching for patients with limited treatment options, potentially reducing manual screening burden.",
+      "method": [
+        "Compared zero-shot LLM-assisted trial eligibility results against a manually built human benchmark using ClinicalTrials.gov.",
+        "Calculated sensitivity, specificity, precision, and accuracy for the LLM-assisted matching process.",
+        "Performed qualitative content analysis of LLM reasoning text to examine mismatch patterns and likely error causes."
+      ],
+      "evidence_signal": "In this single-patient case study, the LLM-assisted process achieved 81.1% sensitivity, 89.3% specificity, and 86.5% precision versus the human benchmark.",
+      "watch_item": "Findings come from one real-world case, so broader reliability, workflow integration, and safety need validation before routine use.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#ClinicalTrials",
+        "#LargeLanguageModels",
+        "#CancerResearch",
+        "#AIinHealthcare"
+      ],
+      "paper_id": "2026-07-10-medrxiv-assessment_of_zero_shot_large_language_model_llm_assisted_clinical_trial_matching_processe",
+      "paper_title": "Assessment of Zero-Shot Large Language Model (LLM) Assisted Clinical Trial Matching Processes: A Metastatic Cancer Use Case",
+      "paper_date": "2026-07-10",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-16T09:08:27",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-10-medrxiv-assessing_ai_and_neurologist_diagnostic_reasoning_against_neuropathological_ground_truth",
+    "doi": "10.64898/2026.07.07.26356930",
+    "date": "2026-07-10",
+    "title": "Assessing AI and Neurologist Diagnostic Reasoning Against Neuropathological Ground Truth",
+    "authors": "Leng, Y.; Noori, A.; Dickson, J. R.; Serrano-Pozo, A.; Avetisyan, M.; Rodriguez, D.; Rosenberg, E. S.; He, Y.; Oakley, D. H.; Khurana, V. S.; Hyman, B. T.; Frosch, M. P.; Das, S.",
+    "abstract": "BACKGROUNDAccurate differential diagnosis of complex neurological disorders remains challenging due to overlapping clinical features and heterogeneous disease presentations. Although large language models (LLMs) show promise in clinical reasoning, prior studies benchmark performance against clinician consensus rather than biological ground truth. A neuropathologically confirmed benchmark dataset for evaluating diagnostic AI in neurology is currently lacking. METHODSWe introduce NeuroBench, a curated benchmark of complex neurological cases with neuropathologically confirmed gold-standard diagnoses, and DIAGNO, a confidence-aware LLM-based system for neurological diagnosis. NeuroBench comprises 203 retrospective case summaries from the Massachusetts General Hospital Brain Cutting Conference with corresponding autopsy-confirmed diagnoses. DIAGNO generated top-3 differential diagnoses, employing retrieval-augmented generation (RAG) for lower-confidence cases. Performance was assessed by three independent blinded adjudicators who evaluated both DIAGNO and neurologists against neuropathological ground truth. RESULTSNeuroBench encompassed 79 unique neuropathological diagnoses, spanning conditions including cerebrovascular disease, brain tumors, neurological infections, and various neurodegenerative and inflammatory disorders. DIAGNO matched or outperformed neurologists in top-3 accuracy (0.67 versus 0.63) and taxonomy-level accuracy (0.74 versus 0.66). In cases of disagreement, DIAGNO was more often correct than neurologists (29 versus 19 cases). Diagnostic concordance between DIAGNO and neurologists was high (90% agreement in top-3 predictions), even when both were incorrect, suggesting strong alignment in diagnostic reasoning. On NeuroBench, DIAGNO also outperformed GPT-4o baseline and DeepSeek R1 across all top-k accuracy metrics. In a real-world evaluation on eight complex cases with differentials from Mass General Brigham, neurologists rated DIAGNOs reasoning favorably (mean 4.03/5) across multiple dimensions of clinical utility and safety. CONCLUSIONSNeuroBench establishes neuropathological confirmation as the appropriate standard for evaluating diagnostic AI in neurology, moving beyond clinician-referenced benchmarking to define the ceiling of diagnostic accuracy. Evaluated against this standard, DIAGNO achieved expert-level diagnostic performance and received favorable clinician ratings in real-world applications, supporting its potential as a clinical decision-support tool in neurology.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.07.26356930v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.07.26356930v1.full.pdf"
+      }
+    ],
+    "score": 53,
+    "infographic": {
+      "key_insight": "A neuropathology-confirmed benchmark found that a confidence-aware LLM system for neurological diagnosis matched or slightly outperformed neurologists on top-3 differential accuracy.",
+      "clinical_relevance": "The study suggests AI could help support expert diagnostic reasoning in complex neurological cases, but performance should be judged against biological ground truth rather than clinician consensus alone.",
+      "method": [
+        "Built NeuroBench from 203 retrospective Massachusetts General Hospital Brain Cutting Conference cases with autopsy-confirmed diagnoses.",
+        "Tested DIAGNO, an LLM-based diagnostic system using confidence-aware retrieval-augmented generation for lower-confidence cases.",
+        "Compared DIAGNO, neurologists, GPT-4o, and DeepSeek R1 using blinded adjudicators against neuropathological ground truth."
+      ],
+      "evidence_signal": "On NeuroBench, DIAGNO reached 0.67 top-3 accuracy and 0.74 taxonomy-level accuracy, with stronger performance than neurologists in disagreement cases and high 90% top-3 concordance.",
+      "watch_item": "This is a retrospective benchmark from a single-center autopsy cohort, so generalization to live clinical settings and prospective use still needs validation.",
+      "hashtags": [
+        "#AIinHealthcare",
+        "#Neurology",
+        "#LLM",
+        "#DiagnosticAI",
+        "#PrecisionMedicine"
+      ],
+      "paper_id": "2026-07-10-medrxiv-assessing_ai_and_neurologist_diagnostic_reasoning_against_neuropathological_ground_truth",
+      "paper_title": "Assessing AI and Neurologist Diagnostic Reasoning Against Neuropathological Ground Truth",
+      "paper_date": "2026-07-10",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-16T09:08:30",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-10-medrxiv-machine_learning_models_for_osteoporosis_prediction_a_systematic_review_and_meta_analysis",
+    "doi": "10.64898/2026.07.03.26357134",
+    "date": "2026-07-10",
+    "title": "Machine Learning Models for Osteoporosis Prediction: A Systematic Review and Meta-Analysis",
+    "authors": "de Carvalho, F. R.; Gavaia, P. J.",
+    "abstract": "PurposeThe application of machine learning (ML) to osteoporosis prediction has expanded rapidly, yet no comprehensive meta-analysis has synthesized the discriminative performance of these models across all ML categories, data types, and validation strategies. This systematic review and meta-analysis aimed to evaluate the diagnostic and predictive accuracy of ML and deep learning models for osteoporosis prediction in adult populations. MethodsSystematic searches of PubMed, Embase, Web of Science, and IEEE Xplore were conducted for studies published between January 2020 and February 2026. Studies developing, validating, or applying ML models for predicting osteoporosis, low bone mineral density, or osteoporotic fractures in adults were included. Methodological quality was assessed using the Prediction Model Risk of Bias Assessment Tool (PROBAST). Area under the receiver operating characteristic curve (AUC) values were pooled using random-effects meta-analysis with logit transformation. Subgroup analyses were performed by data type, ML category, external validation status, and population type. The review followed PRISMA 2020 guidelines. ResultsThirty-three studies were included in the qualitative synthesis and 27 in the meta-analysis. The pooled AUC was 0.879 (95% CI: 0.853-0.901), with substantial heterogeneity (I{superscript 2} = 99.5%). Imaging-based models outperformed clinical data models (AUC = 0.905 vs. 0.872). Deep learning achieved the highest pooled AUC (0.909), followed by ensemble methods (0.874) and traditional ML (0.840). Externally validated models showed lower performance than internally validated ones (AUC = 0.868 vs. 0.897). PROBAST assessment rated 32 of 33 studies (97.0%) as low risk of bias, though this proportion should be interpreted cautiously given that PROBAST was designed for traditional prediction models and may not fully capture ML-specific sources of bias. Eggers test indicated significant publication bias (p < 0.001). Explainable AI methods were employed in 60.6% of studies, identifying age, body weight, and alkaline phosphatase as the most frequent top predictive features. ConclusionsMachine learning models demonstrate overall good discriminative performance for osteoporosis prediction, albeit with substantial heterogeneity across studies (I{superscript 2} = 99.5%), and show potential as complementary screening tools, particularly in settings with limited DXA access. Deep learning models applied to imaging data and ensemble methods using clinical variables achieved the strongest subgroup estimates. However, extreme heterogeneity, evidence of publication bias, and limited prospective validation warrant cautious interpretation of the pooled estimate. Future research should prioritise multi-centre external validation, standardised reporting following TRIPOD+AI guidelines, and prospective clinical trials to establish real-world clinical impact. Mini-AbstractThis meta-analysis of 33 studies demonstrates that ML models achieve a pooled AUC of 0.879 for osteoporosis prediction, with imaging-based deep learning models reaching 0.905, supporting their potential as complementary screening tools to DXA and FRAX(R).",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.03.26357134v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.03.26357134v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "Machine learning models show strong overall accuracy for predicting osteoporosis, with deep learning and imaging-based approaches performing best.",
+      "clinical_relevance": "These models could help identify adults at higher risk of osteoporosis or low bone density earlier, potentially supporting screening and prevention workflows.",
+      "method": [
+        "Systematic review and meta-analysis of 33 studies (27 pooled) published from 2020 to 2026",
+        "Compared performance across ML types, data sources, validation strategies, and population groups",
+        "Pooled AUCs using random-effects meta-analysis with PROBAST quality assessment"
+      ],
+      "evidence_signal": "The pooled AUC was 0.879 overall, with imaging-based models outperforming clinical data models and substantial heterogeneity across studies.",
+      "watch_item": "Performance was lower in externally validated models, and significant publication bias plus ML-specific bias not fully captured by PROBAST limit real-world certainty.",
+      "hashtags": [
+        "#MachineLearning",
+        "#DeepLearning",
+        "#Osteoporosis",
+        "#PredictionModels",
+        "#SystematicReview"
+      ],
+      "paper_id": "2026-07-10-medrxiv-machine_learning_models_for_osteoporosis_prediction_a_systematic_review_and_meta_analysis",
+      "paper_title": "Machine Learning Models for Osteoporosis Prediction: A Systematic Review and Meta-Analysis",
+      "paper_date": "2026-07-10",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-07-16T09:08:32",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-10-medrxiv-omicformer_a_statistical_priors_informed_transformer_for_accurate_and_generalizable_omics",
+    "doi": "10.64898/2026.07.06.26357359",
+    "date": "2026-07-10",
+    "title": "OmicFormer: a statistical priors-informed transformer for accurate and generalizable omics prediction of diseases and complex traits",
+    "authors": "Jiang, H.; Yang, C.; Qin, M.; You, J.; Feng, J.; Yu, J.-T.; Cheng, W.; Gong, W.",
+    "abstract": "Precision medicine faces a critical challenge in translating high-dimensional omics data into robust disease predictions across diverse populations. Current approaches often fail under distribution shifts, partly due to their inability to encode complex biological feature dependencies. We present OmicFormer, a Transformer-based architecture that embeds two complementary statistical priors, i.e., feature-label associations and feature-feature dependencies, directly into its representation learning. This design captures local and long-range omic interactions often missed by conventional methods. Analyzing 500,000 UK Biobank participants, OmicFormer significantly outperforms strong baselines across 450 disease and 900 trait prediction tasks, with substantial gains spanning diverse metabolic, neurological, cardiovascular, and gastrointestinal conditions, alongside enhanced prediction of circulating metabolites, bone density traits, and retinal imaging biomarkers. Crucially, OmicFormer demonstrates robust generalization, achieving a substantial improvement over tree-based methods in an independent proteomics cohort across 19 diseases (GNPC, N=7,289), and outperforming tree-based models across 50 multi-site neuroimaging sites (N=4,728) for autism and schizophrenia classification. By explicitly embedding statistical structure, OmicFormer provides an interpretable and generalizable foundation for omics-based precision medicine.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.06.26357359v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.06.26357359v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "OmicFormer is a Transformer that builds in statistical priors about feature-label and feature-feature relationships to make omics-based disease and trait prediction more accurate and more robust across cohorts.",
+      "clinical_relevance": "By improving generalization under distribution shifts, this approach could support more dependable biomarker-based risk prediction and precision medicine applications across diverse populations.",
+      "method": [
+        "Uses a Transformer backbone for high-dimensional omics representation learning",
+        "Injects two priors: feature-label associations and feature-feature dependencies",
+        "Captures both local and long-range biological interactions that standard models may miss"
+      ],
+      "evidence_signal": "The model was evaluated on 500,000 UK Biobank participants across 450 disease and 900 trait prediction tasks, and it also generalized well in independent proteomics and multi-site neuroimaging cohorts.",
+      "watch_item": "Performance gains are shown in retrospective benchmarking, so prospective validation and careful handling of cohort bias are still needed before real-world deployment.",
+      "hashtags": [
+        "#OmicsAI",
+        "#TransformerModel",
+        "#PrecisionMedicine",
+        "#Biomarkers",
+        "#GeneralizableAI"
+      ],
+      "paper_id": "2026-07-10-medrxiv-omicformer_a_statistical_priors_informed_transformer_for_accurate_and_generalizable_omics",
+      "paper_title": "OmicFormer: a statistical priors-informed transformer for accurate and generalizable omics prediction of diseases and complex traits",
+      "paper_date": "2026-07-10",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-07-16T09:08:35",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-10-medrxiv-biomarker_informed_csf_proteomics_reveals_enpp2_lpa_lipid_signaling_associated_with_alzhei",
+    "doi": "10.64898/2026.07.08.26357565",
+    "date": "2026-07-10",
+    "title": "Biomarker-informed CSF proteomics reveals ENPP2-LPA lipid signaling associated with Alzheimer's disease",
+    "authors": "Qiao, M.; Bhattarai, P.; Yilmaz, E.; Rookyard, A.; Das, L. A.; Jain, A.; Reyes-Dumeyer, D.; Lee, A. J.; Lantigua, R. A.; Medrano, M.; Rivera, D.; Honig, L. S.; Brown, L.; Kizil, C.; Mayeux, R.; Vardarajan, B. N.",
+    "abstract": "BackgroundAlzheimers disease (AD) involves complex molecular alterations in the cerebrospinal fluid (CSF) proteome, yet the links between these protein changes and hallmark AD pathology remain incompletely defined. We investigated the relationship between the CSF proteome with CSF biomarkers of Alzheimers disease (AD). MethodsCSF was collected in 500 individuals of non-Hispanic white, African Americans, and Caribbean Hispanic individuals. CSF biomarkers of AD were measured including P-tau181, A{beta}40, A{beta}42, total-tau, neurofilament light chain (NfL) and glial fibrillary acidic protein (GFAP). CSF was depleted of abundant proteins followed by precipitation, cysteine reduction/alkylation, and proteolytic cleavage by trypsin. Peptides were measured using a Q-Exactive HF mass spectrometer (Thermo Scientific). Association of individual and co-abundant modules of proteins were tested using evelated CSF P-tau181 and reduced A{beta}42/A{beta}40 to confirm the diagnosis of AD. We validated results in CSF from 397 participants in the Accelerated Medicine Partnership-Alzheimers Disease cohort. Associated proteins were functionally validated in postmortem human brains and zebrafish. ResultsWe detected 1030 proteins, yielding an overall data completeness value of 97%. CSF levels of 75 (7.3%) proteins were significantly associated with CSF P-tau181 levels after multiple testing correction. Notably phospholipase D3 (PLD3, p=2.41E-09), apoE (p=4.25e-08) and osteopontin (OPN p=1.4E-16) were increased and autotaxin (ATX/ENPP2, p= 8.39E-09) and ceruloplasmin (CP) (p=2.72E-07) were lower among individuals with high P-tau181 levels. These proteins were also associated with CSF A{beta}42/A{beta}40 ratio and total tau levels but not with NfL. OPN was also associated with CSF levels of GFAP (p=1.32e-05). Among proteins associated with P-tau181 levels, pathways related to axon development (p=2.4E-12), axonogenesis (p=1.45E-11) and regulation of axonogenesis (p=5.1E-09) were enriched. Immunostaining on postmortem human and zebrafish brain found that ENPP2 expression, the gene encoding ATX, was significantly reduced in AD brain and in the amyloidosis model in zebrafish. Reduced ENPP2 expression was consistent with reduced lysophosphatidic acid (LPA) levels in the CSF of individuals with AD. LPA administration into zebrafish CSF reduced the pathological changes in synapses and vasculature due to A{beta}42. ConclusionUnbiased profiling of circulating CSF proteins among individuals with antemortem diagnosis of AD, identified key proteins PLD3, apoE, OPN, ATX, and ceruloplasmin. Validation in postmortem human brains and zebrafish models support potential roles in endosomal sorting and APP processing, inflammation, angiogenesis, lipid transport, and oxidative stress. One sentence summaryReduced autotaxin and lysophosphatidic acid were among 75 cerebrospinal fluid (CSF) proteins associated with biomarker-defined Alzheimers disease pathology.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-07-10",
+    "updated": "2026-07-10",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.08.26357565v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.08.26357565v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "CSF proteomics linked elevated AD tau pathology to a distinct protein signature, highlighting ENPP2/autotaxin-LPA lipid signaling as a reduced pathway in Alzheimer’s disease.",
+      "clinical_relevance": "This biomarker-linked protein network could help improve understanding of AD biology and support future CSF-based stratification or target discovery.",
+      "method": [
+        "Analyzed CSF from 500 diverse participants using mass spectrometry proteomics.",
+        "Tested associations between 1,030 CSF proteins and AD biomarkers including P-tau181, Aβ42/Aβ40, total tau, NfL, and GFAP.",
+        "Validated findings in an independent AMP-AD CSF cohort and in postmortem human brain plus zebrafish models."
+      ],
+      "evidence_signal": "The study identified 75 proteins significantly associated with CSF P-tau181 after multiple-testing correction, with independent validation and functional support for ENPP2 reduction.",
+      "watch_item": "Findings are biomarker-association based and need further mechanistic and prospective clinical validation before they can be used for diagnosis or treatment decisions.",
+      "hashtags": [
+        "#AlzheimersDisease",
+        "#CSFProteomics",
+        "#Biomarkers",
+        "#ENPP2",
+        "#LipidSignaling"
+      ],
+      "paper_id": "2026-07-10-medrxiv-biomarker_informed_csf_proteomics_reveals_enpp2_lpa_lipid_signaling_associated_with_alzhei",
+      "paper_title": "Biomarker-informed CSF proteomics reveals ENPP2-LPA lipid signaling associated with Alzheimer's disease",
+      "paper_date": "2026-07-10",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-07-16T09:08:39",
+      "generator": "openai"
+    }
+  }
+]

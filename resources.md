@@ -1,44 +1,28 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-16
+Generated: 2026-07-17
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
-## 1. Assessment of Zero-Shot Large Language Model (LLM) Assisted Clinical Trial Matching Processes: A Metastatic Cancer Use Case
+## 1. Glutamine and NAA dissociate in ALS across somatotopically defined motor regions using 7T MRSI
 
-- Date: 2026-07-10
+- Date: 2026-07-13
+- Category: Clinical Translation
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.09.26357702v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.09.26357702v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-13-medrxiv-glutamine_and_naa_dissociate_in_als_across_somatotopically_defined_motor_regions_using_7t_infographic.json
+
+## 2. Per- and Polyfluoroalkyl Substances Exposure in New Jersey Prostate Cancer Survivors: A Pilot Biomonitoring Study
+
+- Date: 2026-07-13
 - Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.06.26354647v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.06.26354647v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-10-medrxiv-assessment_of_zero_shot_large_language_model_llm_assisted_clinical_trial_matching_processe_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.08.26357561v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.08.26357561v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-13-medrxiv-per_and_polyfluoroalkyl_substances_exposure_in_new_jersey_prostate_cancer_survivors_a_pilo_infographic.json
 
-## 2. Assessing AI and Neurologist Diagnostic Reasoning Against Neuropathological Ground Truth
+## 3. Aqueous Humor Liquid Biopsy Enables Multi-Omics Tumor Profiling and Methylation-Based Machine-Learning Stratification of Retinoblastoma
 
-- Date: 2026-07-10
-- Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.07.26356930v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.07.26356930v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-10-medrxiv-assessing_ai_and_neurologist_diagnostic_reasoning_against_neuropathological_ground_truth_infographic.json
-
-## 3. Machine Learning Models for Osteoporosis Prediction: A Systematic Review and Meta-Analysis
-
-- Date: 2026-07-10
-- Category: Cancer AI Methods
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.03.26357134v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.03.26357134v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-10-medrxiv-machine_learning_models_for_osteoporosis_prediction_a_systematic_review_and_meta_analysis_infographic.json
-
-## 4. OmicFormer: a statistical priors-informed transformer for accurate and generalizable omics prediction of diseases and complex traits
-
-- Date: 2026-07-10
+- Date: 2026-07-13
 - Category: Target Biology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.06.26357359v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.06.26357359v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-10-medrxiv-omicformer_a_statistical_priors_informed_transformer_for_accurate_and_generalizable_omics_infographic.json
-
-## 5. Biomarker-informed CSF proteomics reveals ENPP2-LPA lipid signaling associated with Alzheimer's disease
-
-- Date: 2026-07-10
-- Category: Target Biology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.08.26357565v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.08.26357565v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-10-medrxiv-biomarker_informed_csf_proteomics_reveals_enpp2_lpa_lipid_signaling_associated_with_alzhei_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.09.26357661v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.09.26357661v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-13-medrxiv-aqueous_humor_liquid_biopsy_enables_multi_omics_tumor_profiling_and_methylation_based_mach_infographic.json
