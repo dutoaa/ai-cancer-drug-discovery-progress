@@ -1,0 +1,24 @@
+{
+  "key_insight": "LATTICE is a graph self-supervised framework that fuses five aligned spatial omics modalities to learn spot-level tissue embeddings that better capture multimodal biology than RNA alone.",
+  "clinical_relevance": "This approach may improve how spatial tumor samples are analyzed and stratified, but it is an analysis tool rather than a treatment and still needs broader validation before clinical use.",
+  "method": [
+    "Builds a spatial neighborhood graph over Visium spots",
+    "Uses a TransformerConv encoder with masked reconstruction, cross-modal alignment, and spatial smoothness losses",
+    "Integrates Visium RNA, scMultiome RNA/ATAC, spatial ATAC, and spatial CUT&Tag into one latent embedding"
+  ],
+  "evidence_signal": "In a private 11-sample melanoma cohort with 54,912 total spots, adding scMultiome RNA to Visium RNA improved agreement with Space Ranger clusters across 11 runs (ARI +0.157, NMI +0.143, spatial contiguity +0.174), and additional modalities further improved spatial contiguity and MUS.",
+  "watch_item": "The model may diverge from RNA-derived reference labels when chromatin and regulatory signals dominate, so it needs stronger supervision and external benchmarking on independent cohorts.",
+  "hashtags": [
+    "#SpatialOmics",
+    "#MultimodalIntegration",
+    "#GraphLearning",
+    "#MelanomaResearch",
+    "#SingleCellAnalysis"
+  ],
+  "paper_id": "2026-07-15-arxiv-lattice_graph_self_supervised_learning_for_multimodal_spatial_omics_integration",
+  "paper_title": "LATTICE: Graph Self-Supervised Learning for Multimodal Spatial Omics Integration",
+  "paper_date": "2026-07-15",
+  "paper_category": "Target Biology",
+  "generated_at": "2026-07-18T08:43:49",
+  "generator": "openai"
+}

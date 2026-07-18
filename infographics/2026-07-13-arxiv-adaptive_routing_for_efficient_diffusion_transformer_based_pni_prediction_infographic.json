@@ -1,17 +1,17 @@
 {
-  "key_insight": "Adaptive routing in a diffusion-transformer model improves preoperative prediction of perineural invasion (PNI) by balancing global context modeling with computational efficiency.",
-  "clinical_relevance": "Better MRI-based PNI prediction could help refine cholangiocarcinoma risk stratification before surgery.",
+  "key_insight": "A diffusion-based transformer with adaptive routing can better capture subtle peritumoral MRI patterns for predicting perineural invasion (PNI) in cholangiocarcinoma while reducing unnecessary computation.",
+  "clinical_relevance": "Improved preoperative PNI prediction could help refine risk stratification and surgical planning for cholangiocarcinoma patients.",
   "method": [
-    "Reformulated PNI prediction as a diffusion-based classification task.",
-    "Used a transformer-based denoising network to capture volumetric MRI context.",
-    "Added adaptive routing across attention heads, spatial tokens, and MLP width to reduce compute."
+    "Formulated PNI prediction as a diffusion-based classification problem.",
+    "Used a transformer-based denoising network to model global MRI context and subtle spatial cues.",
+    "Added adaptive routing over attention heads, spatial tokens, and MLP width to improve efficiency."
   ],
-  "evidence_signal": "The abstract reports an AUC of 0.731 with 257.57 GFLOPs, indicating moderate predictive performance with substantial but managed computational cost.",
-  "watch_item": "The abstract does not provide external validation or dataset details, so generalizability and real-world robustness remain uncertain.",
+  "evidence_signal": "In the abstract, the proposed method achieved an AUC of 0.731 with 257.57 GFLOPs on MRI-based PNI prediction.",
+  "watch_item": "The approach may be computationally efficient relative to full transformer-diffusion models, but the abstract does not provide external validation or details on dataset size and generalizability.",
   "hashtags": [
     "#PrecisionOncology",
-    "#MRI",
     "#Cholangiocarcinoma",
+    "#MRI",
     "#Transformers",
     "#DiffusionModels"
   ],
@@ -19,6 +19,6 @@
   "paper_title": "Adaptive Routing for Efficient Diffusion Transformer-Based PNI Prediction",
   "paper_date": "2026-07-13",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-14T08:59:59",
+  "generated_at": "2026-07-18T08:43:44",
   "generator": "openai"
 }

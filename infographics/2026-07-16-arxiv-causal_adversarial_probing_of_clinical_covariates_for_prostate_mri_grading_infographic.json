@@ -1,0 +1,24 @@
+{
+  "key_insight": "A causal-adversarial framework can test whether prostate MRI grading models rely on clinical covariates that are helpful disease signals or harmful shortcuts.",
+  "clinical_relevance": "Suppressing non-informative covariates improved generalization, while suppressing PSA and prostate volume reduced performance, suggesting this method could help build more robust prostate MRI grading models.",
+  "method": [
+    "Model MRI appearance and ISUP grade as observations of latent tumor pathology.",
+    "Adversarially suppress the decodability of one clinical covariate at a time while preserving grade prediction.",
+    "Compare performance changes to classify variables as nuisance correlates, disease-related proxies, or irrelevant covariates."
+  ],
+  "evidence_signal": "Evaluated on 2,903 prostate MRI exams with external validation on 576 patients; suppressing age, BMI, and alcohol use improved AUC, whereas suppressing PSA and prostate volume worsened AUC.",
+  "watch_item": "Performance shifts indicate representation dependence, but they do not prove true causality and may vary across sites, scanners, and patient populations.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#ProstateMRI",
+    "#DeepLearning",
+    "#CausalAI",
+    "#MedicalImaging"
+  ],
+  "paper_id": "2026-07-16-arxiv-causal_adversarial_probing_of_clinical_covariates_for_prostate_mri_grading",
+  "paper_title": "Causal-Adversarial Probing of Clinical Covariates for Prostate MRI Grading",
+  "paper_date": "2026-07-16",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-18T08:43:27",
+  "generator": "openai"
+}

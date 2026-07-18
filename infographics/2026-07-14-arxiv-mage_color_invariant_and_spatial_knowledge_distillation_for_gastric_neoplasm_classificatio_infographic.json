@@ -1,0 +1,24 @@
+{
+  "key_insight": "MAGE improves gastric adenoma-vs-carcinoma classification by distilling structural knowledge from a masked, color-suppressed expert into a full-image model so predictions rely more on morphology than spurious visual cues.",
+  "clinical_relevance": "This could make endoscopic classification more reliable and deployable without needing annotation masks at inference, supporting faster and more interpretable decision support.",
+  "method": [
+    "Train an auxiliary local expert on masked achromatic neoplasm views to emphasize shape and structure.",
+    "Distill both class logits and spatial attention maps from the expert to the main whole-image branch.",
+    "Use full white-light endoscopy images at inference with no mask requirement."
+  ],
+  "evidence_signal": "The abstract reports that experiments on a clinical gastric endoscopy dataset showed significantly better performance than detector-based methods like YOLO and classifier-based methods like Swin-Transformer, with interpretable attention maps.",
+  "watch_item": "Performance and generalizability may depend on the quality of the training masks and the source dataset, so external validation across sites and imaging conditions is important.",
+  "hashtags": [
+    "#GastricCancer",
+    "#EndoscopyAI",
+    "#KnowledgeDistillation",
+    "#MedicalImagingAI",
+    "#ExplainableAI"
+  ],
+  "paper_id": "2026-07-14-arxiv-mage_color_invariant_and_spatial_knowledge_distillation_for_gastric_neoplasm_classificatio",
+  "paper_title": "MAGE: Color-Invariant and Spatial Knowledge Distillation for Gastric Neoplasm Classification",
+  "paper_date": "2026-07-14",
+  "paper_category": "Cancer AI Methods",
+  "generated_at": "2026-07-18T08:43:47",
+  "generator": "openai"
+}

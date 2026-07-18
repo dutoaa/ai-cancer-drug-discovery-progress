@@ -1,0 +1,24 @@
+{
+  "key_insight": "SinAE uses one Transformer-based latent autoencoder plus flow-matching decoding to unify generation across molecules, crystals, and proteins without domain-specific geometry operators.",
+  "clinical_relevance": "By enabling shared atomic representations across domains, this approach could accelerate early-stage therapeutic discovery by improving generative modeling for small molecules and protein-related design tasks.",
+  "method": [
+    "Vanilla Transformer encoder/decoder for all three atomic domains",
+    "Flow-matching decoder reconstructs 3D structures from compact latents",
+    "Shared latent prior is trained with a Diffusion Transformer for generation"
+  ],
+  "evidence_signal": "The abstract reports near-lossless reconstruction and orders-of-magnitude lower reconstruction error than prior latent baselines, plus improved molecule–crystal joint training performance.",
+  "watch_item": "Results are based on benchmark reconstruction and generation tasks, so real-world utility still depends on robustness, scaling, and validation in downstream discovery workflows.",
+  "hashtags": [
+    "#AIforScience",
+    "#DrugDiscovery",
+    "#GenerativeModels",
+    "#Transformers",
+    "#ProteinDesign"
+  ],
+  "paper_id": "2026-07-14-arxiv-sinae_a_single_architecture_flow_matching_autoencoder_for_cross_domain_atomic_systems",
+  "paper_title": "SinAE: A Single-Architecture Flow-Matching Autoencoder for Cross-Domain Atomic Systems",
+  "paper_date": "2026-07-14",
+  "paper_category": "Therapeutic Discovery",
+  "generated_at": "2026-07-18T08:43:57",
+  "generator": "openai"
+}

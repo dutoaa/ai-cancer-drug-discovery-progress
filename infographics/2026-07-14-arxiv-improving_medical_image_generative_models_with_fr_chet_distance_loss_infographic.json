@@ -1,0 +1,24 @@
+{
+  "key_insight": "Adding Fréchet Distance (FD) loss to diffusion-based medical image generators helps them better preserve irregular tumor shapes and variability in synthetic images.",
+  "clinical_relevance": "FD-regularized synthetic images improved downstream tumor segmentation performance, suggesting a practical way to make generated medical data more useful for clinical imaging workflows.",
+  "method": [
+    "Finetuned diffusion generative models with FD-loss instead of relying only on per-pixel denoising loss.",
+    "Matched first- and second-order feature statistics between real and generated images in a pretrained encoder space.",
+    "Tested the approach across liver and brain cancer datasets in both CT and MRI, using natural-image and medical-image encoders."
+  ],
+  "evidence_signal": "Across multiple datasets and model settings, segmentation networks trained on FD-regularized synthetic data achieved more than 5% higher tumor DSC than unregularized synthetic augmentation.",
+  "watch_item": "Results depend on the choice of pretrained encoder and dataset; gains in image realism and segmentation may not transfer equally across all tumor types or imaging protocols.",
+  "hashtags": [
+    "#MedicalImagingAI",
+    "#DiffusionModels",
+    "#CancerResearch",
+    "#SyntheticData",
+    "#Segmentation"
+  ],
+  "paper_id": "2026-07-14-arxiv-improving_medical_image_generative_models_with_fr_chet_distance_loss",
+  "paper_title": "Improving Medical Image Generative Models with Fréchet Distance Loss",
+  "paper_date": "2026-07-14",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-18T08:43:34",
+  "generator": "openai"
+}
