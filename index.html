@@ -22,7 +22,7 @@
     <header>
       <div>
         <h1>AI Cancer Drug Discovery Research Papers - Daily Top 20</h1>
-        <p class="sub">Collected 2026-07-18. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
+        <p class="sub">Collected 2026-07-19. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
       </div>
       <nav class="actions">
         <a href="papers.json">Data JSON</a>
@@ -31,368 +31,7 @@
     </header>
     <section class="grid">
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>arXiv</span><strong>76</strong></div>
-        <p class="date">2026-07-14</p>
-        <h2>CRC-HGD: A Histopathological Image Dataset for Grading Colorectal Cancer</h2>
-        <p class="authors">Elham Amjadi, Amin Bahreini, Sayed Mohammad Hasan Emami, Sayyed Mohammadreza Hakimian, Alireza Fahim, Hojjatollah Rahimi</p>
-        <p class="abstract">Colorectal cancer (CRC) is the third most common cancer worldwide and the second leading cause of cancer-related deaths globally, with approximately 1,926,425 new cases and 904,019 deaths reported in 2022. Accurate histologic grading plays a critical role in prognosis and treatment planning for colorectal adenocarcinoma. In recent years, artificial intelligence and its subcategories, including machine learning and deep learning, have been increasingly employed for automated cancer detection and classification. An appropriate and well-organized dataset is the essential first step to achieve this goal. This paper introduces CRC-HGD, a histopathological microscopy image dataset of 1,914 images obtained from 214 colorectal adenocarcinoma patients (Grade I: 106, Grade II: 75, Grade III: 33). The specimens are H&amp;E-stained colorectal tissue sections acquired at the Poursina Hakim Research Center of Isfahan University of Medical Sciences, Iran, diagnosed between 2014 and 2019, and graded according to the World Health Organization (WHO) criteria into three grades: well-differentiated (Grade I), moderately differentiated (Grade II), and poorly differentiated (Grade III). For each specimen, four magnification levels are provided: 4x, 10x, 20x, and 40x. The dataset is accessible via Mendeley Data (https://doi.org/10.17632/yfp5sfj47m.4) and at http://databiox.com, where the latest version is also available. The distinctive feature of this dataset is the provision of labeled specimens across all three differentiation grades at multiple magnification levels, enabling comprehensive computational analysis of colorectal cancer grading.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.12750v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.12750v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> CRC-HGD is a multi-magnification histopathology dataset designed to support AI-based grading of colorectal adenocarcinoma across three WHO differentiation grades.</p>
-          <p><b>Clinical relevance:</b> By standardizing labeled biopsy images, the dataset may help researchers build and validate tools that improve histologic grading consistency and support prognosis-related decision-making in colorectal cancer.</p>
-          <ul><li>Collected H&amp;E-stained colorectal tissue microscopy images from 214 colorectal adenocarcinoma patients diagnosed between 2014 and 2019.</li><li>Annotated specimens into three grades: well-differentiated (Grade I), moderately differentiated (Grade II), and poorly differentiated (Grade III).</li><li>Provided four magnification levels per specimen: 4x, 10x, 20x, and 40x.</li></ul>
-          <p><b>Evidence signal:</b> The dataset includes 1,914 images total, with grade distribution of 106 Grade I, 75 Grade II, and 33 Grade III cases.</p>
-          <p><b>Watch item:</b> The class imbalance and single-center origin may limit generalizability unless models are validated on independent external datasets.</p>
-          <div class="tags"><span>#ColorectalCancer</span> <span>#Histopathology</span> <span>#AIinMedicine</span> <span>#DigitalPathology</span> <span>#PrecisionOncology</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>arXiv</span><strong>74</strong></div>
-        <p class="date">2026-07-15</p>
-        <h2>Multimodal Assessment of Pancreatic Cancer Resectability Using Deep Learning</h2>
-        <p class="authors">Vincent Ochs, Christoph Kuemmerli, Florentin Bieder, Julia Wolleb, Joel L. Lavanchy, Julia Ruppel</p>
-        <p class="abstract">Accurate determination of pancreatic ductal adenocarcinoma (PDAC) resectability relies on evaluating how the tumor interacts with major peripancreatic vessels on CT imaging, yet expert assessment often shows substantial variability. We introduce a fully automated multimodal deep learning framework that jointly analyzes 3D contrast enhanced CT and structured clinical information to classify patients into the three National Comprehensive Cancer Network (NCCN) resectability categories (upfront resectable, borderline resectable, locally advanced). The approach uses a Swin-UNETR backbone to obtain anatomy aware image representations through auxiliary segmentation of pancreas, tumor, and vascular structures. These features are fused with a compact clinical embedding derived from 17 routinely collected variables and processed by a lightweight classification head. Model training is guided by a dynamic multitask objective that adapts the balance between segmentation and classification based on current tumor Dice performance, promoting feature representations that remain both anatomically informed and discriminative.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.13826v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.13826v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A multimodal deep learning system can classify pancreatic cancer resectability by combining CT anatomy with routine clinical data, aiming to reduce variability in expert judgment.</p>
-          <p><b>Clinical relevance:</b> If validated broadly, this could support faster, more consistent NCCN resectability assessment for patients with PDAC during treatment planning.</p>
-          <ul><li>3D contrast-enhanced CT analyzed with a Swin-UNETR backbone</li><li>Auxiliary segmentation of pancreas, tumor, and vascular structures to create anatomy-aware features</li><li>Fusion of imaging features with a compact embedding from 17 clinical variables, optimized with a dynamic multitask loss</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports development of the framework and use of segmentation-guided multimodal classification, but does not provide performance metrics or external validation details.</p>
-          <p><b>Watch item:</b> Because resectability decisions are high-stakes, the model will need robust multi-center validation and careful checking for generalizability before clinical use.</p>
-          <div class="tags"><span>#PancreaticCancer</span> <span>#DeepLearning</span> <span>#MedicalImaging</span> <span>#MultimodalAI</span> <span>#PrecisionOncology</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>arXiv</span><strong>71</strong></div>
-        <p class="date">2026-07-13</p>
-        <h2>SpikeDS: Dual Sparsity Spikformer for Perineural Invasion Prediction in 3D MRI</h2>
-        <p class="authors">Induk Um, Youngung Han, Kyeonghun Kim, Yului Jeong, Jina Jeong, Hyunsu Go</p>
-        <p class="abstract">Perineural invasion (PNI) is associated with poor prognosis in cholangiocarcinoma (CCA). However, its detection from 3D MRI remains challenging due to the subtle and spatially heterogeneous imaging signatures at the tumor periphery. Capturing such spatially sparse cues necessitates volumetric analysis of 3D MRI, but existing deep learning approaches incur prohibitive computational costs on volumetric medical images, limiting their clinical deployment. We propose Dual Sparsity Spikformer (SpikeDS), a spiking neural network architecture that jointly exploits activation sparsity from binary spike communication and spatial sparsity from window pruning based on firing rates. SpikeDS introduces Dual Sparsity Spiking Attention (DSSA), which combines two complementary mechanisms. The first is Window-based Expert Mixture Spiking Attention (W-EMSA), which selectively applies attention only to salient windows identified by their firing rates. The second is Cross-Window Spiking Self-Attention (CW-SSA), which enables global context exchange through an asymmetric scheme in which pruned windows still contribute as key-value sources. Evaluated on a clinical cohort of 139 CCA patients via 5-fold cross-validation, SpikeDS achieves an AUC of 0.753 while consuming only 14.4 mJ, surpassing the best baseline in both AUC and energy efficiency. These results suggest that dual sparsity provides an effective hardware-aware strategy for improving the efficiency of 3D spiking transformers without compromising diagnostic performance.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.11986v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.11986v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> SpikeDS uses dual sparsity in a 3D spiking transformer to detect subtle perineural invasion signals in MRI more efficiently.</p>
-          <p><b>Clinical relevance:</b> This could improve preoperative risk stratification for cholangiocarcinoma by helping identify patients at higher risk of poor prognosis.</p>
-          <ul><li>Binary spike communication reduces activation cost.</li><li>Firing-rate-based window pruning focuses attention on salient 3D regions.</li><li>Cross-window attention preserves global context even when some windows are pruned.</li></ul>
-          <p><b>Evidence signal:</b> In a 139-patient cohort with 5-fold cross-validation, SpikeDS reached an AUC of 0.753 while using 14.4 mJ, outperforming the best baseline in both accuracy and energy efficiency.</p>
-          <p><b>Watch item:</b> The results come from a single clinical cohort, so broader validation and deployment testing are still needed before routine use.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#MRI</span> <span>#SpikingNeuralNetworks</span> <span>#Cholangiocarcinoma</span> <span>#MedicalAI</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>arXiv</span><strong>69</strong></div>
-        <p class="date">2026-07-16</p>
-        <h2>Causal-Adversarial Probing of Clinical Covariates for Prostate MRI Grading</h2>
-        <p class="authors">Yipei Wang, Shiqi Huang, Wen Yan, Weixi Yi, Dean C. Barratt, Mark Emberton</p>
-        <p class="abstract">Deep learning models for prostate MRI-based cancer grading may encode clinical covariates that either reflect useful disease-related signal or non-generalising shortcut information, but their role is usually assumed. We propose a causal-reasoning framework for probing covariate dependence in MRI-based International Society of Urological Pathology (ISUP) Grade Group prediction. Rather than treating mpMRI as a direct cause of grade, we model MRI appearance and ISUP grade as observations of latent tumour pathology, and test whether candidate clinical variables act as nuisance correlates, disease-related proxies, or irrelevant covariates in the learned representation. We implement this using an adversarial framework that suppresses the decodability of individual clinical covariate at a time while preserving MRI-based grade prediction. The approach is developed and evaluated on 2,903 prostate MRI examinations, with external validation on 576 patients. We report a set of interesting and previously under-explored imaging-to-clinical-variable interactions in the context of deep learning generalisation. For examples, in binary ISUP Grade Group $\geq2$ classification, suppressing age, BMI, and alcohol use improved AUC by 1.23%, 0.84%, and 1.42%, respectively (all p &lt; 0.05), suggesting reduced non-generalising covariate information; In contrast, suppressing PSA and prostate volume degraded AUC by 1.91% and 7.61% (all p &lt; 0.001), indicating that these variables carried task-relevant signal. These findings show that adversarial covariate suppression can provide a practical representation-level analysis for distinguishing potentially harmful dependence from informative signal in prostate MRI grading models.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.14720v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.14720v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A causal-adversarial framework can test whether prostate MRI grading models rely on clinical covariates that are helpful disease signals or harmful shortcuts.</p>
-          <p><b>Clinical relevance:</b> Suppressing non-informative covariates improved generalization, while suppressing PSA and prostate volume reduced performance, suggesting this method could help build more robust prostate MRI grading models.</p>
-          <ul><li>Model MRI appearance and ISUP grade as observations of latent tumor pathology.</li><li>Adversarially suppress the decodability of one clinical covariate at a time while preserving grade prediction.</li><li>Compare performance changes to classify variables as nuisance correlates, disease-related proxies, or irrelevant covariates.</li></ul>
-          <p><b>Evidence signal:</b> Evaluated on 2,903 prostate MRI exams with external validation on 576 patients; suppressing age, BMI, and alcohol use improved AUC, whereas suppressing PSA and prostate volume worsened AUC.</p>
-          <p><b>Watch item:</b> Performance shifts indicate representation dependence, but they do not prove true causality and may vary across sites, scanners, and patient populations.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#ProstateMRI</span> <span>#DeepLearning</span> <span>#CausalAI</span> <span>#MedicalImaging</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Clinical Translation</span><span>arXiv</span><strong>67</strong></div>
-        <p class="date">2026-07-15</p>
-        <h2>A Temporal Machine Learning-Based Time-to-Event Model for Predicting ALS Progression and Healthcare Utilization</h2>
-        <p class="authors">Zongliang Yue, Qi Li, Terry Heiman-Patterson, Frank Bearoff, Zhaohui Qin, Huanmei Wu</p>
-        <p class="abstract">Amyotrophic lateral sclerosis (ALS) is a progressive and heterogeneous neurodegenerative disease in which predicting clinically meaningful milestones, such as assistive device use, remains challenging. We developed a time-to-event, digital-twin-inspired framework that integrates longitudinal ALS Functional Rating Scale-Revised (ALSFRS-R) trajectories with survival modeling to support individualized prediction of functional decline and assistive device utilization. We constructed a harmonized longitudinal dataset by integrating diagnosis records, ALSFRS-R assessments, activities of daily living, and demographic information, followed by preprocessing to ensure data quality, temporal alignment, and cohort consistency. Correlation-based clustering identified coherent functional domains spanning bulbar, upper limb, axial, lower limb, and respiratory systems. Generalized additive mixed models characterized nonlinear, domain-specific functional decline across all domains. In addition, a temporal machine learning model was developed to predict longitudinal functional decline and capture stage-dependent disease progression. Cox proportional hazards modeling further identified lower limb function, particularly walking and stair climbing, as the strongest predictors of earlier wheelchair access. Building on these results, we implemented a digital twin-inspired temporal machine learning-based time-to-event (TTE) model that generates individualized survival curves and dynamically predicts wheelchair-free survival. This framework provides a scalable, interpretable, and clinically actionable approach for linking ALS progression with personalized decision support, with applications in proactive care planning, clinical trial stratification, and precision medicine.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.14190v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.14190v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A temporal machine learning time-to-event framework can combine longitudinal ALS function scores with survival modeling to predict individualized disease progression and wheelchair-free survival.</p>
-          <p><b>Clinical relevance:</b> This could help clinicians and care teams anticipate functional decline earlier, support proactive planning, and tailor follow-up for people with ALS.</p>
-          <ul><li>Built a harmonized longitudinal ALS dataset from diagnosis, ALSFRS-R, daily living, and demographic records.</li><li>Clustered ALSFRS-R items into functional domains and modeled nonlinear decline with generalized additive mixed models.</li><li>Used temporal machine learning plus Cox proportional hazards modeling to generate individualized survival curves and predict assistive device use.</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports a cohort-based modeling pipeline with temporal alignment and survival analysis, identifying lower-limb function as the strongest predictor of earlier wheelchair access.</p>
-          <p><b>Watch item:</b> Performance and generalizability may be limited if the model is applied to different clinics, data capture patterns, or ALS populations without external validation.</p>
-          <div class="tags"><span>#ALS</span> <span>#TimeToEvent</span> <span>#MachineLearning</span> <span>#DigitalTwin</span> <span>#ClinicalPrediction</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>arXiv</span><strong>65</strong></div>
-        <p class="date">2026-07-15</p>
-        <h2>Multimodal Empirical Bayes Variational Autoencoders for Joint Longitudinal and Time-to-Event Modeling</h2>
-        <p class="authors">Anders Sjöberg, Nils Olsson, Marcus Baaz, Mats Jirstrand</p>
-        <p class="abstract">Longitudinal tumor measurements, dropout information, and genetic covariates provide complementary information about treatment response, but integrating these data sources within a single population modeling framework remains challenging. We extend the empirical Bayes variational autoencoder (EB-VAE) framework to joint longitudinal and time-to-event modeling and evaluate it on tumor growth data. The framework represents inter-individual variability using latent individual effects regularized by a covariate-conditioned empirical Bayes prior, while a decoder maps these latent effects to tumor-volume trajectories. To account for informative dropout, the decoder was augmented with a hazard model, yielding joint predictions of tumor growth and time to dropout. We further compared fully neural and hybrid semi-mechanistic decoder formulations and incorporated genomic covariates through a genetics-conditioned prior adaptation. The hybrid decoder recovered treatment-effect parameters broadly consistent with previously reported nonlinear mixed-effects estimates, while achieving prior predictive performance comparable to the neural decoder. The joint model reproduced both tumor-volume distributions and dropout patterns in held-out individuals, and genetic conditioning improved individual-level prior predictions in both cutaneous melanoma and breast cancer experiments. Stability selection identified several biologically plausible genetic indicators, including alterations in BRAF, NRAS, NF1, and MDM2. These results demonstrate that EB-VAE provides a flexible probabilistic framework for combining neural dynamics, mechanistic structure, time-to-event modeling, and high-dimensional covariates in pharmacometric applications.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.13984v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.13984v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> The paper extends empirical Bayes variational autoencoders to jointly model tumor growth, dropout, and genomic covariates, enabling more flexible patient-level predictions in precision oncology.</p>
-          <p><b>Clinical relevance:</b> This approach could improve how researchers predict treatment response and time-to-event outcomes from mixed longitudinal and molecular data, supporting better pharmacometric model building.</p>
-          <ul><li>Empirical Bayes VAE with covariate-conditioned latent priors</li><li>Joint decoder for tumor-volume trajectories plus dropout hazard</li><li>Compared neural and semi-mechanistic decoders with genetics-conditioned prior adaptation</li></ul>
-          <p><b>Evidence signal:</b> In held-out individuals, the joint model reproduced both tumor-volume distributions and dropout patterns, and genetic conditioning improved prior predictions in melanoma and breast cancer experiments.</p>
-          <p><b>Watch item:</b> The approach is promising but still depends on careful model specification, stable training, and external validation before translation to clinical decision-making.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#MachineLearning</span> <span>#TumorGrowth</span> <span>#VariationalAutoencoder</span> <span>#Pharmacometrics</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>arXiv</span><strong>64</strong></div>
-        <p class="date">2026-07-14</p>
-        <h2>Improving Medical Image Generative Models with Fréchet Distance Loss</h2>
-        <p class="authors">Andrew Marshall, Xuanang Xu, Xiaoran Zhang, Rui Wang, Lawrence Staib, James Duncan</p>
-        <p class="abstract">Diffusion generative models have demonstrated immense potential for synthetic medical image generation. However, these models often struggle to capture complex morphological characteristics of heterogeneous tumors with irregular boundaries, limiting their utility for downstream clinical tasks such as segmentation. This limitation stems from the standard denoising objective: minimizing a per-pixel error, which smooths high-variance irregular structures characteristic of tumors. To address this, we propose finetuning these generative models with Fréchet Distance loss (FD-loss). FD-loss aligns the first and second order feature statistics of real and generated images in a pretrained encoder space, encouraging the generator to capture complex structural variations characteristic of heterogeneous tumors. We integrate FD-loss across diverse architectural settings, using both natural- and medical-image encoders on multiple liver and brain cancer datasets spanning CT and MRI modalities. Downstream segmentation networks trained on our FD-regularized synthetic data consistently achieve superior performance, improving tumor DSC by $&gt;$$5\%$ over unregularized synthetic augmentation alone. Qualitative analysis suggests these gains are associated with more faithful tumor synthesis and fewer segmentation hallucinations. Our results show FD-loss as an effective regularizer for medical image generative models to improve clinical workflows.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.13300v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.13300v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Adding Fréchet Distance (FD) loss to diffusion-based medical image generators helps them better preserve irregular tumor shapes and variability in synthetic images.</p>
-          <p><b>Clinical relevance:</b> FD-regularized synthetic images improved downstream tumor segmentation performance, suggesting a practical way to make generated medical data more useful for clinical imaging workflows.</p>
-          <ul><li>Finetuned diffusion generative models with FD-loss instead of relying only on per-pixel denoising loss.</li><li>Matched first- and second-order feature statistics between real and generated images in a pretrained encoder space.</li><li>Tested the approach across liver and brain cancer datasets in both CT and MRI, using natural-image and medical-image encoders.</li></ul>
-          <p><b>Evidence signal:</b> Across multiple datasets and model settings, segmentation networks trained on FD-regularized synthetic data achieved more than 5% higher tumor DSC than unregularized synthetic augmentation.</p>
-          <p><b>Watch item:</b> Results depend on the choice of pretrained encoder and dataset; gains in image realism and segmentation may not transfer equally across all tumor types or imaging protocols.</p>
-          <div class="tags"><span>#MedicalImagingAI</span> <span>#DiffusionModels</span> <span>#CancerResearch</span> <span>#SyntheticData</span> <span>#Segmentation</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>arXiv</span><strong>64</strong></div>
-        <p class="date">2026-07-13</p>
-        <h2>Agentic systems for breast cancer treatment recommendations</h2>
-        <p class="authors">Vinicius Anjos de Almeida, Nícolas Henrique Borges, Leonardo Vicenzi, Helena Kociolek, Sarah Miriã de Castro Rocha, Frederico Nassif Gomes</p>
-        <p class="abstract">Large language models (LLMs) are increasingly being explored for clinical decision support, but their reliability in complex oncology treatment planning remains unclear. We evaluated agentic LLM systems for breast cancer treatment recommendation generation using 72 real clinical cases across stages I to IV and 1,147 case-specific rubrics generated through Asymmetric Information Rubric Generation (AIRG), in which the rubric generator had access to real clinical decisions unavailable to the evaluated models. Seven pipelines were compared, including single-LLM baselines, tool-augmented systems, and multi-agent architectures with fact checking and autonomous subagent spawning. The best-performing configuration, Claude Opus 4.8 with the D&amp;C+SA pipeline, achieved a global score of 0.594 $\pm$ 0.025. Tool use and increased agent autonomy had mixed effects, improving performance in some settings but degrading it in others. Performance varied by clinical domain and disease stage, and oncologist-led error analysis revealed persistent clinically relevant failures, including incorrect or missing recommendations, flawed justifications, citation errors, outdated claims, and overconfidence. These findings suggest that agentic LLM systems can generate clinically relevant breast cancer recommendations, but remain insufficient for unsupervised clinical use.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.12051v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.12051v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Agentic LLM systems can produce breast cancer treatment recommendations that are sometimes clinically relevant, but their reliability remains inconsistent across settings.</p>
-          <p><b>Clinical relevance:</b> The results suggest these systems may assist decision support research, but they are not ready for unsupervised use in oncology care.</p>
-          <ul><li>Evaluated 7 LLM pipelines, including baselines, tool-augmented systems, and multi-agent architectures.</li><li>Tested on 72 real breast cancer cases spanning stages I to IV.</li><li>Used 1,147 case-specific AIRG rubrics with real clinical decisions hidden from the evaluated models.</li></ul>
-          <p><b>Evidence signal:</b> The top configuration, Claude Opus 4.8 with D&amp;C+SA, reached a global score of 0.594 ± 0.025, with performance varying by stage and clinical domain.</p>
-          <p><b>Watch item:</b> Error patterns included wrong or missing recommendations, flawed justifications, citation mistakes, outdated claims, and overconfidence, raising safety concerns for real-world deployment.</p>
-          <div class="tags"><span>#BreastCancer</span> <span>#OncologyAI</span> <span>#LLM</span> <span>#ClinicalDecisionSupport</span> <span>#PrecisionOncology</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>arXiv</span><strong>63</strong></div>
-        <p class="date">2026-07-16</p>
-        <h2>Multi-LLM Collaborative MRI Report Generation for Visual Instruction Tuning in Brain Oncology</h2>
-        <p class="authors">Sinyoung Ra, Jonghun Kim, Hyunjin Park</p>
-        <p class="abstract">Recent advances in large language models (LLMs) and their extension to vision-language models (VLMs) have made it easier to combine text and images for tasks such as report generation. Existing VLMs in medicine typically focus on 2D images (chest X-rays), and their extension to 3D imaging has been difficult because of the lack of paired 3D imaging-text data. Thus, we introduce a new method for creating a 3D image-text dataset for brain oncology using 3D MRI scans of glioma and meningioma cases. We use a cooperative system in which several LLMs work together to generate and check reports, ensuring that they are accurate and clear. By leveraging the new 3D MRI-text dataset, we further build a VLM that converts MRI scans into tokens and aligns them with text instructions. Our VLM performed better in report generation and visual question answering tasks than other 2D and 3D methods. Our method not only improves the quality of reports but also helps with better diagnosis and treatment in brain oncology.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.14581v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.14581v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A multi-LLM pipeline can generate and quality-check paired 3D brain MRI reports, enabling visual instruction tuning for oncology-focused vision-language models.</p>
-          <p><b>Clinical relevance:</b> This approach may improve MRI report generation and visual question answering for glioma and meningioma, supporting more consistent imaging interpretation in brain oncology.</p>
-          <ul><li>Built a new 3D MRI-text dataset from glioma and meningioma cases.</li><li>Used multiple LLMs cooperatively to draft, verify, and refine reports.</li><li>Trained a VLM to tokenize MRI scans and align them with text instructions.</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports that the proposed VLM outperformed other 2D and 3D methods on report generation and visual question answering tasks.</p>
-          <p><b>Watch item:</b> The approach depends on paired 3D MRI-text data and cooperative LLM report generation, so data quality and generalizability across sites and scanners remain important concerns.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#BrainOncology</span> <span>#MRI</span> <span>#VisionLanguageModels</span> <span>#LLM</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>arXiv</span><strong>63</strong></div>
-        <p class="date">2026-07-15</p>
-        <h2>AI-Augmented Adaptive Digital Twin Modeling for Brain Tumor Evolution Prediction and Treatment Scheduling</h2>
-        <p class="authors">Wenxi Liu, Michael Trimboli, Xianqi Li</p>
-        <p class="abstract">Brain tumor progression exhibits spatially heterogeneous growth, patient-specific treatment response, and complex interactions with surrounding anatomy, making accurate long-term prediction challenging. We propose an AI-augmented adaptive digital twin (DT) framework for brain tumor evolution prediction and treatment scheduling. The framework integrates an interpretable reaction--diffusion (RD) model, a 3D residual learning module for model-form correction, patient-specific DT updating during recursive rollout, and model predictive control (MPC) for constrained chemotherapy and radiotherapy scheduling. Experiments on 387 synthetic tumor trajectories with 120-step evolution show that the baseline RD model captures tumor location and overall temporal behavior but underestimates heterogeneous tumor burden during long-horizon prediction. Hybrid RD--residual modeling reduces masked voxel-wise mean squared error by 84.3% and increases Dice overlap by 43.5% relative to the RD baseline under dense simulated observations. Online DT updating further reduces mean squared error by 45.9% and improves Dice overlap by 9.6% compared with the non-updated hybrid model. In MPC-based scheduling simulations, the updated DT controller reduces final tumor burden by 22.4% relative to a fixed treatment schedule under the terminal-burden objective. Together, these results demonstrate a unified framework for patient-specific initialization, mechanistic modeling, adaptive learning, and constrained treatment optimization. Although validated using patient-data-informed synthetic trajectories rather than clinical longitudinal data, the proposed framework establishes a foundation for future translation to real-world adaptive treatment planning.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.13877v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.13877v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> An AI-augmented digital twin that blends mechanistic tumor growth modeling, residual learning, and adaptive updating can better predict brain tumor evolution and help optimize treatment timing.</p>
-          <p><b>Clinical relevance:</b> This framework could support more personalized chemotherapy and radiotherapy scheduling by adjusting to each patient’s evolving tumor dynamics over time.</p>
-          <ul><li>Interpretable reaction–diffusion model for tumor growth</li><li>3D residual network to correct model errors</li><li>Patient-specific digital twin updating plus MPC-based treatment scheduling</li></ul>
-          <p><b>Evidence signal:</b> In 387 synthetic 120-step tumor trajectories, the hybrid model cut masked voxel-wise MSE by 84.3% and raised Dice overlap by 43.5% versus the RD baseline, while online updating further improved accuracy and MPC reduced final tumor burden by 22.4% versus fixed scheduling.</p>
-          <p><b>Watch item:</b> Results were validated on patient-data-informed synthetic trajectories, so clinical performance and deployment feasibility still need real-world longitudinal testing.</p>
-          <div class="tags"><span>#DigitalTwin</span> <span>#PrecisionOncology</span> <span>#BrainTumor</span> <span>#AIinMedicine</span> <span>#TreatmentOptimization</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>arXiv</span><strong>63</strong></div>
-        <p class="date">2026-07-13</p>
-        <h2>Adaptive Routing for Efficient Diffusion Transformer-Based PNI Prediction</h2>
-        <p class="authors">Youngung Han, Dohyun Kweon, Kyeonghun Kim, Hyunsu Go, Jina Jeong, Suah Park</p>
-        <p class="abstract">Perineural invasion (PNI) is a critical prognostic factor in cholangiocarcinoma. However, its preoperative prediction from magnetic resonance imaging (MRI) remains challenging due to subtle imaging features that extend beyond tumor boundaries into surrounding regions. Conventional convolutional neural networks are limited in capturing long-range spatial dependencies. Transformer-based architectures improve global modeling of volumetric MRI by aggregating spatially distributed contextual cues, yet capturing subtle and noise-sensitive patterns in peritumoral regions remains challenging. Diffusion-based classifiers offer an alternative formulation by leveraging denoising-based class scoring to better capture such subtle patterns. However, these approaches introduce substantial computational overhead due to the combination of transformer-based modeling and iterative denoising processes. To address these challenges, we formulate PNI prediction as a diffusion-based classification problem and implement the denoising network using a transformer-based representation. To improve computational efficiency, we introduce adaptive routing across attention heads, spatial tokens, and MLP width. Experimental results demonstrate that the proposed approach achieves an AUC of 0.731 with 257.57 GFLOPs.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.11533v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.11533v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A diffusion-based transformer with adaptive routing can better capture subtle peritumoral MRI patterns for predicting perineural invasion (PNI) in cholangiocarcinoma while reducing unnecessary computation.</p>
-          <p><b>Clinical relevance:</b> Improved preoperative PNI prediction could help refine risk stratification and surgical planning for cholangiocarcinoma patients.</p>
-          <ul><li>Formulated PNI prediction as a diffusion-based classification problem.</li><li>Used a transformer-based denoising network to model global MRI context and subtle spatial cues.</li><li>Added adaptive routing over attention heads, spatial tokens, and MLP width to improve efficiency.</li></ul>
-          <p><b>Evidence signal:</b> In the abstract, the proposed method achieved an AUC of 0.731 with 257.57 GFLOPs on MRI-based PNI prediction.</p>
-          <p><b>Watch item:</b> The approach may be computationally efficient relative to full transformer-diffusion models, but the abstract does not provide external validation or details on dataset size and generalizability.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#Cholangiocarcinoma</span> <span>#MRI</span> <span>#Transformers</span> <span>#DiffusionModels</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Cancer AI Methods</span><span>arXiv</span><strong>62</strong></div>
-        <p class="date">2026-07-14</p>
-        <h2>MAGE: Color-Invariant and Spatial Knowledge Distillation for Gastric Neoplasm Classification</h2>
-        <p class="authors">Jiho Jun, Jeongwon Woo, Jaemin Song, Thanh Bong Nguyen, Dong-heon Yeon, Donghoon Kang</p>
-        <p class="abstract">Accurate differentiation between gastric adenoma and carcinoma during endoscopy is critical for clinical decision-making. Yet, this task is highly challenging due to high inter-class similarity and ambiguous boundaries between the two classes. Existing ROI-based classification methods often suffer from detection/segmentation error propagation and loss of surrounding global context. In contrast, full-image classification lacks the necessary spatial focus. Furthermore, we observe that deep neural networks gravitate towards domain-specific texture biases(e.g. bleeding, lighting artifacts), often causing models to predict based on spurious correlations instead of intrinsic morphological features. To address these limitations, we propose a novel framework, Masked Achromatic Guidance Expert (MAGE). During training, we introduce an auxiliary local expert branch trained on masked achromatic views of the neoplasm. By suppressing background context and color, this branch is forced to learn highly discriminative, purely structural features. We then employ a dual-objective distillation strategy, transferring both classification logits and spatial attention maps to provide implicit spatial supervision to the main branch that receives full WLI as input. This dual-objective distillation forces the model to ground its predictions in morphology rather than relying on shortcuts, while still retaining clinically relevant color cues. At inference time, our deployable model operates on images without annotated masks, ensuring real-time deployability . Extensive experiments on a clinical gastric endoscopy dataset show that our method significantly outperforms existing detection-based methodologies (e.g. YOLO) and classification-based methodologies (e.g. Swin-Transformer), providing not only superior classification performance but also interpretable attention maps for clinical reliability.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.12663v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.12663v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> MAGE improves gastric adenoma-vs-carcinoma classification by distilling structural knowledge from a masked, color-suppressed expert into a full-image model so predictions rely more on morphology than spurious visual cues.</p>
-          <p><b>Clinical relevance:</b> This could make endoscopic classification more reliable and deployable without needing annotation masks at inference, supporting faster and more interpretable decision support.</p>
-          <ul><li>Train an auxiliary local expert on masked achromatic neoplasm views to emphasize shape and structure.</li><li>Distill both class logits and spatial attention maps from the expert to the main whole-image branch.</li><li>Use full white-light endoscopy images at inference with no mask requirement.</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports that experiments on a clinical gastric endoscopy dataset showed significantly better performance than detector-based methods like YOLO and classifier-based methods like Swin-Transformer, with interpretable attention maps.</p>
-          <p><b>Watch item:</b> Performance and generalizability may depend on the quality of the training masks and the source dataset, so external validation across sites and imaging conditions is important.</p>
-          <div class="tags"><span>#GastricCancer</span> <span>#EndoscopyAI</span> <span>#KnowledgeDistillation</span> <span>#MedicalImagingAI</span> <span>#ExplainableAI</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>arXiv</span><strong>61</strong></div>
-        <p class="date">2026-07-15</p>
-        <h2>LATTICE: Graph Self-Supervised Learning for Multimodal Spatial Omics Integration</h2>
-        <p class="authors">Jagan Mohan Reddy Dwarampudi, Veena Kochat, Suresh Satpati, Kunal Rai, Tania Banerjee</p>
-        <p class="abstract">Spatially resolved omics studies increasingly combine transcriptomic and epigenomic assays, yet downstream analysis is often still performed using single-modality pipelines. We present LATTICE (Latent Alignment of Tissue-level and Transcriptomic Information for Cross-modal Embedding), a graph-based self-supervised framework that learns spot-level representations from harmonized multimodal features. LATTICE integrates five aligned modality blocks per Visium spot: Visium RNA, scMultiome RNA, scMultiome ATAC, spatial ATAC, and spatial CUT\&amp;Tag. These modalities capture spatial transcriptomic measurements, single-cell inferred regulatory activity, and in situ chromatin and histone states within a unified lattice representation. LATTICE constructs a spatial neighborhood graph and trains a TransformerConv encoder using masked reconstruction, cross-modal alignment, and spatial smoothness objectives. On a private 11-sample melanoma cohort from an anonymized clinical collaborator comprising 54{,}912 total spots, LATTICE demonstrated stable optimization behavior, reproducible embeddings across analysis seeds, and complete multimodal integration across all samples. Adding scMultiome RNA to Visium RNA alone substantially improved concordance with Space Ranger clusters across 11 runs (adjusted Rand index [ARI] +0.157, normalized mutual information [NMI] +0.143, and spatial contiguity +0.174). Additional modalities further improved spatial contiguity and multimodal utility score (MUS), although they sometimes reduced agreement with RNA-derived reference labels, likely because the learned embeddings captured chromatin and regulatory structure beyond transcriptomic similarity alone. These results position LATTICE as a practical and empirically grounded framework for multimodal spatial omics integration, while also highlighting the need for stronger supervision and broader external benchmarking.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.14410v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.14410v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> LATTICE is a graph self-supervised framework that fuses five aligned spatial omics modalities to learn spot-level tissue embeddings that better capture multimodal biology than RNA alone.</p>
-          <p><b>Clinical relevance:</b> This approach may improve how spatial tumor samples are analyzed and stratified, but it is an analysis tool rather than a treatment and still needs broader validation before clinical use.</p>
-          <ul><li>Builds a spatial neighborhood graph over Visium spots</li><li>Uses a TransformerConv encoder with masked reconstruction, cross-modal alignment, and spatial smoothness losses</li><li>Integrates Visium RNA, scMultiome RNA/ATAC, spatial ATAC, and spatial CUT&amp;Tag into one latent embedding</li></ul>
-          <p><b>Evidence signal:</b> In a private 11-sample melanoma cohort with 54,912 total spots, adding scMultiome RNA to Visium RNA improved agreement with Space Ranger clusters across 11 runs (ARI +0.157, NMI +0.143, spatial contiguity +0.174), and additional modalities further improved spatial contiguity and MUS.</p>
-          <p><b>Watch item:</b> The model may diverge from RNA-derived reference labels when chromatin and regulatory signals dominate, so it needs stronger supervision and external benchmarking on independent cohorts.</p>
-          <div class="tags"><span>#SpatialOmics</span> <span>#MultimodalIntegration</span> <span>#GraphLearning</span> <span>#MelanomaResearch</span> <span>#SingleCellAnalysis</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>arXiv</span><strong>60</strong></div>
-        <p class="date">2026-07-16</p>
-        <h2>Multimodal Semantic-Aware Contrastive Learning For False Negative Mitigation in 3D Medical Imaging</h2>
-        <p class="authors">Sara Ketabi, Matthias W. Wagner, Cynthia Hawkins, Uri Tabori, Birgit Betina Ertl-Wagner, Farzad Khalvati</p>
-        <p class="abstract">Multimodal Contrastive Learning (CL) has shown significant performance in aligning representations across various data modalities and improving downstream tasks, especially in healthcare. It works by minimizing the distance between matched (positive) data modalities, while maximizing the distance between mismatched (negative) samples. Traditional CL frameworks typically assume instance-based correspondence within data batches, treating all non-paired samples as negatives. However, this assumption often fails in medical settings, where samples may share high-level semantic attributes, leading to false negatives that degrade representation quality. In this paper, we propose Multimodal Semantic-Aware Contrastive Learning (MseaCL), a CL framework trained on a pediatric cohort of 3D brain magnetic resonance imaging (MRI) scans and radiology reports. The goal of this framework is to mitigate the impact of semantically similar false negative samples by incorporating semantic similarity between radiology reports, as a guiding signal during the learning process. Our results indicate that applying this framework as a pretraining stage can achieve notable improvements in downstream tasks, e.g., at least a 22.6\% increase in the area under the receiver operating characteristic curve (AUC) of pediatric brain tumor molecular classification, demonstrating its potential for more robust and semantically aligned multimodal representations in clinical applications.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.14995v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.14995v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Semantic-aware contrastive learning reduces false negatives in multimodal training by using report similarity, improving representation quality for pediatric brain MRI and radiology report pairs.</p>
-          <p><b>Clinical relevance:</b> This pretraining approach may help produce more robust multimodal features for pediatric brain tumor classification and other precision oncology workflows.</p>
-          <ul><li>Trained multimodal contrastive learning on paired 3D brain MRI scans and radiology reports.</li><li>Added semantic similarity between radiology reports to identify and downweight likely false negatives.</li><li>Used the learned representations as pretraining for downstream molecular classification tasks.</li></ul>
-          <p><b>Evidence signal:</b> In a pediatric cohort, the approach improved downstream brain tumor molecular classification, including at least a 22.6% increase in AUC.</p>
-          <p><b>Watch item:</b> The method depends on reliable report-similarity signals, so performance may vary if semantic annotations or report quality are inconsistent.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#ContrastiveLearning</span> <span>#MedicalImaging</span> <span>#MRI</span> <span>#MultimodalAI</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Virtual Screening</span><span>arXiv</span><strong>59</strong></div>
-        <p class="date">2026-07-14</p>
-        <h2>Generating Developable 3D Molecules via Pocket-Conditioned Diffusion and Property-Aware Optimization</h2>
-        <p class="authors">Ruoxi Gao, Jiangweizhi Peng, Ziqi Chen, Frazier N. Baker, David C. Kombo, John L. Kane</p>
-        <p class="abstract">Drug discovery and development is time-consuming and resource-intensive, motivating computational approaches such as diffusion models for de novo drug design. Many such models follow the structure-based drug design (SBDD) paradigm, generating molecules to fit a target binding pocket. However, existing diffusion-based SBDD methods typically couple pocket and ligand representation learning, model interactions only at the atom level, and prioritize binding affinity over other developability properties. Here, we introduce conDitar-dev, a conditional diffusion-based SBDD framework for generating ligands with strong binding affinities and favorable ADMET properties. It consists of three modules: msPRL, a pretrained multi-scale pocket representation learning module; conDitar, a pocket-conditioned diffusion model guided by msPRL representations; and paOPT, a generation-time method for optimizing ligand developability. On a newly curated benchmark of human disease targets, conDitar outperforms state-of-the-art SBDD baselines, achieving an average binding score of -8.85 kcal/mol. Across five ADMET properties, conDitar-dev improves performance by up to 73% over conDitar. To further validate the abilities of conDitar-dev to generate developable molecules, we have applied it to two validated druggable targets: programmed death-ligand 1 (PD-L1) and colony-stimulating factor 1 receptor (CSF1R) proteins. Top-ranked generatively designed molecules and their analogs have been experimentally synthesized and biologically tested. Two molecules generated directly by conDitar-dev for PD-L1 exhibited SPR-derived $K_D$ values of 3.49 and 3.75 $μ$M, respectively. Hit expansion based on conDitar-dev-designed molecules identified selective CSF1R inhibitors with IC$_{50}$ values as low as 200 nM, while also uncovering opportunities for drug repositioning.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.12349v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.12349v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A pocket-conditioned diffusion framework can generate 3D ligands that better balance binding and developability, not just affinity.</p>
-          <p><b>Clinical relevance:</b> This could accelerate early-stage discovery of cancer-relevant and other therapeutic hits by producing molecules with experimentally validated target activity and improved ADMET profiles.</p>
-          <ul><li>msPRL learns multi-scale protein pocket representations</li><li>conDitar uses pocket-conditioned diffusion to generate ligands</li><li>paOPT optimizes generated molecules for developability during generation</li></ul>
-          <p><b>Evidence signal:</b> On a curated human disease-target benchmark, conDitar achieved an average binding score of -8.85 kcal/mol, and conDitar-dev improved five ADMET properties by up to 73%; experimental testing of PD-L1 and CSF1R hits showed micromolar to nanomolar activity.</p>
-          <p><b>Watch item:</b> Results are promising but depend on benchmark quality, target selection, and experimental follow-up, so broader generalization and synthesis feasibility still need validation.</p>
-          <div class="tags"><span>#AIDrugDiscovery</span> <span>#DiffusionModels</span> <span>#VirtualScreening</span> <span>#ADMET</span> <span>#CancerResearch</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Therapeutic Discovery</span><span>arXiv</span><strong>57</strong></div>
-        <p class="date">2026-07-14</p>
-        <h2>SinAE: A Single-Architecture Flow-Matching Autoencoder for Cross-Domain Atomic Systems</h2>
-        <p class="authors">Yuxuan Ren, Fan Yang, Jianhua Yao, Yatao Bian</p>
-        <p class="abstract">Small molecules, crystals, and proteins all reduce to atoms in 3D space, yet their generative pipelines remain fragmented across domains, each with its Small molecules, crystals, and proteins all reduce to atoms in 3D space, yet their generative pipelines remain fragmented across domains, each with its own graph, equivariant, or frame-based architecture. Cross-domain training would mitigate per-domain data scarcity, but direct generation in 3D coordinate space cannot easily handle the heterogeneous structural priors of all three domains, and no prior latent autoencoder is simultaneously lossless and architecturally general across all three. We introduce SinAE, a single-architecture flow-matching autoencoder for molecules, crystals, and proteins, with vanilla Transformer encoder and decoder and no equivariant, graph, or domain-specific operators. Rather than requiring the encoder to capture fine-grained geometry, SinAE shifts the reconstruction burden into an iterative flow-matching decoder, achieving near-lossless reconstruction across domains and reducing reconstruction errors by orders of magnitude relative to prior latent baselines. The same per-token latent supports a standard Diffusion Transformer prior that reaches strong performance on molecular, crystal, and protein generation benchmarks. Joint molecule--crystal training strictly improves both domains, providing direct evidence of cross-domain transfer through a shared atomic latent. Code is available at https://github.com/BlueWhaleLab/SinAE .</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.12380v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.12380v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> SinAE uses one Transformer-based latent autoencoder plus flow-matching decoding to unify generation across molecules, crystals, and proteins without domain-specific geometry operators.</p>
-          <p><b>Clinical relevance:</b> By enabling shared atomic representations across domains, this approach could accelerate early-stage therapeutic discovery by improving generative modeling for small molecules and protein-related design tasks.</p>
-          <ul><li>Vanilla Transformer encoder/decoder for all three atomic domains</li><li>Flow-matching decoder reconstructs 3D structures from compact latents</li><li>Shared latent prior is trained with a Diffusion Transformer for generation</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports near-lossless reconstruction and orders-of-magnitude lower reconstruction error than prior latent baselines, plus improved molecule–crystal joint training performance.</p>
-          <p><b>Watch item:</b> Results are based on benchmark reconstruction and generation tasks, so real-world utility still depends on robustness, scaling, and validation in downstream discovery workflows.</p>
-          <div class="tags"><span>#AIforScience</span> <span>#DrugDiscovery</span> <span>#GenerativeModels</span> <span>#Transformers</span> <span>#ProteinDesign</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>arXiv</span><strong>56</strong></div>
-        <p class="date">2026-07-14</p>
-        <h2>Beyond Binary Detection: A Multi-Dimensional Taxonomy of Cancer Misinformation on Reddit</h2>
-        <p class="authors">Aria Pessianzadeh, Pooriya Jamie, Naima Sultana, Georgia Himmelstein, Yuliya Zektser, Patricia Ganz</p>
-        <p class="abstract">Cancer-related discussions on social media provide an important space for information exchange and peer support, but also facilitate the spread of misinformation that may influence prevention, screening, and treatment decisions. Existing research on cancer misinformation often relies on narrow definitions, small-scale datasets, or binary labeling frameworks. We introduce a multi-dimensional taxonomy for characterizing cancer misinformation in Reddit discussions of breast, lung, colon, and prostate cancer. The taxonomy captures seven dimensions, including misinformation presence, information type, risk level, stance, and topical focus. Using expert-annotated data, we evaluate multiple large language models (LLMs) for scalable misinformation annotation and analyze cancer misinformation across Reddit communities. Our results show that cancer-related misinformation constitutes approximately 6\% of Reddit cancer discussions, with substantial variation across communities and misinformation topics. Few-shot prompting substantially improves classification performance, particularly for nuanced taxonomy dimensions. We additionally identify recurring misinformation narratives centered on unsupported treatments, distrust of conventional medicine, and misleading claims about diagnosis and screening. Our taxonomy, dataset, and findings provide a foundation for multi-dimensional modeling of online cancer misinformation.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.12383v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.12383v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> The study introduces a seven-dimensional taxonomy to better characterize cancer misinformation on Reddit beyond simple true/false labels.</p>
-          <p><b>Clinical relevance:</b> By mapping common misinformation themes around treatment, screening, and diagnosis, the work can help clinicians and public health teams better anticipate misinformation that may affect cancer-related decision-making.</p>
-          <ul><li>Built a multi-dimensional misinformation taxonomy for Reddit cancer discussions</li><li>Used expert-annotated posts from breast, lung, colon, and prostate cancer communities</li><li>Evaluated large language models, including few-shot prompting, for scalable annotation</li></ul>
-          <p><b>Evidence signal:</b> The authors report that cancer-related misinformation makes up about 6% of Reddit cancer discussions, with few-shot prompting improving performance especially for more nuanced labels.</p>
-          <p><b>Watch item:</b> Reddit findings may not generalize to all online platforms or patient populations, so taxonomy performance and prevalence estimates should be interpreted in context.</p>
-          <div class="tags"><span>#CancerMisinformation</span> <span>#PrecisionOncology</span> <span>#RedditResearch</span> <span>#LLMAnnotation</span> <span>#DigitalHealth</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Virtual Screening</span><span>arXiv</span><strong>55</strong></div>
-        <p class="date">2026-07-14</p>
-        <h2>HEDGEHOG: Hierarchical Evaluation of Drug Generators Through Rigorous Filtration</h2>
-        <p class="authors">Daria A. Ryabchenko, Pavel Gurevich, Shamil Kadyrov, Daria Frolova, Kseniia Fedisheva, Sergei A. Nikolenko</p>
-        <p class="abstract">Generative molecular models can support early drug discovery by proposing new candidate compounds de novo. In practice, useful candidates must balance target-relevant activity, synthetic accessibility, physicochemical properties, and other multiparameter design constraints. However, metrics commonly used to evaluate molecular generators only weakly reflect whether the generated compounds are medicinally plausible and suitable for downstream computation. This can produce false positives in model evaluation, incorrect assumptions, and inefficient use of computational resources. We introduce HEDGEHOG, a unified six-stage filtration benchmark that is inspired by industrial hit identification workflows: (i) preprocessing; (ii) physicochemical descriptor screening; (iii) structural alerts and graph-sanity checks; (iv) synthesis feasibility; (v) docking and binding affinity estimation; and (vi) three-dimensional pose and interaction checks. We evaluate 23 molecular generators across three model classes under a standardized protocol. Across 230,000 generated molecules, only 0.65% of initial molecules survive all stages. Our results expose a central limitation of current molecular generators: molecules that appear acceptable under isolated criteria rarely satisfy medicinal chemistry, synthesis, docking, and 3D pose filters simultaneously.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.13155v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.13155v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> HEDGEHOG shows that most molecular generators produce many candidates that fail realistic, multi-stage drug-likeness and feasibility checks, not just single-metric screens.</p>
-          <p><b>Clinical relevance:</b> This benchmark can better triage early AI-generated compounds before expensive experimental follow-up, helping prioritize more plausible cancer drug candidates.</p>
-          <ul><li>Six-stage filtration pipeline: preprocessing, physicochemical screening, structural alerts/sanity checks, synthesis feasibility, docking, and 3D pose/interactions.</li><li>Standardized evaluation of 23 molecular generators across three model classes.</li><li>Designed to mirror industrial hit-identification workflows rather than isolated benchmark metrics.</li></ul>
-          <p><b>Evidence signal:</b> Across 230,000 generated molecules, only 0.65% passed all six stages, indicating a steep drop-off under rigorous evaluation.</p>
-          <p><b>Watch item:</b> Results depend on the chosen filters and docking/pose models, so the benchmark may still miss some valid chemotypes or over-reject novel scaffolds.</p>
-          <div class="tags"><span>#AIinDrugDiscovery</span> <span>#VirtualScreening</span> <span>#MolecularGeneration</span> <span>#MedicinalChemistry</span> <span>#CancerResearch</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>arXiv</span><strong>54</strong></div>
-        <p class="date">2026-07-15</p>
-        <h2>TRACE-PCa: Predicting Prostate Cancer Progression from Longitudinal MRI During Active Surveillance</h2>
-        <p class="authors">Hongye Zeng, Shreeram Athreya, Dingyuan Dai, Steve Raman, Leonard Marks, William Speier</p>
-        <p class="abstract">Active surveillance (AS) is the preferred strategy for favorable-risk prostate cancer, yet current protocols rely on scheduled repeat biopsies, most of which reveal no progression and are unnecessary. Existing risk-stratification tools operate on single time-point imaging or depend on explicit lesion segmentation, limiting their ability to capture longitudinal change and excluding patients without an MRI-visible lesion. In this study, we propose an end-to-end temporal and multimodal model for predicting pathological progression during AS without lesion segmentation. We encode each serial scan with a pretrained 3D MRI foundation model and introduce a temporal attention gate that recalibrates the multi-visit features to amplify focal imaging changes associated with progression. The gated imaging representation is then fused with clinical variables in a multimodal framework to estimate the probability of progression. Validated on a longitudinal AS cohort, our approach consistently outperforms competing baselines and performs comparably to the radiologist assessment representing current clinical practice. It maintains high negative predictive value while achieving higher positive predictive value, demonstrating its potential to safely reduce unnecessary biopsies during surveillance.</p>
-        <div class="links"><a href="https://arxiv.org/abs/2607.13506v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2607.13506v1" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A temporal, multimodal MRI model can flag prostate cancer progression during active surveillance by learning changes across serial scans without lesion segmentation.</p>
-          <p><b>Clinical relevance:</b> This approach could help reduce unnecessary repeat biopsies while still identifying patients who are more likely to have true pathological progression.</p>
-          <ul><li>Encode each longitudinal MRI with a pretrained 3D foundation model</li><li>Use a temporal attention gate to emphasize progression-related changes across visits</li><li>Fuse gated imaging features with clinical variables to predict progression risk</li></ul>
-          <p><b>Evidence signal:</b> In a longitudinal active surveillance cohort, the model outperformed competing baselines and performed comparably to radiologist assessment while maintaining high negative predictive value and higher positive predictive value.</p>
-          <p><b>Watch item:</b> Performance may depend on access to serial MRI, consistent scan quality, and external validation before use in routine surveillance decisions.</p>
-          <div class="tags"><span>#ProstateCancer</span> <span>#ActiveSurveillance</span> <span>#MRI</span> <span>#PrecisionOncology</span> <span>#AIinMedicine</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>54</strong></div>
+        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>49</strong></div>
         <p class="date">2026-07-13</p>
         <h2>Glutamine and NAA dissociate in ALS across somatotopically defined motor regions using 7T MRSI</h2>
         <p class="authors">Eftekhari, Z.; Tu, S.; Ballard, T.; Eckstein, K.; Strasser, B.; Niess, F.; Hingerl, L.; Bogner, W.; Kiernan, M. C.; Henderson, R. D.; Barth, M.; Shaw, T. B.</p>
@@ -400,12 +39,69 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.07.09.26357702v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.07.09.26357702v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> 7T whole-brain MRSI distinguished motor-cortex neuronal loss from more diffuse glutamatergic dysregulation in ALS, with glutamine-related measures emerging as the most sensitive signal.</p>
-          <p><b>Clinical relevance:</b> This suggests a potential imaging biomarker to map ALS heterogeneity, track regional disease burden, and help choose endpoints for future clinical trials.</p>
-          <ul><li>High-resolution whole-brain 7T 3D-CRT-FID-MRSI plus motor-cortex single-voxel sLASER in 5 people with ALS and 7 controls</li><li>Bayesian hierarchical mixed-effects models compared tNAA, Glu, Gln, and Glx across regions and over up to 3 sessions per participant</li><li>Primary motor cortex was subdivided into bulbar/face, hand/upper-limb, and foot/lower-limb zones to test somatotopic patterns</li></ul>
-          <p><b>Evidence signal:</b> At baseline, ALS showed a motor-cortex-specific tNAA/tCr deficit and broader Gln/tCr and Glx/tNAA elevation, with the strongest longitudinal association between metabolite slope and ALSFRS-R domain decline for Glx/tNAA (r=0.82, p&lt;0.001).</p>
-          <p><b>Watch item:</b> The cohort was very small and limited to rapidly progressing ALS, so broader validation is needed before this can be used as a robust clinical biomarker.</p>
-          <div class="tags"><span>#ALS</span> <span>#7TMRSI</span> <span>#Neuroimaging</span> <span>#Biomarkers</span> <span>#ClinicalTrials</span></div>
+          <p><b>Key insight:</b> 7T whole-brain MRSI separated motor-cortex neuronal loss from spatially patterned glutamatergic dysregulation in ALS, with glutamine-related measures emerging as the most informative signal.</p>
+          <p><b>Clinical relevance:</b> These imaging biomarkers may help track ALS progression and support future trial endpoint selection, but they are research tools rather than established clinical diagnostics.</p>
+          <ul><li>High-resolution 7T 3D-CRT-FID-MRSI plus motor-cortex single-voxel sLASER was acquired in 5 people with ALS and 7 controls, with up to 3 sessions each.</li><li>Bayesian hierarchical mixed-effects models compared regional tNAA, Glu, Gln, and Glx metrics across motor-somatotopic subregions.</li><li>The primary motor cortex was divided into bulbar/face, hand/upper-limb, and foot/lower-limb zones to test somatotopic patterns.</li></ul>
+          <p><b>Evidence signal:</b> At baseline, ALS showed a motor-cortex tNAA/tCr deficit and increased Gln/tCr and Glx/tNAA, with Gln/tCr appearing more sensitive than Glu/tCr; annualized metabolite change correlated with ALSFRS-R decline.</p>
+          <p><b>Watch item:</b> The cohort was very small and limited to rapidly progressing participants, so findings need larger, independent validation before any broader implementation.</p>
+          <div class="tags"><span>#ALS</span> <span>#7TMRI</span> <span>#MRSI</span> <span>#Neurodegeneration</span> <span>#Biomarkers</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>46</strong></div>
+        <p class="date">2026-07-14</p>
+        <h2>Psilocybin-Assisted Early Palliative Care for Demoralization and Chronic Pain: An Open-Label Pilot Study</h2>
+        <p class="authors">Zarrabi, A. J.; Mletzko, T.; Grant, G.; Peacock, C.; Palitsky, R. J.; McPherson, T.; Shub, I.; Eisenacher, S.; Maples-Keller, J. L.; Kaplan, D.; Rothbaum, B. O.; Rab, F.; Dalal, N.; Curseen, K. A.; Raison, C.; Dunlop, B. W.</p>
+        <p class="abstract">BackgroundDemoralization, a syndrome of helplessness, hopelessness, and loss of meaning and chronic pain are common sources of distress in early palliative care. Psilocybin-assisted therapy (PAT) is an emerging intervention with preliminary data suggesting improvements in pain and demoralization. To date, PAT has not been studied among people living with both demoralization and chronic pain nor has it been studied as part of routine multidisciplinary outpatient palliative care. ObjectivesWe conducted an open-label pilot study assessing the safety, feasibility, and acceptability of PAT delivered with multidisciplinary palliative care support in cancer patients across the illness trajectory living with demoralization and chronic pain. MethodsParticipants received a single 25 mg oral dose of psilocybin with preparation, monitoring, and integration provided by a mental health clinician and spiritual health clinician, alongside multidisciplinary palliative care support. Outcomes included safety, feasibility, acceptability, and exploratory self-report measures assessing for demoralization and pain intensity pre- and post-dosing. ResultsEleven participants were enrolled, ten of whom received psilocybin. The intervention was safe and feasible, with no serious adverse events and complete study visit retention among dosed participants. All 10 dosed participants reported the intervention as highly acceptable. Among dosed participants, 70% rated the experience among the five most meaningful and educational of their lives, and 60% among their five most spiritually significant experiences. By study endpoint, 90% no longer met criteria for clinically-significant demoralization syndrome and had pain scores below the trial enrollment threshold. ConclusionsPAT delivered with multidisciplinary palliative care support was safe, feasible, and acceptable in demoralized cancer patients with chronic pain. Key MessagePsilocybin-assisted therapy delivered within multidisciplinary outpatient palliative care was safe, feasible, and acceptable among demoralized cancer patients with chronic pain.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.07.11.26357570v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.07.11.26357570v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> In this open-label pilot, a single 25 mg psilocybin dose delivered with multidisciplinary palliative care support appeared safe, feasible, and highly acceptable for cancer patients with demoralization and chronic pain.</p>
+          <p><b>Clinical relevance:</b> The study suggests psilocybin-assisted therapy may become a supportive palliative option for addressing both existential distress and pain in oncology care, if confirmed in larger controlled trials.</p>
+          <ul><li>11 participants enrolled; 10 received psilocybin</li><li>Single 25 mg oral psilocybin dose with preparation, monitoring, and integration</li><li>Support from mental health, spiritual health, and multidisciplinary palliative care clinicians</li></ul>
+          <p><b>Evidence signal:</b> Among the 10 dosed participants, there were no serious adverse events, complete visit retention, and most reported meaningful and spiritually significant experiences with improved demoralization and pain scores by study end.</p>
+          <p><b>Watch item:</b> This was a small open-label pilot without a control group, so results are preliminary and may not generalize to broader cancer populations or routine clinical implementation.</p>
+          <div class="tags"><span>#Psilocybin</span> <span>#PalliativeCare</span> <span>#CancerSupport</span> <span>#Demoralization</span> <span>#ChronicPain</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>41</strong></div>
+        <p class="date">2026-07-13</p>
+        <h2>Per- and Polyfluoroalkyl Substances Exposure in New Jersey Prostate Cancer Survivors: A Pilot Biomonitoring Study</h2>
+        <p class="authors">Joseph, S. A.; Opara, C.; Shanahan, M. R.; Varga, J.; Falcon, J.; Ibanga, U.; Venkatraman, S.; Perlstein, M.; Jang, T. L.; Golombos, D.; Ghodoussipour, S.; Fan, T.; O&#x27;Leary, S.; Graber, J. M.; Hart, J. E.; Barrett, E. S.; Bandera, E. V.; Iyer, H. S.</p>
+        <p class="abstract">BackgroundMen with prostate cancer (PCa) may be especially vulnerable to per- and polyfluoroalkyl substances (PFAS) exposure due to their endocrine-disrupting and cardiometabolic impacts and cardiotoxicity and immune suppression of treatments. ObjectiveA pilot study was launched to measure serum and tap water PFAS concentrations in PCa survivors. MethodsMen with PCa were recruited from Rutgers Cancer Institute between February 2025 and March 2026, with ongoing enrollment and follow-up. Eligible men were aged [&amp;ge;]40 years on active surveillance or within 3-12 months of initial definitive treatment. Participants provided blood and residential tap water samples, which were analyzed using mass spectrometry (serum) and modified EPA method 537 (water). Geometric means were used to summarize PFAS concentrations by race and assess serum-tap water correlations. ResultsOf 235 eligible patients, 124 (60%) enrolled. Median age was 64 years; 63% were non-Hispanic White, 43% had a Gleason score [&amp;le;]6. Roughly half of participants provided serum and/or tap water samples. In serum, six PFAS analytes had &gt;80% detection; of these analytes, median concentrations ranged from 0.13 ng/mL (IQR: 0.07-0.20) for PFHpS to 2.55 ng/mL (IQR:1.54-3.82) for nPFOS. Among 74 tap water samples, 9 PFAS analytes had &gt;60% detection; of these, median concentrations of PFNA (0.56 ng/L; IQR: 0.33-0.75), PFOA (3.75 ng/L; IQR: 1.21-5.27), and PFOS (2.29 ng/L; IQR: 0.46-2.89), were below New Jersey Maximum Contaminant Levels. Non-White participants had significantly higher levels of multiple PFAS analytes in both serum and tap water. Serum-tap water correlations were modest (r=0.22-0.41). SignificanceThe pilot study has demonstrated both the feasibility and importance of studying PFAS exposure pathways as well as potential impacts of PFAS exposure in diverse populations. Impact StatementThis study provides some of the first estimates of PFAS exposure among prostate cancer patients in serum and tap water, showing moderate correlations between tap water and serum concentrations of specific PFAS analytes. These findings can support larger studies to identify environmental exposure sources and evaluate the role of PFAS in prostate cancer progression and outcomes.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.07.08.26357561v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.07.08.26357561v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> In this pilot biomonitoring study, prostate cancer survivors in New Jersey showed measurable PFAS exposure in serum and tap water, with only modest links between the two sources.</p>
+          <p><b>Clinical relevance:</b> The findings suggest environmental PFAS exposure could be a relevant, underrecognized factor in prostate cancer survivorship research, especially in more diverse populations.</p>
+          <ul><li>Recruited 124 prostate cancer survivors from Rutgers Cancer Institute (active surveillance or 3–12 months post-treatment).</li><li>Collected serum and residential tap water samples and measured PFAS using mass spectrometry and modified EPA Method 537.</li><li>Summarized PFAS detection and concentrations, and compared levels by race and serum–water correlations.</li></ul>
+          <p><b>Evidence signal:</b> Among 124 enrolled participants, several PFAS were frequently detected in serum and tap water, and serum–tap water correlations were modest (r = 0.22–0.41).</p>
+          <p><b>Watch item:</b> This was a pilot study with partial sample availability and limited sample size, so results are preliminary and not yet enough to infer causality or exposure sources.</p>
+          <div class="tags"><span>#PrecisionOncology</span> <span>#PFAS</span> <span>#Biomonitoring</span> <span>#ProstateCancer</span> <span>#EnvironmentalHealth</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>41</strong></div>
+        <p class="date">2026-07-13</p>
+        <h2>Aqueous Humor Liquid Biopsy Enables Multi-Omics Tumor Profiling and Methylation-Based Machine-Learning Stratification of Retinoblastoma</h2>
+        <p class="authors">Volz, S.; Montigel, S. H.; Ryl, T.; Afanasyeva, E.; Haag, D.; Reyes, P.; Mueller, J.; Puranachot, P.; Wedig, T.; Schwarz, N.; Mauermann, M.; Sadeghi Dehcheshmeh, I.; Sill, M.; Autry, R. J.; Sahm, F.; Biewald, E.; Ting, S.; Busch, M.; Jabbarli, L.; Kiefer, T.; Bechrakis, N.; Pfister, S. M.; Pajtler, K. W.; Ketteler, P.; Maass, K. K.</p>
+        <p class="abstract">Primary tumor biopsy in retinoblastoma carries an unacceptable risk of extraocular dissemination. As a result, children treated with eye-sparing approaches currently lack access to tumor-derived genomic information at diagnosis, limiting accurate risk stratification, preventing subtype-guided therapy, and obscuring insight into tumor evolution during conservative treatment. Aqueous humor (AH) liquid biopsy has emerged as a promising window into circulating tumor DNA (ctDNA) from eyes managed conservatively, yet its ability to comprehensively capture the genomic and epigenomic landscape of retinoblastoma and to deliver clinically actionable molecular stratification has not been rigorously evaluated. We analyzed 18 matched AH-tumor pairs using genome-wide methylation profiling, copy-number analysis, and targeted sequencing. AH samples consistently contained high ctDNA fractions (median 0.65), enabling robust detection of single-nucleotide variants, canonical copy-number alterations, and methylation signatures defining established retinoblastoma subtypes. Importantly, promoter methylation patterns associated with RB1 inactivation and optic nerve invasion were confidently detected in AH, highlighting that liquid biopsy enables functional interrogation of disease-relevant genes and pathways. To enable biopsy-independent molecular classification, we developed a methylation-based machine learning classifier trained on combined AH and tumor datasets (n=114). The classifier demonstrated exceptional performance, with AUCs of 0.96-1.00 in cross-validation and 0.97-1.00 in independent validation across 63 additional retinoblastoma cases. Together, these findings position AH liquid biopsy as powerful, minimally invasive platform for comprehensive molecular profiling in retinoblastoma. This work establishes the first clinically viable non-invasive molecular stratification tool for the disease, enabling pretreatment risk assessment and paving the way for next-generation precision diagnostics in eye-preserving care. One Sentence SummaryAqueous humor liquid biopsy enables accurate multi-omics profiling of retinoblastoma and minimally-invasive molecular risk stratification.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.07.09.26357661v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.07.09.26357661v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> Aqueous humor from the eye can act as a minimally invasive liquid biopsy that captures retinoblastoma DNA, methylation, and copy-number features for molecular profiling.</p>
+          <p><b>Clinical relevance:</b> This could support pretreatment risk stratification and subtype-guided precision care in children treated with eye-sparing approaches, without requiring unsafe tumor biopsy.</p>
+          <ul><li>Collected matched aqueous humor and tumor samples from 18 retinoblastoma cases</li><li>Performed genome-wide methylation profiling, copy-number analysis, and targeted sequencing</li><li>Built and validated a methylation-based machine-learning classifier for molecular stratification</li></ul>
+          <p><b>Evidence signal:</b> Aqueous humor showed a high median ctDNA fraction of 0.65, and the classifier reached AUC 0.96-1.00 in cross-validation and 0.97-1.00 in independent validation across 63 additional cases.</p>
+          <p><b>Watch item:</b> The approach is promising but still needs broader real-world validation and workflow standardization before routine clinical implementation.</p>
+          <div class="tags"><span>#Retinoblastoma</span> <span>#LiquidBiopsy</span> <span>#MethylationProfiling</span> <span>#MachineLearning</span> <span>#PrecisionOncology</span></div>
         </section>
       </article>
     </section>
