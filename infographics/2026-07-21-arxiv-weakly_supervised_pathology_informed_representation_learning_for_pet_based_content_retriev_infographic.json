@@ -1,0 +1,24 @@
+{
+  "key_insight": "A weakly supervised PET representation-learning framework that uses H&E-derived pathology during training can improve retrieval of intra-tumour heterogeneity while still allowing PET-only inference at test time.",
+  "clinical_relevance": "This could help build more informative PET-based tools for tumour characterization and case retrieval, potentially supporting precision oncology workflows without requiring pathology at inference.",
+  "method": [
+    "Teacher–student training to learn PET tumour voxel representations from H&E-informed supervision.",
+    "Generate both global and hotspot-conditioned embeddings to capture informative tumour subregions.",
+    "Assess ablations, retrieval metrics, hotspot faithfulness, and prototype–histology concordance."
+  ],
+  "evidence_signal": "Across cross-validation, progressive addition of pathology-informed supervision and hotspot modelling improved retrieval performance on mean average precision, nDCG, and MRR versus global PET and conventional PET baselines.",
+  "watch_item": "The approach was evaluated in a specific oesophageal cancer test case, so broader generalization and practical deployment need validation on larger, diverse cohorts.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#PETImaging",
+    "#WeaklySupervisedLearning",
+    "#PathologyInformedAI",
+    "#TumourHeterogeneity"
+  ],
+  "paper_id": "2026-07-21-arxiv-weakly_supervised_pathology_informed_representation_learning_for_pet_based_content_retriev",
+  "paper_title": "Weakly Supervised Pathology-Informed Representation Learning for PET-Based Content Retrieval of Intra-Tumour Heterogeneity",
+  "paper_date": "2026-07-21",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-22T09:23:03",
+  "generator": "openai"
+}

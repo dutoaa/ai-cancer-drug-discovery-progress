@@ -1,0 +1,24 @@
+{
+  "key_insight": "MIRAGE uses lesion-aware training signals to better preserve breast tumor enhancement when synthesizing post-contrast MRI from pre-contrast slices, improving lesion localization over strong generative baselines.",
+  "clinical_relevance": "This could help create more useful contrast-like MRI images for downstream analysis when actual post-contrast scans are unavailable, but the benefit depends on the target task and evaluation metric.",
+  "method": [
+    "Residual 2D U-Net for MRI contrast enhancement",
+    "Combines reconstruction, perceptual, and asymmetric lesion-focused losses",
+    "Adds auxiliary tumor segmentation and frozen post-contrast segmentation guidance during training"
+  ],
+  "evidence_signal": "On 301 multi-centre MAMA-SYNTH cases, MIRAGE ranked first on six of eight image-, region-, radiomics-, and segmentation-based metrics and outperformed tuned pix2pix, conditional diffusion, and latent bridge-matching baselines for lesion localization.",
+  "watch_item": "Because the model is optimized with training-only lesion supervision, its apparent advantage may not transfer uniformly across settings, metrics, or downstream models.",
+  "hashtags": [
+    "#MRI",
+    "#BreastCancer",
+    "#MedicalAI",
+    "#ImageSynthesis",
+    "#PrecisionOncology"
+  ],
+  "paper_id": "2026-07-21-arxiv-mirage_multi_scale_lesion_informed_representation_with_auxiliary_guidance_for_mri_contrast",
+  "paper_title": "MIRAGE: Multi-scale Lesion-Informed Representation with Auxiliary Guidance for MRI Contrast Enhancement",
+  "paper_date": "2026-07-21",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-22T09:23:13",
+  "generator": "openai"
+}

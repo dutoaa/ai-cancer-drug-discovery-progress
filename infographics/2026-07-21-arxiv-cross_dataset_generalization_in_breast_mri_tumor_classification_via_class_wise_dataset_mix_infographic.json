@@ -1,0 +1,24 @@
+{
+  "key_insight": "Mixing training data across datasets by class substantially improves breast MRI tumor classification generalization by reducing dataset-origin bias.",
+  "clinical_relevance": "For multi-institution breast MRI use, models trained on a single source can look strong internally yet fail externally, so dataset diversity is critical for reliable deployment.",
+  "method": [
+    "Train EfficientNet-B3 and WaveViT-Small on Duke Breast Cancer MRI and fastMRI",
+    "Evaluate only on the independent multi-center MAMA-MIA cohort",
+    "Compare a confounded setup versus class-wise mixed training with patient-level splitting and leakage controls"
+  ],
+  "evidence_signal": "In the confounded setting, external accuracy on MAMA-MIA was near chance (0.5048–0.5265), but class-wise dataset mixing raised performance to 0.8463/0.8625 for WaveViT-Small and 0.8884/0.8994 for EfficientNet-B3.",
+  "watch_item": "The gains depend on careful leakage control and balanced cross-dataset class mixing, so results may not transfer if dataset origin remains correlated with label.",
+  "hashtags": [
+    "#BreastMRI",
+    "#PrecisionOncology",
+    "#DeepLearning",
+    "#DomainShift",
+    "#Generalization"
+  ],
+  "paper_id": "2026-07-21-arxiv-cross_dataset_generalization_in_breast_mri_tumor_classification_via_class_wise_dataset_mix",
+  "paper_title": "Cross-Dataset Generalization in Breast MRI Tumor Classification via Class-Wise Dataset Mixing",
+  "paper_date": "2026-07-21",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-22T09:23:00",
+  "generator": "openai"
+}

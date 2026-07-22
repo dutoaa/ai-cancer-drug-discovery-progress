@@ -1,0 +1,24 @@
+{
+  "key_insight": "PathReportEval introduces a standardized benchmark and a new clinical metric, CRQS, to measure whether pathology report generation models are factually correct—not just lexically similar.",
+  "clinical_relevance": "For pathology report generation in precision oncology, this framework can better detect missed diagnoses, hallucinations, and wrong tumor attributes than BLEU, ROUGE, or METEOR.",
+  "method": [
+    "Benchmarks 4 representative report-generation methods on 3 datasets: TCGA, HistAI, and REG 2025.",
+    "Compares 3 pathology foundation encoders: CONCHv1.5, UNI2-h, and H-Optimus-1.",
+    "Uses CRQS to score clinical fact coverage, key information recall, hallucination rate, and clinical discordance."
+  ],
+  "evidence_signal": "The abstract reports that conventional NLP metrics are weakly aligned with clinical correctness, while CRQS exposes meaningful differences across models and encoders on standardized evaluation.",
+  "watch_item": "CRQS depends on mapping free-text reports into structured clinical attributes, so performance may vary with extraction quality and how well it generalizes across institutions and reporting styles.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#PathologyAI",
+    "#MedicalAI",
+    "#Benchmarking",
+    "#ClinicalNLP"
+  ],
+  "paper_id": "2026-07-20-arxiv-pathreporteval_a_systematic_benchmark_for_pathology_report_generation",
+  "paper_title": "PathReportEval: A Systematic Benchmark for Pathology Report Generation",
+  "paper_date": "2026-07-20",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-22T09:23:28",
+  "generator": "openai"
+}

@@ -1,0 +1,24 @@
+{
+  "key_insight": "PathAgentBench shows that vision-language models can reason well from curated pathology evidence, but they still struggle to find that evidence directly in whole-slide images.",
+  "clinical_relevance": "For precision oncology workflows, the main gap is not just interpretation of pathology findings, but reliably locating diagnostically relevant regions across magnifications.",
+  "method": [
+    "Built a benchmark around whole-slide pathology slide exploration rather than pre-cropped patches or pre-extracted features",
+    "Evaluated four tasks: image-to-text matching, text-to-image retrieval, diagnostic-region localization, and multi-scale reasoning",
+    "Used 1,822 TCGA WSIs plus 17,135 annotated diagnostic paths, with an additional private breast cancer cohort for autonomous exploration testing"
+  ],
+  "evidence_signal": "The benchmark evaluated 20 models; open-weight models exceeded 93% accuracy in multi-scale reasoning and 50%+ in cross-modal matching, but best localization mIoU stayed below 0.09 and autonomous hit rates fell to 0.020 at high magnification.",
+  "watch_item": "Strong reasoning scores may overstate real-world utility because evidence acquisition on gigapixel WSIs remained poor, especially for high-magnification target finding.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#PathologyAI",
+    "#VisionLanguageModels",
+    "#WholeSlideImaging",
+    "#Benchmarking"
+  ],
+  "paper_id": "2026-07-21-arxiv-pathagentbench_benchmarking_evidence_seeking_vision_language_models_on_whole_slide_patholo",
+  "paper_title": "PathAgentBench: Benchmarking Evidence-Seeking Vision-Language Models on Whole-Slide Pathology Image",
+  "paper_date": "2026-07-21",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-22T09:23:10",
+  "generator": "openai"
+}

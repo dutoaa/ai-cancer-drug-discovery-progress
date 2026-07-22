@@ -1,0 +1,24 @@
+{
+  "key_insight": "ABOPD uses on-policy distillation to keep antibody CDR-H3 generation aligned with native geometry during recursive denoising, improving structural fidelity.",
+  "clinical_relevance": "By better preserving antigen-facing loop shape, the method could help generate more accurate antibody candidates for therapeutic discovery workflows.",
+  "method": [
+    "Trains with privileged native geometry to supervise the model on states it reaches during its own denoising trajectory.",
+    "Targets the mismatch between standard denoising training and recursive generation for flexible CDR loops.",
+    "Focuses on CDR-H3 antibody design, where backbone drift can accumulate and hurt loop geometry."
+  ],
+  "evidence_signal": "In RAbD CDR-H3 evaluation, ABOPD reduced RMSD from 2.37 Å to 1.95 Å, outperforming supervised fine-tuning and offline distillation controls.",
+  "watch_item": "Results are reported on a structural recovery benchmark, so broader generalization to diverse antibodies, antigens, and wet-lab binding outcomes still needs validation.",
+  "hashtags": [
+    "#AntibodyDesign",
+    "#ProteinEngineering",
+    "#TherapeuticDiscovery",
+    "#DeepLearning",
+    "#GenerativeAI"
+  ],
+  "paper_id": "2026-07-21-arxiv-abopd_antibody_cdr_design_via_on_policy_distillation",
+  "paper_title": "ABOPD: Antibody CDR Design via On-Policy Distillation",
+  "paper_date": "2026-07-21",
+  "paper_category": "Therapeutic Discovery",
+  "generated_at": "2026-07-22T09:23:20",
+  "generator": "openai"
+}
