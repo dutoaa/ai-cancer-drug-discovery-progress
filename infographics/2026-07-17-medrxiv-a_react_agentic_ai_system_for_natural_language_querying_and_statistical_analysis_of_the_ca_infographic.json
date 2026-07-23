@@ -1,0 +1,24 @@
+{
+  "key_insight": "A ReAct-style AI agent can query TCGA clinical data in natural language, run statistical analyses, and deliver auditable answers with high accuracy.",
+  "clinical_relevance": "This could help researchers quickly access and compare oncology clinical variables, survival outcomes, and metadata that are otherwise difficult to retrieve from TCGA files.",
+  "method": [
+    "LLM agent selects among 8 tools for data extraction, descriptive stats, survival analysis, hypothesis testing, and CDR verification.",
+    "Uses an iterative ReAct loop to reason over intermediate outputs and adjust its next step.",
+    "Benchmarked on 440 queries across 5 difficulty tiers with dual scoring for numerical accuracy and clinical completeness."
+  ],
+  "evidence_signal": "The system reached 93.4% overall accuracy, including 100% for single-patient lookups and 99.1% for cohort statistics, and outperformed fixed, single-pass, and RAG baselines.",
+  "watch_item": "Performance depends on tool design and benchmark scope, and the system is only as reliable as the underlying clinical data and verification coverage.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#AIinHealthcare",
+    "#ClinicalData",
+    "#ReActAgent",
+    "#TCGA"
+  ],
+  "paper_id": "2026-07-17-medrxiv-a_react_agentic_ai_system_for_natural_language_querying_and_statistical_analysis_of_the_ca",
+  "paper_title": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data",
+  "paper_date": "2026-07-17",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-23T09:21:04",
+  "generator": "openai"
+}

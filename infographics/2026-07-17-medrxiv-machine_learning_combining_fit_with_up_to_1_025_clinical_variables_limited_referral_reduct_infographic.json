@@ -1,0 +1,24 @@
+{
+  "key_insight": "Adding up to 1,025 clinical variables to FIT did not beat FIT’s cancer capture when matching the same cancers, but some generalized additive models could modestly reduce referrals if allowed to detect a slightly different mix of cancers.",
+  "clinical_relevance": "These models may help prioritize symptomatic colorectal cancer referrals faster, but they do not yet replace FIT as a safe triage rule for cutting referrals while preserving the same cancer detection.",
+  "method": [
+    "Retrospective GP-requested FITs linked to primary care, lab, diagnosis, procedure, prescription, BMI, deprivation, and ethnicity data.",
+    "Trained multiple machine learning models including penalized logistic regression, GAM variants, tree ensembles, and a multilayer perceptron.",
+    "Evaluated with nested twice-repeated five-fold cross-validation against the FIT ≥10 µg/g threshold."
+  ],
+  "evidence_signal": "In 62,219 patients (746 CRC), FIT ≥10 µg/g achieved 91.4% sensitivity and 5.6% PPV; no model reduced referrals when required to detect the same cancers, though some GAMs reduced referrals by up to 18.5% under a less strict comparison.",
+  "watch_item": "The main gains depended on allowing different cancers to be missed or detected, so real-world safety and implementation need careful prospective validation.",
+  "hashtags": [
+    "#ColorectalCancer",
+    "#MachineLearning",
+    "#FIT",
+    "#Diagnostics",
+    "#PrecisionOncology"
+  ],
+  "paper_id": "2026-07-17-medrxiv-machine_learning_combining_fit_with_up_to_1_025_clinical_variables_limited_referral_reduct",
+  "paper_title": "Machine learning combining FIT with up to 1,025 clinical variables: limited referral reduction but potential for faster diagnosis",
+  "paper_date": "2026-07-17",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-07-23T09:21:13",
+  "generator": "openai"
+}
