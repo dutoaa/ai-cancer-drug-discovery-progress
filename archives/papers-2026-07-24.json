@@ -1,0 +1,206 @@
+[
+  {
+    "id": "2026-07-17-medrxiv-a_react_agentic_ai_system_for_natural_language_querying_and_statistical_analysis_of_the_ca",
+    "doi": "10.64898/2026.07.15.26358188",
+    "date": "2026-07-17",
+    "title": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data",
+    "authors": "Korutla, R.; Amal, S.",
+    "abstract": "The Cancer Genome Atlas (TCGA) holds clinical data for over 11,000 patients across 33 cancer types, but access is hard because of complex file structures, heterogeneous formats, and the need for programming. We present an agentic system for natural language querying and statistical analysis of TCGA clinical data. The system uses a large language model as an autonomous ReAct agent that selects from eight computational tools, including data extraction, descriptive statistics, Kaplan-Meier survival analysis with log-rank tests, hypothesis testing, and verification against the curated TCGA Pan-Cancer Clinical Data Resource (CDR). The agent reasons about intermediate results, adapts its approach, and returns clinically contextualized responses with source attribution and auditable traces. We introduce TCGA-Agent-Bench, 440 queries across five difficulty tiers with ground truth from the independently curated TCGA-CDR, evaluated with dual metrics of numerical accuracy and clinical completeness. The system achieves 93.4% overall accuracy (100% single-patient lookups, 99.1% cohort statistics, 92.8% comparative analyses), outperforming a fixed rule-based pipeline (87.1%), a single-pass LLM (81.8%), and retrieval-augmented generation (66.9% on a subset). Most of the benchmark is answerable from the CDR alone, so we locate the extraction layers value in fields the CDR lacks (drug treatments, TNM components, biomarkers, biospecimen metadata): on 26 queries targeting these, the full system answers 100% versus 3.8% for CDR-only. Ablations show the reasoning loop is most impactful (+9.1% accuracy, +22.0 completeness points). A tool-based agentic architecture enables accurate, auditable analysis of clinical repositories, with value driven by tool design and recovered fields rather than model scale.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-17",
+    "updated": "2026-07-17",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188v1.full.pdf"
+      }
+    ],
+    "score": 55,
+    "infographic": {
+      "key_insight": "A ReAct-style AI agent can query TCGA clinical data in natural language, run statistical analyses, and deliver auditable answers with high accuracy.",
+      "clinical_relevance": "This could help researchers quickly access and compare oncology clinical variables, survival outcomes, and metadata that are otherwise difficult to retrieve from TCGA files.",
+      "method": [
+        "LLM agent selects among 8 tools for data extraction, descriptive stats, survival analysis, hypothesis testing, and CDR verification.",
+        "Uses an iterative ReAct loop to reason over intermediate outputs and adjust its next step.",
+        "Benchmarked on 440 queries across 5 difficulty tiers with dual scoring for numerical accuracy and clinical completeness."
+      ],
+      "evidence_signal": "The system reached 93.4% overall accuracy, including 100% for single-patient lookups and 99.1% for cohort statistics, and outperformed fixed, single-pass, and RAG baselines.",
+      "watch_item": "Performance depends on tool design and benchmark scope, and the system is only as reliable as the underlying clinical data and verification coverage.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#AIinHealthcare",
+        "#ClinicalData",
+        "#ReActAgent",
+        "#TCGA"
+      ],
+      "paper_id": "2026-07-17-medrxiv-a_react_agentic_ai_system_for_natural_language_querying_and_statistical_analysis_of_the_ca",
+      "paper_title": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data",
+      "paper_date": "2026-07-17",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-23T09:21:04",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-17-medrxiv-identification_of_collagen_features_predictive_of_recurrence_following_radiotherapy_for_lo",
+    "doi": "10.64898/2026.07.16.26358234",
+    "date": "2026-07-17",
+    "title": "Identification of collagen features predictive of recurrence following radiotherapy for localised prostate cancer: a retrospective case control analysis",
+    "authors": "Jenkins, R. P.; Fu, X.; Waise, S.; Dewan, M.; Griffin, C.; Stuttle, C.; Cruickshank, C.; Dearnaley, D.; Syndikus, I.; Hall, E.; Sahai, E.; Wilkins, A.",
+    "abstract": "BackgroundChanges in the extracellular matrix (ECM) are a recognised feature of aggressive prostate cancer, but they are not exploited in clinical decision-making. We aimed to develop automated quantitative ECM parameters to facilitate risk stratification for localised prostate cancer. Methods378 quantitative ECM parameters were derived from picrosirius red-stained diagnostic prostate biopsies in a cohort of 422 patients, matched 1:1 for recurrence, recruited to the CHHiP (Conventional or Hypofractionated High Dose Intensity Modulated Radiotherapy in Prostate Cancer) trial of radiotherapy fractionation for localised prostate cancer. These ECM parameters comprehensively described fibre architecture, gaps and ECM texture. Machine learning models at the level of both individual image tiles and patients defined how ECM parameters related to tumour versus normal prostate, Gleason grade group and recurrence. Shapley analysis was used to interpret ECM feature importance and develop signatures associated with recurrence. ResultsSpecific ECM patterns identified tumour versus normal prostate, Gleason pattern 4 versus 3 and recurrence. ECM patterns associated with recurrence were enriched in Gleason 4+3 patients, versus Gleason 3+4 patients. Shapley analysis revealed that biopsies from patients with recurrence had smaller more elongated gaps between fibres, with finer grained ECM texture and lower ECM homogeneity than less recurrent regions. InterpretationQuantitative automated analysis of ECM architecture can inform probability of prostate cancer recurrence after radiotherapy; Features relating to ECM gap size and texture are of particular relevance. FundingThis work was funded by Prostate Cancer Research, Cancer Research UK and the Francis Crick Institute.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-17",
+    "updated": "2026-07-17",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.16.26358234v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.16.26358234v1.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "Automated analysis of collagen architecture in prostate biopsy images identified extracellular matrix features that can help predict which localized prostate cancer patients are more likely to recur after radiotherapy.",
+      "clinical_relevance": "If validated, this image-based ECM signature could support post-radiotherapy risk stratification alongside standard pathology and Gleason grading.",
+      "method": [
+        "378 quantitative ECM features were extracted from picrosirius red-stained diagnostic prostate biopsies.",
+        "A matched 1:1 retrospective case-control cohort of 422 CHHiP trial patients was analyzed.",
+        "Machine learning and Shapley interpretation were used to link ECM patterns with tumor vs normal tissue, Gleason grade group, and recurrence."
+      ],
+      "evidence_signal": "In the 422-patient matched cohort, the model found recurrence-associated ECM patterns that were also enriched in Gleason 4+3 versus 3+4 disease.",
+      "watch_item": "This is a retrospective analysis from a trial cohort, so external validation and real-world reproducibility are needed before clinical use.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#ProstateCancer",
+        "#Radiotherapy",
+        "#MachineLearning",
+        "#PathologyAI"
+      ],
+      "paper_id": "2026-07-17-medrxiv-identification_of_collagen_features_predictive_of_recurrence_following_radiotherapy_for_lo",
+      "paper_title": "Identification of collagen features predictive of recurrence following radiotherapy for localised prostate cancer: a retrospective case control analysis",
+      "paper_date": "2026-07-17",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-23T09:21:07",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-17-medrxiv-portable_ultra_low_field_mri_deep_learning_algorithms_for_white_matter_lesion_segmentation",
+    "doi": "10.64898/2026.07.15.26357954",
+    "date": "2026-07-17",
+    "title": "Portable Ultra-Low Field MRI Deep-Learning Algorithms for White Matter Lesion Segmentation Improve Accuracy and Reflect Clinical Disability in Multiple Sclerosis",
+    "authors": "Thommana, A. A.; Donnay, C. A.; Norato, G.; Gaitan, M. I.; Griffanti, L.; Nair, G.; Reich, D. S.; Okar, S. V.",
+    "abstract": "White matter lesion (WML) identification, assessment, and characterization using magnetic resonance imaging (MRI) are fundamental for diagnosis and monitoring of multiple sclerosis (MS). Portable ultra-low field (pULF) MRI at 64 millitesla (mT) has been shown to visualize WML with at least one dimension greater than 4 mm. An automated WML segmentation tool catered to pULF-MRI can provide standardized and accurate quantitative measurements of WML volume. In this study, we sought to investigate and compare the accuracy of machine-learning (ML) and deep-learning (DL) pULF MRI segmentation tools. Same-day paired pULF (64mT) and high-field (HF, 3T) MRI scans from 84 adults with MS or suspected-MS (mean age{+/-}SD: 48{+/-}13, 62 females) included T2-FLAIR and T1w images. Reference WML segmentations were manually annotated on pULF T2-FLAIR for all scans, with WML confirmed with registered HF T2-FLAIR. HF reference WML segmentations were created. Four automated segmentation methods were applied to pULF scans: Method for Inter-Modal Segmentation Analysis (MIMoSA), an ML algorithm trained on HF WML masks; WMH-SynthSeg, a convolutional neural network model with flexible segmentation capabilities across field strengths and resolution; nnU-Net, a DL algorithm trained on pULF reference WML masks; and Pseudo-Label Assisted nnU-Net (PLAn), a DL algorithm pre-trained on HF reference WML masks and refined with 64mT reference WML masks. Two models were trained with nnU-Net, one using T2-FLAIR images only (nnU-Net-FL) and one using T1w and T2-FLAIR images (nnU-Net-FL/T1). The same was done with PLAn, creating PLAn-FL and PLAn-FL/T1. The six automated WML segmentation outputs were compared to the manual segmentations to determine Dice Similarity Coefficient (DSC) scores. Associations of WML volume estimates with clinical measures were investigated. DSC scores with pULF reference WML masks from PLAn-FL (DSC mean{+/-}SD: 0.50{+/-}0.24) outperformed MIMoSA (0.24{+/-}0.20, p<0.0001), WMH-SynthSeg (0.30{+/-}0.18, p<0.0001), nnU-Net-FL (0.41{+/-}0.24, p<0.0001), and nnU-Net-FL/T1 (0.41 {+/-} 0.26, p = 0.0004). Worse Expanded Disability Status Scale (EDSS) and Scripps Neurologic Rating Scale (SNRS) scores were correlated with higher WML volumes in the pULF and HF reference masks. They were also correlated with WML volumes derived from WHM-SynthSeg, nnU-Net-FL, nnU-Net-FL/T1, PLAn-FL, and PLAn-FL/T1, but not MIMoSA. After adjusting for age, WHM-SynthSeg, nnU-Net FL, nnU-Net-FL/T1, PLAn-FL, and PLAn-FL/T1 had significant associations with EDSS and SNRS scores. nnU-Net and PLAn performed best in segmenting WML on pULF-MRI at 64 mT, providing accurate quantitative estimates of WML burden. Moreover, WML volumes estimated by these algorithms were associated with clinical measures of disability, underscoring their utility for reflecting clinical and radiological disease severity. Given pULF-MRIs mobility and lower cost, these findings highlight its relevance in clinical trials, particularly in involving more participants who face logistical constraints and barriers. HighlightsO_LIDeep learning algorithms were trained on 20 paired, same-day pULF and HF MRI C_LIO_LIAutomated pULF segmentation tools were evaluated using 84 paired, same day MRI C_LIO_LIAutomated pULF WML segmentations align with reference pULF and HF segmentations C_LIO_LITrained deep learning algorithms demonstrate strong pULF MRI lesion segmentation C_LIO_LIAutomated pULF WML estimates are associated with clinical disability scores C_LI",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-07-17",
+    "updated": "2026-07-17",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26357954v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26357954v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "In portable ultra-low-field MRI for multiple sclerosis, the pseudo-label assisted nnU-Net (PLAn) produced the most accurate white matter lesion segmentations among the tested methods.",
+      "clinical_relevance": "Better lesion segmentation on portable 64 mT MRI could improve standardized monitoring of MS disability and support more accessible imaging workflows.",
+      "method": [
+        "Paired same-day 64 mT portable MRI and 3T MRI scans from 84 adults with MS or suspected MS were analyzed.",
+        "Four automated segmentation approaches were compared: MIMoSA, WMH-SynthSeg, nnU-Net, and PLAn.",
+        "Models were evaluated against manual white matter lesion masks using Dice Similarity Coefficient and related to clinical disability measures."
+      ],
+      "evidence_signal": "PLAn-FL achieved the highest segmentation accuracy on pULF scans (mean DSC 0.50 ± 0.24), outperforming the other methods with statistically significant differences.",
+      "watch_item": "This is a single-cohort evaluation in a modest sample, so broader validation is needed before routine deployment across sites, scanners, and patient populations.",
+      "hashtags": [
+        "#MultipleSclerosis",
+        "#MRI",
+        "#DeepLearning",
+        "#MedicalImaging",
+        "#ClinicalTranslation"
+      ],
+      "paper_id": "2026-07-17-medrxiv-portable_ultra_low_field_mri_deep_learning_algorithms_for_white_matter_lesion_segmentation",
+      "paper_title": "Portable Ultra-Low Field MRI Deep-Learning Algorithms for White Matter Lesion Segmentation Improve Accuracy and Reflect Clinical Disability in Multiple Sclerosis",
+      "paper_date": "2026-07-17",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-07-23T09:21:10",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-17-medrxiv-machine_learning_combining_fit_with_up_to_1_025_clinical_variables_limited_referral_reduct",
+    "doi": "10.64898/2026.07.16.26358105",
+    "date": "2026-07-17",
+    "title": "Machine learning combining FIT with up to 1,025 clinical variables: limited referral reduction but potential for faster diagnosis",
+    "authors": "Tamm, A.; Shine, B.; James, T.; Withers, J.; Salih, H.; East, J. E.; Oke, J.; Davies, J.; Morris, E. J.; Nicholson, B. D.",
+    "abstract": "BackgroundThe faecal immunochemical test (FIT) is central to triaging symptomatic patients with suspected colorectal cancer (CRC) in UK primary care, yet only about one in eleven patients above the NICE 10 {micro}g/g threshold have CRC. Existing prediction models attempting to improve on FIT have relied on conventional statistics and limited predictors. MethodsGP-requested FITs with linked data (Jan 2017 - May 2025) were extracted from the Oxford University Hospitals (OUH) datawarehouse. Patients aged [&ge;]18 with core bloods and 180-day CRC follow-up were included. Machine learning (ML) models were trained on up to 1,025 predictors: FIT, age, sex, blood tests and their time series slopes, diagnoses/procedures/prescriptions, deprivation, BMI, and ethnicity. Models comprised penalised logistic regression, generalised additive models (EBM, NAM, SNAM, NODE-GAM), decision tree ensembles (random forests, XGBoost), and a multilayer perceptron. Referral reduction versus FIT [&ge;]10 {micro}g/g was evaluated at model risk score thresholds capturing the same cancers (conservative) or same proportion of cancers (less conservative) as FIT. Potential to prioritise referred patients was assessed by examining whether positive predictive value (PPV) is very high (>30%) at any substantial sensitivity (>10%). Nested twice-repeated five-fold cross-validation provided unbiased estimates. An existing COLOFIT model was evaluated alongside. Findings62,219 individuals (746 CRC) were analysed; 30,862 patients (315 CRC) with high/low risk symptoms and buffered FITs formed the primary subset. At [&ge;]10 {micro}g/g, FIT had 91.4% sensitivity, 84.2% specificity, 5.6% PPV, and 99.9% NPV. No model reduced referrals when required to capture the same cancers as in the FIT [&ge;]10 {micro}g/g cohort. Generalised additive models achieved up to 18.5% referral reduction when detecting the same proportion but some different cancers as FIT [&ge;]10 {micro}g/g (EBM: 18.5%, NODE-GAM: 17.5%, SNAM: 17.4%, COLOFIT: 16.7%). At 30% sensitivity, EBM, NAM and NODE-GAM had average PPVs between 34.6%-35.0%, while FIT had a PPV of 14.6%. InterpretationGeneralised additive models (GAMs) reduced referrals on average by 19% if a small proportion of the FIT-positive CRCs were substituted with originally FIT-negative CRCs by the models. No model, including COLOFIT, reduced referrals while capturing all FIT-positive cancers. Generalised additive models could detect about a third of CRCs faster, as one in three patients flagged by the models had CRC at 30% sensitivity. FundingEPSRC Centre for Doctoral Training in Health Data Science; National Institute for Health Research (NIHR) Oxford Biomedical Research Centre; Cancer Research UK. Research in contextO_ST_ABSEvidence before this studyC_ST_ABSThe faecal immunochemical test (FIT) is widely used in primary care to triage symptomatic patients for colorectal cancer (CRC) investigations. Combining it with other routinely collected data (such age and blood tests) in prediction models may improve its performance. We used existing systematic reviews to understand the performance of FIT, and to identify CRC prediction models incorporating FIT in symptomatic primary care patients. We also searched PubMed and Google Scholar for machine learning models that incorporate FIT. We inferred that only about one in eleven symptomatic primary care patients have CRC, suggesting there is potential to improve precision and better target colonoscopy resources. Only three studies had developed models specifically in the target patient population, using traditional statistical methods with at most six predictor variables, indicating that machine learning methods and more diverse predictor variables remain unexplored in the target population. Added value of this studyUsing one of the largest samples to date (62,219 symptomatic primary care patients), we applied a range of interpretable and flexible machine learning models with up to 1,025 predictor variables (including blood test trends and medical history). We evaluated the models with clinically relevant performance metrics: potential to reduce colonoscopy referrals and potential to fast-track patients for investigations. No machine learning model or an existing COLOFIT model reduced referrals when required to detect all cancers already detected by FIT at the standard 10 {micro}g/g threshold; the models reduced referrals at most by 19% if some missed FIT-positive cancers were substituted with extra FIT-negative cancers. However, when required to detect only 30% of cancers, generalised additive models had high positive predictive values (close to 35%), which were substantially higher than the PPV of FIT at the same sensitivity (14.6%). The models may thus be useful for fast-tracking higher-risk patients for colonoscopy to detect a subset of cancers faster. Implications of all the available evidenceFIT is a highly sensitive and specific test for CRC: it is hard to improve on its performance with routinely collected data for reducing referrals in FIT-positive patients. However, prediction models show greater potential for prioritising referrals: detecting colorectal cancers faster in a subset of higher-risk patients.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-17",
+    "updated": "2026-07-17",
+    "primary_category": "primary care research",
+    "categories": [
+      "primary care research"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.16.26358105v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.16.26358105v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "Adding up to 1,025 clinical variables to FIT did not beat FIT’s cancer capture when matching the same cancers, but some generalized additive models could modestly reduce referrals if allowed to detect a slightly different mix of cancers.",
+      "clinical_relevance": "These models may help prioritize symptomatic colorectal cancer referrals faster, but they do not yet replace FIT as a safe triage rule for cutting referrals while preserving the same cancer detection.",
+      "method": [
+        "Retrospective GP-requested FITs linked to primary care, lab, diagnosis, procedure, prescription, BMI, deprivation, and ethnicity data.",
+        "Trained multiple machine learning models including penalized logistic regression, GAM variants, tree ensembles, and a multilayer perceptron.",
+        "Evaluated with nested twice-repeated five-fold cross-validation against the FIT ≥10 µg/g threshold."
+      ],
+      "evidence_signal": "In 62,219 patients (746 CRC), FIT ≥10 µg/g achieved 91.4% sensitivity and 5.6% PPV; no model reduced referrals when required to detect the same cancers, though some GAMs reduced referrals by up to 18.5% under a less strict comparison.",
+      "watch_item": "The main gains depended on allowing different cancers to be missed or detected, so real-world safety and implementation need careful prospective validation.",
+      "hashtags": [
+        "#ColorectalCancer",
+        "#MachineLearning",
+        "#FIT",
+        "#Diagnostics",
+        "#PrecisionOncology"
+      ],
+      "paper_id": "2026-07-17-medrxiv-machine_learning_combining_fit_with_up_to_1_025_clinical_variables_limited_referral_reduct",
+      "paper_title": "Machine learning combining FIT with up to 1,025 clinical variables: limited referral reduction but potential for faster diagnosis",
+      "paper_date": "2026-07-17",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-23T09:21:13",
+      "generator": "openai"
+    }
+  }
+]
