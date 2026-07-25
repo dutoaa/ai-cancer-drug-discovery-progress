@@ -22,7 +22,7 @@
     <header>
       <div>
         <h1>AI Cancer Drug Discovery Research Papers - Daily Top 20</h1>
-        <p class="sub">Collected 2026-07-24. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
+        <p class="sub">Collected 2026-07-25. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
       </div>
       <nav class="actions">
         <a href="papers.json">Data JSON</a>
@@ -31,7 +31,7 @@
     </header>
     <section class="grid">
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>75</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>70</strong></div>
         <p class="date">2026-07-20</p>
         <h2>Diagnostic Accuracy of MRI Radiomics for Predicting KRAS Mutation in Rectal Cancer: A Systematic Review and Meta-analysis</h2>
         <p class="authors">Saleh, M. M.; Hegazy, M.; Alsaied, M. A.; Elkenani, A. J.; Ehab, R.; Hesham, M.; Abdelrazek, H. M.; Nazemi, S.; Shalaby, M.; El-Hussuna, A.</p>
@@ -39,18 +39,75 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.07.17.26358357v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.07.17.26358357v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> MRI radiomics shows moderate ability to predict KRAS mutation status in rectal cancer from pre-treatment scans.</p>
-          <p><b>Clinical relevance:</b> This could support noninvasive preoperative molecular stratification, but it is not yet accurate enough to replace molecular testing.</p>
-          <ul><li>Systematic review and meta-analysis of diagnostic accuracy studies</li><li>Included 7 studies with 1,224 rectal cancer patients</li><li>Compared MRI-based radiomics/AI predictions against molecular KRAS testing</li></ul>
+          <p><b>Key insight:</b> MRI radiomics shows moderate ability to noninvasively predict KRAS mutation status in rectal cancer before treatment planning.</p>
+          <p><b>Clinical relevance:</b> If validated further, this approach could help preoperative molecular stratification when tissue-based testing is limited or delayed.</p>
+          <ul><li>Systematic review and meta-analysis of diagnostic test accuracy studies.</li><li>Included 7 studies with 1,224 rectal cancer patients.</li><li>Compared MRI-based radiomics or AI predictions against molecular testing using a bivariate random-effects model.</li></ul>
           <p><b>Evidence signal:</b> Pooled performance was moderate, with sensitivity 0.736, specificity 0.645, and hierarchical summary AUC 0.754.</p>
-          <p><b>Watch item:</b> Clinical use is limited by between-study heterogeneity, variable model quality, and the need for external validation before routine implementation.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#Radiomics</span> <span>#MRI</span> <span>#KRAS</span> <span>#RectalCancer</span></div>
+          <p><b>Watch item:</b> Clinical use is still limited by between-study heterogeneity and the need for external validation in larger, standardized cohorts.</p>
+          <div class="tags"><span>#PrecisionOncology</span> <span>#Radiomics</span> <span>#RectalCancer</span> <span>#KRAS</span> <span>#MedicalImaging</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>60</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>62</strong></div>
+        <p class="date">2026-07-22</p>
+        <h2>Evaluating Large Language Models for Colonoscopy Preparation Assistance: Correctness and Diversity in Synthetic Dialogues</h2>
+        <p class="authors">Kaumenova, T.; Chakraborty, S.; Fosler-Lussier, E.; Gofar, K.; Metcalf, I.; Perrault, A.; White, M.</p>
+        <p class="abstract">Background: Colorectal cancer is a leading cause of cancer-related deaths in the United States, and colonoscopy remains the gold standard for early detection and prevention. However, many procedures are postponed due to inadequate bowel preparation, a preventable failure often caused by patients&#x27; difficulty in understanding or following written prep instructions. Prior interventions such as reminder apps and instructional videos have improved adherence only modestly, largely because they cannot answer patients&#x27; specific questions. Recent advances in large language models (LLMs) raise the possibility of developing conversational assistants that can provide interactive support to patients in procedure preparation. Objective: This study evaluated correctness, harmfulness and diversity of synthetic dialogues generated by leading LLMs acting as both simulated AI Coaches and patients for colonoscopy preparation. Methods: Five leading LLMs, OpenAI&#x27;s o3, GPT-4.1 and GPT-5.1, Meta&#x27;s Llama 3.3 70B, and Mistral&#x27;s Large-2411 were used to generate 250 patient-AI Coach dialogues per model. Dialogues consisted of 3-7 question-answer pairs concerning diet, medications, and other prep-related topics. A multi-prompt, multi-question approach was designed to elicit diverse patient questions, and an error taxonomy was established to assess model capabilities in responding to questions. Human raters, including three medical experts, evaluated the generated questions for difficulty and responses for correctness, error type, and potential harmfulness. Automatic evaluation using an LLM-as-a-judge approach complemented human evaluation. Question diversity was assessed using lexical diversity metrics (Distinct-1, Distinct-2) and entropy. In addition, we evaluated a safety filtering mechanism in which responses judged incorrect by an automated evaluator were replaced with a deferral message instructing patients to contact their healthcare provider. Differences in response correctness across models were evaluated using permutation tests conducted at dialogue level. Inter-rater agreement among human evaluators was assessed using Gwet&#x27;s AC1 statistic. The study was conducted between May and September 2025. Results: Automatic evaluation results closely aligned with human judgments: leading models approached but did not achieve adequate performance. Closed-weight models (GPT-5.1, GPT-4.1, and o3) outperformed open-weight models (Llama, Mistral) on correctness, with the reasoning models (GPT-5.1 and o3) performing best. This turn-level ranking was preserved under the supplementary single-prompt baseline, although dialogue-level rankings differed. All models produced harmful errors, primarily due to omissions or misinterpretations of prep instructions. The multi-prompt generation strategy substantially increased the diversity of patient questions compared with a single-prompt baseline. Applying an automated safety filter reduced overall error rates but failed to eliminate harmful responses. Conclusions: While LLMs demonstrate strong potential for colonoscopy preparation support, none are yet reliable enough for unsupervised deployment in patient-facing contexts. Persistent harmful errors and the limited effectiveness of simple filtering mechanisms highlight the need for improved instruction adherence, stronger safety mechanisms, and validation using real patient queries.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.1101/2025.11.19.25340596v3" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.1101/2025.11.19.25340596v3.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> Leading LLMs can generate diverse colonoscopy-prep dialogues, but response quality varies and safety screening is needed to catch incorrect answers.</p>
+          <p><b>Clinical relevance:</b> Conversational AI could help patients understand bowel-prep instructions and ask follow-up questions, potentially reducing avoidable colonoscopy delays if accuracy and escalation pathways are in place.</p>
+          <ul><li>Generated 250 synthetic patient–AI coach dialogues per model using five leading LLMs.</li><li>Used 3–7 question-answer pairs on diet, medications, and prep topics with a multi-prompt, multi-question design to encourage variety.</li><li>Human experts and an LLM-as-a-judge rated question difficulty, answer correctness, error type, harmfulness, and diversity metrics.</li></ul>
+          <p><b>Evidence signal:</b> The study compared five LLMs with human and automated evaluation, including permutation tests at the dialogue level and inter-rater reliability using Gwet’s AC1.</p>
+          <p><b>Watch item:</b> Synthetic dialogue performance may not translate to real patient interactions, and incorrect or ambiguous medical advice still requires reliable deferral to clinicians.</p>
+          <div class="tags"><span>#LargeLanguageModels</span> <span>#ColonoscopyPrep</span> <span>#CancerPrevention</span> <span>#AIinHealthcare</span> <span>#MedicalSafety</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>62</strong></div>
+        <p class="date">2026-07-21</p>
+        <h2>Blood proteomics of menopause map to brain aging and dementia risk</h2>
+        <p class="authors">Wood Alexander, M.; Rabin, J. S.; Caunca, M.; Iadipaolo, A.; Cornelis, L.; Warrier, R.; Walker, K. A.; Miolane, N.; Bot, V. A.; Wood, B.; Oh, H. S.-H.; Wyss-Coray, T.; Pham, A.; Borger, J.; Diaz, V.; Paolillo, E. W.; Kramer, J.; Pritschet, L.; Taylor, C.; Panizzon, M. S.; Rea Reyes, R. E.; Denkinger, M. N.; Ashton, N. J.; Johnson, S. C.; Jacobs, E. G.; Saloner, R.; Casaletto, K. B.</p>
+        <p class="abstract">Menopause is a hallmark process in biological aging that has been implicated in later neurodegenerative risk. We leveraged proteomics data from multiple cohorts to identify biological changes underlying menopause and its links to brain aging. In N=80 rigorously staged (STRAW+10) pre-, peri-, and postmenopausal women with serum NULISAseq proteomics, spontaneous menopause was characterized by dysregulation in inflammatory, synaptic, metabolic, and Alzheimers disease biologic processes, which tracked more strongly with hormones than with age. Validation analyses in age-matched pre/peri-versus postmenopausal women with plasma Olink proteomics (N=2,814) replicated the observed proteomic shifts and revealed broader menopause-related upregulation of inflammatory and catabolic processes plus accelerated organ and cell aging, including brain aging. In four independent cohorts of older women (average age=60.7 to 72.1 years; total N=11,925), menopause-related proteomic elevations consistently associated with poorer cognitive outcomes. The molecular signatures of menopause may inform biomarkers or therapeutic targets for brain health in midlife women.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.02.09.26345907v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.02.09.26345907v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> Menopause is linked to a distinct blood-protein signature involving inflammation, metabolism, synaptic biology, and aging pathways that may help explain later brain aging and dementia risk.</p>
+          <p><b>Clinical relevance:</b> These proteomic signals could support future biomarkers for identifying women at higher risk of cognitive decline and for guiding brain-health strategies in midlife.</p>
+          <ul><li>Compared serum proteomics in 80 rigorously staged pre-, peri-, and postmenopausal women using NULISAseq.</li><li>Validated findings in 2,814 age-matched women with plasma Olink proteomics.</li><li>Tested whether menopause-associated protein changes tracked with hormones, aging processes, and cognitive outcomes across 4 independent older-women cohorts.</li></ul>
+          <p><b>Evidence signal:</b> The study combined one discovery cohort and multiple validation/replication cohorts totaling 14,819 women, with menopause-related proteomic shifts consistently associated with poorer cognition in older cohorts.</p>
+          <p><b>Watch item:</b> These are associative cohort findings, so the results do not prove causation or show that the protein signals are ready for clinical use without further prospective validation.</p>
+          <div class="tags"><span>#MenopauseResearch</span> <span>#Proteomics</span> <span>#BrainAging</span> <span>#DementiaRisk</span> <span>#Biomarkers</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>57</strong></div>
+        <p class="date">2026-07-21</p>
+        <h2>Development and Validation of Machine Learning Models for Predicting 13 or More Sections in Mohs Micrographic Surgery</h2>
+        <p class="authors">Aksoy, Y. A.; Lee, S.; Moreno-Bonilla, G.</p>
+        <p class="abstract">BackgroundCases requiring 13 or more tissue sections in Mohs micrographic surgery (MMS) demand extended operative time, additional resources, and often specialised closure techniques. Pre-operative identification of such cases would improve surgical scheduling, resource allocation, and patient counselling. We aimed to develop and validate a machine learning prediction tool using pre-operative clinical features to identify cases likely to require [&amp;ge;]13 sections. ObjectivesTo develop and validate machine learning models for predicting which Mohs procedures will require [&amp;ge;]13 sections, using pre-operative clinical features, and to identify key predictive factors. MethodsWe analysed 408 consecutive Mohs procedures with 16 pre-operative clinical variables. Thirty machine learning algorithms were evaluated, including ensemble methods (Stacking, Voting), gradient boosting (XGBoost, LightGBM, CatBoost), neural networks (3-7 layers), support vector machines, and traditional classifiers. Model performance was assessed using 5-fold stratified cross-validation and independent test set evaluation. Feature importance was determined using SHAP (SHapley Additive exPlanations) analysis. ResultsThe stacking ensemble achieved the highest cross-validation AUC of 0.891 (95% CI: 0.849-0.934) and test AUC of 0.884. Tumour area (cm{superscript 2}), calculated using the ellipse formula to approximate clinical tumour morphology, emerged as the strongest predictor (SHAP importance: 0.141), followed by tumour size dimensions (0.086 and 0.068), aggressive histopathology (0.046), and recurrence status (0.035). Wide neural network architectures (5-layer) outperformed deeper configurations (7-layer). The model demonstrated 70.7% high-confidence predictions with uncertainty &lt;15%. ConclusionsMachine learning models using pre-operative clinical features can accurately predict which Mohs procedures will require 13 or more sections. The stacking ensemble approach provides robust predictions suitable for clinical decision support. External validation in multi-centre cohorts with diverse patient populations and practice patterns is warranted to assess model generalisability.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.07.20.26358484v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.07.20.26358484v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> A stacking machine learning model using pre-operative clinical features can predict Mohs micrographic surgery cases likely to require 13 or more tissue sections with strong accuracy.</p>
+          <p><b>Clinical relevance:</b> This could help clinics plan operating time, allocate resources, and counsel patients before surgery.</p>
+          <ul><li>Analysed 408 consecutive Mohs procedures with 16 pre-operative clinical variables.</li><li>Compared 30 machine learning algorithms, including ensemble models, gradient boosting, neural networks, SVMs, and traditional classifiers.</li><li>Used 5-fold stratified cross-validation, independent test evaluation, and SHAP to identify key predictors.</li></ul>
+          <p><b>Evidence signal:</b> The stacking ensemble achieved the best performance, with cross-validation AUC 0.891 and test AUC 0.884.</p>
+          <p><b>Watch item:</b> The model needs external validation in multi-centre cohorts before it can be relied on across different patient populations and practice settings.</p>
+          <div class="tags"><span>#MachineLearning</span> <span>#MohsSurgery</span> <span>#PredictiveModeling</span> <span>#PrecisionMedicine</span> <span>#ClinicalDecisionSupport</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>55</strong></div>
         <p class="date">2026-07-19</p>
         <h2>GutCore: An Endoscopy Foundation Model for Whole-Case Gastric Cancer Analysis</h2>
         <p class="authors">Kim, S.; Yoo, H.; Yoo, S.-K.; Lee, J.; Min, Y. W.; Lee, H.</p>
@@ -58,18 +115,37 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.07.01.26356993v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.07.01.26356993v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> GutCore is a foundation model that can analyze an entire endoscopy exam, not just single frames, to estimate gastric cancer presence, invasion depth, biomarkers, and prognosis at the patient level.</p>
-          <p><b>Clinical relevance:</b> If validated externally, this approach could help standardize whole-exam endoscopic interpretation and support earlier, more precise gastric cancer risk stratification.</p>
-          <ul><li>Pretrained on 5.6 million de-identified endoscopic images from more than 10 hospitals.</li><li>Evaluated on open image-level datasets and an internal cohort of 11,035 endoscopic examinations.</li><li>Aggregated all images from each exam to predict cancer status, invasion depth, biomarker status, and overall survival.</li></ul>
-          <p><b>Evidence signal:</b> In the internal cohort, GutCore achieved AUC 0.995 for cancer detection, 0.960 for muscularis propria invasion, and 0.804 for SM2-or-deeper invasion, with strong survival separation in advanced gastric cancer.</p>
-          <p><b>Watch item:</b> The findings come from retrospective, de-identified data and still require independent external validation before routine clinical use.</p>
+          <p><b>Key insight:</b> GutCore is a foundation model that can analyze an entire endoscopy case, not just single frames, to assess gastric cancer presence, invasion depth, biomarkers, and prognosis.</p>
+          <p><b>Clinical relevance:</b> This could help make endoscopic assessment more patient-level and comprehensive, potentially supporting earlier risk stratification and treatment planning in gastric cancer.</p>
+          <ul><li>Pretrained on 5.6 million de-identified endoscopic images from 10+ hospitals.</li><li>Evaluated on open image-level datasets and an internal cohort of 11,035 endoscopic examinations.</li><li>Aggregated all images from each exam for patient-level predictions of cancer status, invasion depth, biomarkers, and survival.</li></ul>
+          <p><b>Evidence signal:</b> In the internal cohort, GutCore achieved AUCs of 0.995 for cancer detection, 0.960 for muscularis propria invasion, and 0.804 for SM2-or-deeper invasion, with strong survival stratification in advanced gastric cancer.</p>
+          <p><b>Watch item:</b> The model needs validation in independent clinical cohorts before routine use, and performance was lower for some biomarkers such as HER2.</p>
           <div class="tags"><span>#GastricCancer</span> <span>#EndoscopyAI</span> <span>#FoundationModel</span> <span>#PrecisionOncology</span> <span>#MedicalAI</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Cancer AI Methods</span><span>medRxiv</span><strong>51</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>47</strong></div>
+        <p class="date">2026-07-21</p>
+        <h2>Encoding Discordance in the Alzheimer&#x27;s Disease A/T/N Framework</h2>
+        <p class="authors">DeLong, L. N.; Salimi, Y.; Balabin, H.; Galdi, P.; Fleuriot, J. D.; Brennan, P. M.; Alzheimer&#x27;s Disease Neuroimaging Initiative,</p>
+        <p class="abstract">INTRODUCTIONThe biomarker-based amyloid/ tau/ neurodegeneration (A/T/N) framework has become a popular staging method for Alzheimers disease (AD) research. Previous studies use the framework either as a rule-based or data-driven approach but typically sacrifice either adaptivity or interpretability. METHODSWe present an interpretable, hybrid method, called Neurosymodal Data Fusion, for predicting incident AD in the ADNI dataset. Specifically, we encode the A/T/N framework as a logic program, where the input biomarker features are extracted by one or more neural networks. RESULTSOur pipeline predicted four-year incident AD with a sensitivity of up to 0.84. Additionally, our models learned scores for each A/T/N profile, denoting relative importances to model predictions. These scores also indicated that empirically-derived cut-off values for the A and T criteria might be uninformative for the ADNI data. DISCUSSIONOur pipeline provides a novel way to use the A/T/N framework that could potentially improve early AD screening years before clinical manifestations.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.07.19.26358425v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.07.19.26358425v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> An interpretable hybrid model encoded the Alzheimer&#x27;s A/T/N biomarker framework as logic rules while using neural networks to extract biomarker features, improving adaptable incident AD prediction.</p>
+          <p><b>Clinical relevance:</b> This approach could support earlier Alzheimer&#x27;s risk stratification years before symptoms by combining biomarker-based staging with more transparent model reasoning.</p>
+          <ul><li>Logic-programmed the A/T/N framework for interpretability</li><li>Used neural networks to learn biomarker features for the rule-based model</li><li>Estimated relative importance scores for A/T/N profiles</li></ul>
+          <p><b>Evidence signal:</b> In the ADNI dataset, the pipeline predicted four-year incident AD with sensitivity up to 0.84 and suggested existing A and T cutoffs may not generalize well.</p>
+          <p><b>Watch item:</b> The findings are based on one dataset and a specific biomarker framework, so performance and cutoff validity may not transfer directly without external validation.</p>
+          <div class="tags"><span>#AlzheimersDisease</span> <span>#ATNFramework</span> <span>#Biomarkers</span> <span>#MachineLearning</span> <span>#Interpretability</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Cancer AI Methods</span><span>medRxiv</span><strong>46</strong></div>
         <p class="date">2026-07-19</p>
         <h2>Development and external validation of deep learning models for spontaneous preterm birth prediction from mid-trimester cervical ultrasound</h2>
         <p class="authors">Chanian, R.; Mishra, D.; Jain, R.; Sharma, N.; Khurana, A.; Tripathi, R.; Tripathi, A.; group, G.-I. s.; Wadhwa, N.; Noble, J. A.; Thiruvengadam, R.; Desiraju, B. K.; Bhatnagar, S.</p>
@@ -77,18 +153,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.07.17.26358221v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.07.17.26358221v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Deep learning on mid-trimester cervical ultrasound showed moderate internal prediction of spontaneous preterm birth, but performance dropped substantially in external validation.</p>
-          <p><b>Clinical relevance:</b> The work suggests ultrasound-based AI may help risk stratification, but current models are not yet reliable enough for standalone clinical use.</p>
-          <ul><li>Prospective cohort modeling on the GARBH-Ini dataset</li><li>Compared local texture, clinical-variable, deep-learning, and multimodal approaches</li><li>Externally validated the best models on an independent cohort scanned on a different ultrasound machine</li></ul>
-          <p><b>Evidence signal:</b> Best model achieved AUC 0.71 internally but only 0.52 externally, with wider uncertainty due to few cases.</p>
-          <p><b>Watch item:</b> External generalizability was limited, likely due to preterm birth heterogeneity and dataset/machine differences.</p>
-          <div class="tags"><span>#AIinMedicine</span> <span>#UltrasoundAI</span> <span>#PretermBirth</span> <span>#DeepLearning</span> <span>#ExternalValidation</span></div>
+          <p><b>Key insight:</b> Deep learning and multimodal ultrasound models showed promising internal prediction of spontaneous preterm birth, but external performance dropped sharply, highlighting limited transportability.</p>
+          <p><b>Clinical relevance:</b> This work suggests mid-trimester cervical ultrasound may help risk stratification, but current models are not ready for reliable real-world use without further validation.</p>
+          <ul><li>Prospective development on the GARBH-Ini cohort</li><li>Compared texture-based, clinical, deep-learning, and multimodal models</li><li>Externally validated on an independent cohort scanned with a different ultrasound machine</li></ul>
+          <p><b>Evidence signal:</b> Best model achieved AUC 0.71 internally but only 0.52 externally, with estimates imprecise due to few preterm birth cases.</p>
+          <p><b>Watch item:</b> External generalizability is limited, likely due to heterogeneity in preterm birth and scanner/site differences, so implementation should be cautious.</p>
+          <div class="tags"><span>#DeepLearning</span> <span>#UltrasoundAI</span> <span>#PretermBirth</span> <span>#ExternalValidation</span> <span>#MedicalAI</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>46</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>41</strong></div>
         <p class="date">2026-07-19</p>
         <h2>Pre-fracture Anemia Is Associated with Nonunion Following Tibia or Femur Fractures: A Retrospective Cohort Study</h2>
         <p class="authors">Merceron, C.; Singh, S.; Whitney, D. G.; Alford, A. I.; Sachdeva, S.; Khoriaty, R.; Hartley, B.; Lang, A.</p>
@@ -96,12 +172,12 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.07.16.26358267v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.07.16.26358267v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Pre-fracture anemia was independently associated with a higher risk of nonunion after tibia or femur fractures, and risk rose with greater anemia burden.</p>
-          <p><b>Clinical relevance:</b> Anemia may help flag fracture patients at elevated risk for impaired healing, potentially informing closer follow-up and risk stratification.</p>
-          <ul><li>Retrospective cohort study using commercial and Medicare fee-for-service claims from 2016–2023.</li><li>Included adults with tibial or femoral fractures, at least 1 year of prior enrollment, and no baseline cancer.</li><li>Compared pre-fracture anemia status, anemia burden, and anemia subtypes against nonunion occurring 6–18 months after fracture.</li></ul>
-          <p><b>Evidence signal:</b> In 326,673 adults, crude nonunion incidence was 42% higher with anemia, and adjusted hazard ratios remained elevated for tibia (1.83) and femur (1.38) fractures.</p>
-          <p><b>Watch item:</b> Claims-based diagnosis codes can miss clinical details such as hemoglobin levels, fracture severity, and treatment factors, so the findings support association rather than causation.</p>
-          <div class="tags"><span>#FractureHealing</span> <span>#Anemia</span> <span>#Nonunion</span> <span>#OrthopaedicResearch</span> <span>#ClaimsData</span></div>
+          <p><b>Key insight:</b> Pre-fracture anemia was independently associated with a higher risk of nonunion after tibia and femur fractures, and risk increased with greater anemia burden.</p>
+          <p><b>Clinical relevance:</b> Anemia status before fracture may help identify patients at elevated risk for impaired bone healing and nonunion.</p>
+          <ul><li>Retrospective cohort study using commercial and Medicare claims data from 2016-2023</li><li>Adults 19+ with tibial or femoral fractures, continuous prior enrollment, and no baseline cancer</li><li>Compared pre-fracture anemia subtypes and burden against nonunion occurring 6-18 months after fracture</li></ul>
+          <p><b>Evidence signal:</b> In 326,673 adults, crude nonunion incidence was 42% higher with anemia, and adjusted hazard ratios remained elevated for tibia and femur fractures.</p>
+          <p><b>Watch item:</b> Claims-based anemia and nonunion definitions may miss clinical detail, and some anemia subgroups had too few events for stable estimates.</p>
+          <div class="tags"><span>#BoneHealing</span> <span>#FractureNonunion</span> <span>#Anemia</span> <span>#Orthopedics</span> <span>#RealWorldEvidence</span></div>
         </section>
       </article>
     </section>

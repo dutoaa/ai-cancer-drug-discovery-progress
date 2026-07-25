@@ -1,13 +1,13 @@
 {
-  "key_insight": "GutCore is a foundation model that can analyze an entire endoscopy exam, not just single frames, to estimate gastric cancer presence, invasion depth, biomarkers, and prognosis at the patient level.",
-  "clinical_relevance": "If validated externally, this approach could help standardize whole-exam endoscopic interpretation and support earlier, more precise gastric cancer risk stratification.",
+  "key_insight": "GutCore is a foundation model that can analyze an entire endoscopy case, not just single frames, to assess gastric cancer presence, invasion depth, biomarkers, and prognosis.",
+  "clinical_relevance": "This could help make endoscopic assessment more patient-level and comprehensive, potentially supporting earlier risk stratification and treatment planning in gastric cancer.",
   "method": [
-    "Pretrained on 5.6 million de-identified endoscopic images from more than 10 hospitals.",
+    "Pretrained on 5.6 million de-identified endoscopic images from 10+ hospitals.",
     "Evaluated on open image-level datasets and an internal cohort of 11,035 endoscopic examinations.",
-    "Aggregated all images from each exam to predict cancer status, invasion depth, biomarker status, and overall survival."
+    "Aggregated all images from each exam for patient-level predictions of cancer status, invasion depth, biomarkers, and survival."
   ],
-  "evidence_signal": "In the internal cohort, GutCore achieved AUC 0.995 for cancer detection, 0.960 for muscularis propria invasion, and 0.804 for SM2-or-deeper invasion, with strong survival separation in advanced gastric cancer.",
-  "watch_item": "The findings come from retrospective, de-identified data and still require independent external validation before routine clinical use.",
+  "evidence_signal": "In the internal cohort, GutCore achieved AUCs of 0.995 for cancer detection, 0.960 for muscularis propria invasion, and 0.804 for SM2-or-deeper invasion, with strong survival stratification in advanced gastric cancer.",
+  "watch_item": "The model needs validation in independent clinical cohorts before routine use, and performance was lower for some biomarkers such as HER2.",
   "hashtags": [
     "#GastricCancer",
     "#EndoscopyAI",
@@ -19,6 +19,6 @@
   "paper_title": "GutCore: An Endoscopy Foundation Model for Whole-Case Gastric Cancer Analysis",
   "paper_date": "2026-07-19",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-24T09:17:14",
+  "generated_at": "2026-07-25T09:54:11",
   "generator": "openai"
 }
