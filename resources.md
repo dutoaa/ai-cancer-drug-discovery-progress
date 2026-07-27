@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-07-26
+Generated: 2026-07-27
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. A Multimodal Multiomics Machine Learning (MMM) approach for biomarker discovery and acceleration of clinical trial readiness for childhood-onset neurological disorders
@@ -11,21 +11,21 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.07.21.26358463v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-22-medrxiv-a_multimodal_multiomics_machine_learning_mmm_approach_for_biomarker_discovery_and_accelera_infographic.json
 
-## 2. Diagnostic Accuracy of MRI Radiomics for Predicting KRAS Mutation in Rectal Cancer: A Systematic Review and Meta-analysis
-
-- Date: 2026-07-20
-- Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.17.26358357v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.17.26358357v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-20-medrxiv-diagnostic_accuracy_of_mri_radiomics_for_predicting_kras_mutation_in_rectal_cancer_a_syste_infographic.json
-
-## 3. Evaluating Large Language Models for Colonoscopy Preparation Assistance: Correctness and Diversity in Synthetic Dialogues
+## 2. Evaluating Large Language Models for Colonoscopy Preparation Assistance: Correctness and Diversity in Synthetic Dialogues
 
 - Date: 2026-07-22
 - Category: Precision Oncology
 - Source: medRxiv - https://www.medrxiv.org/content/10.1101/2025.11.19.25340596v3
 - PDF: https://www.medrxiv.org/content/10.1101/2025.11.19.25340596v3.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-22-medrxiv-evaluating_large_language_models_for_colonoscopy_preparation_assistance_correctness_and_di_infographic.json
+
+## 3. The value of brain age as a transdiagnostic biomarker of neurodegeneration
+
+- Date: 2026-07-22
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.21.26358569v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.21.26358569v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-22-medrxiv-the_value_of_brain_age_as_a_transdiagnostic_biomarker_of_neurodegeneration_infographic.json
 
 ## 4. Blood proteomics of menopause map to brain aging and dementia risk
 
