@@ -1,24 +1,24 @@
 {
-  "key_insight": "Leading LLMs can generate varied colonoscopy-prep conversations, but response correctness and safety vary enough that automated screening and deferral may be needed.",
-  "clinical_relevance": "Conversational AI could help patients understand bowel-prep instructions and answer routine questions, potentially improving procedure readiness while reducing avoidable cancellations.",
+  "key_insight": "Leading LLMs could generate varied colonoscopy-prep conversations, but correctness and safety varied enough that automated deferral safeguards were still needed.",
+  "clinical_relevance": "For colonoscopy prep support, conversational AI may help answer patient questions, but outputs must be carefully checked to avoid unsafe or incorrect guidance.",
   "method": [
-    "Generated 250 synthetic patient–AI coach dialogues per model with 3–7 question-answer pairs each.",
-    "Compared five LLMs on correctness, harmfulness, and diversity using human expert review plus LLM-as-a-judge evaluation.",
-    "Tested a safety filter that replaced incorrect answers with a deferral advising patients to contact their healthcare provider."
+    "Generated 250 synthetic patient-AI coach dialogues per model from five leading LLMs.",
+    "Used 3–7 question-answer pairs per dialogue on diet, medications, and prep topics.",
+    "Compared human and automatic ratings for correctness, harmfulness, difficulty, and diversity."
   ],
-  "evidence_signal": "The abstract reports human and automated evaluation of 250 dialogues per model, with model-to-model correctness differences tested by permutation analysis and inter-rater reliability measured using Gwet’s AC1.",
-  "watch_item": "Synthetic dialogue quality does not guarantee real-world clinical reliability, and deferral-only safeguards may still leave gaps for patient-specific prep questions.",
+  "evidence_signal": "The study used medical-expert review plus LLM-as-a-judge evaluation, and compared models with permutation tests and inter-rater agreement via Gwet’s AC1.",
+  "watch_item": "Synthetic dialogue performance does not guarantee real-world patient safety, so deployment would require strong human oversight and reliable safety filtering.",
   "hashtags": [
-    "#LargeLanguageModels",
-    "#ColonCancer",
+    "#LLMs",
     "#ColonoscopyPrep",
-    "#PatientSupport",
-    "#AISafety"
+    "#PatientSafety",
+    "#SyntheticDialogues",
+    "#MedicalAI"
   ],
   "paper_id": "2026-07-22-medrxiv-evaluating_large_language_models_for_colonoscopy_preparation_assistance_correctness_and_di",
   "paper_title": "Evaluating Large Language Models for Colonoscopy Preparation Assistance: Correctness and Diversity in Synthetic Dialogues",
   "paper_date": "2026-07-22",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-27T10:34:49",
+  "generated_at": "2026-07-28T09:32:54",
   "generator": "openai"
 }
