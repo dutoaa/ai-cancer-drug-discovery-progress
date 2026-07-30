@@ -1,24 +1,24 @@
 {
-  "key_insight": "A deep learning model on multichannel interictal intracranial EEG can localize epileptogenic zones with performance comparable to published benchmarks and simple electrophysiology baselines.",
-  "clinical_relevance": "If validated further, this approach could support more reliable presurgical localization for drug-resistant epilepsy across different centers and implantation types.",
+  "key_insight": "A deep-learning model using interictal intracranial EEG can identify epileptogenic zones across centers with performance comparable to published benchmarks and simple electrophysiology baselines.",
+  "clinical_relevance": "If validated further, this approach could help improve pre-surgical localization of seizure-generating brain tissue in drug-resistant epilepsy.",
   "method": [
-    "Morlet wavelet temporal Transformer to encode interictal EEG patterns",
-    "Permutation-equivariant Induced Set Attention Block to model long-range inter-electrode interactions",
-    "Leave-one-center-out validation across seven centers to test generalizability"
+    "Morlet wavelet temporal Transformer for multichannel interictal iEEG",
+    "Permutation-equivariant Set Attention spatial encoder to model long-range electrode interactions",
+    "Leave-one-center-out validation across seven independent centers"
   ],
-  "evidence_signal": "Evaluated on 50.5 hours of iEEG from 161 patients and 17,012 channels, the model achieved pooled AUROC 0.778 and performed above chance at all held-out centers.",
-  "watch_item": "Results are based on retrospective data and an EZ definition tied to Engel Class I surgical outcome, so prospective validation is needed before clinical use.",
+  "evidence_signal": "Trained and tested on 50.5 hours of iEEG from 161 patients and 17,012 channels, the model achieved pooled AUROC 0.778 and performed above chance at all held-out centers.",
+  "watch_item": "Results are promising but still depend on retrospective cross-center validation and an EZ definition tied to postoperative Engel Class I outcomes, so prospective clinical utility remains unproven.",
   "hashtags": [
+    "#EpilepsyAI",
+    "#IntracranialEEG",
     "#DeepLearning",
-    "#iEEG",
-    "#Epilepsy",
-    "#SurgicalLocalization",
-    "#MulticenterValidation"
+    "#Neurosurgery",
+    "#MedicalAI"
   ],
   "paper_id": "2026-07-24-medrxiv-localizing_epileptogenic_zones_using_interictal_intracranial_electroencephalography_and_de",
   "paper_title": "Localizing epileptogenic zones using interictal intracranial electroencephalography and deep learning",
   "paper_date": "2026-07-24",
   "paper_category": "Cancer AI Methods",
-  "generated_at": "2026-07-29T09:35:00",
+  "generated_at": "2026-07-30T09:27:43",
   "generator": "openai"
 }

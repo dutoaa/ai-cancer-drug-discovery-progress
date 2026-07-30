@@ -1,13 +1,13 @@
 {
-  "key_insight": "A neuro-symbolic AI system can automatically abstract complex pathology quality measures from narrative reports with performance comparable to trained human abstractors.",
-  "clinical_relevance": "If validated broadly, this could reduce manual reporting burden and make large-scale, clinically meaningful quality measurement more feasible in pathology workflows.",
+  "key_insight": "A neuro-symbolic AI system can accurately automate complex pathology quality-measure abstraction from narrative reports by combining language-model extraction with symbolic reasoning and human-in-the-loop refinement.",
+  "clinical_relevance": "This approach could reduce manual reporting burden and make more clinically meaningful quality measures feasible to measure at scale from pathology documentation.",
   "method": [
     "Decomposed each quality measure into atomic questions.",
-    "Used large language model extraction plus symbolic reasoning.",
-    "Refined the system with case-based, human-in-the-loop alignment on real reports."
+    "Aligned the system to real-world pathology reports using case-based refinement.",
+    "Compared NSAI with trained human abstractors on 2,000 independently double-abstracted reports across four CAP pathology measures."
   ],
-  "evidence_signal": "In 2,000 independently double-abstracted pathology reports, the system matched or slightly exceeded trained human abstractors versus the adjudicated gold standard (kappa 0.95 vs 0.92).",
-  "watch_item": "Performance was evaluated on a defined set of CAP pathology measures, so broader generalizability and deployment reliability still need external validation.",
+  "evidence_signal": "Against an adjudicated gold standard, NSAI achieved Cohen’s kappa = 0.95, matching or slightly exceeding trained human abstractors (kappa = 0.92), with strongest performance on Gastrointestinal Metaplasia (CAP 43).",
+  "watch_item": "Performance was evaluated on specific pathology quality measures, so broader generalization and safe deployment will still require validation across sites, report styles, and model backends.",
   "hashtags": [
     "#NeuroSymbolicAI",
     "#PathologyAI",
@@ -19,6 +19,6 @@
   "paper_title": "Neuro-Symbolic AI for Automated Pathology Quality Measurement",
   "paper_date": "2026-07-24",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-29T09:35:06",
+  "generated_at": "2026-07-30T09:27:49",
   "generator": "openai"
 }

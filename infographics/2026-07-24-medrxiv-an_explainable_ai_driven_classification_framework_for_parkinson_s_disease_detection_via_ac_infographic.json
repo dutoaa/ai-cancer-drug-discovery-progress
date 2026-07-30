@@ -1,24 +1,24 @@
 {
-  "key_insight": "A subject-independent machine learning pipeline using acoustic speech features can detect Parkinson's disease with high accuracy while remaining interpretable through SHAP.",
-  "clinical_relevance": "Speech-based biomarkers offer a non-invasive, scalable screening signal for early Parkinson's detection and may help reduce false positives in triage settings.",
+  "key_insight": "An explainable machine-learning pipeline using acoustic speech features can classify Parkinson’s disease with high accuracy while highlighting the specific voice biomarkers driving each prediction.",
+  "clinical_relevance": "If validated externally, this approach could support scalable, non-invasive screening or triage using ordinary speech recordings.",
   "method": [
-    "756 voice recordings from 252 subjects were z-score normalized after preprocessing.",
-    "Five classifiers were compared under GroupKFold cross-validation: KNN, XGBoost, Random Forest, SVM, and Naive Bayes.",
-    "SHAP was used to identify the most influential acoustic features for individual predictions."
+    "756 voice recordings from 252 subjects (188 PD, 64 controls) were preprocessed and z-score normalized.",
+    "Five classifiers were compared under subject-independent GroupKFold cross-validation: KNN, XGBoost, Random Forest, SVM, and Naive Bayes.",
+    "SHAP was used to interpret feature contributions and identify the most informative acoustic biomarkers."
   ],
-  "evidence_signal": "In subject-independent evaluation, KNN performed best with 92.10% accuracy, 94.50% F1 score, and 98.09% precision.",
-  "watch_item": "Performance was reported on a single public dataset, so external validation across independent cohorts and recording conditions is still needed.",
+  "evidence_signal": "KNN performed best, achieving 92.10% accuracy, 94.50% F1, and 98.09% precision on the study’s cross-validated evaluation.",
+  "watch_item": "Performance was reported on a public dataset, so external validation across different recording conditions, languages, and populations is still needed before real-world use.",
   "hashtags": [
     "#ParkinsonsDisease",
-    "#MachineLearning",
     "#ExplainableAI",
+    "#MachineLearning",
     "#SpeechBiomarkers",
-    "#DigitalHealth"
+    "#HealthAI"
   ],
   "paper_id": "2026-07-24-medrxiv-an_explainable_ai_driven_classification_framework_for_parkinson_s_disease_detection_via_ac",
   "paper_title": "An Explainable AI-Driven Classification Framework for Parkinson's Disease Detection via Acoustic Speech Features: A Comparative Machine Learning Study",
   "paper_date": "2026-07-24",
   "paper_category": "Target Biology",
-  "generated_at": "2026-07-29T09:35:03",
+  "generated_at": "2026-07-30T09:27:46",
   "generator": "openai"
 }
