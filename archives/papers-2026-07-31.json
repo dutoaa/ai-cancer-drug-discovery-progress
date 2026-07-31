@@ -1,0 +1,512 @@
+[
+  {
+    "id": "2026-07-25-medrxiv-ct_based_deep_foundation_model_for_predicting_immune_checkpoint_inhibitor_induced_pneumoni",
+    "doi": "10.64898/2026.04.21.26351428",
+    "date": "2026-07-25",
+    "title": "CT-Based Deep Foundation Model for Predicting Immune Checkpoint Inhibitor-Induced Pneumonitis Risk in Lung Cancer",
+    "authors": "Muneer, A.; Showkatian, E.; Kitsel, Y.; Saad, M. B.; Sujit, S. J.; Soto, F.; Shroff, G. S.; Faiz, S. A.; Ghanbar, M. I.; Ismail, S. M.; Vokes, N. I.; Cascone, T.; Le, X.; Zhang, J.; Byers, L. A.; Jaffray, D.; Chang, J. Y.; Liao, Z.; Naing, A.; Gibbons, D. L.; Vaporciyan, A. A.; Heymach, J. V.; Suresh, K. S.; Altan, M.; Sheshadri, A.; Wu, J.",
+    "abstract": "BackgroundImmune checkpoint inhibitors (ICIs) have revolutionized cancer therapy but can cause serious immune-related adverse events (irAEs), with pneumonitis (ICI-P) being among the most severe. Early identification of high-risk patients before ICI initiation is critical for close monitoring, timely intervention, and optimizing outcomes. PurposeTo develop and validate a deep learning foundation model to predict ICI-P from baseline CT scans in patients with lung cancer. MethodsWe designed the Checkpoint-Inhibitor Pneumonitis Hazard EstimatoR (CIPHER), a deep learning-powered foundation model combining contrastive learning with a transformer-based masked autoencoder to predict ICI-P from baseline CT scans in lung cancer patients. Using self-supervised learning, CIPHER was pretrained on 590,284 CT slices from 2,500 non-small cell lung cancer (NSCLC) patients, to learn representations of heterogeneous lung parenchyma. Following pretraining, CIPHER was adapted to the internal MDA NSCLC immunotherapy cohort of 347 patients, of whom 33 developed adjudicated ICI-P. Fine-tuning was performed using 254 non-ICI-P patients only, and a held-out internal validation set of 93 patients, including 33 ICI-P cases and 60 non-ICI-P controls, was reserved for evaluation. CIPHER was benchmarked against clinical, radiomics, and ensemble comparator models and externally validated in an independent Johns Hopkins NSCLC cohort of 116 patients, including 20 ICI-P cases and 96 non-ICI-P controls. ResultsIn our internal immunotherapy cohort, CIPHER consistently distinguished patients at elevated risk of ICI-P from those without the event, with AUCs ranging from 0.77 to 0.85. In head-to-head benchmarking, CIPHER achieved an AUC of 0.83, outperforming the clinical, radiomics and ensemble models. In the external validation cohort, CIPHER maintained high performance (AUC=0.83; balanced accuracy=81.7%), exceeding the radiomics model (DeLong p=0.0318) and demonstrating superior specificity without sacrificing sensitivity. By contrast, the radiomics model, despite high sensitivity (85.0%), showed markedly lower specificity (45.8%). Confusion matrix analyses confirmed CIPHERs robust classification, correctly identifying 80 of 96 non-ICI-P cases and 16 of 20 ICI-P cases. ConclusionsWe developed and externally validated CIPHER, a CT-based imaging biomarker for pretreatment ICI-P risk stratification in NSCLC. CIPHER shows promise as a noninvasive tool for ICI-P risk assessment but warrants prospective validation before clinical translation. HighlightsO_LIThe first chest CT AI foundation model for immune toxicity - We introduce CIPHER (Checkpoint-Inhibitor Pneumonitis Hazard EstimatoR), a transformer-based masked autoencoder trained through self-supervised contrastive learning on 590,284 CT slices from 4,242 CT scans from NSCLC patients. This large-scale pretraining enables CIPHER to learn intrinsic lung parenchymal representations linked to immune toxicity risk. C_LIO_LIEarly risk prediction prior to therapy initiation - CIPHER predicts the likelihood of ICI-induced pneumonitis directly from baseline CT scans, offering the first non-invasive foundation model for early risk assessment before ICI. C_LIO_LIRobust validation and benchmarking - We fine-tuned and evaluated CIPHER across independent internal and external NSCLC immunotherapy cohorts, achieving AUCs of 0.77-0.85 internal and 0.83 external testing, surpassing comparator models in both performance and generalizability. C_LIO_LIInterpretability and translational potential - We demonstrate how model-derived attention maps align with clinically relevant pulmonary patterns, enhancing interpretability. C_LIO_LITranslational potential - CIPHERs performance and scalability underscore its potential as a decision-support tool to guide treatment planning, pre-emptive monitoring, and toxicity mitigation in immunotherapy practice. C_LI",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-07-25",
+    "updated": "2026-07-25",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351428v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351428v2.full.pdf"
+      }
+    ],
+    "score": 74,
+    "infographic": {
+      "key_insight": "A CT-based deep foundation model (CIPHER) can predict which lung cancer patients are at higher risk of immune checkpoint inhibitor–induced pneumonitis before treatment starts.",
+      "clinical_relevance": "If validated further, this could help clinicians identify patients needing closer monitoring and earlier intervention when starting immunotherapy.",
+      "method": [
+        "Self-supervised pretraining on 590,284 CT slices from 2,500 NSCLC patients using contrastive learning plus a transformer-based masked autoencoder.",
+        "Fine-tuned on an internal immunotherapy cohort of 347 patients, with 254 non-ICI-P cases used for training and 93 patients held out for validation.",
+        "Compared against clinical, radiomics, and ensemble models, then tested in an external Johns Hopkins cohort."
+      ],
+      "evidence_signal": "CIPHER achieved AUCs of 0.77–0.85 internally, AUC 0.83 in head-to-head benchmarking, and external validation performance of AUC 0.83 with 81.7% balanced accuracy.",
+      "watch_item": "This is an imaging-based predictive model from retrospective cohorts, so broader prospective validation and workflow integration are still needed before real-world use.",
+      "hashtags": [
+        "#CancerAI",
+        "#RadiologyAI",
+        "#Immunotherapy",
+        "#DeepLearning",
+        "#LungCancer"
+      ],
+      "paper_id": "2026-07-25-medrxiv-ct_based_deep_foundation_model_for_predicting_immune_checkpoint_inhibitor_induced_pneumoni",
+      "paper_title": "CT-Based Deep Foundation Model for Predicting Immune Checkpoint Inhibitor-Induced Pneumonitis Risk in Lung Cancer",
+      "paper_date": "2026-07-25",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-07-30T09:27:28",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-27-medrxiv-ovai_focus_a_framework_for_multiclass_segmentation_and_morphological_features_extraction_i",
+    "doi": "10.64898/2026.07.24.26358148",
+    "date": "2026-07-27",
+    "title": "OvAi Focus: A framework for multiclass segmentation and morphological features extraction in gynecological ultrasound",
+    "authors": "Salis, F.; Tallone, N.; Fina, P. R.; Massobrio, R.; Bellacosa Marotti, R.; Conti, D.; Fuso, L.; Mariani, L.; Ferrero, A. M.; Accomasso, F.; Arena, A.; Borella, F.; Casula, V.; Cosma, S.; De Grandis, T.; Grisaru, D.; Lacalandra, A.; Pereira Sanchez, A.; Seracchioli, R.; Robba, E.; Roccio, M.; Gerace, F.",
+    "abstract": "Ovarian cancer is recognized as the deadliest gynecological malignancy. Diagnosis at advanced stages and the lack of effective screening program lead to poor survival rates, dropping to 17-39 % in stage III-IV diseases. Ultrasound (US) is the primary imaging modality for ovarian structures evaluation, but it is strongly affected by the operator expertise due to the complexity of adnexal masses and the physiological variability of ovarian morphology throughout a womans lifecycle. The International Ovarian Tumor Analysis (IOTA) group introduced definitions and predictive tools to standardize gynecological US interpretation. However, these tools still rely on subjective interpretation, thus highlighting the need for more objective solutions. Recent studies have explored artificial intelligence (AI) algorithms for gynecological US, mainly focusing on adnexal masses classification. Conversely, a robust solution supporting the identification and description of healthy and tumoral ovarian structures is still lacking. This paper proposes OvAi Focus, a framework including (i) a segmentation module for the identification of healthy ovaries, plus solid and cystic components of adnexal masses; (ii) a morphology module for the extraction of IOTA-based keywords to describe adnexal masses morphology. Segmentation module results were compared to ground truth masks, showing DICE scores from 0.62 for functional ovary to 0.87 for the whole adnexal mass. Morphology module was tested through interobserver agreement analysis, obtaining Fleiss Kappa from 0.16 to 0.57 and Percent Agreement from 47 to 90 %, in line with existing literature. OvAi Focus represents an innovative solution which could help overcoming subjectivity in gynecological US imaging interpretation.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-27",
+    "updated": "2026-07-27",
+    "primary_category": "obstetrics and gynecology",
+    "categories": [
+      "obstetrics and gynecology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358148v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358148v1.full.pdf"
+      }
+    ],
+    "score": 64,
+    "infographic": {
+      "key_insight": "OvAi Focus is an AI framework that combines ultrasound segmentation with morphology keyword extraction to make ovarian and adnexal mass interpretation more objective.",
+      "clinical_relevance": "By standardizing how gynecological ultrasound findings are identified and described, it could support more consistent evaluation of ovarian structures and adnexal masses in precision oncology workflows.",
+      "method": [
+        "Segmentation module identifies healthy ovaries plus solid and cystic components of adnexal masses.",
+        "Morphology module extracts IOTA-based keywords to describe adnexal mass features.",
+        "Outputs are compared against ground-truth masks and interobserver agreement metrics."
+      ],
+      "evidence_signal": "In the abstract, segmentation achieved DICE scores from 0.62 for functional ovary to 0.87 for the whole adnexal mass, while morphology assessment showed Fleiss Kappa of 0.16 to 0.57 and Percent Agreement of 47% to 90%.",
+      "watch_item": "Performance is promising but still uneven across structures and depends on validation against operator-labeled ground truth, so real-world robustness and generalizability need further confirmation.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#UltrasoundAI",
+        "#GynecologicImaging",
+        "#OvarianCancer",
+        "#MedicalAI"
+      ],
+      "paper_id": "2026-07-27-medrxiv-ovai_focus_a_framework_for_multiclass_segmentation_and_morphological_features_extraction_i",
+      "paper_title": "OvAi Focus: A framework for multiclass segmentation and morphological features extraction in gynecological ultrasound",
+      "paper_date": "2026-07-27",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-30T09:27:31",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-27-medrxiv-deep_learning_for_individual_level_classification_of_schizophrenia_versus_healthy_controls",
+    "doi": "10.64898/2026.07.24.26358816",
+    "date": "2026-07-27",
+    "title": "Deep Learning for Individual-Level Classification of Schizophrenia Versus Healthy Controls from Trial-Level Auditory Oddball ERP Waveforms",
+    "authors": "Sheu, Y.-H.; Lin, Y.-T.; Holton, K. M.; Liu, C.-M.; Chien, Y.-L.; Liu, C.-C.; Hall, M.-H.; Hwu, H.-G.; Hsieh, M. H.",
+    "abstract": "Machine learning approaches may support individual-level classification in psychiatry, but many EEG-based schizophrenia studies have relied on small samples or conventional summary features. We evaluated whether trial-level auditory oddball event-related potential (ERP) waveforms could support schizophrenia versus healthy-control classification using deep learning. The study included 258 patients with schizophrenia and 142 healthy controls. EEG recordings from an auditory duration oddball paradigm were segmented into -100 to 500 ms epochs, and trial-level mismatch waveforms were generated by subtracting each participants mean standard response from accepted deviant trials. Models were trained using a fixed participant-level training, validation, and test split, with demographic residualization fit only in the training set. Five deep learning architectures were trained on full residualized ERP waveforms and compared with classical machine learning models trained on 18 conventional ERP summary features. Deep learning models achieved higher test set discrimination than classical feature-based models, with AUROC values ranging from 0.797 to 0.857 versus 0.705 to 0.720. Benchmark analyses suggested that performance depended on the combination of waveform-level input and deep learning architecture. These findings support trial-level auditory oddball ERP waveforms as promising classification inputs and candidate electrophysiological biomarkers of schizophrenia-related neural information processing.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-27",
+    "updated": "2026-07-27",
+    "primary_category": "psychiatry and clinical psychology",
+    "categories": [
+      "psychiatry and clinical psychology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358816v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358816v1.full.pdf"
+      }
+    ],
+    "score": 62,
+    "infographic": {
+      "key_insight": "Trial-level auditory oddball ERP waveforms, paired with deep learning, classified schizophrenia vs healthy controls better than conventional ERP summary features.",
+      "clinical_relevance": "This suggests EEG waveform-based machine learning could help develop objective, individual-level biomarkers for schizophrenia-related neural processing, but it is not a standalone diagnostic tool.",
+      "method": [
+        "258 people with schizophrenia and 142 healthy controls completed an auditory duration oddball EEG task.",
+        "Trial-level mismatch waveforms were created from deviant trials after subtracting each participant’s standard response.",
+        "Five deep learning models were compared with classical models using 18 ERP summary features after demographic residualization in training only."
+      ],
+      "evidence_signal": "On a held-out test set, deep learning achieved AUROC 0.797-0.857 versus 0.705-0.720 for classical feature-based models.",
+      "watch_item": "Performance came from a fixed split in a single dataset, so external validation across sites, devices, and populations is still needed.",
+      "hashtags": [
+        "#EEG",
+        "#DeepLearning",
+        "#Schizophrenia",
+        "#Biomarkers",
+        "#MachineLearning"
+      ],
+      "paper_id": "2026-07-27-medrxiv-deep_learning_for_individual_level_classification_of_schizophrenia_versus_healthy_controls",
+      "paper_title": "Deep Learning for Individual-Level Classification of Schizophrenia Versus Healthy Controls from Trial-Level Auditory Oddball ERP Waveforms",
+      "paper_date": "2026-07-27",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-30T09:27:34",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-27-medrxiv-simulation_trained_deep_learning_for_automated_cell_based_hla_antibody_assay_interpretatio",
+    "doi": "10.64898/2026.07.23.26358785",
+    "date": "2026-07-27",
+    "title": "Simulation-Trained Deep Learning for Automated Cell-Based HLA Antibody Assay Interpretation in Pre-Transplant Diagnostics",
+    "authors": "Afting, C.; Semmler, A.-L.; Oulghazi, S.; Ries, J. I.; Lichtenberg, A. E.; Jaeger, J. F.; Merk, C.; Fuerst, D.; Lorenz, H.-M.; Tonn, T.; Seidl, C.; Exner, T.",
+    "abstract": "Preformed and de novo antibodies against donor human leukocyte antigen (HLA) antigens remain a major cause of antibody-mediated rejection and graft loss after organ transplantation. Although solid-phase assays and virtual crossmatching have reshaped pre-transplant risk assessment, physical crossmatching, which assesses whether recipient antibodies react with donor cells, remains widely used as the final compatibility assessment before transplantation. These workflows include both complement-dependent cytotoxicity (CDC) and flow cytometry crossmatch (FCXM) assays, but their interpretation remains partly manual, operator-dependent, and, for microscopic CDC readout, semi-quantitative. Here, we present AlloViewer, a web-based software platform for automated and traceable interpretation of image-based and flow-cytometry-based HLA antibody diagnostics. For CDC microscopy, AlloViewer employs a simulation-trained deep learning (UNet) workflow that combines automated lymphocyte segmentation with experiment-specific fluorescence classification and well-level cytotoxicity scoring. To deliberately capture the technical variability encountered in routine diagnostics, we generated simulated CDC-like training images spanning differences in image resolution, acquisition conditions, staining quality, cell density, cell distribution, clustering, and background fluorescence, among others. The resulting simulation-trained model enabled robust lymphocyte detection across heterogeneous imaging conditions and outperformed a conventional rule-based image analysis pipeline under variable acquisition conditions. Automated CDC scoring achieved performance within the range of human inter-annotator variability and approached the practical reproducibility limit defined by human disagreement. To cover all modalities of pre-transplant physical crossmatching, AlloViewer further supports automated FCXM interpretation through cell population identification and population-specific immunoglobulin G (IgG) readouts. The platform integrates these workflows in an assay-specific web interface and provides application programming interface (API) access for programmatic submission of assay data and retrieval of processed results. Together, AlloViewer establishes an integrated computational framework for standardized and traceable interpretation of CDC crossmatch assays, CDC-based HLA antibody identification testing using commercial test-cell panels, and FCXM workflows. More broadly, this work demonstrates how simulation-trained artificial intelligence (AI) can facilitate robust computational analysis across technically heterogeneous laboratory environments, providing a framework for standardizing traditionally operator-dependent diagnostic workflows.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-07-27",
+    "updated": "2026-07-27",
+    "primary_category": "transplantation",
+    "categories": [
+      "transplantation"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.23.26358785v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.23.26358785v1.full.pdf"
+      }
+    ],
+    "score": 62,
+    "infographic": {
+      "key_insight": "A simulation-trained deep learning platform can automate interpretation of cell-based HLA antibody crossmatch assays, reducing manual variability in pre-transplant compatibility assessment.",
+      "clinical_relevance": "By standardizing CDC and FCXM readouts, the tool could improve consistency and traceability in donor-recipient matching before transplantation.",
+      "method": [
+        "Generated CDC-like simulated training images covering diverse real-world imaging conditions.",
+        "Trained a UNet-based workflow for lymphocyte segmentation, fluorescence classification, and cytotoxicity scoring.",
+        "Added automated FCXM cell-population identification and IgG readout interpretation in a web-based, API-enabled platform."
+      ],
+      "evidence_signal": "In the abstract, the automated CDC scoring performed within the range of human inter-annotator variability and outperformed a conventional rule-based pipeline under variable acquisition conditions.",
+      "watch_item": "Performance was shown on simulated and assay-specific workflows, so broader validation across real-world multicenter datasets and routine lab settings remains important.",
+      "hashtags": [
+        "#TransplantDiagnostics",
+        "#DeepLearning",
+        "#HLA",
+        "#Crossmatch",
+        "#PathologyAI"
+      ],
+      "paper_id": "2026-07-27-medrxiv-simulation_trained_deep_learning_for_automated_cell_based_hla_antibody_assay_interpretatio",
+      "paper_title": "Simulation-Trained Deep Learning for Automated Cell-Based HLA Antibody Assay Interpretation in Pre-Transplant Diagnostics",
+      "paper_date": "2026-07-27",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-07-30T09:27:38",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-27-medrxiv-an_explainable_transformer_model_learning_from_entire_treatment_timelines_for_pan_cancer_r",
+    "doi": "10.64898/2026.07.24.26358838",
+    "date": "2026-07-27",
+    "title": "An explainable transformer model learning from entire treatment timelines for pan-cancer risk profiling across healthcare systems",
+    "authors": "Keyl, P.; Kiermeyer, N.; Bosserhoff, J.; Lenfers, T.; Niederhauser, T.; Fan, B.; Schnake, T.; Schallenberg, S.; Aubele, F.; Kuss, S.; Idaji, M. J.; Jurmeister, P.; Kim, M.; Bauer, S.; Bechrakis, N.; Forsting, M.; Fuehrer-Sakel, D.; Glas, M.; Gruenwald, V.; Hadaschik, B.; Herrmann, K.; Kasper, S.; Kimmig, R.; Lang, S.; Pretzell, I.; Rassaf, T.; Roesch, A.; Siveke, J. T.; Guberina, M.; Sure, U.; Wichert, M.; Ingrisch, M.; Unger, K.; Behr, J.; Teupser, D.; Stief, C. G.; Mayerle, J.; Harbeck, N.; Tufman, A.; Ricke, J.; Lindner, L. H.; Priglinger, S.; Hoeglinger, G.; Mahner, S.; Canis, M.; Heinzerl",
+    "abstract": "Cancer outcomes vary widely between individual patients, each accumulating an irregular record of treatments, diagnoses, measurements, and complications. Current prognostic models reduce this complexity into a single snapshot, focus on narrow clinical settings, and rarely generalize across hospitals. Here we introduce Chronicle, an explainable transformer that learns from entire patient trajectories to predict diverse clinical outcomes throughout the disease course while capturing both short- and long-term temporal dependencies. Trained on 53.7 million longitudinal data points from 51,711 patients spanning 67 cancer types, Chronicle operates natively on irregular data without imputation and jointly predicts eight endpoints within a flexible framework adaptable to additional outcomes. Chronicle outperformed cross-sectional models for overall survival prediction (C-index 0.84 vs 0.76-0.79), stratified patients more accurately than established prognostic systems, including TNM stage, and predicted seven adverse event and transfusion endpoints (AUC 0.80-0.92). Applied without retraining to 69,341 patients in Germany, Switzerland, and the United States, Chronicle generalized across healthcare systems and improved further with local fine-tuning. Integrated explainability traced each risk update to patient-specific clinical factors, revealing distinct temporal persistence of prognostic information, with relevance half-lives ranging from weeks for therapies to nearly one year for baseline characteristics. These findings demonstrate that learning from hospital-wide patient trajectories enables interpretable and continuously updated predictions, providing a scalable framework to support individualized treatment decisions.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-27",
+    "updated": "2026-07-27",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358838v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358838v1.full.pdf"
+      }
+    ],
+    "score": 56,
+    "infographic": {
+      "key_insight": "Chronicle is an explainable transformer that learns from full, irregular cancer care timelines to generate continuously updated risk predictions across many cancer types and outcomes.",
+      "clinical_relevance": "By using hospital-wide longitudinal data, it may help clinicians better stratify prognosis, anticipate adverse events, and support individualized treatment decisions across different healthcare systems.",
+      "method": [
+        "Trained on 53.7 million longitudinal data points from 51,711 patients across 67 cancer types",
+        "Models entire patient trajectories natively, without imputation, and predicts eight clinical endpoints in one framework",
+        "Uses explainability to attribute each risk update to patient-specific clinical factors over time"
+      ],
+      "evidence_signal": "In the abstract, Chronicle outperformed snapshot-based models for overall survival (C-index 0.84 vs 0.76-0.79), achieved AUC 0.80-0.92 for seven adverse event/transfusion endpoints, and generalized to 69,341 external patients across Germany, Switzerland, and the United States.",
+      "watch_item": "Although promising, performance, calibration, and workflow fit may vary by site and need local validation and careful integration before real-world use.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#AIinCancer",
+        "#ExplainableAI",
+        "#ClinicalPrediction",
+        "#TransformerModels"
+      ],
+      "paper_id": "2026-07-27-medrxiv-an_explainable_transformer_model_learning_from_entire_treatment_timelines_for_pan_cancer_r",
+      "paper_title": "An explainable transformer model learning from entire treatment timelines for pan-cancer risk profiling across healthcare systems",
+      "paper_date": "2026-07-27",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-30T09:27:41",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-24-medrxiv-localizing_epileptogenic_zones_using_interictal_intracranial_electroencephalography_and_de",
+    "doi": "10.64898/2026.07.22.26358705",
+    "date": "2026-07-24",
+    "title": "Localizing epileptogenic zones using interictal intracranial electroencephalography and deep learning",
+    "authors": "Qiang, Z.; Okoroafor, F.; Piper, R. J.; Velanoski, D.; Moeller, F.; Cooray, G.; Das, K.; Eltze, C.; Pujar, S.; Tahir, M. Z.; Rosch, R.; Tisdall, M.; Chari, A.",
+    "abstract": "IntroductionApproximately 25% of the 51.7 million people with epilepsy globally develop drug-resistant disease, for whom surgical resection offers a potential path to seizure freedom contingent on accurate localization of the epileptogenic zone (EZ). Current practice relies on ictal intracranial EEG (iEEG) monitoring, yet the extend of the seizure onset zone, delineated in this way does not reliably predict surgical outcomes. Most existing machine learning approaches exploit single-channel features involved in ictal onset, which fail to capture the network-level topology of the interictal period. None have demonstrated generalization across implantation modalities or clinical centers. MethodsWe developed a deep learning architecture operating on multichannel interictal iEEG, comprising a Morlet wavelet temporal Transformer encoder and a permutation-equivariant Induced Set Attention Block spatial encoder modelling long-range inter-electrode interactions. The model was evaluated on 50.5 hours of iEEG from 161 patients across 17,012 channels at seven independent centers, using leave-one-center-out (LOCO) cross-validation. The EZ was defined by the overlap between the clinical seizure onset zone and the resected area in patients achieving Engel Class I post-surgical outcome. Performance was benchmarked against a literature-derived pooled AUROC from a systematic review and meta-analysis of 11 published studies (46 study arms), and against electrophysiological event-rate baselines including IED rate and IED-HFO co-occurrence rate. ResultsThe model achieved a pooled AUROC of 0.778 (95% CI: 0.748-0.808), comparable to both the literature benchmark (0.765; 95% CI: 0.743-0.787) and the IED rate baseline (0.782; 95% CI: 0.750-0.814), with above-chance discrimination at all seven held-out centers (per-center AUROC: 0.668-0.925). Classical machine learning classifiers applied to spectral features under LOCO cross-validation performed substantially below both the electrophysiological baselines and the literature benchmark, with the best-performing classifier (XGBoost) achieving an AUROC of 0.642. Implantation modality (SEEG vs. ECOG; p = 0.494), vigilance state (sleep vs. wakefulness; p = 0.350), and age group (pediatric vs. adult; p = 0.202) did not significantly affect model performance. A greater proportion of channels designated as EZ was the only patient-level variable inversely associated with performance ({rho} = -0.192, p = 0.015). Extraction of model attention scores allowed interrogation of discriminative interictal epochs. DiscussionModel performance was comparable to established electrophysiological baselines and the literature benchmark under cross-center generalization, with performance variability attributable to principally EZ spatial extent. Model attributions aligned with established interictal electrophysiology. Limitations include the retrospective design, a predominantly pediatric cohort, and the absence of structural neuroimaging or effective connectivity priors. ConclusionA temporally and spatially aware deep learning architecture can localize the EZ from interictal iEEG with consistent cross-center and cross-modality generalization, performing comparably to established electrophysiological biomarkers without requiring manual annotation. These findings establish a foundation for AI-assisted EZ hypothesis generation and motivate prospective validation in clinical presurgical workflows.",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-07-24",
+    "updated": "2026-07-24",
+    "primary_category": "surgery",
+    "categories": [
+      "surgery"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.22.26358705v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.22.26358705v1.full.pdf"
+      }
+    ],
+    "score": 53,
+    "infographic": {
+      "key_insight": "A deep-learning model using interictal intracranial EEG can identify epileptogenic zones across centers with performance comparable to published benchmarks and simple electrophysiology baselines.",
+      "clinical_relevance": "If validated further, this approach could help improve pre-surgical localization of seizure-generating brain tissue in drug-resistant epilepsy.",
+      "method": [
+        "Morlet wavelet temporal Transformer for multichannel interictal iEEG",
+        "Permutation-equivariant Set Attention spatial encoder to model long-range electrode interactions",
+        "Leave-one-center-out validation across seven independent centers"
+      ],
+      "evidence_signal": "Trained and tested on 50.5 hours of iEEG from 161 patients and 17,012 channels, the model achieved pooled AUROC 0.778 and performed above chance at all held-out centers.",
+      "watch_item": "Results are promising but still depend on retrospective cross-center validation and an EZ definition tied to postoperative Engel Class I outcomes, so prospective clinical utility remains unproven.",
+      "hashtags": [
+        "#EpilepsyAI",
+        "#IntracranialEEG",
+        "#DeepLearning",
+        "#Neurosurgery",
+        "#MedicalAI"
+      ],
+      "paper_id": "2026-07-24-medrxiv-localizing_epileptogenic_zones_using_interictal_intracranial_electroencephalography_and_de",
+      "paper_title": "Localizing epileptogenic zones using interictal intracranial electroencephalography and deep learning",
+      "paper_date": "2026-07-24",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-07-30T09:27:43",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-24-medrxiv-an_explainable_ai_driven_classification_framework_for_parkinson_s_disease_detection_via_ac",
+    "doi": "10.64898/2026.07.22.26358742",
+    "date": "2026-07-24",
+    "title": "An Explainable AI-Driven Classification Framework for Parkinson's Disease Detection via Acoustic Speech Features: A Comparative Machine Learning Study",
+    "authors": "Howlader, D.; AHMED, T.; Rahman, M. M.",
+    "abstract": "Parkinsons Disease (PD) is a progressive neurodegenerative disorder which significantly affects motor function, daily coordination and verbal communication. Speech-based biomarkers provide a non-invasive and scalable approach to early detection, as dysphonia is one of the earliest and most consistent clinical markers of PD. The dataset used in this study is publicly available and consists of 756 voice recordings from 252 subjects (188 with PD and 64 neurologically healthy controls) with a wide range of acoustic parameters such as Mel-Frequency Cepstral Coefficients (MFCCs), energy-based parameters, and higher-order statistical derivatives. After systematic preprocessing and z-score normalisation, five machine learning classifiers were tested: K-Nearest Neighbors (KNN), Extreme Gradient Boosting (XGBoost), Random Forest (RF), Support Vector Machine (SVM), and Naive Bayes (NB) under a subject-independent, GroupKFold cross-validation protocol. The KNN classifier performed best overall with an accuracy of 92.10%, F1 score of 94.50%, and a precision rate of 98.09%, reducing the number of false positive diagnoses. To overcome the lack of interpretability of black-box predictive models, SHapley Additive exPlanations (SHAP) were used to explain the contribution of each feature to the prediction of an individual. The most diagnostically salient acoustic biomarkers were identified as features from the SHAP analysis: std_delta_delta_log_energy, the first Mel-Frequency Cepstral Coefficient, and Tunable Q-Factor Wavelet Transform (TQWT). This work introduces a machine learning framework that is both reproducible and clinically interpretable, combining high predictive accuracy with transparent, physiologically grounded decision logic.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-07-24",
+    "updated": "2026-07-24",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.22.26358742v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.22.26358742v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "An explainable machine-learning pipeline using acoustic speech features can classify Parkinson’s disease with high accuracy while highlighting the specific voice biomarkers driving each prediction.",
+      "clinical_relevance": "If validated externally, this approach could support scalable, non-invasive screening or triage using ordinary speech recordings.",
+      "method": [
+        "756 voice recordings from 252 subjects (188 PD, 64 controls) were preprocessed and z-score normalized.",
+        "Five classifiers were compared under subject-independent GroupKFold cross-validation: KNN, XGBoost, Random Forest, SVM, and Naive Bayes.",
+        "SHAP was used to interpret feature contributions and identify the most informative acoustic biomarkers."
+      ],
+      "evidence_signal": "KNN performed best, achieving 92.10% accuracy, 94.50% F1, and 98.09% precision on the study’s cross-validated evaluation.",
+      "watch_item": "Performance was reported on a public dataset, so external validation across different recording conditions, languages, and populations is still needed before real-world use.",
+      "hashtags": [
+        "#ParkinsonsDisease",
+        "#ExplainableAI",
+        "#MachineLearning",
+        "#SpeechBiomarkers",
+        "#HealthAI"
+      ],
+      "paper_id": "2026-07-24-medrxiv-an_explainable_ai_driven_classification_framework_for_parkinson_s_disease_detection_via_ac",
+      "paper_title": "An Explainable AI-Driven Classification Framework for Parkinson's Disease Detection via Acoustic Speech Features: A Comparative Machine Learning Study",
+      "paper_date": "2026-07-24",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-07-30T09:27:46",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-24-medrxiv-neuro_symbolic_ai_for_automated_pathology_quality_measurement",
+    "doi": "10.64898/2026.07.22.26358635",
+    "date": "2026-07-24",
+    "title": "Neuro-Symbolic AI for Automated Pathology Quality Measurement",
+    "authors": "Brann, F.; Tadele, L.; Skau, C.; Bocsi, G.; Clarke, A. K.",
+    "abstract": "BackgroundClinical quality measurement often relies on manual abstraction of medical records, an approach that is costly, burdensome, and often infeasible for measures requiring interpretation of narrative text; these constraints have shaped measure development itself, filtering out clinically important measures that are too difficult to operationalize. We evaluated whether neuro-symbolic artificial intelligence (NSAI), which combines large language model extraction with symbolic reasoning, could reliably abstract complex quality measures from narrative pathology reports. MethodsThe NSAI system decomposes each measure into atomic questions and is aligned to real-world reports through case-based refinement, an iterative human-in-the-loop process. Using 2,000 independently double-abstracted reports, we compared NSAI-based abstraction against trained human abstractors across four pathology quality measures established by the College of American Pathologists. ResultsThe NSAI systems agreement with the adjudicated gold standard (Cohens{kappa} = 0.95) matched or modestly exceeded that of the trained human abstractors measured against the same standard ({kappa} = 0.92), with particularly strong performance on Gastrointestinal Metaplasia (CAP 43). In component analyses, case-based refinement drove the largest accuracy gains (up to {Delta}{kappa} = +0.25), whereas architectural decomposition primarily reduced performance variance across language-model backends more than tenfold, a property essential for clinical deployment. ConclusionsThese findings suggest that automated abstraction could enable census-level quality measurement, reduce reporting burden, and expand the range of clinically meaningful measures that can be operationalized from narrative clinical documentation. Plain-Language SummaryChecking whether cancer pathology reports meet quality-of-care standards usually requires trained staff to read each report by hand, which is slow and costly. We tested an artificial-intelligence system that combines language models with rule-based logic to do this automatically, and found that it agreed with an expert-reviewed answer key as well as, or slightly better than, trained human reviewers, while producing consistent results across several different underlying AI models. Such a system could let health organizations monitor care quality across every patient record rather than a small sample, and measure aspects of care that are currently too labor-intensive to track.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-24",
+    "updated": "2026-07-24",
+    "primary_category": "health systems and quality improvement",
+    "categories": [
+      "health systems and quality improvement"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.22.26358635v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.22.26358635v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "A neuro-symbolic AI system can accurately automate complex pathology quality-measure abstraction from narrative reports by combining language-model extraction with symbolic reasoning and human-in-the-loop refinement.",
+      "clinical_relevance": "This approach could reduce manual reporting burden and make more clinically meaningful quality measures feasible to measure at scale from pathology documentation.",
+      "method": [
+        "Decomposed each quality measure into atomic questions.",
+        "Aligned the system to real-world pathology reports using case-based refinement.",
+        "Compared NSAI with trained human abstractors on 2,000 independently double-abstracted reports across four CAP pathology measures."
+      ],
+      "evidence_signal": "Against an adjudicated gold standard, NSAI achieved Cohen’s kappa = 0.95, matching or slightly exceeding trained human abstractors (kappa = 0.92), with strongest performance on Gastrointestinal Metaplasia (CAP 43).",
+      "watch_item": "Performance was evaluated on specific pathology quality measures, so broader generalization and safe deployment will still require validation across sites, report styles, and model backends.",
+      "hashtags": [
+        "#NeuroSymbolicAI",
+        "#PathologyAI",
+        "#ClinicalQuality",
+        "#PrecisionOncology",
+        "#HealthInformatics"
+      ],
+      "paper_id": "2026-07-24-medrxiv-neuro_symbolic_ai_for_automated_pathology_quality_measurement",
+      "paper_title": "Neuro-Symbolic AI for Automated Pathology Quality Measurement",
+      "paper_date": "2026-07-24",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-30T09:27:49",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-24-medrxiv-translational_study_of_using_focm_ts_metabolites_for_supporting_autism_spectrum_disorder_d",
+    "doi": "10.64898/2026.01.06.26343525",
+    "date": "2026-07-24",
+    "title": "Translational Study of using FOCM/TS Metabolites for Supporting Autism Spectrum Disorder Diagnosis",
+    "authors": "Arici, H.; Causey, M.; Patra, S.; Kruger, U.; Villegas Uribe, C. A.; Melmed, R.; Ciuk, C.; Crisler, S.; Marler, S.; Witters-Cundiff, A.; Bhadresa, S.; Slattery, J.; Hahn, J.",
+    "abstract": "PurposeSeveral clinical studies have shown correlations between certain physiological measurements and an ASD diagnosis. Such findings, however, have generally not resulted in tangible progress towards practical translation due to a number of factors which this work seeks to address. MethodsThis paper presents a double-blind case/control trial design in which metabolic profiles, collected at two developmental pediatric clinics, were collected from children on a diagnostic waitlist for the purpose of developing a blood-based test for ASD. Besides obtaining blood samples, the children underwent gold-standard clinical evaluations, including the Autism Diagnostic Observation Schedule (ADOS), Mullens Scale of Early Learning (MSEL), and Vineland Adaptive Behavior Scale (VABS). The analysis, together with a complete medical history and physical exam, allowed to confirm or rule-out suspected ASD using DSM-5 criteria. The study was based on a cohort of 140 children between the ages 18-60 months, that were referred to a developmental pediatrician because of concerns in their development. Results114 of these children received an ASD diagnosis, while 26 were diagnosed with non-ASD related developmental delays. Based on the measured metabolites, artificial intelligence-based classification algorithms allowed for an over 80% accuracy in predicting whether a sample came from a child diagnosed with ASD or not. ConclusionWhile these results need to be replicated in a larger study, especially involving more children with non-ASD related developmental delays, this is the first work using physiological measurements, coupled with AI, to support ASD diagnoses in a clinically relevant setting. The clinical trial that was part of this work was registered on clinicaltrials.gov as NCT04672967 and was entitled the Metabolic Autism Prediction (MAP) Study. The study was IRB approved by the Biomedical Research Alliance of New York (BRANY) IRB on August 12, 2021 (approval number: A21-10-282-888).",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-07-24",
+    "updated": "2026-07-24",
+    "primary_category": "pediatrics",
+    "categories": [
+      "pediatrics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.01.06.26343525v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.01.06.26343525v2.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "In a double-blind clinical study, blood metabolic profiles combined with AI could help distinguish children with ASD from those with other developmental delays.",
+      "clinical_relevance": "If validated in larger cohorts, this approach could support earlier, more objective ASD diagnostic evaluation in developmental pediatric settings.",
+      "method": [
+        "140 children aged 18–60 months from diagnostic waitlists at two pediatric clinics",
+        "Blood metabolic profiles were collected alongside gold-standard assessments (ADOS, MSEL, VABS) and full clinical review",
+        "DSM-5-based clinical diagnosis was used as the reference standard for ASD vs non-ASD delay"
+      ],
+      "evidence_signal": "Using metabolite data, AI-based classifiers achieved over 80% accuracy for predicting whether a sample came from a child with ASD.",
+      "watch_item": "The study needs replication in larger, more diverse samples, especially with more non-ASD developmental delay cases, before clinical implementation.",
+      "hashtags": [
+        "#ASDResearch",
+        "#Biomarkers",
+        "#MachineLearning",
+        "#ClinicalTranslation",
+        "#PediatricDiagnostics"
+      ],
+      "paper_id": "2026-07-24-medrxiv-translational_study_of_using_focm_ts_metabolites_for_supporting_autism_spectrum_disorder_d",
+      "paper_title": "Translational Study of using FOCM/TS Metabolites for Supporting Autism Spectrum Disorder Diagnosis",
+      "paper_date": "2026-07-24",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-07-30T09:27:52",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-24-medrxiv-ai_enabled_echocardiography_identifies_an_adverse_epicardial_adiposity_phenotype_associate",
+    "doi": "10.64898/2026.07.22.26358690",
+    "date": "2026-07-24",
+    "title": "AI-Enabled Echocardiography Identifies an Adverse Epicardial Adiposity Phenotype Associated with Cardiometabolic Dysfunction",
+    "authors": "Aminorroaya, A.; Coppi, A.; McNamara, R. L.; Lima, J. A. C.; Krumholz, H. M.; Antoniades, C.; Khera, R.; Oikonomou, E. K.",
+    "abstract": "BackgroundExcess epicardial adipose tissue (EAT) is associated with cardiovascular-kidney-metabolic (CKM) dysfunction, but its assessment has traditionally required advanced imaging. We tested whether AI-enhanced echocardiography could enable scalable phenotyping of adverse epicardial adiposity and identify individuals at increased cardiometabolic risk. MethodsWe developed PanAdipo, a video-based deep learning model in 1,114,441 videos from 28,797 studies across the Yale-New Haven Health System (YNHHS; 2016-2022), using expert reader annotations of prominent EAT (2.5% of studies). PanAdipo was evaluated in four cohorts: a temporally distinct YNHHS TTE set (n=4,588), an emergency-department point-of-care ultrasound cohort across YNHHS (n=10,957), the geographically distinct MIMIC-IV cohort (n=4,549), and the community-based Multi-Ethnic Study of Atherosclerosis (MESA Exam 6, n=2,740). Analyses examined (i) discrimination of prominent EAT; (ii) independence from conventional echocardiographic outputs; (iii) spatial explainability using gradient-weighted class activation mapping; (iv) correspondence with paired CT-derived body composition phenotypes (n=5,594); and (v) age-, sex-, and BMI-independent associations with cardiometabolic biomarkers and incident metabolic disease. ResultsIn the held-out health system test set, PanAdipo discriminated prominent EAT with an AUROC of 0.91 (95% CI, 0.88-0.94), exceeding conventional measures of cardiac function and structure. In explainability analyses, the models attention localized to the epicardial area across views and throughout the cardiac cycle. On paired cardiac CT imaging, the PanAdipo score correlated most strongly with epicardial adiposity (Spearman {rho}=0.75; P<10-300) with weaker correlations with other adipose and non-adipose compartments and only modest correlations with BMI across cohorts ({rho}=0.19-0.40). In MESA, greater PanAdipo scores were independently associated with higher HOMA-IR and triglycerides, associations that persisted among normoglycemic participants. Higher PanAdipo scores were also associated with newly documented metabolic disease, including MASLD/MASH, after adjustment for BMI (HRpooled 1.25 [1.08-1.44] per 1-SD increment in log[PanAdipo]). ConclusionsAI-enabled echocardiography provides a scalable, view-agnostic biomarker that characterizes adverse epicardial adiposity and is associated with cardiometabolic dysfunction, highlighting a new role for echocardiography in CKM risk stratification. CLINICAL PERSPECTIVEO_ST_ABSWhat Is New?C_ST_ABSO_LIAI-enabled echocardiography derives a scalable, view-agnostic biomarker of adverse epicardial adiposity from standard transthoracic and point-of-care ultrasound acquisitions. C_LIO_LIThe biomarker captures information not represented by conventional echocardiographic measurements and corresponds most strongly to CT-defined epicardial adiposity on paired cross-sectional imaging. C_LIO_LIHigher biomarker values are associated with insulin resistance, dyslipidemia, and subsequently documented metabolic disease beyond body mass index and waist-hip ratio. C_LI What Are the Clinical Implications?O_LIRoutine echocardiography may provide an opportunistic window into adverse adiposity and extend cardiac imaging to metabolic risk stratification. C_LIO_LIThis approach provides a portable platform for prospective evaluation of point-of-care adiposity phenotyping, integration with complementary cardiometabolic data, and enrichment of prevention trials with participants at increased metabolic risk. C_LI",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-07-24",
+    "updated": "2026-07-24",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.22.26358690v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.22.26358690v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "AI applied to routine echocardiography can detect an adverse epicardial fat phenotype that tracks with cardiometabolic dysfunction better than standard echo measures.",
+      "clinical_relevance": "This could make risk stratification for cardiometabolic disease more scalable by using imaging already common in clinical care, though it is not yet a diagnostic or treatment tool.",
+      "method": [
+        "Trained a video-based deep learning model (PanAdipo) on 1.1M echo videos from 28,797 studies.",
+        "Validated performance across multiple cohorts, including health-system, emergency department, MIMIC-IV, and MESA datasets.",
+        "Compared AI scores with CT-derived body composition, biomarkers, and incident metabolic outcomes."
+      ],
+      "evidence_signal": "PanAdipo achieved AUROC 0.91 for prominent epicardial adipose tissue in held-out testing and showed strongest correlation with CT epicardial fat (Spearman rho=0.75), with associations to insulin resistance, triglycerides, and new metabolic disease.",
+      "watch_item": "The model requires external validation and careful implementation because performance may vary by scanner, site, and patient population, and it identifies risk rather than proving causality.",
+      "hashtags": [
+        "#AIinMedicine",
+        "#Echocardiography",
+        "#EpicardialFat",
+        "#CardiometabolicHealth",
+        "#DeepLearning"
+      ],
+      "paper_id": "2026-07-24-medrxiv-ai_enabled_echocardiography_identifies_an_adverse_epicardial_adiposity_phenotype_associate",
+      "paper_title": "AI-Enabled Echocardiography Identifies an Adverse Epicardial Adiposity Phenotype Associated with Cardiometabolic Dysfunction",
+      "paper_date": "2026-07-24",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-07-30T09:27:55",
+      "generator": "openai"
+    }
+  }
+]

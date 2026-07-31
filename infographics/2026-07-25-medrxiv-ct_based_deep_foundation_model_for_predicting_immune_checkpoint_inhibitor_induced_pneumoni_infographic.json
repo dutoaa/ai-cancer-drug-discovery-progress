@@ -1,24 +1,24 @@
 {
-  "key_insight": "A CT-based deep foundation model (CIPHER) can predict which lung cancer patients are at higher risk of immune checkpoint inhibitor–induced pneumonitis before treatment starts.",
-  "clinical_relevance": "If validated further, this could help clinicians identify patients needing closer monitoring and earlier intervention when starting immunotherapy.",
+  "key_insight": "A CT-based self-supervised foundation model (CIPHER) can predict which lung cancer patients are at higher risk of immune checkpoint inhibitor–induced pneumonitis before treatment starts.",
+  "clinical_relevance": "If validated in broader settings, this could help clinicians identify patients needing closer monitoring or more tailored immunotherapy planning.",
   "method": [
-    "Self-supervised pretraining on 590,284 CT slices from 2,500 NSCLC patients using contrastive learning plus a transformer-based masked autoencoder.",
-    "Fine-tuned on an internal immunotherapy cohort of 347 patients, with 254 non-ICI-P cases used for training and 93 patients held out for validation.",
-    "Compared against clinical, radiomics, and ensemble models, then tested in an external Johns Hopkins cohort."
+    "Pretrained on 590,284 CT slices from 2,500 NSCLC patients using contrastive learning plus a transformer-based masked autoencoder.",
+    "Fine-tuned on an internal immunotherapy cohort, using only non-pneumonitis cases for training and a held-out validation set for evaluation.",
+    "Benchmarked against clinical, radiomics, and ensemble models, then tested in an external Johns Hopkins NSCLC cohort."
   ],
-  "evidence_signal": "CIPHER achieved AUCs of 0.77–0.85 internally, AUC 0.83 in head-to-head benchmarking, and external validation performance of AUC 0.83 with 81.7% balanced accuracy.",
-  "watch_item": "This is an imaging-based predictive model from retrospective cohorts, so broader prospective validation and workflow integration are still needed before real-world use.",
+  "evidence_signal": "CIPHER achieved AUCs of 0.77–0.85 internally, AUC 0.83 in head-to-head testing, and AUC 0.83 with 81.7% balanced accuracy in external validation.",
+  "watch_item": "This is a retrospective model study, so prospective validation and site-to-site generalizability are still needed before routine clinical use.",
   "hashtags": [
     "#CancerAI",
-    "#RadiologyAI",
-    "#Immunotherapy",
     "#DeepLearning",
-    "#LungCancer"
+    "#LungCancer",
+    "#RadiologyAI",
+    "#Immunotherapy"
   ],
   "paper_id": "2026-07-25-medrxiv-ct_based_deep_foundation_model_for_predicting_immune_checkpoint_inhibitor_induced_pneumoni",
   "paper_title": "CT-Based Deep Foundation Model for Predicting Immune Checkpoint Inhibitor-Induced Pneumonitis Risk in Lung Cancer",
   "paper_date": "2026-07-25",
   "paper_category": "Cancer AI Methods",
-  "generated_at": "2026-07-30T09:27:28",
+  "generated_at": "2026-07-31T09:40:38",
   "generator": "openai"
 }
