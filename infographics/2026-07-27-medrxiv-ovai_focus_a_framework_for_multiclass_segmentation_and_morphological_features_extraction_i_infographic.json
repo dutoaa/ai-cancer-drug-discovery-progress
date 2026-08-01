@@ -1,24 +1,24 @@
 {
-  "key_insight": "OvAi Focus combines AI segmentation and morphology extraction to make gynecological ultrasound interpretation of healthy ovaries and adnexal masses more objective.",
-  "clinical_relevance": "By standardizing how ovarian structures and mass features are identified, the framework could support more consistent ultrasound reporting in ovarian cancer assessment.",
+  "key_insight": "OvAi Focus combines AI-based segmentation and morphology extraction to make gynecological ultrasound interpretation of ovaries and adnexal masses more objective and standardized.",
+  "clinical_relevance": "By helping identify healthy ovarian structures and classify adnexal mass features, this framework could support more consistent ultrasound reporting in ovarian cancer assessment.",
   "method": [
-    "Segmentation module identifies healthy ovaries plus solid and cystic components of adnexal masses.",
-    "Morphology module extracts IOTA-based keywords describing adnexal mass features.",
-    "Outputs were compared against ground-truth masks and interobserver agreement measures."
+    "Segmented healthy ovaries and adnexal mass components, including solid and cystic regions.",
+    "Extracted IOTA-based morphological keywords from ultrasound images.",
+    "Compared outputs against ground truth masks and interobserver agreement metrics."
   ],
-  "evidence_signal": "In the abstract, segmentation DICE scores ranged from 0.62 for functional ovary to 0.87 for the whole adnexal mass, while morphology agreement showed Fleiss Kappa of 0.16 to 0.57 and percent agreement of 47% to 90%.",
-  "watch_item": "Performance is variable across targets, and the morphology module still depends on subjective reference labels and clinical validation before routine use.",
+  "evidence_signal": "Segmentation DICE scores ranged from 0.62 for functional ovary to 0.87 for whole adnexal mass, while morphology agreement showed Fleiss kappa of 0.16 to 0.57 and percent agreement of 47% to 90%.",
+  "watch_item": "Performance varied by structure and morphology task, so clinical use would require further validation, especially for lower-agreement features and real-world workflow integration.",
   "hashtags": [
-    "#OvarianCancer",
-    "#UltrasoundAI",
-    "#MedicalImaging",
     "#PrecisionOncology",
-    "#AIinHealthcare"
+    "#UltrasoundAI",
+    "#OvarianCancer",
+    "#MedicalImaging",
+    "#SegmentationAI"
   ],
   "paper_id": "2026-07-27-medrxiv-ovai_focus_a_framework_for_multiclass_segmentation_and_morphological_features_extraction_i",
   "paper_title": "OvAi Focus: A framework for multiclass segmentation and morphological features extraction in gynecological ultrasound",
   "paper_date": "2026-07-27",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-31T09:40:44",
+  "generated_at": "2026-08-01T09:03:15",
   "generator": "openai"
 }

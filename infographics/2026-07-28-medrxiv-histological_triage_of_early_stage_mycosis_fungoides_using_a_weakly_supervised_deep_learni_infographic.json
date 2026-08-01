@@ -1,24 +1,24 @@
 {
-  "key_insight": "A weakly supervised deep learning model (MIMIC) can triage early-stage mycosis fungoides from benign inflammatory dermatoses on whole-slide histology with high sensitivity.",
-  "clinical_relevance": "As a screening-style aid, it could help pathologists prioritize cases and reduce unnecessary ancillary testing while minimizing missed mycosis fungoides cases.",
+  "key_insight": "A weakly supervised deep learning model (MIMIC) can triage early-stage mycosis fungoides on whole-slide images and help separate it from benign inflammatory dermatoses with high sensitivity.",
+  "clinical_relevance": "As a screening aid, it could reduce unnecessary ancillary testing and pathologist workload while preserving near-complete detection of classic MF cases.",
   "method": [
-    "Trained with attention-based multiple-instance learning on 3,339 whole-slide images from two Dutch centers.",
-    "Externally validated on 371 slides from four independent European centers.",
-    "Compared against 11 pathologists in a blinded reader study and then tested in a consecutive held-out clinical cohort."
+    "Trained with attention-based multiple-instance learning on 3,339 WSIs from two Dutch centers using expert-panel consensus labels.",
+    "Externally validated on 371 WSIs from four independent European centers.",
+    "Compared against 11 (dermato-)pathologists in a blinded reader study and then tested in a held-out consecutive clinical cohort."
   ],
-  "evidence_signal": "The updated model reached AUROC 0.87 in the held-out cohort, with 97.8% sensitivity and 50.2% specificity at a prespecified low-risk threshold.",
-  "watch_item": "Performance was evaluated in retrospective and single-system deployment settings, so generalizability, calibration, and workflow impact still need prospective confirmation.",
+  "evidence_signal": "The updated model achieved AUROC 0.87 in the held-out cohort, with 97.8% sensitivity and 50.2% specificity at the prespecified 0.04 threshold.",
+  "watch_item": "Performance was evaluated in a retrospective, mainly histology-based workflow, so prospective real-world impact and generalizability across broader biopsy populations still need confirmation.",
   "hashtags": [
     "#CancerAI",
     "#DigitalPathology",
-    "#DeepLearning",
     "#MycosisFungoides",
-    "#Histology"
+    "#DeepLearning",
+    "#ClinicalValidation"
   ],
   "paper_id": "2026-07-28-medrxiv-histological_triage_of_early_stage_mycosis_fungoides_using_a_weakly_supervised_deep_learni",
   "paper_title": "Histological triage of early-stage mycosis fungoides using a weakly supervised deep learning-based model: a multicentre, external validation, and clinical utility study",
   "paper_date": "2026-07-28",
   "paper_category": "Cancer AI Methods",
-  "generated_at": "2026-07-31T09:40:35",
+  "generated_at": "2026-08-01T09:03:04",
   "generator": "openai"
 }

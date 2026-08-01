@@ -1,24 +1,24 @@
 {
-  "key_insight": "Deep learning on trial-level auditory oddball ERP waveforms classified schizophrenia vs healthy controls better than classical models using summary ERP features.",
-  "clinical_relevance": "If validated, this approach could help develop more objective electrophysiology-based tools to support individual-level psychiatric classification and biomarker research.",
+  "key_insight": "Trial-level auditory oddball ERP waveforms, analyzed with deep learning, classified schizophrenia versus healthy controls better than models using conventional summary features.",
+  "clinical_relevance": "This suggests EEG waveform-based machine learning may help develop objective, individual-level biomarkers for schizophrenia-related neural processing, though it is not yet a clinical diagnostic tool.",
   "method": [
-    "258 patients with schizophrenia and 142 healthy controls were studied.",
-    "EEG from an auditory duration oddball task was converted into trial-level mismatch ERP waveforms (-100 to 500 ms).",
-    "Five deep learning models were compared with classical machine learning on 18 ERP summary features, with demographic residualization fit only on training data."
+    "258 patients with schizophrenia and 142 healthy controls were recorded during an auditory duration oddball EEG task.",
+    "EEG epochs were segmented from -100 to 500 ms and trial-level mismatch waveforms were created from deviant trials.",
+    "Five deep learning models on full residualized ERP waveforms were compared with classical models using 18 ERP summary features."
   ],
-  "evidence_signal": "On the held-out test set, deep learning reached AUROC 0.797-0.857, outperforming classical feature-based models at 0.705-0.720.",
-  "watch_item": "Performance was based on a single participant-level split, so broader validation across independent sites and recordings is still needed.",
+  "evidence_signal": "On the held-out test set, deep learning achieved AUROC 0.797-0.857, outperforming classical feature-based models at 0.705-0.720.",
+  "watch_item": "Results come from a single study design with fixed participant splits, so external validation and robustness across sites, devices, and populations are still needed.",
   "hashtags": [
-    "#DeepLearning",
     "#EEG",
-    "#ERP",
+    "#DeepLearning",
     "#Schizophrenia",
-    "#Biomarkers"
+    "#Biomarkers",
+    "#MachineLearning"
   ],
   "paper_id": "2026-07-27-medrxiv-deep_learning_for_individual_level_classification_of_schizophrenia_versus_healthy_controls",
   "paper_title": "Deep Learning for Individual-Level Classification of Schizophrenia Versus Healthy Controls from Trial-Level Auditory Oddball ERP Waveforms",
   "paper_date": "2026-07-27",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-07-31T09:40:46",
+  "generated_at": "2026-08-01T09:03:18",
   "generator": "openai"
 }

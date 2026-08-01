@@ -24,80 +24,80 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359009v1.full.pdf"
       }
     ],
-    "score": 82,
+    "score": 77,
     "infographic": {
-      "key_insight": "A weakly supervised deep learning model (MIMIC) can triage early-stage mycosis fungoides from benign inflammatory dermatoses on whole-slide histology with high sensitivity.",
-      "clinical_relevance": "As a screening-style aid, it could help pathologists prioritize cases and reduce unnecessary ancillary testing while minimizing missed mycosis fungoides cases.",
+      "key_insight": "A weakly supervised deep learning model (MIMIC) can triage early-stage mycosis fungoides on whole-slide images and help separate it from benign inflammatory dermatoses with high sensitivity.",
+      "clinical_relevance": "As a screening aid, it could reduce unnecessary ancillary testing and pathologist workload while preserving near-complete detection of classic MF cases.",
       "method": [
-        "Trained with attention-based multiple-instance learning on 3,339 whole-slide images from two Dutch centers.",
-        "Externally validated on 371 slides from four independent European centers.",
-        "Compared against 11 pathologists in a blinded reader study and then tested in a consecutive held-out clinical cohort."
+        "Trained with attention-based multiple-instance learning on 3,339 WSIs from two Dutch centers using expert-panel consensus labels.",
+        "Externally validated on 371 WSIs from four independent European centers.",
+        "Compared against 11 (dermato-)pathologists in a blinded reader study and then tested in a held-out consecutive clinical cohort."
       ],
-      "evidence_signal": "The updated model reached AUROC 0.87 in the held-out cohort, with 97.8% sensitivity and 50.2% specificity at a prespecified low-risk threshold.",
-      "watch_item": "Performance was evaluated in retrospective and single-system deployment settings, so generalizability, calibration, and workflow impact still need prospective confirmation.",
+      "evidence_signal": "The updated model achieved AUROC 0.87 in the held-out cohort, with 97.8% sensitivity and 50.2% specificity at the prespecified 0.04 threshold.",
+      "watch_item": "Performance was evaluated in a retrospective, mainly histology-based workflow, so prospective real-world impact and generalizability across broader biopsy populations still need confirmation.",
       "hashtags": [
         "#CancerAI",
         "#DigitalPathology",
-        "#DeepLearning",
         "#MycosisFungoides",
-        "#Histology"
+        "#DeepLearning",
+        "#ClinicalValidation"
       ],
       "paper_id": "2026-07-28-medrxiv-histological_triage_of_early_stage_mycosis_fungoides_using_a_weakly_supervised_deep_learni",
       "paper_title": "Histological triage of early-stage mycosis fungoides using a weakly supervised deep learning-based model: a multicentre, external validation, and clinical utility study",
       "paper_date": "2026-07-28",
       "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-07-31T09:40:35",
+      "generated_at": "2026-08-01T09:03:04",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-07-25-medrxiv-ct_based_deep_foundation_model_for_predicting_immune_checkpoint_inhibitor_induced_pneumoni",
-    "doi": "10.64898/2026.04.21.26351428",
-    "date": "2026-07-25",
-    "title": "CT-Based Deep Foundation Model for Predicting Immune Checkpoint Inhibitor-Induced Pneumonitis Risk in Lung Cancer",
-    "authors": "Muneer, A.; Showkatian, E.; Kitsel, Y.; Saad, M. B.; Sujit, S. J.; Soto, F.; Shroff, G. S.; Faiz, S. A.; Ghanbar, M. I.; Ismail, S. M.; Vokes, N. I.; Cascone, T.; Le, X.; Zhang, J.; Byers, L. A.; Jaffray, D.; Chang, J. Y.; Liao, Z.; Naing, A.; Gibbons, D. L.; Vaporciyan, A. A.; Heymach, J. V.; Suresh, K. S.; Altan, M.; Sheshadri, A.; Wu, J.",
-    "abstract": "BackgroundImmune checkpoint inhibitors (ICIs) have revolutionized cancer therapy but can cause serious immune-related adverse events (irAEs), with pneumonitis (ICI-P) being among the most severe. Early identification of high-risk patients before ICI initiation is critical for close monitoring, timely intervention, and optimizing outcomes. PurposeTo develop and validate a deep learning foundation model to predict ICI-P from baseline CT scans in patients with lung cancer. MethodsWe designed the Checkpoint-Inhibitor Pneumonitis Hazard EstimatoR (CIPHER), a deep learning-powered foundation model combining contrastive learning with a transformer-based masked autoencoder to predict ICI-P from baseline CT scans in lung cancer patients. Using self-supervised learning, CIPHER was pretrained on 590,284 CT slices from 2,500 non-small cell lung cancer (NSCLC) patients, to learn representations of heterogeneous lung parenchyma. Following pretraining, CIPHER was adapted to the internal MDA NSCLC immunotherapy cohort of 347 patients, of whom 33 developed adjudicated ICI-P. Fine-tuning was performed using 254 non-ICI-P patients only, and a held-out internal validation set of 93 patients, including 33 ICI-P cases and 60 non-ICI-P controls, was reserved for evaluation. CIPHER was benchmarked against clinical, radiomics, and ensemble comparator models and externally validated in an independent Johns Hopkins NSCLC cohort of 116 patients, including 20 ICI-P cases and 96 non-ICI-P controls. ResultsIn our internal immunotherapy cohort, CIPHER consistently distinguished patients at elevated risk of ICI-P from those without the event, with AUCs ranging from 0.77 to 0.85. In head-to-head benchmarking, CIPHER achieved an AUC of 0.83, outperforming the clinical, radiomics and ensemble models. In the external validation cohort, CIPHER maintained high performance (AUC=0.83; balanced accuracy=81.7%), exceeding the radiomics model (DeLong p=0.0318) and demonstrating superior specificity without sacrificing sensitivity. By contrast, the radiomics model, despite high sensitivity (85.0%), showed markedly lower specificity (45.8%). Confusion matrix analyses confirmed CIPHERs robust classification, correctly identifying 80 of 96 non-ICI-P cases and 16 of 20 ICI-P cases. ConclusionsWe developed and externally validated CIPHER, a CT-based imaging biomarker for pretreatment ICI-P risk stratification in NSCLC. CIPHER shows promise as a noninvasive tool for ICI-P risk assessment but warrants prospective validation before clinical translation. HighlightsO_LIThe first chest CT AI foundation model for immune toxicity - We introduce CIPHER (Checkpoint-Inhibitor Pneumonitis Hazard EstimatoR), a transformer-based masked autoencoder trained through self-supervised contrastive learning on 590,284 CT slices from 4,242 CT scans from NSCLC patients. This large-scale pretraining enables CIPHER to learn intrinsic lung parenchymal representations linked to immune toxicity risk. C_LIO_LIEarly risk prediction prior to therapy initiation - CIPHER predicts the likelihood of ICI-induced pneumonitis directly from baseline CT scans, offering the first non-invasive foundation model for early risk assessment before ICI. C_LIO_LIRobust validation and benchmarking - We fine-tuned and evaluated CIPHER across independent internal and external NSCLC immunotherapy cohorts, achieving AUCs of 0.77-0.85 internal and 0.83 external testing, surpassing comparator models in both performance and generalizability. C_LIO_LIInterpretability and translational potential - We demonstrate how model-derived attention maps align with clinically relevant pulmonary patterns, enhancing interpretability. C_LIO_LITranslational potential - CIPHERs performance and scalability underscore its potential as a decision-support tool to guide treatment planning, pre-emptive monitoring, and toxicity mitigation in immunotherapy practice. C_LI",
-    "category": "Cancer AI Methods",
+    "id": "2026-07-28-medrxiv-deep_learning_based_pretreatment_cardiovascular_risk_stratification_in_women_with_breast_c",
+    "doi": "10.64898/2026.07.26.26350307",
+    "date": "2026-07-28",
+    "title": "Deep Learning-Based Pretreatment Cardiovascular Risk Stratification in Women with Breast Cancer",
+    "authors": "Dehghan Manshadi, M.; Manouchehri, N.; Hubbert, L.; Liljegren, A.; Manouchehrinia, A.; Linder-Stragliotto, C.; Rantala, J.; Hedayati, E.; Kiani, N.",
+    "abstract": "BackgroundCardiovascular disease is a leading non-cancer cause of morbidity and mortality among breast cancer (BC) survivors. Existing cardiovascular risk tools are not tailored to cancer populations and often rely on cardiology investigations or treatment details unavailable at the initial oncology visit, limiting their use for early referral decisions. MethodsWe conducted a registry-based cohort study including 17,051 women diagnosed with BC in stage I-III or ductal carcinoma in situ in the Stockholm-Gotland region (2008-2019). Using only pre-treatment information routinely available to oncologists, such as demographics, cancer characteristics, planned cancer treatment, baseline comorbidities, medications, and healthcare utilization, we trained and validated a deep learning-based competing-risk model to predict 1-year major adverse cardiovascular events (MACE) risk, accounting for non-cardiovascular death as a competing outcome. Model performance was evaluated using a 3-fold CV and time-dependent concordance indices. Fine-Gray subdistribution hazard models were used to aid interpretability. ResultsThe model demonstrated strong and stable discrimination across validation folds, with a median c-index of 0.84 for 1-year MACE prediction and 0.90 for the competing risk. Key contributors to predictive performance included age at BC diagnosis, prior cardiovascular disease, healthcare utilization patterns, cancer stage, and specific medication profiles. Several predictors with modest marginal hazard ratios in the Fine-Gray model contributed substantially through nonlinear effects and interactions. ConclusionsOur model with a deep learning-based competing-risk structure and using only pre-treatment, oncology-accessible data enables accurate short-term cardiovascular risk stratification in women with BC and may support targeted cardio-oncology referral prior to initiation of systemic therapy.",
+    "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-07-25",
-    "updated": "2026-07-25",
-    "primary_category": "oncology",
+    "published": "2026-07-28",
+    "updated": "2026-07-28",
+    "primary_category": "epidemiology",
     "categories": [
-      "oncology"
+      "epidemiology"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351428v2"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.26.26350307v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351428v2.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.26.26350307v1.full.pdf"
       }
     ],
-    "score": 69,
+    "score": 67,
     "infographic": {
-      "key_insight": "A CT-based self-supervised foundation model (CIPHER) can predict which lung cancer patients are at higher risk of immune checkpoint inhibitor–induced pneumonitis before treatment starts.",
-      "clinical_relevance": "If validated in broader settings, this could help clinicians identify patients needing closer monitoring or more tailored immunotherapy planning.",
+      "key_insight": "A deep learning competing-risk model using only pre-treatment oncology data can accurately identify women with breast cancer at higher 1-year cardiovascular event risk before therapy starts.",
+      "clinical_relevance": "This could help oncology teams triage patients for earlier cardio-oncology referral using information already available at the first visit.",
       "method": [
-        "Pretrained on 590,284 CT slices from 2,500 NSCLC patients using contrastive learning plus a transformer-based masked autoencoder.",
-        "Fine-tuned on an internal immunotherapy cohort, using only non-pneumonitis cases for training and a held-out validation set for evaluation.",
-        "Benchmarked against clinical, radiomics, and ensemble models, then tested in an external Johns Hopkins NSCLC cohort."
+        "Registry-based cohort of 17,051 women with stage I-III breast cancer or DCIS in Stockholm-Gotland (2008-2019)",
+        "Model used demographics, cancer features, planned treatment, comorbidities, medications, and healthcare utilization available before treatment",
+        "Performance assessed with 3-fold cross-validation, time-dependent concordance, and Fine-Gray models for interpretability"
       ],
-      "evidence_signal": "CIPHER achieved AUCs of 0.77–0.85 internally, AUC 0.83 in head-to-head testing, and AUC 0.83 with 81.7% balanced accuracy in external validation.",
-      "watch_item": "This is a retrospective model study, so prospective validation and site-to-site generalizability are still needed before routine clinical use.",
+      "evidence_signal": "Validation showed strong and stable performance, with median c-index 0.84 for 1-year MACE prediction and 0.90 for the competing-risk outcome.",
+      "watch_item": "External validation and prospective testing are still needed before routine deployment, especially because performance may vary across health systems and treatment workflows.",
       "hashtags": [
-        "#CancerAI",
+        "#PrecisionOncology",
+        "#CardioOncology",
         "#DeepLearning",
-        "#LungCancer",
-        "#RadiologyAI",
-        "#Immunotherapy"
+        "#RiskPrediction",
+        "#BreastCancer"
       ],
-      "paper_id": "2026-07-25-medrxiv-ct_based_deep_foundation_model_for_predicting_immune_checkpoint_inhibitor_induced_pneumoni",
-      "paper_title": "CT-Based Deep Foundation Model for Predicting Immune Checkpoint Inhibitor-Induced Pneumonitis Risk in Lung Cancer",
-      "paper_date": "2026-07-25",
-      "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-07-31T09:40:38",
+      "paper_id": "2026-07-28-medrxiv-deep_learning_based_pretreatment_cardiovascular_risk_stratification_in_women_with_breast_c",
+      "paper_title": "Deep Learning-Based Pretreatment Cardiovascular Risk Stratification in Women with Breast Cancer",
+      "paper_date": "2026-07-28",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-08-01T09:03:07",
       "generator": "openai"
     }
   },
@@ -126,29 +126,80 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358844v1.full.pdf"
       }
     ],
-    "score": 67,
+    "score": 62,
     "infographic": {
-      "key_insight": "HOPE is a phase II randomized trial testing whether a shorter, dose-painted chemoradiation schedule can reduce acute gastrointestinal toxicity in stage I–IIB cervical cancer while maintaining treatment effectiveness.",
-      "clinical_relevance": "If successful, this approach could shorten treatment time and potentially improve tolerability and access for patients receiving definitive cervical cancer radiotherapy.",
+      "key_insight": "The HOPE trial tests whether a shorter hypofractionated, dose-painted VMAT chemoradiation schedule can reduce acute gastrointestinal toxicity while maintaining effective treatment for stage I–IIB cervical cancer.",
+      "clinical_relevance": "If successful, this approach could shorten overall treatment time and simplify care delivery for patients receiving definitive chemoradiation in resource-constrained settings.",
       "method": [
-        "300 patients randomized 1:1 to experimental vs control arms",
-        "Experimental arm: VMAT dose-painted hypofractionated chemoradiation (42.5 Gy/20 fractions to primary target; 36 Gy/20 fractions to pelvic nodes) with weekly cisplatin 50 mg/m²",
-        "Control arm: conventional VMAT chemoradiation (45 Gy/25 fractions) with weekly cisplatin 40 mg/m²; both arms receive image-guided brachytherapy"
+        "Phase II, multicenter, open-label, randomized, parallel-group superiority trial in India",
+        "300 patients randomized 1:1 to hypofractionated dose-painted VMAT vs conventional VMAT chemoradiation",
+        "Primary endpoint: grade ≥2 gastrointestinal toxicity; secondary endpoints: 3-year DFS, quality of life, and late toxicity"
       ],
-      "evidence_signal": "The abstract describes a randomized, multi-center superiority trial with a prespecified primary toxicity endpoint and planned follow-up for disease-free survival, quality of life, and late toxicity.",
-      "watch_item": "Because this is a planned study, clinical impact remains unproven until results confirm that toxicity is reduced without compromising cancer control.",
+      "evidence_signal": "This is a trial design paper rather than results, so the evidence signal is based on planned randomization, sample size, and endpoint selection rather than outcome data.",
+      "watch_item": "Because the study is open-label and compares different fractionation and cisplatin schedules, toxicity and feasibility findings may be influenced by treatment delivery and center-level implementation differences.",
       "hashtags": [
         "#CervicalCancer",
         "#Radiotherapy",
         "#ClinicalTrial",
         "#Hypofractionation",
-        "#VMAT"
+        "#OncologyResearch"
       ],
       "paper_id": "2026-07-27-medrxiv-a_phase_ii_multi_center_open_label_randomized_parallel_group_superiority_study_to_compare",
       "paper_title": "A phase II multi-center, open-label, randomized, parallel-group, superiority study to compare the acute toxicity of Hypofractionated dOse Painted External radiotherapy versus conventional external radiotherapy in patients with carcinoma cervix stage I - IIB. (HOPE)",
       "paper_date": "2026-07-27",
       "paper_category": "Clinical Translation",
-      "generated_at": "2026-07-31T09:40:42",
+      "generated_at": "2026-08-01T09:03:10",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-29-medrxiv-prevalence_of_cancer_in_patients_with_cardiovascular_diseases_and_risk_factors_a_systemati",
+    "doi": "10.64898/2026.07.04.26357301",
+    "date": "2026-07-29",
+    "title": "Prevalence of cancer in patients with cardiovascular diseases and risk factors: a systematic review and meta-analysis",
+    "authors": "Galimzhanov, A.; Beytekin, E.; Lim, L. C.; Ali Zai, A. B.; Doolub, G.; Aljarshawi, M.; Sokhal, B. S.; Matetic, A.; Bagur, R.; Sun, L.; Ng, C. H.; Menezes, M. N.; Zaman, S.; Ky, B.; Mamas, M.",
+    "abstract": "BackgroundNo systematic review has been conducted to pool the existing evidence and quantify cancer prevalence rates in cardiovascular diseases (CVDs). We aimed to estimate pooled cancer prevalence in coronary artery disease (CAD), heart failure (HF), atrial fibrillation (AF), hypertension, type 2 diabetes mellitus (DM), stroke, peripheral arterial disease (PAD), and valvular heart diseases (VHD). MethodsPubMed, Web of Science, and Scopus were searched from 2010 to July 2024. The outcomes were proportions of patients with active, any, previous, blood, solid, and metastatic cancer. The prevalence rates were estimated via one-step generalized linear mixed models. ResultsTotally, we retrieved 676 studies with enrollment of roughly 180 million participants. The analysis for active cancer included 59 studies with a population of 4,759,695 patients. The pooled prevalence of active cancer was 4.22% (95% confidence interval (CI) 2.18-5.32), 4.43% (95% CI 2.78-6.38), 4.60% (95% CI 1.72-8.13), 4.61% (95% CI, 2.83-6.97), 4.90% (95% CI 3.84-6.37), and 5.55% (95% CI 3.97-7.01) in patients with type 2 DM, chronic HF, any stroke, CAD, VHD, and AF. For any cancer, prevalence rates ranged from 14.10% (95% CI 12.20-15.99) in AF to 7.04% (95% CI 6.05-8.03) in CAD. ConclusionPooled prevalence rates demonstrate a measurable burden of cancer among patients with a wide range of CVDs, highlighting the need for multidisciplinary management in this population. RegistrationPROSPERO CRD42023494764",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-29",
+    "updated": "2026-07-29",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.04.26357301v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.04.26357301v2.full.pdf"
+      }
+    ],
+    "score": 56,
+    "infographic": {
+      "key_insight": "Cancer is common among patients with cardiovascular disease and risk factors, with pooled active cancer prevalence reaching about 4%–6% in several groups and any-cancer prevalence highest in atrial fibrillation.",
+      "clinical_relevance": "These findings support routine cardiovascular-oncology awareness and multidisciplinary care because cancer burden is substantial across CAD, HF, AF, stroke, PAD, valvular disease, hypertension, and type 2 diabetes.",
+      "method": [
+        "Systematic review and meta-analysis of PubMed, Web of Science, and Scopus (2010–July 2024).",
+        "Pooled prevalence estimated with one-step generalized linear mixed models.",
+        "Included 676 studies with roughly 180 million participants overall; 59 studies informed active-cancer analyses."
+      ],
+      "evidence_signal": "The analysis pooled prevalence estimates across very large real-world cohorts, with active cancer prevalence reported in patients with type 2 DM, HF, stroke, CAD, VHD, and AF.",
+      "watch_item": "Prevalence estimates are highly heterogeneous across diseases and study settings, so they should be interpreted as population-level summaries rather than patient-specific risk predictions.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#CardioOncology",
+        "#SystematicReview",
+        "#MetaAnalysis",
+        "#CancerPrevalence"
+      ],
+      "paper_id": "2026-07-29-medrxiv-prevalence_of_cancer_in_patients_with_cardiovascular_diseases_and_risk_factors_a_systemati",
+      "paper_title": "Prevalence of cancer in patients with cardiovascular diseases and risk factors: a systematic review and meta-analysis",
+      "paper_date": "2026-07-29",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-08-01T09:03:12",
       "generator": "openai"
     }
   },
@@ -177,29 +228,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358148v1.full.pdf"
       }
     ],
-    "score": 59,
+    "score": 54,
     "infographic": {
-      "key_insight": "OvAi Focus combines AI segmentation and morphology extraction to make gynecological ultrasound interpretation of healthy ovaries and adnexal masses more objective.",
-      "clinical_relevance": "By standardizing how ovarian structures and mass features are identified, the framework could support more consistent ultrasound reporting in ovarian cancer assessment.",
+      "key_insight": "OvAi Focus combines AI-based segmentation and morphology extraction to make gynecological ultrasound interpretation of ovaries and adnexal masses more objective and standardized.",
+      "clinical_relevance": "By helping identify healthy ovarian structures and classify adnexal mass features, this framework could support more consistent ultrasound reporting in ovarian cancer assessment.",
       "method": [
-        "Segmentation module identifies healthy ovaries plus solid and cystic components of adnexal masses.",
-        "Morphology module extracts IOTA-based keywords describing adnexal mass features.",
-        "Outputs were compared against ground-truth masks and interobserver agreement measures."
+        "Segmented healthy ovaries and adnexal mass components, including solid and cystic regions.",
+        "Extracted IOTA-based morphological keywords from ultrasound images.",
+        "Compared outputs against ground truth masks and interobserver agreement metrics."
       ],
-      "evidence_signal": "In the abstract, segmentation DICE scores ranged from 0.62 for functional ovary to 0.87 for the whole adnexal mass, while morphology agreement showed Fleiss Kappa of 0.16 to 0.57 and percent agreement of 47% to 90%.",
-      "watch_item": "Performance is variable across targets, and the morphology module still depends on subjective reference labels and clinical validation before routine use.",
+      "evidence_signal": "Segmentation DICE scores ranged from 0.62 for functional ovary to 0.87 for whole adnexal mass, while morphology agreement showed Fleiss kappa of 0.16 to 0.57 and percent agreement of 47% to 90%.",
+      "watch_item": "Performance varied by structure and morphology task, so clinical use would require further validation, especially for lower-agreement features and real-world workflow integration.",
       "hashtags": [
-        "#OvarianCancer",
-        "#UltrasoundAI",
-        "#MedicalImaging",
         "#PrecisionOncology",
-        "#AIinHealthcare"
+        "#UltrasoundAI",
+        "#OvarianCancer",
+        "#MedicalImaging",
+        "#SegmentationAI"
       ],
       "paper_id": "2026-07-27-medrxiv-ovai_focus_a_framework_for_multiclass_segmentation_and_morphological_features_extraction_i",
       "paper_title": "OvAi Focus: A framework for multiclass segmentation and morphological features extraction in gynecological ultrasound",
       "paper_date": "2026-07-27",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-31T09:40:44",
+      "generated_at": "2026-08-01T09:03:15",
       "generator": "openai"
     }
   },
@@ -228,29 +279,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358816v1.full.pdf"
       }
     ],
-    "score": 57,
+    "score": 52,
     "infographic": {
-      "key_insight": "Deep learning on trial-level auditory oddball ERP waveforms classified schizophrenia vs healthy controls better than classical models using summary ERP features.",
-      "clinical_relevance": "If validated, this approach could help develop more objective electrophysiology-based tools to support individual-level psychiatric classification and biomarker research.",
+      "key_insight": "Trial-level auditory oddball ERP waveforms, analyzed with deep learning, classified schizophrenia versus healthy controls better than models using conventional summary features.",
+      "clinical_relevance": "This suggests EEG waveform-based machine learning may help develop objective, individual-level biomarkers for schizophrenia-related neural processing, though it is not yet a clinical diagnostic tool.",
       "method": [
-        "258 patients with schizophrenia and 142 healthy controls were studied.",
-        "EEG from an auditory duration oddball task was converted into trial-level mismatch ERP waveforms (-100 to 500 ms).",
-        "Five deep learning models were compared with classical machine learning on 18 ERP summary features, with demographic residualization fit only on training data."
+        "258 patients with schizophrenia and 142 healthy controls were recorded during an auditory duration oddball EEG task.",
+        "EEG epochs were segmented from -100 to 500 ms and trial-level mismatch waveforms were created from deviant trials.",
+        "Five deep learning models on full residualized ERP waveforms were compared with classical models using 18 ERP summary features."
       ],
-      "evidence_signal": "On the held-out test set, deep learning reached AUROC 0.797-0.857, outperforming classical feature-based models at 0.705-0.720.",
-      "watch_item": "Performance was based on a single participant-level split, so broader validation across independent sites and recordings is still needed.",
+      "evidence_signal": "On the held-out test set, deep learning achieved AUROC 0.797-0.857, outperforming classical feature-based models at 0.705-0.720.",
+      "watch_item": "Results come from a single study design with fixed participant splits, so external validation and robustness across sites, devices, and populations are still needed.",
       "hashtags": [
-        "#DeepLearning",
         "#EEG",
-        "#ERP",
+        "#DeepLearning",
         "#Schizophrenia",
-        "#Biomarkers"
+        "#Biomarkers",
+        "#MachineLearning"
       ],
       "paper_id": "2026-07-27-medrxiv-deep_learning_for_individual_level_classification_of_schizophrenia_versus_healthy_controls",
       "paper_title": "Deep Learning for Individual-Level Classification of Schizophrenia Versus Healthy Controls from Trial-Level Auditory Oddball ERP Waveforms",
       "paper_date": "2026-07-27",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-31T09:40:46",
+      "generated_at": "2026-08-01T09:03:18",
       "generator": "openai"
     }
   },
@@ -279,29 +330,131 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.07.23.26358785v1.full.pdf"
       }
     ],
-    "score": 57,
+    "score": 52,
     "infographic": {
-      "key_insight": "A simulation-trained deep learning platform can automate interpretation of CDC and FCXM HLA antibody assays while handling the variability of real-world pre-transplant lab imaging.",
-      "clinical_relevance": "Automated, traceable crossmatch readouts may reduce operator dependence and improve consistency in pre-transplant compatibility assessment.",
+      "key_insight": "A simulation-trained deep learning platform, AlloViewer, can automate interpretation of image-based and flow-cytometry-based HLA antibody assays for pre-transplant compatibility testing.",
+      "clinical_relevance": "This could make crossmatch reading faster, more traceable, and less operator-dependent while supporting routine transplant risk assessment.",
       "method": [
-        "Generated CDC-like simulated training images covering variability in resolution, staining, cell density, clustering, and background fluorescence.",
-        "Used a UNet-based workflow for lymphocyte segmentation, experiment-specific fluorescence classification, and well-level cytotoxicity scoring.",
-        "Added automated FCXM interpretation with cell-population identification and IgG readouts in a web-based platform with API access."
+        "Generated CDC-like simulated training images to reflect real-world variability in resolution, staining, cell density, clustering, and background fluorescence.",
+        "Used a UNet-based workflow for automated lymphocyte segmentation plus experiment-specific fluorescence classification and cytotoxicity scoring.",
+        "Extended the platform to FCXM by identifying cell populations and quantifying population-specific IgG readouts through a web interface and API."
       ],
-      "evidence_signal": "In abstract-level evaluation, the simulation-trained model outperformed a conventional rule-based pipeline under variable acquisition conditions and matched performance to the range of human inter-annotator variability.",
-      "watch_item": "Performance depends on assay-specific image quality and careful validation before routine deployment across different laboratories and instruments.",
+      "evidence_signal": "In the abstract, the simulation-trained model outperformed a conventional rule-based image analysis pipeline under variable acquisition conditions and achieved CDC scoring near human inter-annotator reproducibility limits.",
+      "watch_item": "Performance is reported from simulated and assay-specific evaluation, so broader real-world validation across sites, scanners, and clinical workflows will be important before wide adoption.",
       "hashtags": [
         "#DeepLearning",
-        "#DigitalPathology",
         "#TransplantDiagnostics",
         "#HLA",
+        "#Crossmatch",
         "#MedicalAI"
       ],
       "paper_id": "2026-07-27-medrxiv-simulation_trained_deep_learning_for_automated_cell_based_hla_antibody_assay_interpretatio",
       "paper_title": "Simulation-Trained Deep Learning for Automated Cell-Based HLA Antibody Assay Interpretation in Pre-Transplant Diagnostics",
       "paper_date": "2026-07-27",
       "paper_category": "Clinical Translation",
-      "generated_at": "2026-07-31T09:40:49",
+      "generated_at": "2026-08-01T09:03:20",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-28-medrxiv-rapid_diagnosis_of_fever_etiology_using_wearable_temperature_monitoring_and_machine_learni",
+    "doi": "10.64898/2026.07.27.26359010",
+    "date": "2026-07-28",
+    "title": "Rapid diagnosis of fever etiology using wearable temperature monitoring and machine learning",
+    "authors": "Khan, S. N.; Lee, S.; Ren, X.; Wittrup, E.; Madhukar, R.; Flora, C.; Mayhew, K.; Rozwadowski, M.; Winnega, E.; Leopold, K.; Weinberg, J. B.; Paludo, J.; Binder, A. F.; Ghosh, M.; Frame, D.; Craig, E.; Braun, T. M.; Chanderraj, R.; Sung, A. D.; Najarian, K.; Choi, S. W.; Tewari, M.",
+    "abstract": "IntroductionDistinct temperature patterns have long been recognized to correlate with fevers of differing etiologies. While the use of wearable sensors for high-frequency temperature monitoring (HFTM) on a near minute-by-minute basis has been shown to detect fevers earlier than standard-of-care nursing vital sign assessments in hospitalized patients, leveraging these high-resolution datasets to computationally identify unique digital signatures for real-time diagnosis of underlying fever etiology has not been widely explored. Diagnostic uncertainty is common in patients undergoing hematopoietic stem cell transplantation (HCT), with only 20-30% of febrile neutropenic episodes being microbiologically documented. We hypothesized that unique temperature patterns extracted from HFTM data collected during episodes of febrile neutropenia could be used to develop a supervised machine learning classifier capable of accurately predicting underlying fever etiology in HCT patients. MethodsWe analyzed 68 clinically independent fever episodes recorded in HCT patients (n=90) outfitted with an FDA-cleared wireless temperature sensor (TempTraq(R), BlueSpark Technologies) that measured axillary temperature every 2 minutes throughout hospitalization. Time-series features were extracted from temperature traces spanning 1 hour before to 3 hours after fever onset and used to train a suite of machine-learning models to distinguish engraftment fevers from other fever etiologies. Model training and evaluation were performed using repeated stratified 5-fold patient-level cross-validation, yielding 100 train-test evaluations. ResultsAmong all classification models, the logistic regression classifier provided the best overall performance and interpretability, achieving 94% specificity (95% CI, 0.84-1.0) for identifying engraftment fevers with a mean AUROC of 0.88 {+/-} 0.10. Feature importance analysis demonstrated that both clinical variables and HFTM-derived temperature dynamics contributed to model performance, with a strong reliance on time-series features captured within the first 4 hours of fever onset. ConclusionOur study provides a demonstration that continuous temperature data collected from patients outfitted with wearable sensors can be leveraged not only for early fever detection but also for machine learning-based diagnosis of fever etiology. These findings suggest that dynamic temperature patterns contain clinically meaningful physiologic information that with further studies could support real-time diagnostic decision-making and guide safe de-escalation of empiric antibiotics during febrile neutropenia in patients undergoing intensive cancer therapy.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-28",
+    "updated": "2026-07-28",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359010v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359010v1.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "Continuous wearable temperature patterns can help machine learning distinguish engraftment fevers from other causes in hospitalized HCT patients.",
+      "clinical_relevance": "This approach could support faster fever triage and more targeted early management when the cause of fever is unclear during hematopoietic stem cell transplantation.",
+      "method": [
+        "Monitored axillary temperature every 2 minutes with an FDA-cleared wearable sensor during hospitalization.",
+        "Extracted time-series features from 1 hour before to 3 hours after fever onset.",
+        "Trained and tested supervised machine-learning models using repeated stratified 5-fold patient-level cross-validation."
+      ],
+      "evidence_signal": "In 68 clinically independent fever episodes from 90 HCT patients, logistic regression performed best, reaching 94% specificity for engraftment fevers with mean AUROC 0.88 ± 0.10.",
+      "watch_item": "The model was evaluated on a relatively small, single clinical context dataset, so broader validation is needed before real-world deployment.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#MachineLearning",
+        "#WearableSensors",
+        "#FeverDiagnosis",
+        "#HCT"
+      ],
+      "paper_id": "2026-07-28-medrxiv-rapid_diagnosis_of_fever_etiology_using_wearable_temperature_monitoring_and_machine_learni",
+      "paper_title": "Rapid diagnosis of fever etiology using wearable temperature monitoring and machine learning",
+      "paper_date": "2026-07-28",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-08-01T09:03:22",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-28-medrxiv-chest_radiography_ai_concordance_and_lung_cancer_linkage_in_a_large_health_check_up_cohort",
+    "doi": "10.64898/2026.07.27.26359077",
+    "date": "2026-07-28",
+    "title": "Chest Radiography AI Concordance and Lung Cancer Linkage in a Large Health Check-up Cohort",
+    "authors": "Fujita, Y.; Saito, S.; Yagishita, S.; Araya, J.; Nakagawa, R.",
+    "abstract": "PurposeTo evaluate the implementation characteristics of a commercially available chest radiography artificial intelligence (AI) system in a large real-world health check-up cohort using workflow-level, lesion-specific, and exploratory retrospective lung cancer case analyses. MethodsThis retrospective single-centre study included 298,991 consecutive health check-up chest radiographs from 114,866 individuals obtained between 2019 and 2023 and interpreted under routine double reading by board-certified radiologists. A commercially available AI system was evaluated using two prespecified thresholds: positivity in any of ten findings for the all-score analysis and positivity for nodule or mass for the nodule-focused analysis, both at a manufacturer-recommended score threshold of 15. Because routine radiologist judgement rather than universal CT or pathologic verification served as the reference framework, the primary analyses were interpreted as radiologist-referenced operational concordance analyses. ResultsRadiologist-referenced sensitivity and specificity were 72.0% and 79.6%, respectively, in the all-score analysis and 87.1% and 91.8%, respectively, in the nodule-focused analysis. Negative predictive values were 99.0% and 100.0%, respectively. Among 48 histopathologically confirmed lung cancer cases, retrospective timeline analyses showed earlier AI positivity than routine radiologist positivity in a subset of cases. These findings should be interpreted as exploratory observations and do not establish prospective clinical benefit. ConclusionIn a large health check-up cohort, chest radiography AI demonstrated stable concordance with routine radiologist judgement and high sensitivity for radiologist-reported pulmonary nodules and masses. Exploratory retrospective analyses showed earlier AI positivity in a subset of histopathologically confirmed lung cancer cases, supporting further prospective evaluation of AI-assisted health check-up workflows. At a Glance CommentaryO_ST_ABSScientific Knowledge on the SubjectC_ST_ABSArtificial intelligence has shown promise for supporting chest radiograph interpretation, including detection of pulmonary nodules and other thoracic abnormalities. However, most previous studies have used selected datasets, simulated reading environments, or enriched populations. Evidence remains limited regarding how chest radiography AI performs at programme scale in low-prevalence, real-world health check-up settings, particularly with respect to concordance with routine radiologist judgement, discordant review volume, and retrospective linkage to clinically confirmed lung cancer cases. What This Study Adds to the FieldIn 298,991 consecutive health check-up examinations, chest radiography AI demonstrated stable concordance with routine radiologist judgement. For radiologist-reported pulmonary nodules and masses, AI showed 87.1% sensitivity and 100.0% negative predictive value relative to the radiologist reference framework. Retrospective analysis of histopathologically confirmed lung cancer cases identified earlier AI positivity in a subset of patients, although prospective clinical benefit remains unproven. These findings provide large-scale, implementation-oriented evidence on the potential role and limitations of AI as a supplementary tool within radiologist-led chest radiography workflows.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-28",
+    "updated": "2026-07-28",
+    "primary_category": "respiratory medicine",
+    "categories": [
+      "respiratory medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359077v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359077v1.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "In a large health check-up cohort, chest X-ray AI generally matched routine radiologist reads and was especially sensitive for nodules/masses, with exploratory signs of earlier lung cancer flagging in some confirmed cases.",
+      "clinical_relevance": "This suggests AI could help triage or support chest radiograph review in screening workflows, but prospective benefit and downstream impact still need confirmation.",
+      "method": [
+        "Retrospective single-centre study of 298,991 chest radiographs from 114,866 people (2019–2023).",
+        "Compared a commercial chest radiography AI against routine double-reading by board-certified radiologists.",
+        "Ran two prespecified analyses: any-finding positivity and nodule/mass-focused positivity at manufacturer threshold 15."
+      ],
+      "evidence_signal": "Against routine radiologist interpretation, AI sensitivity/specificity were 72.0%/79.6% for the all-score analysis and 87.1%/91.8% for the nodule-focused analysis, with very high NPV.",
+      "watch_item": "Because the reference standard was routine radiologist judgment rather than universal CT or pathology, these results reflect operational concordance and retrospective signals rather than proven clinical benefit.",
+      "hashtags": [
+        "#AIinRadiology",
+        "#LungCancerScreening",
+        "#ChestXRay",
+        "#PrecisionOncology",
+        "#MedicalAI"
+      ],
+      "paper_id": "2026-07-28-medrxiv-chest_radiography_ai_concordance_and_lung_cancer_linkage_in_a_large_health_check_up_cohort",
+      "paper_title": "Chest Radiography AI Concordance and Lung Cancer Linkage in a Large Health Check-up Cohort",
+      "paper_date": "2026-07-28",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-08-01T09:03:24",
       "generator": "openai"
     }
   },
@@ -330,80 +483,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358838v1.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
-      "key_insight": "Chronicle is an explainable transformer that uses entire irregular cancer care timelines to deliver continuously updated, patient-specific risk predictions across many cancer types and outcomes.",
-      "clinical_relevance": "It may help clinicians better stratify risk and support individualized treatment planning by combining prognostic signals from diagnoses, treatments, labs, complications, and transfusions over time.",
+      "key_insight": "Chronicle is an explainable transformer that learns from full, irregular cancer treatment timelines to continuously update risk predictions across many cancer types.",
+      "clinical_relevance": "It may help clinicians stratify patient risk more accurately than single-snapshot models and support individualized decisions across different hospital systems.",
       "method": [
-        "Trained on 53.7 million longitudinal data points from 51,711 patients across 67 cancer types.",
-        "Learns directly from irregular treatment timelines without imputation.",
-        "Jointly predicts eight clinical endpoints with built-in explainability."
+        "Trained on 53.7 million longitudinal data points from 51,711 patients with 67 cancer types",
+        "Uses a transformer architecture that handles irregular timelines without imputation",
+        "Jointly predicts eight clinical endpoints with built-in explainability for patient-specific risk updates"
       ],
-      "evidence_signal": "In the abstract, Chronicle outperformed cross-sectional survival models (C-index 0.84 vs 0.76-0.79), improved stratification over TNM stage, and achieved AUCs of 0.80-0.92 for seven adverse event and transfusion outcomes.",
-      "watch_item": "Although it generalized across three healthcare systems, real-world deployment will still need local validation, workflow integration, and careful monitoring for site-specific data differences.",
+      "evidence_signal": "In the abstract, Chronicle outperformed cross-sectional models for overall survival (C-index 0.84 vs 0.76–0.79), predicted seven adverse event/transfusion outcomes with AUC 0.80–0.92, and generalized to 69,341 external patients across Germany, Switzerland, and the United States.",
+      "watch_item": "Performance was reported from retrospective data, so real-world impact and workflow fit still need prospective validation before routine use.",
       "hashtags": [
         "#PrecisionOncology",
-        "#AIinHealthcare",
-        "#CancerPrognosis",
-        "#ExplainableAI",
-        "#LongitudinalData"
+        "#CancerAI",
+        "#TransformerModels",
+        "#ClinicalPrediction",
+        "#ExplainableAI"
       ],
       "paper_id": "2026-07-27-medrxiv-an_explainable_transformer_model_learning_from_entire_treatment_timelines_for_pan_cancer_r",
       "paper_title": "An explainable transformer model learning from entire treatment timelines for pan-cancer risk profiling across healthcare systems",
       "paper_date": "2026-07-27",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-07-31T09:40:51",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-07-25-medrxiv-circulating_protein_profiling_identifies_prognostic_biomarkers_in_amyotrophic_lateral_scle",
-    "doi": "10.64898/2026.07.20.26354798",
-    "date": "2026-07-25",
-    "title": "Circulating protein profiling identifies prognostic biomarkers in amyotrophic lateral Sclerosis",
-    "authors": "Klimovski, H.; Weinreich, M.; Strange, A.; Magen, I.; Yacovzada, N. - S.; Cohen, Y.; Melamed-Kadosh, D.; Lester, D. G.; Taylor, A.; Zhou, Y.; Ziv, T.; Abramovich, B.; Subramaniam, A. G.; Perlson, E.; Drory, V.; Admon, A.; Shaw, P. J.; Malaspina, A.; Turner, M. R.; Talbot, K.; Thompson, A. G.; Cooper-Knock, J.; Hornstein, E.",
-    "abstract": "Amyotrophic lateral sclerosis (ALS) is a fatal neurodegenerative disease characterized by progressive motor neuron loss and significant clinical variability. Blood-based biomarkers offer a scalable approach to stratify patients and support therapeutic development. In a large-scale serum proteomic survival study of ALS, we analyzed 741 patients from independent cohorts in Israel and the UK to identify blood proteins linked to ALS survival. The cohorts were profiled using complementary proteomics technologies, mass spectrometry and the Olink proximity extension assay (PEA), enabling cross-cohort and cross-platform evaluation of concordant protein effects. We identified 19 serum proteins associated with ALS survival across two independent cohorts profiled using orthogonal proteomic platforms. Among these, GSN and IGFBP2 improved survival prediction and patient stratification compared to established clinical covariates and provided additional prognostic information compared to serum neurofilament light chain (NfL). These novel circulating protein biomarker candidates may improve prognostic assessment and support future precision-medicine approaches in ALS.",
-    "category": "Target Biology",
-    "source": "medRxiv",
-    "published": "2026-07-25",
-    "updated": "2026-07-25",
-    "primary_category": "neurology",
-    "categories": [
-      "neurology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.20.26354798v2"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.20.26354798v2.full.pdf"
-      }
-    ],
-    "score": 38,
-    "infographic": {
-      "key_insight": "A cross-cohort serum proteomics study identified 19 circulating proteins associated with ALS survival, with GSN and IGFBP2 showing added prognostic value.",
-      "clinical_relevance": "These blood-based markers could improve patient risk stratification and support more precise prognosis in ALS beyond standard clinical factors and NfL.",
-      "method": [
-        "Analyzed serum from 741 ALS patients across independent Israel and UK cohorts.",
-        "Used two orthogonal proteomics platforms: mass spectrometry and Olink PEA.",
-        "Cross-validated protein-survival associations across cohorts and platforms."
-      ],
-      "evidence_signal": "The findings were evaluated in a large survival study and replicated across two independent cohorts using complementary proteomic technologies.",
-      "watch_item": "These are prognostic biomarker candidates, so further external validation and assay standardization are needed before routine clinical use.",
-      "hashtags": [
-        "#ALS",
-        "#Biomarkers",
-        "#Proteomics",
-        "#Prognosis",
-        "#PrecisionMedicine"
-      ],
-      "paper_id": "2026-07-25-medrxiv-circulating_protein_profiling_identifies_prognostic_biomarkers_in_amyotrophic_lateral_scle",
-      "paper_title": "Circulating protein profiling identifies prognostic biomarkers in amyotrophic lateral Sclerosis",
-      "paper_date": "2026-07-25",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-07-31T09:40:53",
+      "generated_at": "2026-08-01T09:03:26",
       "generator": "openai"
     }
   }

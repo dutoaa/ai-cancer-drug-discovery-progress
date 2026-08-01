@@ -1,24 +1,24 @@
 {
-  "key_insight": "A simulation-trained deep learning platform can automate interpretation of CDC and FCXM HLA antibody assays while handling the variability of real-world pre-transplant lab imaging.",
-  "clinical_relevance": "Automated, traceable crossmatch readouts may reduce operator dependence and improve consistency in pre-transplant compatibility assessment.",
+  "key_insight": "A simulation-trained deep learning platform, AlloViewer, can automate interpretation of image-based and flow-cytometry-based HLA antibody assays for pre-transplant compatibility testing.",
+  "clinical_relevance": "This could make crossmatch reading faster, more traceable, and less operator-dependent while supporting routine transplant risk assessment.",
   "method": [
-    "Generated CDC-like simulated training images covering variability in resolution, staining, cell density, clustering, and background fluorescence.",
-    "Used a UNet-based workflow for lymphocyte segmentation, experiment-specific fluorescence classification, and well-level cytotoxicity scoring.",
-    "Added automated FCXM interpretation with cell-population identification and IgG readouts in a web-based platform with API access."
+    "Generated CDC-like simulated training images to reflect real-world variability in resolution, staining, cell density, clustering, and background fluorescence.",
+    "Used a UNet-based workflow for automated lymphocyte segmentation plus experiment-specific fluorescence classification and cytotoxicity scoring.",
+    "Extended the platform to FCXM by identifying cell populations and quantifying population-specific IgG readouts through a web interface and API."
   ],
-  "evidence_signal": "In abstract-level evaluation, the simulation-trained model outperformed a conventional rule-based pipeline under variable acquisition conditions and matched performance to the range of human inter-annotator variability.",
-  "watch_item": "Performance depends on assay-specific image quality and careful validation before routine deployment across different laboratories and instruments.",
+  "evidence_signal": "In the abstract, the simulation-trained model outperformed a conventional rule-based image analysis pipeline under variable acquisition conditions and achieved CDC scoring near human inter-annotator reproducibility limits.",
+  "watch_item": "Performance is reported from simulated and assay-specific evaluation, so broader real-world validation across sites, scanners, and clinical workflows will be important before wide adoption.",
   "hashtags": [
     "#DeepLearning",
-    "#DigitalPathology",
     "#TransplantDiagnostics",
     "#HLA",
+    "#Crossmatch",
     "#MedicalAI"
   ],
   "paper_id": "2026-07-27-medrxiv-simulation_trained_deep_learning_for_automated_cell_based_hla_antibody_assay_interpretatio",
   "paper_title": "Simulation-Trained Deep Learning for Automated Cell-Based HLA Antibody Assay Interpretation in Pre-Transplant Diagnostics",
   "paper_date": "2026-07-27",
   "paper_category": "Clinical Translation",
-  "generated_at": "2026-07-31T09:40:49",
+  "generated_at": "2026-08-01T09:03:20",
   "generator": "openai"
 }

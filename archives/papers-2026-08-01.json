@@ -1,0 +1,410 @@
+[
+  {
+    "id": "2026-07-28-medrxiv-histological_triage_of_early_stage_mycosis_fungoides_using_a_weakly_supervised_deep_learni",
+    "doi": "10.64898/2026.07.27.26359009",
+    "date": "2026-07-28",
+    "title": "Histological triage of early-stage mycosis fungoides using a weakly supervised deep learning-based model: a multicentre, external validation, and clinical utility study",
+    "authors": "Doeleman, T.; Brussee, S.; Valkema, P.; Kempf, W.; Vermeer, M.; Kers, J.; Wynaendts, L.; Kerckhoffs, K.; de Jonge, M.; Nguyen, A.; Peters, E.; Wobser, M.; Rauert-Wunderlich, H.; Rosenwald, A.; Stadler, R.; Jansen, P.; Battistella, M.; Roccuzzo, G.; Quaglino, P.; Schrader, A.",
+    "abstract": "BackgroundHistological diagnosis of early-stage mycosis fungoides (MF) is hindered by profound overlap with benign inflammatory dermatoses (BIDs), leading to diagnostic delays and extensive ancillary testing. We developed MIMIC (Multiple Instance-learning for Identification of Mycosis fungoides In Cutaneous biopsies), a weakly supervised deep learning model designed as a triage tool at initial HCE whole-slide image (WSI) review to distinguish classic patch- and plaque-stage MF from BIDs. We externally validated the model and evaluated its clinical utility. MethodsIn this retrospective multicentre study, we trained a base model using weakly supervised attention-based multiple-instance learning on 3,339 WSIs from two Dutch centres. Crucially, all MF training labels were derived from a deeply phenotyped national cohort featuring strict multidisciplinary expert panel consensus diagnoses (the clinical gold standard). Transportability was evaluated on 371 WSIs from four independent European centres. A blinded reader study on 171 WSIs compared morphology-only performance of MIMIC with 11 (dermato-)pathologists. We then retrained an updated model on all retrospective multicentre data and assessed clinical utility in a strictly held-out, consecutive Utrecht cohort (2022-2023; 486 accessions, 863 WSIs). Primary analysis focused on classic MF versus BIDs (453 accessions). Decision curve analysis, using Platt-scaled probabilities to correct for spectrum bias, evaluated net benefit at a prespecified, safety-oriented threshold of 0.04. FindingsThe base model showed good multicentre transportability (mean centre-specific AUROC 0.91; pooled AUROC 0.84). In the reader study, MIMIC achieved an AUROC of 0.87, exceeding the mean pathologist AUROC (0.79) and the best individual reader (0.83). In the consecutive MF versus BID cohort, the updated model achieved an AUROC of 0.87 (95% CI 0.81-0.92). At the 0.04 threshold, sensitivity was 97.8% (44/45 MF cases) and specificity 50.2%, reducing unnecessary ancillary workups by 39.9 per 100 screening cases versus a test-all strategy. InterpretationBy identifying nearly half of BIDs as low risk while preserving near-complete sensitivity for classic early-stage MF in a European digital pathology workflow, this unimodal HCE approach offers a scalable digital solution to reduce defensive ancillary testing and accelerate the diagnostic journey for patients with MF. Further validation is needed in non-European centres and in populations with darker skin phototypes. FundingThis work was supported by an unrestricted Fellowship grant of Stichting Hanarth Fonds in The Netherlands. Research in contextO_ST_ABSEvidence before this studyC_ST_ABSMycosis fungoides (MF) is notoriously difficult to diagnose in its early stages due to significant clinical and histopathological overlap with benign inflammatory dermatoses (BIDs), resulting in a median diagnostic delay of 36 months from symptom onset. Standard diagnostic workups are highly resource-intensive and frequently inconclusive, often requiring multiple consecutive biopsies, extensive immunohistochemistry panels, molecular T-cell receptor clonality studies, and iterative clinicopathological correlation in multidisciplinary consensus meetings. We systematically searched PubMed from database inception up to May 28, 2026, using the terms (\"mycosis fungoides\" OR \"cutaneous T-cell lymphoma\" OR \"CTCL\") AND (\"deep learning\" OR \"machine learning\" OR \"artificial intelligence\" OR \"AI\" OR \"foundation model\") with no language restrictions, identifying 123 raw citations. Only eight original research articles were found to explicitly evaluate machine learning or artificial intelligence applications for cutaneous lymphomas. This pool was supplemented with international conference proceedings and a preprint, identifying a total of thirteen relevant studies. The vast majority of this limited literature focused on non-histological modalities (e.g., clinical photography, dermoscopic imaging, 3D skin tumour burden scoring, or structured electronic health records) or required specialized, non-standard imaging hardware such as non-linear optical microscopy. Furthermore, alternative computational pipelines relied on highly resource-intensive and costly molecular data, such as bulk RNA-sequencing gene-expression classifiers. Crucially, fewer than five peer-reviewed studies focused on standard brightfield haematoxylin and eosin (HCE) whole-slide images (WSIs) to differentiate early-stage MF from BIDs. While recent baseline architectures, exploratory conference abstracts, and emerging multimodal systems integrating histopathology with clinical metadata have established the existence of a trainable discriminative signal, severe translational limitations persist. Most existing frameworks relied on small development datasets, lacked rigorous external geographic validation across independent international registries, and failed to strictly isolate patient-level clustered data during performance evaluation. Crucially, no prior study has evaluated a unimodal brightfield HCE pathology foundation model within a formalized, Platt-scaled calibration framework to correct for spectrum bias, or utilized decision curve analysis to demonstrate safe, high-sensitivity clinical triage in a consecutive screening pipeline. Added value of this studyWe developed, externally validated, and evaluated the clinical utility of MIMIC, a clinical decision support tool utilizing a pathology foundation model (H-Optimus-1) for risk-stratified triage at the point of initial histological review. In an external geographic validation across four independent European institutions, the base model demonstrated high transportability with a mean centre-specific AUROC of 0{middle dot}91. In a blinded multi-centre reader study on 171 WSIs, MIMIC achieved an AUROC of 0{middle dot}87, outperforming the mean baseline performance of 11 independent (dermato-)pathologists (AUROC 0{middle dot}79 {+/-} 0{middle dot}03) and exceeding the integrated discriminative area of the top-performing human expert (AUROC 0{middle dot}83). Crucially, following TRIPOD+AI guidelines for model updating, the final candidate was evaluated on a strictly held-out, consecutive clinical screening workflow cohort (N = 453 accessions). Following Platt scaling to robustly calibrate for spectrum bias, MIMIC achieved a diagnostic sensitivity of 97{middle dot}8% at a conservative, safety-oriented operational threshold of 0{middle dot}04, intercepting 44 out of 45 true malignant cases while effectively identifying 50{middle dot}2% of BIDs as low-risk on initial HCE morphology alone. Implications of all the available evidenceMIMIC can be seamlessly integrated into digital pathology workflows to safely \"de-bulk\" the diagnostic workload by reliably identifying low-risk cases that can be triaged away from automatic ancillary testing. Our automated three-tier workflow analysis demonstrates that a staggering 45{middle dot}5% of the total diagnostic screening volume can be safely classified as low-risk triage zones where ancillary testing could be avoided, translating to substantial direct laboratory cost savings. Decision curve analysis demonstrated a consistent positive net benefit at the 0{middle dot}04 threshold, corresponding to a net reduction of 39{middle dot}9 unnecessary ancillary workups and expert multidisciplinary reviews per 100 screening cases relative to a standard \"test all\" clinical strategy. By acting as a highly sensitive, objective, and reproducible filter at the earliest stage of histopathological review, this unimodal HCE approach offers a scalable, zero-marginal-cost digital solution to mitigate defensive diagnostic reflexes, optimize specialized laboratory resource allocation, and significantly accelerate the diagnostic pathway for patients with early-stage MF.",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-07-28",
+    "updated": "2026-07-28",
+    "primary_category": "pathology",
+    "categories": [
+      "pathology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359009v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.27.26359009v1.full.pdf"
+      }
+    ],
+    "score": 82,
+    "infographic": {
+      "key_insight": "A weakly supervised deep learning model (MIMIC) can triage early-stage mycosis fungoides from benign inflammatory dermatoses on whole-slide histology with high sensitivity.",
+      "clinical_relevance": "As a screening-style aid, it could help pathologists prioritize cases and reduce unnecessary ancillary testing while minimizing missed mycosis fungoides cases.",
+      "method": [
+        "Trained with attention-based multiple-instance learning on 3,339 whole-slide images from two Dutch centers.",
+        "Externally validated on 371 slides from four independent European centers.",
+        "Compared against 11 pathologists in a blinded reader study and then tested in a consecutive held-out clinical cohort."
+      ],
+      "evidence_signal": "The updated model reached AUROC 0.87 in the held-out cohort, with 97.8% sensitivity and 50.2% specificity at a prespecified low-risk threshold.",
+      "watch_item": "Performance was evaluated in retrospective and single-system deployment settings, so generalizability, calibration, and workflow impact still need prospective confirmation.",
+      "hashtags": [
+        "#CancerAI",
+        "#DigitalPathology",
+        "#DeepLearning",
+        "#MycosisFungoides",
+        "#Histology"
+      ],
+      "paper_id": "2026-07-28-medrxiv-histological_triage_of_early_stage_mycosis_fungoides_using_a_weakly_supervised_deep_learni",
+      "paper_title": "Histological triage of early-stage mycosis fungoides using a weakly supervised deep learning-based model: a multicentre, external validation, and clinical utility study",
+      "paper_date": "2026-07-28",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-07-31T09:40:35",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-25-medrxiv-ct_based_deep_foundation_model_for_predicting_immune_checkpoint_inhibitor_induced_pneumoni",
+    "doi": "10.64898/2026.04.21.26351428",
+    "date": "2026-07-25",
+    "title": "CT-Based Deep Foundation Model for Predicting Immune Checkpoint Inhibitor-Induced Pneumonitis Risk in Lung Cancer",
+    "authors": "Muneer, A.; Showkatian, E.; Kitsel, Y.; Saad, M. B.; Sujit, S. J.; Soto, F.; Shroff, G. S.; Faiz, S. A.; Ghanbar, M. I.; Ismail, S. M.; Vokes, N. I.; Cascone, T.; Le, X.; Zhang, J.; Byers, L. A.; Jaffray, D.; Chang, J. Y.; Liao, Z.; Naing, A.; Gibbons, D. L.; Vaporciyan, A. A.; Heymach, J. V.; Suresh, K. S.; Altan, M.; Sheshadri, A.; Wu, J.",
+    "abstract": "BackgroundImmune checkpoint inhibitors (ICIs) have revolutionized cancer therapy but can cause serious immune-related adverse events (irAEs), with pneumonitis (ICI-P) being among the most severe. Early identification of high-risk patients before ICI initiation is critical for close monitoring, timely intervention, and optimizing outcomes. PurposeTo develop and validate a deep learning foundation model to predict ICI-P from baseline CT scans in patients with lung cancer. MethodsWe designed the Checkpoint-Inhibitor Pneumonitis Hazard EstimatoR (CIPHER), a deep learning-powered foundation model combining contrastive learning with a transformer-based masked autoencoder to predict ICI-P from baseline CT scans in lung cancer patients. Using self-supervised learning, CIPHER was pretrained on 590,284 CT slices from 2,500 non-small cell lung cancer (NSCLC) patients, to learn representations of heterogeneous lung parenchyma. Following pretraining, CIPHER was adapted to the internal MDA NSCLC immunotherapy cohort of 347 patients, of whom 33 developed adjudicated ICI-P. Fine-tuning was performed using 254 non-ICI-P patients only, and a held-out internal validation set of 93 patients, including 33 ICI-P cases and 60 non-ICI-P controls, was reserved for evaluation. CIPHER was benchmarked against clinical, radiomics, and ensemble comparator models and externally validated in an independent Johns Hopkins NSCLC cohort of 116 patients, including 20 ICI-P cases and 96 non-ICI-P controls. ResultsIn our internal immunotherapy cohort, CIPHER consistently distinguished patients at elevated risk of ICI-P from those without the event, with AUCs ranging from 0.77 to 0.85. In head-to-head benchmarking, CIPHER achieved an AUC of 0.83, outperforming the clinical, radiomics and ensemble models. In the external validation cohort, CIPHER maintained high performance (AUC=0.83; balanced accuracy=81.7%), exceeding the radiomics model (DeLong p=0.0318) and demonstrating superior specificity without sacrificing sensitivity. By contrast, the radiomics model, despite high sensitivity (85.0%), showed markedly lower specificity (45.8%). Confusion matrix analyses confirmed CIPHERs robust classification, correctly identifying 80 of 96 non-ICI-P cases and 16 of 20 ICI-P cases. ConclusionsWe developed and externally validated CIPHER, a CT-based imaging biomarker for pretreatment ICI-P risk stratification in NSCLC. CIPHER shows promise as a noninvasive tool for ICI-P risk assessment but warrants prospective validation before clinical translation. HighlightsO_LIThe first chest CT AI foundation model for immune toxicity - We introduce CIPHER (Checkpoint-Inhibitor Pneumonitis Hazard EstimatoR), a transformer-based masked autoencoder trained through self-supervised contrastive learning on 590,284 CT slices from 4,242 CT scans from NSCLC patients. This large-scale pretraining enables CIPHER to learn intrinsic lung parenchymal representations linked to immune toxicity risk. C_LIO_LIEarly risk prediction prior to therapy initiation - CIPHER predicts the likelihood of ICI-induced pneumonitis directly from baseline CT scans, offering the first non-invasive foundation model for early risk assessment before ICI. C_LIO_LIRobust validation and benchmarking - We fine-tuned and evaluated CIPHER across independent internal and external NSCLC immunotherapy cohorts, achieving AUCs of 0.77-0.85 internal and 0.83 external testing, surpassing comparator models in both performance and generalizability. C_LIO_LIInterpretability and translational potential - We demonstrate how model-derived attention maps align with clinically relevant pulmonary patterns, enhancing interpretability. C_LIO_LITranslational potential - CIPHERs performance and scalability underscore its potential as a decision-support tool to guide treatment planning, pre-emptive monitoring, and toxicity mitigation in immunotherapy practice. C_LI",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-07-25",
+    "updated": "2026-07-25",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351428v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351428v2.full.pdf"
+      }
+    ],
+    "score": 69,
+    "infographic": {
+      "key_insight": "A CT-based self-supervised foundation model (CIPHER) can predict which lung cancer patients are at higher risk of immune checkpoint inhibitor–induced pneumonitis before treatment starts.",
+      "clinical_relevance": "If validated in broader settings, this could help clinicians identify patients needing closer monitoring or more tailored immunotherapy planning.",
+      "method": [
+        "Pretrained on 590,284 CT slices from 2,500 NSCLC patients using contrastive learning plus a transformer-based masked autoencoder.",
+        "Fine-tuned on an internal immunotherapy cohort, using only non-pneumonitis cases for training and a held-out validation set for evaluation.",
+        "Benchmarked against clinical, radiomics, and ensemble models, then tested in an external Johns Hopkins NSCLC cohort."
+      ],
+      "evidence_signal": "CIPHER achieved AUCs of 0.77–0.85 internally, AUC 0.83 in head-to-head testing, and AUC 0.83 with 81.7% balanced accuracy in external validation.",
+      "watch_item": "This is a retrospective model study, so prospective validation and site-to-site generalizability are still needed before routine clinical use.",
+      "hashtags": [
+        "#CancerAI",
+        "#DeepLearning",
+        "#LungCancer",
+        "#RadiologyAI",
+        "#Immunotherapy"
+      ],
+      "paper_id": "2026-07-25-medrxiv-ct_based_deep_foundation_model_for_predicting_immune_checkpoint_inhibitor_induced_pneumoni",
+      "paper_title": "CT-Based Deep Foundation Model for Predicting Immune Checkpoint Inhibitor-Induced Pneumonitis Risk in Lung Cancer",
+      "paper_date": "2026-07-25",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-07-31T09:40:38",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-27-medrxiv-a_phase_ii_multi_center_open_label_randomized_parallel_group_superiority_study_to_compare",
+    "doi": "10.64898/2026.07.24.26358844",
+    "date": "2026-07-27",
+    "title": "A phase II multi-center, open-label, randomized, parallel-group, superiority study to compare the acute toxicity of Hypofractionated dOse Painted External radiotherapy versus conventional external radiotherapy in patients with carcinoma cervix stage I - IIB. (HOPE)",
+    "authors": "Chakraborty, S.; HOPE Trialists Group,",
+    "abstract": "IntroductionThe HOPE trial is a Phase II, multi-center, open-label, randomized, parallel-group superiority study comparing acute toxicity of hypofractionated dose-painted external radiotherapy versus conventional external radiotherapy in patients with carcinoma cervix stages I-IIB (FIGO 2018). The trial will be conducted in India with enrollment commencing July 2026. Methods and analysisA total of 300 patients will be randomized in a 1:1 ratio to experimental or control arms. The experimental arm employs dose-painted interval-compressed concurrent chemoradiation utilizing volumetric modulated arc therapy (VMAT), delivering 42.5 Gy in 20 fractions over 4 weeks to the primary clinical target volume and 36 Gy in 20 fractions over 4 weeks to elective pelvic nodal volumes (external iliac, internal iliac, presacral, and common iliac). Concurrent chemotherapy consists of weekly cisplatin 50 mg/m{superscript 2}. The control arm delivers conventional concurrent chemoradiation with VMAT at 45 Gy in 25 fractions over 5 weeks to both primary and elective volumes, with weekly cisplatin 40 mg/m{superscript 2}. Both arms receive image-guided brachytherapy to achieve a total equivalent dose of at least 80 Gy to the high-risk clinical target volume. The primary endpoint is the proportion of patients experiencing grade [&ge;]2 gastrointestinal toxicity (diarrhea, vomiting, nausea) per CTCAE 6.0 criteria. Secondary endpoints include three-year disease-free survival, quality of life, and late toxicity. Ethics and disseminationThe study has been approved by the institutional review board of Tata Medical center. Additional centers will have independent IRB approval after adequate extramural funding has been secured. The results will be disseminated in peer reviewed publications in journals and presented in academic meetings. The study will be conducted as per the applicable laws and regulations of the Indian regulator authorities. Registration detailsIndian Clinical Trial Registry (CTRI) CTRI/2026/05/111292 Strengths and LimitationsO_LIFirst trial of its kind evaluating simultaneous dose de-escalation with hypofractionation with adequate sample size to evaluate impact of toxicity reduction due to bowel and bone marrow dose reduction C_LIO_LICumulative dose of cisplatin as well as therapeutic dose fractionation (1.8 Gy) maintained - pure dose de-escalation being evaluated. C_LIO_LIRigorous multi-step multi-center quality assurance planned C_LIO_LILimited to accrual in Indian patients. C_LIO_LIRequirement of Intensity Modulated radiotherapy for external beam radiotherapy delivery. C_LI",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-07-27",
+    "updated": "2026-07-27",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358844v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358844v1.full.pdf"
+      }
+    ],
+    "score": 67,
+    "infographic": {
+      "key_insight": "HOPE is a phase II randomized trial testing whether a shorter, dose-painted chemoradiation schedule can reduce acute gastrointestinal toxicity in stage I–IIB cervical cancer while maintaining treatment effectiveness.",
+      "clinical_relevance": "If successful, this approach could shorten treatment time and potentially improve tolerability and access for patients receiving definitive cervical cancer radiotherapy.",
+      "method": [
+        "300 patients randomized 1:1 to experimental vs control arms",
+        "Experimental arm: VMAT dose-painted hypofractionated chemoradiation (42.5 Gy/20 fractions to primary target; 36 Gy/20 fractions to pelvic nodes) with weekly cisplatin 50 mg/m²",
+        "Control arm: conventional VMAT chemoradiation (45 Gy/25 fractions) with weekly cisplatin 40 mg/m²; both arms receive image-guided brachytherapy"
+      ],
+      "evidence_signal": "The abstract describes a randomized, multi-center superiority trial with a prespecified primary toxicity endpoint and planned follow-up for disease-free survival, quality of life, and late toxicity.",
+      "watch_item": "Because this is a planned study, clinical impact remains unproven until results confirm that toxicity is reduced without compromising cancer control.",
+      "hashtags": [
+        "#CervicalCancer",
+        "#Radiotherapy",
+        "#ClinicalTrial",
+        "#Hypofractionation",
+        "#VMAT"
+      ],
+      "paper_id": "2026-07-27-medrxiv-a_phase_ii_multi_center_open_label_randomized_parallel_group_superiority_study_to_compare",
+      "paper_title": "A phase II multi-center, open-label, randomized, parallel-group, superiority study to compare the acute toxicity of Hypofractionated dOse Painted External radiotherapy versus conventional external radiotherapy in patients with carcinoma cervix stage I - IIB. (HOPE)",
+      "paper_date": "2026-07-27",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-07-31T09:40:42",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-27-medrxiv-ovai_focus_a_framework_for_multiclass_segmentation_and_morphological_features_extraction_i",
+    "doi": "10.64898/2026.07.24.26358148",
+    "date": "2026-07-27",
+    "title": "OvAi Focus: A framework for multiclass segmentation and morphological features extraction in gynecological ultrasound",
+    "authors": "Salis, F.; Tallone, N.; Fina, P. R.; Massobrio, R.; Bellacosa Marotti, R.; Conti, D.; Fuso, L.; Mariani, L.; Ferrero, A. M.; Accomasso, F.; Arena, A.; Borella, F.; Casula, V.; Cosma, S.; De Grandis, T.; Grisaru, D.; Lacalandra, A.; Pereira Sanchez, A.; Seracchioli, R.; Robba, E.; Roccio, M.; Gerace, F.",
+    "abstract": "Ovarian cancer is recognized as the deadliest gynecological malignancy. Diagnosis at advanced stages and the lack of effective screening program lead to poor survival rates, dropping to 17-39 % in stage III-IV diseases. Ultrasound (US) is the primary imaging modality for ovarian structures evaluation, but it is strongly affected by the operator expertise due to the complexity of adnexal masses and the physiological variability of ovarian morphology throughout a womans lifecycle. The International Ovarian Tumor Analysis (IOTA) group introduced definitions and predictive tools to standardize gynecological US interpretation. However, these tools still rely on subjective interpretation, thus highlighting the need for more objective solutions. Recent studies have explored artificial intelligence (AI) algorithms for gynecological US, mainly focusing on adnexal masses classification. Conversely, a robust solution supporting the identification and description of healthy and tumoral ovarian structures is still lacking. This paper proposes OvAi Focus, a framework including (i) a segmentation module for the identification of healthy ovaries, plus solid and cystic components of adnexal masses; (ii) a morphology module for the extraction of IOTA-based keywords to describe adnexal masses morphology. Segmentation module results were compared to ground truth masks, showing DICE scores from 0.62 for functional ovary to 0.87 for the whole adnexal mass. Morphology module was tested through interobserver agreement analysis, obtaining Fleiss Kappa from 0.16 to 0.57 and Percent Agreement from 47 to 90 %, in line with existing literature. OvAi Focus represents an innovative solution which could help overcoming subjectivity in gynecological US imaging interpretation.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-27",
+    "updated": "2026-07-27",
+    "primary_category": "obstetrics and gynecology",
+    "categories": [
+      "obstetrics and gynecology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358148v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358148v1.full.pdf"
+      }
+    ],
+    "score": 59,
+    "infographic": {
+      "key_insight": "OvAi Focus combines AI segmentation and morphology extraction to make gynecological ultrasound interpretation of healthy ovaries and adnexal masses more objective.",
+      "clinical_relevance": "By standardizing how ovarian structures and mass features are identified, the framework could support more consistent ultrasound reporting in ovarian cancer assessment.",
+      "method": [
+        "Segmentation module identifies healthy ovaries plus solid and cystic components of adnexal masses.",
+        "Morphology module extracts IOTA-based keywords describing adnexal mass features.",
+        "Outputs were compared against ground-truth masks and interobserver agreement measures."
+      ],
+      "evidence_signal": "In the abstract, segmentation DICE scores ranged from 0.62 for functional ovary to 0.87 for the whole adnexal mass, while morphology agreement showed Fleiss Kappa of 0.16 to 0.57 and percent agreement of 47% to 90%.",
+      "watch_item": "Performance is variable across targets, and the morphology module still depends on subjective reference labels and clinical validation before routine use.",
+      "hashtags": [
+        "#OvarianCancer",
+        "#UltrasoundAI",
+        "#MedicalImaging",
+        "#PrecisionOncology",
+        "#AIinHealthcare"
+      ],
+      "paper_id": "2026-07-27-medrxiv-ovai_focus_a_framework_for_multiclass_segmentation_and_morphological_features_extraction_i",
+      "paper_title": "OvAi Focus: A framework for multiclass segmentation and morphological features extraction in gynecological ultrasound",
+      "paper_date": "2026-07-27",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-31T09:40:44",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-27-medrxiv-deep_learning_for_individual_level_classification_of_schizophrenia_versus_healthy_controls",
+    "doi": "10.64898/2026.07.24.26358816",
+    "date": "2026-07-27",
+    "title": "Deep Learning for Individual-Level Classification of Schizophrenia Versus Healthy Controls from Trial-Level Auditory Oddball ERP Waveforms",
+    "authors": "Sheu, Y.-H.; Lin, Y.-T.; Holton, K. M.; Liu, C.-M.; Chien, Y.-L.; Liu, C.-C.; Hall, M.-H.; Hwu, H.-G.; Hsieh, M. H.",
+    "abstract": "Machine learning approaches may support individual-level classification in psychiatry, but many EEG-based schizophrenia studies have relied on small samples or conventional summary features. We evaluated whether trial-level auditory oddball event-related potential (ERP) waveforms could support schizophrenia versus healthy-control classification using deep learning. The study included 258 patients with schizophrenia and 142 healthy controls. EEG recordings from an auditory duration oddball paradigm were segmented into -100 to 500 ms epochs, and trial-level mismatch waveforms were generated by subtracting each participants mean standard response from accepted deviant trials. Models were trained using a fixed participant-level training, validation, and test split, with demographic residualization fit only in the training set. Five deep learning architectures were trained on full residualized ERP waveforms and compared with classical machine learning models trained on 18 conventional ERP summary features. Deep learning models achieved higher test set discrimination than classical feature-based models, with AUROC values ranging from 0.797 to 0.857 versus 0.705 to 0.720. Benchmark analyses suggested that performance depended on the combination of waveform-level input and deep learning architecture. These findings support trial-level auditory oddball ERP waveforms as promising classification inputs and candidate electrophysiological biomarkers of schizophrenia-related neural information processing.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-27",
+    "updated": "2026-07-27",
+    "primary_category": "psychiatry and clinical psychology",
+    "categories": [
+      "psychiatry and clinical psychology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358816v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358816v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "Deep learning on trial-level auditory oddball ERP waveforms classified schizophrenia vs healthy controls better than classical models using summary ERP features.",
+      "clinical_relevance": "If validated, this approach could help develop more objective electrophysiology-based tools to support individual-level psychiatric classification and biomarker research.",
+      "method": [
+        "258 patients with schizophrenia and 142 healthy controls were studied.",
+        "EEG from an auditory duration oddball task was converted into trial-level mismatch ERP waveforms (-100 to 500 ms).",
+        "Five deep learning models were compared with classical machine learning on 18 ERP summary features, with demographic residualization fit only on training data."
+      ],
+      "evidence_signal": "On the held-out test set, deep learning reached AUROC 0.797-0.857, outperforming classical feature-based models at 0.705-0.720.",
+      "watch_item": "Performance was based on a single participant-level split, so broader validation across independent sites and recordings is still needed.",
+      "hashtags": [
+        "#DeepLearning",
+        "#EEG",
+        "#ERP",
+        "#Schizophrenia",
+        "#Biomarkers"
+      ],
+      "paper_id": "2026-07-27-medrxiv-deep_learning_for_individual_level_classification_of_schizophrenia_versus_healthy_controls",
+      "paper_title": "Deep Learning for Individual-Level Classification of Schizophrenia Versus Healthy Controls from Trial-Level Auditory Oddball ERP Waveforms",
+      "paper_date": "2026-07-27",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-31T09:40:46",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-27-medrxiv-simulation_trained_deep_learning_for_automated_cell_based_hla_antibody_assay_interpretatio",
+    "doi": "10.64898/2026.07.23.26358785",
+    "date": "2026-07-27",
+    "title": "Simulation-Trained Deep Learning for Automated Cell-Based HLA Antibody Assay Interpretation in Pre-Transplant Diagnostics",
+    "authors": "Afting, C.; Semmler, A.-L.; Oulghazi, S.; Ries, J. I.; Lichtenberg, A. E.; Jaeger, J. F.; Merk, C.; Fuerst, D.; Lorenz, H.-M.; Tonn, T.; Seidl, C.; Exner, T.",
+    "abstract": "Preformed and de novo antibodies against donor human leukocyte antigen (HLA) antigens remain a major cause of antibody-mediated rejection and graft loss after organ transplantation. Although solid-phase assays and virtual crossmatching have reshaped pre-transplant risk assessment, physical crossmatching, which assesses whether recipient antibodies react with donor cells, remains widely used as the final compatibility assessment before transplantation. These workflows include both complement-dependent cytotoxicity (CDC) and flow cytometry crossmatch (FCXM) assays, but their interpretation remains partly manual, operator-dependent, and, for microscopic CDC readout, semi-quantitative. Here, we present AlloViewer, a web-based software platform for automated and traceable interpretation of image-based and flow-cytometry-based HLA antibody diagnostics. For CDC microscopy, AlloViewer employs a simulation-trained deep learning (UNet) workflow that combines automated lymphocyte segmentation with experiment-specific fluorescence classification and well-level cytotoxicity scoring. To deliberately capture the technical variability encountered in routine diagnostics, we generated simulated CDC-like training images spanning differences in image resolution, acquisition conditions, staining quality, cell density, cell distribution, clustering, and background fluorescence, among others. The resulting simulation-trained model enabled robust lymphocyte detection across heterogeneous imaging conditions and outperformed a conventional rule-based image analysis pipeline under variable acquisition conditions. Automated CDC scoring achieved performance within the range of human inter-annotator variability and approached the practical reproducibility limit defined by human disagreement. To cover all modalities of pre-transplant physical crossmatching, AlloViewer further supports automated FCXM interpretation through cell population identification and population-specific immunoglobulin G (IgG) readouts. The platform integrates these workflows in an assay-specific web interface and provides application programming interface (API) access for programmatic submission of assay data and retrieval of processed results. Together, AlloViewer establishes an integrated computational framework for standardized and traceable interpretation of CDC crossmatch assays, CDC-based HLA antibody identification testing using commercial test-cell panels, and FCXM workflows. More broadly, this work demonstrates how simulation-trained artificial intelligence (AI) can facilitate robust computational analysis across technically heterogeneous laboratory environments, providing a framework for standardizing traditionally operator-dependent diagnostic workflows.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-07-27",
+    "updated": "2026-07-27",
+    "primary_category": "transplantation",
+    "categories": [
+      "transplantation"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.23.26358785v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.23.26358785v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "A simulation-trained deep learning platform can automate interpretation of CDC and FCXM HLA antibody assays while handling the variability of real-world pre-transplant lab imaging.",
+      "clinical_relevance": "Automated, traceable crossmatch readouts may reduce operator dependence and improve consistency in pre-transplant compatibility assessment.",
+      "method": [
+        "Generated CDC-like simulated training images covering variability in resolution, staining, cell density, clustering, and background fluorescence.",
+        "Used a UNet-based workflow for lymphocyte segmentation, experiment-specific fluorescence classification, and well-level cytotoxicity scoring.",
+        "Added automated FCXM interpretation with cell-population identification and IgG readouts in a web-based platform with API access."
+      ],
+      "evidence_signal": "In abstract-level evaluation, the simulation-trained model outperformed a conventional rule-based pipeline under variable acquisition conditions and matched performance to the range of human inter-annotator variability.",
+      "watch_item": "Performance depends on assay-specific image quality and careful validation before routine deployment across different laboratories and instruments.",
+      "hashtags": [
+        "#DeepLearning",
+        "#DigitalPathology",
+        "#TransplantDiagnostics",
+        "#HLA",
+        "#MedicalAI"
+      ],
+      "paper_id": "2026-07-27-medrxiv-simulation_trained_deep_learning_for_automated_cell_based_hla_antibody_assay_interpretatio",
+      "paper_title": "Simulation-Trained Deep Learning for Automated Cell-Based HLA Antibody Assay Interpretation in Pre-Transplant Diagnostics",
+      "paper_date": "2026-07-27",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-07-31T09:40:49",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-27-medrxiv-an_explainable_transformer_model_learning_from_entire_treatment_timelines_for_pan_cancer_r",
+    "doi": "10.64898/2026.07.24.26358838",
+    "date": "2026-07-27",
+    "title": "An explainable transformer model learning from entire treatment timelines for pan-cancer risk profiling across healthcare systems",
+    "authors": "Keyl, P.; Kiermeyer, N.; Bosserhoff, J.; Lenfers, T.; Niederhauser, T.; Fan, B.; Schnake, T.; Schallenberg, S.; Aubele, F.; Kuss, S.; Idaji, M. J.; Jurmeister, P.; Kim, M.; Bauer, S.; Bechrakis, N.; Forsting, M.; Fuehrer-Sakel, D.; Glas, M.; Gruenwald, V.; Hadaschik, B.; Herrmann, K.; Kasper, S.; Kimmig, R.; Lang, S.; Pretzell, I.; Rassaf, T.; Roesch, A.; Siveke, J. T.; Guberina, M.; Sure, U.; Wichert, M.; Ingrisch, M.; Unger, K.; Behr, J.; Teupser, D.; Stief, C. G.; Mayerle, J.; Harbeck, N.; Tufman, A.; Ricke, J.; Lindner, L. H.; Priglinger, S.; Hoeglinger, G.; Mahner, S.; Canis, M.; Heinzerl",
+    "abstract": "Cancer outcomes vary widely between individual patients, each accumulating an irregular record of treatments, diagnoses, measurements, and complications. Current prognostic models reduce this complexity into a single snapshot, focus on narrow clinical settings, and rarely generalize across hospitals. Here we introduce Chronicle, an explainable transformer that learns from entire patient trajectories to predict diverse clinical outcomes throughout the disease course while capturing both short- and long-term temporal dependencies. Trained on 53.7 million longitudinal data points from 51,711 patients spanning 67 cancer types, Chronicle operates natively on irregular data without imputation and jointly predicts eight endpoints within a flexible framework adaptable to additional outcomes. Chronicle outperformed cross-sectional models for overall survival prediction (C-index 0.84 vs 0.76-0.79), stratified patients more accurately than established prognostic systems, including TNM stage, and predicted seven adverse event and transfusion endpoints (AUC 0.80-0.92). Applied without retraining to 69,341 patients in Germany, Switzerland, and the United States, Chronicle generalized across healthcare systems and improved further with local fine-tuning. Integrated explainability traced each risk update to patient-specific clinical factors, revealing distinct temporal persistence of prognostic information, with relevance half-lives ranging from weeks for therapies to nearly one year for baseline characteristics. These findings demonstrate that learning from hospital-wide patient trajectories enables interpretable and continuously updated predictions, providing a scalable framework to support individualized treatment decisions.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-07-27",
+    "updated": "2026-07-27",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358838v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.24.26358838v1.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "Chronicle is an explainable transformer that uses entire irregular cancer care timelines to deliver continuously updated, patient-specific risk predictions across many cancer types and outcomes.",
+      "clinical_relevance": "It may help clinicians better stratify risk and support individualized treatment planning by combining prognostic signals from diagnoses, treatments, labs, complications, and transfusions over time.",
+      "method": [
+        "Trained on 53.7 million longitudinal data points from 51,711 patients across 67 cancer types.",
+        "Learns directly from irregular treatment timelines without imputation.",
+        "Jointly predicts eight clinical endpoints with built-in explainability."
+      ],
+      "evidence_signal": "In the abstract, Chronicle outperformed cross-sectional survival models (C-index 0.84 vs 0.76-0.79), improved stratification over TNM stage, and achieved AUCs of 0.80-0.92 for seven adverse event and transfusion outcomes.",
+      "watch_item": "Although it generalized across three healthcare systems, real-world deployment will still need local validation, workflow integration, and careful monitoring for site-specific data differences.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#AIinHealthcare",
+        "#CancerPrognosis",
+        "#ExplainableAI",
+        "#LongitudinalData"
+      ],
+      "paper_id": "2026-07-27-medrxiv-an_explainable_transformer_model_learning_from_entire_treatment_timelines_for_pan_cancer_r",
+      "paper_title": "An explainable transformer model learning from entire treatment timelines for pan-cancer risk profiling across healthcare systems",
+      "paper_date": "2026-07-27",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-07-31T09:40:51",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-07-25-medrxiv-circulating_protein_profiling_identifies_prognostic_biomarkers_in_amyotrophic_lateral_scle",
+    "doi": "10.64898/2026.07.20.26354798",
+    "date": "2026-07-25",
+    "title": "Circulating protein profiling identifies prognostic biomarkers in amyotrophic lateral Sclerosis",
+    "authors": "Klimovski, H.; Weinreich, M.; Strange, A.; Magen, I.; Yacovzada, N. - S.; Cohen, Y.; Melamed-Kadosh, D.; Lester, D. G.; Taylor, A.; Zhou, Y.; Ziv, T.; Abramovich, B.; Subramaniam, A. G.; Perlson, E.; Drory, V.; Admon, A.; Shaw, P. J.; Malaspina, A.; Turner, M. R.; Talbot, K.; Thompson, A. G.; Cooper-Knock, J.; Hornstein, E.",
+    "abstract": "Amyotrophic lateral sclerosis (ALS) is a fatal neurodegenerative disease characterized by progressive motor neuron loss and significant clinical variability. Blood-based biomarkers offer a scalable approach to stratify patients and support therapeutic development. In a large-scale serum proteomic survival study of ALS, we analyzed 741 patients from independent cohorts in Israel and the UK to identify blood proteins linked to ALS survival. The cohorts were profiled using complementary proteomics technologies, mass spectrometry and the Olink proximity extension assay (PEA), enabling cross-cohort and cross-platform evaluation of concordant protein effects. We identified 19 serum proteins associated with ALS survival across two independent cohorts profiled using orthogonal proteomic platforms. Among these, GSN and IGFBP2 improved survival prediction and patient stratification compared to established clinical covariates and provided additional prognostic information compared to serum neurofilament light chain (NfL). These novel circulating protein biomarker candidates may improve prognostic assessment and support future precision-medicine approaches in ALS.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-07-25",
+    "updated": "2026-07-25",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.20.26354798v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.20.26354798v2.full.pdf"
+      }
+    ],
+    "score": 38,
+    "infographic": {
+      "key_insight": "A cross-cohort serum proteomics study identified 19 circulating proteins associated with ALS survival, with GSN and IGFBP2 showing added prognostic value.",
+      "clinical_relevance": "These blood-based markers could improve patient risk stratification and support more precise prognosis in ALS beyond standard clinical factors and NfL.",
+      "method": [
+        "Analyzed serum from 741 ALS patients across independent Israel and UK cohorts.",
+        "Used two orthogonal proteomics platforms: mass spectrometry and Olink PEA.",
+        "Cross-validated protein-survival associations across cohorts and platforms."
+      ],
+      "evidence_signal": "The findings were evaluated in a large survival study and replicated across two independent cohorts using complementary proteomic technologies.",
+      "watch_item": "These are prognostic biomarker candidates, so further external validation and assay standardization are needed before routine clinical use.",
+      "hashtags": [
+        "#ALS",
+        "#Biomarkers",
+        "#Proteomics",
+        "#Prognosis",
+        "#PrecisionMedicine"
+      ],
+      "paper_id": "2026-07-25-medrxiv-circulating_protein_profiling_identifies_prognostic_biomarkers_in_amyotrophic_lateral_scle",
+      "paper_title": "Circulating protein profiling identifies prognostic biomarkers in amyotrophic lateral Sclerosis",
+      "paper_date": "2026-07-25",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-07-31T09:40:53",
+      "generator": "openai"
+    }
+  }
+]
