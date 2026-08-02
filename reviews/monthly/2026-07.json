@@ -1,0 +1,75 @@
+{
+  "repo_title": "AI Medicine",
+  "period": "month",
+  "label": "2026-07",
+  "author": "William Sun with help from OpenAI",
+  "paper_count": 170,
+  "analysis": {
+    "executive_summary": "July 2026 in AI medicine was marked by a strong shift from isolated predictive models toward systems that are multimodal, foundation-model-based, and operationally closer to clinical workflows. Across oncology, the month featured advances in pre-treatment risk stratification, treatment response prediction, radiology/pathology foundation models, and agentic decision support, with several papers emphasizing external validation, domain adaptation, and interpretability. Therapeutic discovery also advanced through disease-aware generative models, structure-guided molecular design, retrosynthesis benchmarking, and de novo structure elucidation. A second major trend was the use of multimodal and longitudinal data—combining imaging, EMR text, omics, pathology, and temporal trajectories—to better represent disease heterogeneity and personalize care. Overall, the month suggests the field is moving from proof-of-concept prediction toward clinically usable, workflow-aware AI systems, while still grappling with generalization, calibration, data scarcity, and evaluation rigor.",
+    "major_themes": [
+      "Multimodal oncology models combined imaging, clinical variables, pathology, and omics to improve risk stratification and treatment selection.",
+      "Foundation models were increasingly adapted for medical imaging and pathology, with efficiency and cross-cohort robustness becoming key concerns.",
+      "Agentic and LLM-based systems appeared more often in clinical reasoning, triage, modality acquisition, and severity assessment.",
+      "Therapeutic discovery models expanded beyond molecule generation to disease-aware design, docking, retrosynthesis, and structure-property reasoning.",
+      "Interpretability moved from post-hoc attribution toward mechanistic, evidence-grounded, and graph-based explanations.",
+      "Domain shift and cross-site generalization were recurring issues, prompting work on adaptation, mixing strategies, and benchmark design."
+    ],
+    "notable_papers": [
+      {
+        "title": "Towards Precision Therapy in Hepatocellular Carcinoma: A Clinical-Reasoning LLM for Risk Stratification and Treatment Guidance",
+        "why_it_matters": "Illustrates how LLMs are being aligned to clinical reasoning tasks beyond summarization, producing staging, treatment guidance, and survival estimates from EMR narratives."
+      },
+      {
+        "title": "CT-CLIP Representations for Multimodal Lung Cancer Survival Prediction",
+        "why_it_matters": "Shows that a domain-specific foundation model can improve survival prediction even in data-constrained settings when used as a frozen feature extractor."
+      },
+      {
+        "title": "GigaPath-Flash and GigaTIME-Flash: Efficient Pathology Foundation Models for Whole-Slide and Tumor Microenvironment Analysis",
+        "why_it_matters": "Highlights the push toward scalable, slide-level pathology AI with smaller, more deployable models that still support downstream biomarker tasks."
+      },
+      {
+        "title": "DrugGen 2: A disease-aware language model for enhancing drug discovery",
+        "why_it_matters": "Moves generative drug design toward disease-conditioned planning, which is more aligned with real therapeutic development than target-only generation."
+      },
+      {
+        "title": "MARLIN: De Novo Molecular Structure Elucidation from Tandem Mass Spectra without a Ground-Truth Formula",
+        "why_it_matters": "Addresses a practical bottleneck in metabolomics and drug discovery by removing dependence on an oracle molecular formula."
+      },
+      {
+        "title": "ClinRAG-GRAPH: Clinical-prior Retrieval-Augmented Graph Model with Domain Adversarial Learning for Breast pCR Prediction",
+        "why_it_matters": "Combines retrieval, graph reasoning, and domain adaptation for a clinically important prediction task, reflecting the field’s move toward robust multimodal systems."
+      },
+      {
+        "title": "CT-Based Deep Foundation Model for Predicting Immune Checkpoint Inhibitor-Induced Pneumonitis Risk in Lung Cancer",
+        "why_it_matters": "Demonstrates self-supervised pretraining at large CT scale for adverse-event prediction, a promising use case for preventive oncology."
+      },
+      {
+        "title": "PathAgentBench: Benchmarking Evidence-Seeking Vision-Language Models on Whole-Slide Pathology Image",
+        "why_it_matters": "Provides a more realistic evaluation of pathology VLMs by testing evidence acquisition and multi-scale reasoning, not just classification."
+      },
+      {
+        "title": "MOSAIC: Multi-Large Language Model Orchestrated Severity Assessment of Clinical Records",
+        "why_it_matters": "Extends agentic LLMs into severity phenotyping and shows how generated constructs can be compared against established clinical indices."
+      }
+    ],
+    "field_progress": [
+      "Clinical AI is increasingly framed as decision support rather than pure prediction, with outputs such as treatment rankings, risk staging, and modality acquisition policies.",
+      "Multimodal learning is becoming more structured, using graphs, retrieval, temporal alignment, and knowledge priors to represent patient context more faithfully.",
+      "Self-supervised and foundation-model pretraining is now central in imaging, especially for CT and pathology, where labeled data remain limited.",
+      "Evaluation quality is improving in some subfields through external validation, prospective cohorts, and benchmarks that expose shortcut learning and domain bias.",
+      "Explainability is evolving from feature importance toward evidence grounding, mechanistic interpretation, and alignment with clinical workflows.",
+      "Therapeutic discovery is broadening to include not just generation but synthesis planning, docking, structure prediction, and mass-spectrometry-based elucidation."
+    ],
+    "open_questions": [
+      "How can multimodal medical AI systems be calibrated and validated prospectively before clinical deployment across hospitals and populations?",
+      "What is the best way to combine foundation-model representations with explicit clinical priors without sacrificing robustness or interpretability?",
+      "How should agentic LLM systems be audited for safety, hallucination, and accountability when they produce treatment guidance or severity assessments?",
+      "Can cross-domain generalization be made reliable enough for imaging models trained on one institution to transfer to another without performance collapse?",
+      "Which explanation formats are most useful to clinicians: saliency maps, retrieved evidence, mechanistic graphs, or textual rationales?",
+      "How can therapeutic discovery models be linked more directly to experimental feedback loops and downstream translational success?"
+    ],
+    "outlook": "The next phase of AI medicine will likely center on clinically grounded systems that integrate multiple data types, reason over time, and operate under realistic workflow constraints. The papers this month suggest that technical novelty is increasingly expected to come with external validation, robustness analysis, and some form of interpretability or operational utility. Progress is strongest where models are tied to concrete clinical decisions or molecular design tasks, but the field still needs better prospective evidence, standardized benchmarks, and safety frameworks before these methods can be trusted at scale."
+  },
+  "markdown_file": "2026-07.md",
+  "generated_at": "2026-08-02T03:26:12"
+}
