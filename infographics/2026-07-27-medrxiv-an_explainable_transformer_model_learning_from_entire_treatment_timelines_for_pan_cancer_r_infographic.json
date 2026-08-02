@@ -1,24 +1,24 @@
 {
-  "key_insight": "Chronicle is an explainable transformer that learns from full, irregular cancer treatment timelines to continuously update risk predictions across many cancer types.",
-  "clinical_relevance": "It may help clinicians stratify patient risk more accurately than single-snapshot models and support individualized decisions across different hospital systems.",
+  "key_insight": "Chronicle is an explainable transformer that uses full, irregular patient treatment timelines to continuously update pan-cancer risk predictions across multiple outcomes.",
+  "clinical_relevance": "By learning from hospital-wide longitudinal records, it may help stratify patients more accurately than traditional snapshot-based prognostic tools and support individualized treatment planning.",
   "method": [
-    "Trained on 53.7 million longitudinal data points from 51,711 patients with 67 cancer types",
-    "Uses a transformer architecture that handles irregular timelines without imputation",
-    "Jointly predicts eight clinical endpoints with built-in explainability for patient-specific risk updates"
+    "Trained on 53.7 million longitudinal data points from 51,711 patients across 67 cancer types",
+    "Operates directly on irregular timelines without imputation",
+    "Jointly predicts eight clinical endpoints with built-in explainability"
   ],
-  "evidence_signal": "In the abstract, Chronicle outperformed cross-sectional models for overall survival (C-index 0.84 vs 0.76–0.79), predicted seven adverse event/transfusion outcomes with AUC 0.80–0.92, and generalized to 69,341 external patients across Germany, Switzerland, and the United States.",
-  "watch_item": "Performance was reported from retrospective data, so real-world impact and workflow fit still need prospective validation before routine use.",
+  "evidence_signal": "In the abstract, Chronicle outperformed cross-sectional survival models (C-index 0.84 vs 0.76-0.79), predicted seven adverse event/transfusion endpoints (AUC 0.80-0.92), and generalized to 69,341 patients across Germany, Switzerland, and the United States.",
+  "watch_item": "Real-world deployment will still require local validation and careful attention to differences in data quality, workflow integration, and model calibration across healthcare systems.",
   "hashtags": [
     "#PrecisionOncology",
-    "#CancerAI",
-    "#TransformerModels",
-    "#ClinicalPrediction",
-    "#ExplainableAI"
+    "#AIinHealthcare",
+    "#CancerPrediction",
+    "#ExplainableAI",
+    "#LongitudinalData"
   ],
   "paper_id": "2026-07-27-medrxiv-an_explainable_transformer_model_learning_from_entire_treatment_timelines_for_pan_cancer_r",
   "paper_title": "An explainable transformer model learning from entire treatment timelines for pan-cancer risk profiling across healthcare systems",
   "paper_date": "2026-07-27",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-08-01T09:03:26",
+  "generated_at": "2026-08-02T09:07:18",
   "generator": "openai"
 }

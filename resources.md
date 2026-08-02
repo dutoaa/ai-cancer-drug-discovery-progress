@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-08-01
+Generated: 2026-08-02
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. Histological triage of early-stage mycosis fungoides using a weakly supervised deep learning-based model: a multicentre, external validation, and clinical utility study

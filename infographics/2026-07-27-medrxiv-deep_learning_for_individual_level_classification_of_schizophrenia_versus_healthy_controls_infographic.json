@@ -1,13 +1,13 @@
 {
-  "key_insight": "Trial-level auditory oddball ERP waveforms, analyzed with deep learning, classified schizophrenia versus healthy controls better than models using conventional summary features.",
-  "clinical_relevance": "This suggests EEG waveform-based machine learning may help develop objective, individual-level biomarkers for schizophrenia-related neural processing, though it is not yet a clinical diagnostic tool.",
+  "key_insight": "Trial-level auditory oddball ERP waveforms analyzed with deep learning distinguished schizophrenia from healthy controls better than conventional ERP summary-feature models.",
+  "clinical_relevance": "This suggests waveform-level EEG biomarkers may help support future individual-level psychiatric classification, though the work is not a standalone diagnostic tool.",
   "method": [
-    "258 patients with schizophrenia and 142 healthy controls were recorded during an auditory duration oddball EEG task.",
-    "EEG epochs were segmented from -100 to 500 ms and trial-level mismatch waveforms were created from deviant trials.",
-    "Five deep learning models on full residualized ERP waveforms were compared with classical models using 18 ERP summary features."
+    "258 patients with schizophrenia and 142 healthy controls were studied using an auditory duration oddball EEG paradigm.",
+    "Trial-level mismatch ERP waveforms were created from accepted deviant trials and residualized for demographic effects using training data only.",
+    "Five deep learning models were compared with classical machine learning models trained on 18 ERP summary features."
   ],
-  "evidence_signal": "On the held-out test set, deep learning achieved AUROC 0.797-0.857, outperforming classical feature-based models at 0.705-0.720.",
-  "watch_item": "Results come from a single study design with fixed participant splits, so external validation and robustness across sites, devices, and populations are still needed.",
+  "evidence_signal": "On a fixed participant-level split, deep learning achieved test AUROC values of 0.797 to 0.857, outperforming feature-based classical models at 0.705 to 0.720.",
+  "watch_item": "Performance was evaluated on a single split with a specific preprocessing pipeline, so external validation is needed before broader use.",
   "hashtags": [
     "#EEG",
     "#DeepLearning",
@@ -19,6 +19,6 @@
   "paper_title": "Deep Learning for Individual-Level Classification of Schizophrenia Versus Healthy Controls from Trial-Level Auditory Oddball ERP Waveforms",
   "paper_date": "2026-07-27",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-08-01T09:03:18",
+  "generated_at": "2026-08-02T09:07:08",
   "generator": "openai"
 }
