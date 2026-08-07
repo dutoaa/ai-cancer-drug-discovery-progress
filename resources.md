@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-08-06
+Generated: 2026-08-07
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. Automating clinical trial outcome identification and misreporting detection using RegCheck
@@ -11,42 +11,50 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.07.30.26358885v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-02-medrxiv-automating_clinical_trial_outcome_identification_and_misreporting_detection_using_regcheck_infographic.json
 
-## 2. Clinical characteristics and associated factors of de novo and recurrent prostate cancer after kidney transplantation
+## 2. Mapping the flow of data in clinical trials and assessing its CO2 emissions
+
+- Date: 2026-08-03
+- Category: Clinical Translation
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.31.26358778v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.31.26358778v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-03-medrxiv-mapping_the_flow_of_data_in_clinical_trials_and_assessing_its_co2_emissions_infographic.json
+
+## 3. Multimodality Quantitative Assessment of Left Atrial Remodeling Characteristics Using Echocardiography and LGE-CMR in Isolated Degenerative Mitral Regurgitation: Association With Atrial Fibrillation
+
+- Date: 2026-08-03
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.31.26359443v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.31.26359443v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-03-medrxiv-multimodality_quantitative_assessment_of_left_atrial_remodeling_characteristics_using_echo_infographic.json
+
+## 4. Beyond the Red Complex: De Novo Marker Discovery Uncovers Novel Periodontitis-Associated Taxa and Enables Non-Invasive Machine Learning Diagnosis
+
+- Date: 2026-08-03
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.31.26359396v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.07.31.26359396v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-03-medrxiv-beyond_the_red_complex_de_novo_marker_discovery_uncovers_novel_periodontitis_associated_ta_infographic.json
+
+## 5. A Zero-Burden Sleep Foundation Model Built on Cardiorespiratory Signals from 1,400,000+ Hours of Multi-Ethnic Sleep Recordings
+
+- Date: 2026-08-03
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.1101/2025.09.06.25335216v3
+- PDF: https://www.medrxiv.org/content/10.1101/2025.09.06.25335216v3.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-03-medrxiv-a_zero_burden_sleep_foundation_model_built_on_cardiorespiratory_signals_from_1_400_000_hou_infographic.json
+
+## 6. Dissecting the Genetic Link Between Insulin Resistance and Coronary Heart Disease: A Multi-Trait GWAS and Proteomic-Metabolomic Mediation Analysis
+
+- Date: 2026-08-03
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.02.26359507v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.02.26359507v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-03-medrxiv-dissecting_the_genetic_link_between_insulin_resistance_and_coronary_heart_disease_a_multi_infographic.json
+
+## 7. Clinical characteristics and associated factors of de novo and recurrent prostate cancer after kidney transplantation
 
 - Date: 2026-08-02
 - Category: Precision Oncology
 - Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.30.26359389v1
 - PDF: https://www.medrxiv.org/content/10.64898/2026.07.30.26359389v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-02-medrxiv-clinical_characteristics_and_associated_factors_of_de_novo_and_recurrent_prostate_cancer_a_infographic.json
-
-## 3. Electroconvulsive Therapy Drives Sensorimotor Network Segregation in Depression: A Multiscale Edge-Centric Connectomic Study
-
-- Date: 2026-07-31
-- Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.29.26358453v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.29.26358453v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-31-medrxiv-electroconvulsive_therapy_drives_sensorimotor_network_segregation_in_depression_a_multisca_infographic.json
-
-## 4. Smartphone Imaging for Remote Monitoring of Inflammatory Arthritis in a Real-World Cohort: Longitudinal Evaluation of a Machine Learning-Based Finger Fold Biomarker
-
-- Date: 2026-07-31
-- Category: Target Biology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.30.26359295v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.30.26359295v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-31-medrxiv-smartphone_imaging_for_remote_monitoring_of_inflammatory_arthritis_in_a_real_world_cohort_infographic.json
-
-## 5. Interpretable machine learning prediction of in-hospital mortality in ICU patients with cancer and sepsis using first-day data: Development using MIMIC-IV and external validation in eICU-CRD
-
-- Date: 2026-07-31
-- Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.30.26359086v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.30.26359086v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-31-medrxiv-interpretable_machine_learning_prediction_of_in_hospital_mortality_in_icu_patients_with_ca_infographic.json
-
-## 6. Endpoint-aligned artificial intelligence for biopsy-sparing assessment of suspected basal cell carcinoma
-
-- Date: 2026-07-31
-- Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.30.26359303v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.30.26359303v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-07-31-medrxiv-endpoint_aligned_artificial_intelligence_for_biopsy_sparing_assessment_of_suspected_basal_infographic.json
