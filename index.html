@@ -22,7 +22,7 @@
     <header>
       <div>
         <h1>AI Cancer Drug Discovery Research Papers - Daily Top 20</h1>
-        <p class="sub">Collected 2026-08-07. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
+        <p class="sub">Collected 2026-08-08. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
       </div>
       <nav class="actions">
         <a href="papers.json">Data JSON</a>
@@ -31,7 +31,64 @@
     </header>
     <section class="grid">
       <article class="paper">
-        <div class="meta"><span>Virtual Screening</span><span>medRxiv</span><strong>52</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>84</strong></div>
+        <p class="date">2026-08-03</p>
+        <h2>Variantscape: Large Language Model-Driven Mining of Biomedical Literature for Clinical Interpretation of Cancer Variants</h2>
+        <p class="authors">Wosny, M.; Blindu, A. S.; Boesch, M.; Peres, T.; Niederhauser, T.; Fruh, M.; Rothermundt, C.; Hastings, J.</p>
+        <p class="abstract">BackgroundPrecision oncology relies on accurate interpretation of tumour-detected gene variants, to guide personalized treatment decisions. However, accurate interpretation of variants in context requires extensive information that is often buried within unstructured biomedical literature and obscured by inconsistent nomenclature, making manual retrieval labour-intensive and prone to omissions. MethodsTo address this challenge, we developed Variantscape, a large-scale, automated pipeline and open-access web tool. It integrates traditional natural language processing methods with state-of-the-art large language models to extract, standardize, and analyze co-associations between genetic variants, cancer types, and therapeutic interventions from published biomedical abstracts. FindingsFrom over 3 million abstracts screened, 335,817 gene name-containing articles were eligible for downstream extraction. Among these, 7,423 (2.2%) simultaneously mentioned a variant, cancer type, and therapeutic agent, encompassing 3,902 unique variants across 98 cancer types and 388 therapeutic agents. This highlights the inefficiency of manual literature retrieval in molecular tumour board (MTB) workflows. Network analysis revealed 14,831 statistically significant co-associations, represented in a literature-derived graph with 4,388 nodes and 46,943 edges. Canonical alterations in well-studied cancers (e.g., BRAF V600E in melanoma) were strongly linked to established treatments, while several rare variants also emerged with high-confidence literature support. InterpretationBy applying large language models to biomedical literature, Variantscape enables scalable, context-aware extraction of trilateral variant-treatment-cancer relationships. This approach supports early evidence synthesis/hypothesis generation, highlights underrecognized or rare associations, and offers a practical resource for accelerating discovery and supporting precision oncology research and translation. Unlike static databases, Variantscape is continuously updatable and leverages large language model-based inference to uncover putative associations without manual curation. Variantscape has the potential to support MTB workflows and translational research by rapidly revealing signals from underlying abstracts. FundingThis study was funded by the School of Medicine at the University of St. Gallen in Switzerland under grant number 2300380. Strengths and limitations of this studyO_LIVariantscape combines traditional natural language processing with large language models to enable scalable, automated extraction of variant-cancer-treatment relationships from over 3 million biomedical abstracts, substantially reducing the manual search burden inherent to existing molecular tumour board workflows. C_LIO_LIThe pipeline applies large language model-based inference to standardize inconsistent genetic nomenclature across the literature, improving the comparability and reliability of extracted associations that would otherwise be obscured by terminological variation. C_LIO_LIVariantscape is designed as a continuously updatable, open-access resource, meaning it can incorporate newly published evidence without requiring repeated manual intervention. C_LIO_LIThe pipeline relies solely on abstract-level text rather than full-text articles, which may limit the depth and granularity of extracted associations, as key methodological details, variant context, and nuanced clinical findings are frequently reported only within the body of published papers. C_LIO_LIAutomated extraction using large language models introduces a risk of misattribution of variant-cancer-treatment relationships, and without systematic manual validation of outputs, the precision of identified associations at scale remains difficult to fully characterize. C_LI</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.08.02.26359492v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.08.02.26359492v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> BackgroundPrecision oncology relies on accurate interpretation of tumour-detected gene variants, to guide personalized treatment decisions.</p>
+          <p><b>Clinical relevance:</b> Potential relevance: precision oncology workflows and research evaluation.</p>
+          <ul><li>AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.</li><li>Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.</li><li>Use the linked paper for methods, data, and validation details.</li></ul>
+          <p><b>Evidence signal:</b> Evidence details are summarized from the public abstract only.</p>
+          <p><b>Watch item:</b> Not medical advice; review the full paper before clinical or operational use.</p>
+          <div class="tags"><span>#AIMedicine</span> <span>#MedAI</span> <span>#HealthcareAI</span> <span>#Research</span> <span>#Preprints</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>72</strong></div>
+        <p class="date">2026-08-05</p>
+        <h2>RCC-AID: Renal Cell Carcinoma AI Dataset for Medical Imaging Research</h2>
+        <p class="authors">de Boer, S.; Häntze, H.; Ziegelmayer, S.; Russo, T.; van Ginneken, B.; Prokop, M.; Bressem, K. K.; Hering, A.</p>
+        <p class="abstract">Contrast-enhanced computed tomography (CT) is central to the diagnosis, staging, and follow-up of patients with renal cell carcinoma (RCC). As artificial intelligence research into computer-aided solutions continues to grow, the need for curated and annotated datasets becomes increasingly important. Imaging-based artificial intelligence studies often need lesion annotations that are not consistently available. The Cancer Genome Atlas (TCGA) datasets are widely used for model training and validation. However, access to public annotations of lesions is limited, which limits reproducibility and comparability of the published research. To address this gap, we screened 1,915 CT scans from three TCGA-RCC databases and, following a meta-data-based exclusion step, used an automated segmentation model to generate initial kidney and lesion masks. Next, we conducted a reader study with all papillary (n=56), chromophobe (n=27) and 200 randomly selected clear cell RCC cases. Two trained students performed quality checks, corrections, and additional annotation of tumors and cysts, with uncertain cases reviewed by a board-certified radiologist. After data exclusion and quality control, a final cohort of 129 annotated CT scans from 91 patients (24 female, 67 male; mean age 56 years) was retained, including 85 clear cell, 26 papillary and 18 chromophobe RCC cases. Images and voxel-level annotations of kidneys and lesions are openly available at https://zenodo.org/records/20719257. By open-sourcing these annotations, we aim to foster accessible, reproducible AI research in renal cell carcinoma. RCC-AID provides a reusable open resource dataset for segmentation, detection, subtype classification, radiomics, and multimodal RCC research.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.04.22.26351451v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.04.22.26351451v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> Contrast-enhanced computed tomography (CT) is central to the diagnosis, staging, and follow-up of patients with renal cell carcinoma (RCC).</p>
+          <p><b>Clinical relevance:</b> Potential relevance: precision oncology workflows and research evaluation.</p>
+          <ul><li>AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.</li><li>Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.</li><li>Use the linked paper for methods, data, and validation details.</li></ul>
+          <p><b>Evidence signal:</b> Evidence details are summarized from the public abstract only.</p>
+          <p><b>Watch item:</b> Not medical advice; review the full paper before clinical or operational use.</p>
+          <div class="tags"><span>#AIMedicine</span> <span>#MedAI</span> <span>#HealthcareAI</span> <span>#Research</span> <span>#Preprints</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>51</strong></div>
+        <p class="date">2026-08-04</p>
+        <h2>NeuroAid An Open-Data Multimodal Screening Framework for Parkinson&#x27;s and Depression Risk Estimation</h2>
+        <p class="authors">L, J. R.; U, R.; Patel, P.</p>
+        <p class="abstract">Neurological and mental-health conditions such as Parkinsons disease (PD) and major depressive disorder (MDD) impose a substantial and growing global burden, yet reliable early screening remains largely confined to specialist clinical settings that are inaccessible to the majority of affected individuals. We present NeuroAid, an open-data multimodal AI screening framework that estimates condition-specific risk from non-invasive, accessible signals spanning acoustic speech biomarkers, facial and video-based affective cues, and clinical or behavioral digital biomarkers. NeuroAid is organized as a modular, branch-wise pipeline covering three independent signal pathways--audio, vision, and behavioral--unified by a frozen-embedding late-fusion layer that produces interpretable joint risk scores. A participant-safe, subject-grouped splitting protocol is enforced throughout, preventing inter-subject data leakage--a frequently overlooked cause of artificially inflated performance in clinical machine learning benchmarks. On the Figshare Parkinsons audio dataset, a proposed small-data protocol combining frozen WavLM foundation-model embeddings with a grouped SVM-RBF classifier achieves a cross-validated balanced accuracy of 0.786{+/-}0.073 and a held-out test balanced accuracy of 75.0%, F1-score of 80.0%, and AUC-ROC of 82.8%. The depression vision branch, trained on the DepVidMood corpus via transfer from FER-2013, reaches a threshold-tuned test balanced accuracy of 59.7% and is presented as an honest hard-case baseline under severe class imbalance. NeuroAid is further distinguished by its production-grade MLOps scaffolding: orchestrated branch training, JSON and Markdown artifact reporting, a deployable Streamlit screening interface, and a complete CI/CD workflow. The entire system is built exclusively on publicly available datasets, ensuring full reproducibility. All code, artifacts, and benchmark outputs are versioned and deployable via Docker.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.08.03.26359539v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.08.03.26359539v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> Neurological and mental-health conditions such as Parkinsons disease (PD) and major depressive disorder (MDD) impose a substantial and growing global burden, yet reliable early screening remains largely confined to specialist clinical settings that are inacces</p>
+          <p><b>Clinical relevance:</b> Potential relevance: target biology workflows and research evaluation.</p>
+          <ul><li>AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.</li><li>Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.</li><li>Use the linked paper for methods, data, and validation details.</li></ul>
+          <p><b>Evidence signal:</b> Evidence details are summarized from the public abstract only.</p>
+          <p><b>Watch item:</b> Not medical advice; review the full paper before clinical or operational use.</p>
+          <div class="tags"><span>#AIMedicine</span> <span>#MedAI</span> <span>#HealthcareAI</span> <span>#Research</span> <span>#Preprints</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Virtual Screening</span><span>medRxiv</span><strong>47</strong></div>
         <p class="date">2026-08-02</p>
         <h2>Automating clinical trial outcome identification and misreporting detection using RegCheck</h2>
         <p class="authors">Cummins, J.; Drysdale, H.; Elson, M.; Hussey, I.; Goldacre, B.; DeVito, N. J.</p>
@@ -50,7 +107,7 @@
     
 
       <article class="paper">
-        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>51</strong></div>
+        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>46</strong></div>
         <p class="date">2026-08-03</p>
         <h2>Mapping the flow of data in clinical trials and assessing its CO2 emissions</h2>
         <p class="authors">Prakasam, H. s.; Mackillop, N.</p>
@@ -69,7 +126,7 @@
     
 
       <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>51</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>46</strong></div>
         <p class="date">2026-08-03</p>
         <h2>Multimodality Quantitative Assessment of Left Atrial Remodeling Characteristics Using Echocardiography and LGE-CMR in Isolated Degenerative Mitral Regurgitation: Association With Atrial Fibrillation</h2>
         <p class="authors">li, x.; Song, Y.; Hu, Y.; Mi, L.; Zhu, L.; Zhang, F.; Fang, F.; Lu, M.; Pan, X.</p>
@@ -88,7 +145,7 @@
     
 
       <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>51</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>46</strong></div>
         <p class="date">2026-08-03</p>
         <h2>Beyond the Red Complex: De Novo Marker Discovery Uncovers Novel Periodontitis-Associated Taxa and Enables Non-Invasive Machine Learning Diagnosis</h2>
         <p class="authors">Koohi-Moghadam, M.; Leung, W. K.</p>
@@ -107,7 +164,7 @@
     
 
       <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>51</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>46</strong></div>
         <p class="date">2026-08-03</p>
         <h2>A Zero-Burden Sleep Foundation Model Built on Cardiorespiratory Signals from 1,400,000+ Hours of Multi-Ethnic Sleep Recordings</h2>
         <p class="authors">Nie, G.; Chen, X.; Wang, Y.; Chen, J.; Shi, Y.; Zhong, J.; Fang, X.; Shi, J.; Liu, C.-f.; Huang, B.; Liu, Y.; Zhang, J.; Fang, Y.; Chen, J.; Thomas, R. J.; Huang, W.; Jin, Z.; Lei, F.; Wang, L.; Zhao, R.; Zhang, C.; Chen, K.; Lv, D.; Chen, W.; Yi, H.; Liu, J.; Wing, Y.-K.; Li, H.; Westover, M. B.; Lu, L.; Tang, X.; Yin, S.; Li, Y.; Hong, S.; Leng, Y.</p>
@@ -126,7 +183,7 @@
     
 
       <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>51</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>46</strong></div>
         <p class="date">2026-08-03</p>
         <h2>Dissecting the Genetic Link Between Insulin Resistance and Coronary Heart Disease: A Multi-Trait GWAS and Proteomic-Metabolomic Mediation Analysis</h2>
         <p class="authors">Dong, R.; Fu, J.; Zhang, B.; Zhang, Q.; Yan, Y.; Li, G.</p>
@@ -145,7 +202,7 @@
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>46</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>41</strong></div>
         <p class="date">2026-08-02</p>
         <h2>Clinical characteristics and associated factors of de novo and recurrent prostate cancer after kidney transplantation</h2>
         <p class="authors">Apanisile, K.; Li, M.-H.; Faddoul, G.; Ekwenna, O.; Koizumi, N.</p>
