@@ -1,0 +1,410 @@
+[
+  {
+    "id": "2026-08-03-medrxiv-variantscape_large_language_model_driven_mining_of_biomedical_literature_for_clinical_inte",
+    "doi": "10.64898/2026.08.02.26359492",
+    "date": "2026-08-03",
+    "title": "Variantscape: Large Language Model-Driven Mining of Biomedical Literature for Clinical Interpretation of Cancer Variants",
+    "authors": "Wosny, M.; Blindu, A. S.; Boesch, M.; Peres, T.; Niederhauser, T.; Fruh, M.; Rothermundt, C.; Hastings, J.",
+    "abstract": "BackgroundPrecision oncology relies on accurate interpretation of tumour-detected gene variants, to guide personalized treatment decisions. However, accurate interpretation of variants in context requires extensive information that is often buried within unstructured biomedical literature and obscured by inconsistent nomenclature, making manual retrieval labour-intensive and prone to omissions. MethodsTo address this challenge, we developed Variantscape, a large-scale, automated pipeline and open-access web tool. It integrates traditional natural language processing methods with state-of-the-art large language models to extract, standardize, and analyze co-associations between genetic variants, cancer types, and therapeutic interventions from published biomedical abstracts. FindingsFrom over 3 million abstracts screened, 335,817 gene name-containing articles were eligible for downstream extraction. Among these, 7,423 (2.2%) simultaneously mentioned a variant, cancer type, and therapeutic agent, encompassing 3,902 unique variants across 98 cancer types and 388 therapeutic agents. This highlights the inefficiency of manual literature retrieval in molecular tumour board (MTB) workflows. Network analysis revealed 14,831 statistically significant co-associations, represented in a literature-derived graph with 4,388 nodes and 46,943 edges. Canonical alterations in well-studied cancers (e.g., BRAF V600E in melanoma) were strongly linked to established treatments, while several rare variants also emerged with high-confidence literature support. InterpretationBy applying large language models to biomedical literature, Variantscape enables scalable, context-aware extraction of trilateral variant-treatment-cancer relationships. This approach supports early evidence synthesis/hypothesis generation, highlights underrecognized or rare associations, and offers a practical resource for accelerating discovery and supporting precision oncology research and translation. Unlike static databases, Variantscape is continuously updatable and leverages large language model-based inference to uncover putative associations without manual curation. Variantscape has the potential to support MTB workflows and translational research by rapidly revealing signals from underlying abstracts. FundingThis study was funded by the School of Medicine at the University of St. Gallen in Switzerland under grant number 2300380. Strengths and limitations of this studyO_LIVariantscape combines traditional natural language processing with large language models to enable scalable, automated extraction of variant-cancer-treatment relationships from over 3 million biomedical abstracts, substantially reducing the manual search burden inherent to existing molecular tumour board workflows. C_LIO_LIThe pipeline applies large language model-based inference to standardize inconsistent genetic nomenclature across the literature, improving the comparability and reliability of extracted associations that would otherwise be obscured by terminological variation. C_LIO_LIVariantscape is designed as a continuously updatable, open-access resource, meaning it can incorporate newly published evidence without requiring repeated manual intervention. C_LIO_LIThe pipeline relies solely on abstract-level text rather than full-text articles, which may limit the depth and granularity of extracted associations, as key methodological details, variant context, and nuanced clinical findings are frequently reported only within the body of published papers. C_LIO_LIAutomated extraction using large language models introduces a risk of misattribution of variant-cancer-treatment relationships, and without systematic manual validation of outputs, the precision of identified associations at scale remains difficult to fully characterize. C_LI",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-08-03",
+    "updated": "2026-08-03",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.02.26359492v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.02.26359492v1.full.pdf"
+      }
+    ],
+    "score": 79,
+    "infographic": {
+      "key_insight": "BackgroundPrecision oncology relies on accurate interpretation of tumour-detected gene variants, to guide personalized treatment decisions.",
+      "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-03-medrxiv-variantscape_large_language_model_driven_mining_of_biomedical_literature_for_clinical_inte",
+      "paper_title": "Variantscape: Large Language Model-Driven Mining of Biomedical Literature for Clinical Interpretation of Cancer Variants",
+      "paper_date": "2026-08-03",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-08-09T07:46:47",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-05-medrxiv-rcc_aid_renal_cell_carcinoma_ai_dataset_for_medical_imaging_research",
+    "doi": "10.64898/2026.04.22.26351451",
+    "date": "2026-08-05",
+    "title": "RCC-AID: Renal Cell Carcinoma AI Dataset for Medical Imaging Research",
+    "authors": "de Boer, S.; Häntze, H.; Ziegelmayer, S.; Russo, T.; van Ginneken, B.; Prokop, M.; Bressem, K. K.; Hering, A.",
+    "abstract": "Contrast-enhanced computed tomography (CT) is central to the diagnosis, staging, and follow-up of patients with renal cell carcinoma (RCC). As artificial intelligence research into computer-aided solutions continues to grow, the need for curated and annotated datasets becomes increasingly important. Imaging-based artificial intelligence studies often need lesion annotations that are not consistently available. The Cancer Genome Atlas (TCGA) datasets are widely used for model training and validation. However, access to public annotations of lesions is limited, which limits reproducibility and comparability of the published research. To address this gap, we screened 1,915 CT scans from three TCGA-RCC databases and, following a meta-data-based exclusion step, used an automated segmentation model to generate initial kidney and lesion masks. Next, we conducted a reader study with all papillary (n=56), chromophobe (n=27) and 200 randomly selected clear cell RCC cases. Two trained students performed quality checks, corrections, and additional annotation of tumors and cysts, with uncertain cases reviewed by a board-certified radiologist. After data exclusion and quality control, a final cohort of 129 annotated CT scans from 91 patients (24 female, 67 male; mean age 56 years) was retained, including 85 clear cell, 26 papillary and 18 chromophobe RCC cases. Images and voxel-level annotations of kidneys and lesions are openly available at https://zenodo.org/records/20719257. By open-sourcing these annotations, we aim to foster accessible, reproducible AI research in renal cell carcinoma. RCC-AID provides a reusable open resource dataset for segmentation, detection, subtype classification, radiomics, and multimodal RCC research.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-08-05",
+    "updated": "2026-08-05",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.22.26351451v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.22.26351451v2.full.pdf"
+      }
+    ],
+    "score": 67,
+    "infographic": {
+      "key_insight": "Contrast-enhanced computed tomography (CT) is central to the diagnosis, staging, and follow-up of patients with renal cell carcinoma (RCC).",
+      "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-05-medrxiv-rcc_aid_renal_cell_carcinoma_ai_dataset_for_medical_imaging_research",
+      "paper_title": "RCC-AID: Renal Cell Carcinoma AI Dataset for Medical Imaging Research",
+      "paper_date": "2026-08-05",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-08-09T07:46:47",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-04-medrxiv-neuroaid_an_open_data_multimodal_screening_framework_for_parkinson_s_and_depression_risk_e",
+    "doi": "10.64898/2026.08.03.26359539",
+    "date": "2026-08-04",
+    "title": "NeuroAid An Open-Data Multimodal Screening Framework for Parkinson's and Depression Risk Estimation",
+    "authors": "L, J. R.; U, R.; Patel, P.",
+    "abstract": "Neurological and mental-health conditions such as Parkinsons disease (PD) and major depressive disorder (MDD) impose a substantial and growing global burden, yet reliable early screening remains largely confined to specialist clinical settings that are inaccessible to the majority of affected individuals. We present NeuroAid, an open-data multimodal AI screening framework that estimates condition-specific risk from non-invasive, accessible signals spanning acoustic speech biomarkers, facial and video-based affective cues, and clinical or behavioral digital biomarkers. NeuroAid is organized as a modular, branch-wise pipeline covering three independent signal pathways--audio, vision, and behavioral--unified by a frozen-embedding late-fusion layer that produces interpretable joint risk scores. A participant-safe, subject-grouped splitting protocol is enforced throughout, preventing inter-subject data leakage--a frequently overlooked cause of artificially inflated performance in clinical machine learning benchmarks. On the Figshare Parkinsons audio dataset, a proposed small-data protocol combining frozen WavLM foundation-model embeddings with a grouped SVM-RBF classifier achieves a cross-validated balanced accuracy of 0.786{+/-}0.073 and a held-out test balanced accuracy of 75.0%, F1-score of 80.0%, and AUC-ROC of 82.8%. The depression vision branch, trained on the DepVidMood corpus via transfer from FER-2013, reaches a threshold-tuned test balanced accuracy of 59.7% and is presented as an honest hard-case baseline under severe class imbalance. NeuroAid is further distinguished by its production-grade MLOps scaffolding: orchestrated branch training, JSON and Markdown artifact reporting, a deployable Streamlit screening interface, and a complete CI/CD workflow. The entire system is built exclusively on publicly available datasets, ensuring full reproducibility. All code, artifacts, and benchmark outputs are versioned and deployable via Docker.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-08-04",
+    "updated": "2026-08-04",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.03.26359539v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.03.26359539v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "Neurological and mental-health conditions such as Parkinsons disease (PD) and major depressive disorder (MDD) impose a substantial and growing global burden, yet reliable early screening remains largely confined to specialist clinical settings that are inacces",
+      "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-04-medrxiv-neuroaid_an_open_data_multimodal_screening_framework_for_parkinson_s_and_depression_risk_e",
+      "paper_title": "NeuroAid An Open-Data Multimodal Screening Framework for Parkinson's and Depression Risk Estimation",
+      "paper_date": "2026-08-04",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-08-09T07:46:48",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-03-medrxiv-mapping_the_flow_of_data_in_clinical_trials_and_assessing_its_co2_emissions",
+    "doi": "10.64898/2026.07.31.26358778",
+    "date": "2026-08-03",
+    "title": "Mapping the flow of data in clinical trials and assessing its CO2 emissions",
+    "authors": "Prakasam, H. s.; Mackillop, N.",
+    "abstract": "BackgroundHealthcare contributes 5% of global carbon emissions, with clinical trials forming a meaningful share. Existing trial emission frameworks inadequately capture and account for data storage and analysis emissions. Objective(i) Map the end-to-end flow of AstraZenecas (AZ) trial data and identify emissions hotspots; (ii) estimate emissions from the hotspots and assess their materiality to overall clinical trial emissions. DesignA top-down assessment of enterprise-level trial data volumes and associated emissions, and trial-level data-related emissions analysis of two representative trials. ResultsData flow mapping highlighted three hotspots: (a) data analysis in a statistical environment (entimICE) (b) Trial Master File (TMF) storage, and (c) short-term and long{-}term data storage by clinical research organisations (CROs). Within entimICE, the total volume of trial data stored for analysis across all active and recently completed trials at AZ was 100-125 TB, stored across four servers in Sweden, generating 80-100 tonnes COzeq annually. TMF storage emissions fell below measurable thresholds. CROs stored substantial data volumes, but per-trial emissions were likely insignificant due to economies of scale afforded by large data centres. ConclusionTo our knowledge, this is the first comprehensive study to assess the carbon footprint of industry-sponsored clinical trial data storage and analysis. The study highlighted the complex network of nodes and junctions involved in managing trial data. The results suggest that carbon emissions from trial data management form a small proportion and are unlikely to materially impact trial-related emissions. Future research should confirm these results in trials that employ energy- and data-intensive operations, such as artificial intelligence (Al). Article summaryO_ST_ABSKey highlightsC_ST_ABSO_LIThis is the first comprehensive study to assess the carbon emissions from clinical trial data storage and analysis. C_LIO_LIThe data flow hotspots identified in this study include (i) the statistical analysis environment, (ii) trial master file storage, and (iii) data stored by third-party clinical research organisations C_LIO_LIThe emissions from the first two hotspots did not significantly impact overall trial emissions. CROs store large volumes of trial data, but the per-trial emissions are likely to be insignificant due to the economies of scale offered by hyperscale data centres C_LIO_LIEmissions from clinical trial data storage and analysis form [a] small portion of overall trial emissions. C_LIO_LIFurther research must include the emissions associated with Al in the clinical trial data emissions framework. C_LI LimitationsO_LIEnergy-consuming components beyond data storage that make up [a] typical data server, such as backup servers, networking, and cooling systems, were not considered because isolating their functions for clinical trial data analyses was infeasible. C_LIO_LIThe complexity of cloud data server infrastructure, confidentiality concerns regarding server infrastructure, and gaps in publicly available data made it infeasible to access numerous data points that would have improved the accuracy of the calculations. C_LI",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-08-03",
+    "updated": "2026-08-03",
+    "primary_category": "health policy",
+    "categories": [
+      "health policy"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.31.26358778v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.31.26358778v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "BackgroundHealthcare contributes 5% of global carbon emissions, with clinical trials forming a meaningful share.",
+      "clinical_relevance": "Potential relevance: clinical translation workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-03-medrxiv-mapping_the_flow_of_data_in_clinical_trials_and_assessing_its_co2_emissions",
+      "paper_title": "Mapping the flow of data in clinical trials and assessing its CO2 emissions",
+      "paper_date": "2026-08-03",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-08-09T07:46:48",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-03-medrxiv-multimodality_quantitative_assessment_of_left_atrial_remodeling_characteristics_using_echo",
+    "doi": "10.64898/2026.07.31.26359443",
+    "date": "2026-08-03",
+    "title": "Multimodality Quantitative Assessment of Left Atrial Remodeling Characteristics Using Echocardiography and LGE-CMR in Isolated Degenerative Mitral Regurgitation: Association With Atrial Fibrillation",
+    "authors": "li, x.; Song, Y.; Hu, Y.; Mi, L.; Zhu, L.; Zhang, F.; Fang, F.; Lu, M.; Pan, X.",
+    "abstract": "BackgroundAlthough atrial fibrillation (AF) frequently coexists with degenerative mitral regurgitation (DMR), imaging assessment of left atrial (LA) fibrosis in this population remains limited. We integrated echocardiographic and cardiac magnetic resonance (CMR) late gadolinium enhancement (LGE) parameters to characterize LA remodeling features in isolated DMR and assess its association with AF. MethodsIn this retrospective study, consecutive patients with moderate-to-severe or severe isolated DMR who underwent echocardiography and CMR, including cine and LGE sequences, between February 2025 and January 2026 were included. Patients with other left-sided valvular disease of mild or greater severity or cardiomyopathy were excluded to isolate a population of \"pure\" DMR patients, and LALGE percentage was calculated as LALGE area divided by left atrial wall area. Imaging parameters were compared according to AF status and evaluated using logistic regression and receiver operating characteristic (ROC) analysis. Multimodality models were constructed to assess the combined discriminative value of echocardiographic and CMR parameters. ResultsAmong 46 patients with DM (71.7% male, 62.0 years of age), 17 (37.0%) had AF. Compared with patients without AF, AF patients were older (P=0.005) and had lower LA reservoir strain [LASr; adjusted odds ratio (OR) 0.86; 95% confidence interval (CI) 0.76-0.94; P<0.001], higher left atrioventricular coupling index (LACI; adjusted OR per 10-percentage-point increase, 1.48; 95% CI, 1.18-2.23; P<0.001), larger LALGE area (adjusted OR 1.20; 95% CI, 1.07-1.41; P<0.001), higher LALGE percentage (adjusted OR 1.19; 95% CI, 1.02-1.42; P=0.025). Among single parameters, LACI showed the highest area under the curve (AUC 0.85, 95% CI 0.72-0.99; cutoff 58.59%), whereas LALGE area showed an AUC of 0.78 (95% CI 0.61-0.94; cutoff 13.73 cm{superscript 2}). Among all models, LASr combined with LALGE percentage achieved the highest AUC (0.91, 95% CI 0.80-1.00), with sensitivity 76.5%, specificity 96.6%, positive predictive value 92.9%, and negative predictive value 87.5%. In serum biomarker analysis, patients with AF had significantly higher levels of C-terminal telopeptide of type I collagen (CITP) than those without AF (P=0.009). Follow-up data were available for 45 patients (97.8%), with a median follow-up duration of 9.2 months (IQR, 7.7-12.2 months). ConclusionsIn patients with DMR, AF was associated with more advanced LA structural remodeling, impaired LA function, and higher CMR LGE burden. Echocardiographic LA functional parameters, when combined with LALGE measures, may provide complementary information for the discrimination of AF. Given the exploratory nature of this study, the findings require external validation.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-08-03",
+    "updated": "2026-08-03",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.31.26359443v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.31.26359443v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "BackgroundAlthough atrial fibrillation (AF) frequently coexists with degenerative mitral regurgitation (DMR), imaging assessment of left atrial (LA) fibrosis in this population remains limited.",
+      "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-03-medrxiv-multimodality_quantitative_assessment_of_left_atrial_remodeling_characteristics_using_echo",
+      "paper_title": "Multimodality Quantitative Assessment of Left Atrial Remodeling Characteristics Using Echocardiography and LGE-CMR in Isolated Degenerative Mitral Regurgitation: Association With Atrial Fibrillation",
+      "paper_date": "2026-08-03",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-08-09T07:46:48",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-03-medrxiv-beyond_the_red_complex_de_novo_marker_discovery_uncovers_novel_periodontitis_associated_ta",
+    "doi": "10.64898/2026.07.31.26359396",
+    "date": "2026-08-03",
+    "title": "Beyond the Red Complex: De Novo Marker Discovery Uncovers Novel Periodontitis-Associated Taxa and Enables Non-Invasive Machine Learning Diagnosis",
+    "authors": "Koohi-Moghadam, M.; Leung, W. K.",
+    "abstract": "BackgroundPeriodontitis affects over 1 billion people worldwide, yet diagnosis relies on clinical measures that capture tissue destruction rather than underlying microbial dysbiosis. Most microbial-biomarker studies use 16S rRNA sequencing or reference-database mapping, systematically under-detecting uncultivated or divergent taxa. MethodsWe assembled 341 supra- and subgingival shotgun metagenomes (218 periodontitis, 123 health) across nine countries/regions. Using MetaMarker, a de novo, reference-free pipeline, we identified conserved genomic markers directly from reads in a 305-sample discovery pool without database mapping. Markers were taxonomically annotated against the Human Oral Microbiome Database, functionally annotated with Prodigal/eggNOG-mapper, and used for eight machine-learning classifiers, externally validated on three independent held-out cohorts (36 samples). ResultsWe recovered 2,142 significant markers (1,999 periodontitis-enriched, 143 health-enriched; q<0.05), recapitulating the canonical red/orange-complex dysbiotic shift. Beyond established pathogens, 128 periodontitis markers (6.4%) were novel, including an uncultivated Paludibacteraceae genus and divergent Fretibacterium fastidiosum strains. Case markers encoded a coherent virulence programme spanning proteolysis, haem/iron acquisition, and Type IX secretion. On external validation, boosted-tree classifiers generalized best (XGBoost and gradient boosting, AUC=0.96), and a compact SHAP-ranked 20-marker panel spanning five taxa reproduced full-set directionality. ConclusionsReference-free metagenomic marker discovery recovers known periodontal pathobiology while revealing unrecognized candidate biomarkers and supports an accurate, externally validated, non-invasive classifier with translational potential as a compact diagnostic panel.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-08-03",
+    "updated": "2026-08-03",
+    "primary_category": "dentistry and oral medicine",
+    "categories": [
+      "dentistry and oral medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.31.26359396v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.31.26359396v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "BackgroundPeriodontitis affects over 1 billion people worldwide, yet diagnosis relies on clinical measures that capture tissue destruction rather than underlying microbial dysbiosis.",
+      "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-03-medrxiv-beyond_the_red_complex_de_novo_marker_discovery_uncovers_novel_periodontitis_associated_ta",
+      "paper_title": "Beyond the Red Complex: De Novo Marker Discovery Uncovers Novel Periodontitis-Associated Taxa and Enables Non-Invasive Machine Learning Diagnosis",
+      "paper_date": "2026-08-03",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-08-09T07:46:49",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-03-medrxiv-a_zero_burden_sleep_foundation_model_built_on_cardiorespiratory_signals_from_1_400_000_hou",
+    "doi": "10.1101/2025.09.06.25335216",
+    "date": "2026-08-03",
+    "title": "A Zero-Burden Sleep Foundation Model Built on Cardiorespiratory Signals from 1,400,000+ Hours of Multi-Ethnic Sleep Recordings",
+    "authors": "Nie, G.; Chen, X.; Wang, Y.; Chen, J.; Shi, Y.; Zhong, J.; Fang, X.; Shi, J.; Liu, C.-f.; Huang, B.; Liu, Y.; Zhang, J.; Fang, Y.; Chen, J.; Thomas, R. J.; Huang, W.; Jin, Z.; Lei, F.; Wang, L.; Zhao, R.; Zhang, C.; Chen, K.; Lv, D.; Chen, W.; Yi, H.; Liu, J.; Wing, Y.-K.; Li, H.; Westover, M. B.; Lu, L.; Tang, X.; Yin, S.; Li, Y.; Hong, S.; Leng, Y.",
+    "abstract": "BACKGROUNDSleep disorders pose a major global health burden and are associated with a wide range of adverse health outcomes. Polysomnography (PSG) is the gold standard for sleep assessment, but it remains impractical for home-based or long-term monitoring. We investigated whether overnight cardiorespiratory signals, which can be acquired with zero-burden to users, can enable accurate sleep assessment at scale and capture broader dimensions of multi-organ health when leveraged through foundation model approaches. METHODSWe present SleepFounder, a foundation model for zero-burden sleep monitoring built upon cardiorespiratory signals. SleepFounder was developed on the largest curated multi-ethnic sleep dataset to date, comprising over 1.4 million hours of recordings from 34 cohorts across the United States and China. We evaluated SleepFounder across diverse downstream tasks, including conventional sleep analysis, demographic profiling, and multi-organ disease detection and prediction. We further conducted a real-world external validation study using multi-center ballistocardiography (BCG) data collected with a custom-developed under-pillow BCG monitoring system. RESULTSSleepFounder achieved strong performance across downstream tasks, outperforming baseline models in 19 of 21 dataset-task pairs spanning conventional sleep analysis and demographic profiling. For example, when averaged across three to five external datasets, SleepFounder achieved a Cohens kappa of 0.651 [0.649-0.652] for five-class sleep staging and an AUROC of 0.912 [0.909-0.915] for moderate-to-severe obstructive sleep apnea (OSA) detection. Beyond sleep-specific tasks, SleepFounder demonstrated broad capability for multi-organ disease detection and future disease prediction. Averaged across three external cohorts, it achieved AUROCs > 0.75 for 172 disease phenotypes and concordance indices (C-indices) > 0.75 for 100 phenotypes spanning 16 phecode chapters, including clinically important conditions such as dementia (AUROC=0.850 [0.836-0.862], C-index=0.845 [0.833-0.855]), Parkinsons disease (AUROC=0.846 [0.832-0.860], C-index=0.823 [0.803-0.842]), congestive heart failure (AUROC=0.840 [0.834-0.846], C-index=0.768 [0.759-0.778]), atrial fibrillation (AUROC=0.835 [0.828-0.842], C-index=0.762 [0.751-0.773]), and respiratory failure (AUROC=0.822 [0.810-0.833], C-index=0.778 [0.767-0.789]). Importantly, SleepFounder generalized effectively to real-world BCG deployment, achieving a Cohens kappa of 0.621 [0.614-0.627] for five-class sleep staging, an AUROC of 0.949 [0.940-0.958] for moderate-to-severe OSA detection, an age-prediction MAE of 6.533 [6.278-6.792] years, and a sex-classification AUROC of 0.852 [0.834-0.869] in external multi-center validation. CONCLUSIONSSleepFounder establishes a foundation model that learns from cardiorespiratory signals to enable accurate and scalable sleep assessment. By linking sleep physiology with multi-organ health, it demonstrates the potential to bridge clinical and home settings, while suggesting that signals traditionally used for sleep monitoring may also serve as powerful biomarkers of systemic function and disease risk. These findings highlight a new paradigm for home-based sleep and health monitoring in real-world settings.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-08-03",
+    "updated": "2026-08-03",
+    "primary_category": "public and global health",
+    "categories": [
+      "public and global health"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.09.06.25335216v3"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.09.06.25335216v3.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "BACKGROUNDSleep disorders pose a major global health burden and are associated with a wide range of adverse health outcomes.",
+      "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-03-medrxiv-a_zero_burden_sleep_foundation_model_built_on_cardiorespiratory_signals_from_1_400_000_hou",
+      "paper_title": "A Zero-Burden Sleep Foundation Model Built on Cardiorespiratory Signals from 1,400,000+ Hours of Multi-Ethnic Sleep Recordings",
+      "paper_date": "2026-08-03",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-08-09T07:46:49",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-03-medrxiv-dissecting_the_genetic_link_between_insulin_resistance_and_coronary_heart_disease_a_multi",
+    "doi": "10.64898/2026.08.02.26359507",
+    "date": "2026-08-03",
+    "title": "Dissecting the Genetic Link Between Insulin Resistance and Coronary Heart Disease: A Multi-Trait GWAS and Proteomic-Metabolomic Mediation Analysis",
+    "authors": "Dong, R.; Fu, J.; Zhang, B.; Zhang, Q.; Yan, Y.; Li, G.",
+    "abstract": "Insulin resistance (IR) is a hallmark feature of Type 2 Diabetes Mellitus and a well-established risk factor for coronary heart disease (CHD), yet the pathways through which IR contributes to CHD remain incompletely understood. To comprehensively describe the genetic architecture of IR, we collected three direct IR indicators---fasting insulin (N = 151,013), the Modified Stumvoll insulin sensitivity index (N = 53,657), and pro-insulin (N = 45,861), and conducted joint analysis on them using Linkage Disequilibrium (LD) Score Regression and factor analysis. A single latent IR factor was generated which captures 60.5% of the shared genetic variance. Based on the IR factor, a multivariate GWAS was conducted within Genomic Structural Equation Modelling and then we built a polygenic risk score (PRS) of IR for the UK Biobank European cohort (N = 407,767; 55,729 CHD cases and 352,038 controls). Then we performed the association study to quantify the relationship between genetically predicted IR and CHD. Causal mediation analyses were also performed through 2,923 plasma proteins (Olink) and 168 metabolites (Nightingale NMR), followed by serial-mediation models (IR -> protein -> metabolite -> CHD) over all prescreened pairs. Single-mediator screening nominated 938 proteins and 159 metabolites; this yielded 3,669 significant \"protein -> metabolite -> CHD\" serial-mediation pathways, from which 33 broadly-acting core mediating proteins were prioritized. These acted predominantly through the large and very large high-density lipoprotein (HDL) particle subclasses: 30 of the 33 core proteins and all 14 HDL-subclass metabolites formed 306 pathways, of which 303 (99.0%) amplify the CHD risk. These results map a proteomic and metabolomic axis linking the genetic component of IR to CHD and highlight HDL lipoprotein-subclass biology as a candidate therapeutic and biomarker space.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-08-03",
+    "updated": "2026-08-03",
+    "primary_category": "genetic and genomic medicine",
+    "categories": [
+      "genetic and genomic medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.02.26359507v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.02.26359507v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "Insulin resistance (IR) is a hallmark feature of Type 2 Diabetes Mellitus and a well-established risk factor for coronary heart disease (CHD), yet the pathways through which IR contributes to CHD remain incompletely understood.",
+      "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-03-medrxiv-dissecting_the_genetic_link_between_insulin_resistance_and_coronary_heart_disease_a_multi",
+      "paper_title": "Dissecting the Genetic Link Between Insulin Resistance and Coronary Heart Disease: A Multi-Trait GWAS and Proteomic-Metabolomic Mediation Analysis",
+      "paper_date": "2026-08-03",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-08-09T07:46:50",
+      "generator": "openai"
+    }
+  }
+]
