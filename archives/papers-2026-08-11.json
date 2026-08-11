@@ -24,7 +24,7 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.04.22.26351451v2.full.pdf"
       }
     ],
-    "score": 57,
+    "score": 62,
     "infographic": {
       "key_insight": "Contrast-enhanced computed tomography (CT) is central to the diagnosis, staging, and follow-up of patients with renal cell carcinoma (RCC).",
       "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
@@ -46,7 +46,7 @@
       "paper_title": "RCC-AID: Renal Cell Carcinoma AI Dataset for Medical Imaging Research",
       "paper_date": "2026-08-05",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-08-11T08:06:35",
+      "generated_at": "2026-08-10T08:23:02",
       "generator": "openai"
     }
   },
@@ -75,7 +75,7 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.04.26359728v1.full.pdf"
       }
     ],
-    "score": 52,
+    "score": 57,
     "infographic": {
       "key_insight": "PurposeTo evaluate whether fluorescence lifetime imaging ophthalmoscopy (FLIO) combined with deep learning can detect metabolic signatures for classification of type 2 diabetes mellitus (T2DM).",
       "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
@@ -97,109 +97,7 @@
       "paper_title": "Deep Learning of Fluorescence Lifetime Imaging Ophthalmoscopy for Type 2 Diabetes Classification",
       "paper_date": "2026-08-06",
       "paper_category": "Target Biology",
-      "generated_at": "2026-08-11T08:06:35",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-08-06-medrxiv-predicting_cognitive_function_using_transformer_derived_speech_representations_and_longitu",
-    "doi": "10.64898/2026.08.04.26359730",
-    "date": "2026-08-06",
-    "title": "Predicting Cognitive Function Using Transformer-Derived Speech Representations and Longitudinal Coherence Features",
-    "authors": "Devatha, D.; Xiao, J.",
-    "abstract": "Dementia affects more than 55 million people worldwide, and its progressive decline is difficult to track using infrequent in-person assessments, which can miss subtle changes between visits and add to clinician burden. One widely used measure, the Mini-Mental State Examination (MMSE), is administered intermittently and remains subject to inconsistent scoring judgment, limiting early detection. Prior speech- based machine learning approaches have largely focused on cross-sectional classification rather than longitudinal cognitive forecasting. We introduce a longitudinal, patient-level framework that combines transformer-derived semantic speech representations with longitudinal speech-change features and clinical history to forecast a patients future MMSE score from their history of prior visits. To our knowledge, this is the first frame- work to unite transformer-derived speech encoding with longitudinal forecasting of cognitive severity, rather than single-visit classification alone. We evaluate this framework on longitudinal transcripts from the DementiaBank Pitt Corpus using a LightGBM gradient-boosted regression model, validated with patient-grouped cross-validation to prevent identity leakage between training and evaluation folds. The model fore- casts future MMSE scores with high accuracy and stability across folds (R2 = 0.840 {+/-} 0.015, RMSE = 2.75, MAE = 2.02, Pearson r = 0.917), with transformer-derived speech representations contributing meaningful predictive signal alongside clinical history. Ablation analysis demonstrated that transformer-derived speech representations provided complementary predictive information beyond clinical variables. These results establish speech as a viable longitudinal digital biomarker of cognitive decline, offering a low-burden complement to intermittent clinical assessment that could enable earlier detection and more frequent monitoring, supporting better-timed care decisions for patients with dementia.",
-    "category": "Cancer AI Methods",
-    "source": "medRxiv",
-    "published": "2026-08-06",
-    "updated": "2026-08-06",
-    "primary_category": "neurology",
-    "categories": [
-      "neurology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.04.26359730v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.04.26359730v1.full.pdf"
-      }
-    ],
-    "score": 52,
-    "infographic": {
-      "key_insight": "Dementia affects more than 55 million people worldwide, and its progressive decline is difficult to track using infrequent in-person assessments, which can miss subtle changes between visits and add to clinician burden.",
-      "clinical_relevance": "Potential relevance: cancer ai methods workflows and research evaluation.",
-      "method": [
-        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
-        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
-      "hashtags": [
-        "#AIMedicine",
-        "#MedAI",
-        "#HealthcareAI",
-        "#Research",
-        "#Preprints"
-      ],
-      "paper_id": "2026-08-06-medrxiv-predicting_cognitive_function_using_transformer_derived_speech_representations_and_longitu",
-      "paper_title": "Predicting Cognitive Function Using Transformer-Derived Speech Representations and Longitudinal Coherence Features",
-      "paper_date": "2026-08-06",
-      "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-08-11T08:06:36",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-08-06-medrxiv-towards_understanding_the_disease_landscape_of_clinical_trials_in_germany_ontology_and_emb",
-    "doi": "10.64898/2026.08.04.26359616",
-    "date": "2026-08-06",
-    "title": "Towards understanding the disease landscape of clinical trials in Germany: Ontology and embedding-based pipelines versus Large Language Models for ICD-10 Harmonization",
-    "authors": "Ndabashinze, R.; Franzen, D.; Kozuch, E.; Aagerup, J.; Fink, A.; Yerunkar, S. S.; Hunter, K.; Mayo-Wilson, E.; Ying, X.; Kilicoglu, H.; Schorr, S. G.; Seidler, A. L.",
-    "abstract": "BackgroundClinical trials conducted in Germany are registered across multiple registries, including the German Clinical Trials Register (DRKS), ClinicalTrials.gov, the EU Clinical Trials Register (EUCTR), and, since 2023, the Clinical Trials Information System (CTIS). These registries record health conditions using different classification systems and terminologies, including ICD-10-GM, MeSH, MedDRA, and free text, making cross-registry analyses difficult. We developed and evaluated a pipeline for harmonizing trial condition descriptions to WHO ICD-10 and compared its performance with that of a large language model (LLM) and to health conditions coded by humans. MethodsWe developed a four-stage, registry-aware mapping pipeline consisting of: (i) condition mention extraction and normalization; (ii) classification of ICD-mappable versus non-mappable mentions; (iii) ontology-based candidate generation using UMLS links between MeSH, MedDRA, ICD-10-GM, and WHO ICD-10; and (iv) SapBERT-based semantic retrieval with hybrid confidence scoring. A second variant additionally applied cross-encoder reranking of the top candidate codes. A stratified sample of 500 condition mentions was manually coded to create an expert reference standard. GPT-4o was evaluated in parallel using the same structured decision framework as the human reviewers. Performance was assessed using accuracy, precision, F1 score, and Cohens k at the three-character, block, and chapter levels of ICD-10. ResultsThe pipeline was applied to 23,061 clinical trials and identified 39,512 ICD-mappable condition mentions, of which 72.4% received a high-confidence assignment. Against 390 expert-coded mentions, the baseline pipeline achieved 49.0% accuracy at the three-character ICD-10 level (k = 0.487), increasing to 58.7% at the chapter level (k = 0.561). The cross-encoder method produced small but consistent improvements across all evaluation levels. Candidate-recall analysis showed that the correct code was present in the retrieved candidate set in only 73.7% of cases. The LLM substantially outperformed both pipeline variants, achieving 96.7% accuracy and near-perfect agreement with expert coding (k = 0.966) at the three-character level. The LLM also assigned clinically plausible codes to 82.4% of rejected mentions, 62.8% of Tier-3 exclusions, and 92.3% of review-band mentions. ConclusionAutomated harmonization of clinical trial condition data across heterogeneous registries is feasible and supports the use of a common ICD-10 framework for cross-registry analyses. The LLMs achieved high agreement with expert coding, and performed better than the deterministic ontology and embedding pipeline, which achieved moderate agreement. These findings indicate that LLMs can support analyses of the distribution of health conditions investigated in clinical trials in Germany.They are a promising tool for classification of other non-standardised trial characteristics in registries.",
-    "category": "Clinical Translation",
-    "source": "medRxiv",
-    "published": "2026-08-06",
-    "updated": "2026-08-06",
-    "primary_category": "health informatics",
-    "categories": [
-      "health informatics"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.04.26359616v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.04.26359616v1.full.pdf"
-      }
-    ],
-    "score": 52,
-    "infographic": {
-      "key_insight": "BackgroundClinical trials conducted in Germany are registered across multiple registries, including the German Clinical Trials Register (DRKS), ClinicalTrials.gov, the EU Clinical Trials Register (EUCTR), and, since 2023, the Clinical Trials Information System",
-      "clinical_relevance": "Potential relevance: clinical translation workflows and research evaluation.",
-      "method": [
-        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
-        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
-      "hashtags": [
-        "#AIMedicine",
-        "#MedAI",
-        "#HealthcareAI",
-        "#Research",
-        "#Preprints"
-      ],
-      "paper_id": "2026-08-06-medrxiv-towards_understanding_the_disease_landscape_of_clinical_trials_in_germany_ontology_and_emb",
-      "paper_title": "Towards understanding the disease landscape of clinical trials in Germany: Ontology and embedding-based pipelines versus Large Language Models for ICD-10 Harmonization",
-      "paper_date": "2026-08-06",
-      "paper_category": "Clinical Translation",
-      "generated_at": "2026-08-11T08:06:36",
+      "generated_at": "2026-08-10T08:23:03",
       "generator": "openai"
     }
   },
@@ -228,7 +126,7 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.03.26359608v1.full.pdf"
       }
     ],
-    "score": 50,
+    "score": 55,
     "infographic": {
       "key_insight": "Existing radiological artificial intelligence (AI) systems are difficult to modify, validate, and adapt to new clinical applications.",
       "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
@@ -250,7 +148,7 @@
       "paper_title": "Towards Accessible Radiological Image Analysis via Local Agentic Framework: Validation in Mammography",
       "paper_date": "2026-08-05",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-08-11T08:06:36",
+      "generated_at": "2026-08-10T08:23:04",
       "generator": "openai"
     }
   },
@@ -279,7 +177,7 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.03.26359630v1.full.pdf"
       }
     ],
-    "score": 49,
+    "score": 54,
     "infographic": {
       "key_insight": "Identifying individuals with mild cognitive impairment (MCI) likely to progress to Alzheimers disease (AD) is important for patient management and clinical trial enrollment.",
       "clinical_relevance": "Potential relevance: clinical translation workflows and research evaluation.",
@@ -301,7 +199,7 @@
       "paper_title": "Standardized Comparison of Clinical, Cognitive, Genetic, Neuroimaging, and Fluid Biomarkers for Predicting 24-Month Progression from Mild Cognitive Impairment to Alzheimer's Disease",
       "paper_date": "2026-08-05",
       "paper_category": "Clinical Translation",
-      "generated_at": "2026-08-11T08:06:37",
+      "generated_at": "2026-08-10T08:23:04",
       "generator": "openai"
     }
   },
@@ -330,7 +228,7 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.07.22.26358583v2.full.pdf"
       }
     ],
-    "score": 49,
+    "score": 54,
     "infographic": {
       "key_insight": "PurposeTo evaluate how segmentation architecture and dataset-adaptive configuration influence uterine MRI segmentation across heterogeneous benign and malignant tasks.",
       "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
@@ -352,7 +250,7 @@
       "paper_title": "Robustness of Deep Learning Segmentation Across Heterogeneous Uterine MRI Datasets: A Multi-Task Comparison of U-Net, Swin-UNETR, MedNeXt, and nnU-Net",
       "paper_date": "2026-08-05",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-08-11T08:06:37",
+      "generated_at": "2026-08-10T08:23:05",
       "generator": "openai"
     }
   },
@@ -381,7 +279,7 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.03.26359612v1.full.pdf"
       }
     ],
-    "score": 41,
+    "score": 46,
     "infographic": {
       "key_insight": "PurposeTo build a 3D U-Net model, BioDeformUNet, to predict the livers deformation vector field (DVF) in near real-time, for efficient intra-procedural evaluation of the minimal ablative margin (MAM).",
       "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
@@ -403,7 +301,58 @@
       "paper_title": "BioDeformUNet: A Deep Learning Model for Biomechanically Informed Liver Image Registration",
       "paper_date": "2026-08-05",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-08-11T08:06:38",
+      "generated_at": "2026-08-10T08:23:05",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-04-medrxiv-neuroaid_an_open_data_multimodal_screening_framework_for_parkinson_s_and_depression_risk_e",
+    "doi": "10.64898/2026.08.03.26359539",
+    "date": "2026-08-04",
+    "title": "NeuroAid An Open-Data Multimodal Screening Framework for Parkinson's and Depression Risk Estimation",
+    "authors": "L, J. R.; U, R.; Patel, P.",
+    "abstract": "Neurological and mental-health conditions such as Parkinsons disease (PD) and major depressive disorder (MDD) impose a substantial and growing global burden, yet reliable early screening remains largely confined to specialist clinical settings that are inaccessible to the majority of affected individuals. We present NeuroAid, an open-data multimodal AI screening framework that estimates condition-specific risk from non-invasive, accessible signals spanning acoustic speech biomarkers, facial and video-based affective cues, and clinical or behavioral digital biomarkers. NeuroAid is organized as a modular, branch-wise pipeline covering three independent signal pathways--audio, vision, and behavioral--unified by a frozen-embedding late-fusion layer that produces interpretable joint risk scores. A participant-safe, subject-grouped splitting protocol is enforced throughout, preventing inter-subject data leakage--a frequently overlooked cause of artificially inflated performance in clinical machine learning benchmarks. On the Figshare Parkinsons audio dataset, a proposed small-data protocol combining frozen WavLM foundation-model embeddings with a grouped SVM-RBF classifier achieves a cross-validated balanced accuracy of 0.786{+/-}0.073 and a held-out test balanced accuracy of 75.0%, F1-score of 80.0%, and AUC-ROC of 82.8%. The depression vision branch, trained on the DepVidMood corpus via transfer from FER-2013, reaches a threshold-tuned test balanced accuracy of 59.7% and is presented as an honest hard-case baseline under severe class imbalance. NeuroAid is further distinguished by its production-grade MLOps scaffolding: orchestrated branch training, JSON and Markdown artifact reporting, a deployable Streamlit screening interface, and a complete CI/CD workflow. The entire system is built exclusively on publicly available datasets, ensuring full reproducibility. All code, artifacts, and benchmark outputs are versioned and deployable via Docker.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-08-04",
+    "updated": "2026-08-04",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.03.26359539v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.03.26359539v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "Neurological and mental-health conditions such as Parkinsons disease (PD) and major depressive disorder (MDD) impose a substantial and growing global burden, yet reliable early screening remains largely confined to specialist clinical settings that are inacces",
+      "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-04-medrxiv-neuroaid_an_open_data_multimodal_screening_framework_for_parkinson_s_and_depression_risk_e",
+      "paper_title": "NeuroAid An Open-Data Multimodal Screening Framework for Parkinson's and Depression Risk Estimation",
+      "paper_date": "2026-08-04",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-08-10T08:23:06",
       "generator": "openai"
     }
   }
