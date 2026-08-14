@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-08-13
+Generated: 2026-08-14
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. TPD52 promotes breast cancer cell migration, invasion and proliferation via activation of the MAPK/ERK signaling pathway
@@ -59,10 +59,18 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.08.06.26359865v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-10-medrxiv-real_world_performance_of_the_2026_aha_acc_pulmonary_embolism_framework_in_a_multi_system_infographic.json
 
-## 8. TrialScout links published results to trial registrations using a large language model
+## 8. Aggregation and analysis of 25 years of prion disease natural history extracted from published literature
 
-- Date: 2026-08-07
-- Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.03.15.26348383v3
-- PDF: https://www.medrxiv.org/content/10.64898/2026.03.15.26348383v3.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-07-medrxiv-trialscout_links_published_results_to_trial_registrations_using_a_large_language_model_infographic.json
+- Date: 2026-08-10
+- Category: Clinical Translation
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.07.26359973v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.07.26359973v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-10-medrxiv-aggregation_and_analysis_of_25_years_of_prion_disease_natural_history_extracted_from_publi_infographic.json
+
+## 9. A Biologically Constrained Continuous-Time Framework for Long-Horizon Cognition Forecasting in Alzheimer's Disease
+
+- Date: 2026-08-10
+- Category: Clinical Translation
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.07.26359964v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.07.26359964v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-10-medrxiv-a_biologically_constrained_continuous_time_framework_for_long_horizon_cognition_forecastin_infographic.json
