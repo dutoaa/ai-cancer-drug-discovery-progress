@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-08-14
+Generated: 2026-08-15
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. TPD52 promotes breast cancer cell migration, invasion and proliferation via activation of the MAPK/ERK signaling pathway
@@ -35,7 +35,15 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.08.05.26359034v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-10-medrxiv-a_software_package_for_simple_and_rigorous_survival_machine_learning_analysis_in_biomedica_infographic.json
 
-## 5. Predictive ALS survival using ALSFRS-R slope & NfL: insights from the ALS/MND Natural History Consortium data and biofluid collection
+## 5. Machine learning models for predicting prostate cancer and clinically significant prostate cancer at biopsy: An updated analysis of an expanded Japanese cohort
+
+- Date: 2026-08-11
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.09.26360024v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.09.26360024v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-11-medrxiv-machine_learning_models_for_predicting_prostate_cancer_and_clinically_significant_prostate_infographic.json
+
+## 6. Predictive ALS survival using ALSFRS-R slope & NfL: insights from the ALS/MND Natural History Consortium data and biofluid collection
 
 - Date: 2026-08-10
 - Category: Clinical Translation
@@ -43,7 +51,7 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.08.06.26359910v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-10-medrxiv-predictive_als_survival_using_alsfrs_r_slope_nfl_insights_from_the_als_mnd_natural_history_infographic.json
 
-## 6. Beyond BMI: an interpretable integrated body composition index from low-dose chest CT for all-cause mortality risk stratification: a multicentre study
+## 7. Beyond BMI: an interpretable integrated body composition index from low-dose chest CT for all-cause mortality risk stratification: a multicentre study
 
 - Date: 2026-08-10
 - Category: Target Biology
@@ -51,7 +59,15 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.08.05.26359437v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-10-medrxiv-beyond_bmi_an_interpretable_integrated_body_composition_index_from_low_dose_chest_ct_for_a_infographic.json
 
-## 7. Real-World Performance of the 2026 AHA/ACC Pulmonary Embolism Framework in a Multi-System CTPA Cohort
+## 8. Population-based reference equations and Z-scores for blood biomarkers of neurodegenerative diseases
+
+- Date: 2026-08-11
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.09.26360027v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.09.26360027v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-11-medrxiv-population_based_reference_equations_and_z_scores_for_blood_biomarkers_of_neurodegenerativ_infographic.json
+
+## 9. Real-World Performance of the 2026 AHA/ACC Pulmonary Embolism Framework in a Multi-System CTPA Cohort
 
 - Date: 2026-08-10
 - Category: Target Biology
@@ -59,7 +75,7 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.08.06.26359865v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-10-medrxiv-real_world_performance_of_the_2026_aha_acc_pulmonary_embolism_framework_in_a_multi_system_infographic.json
 
-## 8. Aggregation and analysis of 25 years of prion disease natural history extracted from published literature
+## 10. Aggregation and analysis of 25 years of prion disease natural history extracted from published literature
 
 - Date: 2026-08-10
 - Category: Clinical Translation
@@ -67,10 +83,18 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.08.07.26359973v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-10-medrxiv-aggregation_and_analysis_of_25_years_of_prion_disease_natural_history_extracted_from_publi_infographic.json
 
-## 9. A Biologically Constrained Continuous-Time Framework for Long-Horizon Cognition Forecasting in Alzheimer's Disease
+## 11. A Biologically Constrained Continuous-Time Framework for Long-Horizon Cognition Forecasting in Alzheimer's Disease
 
 - Date: 2026-08-10
 - Category: Clinical Translation
 - Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.07.26359964v1
 - PDF: https://www.medrxiv.org/content/10.64898/2026.08.07.26359964v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-10-medrxiv-a_biologically_constrained_continuous_time_framework_for_long_horizon_cognition_forecastin_infographic.json
+
+## 12. Multiplexed temporal SWCNT biosensor combined with convolutional autoencoding identifies ALS-specific serum protein corona signatures
+
+- Date: 2026-08-10
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.08.26354966v3
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.08.26354966v3.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-10-medrxiv-multiplexed_temporal_swcnt_biosensor_combined_with_convolutional_autoencoding_identifies_a_infographic.json
