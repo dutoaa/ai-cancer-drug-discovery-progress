@@ -1,0 +1,155 @@
+[
+  {
+    "id": "2026-08-11-medrxiv-machine_learning_models_for_predicting_prostate_cancer_and_clinically_significant_prostate",
+    "doi": "10.64898/2026.08.09.26360024",
+    "date": "2026-08-11",
+    "title": "Machine learning models for predicting prostate cancer and clinically significant prostate cancer at biopsy: An updated analysis of an expanded Japanese cohort",
+    "authors": "Takeuchi, T.; Nomiya, A.",
+    "abstract": "BackgroundA 2019 report from our institution described a multilayer artificial neural network (ANN) for predicting prostate cancer at biopsy in 334 patients, trained with TensorFlow 1.x and evaluated at three fixed step counts without separating hyperparameter selection from test evaluation. We re-analyzed an expanded cohort from the same institution using contemporary machine-learning practice. MethodsWe pooled all available biopsy episodes from the same institutional database (n = 526; 524 after excluding one non-binary outcome code and one record with missing digital rectal examination [DRE] data), retaining the same seven predictors used in the original report (age, prior biopsy history, PSA, prostate volume, DRE, and MRI diffusion-weighted imaging findings in the peripheral and transition zones). Because 27 patients contributed more than one biopsy episode, we used patient-ID-grouped, stratified k-fold cross-validation (StratifiedGroupKFold; scikit-learn 1.8.0) with 3 and 5 folds, repeated over 10 random partitions, to avoid leakage between folds. Four classifiers were compared: L2-regularized logistic regression, gradient boosting, random forest, and a shallow (single hidden layer) multilayer perceptron. Two outcomes were modeled: detection of any prostate cancer, and detection of clinically significant prostate cancer (Gleason score [&ge;] 7). ResultsAny-cancer prevalence was 55.7% (292/524) and Gleason score [&ge;] 7 prevalence was 39.7% (208/524). With repeated 5-fold cross-validation, gradient boosting gave the highest discrimination for any prostate cancer (mean AUC 0.826, 95% CI 0.823-0.830) and for Gleason score [&ge;] 7 (mean AUC 0.855, 95% CI 0.852-0.859), closely followed by random forest and logistic regression (AUC 0.81-0.85). The shallow multilayer perceptron performed worse and less consistently than the other three models (any-cancer AUC 0.671; Gleason score [&ge;] 7 AUC 0.742) and than the deeper five-hidden-layer ANN reported in 2019. Results with 3-fold cross-validation were essentially unchanged. ConclusionsIn an expanded cohort, regularized logistic regression, gradient boosting, and random forest all discriminated prostate cancer at biopsy at least as well as the previously reported multilayer ANN, using far simpler models and a methodology that separates hyperparameter tuning from performance estimation. A shallow neural network offered no advantage over these simpler alternatives in this sample size. This is a preprint; the study has not undergone external peer review.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-08-11",
+    "updated": "2026-08-11",
+    "primary_category": "urology",
+    "categories": [
+      "urology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.09.26360024v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.09.26360024v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "BackgroundA 2019 report from our institution described a multilayer artificial neural network (ANN) for predicting prostate cancer at biopsy in 334 patients, trained with TensorFlow 1.x and evaluated at three fixed step counts without separating hyperparameter",
+      "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-11-medrxiv-machine_learning_models_for_predicting_prostate_cancer_and_clinically_significant_prostate",
+      "paper_title": "Machine learning models for predicting prostate cancer and clinically significant prostate cancer at biopsy: An updated analysis of an expanded Japanese cohort",
+      "paper_date": "2026-08-11",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-08-17T07:45:27",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-11-medrxiv-population_based_reference_equations_and_z_scores_for_blood_biomarkers_of_neurodegenerativ",
+    "doi": "10.64898/2026.08.09.26360027",
+    "date": "2026-08-11",
+    "title": "Population-based reference equations and Z-scores for blood biomarkers of neurodegenerative diseases",
+    "authors": "Lehmann, S.; Andriambelosoa, T.; Morchikh, M.; Mortamais, M.; Duchiron, M.; Gabelle, A.; Hirtz, C.; Ayrignac, X.; Busto, G.; Bennys, K.; Kab, S.; Helmer, C.; Zins, M.; Helmer, C.; Mura, T.",
+    "abstract": "BackgroundBlood biomarkers are increasingly used to support the diagnosis and monitoring of neurodegenerative diseases. However, their interpretation is complicated by physiological determinants, including age, sex, body-mass index, and renal function, and by differences in absolute concentrations between analytical methods. We aimed to develop population-based reference equations allowing individualized interpretation of the main blood biomarkers used in neurology. MethodsIn this cross-sectional study, we analysed plasma samples from cognitively unimpaired participants selected from the French CONSTANCES and Three-City population-based cohorts. Generalized additive models for location, scale, and shape were used to model neurofilament light chain (NfL), glial fibrillary acidic protein (GFAP), phosphorylated tau 181 (p-tau181), amyloid-{beta}40, amyloid-{beta}42, and their ratios according to age, sex, body-mass index, and renal function. The resulting equations provided individualized expected concentrations, percentiles, and Z-scores. Previously established disease-specific concentrations were converted into Z-score. Cross-calibration equations were developed for NfL measurements across analytical methods and sample matrices. FindingsThe final reference populations comprised 5123 participants for amyloid biomarkers and p-tau181 and 5122 for NfL and GFAP; median age was 52.3 years and half were women. Between ages 40 and 80 years, expected NfL and GFAP concentrations increased by an average of 2.6% and 2.2% per year, respectively. Renal function, body-mass index, and sex had additional biomarker-specific effects. Application of the equations to clinical cohorts preserved distinct disease-associated profiles: NfL Z-scores were increased across disorders characterised by neuroaxonal injury, whereas p-tau181 and GFAP showed its greatest increase in Alzheimer disease. NfL cross-calibration equations showed excellent agreement between methods and matrices, with intraclass correlation coefficients greater than 0.90. InterpretationThis population-based multibiomarker framework enables blood biomarker concentrations to be interpreted relative to individuals with similar physiological characteristics. Publicly available equations, reference curves, and standardized Z-scores could improve individualized interpretation and comparability across biomarkers, laboratories, and clinical populations.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-08-11",
+    "updated": "2026-08-11",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.09.26360027v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.09.26360027v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "BackgroundBlood biomarkers are increasingly used to support the diagnosis and monitoring of neurodegenerative diseases.",
+      "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-11-medrxiv-population_based_reference_equations_and_z_scores_for_blood_biomarkers_of_neurodegenerativ",
+      "paper_title": "Population-based reference equations and Z-scores for blood biomarkers of neurodegenerative diseases",
+      "paper_date": "2026-08-11",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-08-17T07:45:28",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-11-medrxiv-a_home_based_nurturing_care_intervention_for_children_born_hiv_exposed_but_uninfected_in_z",
+    "doi": "10.64898/2026.08.10.26360068",
+    "date": "2026-08-11",
+    "title": "A Home-Based Nurturing Care Intervention for Children born HIV-Exposed but Uninfected in Zambia: A Randomized Clinical Trial.",
+    "authors": "Zulu, E. M.; Rockers, P. C.; Forman, L.; Musonda, N.; Nthele, C.; Shimaingwa, F.; Bartrum, M.; Masempela, C. B.; Thea, D. M.; Herlihy, J. M.",
+    "abstract": "IntroductionResearch demonstrates neurodevelopmental differences in children who are HIV-exposed, but uninfected (CHEU) compared to their peers born unexposed. CHEUs are at higher risk for prematurity and low birth weight, both known risk factors for developmental delays. Despite increasing evidence, HIV exposure remains underrecognised as a risk factor for poor development by policy-makers and early childhood development (ECD) programs. We trialed an ECD intervention for CHEUs based on the Nurturing Care Framework developed by WHO, UNICEF, and the World Bank to improve neurodevelopmental outcomes in this vulnerable population. DesignWe conducted a randomized controlled trial of an ECD intervention for mothers living with HIV and their children born HIV-exposed, aged six to 24 months, living in peri-urban Lusaka. The intervention was delivered through bi-weekly home visits over 18 months using the curriculum adapted from the Nurturing Care Framework. The curriculum addressed nutrition, maternal wellness, child health, developmental milestones, and interactive caregiving. MethodThe primary outcome was measured by the Malawi Developmental Assessment Tool (MDAT) at six and 18 months post enrollment, which assesses developmental scores via a context-validated, direct observation tool across four domains: gross motor, fine motor, language, and social development. Participants were also assessed at six, 12 and 18 months post enrollment using the Caregiver Reported Early Development Instrument (CREDI). MDAT assessors were blinded to the intervention and control arm. ResultsWe enrolled 308 mother-infant pairs, randomized 1:1 into an ECD intervention (CHEU control, n = 155; CHEU intervention, n = 153). At six months post enrollment, the intervention was associated with modest improvements in two developmental domains, particularly cognitive (Adjusted 0.28, 95% CI: 0.09 to 0.46; p= 0.004) and social-emotional development (Adjusted 0.29, 95% CI: 0.08 to 0.49; p= 0.07). At 18 month post enrollment, adjusted models demonstrated a moderate positive effect with gross motor development, with participants showing a 0.24 standard deviation higher score compared with the control group (95% CI: 0.02-0.46; p=0.034). ConclusionThe findings indicate that the intervention may have a moderate impact on cognitive and social-emotional outcomes after six months, as well as on gross motor functions after eighteen months of intervention. Trial registrationClinicaltrials.gov NCT05119959",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-08-11",
+    "updated": "2026-08-11",
+    "primary_category": "infectious diseases",
+    "categories": [
+      "infectious diseases"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.10.26360068v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.10.26360068v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "IntroductionResearch demonstrates neurodevelopmental differences in children who are HIV-exposed, but uninfected (CHEU) compared to their peers born unexposed.",
+      "clinical_relevance": "Potential relevance: clinical translation workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-11-medrxiv-a_home_based_nurturing_care_intervention_for_children_born_hiv_exposed_but_uninfected_in_z",
+      "paper_title": "A Home-Based Nurturing Care Intervention for Children born HIV-Exposed but Uninfected in Zambia: A Randomized Clinical Trial.",
+      "paper_date": "2026-08-11",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-08-17T07:45:28",
+      "generator": "openai"
+    }
+  }
+]

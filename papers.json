@@ -1,32 +1,32 @@
 [
   {
-    "id": "2026-08-11-medrxiv-machine_learning_models_for_predicting_prostate_cancer_and_clinically_significant_prostate",
-    "doi": "10.64898/2026.08.09.26360024",
-    "date": "2026-08-11",
-    "title": "Machine learning models for predicting prostate cancer and clinically significant prostate cancer at biopsy: An updated analysis of an expanded Japanese cohort",
-    "authors": "Takeuchi, T.; Nomiya, A.",
-    "abstract": "BackgroundA 2019 report from our institution described a multilayer artificial neural network (ANN) for predicting prostate cancer at biopsy in 334 patients, trained with TensorFlow 1.x and evaluated at three fixed step counts without separating hyperparameter selection from test evaluation. We re-analyzed an expanded cohort from the same institution using contemporary machine-learning practice. MethodsWe pooled all available biopsy episodes from the same institutional database (n = 526; 524 after excluding one non-binary outcome code and one record with missing digital rectal examination [DRE] data), retaining the same seven predictors used in the original report (age, prior biopsy history, PSA, prostate volume, DRE, and MRI diffusion-weighted imaging findings in the peripheral and transition zones). Because 27 patients contributed more than one biopsy episode, we used patient-ID-grouped, stratified k-fold cross-validation (StratifiedGroupKFold; scikit-learn 1.8.0) with 3 and 5 folds, repeated over 10 random partitions, to avoid leakage between folds. Four classifiers were compared: L2-regularized logistic regression, gradient boosting, random forest, and a shallow (single hidden layer) multilayer perceptron. Two outcomes were modeled: detection of any prostate cancer, and detection of clinically significant prostate cancer (Gleason score [&ge;] 7). ResultsAny-cancer prevalence was 55.7% (292/524) and Gleason score [&ge;] 7 prevalence was 39.7% (208/524). With repeated 5-fold cross-validation, gradient boosting gave the highest discrimination for any prostate cancer (mean AUC 0.826, 95% CI 0.823-0.830) and for Gleason score [&ge;] 7 (mean AUC 0.855, 95% CI 0.852-0.859), closely followed by random forest and logistic regression (AUC 0.81-0.85). The shallow multilayer perceptron performed worse and less consistently than the other three models (any-cancer AUC 0.671; Gleason score [&ge;] 7 AUC 0.742) and than the deeper five-hidden-layer ANN reported in 2019. Results with 3-fold cross-validation were essentially unchanged. ConclusionsIn an expanded cohort, regularized logistic regression, gradient boosting, and random forest all discriminated prostate cancer at biopsy at least as well as the previously reported multilayer ANN, using far simpler models and a methodology that separates hyperparameter tuning from performance estimation. A shallow neural network offered no advantage over these simpler alternatives in this sample size. This is a preprint; the study has not undergone external peer review.",
+    "id": "2026-08-13-medrxiv-prediction_of_subsolid_pulmonary_nodule_evolution_from_baseline_ct_using_temporal_imaging",
+    "doi": "10.64898/2026.08.12.26360292",
+    "date": "2026-08-13",
+    "title": "Prediction of Subsolid Pulmonary Nodule Evolution from Baseline CT Using Temporal Imaging Models",
+    "authors": "Bondarenko, M.; Qi, K.; Nowroozi, A.; Kim, J.; Kunzang, B.; Lee, A.; Liu, J.; Tran, N.; Weng, S.; Vella, M.; Chaudhari, G.; Schnizler, T.; Innanje, A.; Chen, T.; Sohn, J. H.",
+    "abstract": "BackgroundPrediction of subsolid pulmonary nodule (SSN) progression from baseline CT may improve risk stratification and surveillance planning, but prior approaches have largely relied on fixed follow-up intervals. MethodsThis retrospective single-center study evaluated interval-aware temporal imaging models for predicting future SSN growth and morphology across heterogeneous surveillance durations. A total of 24,946 longitudinal scan pairings derived from 2,543 clinician-reviewed SSNs in 426 patients were analyzed. A discriminative deep learning model predicted interval growth from baseline CT, segmentation masks, and interscan interval information, while a temporally conditioned generative model predicted future lesion morphology. ResultsThe discriminative model achieved an area under the receiver operating characteristic curve of 0.772 (95% confidence interval: 0.704-0.818), with sensitivity of 80.2% and specificity of 58.7% on the test cohort. The generative model predicted future lesion morphology with a Dice similarity coefficient of 0.706 {+/-} 0.186. Prediction performance decreased with increasing follow-up duration, although both models generalized across intervals ranging from months to years. ConclusionInterval-aware temporal imaging models enable the prediction of future SSN growth and morphology from baseline CT while accounting for variable surveillance intervals. These findings suggest a framework for time-aware, personalized risk assessment that may support individualized surveillance strategies and future AI-assisted management of pulmonary adenocarcinoma spectrum lesions.",
     "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-08-11",
-    "updated": "2026-08-11",
-    "primary_category": "urology",
+    "published": "2026-08-13",
+    "updated": "2026-08-13",
+    "primary_category": "radiology and imaging",
     "categories": [
-      "urology"
+      "radiology and imaging"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.09.26360024v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.12.26360292v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.09.26360024v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.12.26360292v1.full.pdf"
       }
     ],
-    "score": 47,
+    "score": 52,
     "infographic": {
-      "key_insight": "BackgroundA 2019 report from our institution described a multilayer artificial neural network (ANN) for predicting prostate cancer at biopsy in 334 patients, trained with TensorFlow 1.x and evaluated at three fixed step counts without separating hyperparameter",
+      "key_insight": "BackgroundPrediction of subsolid pulmonary nodule (SSN) progression from baseline CT may improve risk stratification and surveillance planning, but prior approaches have largely relied on fixed follow-up intervals.",
       "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
       "method": [
         "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
@@ -42,43 +42,43 @@
         "#Research",
         "#Preprints"
       ],
-      "paper_id": "2026-08-11-medrxiv-machine_learning_models_for_predicting_prostate_cancer_and_clinically_significant_prostate",
-      "paper_title": "Machine learning models for predicting prostate cancer and clinically significant prostate cancer at biopsy: An updated analysis of an expanded Japanese cohort",
-      "paper_date": "2026-08-11",
+      "paper_id": "2026-08-13-medrxiv-prediction_of_subsolid_pulmonary_nodule_evolution_from_baseline_ct_using_temporal_imaging",
+      "paper_title": "Prediction of Subsolid Pulmonary Nodule Evolution from Baseline CT Using Temporal Imaging Models",
+      "paper_date": "2026-08-13",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-08-17T07:45:27",
+      "generated_at": "2026-08-18T07:31:32",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-08-11-medrxiv-population_based_reference_equations_and_z_scores_for_blood_biomarkers_of_neurodegenerativ",
-    "doi": "10.64898/2026.08.09.26360027",
-    "date": "2026-08-11",
-    "title": "Population-based reference equations and Z-scores for blood biomarkers of neurodegenerative diseases",
-    "authors": "Lehmann, S.; Andriambelosoa, T.; Morchikh, M.; Mortamais, M.; Duchiron, M.; Gabelle, A.; Hirtz, C.; Ayrignac, X.; Busto, G.; Bennys, K.; Kab, S.; Helmer, C.; Zins, M.; Helmer, C.; Mura, T.",
-    "abstract": "BackgroundBlood biomarkers are increasingly used to support the diagnosis and monitoring of neurodegenerative diseases. However, their interpretation is complicated by physiological determinants, including age, sex, body-mass index, and renal function, and by differences in absolute concentrations between analytical methods. We aimed to develop population-based reference equations allowing individualized interpretation of the main blood biomarkers used in neurology. MethodsIn this cross-sectional study, we analysed plasma samples from cognitively unimpaired participants selected from the French CONSTANCES and Three-City population-based cohorts. Generalized additive models for location, scale, and shape were used to model neurofilament light chain (NfL), glial fibrillary acidic protein (GFAP), phosphorylated tau 181 (p-tau181), amyloid-{beta}40, amyloid-{beta}42, and their ratios according to age, sex, body-mass index, and renal function. The resulting equations provided individualized expected concentrations, percentiles, and Z-scores. Previously established disease-specific concentrations were converted into Z-score. Cross-calibration equations were developed for NfL measurements across analytical methods and sample matrices. FindingsThe final reference populations comprised 5123 participants for amyloid biomarkers and p-tau181 and 5122 for NfL and GFAP; median age was 52.3 years and half were women. Between ages 40 and 80 years, expected NfL and GFAP concentrations increased by an average of 2.6% and 2.2% per year, respectively. Renal function, body-mass index, and sex had additional biomarker-specific effects. Application of the equations to clinical cohorts preserved distinct disease-associated profiles: NfL Z-scores were increased across disorders characterised by neuroaxonal injury, whereas p-tau181 and GFAP showed its greatest increase in Alzheimer disease. NfL cross-calibration equations showed excellent agreement between methods and matrices, with intraclass correlation coefficients greater than 0.90. InterpretationThis population-based multibiomarker framework enables blood biomarker concentrations to be interpreted relative to individuals with similar physiological characteristics. Publicly available equations, reference curves, and standardized Z-scores could improve individualized interpretation and comparability across biomarkers, laboratories, and clinical populations.",
-    "category": "Target Biology",
+    "id": "2026-08-12-medrxiv-towards_clinical_implementation_of_artificial_intelligence_in_cancer_care_concept_mapping",
+    "doi": "10.64898/2026.03.26.26349205",
+    "date": "2026-08-12",
+    "title": "Towards clinical implementation of artificial intelligence in cancer care: Concept mapping analysis of provincial workshop findings",
+    "authors": "Nayyar, C.; Xu, H. H.; Bates, A. T.; Conati, C.; Hilbers, D.; Avery, J.; Raman, S.; Fayaz-Bakhsh, A.; Nunez, J.-J.",
+    "abstract": "BackgroundArtificial intelligence (AI) has rapidly garnered interest in healthcare. Cancer cares multidisciplinary nature and high coordination demands are well positioned to benefit from AI. While attitudes toward implementation of AI in medicine have been explored generally, literature remains scarce with specific regards to AI in cancer care. This study sought to understand perspectives of both patients and professionals in guiding responsible, effective implementation of evidence-based AI in cancer care. MethodsWe conducted a workshop at a provincial Cancer Summit (Vancouver, Canada). Discussions addressed concerns, benefits, and priorities for AI in cancer care. Responses from 48 workshop participants underwent structured conceptualization by concept mapping. Sorting and rating of the resulting statements were performed by a purposively sampled 13-member expert panel. Multidimensional scaling, hierarchical cluster and subcluster analysis produced visual and quantitative maps of findings. ResultsA total of 265 statements on perceived benefits, concerns, and priorities related to the implementation of AI in cancer care were generated; a deduplicated and consolidated final set of 100 statements underwent concept mapping. Two main clusters identified pertained to \"Challenges and Safeguards for AI Implementation \" (Cluster 1) and \"Clinical Benefits and Efficiency Gains\" (Cluster 2). Subcluster analysis distinguished 8 thematic subclusters (4 per cluster). Mean importance and feasibility ratings were higher for Cluster 2, with large effect sizes for both importance (Cohens d = 0.94) and feasibility (Cohens d = 1.59). Ratings by clinical and nonclinical professionals were similar across comparisons except for Cluster 2 feasibility, rated higher by clinical participants (P = .029, Hedges g = 0.465). Further go-zone analysis classified statements according to their relative superiority/inferiority in importance and feasibility from overall average. ConclusionsExpert panel ratings were higher for statements describing clinical benefits and efficiency gains than for those describing challenges and safeguards for AI implementation in cancer care. Concept mapping analysis distinguished between workflow-aligned AI applications, perceived as ready for implementation, and system-level governance requirements requiring longer-term investment. Present findings offer initial, context-specific structuring of stakeholder perspectives that may inform the prioritization and sequencing of AI implementation efforts in cancer care, providing a foundation for validation in other settings. Contributions to the literatureO_LIWhile systematic reviews have identified barriers and facilitators to AI adoption in healthcare, this study provides the first structured prioritization framework for AI implementation in cancer care using concept mapping methodology, addressing an urgent need as AI capabilities advance rapidly in oncology. C_LIO_LIStrategic-level stakeholders distinguished between workflow-aligned domains perceived as implementation-ready and system-level domains requiring longer-term investment, enabling sequenced implementation planning that matches organizational readiness. C_LIO_LIThis approach, combining broad stakeholder statement generation with expert panel prioritization, demonstrates how integrating experiential knowledge with quantitative prioritization methods can provide implementation scientists and health system leaders with actionable frameworks for staged AI adoption strategies. C_LI",
+    "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-08-11",
-    "updated": "2026-08-11",
-    "primary_category": "neurology",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "primary_category": "health systems and quality improvement",
     "categories": [
-      "neurology"
+      "health systems and quality improvement"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.09.26360027v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.03.26.26349205v2"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.09.26360027v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.03.26.26349205v2.full.pdf"
       }
     ],
-    "score": 41,
+    "score": 49,
     "infographic": {
-      "key_insight": "BackgroundBlood biomarkers are increasingly used to support the diagnosis and monitoring of neurodegenerative diseases.",
-      "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
+      "key_insight": "BackgroundArtificial intelligence (AI) has rapidly garnered interest in healthcare.",
+      "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
       "method": [
         "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
         "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
@@ -93,43 +93,43 @@
         "#Research",
         "#Preprints"
       ],
-      "paper_id": "2026-08-11-medrxiv-population_based_reference_equations_and_z_scores_for_blood_biomarkers_of_neurodegenerativ",
-      "paper_title": "Population-based reference equations and Z-scores for blood biomarkers of neurodegenerative diseases",
-      "paper_date": "2026-08-11",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-08-17T07:45:28",
+      "paper_id": "2026-08-12-medrxiv-towards_clinical_implementation_of_artificial_intelligence_in_cancer_care_concept_mapping",
+      "paper_title": "Towards clinical implementation of artificial intelligence in cancer care: Concept mapping analysis of provincial workshop findings",
+      "paper_date": "2026-08-12",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-08-18T07:31:33",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-08-11-medrxiv-a_home_based_nurturing_care_intervention_for_children_born_hiv_exposed_but_uninfected_in_z",
-    "doi": "10.64898/2026.08.10.26360068",
-    "date": "2026-08-11",
-    "title": "A Home-Based Nurturing Care Intervention for Children born HIV-Exposed but Uninfected in Zambia: A Randomized Clinical Trial.",
-    "authors": "Zulu, E. M.; Rockers, P. C.; Forman, L.; Musonda, N.; Nthele, C.; Shimaingwa, F.; Bartrum, M.; Masempela, C. B.; Thea, D. M.; Herlihy, J. M.",
-    "abstract": "IntroductionResearch demonstrates neurodevelopmental differences in children who are HIV-exposed, but uninfected (CHEU) compared to their peers born unexposed. CHEUs are at higher risk for prematurity and low birth weight, both known risk factors for developmental delays. Despite increasing evidence, HIV exposure remains underrecognised as a risk factor for poor development by policy-makers and early childhood development (ECD) programs. We trialed an ECD intervention for CHEUs based on the Nurturing Care Framework developed by WHO, UNICEF, and the World Bank to improve neurodevelopmental outcomes in this vulnerable population. DesignWe conducted a randomized controlled trial of an ECD intervention for mothers living with HIV and their children born HIV-exposed, aged six to 24 months, living in peri-urban Lusaka. The intervention was delivered through bi-weekly home visits over 18 months using the curriculum adapted from the Nurturing Care Framework. The curriculum addressed nutrition, maternal wellness, child health, developmental milestones, and interactive caregiving. MethodThe primary outcome was measured by the Malawi Developmental Assessment Tool (MDAT) at six and 18 months post enrollment, which assesses developmental scores via a context-validated, direct observation tool across four domains: gross motor, fine motor, language, and social development. Participants were also assessed at six, 12 and 18 months post enrollment using the Caregiver Reported Early Development Instrument (CREDI). MDAT assessors were blinded to the intervention and control arm. ResultsWe enrolled 308 mother-infant pairs, randomized 1:1 into an ECD intervention (CHEU control, n = 155; CHEU intervention, n = 153). At six months post enrollment, the intervention was associated with modest improvements in two developmental domains, particularly cognitive (Adjusted 0.28, 95% CI: 0.09 to 0.46; p= 0.004) and social-emotional development (Adjusted 0.29, 95% CI: 0.08 to 0.49; p= 0.07). At 18 month post enrollment, adjusted models demonstrated a moderate positive effect with gross motor development, with participants showing a 0.24 standard deviation higher score compared with the control group (95% CI: 0.02-0.46; p=0.034). ConclusionThe findings indicate that the intervention may have a moderate impact on cognitive and social-emotional outcomes after six months, as well as on gross motor functions after eighteen months of intervention. Trial registrationClinicaltrials.gov NCT05119959",
-    "category": "Clinical Translation",
+    "id": "2026-08-12-medrxiv-a_vision_language_framework_for_predicting_brain_tumor_recurrence_from_multimodal_longitud",
+    "doi": "10.64898/2026.08.11.26360196",
+    "date": "2026-08-12",
+    "title": "A Vision-Language Framework for Predicting Brain Tumor Recurrence from Multimodal, Longitudinal Patient Data",
+    "authors": "Tak, D.; Sreedhar, D.; Aerts, H.; Kann, B.",
+    "abstract": "Accurate prediction of tumor recurrence in brain tumor patients following surgery is essential for optimizing adjuvant therapy, response assessment, and surveillance regimen. While MRI remains the gold standard for surveillance, integrating patient-specific clinical context may inform recurrence prediction. Traditional multimodal deep learning approaches often incorporate clinical data via simple fusion, failing to fully capture the semantic interdependencies between visual features and clinical context. Trained on over 5,000 scans from approximately 400 pediatric low-grade glioma subjects and validated across three institutional cohorts, including one clinical trial cohort, our experiments demonstrate incremental performance gains when progressing from vision-only to clinical-vision to a vision-language approach. Our results indicate that converting structured clinical covariates into natural language text allows for more effective synthesis of multimodal data, while providing a platform for incremental addition of clinical context without extending model complexity. We demonstrate that our proposed VLM architecture offers a promising direction for neuro-oncological prognosis by effectively encoding imaging cues and clinical context, with potential applicability to other longitudinal prognosis tasks.",
+    "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-08-11",
-    "updated": "2026-08-11",
-    "primary_category": "infectious diseases",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "primary_category": "pediatrics",
     "categories": [
-      "infectious diseases"
+      "pediatrics"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.10.26360068v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.11.26360196v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.10.26360068v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.11.26360196v1.full.pdf"
       }
     ],
-    "score": 41,
+    "score": 48,
     "infographic": {
-      "key_insight": "IntroductionResearch demonstrates neurodevelopmental differences in children who are HIV-exposed, but uninfected (CHEU) compared to their peers born unexposed.",
-      "clinical_relevance": "Potential relevance: clinical translation workflows and research evaluation.",
+      "key_insight": "Accurate prediction of tumor recurrence in brain tumor patients following surgery is essential for optimizing adjuvant therapy, response assessment, and surveillance regimen.",
+      "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
       "method": [
         "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
         "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
@@ -144,11 +144,62 @@
         "#Research",
         "#Preprints"
       ],
-      "paper_id": "2026-08-11-medrxiv-a_home_based_nurturing_care_intervention_for_children_born_hiv_exposed_but_uninfected_in_z",
-      "paper_title": "A Home-Based Nurturing Care Intervention for Children born HIV-Exposed but Uninfected in Zambia: A Randomized Clinical Trial.",
-      "paper_date": "2026-08-11",
-      "paper_category": "Clinical Translation",
-      "generated_at": "2026-08-17T07:45:28",
+      "paper_id": "2026-08-12-medrxiv-a_vision_language_framework_for_predicting_brain_tumor_recurrence_from_multimodal_longitud",
+      "paper_title": "A Vision-Language Framework for Predicting Brain Tumor Recurrence from Multimodal, Longitudinal Patient Data",
+      "paper_date": "2026-08-12",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-08-18T07:31:33",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-12-medrxiv-harnessing_pathology_foundation_models_to_accelerate_lymphoma_diagnosis_through_automated",
+    "doi": "10.64898/2026.08.11.26360085",
+    "date": "2026-08-12",
+    "title": "Harnessing Pathology Foundation Models to Accelerate Lymphoma Diagnosis Through Automated Immunohistochemistry Triage",
+    "authors": "Zhu, M.; Li, A.; Safa, I.; Galera, P.; Hazoglou, M.; Vanderbilt, C.; Kamali, A.; Goldgof, G.; Veeraraghavan, H.; Jiang, J.; Ardon, O.; Geneslaw, L.; Dogan, A.",
+    "abstract": "Pathologic diagnoses of hematopoietic diseases require immunohistochemistry (IHC) stains selected by pathologists upon preview of H&E-stained slides. This multi-step workflow can delay diagnostic turnaround time by days. Hence, we developed the Hematopathology Automatic Triaging System (HATS), which automates IHC panel ordering directly from H&E whole-slide images using pretrained pathology foundation model representations combined with attention-based multiple-instance learning. After the most comprehensive evaluation of pathology foundation models for hematologic malignancy classification to date, encompassing seven publicly available models, we trained HATS on 4,996 whole-slide images from 1,607 patients spanning the ten most common lymphoma diagnostic categories. HATS achieves 84% case-level subtype classification accuracy (0.962 ROC-AUC), translating to 92% IHC panel ordering accuracy. In a blinded reader study, HATS outperforms practicing pathologists at predicting lymphoma subtypes from morphology alone (85% vs 65%). In an independent real-world validation of 230 clinical cases, after directing 7 cases with scant tissue for manual review, HATS-ordered IHC panels were sufficient for diagnosis in 72.6% of cases. By automating the triaging step while preserving full pathologist oversight, HATS offers a safe and practical entry point for clinical AI adoption in pathology.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-08-12",
+    "updated": "2026-08-12",
+    "primary_category": "pathology",
+    "categories": [
+      "pathology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.11.26360085v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.11.26360085v1.full.pdf"
+      }
+    ],
+    "score": 40,
+    "infographic": {
+      "key_insight": "Pathologic diagnoses of hematopoietic diseases require immunohistochemistry (IHC) stains selected by pathologists upon preview of H&E-stained slides.",
+      "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-12-medrxiv-harnessing_pathology_foundation_models_to_accelerate_lymphoma_diagnosis_through_automated",
+      "paper_title": "Harnessing Pathology Foundation Models to Accelerate Lymphoma Diagnosis Through Automated Immunohistochemistry Triage",
+      "paper_date": "2026-08-12",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-08-18T07:31:34",
       "generator": "openai"
     }
   }
