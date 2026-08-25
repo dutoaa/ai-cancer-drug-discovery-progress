@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-08-24
+Generated: 2026-08-25
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. PanoraOnc: A pan-cancer clinico-genomic AI model for transferable outcome predictions
