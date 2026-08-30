@@ -1,31 +1,31 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-08-29
+Generated: 2026-08-30
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
-## 1. Population-scale integration of tumor transcriptomics into breast cancer care: a decade of the SCAN-B initiative
+## 1. Personalized Knowledge-based Graph Neural Networks and Regression Analysis for Computational Diagnosis of High-Risk Cardiovascular Disease Patients
 
-- Date: 2026-08-23
-- Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.20.26360879v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.20.26360879v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-23-medrxiv-population_scale_integration_of_tumor_transcriptomics_into_breast_cancer_care_a_decade_of_infographic.json
+- Date: 2026-08-26
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.24.26361273v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.24.26361273v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-26-medrxiv-personalized_knowledge_based_graph_neural_networks_and_regression_analysis_for_computation_infographic.json
 
-## 2. Multimodal artificial intelligence for personalized hepatocellular carcinoma treatment strategy selection
+## 2. Multimodal Transformer Modeling of Rapamycin Treatment in Alzheimer's Disease via Random Forest Feature Filtering
+
+- Date: 2026-08-26
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.22.26361114v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.22.26361114v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-26-medrxiv-multimodal_transformer_modeling_of_rapamycin_treatment_in_alzheimer_s_disease_via_random_f_infographic.json
+
+## 3. Multimodal artificial intelligence for personalized hepatocellular carcinoma treatment strategy selection
 
 - Date: 2026-08-25
 - Category: Therapeutic Discovery
 - Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.21.26361067v1
 - PDF: https://www.medrxiv.org/content/10.64898/2026.08.21.26361067v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-25-medrxiv-multimodal_artificial_intelligence_for_personalized_hepatocellular_carcinoma_treatment_str_infographic.json
-
-## 3. Can GPT Be Used as an Alternative Prediction Model to Traditional Machine Learning and Neural Networks on Low-Volume Clinical Data?
-
-- Date: 2026-08-23
-- Category: Cancer AI Methods
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.19.26360765v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.19.26360765v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-23-medrxiv-can_gpt_be_used_as_an_alternative_prediction_model_to_traditional_machine_learning_and_neu_infographic.json
 
 ## 4. Evaluating computational assays of chronic fatigue using UK Biobank data
 
@@ -43,13 +43,13 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.08.21.26361045v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-25-medrxiv-participant_attitudes_toward_returning_individual_results_from_cadasil_research_infographic.json
 
-## 6. TrialCode Agent: LLM-Assisted Clinical Code-Set Construction for Trial Emulation
+## 6. Large Language Model Embeddings of Surgical Procedural Names for Confounding Adjustment in Perioperative Observational Studies
 
-- Date: 2026-08-23
-- Category: Clinical Translation
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.20.26360962v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.20.26360962v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-23-medrxiv-trialcode_agent_llm_assisted_clinical_code_set_construction_for_trial_emulation_infographic.json
+- Date: 2026-08-25
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.22.26361065v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.22.26361065v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-25-medrxiv-large_language_model_embeddings_of_surgical_procedural_names_for_confounding_adjustment_in_infographic.json
 
 ## 7. WISE-Screen: A Smartphone-Based Analytical Framework for Automated ASD Screening and Phenotyping via High-Fidelity Eye-tracking
 
@@ -82,11 +82,3 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - Source: medRxiv - https://www.medrxiv.org/content/10.1101/2025.11.19.25340633v2
 - PDF: https://www.medrxiv.org/content/10.1101/2025.11.19.25340633v2.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-24-medrxiv-differential_not_uniform_elevation_of_plasma_neurofilament_light_and_glial_fibrillary_acid_infographic.json
-
-## 11. Persistent Hypercoagulability and Further Characterization of Microclot Complexes in Long COVID
-
-- Date: 2026-08-23
-- Category: Therapeutic Discovery
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.20.26360874v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.20.26360874v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-23-medrxiv-persistent_hypercoagulability_and_further_characterization_of_microclot_complexes_in_long_infographic.json
