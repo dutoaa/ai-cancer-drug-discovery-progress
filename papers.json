@@ -24,7 +24,7 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.24.26361256v1.full.pdf"
       }
     ],
-    "score": 69,
+    "score": 64,
     "infographic": {
       "key_insight": "Neuropsychiatric symptoms (NPS) are increasingly recognized as critical components of the disease progression in Alzheimers disease (AD), yet their relationship with neurodegeneration remain poorly characterized.",
       "clinical_relevance": "Potential relevance: cancer ai methods workflows and research evaluation.",
@@ -46,7 +46,58 @@
       "paper_title": "Explainable Deep Learning Reveals Distributed Neurodegeneration Signatures of Neuropsychiatric Symptoms Across the Alzheimer's Continuum",
       "paper_date": "2026-08-27",
       "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-08-31T14:38:34",
+      "generated_at": "2026-09-01T12:16:02",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-28-medrxiv-adaptive_forecasting_of_antiretroviral_therapy_demand_using_machine_learning_in_india_s_na",
+    "doi": "10.64898/2026.08.25.26361170",
+    "date": "2026-08-28",
+    "title": "Adaptive forecasting of antiretroviral therapy demand using machine learning in India's national HIV programme",
+    "authors": "Chugh, M.; Neekhra, B.; Bamrotiya, M.; Clipman, S. J.; Gupta, D.",
+    "abstract": "Antiretroviral therapy (ART) stock-outs interrupt treatment, increase the risk of virologic failure and drug resistance, and erode the population-level benefits of viral suppression. India's National AIDS Control Organization (NACO) manages one of the world's largest public ART programmes, where regimen transitions, evolving formulations, changing treatment guidelines, and procurement-driven fluctuations in drug consumption complicate forecasting. We developed an end-to-end, regimen-specific forecasting workflow to support procurement planning during such periods of instability. We analyzed monthly national ART consumption data from January 2013 through December 2024. A privacy-preserving synthetic dataset was used for pipeline development, followed by final evaluation on real national consumption time series. We compared three model classes, comprising five models: (1) classical models (Holt-Winters and ARIMA), (2) transformer models (TimesFM, which is a large pre-trained time-series foundation model, and its variant with logarithmically transformed values), and (3) hybrid models (variants of a hybrid ARIMA-TimesFM residual model). While the forecast horizon of 18 months remained constant, the train-test period varied across real and synthetic data, as real data was only available until February 2024. For synthetic data, models were trained through June 2023 (test window was July 2023-December 2024), while for real data, models were trained through August 2022 (our test window was September 2022-February 2024). We reported signed percentage deviation to preserve whether models tended to over-or under-predict, and selected models by the smallest absolute deviation. We then derived a regimen-specific model-error buffer, applied only to held-out under-prediction, and deployed the workflow through a no-code dashboard. Forecasting performance was determined using signed percentage deviation (SPD), wherein positive change represents under-prediction and negative change represents over-prediction. Performance varied across regimens, indicating that no single approach was best-performing for all formulations. On synthetic benchmark data, the smallest absolute deviations ranged from 0.46% for adult ABC+3TC to 11.92% for adult AZT+3TC. On real consumption data, classical methods remained competitive for some series, whereas transformer and hybrid models produced better predictive outcomes for others. For instance, for adult AZT+3TC, the Hybrid 70th percentile achieved an SPD of -2.02%, in contrast to the error range of [-15.7, 8.87] for other models. For adult Ritonavir, the ARIMA-TimesFM hybrid at the 30th percentile achieved an SPD of -5.2%, in contrast to the error range of [-14.94, 17.25] for other models. Several formulations, particularly low-volume and transition regimens, nevertheless remained difficult to forecast accurately, underscoring persistent operational uncertainty. This was especially evident across the three pediatric regimens, where all models deviated systematically in the same direction - a more concerning pattern than mere magnitude. For pediatric ABC+3TC, all models over-predicted within a narrow band of [-82.74, -67.43], while for pediatric AZT+3TC and LPV/r 125 mg, all models under-predicted, with ranges of [24.93, 63.73] and [18.32, 52.07] respectively. These findings support a portfolio approach to forecasting in national HIV programmes. Rather than replacing established public-health procurement systems, regimen-specific model selection, directional error reporting, and cautious model-error buffering can strengthen decision support during regimen transitions and other periods of unstable demand.",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-08-28",
+    "updated": "2026-08-28",
+    "primary_category": "hiv aids",
+    "categories": [
+      "hiv aids"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.25.26361170v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.25.26361170v1.full.pdf"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "Antiretroviral therapy (ART) stock-outs interrupt treatment, increase the risk of virologic failure and drug resistance, and erode the population-level benefits of viral suppression.",
+      "clinical_relevance": "Potential relevance: cancer ai methods workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-28-medrxiv-adaptive_forecasting_of_antiretroviral_therapy_demand_using_machine_learning_in_india_s_na",
+      "paper_title": "Adaptive forecasting of antiretroviral therapy demand using machine learning in India's national HIV programme",
+      "paper_date": "2026-08-28",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-09-01T12:16:03",
       "generator": "openai"
     }
   },
@@ -75,7 +126,7 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.24.26360900v1.full.pdf"
       }
     ],
-    "score": 67,
+    "score": 62,
     "infographic": {
       "key_insight": "PurposeModified FOLFIRINOX (FFX) and gemcitabine plus nab-paclitaxel (GNP) are standard first-line treatments for metastatic pancreatic ductal adenocarcinoma (PDAC), but no validated biomarker guides treatment selection.",
       "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
@@ -97,7 +148,7 @@
       "paper_title": "Multimodal Machine Learning for Predicting Outcomes in the PASS-01 Trial of Systemic Therapy for Metastatic Pancreatic Cancer",
       "paper_date": "2026-08-27",
       "paper_category": "Target Biology",
-      "generated_at": "2026-08-31T14:38:35",
+      "generated_at": "2026-09-01T12:16:03",
       "generator": "openai"
     }
   },
@@ -126,7 +177,7 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.24.26361273v1.full.pdf"
       }
     ],
-    "score": 60,
+    "score": 55,
     "infographic": {
       "key_insight": "Acute myocardial infarction (MI) is a major precursor to heart failure (HF), yet few biomarkers are routinely used to predict post-MI HF, and limited therapeutic options exist to prevent its development.",
       "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
@@ -148,7 +199,58 @@
       "paper_title": "Personalized Knowledge-based Graph Neural Networks and Regression Analysis for Computational Diagnosis of High-Risk Cardiovascular Disease Patients",
       "paper_date": "2026-08-26",
       "paper_category": "Target Biology",
-      "generated_at": "2026-08-31T14:38:36",
+      "generated_at": "2026-09-01T12:16:04",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-28-medrxiv-towards_a_ml_powered_multiscale_computational_platform_based_on_qsp_and_pbpk_modeling_to_s",
+    "doi": "10.64898/2026.08.25.26361215",
+    "date": "2026-08-28",
+    "title": "Towards a ML-powered Multiscale Computational Platform Based on QSP and PBPK Modeling to Support the Development of mRNA-based Therapies",
+    "authors": "Pettina, E.; Abi Chahine, F.; Campanile, E.; Giampiccolo, S.; Marchetti, L.",
+    "abstract": "mRNA-based therapeutics have emerged as a transformative class of medicines, yet their translation beyond infectious disease vaccines remains challenged by the absence of an integrated pharmacological framework accounting for the tri-component nature of these therapies - the lipid nanoparticle, the mRNA, and the expressed protein. Here, we present a modular, multiscale computational platform integrating two complementary mechanistic models covering the full pharmacological cascade of mRNA-based immunotherapies. The first is a Quantitative Systems Pharmacology (QSP) model describing the immunological response to mRNA vaccines, from antigen expression in antigen-presenting cells through B cell activation and circulating antibody production. The second is a Physiologically Based Pharmacokinetic (PBPK) model tracking whole-body disposition of mRNA-encoded therapeutic antibodies, incorporating a molecular layer resolving LNP uptake, endosomal mRNA escape, and intracellular translation. Both models are informed by a machine learning pipeline that maps IVT-mRNA nucleotide sequences directly onto kinetic parameters, enabling product-specific model simulations. We propose this platform as a step toward the quantitative pharmacological framework that mRNA therapeutics currently lack, and as a practical tool for model-informed design and development of this therapeutic class.",
+    "category": "Therapeutic Discovery",
+    "source": "medRxiv",
+    "published": "2026-08-28",
+    "updated": "2026-08-28",
+    "primary_category": "pharmacology and therapeutics",
+    "categories": [
+      "pharmacology and therapeutics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.25.26361215v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.25.26361215v1.full.pdf"
+      }
+    ],
+    "score": 50,
+    "infographic": {
+      "key_insight": "mRNA-based therapeutics have emerged as a transformative class of medicines, yet their translation beyond infectious disease vaccines remains challenged by the absence of an integrated pharmacological framework accounting for the tri-component nature of these ",
+      "clinical_relevance": "Potential relevance: therapeutic discovery workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-28-medrxiv-towards_a_ml_powered_multiscale_computational_platform_based_on_qsp_and_pbpk_modeling_to_s",
+      "paper_title": "Towards a ML-powered Multiscale Computational Platform Based on QSP and PBPK Modeling to Support the Development of mRNA-based Therapies",
+      "paper_date": "2026-08-28",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-09-01T12:16:05",
       "generator": "openai"
     }
   },
@@ -177,7 +279,7 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.22.26361114v1.full.pdf"
       }
     ],
-    "score": 52,
+    "score": 47,
     "infographic": {
       "key_insight": "Alzheimers Disease (AD) remains a leading cause of cognitive decline with no known cure, motivating the development of therapies that slow neurodegeneration.",
       "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
@@ -199,7 +301,160 @@
       "paper_title": "Multimodal Transformer Modeling of Rapamycin Treatment in Alzheimer's Disease via Random Forest Feature Filtering",
       "paper_date": "2026-08-26",
       "paper_category": "Target Biology",
-      "generated_at": "2026-08-31T14:38:37",
+      "generated_at": "2026-09-01T12:16:05",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-27-medrxiv-vaccination_of_people_with_hiv_with_bg505_sosip_v4_1_gt1_1_an_interim_safety_analysis_of_t",
+    "doi": "10.64898/2026.08.24.26360985",
+    "date": "2026-08-27",
+    "title": "Vaccination of people with HIV with BG505 SOSIP.v4.1-GT1.1: An interim safety analysis of the investigator-initiated RENEW-SHCS Phase I trial",
+    "authors": "Poulose, R.; Kusejko, K.; Eichenberger, A.; Manrique, A.; Nemeth, J.; Braun, D. L.; Caringi, I. C.; Mahomed, S.; Garrett, N.; Aceto, L.; Kovari, H.; Huber, M.; Schanz, M.; Kouyos, R. D.; Caskey, M.; Sanders, R. W.; Moore, P. W.; Rauch, A.; Guenthard, H. F.; Trkola, A.",
+    "abstract": "Background: Vaccination of people with HIV (PWH) on suppressive antiretroviral therapy (ART) represents a novel approach for evaluating candidate broadly neutralizing antibody (bnAb) immunogens for preventive and therapeutic HIV vaccines. Given pre-existing immunity in PWH, the safety of this approach requires careful assessment prior to broader application. Here, we report on the design and safety of the RENEW-SHCS study which evaluates the immunization of PWH with BG505 SOSIP.v4.1-GT1.1, an immunogen engineered to induce precursors of CD4 binding site (CD4bs)- and V2-apex targeting bnAbs. Methods. RENEW-SHCS is a phase I, open-label, non-randomized vaccination trial evaluating a single dose of the recombinant germline-targeting envelope trimer BG505 SOSIP.v4.1-GT1.1 (GT1.1), adjuvanted with 3M052-AF and Aluminum hydroxide (alum), in PWH on suppressive ART enrolled from the Swiss HIV Cohort Study. Participants were previously classified as bnAb or non-neutralizing antibody (nnAb) inducers, with a target enrollment of 15 per group, and were monitored for safety and immunogenicity for 24 weeks while continuing standard ART. Due to an out-of-specification stability measurement of adjuvant 3M052-AF the trial was paused after 23 immunizations and subjected to an unscheduled interim safety and reactogenicity assessment comprising protocol defined outcome measures (adverse events, clinical laboratory measurements and HIV-1 viral load). Results. Twenty-three participants (10 bnAb and 13 nnAb inducers, median age 59 years, 17 male / 6 female) were vaccinated between March and August 2025 before interruption of the trial. All participants completed follow-up with full protocol adherence. The interim-safety analysis confirmed that no vaccine-related serious adverse events occurred. Solicited local (96%) and systemic (83%) reactions were common, predominantly grade 1-2, transient, and self-limited. Transient laboratory changes occurred but mostly remained within the normal range, with no vaccine-related grade 3 abnormalities. We observed predominantly transient local and systemic reactions, which were similar or milder to the reactogenicity profile reported for immunization of adult people without HIV (PWOH) with GT1.1 adjuvanted with AS01b reported in the IAVI C101 trial. No viral rebound under ART occurred. One participant experienced two viral blips (>50 HIV-1 RNA copies/ml), one before and one 16 weeks after vaccination with subsequent re-suppression. All others maintained viral suppression (<50 copies/ml) throughout follow-up. Conclusion. RENEW-SHCS demonstrated a favorable safety and reactogenicity profile of single dose immunization with GT1.1 in PWH, comparable to that observed in PWOH. The findings of this phase I study support the feasibility of vaccinating ART-treated PWH in trials of preventive and therapeutic HIV vaccine strategies.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-08-27",
+    "updated": "2026-08-27",
+    "primary_category": "hiv aids",
+    "categories": [
+      "hiv aids"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.24.26360985v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.24.26360985v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "Background: Vaccination of people with HIV (PWH) on suppressive antiretroviral therapy (ART) represents a novel approach for evaluating candidate broadly neutralizing antibody (bnAb) immunogens for preventive and therapeutic HIV vaccines.",
+      "clinical_relevance": "Potential relevance: clinical translation workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-27-medrxiv-vaccination_of_people_with_hiv_with_bg505_sosip_v4_1_gt1_1_an_interim_safety_analysis_of_t",
+      "paper_title": "Vaccination of people with HIV with BG505 SOSIP.v4.1-GT1.1: An interim safety analysis of the investigator-initiated RENEW-SHCS Phase I trial",
+      "paper_date": "2026-08-27",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-09-01T12:16:06",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-27-medrxiv-neural_behavioral_and_clinical_outcomes_of_a_voice_based_ai_coach_for_depression_and_anxie",
+    "doi": "10.64898/2025.12.22.25342792",
+    "date": "2026-08-27",
+    "title": "Neural, Behavioral, and Clinical Outcomes of a Voice-based AI Coach for Depression and Anxiety: A Phase 2 Randomized Trial",
+    "authors": "Kannampallil, T. G.; Ajilore, O.; Smyth, J. M.; Barve, A.; Ronneberg, C. R.; Lv, N.; Kumar, V.; Garcia, C.; Aborisade, G.; Wittels, N. E.; Tang, Z.; Chinnakotla, B.; Xiao, L.; Ma, J.",
+    "abstract": "ImportanceArtificial Intelligence (AI) voice-based chatbots may improve access to evidence-based psychotherapy for depression and anxiety, but their therapeutic mechanisms and outcomes are largely unknown. ObjectiveTo investigate the mechanisms and potential efficacy of Lumen, an AI voice-based coach delivering problem-solving treatment (PST), among adults with untreated, clinically significant depression and/or anxiety. DesignPhase 2, 3-arm randomized clinical trial. SettingA public university and affiliated medical center in Chicago, Illinois. ParticipantsAdults with a Patient Health Questionnaire-9 score of 10-19 and/or a Generalized Anxiety Disorder Scale score of 10-14 were randomized to Lumen-coached PST (n=100), human-coached PST (n=50), or waitlist control (n=50). InterventionsPST was delivered in 4 weekly sessions followed by 4 biweekly sessions, by Lumen--a custom-developed, rule-based AI application on Amazons Alexa platform--or by a human coach via videoconferencing. Main Outcome(s) and Measure(s)The primary mechanistic outcome was change in right dorsolateral prefrontal cortex (dlPFC) activation for cognitive control, assessed with functional neuroimaging. Secondary outcomes were patient-reported, theory-based behavioral targets (e.g., problem-solving) and clinical symptoms (e.g., psychological distress). ResultsAmong 200 participants (mean (SD) age, 36.6 (11.9) years; 77% women; 25% Black American; 28% Latino), change from baseline in right dlPFC activity at 18 weeks did not differ significantly by treatment arm. Compared with waitlist control, Lumen-coached participants had significantly greater improvements from baseline to 18 weeks in overall problem-solving ability (mean difference, 1.04; 95% CI, 0.23--1.84]) and psychological distress (mean difference, -3.56; 95% CI -5.69 to -1.43) due to depressive and anxiety symptoms. Lumen- and human-coached PST did not differ significantly on either measure. One serious adverse event (hospitalization), unrelated to this study, was reported. Conclusions and RelevanceIn this phase 2 experimental-therapeutics RCT, neither AI- nor human-coached PST significantly engaged the prespecified neural target for cognitive control. However, both interventions improved patient-reported problem-solving and psychological distress relative to waitlist control, providing exploratory evidence of a non-neural candidate mechanism and a clinical signal warranting future testing. Trial Registrationclinicaltrials.gov, NCT05603923 Key PointsO_ST_ABSQuestionC_ST_ABSDoes Lumen, an Artificial Intelligence (AI) voice-based coach delivering problem-solving treatment (PST) for depression and anxiety, engage a mechanistic neural target for cognitive control (right dorsolateral prefrontal cortex, dlPFC) better than waitlist, and not worse than human-coached PST, and, secondarily, does it improve problem-solving behavior and clinical symptoms? FindingsIn this phase 2, 3-arm experimental-therapeutics randomized trial among 200 adults with untreated, clinically significant depression and/or anxiety, neither Lumen- nor human-coached PST significantly engaged the neural target versus waitlist control. Both interventions, however, significantly improved secondary outcomes related to patient-reported problem-solving ability and psychological distress due to depressive and anxiety symptoms relative to waitlist control. MeaningDespite null neural-target findings, Lumen may hold promise as a scalable intervention for improving problem-solving and psychological distress in adults with depression and/or anxiety.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-08-27",
+    "updated": "2026-08-27",
+    "primary_category": "psychiatry and clinical psychology",
+    "categories": [
+      "psychiatry and clinical psychology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2025.12.22.25342792v4"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2025.12.22.25342792v4.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "ImportanceArtificial Intelligence (AI) voice-based chatbots may improve access to evidence-based psychotherapy for depression and anxiety, but their therapeutic mechanisms and outcomes are largely unknown.",
+      "clinical_relevance": "Potential relevance: clinical translation workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-27-medrxiv-neural_behavioral_and_clinical_outcomes_of_a_voice_based_ai_coach_for_depression_and_anxie",
+      "paper_title": "Neural, Behavioral, and Clinical Outcomes of a Voice-based AI Coach for Depression and Anxiety: A Phase 2 Randomized Trial",
+      "paper_date": "2026-08-27",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-09-01T12:16:06",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-27-medrxiv-biodeformunet_a_deep_learning_model_for_biomechanically_informed_liver_image_registration",
+    "doi": "10.64898/2026.08.03.26359612",
+    "date": "2026-08-27",
+    "title": "BioDeformUNet: A Deep Learning Model for Biomechanically Informed Liver Image Registration",
+    "authors": "Zhang, X.; OConnor, C.; Castelo, A.; Woodland, M.; Daoud, B.; Paolucci, I.; Albuquerque, J.; Altaie, M. A.; Siddiqi, N.; Patel, A.; Odisio, B.; Brock, K.",
+    "abstract": "PurposeTo build a 3D U-Net model, BioDeformUNet, to predict the livers deformation vector field (DVF) in near real-time, for efficient intra-procedural evaluation of the minimal ablative margin (MAM). Materials and MethodsThis retrospective study included 170 contrast-enhanced computed tomography (CECT) image pairs from 157 patients who underwent liver ablation treatment between 2020-2024. Each data instance included one pre-ablation CECT (pre-CECT) and one post-ablation CECT (post-CECT). BioDeformUNet was trained under the guidance of DVFs generated by a biomechanical model-based deformable image registration (DIR) algorithm using a loss function that focused on large liver deformations. Data were split patient-wise into training (92-93 patients), validation (23-24 patients), and testing sets (42 patients). We compared our methods performance with two deep learning-based DIR methods: VoxelMorph and VFA. Evaluation metrics included: target registration error (TRE), Dice similarity coefficient (DSC), Minimum Ablation Margin (MAM), and inference time. For BioDeformUNet, we additionally evaluated the accuracy of the deformed tumor center-of-mass mapping by comparing the predicted tumor center location with that generated by Morfeus. A mapping error less than 3.0 mm (corresponding to the voxel size) was considered accurate. We used the Wilcoxon signed-rank test to assess the significancy of each test result. Our code is available at https://github.com/XinyueZhang831/BioDeformUNET. ResultsThe TRE of BioDeformUNet was not significantly different from Morfeus (3.31{+/-}1.17 BioDeformUNet; 3.23{+/-}1.06 Morfeus; p-value=0.41). The BioDeformUNet DVF magnitude was within 3.0 mm of Morfeus DVF for an average of 91.9 {+/-} 17.6% (mean {+/-} SD) of the voxels. Tumor mapping errors greater than 3.0 mm occurred in only 8 cases. The inference time of BioDeformUNet was 0.6s per image pair, 0.2s for VoxelMorph, 0.3s for VFA, and 20.2s for Morfeus. ConclusionBioDeformUNet achieved a similar performance to the biomechanical model-based algorithm but required fewer computational operations, resulting in a 34x speedup in DVF computation.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-08-27",
+    "updated": "2026-08-27",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.03.26359612v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.03.26359612v2.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "PurposeTo build a 3D U-Net model, BioDeformUNet, to predict the livers deformation vector field (DVF) in near real-time, for efficient intra-procedural evaluation of the minimal ablative margin (MAM).",
+      "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-27-medrxiv-biodeformunet_a_deep_learning_model_for_biomechanically_informed_liver_image_registration",
+      "paper_title": "BioDeformUNet: A Deep Learning Model for Biomechanically Informed Liver Image Registration",
+      "paper_date": "2026-08-27",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-09-01T12:16:07",
       "generator": "openai"
     }
   },
@@ -228,7 +483,7 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.24.26361252v1.full.pdf"
       }
     ],
-    "score": 49,
+    "score": 44,
     "infographic": {
       "key_insight": "Doctors increasingly rely on AI in the clinic, yet which report features make AI-generated responses useful and trustworthy remains unclear.",
       "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
@@ -250,160 +505,7 @@
       "paper_title": "Drivers of Oncologist Preference of AI-Generated Literature Review in a Randomized Mixed-Methods Study",
       "paper_date": "2026-08-27",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-08-31T14:38:37",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-08-25-medrxiv-multimodal_artificial_intelligence_for_personalized_hepatocellular_carcinoma_treatment_str",
-    "doi": "10.64898/2026.08.21.26361067",
-    "date": "2026-08-25",
-    "title": "Multimodal artificial intelligence for personalized hepatocellular carcinoma treatment strategy selection",
-    "authors": "Feng, W.; Liu, S.; Yang, Z.; Tao, Y.; Gu, X.; Jin, W.",
-    "abstract": "BackgroundHepatocellular carcinoma (HCC) treatment selection demands nuanced integration of heterogeneous patient data, yet prevailing predictive models rely on restricted data modalities and oversimplified therapeutic frameworks, compromising clinical translation. ObjectiveWe developed and validated a multimodal artificial intelligence framework to guide optimal treatment strategy selection across the full spectrum of HCC interventions. MethodsThis retrospective study comprised 1,043 HCC patients (development cohort, January 2017-December 2023) and 55 external validation patients (2023) from Wuxi Peoples Hospital. We engineered Embedding-Augmented Extra Trees (ET-Emb), a novel model fusing structured clinical variables with contextual text embeddings derived from medical histories and radiology reports. ET-Emb quantifies probabilities for five primary treatments: open/laparoscopic resection, transarterial chemoembolization, radiofrequency ablation (RFA), and chemotherapy. Model performance was rigorously assessed via 10-fold cross-validation and external validation using ROC-AUC and PR-AUC metrics. ResultsET-Emb demonstrated robust performance in the development cohort (ROC-AUC: 0.84 {+/-} 0.04; PR-AUC: 0.55 {+/-} 0.06), significantly outperforming established benchmarks. This generalizability was preserved in external validation (ROC-AUC: 0.77 {+/-} 0.02; PR-AUC: 0.47 {+/-} 0.03). SHAP analysis identified textual clinical narratives and socioeconomic determinants as critical predictive drivers. ConclusionsBy unifying structured and unstructured data modalities, ET-Emb delivers accurate, multi-treatment strategy prediction for HCC. Its clinical validity and the demonstrated significance of textual features establish multimodal AI as an essential paradigm for simulating complex oncological decision-making, positioning ET-Emb as a transformative tool for precision HCC management.",
-    "category": "Therapeutic Discovery",
-    "source": "medRxiv",
-    "published": "2026-08-25",
-    "updated": "2026-08-25",
-    "primary_category": "health informatics",
-    "categories": [
-      "health informatics"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.21.26361067v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.21.26361067v1.full.pdf"
-      }
-    ],
-    "score": 49,
-    "infographic": {
-      "key_insight": "BackgroundHepatocellular carcinoma (HCC) treatment selection demands nuanced integration of heterogeneous patient data, yet prevailing predictive models rely on restricted data modalities and oversimplified therapeutic frameworks, compromising clinical transla",
-      "clinical_relevance": "Potential relevance: therapeutic discovery workflows and research evaluation.",
-      "method": [
-        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
-        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
-      "hashtags": [
-        "#AIMedicine",
-        "#MedAI",
-        "#HealthcareAI",
-        "#Research",
-        "#Preprints"
-      ],
-      "paper_id": "2026-08-25-medrxiv-multimodal_artificial_intelligence_for_personalized_hepatocellular_carcinoma_treatment_str",
-      "paper_title": "Multimodal artificial intelligence for personalized hepatocellular carcinoma treatment strategy selection",
-      "paper_date": "2026-08-25",
-      "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-08-31T14:38:37",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-08-25-medrxiv-participant_attitudes_toward_returning_individual_results_from_cadasil_research",
-    "doi": "10.64898/2026.08.21.26361045",
-    "date": "2026-08-25",
-    "title": "Participant attitudes toward returning individual results from CADASIL research",
-    "authors": "Burks, D. K.; Penziner, E.; Clark, L. R.; Ketchum, F. B.; Croes, K. D.; Paulsen, J. S.; United States CADASIL Consortium,",
-    "abstract": "INTRODUCTIONNeurodegenerative research identifies biomarkers to confirm presence of disease and inform about risk for clinical symptoms. Expert guidance advises caution about disclosing individual research results (IRR), but participant interest remains high even when IRR may not inform individual prognosis. Existing studies of stakeholder attitudes emphasize Alzheimers disease (AD) biomarkers. We explore participant attitudes toward IRR from the United States CADASIL Consortium (USCC), an observational study of Cerebral Autosomal Dominant Arteriopathy with Subcortical Infarcts and Leukoencephalopathy (CADASIL), the most heritable form of vascular dementia. METHODSSince CADASIL research participant attitudes are unstudied and AD-focused guidelines for IRR may not generalize to populations with dominantly inherited conditions, we surveyed USCC participants using three 5-point Likert items and one open-ended question. Descriptive statistics were analyzed for Likert items. The distribution of responses to one item was directly compared to an AD participant survey. Open-ended responses underwent qualitative content analysis. RESULTSWe received 152 responses. The highest-rated reason to return IRR was \"learn about my disease and its predicted course\". The highest-rated IRR were imaging/MRI scans and cognitive testing. Hypothetical negative outcomes were rated as a little to somewhat concerning. USCC respondents rated reasons to return IRR higher than AD counterparts, with statistically significant differences for seven of eight items. In open-ended responses, the most frequent code was \"IRR return will help improve my health and well-being\". DISCUSSIONMost respondents expressed support for disclosure upon participant request. These findings could inform IRR guidance for CADASIL and other disorders and investigations of personal utility.",
-    "category": "Target Biology",
-    "source": "medRxiv",
-    "published": "2026-08-25",
-    "updated": "2026-08-25",
-    "primary_category": "neurology",
-    "categories": [
-      "neurology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.21.26361045v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.21.26361045v1.full.pdf"
-      }
-    ],
-    "score": 41,
-    "infographic": {
-      "key_insight": "INTRODUCTIONNeurodegenerative research identifies biomarkers to confirm presence of disease and inform about risk for clinical symptoms.",
-      "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
-      "method": [
-        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
-        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
-      "hashtags": [
-        "#AIMedicine",
-        "#MedAI",
-        "#HealthcareAI",
-        "#Research",
-        "#Preprints"
-      ],
-      "paper_id": "2026-08-25-medrxiv-participant_attitudes_toward_returning_individual_results_from_cadasil_research",
-      "paper_title": "Participant attitudes toward returning individual results from CADASIL research",
-      "paper_date": "2026-08-25",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-08-31T14:38:37",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-08-25-medrxiv-large_language_model_embeddings_of_surgical_procedural_names_for_confounding_adjustment_in",
-    "doi": "10.64898/2026.08.22.26361065",
-    "date": "2026-08-25",
-    "title": "Large Language Model Embeddings of Surgical Procedural Names for Confounding Adjustment in Perioperative Observational Studies",
-    "authors": "Han, L.; Ghanem, M.; Simhambhatla, M. K.; Chung, P.; Aghaeepour, N.",
-    "abstract": "BackgroundPerioperative observational studies are increasingly used to evaluate anesthesia practices that are difficult to test in randomized trials, but treatment selection is influenced by surgical procedure type. Scalable and robust methods are needed to adjust for procedure-level confounding across heterogeneous surgical cohorts. MethodsWe developed and assessed the utility of a surgical-name embedding framework using free-text procedure names from 627,624 adult perioperative records. Procedure names were embedded using open-source sentence-embedding models, reduced with principal components analysis, and incorporated into entropy-balanced observational analyses. We compared unweighted, clinical covariate adjustment, and clinical covariate plus surgical-name embedding adjustment across three replications of recent perioperative randomized trials: GA-CARES for total intravenous versus volatile anesthesia on cancer mortality, PADDI for dexamethasone and surgical site infection, and GAP for perioperative gabapentin and postoperative length of stay. ResultsIn the GA-CARES replication, unweighted and clinical covariate adjustment suggested lower two-year mortality with total intravenous anesthesia, whereas adding surgical-name embeddings attenuated the estimate to a nonsignificant association consistent with the randomized trial (OR 0.84 [95% CI, 0.62-1.14]; p=0.274). In the PADDI replication, adding surgical-name adjustment reproduced the trials overall non-harm finding for 30-day surgical site infection (OR 0.81 [95% CI, 0.77-0.85], p<0.001) while preserving the expected protective association with postoperative nausea and/or vomiting. In the GAP replication, the full cohort was null across adjustment strategies, but surgical-name embeddings were required to recover trial-consistent null length-of-stay estimates across cardiac, thoracic, and abdominal subgroups. Department indicators and randomly generated covariates did not reproduce the effect of surgical-name embeddings, supporting the presence and importance of procedure-specific information. ConclusionsFree-text surgical-name embeddings provide a scalable method for representing surgical context in perioperative observational studies. Surgical-name adjustment improved concordance with randomized trial benchmarks while preserving expected treatment effects, supporting its use as an additional layer of confounding adjustment in large perioperative datasets.",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-08-25",
-    "updated": "2026-08-25",
-    "primary_category": "anesthesia",
-    "categories": [
-      "anesthesia"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.22.26361065v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.22.26361065v1.full.pdf"
-      }
-    ],
-    "score": 41,
-    "infographic": {
-      "key_insight": "BackgroundPerioperative observational studies are increasingly used to evaluate anesthesia practices that are difficult to test in randomized trials, but treatment selection is influenced by surgical procedure type.",
-      "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
-      "method": [
-        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
-        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
-      "hashtags": [
-        "#AIMedicine",
-        "#MedAI",
-        "#HealthcareAI",
-        "#Research",
-        "#Preprints"
-      ],
-      "paper_id": "2026-08-25-medrxiv-large_language_model_embeddings_of_surgical_procedural_names_for_confounding_adjustment_in",
-      "paper_title": "Large Language Model Embeddings of Surgical Procedural Names for Confounding Adjustment in Perioperative Observational Studies",
-      "paper_date": "2026-08-25",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-08-31T14:38:38",
+      "generated_at": "2026-09-01T12:16:07",
       "generator": "openai"
     }
   }

@@ -1,0 +1,410 @@
+[
+  {
+    "id": "2026-08-27-medrxiv-explainable_deep_learning_reveals_distributed_neurodegeneration_signatures_of_neuropsychia",
+    "doi": "10.64898/2026.08.24.26361256",
+    "date": "2026-08-27",
+    "title": "Explainable Deep Learning Reveals Distributed Neurodegeneration Signatures of Neuropsychiatric Symptoms Across the Alzheimer's Continuum",
+    "authors": "Yaghooti, B.; Ishrat, S.; Le, H. N.; Sapkota, R. P.; Murad, T.; Thakuri, D. S.; Wong, D. F.; Aschenbrenner, A.; Miller, J. P.; Long, J. M.; Nicol, G. E.; Lenze, E. J.; Alzheimer's Disease Neuroimaging Initiative, ; Chand, G. B.",
+    "abstract": "Neuropsychiatric symptoms (NPS) are increasingly recognized as critical components of the disease progression in Alzheimers disease (AD), yet their relationship with neurodegeneration remain poorly characterized. We investigated the multivariate relationships between structural MRI (sMRI)-based regional neurodegenerative biomarkers and NPS using the Alzheimers Disease Neuroimaging Initiative (ADNI) and Knight Alzheimer Disease Research Center (Knight-ADRC) cohorts (N = 1,756). The machine learning regression models were compared for NPS prediction, and the best-performing deep neural network (named NPSNet) was integrated with three feature-importance methods: SHapley Additive exPlanations (SHAP), Local Interpretable Model-agnostic Explanations (LIME), and Layer-wise Relevance Propagation (LRP). To establish a known ground truth, we introduced predefined regional perturbations into semi-simulated data and tested whether NPSNetSHAP, NPSNetLIME, and NPSNetLRP could recover them. The NPSNet strongly predicted NPS scores (pooled Spearman{rho} = 0.927, p < 2.2 x 10-3; fold-wise{rho} = 0.912 - 0.963) and NPSNetSHAP recovered all 100% perturbed regions, compared with 90% for NPSNetLIME and 40% for NPSNetLRP. In the experimental data (N = 1,756), the NPSNet produced the highest held-out correlation ({rho} = 0.387, p = 1.7 x 10-{superscript 1}), exceeding gradient boosting ({rho} = 0.301), support vector regression ({rho} = 0.266), and others ({rho} < 0.266). NPSNetSHAP identified individual-level regional contribution patterns relevant to NPS predictions. Comparing NPSNetSHAP attributions between cognitively normal (CN) and mild cognitive impairment (MCI)/AD groups revealed distributed multivariate neurodegenerative signatures of NPS, with the largest differences between CN and AD participants. This study introduces an explainable deep learning framework for identifying distributed, individualized neurodegeneration signatures of NPS burden across the AD continuum.",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-08-27",
+    "updated": "2026-08-27",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.24.26361256v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.24.26361256v1.full.pdf"
+      }
+    ],
+    "score": 69,
+    "infographic": {
+      "key_insight": "Neuropsychiatric symptoms (NPS) are increasingly recognized as critical components of the disease progression in Alzheimers disease (AD), yet their relationship with neurodegeneration remain poorly characterized.",
+      "clinical_relevance": "Potential relevance: cancer ai methods workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-27-medrxiv-explainable_deep_learning_reveals_distributed_neurodegeneration_signatures_of_neuropsychia",
+      "paper_title": "Explainable Deep Learning Reveals Distributed Neurodegeneration Signatures of Neuropsychiatric Symptoms Across the Alzheimer's Continuum",
+      "paper_date": "2026-08-27",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-08-31T14:38:34",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-27-medrxiv-multimodal_machine_learning_for_predicting_outcomes_in_the_pass_01_trial_of_systemic_thera",
+    "doi": "10.64898/2026.08.24.26360900",
+    "date": "2026-08-27",
+    "title": "Multimodal Machine Learning for Predicting Outcomes in the PASS-01 Trial of Systemic Therapy for Metastatic Pancreatic Cancer",
+    "authors": "Quan, W.; Henault, D.; Zhang, A.; Jang, G. H.; Hasnain, S. M.; Bevacqua, D.; Deng, Y.; Flores-Figueroa, E.; Ni, K.; Light, N.; Wilson, J. M.; Dodd, A.; Tsang, E. S.; King, D. A.; Habowski, A. N.; Yu, K.; Perez, K.; Aguirre, A. J.; O'Reilly, E. M.; Wolpin, B. M.; Pugh, T. J.; Tuveson, D. A.; Jaffee, E. M.; Gallinger, S.; O'Kane, G.; Notta, F.; Knox, J. J.; Grant, R. C.",
+    "abstract": "PurposeModified FOLFIRINOX (FFX) and gemcitabine plus nab-paclitaxel (GNP) are standard first-line treatments for metastatic pancreatic ductal adenocarcinoma (PDAC), but no validated biomarker guides treatment selection. We developed MULTIPL, a multimodal machine learning system, and established the PASS-01 Challenge to benchmark prognostic and predictive biomarkers. Patients and MethodsMULTIPL was trained in the COMPASS study (N=268), integrating clinical, digitized histopathology, whole-genome, and RNA-seq data. MULTIPL, PurIST, hENT1 expression, and HRDetect were evaluated in the PASS-01 trial, a randomized phase II trial of FFX versus GNP (N=160), within the Challenge. The primary endpoint was differential treatment benefit measured by concordance-for-benefit for progression-free survival. ResultsMULTIPL had the highest concordance index for OS among individually evaluated biomarkers (0.595; 95% confidence interval [CI], 0.55-0.65) and separated high-versus low-risk patients (hazard ratio, 1.62; 95% CI, 1.13-2.33; P=0.009). Patients recommended for GNP by MULTIPL had significantly longer OS with GNP than with FFX (hazard ratio, 0.47; 95% CI, 0.28-0.82; P=0.007), whereas patients recommended for FFX had similar OS between treatments. Interpretability analysis of MULTIPL in COMPASS identified KDM6A alterations and SSTR1 expression as prognostic biomarkers, which were validated in PASS-01. However, none of the tested biomarkers significantly predicted differential treatment benefit in the PASS-01 Challenge. ConclusionMULTIPL demonstrated robust prognostic performance in external validation, identified a subgroup enriched for benefit from GNP, and enabled discovery and validation of prognostic biomarkers in metastatic PDAC. However, no biomarker met the primary endpoint for differential treatment benefit, underscoring the value of the PASS-01 Challenge. Translational RelevanceSeveral biomarkers have been proposed to guide first-line treatment selection in metastatic pancreatic cancer, but none are validated from randomized data. We developed MULTIPL, a multimodal machine-learning model that integrates clinical, histopathologic, genomic, and transcriptomic data from the observational COMPASS study. In parallel, we launched the PASS-01 Challenge to evaluate biomarkers in a randomized trial of modified FOLFIRINOX versus gemcitabine plus nab-paclitaxel to evaluate predictive and prognostic biomarkers. Neither MULTIPL nor the published biomarkers PurIST, hENT1, and HRDetect met the prespecified endpoint for predicting differential treatment benefit measured using concordance for benefit. MULTIPL nevertheless demonstrated prognostic capabilities and identified a subgroup with longer survival on gemcitabine plus nab-paclitaxel. Model interpretation also identified KDM6A alterations and SSTR1 expression as prognostic biomarkers, which were validated in PASS-01. These findings demonstrate the potential of multimodal machine learning in pancreatic cancer and establish the PASS-01 Challenge as a randomized evaluation of biomarkers for treatment selection.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-08-27",
+    "updated": "2026-08-27",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.24.26360900v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.24.26360900v1.full.pdf"
+      }
+    ],
+    "score": 67,
+    "infographic": {
+      "key_insight": "PurposeModified FOLFIRINOX (FFX) and gemcitabine plus nab-paclitaxel (GNP) are standard first-line treatments for metastatic pancreatic ductal adenocarcinoma (PDAC), but no validated biomarker guides treatment selection.",
+      "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-27-medrxiv-multimodal_machine_learning_for_predicting_outcomes_in_the_pass_01_trial_of_systemic_thera",
+      "paper_title": "Multimodal Machine Learning for Predicting Outcomes in the PASS-01 Trial of Systemic Therapy for Metastatic Pancreatic Cancer",
+      "paper_date": "2026-08-27",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-08-31T14:38:35",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-26-medrxiv-personalized_knowledge_based_graph_neural_networks_and_regression_analysis_for_computation",
+    "doi": "10.64898/2026.08.24.26361273",
+    "date": "2026-08-26",
+    "title": "Personalized Knowledge-based Graph Neural Networks and Regression Analysis for Computational Diagnosis of High-Risk Cardiovascular Disease Patients",
+    "authors": "Lampadarios, T.; Karathanasis, N.; Antartis, R.; Pfeifer, B.; von Lewinski, D.; Sourij, H.; Spyrou, G. M.; Oulas, A.",
+    "abstract": "Acute myocardial infarction (MI) is a major precursor to heart failure (HF), yet few biomarkers are routinely used to predict post-MI HF, and limited therapeutic options exist to prevent its development. Furthermore, identifying patients at extremely high risk of recurrent MI remains challenging. These gaps highlight the need for improved biomarkers, therapeutic targets, and computational approaches for risk assessment and treatment-response prediction. To address risk assessment, we developed a systems bioinformatics (SB), graph-based framework representing patient information as personalized networks and integrating omics, clinical, and molecular prior-knowledge data. Graph neural network (GNN) machine learning (ML) models were compared with conventional ML approaches. Two large-scale public plasma proteomic datasets were used to predict post-MI HF. To investigate treatment response, regression models were applied to longitudinal clinical data from >400 hospitalized patients enrolled in the EMMY trial evaluating empagliflozin. ML-driven feature selection identified proteins and clinical parameters with the greatest predictive value. The graph-based framework demonstrated strong and consistent performance across independent post-MI cohorts. GNN models outperformed conventional approaches, including generalized linear models and XGBoost, particularly when attention mechanisms were incorporated. Using biomarker panels alone, the best GNN achieved an external test AUC of 0.82, compared with 0.77 for the best conventional ML model. When biomarkers were combined with clinical and demographic variables, GNN and conventional ML models achieved AUCs of 0.80 and 0.77, respectively. Regression models also showed promise for predicting biomarker changes associated with treatment response, with the best model achieving a test RMSE of 0.56. Feature-importance analysis identified NT-proBNP (NPPB), cardiac troponins (TNNI3/TNNT2), and prior HF history as the most influential predictors, consistent with established clinical evidence. Overall, these findings support graph-based ML and regression analysis as promising approaches for improving post-MI HF risk prediction and therapeutic response and identifying clinically relevant markers.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-08-26",
+    "updated": "2026-08-26",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.24.26361273v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.24.26361273v1.full.pdf"
+      }
+    ],
+    "score": 60,
+    "infographic": {
+      "key_insight": "Acute myocardial infarction (MI) is a major precursor to heart failure (HF), yet few biomarkers are routinely used to predict post-MI HF, and limited therapeutic options exist to prevent its development.",
+      "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-26-medrxiv-personalized_knowledge_based_graph_neural_networks_and_regression_analysis_for_computation",
+      "paper_title": "Personalized Knowledge-based Graph Neural Networks and Regression Analysis for Computational Diagnosis of High-Risk Cardiovascular Disease Patients",
+      "paper_date": "2026-08-26",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-08-31T14:38:36",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-26-medrxiv-multimodal_transformer_modeling_of_rapamycin_treatment_in_alzheimer_s_disease_via_random_f",
+    "doi": "10.64898/2026.08.22.26361114",
+    "date": "2026-08-26",
+    "title": "Multimodal Transformer Modeling of Rapamycin Treatment in Alzheimer's Disease via Random Forest Feature Filtering",
+    "authors": "Wang, C.; Woods, C.; Nguyen, T.; Liu, J.; Lin, A.-L.; Cheng, J.",
+    "abstract": "Alzheimers Disease (AD) remains a leading cause of cognitive decline with no known cure, motivating the development of therapies that slow neurodegeneration. Rapamycin, an FDA-approved inhibitor of the mammalian target of rapamycin (mTOR) pathway, has demonstrated promising anti-aging and neuroprotective effects. However, characterizing its treatment effects and identifying the biological factors that contribute to treatment response remain challenging because of complex interactions across multiple biological systems and the limited availability of patient data. In this work, we propose a three-stage multimodal deep learning framework called TreatmentFormer for predicting rapamycin treatment status from heterogeneous biomedical data including both brain imaging data and tabular data (e.g., microbiome profiles, blood-based biomarkers, cerebral blood flow measurements, and clinical variables (e.g., gender, age, and body mass index)). First, a Random Forest-based feature selection module reduces noise in high-dimensional tabular data while preserving representation across modalities. Second, modality-specific encoders map imaging and tabular inputs into a shared latent space via self-supervised contrastive learning, enabling alignment across modalities. Finally, a transformer-based architecture integrates these representations to capture cross-modal interactions and perform treatment classification. Evaluated on a cohort of 23 participants with baseline and post-treatment timepoints, TreatmentFormer achieves an average prediction accuracy of 71.25% across 10 independent test runs. Despite the challenges of small sample size and heterogeneous data, the model demonstrates stable and consistent performance. Post hoc SHAP-based feature analysis further identifies key biomarkers associated with treatment response, particularly within blood-based and inflammatory modalities. These findings demonstrate that combining feature selection with multimodal representation learning provides a promising and robust approach for modeling treatment effects in small-sample biomedical studies. Importantly, this framework may have significant implications for clinical research and medical applications by identifying the biological features and quantitative measurements that drive individual responses to rapamycin. Such insights could facilitate the development of predictive biomarkers, improve patient stratification, and ultimately inform future approaches to AD diagnosis and therapeutic development.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-08-26",
+    "updated": "2026-08-26",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.22.26361114v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.22.26361114v1.full.pdf"
+      }
+    ],
+    "score": 52,
+    "infographic": {
+      "key_insight": "Alzheimers Disease (AD) remains a leading cause of cognitive decline with no known cure, motivating the development of therapies that slow neurodegeneration.",
+      "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-26-medrxiv-multimodal_transformer_modeling_of_rapamycin_treatment_in_alzheimer_s_disease_via_random_f",
+      "paper_title": "Multimodal Transformer Modeling of Rapamycin Treatment in Alzheimer's Disease via Random Forest Feature Filtering",
+      "paper_date": "2026-08-26",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-08-31T14:38:37",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-27-medrxiv-drivers_of_oncologist_preference_of_ai_generated_literature_review_in_a_randomized_mixed_m",
+    "doi": "10.64898/2026.08.24.26361252",
+    "date": "2026-08-27",
+    "title": "Drivers of Oncologist Preference of AI-Generated Literature Review in a Randomized Mixed-Methods Study",
+    "authors": "Bunning, B. J.; Weng, Y.; Wu, D. J.; Hui, G.; Hope, J. E.; Pandurangan, V.; Lopez, I.; Everett, S.; Chen, J. H.; Desai, M.",
+    "abstract": "Doctors increasingly rely on AI in the clinic, yet which report features make AI-generated responses useful and trustworthy remains unclear. In this randomized mixed-methods study, 34 oncology physicians provided 294 ratings of four blinded AI systems across five vignettes, alongside 20 semi-structured interviews analyzed with a prespecified LLM-assisted qualitative pipeline. Despite similar references, an evidence-graded report adapted from OpenEvidence was rated significantly lower in overall utility than standard OpenEvidence (mean difference, -0.96; 95% CI, -1.26 to -0.66; P<.001). Qualitative analysis identified six themes and seven design requirements. Oncologists valued rapid orientation, evidence retrieval, and verification, preferring concise, scannable reports with quantitative outcomes, recognizable bolded guidelines, explicit uncertainty, and verifiable citations. Trust deteriorated with citation mismatch, buried provenance, evidence misclassification, overconfident recommendations, and poor organization. Evidence presented differently can alter perceptions of clinical utility and trust; accuracy alone is insufficient, and report design must also be empirically evaluated.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-08-27",
+    "updated": "2026-08-27",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.24.26361252v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.24.26361252v1.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "Doctors increasingly rely on AI in the clinic, yet which report features make AI-generated responses useful and trustworthy remains unclear.",
+      "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-27-medrxiv-drivers_of_oncologist_preference_of_ai_generated_literature_review_in_a_randomized_mixed_m",
+      "paper_title": "Drivers of Oncologist Preference of AI-Generated Literature Review in a Randomized Mixed-Methods Study",
+      "paper_date": "2026-08-27",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-08-31T14:38:37",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-25-medrxiv-multimodal_artificial_intelligence_for_personalized_hepatocellular_carcinoma_treatment_str",
+    "doi": "10.64898/2026.08.21.26361067",
+    "date": "2026-08-25",
+    "title": "Multimodal artificial intelligence for personalized hepatocellular carcinoma treatment strategy selection",
+    "authors": "Feng, W.; Liu, S.; Yang, Z.; Tao, Y.; Gu, X.; Jin, W.",
+    "abstract": "BackgroundHepatocellular carcinoma (HCC) treatment selection demands nuanced integration of heterogeneous patient data, yet prevailing predictive models rely on restricted data modalities and oversimplified therapeutic frameworks, compromising clinical translation. ObjectiveWe developed and validated a multimodal artificial intelligence framework to guide optimal treatment strategy selection across the full spectrum of HCC interventions. MethodsThis retrospective study comprised 1,043 HCC patients (development cohort, January 2017-December 2023) and 55 external validation patients (2023) from Wuxi Peoples Hospital. We engineered Embedding-Augmented Extra Trees (ET-Emb), a novel model fusing structured clinical variables with contextual text embeddings derived from medical histories and radiology reports. ET-Emb quantifies probabilities for five primary treatments: open/laparoscopic resection, transarterial chemoembolization, radiofrequency ablation (RFA), and chemotherapy. Model performance was rigorously assessed via 10-fold cross-validation and external validation using ROC-AUC and PR-AUC metrics. ResultsET-Emb demonstrated robust performance in the development cohort (ROC-AUC: 0.84 {+/-} 0.04; PR-AUC: 0.55 {+/-} 0.06), significantly outperforming established benchmarks. This generalizability was preserved in external validation (ROC-AUC: 0.77 {+/-} 0.02; PR-AUC: 0.47 {+/-} 0.03). SHAP analysis identified textual clinical narratives and socioeconomic determinants as critical predictive drivers. ConclusionsBy unifying structured and unstructured data modalities, ET-Emb delivers accurate, multi-treatment strategy prediction for HCC. Its clinical validity and the demonstrated significance of textual features establish multimodal AI as an essential paradigm for simulating complex oncological decision-making, positioning ET-Emb as a transformative tool for precision HCC management.",
+    "category": "Therapeutic Discovery",
+    "source": "medRxiv",
+    "published": "2026-08-25",
+    "updated": "2026-08-25",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.21.26361067v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.21.26361067v1.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "BackgroundHepatocellular carcinoma (HCC) treatment selection demands nuanced integration of heterogeneous patient data, yet prevailing predictive models rely on restricted data modalities and oversimplified therapeutic frameworks, compromising clinical transla",
+      "clinical_relevance": "Potential relevance: therapeutic discovery workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-25-medrxiv-multimodal_artificial_intelligence_for_personalized_hepatocellular_carcinoma_treatment_str",
+      "paper_title": "Multimodal artificial intelligence for personalized hepatocellular carcinoma treatment strategy selection",
+      "paper_date": "2026-08-25",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-08-31T14:38:37",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-25-medrxiv-participant_attitudes_toward_returning_individual_results_from_cadasil_research",
+    "doi": "10.64898/2026.08.21.26361045",
+    "date": "2026-08-25",
+    "title": "Participant attitudes toward returning individual results from CADASIL research",
+    "authors": "Burks, D. K.; Penziner, E.; Clark, L. R.; Ketchum, F. B.; Croes, K. D.; Paulsen, J. S.; United States CADASIL Consortium,",
+    "abstract": "INTRODUCTIONNeurodegenerative research identifies biomarkers to confirm presence of disease and inform about risk for clinical symptoms. Expert guidance advises caution about disclosing individual research results (IRR), but participant interest remains high even when IRR may not inform individual prognosis. Existing studies of stakeholder attitudes emphasize Alzheimers disease (AD) biomarkers. We explore participant attitudes toward IRR from the United States CADASIL Consortium (USCC), an observational study of Cerebral Autosomal Dominant Arteriopathy with Subcortical Infarcts and Leukoencephalopathy (CADASIL), the most heritable form of vascular dementia. METHODSSince CADASIL research participant attitudes are unstudied and AD-focused guidelines for IRR may not generalize to populations with dominantly inherited conditions, we surveyed USCC participants using three 5-point Likert items and one open-ended question. Descriptive statistics were analyzed for Likert items. The distribution of responses to one item was directly compared to an AD participant survey. Open-ended responses underwent qualitative content analysis. RESULTSWe received 152 responses. The highest-rated reason to return IRR was \"learn about my disease and its predicted course\". The highest-rated IRR were imaging/MRI scans and cognitive testing. Hypothetical negative outcomes were rated as a little to somewhat concerning. USCC respondents rated reasons to return IRR higher than AD counterparts, with statistically significant differences for seven of eight items. In open-ended responses, the most frequent code was \"IRR return will help improve my health and well-being\". DISCUSSIONMost respondents expressed support for disclosure upon participant request. These findings could inform IRR guidance for CADASIL and other disorders and investigations of personal utility.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-08-25",
+    "updated": "2026-08-25",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.21.26361045v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.21.26361045v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "INTRODUCTIONNeurodegenerative research identifies biomarkers to confirm presence of disease and inform about risk for clinical symptoms.",
+      "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-25-medrxiv-participant_attitudes_toward_returning_individual_results_from_cadasil_research",
+      "paper_title": "Participant attitudes toward returning individual results from CADASIL research",
+      "paper_date": "2026-08-25",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-08-31T14:38:37",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-08-25-medrxiv-large_language_model_embeddings_of_surgical_procedural_names_for_confounding_adjustment_in",
+    "doi": "10.64898/2026.08.22.26361065",
+    "date": "2026-08-25",
+    "title": "Large Language Model Embeddings of Surgical Procedural Names for Confounding Adjustment in Perioperative Observational Studies",
+    "authors": "Han, L.; Ghanem, M.; Simhambhatla, M. K.; Chung, P.; Aghaeepour, N.",
+    "abstract": "BackgroundPerioperative observational studies are increasingly used to evaluate anesthesia practices that are difficult to test in randomized trials, but treatment selection is influenced by surgical procedure type. Scalable and robust methods are needed to adjust for procedure-level confounding across heterogeneous surgical cohorts. MethodsWe developed and assessed the utility of a surgical-name embedding framework using free-text procedure names from 627,624 adult perioperative records. Procedure names were embedded using open-source sentence-embedding models, reduced with principal components analysis, and incorporated into entropy-balanced observational analyses. We compared unweighted, clinical covariate adjustment, and clinical covariate plus surgical-name embedding adjustment across three replications of recent perioperative randomized trials: GA-CARES for total intravenous versus volatile anesthesia on cancer mortality, PADDI for dexamethasone and surgical site infection, and GAP for perioperative gabapentin and postoperative length of stay. ResultsIn the GA-CARES replication, unweighted and clinical covariate adjustment suggested lower two-year mortality with total intravenous anesthesia, whereas adding surgical-name embeddings attenuated the estimate to a nonsignificant association consistent with the randomized trial (OR 0.84 [95% CI, 0.62-1.14]; p=0.274). In the PADDI replication, adding surgical-name adjustment reproduced the trials overall non-harm finding for 30-day surgical site infection (OR 0.81 [95% CI, 0.77-0.85], p<0.001) while preserving the expected protective association with postoperative nausea and/or vomiting. In the GAP replication, the full cohort was null across adjustment strategies, but surgical-name embeddings were required to recover trial-consistent null length-of-stay estimates across cardiac, thoracic, and abdominal subgroups. Department indicators and randomly generated covariates did not reproduce the effect of surgical-name embeddings, supporting the presence and importance of procedure-specific information. ConclusionsFree-text surgical-name embeddings provide a scalable method for representing surgical context in perioperative observational studies. Surgical-name adjustment improved concordance with randomized trial benchmarks while preserving expected treatment effects, supporting its use as an additional layer of confounding adjustment in large perioperative datasets.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-08-25",
+    "updated": "2026-08-25",
+    "primary_category": "anesthesia",
+    "categories": [
+      "anesthesia"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.22.26361065v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.22.26361065v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "BackgroundPerioperative observational studies are increasingly used to evaluate anesthesia practices that are difficult to test in randomized trials, but treatment selection is influenced by surgical procedure type.",
+      "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
+      "method": [
+        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
+        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
+        "Use the linked paper for methods, data, and validation details."
+      ],
+      "evidence_signal": "Evidence details are summarized from the public abstract only.",
+      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
+      "hashtags": [
+        "#AIMedicine",
+        "#MedAI",
+        "#HealthcareAI",
+        "#Research",
+        "#Preprints"
+      ],
+      "paper_id": "2026-08-25-medrxiv-large_language_model_embeddings_of_surgical_procedural_names_for_confounding_adjustment_in",
+      "paper_title": "Large Language Model Embeddings of Surgical Procedural Names for Confounding Adjustment in Perioperative Observational Studies",
+      "paper_date": "2026-08-25",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-08-31T14:38:38",
+      "generator": "openai"
+    }
+  }
+]
