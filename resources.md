@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-09-04
+Generated: 2026-09-05
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. Surprisal-based large language models reveal immunologic insights in lobular breast cancer
@@ -35,7 +35,15 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.08.26.26361439v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-augmenting_deep_learning_based_psma_pet_ct_metastasis_segmentation_with_a_population_level_infographic.json
 
-## 5. Vaccination of people with HIV with BG505 SOSIP.v4.1-GT1.1: An interim safety analysis of the investigator-initiated RENEW-SHCS Phase I trial
+## 5. Novel Entropy-Based Framework for Quantifying Dynamic Epistemic Uncertainty in Clinical Medicine
+
+- Date: 2026-08-31
+- Category: Clinical Translation
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.27.26361497v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.27.26361497v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-novel_entropy_based_framework_for_quantifying_dynamic_epistemic_uncertainty_in_clinical_me_infographic.json
+
+## 6. Vaccination of people with HIV with BG505 SOSIP.v4.1-GT1.1: An interim safety analysis of the investigator-initiated RENEW-SHCS Phase I trial
 
 - Date: 2026-08-31
 - Category: Clinical Translation
@@ -43,7 +51,7 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.08.24.26360985v2.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-vaccination_of_people_with_hiv_with_bg505_sosip_v4_1_gt1_1_an_interim_safety_analysis_of_t_infographic.json
 
-## 6. Comparative Evaluation of rs-fMRI Representations for Differentiating Schizophrenia and Bipolar Disorder with Psychosis
+## 7. Comparative Evaluation of rs-fMRI Representations for Differentiating Schizophrenia and Bipolar Disorder with Psychosis
 
 - Date: 2026-08-31
 - Category: Target Biology
@@ -51,10 +59,34 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.06.16.26355608v2.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-comparative_evaluation_of_rs_fmri_representations_for_differentiating_schizophrenia_and_bi_infographic.json
 
-## 7. Prospective In-silico Simulation of the VESALIUS-CV Trial Using Biomedical Knowledge Graph and Real-World Data-Driven AI Modeling
+## 8. Prospective In-silico Simulation of the VESALIUS-CV Trial Using Biomedical Knowledge Graph and Real-World Data-Driven AI Modeling
 
 - Date: 2026-08-31
 - Category: Therapeutic Discovery
 - Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.26.26361436v1
 - PDF: https://www.medrxiv.org/content/10.64898/2026.08.26.26361436v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-prospective_in_silico_simulation_of_the_vesalius_cv_trial_using_biomedical_knowledge_graph_infographic.json
+
+## 9. When Screening is a Death Sentence: A qualitative study of fear and delay of cervical pre-cancer screening in Kilombero District, Tanzania
+
+- Date: 2026-08-31
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.26.26361100v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.26.26361100v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-when_screening_is_a_death_sentence_a_qualitative_study_of_fear_and_delay_of_cervical_pre_c_infographic.json
+
+## 10. LLM-assisted evidence audit of late-stage cancer incidence as a screening trial endpoint
+
+- Date: 2026-08-31
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.29.26361733v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.29.26361733v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-llm_assisted_evidence_audit_of_late_stage_cancer_incidence_as_a_screening_trial_endpoint_infographic.json
+
+## 11. REINA: A Recognize-Then-Infer Wearable-to-App AI Framework for Breast Cancer Rehabilitation
+
+- Date: 2026-08-31
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.29.26361725v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.29.26361725v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-reina_a_recognize_then_infer_wearable_to_app_ai_framework_for_breast_cancer_rehabilitation_infographic.json
