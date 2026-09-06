@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-09-05
+Generated: 2026-09-06
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. Surprisal-based large language models reveal immunologic insights in lobular breast cancer
