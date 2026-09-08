@@ -1,92 +1,60 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-09-06
+Generated: 2026-09-08
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
-## 1. Surprisal-based large language models reveal immunologic insights in lobular breast cancer
+## 1. AURORA: Analysing and understanding responses to oncological regimens with artificial intelligence
 
-- Date: 2026-08-31
+- Date: 2026-09-02
 - Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.25.26361365v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.25.26361365v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-surprisal_based_large_language_models_reveal_immunologic_insights_in_lobular_breast_cancer_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.30.26361778v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.30.26361778v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-02-medrxiv-aurora_analysing_and_understanding_responses_to_oncological_regimens_with_artificial_intel_infographic.json
 
-## 2. ICONIC: An R Package for Integrating Instrumental Variable- and Negative-Control-Informed Causal Discovery and Diagnostics in Multiomic Studies
+## 2. Pretrained transformers applied to population cancer registries improve survival prediction in label-scarce and previously unseen cancers
 
-- Date: 2026-08-31
+- Date: 2026-09-03
 - Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.26.26361466v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.26.26361466v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-iconic_an_r_package_for_integrating_instrumental_variable_and_negative_control_informed_ca_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.30.26361693v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.30.26361693v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-03-medrxiv-pretrained_transformers_applied_to_population_cancer_registries_improve_survival_predictio_infographic.json
 
-## 3. A Pragmatic Randomized Trial of an EHR-Integrated Generative AI Chart Summarization Tool for Ambulatory Clinicians
+## 3. Can GPT Be Used as an Alternative Prediction Model to Traditional Machine Learning and Neural Networks on Low-Volume Clinical Data?
 
-- Date: 2026-08-31
-- Category: Clinical Translation
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.26.26361496v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.26.26361496v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-a_pragmatic_randomized_trial_of_an_ehr_integrated_generative_ai_chart_summarization_tool_f_infographic.json
-
-## 4. Augmenting Deep Learning-Based PSMA PET/CT Metastasis Segmentation with a Population-Level Spatial Atlas
-
-- Date: 2026-08-31
+- Date: 2026-09-02
 - Category: Cancer AI Methods
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.26.26361439v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.26.26361439v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-augmenting_deep_learning_based_psma_pet_ct_metastasis_segmentation_with_a_population_level_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.19.26360765v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.19.26360765v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-02-medrxiv-can_gpt_be_used_as_an_alternative_prediction_model_to_traditional_machine_learning_and_neu_infographic.json
 
-## 5. Novel Entropy-Based Framework for Quantifying Dynamic Epistemic Uncertainty in Clinical Medicine
+## 4. Markerless Motion Capture Reveals Movement Abnormalities in Isolated REM Sleep Behavior Disorder
 
-- Date: 2026-08-31
-- Category: Clinical Translation
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.27.26361497v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.27.26361497v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-novel_entropy_based_framework_for_quantifying_dynamic_epistemic_uncertainty_in_clinical_me_infographic.json
-
-## 6. Vaccination of people with HIV with BG505 SOSIP.v4.1-GT1.1: An interim safety analysis of the investigator-initiated RENEW-SHCS Phase I trial
-
-- Date: 2026-08-31
-- Category: Clinical Translation
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.24.26360985v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.24.26360985v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-vaccination_of_people_with_hiv_with_bg505_sosip_v4_1_gt1_1_an_interim_safety_analysis_of_t_infographic.json
-
-## 7. Comparative Evaluation of rs-fMRI Representations for Differentiating Schizophrenia and Bipolar Disorder with Psychosis
-
-- Date: 2026-08-31
+- Date: 2026-09-02
 - Category: Target Biology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.16.26355608v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.06.16.26355608v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-comparative_evaluation_of_rs_fmri_representations_for_differentiating_schizophrenia_and_bi_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.28.26361609v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.28.26361609v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-02-medrxiv-markerless_motion_capture_reveals_movement_abnormalities_in_isolated_rem_sleep_behavior_di_infographic.json
 
-## 8. Prospective In-silico Simulation of the VESALIUS-CV Trial Using Biomedical Knowledge Graph and Real-World Data-Driven AI Modeling
+## 5. Cross-System Meta-Analysis of Machine Learning Predictors Identifies Value-Specific Risk Drivers and Interactions Underlying Acute Kidney Injury
 
-- Date: 2026-08-31
-- Category: Therapeutic Discovery
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.26.26361436v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.26.26361436v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-prospective_in_silico_simulation_of_the_vesalius_cv_trial_using_biomedical_knowledge_graph_infographic.json
+- Date: 2026-09-02
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.31.26361849v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.31.26361849v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-02-medrxiv-cross_system_meta_analysis_of_machine_learning_predictors_identifies_value_specific_risk_d_infographic.json
 
-## 9. When Screening is a Death Sentence: A qualitative study of fear and delay of cervical pre-cancer screening in Kilombero District, Tanzania
+## 6. Dermal Phospho-Alpha-Synuclein Among Individuals With and Without Cerebrospinal Fluid Aggregated Alpha-Synuclein
 
-- Date: 2026-08-31
+- Date: 2026-09-02
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2025.12.17.25342090v2
+- PDF: https://www.medrxiv.org/content/10.64898/2025.12.17.25342090v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-02-medrxiv-dermal_phospho_alpha_synuclein_among_individuals_with_and_without_cerebrospinal_fluid_aggr_infographic.json
+
+## 7. An Interpretable Cost-Aware Framework for Mitigating Bias in Skin Lesion Classification Across Diverse Skin Tones
+
+- Date: 2026-09-02
 - Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.26.26361100v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.26.26361100v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-when_screening_is_a_death_sentence_a_qualitative_study_of_fear_and_delay_of_cervical_pre_c_infographic.json
-
-## 10. LLM-assisted evidence audit of late-stage cancer incidence as a screening trial endpoint
-
-- Date: 2026-08-31
-- Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.29.26361733v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.29.26361733v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-llm_assisted_evidence_audit_of_late_stage_cancer_incidence_as_a_screening_trial_endpoint_infographic.json
-
-## 11. REINA: A Recognize-Then-Infer Wearable-to-App AI Framework for Breast Cancer Rehabilitation
-
-- Date: 2026-08-31
-- Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.29.26361725v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.08.29.26361725v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-08-31-medrxiv-reina_a_recognize_then_infer_wearable_to_app_ai_framework_for_breast_cancer_rehabilitation_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.1101/2024.12.11.24318858v3
+- PDF: https://www.medrxiv.org/content/10.1101/2024.12.11.24318858v3.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-02-medrxiv-an_interpretable_cost_aware_framework_for_mitigating_bias_in_skin_lesion_classification_ac_infographic.json
