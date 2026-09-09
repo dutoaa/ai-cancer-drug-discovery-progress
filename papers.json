@@ -1,56 +1,5 @@
 [
   {
-    "id": "2026-09-02-medrxiv-aurora_analysing_and_understanding_responses_to_oncological_regimens_with_artificial_intel",
-    "doi": "10.64898/2026.08.30.26361778",
-    "date": "2026-09-02",
-    "title": "AURORA: Analysing and understanding responses to oncological regimens with artificial intelligence",
-    "authors": "Lebmeier, A.; Lindner, T.; Karl, C.; Schöler, T.; Rank, A.",
-    "abstract": "BackgroundImmunochemotherapy (ICT) is considered standard in regards to care for small-cell lung cancer (SCLC) in extensive stages, yet reliable biomarkers for treatment response remain elusive. While previous univariate analyses suggest specific peripheral lymphocyte subsets correlate with survival, the systemic immune response involves complex, multivariate interactions that require advanced analytical approaches. MethodsThis paper analysed high-dimensional flow cytometry data from 32 patients with stage IV SCLC treated with carboplatin, etoposide, and atezolizumab. Peripheral blood was analysed at baseline (V0) and longitudinally during treatment. To identify potential early predictive biomarkers and mitigate sample attrition in later cycles, we focused on baseline and measurements after two cycles of ICT (V1). We employed a rigorous machine learning framework utilising nested cross-validation, bootstrapping, and permutation-based statistical testing to evaluate eleven different regression and survival models. ResultsUnder model-appropriate metrics, regressors did not generalise (R2 < 0); conversely, censoring- aware Random Survival Forests (RSF) successfully extracted robust prognostic signatures. Baseline immune profiles (V0) achieved a concordance index (C-index) of 0.66 (p = 0.015), while dynamic changes from V0 to V1 ({Delta}V) achieved a C-index of 0.65 (p = 0.022). Crucially, absolute values measured after two cycles of ICT (V1) yielded no significant signal (p = 0.445). Feature importance analysis confirmed the prognostic value of Th17 normalisation and identified Naive Regulatory T cells and Memory B cells as candidate components. ConclusionMachine learning validation confirms a predictive signal in the peripheral immune profile of SCLC patients. Early dynamic shifts in the balance between regulatory and effector immune arms are associated with prognosis, contrasting with the lack of signal in absolute counts after two cycles of ICT. These findings establish a proof of concept for multivariate liquid biopsy immune profiling, warranting confirmation in larger cohorts and highlighting the necessity of integrating systemic and tumour-intrinsic data.",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-09-02",
-    "updated": "2026-09-02",
-    "primary_category": "health informatics",
-    "categories": [
-      "health informatics"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.30.26361778v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.30.26361778v1.full.pdf"
-      }
-    ],
-    "score": 71,
-    "infographic": {
-      "key_insight": "BackgroundImmunochemotherapy (ICT) is considered standard in regards to care for small-cell lung cancer (SCLC) in extensive stages, yet reliable biomarkers for treatment response remain elusive.",
-      "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
-      "method": [
-        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
-        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
-      "hashtags": [
-        "#AIMedicine",
-        "#MedAI",
-        "#HealthcareAI",
-        "#Research",
-        "#Preprints"
-      ],
-      "paper_id": "2026-09-02-medrxiv-aurora_analysing_and_understanding_responses_to_oncological_regimens_with_artificial_intel",
-      "paper_title": "AURORA: Analysing and understanding responses to oncological regimens with artificial intelligence",
-      "paper_date": "2026-09-02",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-09-08T11:56:04",
-      "generator": "openai"
-    }
-  },
-  {
     "id": "2026-09-03-medrxiv-pretrained_transformers_applied_to_population_cancer_registries_improve_survival_predictio",
     "doi": "10.64898/2026.08.30.26361693",
     "date": "2026-09-03",
@@ -75,7 +24,7 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.30.26361693v1.full.pdf"
       }
     ],
-    "score": 62,
+    "score": 57,
     "infographic": {
       "key_insight": "Prognostic models in oncology are developed one cancer at a time, from that cancers own labelled outcomes, and fail where prognostic information is scarcest.",
       "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
@@ -97,72 +46,21 @@
       "paper_title": "Pretrained transformers applied to population cancer registries improve survival prediction in label-scarce and previously unseen cancers",
       "paper_date": "2026-09-03",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-09-08T11:56:04",
+      "generated_at": "2026-09-09T12:05:24",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-09-02-medrxiv-can_gpt_be_used_as_an_alternative_prediction_model_to_traditional_machine_learning_and_neu",
-    "doi": "10.64898/2026.08.19.26360765",
-    "date": "2026-09-02",
-    "title": "Can GPT Be Used as an Alternative Prediction Model to Traditional Machine Learning and Neural Networks on Low-Volume Clinical Data?",
-    "authors": "Bin Akter, S.; Akter, S.; Eisenberg, D.; Hill, C.; Lotvola, A.; Fresneda Fernandez, J.; Sarkar Pias, T.; Rafiqul Islam, M.; Islam, H.",
-    "abstract": "Background and ObjectiveEarly and reliable disease prediction from structured clinical data remains challenging when datasets are small, highly imbalanced, and contain limited positive disease cases. Conventional machine learning (ML) and deep learning approaches often struggle to capture clinically meaningful relationships under such low-data representation conditions due to weak statistical associations between features and prediction targets. This study proposes a clinically grounded Distil GPT2-based table-to-text framework for disease prediction using structured healthcare datasets, motivated by the contextual reasoning capability of GPT models to better capture clinically meaningful relationships when statistical learning alone becomes insufficient due to limited data availability. Methods & MaterialsStructured clinical records were transformed into physician-style textual descriptions and enriched through GPT4-generated medical paraphrasing to improve minority-class representation while preserving clinical meaning. Both the original and generated clinical texts were used to fine-tune a Distil GPT2 model across four public healthcare datasets, including heart disease, heart failure, chronic kidney disease, and thyroid cancer recurrence. Gradient-based explainable AI analysis was additionally incorporated to identify clinically important features influencing prediction outcomes. ResultsThe proposed framework demonstrated consistently strong predictive performance across four clinical datasets, achieving average precision, specificity, sensitivity, and F1-score of 0.96, 0.97, 0.96, and 0.96, respectively. The model achieved improved sensitivity, stronger generalization, and more stable predictive behavior compared with traditional ML, deep learning, transformer-based, and GAN-augmented approaches. Importantly, the framework consistently emphasized clinically meaningful variables even under severe class imbalance, where conventional ML and neural network models often struggled to identify key clinically relevant relationships. ConclusionsThe proposed Distil GPT2-based table-to-text framework provides a practical and clinically interpretable approach for disease prediction from limited structured healthcare data. By integrating contextual clinical reasoning with explainable prediction mechanisms, the framework suggests strong potential for early risk detection, transparent clinical decision support, and reliable deployment in real-world data-scarce healthcare settings.",
-    "category": "Cancer AI Methods",
-    "source": "medRxiv",
-    "published": "2026-09-02",
-    "updated": "2026-09-02",
-    "primary_category": "health informatics",
-    "categories": [
-      "health informatics"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.19.26360765v2"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.19.26360765v2.full.pdf"
-      }
-    ],
-    "score": 59,
-    "infographic": {
-      "key_insight": "Background and ObjectiveEarly and reliable disease prediction from structured clinical data remains challenging when datasets are small, highly imbalanced, and contain limited positive disease cases.",
-      "clinical_relevance": "Potential relevance: cancer ai methods workflows and research evaluation.",
-      "method": [
-        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
-        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
-      "hashtags": [
-        "#AIMedicine",
-        "#MedAI",
-        "#HealthcareAI",
-        "#Research",
-        "#Preprints"
-      ],
-      "paper_id": "2026-09-02-medrxiv-can_gpt_be_used_as_an_alternative_prediction_model_to_traditional_machine_learning_and_neu",
-      "paper_title": "Can GPT Be Used as an Alternative Prediction Model to Traditional Machine Learning and Neural Networks on Low-Volume Clinical Data?",
-      "paper_date": "2026-09-02",
-      "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-09-08T11:56:05",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-02-medrxiv-markerless_motion_capture_reveals_movement_abnormalities_in_isolated_rem_sleep_behavior_di",
-    "doi": "10.64898/2026.08.28.26361609",
-    "date": "2026-09-02",
-    "title": "Markerless Motion Capture Reveals Movement Abnormalities in Isolated REM Sleep Behavior Disorder",
-    "authors": "Wegner, P.; Ophey, A.; Roettgen, S.; Kufer, K.; Doppler, C. E.; Seger, A.; Fink, G. R.; Kalbe, E.; Kotra, K.; Grobe-Einsler, M.; Feldmann, K.; Sommerauer, M.; Faber, J.",
-    "abstract": "Objective and scalable approaches for detecting subtle motor impairment in isolated REM sleep behavior disorder (iRBD), a prodromal stage of Parkinsons disease, remain limited. We investigated whether markerless motion capture from single RGB-camera videos can identify gait abnormalities in people living with iRBD and provide interpretable digital biomarkers. We retrospectively analyzed 93 standardized walking videos from three clinical sites. Human pose estimation extracted 12 body markers and 14 kinematic time series. Thirty-five machine learning approaches classified healthy controls (HC) and people with iRBD. The Movement Disorder Society Unified Parkinsons Disease Rating Scale Part 3 (MDS-UPDRS III) served as the clinical baseline. The best-performing model (tsfresh+XGBoost) achieved an AUROC of 0.739, significantly outperforming the MDS-UPDRS III sum score when trained on data from all three sites. Harmonized multi-site training improved performance. SHAP identified hip-related temporal features as key contributors, which differed between groups and showed stronger associations with regional dopaminergic deficits than clinical scores. Single-camera gait analysis may provide scalable digital biomarkers for low-cost screening and monitoring of prodromal PD. Plain Language SummaryPeople with isolated REM sleep behavior disorder (iRBD) often show subtle changes in their walking that can be difficult to detect during routine clinical examinations. In this study, we used artificial intelligence to analyze videos of a simple walking task without requiring wearable sensors or body markers. The computer-based analysis distinguished people with iRBD from healthy individuals more accurately than standard clinician-rated motor scores. While further validation in larger studies is needed, these findings suggest that video-based movement analysis could become a useful objective tool to support the assessment of people at increased risk of Parkinsons disease and related disorders.",
+    "id": "2026-09-04-medrxiv-systematic_modality_ablation_of_multimodal_machine_learning_for_predicting_24_month_progre",
+    "doi": "10.64898/2026.09.01.26360413",
+    "date": "2026-09-04",
+    "title": "Systematic Modality Ablation of Multimodal Machine Learning for Predicting 24-Month Progression from Mild Cognitive Impairment to Alzheimer's Disease",
+    "authors": "Choe, S.",
+    "abstract": "INTRODUCTIONMultimodal biomarkers have transformed Alzheimers disease research, but the incremental contribution of each modality to predicting progression from mild cognitive impairment (MCI) remains unclear. We systematically evaluated individual biomarker modalities using a comprehensive ablation framework. METHODSWe analyzed 2,430 participants with MCI from the Alzheimers Disease Neuroimaging Initiative with known 24-month progression status. XGBoost models were trained using combinations of demographic variables, cognitive assessments, apolipoprotein E (APOE) genotype, structural MRI, cerebrospinal fluid (CSF) biomarkers, and PET biomarkers. Performance was evaluated using repeated stratified 5x10 cross-validation; discrimination was assessed using the area under the receiver operating characteristic curve (AUC), with pairwise comparisons via DeLongs test on single-pass out-of-fold predictions, Holm-Bonferroni corrected. Complete-case analyses evaluated the impact of missing data and median imputation. RESULTSThe full multimodal model achieved the highest discrimination (AUC=0.934). Excluding cognitive assessments produced the largest reduction (AUC=0.883, P<0.001 vs. multimodal), the only comparison to remain significant after correction. Removing APOE, CSF, or MRI produced only modest, statistically indistinguishable reductions (AUC=0.933, 0.931, 0.932). Removing PET produced a similarly small reduction in the primary analysis (AUC=0.932), but complete-case sensitivity analysis showed imputation significantly inflated this estimate (P=0.005); PETs true contribution may exceed the other three. The baseline clinical model performed near chance (AUC=0.556). DISCUSSIONCognitive assessment contributes substantially more predictive information for 24-month progression than structural imaging, molecular biomarkers, or genetic risk, whose removal produces only modest, largely statistically indistinguishable performance loss -- with the exception of PET, whose apparent equivalence may be an imputation artifact. These findings establish an evidence-based hierarchy of biomarker utility and provide a quantitative framework for designing cost-effective prediction models and prioritizing biomarker acquisition in clinical research and multimodal AI systems.",
     "category": "Target Biology",
     "source": "medRxiv",
-    "published": "2026-09-02",
-    "updated": "2026-09-02",
+    "published": "2026-09-04",
+    "updated": "2026-09-04",
     "primary_category": "neurology",
     "categories": [
       "neurology"
@@ -170,16 +68,16 @@
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.28.26361609v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.01.26360413v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.28.26361609v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.01.26360413v1.full.pdf"
       }
     ],
-    "score": 47,
+    "score": 46,
     "infographic": {
-      "key_insight": "Objective and scalable approaches for detecting subtle motor impairment in isolated REM sleep behavior disorder (iRBD), a prodromal stage of Parkinsons disease, remain limited.",
+      "key_insight": "INTRODUCTIONMultimodal biomarkers have transformed Alzheimers disease research, but the incremental contribution of each modality to predicting progression from mild cognitive impairment (MCI) remains unclear.",
       "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
       "method": [
         "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
@@ -195,164 +93,11 @@
         "#Research",
         "#Preprints"
       ],
-      "paper_id": "2026-09-02-medrxiv-markerless_motion_capture_reveals_movement_abnormalities_in_isolated_rem_sleep_behavior_di",
-      "paper_title": "Markerless Motion Capture Reveals Movement Abnormalities in Isolated REM Sleep Behavior Disorder",
-      "paper_date": "2026-09-02",
+      "paper_id": "2026-09-04-medrxiv-systematic_modality_ablation_of_multimodal_machine_learning_for_predicting_24_month_progre",
+      "paper_title": "Systematic Modality Ablation of Multimodal Machine Learning for Predicting 24-Month Progression from Mild Cognitive Impairment to Alzheimer's Disease",
+      "paper_date": "2026-09-04",
       "paper_category": "Target Biology",
-      "generated_at": "2026-09-08T11:56:06",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-02-medrxiv-cross_system_meta_analysis_of_machine_learning_predictors_identifies_value_specific_risk_d",
-    "doi": "10.64898/2026.08.31.26361849",
-    "date": "2026-09-02",
-    "title": "Cross-System Meta-Analysis of Machine Learning Predictors Identifies Value-Specific Risk Drivers and Interactions Underlying Acute Kidney Injury",
-    "authors": "Chan, H. Y.; Li, D.; Yu, A. S. L.; Kellum, J. A.; Fuhrman, D. Y.; Xu, Q.; Chrischilles, E. A.; Cowell, L. G.; Chandaka, S.; Anzalone, A. J.; Kean, J.; McTigue, K. M.; Mosa, A. S. M.; Taylor, B.; Syed, M.; Waitman, L. R.; Hu, Y.; Liu, M.",
-    "abstract": "BackgroundCurrent understanding of acute kidney injury (AKI) risk factors remains largely descriptive, offering limited precision into how specific biomarker values or physiologic thresholds influence susceptibility. We aimed to synthesize knowledge from machine learning models trained across multiple health systems to identify generalizable, value-specific risk drivers and biomarker interactions contributing to AKI risk. MethodsWe analyzed electronic health records (EHRs) from 785,497 adult inpatients between 2010 and 2019 across nine U.S. academic medical centers within PCORnet. Interpretable gradient boosting machine models were independently developed at each health system to quantify predictor-outcome associations. Meta-regression was applied to integrate these site-level results, characterize nonlinear value-risk relationships, and identify bivariate interactions between predictors. ResultMeta-analysis revealed consistent, value-specific risk drivers across health systems. An increase in glucose from 100 mg/dL to 140 mg/dL was associated with a 1.46-fold higher risk of AKI. Chloride and anion gap also demonstrated elevated AKI risk with risk increases overlapping portions of their reference ranges, with anion gap showing a 1.14-fold increase across 4-12 mmol/L and chloride a 1.28-fold increase across 96-100 mEq/L. Electrolytes including potassium, calcium, and sodium showed quadratic associations with AKI risk. Bivariate meta-regression identified interactions between key predictors, highlighting pathways that jointly modulate AKI risk. ConclusionThis cross-system meta-analysis synthesizes machine learning-derived evidence into clinically interpretable knowledge, revealing how specific biomarker ranges and interactions modulate AKI risk. By moving beyond surface-level associations to quantitative, generalizable physiologic thresholds, these findings provide actionable insights to enhance risk stratification and personalized prevention in hospital care. HighlightsO_LICross-system meta-analysis uncovered generalizable, value-specific AKI risk drivers C_LIO_LIGlucose, chloride, and anion gap within reference ranges linked to higher AKI risk C_LIO_LIKey predictor interactions suggest coordinated pathways jointly modulating AKI risk C_LI",
-    "category": "Target Biology",
-    "source": "medRxiv",
-    "published": "2026-09-02",
-    "updated": "2026-09-02",
-    "primary_category": "nephrology",
-    "categories": [
-      "nephrology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.31.26361849v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.08.31.26361849v1.full.pdf"
-      }
-    ],
-    "score": 41,
-    "infographic": {
-      "key_insight": "BackgroundCurrent understanding of acute kidney injury (AKI) risk factors remains largely descriptive, offering limited precision into how specific biomarker values or physiologic thresholds influence susceptibility.",
-      "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
-      "method": [
-        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
-        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
-      "hashtags": [
-        "#AIMedicine",
-        "#MedAI",
-        "#HealthcareAI",
-        "#Research",
-        "#Preprints"
-      ],
-      "paper_id": "2026-09-02-medrxiv-cross_system_meta_analysis_of_machine_learning_predictors_identifies_value_specific_risk_d",
-      "paper_title": "Cross-System Meta-Analysis of Machine Learning Predictors Identifies Value-Specific Risk Drivers and Interactions Underlying Acute Kidney Injury",
-      "paper_date": "2026-09-02",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-09-08T11:56:06",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-02-medrxiv-dermal_phospho_alpha_synuclein_among_individuals_with_and_without_cerebrospinal_fluid_aggr",
-    "doi": "10.64898/2025.12.17.25342090",
-    "date": "2026-09-02",
-    "title": "Dermal Phospho-Alpha-Synuclein Among Individuals With and Without Cerebrospinal Fluid Aggregated Alpha-Synuclein",
-    "authors": "Chahine, L.; Chatterjee, K.; Gochanour, C.; Lafontant, D.-E.; Akhtar, R.; Shetty, N.; Dahodwala, N.; Brooker, S.; Gonzalez-Latapi, P.; Prakash, N.; Defendorf, S.; Midyette, J.; Foroud, T.; Merchant, K.; Coughlin, D.; Tropea, T. F.; Frasier, M.; Larson, D.; Coffey, C.; Marek, K.; Simuni, T.",
-    "abstract": "BackgroundDermal Serine-129-phosphorylated -synuclein (dermal-pS129-syn) is a promising biomarker, but its accuracy for CNS aggregated -synuclein (-syn) is unknown. We examined sensitivity and specificity of dermal-pS129-syn for neuronal -syn determined with CSF -syn seed amplification assay (CSF -syn SAA). MethodsA sample of individuals enrolled in the Parkinson Precision Medicine Initiative (PPMI) with positive or negative CSF -syn SAA underwent three 3-mm skin biopsies. Blinded assessment of dermal-pS129-syn was conducted. Participants were considered dermal-pS129-syn+ if [&ge;]1 sections demonstrated evidence of [&ge;]1 ps129-syn+ neuronal elements in any region biopsied. ResultsThe sample consisted of 50 participants; PPMI enrollment cohort included PD (n=11), healthy control (n=5), and prodromal (RBD n=5, hyposmia n=27, non-manifesting carrier of pathogenic variant n=2). 30/38 CSF -syn SAA+ were dermal-pS129-syn+; 6/12 CSF -syn SAA-were dermal-pS129-syn-, yielding sensitivity and specificity of 79% and 50% respectively. 7/10 (70%) of participants with clinical diagnosis of PD who were CSF -syn SAA+ were dermal-pS129-syn+. Of the 6 CSF -syn SAA-cases who were dermal-pS129-syn+, 3 were enrolled in the HC cohort of PPMI, and 3 were prodromal (hyposmia) cases. ConclusionLow specificity for CSF -syn SAA precludes use of dermal-pS129-syn as a marker of CNS neuronal -syn aggregates. Future studies are needed to determine optimal methods to assess -syn aggregates in central and peripheral compartments. Plain language summaryDetecting abnormal alpha-synuclein in the skin may be a useful biomarker for Parkinsons disease and other disorders where alpha-synuclein accumulates in brain cells. But whether skin alpha-synuclein reflects abnormal alpha-synuclein in brain cells is not known. Since alpha-synuclein in spinal fluid is an accurate reflection of alpha-synuclein in brain cells in almost all cases, we compared skin alpha-synuclein to alpha-synuclein in spinal fluid. We found that among people who have abnormal alpha-synuclein in spinal fluid, 79% have abnormal alpha-synuclein in skin. But among those who had negative (normal) alpha-synuclein in spinal fluid, 50% had abnormal skin alpha-synuclein. More studies are needed to understand what these results mean and the role of skin alpha-synuclein testing in Parkinsons disease and other disorders where alpha-synuclein accumulates in brain cells.",
-    "category": "Target Biology",
-    "source": "medRxiv",
-    "published": "2026-09-02",
-    "updated": "2026-09-02",
-    "primary_category": "neurology",
-    "categories": [
-      "neurology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2025.12.17.25342090v2"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2025.12.17.25342090v2.full.pdf"
-      }
-    ],
-    "score": 41,
-    "infographic": {
-      "key_insight": "BackgroundDermal Serine-129-phosphorylated -synuclein (dermal-pS129-syn) is a promising biomarker, but its accuracy for CNS aggregated -synuclein (-syn) is unknown.",
-      "clinical_relevance": "Potential relevance: target biology workflows and research evaluation.",
-      "method": [
-        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
-        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
-      "hashtags": [
-        "#AIMedicine",
-        "#MedAI",
-        "#HealthcareAI",
-        "#Research",
-        "#Preprints"
-      ],
-      "paper_id": "2026-09-02-medrxiv-dermal_phospho_alpha_synuclein_among_individuals_with_and_without_cerebrospinal_fluid_aggr",
-      "paper_title": "Dermal Phospho-Alpha-Synuclein Among Individuals With and Without Cerebrospinal Fluid Aggregated Alpha-Synuclein",
-      "paper_date": "2026-09-02",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-09-08T11:56:06",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-02-medrxiv-an_interpretable_cost_aware_framework_for_mitigating_bias_in_skin_lesion_classification_ac",
-    "doi": "10.1101/2024.12.11.24318858",
-    "date": "2026-09-02",
-    "title": "An Interpretable Cost-Aware Framework for Mitigating Bias in Skin Lesion Classification Across Diverse Skin Tones",
-    "authors": "Hasan, M. M.; Suchi, M. T.; Habib, M. H.; Akter, S.; Eisenberg, D.; Zaman Achol, F.; Islam, A. M. T.; Lotvola, A.; Islam, H.; Hill, C.; Fresneda Fernandez, J.; Rabiul Alam, M. G.; Pias, T. S.; Akter, S. B.",
-    "abstract": "Despite advances in dermatological AI, skin lesion predictions continue to exhibit significant bias, consistently exhibiting underperformance in brown and darker tones. This disparity stems largely from the lack of representation in commonly used datasets such as Fitzpatrick17k and Diverse Dermatology Images (DDI), which are heavily skewed toward lighter skin tones. Existing models, including those trained on balanced datasets like Skin Cancer Benign vs. Malignant, show steep drops in recall when evaluated across varying pigmentation. To address this inequity, the Cost-Aware EfficientNet (CAEN) model based on EfficientNet-B0, a widely adopted convolutional neural network, is proposed, incorporating attention mechanisms and custom cost functions to better capture underrepresented tones and reduce class imbalance. Incorporating an optimization-based augmentation strategy further enhances fairness by iteratively determining the optimal augmentation ratio for each skin tone, resulting in a more balanced training. CAEN achieved average-recall rates of 86% for non-neoplastic, 87% for benign, and 87% for malignant lesions in three datasets, with a performance gain of 16.75% over prior studies. The model also demonstrated robustness under artificial test conditions, including variations in brightness and contrast, with marked improvement for brown and darker skin tones. Interpretability analysis using Gradient-Weighted Class Activation Mapping (Grad-CAM) showed that baseline EfficientNet-B0 often focuses on irrelevant image regions in darker skin tones. CAEN corrected these issues by attending more accurately to areas relevant to the lesion, improving both transparency and equity. This approach marks a step toward fair and generalizable lesion prediction, addressing long-standing performance disparities across diverse pigmentations in dermatological AI. Impact StatementThe Cost-Aware EfficientNet (CAEN) incorporates custom cost allocation, attention mechanisms, and skin-tone-specific augmentation, significantly enhancing recall rates and improving prediction accuracy across various skin types. The model also increases transparency using Grad-CAM, offering visual explanations for its decisions. Furthermore, CAEN demonstrates robustness and generalizability, even when faced with artificial image quality drops across multiple datasets. By prioritizing fairness, this study aims to provide a more reliable and equitable AI tool for dermatology, ensuring better healthcare outcomes for individuals of all skin tones.",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-09-02",
-    "updated": "2026-09-02",
-    "primary_category": "health systems and quality improvement",
-    "categories": [
-      "health systems and quality improvement"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.1101/2024.12.11.24318858v3"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.1101/2024.12.11.24318858v3.full.pdf"
-      }
-    ],
-    "score": 41,
-    "infographic": {
-      "key_insight": "Despite advances in dermatological AI, skin lesion predictions continue to exhibit significant bias, consistently exhibiting underperformance in brown and darker tones.",
-      "clinical_relevance": "Potential relevance: precision oncology workflows and research evaluation.",
-      "method": [
-        "AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.",
-        "Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.",
-        "Use the linked paper for methods, data, and validation details."
-      ],
-      "evidence_signal": "Evidence details are summarized from the public abstract only.",
-      "watch_item": "Not medical advice; review the full paper before clinical or operational use.",
-      "hashtags": [
-        "#AIMedicine",
-        "#MedAI",
-        "#HealthcareAI",
-        "#Research",
-        "#Preprints"
-      ],
-      "paper_id": "2026-09-02-medrxiv-an_interpretable_cost_aware_framework_for_mitigating_bias_in_skin_lesion_classification_ac",
-      "paper_title": "An Interpretable Cost-Aware Framework for Mitigating Bias in Skin Lesion Classification Across Diverse Skin Tones",
-      "paper_date": "2026-09-02",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-09-08T11:56:07",
+      "generated_at": "2026-09-09T12:05:25",
       "generator": "openai"
     }
   }
