@@ -22,7 +22,7 @@
     <header>
       <div>
         <h1>AI Cancer Drug Discovery Research Papers - Daily Top 20</h1>
-        <p class="sub">Collected 2026-09-09. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
+        <p class="sub">Collected 2026-09-10. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
       </div>
       <nav class="actions">
         <a href="papers.json">Data JSON</a>
@@ -31,15 +31,15 @@
     </header>
     <section class="grid">
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>57</strong></div>
-        <p class="date">2026-09-03</p>
-        <h2>Pretrained transformers applied to population cancer registries improve survival prediction in label-scarce and previously unseen cancers</h2>
-        <p class="authors">Gao, Y.; Yu, S.; Xia, Y.; Chen, S.; Xia, S.; An, R.; Zeng, J.; Zhao, F.; Ma, Y.; Wang, Y.; Xie, X.; Zhang, J.</p>
-        <p class="abstract">Prognostic models in oncology are developed one cancer at a time, from that cancers own labelled outcomes, and fail where prognostic information is scarcest. Rare cancers account for roughly a fifth of diagnoses and most paediatric malignancies, yet seldom supply enough events for a reliable time-to-event model. We therefore asked whether a representation learned without outcome labels can supply what those cohorts cannot. A Transformer encoder was pretrained by masked field-value modelling on 9,425,135 tumour records from the SEER 17 registries, diagnosed in 2000-2023. Only diagnosis-time fields passing a fail-closed coding-verification gate were admitted, and each record was emitted as an era-specific and a harmonised view, keeping two decades of recoding auditable. The encoder was then frozen and read by a linear Cox head for overall survival. Nine rare cancers were removed from the pretraining corpus entirely, each requiring an independent pretraining run. On a sealed test partition, all nine exceeded an architecture-identical random frozen encoder in Harrell concordance by +0.0034 to +0.0368, every lower confidence limit above zero. At 256 labelled patients, all 67 cancers favoured the pretrained representation over budget-matched Cox regression, median difference +0.0283. The advantage was bounded: given the entire training set, Cox regression was favoured in seven of nine rare cancers. The encoder did not outperform a field-frequency baseline on its own objective, so upstream reconstruction did not predict downstream transfer. Outcome-agnostic registry pretraining carries prognostic signal into cancers it has never seen, and is most useful where labels are fewest, without establishing clinical utility.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.08.30.26361693v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.08.30.26361693v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>60</strong></div>
+        <p class="date">2026-09-05</p>
+        <h2>Skin Cancer Classification Using Explainable Artificial Intelligence With an Ensemble Model and Rigorous Leakage Free Validation</h2>
+        <p class="authors">BARAN, M. T.; KARAKOYUN, O.</p>
+        <p class="abstract">BackgroundReliable melanoma classification requires models that capture both local dermoscopic morphology and broader contextual patterns while maintaining auditable, leakageaware internal validation. ObjectivesTo develop and internally validate an EfficientNetB0-Swin Transformer Tiny ensemble for classifying histopathologically verified dermoscopic images as benign melanocytic lesions or malignant melanoma. MethodsThis retrospective diagnostic model-development and internal validation study screened 552,869 ISIC Archive records; filtering and dermatologist review yielded 1,199 uniquepatient and unique lesion images (578 benign and 621 malignant). Images were the predictors and histopathology was the reference. ImageNet pretrained EfficientNetB0 and Swin-T features were fused. Patient independent five fold validation used weighted sampling, mixup, label smoothing, AdamW, early stopping, and five view test time augmentation. ResultsMean accuracy was 0.89325 {+/-} 0.03179, mean receiver operating characteristic area under the curve (ROC-AUC) was 0.96348 {+/-} 0.01695, and mean support weighted F1-score was 0.89300 {+/-} 0.03220. The fold level 95% confidence intervals were 0.8538-0.9327 for accuracy and 0.9424-0.9845 for ROC-AUC. Pooled counts were 526 true negatives, 52 false positives, 76 false negatives, and 545 true positives, yielding 87.76% sensitivity and 91.00% specificity. Qualitative Grad-CAM review showed peripheral artifact activation in two false positives and lesion centered activation in two correctly classified cases; these observations were not systematically scored. LimitationsThe validation folds were also used for early stopping and checkpoint selection. Device stratified analysis, systematic interpretability scoring, calibration, and independent external validation were unavailable. ConclusionsThe ensemble showed high internal discrimination and is intended only as a clinician facing adjunct. The error audit workflow enables targeted retrospective review, but external validation is required before clinical use or generalizability claims. The study was not registered.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.02.26362011v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.02.26362011v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Prognostic models in oncology are developed one cancer at a time, from that cancers own labelled outcomes, and fail where prognostic information is scarcest.</p>
+          <p><b>Key insight:</b> BackgroundReliable melanoma classification requires models that capture both local dermoscopic morphology and broader contextual patterns while maintaining auditable, leakageaware internal validation.</p>
           <p><b>Clinical relevance:</b> Potential relevance: precision oncology workflows and research evaluation.</p>
           <ul><li>AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.</li><li>Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.</li><li>Use the linked paper for methods, data, and validation details.</li></ul>
           <p><b>Evidence signal:</b> Evidence details are summarized from the public abstract only.</p>
@@ -50,7 +50,45 @@
     
 
       <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>46</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>51</strong></div>
+        <p class="date">2026-09-06</p>
+        <h2>Adaptation needs of an intervention to facilitate tobacco cessation among men attending emergency departments in Nairobi, Kenya</h2>
+        <p class="authors">Armstrong-Hough, M.; Kedera, T.; Bosire, M.; Obuya, M.; Soma, G.; Rayo, J.; Abroms, L.; Ngaruiya, C.</p>
+        <p class="abstract">BackgroundThree-quarters of cancer deaths globally are in low- or middle-income countries. Cost-effective tobacco cessation interventions are critical to reducing cancer burden in these settings. Interventions that reach men, who are more likely to smoke and less likely to be engaged in primary care, are particularly important in Kenya, where 84% of smokers are men. Engaging men using a text-based mHealth program is a promising strategy to promote cessation. Text-based quit counseling using Text2Quit, a US-based mHealth intervention, has been demonstrated to be effective in high-income settings. We aimed to identify barriers to using Text2Quit among Kenyan men who smoke and optimize Text2Quit for Kenya. MethodsWe invited men who smoke in Nairobi, Kenya to participate in intercept interviews using a Text2Quit prototype adapted for Kenya. A multinational team of tobacco experts, designers, Kenyan physicians, and implementation researchers carried out a rapid analysis of interview transcripts to identify barriers to its usability, relatability, and appeal. These barriers and proposed solutions were enumerated and ranked using nominal group technique with rank-order voting. ResultsThirteen men participated in interviews using a Text2Quit-Kenya prototype. Participants identified rigid response formats as a barrier to its usability, long text messages as a barrier to relatability, and confusion about cost as a barrier to its appeal. Twenty-six proposed solutions were identified by the nominal group technique process and five were prioritized based on importance to stakeholders and feasibility: 1) enable minor deviations in patient responses, 2) reduce length of messages, 3) clearly communicate that Text2Quit is free of charge, 4) provide brief in-person counseling at enrollment, including training on how to find and reply to texts and setting a quit date before texts begin, and 5) provide individualized follow up with users. ConclusionsBarriers to uptake of Text2Quit among Kenyan men who smoke are addressable through a systematic adaptation process.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.02.26361107v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.02.26361107v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> BackgroundThree-quarters of cancer deaths globally are in low- or middle-income countries.</p>
+          <p><b>Clinical relevance:</b> Potential relevance: precision oncology workflows and research evaluation.</p>
+          <ul><li>AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.</li><li>Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.</li><li>Use the linked paper for methods, data, and validation details.</li></ul>
+          <p><b>Evidence signal:</b> Evidence details are summarized from the public abstract only.</p>
+          <p><b>Watch item:</b> Not medical advice; review the full paper before clinical or operational use.</p>
+          <div class="tags"><span>#AIMedicine</span> <span>#MedAI</span> <span>#HealthcareAI</span> <span>#Research</span> <span>#Preprints</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>49</strong></div>
+        <p class="date">2026-09-06</p>
+        <h2>A dual proteomics analysis of paired cerebrospinal fluid and plasma from patients with neurodegenerative diseases</h2>
+        <p class="authors">Kowal, I.; Scholz, S. W.; Epstein, J.; Traynor, B. J.; Danielian, L. E.; Hao, Y.; Crook, J.; Li, Z.; Porter, K.; Sellers, B.; Langowski, T. J.; Denkinger, M. N.; Ashton, N. J.; Van Keuron-Jensen, K.; Cookson, M. R.; Kwan, J. Y.; Qi, Y. A. A.; Snyder, A.</p>
+        <p class="abstract">INTRODUCTIONUnderstanding concordance across biofluids and platforms is critical for understanding neurodegenerative biomarkers results and translating them into clinical use; yet systematic comparisons remain limited. To address this gap, we performed large-scale proteomic profiling of patient-paired plasma and CSF to characterize cross-modal relationships. METHODSWe profiled paired plasma and CSF from 67 individuals using SomaScan 11K and NULISAseq CNS panels. Disease severity was assessed with the CDR+NACC FTLD-M Global Score. RESULTSWe identified 269 SomaScan and 18 NULISA proteins with significant cross-biofluid correlation. Cross-platform concordance within biofluids was strong. NEFL, NPTX2, TREM2, and CHIT1 demonstrated consistent cross-platform agreement. Associations with disease severity were compartment-specific, with decreased NPTX2 in CSF, increased NEFL and GFAP in plasma, and decreased TREM2 across biofluids. DISCUSSIONCross-platform consistency supports biomarker robustness, while limited cross-biofluid concordance highlights compartmental biology. Given additional clinical correlations despite varying underlying pathology, these findings may point to shared neurodegenerative disorder pathways.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.02.26361977v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.02.26361977v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> INTRODUCTIONUnderstanding concordance across biofluids and platforms is critical for understanding neurodegenerative biomarkers results and translating them into clinical use; yet systematic comparisons remain limited.</p>
+          <p><b>Clinical relevance:</b> Potential relevance: target biology workflows and research evaluation.</p>
+          <ul><li>AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.</li><li>Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.</li><li>Use the linked paper for methods, data, and validation details.</li></ul>
+          <p><b>Evidence signal:</b> Evidence details are summarized from the public abstract only.</p>
+          <p><b>Watch item:</b> Not medical advice; review the full paper before clinical or operational use.</p>
+          <div class="tags"><span>#AIMedicine</span> <span>#MedAI</span> <span>#HealthcareAI</span> <span>#Research</span> <span>#Preprints</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>41</strong></div>
         <p class="date">2026-09-04</p>
         <h2>Systematic Modality Ablation of Multimodal Machine Learning for Predicting 24-Month Progression from Mild Cognitive Impairment to Alzheimer&#x27;s Disease</h2>
         <p class="authors">Choe, S.</p>
@@ -60,6 +98,25 @@
           <h3>OpenAI Infographic Summary</h3>
           <p><b>Key insight:</b> INTRODUCTIONMultimodal biomarkers have transformed Alzheimers disease research, but the incremental contribution of each modality to predicting progression from mild cognitive impairment (MCI) remains unclear.</p>
           <p><b>Clinical relevance:</b> Potential relevance: target biology workflows and research evaluation.</p>
+          <ul><li>AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.</li><li>Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.</li><li>Use the linked paper for methods, data, and validation details.</li></ul>
+          <p><b>Evidence signal:</b> Evidence details are summarized from the public abstract only.</p>
+          <p><b>Watch item:</b> Not medical advice; review the full paper before clinical or operational use.</p>
+          <div class="tags"><span>#AIMedicine</span> <span>#MedAI</span> <span>#HealthcareAI</span> <span>#Research</span> <span>#Preprints</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>41</strong></div>
+        <p class="date">2026-09-04</p>
+        <h2>Comparative Value of Cognitive and Functional Assessments for Predicting 24-Month Progression from Mild Cognitive Impairment to Alzheimer&#x27;s Disease: An ADNI Cohort Study</h2>
+        <p class="authors">Choe, S.</p>
+        <p class="abstract">BackgroundAccurate prediction of progression from mild cognitive impairment (MCI) to Alzheimers disease (AD) is important for prognosis, patient management, and clinical trial enrollment. ObjectiveCognitive and functional assessments are routinely used in memory clinics, but their relative predictive value remains unclear. We sought to identify which assessments are most predictive of 24-month progression from MCI to AD. MethodsWe analyzed 2,430 participants with baseline MCI from the Alzheimers Disease Neuroimaging Initiative (ADNI) who were classified by 24-month progression to AD. Extreme Gradient Boosting (XGBoost) models were trained using repeated stratified 5-fold cross-validation with 10 repetitions. We compared demographic and genetic variables, global cognitive measures (MMSE, ADAS-Cog13, CDR-SB, MoCA), episodic memory, executive function, functional status, and Everyday Cognition (ECog) questionnaires. ResultsThe baseline clinical model (age, sex, education, APOE {varepsilon}4 status) achieved an area under the receiver operating characteristic curve (AUC) of 0.692. Episodic memory showed the highest predictive performance (AUC = 0.915), followed by the Functional Activities Questionnaire (AUC = 0.913). Combining episodic memory, functional assessment, and executive function achieved the best performance (AUC = 0.943, sensitivity = 0.857, specificity = 0.889). Among individual memory measures, Logical Memory Delayed Recall achieved the highest standalone performance (AUC = 0.896), whereas RAVLT Learning provided minimal incremental value. ConclusionsEpisodic memory is the strongest predictor of 24-month progression from MCI to AD, with functional assessment providing substantial complementary value. Streamlined assessment batteries emphasizing episodic memory and functional status may improve efficient risk stratification in memory clinics and AD clinical trials.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.01.26360561v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.01.26360561v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> BackgroundAccurate prediction of progression from mild cognitive impairment (MCI) to Alzheimers disease (AD) is important for prognosis, patient management, and clinical trial enrollment.</p>
+          <p><b>Clinical relevance:</b> Potential relevance: clinical translation workflows and research evaluation.</p>
           <ul><li>AI cancer drug discovery paper selected from recent arXiv and medRxiv submissions.</li><li>Ranked by recency plus AI, oncology, therapeutic target, drug discovery, and translational relevance signals.</li><li>Use the linked paper for methods, data, and validation details.</li></ul>
           <p><b>Evidence signal:</b> Evidence details are summarized from the public abstract only.</p>
           <p><b>Watch item:</b> Not medical advice; review the full paper before clinical or operational use.</p>
