@@ -1,0 +1,24 @@
+{
+  "key_insight": "A patient-level multimodal MIL framework that fuses ultrasound image and clinical information improved preoperative differentiation of phyllodes tumors from fibroadenomas.",
+  "clinical_relevance": "Better PT vs FA triage could reduce unnecessary surgery while helping ensure patients with phyllodes tumors receive complete excision with negative margins.",
+  "method": [
+    "Encoded multiple breast ultrasound views per patient with an ultrasound foundation model.",
+    "Aggregated image instances with attention-based multiple instance learning to produce a patient-level image score.",
+    "Combined the image score with a gradient-boosted clinical score using logistic score fusion."
+  ],
+  "evidence_signal": "In patient-level 5-fold cross-validation, logistic score fusion reached 0.780 AUC-ROC and outperformed clinical-only, image-only, and end-to-end multimodal baselines.",
+  "watch_item": "The model was evaluated retrospectively in cross-validation, so prospective validation and workflow integration are still needed before clinical use.",
+  "hashtags": [
+    "#BreastUltrasound",
+    "#PrecisionOncology",
+    "#MachineLearning",
+    "#MultipleInstanceLearning",
+    "#MedicalAI"
+  ],
+  "paper_id": "2026-09-08-medrxiv-multimodal_multiple_instance_learning_for_fibroepithelial_tumor_diagnosis_in_breast_ultras",
+  "paper_title": "Multimodal Multiple Instance Learning for Fibroepithelial Tumor Diagnosis in Breast Ultrasound",
+  "paper_date": "2026-09-08",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-09-14T13:30:56",
+  "generator": "openai"
+}
