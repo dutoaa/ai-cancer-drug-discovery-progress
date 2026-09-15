@@ -1,0 +1,155 @@
+[
+  {
+    "id": "2026-09-08-medrxiv-multimodal_multiple_instance_learning_for_fibroepithelial_tumor_diagnosis_in_breast_ultras",
+    "doi": "10.64898/2026.09.07.26362448",
+    "date": "2026-09-08",
+    "title": "Multimodal Multiple Instance Learning for Fibroepithelial Tumor Diagnosis in Breast Ultrasound",
+    "authors": "Abir, F. F.; Ali, M.; Hossain, M. S.; Holt, L.; Chamberlain, V.; Shern, T.; Ozmen, T.; Brattain, L.",
+    "abstract": "Fibroepithelial breast lesions include fibroadenomas (FAs) and phyllodes tumors (PTs), which are difficult to distinguish preoperatively due to their overlapping clinical and ultrasound features. While FAs are typically managed with observation, PTs require complete surgical excision with negative margins due to their risk of local recurrence and malignant progression. Because core needle biopsy can be inconclusive in about 15% of patients, some patients undergo unnecessary surgical procedures. Breast ultrasound (BUS) is a widely available, noninvasive imaging modality, but visual interpretation alone is limited by the overlap in lesion appearance. Artificial intelligence (AI)-based BUS offers the potential to improve the preoperative differentiation of PTs from FAs, reducing unnecessary operations while ensuring appropriate treatment for patients with PTs. Most deep learning approaches operate at the image level, whereas clinical diagnosis is made at the patient level by integrating multiple ultrasound views with clinical context. We propose a patient-level multimodal multiple instance learning (MIL) framework for fibroepithelial tumor diagnosis in breast ultrasound. Each patient is represented as a bag of BUS images encoded by an ultrasound foundation model (USFM) and aggregated using attention-based MIL to produce an image-derived patient score. Clinical variables, including age, lesion size, and echogenicity, are modeled using a gradient-boosted clinical learner. The image and clinical scores are then combined using logistic score fusion. In patient-level 5-fold cross-validation, logistic score fusion achieved 0.780 AUC-ROC for classification, improving over clinical feature-only gradient boosting (GB) by +0.033 (95% CI [+0.013, +0.053], p = 0.001), image-only MIL by +0.081 (95% CI [+0.042, +0.119], p < 0.001), and MLP-based end-to-end multimodal fusion by +0.035 (95% CI [+0.003, +0.067], p = 0.030). These results suggest that patient-level score fusion can combine complementary ultrasound and clinical evidence for PTs vs FAs.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-09-08",
+    "updated": "2026-09-08",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.07.26362448v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.07.26362448v1.full.pdf"
+      }
+    ],
+    "score": 53,
+    "infographic": {
+      "key_insight": "A patient-level multimodal MIL framework that fuses ultrasound image and clinical information improved preoperative differentiation of phyllodes tumors from fibroadenomas.",
+      "clinical_relevance": "Better PT vs FA triage could reduce unnecessary surgery while helping ensure patients with phyllodes tumors receive complete excision with negative margins.",
+      "method": [
+        "Encoded multiple breast ultrasound views per patient with an ultrasound foundation model.",
+        "Aggregated image instances with attention-based multiple instance learning to produce a patient-level image score.",
+        "Combined the image score with a gradient-boosted clinical score using logistic score fusion."
+      ],
+      "evidence_signal": "In patient-level 5-fold cross-validation, logistic score fusion reached 0.780 AUC-ROC and outperformed clinical-only, image-only, and end-to-end multimodal baselines.",
+      "watch_item": "The model was evaluated retrospectively in cross-validation, so prospective validation and workflow integration are still needed before clinical use.",
+      "hashtags": [
+        "#BreastUltrasound",
+        "#PrecisionOncology",
+        "#MachineLearning",
+        "#MultipleInstanceLearning",
+        "#MedicalAI"
+      ],
+      "paper_id": "2026-09-08-medrxiv-multimodal_multiple_instance_learning_for_fibroepithelial_tumor_diagnosis_in_breast_ultras",
+      "paper_title": "Multimodal Multiple Instance Learning for Fibroepithelial Tumor Diagnosis in Breast Ultrasound",
+      "paper_date": "2026-09-08",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-09-14T13:30:56",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-08-medrxiv-a_user_friendly_no_code_application_for_hipaa_compliant_automated_analysis_of_tabular_data",
+    "doi": "10.64898/2026.09.06.26362377",
+    "date": "2026-09-08",
+    "title": "A user-friendly, no-code, application for HIPAA-compliant automated analysis of tabular data at scale",
+    "authors": "Kenny, P. A.",
+    "abstract": "BackgroundClinical research often requires reviewing large volumes of unstructured electronic medical record (EMR) data, a time-consuming task demanding skilled personnel. Large language models (LLMs) like ChatGPT can efficiently analyze and summarize text, potentially accelerating chart review research. However, concerns about personal health information (PHI) leakage limit use of commercial chatbots. Secure, in-house LLMs within fire-walled environments can address these concerns. AimTo develop a user-friendly, scalable application leveraging an in-house ChatGPT 4o-mini on Emplify Healths Azure cloud to automate processing of tabular clinical data while protecting PHI. MethodsThe application imports tabular data (Excel or text), guides users through prompt engineering, and automatically submits data row-by-row to the LLM. It retrieves and tabulates results as specified by users, enabling both automated extraction of clinical parameters, and data summarization/interpretation. Results/ConclusionsInitially designed to identify cancer cases and extract related parameters from pathology reports, a fully generalized application was developed which has found utility in analyzing diverse data sources including cancer registries, cardiology CT reports, imaging narratives, and clinical notes. This tool has significantly accelerated research by reducing data retrieval time, allowing staff to focus on higher-value tasks like data analysis, while maintaining PHI protection.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-09-08",
+    "updated": "2026-09-08",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.06.26362377v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.06.26362377v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "A no-code, in-house LLM workflow can automate row-by-row analysis of tabular clinical data while keeping protected health information inside a HIPAA-compliant environment.",
+      "clinical_relevance": "This could speed up chart review and registry abstraction for oncology and other clinical research tasks, freeing staff for higher-value analysis.",
+      "method": [
+        "Imports Excel or text tabular data into a user-friendly interface",
+        "Guides users through prompt engineering for extraction or summarization",
+        "Submits each row to a secure in-house ChatGPT 4o-mini and tabulates outputs"
+      ],
+      "evidence_signal": "The abstract reports successful use across multiple real-world data sources, including pathology reports, cancer registries, cardiology CT reports, imaging narratives, and clinical notes.",
+      "watch_item": "Performance appears to be based on deployment experience rather than formal benchmarking, so accuracy, consistency, and workflow validation should be confirmed before broad use.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#AIAutomation",
+        "#HIPAA",
+        "#LLM",
+        "#ClinicalResearch"
+      ],
+      "paper_id": "2026-09-08-medrxiv-a_user_friendly_no_code_application_for_hipaa_compliant_automated_analysis_of_tabular_data",
+      "paper_title": "A user-friendly, no-code, application for HIPAA-compliant automated analysis of tabular data at scale",
+      "paper_date": "2026-09-08",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-09-14T13:30:58",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-08-medrxiv-withdrawn_combined_triglyceride_glucose_and_frailty_index_tygfi_and_risk_of_endometrial_ca",
+    "doi": "10.64898/2026.07.02.26357105",
+    "date": "2026-09-08",
+    "title": "WITHDRAWN: Combined triglyceride-glucose and frailty index (TyGFI) and risk of endometrial cancer in U.S. women aged >=45: NHANES 2011-2018 analysis integrating data engineering and machine learning with logistic modeling",
+    "authors": "Zhou, Y.; Ma, J.; Zhang, Y.",
+    "abstract": "Withdrawal statementThe authors have withdrawn this manuscript because the number of positive cases in the original data is too small, leading to major flaws in the statistical analysis and rendering the findings and conclusions unreliable. Therefore, the authors do not wish this work to be cited as reference for the project. If you have any questions, please contact the corresponding author.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-09-08",
+    "updated": "2026-09-08",
+    "primary_category": "public and global health",
+    "categories": [
+      "public and global health"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.02.26357105v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.02.26357105v2.full.pdf"
+      }
+    ],
+    "score": 32,
+    "infographic": {
+      "key_insight": "This manuscript was withdrawn, so it does not provide a reliable validated insight for predicting endometrial cancer risk using TyGFI in U.S. women aged 45+.",
+      "clinical_relevance": "Because the analysis was deemed statistically flawed, it should not be used to guide research conclusions or clinical interpretation.",
+      "method": [
+        "NHANES 2011–2018 data from U.S. women aged 45+",
+        "Combined triglyceride-glucose (TyG) and frailty index into TyGFI",
+        "Applied logistic modeling and machine-learning workflows"
+      ],
+      "evidence_signal": "The abstract states that the number of positive cases was too small, creating major statistical flaws and making the findings unreliable.",
+      "watch_item": "Do not cite or implement the reported associations without a fully powered reanalysis and independent validation.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#NHANES",
+        "#CancerResearch",
+        "#MachineLearning",
+        "#Withdrawn"
+      ],
+      "paper_id": "2026-09-08-medrxiv-withdrawn_combined_triglyceride_glucose_and_frailty_index_tygfi_and_risk_of_endometrial_ca",
+      "paper_title": "WITHDRAWN: Combined triglyceride-glucose and frailty index (TyGFI) and risk of endometrial cancer in U.S. women aged >=45: NHANES 2011-2018 analysis integrating data engineering and machine learning with logistic modeling",
+      "paper_date": "2026-09-08",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-09-14T13:31:00",
+      "generator": "openai"
+    }
+  }
+]

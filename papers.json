@@ -1,154 +1,154 @@
 [
   {
-    "id": "2026-09-08-medrxiv-multimodal_multiple_instance_learning_for_fibroepithelial_tumor_diagnosis_in_breast_ultras",
-    "doi": "10.64898/2026.09.07.26362448",
-    "date": "2026-09-08",
-    "title": "Multimodal Multiple Instance Learning for Fibroepithelial Tumor Diagnosis in Breast Ultrasound",
-    "authors": "Abir, F. F.; Ali, M.; Hossain, M. S.; Holt, L.; Chamberlain, V.; Shern, T.; Ozmen, T.; Brattain, L.",
-    "abstract": "Fibroepithelial breast lesions include fibroadenomas (FAs) and phyllodes tumors (PTs), which are difficult to distinguish preoperatively due to their overlapping clinical and ultrasound features. While FAs are typically managed with observation, PTs require complete surgical excision with negative margins due to their risk of local recurrence and malignant progression. Because core needle biopsy can be inconclusive in about 15% of patients, some patients undergo unnecessary surgical procedures. Breast ultrasound (BUS) is a widely available, noninvasive imaging modality, but visual interpretation alone is limited by the overlap in lesion appearance. Artificial intelligence (AI)-based BUS offers the potential to improve the preoperative differentiation of PTs from FAs, reducing unnecessary operations while ensuring appropriate treatment for patients with PTs. Most deep learning approaches operate at the image level, whereas clinical diagnosis is made at the patient level by integrating multiple ultrasound views with clinical context. We propose a patient-level multimodal multiple instance learning (MIL) framework for fibroepithelial tumor diagnosis in breast ultrasound. Each patient is represented as a bag of BUS images encoded by an ultrasound foundation model (USFM) and aggregated using attention-based MIL to produce an image-derived patient score. Clinical variables, including age, lesion size, and echogenicity, are modeled using a gradient-boosted clinical learner. The image and clinical scores are then combined using logistic score fusion. In patient-level 5-fold cross-validation, logistic score fusion achieved 0.780 AUC-ROC for classification, improving over clinical feature-only gradient boosting (GB) by +0.033 (95% CI [+0.013, +0.053], p = 0.001), image-only MIL by +0.081 (95% CI [+0.042, +0.119], p < 0.001), and MLP-based end-to-end multimodal fusion by +0.035 (95% CI [+0.003, +0.067], p = 0.030). These results suggest that patient-level score fusion can combine complementary ultrasound and clinical evidence for PTs vs FAs.",
+    "id": "2026-09-10-medrxiv-automated_skill_optimisation_for_false_presupposition_handling_in_cancer_communication_ski",
+    "doi": "10.64898/2026.09.08.26362559",
+    "date": "2026-09-10",
+    "title": "Automated Skill Optimisation for False Presupposition Handling in Cancer Communication: SkillOpt Versus Conventional Prompt Engineering Across Language Models",
+    "authors": "Khanna, S.",
+    "abstract": "Background: Large language models (LLMs) may answer cancer questions plausibly while accepting a false presupposition (FP). Prompts that increase FP correction may also challenge questions in which no FP is present (NFP). We compared SkillOpt, an automated skill-optimisation method developed by Microsoft Research, with conventional prompt engineering across models. Methods: Using the physician-verified Cancer-Myth benchmark, GPT-5.4 optimised a written skill for GPT-4o in three independent 12-step executions. Training used 117 FP questions. Rewrites were selected by combined accuracy on a validation set of 58 FP and 30 NFP questions, then tested on 410 unseen FP questions. A separate GPT-4o judged responses. Across seven LLMs, we compared no correction instruction, a deliberately strong seven-example few-shot prompt, three GPT-5.4-generated instruction-only prompts, and full and compact SkillOpt skills. Further tests examined portability, new questions and valid clinical assumptions. Results: SkillOpt increased GPT-4o FP correction from 15.4-17.6% to 82.2-90.5%, gains of 66.3-72.9 percentage points (95% bootstrap confidence intervals 61.7-77.3; all Holm-adjusted p<0.001). Only two or three rewrites were accepted per execution. The first full skill achieved 92.7-96.6% correction on three recipient models but 6.3-16.3% on two weaker models, where few-shot prompting achieved 44.6-54.6%. On Gemini 3.5 Flash and GPT-5.6 Luna, compact SkillOpt retained 90.0-92.9% correction while increasing NFP accuracy from 59.2-79.2% with the full skill to 85.8-93.3%. Both approaches sometimes challenged valid clinical assumptions. Conclusions: SkillOpt produced large, repeatable gains, but it was neither universally portable nor free of over-correction. Automated and conventional prompts should be compared for each intended model using tests of both FP correction and NFP accuracy. Compact SkillOpt may improve this balance on capable models.",
     "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-09-08",
-    "updated": "2026-09-08",
-    "primary_category": "radiology and imaging",
+    "published": "2026-09-10",
+    "updated": "2026-09-10",
+    "primary_category": "oncology",
     "categories": [
-      "radiology and imaging"
+      "oncology"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.07.26362448v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.08.26362559v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.07.26362448v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.08.26362559v1.full.pdf"
       }
     ],
-    "score": 53,
+    "score": 52,
     "infographic": {
-      "key_insight": "A patient-level multimodal MIL framework that fuses ultrasound image and clinical information improved preoperative differentiation of phyllodes tumors from fibroadenomas.",
-      "clinical_relevance": "Better PT vs FA triage could reduce unnecessary surgery while helping ensure patients with phyllodes tumors receive complete excision with negative margins.",
+      "key_insight": "SkillOpt dramatically improved false-presupposition correction in cancer-related LLM responses, but the gains were model-dependent and could increase over-correction.",
+      "clinical_relevance": "For cancer communication tools, prompts should be validated on each target model because better correction of misleading assumptions can come with reduced accuracy on valid questions.",
       "method": [
-        "Encoded multiple breast ultrasound views per patient with an ultrasound foundation model.",
-        "Aggregated image instances with attention-based multiple instance learning to produce a patient-level image score.",
-        "Combined the image score with a gradient-boosted clinical score using logistic score fusion."
+        "Used the physician-verified Cancer-Myth benchmark with 117 FP training questions, 58 FP + 30 NFP validation questions, and 410 unseen FP test questions.",
+        "Compared no correction, a strong seven-example few-shot prompt, GPT-5.4-generated instruction-only prompts, and full/compact SkillOpt skills across seven LLMs.",
+        "A separate GPT-4o model judged outputs, and performance was evaluated with bootstrap confidence intervals and Holm-adjusted significance testing."
       ],
-      "evidence_signal": "In patient-level 5-fold cross-validation, logistic score fusion reached 0.780 AUC-ROC and outperformed clinical-only, image-only, and end-to-end multimodal baselines.",
-      "watch_item": "The model was evaluated retrospectively in cross-validation, so prospective validation and workflow integration are still needed before clinical use.",
+      "evidence_signal": "Across GPT-4o, SkillOpt raised FP correction from 15.4-17.6% to 82.2-90.5% with 95% bootstrap CIs and all Holm-adjusted p<0.001, while compact SkillOpt improved NFP accuracy on capable models.",
+      "watch_item": "The method was not universally portable and sometimes over-corrected valid clinical assumptions, so it needs model-specific testing before deployment.",
       "hashtags": [
-        "#BreastUltrasound",
-        "#PrecisionOncology",
-        "#MachineLearning",
-        "#MultipleInstanceLearning",
-        "#MedicalAI"
+        "#LLMSafety",
+        "#CancerCommunication",
+        "#PromptEngineering",
+        "#AIValidation",
+        "#ClinicalNLP"
       ],
-      "paper_id": "2026-09-08-medrxiv-multimodal_multiple_instance_learning_for_fibroepithelial_tumor_diagnosis_in_breast_ultras",
-      "paper_title": "Multimodal Multiple Instance Learning for Fibroepithelial Tumor Diagnosis in Breast Ultrasound",
-      "paper_date": "2026-09-08",
+      "paper_id": "2026-09-10-medrxiv-automated_skill_optimisation_for_false_presupposition_handling_in_cancer_communication_ski",
+      "paper_title": "Automated Skill Optimisation for False Presupposition Handling in Cancer Communication: SkillOpt Versus Conventional Prompt Engineering Across Language Models",
+      "paper_date": "2026-09-10",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-09-14T13:30:56",
+      "generated_at": "2026-09-15T12:22:07",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-09-08-medrxiv-a_user_friendly_no_code_application_for_hipaa_compliant_automated_analysis_of_tabular_data",
-    "doi": "10.64898/2026.09.06.26362377",
-    "date": "2026-09-08",
-    "title": "A user-friendly, no-code, application for HIPAA-compliant automated analysis of tabular data at scale",
-    "authors": "Kenny, P. A.",
-    "abstract": "BackgroundClinical research often requires reviewing large volumes of unstructured electronic medical record (EMR) data, a time-consuming task demanding skilled personnel. Large language models (LLMs) like ChatGPT can efficiently analyze and summarize text, potentially accelerating chart review research. However, concerns about personal health information (PHI) leakage limit use of commercial chatbots. Secure, in-house LLMs within fire-walled environments can address these concerns. AimTo develop a user-friendly, scalable application leveraging an in-house ChatGPT 4o-mini on Emplify Healths Azure cloud to automate processing of tabular clinical data while protecting PHI. MethodsThe application imports tabular data (Excel or text), guides users through prompt engineering, and automatically submits data row-by-row to the LLM. It retrieves and tabulates results as specified by users, enabling both automated extraction of clinical parameters, and data summarization/interpretation. Results/ConclusionsInitially designed to identify cancer cases and extract related parameters from pathology reports, a fully generalized application was developed which has found utility in analyzing diverse data sources including cancer registries, cardiology CT reports, imaging narratives, and clinical notes. This tool has significantly accelerated research by reducing data retrieval time, allowing staff to focus on higher-value tasks like data analysis, while maintaining PHI protection.",
+    "id": "2026-09-09-medrxiv-sensitive_glioma_detection_and_recurrence_monitoring_using_a_machine_learning_model_based",
+    "doi": "10.64898/2026.05.29.26354409",
+    "date": "2026-09-09",
+    "title": "Sensitive Glioma Detection and Recurrence Monitoring Using a Machine Learning Model Based on Circulating Monocytes",
+    "authors": "Wu, W.; Chai, R.; Xia, P.; Wu, L.; Yu, B.; Chen, X.; Pang, B.; Chen, D.; Wang, Y.; Wang, N.; Li, X.; Liu, H.; Deng, Q.; Wan, F.; Lyu, F.; Wang, L.; Zhang, W.; Zhang, J.; Jiang, T.; Wang, Q.",
+    "abstract": "BackgroundGlioma induces profound systemic immune alterations despite its anatomical confinement to the central nervous system. Circulating immune cells, particularly monocytes, are key mediators of tumor-host crosstalk and may retain tumor-induced transcriptional imprints. However, their potential clinical utility as blood-based biomarkers for detection and monitoring, remain largely unexplored. Methods and findingsIn this study, we performed integrated single-cell RNA sequencing of blood immune cells and demonstrated that circulating CD14+ monocytes are significantly expanded in glioma patients, exhibiting features of differentiation arrest and increased transcriptional plasticity. These cells harbor glioma-specific molecular signatures distinct from those observed in healthy controls and patients with other tumors. Leveraging these findings, we developed an ensemble machine learning diagnostic model based on transcriptomic profiles of circulating CD14+ monocytes (training cohort, n = 107), which achieved a mean area under the receiver operating characteristic curve (AUC) of 0.975 during cross-validation. In an independent cohort of 567 participants, the model maintained high diagnostic accuracy, yielding an AUC of 0.888 for distinguishing glioma from controls and other tumors. And it achieved a recurrence detection AUC of 0.975 in 51 postoperative samples. Moreover, in a follow-up study involving 30 glioma patients, lower model-derived scores of postoperation were significantly associated with prolonged progression-free survival (log-rank test, P = 0.034), supporting its prognostic utility. ConclusionWe demonstrate circulating CD14+ monocytes undergo glioma-specific transcriptional reprogramming, generating systemic tumor-associated signal captured via transcriptomic profiling. This blood-based diagnostic model provides non-invasive, scalable approach for glioma detection, recurrence surveillance, outcome prediction. Author summaryO_ST_ABSWhy was this study done?C_ST_ABSO_LIDiagnosis and recurrence monitoring for glioma remain challenging with current MRI and biopsy. C_LIO_LIGliomas alter systemic immunity, but whether circulating monocytes carry tumor-specific signals remains unclear. C_LIO_LIWe aimed to develop a blood-based test using circulating monocyte transcriptomes for glioma detection and monitoring. C_LI What did the researchers do and find?O_LISingle-cell RNA-seq revealed that glioma patients have more CD14 monocytes with abnormal differentiation. C_LIO_LIWe built a machine learning model based on monocyte gene expression. It achieved a diagnostic AUC of 0.888 in 567 independent samples and a recurrence detection AUC of 0.975 in 51 postoperative samples. C_LIO_LIIn a follow-up study of 30 patients, lower postoperative model-derived scores predicted longer progression-free survival (P = 0.034). C_LI What do these findings mean?O_LICirculating monocytes capture glioma-specific transcriptional reprogramming features, enabling non-invasive liquid biopsy. C_LIO_LIThe model may help distinguish recurrence from pseudo-progression and guide postoperative risk stratification. C_LIO_LILarger prospective multicenter validation studies are needed to further confirm clinical generalizability. C_LI",
     "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-09-08",
-    "updated": "2026-09-08",
-    "primary_category": "health informatics",
+    "published": "2026-09-09",
+    "updated": "2026-09-09",
+    "primary_category": "oncology",
     "categories": [
-      "health informatics"
+      "oncology"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.06.26362377v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.29.26354409v2"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.06.26362377v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.29.26354409v2.full.pdf"
       }
     ],
-    "score": 47,
+    "score": 49,
     "infographic": {
-      "key_insight": "A no-code, in-house LLM workflow can automate row-by-row analysis of tabular clinical data while keeping protected health information inside a HIPAA-compliant environment.",
-      "clinical_relevance": "This could speed up chart review and registry abstraction for oncology and other clinical research tasks, freeing staff for higher-value analysis.",
+      "key_insight": "Glioma appears to leave a detectable transcriptional signature in circulating CD14+ monocytes, enabling blood-based detection and recurrence monitoring with machine learning.",
+      "clinical_relevance": "This approach could support non-invasive glioma screening, postoperative surveillance, and risk stratification alongside standard imaging and pathology.",
       "method": [
-        "Imports Excel or text tabular data into a user-friendly interface",
-        "Guides users through prompt engineering for extraction or summarization",
-        "Submits each row to a secure in-house ChatGPT 4o-mini and tabulates outputs"
+        "Single-cell RNA sequencing of blood immune cells identified glioma-associated changes in circulating CD14+ monocytes.",
+        "Transcriptomic features from CD14+ monocytes were used to train an ensemble machine learning diagnostic model.",
+        "The model was tested in independent cohorts for glioma detection and postoperative recurrence monitoring."
       ],
-      "evidence_signal": "The abstract reports successful use across multiple real-world data sources, including pathology reports, cancer registries, cardiology CT reports, imaging narratives, and clinical notes.",
-      "watch_item": "Performance appears to be based on deployment experience rather than formal benchmarking, so accuracy, consistency, and workflow validation should be confirmed before broad use.",
+      "evidence_signal": "The model achieved a mean cross-validated AUC of 0.975 in training, AUC 0.888 in an independent cohort of 567 participants, and AUC 0.975 for recurrence detection in 51 postoperative samples.",
+      "watch_item": "Prospective multicenter validation and standardized blood-processing workflows are still needed before clinical implementation.",
       "hashtags": [
-        "#PrecisionOncology",
-        "#AIAutomation",
-        "#HIPAA",
-        "#LLM",
-        "#ClinicalResearch"
+        "#Glioma",
+        "#LiquidBiopsy",
+        "#SingleCellRNAseq",
+        "#MachineLearning",
+        "#PrecisionOncology"
       ],
-      "paper_id": "2026-09-08-medrxiv-a_user_friendly_no_code_application_for_hipaa_compliant_automated_analysis_of_tabular_data",
-      "paper_title": "A user-friendly, no-code, application for HIPAA-compliant automated analysis of tabular data at scale",
-      "paper_date": "2026-09-08",
+      "paper_id": "2026-09-09-medrxiv-sensitive_glioma_detection_and_recurrence_monitoring_using_a_machine_learning_model_based",
+      "paper_title": "Sensitive Glioma Detection and Recurrence Monitoring Using a Machine Learning Model Based on Circulating Monocytes",
+      "paper_date": "2026-09-09",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-09-14T13:30:58",
+      "generated_at": "2026-09-15T12:22:10",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-09-08-medrxiv-withdrawn_combined_triglyceride_glucose_and_frailty_index_tygfi_and_risk_of_endometrial_ca",
-    "doi": "10.64898/2026.07.02.26357105",
-    "date": "2026-09-08",
-    "title": "WITHDRAWN: Combined triglyceride-glucose and frailty index (TyGFI) and risk of endometrial cancer in U.S. women aged >=45: NHANES 2011-2018 analysis integrating data engineering and machine learning with logistic modeling",
-    "authors": "Zhou, Y.; Ma, J.; Zhang, Y.",
-    "abstract": "Withdrawal statementThe authors have withdrawn this manuscript because the number of positive cases in the original data is too small, leading to major flaws in the statistical analysis and rendering the findings and conclusions unreliable. Therefore, the authors do not wish this work to be cited as reference for the project. If you have any questions, please contact the corresponding author.",
-    "category": "Precision Oncology",
+    "id": "2026-09-09-medrxiv-consistent_dna_methylation_patterns_enable_accurate_and_interpretable_cross_platform_class",
+    "doi": "10.1101/2025.10.07.25337348",
+    "date": "2026-09-09",
+    "title": "Consistent DNA methylation patterns enable accurate and interpretable cross-platform classification of central nervous system tumors",
+    "authors": "Moradi, E.; Vuorinen, J.; Hoikka, T.; Hartewig, A.; Helin, L.; Rodriguez-Martinez, A.; Pekkarinen, M.; Vulli, M.; Lehtipuro, S.; Ampuja, S.; Makinen, A.; Fey, V.; Tabaro, F.; De Koker, A.; Paemel, R. V.; De Wilde, B.; Callewaert, N.; Kuusisto, M. E. L.; Teppo, H. R.; Kuittinen, O.; Haapasalo, H.; Nordfors, K.; Nykter, M.; Haapasalo, J.; Kesseli, J.; Rautajoki, K. J.",
+    "abstract": "BackgroundDNA methylation-based classification has become an integral component of central nervous system (CNS) tumor diagnostics in neuro-oncology. However, current classifiers would benefit from improved interpretability, cross-platform generalizability, and scalability in routine clinical practice. MethodsWe developed a hybrid feature selection and machine-learning framework to derive compact, biologically relevant DNA methylation feature sets for CNS tumor classification. Variance-based filtering, intra- and inter-class consistency assessment, and elastic-net logistic regression were combined to identify informative CpG regions. A linear support vector machine (SVM) classifier was trained to distinguish methylation classes using microarray data and applied for sequencing data after imputing missing values. Selected tumor classes were differentiated with a few informative classifying features. ResultsThe framework identified 1,003 informative genomic regions enriched for enhancer elements and neurodevelopmental pathways. In large external validation cohorts profiled by DNA methylation arrays (n = 1,993), the classifier achieved an accuracy of 0.96. The low-dimensional feature sets supported the investigation of diagnostically challenging cases and improved differentiation of histologically similar tumor entities, like embryonal tumors, using as few as two discriminative CpG features. Robust classification was preserved with bisulfite-equivalent targeted methylation sequencing and untargeted Nanopore-sequencing data. MGMT promoter methylation state and off-target read-derived genome-wide DNA copy number profiles provided supportive information. ConclusionsConsistent DNA methylation patterns combined with SVM enable accurate and interpretable CNS tumor classification across sequencing platforms and provide a clinically scalable framework for next-generation neuro-oncology diagnostics. Key pointsRobust cross-platform CNS tumor classification using 163-1,003 CpGs methylation call Genome-wide DNA copy number profiles from off-target reads of targeted sequencing Specific tumor types can be accurately separated using just two CpG features Importance of the studyThis study reports a set of informative DNA methylation features for CNS tumor classification together with their DNA methylation patterns. It introduces an accurate machine learning classification approach for CNS tumors. By selecting 1,003 informative features through a hybrid feature selection, the model achieved high classification accuracy (0.96) using support vector machines. Strong performance is maintained even with 163 features. Our method performs robustly across sequencing platforms and sample types, with a possibility to obtain DNA copy number profiles and other supportive information. This flexibility, reduced complexity, cost-effectiveness, and low-input requirements for sequencing makes it a promising, scalable option for routine use in clinical neuro-oncology. By focusing on select genomic regions, the model enhances interpretability, improves diagnostic confidence, and allows separation between classes with only a few features. In short, our shared features and model increase explainability, providing avenues to support and complement existing neuro-oncology diagnostics.",
+    "category": "Target Biology",
     "source": "medRxiv",
-    "published": "2026-09-08",
-    "updated": "2026-09-08",
-    "primary_category": "public and global health",
+    "published": "2026-09-09",
+    "updated": "2026-09-09",
+    "primary_category": "oncology",
     "categories": [
-      "public and global health"
+      "oncology"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.02.26357105v2"
+        "url": "https://www.medrxiv.org/content/10.1101/2025.10.07.25337348v2"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.02.26357105v2.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.1101/2025.10.07.25337348v2.full.pdf"
       }
     ],
-    "score": 32,
+    "score": 49,
     "infographic": {
-      "key_insight": "This manuscript was withdrawn, so it does not provide a reliable validated insight for predicting endometrial cancer risk using TyGFI in U.S. women aged 45+.",
-      "clinical_relevance": "Because the analysis was deemed statistically flawed, it should not be used to guide research conclusions or clinical interpretation.",
+      "key_insight": "A compact set of consistent DNA methylation features can classify CNS tumors accurately across platforms while remaining interpretable for diagnostics.",
+      "clinical_relevance": "This approach could make routine neuro-oncology testing more scalable, help resolve difficult tumor cases, and support diagnostics on both array and sequencing workflows.",
       "method": [
-        "NHANES 2011–2018 data from U.S. women aged 45+",
-        "Combined triglyceride-glucose (TyG) and frailty index into TyGFI",
-        "Applied logistic modeling and machine-learning workflows"
+        "Selected informative CpG regions using variance filtering, consistency checks, and elastic-net logistic regression",
+        "Trained a linear SVM on methylation array data and adapted it to sequencing data with imputation",
+        "Used low-dimensional feature sets to distinguish tumor classes, including highly similar entities"
       ],
-      "evidence_signal": "The abstract states that the number of positive cases was too small, creating major statistical flaws and making the findings unreliable.",
-      "watch_item": "Do not cite or implement the reported associations without a fully powered reanalysis and independent validation.",
+      "evidence_signal": "In external array-based validation cohorts (n=1,993), the classifier reached 0.96 accuracy and retained robust performance on bisulfite-equivalent targeted sequencing and Nanopore data.",
+      "watch_item": "Cross-platform deployment may still depend on careful handling of missing data, assay-specific preprocessing, and prospective validation in routine clinical settings.",
       "hashtags": [
-        "#PrecisionOncology",
-        "#NHANES",
-        "#CancerResearch",
+        "#CNSTumors",
+        "#DNAMethylation",
         "#MachineLearning",
-        "#Withdrawn"
+        "#NeuroOncology",
+        "#Biomarkers"
       ],
-      "paper_id": "2026-09-08-medrxiv-withdrawn_combined_triglyceride_glucose_and_frailty_index_tygfi_and_risk_of_endometrial_ca",
-      "paper_title": "WITHDRAWN: Combined triglyceride-glucose and frailty index (TyGFI) and risk of endometrial cancer in U.S. women aged >=45: NHANES 2011-2018 analysis integrating data engineering and machine learning with logistic modeling",
-      "paper_date": "2026-09-08",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-09-14T13:31:00",
+      "paper_id": "2026-09-09-medrxiv-consistent_dna_methylation_patterns_enable_accurate_and_interpretable_cross_platform_class",
+      "paper_title": "Consistent DNA methylation patterns enable accurate and interpretable cross-platform classification of central nervous system tumors",
+      "paper_date": "2026-09-09",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-09-15T12:22:12",
       "generator": "openai"
     }
   }

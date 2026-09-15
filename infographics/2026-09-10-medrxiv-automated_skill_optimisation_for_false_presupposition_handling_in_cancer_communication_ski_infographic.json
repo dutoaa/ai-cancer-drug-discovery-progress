@@ -1,0 +1,24 @@
+{
+  "key_insight": "SkillOpt dramatically improved false-presupposition correction in cancer-related LLM responses, but the gains were model-dependent and could increase over-correction.",
+  "clinical_relevance": "For cancer communication tools, prompts should be validated on each target model because better correction of misleading assumptions can come with reduced accuracy on valid questions.",
+  "method": [
+    "Used the physician-verified Cancer-Myth benchmark with 117 FP training questions, 58 FP + 30 NFP validation questions, and 410 unseen FP test questions.",
+    "Compared no correction, a strong seven-example few-shot prompt, GPT-5.4-generated instruction-only prompts, and full/compact SkillOpt skills across seven LLMs.",
+    "A separate GPT-4o model judged outputs, and performance was evaluated with bootstrap confidence intervals and Holm-adjusted significance testing."
+  ],
+  "evidence_signal": "Across GPT-4o, SkillOpt raised FP correction from 15.4-17.6% to 82.2-90.5% with 95% bootstrap CIs and all Holm-adjusted p<0.001, while compact SkillOpt improved NFP accuracy on capable models.",
+  "watch_item": "The method was not universally portable and sometimes over-corrected valid clinical assumptions, so it needs model-specific testing before deployment.",
+  "hashtags": [
+    "#LLMSafety",
+    "#CancerCommunication",
+    "#PromptEngineering",
+    "#AIValidation",
+    "#ClinicalNLP"
+  ],
+  "paper_id": "2026-09-10-medrxiv-automated_skill_optimisation_for_false_presupposition_handling_in_cancer_communication_ski",
+  "paper_title": "Automated Skill Optimisation for False Presupposition Handling in Cancer Communication: SkillOpt Versus Conventional Prompt Engineering Across Language Models",
+  "paper_date": "2026-09-10",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-09-15T12:22:07",
+  "generator": "openai"
+}
