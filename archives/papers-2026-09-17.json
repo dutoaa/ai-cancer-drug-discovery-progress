@@ -1,0 +1,359 @@
+[
+  {
+    "id": "2026-09-11-medrxiv-generative_model_of_patient_health_states_and_pan_cancer_risk_stratification",
+    "doi": "10.64898/2026.09.09.26362676",
+    "date": "2026-09-11",
+    "title": "Generative model of patient health states and pan-cancer risk stratification",
+    "authors": "Khan, A.; Forster, D. T.; Harsh, M.; Zheng, C.; Warner, E. T.; Ritter, D.; Chang, A.; Wei, Q.; Sorensen, T. K.; Marks, D. S.; Sequist, L. V.; Hadlock, J. J.; Fillmore, N. R.; Sander, C.",
+    "abstract": "While large language models are powerful generators of new text, forecasting disease progression from longitudinal health histories remains a challenging problem. We introduce GenEHR, an autoregressive generative model trained on electronic health records (EHRs) from millions of patients that explicitly represents the irregular time intervals between visits when forecasting future clinical events. We combine the general-purpose patient representation learned during foundational training with parameter-efficient supervised adaptation for the task of pan-cancer risk stratification. In five large EHR cohorts supervised adaptation substantially improved prediction performance of a first cancer diagnosis within a five year horizon window. Our retrospective results support the evaluation of GenEHR-CancerRisk as a prospective clinical decision-support tool for prioritizing patients for risk-based screening for aggressive cancer types, such as pancreatic and ovarian cancer.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-09-11",
+    "updated": "2026-09-11",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.09.26362676v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.09.26362676v1.full.pdf"
+      }
+    ],
+    "score": 48,
+    "infographic": {
+      "key_insight": "GenEHR is a generative EHR model that learns patient trajectories, including irregular visit timing, to predict future cancer risk across multiple cancer types.",
+      "clinical_relevance": "The model could help prioritize patients for risk-based screening and earlier evaluation, especially for aggressive cancers such as pancreatic and ovarian cancer.",
+      "method": [
+        "Trained autoregressively on longitudinal EHR data from millions of patients.",
+        "Encodes irregular time gaps between visits when forecasting future clinical events.",
+        "Uses parameter-efficient supervised adaptation for pan-cancer risk stratification."
+      ],
+      "evidence_signal": "In five large EHR cohorts, supervised adaptation improved prediction of first cancer diagnosis within a five-year horizon.",
+      "watch_item": "The findings are retrospective, so prospective validation is still needed before using the tool for clinical decision support.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#EHR",
+        "#CancerRisk",
+        "#MachineLearning",
+        "#ClinicalDecisionSupport"
+      ],
+      "paper_id": "2026-09-11-medrxiv-generative_model_of_patient_health_states_and_pan_cancer_risk_stratification",
+      "paper_title": "Generative model of patient health states and pan-cancer risk stratification",
+      "paper_date": "2026-09-11",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-09-16T12:20:17",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-10-medrxiv-automated_skill_optimisation_for_false_presupposition_handling_in_cancer_communication_ski",
+    "doi": "10.64898/2026.09.08.26362559",
+    "date": "2026-09-10",
+    "title": "Automated Skill Optimisation for False Presupposition Handling in Cancer Communication: SkillOpt Versus Conventional Prompt Engineering Across Language Models",
+    "authors": "Khanna, S.",
+    "abstract": "BackgroundLarge language models (LLMs) may answer cancer questions plausibly while accepting a false presupposition (FP). Prompts that increase FP correction may also challenge questions in which no FP is present (NFP). We compared SkillOpt, an automated skill-optimisation method developed by Microsoft Research, with conventional prompt engineering across models. MethodsUsing the physician-verified Cancer-Myth benchmark, GPT-5.4 optimised a written skill for GPT-4o in three independent 12-step executions. Training used 117 FP questions. Rewrites were selected by combined accuracy on a validation set of 58 FP and 30 NFP questions, then tested on 410 unseen FP questions. A separate GPT-4o judged responses. Across seven LLMs, we compared no correction instruction, a deliberately strong seven-example few-shot prompt, three GPT-5.4-generated instruction-only prompts, and full and compact SkillOpt skills. Further tests examined portability, new questions and valid clinical assumptions. ResultsSkillOpt increased GPT-4o FP correction from 15.4-17.6% to 82.2-90.5%, gains of 66.3-72.9 percentage points (95% bootstrap confidence intervals 61.7-77.3; all Holm-adjusted p<0.001). Only two or three rewrites were accepted per execution. The first full skill achieved 92.7-96.6% correction on three recipient models but 6.3-16.3% on two weaker models, where few-shot prompting achieved 44.6-54.6%. On Gemini 3.5 Flash and GPT-5.6 Luna, compact SkillOpt retained 90.0-92.9% correction while increasing NFP accuracy from 59.2-79.2% with the full skill to 85.8-93.3%. Both approaches sometimes challenged valid clinical assumptions. ConclusionsSkillOpt produced large, repeatable gains, but it was neither universally portable nor free of over-correction. Automated and conventional prompts should be compared for each intended model using tests of both FP correction and NFP accuracy. Compact SkillOpt may improve this balance on capable models.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-09-10",
+    "updated": "2026-09-10",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.08.26362559v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.08.26362559v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "SkillOpt, an automated prompt-optimization method, dramatically improved cancer-myth false-presupposition correction in LLMs, but the benefit varied by model and sometimes increased over-correction.",
+      "clinical_relevance": "For cancer communication tools, prompt strategies should be tested on each target model for both false-presupposition correction and preservation of valid clinical assumptions before deployment.",
+      "method": [
+        "Used the physician-verified Cancer-Myth benchmark to train and validate prompt rewrites.",
+        "Ran three independent GPT-5.4 SkillOpt optimizations for GPT-4o using FP and NFP examples.",
+        "Compared no instruction, strong few-shot prompting, GPT-5.4-generated prompts, and full/compact SkillOpt across seven LLMs."
+      ],
+      "evidence_signal": "On 410 unseen false-presupposition questions, SkillOpt raised GPT-4o correction from 15.4–17.6% to 82.2–90.5%, with strong gains supported by bootstrap confidence intervals and Holm-adjusted p<0.001.",
+      "watch_item": "SkillOpt was not universally portable and could still challenge valid clinical assumptions, so model-specific validation is essential.",
+      "hashtags": [
+        "#LLM",
+        "#CancerCommunication",
+        "#PromptEngineering",
+        "#AIinHealthcare",
+        "#PrecisionOncology"
+      ],
+      "paper_id": "2026-09-10-medrxiv-automated_skill_optimisation_for_false_presupposition_handling_in_cancer_communication_ski",
+      "paper_title": "Automated Skill Optimisation for False Presupposition Handling in Cancer Communication: SkillOpt Versus Conventional Prompt Engineering Across Language Models",
+      "paper_date": "2026-09-10",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-09-16T12:20:20",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-11-medrxiv-vascular_and_neurodegenerative_contributions_to_cognitive_decline_and_multidomain_progress",
+    "doi": "10.64898/2026.09.09.26362673",
+    "date": "2026-09-11",
+    "title": "Vascular and neurodegenerative contributions to cognitive decline and multidomain progression in de novo Parkinsons disease",
+    "authors": "Moqadam, R.; Azizi, H.; Raeesi, S.; Zeighami, Y.; Dadar, M.",
+    "abstract": "INTRODUCTIONCognitive decline in Parkinsons disease (PD) may reflect interacting neurodegenerative and cerebrovascular processes, but their distinct temporal contributions remain unclear. METHODSNewly diagnosed, untreated PD participants from the PPMI who were cognitively normal at baseline and had at least three years of cognitive follow-ups were included. Linear mixed-effects models examined longitudinal atrophy, white matter hyperintensity (WMH), and clinical trajectories. Mixed-effects models also examined the associations between baseline WMHs and a decline-related atrophy pattern expression score with subsequent multidomain clinical progression. RESULTS58 participants experienced cognitive decline and 292 remained cognitively stable. Converters showed faster decline across all cognitive domains, accompanied by faster worsening of motor, gait, neuropsychiatric, sleep-related, and functional symptoms. Converters further showed higher baseline WMH burden without accelerated accumulation, alongside accelerated limbic and subcortical atrophy. Greater baseline WMH burden was associated with differential longitudinal progression in converters across eleven clinical outcomes, including cognition, gait, and functional independence (all q<0.05). Baseline atrophy pattern expression showed similar converter-dependent associations with longitudinal progression across eight outcomes, with the strongest interaction for MoCA (q<0.001). In joint models, atrophy pattern expression retained broader associations with cognitive and motor progression, whereas WMH burden retained more selective associations with neuropsychiatric symptoms and functional independence. DISCUSSIONCognitive decline in PD was characterized by accelerated neurodegeneration occurring against a background of WMH-related cerebrovascular vulnerability rather than accelerated WMH accumulation, supporting distinct temporal patterns and complementary clinical associations of neurodegenerative and vascular processes with cognitive impairment and broader disease progression in PD. HighlightsO_LIPD converters showed accelerated limbic and subcortical gray matter atrophy. C_LIO_LIWMH burden was higher in future PD converters. C_LIO_LIBaseline atrophy pattern expression predicted cognitive and motor progression. C_LIO_LIWMH burden was selectively associated with neuropsychiatric symptoms and functional independence C_LIO_LIVascular and neurodegenerative markers provided complementary prognostic information. C_LI Research in ContextO_ST_ABSSystematic reviewC_ST_ABSThe authors reviewed peer-reviewed literature on cognitive decline in Parkinsons disease (PD), emphasizing longitudinal structural MRI, white matter hyperintensities (WMH), and studies examining clinical progression. Prior work supports both neurodegenerative and vascular contributions to cognitive decline, but their longitudinal relationships with cognitive decline and multidomain progression remain incompletely characterized. InterpretationWhile both WMHs and neurodegenerative pathologies contribute to cognitive and multidomain impairments in PD, WMH burden differences precede symptomatic cognitive decline, whereas longitudinal progression of atrophy is more closely intertwined with cognitive decline. Future directionsIndependent longitudinal cohorts should examine the interactions between longitudinal progression in WMHs, neurodegeneration, molecular biomarkers, and clinical symptoms and whether their combination can improve individualized prediction of cognitive decline and subsequent progression to dementia in PD.",
+    "category": "Virtual Screening",
+    "source": "medRxiv",
+    "published": "2026-09-11",
+    "updated": "2026-09-11",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.09.26362673v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.09.26362673v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "In de novo Parkinson’s disease, cognitive decline appears to be driven by faster neurodegeneration on top of pre-existing white matter hyperintensity–related vascular vulnerability, rather than by faster WMH accumulation itself.",
+      "clinical_relevance": "This suggests that both brain atrophy patterns and vascular burden may help identify patients at higher risk of multidomain progression in Parkinson’s disease.",
+      "method": [
+        "Longitudinal PPMI cohort of newly diagnosed, untreated PD participants who were cognitively normal at baseline.",
+        "Linear mixed-effects models assessed cognitive, motor, and imaging trajectories over at least 3 years.",
+        "Mixed-effects models tested whether baseline WMH burden and a decline-related atrophy pattern predicted later multidomain clinical progression."
+      ],
+      "evidence_signal": "Among 350 participants, 58 converted to cognitive decline and 292 remained stable; converters showed faster decline across cognitive and non-cognitive domains, with significant associations reported at q<0.05 for multiple outcomes.",
+      "watch_item": "Findings are observational and cohort-specific, so the temporal and predictive value of WMH burden and atrophy patterns should be validated before use in routine risk stratification.",
+      "hashtags": [
+        "#ParkinsonsDisease",
+        "#CognitiveDecline",
+        "#WhiteMatterHyperintensities",
+        "#Neurodegeneration",
+        "#LongitudinalImaging"
+      ],
+      "paper_id": "2026-09-11-medrxiv-vascular_and_neurodegenerative_contributions_to_cognitive_decline_and_multidomain_progress",
+      "paper_title": "Vascular and neurodegenerative contributions to cognitive decline and multidomain progression in de novo Parkinsons disease",
+      "paper_date": "2026-09-11",
+      "paper_category": "Virtual Screening",
+      "generated_at": "2026-09-16T12:20:23",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-11-medrxiv-multi_trait_polygenic_profiling_and_survival_free_of_dementia_and_disability_results_from",
+    "doi": "10.64898/2026.09.09.26362686",
+    "date": "2026-09-11",
+    "title": "Multi-trait Polygenic Profiling and Survival Free of Dementia and Disability: Results from the Health and Retirement Study",
+    "authors": "Tawaldemedhen, Y.; Clocchiatti-Tuozzo, S.; Rivier, C.; Huo, S.; Silberfeld, A.; D'Aoust, T.; Debette, S.; de Havenon, A.; Gill, T. M.; Falcone, G. J.",
+    "abstract": "ObjectiveTo determine whether a multi-trait polygenic profile for dementia is associated with dementia- and disability-free survival in middle-aged and older adults. BackgroundClinical trials of brain health and aging increasingly use holistic, patient-centered outcomes that capture overall health status. Survival free of dementia and disability is one such outcome. We hypothesized that adverse polygenic profiles for dementia would be associated with higher risk of dementia, disability, or death. Design/MethodsWe conducted a genetic association study within the Health and Retirement Study, a prospective, nationally representative longitudinal cohort of U.S. adults. Polygenic profiling used the previously validated integrated polygenic risk score for dementia (iPRS-DEM), which incorporates neurodegenerative and vascular genetic components. Participants were categorized as having favorable ([&le;]20th percentile), intermediate (20th-80th percentile), or poor (>80th percentile) polygenic profiles. The primary outcome was a composite of dementia, disability, or death. Cox proportional hazards models were adjusted for age, sex, genetic ancestry, and genetic principal components. Interaction between continuous iPRS-DEM and APOE {varepsilon}4 status was assessed for 31-year outcome risk. ResultsAmong 45,234 HRS participants, 15,620 provided DNA samples, 15,565 had genotype data after quality control and imputation, and 14,333 were free of dementia and disability at baseline (median age 55 years; 58% female). Compared with a favorable polygenic profile, intermediate and poor profiles were associated with higher risk of the composite outcome (HR 1.14, 95% CI 1.07-1.21 and HR 1.43, 95% CI 1.26-1.63, respectively). The relative association was strongest for dementia; for poor versus favorable profiles, HRs were 1.58 (95% CI 1.21-2.05) for dementia, 1.43 (95% CI 1.14-1.79) for disability, and 1.33 (95% CI 1.15-1.54) for death. An interaction between continuous iPRS-DEM and APOE {varepsilon}4 status was observed for 31-year dementia risk (P=0.016). Relative to favorable-profile APOE {varepsilon}4 non-carriers, dementia risk was highest among participants with a poor profile who were APOE {varepsilon}4 carriers (HR 2.32, 95% CI 1.73-3.12). ConclusionsAdverse polygenic profiles for dementia were associated with higher composite risk of dementia, disability, or death in a large population-based cohort, with the strongest association observed for dementia. Joint consideration of iPRS-DEM and APOE {varepsilon}4 further identified individuals at elevated dementia risk. These findings support the potential value of polygenic profiling for risk stratification while highlighting limitations related to ancestry, generalizability, and clinical translation.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-09-11",
+    "updated": "2026-09-11",
+    "primary_category": "genetic and genomic medicine",
+    "categories": [
+      "genetic and genomic medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.09.26362686v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.09.26362686v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "A multi-trait dementia polygenic profile was associated with progressively lower dementia-, disability-, and death-free survival in middle-aged and older adults.",
+      "clinical_relevance": "This suggests integrated genetic risk profiling may help stratify long-term brain health risk in research settings focused on patient-centered aging outcomes.",
+      "method": [
+        "Prospective genetic association study in the Health and Retirement Study cohort",
+        "Used the integrated polygenic risk score for dementia (iPRS-DEM) and grouped participants into favorable, intermediate, or poor profiles",
+        "Cox models adjusted for age, sex, ancestry, and genetic principal components; APOE ε4 interaction was tested"
+      ],
+      "evidence_signal": "In 14,333 participants free of dementia and disability at baseline, poorer polygenic profiles showed higher composite outcome risk, with the strongest association for dementia and a significant APOE ε4 interaction for 31-year dementia risk.",
+      "watch_item": "Findings are observational and based on one cohort, so they need replication before use in individual prognostication or decision-making.",
+      "hashtags": [
+        "#PolygenicRisk",
+        "#DementiaResearch",
+        "#HealthyAging",
+        "#Genomics",
+        "#CohortStudy"
+      ],
+      "paper_id": "2026-09-11-medrxiv-multi_trait_polygenic_profiling_and_survival_free_of_dementia_and_disability_results_from",
+      "paper_title": "Multi-trait Polygenic Profiling and Survival Free of Dementia and Disability: Results from the Health and Retirement Study",
+      "paper_date": "2026-09-11",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-09-16T12:20:25",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-10-medrxiv-genetic_discovery_using_deep_learning_derived_optic_nerve_integrity_phenotypes",
+    "doi": "10.64898/2026.09.08.26362398",
+    "date": "2026-09-10",
+    "title": "Genetic discovery using deep learning-derived optic nerve integrity phenotypes",
+    "authors": "Aman, A. M.; Zaher, E.; Diaz-Torres, S.; Driessen, S. J.; de Vries, V. A.; van der Heide, F. C.; Kolovos, A.; Schmidt, J. M.; Marshall, H. N.; Saleh, L.; Schulze, A.; Blokland, G. A.; Webers, C. A. B.; van der Kallen, C. J. H.; Wesselius, A.; Arts, I.; van Asten, F.; Gorski, M.; Zimmermann, M. E.; Stark, K. J.; Heid, I. M.; Young, T. L.; Pasquale, L. R.; Segre, A. V.; Wiggs, J. L.; Khawaja, A. P.; Zack, D. J.; Wong, R. C. B.; Hewitt, A. W.; Schuster, A. K.; Berendschot, T. T. J. M.; Thiadens, A. A. H. J.; van Garderen, K. A.; Klaver, C. C. W.; Hysi, P. G.; Hammond, C. J.; Brandl, C.; Craig, J.",
+    "abstract": "The peripapillary retinal nerve fibre layer (pRNFL) thickness and Bruchs membrane opening-minimum rim width (BMO-MRW) are three-dimensional retinal biomarkers for glaucoma. We aimed to demonstrate that AI-derived thickness from two-dimensional fundus images can act as proxies, enabling the discovery of novel neurodegenerative loci. AI-derived pRNFL and BMO-MRW strongly correlated with OCT-derived thickness (r: 0.69 and 0.79, respectively). After validation, these phenotypes were predicted in two cohorts lacking disc-centred OCT: the UK Biobank and the Canadian Longitudinal Study on Aging. The predicted phenotypes showed strong genetic correlations with directly measured phenotypes from a previous study for both phenotypes (0.70 and 0.96, respectively). This data increased statistical power, identifying 29 loci for pRNFL thickness and 122 loci for BMO-MRW, including 14 loci that were independent of VCDR. We observed shared and sector-specific thickness loci overlapping glaucoma loci and revealed loci independent of known risk factors. Together, these results emphasise that multidimensional inferences can be drawn from 2D imaging, enabling downstream genetic analyses.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-09-10",
+    "updated": "2026-09-10",
+    "primary_category": "genetic and genomic medicine",
+    "categories": [
+      "genetic and genomic medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.08.26362398v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.08.26362398v1.full.pdf"
+      }
+    ],
+    "score": 44,
+    "infographic": {
+      "key_insight": "Deep learning can infer optic nerve integrity traits from standard fundus photos, enabling much larger genetic studies that uncover new neurodegenerative loci.",
+      "clinical_relevance": "This approach could expand glaucoma-related biomarker discovery using routinely collected eye images, especially where OCT is unavailable.",
+      "method": [
+        "Trained AI to estimate pRNFL thickness and BMO-MRW from 2D fundus images.",
+        "Validated AI-derived traits against OCT measurements and then imputed them in UK Biobank and the Canadian Longitudinal Study on Aging.",
+        "Ran genetic association analyses to identify loci linked to the predicted phenotypes."
+      ],
+      "evidence_signal": "AI-derived pRNFL and BMO-MRW correlated well with OCT measures (r=0.69 and 0.79), and the predicted traits showed strong genetic correlations with prior direct measurements (0.70 and 0.96).",
+      "watch_item": "Because the phenotypes are inferred from images rather than directly measured, performance and transferability may vary across cameras, populations, and datasets.",
+      "hashtags": [
+        "#DeepLearning",
+        "#Genetics",
+        "#Glaucoma",
+        "#RetinalImaging",
+        "#Biomarkers"
+      ],
+      "paper_id": "2026-09-10-medrxiv-genetic_discovery_using_deep_learning_derived_optic_nerve_integrity_phenotypes",
+      "paper_title": "Genetic discovery using deep learning-derived optic nerve integrity phenotypes",
+      "paper_date": "2026-09-10",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-09-16T12:20:28",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-11-medrxiv-hemoncagent_an_artificial_intelligence_system_for_retrieving_structured_and_narrative_onco",
+    "doi": "10.64898/2026.09.09.26362651",
+    "date": "2026-09-11",
+    "title": "HemOncAgent: an artificial intelligence system for retrieving structured and narrative oncology knowledge",
+    "authors": "Yang, A. J.; Zaki, H. A.; Seto, A.; Kim, T.; Riaz, I. B.; Srisuwananukorn, A.; Cowan, A. J.; Yang, P. C.; Warner, J. L.",
+    "abstract": "Oncology knowledge spans structured and unstructured datasets of drugs, regimens, conditions, and identifiers, as well as clinician-authored narratives describing treatment sequencing across disease settings. Answering clinical questions may require accessing both databases and free-text narratives, but existing intelligent retrieval systems favor either relational facts or narrative context. We developed HemOncAgent, an artificial intelligence agent that selects among retrieval tools for the HemOnc knowledge ecosystem: HemOncKB, a curated knowledge graph for pharmacologic relationships, and HemOnc.org, a narrative resource for care pathways. Across structured and narrative benchmarks, HemOncAgent maintained high-fidelity retrieval across question types for which single-source systems showed domain-specific limitations, supporting hybrid tool-based retrieval for more reliable oncology knowledge access.",
+    "category": "Therapeutic Discovery",
+    "source": "medRxiv",
+    "published": "2026-09-11",
+    "updated": "2026-09-11",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.09.26362651v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.09.26362651v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "HemOncAgent is a hybrid AI retrieval system that chooses between structured and narrative oncology knowledge sources to answer treatment questions more reliably than single-source approaches.",
+      "clinical_relevance": "It could help clinicians and researchers quickly find more complete, context-aware oncology drug and regimen information across both databases and free-text care pathways.",
+      "method": [
+        "Selects the best retrieval tool for each question",
+        "Searches HemOncKB for structured pharmacologic relationships",
+        "Searches HemOnc.org for narrative treatment-sequencing guidance"
+      ],
+      "evidence_signal": "The abstract reports high-fidelity retrieval across structured and narrative benchmarks, especially where single-source systems had domain-specific limitations.",
+      "watch_item": "Performance depends on the quality, coverage, and maintenance of the underlying knowledge sources, so gaps or inconsistencies could still affect outputs.",
+      "hashtags": [
+        "#AIinOncology",
+        "#KnowledgeRetrieval",
+        "#ClinicalNLP",
+        "#DrugDiscovery",
+        "#CancerInformatics"
+      ],
+      "paper_id": "2026-09-11-medrxiv-hemoncagent_an_artificial_intelligence_system_for_retrieving_structured_and_narrative_onco",
+      "paper_title": "HemOncAgent: an artificial intelligence system for retrieving structured and narrative oncology knowledge",
+      "paper_date": "2026-09-11",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-09-16T12:20:30",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-10-medrxiv-expanded_access_use_of_intravenous_gene_transfer_with_aav9_glb1_in_a_juvenile_gm1_ganglios",
+    "doi": "10.64898/2026.09.04.26361573",
+    "date": "2026-09-10",
+    "title": "Expanded Access use of Intravenous Gene Transfer with AAV9-GLB1 in a Juvenile GM1 Gangliosidosis Participant",
+    "authors": "Lewis, C. J.; Akmal, H.; D'Souza, P.; Johnston, J. M.; Ashraf, S.; Vezina, G.; Chipman, S. I.; Blackwood, M.; Yousef, M. H.; Quezado, Z.; Gahl, W. A.; Byrne, B. J.; Flotte, T. R.; Jiang, X. R.; Thurm, A.; Gross, A. L.; Keeler, A.; Martin, D. R.; Sena-Esteves, M.; Gray-Edwards, H. L.; Wang, R. Y.; Tifft, C. J.",
+    "abstract": "GM1 gangliosidosis is an inherited and progressively neurodegenerative lysosomal storage disorder with no approved therapy. We report 5-year safety and 3-year clinical, biochemical, and neuroimaging efficacy outcomes following expanded-access intravenous AAV9-GLB1 gene therapy in GT01, a 6-10-year-old female with juvenile-onset GM1 gangliosidosis. During participation in a natural history study before gene transfer, GT01 developed seizures, dysarthria, loss of ambulation, and progressive neurodegeneration. She received a single intravenous administration of AAV9-GLB1 at 1.5x1013 vector genomes per kilogram of body weight. Early improvements included the resolution of dysphagia, increased interactions with others, assisted ambulation, and gains in specific domains of adaptive functioning. She was seizure-free without anti-epileptic drugs 18 months post dosing with sustained seizure freedom at the study completion. Cerebrospinal fluid concentrations of GM1 ganglioside and H3N2b (a pentasaccharide biomarker indicative of biochemical improvement in this disorder) concentrations decreased by 50% and {beta}-galactosidase reached normal activity. Brain, thalamic, and net fiber tract volume assessed by differential tractography increased and ventriculomegaly improved three years post-dosing. These results indicate that meaningful benefit can be achieved even in advanced neurologic disease.",
+    "category": "Therapeutic Discovery",
+    "source": "medRxiv",
+    "published": "2026-09-10",
+    "updated": "2026-09-10",
+    "primary_category": "genetic and genomic medicine",
+    "categories": [
+      "genetic and genomic medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.04.26361573v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.04.26361573v1.full.pdf"
+      }
+    ],
+    "score": 40,
+    "infographic": {
+      "key_insight": "A single intravenous AAV9-GLB1 gene transfer was associated with sustained clinical, biochemical, and neuroimaging improvement in a juvenile GM1 gangliosidosis participant over multi-year follow-up.",
+      "clinical_relevance": "This expanded-access case suggests that gene therapy may provide meaningful benefit even in advanced neurodegenerative lysosomal disease, though broader confirmation is needed.",
+      "method": [
+        "Expanded-access, one-time intravenous AAV9-GLB1 administration",
+        "Longitudinal follow-up for 5 years of safety and 3 years of efficacy",
+        "Clinical, biochemical, and neuroimaging assessments tracked over time"
+      ],
+      "evidence_signal": "The abstract reports a single-participant longitudinal evaluation with seizure, adaptive-function, CSF biomarker, enzyme activity, and MRI/tractography outcomes improving after treatment.",
+      "watch_item": "Because this is a single-patient expanded-access report, the apparent benefits may not generalize and causality cannot be firmly established.",
+      "hashtags": [
+        "#GeneTherapy",
+        "#AAV9",
+        "#RareDisease",
+        "#Neurology",
+        "#LysosomalStorageDisorder"
+      ],
+      "paper_id": "2026-09-10-medrxiv-expanded_access_use_of_intravenous_gene_transfer_with_aav9_glb1_in_a_juvenile_gm1_ganglios",
+      "paper_title": "Expanded Access use of Intravenous Gene Transfer with AAV9-GLB1 in a Juvenile GM1 Gangliosidosis Participant",
+      "paper_date": "2026-09-10",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-09-16T12:20:32",
+      "generator": "openai"
+    }
+  }
+]
