@@ -1,0 +1,24 @@
+{
+  "key_insight": "PRISM automates multi-phase CT subtraction for RCC by converting routine scans into registered, color-coded digital subtraction volumes with minimal manual interpretation.",
+  "clinical_relevance": "This workflow could make renal tumor enhancement assessment more consistent and faster by standardizing phase comparison and highlighting subtle enhancement patterns for review.",
+  "method": [
+    "Automated DICOM phase classification and loading",
+    "Deep-learning isotropic upsampling with RIFE plus kidney segmentation with TotalSegmentator v2",
+    "Rigid + affine + B-spline registration in SimpleITK, followed by dual-channel subtraction visualization"
+  ],
+  "evidence_signal": "Across 200 registrations in five patients and five experiments, the team identified settings that preserved quality while reducing compute time, including a 40 mm B-spline grid and 5% metric sampling.",
+  "watch_item": "Performance was evaluated on a small patient set, so broader validation is needed before assuming the same registration settings and subtraction thresholds will generalize across scanners and anatomy.",
+  "hashtags": [
+    "#CTImaging",
+    "#RenalCancer",
+    "#DigitalSubtraction",
+    "#MedicalAI",
+    "#ImageRegistration"
+  ],
+  "paper_id": "2026-09-13-medrxiv-prism_phase_resolved_isotropic_subtraction_mapping_for_automated_multi_phase_ct_digital_su",
+  "paper_title": "PRISM: Phase-Resolved Isotropic Subtraction Mapping for Automated Multi-Phase CT Digital Subtraction Angiography",
+  "paper_date": "2026-09-13",
+  "paper_category": "Target Biology",
+  "generated_at": "2026-09-18T11:58:48",
+  "generator": "openai"
+}
