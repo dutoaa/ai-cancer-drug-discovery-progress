@@ -1,13 +1,13 @@
 {
-  "key_insight": "PRISM automates multi-phase CT subtraction for RCC by converting routine scans into registered, color-coded digital subtraction volumes with minimal manual interpretation.",
-  "clinical_relevance": "This workflow could make renal tumor enhancement assessment more consistent and faster by standardizing phase comparison and highlighting subtle enhancement patterns for review.",
+  "key_insight": "PRISM automates multi-phase CT subtraction imaging for RCC by combining isotropic interpolation, kidney segmentation, deformable registration, and color-coded enhancement maps to replace subjective visual phase comparison.",
+  "clinical_relevance": "This could make renal tumor characterization more consistent and efficient by highlighting enhancement patterns that help distinguish lesions across CT phases.",
   "method": [
-    "Automated DICOM phase classification and loading",
-    "Deep-learning isotropic upsampling with RIFE plus kidney segmentation with TotalSegmentator v2",
-    "Rigid + affine + B-spline registration in SimpleITK, followed by dual-channel subtraction visualization"
+    "Loaded DICOMs and classified contrast phases automatically",
+    "Used RIFE for isotropic interpolation and TotalSegmentator v2 for kidney segmentation",
+    "Applied rigid, affine, and B-spline registration with SimpleITK, then generated dual-channel subtraction visualizations"
   ],
-  "evidence_signal": "Across 200 registrations in five patients and five experiments, the team identified settings that preserved quality while reducing compute time, including a 40 mm B-spline grid and 5% metric sampling.",
-  "watch_item": "Performance was evaluated on a small patient set, so broader validation is needed before assuming the same registration settings and subtraction thresholds will generalize across scanners and anatomy.",
+  "evidence_signal": "In 200 registrations across five patients and five experiments, the authors found a 40 mm B-spline grid, 5% metric sampling, and a single-level pyramid gave near-optimal registration performance, with subtraction thresholds showing a tradeoff between signal-to-noise and retained enhancing volume.",
+  "watch_item": "The pipeline’s performance and threshold choices were evaluated on a small patient set, so broader validation and robust integration into varied clinical workflows are still needed.",
   "hashtags": [
     "#CTImaging",
     "#RenalCancer",
@@ -19,6 +19,6 @@
   "paper_title": "PRISM: Phase-Resolved Isotropic Subtraction Mapping for Automated Multi-Phase CT Digital Subtraction Angiography",
   "paper_date": "2026-09-13",
   "paper_category": "Target Biology",
-  "generated_at": "2026-09-18T11:58:48",
+  "generated_at": "2026-09-19T11:42:58",
   "generator": "openai"
 }
