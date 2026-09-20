@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-09-19
+Generated: 2026-09-20
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. Interpretable biomarker programs predict treatment response in lupus nephritis: patient-level validation across four regimens
@@ -19,7 +19,23 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.09.14.26362626v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-15-medrxiv-the_sound_of_snoring_ai_based_acoustic_phenotyping_of_upper_airway_obstruction_in_obstruct_infographic.json
 
-## 3. Mechanistic Assessment of Norepinephrine Therapy versus Angiotensin-II in Septic Shock (MANTRA): Study Protocol for a multicenter randomized trial
+## 3. Task-Specific Quality Gating for Retinal Optical Coherence Tomography B-Scans: Learned Representations Over Scalar Metrics in Choroid Segmentation
+
+- Date: 2026-09-15
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.14.26363079v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.14.26363079v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-15-medrxiv-task_specific_quality_gating_for_retinal_optical_coherence_tomography_b_scans_learned_repr_infographic.json
+
+## 4. The Human Hearing Atlas: a canonical map of human hearing
+
+- Date: 2026-09-15
+- Category: Clinical Translation
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.14.26363004v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.14.26363004v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-15-medrxiv-the_human_hearing_atlas_a_canonical_map_of_human_hearing_infographic.json
+
+## 5. Mechanistic Assessment of Norepinephrine Therapy versus Angiotensin-II in Septic Shock (MANTRA): Study Protocol for a multicenter randomized trial
 
 - Date: 2026-09-14
 - Category: Precision Oncology
@@ -27,7 +43,7 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.09.12.26362906v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-14-medrxiv-mechanistic_assessment_of_norepinephrine_therapy_versus_angiotensin_ii_in_septic_shock_man_infographic.json
 
-## 4. Photoacoustic imaging of intestinal physiological biomarkers in infants and children
+## 6. Photoacoustic imaging of intestinal physiological biomarkers in infants and children
 
 - Date: 2026-09-15
 - Category: Clinical Translation
@@ -35,18 +51,18 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.09.14.26362277v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-15-medrxiv-photoacoustic_imaging_of_intestinal_physiological_biomarkers_in_infants_and_children_infographic.json
 
-## 5. A gut microbiome-derived risk score is associated with future cancer development
+## 7. Antenatal Iron-Folic Acid Supplementation Gaps in Nigeria: A Predictive Machine Learning Analysis of Non-Initiation and Sub-Optimal Duration Using NDHS 2023-24
 
-- Date: 2026-09-13
+- Date: 2026-09-15
 - Category: Target Biology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.09.26362619v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.09.26362619v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-13-medrxiv-a_gut_microbiome_derived_risk_score_is_associated_with_future_cancer_development_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.14.26363020v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.14.26363020v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-15-medrxiv-antenatal_iron_folic_acid_supplementation_gaps_in_nigeria_a_predictive_machine_learning_an_infographic.json
 
-## 6. PRISM: Phase-Resolved Isotropic Subtraction Mapping for Automated Multi-Phase CT Digital Subtraction Angiography
+## 8. Longitudinal interferon signatures are associated with disease flare in dermatomyositis
 
-- Date: 2026-09-13
-- Category: Target Biology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.10.26362169v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.10.26362169v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-13-medrxiv-prism_phase_resolved_isotropic_subtraction_mapping_for_automated_multi_phase_ct_digital_su_infographic.json
+- Date: 2026-09-15
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.15.26362919v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.15.26362919v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-15-medrxiv-longitudinal_interferon_signatures_are_associated_with_disease_flare_in_dermatomyositis_infographic.json

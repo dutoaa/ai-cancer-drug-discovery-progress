@@ -1,24 +1,24 @@
 {
-  "key_insight": "Snoring acoustics alone can help distinguish palatal from epiglottic upper-airway obstruction in obstructive sleep apnea, suggesting a non-invasive acoustic phenotype.",
-  "clinical_relevance": "If validated further, this approach could support lower-burden, more scalable screening or anatomical assessment compared with invasive DISE.",
+  "key_insight": "Machine learning can distinguish palatal from epiglottic snoring using acoustic features alone, suggesting snoring carries a measurable signature of upper-airway obstruction site.",
+  "clinical_relevance": "If validated, this non-invasive approach could help triage or complement DISE in obstructive sleep apnea by identifying likely obstruction anatomy from recorded snoring.",
   "method": [
-    "Retrospective analysis of 159 DISE recordings from adults with moderate, non-positional OSA",
-    "Expert examiners labeled snoring events by anatomical source; only fully agreed events were kept",
-    "Extracted spectral, cepstral, temporal, and harmonic features and trained SVM/MLP models with nested patient-independent cross-validation"
+    "Retrospective analysis of 159 DISE recordings from adults with moderate, non-positional OSA.",
+    "Snoring events were labeled by two blinded experts, and only fully agreed events were analyzed.",
+    "Spectral, cepstral, temporal, and harmonic features were selected and tested with SVM and MLP models using patient-independent nested cross-validation."
   ],
-  "evidence_signal": "Using 1,759 snoring events (1,054 palatal; 705 epiglottic), both models achieved ROC AUC 0.90 ± 0.03 with balanced accuracy around 0.81–0.83 under patient-independent validation.",
-  "watch_item": "This is a retrospective, single-dataset study based on DISE-labeled events, so generalizability to broader patients and real-world recording conditions still needs prospective validation.",
+  "evidence_signal": "Using 1,759 snoring events, both models achieved ROC AUC 0.90 ± 0.03, with balanced accuracy of 0.83 for SVM and 0.81 for MLP.",
+  "watch_item": "Results come from retrospective DISE audio with expert-labeled high-agreement events, so generalization to noisier real-world recordings and broader OSA populations still needs confirmation.",
   "hashtags": [
     "#SleepApnea",
     "#MachineLearning",
     "#AcousticBiomarkers",
-    "#NonInvasiveDiagnostics",
-    "#MedicalAI"
+    "#DigitalHealth",
+    "#NoninvasiveDiagnosis"
   ],
   "paper_id": "2026-09-15-medrxiv-the_sound_of_snoring_ai_based_acoustic_phenotyping_of_upper_airway_obstruction_in_obstruct",
   "paper_title": "The sound of snoring: AI-based acoustic phenotyping of upper airway obstruction in Obstructive Sleep Apnea",
   "paper_date": "2026-09-15",
   "paper_category": "Therapeutic Discovery",
-  "generated_at": "2026-09-19T11:42:51",
+  "generated_at": "2026-09-20T11:55:20",
   "generator": "openai"
 }

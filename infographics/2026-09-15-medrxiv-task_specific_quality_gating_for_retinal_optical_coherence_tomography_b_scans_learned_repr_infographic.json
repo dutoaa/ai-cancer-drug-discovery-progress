@@ -1,0 +1,24 @@
+{
+  "key_insight": "Task-specific quality gating for OCT choroid segmentation works better with learned image representations than with traditional scalar image-quality metrics.",
+  "clinical_relevance": "More reliable scan filtering could improve the consistency of retinal biomarker extraction by preventing low-quality B-scans from entering automated segmentation workflows.",
+  "method": [
+    "Compared scalar NR-IQA metrics (BRISQUE, NIQE, PIQE, SNR, PSNR) against pretrained feature embeddings as quality gates.",
+    "Evaluated general-purpose ImageNet models and retinal foundation models using supervised linear probing and unsupervised K-Means clustering.",
+    "Used choroid segmentation on 6,076 OCT B-scans from 80 subjects as the prototype task."
+  ],
+  "evidence_signal": "All scalar metrics were weak predictors of segmentation success (|r| < 0.20), while learned representations improved discrimination, reaching ROC-AUC up to 0.77 for ImageNet models and about 0.81 for RETFound.",
+  "watch_item": "The results are task- and model-specific, so a gate that works for choroid segmentation may not transfer directly to other OCT tasks or devices without revalidation.",
+  "hashtags": [
+    "#OCT",
+    "#RetinalAI",
+    "#ImageQuality",
+    "#FoundationModels",
+    "#Segmentation"
+  ],
+  "paper_id": "2026-09-15-medrxiv-task_specific_quality_gating_for_retinal_optical_coherence_tomography_b_scans_learned_repr",
+  "paper_title": "Task-Specific Quality Gating for Retinal Optical Coherence Tomography B-Scans: Learned Representations Over Scalar Metrics in Choroid Segmentation",
+  "paper_date": "2026-09-15",
+  "paper_category": "Target Biology",
+  "generated_at": "2026-09-20T11:55:22",
+  "generator": "openai"
+}

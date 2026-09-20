@@ -1,24 +1,24 @@
 {
-  "key_insight": "Interpretable multi-gene expression programs can predict which lupus nephritis patients respond to specific treatments, with performance varying strongly by regimen.",
-  "clinical_relevance": "These response programs could help enrich trials by selecting patients most likely to benefit before enrollment, especially for regimens where transcriptional signal is strong.",
+  "key_insight": "Interpretable multi-gene expression programs can predict which lupus nephritis patients respond to specific treatments, with strong performance for MMF and AZA but weak performance for HC and standard of care.",
+  "clinical_relevance": "These response signatures could support pre-enrollment patient selection for trial enrichment and help avoid enrolling patients unlikely to benefit from a given therapy.",
   "method": [
-    "Reconstructed GSE224705 gene-expression and metadata for 319 lupus nephritis samples across four regimens",
-    "Built compact interpretable gene programs to classify responders vs non-responders within each treatment group",
-    "Compared predictive performance, stability, and pathway enrichment across regimens"
+    "Reconstructed a lupus nephritis gene-expression cohort (GSE224705; 21,914 genes; 319 samples) across four regimens.",
+    "Built compact, interpretable multi-gene programs separately for MMF, AZA, HC, and standard of care.",
+    "Compared program performance and pathway enrichment across treatments, and tested stability versus differential-expression lists."
   ],
-  "evidence_signal": "Compact 5–10 gene programs achieved AUROC 0.847 for MMF and 0.866 for AZA, but only 0.718 for HC and 0.623 for SOC, with SOC near chance performance.",
-  "watch_item": "Results come from retrospective transcriptomic validation, so prospective testing is needed before using these programs for treatment selection.",
+  "evidence_signal": "Patient-level validation showed AUROC 0.847 for MMF and 0.866 for AZA, versus 0.718 for HC and 0.623 for standard of care, with SOC near chance (MCC 0.119; balanced accuracy 0.555).",
+  "watch_item": "These findings are based on retrospective transcriptomic data from one cohort, so external validation and prospective testing are needed before clinical or trial-design use.",
   "hashtags": [
-    "#PrecisionMedicine",
+    "#LupusNephritis",
     "#Biomarkers",
     "#MachineLearning",
-    "#LupusNephritis",
+    "#PrecisionMedicine",
     "#ClinicalTrials"
   ],
   "paper_id": "2026-09-15-medrxiv-interpretable_biomarker_programs_predict_treatment_response_in_lupus_nephritis_patient_lev",
   "paper_title": "Interpretable biomarker programs predict treatment response in lupus nephritis: patient-level validation across four regimens",
   "paper_date": "2026-09-15",
   "paper_category": "Target Biology",
-  "generated_at": "2026-09-19T11:42:48",
+  "generated_at": "2026-09-20T11:55:17",
   "generator": "openai"
 }
