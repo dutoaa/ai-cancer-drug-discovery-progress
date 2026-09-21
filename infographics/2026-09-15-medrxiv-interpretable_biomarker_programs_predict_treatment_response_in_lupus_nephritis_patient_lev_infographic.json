@@ -1,24 +1,24 @@
 {
-  "key_insight": "Interpretable multi-gene expression programs can predict which lupus nephritis patients respond to specific treatments, with strong performance for MMF and AZA but weak performance for HC and standard of care.",
-  "clinical_relevance": "These response signatures could support pre-enrollment patient selection for trial enrichment and help avoid enrolling patients unlikely to benefit from a given therapy.",
+  "key_insight": "Interpretable multi-gene expression programs can predict which lupus nephritis patients respond to specific therapies, with strong performance for MMF and azathioprine but weak performance for hydroxychloroquine and standard care.",
+  "clinical_relevance": "These response biomarkers could support pre-enrollment patient selection for trials and treatment enrichment, helping avoid enrolling patients unlikely to benefit from a given regimen.",
   "method": [
-    "Reconstructed a lupus nephritis gene-expression cohort (GSE224705; 21,914 genes; 319 samples) across four regimens.",
-    "Built compact, interpretable multi-gene programs separately for MMF, AZA, HC, and standard of care.",
-    "Compared program performance and pathway enrichment across treatments, and tested stability versus differential-expression lists."
+    "Reconstructed a 319-sample lupus nephritis gene-expression cohort spanning four treatment regimens.",
+    "Built compact, interpretable multi-gene response programs separately for each regimen.",
+    "Compared responder vs non-responder prediction and checked pathway-level consistency across treatments."
   ],
-  "evidence_signal": "Patient-level validation showed AUROC 0.847 for MMF and 0.866 for AZA, versus 0.718 for HC and 0.623 for standard of care, with SOC near chance (MCC 0.119; balanced accuracy 0.555).",
-  "watch_item": "These findings are based on retrospective transcriptomic data from one cohort, so external validation and prospective testing are needed before clinical or trial-design use.",
+  "evidence_signal": "Using 21,914 genes, the best programs reached patient-level AUROC 0.847 for MMF and 0.866 for AZA, while HC and SOC were lower at 0.718 and 0.623, respectively.",
+  "watch_item": "The study is retrospective and based on one reconstructed dataset, so the programs need external prospective validation before any real-world deployment.",
   "hashtags": [
     "#LupusNephritis",
     "#Biomarkers",
     "#MachineLearning",
-    "#PrecisionMedicine",
-    "#ClinicalTrials"
+    "#TreatmentResponse",
+    "#PrecisionMedicine"
   ],
   "paper_id": "2026-09-15-medrxiv-interpretable_biomarker_programs_predict_treatment_response_in_lupus_nephritis_patient_lev",
   "paper_title": "Interpretable biomarker programs predict treatment response in lupus nephritis: patient-level validation across four regimens",
   "paper_date": "2026-09-15",
   "paper_category": "Target Biology",
-  "generated_at": "2026-09-20T11:55:17",
+  "generated_at": "2026-09-21T13:28:47",
   "generator": "openai"
 }

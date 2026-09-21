@@ -1,107 +1,5 @@
 [
   {
-    "id": "2026-09-16-medrxiv-tumour_region_identification_guided_scoring_trigs_and_foundation_model_based_tumour_infilt",
-    "doi": "10.64898/2026.09.15.26363116",
-    "date": "2026-09-16",
-    "title": "Tumour region identification guided scoring (TRIGS) and foundation model-based Tumour Infiltrating Lymphocyte scoring are prognostic for pathological complete response/event free survival in the triple negative patients in the PARTNER randomized controlled trial",
-    "authors": "Schouten, P. C.; Irfan, M. O.; Kinsella, Z.; Sionakidis, A.; Riddell, A.; Worley, J. R.; Lay, J.; Casford, S.; Pinilla, K.; Kane, J.; Whitehorn, D.; Tarantino, S.; Dayimu, A.; Demiris, N.; Earl, H. M.; Simidjievski, N.; Provenzano, E.; Abraham, J. E.",
-    "abstract": "Assessment of tumour infiltrating lymphocytes (TILs) is a robust prognostic biomarker for HER2-positive and triple negative breast cancer. We aimed to update a previously established pipeline for automated TIL assessment to align to clinical scoring guidelines (tumour region identification guided scoring), foundation model-based lymphocyte detection (SAM-TIL) and compare with alternative methods (HoVerNet, muTILs) and gold standard clinical assessment. TRIGS and SAM-TIL had an odds ratio of 1.95 (95% confidence interval(ci): 1.22-3.03, p=0.005) and 2.32 (95% ci:1.43-3.77, p=0.001) for predicting pathological complete response (pCR) rate in 166 neoadjuvantly treated patients in the TransNEO cohort. Hazard ratios for overall survival in 277 triple negative and HER2-positive patients in The Cancer Genome Atlas were 0.79 (95% ci: 0.63-1.00, p=0.05) and 0.80 (95% ci: 0.67-0.97, p=0.02) for TRIGS and SAM-TIL. Comparator methods showed similar results. Correlation with gold standard clinical assessment in 285 patients from the PARTNER randomized trial ranged from 0.59-0.69, which is substantially more than interobserver variability for the gold standard. Despite differences with gold standard assessment, no substantial difference in predicting pCR (AUC 0.60-0.64) or event free survival (Integrated Brier score approximately 0.10) were observed between the tested methods and gold standard assessment, suggesting AI tools that do not follow manual scoring guidelines could be validated and subsequently used. Although we reached prognostic performance similar to published literature and gold standard assessment, the lymphocyte detections produced by the models are not interchangeable with gold standard clinical assessment (correlation 0.59-0.69) and therefore cannot support pathologist assessment. Further studies to validate independent use and/or to improve prognostication are required.",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-09-16",
-    "updated": "2026-09-16",
-    "primary_category": "pathology",
-    "categories": [
-      "pathology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26363116v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26363116v1.full.pdf"
-      }
-    ],
-    "score": 62,
-    "infographic": {
-      "key_insight": "Automated TIL scoring methods, including TRIGS and SAM-TIL, can predict response and survival in triple-negative and HER2-positive breast cancer with performance comparable to gold-standard clinical assessment.",
-      "clinical_relevance": "These AI tools may help standardize tumour-infiltrating lymphocyte assessment for prognosis and response prediction, but they are not yet interchangeable with pathologist scoring.",
-      "method": [
-        "Updated automated TIL pipeline to follow clinical scoring guidance (TRIGS)",
-        "Used a foundation model-based lymphocyte detector (SAM-TIL) and compared it with HoVerNet and muTILs",
-        "Benchmarked against gold-standard clinical assessment and outcomes such as pCR and event-free/overall survival"
-      ],
-      "evidence_signal": "In 285 PARTNER trial patients, model-to-clinician correlation was 0.59-0.69, and prognostic performance was similar across methods, with pCR AUC around 0.60-0.64 and event-free survival IBS about 0.10.",
-      "watch_item": "Model detections are not interchangeable with manual scoring, so independent validation and careful workflow integration are still needed.",
-      "hashtags": [
-        "#PrecisionOncology",
-        "#BreastCancer",
-        "#AIinPathology",
-        "#TumorInfiltratingLymphocytes",
-        "#Biomarkers"
-      ],
-      "paper_id": "2026-09-16-medrxiv-tumour_region_identification_guided_scoring_trigs_and_foundation_model_based_tumour_infilt",
-      "paper_title": "Tumour region identification guided scoring (TRIGS) and foundation model-based Tumour Infiltrating Lymphocyte scoring are prognostic for pathological complete response/event free survival in the triple negative patients in the PARTNER randomized controlled trial",
-      "paper_date": "2026-09-16",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-09-21T13:28:37",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-16-medrxiv-large_language_model_derived_symptom_clusters_and_patient_outcomes_in_colorectal_cancer_fr",
-    "doi": "10.64898/2026.09.15.26363148",
-    "date": "2026-09-16",
-    "title": "Large Language Model-derived Symptom Clusters and Patient Outcomes in Colorectal Cancer from MIMIC-IV Clinical Notes",
-    "authors": "Lee, Y.; Dinov, I.; Hu, X.; Jiang, Y.",
-    "abstract": "BackgroundPrior research on symptom clusters (SCs) in colorectal cancer (CRC) has relied primarily on patient-reported outcome surveys, which capture symptom experience at discrete assessment points rather than the continuous documentation generated during routine care, leaving open whether SCs derived from electronic health record (EHR) text carry the same clinical meaning and predictive value. To construct and validate patient-level symptom co-occurrence networks from large language model (LLM)-extracted symptom data in CRC patients, and to test whether resulting SCs predict clinical outcomes. MethodsUsing a zero-shot LLM extraction pipeline previously benchmarked against a manually annotated ground truth (Macro F1=0.70 for the best-performing model), we extracted 46 symptoms from 2,728 discharge notes of 1,507 CRC patients in MIMIC-IV. Patient-level symptom co-occurrence networks were constructed independently from Gemini 3.5 Flash and Claude Haiku extractions using phi correlation ([&ge;]0.10) and Louvain community detection, with sensitivity analyses across correlation thresholds, random seeds, note-aggregation strategy, and bootstrap resampling. Per-cluster symptom burden scores were tested as predictors of in-hospital mortality, 30-day readmission, and 1-year mortality using logistic regression adjusted for age, sex, and (in sensitivity models) metastatic disease. ResultsBoth LLMs networks converged on three clinically coherent SCs -- Systemic, Gastrointestinal, and CRC Disease-Specific -- across sensitivity analyses (cross-model Adjusted Rand Index=0.727; 100-seed Louvain ARI=0.985; bootstrap ARI=0.733). The Systemic Symptom Cluster was the most consistent predictor of in-hospital mortality (OR=1.33) and 1-year mortality (OR=1.41), while the CRC Disease-Specific Cluster specifically and independently predicted 30-day readmission (OR=1.20); both associations were robust to adjustment for metastatic disease. ConclusionLLM-extracted symptom data recover clinically coherent, reproducible SCs from unstructured discharge notes that carry independent prognostic value for mortality and readmission, supporting the clinical validity of automated, EHR-derived symptom profiling in CRC. HighlightsO_LILLMs identified Systemic, CRC Disease-Specific, and Gastrointestinal clusters. C_LIO_LIThree symptom clusters were reproducible across LLMs and sensitivity analyses. C_LIO_LISystemic symptom burden predicted in-hospital and 1-year mortality. C_LI",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-09-16",
-    "updated": "2026-09-16",
-    "primary_category": "health informatics",
-    "categories": [
-      "health informatics"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26363148v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26363148v1.full.pdf"
-      }
-    ],
-    "score": 52,
-    "infographic": {
-      "key_insight": "LLM-extracted symptoms from colorectal cancer discharge notes grouped into three stable symptom clusters that tracked meaningful outcomes, especially mortality and readmission.",
-      "clinical_relevance": "This suggests routine EHR text can be mined to identify patients at higher risk and to complement symptom assessment beyond survey-based snapshots.",
-      "method": [
-        "Extracted 46 symptoms from 2,728 discharge notes of 1,507 CRC patients in MIMIC-IV.",
-        "Built patient-level symptom co-occurrence networks from Gemini 3.5 Flash and Claude Haiku outputs using phi correlation and Louvain clustering.",
-        "Tested cluster burden scores against in-hospital mortality, 30-day readmission, and 1-year mortality with adjusted logistic regression and sensitivity analyses."
-      ],
-      "evidence_signal": "The two LLM pipelines converged on the same three clusters with strong agreement (cross-model ARI 0.727) and the clusters showed consistent predictive associations in sensitivity analyses.",
-      "watch_item": "These results come from retrospective discharge notes in a single critical-care dataset, so generalizability and performance in other hospitals or note types still need validation.",
-      "hashtags": [
-        "#PrecisionOncology",
-        "#ColorectalCancer",
-        "#EHRTextMining",
-        "#LargeLanguageModels",
-        "#SymptomClusters"
-      ],
-      "paper_id": "2026-09-16-medrxiv-large_language_model_derived_symptom_clusters_and_patient_outcomes_in_colorectal_cancer_fr",
-      "paper_title": "Large Language Model-derived Symptom Clusters and Patient Outcomes in Colorectal Cancer from MIMIC-IV Clinical Notes",
-      "paper_date": "2026-09-16",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-09-21T13:28:40",
-      "generator": "openai"
-    }
-  },
-  {
     "id": "2026-09-15-medrxiv-interpretable_biomarker_programs_predict_treatment_response_in_lupus_nephritis_patient_lev",
     "doi": "10.64898/2026.09.13.26362948",
     "date": "2026-09-15",
@@ -126,29 +24,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.13.26362948v1.full.pdf"
       }
     ],
-    "score": 49,
+    "score": 54,
     "infographic": {
-      "key_insight": "Interpretable multi-gene expression programs can predict which lupus nephritis patients respond to specific therapies, with strong performance for MMF and azathioprine but weak performance for hydroxychloroquine and standard care.",
-      "clinical_relevance": "These response biomarkers could support pre-enrollment patient selection for trials and treatment enrichment, helping avoid enrolling patients unlikely to benefit from a given regimen.",
+      "key_insight": "Interpretable multi-gene expression programs can predict which lupus nephritis patients respond to specific treatments, with strong performance for MMF and AZA but weak performance for HC and standard of care.",
+      "clinical_relevance": "These response signatures could support pre-enrollment patient selection for trial enrichment and help avoid enrolling patients unlikely to benefit from a given therapy.",
       "method": [
-        "Reconstructed a 319-sample lupus nephritis gene-expression cohort spanning four treatment regimens.",
-        "Built compact, interpretable multi-gene response programs separately for each regimen.",
-        "Compared responder vs non-responder prediction and checked pathway-level consistency across treatments."
+        "Reconstructed a lupus nephritis gene-expression cohort (GSE224705; 21,914 genes; 319 samples) across four regimens.",
+        "Built compact, interpretable multi-gene programs separately for MMF, AZA, HC, and standard of care.",
+        "Compared program performance and pathway enrichment across treatments, and tested stability versus differential-expression lists."
       ],
-      "evidence_signal": "Using 21,914 genes, the best programs reached patient-level AUROC 0.847 for MMF and 0.866 for AZA, while HC and SOC were lower at 0.718 and 0.623, respectively.",
-      "watch_item": "The study is retrospective and based on one reconstructed dataset, so the programs need external prospective validation before any real-world deployment.",
+      "evidence_signal": "Patient-level validation showed AUROC 0.847 for MMF and 0.866 for AZA, versus 0.718 for HC and 0.623 for standard of care, with SOC near chance (MCC 0.119; balanced accuracy 0.555).",
+      "watch_item": "These findings are based on retrospective transcriptomic data from one cohort, so external validation and prospective testing are needed before clinical or trial-design use.",
       "hashtags": [
         "#LupusNephritis",
         "#Biomarkers",
         "#MachineLearning",
-        "#TreatmentResponse",
-        "#PrecisionMedicine"
+        "#PrecisionMedicine",
+        "#ClinicalTrials"
       ],
       "paper_id": "2026-09-15-medrxiv-interpretable_biomarker_programs_predict_treatment_response_in_lupus_nephritis_patient_lev",
       "paper_title": "Interpretable biomarker programs predict treatment response in lupus nephritis: patient-level validation across four regimens",
       "paper_date": "2026-09-15",
       "paper_category": "Target Biology",
-      "generated_at": "2026-09-21T13:28:47",
+      "generated_at": "2026-09-20T11:55:17",
       "generator": "openai"
     }
   },
@@ -177,29 +75,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.14.26362626v1.full.pdf"
       }
     ],
-    "score": 47,
+    "score": 52,
     "infographic": {
-      "key_insight": "Snoring audio alone can distinguish palatal from epiglottic upper-airway obstruction in OSA with strong machine-learning performance.",
-      "clinical_relevance": "This points to a non-invasive way to help phenotype obstruction site and potentially complement sleep endoscopy when access is limited.",
+      "key_insight": "Machine learning can distinguish palatal from epiglottic snoring using acoustic features alone, suggesting snoring carries a measurable signature of upper-airway obstruction site.",
+      "clinical_relevance": "If validated, this non-invasive approach could help triage or complement DISE in obstructive sleep apnea by identifying likely obstruction anatomy from recorded snoring.",
       "method": [
-        "159 DISE recordings from adults with moderate, non-positional OSA",
-        "Snoring events were blinded, anatomically labeled, and only consensus events were used",
-        "Spectral, cepstral, temporal, and harmonic features were selected and classified with SVM and MLP using patient-independent nested cross-validation"
+        "Retrospective analysis of 159 DISE recordings from adults with moderate, non-positional OSA.",
+        "Snoring events were labeled by two blinded experts, and only fully agreed events were analyzed.",
+        "Spectral, cepstral, temporal, and harmonic features were selected and tested with SVM and MLP models using patient-independent nested cross-validation."
       ],
-      "evidence_signal": "The final dataset contained 1,759 snoring events, and both models reached ROC AUC 0.90 ± 0.03 with balanced accuracy around 0.81–0.83 under patient-independent validation.",
-      "watch_item": "Results come from a retrospective, single-dataset study using only events with complete expert agreement, so external validation and real-world robustness are still needed.",
+      "evidence_signal": "Using 1,759 snoring events, both models achieved ROC AUC 0.90 ± 0.03, with balanced accuracy of 0.83 for SVM and 0.81 for MLP.",
+      "watch_item": "Results come from retrospective DISE audio with expert-labeled high-agreement events, so generalization to noisier real-world recordings and broader OSA populations still needs confirmation.",
       "hashtags": [
-        "#ObstructiveSleepApnea",
-        "#SnoringAnalysis",
+        "#SleepApnea",
         "#MachineLearning",
         "#AcousticBiomarkers",
-        "#NonInvasiveDiagnostics"
+        "#DigitalHealth",
+        "#NoninvasiveDiagnosis"
       ],
       "paper_id": "2026-09-15-medrxiv-the_sound_of_snoring_ai_based_acoustic_phenotyping_of_upper_airway_obstruction_in_obstruct",
       "paper_title": "The sound of snoring: AI-based acoustic phenotyping of upper airway obstruction in Obstructive Sleep Apnea",
       "paper_date": "2026-09-15",
       "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-09-21T13:28:48",
+      "generated_at": "2026-09-20T11:55:20",
       "generator": "openai"
     }
   },
@@ -228,29 +126,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.14.26363079v1.full.pdf"
       }
     ],
-    "score": 47,
+    "score": 52,
     "infographic": {
-      "key_insight": "Task-specific quality gating for OCT choroid segmentation works better with learned image representations than with hand-crafted no-reference quality scores, especially when using retinal foundation models.",
-      "clinical_relevance": "More reliable scan filtering could help automated retinal image analysis avoid bad-segmentation failures and improve consistency in biomarker extraction workflows.",
+      "key_insight": "Task-specific quality gating for OCT choroid segmentation works better with learned image representations than with traditional scalar image-quality metrics.",
+      "clinical_relevance": "More reliable scan filtering could improve the consistency of retinal biomarker extraction by preventing low-quality B-scans from entering automated segmentation workflows.",
       "method": [
-        "Evaluated 6,076 OCT B-scans from 80 subjects for task-specific quality gating",
-        "Compared scalar NR-IQA metrics with supervised linear probing and unsupervised K-Means on pretrained representations",
-        "Benchmarked general-purpose ImageNet models and retinal foundation models against a patient-level null"
+        "Compared scalar NR-IQA metrics (BRISQUE, NIQE, PIQE, SNR, PSNR) against pretrained feature embeddings as quality gates.",
+        "Evaluated general-purpose ImageNet models and retinal foundation models using supervised linear probing and unsupervised K-Means clustering.",
+        "Used choroid segmentation on 6,076 OCT B-scans from 80 subjects as the prototype task."
       ],
-      "evidence_signal": "All scalar metrics were weak (|r| < 0.20), while learned embeddings improved ROC-AUC up to 0.77 and RETFound reached about 0.81, with retinal foundation models also forming quality-aligned clusters above a permutation null.",
-      "watch_item": "Performance was demonstrated for one prototype task (choroid segmentation) on a specific dataset, so broader generalization and deployment thresholds still need external validation.",
+      "evidence_signal": "All scalar metrics were weak predictors of segmentation success (|r| < 0.20), while learned representations improved discrimination, reaching ROC-AUC up to 0.77 for ImageNet models and about 0.81 for RETFound.",
+      "watch_item": "The results are task- and model-specific, so a gate that works for choroid segmentation may not transfer directly to other OCT tasks or devices without revalidation.",
       "hashtags": [
         "#OCT",
-        "#RetinaAI",
-        "#QualityGating",
+        "#RetinalAI",
+        "#ImageQuality",
         "#FoundationModels",
-        "#MedicalImaging"
+        "#Segmentation"
       ],
       "paper_id": "2026-09-15-medrxiv-task_specific_quality_gating_for_retinal_optical_coherence_tomography_b_scans_learned_repr",
       "paper_title": "Task-Specific Quality Gating for Retinal Optical Coherence Tomography B-Scans: Learned Representations Over Scalar Metrics in Choroid Segmentation",
       "paper_date": "2026-09-15",
       "paper_category": "Target Biology",
-      "generated_at": "2026-09-21T13:28:51",
+      "generated_at": "2026-09-20T11:55:22",
       "generator": "openai"
     }
   },
@@ -279,80 +177,80 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.14.26363004v1.full.pdf"
       }
     ],
-    "score": 47,
+    "score": 52,
     "infographic": {
-      "key_insight": "Human hearing is better described as a continuous five-dimensional atlas of states and trajectories than as a set of discrete hearing “types.”",
-      "clinical_relevance": "This framework could improve precision otology by capturing within-ear changes and individual patterns that conventional audiogram severity averages miss.",
+      "key_insight": "Human hearing appears to form a continuous five-dimensional coordinate system rather than discrete hearing “types,” and the Human Hearing Atlas can reconstruct audiograms with near-decibel accuracy.",
+      "clinical_relevance": "This could enable more precise hearing phenotyping, tracking of subtle within-ear changes, and better stratification for otology research, genetics, epidemiology, and clinical trials.",
       "method": [
-        "Analyzed more than 4.29 million audiograms",
-        "Integrated 33 datasets from 8 countries across 62 years",
-        "Built a model that reconstructs unseen audiograms to near-decibel accuracy"
+        "Analyzed 4.29 million audiograms",
+        "Integrated 33 datasets across 8 countries and 62 years",
+        "Tested whether hearing patterns are discrete types or continuous states"
       ],
-      "evidence_signal": "The abstract reports validation across 4.29 million audiograms, with the atlas reconstructing unseen audiograms to near-decibel accuracy and preserving clinical detail.",
-      "watch_item": "Because the atlas is derived from pooled historical audiograms and calibration standards, real-world implementation may require careful harmonization and prospective validation.",
+      "evidence_signal": "The abstract reports validation across more than 4.29 million audiograms, with reconstruction of unseen audiograms to near-decibel accuracy and preservation of clinical detail.",
+      "watch_item": "The atlas may depend on consistent audiogram calibration and dataset quality, so external validation and implementation standardization will be important.",
       "hashtags": [
-        "#HearingScience",
+        "#HearingResearch",
         "#Audiology",
-        "#PrecisionMedicine",
         "#Otology",
-        "#MedicalAI"
+        "#PrecisionMedicine",
+        "#ClinicalAI"
       ],
       "paper_id": "2026-09-15-medrxiv-the_human_hearing_atlas_a_canonical_map_of_human_hearing",
       "paper_title": "The Human Hearing Atlas: a canonical map of human hearing",
       "paper_date": "2026-09-15",
       "paper_category": "Clinical Translation",
-      "generated_at": "2026-09-21T13:28:53",
+      "generated_at": "2026-09-20T11:55:23",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-09-16-medrxiv-time_resolved_predictability_of_end_of_therapy_outcome_and_relapse_after_cure_in_phase_3_t",
-    "doi": "10.64898/2026.09.15.26362605",
-    "date": "2026-09-16",
-    "title": "Time-resolved predictability of end-of-therapy outcome and relapse after cure in Phase 3 tuberculosis trials",
-    "authors": "Garger, D.; Burks, J. H.; Paton, N. I.; Sloan, D. J.; Maher-Edwards, G.; Theis, F.; Menden, M. P.; Casale, F. P.",
-    "abstract": "Relapse after apparently successful tuberculosis (TB) therapy remains difficult to predict, and how relapse risk evolves throughout treatment remains unclear. Using harmonised clinical data from two Phase 3 trials (2,918 participants), we performed time-resolved prediction of end-of-therapy (EOT) outcomes and post-treatment relapse by training models using tabular data at monthly intervals from baseline to therapy end. Prediction of EOT outcomes improved after month 3 (ROC-AUC up to 0.84), driven by sputum-smear and solid culture. In contrast, relapse prediction among participants with favourable EOT outcomes and completed follow-up improved only modestly through month 3 (ROC-AUC 0.58-0.63) before declining, with age, sex, clinical symptoms and bacterial burden contributing most strongly to prediction. Models trained on large language model-derived embeddings, a more flexible representation of the same variables, matched tabular relapse models in performance throughout therapy, and outperformed tabular EOT outcome models at months 3 and 4 ({Delta}ROC-AUC: 0.12 and 0.14), with longitudinal modelling and sparse variable inclusion only improving relapse prediction at months 4-6 ({Delta}ROC-AUC: 0.09, 0.19 and 0.12), however with reduced interpretability. Models incorporating data after baseline provided incremental improvements in post-treatment relapse risk stratification compared with baseline cavitation and sputum smear alone (4-month relapse-free survival: 94.8%/78.5% for model-derived low/high risk groups, vs. 91.4%/82.9% for baseline easy-/hard-to-treat groups). Overall, these findings suggest that while routine clinical data collected after baseline can improve post-treatment risk stratification, it offers limited predictive value for relapse, underscoring the need for relapse-specific biomarkers.",
-    "category": "Clinical Translation",
+    "id": "2026-09-14-medrxiv-mechanistic_assessment_of_norepinephrine_therapy_versus_angiotensin_ii_in_septic_shock_man",
+    "doi": "10.64898/2026.09.12.26362906",
+    "date": "2026-09-14",
+    "title": "Mechanistic Assessment of Norepinephrine Therapy versus Angiotensin-II in Septic Shock (MANTRA): Study Protocol for a multicenter randomized trial",
+    "authors": "Filbin, M.; Leisman, D. E.; Pachano-Bravo, A.; Goldberg, M. B.; Hibbert, K. A.; Nelson, O.; Rappaport, B.; Mahler, S. A.; Harris, L.; Besong, E. B.; Reeves, B.; Maves, R. C.; Petrilli, A.; Schaich, C. L.; Files, D. C.; Gibbs, K.; Chappell, M. C.; Khanna, A. K.",
+    "abstract": "IntroductionNorepinephrine remains first-line vasopressor therapy for septic shock despite its association at high doses with undesirable cardiovascular, kidney, and immune effects. Angiotensin-II (Ang-II) is a non-catecholamine vasopressor of the renin-angiotensin-aldosterone system (RAAS) now approved to increase blood pressure in vasodilatory shock. RAAS dysregulation is common in septic shock and may represent a treatable trait. However, few prospective investigations evaluate the effect of early Ang-II use in septic shock on dysfunctional RAAS biology, host-response, or clinical outcomes. Therefore, we designed a mechanistic clinical trial to test the hypothesis that early Ang-II therapy in septic shock normalizes systemic RAAS abnormalities and modulates innate immune responses. Methods and AnalysisThe Mechanistic Assessment of Norepinephrine TheRapy vs. Angiotensin-II in Septic Shock (MANTRA) trial is an investigator-initiated, prospective, multicenter, open-label, randomized mechanistic clinical trial. Adults with septic shock by Sepsis-3 criteria receiving a norepinephrine-equivalent dose (NED) of 0.10-0.50 mcg/kg/min will be randomized 1:1 to primary Ang-II (to a maximum of 40 ng/kg/min) or norepinephrine (to a maximum 35 mcg/min) treatment strategies over a 48-hour period. The primary outcome is the between-group difference in plasma renin trajectory from baseline to 24 hours, analyzed using a linear mixed-effects model with a treatment-by-time interaction term. With n=78, the trial has 90% power (at two-sided =0.05) to detect a 25% between-group difference in 24-hour renin. Secondary clinical outcomes include longitudinal NED, hours alive and vasopressor-free at 72 hours, a 28-day composite outcome (days alive and free of vasopressors, renal replacement therapy, and mechanical ventilation), treatment failure requiring crossover or protocol discontinuation, and thrombotic and arrhythmia events through 28 days. Secondary mechanistic outcomes include serial RAAS biomarkers (prorenin, soluble prorenin receptor, angiotensinogen, ACE, ACE2, Ang-II, angiotensin-(1-7), aldosterone, and DPP3), immune measures (ex vivo monocyte function, monocyte gene expression, plasma cytokines), and organ injury biomarkers. Enrollment is planned from 5/2026-7/2030. Strengths and limitations of this studyO_LIMANTRA is a randomized trial comparing angiotensin-II against an active standard-of-care norepinephrine strategy rather than placebo, enrolling patients earlier in septic shock than prior trials restricted to catecholamine-resistant shock. C_LIO_LISerial sampling profiles RAAS peptides, innate immune function, and organ-injury biomarkers, which will generate rich mechanistic data on how vasopressor strategy shapes the host response. C_LIO_LIThe sample size is adequate for the biomarker primary endpoints and will establish feasibility for a larger trial, but it does not provide sufficient power for hard clinical endpoints, which remain exploratory. C_LIO_LIMANTRA compares two open-label vasopressor strategies rather than monotherapies; clinician retain discretion over background and rescue vasopressors, steroids, and crossover, which may attenuate differences between-arms. C_LIO_LIThe 48-hour intervention window limit inference about clinician-assessed outcomes and the durability of treatment effect. C_LI",
+    "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-09-16",
-    "updated": "2026-09-16",
-    "primary_category": "infectious diseases",
+    "published": "2026-09-14",
+    "updated": "2026-09-14",
+    "primary_category": "intensive care and critical care medicine",
     "categories": [
-      "infectious diseases"
+      "intensive care and critical care medicine"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26362605v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.12.26362906v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26362605v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.12.26362906v1.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 49,
     "infographic": {
-      "key_insight": "Routine clinical data collected during tuberculosis treatment predicts end-of-therapy status reasonably well, but it only modestly predicts later relapse and loses value after about month 3.",
-      "clinical_relevance": "For trial readouts and follow-up planning, post-baseline clinical variables can improve relapse risk stratification, but they are not strong enough to replace relapse-specific biomarkers.",
+      "key_insight": "MANTRA tests whether early angiotensin-II, compared with norepinephrine, can better correct RAAS dysfunction and reshape immune responses in septic shock.",
+      "clinical_relevance": "If effective, this strategy could identify a biomarker-guided vasopressor approach for a high-risk shock population rather than relying on norepinephrine alone.",
       "method": [
-        "Harmonized data from 2 Phase 3 TB trials (2,918 participants)",
-        "Built time-resolved prediction models at monthly intervals from baseline to therapy end",
-        "Compared tabular features with large language model-derived embeddings and longitudinal models"
+        "Multicenter, open-label, randomized 1:1 trial in adults with septic shock on norepinephrine-equivalent 0.10–0.50 mcg/kg/min",
+        "Primary arm: angiotensin-II up to 40 ng/kg/min vs norepinephrine up to 35 mcg/min for 48 hours",
+        "Primary endpoint: change in plasma renin from baseline to 24 hours using a linear mixed-effects model"
       ],
-      "evidence_signal": "End-of-therapy outcome prediction improved after month 3 with ROC-AUC up to 0.84, while relapse prediction stayed modest (ROC-AUC 0.58–0.63) and then declined; embeddings matched tabular relapse performance and sometimes improved end-of-therapy prediction.",
-      "watch_item": "These models use routine clinical variables and may be less interpretable or transferable across settings, so they should not be used as stand-alone relapse predictors without external validation.",
+      "evidence_signal": "This is a study protocol, not results; the abstract reports planned enrollment of 78 patients and 90% power to detect a 25% between-group difference in 24-hour renin.",
+      "watch_item": "Open-label design and mechanistic focus mean clinical benefit, safety, and generalizability may remain uncertain until outcomes are reported.",
       "hashtags": [
-        "#Tuberculosis",
-        "#ClinicalPrediction",
-        "#RelapseRisk",
-        "#Phase3Trials",
-        "#MachineLearning"
+        "#SepticShock",
+        "#AngiotensinII",
+        "#Norepinephrine",
+        "#RAAS",
+        "#ClinicalTrial"
       ],
-      "paper_id": "2026-09-16-medrxiv-time_resolved_predictability_of_end_of_therapy_outcome_and_relapse_after_cure_in_phase_3_t",
-      "paper_title": "Time-resolved predictability of end-of-therapy outcome and relapse after cure in Phase 3 tuberculosis trials",
-      "paper_date": "2026-09-16",
-      "paper_category": "Clinical Translation",
-      "generated_at": "2026-09-21T13:28:55",
+      "paper_id": "2026-09-14-medrxiv-mechanistic_assessment_of_norepinephrine_therapy_versus_angiotensin_ii_in_septic_shock_man",
+      "paper_title": "Mechanistic Assessment of Norepinephrine Therapy versus Angiotensin-II in Septic Shock (MANTRA): Study Protocol for a multicenter randomized trial",
+      "paper_date": "2026-09-14",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-09-20T11:55:26",
       "generator": "openai"
     }
   },
@@ -381,29 +279,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.14.26362277v1.full.pdf"
       }
     ],
-    "score": 41,
+    "score": 46,
     "infographic": {
-      "key_insight": "Photoacoustic imaging safely detected meal-related increases in intestinal blood flow in children without changing oxygenation, suggesting a noninvasive way to assess bowel vascular health.",
-      "clinical_relevance": "This early pediatric study supports photoacoustic imaging as a feasible biomarker tool for monitoring intestinal perfusion, which may aid future evaluation of conditions such as necrotizing enterocolitis.",
+      "key_insight": "Photoacoustic imaging can noninvasively measure intestinal blood flow and oxygenation in children, and it detected a clear post-meal increase in bowel blood volume without changing oxygen saturation.",
+      "clinical_relevance": "This early pediatric study supports photoacoustic imaging as a safe, feasible biomarker tool for monitoring intestinal vascular health and potentially aiding future detection of bowel ischemia-related disease.",
       "method": [
-        "18 healthy pediatric participants were scanned before and after a lipid-rich snack.",
-        "Photoacoustic images were collected in each abdominal quadrant.",
-        "Regions of interest were manually drawn to quantify Hb, HbO2, HbT, and sO2."
+        "18 healthy pediatric participants were scanned under IRB approval.",
+        "Imaging was performed in all abdominal quadrants before and after a lipid-rich snack.",
+        "Researchers manually outlined intestinal regions of interest to quantify Hb, HbO2, HbT, and sO2."
       ],
-      "evidence_signal": "The abstract reports only minor temporary adverse events and significant post-prandial increases in intestinal hemoglobin measures, with no change in oxygen saturation.",
-      "watch_item": "Findings are from a small, healthy pediatric cohort, so performance in ill infants and for real-world clinical decision-making still needs validation.",
+      "evidence_signal": "The abstract reports minor, temporary adverse events only, and statistically significant post-prandial hyperemia with no change in bowel oxygenation across regions and age cohorts.",
+      "watch_item": "Findings come from a small, healthy pediatric cohort, so performance in sick infants or in suspected necrotizing enterocolitis still needs validation.",
       "hashtags": [
         "#PhotoacousticImaging",
         "#Pediatrics",
         "#IntestinalHealth",
-        "#BiomedicalImaging",
-        "#NoninvasiveDiagnostics"
+        "#Biomarkers",
+        "#ClinicalTranslation"
       ],
       "paper_id": "2026-09-15-medrxiv-photoacoustic_imaging_of_intestinal_physiological_biomarkers_in_infants_and_children",
       "paper_title": "Photoacoustic imaging of intestinal physiological biomarkers in infants and children",
       "paper_date": "2026-09-15",
       "paper_category": "Clinical Translation",
-      "generated_at": "2026-09-21T13:28:58",
+      "generated_at": "2026-09-20T11:55:28",
       "generator": "openai"
     }
   },
@@ -432,21 +330,21 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.14.26363020v1.full.pdf"
       }
     ],
-    "score": 41,
+    "score": 46,
     "infographic": {
-      "key_insight": "This study suggests antenatal iron-folic acid non-initiation and short duration are related but distinct gaps in Nigeria, with no antenatal contact being the strongest driver of non-initiation.",
-      "clinical_relevance": "The findings can help target maternal health outreach and ANC access efforts to improve iron-folic acid coverage and reduce anemia risk in pregnancy.",
+      "key_insight": "The study suggests that non-initiation and short-duration antenatal iron-folic acid supplementation in Nigeria are two related but distinct gaps, with no antenatal contact emerging as the strongest predictor of non-initiation.",
+      "clinical_relevance": "These findings can help public health programs target pregnancy nutrition efforts toward women with limited antenatal care access, low education, lower wealth, and fewer ANC visits.",
       "method": [
-        "Cross-sectional secondary analysis of NDHS 2023–24 women aged 15–49",
-        "Modeled two outcomes: non-initiation and <90-day use among initiators",
-        "Compared survey-weighted logistic regression with elastic net, random forest, and XGBoost"
+        "Cross-sectional secondary analysis of NDHS 2023-24 women aged 15-49",
+        "Compared survey-weighted logistic regression with elastic net, random forest, and XGBoost",
+        "Tested models on an 80:20 held-out split and cross-checked IFA reports with anemia biomarkers"
       ],
-      "evidence_signal": "Using an 80:20 held-out test split, XGBoost showed the best discrimination for both outcomes (AUC 0.922 for non-initiation and 0.721 for short duration), outperforming survey-weighted logistic regression.",
-      "watch_item": "Because this is observational survey data, associations may not prove causation and self-reported supplementation status may be affected by recall or reporting bias.",
+      "evidence_signal": "XGBoost performed best for both outcomes, with AUC 0.922 for non-initiation and 0.721 for inadequate duration, outperforming survey-weighted logistic regression.",
+      "watch_item": "Because the study is cross-sectional and based partly on self-reported supplementation, the results support prediction and targeting rather than causal inference.",
       "hashtags": [
         "#MaternalHealth",
-        "#AnemiaPrevention",
-        "#NigerianHealth",
+        "#Nigeria",
+        "#AntenatalCare",
         "#MachineLearning",
         "#PublicHealth"
       ],
@@ -454,7 +352,7 @@
       "paper_title": "Antenatal Iron-Folic Acid Supplementation Gaps in Nigeria: A Predictive Machine Learning Analysis of Non-Initiation and Sub-Optimal Duration Using NDHS 2023-24",
       "paper_date": "2026-09-15",
       "paper_category": "Target Biology",
-      "generated_at": "2026-09-21T13:29:00",
+      "generated_at": "2026-09-20T11:55:31",
       "generator": "openai"
     }
   },
@@ -483,29 +381,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26362919v1.full.pdf"
       }
     ],
-    "score": 41,
+    "score": 46,
     "infographic": {
-      "key_insight": "Weekly blood microsampling detected higher interferon-related gene signatures before and during dermatomyositis flares, suggesting a potential early molecular flare signal.",
-      "clinical_relevance": "If validated, this approach could support earlier flare detection in dermatomyositis using minimally invasive home-collected blood samples.",
+      "key_insight": "Weekly blood microsampling detected rising interferon gene signatures before and during dermatomyositis flares, suggesting a potential early molecular flare signal.",
+      "clinical_relevance": "If validated, this approach could help clinicians anticipate flare risk earlier than symptom-driven visits alone and monitor disease activity more continuously.",
       "method": [
-        "Six women with dermatomyositis were followed for 6 months with weekly patient-reported disease activity scoring.",
-        "Patients self-collected weekly 125 µL blood microsamples that were shipped for RNA sequencing.",
-        "Transcriptomic analyses assessed interferon scores, differential gene expression, and pathway enrichment around flare events."
+        "6 women with inactive/minimally active dermatomyositis were followed for 6 months",
+        "Participants self-reported weekly PtGA scores and self-collected weekly 125 uL blood microsamples",
+        "RNA sequencing and gene-set analyses were used to compare flare vs no-flare timepoints"
       ],
-      "evidence_signal": "In this feasibility study of 6 patients and 54 RNA-seq samples across 9 timepoints, interferon scores were significantly higher in flare-associated samples, with enrichment of interferon-related gene sets in pre-flare and flare samples.",
-      "watch_item": "Very small sample size and feasibility design mean the flare signal needs larger, independent validation before it can be used in practice.",
+      "evidence_signal": "In 54 blood samples across 9 timepoints, interferon scores and IFN-related gene sets were higher in flare-associated and pre-flare samples than in no-flare samples.",
+      "watch_item": "This was a very small feasibility study, so larger validation is needed before longitudinal IFN signatures can be used for routine flare prediction.",
       "hashtags": [
         "#Dermatomyositis",
         "#InterferonSignature",
-        "#RNASeq",
-        "#BiomarkerDiscovery",
-        "#LongitudinalMonitoring"
+        "#LongitudinalMonitoring",
+        "#RNAseq",
+        "#BiomarkerDiscovery"
       ],
       "paper_id": "2026-09-15-medrxiv-longitudinal_interferon_signatures_are_associated_with_disease_flare_in_dermatomyositis",
       "paper_title": "Longitudinal interferon signatures are associated with disease flare in dermatomyositis",
       "paper_date": "2026-09-15",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-09-21T13:29:02",
+      "generated_at": "2026-09-20T11:55:32",
       "generator": "openai"
     }
   }

@@ -1,24 +1,24 @@
 {
-  "key_insight": "Machine learning can distinguish palatal from epiglottic snoring using acoustic features alone, suggesting snoring carries a measurable signature of upper-airway obstruction site.",
-  "clinical_relevance": "If validated, this non-invasive approach could help triage or complement DISE in obstructive sleep apnea by identifying likely obstruction anatomy from recorded snoring.",
+  "key_insight": "Snoring audio alone can distinguish palatal from epiglottic upper-airway obstruction in OSA with strong machine-learning performance.",
+  "clinical_relevance": "This points to a non-invasive way to help phenotype obstruction site and potentially complement sleep endoscopy when access is limited.",
   "method": [
-    "Retrospective analysis of 159 DISE recordings from adults with moderate, non-positional OSA.",
-    "Snoring events were labeled by two blinded experts, and only fully agreed events were analyzed.",
-    "Spectral, cepstral, temporal, and harmonic features were selected and tested with SVM and MLP models using patient-independent nested cross-validation."
+    "159 DISE recordings from adults with moderate, non-positional OSA",
+    "Snoring events were blinded, anatomically labeled, and only consensus events were used",
+    "Spectral, cepstral, temporal, and harmonic features were selected and classified with SVM and MLP using patient-independent nested cross-validation"
   ],
-  "evidence_signal": "Using 1,759 snoring events, both models achieved ROC AUC 0.90 ± 0.03, with balanced accuracy of 0.83 for SVM and 0.81 for MLP.",
-  "watch_item": "Results come from retrospective DISE audio with expert-labeled high-agreement events, so generalization to noisier real-world recordings and broader OSA populations still needs confirmation.",
+  "evidence_signal": "The final dataset contained 1,759 snoring events, and both models reached ROC AUC 0.90 ± 0.03 with balanced accuracy around 0.81–0.83 under patient-independent validation.",
+  "watch_item": "Results come from a retrospective, single-dataset study using only events with complete expert agreement, so external validation and real-world robustness are still needed.",
   "hashtags": [
-    "#SleepApnea",
+    "#ObstructiveSleepApnea",
+    "#SnoringAnalysis",
     "#MachineLearning",
     "#AcousticBiomarkers",
-    "#DigitalHealth",
-    "#NoninvasiveDiagnosis"
+    "#NonInvasiveDiagnostics"
   ],
   "paper_id": "2026-09-15-medrxiv-the_sound_of_snoring_ai_based_acoustic_phenotyping_of_upper_airway_obstruction_in_obstruct",
   "paper_title": "The sound of snoring: AI-based acoustic phenotyping of upper airway obstruction in Obstructive Sleep Apnea",
   "paper_date": "2026-09-15",
   "paper_category": "Therapeutic Discovery",
-  "generated_at": "2026-09-20T11:55:20",
+  "generated_at": "2026-09-21T13:28:48",
   "generator": "openai"
 }
