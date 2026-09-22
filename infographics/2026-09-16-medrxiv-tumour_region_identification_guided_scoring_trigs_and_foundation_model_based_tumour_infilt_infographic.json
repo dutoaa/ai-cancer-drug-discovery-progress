@@ -1,24 +1,24 @@
 {
-  "key_insight": "Automated TIL scoring methods, including TRIGS and SAM-TIL, can predict response and survival in triple-negative and HER2-positive breast cancer with performance comparable to gold-standard clinical assessment.",
-  "clinical_relevance": "These AI tools may help standardize tumour-infiltrating lymphocyte assessment for prognosis and response prediction, but they are not yet interchangeable with pathologist scoring.",
+  "key_insight": "AI-based tumour-infiltrating lymphocyte scoring (TRIGS and SAM-TIL) predicted treatment response and survival in triple negative breast cancer about as well as gold-standard clinical scoring.",
+  "clinical_relevance": "These tools could help standardize TIL assessment for prognosis in neoadjuvant and early-stage breast cancer research, but they are not yet a replacement for pathologist review.",
   "method": [
-    "Updated automated TIL pipeline to follow clinical scoring guidance (TRIGS)",
-    "Used a foundation model-based lymphocyte detector (SAM-TIL) and compared it with HoVerNet and muTILs",
-    "Benchmarked against gold-standard clinical assessment and outcomes such as pCR and event-free/overall survival"
+    "Updated an automated TIL pipeline to match clinical scoring guidance (TRIGS).",
+    "Used a foundation model for lymphocyte detection (SAM-TIL) and compared it with HoVerNet and muTILs.",
+    "Benchmarked models against gold-standard clinical assessment and outcomes across multiple cohorts."
   ],
-  "evidence_signal": "In 285 PARTNER trial patients, model-to-clinician correlation was 0.59-0.69, and prognostic performance was similar across methods, with pCR AUC around 0.60-0.64 and event-free survival IBS about 0.10.",
-  "watch_item": "Model detections are not interchangeable with manual scoring, so independent validation and careful workflow integration are still needed.",
+  "evidence_signal": "In the PARTNER and external cohorts, the models showed moderate correlation with clinical scoring (0.59-0.69) and similar prognostic performance for pCR and event-free survival, with pCR AUC around 0.60-0.64 and comparable Brier scores.",
+  "watch_item": "Model detections were not interchangeable with manual clinical scoring, so independent validation and careful implementation are needed before routine use.",
   "hashtags": [
     "#PrecisionOncology",
     "#BreastCancer",
-    "#AIinPathology",
-    "#TumorInfiltratingLymphocytes",
-    "#Biomarkers"
+    "#AIpathology",
+    "#TILs",
+    "#FoundationModels"
   ],
   "paper_id": "2026-09-16-medrxiv-tumour_region_identification_guided_scoring_trigs_and_foundation_model_based_tumour_infilt",
   "paper_title": "Tumour region identification guided scoring (TRIGS) and foundation model-based Tumour Infiltrating Lymphocyte scoring are prognostic for pathological complete response/event free survival in the triple negative patients in the PARTNER randomized controlled trial",
   "paper_date": "2026-09-16",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-09-21T13:28:37",
+  "generated_at": "2026-09-22T12:13:03",
   "generator": "openai"
 }

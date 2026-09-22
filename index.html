@@ -22,7 +22,7 @@
     <header>
       <div>
         <h1>AI Cancer Drug Discovery Research Papers - Daily Top 20</h1>
-        <p class="sub">Collected 2026-09-21. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
+        <p class="sub">Collected 2026-09-22. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
       </div>
       <nav class="actions">
         <a href="papers.json">Data JSON</a>
@@ -31,7 +31,7 @@
     </header>
     <section class="grid">
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>62</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>57</strong></div>
         <p class="date">2026-09-16</p>
         <h2>Tumour region identification guided scoring (TRIGS) and foundation model-based Tumour Infiltrating Lymphocyte scoring are prognostic for pathological complete response/event free survival in the triple negative patients in the PARTNER randomized controlled trial</h2>
         <p class="authors">Schouten, P. C.; Irfan, M. O.; Kinsella, Z.; Sionakidis, A.; Riddell, A.; Worley, J. R.; Lay, J.; Casford, S.; Pinilla, K.; Kane, J.; Whitehorn, D.; Tarantino, S.; Dayimu, A.; Demiris, N.; Earl, H. M.; Simidjievski, N.; Provenzano, E.; Abraham, J. E.</p>
@@ -39,18 +39,37 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.15.26363116v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.15.26363116v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Automated TIL scoring methods, including TRIGS and SAM-TIL, can predict response and survival in triple-negative and HER2-positive breast cancer with performance comparable to gold-standard clinical assessment.</p>
-          <p><b>Clinical relevance:</b> These AI tools may help standardize tumour-infiltrating lymphocyte assessment for prognosis and response prediction, but they are not yet interchangeable with pathologist scoring.</p>
-          <ul><li>Updated automated TIL pipeline to follow clinical scoring guidance (TRIGS)</li><li>Used a foundation model-based lymphocyte detector (SAM-TIL) and compared it with HoVerNet and muTILs</li><li>Benchmarked against gold-standard clinical assessment and outcomes such as pCR and event-free/overall survival</li></ul>
-          <p><b>Evidence signal:</b> In 285 PARTNER trial patients, model-to-clinician correlation was 0.59-0.69, and prognostic performance was similar across methods, with pCR AUC around 0.60-0.64 and event-free survival IBS about 0.10.</p>
-          <p><b>Watch item:</b> Model detections are not interchangeable with manual scoring, so independent validation and careful workflow integration are still needed.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#BreastCancer</span> <span>#AIinPathology</span> <span>#TumorInfiltratingLymphocytes</span> <span>#Biomarkers</span></div>
+          <p><b>Key insight:</b> AI-based tumour-infiltrating lymphocyte scoring (TRIGS and SAM-TIL) predicted treatment response and survival in triple negative breast cancer about as well as gold-standard clinical scoring.</p>
+          <p><b>Clinical relevance:</b> These tools could help standardize TIL assessment for prognosis in neoadjuvant and early-stage breast cancer research, but they are not yet a replacement for pathologist review.</p>
+          <ul><li>Updated an automated TIL pipeline to match clinical scoring guidance (TRIGS).</li><li>Used a foundation model for lymphocyte detection (SAM-TIL) and compared it with HoVerNet and muTILs.</li><li>Benchmarked models against gold-standard clinical assessment and outcomes across multiple cohorts.</li></ul>
+          <p><b>Evidence signal:</b> In the PARTNER and external cohorts, the models showed moderate correlation with clinical scoring (0.59-0.69) and similar prognostic performance for pCR and event-free survival, with pCR AUC around 0.60-0.64 and comparable Brier scores.</p>
+          <p><b>Watch item:</b> Model detections were not interchangeable with manual clinical scoring, so independent validation and careful implementation are needed before routine use.</p>
+          <div class="tags"><span>#PrecisionOncology</span> <span>#BreastCancer</span> <span>#AIpathology</span> <span>#TILs</span> <span>#FoundationModels</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>52</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>49</strong></div>
+        <p class="date">2026-09-16</p>
+        <h2>Genomic foundation model-derived disruption profiling links somatic mutations to cancer biology and clinical outcomes</h2>
+        <p class="authors">Nayak, A.; Lee, T.-R.; Agarwal, V.; Georgakopoulos-Soares, I.</p>
+        <p class="abstract">Cancer genomics has concentrated on individual mutations, overlooking whether somatic mutations can accumulate to produce partial, gene-level disruption with biological and clinical consequences. Sequence-to-function models can quantify these effects directly from DNA sequence. Here, we use AlphaGenome and AlphaMissense to quantify the disruption imposed by somatic mutations across 8,800 patients and 33 cancer types from The Cancer Genome Atlas. At the individual-variant level, recurrent hotspot mutations showed substantially larger predicted protein-level effects, whereas non-hotspot mutations exhibited larger regulatory effects across most cancer types. We then aggregated the variant-level predictions to construct patient-gene disruption profiles capturing transcriptional activity, chromatin accessibility, transcription factor binding, and splicing. These profiles were gene- and modality-specific, and reflected tissue of origin, cancer type, and microsatellite-instability status while retaining information beyond tumor mutational burden. Among patients lacking recurrent hotspot mutations in a given cancer gene, higher predicted disruption was associated with overall survival, with the strongest and most consistent signal observed for chromatin accessibility. In an independent treatment-annotated cohort, gene-level disruption was also associated with survival within treatment-defined subgroups. Together, these findings show that recurrent hotspots are enriched for strong predicted protein-level effects, whereas regulatory consequences are distributed more broadly across other variants, supporting a continuous, multidimensional view of cancer-gene perturbation beyond discrete drivers.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.15.26363174v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.15.26363174v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> By using sequence-to-function foundation models, the study shows that somatic mutations can be summarized as continuous, gene-level disruption across protein, regulatory, and splicing dimensions rather than only as discrete hotspot drivers.</p>
+          <p><b>Clinical relevance:</b> These disruption profiles were associated with overall survival and treatment-stratified outcomes, suggesting a potential way to refine cancer prognosis beyond tumor mutational burden and hotspot status.</p>
+          <ul><li>Applied AlphaGenome and AlphaMissense to score somatic variant effects across 8,800 TCGA patients spanning 33 cancer types.</li><li>Aggregated variant-level predictions into patient-gene disruption profiles for transcription, chromatin accessibility, transcription factor binding, and splicing.</li><li>Compared disruption patterns with cancer type, tissue of origin, microsatellite instability, and survival outcomes.</li></ul>
+          <p><b>Evidence signal:</b> The analysis used 8,800 patients from TCGA across 33 cancer types, and findings were replicated in an independent treatment-annotated cohort.</p>
+          <p><b>Watch item:</b> These are model-derived predictions, so clinical utility still needs prospective validation and careful assessment before use in decision-making.</p>
+          <div class="tags"><span>#CancerGenomics</span> <span>#AIinBiology</span> <span>#FoundationModels</span> <span>#PrecisionOncology</span> <span>#SomaticMutations</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>47</strong></div>
         <p class="date">2026-09-16</p>
         <h2>Large Language Model-derived Symptom Clusters and Patient Outcomes in Colorectal Cancer from MIMIC-IV Clinical Notes</h2>
         <p class="authors">Lee, Y.; Dinov, I.; Hu, X.; Jiang, Y.</p>
@@ -58,94 +77,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.15.26363148v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.15.26363148v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> LLM-extracted symptoms from colorectal cancer discharge notes grouped into three stable symptom clusters that tracked meaningful outcomes, especially mortality and readmission.</p>
-          <p><b>Clinical relevance:</b> This suggests routine EHR text can be mined to identify patients at higher risk and to complement symptom assessment beyond survey-based snapshots.</p>
-          <ul><li>Extracted 46 symptoms from 2,728 discharge notes of 1,507 CRC patients in MIMIC-IV.</li><li>Built patient-level symptom co-occurrence networks from Gemini 3.5 Flash and Claude Haiku outputs using phi correlation and Louvain clustering.</li><li>Tested cluster burden scores against in-hospital mortality, 30-day readmission, and 1-year mortality with adjusted logistic regression and sensitivity analyses.</li></ul>
-          <p><b>Evidence signal:</b> The two LLM pipelines converged on the same three clusters with strong agreement (cross-model ARI 0.727) and the clusters showed consistent predictive associations in sensitivity analyses.</p>
-          <p><b>Watch item:</b> These results come from retrospective discharge notes in a single critical-care dataset, so generalizability and performance in other hospitals or note types still need validation.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#ColorectalCancer</span> <span>#EHRTextMining</span> <span>#LargeLanguageModels</span> <span>#SymptomClusters</span></div>
+          <p><b>Key insight:</b> Large language models can extract symptom patterns from colorectal cancer discharge notes that form reproducible symptom clusters and predict patient outcomes.</p>
+          <p><b>Clinical relevance:</b> EHR-derived symptom clusters could help identify colorectal cancer patients at higher risk of mortality or readmission using routinely collected clinical text.</p>
+          <ul><li>LLM zero-shot symptom extraction from 2,728 MIMIC-IV discharge notes across 1,507 colorectal cancer patients</li><li>Built patient-level symptom co-occurrence networks with phi correlation and Louvain clustering</li><li>Tested cluster burden scores against in-hospital mortality, 30-day readmission, and 1-year mortality with adjusted logistic regression</li></ul>
+          <p><b>Evidence signal:</b> Two LLMs produced three consistent clusters with strong reproducibility across sensitivity checks (cross-model ARI 0.727; 100-seed Louvain ARI 0.985; bootstrap ARI 0.733).</p>
+          <p><b>Watch item:</b> Findings come from retrospective ICU discharge notes, so external validation in other hospitals and documentation styles is needed before deployment.</p>
+          <div class="tags"><span>#PrecisionOncology</span> <span>#ColorectalCancer</span> <span>#LLM</span> <span>#ClinicalNLP</span> <span>#EHR</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>49</strong></div>
-        <p class="date">2026-09-15</p>
-        <h2>Interpretable biomarker programs predict treatment response in lupus nephritis: patient-level validation across four regimens</h2>
-        <p class="authors">Kumar, P.; Aurange, A.; Keshari, S.; Nalwad, S.</p>
-        <p class="abstract">A large share of late-stage clinical trial failures reflects not the underlying biology of the target but the composition of the enrolled population: trials recruit patients in whom the drug cannot work. Methods that identify likely responders before treatment therefore address a failure mode that better target selection alone cannot. We applied interpretable machine learning to gene-expression data from a treatment-response cohort in lupus nephritis (GSE224705; 21,914 genes across 319 samples) covering four regimens: mycophenolate mofetil (MMF), azathioprine (AZA), hydroxychloroquine (HC) and standard of care (SOC). We independently reconstructed the expression matrix and metadata, rebuilt the treatment-specific cohorts, and derived compact multi-gene programs that separate responders from non-responders within each treated population. Two results follow. First, discriminative performance is strongly graded by regimen. Compact programs of five to ten genes achieved patient-level AUROC of 0.847 (MMF) and 0.866 (AZA), but only 0.718 (HC) and 0.623 (SOC); the SOC programs performed close to chance (MCC 0.119, balanced accuracy 0.555). A regimen in which response is not transcriptionally discriminable is an actionable finding for trial design rather than a null result. Second, the programs proved considerably more stable than the differential-expression lists that generated them: reconstructed counts of significant genes differed markedly from the published analysis (222 vs. 46 for MMF; 4,455 vs. 157 for AZA; 6 vs. 24 for HC; 5 vs. 11 for SOC), yet the dominant biology and the predictive performance were preserved. Programs were also non-redundant: removing a single gene (TUBB2A) from the MMF program reduced AUROC by approximately 0.17. At the pathway level, 13 cross-treatment enrichment relationships remained significant after adjustment, indicating that response landscapes are treatment-specific yet coupled. Patient-generalisable programs of this kind offer a concrete near-term route to enrichment-style trial design, identifying before enrolment which patients a given therapy suits. Our results also caution that the number of differentially expressed genes is a poor proxy for the strength or stability of a response signal.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.13.26362948v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.13.26362948v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Interpretable multi-gene expression programs can predict which lupus nephritis patients respond to specific therapies, with strong performance for MMF and azathioprine but weak performance for hydroxychloroquine and standard care.</p>
-          <p><b>Clinical relevance:</b> These response biomarkers could support pre-enrollment patient selection for trials and treatment enrichment, helping avoid enrolling patients unlikely to benefit from a given regimen.</p>
-          <ul><li>Reconstructed a 319-sample lupus nephritis gene-expression cohort spanning four treatment regimens.</li><li>Built compact, interpretable multi-gene response programs separately for each regimen.</li><li>Compared responder vs non-responder prediction and checked pathway-level consistency across treatments.</li></ul>
-          <p><b>Evidence signal:</b> Using 21,914 genes, the best programs reached patient-level AUROC 0.847 for MMF and 0.866 for AZA, while HC and SOC were lower at 0.718 and 0.623, respectively.</p>
-          <p><b>Watch item:</b> The study is retrospective and based on one reconstructed dataset, so the programs need external prospective validation before any real-world deployment.</p>
-          <div class="tags"><span>#LupusNephritis</span> <span>#Biomarkers</span> <span>#MachineLearning</span> <span>#TreatmentResponse</span> <span>#PrecisionMedicine</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Therapeutic Discovery</span><span>medRxiv</span><strong>47</strong></div>
-        <p class="date">2026-09-15</p>
-        <h2>The sound of snoring: AI-based acoustic phenotyping of upper airway obstruction in Obstructive Sleep Apnea</h2>
-        <p class="authors">Leone, F.; Pietrogiacomi, F.; Fiorini, L.; Agrimi, E.; Vultaggio, F.; Bianchi, A.; Cesarini, V.; Costantini, G.; Gnecco, G.; Salamanca, F.; Mozzanica, F.</p>
-        <p class="abstract">BackgroundDrug-Induced Sleep Endoscopy (DISE) is the current reference standard for identifying the anatomical site of upper airway obstruction in obstructive sleep apnea (OSA), but its invasiveness and limited availability restrict its routine use. Because snoring is generated by vibration of the obstructing upper-airway structures, its acoustic characteristics may provide a non-invasive biomarker of the anatomical site of obstruction. This study investigated whether machine learning could reliably distinguish palatal from epiglottic snoring using acoustic information alone. MethodsA retrospective analysis was performed on 159 DISE recordings obtained from adult patients with moderate, non-positional OSA. Snoring events were independently identified and anatomically classified by two blinded expert examiners. Only events with complete inter-observer agreement were included. The corresponding audio segments were extracted and characterized using spectral, cepstral, temporal and harmonic acoustic features. Feature selection was performed using recursive feature elimination. Support Vector Machine (SVM) and Multilayer Perceptron (MLP) classifiers were developed using a patient-independent nested cross-validation framework. ResultsThe final dataset comprised 1,759 snoring events, including 1,054 palatal and 705 epiglottic recordings. Both classifiers demonstrated robust discrimination between the two anatomical classes under patient-independent validation, achieving ROC AUC values of 0.90{+/-} 0.03 (SVM) and 0.90{+/-} 0.03 (MLP), with balanced accuracies of 0.83 and 0.81, respectively. The most informative predictors were spectral features, particularly spectral energy distribution, spectral flux, Mel-Frequency Cepstral Coefficients (MFCCs), and spectral flatness, whereas fundamental frequency contributed minimally to classification. ConclusionsSnoring contains reproducible acoustic information reflecting the anatomical origin of upper-airway obstruction. By combining high-confidence DISE-derived anatomical labels with a rigorous machine learning framework, this study demonstrates the feasibility of non-invasive acoustic phenotyping of clinically relevant obstruction sites. Rather than proposing a novel artificial intelligence algorithm, our work establishes a clinically oriented framework that may support future decision-support tools for patient selection, treatment planning, and multicentre development of comprehensive acoustic phenotyping models.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.14.26362626v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.14.26362626v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Snoring audio alone can distinguish palatal from epiglottic upper-airway obstruction in OSA with strong machine-learning performance.</p>
-          <p><b>Clinical relevance:</b> This points to a non-invasive way to help phenotype obstruction site and potentially complement sleep endoscopy when access is limited.</p>
-          <ul><li>159 DISE recordings from adults with moderate, non-positional OSA</li><li>Snoring events were blinded, anatomically labeled, and only consensus events were used</li><li>Spectral, cepstral, temporal, and harmonic features were selected and classified with SVM and MLP using patient-independent nested cross-validation</li></ul>
-          <p><b>Evidence signal:</b> The final dataset contained 1,759 snoring events, and both models reached ROC AUC 0.90 ± 0.03 with balanced accuracy around 0.81–0.83 under patient-independent validation.</p>
-          <p><b>Watch item:</b> Results come from a retrospective, single-dataset study using only events with complete expert agreement, so external validation and real-world robustness are still needed.</p>
-          <div class="tags"><span>#ObstructiveSleepApnea</span> <span>#SnoringAnalysis</span> <span>#MachineLearning</span> <span>#AcousticBiomarkers</span> <span>#NonInvasiveDiagnostics</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>47</strong></div>
-        <p class="date">2026-09-15</p>
-        <h2>Task-Specific Quality Gating for Retinal Optical Coherence Tomography B-Scans: Learned Representations Over Scalar Metrics in Choroid Segmentation</h2>
-        <p class="authors">Hiras, A.; Gadari, A.; Jayaraman, A.; Mankumare, A. S.; Mynampati, A.; Chhablani, J. K.; Bollepalli, S. C.; Vupparaboina, K. K.</p>
-        <p class="abstract">Automated segmentation of Optical Coherence Tomography (OCT) images is a critical component of structural biomarker extraction for retinal diagnostics. Deep learning models achieve state-of-the-art performance on controlled datasets, yet exhibit unpredictable failures on real-world data. Current quality gates rely on device-reported scan quality scores, which have been shown to be unreliable predictors of segmentation performance. We define scan quality in a task-specific sense that is, whether a given B-scan will yield a reliable segmentation from a particular trained model. Under this definition, we perform a systematic evaluation of No-Reference Image Quality Assessment (NR-IQA) metrics, general-purpose and domain-specific pretrained representations as alternative quality gates. To this end, we use choroid segmentation as the prototype task, with a dataset of 6,076 OCT B-scans from 80 subjects. These quality gate candidates are evaluated at three levels: scalar metrics (BRISQUE, NIQE, PIQE, SNR, PSNR), supervised linear probing, and unsupervised partitioning (K-Means) of the feature vectors and the learned representations. All scalar NR-IQA metrics proved inadequate (|r| &lt; 0.20). General-purpose ImageNet-based pretrained representations (EfficientNet-b0, ResNet-50, ViT-B/16) improve upon NR-IQA, achieving ROC-AUC up to 0.77, indicating that learned representations are better suited to task-specific quality gating than hand-crafted scalar statistics. Retinal foundation models (FMs) further close the gap: RETFound (OCT-specific FM) achieves ROC-AUC {approx} 0.81. Unsupervised K-Means partitioning indicates that general-purpose ImageNet-pretrained embeddings, despite carrying a linearly decodable quality signal, do not reliably organize scans by quality geometrically, whereas the retinal FMs produce quality-aligned clusters that exceed a patient-level permutation null, suggesting that domain-specific pretraining provides additional, complementary benefit on top of general-purpose learned representations.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.14.26363079v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.14.26363079v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Task-specific quality gating for OCT choroid segmentation works better with learned image representations than with hand-crafted no-reference quality scores, especially when using retinal foundation models.</p>
-          <p><b>Clinical relevance:</b> More reliable scan filtering could help automated retinal image analysis avoid bad-segmentation failures and improve consistency in biomarker extraction workflows.</p>
-          <ul><li>Evaluated 6,076 OCT B-scans from 80 subjects for task-specific quality gating</li><li>Compared scalar NR-IQA metrics with supervised linear probing and unsupervised K-Means on pretrained representations</li><li>Benchmarked general-purpose ImageNet models and retinal foundation models against a patient-level null</li></ul>
-          <p><b>Evidence signal:</b> All scalar metrics were weak (|r| &lt; 0.20), while learned embeddings improved ROC-AUC up to 0.77 and RETFound reached about 0.81, with retinal foundation models also forming quality-aligned clusters above a permutation null.</p>
-          <p><b>Watch item:</b> Performance was demonstrated for one prototype task (choroid segmentation) on a specific dataset, so broader generalization and deployment thresholds still need external validation.</p>
-          <div class="tags"><span>#OCT</span> <span>#RetinaAI</span> <span>#QualityGating</span> <span>#FoundationModels</span> <span>#MedicalImaging</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>47</strong></div>
-        <p class="date">2026-09-15</p>
-        <h2>The Human Hearing Atlas: a canonical map of human hearing</h2>
-        <p class="authors">Hadj-Allal, Z.; Makitie, A.; Aarnisalo, A.</p>
-        <p class="abstract">For 140 years, hearing science and otology have rested on a premise treated as a principle of human physiology: that the sense of hearing, in health and disease, comes in distinct kinds. Its standard measure, the audiogram, was collapsed into a severity average and a subjective shape label. The reduction carried the premise from otologys founding fathers into the digital and artificial intelligence era. We tested this premise and falsified it. Human hearing does not resolve into a reproducible catalogue of types; it occupies a continuous, five-dimensional coordinate system. We call it the Human Hearing Atlas. Established across more than 4.29 million audiograms spanning 33 datasets, eight countries, 62 years and two calibration standards, the Atlas reconstructs unseen audiograms to near-decibel accuracy and preserves its clinical details. It maps within-ear hearing change over hours or decades, half of which is invisible to the conventional severity average. We demonstrate that the varying numbers of hearing types reported since 1932 are artifacts of 5 dB quantisation and cohort pooling. Finally, we establish the Law of Human Hearing States, characterized by four empirical invariants. The Atlas replaces arbitrary audiogram categories with positions and trajectories universal across individuals, populations and eras, opening a new paradigm for precision otology, genetics, epidemiology, regenerative medicine and clinical trials.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.14.26363004v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.14.26363004v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Human hearing is better described as a continuous five-dimensional atlas of states and trajectories than as a set of discrete hearing “types.”</p>
-          <p><b>Clinical relevance:</b> This framework could improve precision otology by capturing within-ear changes and individual patterns that conventional audiogram severity averages miss.</p>
-          <ul><li>Analyzed more than 4.29 million audiograms</li><li>Integrated 33 datasets from 8 countries across 62 years</li><li>Built a model that reconstructs unseen audiograms to near-decibel accuracy</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports validation across 4.29 million audiograms, with the atlas reconstructing unseen audiograms to near-decibel accuracy and preserving clinical detail.</p>
-          <p><b>Watch item:</b> Because the atlas is derived from pooled historical audiograms and calibration standards, real-world implementation may require careful harmonization and prospective validation.</p>
-          <div class="tags"><span>#HearingScience</span> <span>#Audiology</span> <span>#PrecisionMedicine</span> <span>#Otology</span> <span>#MedicalAI</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>46</strong></div>
+        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>41</strong></div>
         <p class="date">2026-09-16</p>
         <h2>Time-resolved predictability of end-of-therapy outcome and relapse after cure in Phase 3 tuberculosis trials</h2>
         <p class="authors">Garger, D.; Burks, J. H.; Paton, N. I.; Sloan, D. J.; Maher-Edwards, G.; Theis, F.; Menden, M. P.; Casale, F. P.</p>
@@ -153,69 +96,12 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.15.26362605v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.15.26362605v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Routine clinical data collected during tuberculosis treatment predicts end-of-therapy status reasonably well, but it only modestly predicts later relapse and loses value after about month 3.</p>
-          <p><b>Clinical relevance:</b> For trial readouts and follow-up planning, post-baseline clinical variables can improve relapse risk stratification, but they are not strong enough to replace relapse-specific biomarkers.</p>
-          <ul><li>Harmonized data from 2 Phase 3 TB trials (2,918 participants)</li><li>Built time-resolved prediction models at monthly intervals from baseline to therapy end</li><li>Compared tabular features with large language model-derived embeddings and longitudinal models</li></ul>
-          <p><b>Evidence signal:</b> End-of-therapy outcome prediction improved after month 3 with ROC-AUC up to 0.84, while relapse prediction stayed modest (ROC-AUC 0.58–0.63) and then declined; embeddings matched tabular relapse performance and sometimes improved end-of-therapy prediction.</p>
-          <p><b>Watch item:</b> These models use routine clinical variables and may be less interpretable or transferable across settings, so they should not be used as stand-alone relapse predictors without external validation.</p>
-          <div class="tags"><span>#Tuberculosis</span> <span>#ClinicalPrediction</span> <span>#RelapseRisk</span> <span>#Phase3Trials</span> <span>#MachineLearning</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>41</strong></div>
-        <p class="date">2026-09-15</p>
-        <h2>Photoacoustic imaging of intestinal physiological biomarkers in infants and children</h2>
-        <p class="authors">Wright, P.; Paige, L.; Norona, S.; Welch, C. D.; Zeller, K. A.; Weis, V. G.; Weis, J. A.</p>
-        <p class="abstract">BackgroundA major hallmark of necrotizing enterocolitis (NEC) is intestinal hypoxia, but detection of this feature is difficult. Photoacoustic imaging (PAI) is an emerging imaging method to noninvasively visualize intestinal oxygenation and microvasculature and is promising for improved NEC detection. Prior to clinical translation of PAI for NEC detection, initial studies must be performed in a pediatric population to assess safety and feasibility. MethodsUnder IRB approval, eighteen healthy pediatric participants underwent PAI scans before and after eating a lipid-rich snack. PAI was acquired in each abdominal quadrant with intestinal regions-of-interest (ROI) manually drawn on each image series to measure averaged values of deoxygenated hemoglobin (Hb), oxygenated hemoglobin (HbO2), total hemoglobin (HbT), and oxygen saturation (sO2). ResultsMinor temporary erythema and pressure from safety goggles in some participants were the only adverse events reported. Pre-/post-prandial changes for HbT, HbO2, Hb, and sO2 were assessed for each abdominal region and age cohort. Results showed significant post-prandial hyperemia in the intestines with no changes in bowel oxygenation. ConclusionsPAI is a safe and feasible imaging modality for evaluating intestinal blood flow in pediatric patients that detects physiological changes in bowel microvasculature and shows strong potential as a quantitative biomarker for assessment and monitoring of intestinal vascular health. HighlightsO_LIPediatric abdominal PAI is safe: Only minor, temporary, and immediately reversible adverse events were reported due to goggles C_LIO_LIPediatric abdominal PAI is feasible: Excellent sensitivity for detecting changes in intestinal microvascular biomarkers C_LIO_LIFirst-in-early-pediatric study: Our findings support the translational use of PAI for assessing intestinal vascular health C_LI</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.14.26362277v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.14.26362277v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Photoacoustic imaging safely detected meal-related increases in intestinal blood flow in children without changing oxygenation, suggesting a noninvasive way to assess bowel vascular health.</p>
-          <p><b>Clinical relevance:</b> This early pediatric study supports photoacoustic imaging as a feasible biomarker tool for monitoring intestinal perfusion, which may aid future evaluation of conditions such as necrotizing enterocolitis.</p>
-          <ul><li>18 healthy pediatric participants were scanned before and after a lipid-rich snack.</li><li>Photoacoustic images were collected in each abdominal quadrant.</li><li>Regions of interest were manually drawn to quantify Hb, HbO2, HbT, and sO2.</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports only minor temporary adverse events and significant post-prandial increases in intestinal hemoglobin measures, with no change in oxygen saturation.</p>
-          <p><b>Watch item:</b> Findings are from a small, healthy pediatric cohort, so performance in ill infants and for real-world clinical decision-making still needs validation.</p>
-          <div class="tags"><span>#PhotoacousticImaging</span> <span>#Pediatrics</span> <span>#IntestinalHealth</span> <span>#BiomedicalImaging</span> <span>#NoninvasiveDiagnostics</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>41</strong></div>
-        <p class="date">2026-09-15</p>
-        <h2>Antenatal Iron-Folic Acid Supplementation Gaps in Nigeria: A Predictive Machine Learning Analysis of Non-Initiation and Sub-Optimal Duration Using NDHS 2023-24</h2>
-        <p class="authors">Nosa-Ihaza, E. A.; Eze, D. N.; Adeosun, O. J.; Nosa-Ihaza, U. N.</p>
-        <p class="abstract">BackgroundAlthough iron-folic acid (IFA) supplementation is a known, low-cost intervention to prevent anemia in pregnancy, the Nigeria Demographic and Health Survey (NDHS) 2023-24 shows that 33% of women do not begin IFA supplementation, and the majority of women who start IFA supplementation do not complete it for the recommended duration. No nationally representative dataset from Nigeria has formally tested whether these are one or two distinct problems. MethodsThis is a cross-sectional secondary analysis of the NDHS Individual Recode - Women aged 15-49 (2023-24). Two gaps were identified: Gap A: Non-initiation of antenatal IFA supplementation (n=13,940); Gap B: Inadequate duration (&lt;90 days) among those who initiated the supplementation (n=8,431). We compared the survey-weighted logistic regression model with elastic net, random forest, and XGBoost models, all of which included the normalised DHS sampling weight, and tested them on an equal 80:20 test-set split held out in Stata. The factors that were found to predict included: education, wealth, residence, geopolitical zone, religion, ethnicity, health insurance, media exposure, access barriers, parity, ANC visit count, timing of the ANC visits, and type of facility. We cross-checked self-reported IFA status with hemoglobin and anemia biomarkers from the same survey. ResultsNon-initiation prevalence was 33.8% and among initiators, 59.8% consumed iron for &lt; 90 days. The single factor that dominated Gap A was women with no antenatal contact, who were 21 times more likely not to have initiated than those receiving home-based ANC (95% CI 11.6-38.6), while both public- and private-sector facility care were protective. Education, wealth, and ANC visit count were independently protective for both outcomes. Gap B showed a more diffuse predictor profile and weaker or reversed geographic effects relative to Gap A. XGBoost discrimination was higher in both cases (AUC 0.922 and 0.721) than in survey-weighted logistic regression (AUC 0.915 and 0.678), in contrast to the best comparator study in the literature, which found XGBoost to underperform simpler models for a different health outcome. The directionality of self-reported IFA status relative to the biomarkers (hemoglobin and anemia) was the same for both outcomes (p&lt;0.05). ConclusionsThe IFA supplementation shortfall in Nigeria can be attributed to two issues: a large, highly concentrated access gap, primarily driven by the absence of antenatal contact, and a smaller, more diffuse adherence gap not adequately explained by survey variables. Plausibly, two different interventions are needed to close this gap: expanding the reach of antenatal services for non-initiation, and investigating side effects, supply continuity, and household barriers for non-adherence among antenatal service initiators, likely in a qualitative format.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.14.26363020v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.14.26363020v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> This study suggests antenatal iron-folic acid non-initiation and short duration are related but distinct gaps in Nigeria, with no antenatal contact being the strongest driver of non-initiation.</p>
-          <p><b>Clinical relevance:</b> The findings can help target maternal health outreach and ANC access efforts to improve iron-folic acid coverage and reduce anemia risk in pregnancy.</p>
-          <ul><li>Cross-sectional secondary analysis of NDHS 2023–24 women aged 15–49</li><li>Modeled two outcomes: non-initiation and &lt;90-day use among initiators</li><li>Compared survey-weighted logistic regression with elastic net, random forest, and XGBoost</li></ul>
-          <p><b>Evidence signal:</b> Using an 80:20 held-out test split, XGBoost showed the best discrimination for both outcomes (AUC 0.922 for non-initiation and 0.721 for short duration), outperforming survey-weighted logistic regression.</p>
-          <p><b>Watch item:</b> Because this is observational survey data, associations may not prove causation and self-reported supplementation status may be affected by recall or reporting bias.</p>
-          <div class="tags"><span>#MaternalHealth</span> <span>#AnemiaPrevention</span> <span>#NigerianHealth</span> <span>#MachineLearning</span> <span>#PublicHealth</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>41</strong></div>
-        <p class="date">2026-09-15</p>
-        <h2>Longitudinal interferon signatures are associated with disease flare in dermatomyositis</h2>
-        <p class="authors">Liu, P.; Chou, H.; Jarry, M.; Hudson, M.; del Rincon, S. V.; Lefrancois, P.; Leclair, V.</p>
-        <p class="abstract">BackgroundDisease flares in dermatomyositis (DM) are unpredictable and often detected weeks to months after their onset. Interferon (IFN)-related gene signatures are implicated in DM, but their value for longitudinal flare prediction remains unclear. We hypothesized that longitudinal transcriptomic profiling using minimally invasive blood microsampling would detect IFN gene signatures preceding and during DM disease flares. MethodsIn this feasibility study, patients were included if they had inactive or minimally active disease and at least one of the following criteria: recent diagnosis within 2 years, a documented flare in the prior year, or ongoing tapering of immunosuppressive therapy. Patients self-assessed their disease activity weekly for 6 months using the International Myositis Assessment and Clinical Study group (IMACS) patient global assessment (PtGA; numerical rating scale, range 0-10). Disease flares, defined as a PtGA increase &gt;2 for 2 consecutive weeks, triggered an in-person visit for confirmation by a physician. During the follow-up period, patients also self-collected weekly blood microsamples (125uL) that were shipped by courier to the study center. From those weekly blood microsamples, RNA sequencing was performed on 54 samples collected across 9 timepoints using an Illumina platform. Bioinformatic analyses included alignment, quality assessment, and gene-level quantification to evaluate differential gene expression and RNA processing changes during DM flares. ResultsSix DM patients were included in this study (2 anti-MDA5, 2 anti-Mi2, 1 anti-NXP2, 1 no myositis-specific antibodies). All patients were women with a mean age (SD) at study entry of 54(8) years. Three of the six patients experienced a flare during their 6-month follow-up. The mean (SD) RNA integrity score for the weekly blood microsamples collected was 7,61 (0,64). IFN scores were significantly higher in flare-associated samples than in no flare samples (linear mixed-effects model with individual patient as a random intercept, P = 5.13 x 10-). Gene set enrichment analysis of hallmark gene sets identified enrichment of IFN-related gene sets in pre-flare and flare samples with IFN Alpha Response and IFN Gamma Response showing the highest positive normalized enrichment scores. ConclusionThis study demonstrates the technical feasibility of combining home-based longitudinal blood microsampling with transcriptomic profiling in dermatomyositis. IFN gene score were higher in flare-associated than in no-flare samples, supporting further investigation of IFN-related signatures as candidate biomarkers for longitudinal disease monitoring.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.15.26362919v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.15.26362919v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Weekly blood microsampling detected higher interferon-related gene signatures before and during dermatomyositis flares, suggesting a potential early molecular flare signal.</p>
-          <p><b>Clinical relevance:</b> If validated, this approach could support earlier flare detection in dermatomyositis using minimally invasive home-collected blood samples.</p>
-          <ul><li>Six women with dermatomyositis were followed for 6 months with weekly patient-reported disease activity scoring.</li><li>Patients self-collected weekly 125 µL blood microsamples that were shipped for RNA sequencing.</li><li>Transcriptomic analyses assessed interferon scores, differential gene expression, and pathway enrichment around flare events.</li></ul>
-          <p><b>Evidence signal:</b> In this feasibility study of 6 patients and 54 RNA-seq samples across 9 timepoints, interferon scores were significantly higher in flare-associated samples, with enrichment of interferon-related gene sets in pre-flare and flare samples.</p>
-          <p><b>Watch item:</b> Very small sample size and feasibility design mean the flare signal needs larger, independent validation before it can be used in practice.</p>
-          <div class="tags"><span>#Dermatomyositis</span> <span>#InterferonSignature</span> <span>#RNASeq</span> <span>#BiomarkerDiscovery</span> <span>#LongitudinalMonitoring</span></div>
+          <p><b>Key insight:</b> Routine clinical data collected during TB treatment can better predict end-of-therapy outcomes after month 3, but it has limited power to forecast post-treatment relapse.</p>
+          <p><b>Clinical relevance:</b> Time-resolved models may help refine relapse risk stratification near treatment end, but stronger relapse-specific biomarkers are still needed for reliable prediction.</p>
+          <ul><li>Harmonized data from 2 Phase 3 TB trials were analyzed (2,918 participants).</li><li>Models were trained at monthly time points from baseline through treatment end to predict end-of-therapy outcomes and relapse.</li><li>Tabular models were compared with large language model-derived embeddings and longitudinal/sparse feature approaches.</li></ul>
+          <p><b>Evidence signal:</b> EOT prediction improved after month 3 with ROC-AUC up to 0.84, while relapse prediction only modestly improved to ROC-AUC 0.58-0.63 by month 3 and then declined; embedding-based models matched relapse performance and outperformed tabular EOT models at months 3-4.</p>
+          <p><b>Watch item:</b> Performance gains for relapse were limited and interpretability dropped for more flexible models, so clinical use would require careful validation and clear decision thresholds.</p>
+          <div class="tags"><span>#Tuberculosis</span> <span>#ClinicalAI</span> <span>#RelapsePrediction</span> <span>#Biomarkers</span> <span>#Phase3Trials</span></div>
         </section>
       </article>
     </section>

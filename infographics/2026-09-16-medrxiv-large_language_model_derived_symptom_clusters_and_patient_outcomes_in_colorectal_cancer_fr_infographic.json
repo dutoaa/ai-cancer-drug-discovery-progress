@@ -1,24 +1,24 @@
 {
-  "key_insight": "LLM-extracted symptoms from colorectal cancer discharge notes grouped into three stable symptom clusters that tracked meaningful outcomes, especially mortality and readmission.",
-  "clinical_relevance": "This suggests routine EHR text can be mined to identify patients at higher risk and to complement symptom assessment beyond survey-based snapshots.",
+  "key_insight": "Large language models can extract symptom patterns from colorectal cancer discharge notes that form reproducible symptom clusters and predict patient outcomes.",
+  "clinical_relevance": "EHR-derived symptom clusters could help identify colorectal cancer patients at higher risk of mortality or readmission using routinely collected clinical text.",
   "method": [
-    "Extracted 46 symptoms from 2,728 discharge notes of 1,507 CRC patients in MIMIC-IV.",
-    "Built patient-level symptom co-occurrence networks from Gemini 3.5 Flash and Claude Haiku outputs using phi correlation and Louvain clustering.",
-    "Tested cluster burden scores against in-hospital mortality, 30-day readmission, and 1-year mortality with adjusted logistic regression and sensitivity analyses."
+    "LLM zero-shot symptom extraction from 2,728 MIMIC-IV discharge notes across 1,507 colorectal cancer patients",
+    "Built patient-level symptom co-occurrence networks with phi correlation and Louvain clustering",
+    "Tested cluster burden scores against in-hospital mortality, 30-day readmission, and 1-year mortality with adjusted logistic regression"
   ],
-  "evidence_signal": "The two LLM pipelines converged on the same three clusters with strong agreement (cross-model ARI 0.727) and the clusters showed consistent predictive associations in sensitivity analyses.",
-  "watch_item": "These results come from retrospective discharge notes in a single critical-care dataset, so generalizability and performance in other hospitals or note types still need validation.",
+  "evidence_signal": "Two LLMs produced three consistent clusters with strong reproducibility across sensitivity checks (cross-model ARI 0.727; 100-seed Louvain ARI 0.985; bootstrap ARI 0.733).",
+  "watch_item": "Findings come from retrospective ICU discharge notes, so external validation in other hospitals and documentation styles is needed before deployment.",
   "hashtags": [
     "#PrecisionOncology",
     "#ColorectalCancer",
-    "#EHRTextMining",
-    "#LargeLanguageModels",
-    "#SymptomClusters"
+    "#LLM",
+    "#ClinicalNLP",
+    "#EHR"
   ],
   "paper_id": "2026-09-16-medrxiv-large_language_model_derived_symptom_clusters_and_patient_outcomes_in_colorectal_cancer_fr",
   "paper_title": "Large Language Model-derived Symptom Clusters and Patient Outcomes in Colorectal Cancer from MIMIC-IV Clinical Notes",
   "paper_date": "2026-09-16",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-09-21T13:28:40",
+  "generated_at": "2026-09-22T12:13:08",
   "generator": "openai"
 }
