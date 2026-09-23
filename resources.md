@@ -1,36 +1,60 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-09-22
+Generated: 2026-09-23
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
-## 1. Tumour region identification guided scoring (TRIGS) and foundation model-based Tumour Infiltrating Lymphocyte scoring are prognostic for pathological complete response/event free survival in the triple negative patients in the PARTNER randomized controlled trial
+## 1. Safety, Feasibility, and Preliminary Clinical Findings of an Oral Polypore Fungi Combination with Mild-to-Moderate COVID-19: A Randomized, Placebo-Controlled Phase I Clinical Trial
 
-- Date: 2026-09-16
-- Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.15.26363116v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.15.26363116v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-16-medrxiv-tumour_region_identification_guided_scoring_trigs_and_foundation_model_based_tumour_infilt_infographic.json
-
-## 2. Genomic foundation model-derived disruption profiling links somatic mutations to cancer biology and clinical outcomes
-
-- Date: 2026-09-16
-- Category: Target Biology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.15.26363174v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.15.26363174v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-16-medrxiv-genomic_foundation_model_derived_disruption_profiling_links_somatic_mutations_to_cancer_bi_infographic.json
-
-## 3. Large Language Model-derived Symptom Clusters and Patient Outcomes in Colorectal Cancer from MIMIC-IV Clinical Notes
-
-- Date: 2026-09-16
-- Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.15.26363148v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.15.26363148v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-16-medrxiv-large_language_model_derived_symptom_clusters_and_patient_outcomes_in_colorectal_cancer_fr_infographic.json
-
-## 4. Time-resolved predictability of end-of-therapy outcome and relapse after cure in Phase 3 tuberculosis trials
-
-- Date: 2026-09-16
+- Date: 2026-09-19
 - Category: Clinical Translation
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.15.26362605v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.15.26362605v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-16-medrxiv-time_resolved_predictability_of_end_of_therapy_outcome_and_relapse_after_cure_in_phase_3_t_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.01.26354267v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.01.26354267v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-19-medrxiv-safety_feasibility_and_preliminary_clinical_findings_of_an_oral_polypore_fungi_combination_infographic.json
+
+## 2. Machine Learning Approach to Identify Gut Microbiota Biomarkers in Patients with ST-Elevation Myocardial Infarction Presenting Primary Ventricular Tachyarrhythmias
+
+- Date: 2026-09-20
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363271v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363271v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-20-medrxiv-machine_learning_approach_to_identify_gut_microbiota_biomarkers_in_patients_with_st_elevat_infographic.json
+
+## 3. A longitudinal study of age-related traits and cognitive function: The Collaborative Amish Aging and Memory Project (CAAMP)
+
+- Date: 2026-09-20
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.17.26363351v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.17.26363351v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-20-medrxiv-a_longitudinal_study_of_age_related_traits_and_cognitive_function_the_collaborative_amish_infographic.json
+
+## 4. Identifying cohorts at elevated risk of cancers using generative modeling of patient health states
+
+- Date: 2026-09-19
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.09.26362676v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.09.26362676v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-19-medrxiv-identifying_cohorts_at_elevated_risk_of_cancers_using_generative_modeling_of_patient_healt_infographic.json
+
+## 5. Population-Scale Precision Safety in Oncology Reveals Clinical and Genetic Determinants of Systemic Therapy Toxicity
+
+- Date: 2026-09-17
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363259v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363259v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-17-medrxiv-population_scale_precision_safety_in_oncology_reveals_clinical_and_genetic_determinants_of_infographic.json
+
+## 6. Deep learning-based assessment of ulcerative colitis activity from full-length endoscopic videos with spatial characterisation and histological correlation
+
+- Date: 2026-09-17
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363201v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363201v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-17-medrxiv-deep_learning_based_assessment_of_ulcerative_colitis_activity_from_full_length_endoscopic_infographic.json
+
+## 7. Validating LLM judges for automated oversight of patient communication
+
+- Date: 2026-09-17
+- Category: Clinical Translation
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363176v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363176v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-17-medrxiv-validating_llm_judges_for_automated_oversight_of_patient_communication_infographic.json

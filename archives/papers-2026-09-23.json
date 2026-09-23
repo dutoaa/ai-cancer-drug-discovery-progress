@@ -1,0 +1,206 @@
+[
+  {
+    "id": "2026-09-16-medrxiv-tumour_region_identification_guided_scoring_trigs_and_foundation_model_based_tumour_infilt",
+    "doi": "10.64898/2026.09.15.26363116",
+    "date": "2026-09-16",
+    "title": "Tumour region identification guided scoring (TRIGS) and foundation model-based Tumour Infiltrating Lymphocyte scoring are prognostic for pathological complete response/event free survival in the triple negative patients in the PARTNER randomized controlled trial",
+    "authors": "Schouten, P. C.; Irfan, M. O.; Kinsella, Z.; Sionakidis, A.; Riddell, A.; Worley, J. R.; Lay, J.; Casford, S.; Pinilla, K.; Kane, J.; Whitehorn, D.; Tarantino, S.; Dayimu, A.; Demiris, N.; Earl, H. M.; Simidjievski, N.; Provenzano, E.; Abraham, J. E.",
+    "abstract": "Assessment of tumour infiltrating lymphocytes (TILs) is a robust prognostic biomarker for HER2-positive and triple negative breast cancer. We aimed to update a previously established pipeline for automated TIL assessment to align to clinical scoring guidelines (tumour region identification guided scoring), foundation model-based lymphocyte detection (SAM-TIL) and compare with alternative methods (HoVerNet, muTILs) and gold standard clinical assessment. TRIGS and SAM-TIL had an odds ratio of 1.95 (95% confidence interval(ci): 1.22-3.03, p=0.005) and 2.32 (95% ci:1.43-3.77, p=0.001) for predicting pathological complete response (pCR) rate in 166 neoadjuvantly treated patients in the TransNEO cohort. Hazard ratios for overall survival in 277 triple negative and HER2-positive patients in The Cancer Genome Atlas were 0.79 (95% ci: 0.63-1.00, p=0.05) and 0.80 (95% ci: 0.67-0.97, p=0.02) for TRIGS and SAM-TIL. Comparator methods showed similar results. Correlation with gold standard clinical assessment in 285 patients from the PARTNER randomized trial ranged from 0.59-0.69, which is substantially more than interobserver variability for the gold standard. Despite differences with gold standard assessment, no substantial difference in predicting pCR (AUC 0.60-0.64) or event free survival (Integrated Brier score approximately 0.10) were observed between the tested methods and gold standard assessment, suggesting AI tools that do not follow manual scoring guidelines could be validated and subsequently used. Although we reached prognostic performance similar to published literature and gold standard assessment, the lymphocyte detections produced by the models are not interchangeable with gold standard clinical assessment (correlation 0.59-0.69) and therefore cannot support pathologist assessment. Further studies to validate independent use and/or to improve prognostication are required.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-09-16",
+    "updated": "2026-09-16",
+    "primary_category": "pathology",
+    "categories": [
+      "pathology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26363116v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26363116v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "AI-based tumour-infiltrating lymphocyte scoring (TRIGS and SAM-TIL) predicted treatment response and survival in triple negative breast cancer about as well as gold-standard clinical scoring.",
+      "clinical_relevance": "These tools could help standardize TIL assessment for prognosis in neoadjuvant and early-stage breast cancer research, but they are not yet a replacement for pathologist review.",
+      "method": [
+        "Updated an automated TIL pipeline to match clinical scoring guidance (TRIGS).",
+        "Used a foundation model for lymphocyte detection (SAM-TIL) and compared it with HoVerNet and muTILs.",
+        "Benchmarked models against gold-standard clinical assessment and outcomes across multiple cohorts."
+      ],
+      "evidence_signal": "In the PARTNER and external cohorts, the models showed moderate correlation with clinical scoring (0.59-0.69) and similar prognostic performance for pCR and event-free survival, with pCR AUC around 0.60-0.64 and comparable Brier scores.",
+      "watch_item": "Model detections were not interchangeable with manual clinical scoring, so independent validation and careful implementation are needed before routine use.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#BreastCancer",
+        "#AIpathology",
+        "#TILs",
+        "#FoundationModels"
+      ],
+      "paper_id": "2026-09-16-medrxiv-tumour_region_identification_guided_scoring_trigs_and_foundation_model_based_tumour_infilt",
+      "paper_title": "Tumour region identification guided scoring (TRIGS) and foundation model-based Tumour Infiltrating Lymphocyte scoring are prognostic for pathological complete response/event free survival in the triple negative patients in the PARTNER randomized controlled trial",
+      "paper_date": "2026-09-16",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-09-22T12:13:03",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-16-medrxiv-genomic_foundation_model_derived_disruption_profiling_links_somatic_mutations_to_cancer_bi",
+    "doi": "10.64898/2026.09.15.26363174",
+    "date": "2026-09-16",
+    "title": "Genomic foundation model-derived disruption profiling links somatic mutations to cancer biology and clinical outcomes",
+    "authors": "Nayak, A.; Lee, T.-R.; Agarwal, V.; Georgakopoulos-Soares, I.",
+    "abstract": "Cancer genomics has concentrated on individual mutations, overlooking whether somatic mutations can accumulate to produce partial, gene-level disruption with biological and clinical consequences. Sequence-to-function models can quantify these effects directly from DNA sequence. Here, we use AlphaGenome and AlphaMissense to quantify the disruption imposed by somatic mutations across 8,800 patients and 33 cancer types from The Cancer Genome Atlas. At the individual-variant level, recurrent hotspot mutations showed substantially larger predicted protein-level effects, whereas non-hotspot mutations exhibited larger regulatory effects across most cancer types. We then aggregated the variant-level predictions to construct patient-gene disruption profiles capturing transcriptional activity, chromatin accessibility, transcription factor binding, and splicing. These profiles were gene- and modality-specific, and reflected tissue of origin, cancer type, and microsatellite-instability status while retaining information beyond tumor mutational burden. Among patients lacking recurrent hotspot mutations in a given cancer gene, higher predicted disruption was associated with overall survival, with the strongest and most consistent signal observed for chromatin accessibility. In an independent treatment-annotated cohort, gene-level disruption was also associated with survival within treatment-defined subgroups. Together, these findings show that recurrent hotspots are enriched for strong predicted protein-level effects, whereas regulatory consequences are distributed more broadly across other variants, supporting a continuous, multidimensional view of cancer-gene perturbation beyond discrete drivers.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-09-16",
+    "updated": "2026-09-16",
+    "primary_category": "genetic and genomic medicine",
+    "categories": [
+      "genetic and genomic medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26363174v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26363174v1.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "By using sequence-to-function foundation models, the study shows that somatic mutations can be summarized as continuous, gene-level disruption across protein, regulatory, and splicing dimensions rather than only as discrete hotspot drivers.",
+      "clinical_relevance": "These disruption profiles were associated with overall survival and treatment-stratified outcomes, suggesting a potential way to refine cancer prognosis beyond tumor mutational burden and hotspot status.",
+      "method": [
+        "Applied AlphaGenome and AlphaMissense to score somatic variant effects across 8,800 TCGA patients spanning 33 cancer types.",
+        "Aggregated variant-level predictions into patient-gene disruption profiles for transcription, chromatin accessibility, transcription factor binding, and splicing.",
+        "Compared disruption patterns with cancer type, tissue of origin, microsatellite instability, and survival outcomes."
+      ],
+      "evidence_signal": "The analysis used 8,800 patients from TCGA across 33 cancer types, and findings were replicated in an independent treatment-annotated cohort.",
+      "watch_item": "These are model-derived predictions, so clinical utility still needs prospective validation and careful assessment before use in decision-making.",
+      "hashtags": [
+        "#CancerGenomics",
+        "#AIinBiology",
+        "#FoundationModels",
+        "#PrecisionOncology",
+        "#SomaticMutations"
+      ],
+      "paper_id": "2026-09-16-medrxiv-genomic_foundation_model_derived_disruption_profiling_links_somatic_mutations_to_cancer_bi",
+      "paper_title": "Genomic foundation model-derived disruption profiling links somatic mutations to cancer biology and clinical outcomes",
+      "paper_date": "2026-09-16",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-09-22T12:13:05",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-16-medrxiv-large_language_model_derived_symptom_clusters_and_patient_outcomes_in_colorectal_cancer_fr",
+    "doi": "10.64898/2026.09.15.26363148",
+    "date": "2026-09-16",
+    "title": "Large Language Model-derived Symptom Clusters and Patient Outcomes in Colorectal Cancer from MIMIC-IV Clinical Notes",
+    "authors": "Lee, Y.; Dinov, I.; Hu, X.; Jiang, Y.",
+    "abstract": "BackgroundPrior research on symptom clusters (SCs) in colorectal cancer (CRC) has relied primarily on patient-reported outcome surveys, which capture symptom experience at discrete assessment points rather than the continuous documentation generated during routine care, leaving open whether SCs derived from electronic health record (EHR) text carry the same clinical meaning and predictive value. To construct and validate patient-level symptom co-occurrence networks from large language model (LLM)-extracted symptom data in CRC patients, and to test whether resulting SCs predict clinical outcomes. MethodsUsing a zero-shot LLM extraction pipeline previously benchmarked against a manually annotated ground truth (Macro F1=0.70 for the best-performing model), we extracted 46 symptoms from 2,728 discharge notes of 1,507 CRC patients in MIMIC-IV. Patient-level symptom co-occurrence networks were constructed independently from Gemini 3.5 Flash and Claude Haiku extractions using phi correlation ([&ge;]0.10) and Louvain community detection, with sensitivity analyses across correlation thresholds, random seeds, note-aggregation strategy, and bootstrap resampling. Per-cluster symptom burden scores were tested as predictors of in-hospital mortality, 30-day readmission, and 1-year mortality using logistic regression adjusted for age, sex, and (in sensitivity models) metastatic disease. ResultsBoth LLMs networks converged on three clinically coherent SCs -- Systemic, Gastrointestinal, and CRC Disease-Specific -- across sensitivity analyses (cross-model Adjusted Rand Index=0.727; 100-seed Louvain ARI=0.985; bootstrap ARI=0.733). The Systemic Symptom Cluster was the most consistent predictor of in-hospital mortality (OR=1.33) and 1-year mortality (OR=1.41), while the CRC Disease-Specific Cluster specifically and independently predicted 30-day readmission (OR=1.20); both associations were robust to adjustment for metastatic disease. ConclusionLLM-extracted symptom data recover clinically coherent, reproducible SCs from unstructured discharge notes that carry independent prognostic value for mortality and readmission, supporting the clinical validity of automated, EHR-derived symptom profiling in CRC. HighlightsO_LILLMs identified Systemic, CRC Disease-Specific, and Gastrointestinal clusters. C_LIO_LIThree symptom clusters were reproducible across LLMs and sensitivity analyses. C_LIO_LISystemic symptom burden predicted in-hospital and 1-year mortality. C_LI",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-09-16",
+    "updated": "2026-09-16",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26363148v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26363148v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "Large language models can extract symptom patterns from colorectal cancer discharge notes that form reproducible symptom clusters and predict patient outcomes.",
+      "clinical_relevance": "EHR-derived symptom clusters could help identify colorectal cancer patients at higher risk of mortality or readmission using routinely collected clinical text.",
+      "method": [
+        "LLM zero-shot symptom extraction from 2,728 MIMIC-IV discharge notes across 1,507 colorectal cancer patients",
+        "Built patient-level symptom co-occurrence networks with phi correlation and Louvain clustering",
+        "Tested cluster burden scores against in-hospital mortality, 30-day readmission, and 1-year mortality with adjusted logistic regression"
+      ],
+      "evidence_signal": "Two LLMs produced three consistent clusters with strong reproducibility across sensitivity checks (cross-model ARI 0.727; 100-seed Louvain ARI 0.985; bootstrap ARI 0.733).",
+      "watch_item": "Findings come from retrospective ICU discharge notes, so external validation in other hospitals and documentation styles is needed before deployment.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#ColorectalCancer",
+        "#LLM",
+        "#ClinicalNLP",
+        "#EHR"
+      ],
+      "paper_id": "2026-09-16-medrxiv-large_language_model_derived_symptom_clusters_and_patient_outcomes_in_colorectal_cancer_fr",
+      "paper_title": "Large Language Model-derived Symptom Clusters and Patient Outcomes in Colorectal Cancer from MIMIC-IV Clinical Notes",
+      "paper_date": "2026-09-16",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-09-22T12:13:08",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-16-medrxiv-time_resolved_predictability_of_end_of_therapy_outcome_and_relapse_after_cure_in_phase_3_t",
+    "doi": "10.64898/2026.09.15.26362605",
+    "date": "2026-09-16",
+    "title": "Time-resolved predictability of end-of-therapy outcome and relapse after cure in Phase 3 tuberculosis trials",
+    "authors": "Garger, D.; Burks, J. H.; Paton, N. I.; Sloan, D. J.; Maher-Edwards, G.; Theis, F.; Menden, M. P.; Casale, F. P.",
+    "abstract": "Relapse after apparently successful tuberculosis (TB) therapy remains difficult to predict, and how relapse risk evolves throughout treatment remains unclear. Using harmonised clinical data from two Phase 3 trials (2,918 participants), we performed time-resolved prediction of end-of-therapy (EOT) outcomes and post-treatment relapse by training models using tabular data at monthly intervals from baseline to therapy end. Prediction of EOT outcomes improved after month 3 (ROC-AUC up to 0.84), driven by sputum-smear and solid culture. In contrast, relapse prediction among participants with favourable EOT outcomes and completed follow-up improved only modestly through month 3 (ROC-AUC 0.58-0.63) before declining, with age, sex, clinical symptoms and bacterial burden contributing most strongly to prediction. Models trained on large language model-derived embeddings, a more flexible representation of the same variables, matched tabular relapse models in performance throughout therapy, and outperformed tabular EOT outcome models at months 3 and 4 ({Delta}ROC-AUC: 0.12 and 0.14), with longitudinal modelling and sparse variable inclusion only improving relapse prediction at months 4-6 ({Delta}ROC-AUC: 0.09, 0.19 and 0.12), however with reduced interpretability. Models incorporating data after baseline provided incremental improvements in post-treatment relapse risk stratification compared with baseline cavitation and sputum smear alone (4-month relapse-free survival: 94.8%/78.5% for model-derived low/high risk groups, vs. 91.4%/82.9% for baseline easy-/hard-to-treat groups). Overall, these findings suggest that while routine clinical data collected after baseline can improve post-treatment risk stratification, it offers limited predictive value for relapse, underscoring the need for relapse-specific biomarkers.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-09-16",
+    "updated": "2026-09-16",
+    "primary_category": "infectious diseases",
+    "categories": [
+      "infectious diseases"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26362605v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.15.26362605v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "Routine clinical data collected during TB treatment can better predict end-of-therapy outcomes after month 3, but it has limited power to forecast post-treatment relapse.",
+      "clinical_relevance": "Time-resolved models may help refine relapse risk stratification near treatment end, but stronger relapse-specific biomarkers are still needed for reliable prediction.",
+      "method": [
+        "Harmonized data from 2 Phase 3 TB trials were analyzed (2,918 participants).",
+        "Models were trained at monthly time points from baseline through treatment end to predict end-of-therapy outcomes and relapse.",
+        "Tabular models were compared with large language model-derived embeddings and longitudinal/sparse feature approaches."
+      ],
+      "evidence_signal": "EOT prediction improved after month 3 with ROC-AUC up to 0.84, while relapse prediction only modestly improved to ROC-AUC 0.58-0.63 by month 3 and then declined; embedding-based models matched relapse performance and outperformed tabular EOT models at months 3-4.",
+      "watch_item": "Performance gains for relapse were limited and interpretability dropped for more flexible models, so clinical use would require careful validation and clear decision thresholds.",
+      "hashtags": [
+        "#Tuberculosis",
+        "#ClinicalAI",
+        "#RelapsePrediction",
+        "#Biomarkers",
+        "#Phase3Trials"
+      ],
+      "paper_id": "2026-09-16-medrxiv-time_resolved_predictability_of_end_of_therapy_outcome_and_relapse_after_cure_in_phase_3_t",
+      "paper_title": "Time-resolved predictability of end-of-therapy outcome and relapse after cure in Phase 3 tuberculosis trials",
+      "paper_date": "2026-09-16",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-09-22T12:13:11",
+      "generator": "openai"
+    }
+  }
+]
