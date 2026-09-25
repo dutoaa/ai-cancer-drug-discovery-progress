@@ -1,24 +1,24 @@
 {
-  "key_insight": "GenEHR is a generative EHR model that learns patient health trajectories, including irregular visit timing, to better forecast who is at elevated risk of a first cancer diagnosis within five years.",
-  "clinical_relevance": "The approach may help prioritize patients for risk-based cancer screening, especially for aggressive cancers such as pancreatic and ovarian cancer.",
+  "key_insight": "GenEHR uses a generative EHR model that accounts for irregular visit timing to forecast future cancer risk from patient health histories.",
+  "clinical_relevance": "The approach may help identify patients who could benefit from risk-based screening and earlier evaluation for aggressive cancers.",
   "method": [
-    "Trained autoregressively on longitudinal electronic health records from millions of patients.",
-    "Represents irregular time intervals between visits when predicting future clinical events.",
-    "Uses parameter-efficient supervised adaptation to specialize the general patient model for pan-cancer risk stratification."
+    "Trained an autoregressive model on longitudinal electronic health records from millions of patients",
+    "Explicitly modeled irregular time intervals between clinical visits",
+    "Used parameter-efficient supervised adaptation to predict first cancer diagnosis within a 5-year horizon"
   ],
-  "evidence_signal": "In five large EHR cohorts, supervised adaptation substantially improved prediction of first cancer diagnosis within a five-year horizon.",
-  "watch_item": "The findings are retrospective, so prospective validation is still needed before clinical decision-support use.",
+  "evidence_signal": "In five large EHR cohorts, supervised adaptation substantially improved prediction performance for first cancer diagnosis over a five-year window.",
+  "watch_item": "These results are retrospective, so prospective validation is needed before using it for clinical decision support or screening prioritization.",
   "hashtags": [
     "#PrecisionOncology",
     "#CancerRisk",
     "#EHR",
     "#GenerativeAI",
-    "#RiskStratification"
+    "#ClinicalDecisionSupport"
   ],
   "paper_id": "2026-09-19-medrxiv-identifying_cohorts_at_elevated_risk_of_cancers_using_generative_modeling_of_patient_healt",
   "paper_title": "Identifying cohorts at elevated risk of cancers using generative modeling of patient health states",
   "paper_date": "2026-09-19",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-09-23T12:26:48",
+  "generated_at": "2026-09-25T12:25:57",
   "generator": "openai"
 }

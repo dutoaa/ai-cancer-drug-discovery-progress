@@ -1,0 +1,24 @@
+{
+  "key_insight": "Off-the-shelf large language models can automatically extract key longitudinal breast cancer variables from dense clinical notes with high agreement to expert abstraction.",
+  "clinical_relevance": "This approach could reduce the manual chart-review burden in oncology research and help scale retrospective data extraction from narrative medical records.",
+  "method": [
+    "Open-source pipeline used general-purpose LLMs without fine-tuning or hand-selected documents",
+    "Tested on 100 randomly selected patients from a complex breast cancer cohort in a HIPAA-compliant setting",
+    "Compared model outputs with oncologist abstraction, genetic testing records, and some coordinator abstraction"
+  ],
+  "evidence_signal": "Across GPT-5 and Gemini 2.5 Pro, the pipeline reached 90%-100% concordance for several key variables, and in a separate 97-patient cohort it showed similar recurrence detection performance.",
+  "watch_item": "Performance was weaker for therapy-line reconstruction, and results still need replication and validation across other institutions and diseases.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#LLM",
+    "#ClinicalResearch",
+    "#BreastCancer",
+    "#HealthAI"
+  ],
+  "paper_id": "2026-09-21-medrxiv-fully_automated_abstraction_of_longitudinal_breast_oncology_records_with_off_the_shelf_lar",
+  "paper_title": "Fully Automated Abstraction of Longitudinal Breast Oncology Records with Off-The-Shelf Large Language Models",
+  "paper_date": "2026-09-21",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-09-25T12:25:32",
+  "generator": "openai"
+}
