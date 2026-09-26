@@ -1,13 +1,13 @@
 {
-  "key_insight": "In parents from Cameroon’s Buea Health District, HPV vaccine hesitancy was predicted nearly as well by simple logistic regression as by more complex machine learning models, with information gaps and low trust emerging as the strongest drivers.",
-  "clinical_relevance": "A practical takeaway for vaccination programs is that improving vaccine information and institutional trust may matter more than focusing only on demographics when trying to reduce HPV vaccine hesitancy.",
+  "key_insight": "Simple, interpretable models predicted parental HPV vaccine hesitancy as well as more complex machine-learning methods, with information access and trust emerging as the strongest drivers.",
+  "clinical_relevance": "The findings suggest that improving vaccine communication and institutional trust may be more impactful than broad demographic targeting when addressing HPV vaccine hesitancy.",
   "method": [
-    "Cross-sectional survey of 1,156 parents of children aged 9–18 years.",
+    "Cross-sectional survey of 1,156 parents of children aged 9–18 years in Cameroon’s Buea Health District.",
     "Compared logistic regression, random forest, and XGBoost after feature screening with group LASSO.",
-    "Evaluated models on a held-out test set using AUC, calibration, and Brier score, with SHAP used for interpretation."
+    "Evaluated models with an 80/20 train-test split using AUC, calibration, Brier score, and SHAP interpretation."
   ],
-  "evidence_signal": "On the test set, all models showed similar discrimination (AUC-ROC 0.841–0.870), with XGBoost highest at 0.870 and logistic regression close behind at 0.869.",
-  "watch_item": "This is an internally validated single-district study, so performance and predictors may not generalize well to other regions or health systems without external validation.",
+  "evidence_signal": "On the held-out test set, all models showed similar discrimination (AUC-ROC 0.841–0.870), with XGBoost slightly highest and logistic regression performing best on sensitivity, F1-score, and Brier score.",
+  "watch_item": "This is an internally validated single-region study, so performance may not generalize without external validation in other settings or populations.",
   "hashtags": [
     "#HPVVaccine",
     "#VaccineHesitancy",
@@ -19,6 +19,6 @@
   "paper_title": "Predicting parental Human papillomavirus vaccine hesitancy: development and internal validation of machine learning models",
   "paper_date": "2026-09-20",
   "paper_category": "Target Biology",
-  "generated_at": "2026-09-25T12:25:55",
+  "generated_at": "2026-09-26T11:58:00",
   "generator": "openai"
 }

@@ -22,7 +22,7 @@
     <header>
       <div>
         <h1>AI Cancer Drug Discovery Research Papers - Daily Top 20</h1>
-        <p class="sub">Collected 2026-09-25. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
+        <p class="sub">Collected 2026-09-26. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
       </div>
       <nav class="actions">
         <a href="papers.json">Data JSON</a>
@@ -31,7 +31,7 @@
     </header>
     <section class="grid">
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>73</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>68</strong></div>
         <p class="date">2026-09-21</p>
         <h2>Incremental Predictive Value and Representation of Transcriptomic Features for Immunotherapy Response in Advanced Urothelial Carcinoma</h2>
         <p class="authors">Han, G. Y.; Tai, H.; Wang, F.</p>
@@ -39,18 +39,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.14.26363060v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.14.26363060v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Biology-guided transcriptomic features captured immunotherapy response better and more consistently than data-driven gene selection in advanced urothelial carcinoma.</p>
-          <p><b>Clinical relevance:</b> Transcriptomic profiling may add meaningful prediction value for atezolizumab response, but its benefit appears smaller once standard and enriched biomarkers are already included.</p>
-          <ul><li>Compared knowledge-guided tumor microenvironment gene-set features vs transcriptome-wide gene selection</li><li>Evaluated incremental AUPRC gain over clinical variables and biomarker baselines in IMvigor210 (n=298)</li><li>Checked feature stability across folds and external validation performance</li></ul>
-          <p><b>Evidence signal:</b> In IMvigor210, knowledge-guided features improved AUPRC by +0.058 over clinical variables alone, but only +0.011 beyond standard biomarkers; external evaluation showed a similar pattern (+0.128 vs +0.019).</p>
-          <p><b>Watch item:</b> Data-driven gene lists were unstable across folds (mean Jaccard similarity 0.227), so implementation should favor robust pathway-level representations rather than single-gene signatures.</p>
+          <p><b>Key insight:</b> Biology-guided transcriptomic features provided more stable and useful immunotherapy response prediction than unstable gene-by-gene selection in advanced urothelial carcinoma.</p>
+          <p><b>Clinical relevance:</b> Transcriptomic profiling may add the most value when used as a biologically informed layer on top of clinical and established biomarker data rather than as a standalone high-dimensional gene list.</p>
+          <ul><li>Analyzed 298 IMvigor210 patients treated with atezolizumab.</li><li>Compared knowledge-guided tumor microenvironment gene-set features vs data-driven transcriptome-wide gene selection.</li><li>Benchmarked added predictive value beyond clinical variables and standard biomarkers using AUPRC.</li></ul>
+          <p><b>Evidence signal:</b> Knowledge-guided features improved AUPRC by 0.058 over clinical variables alone, while data-driven selection was unstable across folds (mean Jaccard 0.227) and underperformed the knowledge-guided approach by 0.150 in the clinical-plus-biomarker setting; external evaluation showed a similar pattern.</p>
+          <p><b>Watch item:</b> Results come from a single trial cohort and the data-driven gene list was highly unstable, so broader validation is needed before implementation.</p>
           <div class="tags"><span>#PrecisionOncology</span> <span>#Immunotherapy</span> <span>#Transcriptomics</span> <span>#UrothelialCarcinoma</span> <span>#Biomarkers</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>64</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>59</strong></div>
         <p class="date">2026-09-22</p>
         <h2>The United States CADASIL Consortium: Baseline Findings from a Natural History Study</h2>
         <p class="authors">Paulsen, J. S.; Bockholt, H. J.; Adams, W. H.; Burks, D. K.; Majersik, J. J.; Salloway, S. P.; Lee, S.; Fornage, M.; Joyce, C.; Elliott, J. L.; Huey, E. D.; Caruso, M. R.; Jayadev, S.; Biller, J.; Lutsep, H. L.; Doyle, S. J.; Liebeskind, D. S.; Eklund, K.; Naqvi, I. A.; Salardini, A.; Seshadri, S.; Hinman, J. D.; Krishnamurthy, L. C.; Fischer, B. L.; Geschwind, M. D.; The United States CADASIL Consortium,</p>
@@ -58,18 +58,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.20.26363512v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.20.26363512v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> This baseline natural history study defines the first U.S. CADASIL cohort, showing how a single-gene small vessel disease model can be used to map clinical, cognitive, imaging, and biomarker variation relevant to VCID research.</p>
-          <p><b>Clinical relevance:</b> The findings help establish standardized measures and reference data that may improve trial readiness and future biomarker-driven studies in hereditary and sporadic vascular cognitive impairment.</p>
-          <ul><li>Cross-sectional baseline analysis from 12 U.S. sites (Oct 2022–Jan 2025).</li><li>Adults from families with documented NOTCH3 variants underwent harmonized clinical, cognitive, physical, MRI, genetics, and proteomics assessments.</li><li>Central genetic review classified pathogenic/likely pathogenic NOTCH3 variants into low-, medium-, or high-risk tiers.</li></ul>
-          <p><b>Evidence signal:</b> The analytic cohort included 343 CADASIL carriers and 116 non-carrier family controls, enabling group comparisons using nonparametric tests and multivariable adjustment.</p>
-          <p><b>Watch item:</b> The cohort is predominantly White and highly educated, and baseline cross-sectional data cannot establish longitudinal disease progression or generalizability.</p>
-          <div class="tags"><span>#CADASIL</span> <span>#VCID</span> <span>#NOTCH3</span> <span>#Biomarkers</span> <span>#NaturalHistory</span></div>
+          <p><b>Key insight:</b> This study establishes the first U.S. CADASIL natural history cohort, creating a well-characterized monogenic small-vessel disease model to benchmark vascular cognitive impairment and dementia biomarkers, symptoms, and functional outcomes.</p>
+          <p><b>Clinical relevance:</b> The baseline data can help standardize future clinical trials and improve understanding of how genotype-linked CADASIL burden relates to cognition, disability, and imaging measures.</p>
+          <ul><li>Cross-sectional baseline analysis from 12 U.S. sites (Oct 2022–Jan 2025).</li><li>Adults from families with documented NOTCH3 variants underwent standardized clinical, cognitive, functional, MRI, genetic, and proteomic assessment.</li><li>Pathogenic/likely pathogenic NOTCH3 variants were centrally classified into low-, medium-, or high-risk tiers.</li></ul>
+          <p><b>Evidence signal:</b> Among 560 baseline participants, the analytic cohort included 343 CADASIL carriers and 116 non-carrier family controls, with group comparisons and multivariable adjustment used to assess differences.</p>
+          <p><b>Watch item:</b> Because the cohort is predominantly White and highly educated, generalizability to more diverse populations may be limited.</p>
+          <div class="tags"><span>#CADASIL</span> <span>#VCID</span> <span>#NOTCH3</span> <span>#Biomarkers</span> <span>#NaturalHistoryStudy</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>64</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>59</strong></div>
         <p class="date">2026-09-21</p>
         <h2>Fully Automated Abstraction of Longitudinal Breast Oncology Records with Off-The-Shelf Large Language Models</h2>
         <p class="authors">Dickerson, J. C.; McClure, M. B.; Shaw, M.; Reitsma, M. B.; Dalal, N. H.; Curtis, C.; Kurian, A. W.; Caswell-Jin, J. L.</p>
@@ -77,18 +77,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.03.23.26349012v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.03.23.26349012v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Off-the-shelf large language models can automatically extract key longitudinal breast cancer variables from dense clinical notes with high agreement to expert abstraction.</p>
-          <p><b>Clinical relevance:</b> This approach could reduce the manual chart-review burden in oncology research and help scale retrospective data extraction from narrative medical records.</p>
-          <ul><li>Open-source pipeline used general-purpose LLMs without fine-tuning or hand-selected documents</li><li>Tested on 100 randomly selected patients from a complex breast cancer cohort in a HIPAA-compliant setting</li><li>Compared model outputs with oncologist abstraction, genetic testing records, and some coordinator abstraction</li></ul>
-          <p><b>Evidence signal:</b> Across GPT-5 and Gemini 2.5 Pro, the pipeline reached 90%-100% concordance for several key variables, and in a separate 97-patient cohort it showed similar recurrence detection performance.</p>
-          <p><b>Watch item:</b> Performance was weaker for therapy-line reconstruction, and results still need replication and validation across other institutions and diseases.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#LLM</span> <span>#ClinicalResearch</span> <span>#BreastCancer</span> <span>#HealthAI</span></div>
+          <p><b>Key insight:</b> Off-the-shelf large language models can automatically extract many key breast oncology variables from long, messy charts with high agreement to expert abstraction.</p>
+          <p><b>Clinical relevance:</b> If validated broadly, this approach could reduce the manual workload needed to build research cohorts and study outcomes from real-world cancer records.</p>
+          <ul><li>Randomly sampled 100 patients from a complex breast cancer cohort</li><li>Compared 4 general-purpose LLMs against oncologist abstraction, genetic records, and some research coordinator abstraction</li><li>Used an open-source, HIPAA-compliant pipeline without fine-tuning or hand-picking notes</li></ul>
+          <p><b>Evidence signal:</b> In the abstract, the best models (GPT-5 and Gemini 2.5 Pro) reached 90%–100% concordance for several key variables, and a separate 97-patient cohort showed similar recurrence detection performance.</p>
+          <p><b>Watch item:</b> Performance still needs replication across institutions and diseases, and therapy-line reconstruction was less accurate than expert review.</p>
+          <div class="tags"><span>#PrecisionOncology</span> <span>#LLM</span> <span>#MedicalAI</span> <span>#RealWorldData</span> <span>#CancerResearch</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>63</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>58</strong></div>
         <p class="date">2026-09-21</p>
         <h2>Evaluating agentic simulation for local public health estimation</h2>
         <p class="authors">Nakatsuka, M. A.; Steele, R. J.; Han, X.; Oermann, E. K.</p>
@@ -96,18 +96,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.19.26363431v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.19.26363431v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> LLMPopSim shows that individually modeled AI agents can be aggregated to approximate real-world community health behaviors, with moderate accuracy across locations and time.</p>
-          <p><b>Clinical relevance:</b> The framework could help researchers simulate population responses to public health interventions, but it is not yet precise enough for direct clinical or policy decision-making without further calibration.</p>
-          <ul><li>Built AI agent populations from U.S. Census and CDC data</li><li>Trained on Hawaii 2018 data and tested on held-out 2022 cohorts from Hawaii and New York State</li><li>Compared simulated vs observed colorectal cancer screening and mammography at the ZCTA level</li></ul>
-          <p><b>Evidence signal:</b> Across four state-outcome tests, mean absolute error was 3.5 to 15.0 percentage points and ZCTA-level correlations ranged from 0.26 to 0.69, with notable bias in screening estimates.</p>
-          <p><b>Watch item:</b> Performance was weaker in communities with lower observed screening prevalence, highlighting calibration and subgroup-fidelity concerns before real-world use.</p>
-          <div class="tags"><span>#AIPopulationSimulation</span> <span>#PublicHealthAI</span> <span>#GenerativeAgents</span> <span>#CancerScreening</span> <span>#HealthDataScience</span></div>
+          <p><b>Key insight:</b> LLMPopSim shows that individually simulated AI agents can be aggregated into population-level health patterns that partly match real-world screening behavior across places and time.</p>
+          <p><b>Clinical relevance:</b> This could help researchers test public health interventions and estimate community-level behavior without relying only on costly or delayed survey data.</p>
+          <ul><li>Built AI agent populations using U.S. Census and CDC data</li><li>Trained on historical 2018 Hawaii data</li><li>Tested transfer to 2022 Hawaii and New York State for colorectal cancer screening and mammography</li></ul>
+          <p><b>Evidence signal:</b> Across four state-outcome tests, mean absolute error was 3.5 to 15.0 percentage points and ZCTA-level correlations ranged from 0.26 to 0.69.</p>
+          <p><b>Watch item:</b> The model showed notable bias and weaker performance in lower-prevalence communities, so calibration and subgroup fidelity remain important concerns.</p>
+          <div class="tags"><span>#AIPopulationSimulation</span> <span>#PublicHealthAI</span> <span>#HealthBehavior</span> <span>#CancerScreening</span> <span>#GenerativeAgents</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>60</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>55</strong></div>
         <p class="date">2026-09-20</p>
         <h2>Leveraging Large Language Models for Colorectal Cancer Symptom Extraction from MIMIC-IV Clinical Notes</h2>
         <p class="authors">Lee, Y.; Dinov, I.; Hu, X.; Jiang, Y.</p>
@@ -115,18 +115,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.15.26362961v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.15.26362961v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Zero-shot large language models extracted colorectal cancer symptoms from discharge notes more accurately than rule-based and NER pipelines, with Gemini 3.5 Flash performing best overall.</p>
-          <p><b>Clinical relevance:</b> This approach could speed scalable symptom surveillance from routine oncology notes and reduce reliance on manual chart review or institution-specific NLP rules.</p>
-          <ul><li>Analyzed 2,704 MIMIC-IV colorectal cancer discharge notes.</li><li>Built a 46-symptom target list from validated symptom instruments.</li><li>Compared rule-based matching, clinical NER, zero-shot Claude/Gemini, and hybrid negation-filtered variants against adjudicated ground truth.</li></ul>
-          <p><b>Evidence signal:</b> On a 200-note gold standard with dual-rater adjudication, Gemini 3.5 Flash achieved Macro F1 0.70 and Micro F1 0.86, outperforming rule-based (Macro F1 0.44) and NER (Macro F1 0.38) methods.</p>
-          <p><b>Watch item:</b> Post-hoc negation filtering reduced LLM performance, suggesting negation handling needs syntactic scope validation rather than fixed-window rules.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#ClinicalNLP</span> <span>#LargeLanguageModels</span> <span>#ColorectalCancer</span> <span>#SymptomExtraction</span></div>
+          <p><b>Key insight:</b> Zero-shot large language models, especially Gemini 3.5 Flash, extracted colorectal cancer symptoms from discharge notes more accurately than rule-based and clinical NER approaches.</p>
+          <p><b>Clinical relevance:</b> This suggests LLM-based note mining could scale symptom surveillance in oncology without building site-specific rules or training models.</p>
+          <ul><li>Analyzed 2,704 CRC discharge notes from MIMIC-IV</li><li>Benchmarked rule-based matching, clinical NER, Claude Haiku, and Gemini 3.5 Flash</li><li>Compared against a 200-note adjudicated gold standard with macro/micro F1, precision, and recall</li></ul>
+          <p><b>Evidence signal:</b> On the gold-standard evaluation set, Gemini 3.5 Flash achieved Macro F1 0.70 and Micro F1 0.86, outperforming rule-based (Macro F1 0.44) and NER (Macro F1 0.38) methods.</p>
+          <p><b>Watch item:</b> Post-hoc negation filtering reduced LLM performance, highlighting the need for syntactic scope-aware validation before deployment.</p>
+          <div class="tags"><span>#PrecisionOncology</span> <span>#ClinicalNLP</span> <span>#LargeLanguageModels</span> <span>#ColorectalCancer</span> <span>#MIMICIV</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>57</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>52</strong></div>
         <p class="date">2026-09-21</p>
         <h2>Differentiating nonfluent/agrammatic and logopenic primary progressive aphasia in Catalan-Spanish bilinguals by applying multilingual multimodal machine learning to connected speech</h2>
         <p class="authors">Pugalenthi, L. S.; Collins, A. P.; Colomer, N. M.; Marques-Kiderle, S.-K.; Rodriguez, C. W.; Chaires, J. C. H.; Motta, W. A.; Filella-Merce, J.; Li, J. J.; Llanos, F.; Zhu, N.; Rubio-Guerra, S.; Illan-Gala, I.; Borrego-Ecija, S.; Llado, A.; Fortea, J.; Lleo, A.; Sanchez-Valle, R.; Henry, M. L.; Santos, M. A. S.; Grasso, S. M.</p>
@@ -134,37 +134,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.18.26363435v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.18.26363435v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Multilingual, multimodal machine-learning analysis of connected speech can accurately distinguish nonfluent/agrammatic from logopenic primary progressive aphasia in Catalan-Spanish bilinguals.</p>
-          <p><b>Clinical relevance:</b> This suggests a faster, scalable assistive tool for bilingual language-variant assessment, potentially reducing reliance on lengthy specialist testing.</p>
-          <ul><li>34 Catalan-Spanish bilingual patients completed picture-description tasks in both dominant and non-dominant languages.</li><li>Speech-timing, word-level, linguistic, and image-text congruence features were extracted using PRAAT, corpora, SpaCy/CLAN, and Multilingual-CLIP.</li><li>Multiple classifiers and ensemble models were trained to separate nfvPPA from lvPPA and compared across languages.</li></ul>
-          <p><b>Evidence signal:</b> The best models reached macro-F1 scores of 93% for word-level features in the non-dominant language and 92% for the ensemble in the dominant language, with no significant performance difference between languages.</p>
-          <p><b>Watch item:</b> The study is small and single-cohort, so broader validation is needed before routine implementation in diverse bilingual populations.</p>
-          <div class="tags"><span>#MachineLearning</span> <span>#Bilingualism</span> <span>#Aphasia</span> <span>#SpeechAnalysis</span> <span>#DigitalHealth</span></div>
+          <p><b>Key insight:</b> Multilingual multimodal machine learning can distinguish nonfluent/agrammatic from logopenic primary progressive aphasia with high accuracy in Catalan-Spanish bilinguals using connected speech.</p>
+          <p><b>Clinical relevance:</b> This could speed up and support differential diagnosis in bilingual patients, where traditional language assessment is time-intensive and harder to deliver consistently.</p>
+          <ul><li>34 Catalan-Spanish simultaneous bilingual patients completed a picture-description task in both dominant and non-dominant languages.</li><li>Researchers extracted speech-timing, word-level, linguistic, and image-text congruence features from recordings.</li><li>Classification models and ensemble methods were compared across languages; performance was tested with McNemar analysis.</li></ul>
+          <p><b>Evidence signal:</b> The best model achieved macro F1 scores of 93% with word-level features and 92% with an ensemble, with no significant performance difference between dominant and non-dominant language samples.</p>
+          <p><b>Watch item:</b> The study is small and language-specific, so broader validation is needed before use in routine clinical workflows.</p>
+          <div class="tags"><span>#MachineLearning</span> <span>#Neurolinguistics</span> <span>#Bilingualism</span> <span>#Aphasia</span> <span>#DigitalHealth</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>57</strong></div>
-        <p class="date">2026-09-19</p>
-        <h2>Safety, Feasibility, and Preliminary Clinical Findings of an Oral Polypore Fungi Combination with Mild-to-Moderate COVID-19: A Randomized, Placebo-Controlled Phase I Clinical Trial</h2>
-        <p class="authors">Saxe, G.; Shubov, A.; Smith, C. N.; Golshan, S.; Shekhtman, T.; Wilson, S.; Slater, D.; Bair, Z. J.; Beathard, C.; Davis, R. A.; MacElhern, L.; Kao, L. K.; Senowitz, P.; Gosnell, N.; Buchholz, D.; Aguilar-Carreno, H.</p>
-        <p class="abstract">BackgroundUse of fungal mycelia, which have innate immunity-enhancing and antiviral properties, constitutes a novel early-wave, low-cost, at-home strategy in the early critical months of an outbreak when treatments or mass medical countermeasures are not yet available and the public health recommendations advise quarantining at home. MethodsWe evaluated safety and feasibility of a fungal mycelial combination (Fomitopsis officinalis and Trametes versicolor, FoTv) for treatment of COVID-19 and explored its antiviral effects and potential to reduce symptoms. In a randomized, double-blind, placebo-controlled (26 FoTv, 24 Placebo), dual site (UCSD/UCLA medical centers) clinical trial conducted under an active FDA Investigational New Drug (IND) application, we examined non-hospitalized patients diagnosed with mild-to-moderate COVID-19 [&amp;le;] 96 hours, and experienced symptom onset [&amp;le;] nine days, before enrollment. ResultsFoTv was safe, well-tolerated, and feasible for COVID-19 treatment. Mean values for renal, hepatic, and coagulation markers for both the FoTv and Placebo groups remained within normal levels. Unlike the Placebo, the FoTv group exhibited a minor reduction in estimated glomerular filtration rate across the treatment period, but both groups were equally likely to transition from normal to abnormal levels across the treatment period. Treatment adherence was high (97% FoTv, 95% Placebo) and dropout was low (0% FoTv, 4% Placebo). Exploratory analyses indicated that FoTv significantly reduced the number and severity of symptoms, particularly sore throat/cough, as well as the COVID-19 biomarker, C-reactive protein. A complementary in vitro study indicated that FoTv reduced SARS-CoV-2 (pseudovirus) cellular infection. ConclusionsFoTv was safe, feasible, reduced viral cellular infection, and may reduce symptoms of COVID-19 associated with viral transmission. In our recent companion clinical trial, examining FoTv as a COVID vaccine adjunct, we observed a significant reduction in short-term vaccine side effects while preserving--and potentially increasing--long-term anti-SARS-CoV-2 antibody levels over six months (Saxe et al., 2026, BMC Immunology). Taken together, these studies elucidate a blueprint for a novel two-phase public health pandemic intervention. This blueprint involves use of a botanical immunomodulatory product, during the early critical months of an outbreak and, once vaccines become available, to improve their uptake and effectiveness. Trial RegistrationClinicaltrials.gov registration:NCT04667247.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.06.01.26354267v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.06.01.26354267v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> In a small randomized placebo-controlled phase I trial, an oral fungal mycelial combination (FoTv) appeared safe and feasible for mild-to-moderate COVID-19, with exploratory signals for symptom reduction and lower inflammatory markers.</p>
-          <p><b>Clinical relevance:</b> This early study suggests FoTv could be a low-cost, at-home adjunct approach worth further testing, but it is not yet established as a treatment.</p>
-          <ul><li>Randomized, double-blind, placebo-controlled phase I trial at two sites (UCSD/UCLA)</li><li>50 non-hospitalized participants with mild-to-moderate COVID-19 (26 FoTv, 24 placebo)</li><li>Safety labs, adherence, symptoms, CRP, and in vitro pseudovirus infection were assessed</li></ul>
-          <p><b>Evidence signal:</b> Across the trial, renal, hepatic, and coagulation markers stayed within normal ranges, adherence was high, and exploratory analyses showed symptom and CRP improvements plus reduced pseudovirus cellular infection in vitro.</p>
-          <p><b>Watch item:</b> Findings are preliminary and based on a small sample with exploratory outcomes, so efficacy and generalizability remain uncertain.</p>
-          <div class="tags"><span>#COVID19</span> <span>#ClinicalTrial</span> <span>#MycelialResearch</span> <span>#Antiviral</span> <span>#TranslationalMedicine</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>56</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>51</strong></div>
         <p class="date">2026-09-22</p>
         <h2>Benchmarking open-source automated thigh muscle MRI segmentation algorithms</h2>
         <p class="authors">Moore, C. M.; Alper, M.</p>
@@ -172,18 +153,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.16.26363275v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.16.26363275v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Independent benchmarking of open-source thigh muscle MRI segmentation tools found large performance differences, with domain-specific models generally outperforming foundation and general-purpose architectures.</p>
-          <p><b>Clinical relevance:</b> More accurate and usable muscle MRI segmentation can improve biomarker extraction for neuromuscular disease research, but weak performance on pathological cases could distort interpretation if deployed uncritically.</p>
-          <ul><li>Compared 8 open-source segmentation tools, including 6 standalone models and 2 auxiliary label-refinement methods.</li><li>Evaluated 3D MRI volumes from three base datasets and additional derived datasets.</li><li>Assessed both quantitative accuracy metrics and qualitative usability across methods.</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports substantial variation in performance across methods and datasets, with reduced accuracy on pathological cases and consistent gains for domain-specific models trained on larger datasets.</p>
-          <p><b>Watch item:</b> Tools may not generalize well to underrepresented populations or disease patterns, so external validation on local data is essential before adoption.</p>
-          <div class="tags"><span>#MRI</span> <span>#Segmentation</span> <span>#MuscleImaging</span> <span>#Benchmarking</span> <span>#OpenSourceAI</span></div>
+          <p><b>Key insight:</b> Independent benchmarking shows that specialized open-source thigh muscle MRI segmentation models can outperform newer general-purpose and foundation approaches, but performance varies widely by dataset and pathology.</p>
+          <p><b>Clinical relevance:</b> Accurate muscle segmentation supports MRI-based biomarkers such as volumetry, radiomics, and fat fraction quantification, so errors can materially affect research and clinical interpretation in neuromuscular disease.</p>
+          <ul><li>Compared 8 open-source segmentation tools; 6 ran independently and 2 required prior muscle labeling.</li><li>Evaluated 3D MRI volumes from three base datasets and additional derived datasets.</li><li>Assessed both quantitative performance and qualitative usability across methods.</li></ul>
+          <p><b>Evidence signal:</b> The benchmark found substantial performance variation across methods and datasets, with many tools performing worse on pathological cases and domain-specific models generally outperforming foundation or general-purpose architectures.</p>
+          <p><b>Watch item:</b> Results may not generalize well to underrepresented populations or rare pathologies, and some high-performing tools may still be harder to deploy in practice.</p>
+          <div class="tags"><span>#MRI</span> <span>#Segmentation</span> <span>#OpenSourceAI</span> <span>#NeuromuscularDisease</span> <span>#MedicalImaging</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>56</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>51</strong></div>
         <p class="date">2026-09-22</p>
         <h2>Scalable Causal-Interpretable Machine Learning for Cancer Prescreening Using Electronic Health Records</h2>
         <p class="authors">Zhang, S.; Xue, F.</p>
@@ -191,18 +172,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.21.26363536v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.21.26363536v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> The study introduces UPEBNL, a scalable causal Bayesian network framework that makes cancer prescreening models more interpretable while handling large EHR datasets efficiently.</p>
-          <p><b>Clinical relevance:</b> It may help clinicians and researchers trace plausible risk pathways from electronic health records for earlier, more transparent prescreening of esophageal and colorectal cancer.</p>
-          <ul><li>Adaptive data slicing to parallelize causal Bayesian network learning</li><li>Quality-aware structure aggregation to stabilize learned dependencies</li><li>Global DAG construction to produce an interpretable causal graph</li></ul>
-          <p><b>Evidence signal:</b> In simulations, UPEBNL improved structural recovery by nearly 40% and reached up to a 221.28-fold speedup; in EHR prescreening it achieved AUCs of 0.8171 for esophageal cancer and 0.784 for colorectal cancer.</p>
-          <p><b>Watch item:</b> The causal directions are derived from observational EHR data, so the learned network should be interpreted as putative rather than proven clinical causality.</p>
-          <div class="tags"><span>#CausalML</span> <span>#CancerPrescreening</span> <span>#EHR</span> <span>#BayesianNetworks</span> <span>#PrecisionOncology</span></div>
+          <p><b>Key insight:</b> UPEBNL is a scalable causal Bayesian network framework that makes large EHR-based cancer prescreening more interpretable by learning stable dependency structures in parallel.</p>
+          <p><b>Clinical relevance:</b> It could help clinicians and researchers understand which EHR factors drive risk predictions for esophageal and colorectal cancer, supporting more transparent prescreening workflows.</p>
+          <ul><li>Adaptive data slicing to split large EHR datasets for parallel learning</li><li>Quality-aware structure aggregation to combine subnetwork results</li><li>Global DAG construction to produce a coherent causal-interpretable network</li></ul>
+          <p><b>Evidence signal:</b> In simulations, the method improved structural recovery by nearly 40% and was up to 221.28-fold faster; in EHR-based prescreening it achieved AUCs of 0.8171 for esophageal cancer and 0.784 for colorectal cancer.</p>
+          <p><b>Watch item:</b> Because the causal directions are learned from observational EHR data, the resulting network may reflect associations rather than proven causation and still requires careful external validation.</p>
+          <div class="tags"><span>#PrecisionOncology</span> <span>#MachineLearning</span> <span>#EHR</span> <span>#CausalInference</span> <span>#CancerScreening</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>51</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>46</strong></div>
         <p class="date">2026-09-21</p>
         <h2>Evaluation of accelerated whole-body diffusion weighted imaging with deep learning reconstruction in patients with metastatic prostate cancer: assessment of image quality and ADC estimates.</h2>
         <p class="authors">Kousi, E.; Rata, M.; Koh, D.-M.; Messiou, C.; Tunariu, N.; Hopkinson, G.; Evans, E.; Darwish, O.; Weiland, E.; Winfield, J.</p>
@@ -210,18 +191,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.17.26362983v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.17.26362983v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Deep-learning reconstruction enabled whole-body diffusion MRI to run faster while preserving image quality and lesion ADC measurements in metastatic prostate cancer.</p>
-          <p><b>Clinical relevance:</b> This approach could shorten whole-body MRI exams for prostate cancer staging and response assessment without sacrificing the quantitative readouts used to characterize bone metastases.</p>
-          <ul><li>Prospective single-centre study at 1.5T with two patient cohorts.</li><li>Compared standard WB-DWI with an accelerated DL-reconstructed WB-DWI protocol.</li><li>Evaluated image quality with blinded radiologist Likert scoring and lesion ADC agreement with Bland-Altman analysis.</li></ul>
-          <p><b>Evidence signal:</b> In 10 patients, image quality remained good-to-excellent across stations, and in 20 patients, lesion ADC values showed no significant difference between standard and accelerated protocols, with a 37% reduction in acquisition time.</p>
-          <p><b>Watch item:</b> Small cohorts and single-centre testing mean the findings need broader validation before routine implementation.</p>
+          <p><b>Key insight:</b> A deep-learning reconstructed whole-body DWI protocol cut scan time by 37% while preserving image quality and ADC measurements in metastatic prostate cancer.</p>
+          <p><b>Clinical relevance:</b> This suggests a faster MRI option for staging and treatment assessment of metastatic prostate cancer without obvious loss of quantitative reliability.</p>
+          <ul><li>Prospective single-centre study at 1.5T with two patient cohorts.</li><li>Compared standard WB-DWI with an accelerated DL-reconstructed WB-DWI protocol.</li><li>Used blinded radiologist image-quality scoring and lesion ADC comparison with statistical agreement testing.</li></ul>
+          <p><b>Evidence signal:</b> In 10 patients, image quality was rated across four anatomical stations; in 20 patients, lesion ADCs showed no significant difference between standard and accelerated protocols, with Bland-Altman analysis used to assess agreement.</p>
+          <p><b>Watch item:</b> Single-centre cohorts were small, so broader validation is still needed before routine implementation.</p>
           <div class="tags"><span>#PrecisionOncology</span> <span>#ProstateCancer</span> <span>#MRI</span> <span>#DeepLearning</span> <span>#Radiology</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>46</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>41</strong></div>
         <p class="date">2026-09-20</p>
         <h2>Machine Learning Approach to Identify Gut Microbiota Biomarkers in Patients with ST-Elevation Myocardial Infarction Presenting Primary Ventricular Tachyarrhythmias</h2>
         <p class="authors">Tseng, H.-P.; Lai, Z.-L.; Hsu, Y.-Y.; Hung, Y.-H.; Cho, D.-Y.; Hsueh, P.-R.; Chung, W.-H.; Wu, M.-Y.; Lin, Y.-N.; Chen, K.-W.; Chang, S.-S.; Chang, K.-C.</p>
@@ -229,18 +210,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.16.26363271v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.16.26363271v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> In STEMI patients, machine learning on gut microbiome data identified a distinct acute-phase microbial and predicted metabolic signature associated with primary VT/VF.</p>
-          <p><b>Clinical relevance:</b> These findings suggest the gut microbiome could help refine early risk stratification for ventricular arrhythmias after STEMI, but they are exploratory and not yet ready for clinical use.</p>
-          <ul><li>Stool samples from 33 STEMI patients were profiled by full-length 16S rRNA sequencing during acute and recovery phases.</li><li>An ML pipeline selected reproducible taxonomic features linked to primary VT/VF.</li><li>PICRUSt2 was used to infer pathway and enzyme differences related to microbial metabolism.</li></ul>
-          <p><b>Evidence signal:</b> A reduced-feature support vector machine achieved AUROC 0.846 with 85.7% sensitivity and 76.9% specificity in this small cohort.</p>
-          <p><b>Watch item:</b> The study is limited by a very small, single-cohort sample size and requires independent validation before any practical implementation.</p>
-          <div class="tags"><span>#MachineLearning</span> <span>#Microbiome</span> <span>#STEMI</span> <span>#VentricularTachyarrhythmia</span> <span>#Biomarkers</span></div>
+          <p><b>Key insight:</b> An ML-guided gut microbiome analysis in STEMI identified a small set of bacterial taxa and predicted metabolic pathways associated with primary VT/VF risk.</p>
+          <p><b>Clinical relevance:</b> If validated, these microbiome markers could help improve early risk stratification for dangerous arrhythmias in STEMI patients.</p>
+          <ul><li>Stool samples from 33 STEMI patients were sequenced during acute and recovery phases.</li><li>A machine-learning pipeline selected reproducible taxa linked to primary VT/VF.</li><li>Functional pathways were inferred with PICRUSt2 from the sequencing data.</li></ul>
+          <p><b>Evidence signal:</b> A reduced-feature support vector machine achieved an AUROC of 0.846 (95% CI 0.676-0.984), with 85.7% sensitivity and 76.9% specificity.</p>
+          <p><b>Watch item:</b> The cohort was very small and exploratory, so the biomarker signals need validation in larger independent populations before any clinical use.</p>
+          <div class="tags"><span>#MachineLearning</span> <span>#GutMicrobiome</span> <span>#STEMI</span> <span>#VTVF</span> <span>#Biomarkers</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>46</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>41</strong></div>
         <p class="date">2026-09-20</p>
         <h2>A longitudinal study of age-related traits and cognitive function: The Collaborative Amish Aging and Memory Project (CAAMP)</h2>
         <p class="authors">Jian, D. Z.; Laux, R. A.; Song, Y. E.; Lynn, A.; Miskimen, K.; Gulyayev, A.; Fuzzell, S. L.; Hochstetler, S. D.; Miller, D.; Miron, P.; Caywood, L. J.; Clouse, J. E.; Herington, S. D.; Prough, M. B.; Adams, L. D.; Liu, Y.; Moore, N. C.; Dorfsman, D. A.; Ogrocki, P.; Lerner, A. J.; Vance, J. M.; Cuccaro, M. L.; Pericak-Vance, M. A.; Scott, W. K.; Haines, J. L.</p>
@@ -248,18 +229,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.17.26363351v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.17.26363351v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> CAAMP is a large, ongoing longitudinal Amish cohort designed to uncover genetic and biological factors that influence cognition, Alzheimer disease, and successful aging in a founder population.</p>
-          <p><b>Clinical relevance:</b> The study may help identify risk and protective mechanisms relevant to late-life cognitive decline and inform future prevention or biomarker research, though it is not itself a clinical intervention.</p>
-          <ul><li>Enrolled nearly 4,000 Amish participants across Ohio and Indiana.</li><li>Combined clinical and cognitive testing with family history, genealogy, genomics, biospecimens, and biomarkers.</li><li>Used consensus adjudication to assign cognitive diagnoses.</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports 3,978 enrolled participants, with 2,928 already having adjudicated cognitive status and longitudinal plus genomic/biomarker data available for subsets.</p>
-          <p><b>Watch item:</b> Findings from a founder population may not generalize broadly, and some participants lacked full cognitive evaluation at enrollment.</p>
-          <div class="tags"><span>#AgingResearch</span> <span>#AlzheimersDisease</span> <span>#CohortStudy</span> <span>#Genomics</span> <span>#CognitiveHealth</span></div>
+          <p><b>Key insight:</b> CAAMP is a large longitudinal Amish cohort built to uncover genetic and biological factors linked to cognitive aging, Alzheimer disease, and related late-life conditions.</p>
+          <p><b>Clinical relevance:</b> The study may help identify inherited risk and protective factors that could improve future understanding, stratification, and prevention research for dementia and healthy aging.</p>
+          <ul><li>Longitudinal follow-up of Amish participants in Ohio and Indiana</li><li>Clinical, cognitive, functional, and informant-based consensus adjudication of cognitive status</li><li>Integration of pedigree, genotype, whole-genome sequencing, biospecimens, and plasma biomarkers</li></ul>
+          <p><b>Evidence signal:</b> The cohort has enrolled 3,978 participants, with consensus cognitive data available for 2,928 and multiple age-related and biomarker datasets supporting ongoing evaluation.</p>
+          <p><b>Watch item:</b> Because many participants lacked detailed cognitive evaluation at enrollment, some findings may be incomplete or not yet fully generalizable across the full cohort.</p>
+          <div class="tags"><span>#AgingResearch</span> <span>#Dementia</span> <span>#AlzheimersDisease</span> <span>#Genomics</span> <span>#LongitudinalCohort</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>46</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>41</strong></div>
         <p class="date">2026-09-20</p>
         <h2>Predicting parental Human papillomavirus vaccine hesitancy: development and internal validation of machine learning models</h2>
         <p class="authors">Oluwamayomikun Alabi, I.; Biftu Bekalo, D.; Kartsonaki, C.; Agbor, V. N.</p>
@@ -267,31 +248,12 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.18.26363393v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.18.26363393v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> In parents from Cameroon’s Buea Health District, HPV vaccine hesitancy was predicted nearly as well by simple logistic regression as by more complex machine learning models, with information gaps and low trust emerging as the strongest drivers.</p>
-          <p><b>Clinical relevance:</b> A practical takeaway for vaccination programs is that improving vaccine information and institutional trust may matter more than focusing only on demographics when trying to reduce HPV vaccine hesitancy.</p>
-          <ul><li>Cross-sectional survey of 1,156 parents of children aged 9–18 years.</li><li>Compared logistic regression, random forest, and XGBoost after feature screening with group LASSO.</li><li>Evaluated models on a held-out test set using AUC, calibration, and Brier score, with SHAP used for interpretation.</li></ul>
-          <p><b>Evidence signal:</b> On the test set, all models showed similar discrimination (AUC-ROC 0.841–0.870), with XGBoost highest at 0.870 and logistic regression close behind at 0.869.</p>
-          <p><b>Watch item:</b> This is an internally validated single-district study, so performance and predictors may not generalize well to other regions or health systems without external validation.</p>
+          <p><b>Key insight:</b> Simple, interpretable models predicted parental HPV vaccine hesitancy as well as more complex machine-learning methods, with information access and trust emerging as the strongest drivers.</p>
+          <p><b>Clinical relevance:</b> The findings suggest that improving vaccine communication and institutional trust may be more impactful than broad demographic targeting when addressing HPV vaccine hesitancy.</p>
+          <ul><li>Cross-sectional survey of 1,156 parents of children aged 9–18 years in Cameroon’s Buea Health District.</li><li>Compared logistic regression, random forest, and XGBoost after feature screening with group LASSO.</li><li>Evaluated models with an 80/20 train-test split using AUC, calibration, Brier score, and SHAP interpretation.</li></ul>
+          <p><b>Evidence signal:</b> On the held-out test set, all models showed similar discrimination (AUC-ROC 0.841–0.870), with XGBoost slightly highest and logistic regression performing best on sensitivity, F1-score, and Brier score.</p>
+          <p><b>Watch item:</b> This is an internally validated single-region study, so performance may not generalize without external validation in other settings or populations.</p>
           <div class="tags"><span>#HPVVaccine</span> <span>#VaccineHesitancy</span> <span>#MachineLearning</span> <span>#PublicHealth</span> <span>#Cameroon</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>43</strong></div>
-        <p class="date">2026-09-19</p>
-        <h2>Identifying cohorts at elevated risk of cancers using generative modeling of patient health states</h2>
-        <p class="authors">Khan, A.; Forster, D. T.; Harsh, M.; Zheng, C.; Warner, E. T.; Ritter, D.; Chang, A.; Wei, Q.; Sorensen, T. K.; Marks, D. S.; Sequist, L. V.; Hadlock, J. J.; Fillmore, N. R.; Sander, C.</p>
-        <p class="abstract">While large language models are powerful generators of new text, forecasting disease progression from longitudinal health histories remains a challenging problem. We introduce GenEHR, an autoregressive generative model trained on electronic health records (EHRs) from millions of patients that explicitly represents the irregular time intervals between visits when forecasting future clinical events. We combine the general-purpose patient representation learned during foundational training with parameter-efficient supervised adaptation for the task of pan-cancer risk stratification. In five large EHR cohorts supervised adaptation substantially improved prediction performance of a first cancer diagnosis within a five year horizon window. Our retrospective results support the evaluation of GenEHR-CancerRisk as a prospective clinical decision-support tool for prioritizing patients for risk-based screening for aggressive cancer types, such as pancreatic and ovarian cancer.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.09.26362676v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.09.26362676v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> GenEHR uses a generative EHR model that accounts for irregular visit timing to forecast future cancer risk from patient health histories.</p>
-          <p><b>Clinical relevance:</b> The approach may help identify patients who could benefit from risk-based screening and earlier evaluation for aggressive cancers.</p>
-          <ul><li>Trained an autoregressive model on longitudinal electronic health records from millions of patients</li><li>Explicitly modeled irregular time intervals between clinical visits</li><li>Used parameter-efficient supervised adaptation to predict first cancer diagnosis within a 5-year horizon</li></ul>
-          <p><b>Evidence signal:</b> In five large EHR cohorts, supervised adaptation substantially improved prediction performance for first cancer diagnosis over a five-year window.</p>
-          <p><b>Watch item:</b> These results are retrospective, so prospective validation is needed before using it for clinical decision support or screening prioritization.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#CancerRisk</span> <span>#EHR</span> <span>#GenerativeAI</span> <span>#ClinicalDecisionSupport</span></div>
         </section>
       </article>
     </section>

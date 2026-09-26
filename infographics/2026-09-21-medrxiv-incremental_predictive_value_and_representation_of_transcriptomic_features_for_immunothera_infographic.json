@@ -1,13 +1,13 @@
 {
-  "key_insight": "Biology-guided transcriptomic features captured immunotherapy response better and more consistently than data-driven gene selection in advanced urothelial carcinoma.",
-  "clinical_relevance": "Transcriptomic profiling may add meaningful prediction value for atezolizumab response, but its benefit appears smaller once standard and enriched biomarkers are already included.",
+  "key_insight": "Biology-guided transcriptomic features provided more stable and useful immunotherapy response prediction than unstable gene-by-gene selection in advanced urothelial carcinoma.",
+  "clinical_relevance": "Transcriptomic profiling may add the most value when used as a biologically informed layer on top of clinical and established biomarker data rather than as a standalone high-dimensional gene list.",
   "method": [
-    "Compared knowledge-guided tumor microenvironment gene-set features vs transcriptome-wide gene selection",
-    "Evaluated incremental AUPRC gain over clinical variables and biomarker baselines in IMvigor210 (n=298)",
-    "Checked feature stability across folds and external validation performance"
+    "Analyzed 298 IMvigor210 patients treated with atezolizumab.",
+    "Compared knowledge-guided tumor microenvironment gene-set features vs data-driven transcriptome-wide gene selection.",
+    "Benchmarked added predictive value beyond clinical variables and standard biomarkers using AUPRC."
   ],
-  "evidence_signal": "In IMvigor210, knowledge-guided features improved AUPRC by +0.058 over clinical variables alone, but only +0.011 beyond standard biomarkers; external evaluation showed a similar pattern (+0.128 vs +0.019).",
-  "watch_item": "Data-driven gene lists were unstable across folds (mean Jaccard similarity 0.227), so implementation should favor robust pathway-level representations rather than single-gene signatures.",
+  "evidence_signal": "Knowledge-guided features improved AUPRC by 0.058 over clinical variables alone, while data-driven selection was unstable across folds (mean Jaccard 0.227) and underperformed the knowledge-guided approach by 0.150 in the clinical-plus-biomarker setting; external evaluation showed a similar pattern.",
+  "watch_item": "Results come from a single trial cohort and the data-driven gene list was highly unstable, so broader validation is needed before implementation.",
   "hashtags": [
     "#PrecisionOncology",
     "#Immunotherapy",
@@ -19,6 +19,6 @@
   "paper_title": "Incremental Predictive Value and Representation of Transcriptomic Features for Immunotherapy Response in Advanced Urothelial Carcinoma",
   "paper_date": "2026-09-21",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-09-25T12:25:27",
+  "generated_at": "2026-09-26T11:57:33",
   "generator": "openai"
 }

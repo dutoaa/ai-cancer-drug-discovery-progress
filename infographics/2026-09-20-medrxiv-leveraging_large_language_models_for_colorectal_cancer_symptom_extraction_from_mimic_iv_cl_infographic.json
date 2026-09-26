@@ -1,24 +1,24 @@
 {
-  "key_insight": "Zero-shot large language models extracted colorectal cancer symptoms from discharge notes more accurately than rule-based and NER pipelines, with Gemini 3.5 Flash performing best overall.",
-  "clinical_relevance": "This approach could speed scalable symptom surveillance from routine oncology notes and reduce reliance on manual chart review or institution-specific NLP rules.",
+  "key_insight": "Zero-shot large language models, especially Gemini 3.5 Flash, extracted colorectal cancer symptoms from discharge notes more accurately than rule-based and clinical NER approaches.",
+  "clinical_relevance": "This suggests LLM-based note mining could scale symptom surveillance in oncology without building site-specific rules or training models.",
   "method": [
-    "Analyzed 2,704 MIMIC-IV colorectal cancer discharge notes.",
-    "Built a 46-symptom target list from validated symptom instruments.",
-    "Compared rule-based matching, clinical NER, zero-shot Claude/Gemini, and hybrid negation-filtered variants against adjudicated ground truth."
+    "Analyzed 2,704 CRC discharge notes from MIMIC-IV",
+    "Benchmarked rule-based matching, clinical NER, Claude Haiku, and Gemini 3.5 Flash",
+    "Compared against a 200-note adjudicated gold standard with macro/micro F1, precision, and recall"
   ],
-  "evidence_signal": "On a 200-note gold standard with dual-rater adjudication, Gemini 3.5 Flash achieved Macro F1 0.70 and Micro F1 0.86, outperforming rule-based (Macro F1 0.44) and NER (Macro F1 0.38) methods.",
-  "watch_item": "Post-hoc negation filtering reduced LLM performance, suggesting negation handling needs syntactic scope validation rather than fixed-window rules.",
+  "evidence_signal": "On the gold-standard evaluation set, Gemini 3.5 Flash achieved Macro F1 0.70 and Micro F1 0.86, outperforming rule-based (Macro F1 0.44) and NER (Macro F1 0.38) methods.",
+  "watch_item": "Post-hoc negation filtering reduced LLM performance, highlighting the need for syntactic scope-aware validation before deployment.",
   "hashtags": [
     "#PrecisionOncology",
     "#ClinicalNLP",
     "#LargeLanguageModels",
     "#ColorectalCancer",
-    "#SymptomExtraction"
+    "#MIMICIV"
   ],
   "paper_id": "2026-09-20-medrxiv-leveraging_large_language_models_for_colorectal_cancer_symptom_extraction_from_mimic_iv_cl",
   "paper_title": "Leveraging Large Language Models for Colorectal Cancer Symptom Extraction from MIMIC-IV Clinical Notes",
   "paper_date": "2026-09-20",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-09-25T12:25:38",
+  "generated_at": "2026-09-26T11:57:43",
   "generator": "openai"
 }

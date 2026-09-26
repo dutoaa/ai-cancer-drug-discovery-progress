@@ -1,24 +1,24 @@
 {
-  "key_insight": "In STEMI patients, machine learning on gut microbiome data identified a distinct acute-phase microbial and predicted metabolic signature associated with primary VT/VF.",
-  "clinical_relevance": "These findings suggest the gut microbiome could help refine early risk stratification for ventricular arrhythmias after STEMI, but they are exploratory and not yet ready for clinical use.",
+  "key_insight": "An ML-guided gut microbiome analysis in STEMI identified a small set of bacterial taxa and predicted metabolic pathways associated with primary VT/VF risk.",
+  "clinical_relevance": "If validated, these microbiome markers could help improve early risk stratification for dangerous arrhythmias in STEMI patients.",
   "method": [
-    "Stool samples from 33 STEMI patients were profiled by full-length 16S rRNA sequencing during acute and recovery phases.",
-    "An ML pipeline selected reproducible taxonomic features linked to primary VT/VF.",
-    "PICRUSt2 was used to infer pathway and enzyme differences related to microbial metabolism."
+    "Stool samples from 33 STEMI patients were sequenced during acute and recovery phases.",
+    "A machine-learning pipeline selected reproducible taxa linked to primary VT/VF.",
+    "Functional pathways were inferred with PICRUSt2 from the sequencing data."
   ],
-  "evidence_signal": "A reduced-feature support vector machine achieved AUROC 0.846 with 85.7% sensitivity and 76.9% specificity in this small cohort.",
-  "watch_item": "The study is limited by a very small, single-cohort sample size and requires independent validation before any practical implementation.",
+  "evidence_signal": "A reduced-feature support vector machine achieved an AUROC of 0.846 (95% CI 0.676-0.984), with 85.7% sensitivity and 76.9% specificity.",
+  "watch_item": "The cohort was very small and exploratory, so the biomarker signals need validation in larger independent populations before any clinical use.",
   "hashtags": [
     "#MachineLearning",
-    "#Microbiome",
+    "#GutMicrobiome",
     "#STEMI",
-    "#VentricularTachyarrhythmia",
+    "#VTVF",
     "#Biomarkers"
   ],
   "paper_id": "2026-09-20-medrxiv-machine_learning_approach_to_identify_gut_microbiota_biomarkers_in_patients_with_st_elevat",
   "paper_title": "Machine Learning Approach to Identify Gut Microbiota Biomarkers in Patients with ST-Elevation Myocardial Infarction Presenting Primary Ventricular Tachyarrhythmias",
   "paper_date": "2026-09-20",
   "paper_category": "Target Biology",
-  "generated_at": "2026-09-25T12:25:51",
+  "generated_at": "2026-09-26T11:57:55",
   "generator": "openai"
 }

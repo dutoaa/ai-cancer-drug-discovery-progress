@@ -1,24 +1,24 @@
 {
-  "key_insight": "Independent benchmarking of open-source thigh muscle MRI segmentation tools found large performance differences, with domain-specific models generally outperforming foundation and general-purpose architectures.",
-  "clinical_relevance": "More accurate and usable muscle MRI segmentation can improve biomarker extraction for neuromuscular disease research, but weak performance on pathological cases could distort interpretation if deployed uncritically.",
+  "key_insight": "Independent benchmarking shows that specialized open-source thigh muscle MRI segmentation models can outperform newer general-purpose and foundation approaches, but performance varies widely by dataset and pathology.",
+  "clinical_relevance": "Accurate muscle segmentation supports MRI-based biomarkers such as volumetry, radiomics, and fat fraction quantification, so errors can materially affect research and clinical interpretation in neuromuscular disease.",
   "method": [
-    "Compared 8 open-source segmentation tools, including 6 standalone models and 2 auxiliary label-refinement methods.",
+    "Compared 8 open-source segmentation tools; 6 ran independently and 2 required prior muscle labeling.",
     "Evaluated 3D MRI volumes from three base datasets and additional derived datasets.",
-    "Assessed both quantitative accuracy metrics and qualitative usability across methods."
+    "Assessed both quantitative performance and qualitative usability across methods."
   ],
-  "evidence_signal": "The abstract reports substantial variation in performance across methods and datasets, with reduced accuracy on pathological cases and consistent gains for domain-specific models trained on larger datasets.",
-  "watch_item": "Tools may not generalize well to underrepresented populations or disease patterns, so external validation on local data is essential before adoption.",
+  "evidence_signal": "The benchmark found substantial performance variation across methods and datasets, with many tools performing worse on pathological cases and domain-specific models generally outperforming foundation or general-purpose architectures.",
+  "watch_item": "Results may not generalize well to underrepresented populations or rare pathologies, and some high-performing tools may still be harder to deploy in practice.",
   "hashtags": [
     "#MRI",
     "#Segmentation",
-    "#MuscleImaging",
-    "#Benchmarking",
-    "#OpenSourceAI"
+    "#OpenSourceAI",
+    "#NeuromuscularDisease",
+    "#MedicalImaging"
   ],
   "paper_id": "2026-09-22-medrxiv-benchmarking_open_source_automated_thigh_muscle_mri_segmentation_algorithms",
   "paper_title": "Benchmarking open-source automated thigh muscle MRI segmentation algorithms",
   "paper_date": "2026-09-22",
   "paper_category": "Target Biology",
-  "generated_at": "2026-09-25T12:25:44",
+  "generated_at": "2026-09-26T11:57:48",
   "generator": "openai"
 }
