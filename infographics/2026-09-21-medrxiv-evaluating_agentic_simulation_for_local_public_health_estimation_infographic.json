@@ -1,24 +1,24 @@
 {
-  "key_insight": "LLMPopSim shows that individually simulated AI agents can be aggregated into population-level health patterns that partly match real-world screening behavior across places and time.",
-  "clinical_relevance": "This could help researchers test public health interventions and estimate community-level behavior without relying only on costly or delayed survey data.",
+  "key_insight": "LLM-based agents can be assembled into geographically grounded synthetic populations that partially reproduce real-world public health behavior at the community level.",
+  "clinical_relevance": "This approach could help researchers simulate population responses to screening and other interventions before real-world deployment, but it is not yet reliable enough to replace observed data.",
   "method": [
-    "Built AI agent populations using U.S. Census and CDC data",
-    "Trained on historical 2018 Hawaii data",
-    "Tested transfer to 2022 Hawaii and New York State for colorectal cancer screening and mammography"
+    "Built LLMPopSim using U.S. Census and CDC data to create AI agents representing local populations.",
+    "Trained the framework on Hawaii 2018 data and tested temporal/geographic transfer on held-out 2022 cohorts from Hawaii and New York State.",
+    "Evaluated simulated colorectal cancer screening and mammography against observed ZCTA-level prevalence."
   ],
-  "evidence_signal": "Across four state-outcome tests, mean absolute error was 3.5 to 15.0 percentage points and ZCTA-level correlations ranged from 0.26 to 0.69.",
-  "watch_item": "The model showed notable bias and weaker performance in lower-prevalence communities, so calibration and subgroup fidelity remain important concerns.",
+  "evidence_signal": "Across four state-outcome tests, mean absolute error was 3.5-15.0 percentage points and correlations with observed ZCTA-level prevalence ranged from 0.26 to 0.69.",
+  "watch_item": "Performance was least accurate in lower-prevalence communities and showed calibration and subgroup-fidelity gaps, so implementation requires careful validation.",
   "hashtags": [
-    "#AIPopulationSimulation",
+    "#AIPopulationModeling",
     "#PublicHealthAI",
-    "#HealthBehavior",
     "#CancerScreening",
+    "#SyntheticPopulations",
     "#GenerativeAgents"
   ],
   "paper_id": "2026-09-21-medrxiv-evaluating_agentic_simulation_for_local_public_health_estimation",
   "paper_title": "Evaluating agentic simulation for local public health estimation",
   "paper_date": "2026-09-21",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-09-26T11:57:40",
+  "generated_at": "2026-09-27T12:35:28",
   "generator": "openai"
 }
