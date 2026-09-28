@@ -1,24 +1,24 @@
 {
-  "key_insight": "UPEBNL is a scalable causal Bayesian network framework that makes large-scale EHR-based cancer prescreening more interpretable by learning stable, evidence-traceable dependency structures.",
-  "clinical_relevance": "The approach may help clinicians and researchers understand which EHR features contribute to cancer risk predictions while preserving strong prescreening performance.",
+  "key_insight": "The study introduces UPEBNL, a scalable causal Bayesian network framework that makes large-scale EHR-based cancer prescreening more interpretable and computationally practical.",
+  "clinical_relevance": "By revealing evidence paths and directional dependencies, the model could help support more transparent cancer risk stratification for esophageal and colorectal prescreening.",
   "method": [
-    "Adaptive data slicing to split large EHR datasets for parallel learning",
-    "Quality-aware structure aggregation to combine partial networks into a stable DAG",
-    "Global causal Bayesian network construction for interpretable evidence propagation"
+    "Adaptive data slicing for parallel causal Bayesian network learning",
+    "Quality-aware structure aggregation to stabilize learned dependencies",
+    "Global DAG construction to combine submodels into one interpretable network"
   ],
-  "evidence_signal": "In simulations, UPEBNL improved structural recovery by nearly 40% and ran up to 221.28-fold faster; in EHR prescreening it achieved AUCs of 0.8171 for esophageal cancer and 0.784 for colorectal cancer.",
-  "watch_item": "Because the causal structure is learned from observational EHR data, the resulting links are interpretable but not definitive proof of true causation and may need external validation.",
+  "evidence_signal": "In simulations, UPEBNL improved structural recovery by nearly 40% and sped up learning by up to 221.28-fold; in EHR prescreening, it reached AUCs of 0.8171 for esophageal cancer and 0.784 for colorectal cancer.",
+  "watch_item": "The approach still depends on observational EHR data, so learned causal directions may reflect data quality and confounding rather than confirmed biological causality.",
   "hashtags": [
-    "#CausalAI",
-    "#CancerPrescreening",
-    "#EHR",
     "#PrecisionOncology",
-    "#InterpretableML"
+    "#CausalML",
+    "#EHR",
+    "#CancerPrescreening",
+    "#InterpretableAI"
   ],
   "paper_id": "2026-09-22-medrxiv-scalable_causal_interpretable_machine_learning_for_cancer_prescreening_using_electronic_he",
   "paper_title": "Scalable Causal-Interpretable Machine Learning for Cancer Prescreening Using Electronic Health Records",
   "paper_date": "2026-09-22",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-09-27T12:35:35",
+  "generated_at": "2026-09-28T14:42:56",
   "generator": "openai"
 }

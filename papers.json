@@ -1,15 +1,15 @@
 [
   {
-    "id": "2026-09-21-medrxiv-incremental_predictive_value_and_representation_of_transcriptomic_features_for_immunothera",
-    "doi": "10.64898/2026.09.14.26363060",
-    "date": "2026-09-21",
-    "title": "Incremental Predictive Value and Representation of Transcriptomic Features for Immunotherapy Response in Advanced Urothelial Carcinoma",
-    "authors": "Han, G. Y.; Tai, H.; Wang, F.",
-    "abstract": "Transcriptomic profiling may improve immunotherapy response prediction, but its incremental value beyond established clinical and tumor biomarkers is unclear. In 298 patients with advanced urothelial carcinoma from IMvigor210, an atezolizumab (PD-L1 inhibitor) trial, we compared knowledge-guided tumor microenvironment gene-set features with data-driven transcriptome-wide gene selection. Knowledge-guided features improved AUPRC by 0.058 beyond clinical variables alone, with smaller gains after including standard biomarkers (TMB, PD-L1; +0.011) and research-enriched biomarkers (neoantigen burden, immune phenotype; +0.016). Data-driven gene selection was unstable across folds (mean Jaccard similarity, 0.227) and, under the clinical-plus-biomarker baseline, yielded an AUPRC 0.150 lower than the knowledge-guided representation. Despite this instability, IL-6/JAK/STAT3 signaling was the most recurrent Hallmark pathway, suggesting pathway-level biological convergence. External evaluation showed a similar pattern: knowledge-guided features improved AUPRC by 0.128 over clinical variables vs. 0.019 over clinical-plus-biomarker baseline. These findings support biologically informed transcriptomic representation when molecular profiling adds value beyond established biomarkers.",
+    "id": "2026-09-22-medrxiv-genomic_foundation_models_extend_clinicopathologic_and_transcriptomic_prognostication_in_s",
+    "doi": "10.64898/2026.09.21.26363568",
+    "date": "2026-09-22",
+    "title": "Genomic foundation models extend clinicopathologic and transcriptomic prognostication in soft tissue sarcoma",
+    "authors": "Esperanca-Martins, M.; Sokolov Ravasqueira, M.; Dias, S.; Abecasis, N.; Costa, L.; Vasques, H.",
+    "abstract": "BackgroundClinicopathologic (SARCULATOR) and transcriptomic (CINSARC) models are established prognostication tools in soft tissue sarcoma, but neither directly represent the sequence context of tumor genomic alterations. Evo2 is a genomic foundation model trained to learn the grammar of DNA/RNA sequences. We tested whether Evo2-derived features from tumor short variants, fusions, and rearrangements improve survival prognostication beyond clinicopathologic and transcriptomic risk models. MethodsWe analysed formalin-fixed, paraffin-embedded tumor material and clinical data from 102 patients with dedifferentiated liposarcoma (n = 25), high-grade leiomyosarcoma (n = 25), and undifferentiated pleomorphic sarcoma (n = 52). A separate TCGA-SARC cohort of comparable histologies (n = 129) served as external validation. Reconstructable alterations (short variants, fusions and rearrangements) were converted into sequence inputs, embedded with Evo2 and aggregated into patient-level genomic representations. Cox proportional hazards models incorporated genomic features alone (Evo2) or together with clinicopathologic (SARCULATOR) or transcriptomic (CINSARC) predictors across overall survival (OS), progression-free survival (PFS), disease-free survival (DFS), relapse-free survival (RFS), and metastasis-free survival (MFS). Discrimination was assessed using Harrells concordance index (C-index). ResultsEvo2 features were generated from 174 study-cohort sequences and 7298 TCGA-SARC sequences. In the study cohort, adding Evo2 to SARCULATOR increased the reported C-index for OS from 0.620 to 0.770, PFS from 0.625 to 0.755, DFS from 0.612 to 0.714, and RFS from 0.633 to 0.771. In TCGA-SARC, SARCULATOR plus Evo2 increased the OS C-index from 0.595 to 0.716 and the MFS C-index from 0.548 to 0.667. Also in TCGA-SARC, adding Evo2 to CINSARC increased the OS C-index from 0.476 to 0.653 and the MFS C-index from 0.553 to 0.650. These are descriptive point-estimate comparisons. Moreover, in TCGA-SARC Evo2 alone outperformed SARCULATOR alone and CINSARC alone, supporting independent prognostic information within altered sequence-context representations. ConclusionsEvo2-derived genomic representations improved clinicopathologic and transcriptomic prognostication across sarcoma cohorts and survival endpoints. These findings support genomic foundation models as an independent and complementary layer for sarcoma risk stratification through direct modeling of altered tumor sequence biology. Confirmation of model transportability, calibration and clinical utility is required before clinical application. Graphical abstract O_FIG O_LINKSMALLFIG WIDTH=200 HEIGHT=112 SRC=\"FIGDIR/small/26363568v1_ufig1.gif\" ALT=\"Figure 1\"> View larger version (44K): org.highwire.dtl.DTLVardef@166ca4corg.highwire.dtl.DTLVardef@16b7fcborg.highwire.dtl.DTLVardef@9300bforg.highwire.dtl.DTLVardef@11619a4_HPS_FORMAT_FIGEXP M_FIG C_FIG Genomic sequence representations for sarcoma prognostication. Reconstructed short variants and study-cohort fusion proxies are processed with Evo2 and aggregated into patient-level genomic profiles for ridge-penalised Cox survival modelling. Genomic profiles are evaluated alone or with clinicopathologic SARCULATOR or transcriptomic CINSARC predictors; CINSARC is evaluated only in TCGA-SARC. The lower panel shows reported overall-survival Harrell C-index point estimates before and after adding Evo2 features. These descriptive comparisons do not establish statistical significance or clinical utility. {Delta} denotes the alternative-minus-reference difference in mean sequence log-likelihood. Embedding displacement denotes cosine distance between paired short-variant embeddings. FFPE, formalin-fixed, paraffin-embedded; TCGA-SARC, The Cancer Genome Atlas sarcoma cohort. Created using BioRender.",
     "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
     "primary_category": "oncology",
     "categories": [
       "oncology"
@@ -17,36 +17,36 @@
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.14.26363060v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363568v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.14.26363060v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363568v1.full.pdf"
       }
     ],
-    "score": 63,
+    "score": 65,
     "infographic": {
-      "key_insight": "Biologically guided tumor microenvironment transcriptomic features predicted immunotherapy response better and more consistently than data-driven gene selection in advanced urothelial carcinoma.",
-      "clinical_relevance": "Transcriptomic profiling may add meaningful response-prediction value, but its benefit is modest once standard and research biomarkers are already included.",
+      "key_insight": "A genomic foundation model (Evo2) extracted from tumor sequence alterations added prognostic value beyond established clinicopathologic and transcriptomic risk models in soft tissue sarcoma.",
+      "clinical_relevance": "If validated prospectively, sequence-context genomic features could help refine survival risk stratification alongside SARCULATOR and CINSARC in sarcoma care.",
       "method": [
-        "Compared knowledge-guided gene-set features with transcriptome-wide gene selection.",
-        "Evaluated incremental predictive value over clinical variables, standard biomarkers, and research-enriched biomarkers.",
-        "Assessed stability across cross-validation folds and external validation."
+        "Used FFPE tumor samples and clinical data from 102 patients with dedifferentiated liposarcoma, high-grade leiomyosarcoma, or undifferentiated pleomorphic sarcoma.",
+        "Converted reconstructable short variants, fusions, and rearrangements into sequence inputs, embedded them with Evo2, and aggregated patient-level genomic representations.",
+        "Tested Cox survival models for OS, PFS, DFS, RFS, and MFS, with external validation in TCGA-SARC (n = 129)."
       ],
-      "evidence_signal": "In IMvigor210 (n=298), knowledge-guided features improved AUPRC by 0.058 over clinical variables alone, with smaller gains over biomarker-rich baselines; external evaluation showed the same pattern.",
-      "watch_item": "Data-driven gene selection was unstable across folds, so results may not generalize well without biologically informed feature design.",
+      "evidence_signal": "Descriptive C-index comparisons showed improved discrimination when Evo2 was added to SARCULATOR or CINSARC, and Evo2 alone outperformed either model alone in TCGA-SARC.",
+      "watch_item": "These are point-estimate comparisons from retrospective cohorts, so prospective validation and assessment of real-world implementation are still needed.",
       "hashtags": [
         "#PrecisionOncology",
-        "#ImmunotherapyResponse",
-        "#Transcriptomics",
-        "#Biomarkers",
-        "#UrothelialCarcinoma"
+        "#SoftTissueSarcoma",
+        "#Genomics",
+        "#AIinMedicine",
+        "#SurvivalPrognosis"
       ],
-      "paper_id": "2026-09-21-medrxiv-incremental_predictive_value_and_representation_of_transcriptomic_features_for_immunothera",
-      "paper_title": "Incremental Predictive Value and Representation of Transcriptomic Features for Immunotherapy Response in Advanced Urothelial Carcinoma",
-      "paper_date": "2026-09-21",
+      "paper_id": "2026-09-22-medrxiv-genomic_foundation_models_extend_clinicopathologic_and_transcriptomic_prognostication_in_s",
+      "paper_title": "Genomic foundation models extend clinicopathologic and transcriptomic prognostication in soft tissue sarcoma",
+      "paper_date": "2026-09-22",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-09-27T12:35:21",
+      "generated_at": "2026-09-28T14:42:50",
       "generator": "openai"
     }
   },
@@ -75,182 +75,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.20.26363512v1.full.pdf"
       }
     ],
-    "score": 54,
+    "score": 49,
     "infographic": {
-      "key_insight": "This baseline natural history study establishes the first large U.S. CADASIL cohort and shows that genetically defined NOTCH3 carriers can be systematically characterized with clinical, cognitive, MRI, and biomarker measures to support VCID research.",
-      "clinical_relevance": "CADASIL offers a single-cause model of small vessel disease that may help identify biomarkers and outcome measures relevant to vascular cognitive impairment and dementia.",
+      "key_insight": "This study establishes the first U.S. CADASIL natural history cohort, providing a baseline benchmark for a monogenic small-vessel disease model of VCID.",
+      "clinical_relevance": "The cohort’s standardized clinical, cognitive, imaging, and biomarker data can help improve trial readiness and comparisons for future VCID research.",
       "method": [
-        "Cross-sectional baseline analysis from 12 U.S. sites (Oct 2022–Jan 2025).",
-        "Adults from families with documented NOTCH3 variants underwent standardized clinical, cognitive, physical, MRI, genetics, and proteomics assessments.",
-        "Central genetic review grouped pathogenic/likely pathogenic NOTCH3 variants into low-, medium-, or high-risk tiers."
+        "Cross-sectional baseline analysis from a 12-site longitudinal cohort (Oct 2022–Jan 2025).",
+        "Recruited adults from families with documented NOTCH3 variants using clinical referrals, records, advocacy groups, and outreach.",
+        "Applied central genetic classification, standardized clinical assessments, MRI, and proteomics under harmonized protocols."
       ],
-      "evidence_signal": "The baseline analytic cohort included 343 CADASIL carriers and 116 non-carrier family controls, with group comparisons and multivariable adjustment used to assess differences.",
-      "watch_item": "Findings are baseline and cross-sectional, so they cannot establish progression, causal effects, or broad generalizability beyond this relatively homogeneous cohort.",
+      "evidence_signal": "The abstract reports 560 baseline participants, with an analytic cohort of 343 CADASIL carriers and 116 non-carrier family controls, and uses group comparisons plus multivariable adjustment.",
+      "watch_item": "Findings are baseline and largely cross-sectional, so they describe cohort characteristics rather than disease progression or causal effects.",
       "hashtags": [
         "#CADASIL",
         "#VCID",
         "#NOTCH3",
-        "#Biomarkers",
-        "#NaturalHistoryStudy"
+        "#NaturalHistoryStudy",
+        "#Biomarkers"
       ],
       "paper_id": "2026-09-22-medrxiv-the_united_states_cadasil_consortium_baseline_findings_from_a_natural_history_study",
       "paper_title": "The United States CADASIL Consortium: Baseline Findings from a Natural History Study",
       "paper_date": "2026-09-22",
       "paper_category": "Target Biology",
-      "generated_at": "2026-09-27T12:35:24",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-21-medrxiv-fully_automated_abstraction_of_longitudinal_breast_oncology_records_with_off_the_shelf_lar",
-    "doi": "10.64898/2026.03.23.26349012",
-    "date": "2026-09-21",
-    "title": "Fully Automated Abstraction of Longitudinal Breast Oncology Records with Off-The-Shelf Large Language Models",
-    "authors": "Dickerson, J. C.; McClure, M. B.; Shaw, M.; Reitsma, M. B.; Dalal, N. H.; Curtis, C.; Kurian, A. W.; Caswell-Jin, J. L.",
-    "abstract": "Manual chart abstraction is a major bottleneck in clinical research. In oncology, important outcomes are often documented only in clinical notes. We developed an open-source pipeline that, in a HIPAA-compliant setting, uses general-purpose large language models (LLMs) to abstract variables from longitudinal patient records without fine-tuning or hand-selecting input documents. We randomly selected 100 patients from a complex institutional breast cancer cohort and compared four LLMs with oncologist abstraction, genetic testing records, and, for select variables, research coordinator abstraction. The unedited charts contained a median of 3,100 pages of text, 7 lines of therapy, and 6.5 years of follow-up. Across the two best-performing models, GPT-5 and Gemini 2.5 Pro, the pipeline achieved 90%-100% concordance for recurrence, BRCA1/2, hormone receptor, HER2, clinical stage, PIK3CA, and ESR1 status. Anti-cancer drug identification was comparable to that of a second oncologist. Therapy-line reconstruction was less accurate than a second oncologist; all four LLMs outperformed research coordinators on both tasks. In a separate cohort of 97 patients, the unmodified pipeline showed similar performance for recurrence detection. These findings suggest that LLMs may enable scalable abstraction from narrative medical records, but replication and validation across institutions and diseases are needed.",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
-    "primary_category": "oncology",
-    "categories": [
-      "oncology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.03.23.26349012v2"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.03.23.26349012v2.full.pdf"
-      }
-    ],
-    "score": 54,
-    "infographic": {
-      "key_insight": "Off-the-shelf large language models can automatically extract key longitudinal breast oncology variables from dense narrative charts with high agreement to expert abstraction.",
-      "clinical_relevance": "This could substantially reduce the time and labor needed to build research datasets from real-world oncology records, especially for outcomes and biomarkers often buried in notes.",
-      "method": [
-        "Randomly sampled 100 breast cancer patients from an institutional cohort.",
-        "Compared four general-purpose LLMs against oncologist abstraction, genetic testing records, and some coordinator-abstracted variables.",
-        "Used an open-source, HIPAA-compliant pipeline without fine-tuning or hand-selecting input documents."
-      ],
-      "evidence_signal": "In the main cohort, the best models (GPT-5 and Gemini 2.5 Pro) reached 90%-100% concordance for several key variables, and in a separate 97-patient cohort the same pipeline showed similar recurrence-detection performance.",
-      "watch_item": "Performance was weaker for therapy-line reconstruction than for simpler variable extraction, so external validation and institution-specific testing are still needed before broad deployment.",
-      "hashtags": [
-        "#PrecisionOncology",
-        "#LargeLanguageModels",
-        "#CancerResearch",
-        "#ClinicalNLP",
-        "#RealWorldData"
-      ],
-      "paper_id": "2026-09-21-medrxiv-fully_automated_abstraction_of_longitudinal_breast_oncology_records_with_off_the_shelf_lar",
-      "paper_title": "Fully Automated Abstraction of Longitudinal Breast Oncology Records with Off-The-Shelf Large Language Models",
-      "paper_date": "2026-09-21",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-09-27T12:35:26",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-21-medrxiv-evaluating_agentic_simulation_for_local_public_health_estimation",
-    "doi": "10.64898/2026.09.19.26363431",
-    "date": "2026-09-21",
-    "title": "Evaluating agentic simulation for local public health estimation",
-    "authors": "Nakatsuka, M. A.; Steele, R. J.; Han, X.; Oermann, E. K.",
-    "abstract": "Large language model (LLM)-based generative agents can reproduce aspects of individual human behavior, but whether they can be scaled to geographically grounded populations that reproduce real-world health behaviors remains unclear. Here, we introduce LLMPopSim, an agentic population simulation framework that uses U.S. Census and Centers for Disease Control and Prevention data to construct populations of AI agents whose simulated individual health behaviors can be aggregated and evaluated at the community level. We developed the framework using historical data from Hawaii in 2018, and evaluated temporal and geographic generalizability using held-out 2022 cohorts from Hawaii and New York State, with colorectal cancer screening and mammography as proof-of-concept behaviors. Across the four state-outcome evaluations, mean absolute error ranged from 3.5 to 15.0 percentage points and correlations between simulated and observed ZCTA-level prevalence ranged from 0.26 to 0.69. Mean prediction bias was +15.0 and +10.2 percentage points for colorectal cancer screening in Hawaii and New York State, respectively, and +2.9 and +0.9 percentage points for mammography; ratios of predicted to observed geographic standard deviation were 0.60 and 0.68 for colorectal cancer screening and 1.12 and 1.96 for mammography, respectively. Prediction error was greatest in communities with lower observed screening prevalence and varied across community characteristics without a uniform socioeconomic gradient. These findings demonstrate that individually represented AI agents can aggregate into population-level patterns that retain measurable features of real-world health behavior across temporal and geographic transfer, while identifying calibration, distributional fidelity and subgroup performance as key challenges for generative population simulation. LLMPopSim provides an empirical foundation for developing synthetic populations that may ultimately enable simulation of heterogeneous population responses to public health interventions.",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
-    "primary_category": "health informatics",
-    "categories": [
-      "health informatics"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.19.26363431v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.19.26363431v1.full.pdf"
-      }
-    ],
-    "score": 53,
-    "infographic": {
-      "key_insight": "LLM-based agents can be assembled into geographically grounded synthetic populations that partially reproduce real-world public health behavior at the community level.",
-      "clinical_relevance": "This approach could help researchers simulate population responses to screening and other interventions before real-world deployment, but it is not yet reliable enough to replace observed data.",
-      "method": [
-        "Built LLMPopSim using U.S. Census and CDC data to create AI agents representing local populations.",
-        "Trained the framework on Hawaii 2018 data and tested temporal/geographic transfer on held-out 2022 cohorts from Hawaii and New York State.",
-        "Evaluated simulated colorectal cancer screening and mammography against observed ZCTA-level prevalence."
-      ],
-      "evidence_signal": "Across four state-outcome tests, mean absolute error was 3.5-15.0 percentage points and correlations with observed ZCTA-level prevalence ranged from 0.26 to 0.69.",
-      "watch_item": "Performance was least accurate in lower-prevalence communities and showed calibration and subgroup-fidelity gaps, so implementation requires careful validation.",
-      "hashtags": [
-        "#AIPopulationModeling",
-        "#PublicHealthAI",
-        "#CancerScreening",
-        "#SyntheticPopulations",
-        "#GenerativeAgents"
-      ],
-      "paper_id": "2026-09-21-medrxiv-evaluating_agentic_simulation_for_local_public_health_estimation",
-      "paper_title": "Evaluating agentic simulation for local public health estimation",
-      "paper_date": "2026-09-21",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-09-27T12:35:28",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-21-medrxiv-differentiating_nonfluent_agrammatic_and_logopenic_primary_progressive_aphasia_in_catalan",
-    "doi": "10.64898/2026.09.18.26363435",
-    "date": "2026-09-21",
-    "title": "Differentiating nonfluent/agrammatic and logopenic primary progressive aphasia in Catalan-Spanish bilinguals by applying multilingual multimodal machine learning to connected speech",
-    "authors": "Pugalenthi, L. S.; Collins, A. P.; Colomer, N. M.; Marques-Kiderle, S.-K.; Rodriguez, C. W.; Chaires, J. C. H.; Motta, W. A.; Filella-Merce, J.; Li, J. J.; Llanos, F.; Zhu, N.; Rubio-Guerra, S.; Illan-Gala, I.; Borrego-Ecija, S.; Llado, A.; Fortea, J.; Lleo, A.; Sanchez-Valle, R.; Henry, M. L.; Santos, M. A. S.; Grasso, S. M.",
-    "abstract": "BackgroundThe nonfluent/agrammatic (nfv) and logopenic (lv) variants of primary progressive aphasia (PPA) disrupt fluency through distinct underlying neurocognitive mechanisms. Differential diagnosis currently requires hours of cognitive-linguistic testing, with additional barriers for bilingual patients due to a shortage of bilingual service providers and a lack of well-established assessment methods. In English speakers, a promising automated approach for differentiating nfvPPA and lvPPA is to derive speech-timing measures and linguistic features from connected speech as input to machine learning (ML) classification algorithms. To our knowledge, this approach has not been evaluated in the context of bilingualism. MethodsThirty-four Catalan-Spanish simultaneous bilingual patients (lv = 24, nfv = 10) were asked to describe a picture (Western Aphasia Battery Picnic Scene) in both their dominant and non-dominant language. From the participants recorded response, we derived four feature sets: speech-timing measures, derived with PRAAT; word-level parameters, derived from corpora; linguistic features, derived with the natural language processing tools SpaCy and CLAN; image-text congruence scores, derived with the vision-language encoder Multilingual-CLIP. Each feature set was fed into classification algorithms for differentiating nfv from lv in participants non-dominant and dominant samples. Then, we combined each feature sets classifier into an ensemble model. We used the McNemar test to determine the statistical significance of differences in classification performance between responses in the non-dominant and dominant language. ResultsThe best-performing classifier achieved F1 macro scores of 93% (word-level parameters) and 92% (ensemble) in the non-dominant and dominant language, respectively. For all feature sets and ensemble models, classification performance did not significantly differ between the non-dominant and dominant language. Ensemble modeling did not significantly improve classification performance in either language. ConclusionsTaking advantage of recent advances in multilingual multimodal machine learning, we accurately differentiate Spanish-Catalan bilingual individuals with nfvPPA and lvPPA using a largely automated, time-efficient (1-2 minutes), and ecologically valid connected-speech-based approach. Future directions include evaluating this approach on larger datasets balanced by PPA subtype, using automated transcriptions of connected speech. Our study represents a step towards addressing current inequities in PPA differential diagnosis for non-English-speaking bilingual speakers. Trial registrationData from the clinical trial NCT05741853 was retrospectively analyzed",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
-    "primary_category": "neurology",
-    "categories": [
-      "neurology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.18.26363435v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.18.26363435v1.full.pdf"
-      }
-    ],
-    "score": 47,
-    "infographic": {
-      "key_insight": "This study shows that multilingual machine learning can accurately distinguish nonfluent/agrammatic from logopenic primary progressive aphasia in Catalan-Spanish bilinguals using connected speech features from either language.",
-      "clinical_relevance": "The approach could help reduce the time and language-barrier burden of aphasia subtype assessment in bilingual patients, supporting more accessible and scalable speech-based screening.",
-      "method": [
-        "34 Catalan-Spanish simultaneous bilingual patients were asked to describe a standard picture in both dominant and non-dominant languages.",
-        "Researchers extracted speech-timing, word-level, linguistic, and image-text congruence features from recorded speech.",
-        "Classification models and ensemble models were trained to separate nfvPPA from lvPPA and compared across languages."
-      ],
-      "evidence_signal": "The best models reached macro-F1 scores of 93% for word-level features in the non-dominant language and 92% for ensemble modeling in the dominant language, with no significant performance difference between languages.",
-      "watch_item": "This is a small single-cohort study, so external validation in larger and more diverse bilingual populations is needed before routine implementation.",
-      "hashtags": [
-        "#MachineLearning",
-        "#Bilingualism",
-        "#Aphasia",
-        "#SpeechAnalytics",
-        "#Neurodegeneration"
-      ],
-      "paper_id": "2026-09-21-medrxiv-differentiating_nonfluent_agrammatic_and_logopenic_primary_progressive_aphasia_in_catalan",
-      "paper_title": "Differentiating nonfluent/agrammatic and logopenic primary progressive aphasia in Catalan-Spanish bilinguals by applying multilingual multimodal machine learning to connected speech",
-      "paper_date": "2026-09-21",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-09-27T12:35:30",
+      "generated_at": "2026-09-28T14:42:52",
       "generator": "openai"
     }
   },
@@ -279,29 +126,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.16.26363275v1.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 41,
     "infographic": {
-      "key_insight": "Open-source thigh muscle MRI segmentation tools vary widely in performance, with domain-specific models generally outperforming foundation and general-purpose architectures.",
-      "clinical_relevance": "Better segmentation can improve MRI-derived muscle biomarkers used in neuromuscular disease research and monitoring, but poor performance on pathology may limit real-world reliability.",
+      "key_insight": "Independent benchmarking showed large performance differences among open-source thigh muscle MRI segmentation tools, with domain-specific models generally outperforming foundation and general-purpose approaches.",
+      "clinical_relevance": "More accurate and usable muscle segmentation can improve MRI-derived biomarkers used in neuromuscular disease research and potentially support more reliable clinical interpretation.",
       "method": [
-        "Benchmarked 8 open-source segmentation tools",
-        "Tested on 3D MRI volumes from three base datasets and derived datasets",
-        "Compared both quantitative accuracy and qualitative usability"
+        "Compared eight open-source segmentation tools, including six standalone models and two auxiliary methods.",
+        "Evaluated performance on 3D MRI volumes from three base datasets and additional derived datasets.",
+        "Assessed both quantitative accuracy metrics and qualitative usability."
       ],
-      "evidence_signal": "The study reports substantial performance differences across methods and datasets, with reduced accuracy on pathological cases.",
-      "watch_item": "Results may not generalize well to underrepresented populations or disease presentations, so local validation is important before deployment.",
+      "evidence_signal": "The abstract reports substantial variation across methods and datasets, with many tools performing worse on pathological cases and domain-specific models consistently leading the benchmark.",
+      "watch_item": "Results may not generalize well to underrepresented populations or disease patterns, so real-world deployment needs careful validation.",
       "hashtags": [
         "#MRI",
         "#Segmentation",
-        "#OpenSourceAI",
-        "#MuscleImaging",
-        "#MedicalImaging"
+        "#Benchmarking",
+        "#NeuromuscularDisease",
+        "#OpenSourceAI"
       ],
       "paper_id": "2026-09-22-medrxiv-benchmarking_open_source_automated_thigh_muscle_mri_segmentation_algorithms",
       "paper_title": "Benchmarking open-source automated thigh muscle MRI segmentation algorithms",
       "paper_date": "2026-09-22",
       "paper_category": "Target Biology",
-      "generated_at": "2026-09-27T12:35:32",
+      "generated_at": "2026-09-28T14:42:54",
       "generator": "openai"
     }
   },
@@ -330,80 +177,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363536v1.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 41,
     "infographic": {
-      "key_insight": "UPEBNL is a scalable causal Bayesian network framework that makes large-scale EHR-based cancer prescreening more interpretable by learning stable, evidence-traceable dependency structures.",
-      "clinical_relevance": "The approach may help clinicians and researchers understand which EHR features contribute to cancer risk predictions while preserving strong prescreening performance.",
+      "key_insight": "The study introduces UPEBNL, a scalable causal Bayesian network framework that makes large-scale EHR-based cancer prescreening more interpretable and computationally practical.",
+      "clinical_relevance": "By revealing evidence paths and directional dependencies, the model could help support more transparent cancer risk stratification for esophageal and colorectal prescreening.",
       "method": [
-        "Adaptive data slicing to split large EHR datasets for parallel learning",
-        "Quality-aware structure aggregation to combine partial networks into a stable DAG",
-        "Global causal Bayesian network construction for interpretable evidence propagation"
+        "Adaptive data slicing for parallel causal Bayesian network learning",
+        "Quality-aware structure aggregation to stabilize learned dependencies",
+        "Global DAG construction to combine submodels into one interpretable network"
       ],
-      "evidence_signal": "In simulations, UPEBNL improved structural recovery by nearly 40% and ran up to 221.28-fold faster; in EHR prescreening it achieved AUCs of 0.8171 for esophageal cancer and 0.784 for colorectal cancer.",
-      "watch_item": "Because the causal structure is learned from observational EHR data, the resulting links are interpretable but not definitive proof of true causation and may need external validation.",
+      "evidence_signal": "In simulations, UPEBNL improved structural recovery by nearly 40% and sped up learning by up to 221.28-fold; in EHR prescreening, it reached AUCs of 0.8171 for esophageal cancer and 0.784 for colorectal cancer.",
+      "watch_item": "The approach still depends on observational EHR data, so learned causal directions may reflect data quality and confounding rather than confirmed biological causality.",
       "hashtags": [
-        "#CausalAI",
-        "#CancerPrescreening",
-        "#EHR",
         "#PrecisionOncology",
-        "#InterpretableML"
+        "#CausalML",
+        "#EHR",
+        "#CancerPrescreening",
+        "#InterpretableAI"
       ],
       "paper_id": "2026-09-22-medrxiv-scalable_causal_interpretable_machine_learning_for_cancer_prescreening_using_electronic_he",
       "paper_title": "Scalable Causal-Interpretable Machine Learning for Cancer Prescreening Using Electronic Health Records",
       "paper_date": "2026-09-22",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-09-27T12:35:35",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-21-medrxiv-evaluation_of_accelerated_whole_body_diffusion_weighted_imaging_with_deep_learning_reconst",
-    "doi": "10.64898/2026.09.17.26362983",
-    "date": "2026-09-21",
-    "title": "Evaluation of accelerated whole-body diffusion weighted imaging with deep learning reconstruction in patients with metastatic prostate cancer: assessment of image quality and ADC estimates.",
-    "authors": "Kousi, E.; Rata, M.; Koh, D.-M.; Messiou, C.; Tunariu, N.; Hopkinson, G.; Evans, E.; Darwish, O.; Weiland, E.; Winfield, J.",
-    "abstract": "ObjectivesTo evaluate the impact of an accelerated whole-body diffusion-weighted MRI (WB-DWI) protocol using deep learning (DL) reconstruction on image quality and apparent diffusion coefficient (ADC) quantification in patients with metastatic prostate cancer. MethodsThis single-centre prospective study involved two patient cohorts undergoing standard-of-care WB-MRI at 1.5T. The DL WB-DWI acquisition used fewer signal averages and higher parallel imaging acceleration, reconstructed with a research application DL package based on a variational network. In Cohort 1 (n = 10), qualitative assessment of image quality was performed across four anatomical stations using a 4-point Likert scale by two radiologists, blinded to the DWI protocol. In Cohort 2 (n = 20), ADC values were evaluated in hypercellular focal bone metastases (as determined by a radiologist) and compared between the standard and accelerated DL WB-DWI protocols. Image quality scores were analysed using Wilcoxon signed-rank tests (Bonferroni-corrected), and ADC agreement was evaluated via Bland-Altman analysis. ResultsAccelerated DL WB-DWI reduced WB-DWI acquisition time by 37% without compromising image quality. Radiologists consistently rated both protocols as good-to-excellent across all image quality metrics. Median ADC estimates in lesions showed no significant difference between protocols; interquartile range of ADC estimates also showed no significant difference. ConclusionsAccelerated DL WB-DWI enables 37% scan time reduction without degrading image quality or affecting ADC estimates of lesions in patients with metastatic prostate cancer. Advances in knowledgeDL-based reconstruction enables faster WB-DWI acquisition without compromising image quality or ADC quantification, supporting clinical implementation in metastatic prostate cancer staging and therapy assessment.",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-09-21",
-    "updated": "2026-09-21",
-    "primary_category": "radiology and imaging",
-    "categories": [
-      "radiology and imaging"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.17.26362983v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.17.26362983v1.full.pdf"
-      }
-    ],
-    "score": 41,
-    "infographic": {
-      "key_insight": "A deep-learning–reconstructed accelerated whole-body DWI protocol cut scan time by 37% while preserving image quality and ADC measurements in metastatic prostate cancer.",
-      "clinical_relevance": "If validated more broadly, this approach could make prostate cancer staging and response assessment faster without sacrificing quantitative imaging reliability.",
-      "method": [
-        "Prospective single-centre study at 1.5T with two patient cohorts",
-        "Compared standard WB-DWI vs accelerated DL-reconstructed WB-DWI",
-        "Assessed radiologist image quality and lesion ADC agreement"
-      ],
-      "evidence_signal": "Radiologists rated both protocols as good-to-excellent, and lesion ADC estimates showed no significant difference between standard and accelerated scans.",
-      "watch_item": "Results come from a small, single-centre study, so broader multi-site validation is still needed before routine adoption.",
-      "hashtags": [
-        "#PrecisionOncology",
-        "#MRI",
-        "#DeepLearning",
-        "#ProstateCancer",
-        "#Radiology"
-      ],
-      "paper_id": "2026-09-21-medrxiv-evaluation_of_accelerated_whole_body_diffusion_weighted_imaging_with_deep_learning_reconst",
-      "paper_title": "Evaluation of accelerated whole-body diffusion weighted imaging with deep learning reconstruction in patients with metastatic prostate cancer: assessment of image quality and ADC estimates.",
-      "paper_date": "2026-09-21",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-09-27T12:35:37",
+      "generated_at": "2026-09-28T14:42:56",
       "generator": "openai"
     }
   }
