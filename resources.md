@@ -1,36 +1,60 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-09-28
+Generated: 2026-09-30
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
-## 1. Genomic foundation models extend clinicopathologic and transcriptomic prognostication in soft tissue sarcoma
+## 1. Differentiating benign from malignant adnexal masses by biomarker-agnostic plasma proteomics using adaptive machine learning
 
-- Date: 2026-09-22
+- Date: 2026-09-25
 - Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.21.26363568v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26363568v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-22-medrxiv-genomic_foundation_models_extend_clinicopathologic_and_transcriptomic_prognostication_in_s_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.23.26363813v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.23.26363813v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-25-medrxiv-differentiating_benign_from_malignant_adnexal_masses_by_biomarker_agnostic_plasma_proteomi_infographic.json
 
-## 2. The United States CADASIL Consortium: Baseline Findings from a Natural History Study
+## 2. Methylation-driven Cancer Genes and Methylation Profiling in Glioma: A Comparative Study between East Asian and non-Hispanic White Populations
 
-- Date: 2026-09-22
-- Category: Target Biology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.20.26363512v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.20.26363512v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-22-medrxiv-the_united_states_cadasil_consortium_baseline_findings_from_a_natural_history_study_infographic.json
-
-## 3. Benchmarking open-source automated thigh muscle MRI segmentation algorithms
-
-- Date: 2026-09-22
-- Category: Target Biology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.16.26363275v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.16.26363275v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-22-medrxiv-benchmarking_open_source_automated_thigh_muscle_mri_segmentation_algorithms_infographic.json
-
-## 4. Scalable Causal-Interpretable Machine Learning for Cancer Prescreening Using Electronic Health Records
-
-- Date: 2026-09-22
+- Date: 2026-09-25
 - Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.21.26363536v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.21.26363536v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-22-medrxiv-scalable_causal_interpretable_machine_learning_for_cancer_prescreening_using_electronic_he_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.14.26360452v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.14.26360452v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-25-medrxiv-methylation_driven_cancer_genes_and_methylation_profiling_in_glioma_a_comparative_study_be_infographic.json
+
+## 3. Advancing sarcoma diagnostics with expanded DNA methylation-based classification
+
+- Date: 2026-09-24
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.1101/2025.06.30.25330543v1
+- PDF: https://www.medrxiv.org/content/10.1101/2025.06.30.25330543v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-24-medrxiv-advancing_sarcoma_diagnostics_with_expanded_dna_methylation_based_classification_infographic.json
+
+## 4. Machine Learning identification in patients with aortic valve stenosis of a myocardial miRNA signature predictive of reverse cardiac remodelling after valve replacement
+
+- Date: 2026-09-24
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.22.26363736v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.22.26363736v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-24-medrxiv-machine_learning_identification_in_patients_with_aortic_valve_stenosis_of_a_myocardial_mir_infographic.json
+
+## 5. A neurocognitive speech taxonomy for voice biomarkers of Alzheimer's disease
+
+- Date: 2026-09-25
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.23.26363671v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.23.26363671v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-25-medrxiv-a_neurocognitive_speech_taxonomy_for_voice_biomarkers_of_alzheimer_s_disease_infographic.json
+
+## 6. Kaiser Permanente National Cross-Vendor Validation of Mammography Artificial Intelligence Computer-Aided Diagnosis Algorithms in a US-Representative Population
+
+- Date: 2026-09-24
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.22.26363619v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.22.26363619v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-24-medrxiv-kaiser_permanente_national_cross_vendor_validation_of_mammography_artificial_intelligence_infographic.json
+
+## 7. Circulating extracellular vesicle lipidomics identifies distinct signatures of amyotrophic lateral sclerosis and spinal muscular atrophy
+
+- Date: 2026-09-24
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.23.26363372v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.09.23.26363372v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-09-24-medrxiv-circulating_extracellular_vesicle_lipidomics_identifies_distinct_signatures_of_amyotrophic_infographic.json

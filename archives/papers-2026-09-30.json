@@ -1,0 +1,206 @@
+[
+  {
+    "id": "2026-09-22-medrxiv-genomic_foundation_models_extend_clinicopathologic_and_transcriptomic_prognostication_in_s",
+    "doi": "10.64898/2026.09.21.26363568",
+    "date": "2026-09-22",
+    "title": "Genomic foundation models extend clinicopathologic and transcriptomic prognostication in soft tissue sarcoma",
+    "authors": "Esperanca-Martins, M.; Sokolov Ravasqueira, M.; Dias, S.; Abecasis, N.; Costa, L.; Vasques, H.",
+    "abstract": "BackgroundClinicopathologic (SARCULATOR) and transcriptomic (CINSARC) models are established prognostication tools in soft tissue sarcoma, but neither directly represent the sequence context of tumor genomic alterations. Evo2 is a genomic foundation model trained to learn the grammar of DNA/RNA sequences. We tested whether Evo2-derived features from tumor short variants, fusions, and rearrangements improve survival prognostication beyond clinicopathologic and transcriptomic risk models. MethodsWe analysed formalin-fixed, paraffin-embedded tumor material and clinical data from 102 patients with dedifferentiated liposarcoma (n = 25), high-grade leiomyosarcoma (n = 25), and undifferentiated pleomorphic sarcoma (n = 52). A separate TCGA-SARC cohort of comparable histologies (n = 129) served as external validation. Reconstructable alterations (short variants, fusions and rearrangements) were converted into sequence inputs, embedded with Evo2 and aggregated into patient-level genomic representations. Cox proportional hazards models incorporated genomic features alone (Evo2) or together with clinicopathologic (SARCULATOR) or transcriptomic (CINSARC) predictors across overall survival (OS), progression-free survival (PFS), disease-free survival (DFS), relapse-free survival (RFS), and metastasis-free survival (MFS). Discrimination was assessed using Harrells concordance index (C-index). ResultsEvo2 features were generated from 174 study-cohort sequences and 7298 TCGA-SARC sequences. In the study cohort, adding Evo2 to SARCULATOR increased the reported C-index for OS from 0.620 to 0.770, PFS from 0.625 to 0.755, DFS from 0.612 to 0.714, and RFS from 0.633 to 0.771. In TCGA-SARC, SARCULATOR plus Evo2 increased the OS C-index from 0.595 to 0.716 and the MFS C-index from 0.548 to 0.667. Also in TCGA-SARC, adding Evo2 to CINSARC increased the OS C-index from 0.476 to 0.653 and the MFS C-index from 0.553 to 0.650. These are descriptive point-estimate comparisons. Moreover, in TCGA-SARC Evo2 alone outperformed SARCULATOR alone and CINSARC alone, supporting independent prognostic information within altered sequence-context representations. ConclusionsEvo2-derived genomic representations improved clinicopathologic and transcriptomic prognostication across sarcoma cohorts and survival endpoints. These findings support genomic foundation models as an independent and complementary layer for sarcoma risk stratification through direct modeling of altered tumor sequence biology. Confirmation of model transportability, calibration and clinical utility is required before clinical application. Graphical abstract O_FIG O_LINKSMALLFIG WIDTH=200 HEIGHT=112 SRC=\"FIGDIR/small/26363568v1_ufig1.gif\" ALT=\"Figure 1\"> View larger version (44K): org.highwire.dtl.DTLVardef@166ca4corg.highwire.dtl.DTLVardef@16b7fcborg.highwire.dtl.DTLVardef@9300bforg.highwire.dtl.DTLVardef@11619a4_HPS_FORMAT_FIGEXP M_FIG C_FIG Genomic sequence representations for sarcoma prognostication. Reconstructed short variants and study-cohort fusion proxies are processed with Evo2 and aggregated into patient-level genomic profiles for ridge-penalised Cox survival modelling. Genomic profiles are evaluated alone or with clinicopathologic SARCULATOR or transcriptomic CINSARC predictors; CINSARC is evaluated only in TCGA-SARC. The lower panel shows reported overall-survival Harrell C-index point estimates before and after adding Evo2 features. These descriptive comparisons do not establish statistical significance or clinical utility. {Delta} denotes the alternative-minus-reference difference in mean sequence log-likelihood. Embedding displacement denotes cosine distance between paired short-variant embeddings. FFPE, formalin-fixed, paraffin-embedded; TCGA-SARC, The Cancer Genome Atlas sarcoma cohort. Created using BioRender.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363568v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363568v1.full.pdf"
+      }
+    ],
+    "score": 65,
+    "infographic": {
+      "key_insight": "A genomic foundation model (Evo2) extracted from tumor sequence alterations added prognostic value beyond established clinicopathologic and transcriptomic risk models in soft tissue sarcoma.",
+      "clinical_relevance": "If validated prospectively, sequence-context genomic features could help refine survival risk stratification alongside SARCULATOR and CINSARC in sarcoma care.",
+      "method": [
+        "Used FFPE tumor samples and clinical data from 102 patients with dedifferentiated liposarcoma, high-grade leiomyosarcoma, or undifferentiated pleomorphic sarcoma.",
+        "Converted reconstructable short variants, fusions, and rearrangements into sequence inputs, embedded them with Evo2, and aggregated patient-level genomic representations.",
+        "Tested Cox survival models for OS, PFS, DFS, RFS, and MFS, with external validation in TCGA-SARC (n = 129)."
+      ],
+      "evidence_signal": "Descriptive C-index comparisons showed improved discrimination when Evo2 was added to SARCULATOR or CINSARC, and Evo2 alone outperformed either model alone in TCGA-SARC.",
+      "watch_item": "These are point-estimate comparisons from retrospective cohorts, so prospective validation and assessment of real-world implementation are still needed.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#SoftTissueSarcoma",
+        "#Genomics",
+        "#AIinMedicine",
+        "#SurvivalPrognosis"
+      ],
+      "paper_id": "2026-09-22-medrxiv-genomic_foundation_models_extend_clinicopathologic_and_transcriptomic_prognostication_in_s",
+      "paper_title": "Genomic foundation models extend clinicopathologic and transcriptomic prognostication in soft tissue sarcoma",
+      "paper_date": "2026-09-22",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-09-28T14:42:50",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-22-medrxiv-the_united_states_cadasil_consortium_baseline_findings_from_a_natural_history_study",
+    "doi": "10.64898/2026.09.20.26363512",
+    "date": "2026-09-22",
+    "title": "The United States CADASIL Consortium: Baseline Findings from a Natural History Study",
+    "authors": "Paulsen, J. S.; Bockholt, H. J.; Adams, W. H.; Burks, D. K.; Majersik, J. J.; Salloway, S. P.; Lee, S.; Fornage, M.; Joyce, C.; Elliott, J. L.; Huey, E. D.; Caruso, M. R.; Jayadev, S.; Biller, J.; Lutsep, H. L.; Doyle, S. J.; Liebeskind, D. S.; Eklund, K.; Naqvi, I. A.; Salardini, A.; Seshadri, S.; Hinman, J. D.; Krishnamurthy, L. C.; Fischer, B. L.; Geschwind, M. D.; The United States CADASIL Consortium,",
+    "abstract": "Background and ObjectivesVascular contributions to cognitive impairment and dementia (VCID) represent the second leading cause of dementia and a common comorbidity for reduced functional capacity in many individuals, but clinical management and clinical trial readiness are severely hindered by extreme phenotypic and mechanistic heterogeneity. This study establishes the baseline clinical, functional, and multimodal biomarker characteristics of the first United States (US) cohort of Cerebral Autosomal Dominant Arteriopathy with Subcortical Infarcts and Leukoencephalopathy (CADASIL), serving as a single-cause, monogenic small vessel disease model for sporadic VCID. MethodsCross-sectional analysis of baseline data collected from October 2022 through January 2025 from a longitudinal cohort at 12 US enrollment sites. Adults from families with a documented NOTCH3 variant were recruited through clinical referrals, medical record review, advocacy organizations, and community outreach. Exclusion criteria included other conditions that prevented interpretation of findings and modified Rankin Scale (mRS) scores greater than 3. Central genetic characterization assigned persons with a pathogenic or likely pathogenic NOTCH3 variant to low-, medium-, or high-risk tiers based on epidermal growth factor-like repeat domains. Standardized assessments included clinical histories, exams, objective cognitive and physical assessments, self-reported, companion-reported, and clinician-rated measures, MRI, genetics, and proteomics acquired under harmonized protocols. Group comparisons used Fishers exact and Kruskal-Wallis tests. Multivariable regression used adjustment for age, sex, race, and education. ResultsOf 560 participants completing baseline visits, 46 had variants of unknown significance, and 55 had pending genetic analyses. The analytic cohort included 343 persons with a CADASIL-causing NOTCH3 variant and 116 non-carrier family controls. Median age was 47.9 years (IQR 38.7-59.1), median education was 16 years (IQR 14-17), 62.5% were female, and 91.4% were White. Carriers were classified in CADASIL risk tiers: low (7.0%), medium (18.4%), or high (74.6%). Compared with controls, adjusted odds of classification into a more impaired CDR category were higher in all tiers (OR 2.55-5.08, 95% CI 1.22-11.34). DiscussionThe US CADASIL Consortium has established a large, genetics-confirmed cohort spanning presymptomatic to moderate disease stages, providing a robust, harmonized platform to define early biomarker signatures and endpoints for targeted VCID therapies.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.20.26363512v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.20.26363512v1.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "This study establishes the first U.S. CADASIL natural history cohort, providing a baseline benchmark for a monogenic small-vessel disease model of VCID.",
+      "clinical_relevance": "The cohort’s standardized clinical, cognitive, imaging, and biomarker data can help improve trial readiness and comparisons for future VCID research.",
+      "method": [
+        "Cross-sectional baseline analysis from a 12-site longitudinal cohort (Oct 2022–Jan 2025).",
+        "Recruited adults from families with documented NOTCH3 variants using clinical referrals, records, advocacy groups, and outreach.",
+        "Applied central genetic classification, standardized clinical assessments, MRI, and proteomics under harmonized protocols."
+      ],
+      "evidence_signal": "The abstract reports 560 baseline participants, with an analytic cohort of 343 CADASIL carriers and 116 non-carrier family controls, and uses group comparisons plus multivariable adjustment.",
+      "watch_item": "Findings are baseline and largely cross-sectional, so they describe cohort characteristics rather than disease progression or causal effects.",
+      "hashtags": [
+        "#CADASIL",
+        "#VCID",
+        "#NOTCH3",
+        "#NaturalHistoryStudy",
+        "#Biomarkers"
+      ],
+      "paper_id": "2026-09-22-medrxiv-the_united_states_cadasil_consortium_baseline_findings_from_a_natural_history_study",
+      "paper_title": "The United States CADASIL Consortium: Baseline Findings from a Natural History Study",
+      "paper_date": "2026-09-22",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-09-28T14:42:52",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-22-medrxiv-benchmarking_open_source_automated_thigh_muscle_mri_segmentation_algorithms",
+    "doi": "10.64898/2026.09.16.26363275",
+    "date": "2026-09-22",
+    "title": "Benchmarking open-source automated thigh muscle MRI segmentation algorithms",
+    "authors": "Moore, C. M.; Alper, M.",
+    "abstract": "Automatic segmentation of medical images could accelerate clinical and research workflows, yet existing tools are rarely compared independently on shared benchmarks, making it difficult to assess genuine progress. This is particularly consequential for limb muscle segmentation in magnetic resonance imaging (MRI), which underpins volumetric analysis, radiomics, and fat fraction quantification used as biomarkers in neuromuscular disease - applications where segmentation errors can directly affect interpretation. Despite the availability of multiple open-source segmentation tools spanning diverse architectures, no independent head-to-head comparison has appeared in the literature. We address this gap by evaluating eight tools, six of which run independently, and the other two of which are meant to be auxiliary algorithms once muscles have been somehow initially labeled. We evaluated these tools on three-dimensional MRI volumes across three base datasets and then later against derived datasets, assessing both quantitative metrics and qualitative usability. Our results reveal substantial performance variation across methods and datasets, with many methods showing reduced accuracy on pathological cases. Domain-specific models trained on large datasets consistently outperformed foundation models and newer general-purpose architectures. Our results reveal practical trade-offs between accuracy, generalizability, and ease of use that are critical for clinical adoption, while raising concerns for deployment on underrepresented populations and pathologies.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.16.26363275v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.16.26363275v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "Independent benchmarking showed large performance differences among open-source thigh muscle MRI segmentation tools, with domain-specific models generally outperforming foundation and general-purpose approaches.",
+      "clinical_relevance": "More accurate and usable muscle segmentation can improve MRI-derived biomarkers used in neuromuscular disease research and potentially support more reliable clinical interpretation.",
+      "method": [
+        "Compared eight open-source segmentation tools, including six standalone models and two auxiliary methods.",
+        "Evaluated performance on 3D MRI volumes from three base datasets and additional derived datasets.",
+        "Assessed both quantitative accuracy metrics and qualitative usability."
+      ],
+      "evidence_signal": "The abstract reports substantial variation across methods and datasets, with many tools performing worse on pathological cases and domain-specific models consistently leading the benchmark.",
+      "watch_item": "Results may not generalize well to underrepresented populations or disease patterns, so real-world deployment needs careful validation.",
+      "hashtags": [
+        "#MRI",
+        "#Segmentation",
+        "#Benchmarking",
+        "#NeuromuscularDisease",
+        "#OpenSourceAI"
+      ],
+      "paper_id": "2026-09-22-medrxiv-benchmarking_open_source_automated_thigh_muscle_mri_segmentation_algorithms",
+      "paper_title": "Benchmarking open-source automated thigh muscle MRI segmentation algorithms",
+      "paper_date": "2026-09-22",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-09-28T14:42:54",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-22-medrxiv-scalable_causal_interpretable_machine_learning_for_cancer_prescreening_using_electronic_he",
+    "doi": "10.64898/2026.09.21.26363536",
+    "date": "2026-09-22",
+    "title": "Scalable Causal-Interpretable Machine Learning for Cancer Prescreening Using Electronic Health Records",
+    "authors": "Zhang, S.; Xue, F.",
+    "abstract": "Electronic health records provide a source of real-world information for disease risk prediction, but many machine learning models learn implicit associations that are difficult to inspect or use for clinical reasoning. Causal Bayesian networks (CBNs) offer a form of causal-interpretable machine learning by representing conditional dependencies, putative directional relations, and probabilistic evidence propagation in a directed acyclic graph. However, conventional CBN structure learning becomes unstable and computationally expensive when applied to large-scale EHR data. To address this limitation, we propose UPEBNL, a scalable framework for causal-interpretable cancer prescreening based on parallel CBN learning. UPEBNL integrates adaptive data slicing, quality-aware structure aggregation, and global DAG construction to learn stable and interpretable dependency structures from large-scale observational data. We evaluated UPEBNL in high-dimensional and multi-million-sample simulations and applied it to EHR-based prescreening for esophageal and colorectal cancer. In simulations, UPEBNL improved structural recovery accuracy by nearly 40% and achieved up to a 221.28-fold speedup over conventional CBN learning strategies. For cancer risk prediction, the learned CBNs provided interpretable evidence paths and achieved validation AUCs of 0.8171 for esophageal cancer and 0.784 for colorectal cancer. Calibration and decision curve analyses further supported the reliability and clinical utility of the models. These findings suggest that scalable CBN learning can support interpretable cancer prescreening from large-scale EHR data.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-09-22",
+    "updated": "2026-09-22",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363536v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363536v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "The study introduces UPEBNL, a scalable causal Bayesian network framework that makes large-scale EHR-based cancer prescreening more interpretable and computationally practical.",
+      "clinical_relevance": "By revealing evidence paths and directional dependencies, the model could help support more transparent cancer risk stratification for esophageal and colorectal prescreening.",
+      "method": [
+        "Adaptive data slicing for parallel causal Bayesian network learning",
+        "Quality-aware structure aggregation to stabilize learned dependencies",
+        "Global DAG construction to combine submodels into one interpretable network"
+      ],
+      "evidence_signal": "In simulations, UPEBNL improved structural recovery by nearly 40% and sped up learning by up to 221.28-fold; in EHR prescreening, it reached AUCs of 0.8171 for esophageal cancer and 0.784 for colorectal cancer.",
+      "watch_item": "The approach still depends on observational EHR data, so learned causal directions may reflect data quality and confounding rather than confirmed biological causality.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#CausalML",
+        "#EHR",
+        "#CancerPrescreening",
+        "#InterpretableAI"
+      ],
+      "paper_id": "2026-09-22-medrxiv-scalable_causal_interpretable_machine_learning_for_cancer_prescreening_using_electronic_he",
+      "paper_title": "Scalable Causal-Interpretable Machine Learning for Cancer Prescreening Using Electronic Health Records",
+      "paper_date": "2026-09-22",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-09-28T14:42:56",
+      "generator": "openai"
+    }
+  }
+]
