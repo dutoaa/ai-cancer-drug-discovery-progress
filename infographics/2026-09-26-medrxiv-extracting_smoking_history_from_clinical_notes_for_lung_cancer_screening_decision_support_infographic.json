@@ -1,0 +1,24 @@
+{
+  "key_insight": "A structured-judgment model and several general-purpose LLMs all achieved high accuracy for extracting smoking history from clinical notes, but they differed meaningfully in latency, cost, and performance on complex cases.",
+  "clinical_relevance": "These tools can support lung cancer screening decision support by automating smoking-status, pack-year, and quit-date extraction needed to determine USPSTF and ACS eligibility.",
+  "method": [
+    "Built a synthetic benchmark of 3,000 outpatient notes across template, messy, and arithmetic-heavy scenarios.",
+    "Compared TypeSafe Jev 1.13 with four LLMs using the same structured output schema.",
+    "Calculated screening eligibility from model outputs in code and measured accuracy, cost, and speed."
+  ],
+  "evidence_signal": "Across 3,000 notes, all models showed high eligibility accuracy, with Jev fastest and cheapest among several models but less accurate than the strongest LLM on the most complex notes.",
+  "watch_item": "Because the benchmark was synthetic and note complexity affected errors, real-world performance, integration, and safety checks should be validated before deployment.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#LungCancerScreening",
+    "#ClinicalDecisionSupport",
+    "#LLMEvaluation",
+    "#HealthAI"
+  ],
+  "paper_id": "2026-09-26-medrxiv-extracting_smoking_history_from_clinical_notes_for_lung_cancer_screening_decision_support",
+  "paper_title": "Extracting smoking history from clinical notes for lung cancer screening decision support: comparing a structured-judgment model with general-purpose large language models",
+  "paper_date": "2026-09-26",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-01T14:03:41",
+  "generator": "openai"
+}

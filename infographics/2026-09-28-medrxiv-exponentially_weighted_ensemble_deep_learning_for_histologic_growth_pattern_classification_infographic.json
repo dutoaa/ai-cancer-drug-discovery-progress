@@ -1,0 +1,24 @@
+{
+  "key_insight": "An exponentially weighted ensemble of five deep learning models improved lung adenocarcinoma histologic growth pattern classification by emphasizing the most reliable architectures.",
+  "clinical_relevance": "More accurate pattern classification on H&E whole-slide images could better support prognostic assessment and treatment planning in lung adenocarcinoma.",
+  "method": [
+    "Trained five architectures: EfficientNet-B3, DeiT3, Swin Transformer, Vision Transformer, and ConvNeXt.",
+    "Assigned ensemble weights using a softmax of each model’s Quadratic Weighted Kappa (QWK) performance.",
+    "Evaluated on 25,545 image patches from the Dartmouth-Hitchcock dataset with stratified 5-fold cross-validation."
+  ],
+  "evidence_signal": "The ensemble achieved 96.52% accuracy and Cohen’s kappa of 0.9648, outperforming the best single model by +0.0087 kappa with statistically significant gains.",
+  "watch_item": "Performance was shown on a single institutional dataset of image patches, so external validation and slide-level clinical testing are still needed before real-world use.",
+  "hashtags": [
+    "#DigitalPathology",
+    "#DeepLearning",
+    "#LungAdenocarcinoma",
+    "#EnsembleAI",
+    "#CancerAI"
+  ],
+  "paper_id": "2026-09-28-medrxiv-exponentially_weighted_ensemble_deep_learning_for_histologic_growth_pattern_classification",
+  "paper_title": "Exponentially weighted ensemble deep learning for histologic growth pattern classification in lung adenocarcinoma",
+  "paper_date": "2026-09-28",
+  "paper_category": "Cancer AI Methods",
+  "generated_at": "2026-10-01T14:03:35",
+  "generator": "openai"
+}

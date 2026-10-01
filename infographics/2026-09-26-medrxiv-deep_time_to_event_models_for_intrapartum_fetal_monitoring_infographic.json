@@ -1,0 +1,24 @@
+{
+  "key_insight": "The study reframes intrapartum fetal monitoring as a time-to-event prediction problem, enabling models to estimate both imminent delivery and fetal acidosis from continuous CTG signals.",
+  "clinical_relevance": "This approach could help surface fetal distress risk earlier and more robustly during labor, rather than relying on a fixed pre-delivery window.",
+  "method": [
+    "Deep discrete-time survival modeling for delivery timing",
+    "Marked point process modeling to jointly capture delivery and acidosis",
+    "Adapted to continuous physiologic signals with fully observed events and partially observed labels"
+  ],
+  "evidence_signal": "Marked DeepHit showed strong discrimination for delivery within one hour, with test AUROC of 0.837 at 6 hours and 0.935 at 12 hours into labor, and it also performed competitively near delivery on internal and external validation.",
+  "watch_item": "Results are promising but require prospective validation before clinical use, especially because real-world deployment must handle label uncertainty and site-to-site differences in labor monitoring data.",
+  "hashtags": [
+    "#AITimeToEvent",
+    "#FetalMonitoring",
+    "#SurvivalAnalysis",
+    "#ClinicalAI",
+    "#ObstetricAI"
+  ],
+  "paper_id": "2026-09-26-medrxiv-deep_time_to_event_models_for_intrapartum_fetal_monitoring",
+  "paper_title": "Deep Time-to-Event Models for Intrapartum Fetal Monitoring",
+  "paper_date": "2026-09-26",
+  "paper_category": "Target Biology",
+  "generated_at": "2026-10-01T14:04:04",
+  "generator": "openai"
+}

@@ -1,24 +1,24 @@
 {
-  "key_insight": "A single, biomarker-agnostic plasma proteomics test using adaptive machine learning can distinguish malignant from benign adnexal masses with strong accuracy.",
-  "clinical_relevance": "This approach could improve pre-operative triage beyond CA-125 or ultrasound alone and may reduce unnecessary surgery for women with adnexal masses.",
+  "key_insight": "A single plasma proteomics test, interpreted with adaptive machine learning, can distinguish malignant from benign adnexal masses without relying on preset biomarker panels.",
+  "clinical_relevance": "This approach could improve pre-operative triage of ovarian/adnexal masses and reduce unnecessary surgery by adding a blood-based layer to imaging and standard markers.",
   "method": [
-    "Data-independent acquisition mass spectrometry measured >1,000 plasma proteins per sample.",
-    "ADAPT-MS retrained an ElasticNet classifier for each sample using the proteins detected.",
-    "Performance was tested across discovery, multiple validation cohorts, and an external validation center."
+    "Data-independent-acquisition mass spectrometry measured >1,000 plasma proteins per sample.",
+    "ADAPT-MS retrained an ElasticNet model for each sample using the proteins detected.",
+    "Performance was tested across discovery, multiple validation cohorts, and an external center."
   ],
-  "evidence_signal": "Across five independent validation cohorts (n=623), the classifier achieved a summary AUC of 0.835, with higher performance when combined with O-RADS in matched subsets.",
-  "watch_item": "The method depends on advanced mass spectrometry and multicenter validation, so broader real-world implementation and reproducibility still need confirmation.",
+  "evidence_signal": "In 1,685 total participants across discovery and validation cohorts, the classifier achieved a summary AUC of 0.835, and in matched subsets it improved discrimination when combined with O-RADS to 0.922.",
+  "watch_item": "This is still a specialized mass-spectrometry workflow that will need independent prospective validation, standardization, and real-world implementation testing before routine use.",
   "hashtags": [
     "#PrecisionOncology",
     "#Proteomics",
     "#MachineLearning",
-    "#CancerDiagnostics",
-    "#OvarianCancer"
+    "#OvarianCancer",
+    "#Biomarkers"
   ],
   "paper_id": "2026-09-25-medrxiv-differentiating_benign_from_malignant_adnexal_masses_by_biomarker_agnostic_plasma_proteomi",
   "paper_title": "Differentiating benign from malignant adnexal masses by biomarker-agnostic plasma proteomics using adaptive machine learning",
   "paper_date": "2026-09-25",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-09-30T13:12:49",
+  "generated_at": "2026-10-01T14:03:33",
   "generator": "openai"
 }
