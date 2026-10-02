@@ -22,7 +22,7 @@
     <header>
       <div>
         <h1>AI Cancer Drug Discovery Research Papers - Daily Top 20</h1>
-        <p class="sub">Collected 2026-10-01. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
+        <p class="sub">Collected 2026-10-02. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
       </div>
       <nav class="actions">
         <a href="papers.json">Data JSON</a>
@@ -31,7 +31,7 @@
     </header>
     <section class="grid">
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>70</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>65</strong></div>
         <p class="date">2026-09-28</p>
         <h2>A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data</h2>
         <p class="authors">Korutla, R.; Amal, S.</p>
@@ -39,37 +39,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.07.15.26358188v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.07.15.26358188v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> An agentic LLM system can query TCGA clinical data in natural language, choose the right analysis tools, and deliver accurate, auditable answers.</p>
-          <p><b>Clinical relevance:</b> This could make large oncology clinical datasets easier to analyze for research questions involving survival, treatment, biomarkers, and patient characteristics.</p>
-          <ul><li>Uses a ReAct-style LLM agent to select among 8 tools for extraction, statistics, survival analysis, hypothesis testing, and verification.</li><li>Cross-checks outputs against the curated TCGA Pan-Cancer Clinical Data Resource (CDR) and provides source-attributed, traceable results.</li><li>Evaluated on TCGA-Agent-Bench with 440 queries spanning five difficulty tiers.</li></ul>
-          <p><b>Evidence signal:</b> The system reached 93.4% overall accuracy, outperforming a rule-based pipeline, single-pass LLM, and retrieval-augmented generation; it was especially strong on fields missing from the CDR, answering 100% of 26 targeted queries versus 3.8% for CDR-only.</p>
-          <p><b>Watch item:</b> Performance depends on tool design and data coverage, so results may be weaker when clinical fields are missing, ambiguous, or require careful validation.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#TCGA</span> <span>#LLM</span> <span>#ClinicalAI</span> <span>#SurvivalAnalysis</span></div>
+          <p><b>Key insight:</b> An agentic LLM system using ReAct-style tool use can accurately answer natural-language questions and run statistical analyses on TCGA clinical data with auditable traces.</p>
+          <p><b>Clinical relevance:</b> It could make large cancer clinical repositories easier to query for research by returning clinically contextualized answers, survival analyses, and verified outputs.</p>
+          <ul><li>LLM acts as a ReAct agent that selects among eight tools</li><li>Performs data extraction, descriptive statistics, Kaplan-Meier survival analysis, log-rank tests, and hypothesis testing</li><li>Verifies results against the curated TCGA Pan-Cancer Clinical Data Resource and provides source attribution</li></ul>
+          <p><b>Evidence signal:</b> On TCGA-Agent-Bench, the system achieved 93.4% overall accuracy across 440 queries, outperforming rule-based, single-pass LLM, and RAG baselines.</p>
+          <p><b>Watch item:</b> Performance depends on tool design and data coverage, so a CDR-only setup can miss important fields like drug treatments, TNM components, and biomarkers.</p>
+          <div class="tags"><span>#PrecisionOncology</span> <span>#CancerData</span> <span>#LLM</span> <span>#ReAct</span> <span>#ClinicalAI</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>65</strong></div>
-        <p class="date">2026-09-25</p>
-        <h2>Differentiating benign from malignant adnexal masses by biomarker-agnostic plasma proteomics using adaptive machine learning</h2>
-        <p class="authors">Mueller-Reif, J. B.; Ackroyd, S.; Albrecht, V.; Weigert, M.; Korff, K.; Schebesta, A.-S.; Yoeli-Bik, R.; Siddiqui, M.; Rausch, A.; Zsiros, E.; Mann, M.; Lengyel, E.</p>
-        <p class="abstract">BackgroundPre-operative triage of adnexal masses with serum CA-125, HE4, and ultrasound (O-RADS) has limited accuracy, contributing to unnecessary surgery. We develop and validate a first of its kind, biomarker panel-free plasma proteomic classifier that distinguishes malignant from benign adnexal masses from a single blood draw, operating directly on discovery-mode mass spectrometry. MethodsIn this multicenter prospective observational study, plasma from women with adnexal masses and from healthy controls at a large urban academic center (discovery and four validation cohorts) and an external academic center from another Urban-suburban area (external validation) was analyzed by data-independent-acquisition mass spectrometry (Orbitrap Astral), quantifying &gt;1,000 proteins per sample. Cancerous (malignant, borderline adnexal mass, or metastasis to ovary) versus benign adnexal masses were classified with ADAPT-MS (Adaptive Diagnostic Architecture for Personalized Testing by Mass Spectrometry), which retrains an ElasticNet model for each sample based on the proteins measured. The primary outcome was discrimination (area under the receiver operating characteristic curve [AUC]). Pre-operative O-RADS scores and serum CA-125 were compared and combined with proteomics on matched subsets. FindingsUsing a discovery cohort (n=1062), an ADAPT-MS classifier, validated across five independent cohorts (n=623), achieved a summary AUC of 0.835 (cohort range 0.779-0.904). Among patients with pre-operative O-RADS (n=231), proteomics (AUC 0.852) was comparable to O-RADS alone (0.863) and combining them raised discrimination to 0.922. Proteomics outperformed serum CA-125 (0.915 versus 0.777; n=125) and proteome-derived ROMA-like and two-marker surrogates. Biologically, the classification-relevant proteins are enriched for host response proteins rather than tumor cell associated protein changes, comprising ECM remodeling, complement and innate immune response pathways. This explains good detection of tumor with heterogenous pathology and also metastasis to ovary. InterpretationA single plasma proteomic measurement interpreted using adaptive machine learning discriminates malignant from benign adnexal masses with good internal and external validation, and is complementary to ultrasound, warranting prospective evaluation as a panel-free diagnostic adjunct to imaging. FundingFunded by the Max Planck Society for the Advancement of Sciences (MM), an NIH R35 grant (EL), and support from Arthur and Nicole Herbst (EL). Research in contextO_ST_ABSEvidence before this studyC_ST_ABSPresence of protein biomarkers for ovarian cancer and in detail, adnexal mass triage is historically present e.g. by CA-125 or HE4. Proteomics studies have shown many more potential protein markers that might be used as biomarkers instead or additional to the presently used ones. Classification algorithms however do currently rely on single or few biomarkers only, limiting sensitivity and specificity. Added value of this studyTo our knowledge, this study is the first example of a proteomics classifier that uses ML on discovery-based MS-proteomics data at the single-sample level and thus has the potential for diagnostic use. While in the past, proteomics has been used as a discovery tool and potential markers needed to be subjected to a follow-up assay development, we show by application to 5 different independent validation cohorts that a proteomics classifier based on the recently developed architecture Adaptive Diagnostic Architecture for Personalized Testing by Mass Spectrometry (ADAPT-MS) generalizes in performance between discovery and validation cohorts and can be applied at the single sample level. Implications of all the available evidenceWe demonstrate that proteomics can be applied beyond discovery and classify adnexal masses together with ultrasound at an AUC of 0.922. This sets a precedence case for other diagnostic applications of proteomics, both in study design (plasma proteomics is always measured and used to best of ability in discovery and validation), and in single-sample application mode by ADAPT-MS.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.23.26363813v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.23.26363813v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A single plasma proteomics test, interpreted with adaptive machine learning, can distinguish malignant from benign adnexal masses without relying on preset biomarker panels.</p>
-          <p><b>Clinical relevance:</b> This approach could improve pre-operative triage of ovarian/adnexal masses and reduce unnecessary surgery by adding a blood-based layer to imaging and standard markers.</p>
-          <ul><li>Data-independent-acquisition mass spectrometry measured &gt;1,000 plasma proteins per sample.</li><li>ADAPT-MS retrained an ElasticNet model for each sample using the proteins detected.</li><li>Performance was tested across discovery, multiple validation cohorts, and an external center.</li></ul>
-          <p><b>Evidence signal:</b> In 1,685 total participants across discovery and validation cohorts, the classifier achieved a summary AUC of 0.835, and in matched subsets it improved discrimination when combined with O-RADS to 0.922.</p>
-          <p><b>Watch item:</b> This is still a specialized mass-spectrometry workflow that will need independent prospective validation, standardization, and real-world implementation testing before routine use.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#Proteomics</span> <span>#MachineLearning</span> <span>#OvarianCancer</span> <span>#Biomarkers</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Cancer AI Methods</span><span>medRxiv</span><strong>61</strong></div>
+        <div class="meta"><span>Cancer AI Methods</span><span>medRxiv</span><strong>56</strong></div>
         <p class="date">2026-09-28</p>
         <h2>Exponentially weighted ensemble deep learning for histologic growth pattern classification in lung adenocarcinoma</h2>
         <p class="authors">Korutla, R.; Jain, M. N.; Karkera, T. M.; Tunik, G.; Ryan, S. T.; Christman, R. A.; Amal, S.</p>
@@ -77,18 +58,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.24.26363902v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.24.26363902v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> An exponentially weighted ensemble of five deep learning models improved lung adenocarcinoma histologic growth pattern classification by emphasizing the most reliable architectures.</p>
-          <p><b>Clinical relevance:</b> More accurate pattern classification on H&amp;E whole-slide images could better support prognostic assessment and treatment planning in lung adenocarcinoma.</p>
-          <ul><li>Trained five architectures: EfficientNet-B3, DeiT3, Swin Transformer, Vision Transformer, and ConvNeXt.</li><li>Assigned ensemble weights using a softmax of each model’s Quadratic Weighted Kappa (QWK) performance.</li><li>Evaluated on 25,545 image patches from the Dartmouth-Hitchcock dataset with stratified 5-fold cross-validation.</li></ul>
-          <p><b>Evidence signal:</b> The ensemble achieved 96.52% accuracy and Cohen’s kappa of 0.9648, outperforming the best single model by +0.0087 kappa with statistically significant gains.</p>
-          <p><b>Watch item:</b> Performance was shown on a single institutional dataset of image patches, so external validation and slide-level clinical testing are still needed before real-world use.</p>
-          <div class="tags"><span>#DigitalPathology</span> <span>#DeepLearning</span> <span>#LungAdenocarcinoma</span> <span>#EnsembleAI</span> <span>#CancerAI</span></div>
+          <p><b>Key insight:</b> An exponentially weighted ensemble of five deep learning models improved histologic growth pattern classification in lung adenocarcinoma by combining complementary tissue-morphology signals.</p>
+          <p><b>Clinical relevance:</b> More reliable subtype classification from H&amp;E whole-slide images could support prognosis and treatment planning in lung adenocarcinoma.</p>
+          <ul><li>Trained five architectures: EfficientNet-B3, DeiT3, Swin Transformer, Vision Transformer, and ConvNeXt.</li><li>Used softmax-weighted ensemble scores based on per-model Quadratic Weighted Kappa (QWK).</li><li>Evaluated on 25,545 image patches with stratified 5-fold cross-validation.</li></ul>
+          <p><b>Evidence signal:</b> On the Dartmouth-Hitchcock dataset, the ensemble reached 96.52% accuracy and kappa = 0.9648, outperforming the best single model with a statistically significant gain.</p>
+          <p><b>Watch item:</b> Performance was measured on one institutional dataset, so external validation is needed before broad clinical deployment.</p>
+          <div class="tags"><span>#DigitalPathology</span> <span>#DeepLearning</span> <span>#LungAdenocarcinoma</span> <span>#HistologyAI</span> <span>#MedicalImaging</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>61</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>56</strong></div>
         <p class="date">2026-09-27</p>
         <h2>FRANK: a pan-cancer RNA-seq classifier for childhood tumors with data-efficient learning</h2>
         <p class="authors">Sablauskas, K.; Kiselova, T.; Bardina, L.; Nartisa, I.; Zucenka, A.; Viluma, A.; Gailite, L.; Jakaitiene, A.; Rots, D.</p>
@@ -96,18 +77,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.23.26355605v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.23.26355605v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> FRANK is a data-efficient RNA-seq classifier that can identify childhood tumor types across many pediatric cancers with high accuracy using a hierarchical neural network approach and heavy augmentation.</p>
-          <p><b>Clinical relevance:</b> This could support faster, more consistent tumor subtype identification in pediatric oncology, which may help inform treatment selection and diagnostic workflows.</p>
-          <ul><li>Trained on 11,467 transcriptomes covering 181 childhood tumor and normal tissue types</li><li>Used data augmentation plus a hierarchical penalty term to learn from very small class sizes, even as few as three examples</li><li>Validated across nine external datasets and tested on long-read, noisy, and low-quality RNA-seq data</li></ul>
-          <p><b>Evidence signal:</b> The model was validated on 16,398 samples across nine datasets and achieved 98.3% overall accuracy, while outperforming other published pediatric pan-cancer RNA-seq classifiers on an external dataset.</p>
-          <p><b>Watch item:</b> Performance is strong in retrospective external testing, but real-world deployment would still need prospective validation and careful handling of site-specific sequencing and preprocessing differences.</p>
+          <p><b>Key insight:</b> FRANK is a data-efficient RNA-seq classifier that can identify pediatric tumor types across many cancer classes using a fully connected neural network plus augmentation and hierarchical penalties.</p>
+          <p><b>Clinical relevance:</b> If validated in practice, it could help speed and improve pediatric tumor subtype classification from transcriptomic data, supporting more accurate treatment decisions.</p>
+          <ul><li>Curated 11,467 transcriptomes covering 181 childhood tumor and normal tissue types</li><li>Trained a fully connected RNA-based classifier with extensive data augmentation</li><li>Used a hierarchical penalty term to improve classification across related tumor types</li></ul>
+          <p><b>Evidence signal:</b> In validation across nine datasets totaling 16,398 samples, FRANK achieved 98.3% overall accuracy and outperformed other published pediatric pan-cancer RNA-seq classifiers on an external dataset.</p>
+          <p><b>Watch item:</b> Performance is promising, but real-world deployment still needs prospective validation across diverse labs, sequencing platforms, and rare tumor subtypes.</p>
           <div class="tags"><span>#PrecisionOncology</span> <span>#PediatricCancer</span> <span>#RNAseq</span> <span>#MachineLearning</span> <span>#CancerDiagnostics</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>58</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>53</strong></div>
         <p class="date">2026-09-26</p>
         <h2>Extracting smoking history from clinical notes for lung cancer screening decision support: comparing a structured-judgment model with general-purpose large language models</h2>
         <p class="authors">Wright, A.; Liu, S.; Wright, A. P.</p>
@@ -115,18 +96,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.24.26363906v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.24.26363906v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A structured-judgment model and several general-purpose LLMs all achieved high accuracy for extracting smoking history from clinical notes, but they differed meaningfully in latency, cost, and performance on complex cases.</p>
-          <p><b>Clinical relevance:</b> These tools can support lung cancer screening decision support by automating smoking-status, pack-year, and quit-date extraction needed to determine USPSTF and ACS eligibility.</p>
-          <ul><li>Built a synthetic benchmark of 3,000 outpatient notes across template, messy, and arithmetic-heavy scenarios.</li><li>Compared TypeSafe Jev 1.13 with four LLMs using the same structured output schema.</li><li>Calculated screening eligibility from model outputs in code and measured accuracy, cost, and speed.</li></ul>
-          <p><b>Evidence signal:</b> Across 3,000 notes, all models showed high eligibility accuracy, with Jev fastest and cheapest among several models but less accurate than the strongest LLM on the most complex notes.</p>
-          <p><b>Watch item:</b> Because the benchmark was synthetic and note complexity affected errors, real-world performance, integration, and safety checks should be validated before deployment.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#LungCancerScreening</span> <span>#ClinicalDecisionSupport</span> <span>#LLMEvaluation</span> <span>#HealthAI</span></div>
+          <p><b>Key insight:</b> A structured-judgment model and several general-purpose LLMs all extracted smoking history well enough for lung cancer screening decisions, with the biggest tradeoff being latency, cost, and performance on complex cases.</p>
+          <p><b>Clinical relevance:</b> For lung cancer screening CDS, fast and accurate extraction of smoking status, pack-years, and quit date from notes could support more consistent eligibility assessment in routine care.</p>
+          <ul><li>3,000 synthetic outpatient notes were created across template, realistic messy, and arithmetic-heavy messy conditions.</li><li>Compared a low-cost structured-judgment model (TypeSafe Jev 1.13) against four LLMs using the same structured output schema.</li><li>Eligibility for USPSTF 2021 and ACS 2023 screening was computed from model outputs in code.</li></ul>
+          <p><b>Evidence signal:</b> Across 3,000 notes, all systems showed high eligibility accuracy; the structured model was fastest and lowest cost, while the newest cost-efficient LLM was strongest on the most complex notes.</p>
+          <p><b>Watch item:</b> Synthetic benchmark results may not fully reflect real-world note variability, and complex arithmetic cases still caused more false screening flags for the structured model.</p>
+          <div class="tags"><span>#LungCancerScreening</span> <span>#ClinicalDecisionSupport</span> <span>#LargeLanguageModels</span> <span>#PrecisionOncology</span> <span>#MedicalAI</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>56</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>51</strong></div>
         <p class="date">2026-09-28</p>
         <h2>Feasibility of PI-RADS Compliant Prostate MRI at 0.55T</h2>
         <p class="authors">Spencer, A. P. C.; Avola, E.; Ilanjian, G.; Matthey, J.; Ledoux, J.-B.; Dromain, C.; Vietti-Violi, N.; Jelescu, I.</p>
@@ -134,37 +115,37 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.05.05.26352358v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.05.05.26352358v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> PI-RADS-compliant prostate MRI can be performed at 0.55T with diagnostic image quality and lesion detection that is close to 3T at the patient level.</p>
-          <p><b>Clinical relevance:</b> Low-field prostate MRI could expand access to prostate imaging where higher-field scanners are limited, while keeping scan times clinically practical.</p>
-          <ul><li>15 healthy male volunteers and 22 patients with suspected prostate cancer underwent bi-parametric prostate MRI at 0.55T.</li><li>Protocol used tri-planar T2-weighted imaging and axial DWI aligned with PI-RADS guidance, plus deep learning reconstruction to boost image quality.</li><li>Image quality, SNR/CNR, and lesion detection were compared with 3T as the reference in patients.</li></ul>
-          <p><b>Evidence signal:</b> At 0.55T, 21/22 patients and all controls reached at least acceptable diagnostic quality, and patient-level lesion detection sensitivity was 91% for both readers versus 3T reference.</p>
-          <p><b>Watch item:</b> This is a small single-study feasibility evaluation, so broader validation is needed before assuming equivalent performance across different patient populations and clinical settings.</p>
-          <div class="tags"><span>#ProstateMRI</span> <span>#LowFieldMRI</span> <span>#PIRADS</span> <span>#RadiologyAI</span> <span>#PrecisionOncology</span></div>
+          <p><b>Key insight:</b> A 0.55T prostate MRI protocol can meet PI-RADS requirements and still produce diagnostic-quality images with lesion detection performance close to 3T.</p>
+          <p><b>Clinical relevance:</b> Low-field MRI could broaden access to prostate imaging by reducing scanner cost and complexity while preserving clinically usable results.</p>
+          <ul><li>15 healthy volunteers were scanned to optimize a PI-RADS-compliant bi-parametric protocol at 0.55T.</li><li>22 patients with suspected prostate cancer underwent 0.55T MRI, with 3T used as the reference standard.</li><li>Deep learning reconstruction and adjusted diffusion settings were used to improve image quality and efficiency.</li></ul>
+          <p><b>Evidence signal:</b> Most participants achieved acceptable diagnostic quality (PI-QUAL ≥2/3), and patient-level lesion detection at 0.55T was not significantly different from 3T.</p>
+          <p><b>Watch item:</b> Results come from a small, single-study cohort, so broader validation is needed before routine implementation across sites.</p>
+          <div class="tags"><span>#ProstateMRI</span> <span>#LowFieldMRI</span> <span>#PIRADS</span> <span>#PrecisionOncology</span> <span>#MedicalImaging</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Therapeutic Discovery</span><span>medRxiv</span><strong>56</strong></div>
+        <div class="meta"><span>Therapeutic Discovery</span><span>medRxiv</span><strong>51</strong></div>
         <p class="date">2026-09-28</p>
         <h2>A cross-tissue splicing signature as a quantitative biomarker for ReNU syndrome</h2>
         <p class="authors">Dawes, R.; Blakes, A.; Markati, T.; Griffiths, M.; Cogne, B.; Barakat, T. S.; Barrett, J. C.; Rinaldi, C.; Sanders, S. J.; Whiffin, N.</p>
-        <p class="abstract">ReNU syndrome is a severe neurodevelopmental disorder caused by de novo variants in the spliceosomal small nuclear RNA (snRNA) gene RNU4-2. Pathogenic variants cluster in two distinct structural regions of the U4 snRNA produced by RNU4-2, the T-loop and Stem III. Aberrant 5&#x27; splice site selection is a molecular hallmark of ReNU syndrome that correlates with phenotypic severity and could be leveraged as a quantitative biomarker to facilitate preclinical and clinical therapeutic development. We analysed RNA-sequencing data from two independent cohorts totalling 30 individuals with ReNU syndrome and 54 controls. We identified 483 alternative splicing events shared across both cohorts, with the highest concordance in 105 alternative 5&#x27; splice-site (A5SS) events. Using these 105 A5SS events, we derived a minimal reproducible signature from only six sites. The splicing signature perfectly distinguished 19 n.64_65insT individuals from 54 controls, and produced no false positives when applied to a further 5,984 whole blood controls. In addition, the signature was specific to variants within the U4-2 T-loop, which are associated with greater clinical severity. Further, we find evidence of alternative splicing events that are specific to variants in Stem III. In a patient-derived induced pluripotent stem cell (iPSC) model of the recurrent RNU4-2 n.64_64insT variant, the splicing signature was fully recapitulated across all stages of differentiation into cortical neuron-like cells. Together, these findings define a robust RNA biomarker for T-loop ReNU syndrome for use in therapeutic development, and illustrate a general framework for portable biomarker discovery in spliceopathies.</p>
+        <p class="abstract">ReNU syndrome is a severe neurodevelopmental disorder caused by de novo variants in the spliceosomal small nuclear RNA (snRNA) gene RNU4-2. Pathogenic variants cluster in two distinct structural regions of the U4 snRNA produced by RNU4-2, the T-loop and Stem III. Aberrant 5 splice site selection is a molecular hallmark of ReNU syndrome that correlates with phenotypic severity and could be leveraged as a quantitative biomarker to facilitate preclinical and clinical therapeutic development. We analysed RNA-sequencing data from two independent cohorts totalling 30 individuals with ReNU syndrome and 54 controls. We identified 483 alternative splicing events shared across both cohorts, with the highest concordance in 105 alternative 5 splice-site (A5SS) events. Using these 105 A5SS events, we derived a minimal reproducible signature from only six sites. The splicing signature perfectly distinguished 19 n.64_65insT individuals from 54 controls, and produced no false positives when applied to a further 5,984 whole blood controls. In addition, the signature was specific to variants within the U4-2 T-loop, which are associated with greater clinical severity. Further, we find evidence of alternative splicing events that are specific to variants in Stem III. In a patient-derived induced pluripotent stem cell (iPSC) model of the recurrent RNU4-2 n.64_64insT variant, the splicing signature was fully recapitulated across all stages of differentiation into cortical neuron-like cells. Together, these findings define a robust RNA biomarker for T-loop ReNU syndrome for use in therapeutic development, and illustrate a general framework for portable biomarker discovery in spliceopathies.</p>
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.26.26364077v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.26.26364077v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A small, reproducible RNA splicing signature can distinguish ReNU syndrome cases from controls and act as a quantitative biomarker, especially for variants in the U4-2 T-loop.</p>
-          <p><b>Clinical relevance:</b> This biomarker could support therapeutic development and future trial readouts by providing a measurable RNA-based indicator of disease-specific splicing defects.</p>
-          <ul><li>Analyzed RNA-seq from two independent ReNU cohorts plus control samples.</li><li>Identified shared alternative splicing events, focusing on alternative 5&#x27; splice-site (A5SS) changes.</li><li>Derived a minimal six-site signature and tested it in patient-derived iPSC-to-neuron models.</li></ul>
-          <p><b>Evidence signal:</b> Across 30 individuals with ReNU syndrome and 54 controls, the six-site signature perfectly separated 19 n.64_65insT cases from controls and showed no false positives in 5,984 additional whole-blood controls.</p>
-          <p><b>Watch item:</b> The signature appears specific to certain RNU4-2 T-loop variants, so broader validity across all ReNU genotypes and clinical settings still needs confirmation.</p>
-          <div class="tags"><span>#SplicingBiomarker</span> <span>#ReNUSyndrome</span> <span>#RNASeq</span> <span>#TherapeuticDiscovery</span> <span>#PrecisionMedicine</span></div>
+          <p><b>Key insight:</b> A small cross-tissue RNA splicing signature can act as a quantitative biomarker for ReNU syndrome, strongly distinguishing pathogenic RNU4-2 T-loop variants from controls.</p>
+          <p><b>Clinical relevance:</b> This biomarker could support preclinical and clinical development of therapies for ReNU syndrome by providing a reproducible readout of disease severity and treatment response.</p>
+          <ul><li>Analyzed RNA-seq data from two independent cohorts of people with ReNU syndrome and controls.</li><li>Focused on shared alternative splicing events, especially alternative 5 splice-site (A5SS) changes.</li><li>Derived a minimal 6-site splicing signature and tested it in blood and iPSC-derived neuron-like cells.</li></ul>
+          <p><b>Evidence signal:</b> Across 30 ReNU syndrome cases and 54 controls, the 6-site signature perfectly separated 19 n.64_65insT cases from controls and produced no false positives in 5,984 additional whole-blood controls.</p>
+          <p><b>Watch item:</b> The signature appears specific to T-loop variants, so it may not generalize equally to all RNU4-2 variant classes or all sample types.</p>
+          <div class="tags"><span>#SplicingBiomarker</span> <span>#ReNUSyndrome</span> <span>#RNAseq</span> <span>#TherapeuticDevelopment</span> <span>#Genomics</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>56</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>51</strong></div>
         <p class="date">2026-09-28</p>
         <h2>Phenome-wide and proteomic analysis of APOE alleles across different ancestries in the All of Us Research Program</h2>
         <p class="authors">Mejia Garcia, A.; Valderrama-Carmona, P.; Zheng, T. M.; Wang, Z.; Tsao, H. M.; Jung, J.; Orozco, C. A.; Su, C.-Y.; Zhou, S.</p>
@@ -172,18 +153,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.26.26364080v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.26.26364080v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> APOE genotype effects on disease and plasma proteins differ by ancestry and sex, suggesting risk interpretation should be population-aware rather than one-size-fits-all.</p>
-          <p><b>Clinical relevance:</b> These findings may help refine ancestry-aware risk stratification for dementia, lipid disorders, and fatty liver disease, while highlighting candidate biomarkers such as SNAP25 for future validation.</p>
-          <ul><li>Phenome-wide association study of APOE genotypes in 367,757 All of Us participants.</li><li>Tested APOE against 2,632 phenotypes using an ordinal Alzheimer’s-risk hierarchy with covariate adjustment.</li><li>Analyzed plasma protein dosage effects in 9,132 participants across five ancestries, with sex- and ancestry-stratified heterogeneity testing.</li></ul>
-          <p><b>Evidence signal:</b> The study reported 27 APOE-associated phenotypes, including 9 ancestry-specific signals and 5 lipid traits with sex heterogeneity, plus proteomic associations such as SNAP25 across ancestries.</p>
-          <p><b>Watch item:</b> Some ancestry-specific and proteomic signals need independent replication before they can be used for clinical risk prediction or biomarker deployment.</p>
-          <div class="tags"><span>#APOE</span> <span>#Genomics</span> <span>#Proteomics</span> <span>#PrecisionMedicine</span> <span>#HealthEquity</span></div>
+          <p><b>Key insight:</b> APOE allele effects vary across ancestry and sex, with 27 phenotype associations and proteomic signals suggesting both shared and population-specific biology.</p>
+          <p><b>Clinical relevance:</b> These findings support ancestry-aware interpretation of APOE-based risk, especially for dementia and liver-related phenotypes, and point to candidate biomarkers such as SNAP25 for future validation.</p>
+          <ul><li>Phenome-wide association study in 367,757 All of Us participants across six genetic ancestry groups</li><li>Tested APOE genotypes against 2,632 phenotypes using an Alzheimer’s-disease-risk ordinal hierarchy</li><li>Analyzed plasma proteomics in 9,132 participants across five ancestries, including sex- and ancestry-stratified heterogeneity tests</li></ul>
+          <p><b>Evidence signal:</b> The analysis found 27 APOE-associated phenotypes, 5 sex-heterogeneous lipid traits, 9 ancestry-specific associations, and proteomic links including SNAP25 across ancestries.</p>
+          <p><b>Watch item:</b> Results are observational and depend on EHR-derived phenotypes, so ancestry-specific findings and biomarker candidates need replication and functional validation before translation.</p>
+          <div class="tags"><span>#APOE</span> <span>#AllOfUs</span> <span>#Genomics</span> <span>#Proteomics</span> <span>#PrecisionMedicine</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>56</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>51</strong></div>
         <p class="date">2026-09-28</p>
         <h2>Examining the Clinical Utility of Deep Learning Models for Perivascular Space Segmentation in Alzheimer&#x27;s Disease</h2>
         <p class="authors">Tang, S.; Younes, K.; Penukonda, E.; Hausle, I.; Thropp, P.; Lupo, J. M.; Tosun, D.</p>
@@ -191,18 +172,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.27.26363725v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.27.26363725v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> In Alzheimer’s MRI, deep-learning PVS segmentation models can score well yet still fail to preserve biologically meaningful associations, so accuracy alone is not enough.</p>
-          <p><b>Clinical relevance:</b> Before using automated PVS measures for research or clinical inference in AD, models should be validated on the target cohort to ensure they reproduce known biomarker relationships.</p>
-          <ul><li>Benchmarked 5 open-source nnU-Net-based PVS segmentation models.</li><li>Compared outputs against manual labels in 60 multi-site ADNI-3 participants and 12 external VALDO scans.</li><li>Tested segmentation performance and whether model-derived PVS burden matched ground-truth biomarker associations.</li></ul>
-          <p><b>Evidence signal:</b> The AD-trained ADNI-PVS-Net had the best internal Dice (0.58±0.14) but dropped to ≤0.11 externally, while other models generalized better externally (0.27–0.30) yet often failed to reproduce the expected PVS–amyloid association.</p>
-          <p><b>Watch item:</b> External generalizability and downstream biological validity can diverge, and some models misclassified up to 32% of white matter hyperintensities as PVS.</p>
-          <div class="tags"><span>#DeepLearning</span> <span>#Neuroimaging</span> <span>#AlzheimersDisease</span> <span>#MRI</span> <span>#Biomarkers</span></div>
+          <p><b>Key insight:</b> Open-source deep learning models for MRI-visible perivascular space segmentation can look accurate internally yet fail to generalize or preserve biologically meaningful associations in Alzheimer’s disease cohorts.</p>
+          <p><b>Clinical relevance:</b> For biomarker research and future clinical use, model choice and cohort-specific validation matter because segmentation performance alone may not predict whether downstream disease associations remain valid.</p>
+          <ul><li>Benchmarked five open-source nnU-Net-based PVS segmentation models against manual labels.</li><li>Tested performance in 60 multi-site ADNI-3 participants and 12 external VALDO challenge scans.</li><li>Compared overall, voxel, object, and lesion-wise Dice and evaluated preservation of PVS-amyloid associations.</li></ul>
+          <p><b>Evidence signal:</b> ADNI-PVS-Net had the best internal Dice (0.58±0.14) but dropped to ≤0.11 externally, while MedNet-PVS and mcPVS-Net generalized better (Dice 0.27–0.30) yet often misestimated PVS burden and only AD-trained models reproduced the expected PVS-amyloid relationship.</p>
+          <p><b>Watch item:</b> High Dice scores did not guarantee valid biomarker inference, and some models misclassified up to 32% of white matter hyperintensities as PVS.</p>
+          <div class="tags"><span>#DeepLearning</span> <span>#MRI</span> <span>#AlzheimersDisease</span> <span>#Biomarkers</span> <span>#ModelValidation</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Therapeutic Discovery</span><span>medRxiv</span><strong>52</strong></div>
+        <div class="meta"><span>Therapeutic Discovery</span><span>medRxiv</span><strong>47</strong></div>
         <p class="date">2026-09-28</p>
         <h2>Genome-Wide Association Study of Sepsis Susceptibility in ICU Patients Identifies Arab Founder Loss-of-Function Variant in UBE2L3</h2>
         <p class="authors">Rostami, M. R.; Ait Hssain, A.; Robay, A.; Schenck, E. J.; Mezey, J. G.; Crystal, R. G.; Rodriguez-Flores, J. L.</p>
@@ -210,18 +191,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.25.26363954v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.25.26363954v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A founder-population GWAS/exome analysis of ICU patients identified a likely loss-of-function UBE2L3 variant that may influence sepsis susceptibility.</p>
-          <p><b>Clinical relevance:</b> This work suggests UBE2L3 could become a biomarker or therapeutic target for understanding and potentially stratifying sepsis risk, but it is not yet ready for clinical use.</p>
-          <ul><li>WGS-based GWAS and exome-wide analysis in 210 Arab ICU patients</li><li>Prioritized deleterious founder variants using REGENIE Firth regression, CADD, and population enrichment filters</li><li>Validated signal with external All of Us burden testing and mouse functional context</li></ul>
-          <p><b>Evidence signal:</b> The strongest case-level signal was a novel UBE2L3 start-loss variant found in 3 of 68 sepsis cases and 0 of 142 controls (Fisher&#x27;s exact P = 0.026), with supportive external burden evidence in All of Us for bacterial infection.</p>
-          <p><b>Watch item:</b> The association signals are based on small case counts and wide confidence intervals, so replication in larger diverse cohorts is needed before implementation.</p>
-          <div class="tags"><span>#Sepsis</span> <span>#GenomeWideAssociation</span> <span>#WholeGenomeSequencing</span> <span>#PrecisionMedicine</span> <span>#DrugDiscovery</span></div>
+          <p><b>Key insight:</b> A founder loss-of-function variant in UBE2L3 was enriched in Arab ICU sepsis cases, suggesting UBE2L3 may influence sepsis susceptibility and be a potential therapeutic target.</p>
+          <p><b>Clinical relevance:</b> If validated, this finding could help guide genetic risk stratification and prioritize UBE2L3-focused drug discovery for sepsis.</p>
+          <ul><li>WGS-based GWAS and exome-wide association analysis in 210 Arab ICU patients</li><li>Prioritized deleterious founder variants using REGENIE Firth regression, CADD, and allele-frequency enrichment</li><li>Followed up UBE2L3 signals in All of Us and supported target relevance with AI drug-development scoring</li></ul>
+          <p><b>Evidence signal:</b> The strongest case-control signal was a novel UBE2L3 start-loss variant seen in 3/68 sepsis cases and 0/142 controls, with supportive association for UBE2L3 missense burden in All of Us bacterial infection data.</p>
+          <p><b>Watch item:</b> The UBE2L3 findings are based on small case numbers and broad confidence intervals, so independent replication and functional validation are needed before translation.</p>
+          <div class="tags"><span>#SepsisGenetics</span> <span>#GWAS</span> <span>#WholeGenomeSequencing</span> <span>#UBE2L3</span> <span>#DrugDiscovery</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>52</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>47</strong></div>
         <p class="date">2026-09-26</p>
         <h2>Neuro-Symbolic AI for Automated Pathology Quality Measurement</h2>
         <p class="authors">Brann, F.; Tadele, L.; Skau, C.; Bocsi, G.; Clarke, A. K.</p>
@@ -229,18 +210,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.07.22.26358635v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.07.22.26358635v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A neuro-symbolic AI system can automate complex pathology quality abstraction from narrative reports by combining language-model extraction with rule-based reasoning.</p>
-          <p><b>Clinical relevance:</b> This could reduce manual chart-review burden and make more clinically meaningful quality measures feasible to measure at scale in pathology workflows.</p>
-          <ul><li>Decomposed each quality measure into atomic questions.</li><li>Used case-based refinement with human-in-the-loop alignment to real-world pathology reports.</li><li>Compared NSAI against trained human abstractors on four CAP pathology quality measures.</li></ul>
-          <p><b>Evidence signal:</b> In 2,000 independently double-abstracted reports, NSAI matched or slightly exceeded trained human abstractors versus the adjudicated gold standard (kappa 0.95 vs 0.92).</p>
-          <p><b>Watch item:</b> Performance was evaluated on specific CAP pathology measures, so broader generalization and workflow integration still need validation.</p>
-          <div class="tags"><span>#PathologyAI</span> <span>#NeuroSymbolicAI</span> <span>#ClinicalQuality</span> <span>#HealthInformatics</span> <span>#PrecisionOncology</span></div>
+          <p><b>Key insight:</b> A neuro-symbolic AI system can accurately abstract complex pathology quality measures from narrative reports by combining language-model extraction with symbolic reasoning.</p>
+          <p><b>Clinical relevance:</b> This could reduce manual chart review burden and make more pathology quality measures feasible for large-scale clinical reporting.</p>
+          <ul><li>Decomposed each quality measure into atomic questions for stepwise abstraction.</li><li>Used case-based refinement with human-in-the-loop alignment to real pathology reports.</li><li>Compared NSAI against trained human abstractors on 2,000 independently double-abstracted reports across four CAP measures.</li></ul>
+          <p><b>Evidence signal:</b> Against the adjudicated gold standard, NSAI achieved Cohen’s kappa of 0.95, slightly exceeding trained human abstractors at 0.92.</p>
+          <p><b>Watch item:</b> Performance depends on careful measure decomposition and case-based refinement, so real-world deployment may require continued human oversight and validation across sites and report styles.</p>
+          <div class="tags"><span>#PrecisionOncology</span> <span>#PathologyAI</span> <span>#NeuroSymbolicAI</span> <span>#ClinicalNLP</span> <span>#QualityMeasurement</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>51</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>46</strong></div>
         <p class="date">2026-09-27</p>
         <h2>Race and ethnicity in the landmark hypertrophic cardiomyopathy trials: representation against population, site-catchment, and disease-referenced expectations</h2>
         <p class="authors">Kim, D. S.; Wescott, A. P.; Petek, B. J.; O&#x27;Sullivan, J. W.; Moussavi-Harami, F.; Owens, D.; Lawrie, A.; Kramer, C. M.; Rader, F.; Parikh, V. N.; Wheeler, M. T.; Yang, E.; Ashley, E. A.; Masri, A.</p>
@@ -248,37 +229,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.24.26363977v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.24.26363977v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Black participation in landmark hypertrophic cardiomyopathy trials was far below expectation, reaching only about one quarter of the level predicted by the U.S. population, site catchment areas, or disease-based estimates.</p>
-          <p><b>Clinical relevance:</b> These enrollment gaps suggest that trial evidence for HCM may not fully reflect the populations most affected, which can limit confidence in how well results generalize across racial groups.</p>
-          <ul><li>Reviewed 197 registered interventional HCM trials and identified 32 landmark-tier studies.</li><li>Extracted race data from trials that reported demographics and pooled Black participation using random-effects meta-analysis.</li><li>Compared Black enrollment against U.S. population benchmarks, trial site-catchment demographics, and a disease-referenced echocardiographic expectation.</li></ul>
-          <p><b>Evidence signal:</b> Across 13 trials with race data, 70 of 1,780 Black or White participants were Black; pooled Black share was 3.98% versus a 16.3% population expectation, with a participation-to-prevalence ratio of 0.24.</p>
-          <p><b>Watch item:</b> Not all landmark trials reported race, and the analysis may not capture other structural or operational factors that influenced enrollment beyond geography and eligibility criteria.</p>
-          <div class="tags"><span>#HypertrophicCardiomyopathy</span> <span>#ClinicalTrials</span> <span>#HealthEquity</span> <span>#TrialRepresentation</span> <span>#Cardiology</span></div>
+          <p><b>Key insight:</b> Black participation in landmark hypertrophic cardiomyopathy trials was far below population and site-catchment expectations, with pooled enrollment around one quarter of expected share.</p>
+          <p><b>Clinical relevance:</b> Trial underrepresentation can limit how well hypertrophic cardiomyopathy evidence generalizes to Black patients and may help explain persistent outcome disparities.</p>
+          <ul><li>Reviewed 197 registered interventional HCM trials and identified 32 landmark-tier studies.</li><li>Extracted race data from 13 trials and pooled Black share among Black and White participants using random-effects meta-analysis.</li><li>Compared observed enrollment with US population, site-county catchment, and disease-referenced echocardiographic expectations.</li></ul>
+          <p><b>Evidence signal:</b> Across 13 trials, 70 of 1,780 Black or White participants were Black, with a pooled Black share of 3.98% versus a 16.3% population expectation (PPR 0.24).</p>
+          <p><b>Watch item:</b> Not all trials reported race, and catchment-based estimates may not capture all real-world referral patterns or other unmeasured barriers to participation.</p>
+          <div class="tags"><span>#ClinicalTrials</span> <span>#HealthEquity</span> <span>#Cardiology</span> <span>#HCM</span> <span>#RepresentationMatters</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>49</strong></div>
-        <p class="date">2026-09-25</p>
-        <h2>Methylation-driven Cancer Genes and Methylation Profiling in Glioma: A Comparative Study between East Asian and non-Hispanic White Populations</h2>
-        <p class="authors">Newman, L.; Dunne, N.; Cheng, V. W.; Sharma-Oates, A.</p>
-        <p class="abstract">Global incidence and outcomes of glioma have been found to vary significantly by region, however research into the disease continues to lack diversity. Here we investigated epigenetic patterns in glioma subtypes from cohorts collected from China and the USA. We retrospectively analysed the Chinese Glioma Genome Atlas (CGGA) and The Cancer Genome Atlas (TCGA) datasets following reclassification of glioma subtypes based on the WHO 2021 central nervous system (CNS) tumour classification. We used DNA methylation and transcriptomics data to identify methylation-driven cancer genes in the CGGA cohort, assessed their prognostic value and compared against the non-Hispanic White cohort in the TCGA database to consider ethnic influence. Furthermore, we used machine learning classification and clustering techniques to identify methylation patterns in glioma subgroups. Here, we showed that DNA methylation profiles of CGGA glioblastomas have a methylation signature more similar to TCGA high-grade astrocytomas: 36.7% of CGGA glioblastomas (n=49) were identified as high-grade astrocytomas using classification modelling. Assessment of survival revealed that CGGA glioblastoma patients had a significantly better survival rate than non-Hispanic White glioblastoma patients (p = 0.037). Four key methylation-driven genes were identified in the CGGA glioblastoma samples: GLDN, PRKDC, S100A1 and NCAPH. Hypermethylation of GLDN significantly suppressed gene expression in all glioma subtypes in only the East Asian cohort; a gene that has not been previously described as a driver in gliomas. Together these data suggest alternative epigenetic mechanisms occurring in glioma subtypes of different ethnic populations, which is important for our understanding of glioma and strategies for personalized treatment.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.08.14.26360452v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.08.14.26360452v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Glioma DNA methylation patterns differ between East Asian and non-Hispanic White cohorts, revealing distinct epigenetic drivers and a CGGA glioblastoma subgroup that often resembles high-grade astrocytoma.</p>
-          <p><b>Clinical relevance:</b> These findings suggest that ethnicity-aware methylation profiling could improve glioma classification, prognostic assessment, and future personalized treatment strategies.</p>
-          <ul><li>Reclassified glioma subtypes using WHO 2021 CNS tumour criteria.</li><li>Analyzed CGGA and TCGA DNA methylation plus transcriptomics data.</li><li>Used machine learning classification/clustering to detect methylation patterns and methylation-driven genes.</li></ul>
-          <p><b>Evidence signal:</b> In CGGA, 36.7% of glioblastomas (49 cases) were reclassified as high-grade astrocytomas by the model, and CGGA glioblastoma survival was significantly better than TCGA non-Hispanic White glioblastoma survival (p=0.037).</p>
-          <p><b>Watch item:</b> Results are retrospective and cohort-specific, so the methylation signatures and gene drivers need external validation before clinical use.</p>
-          <div class="tags"><span>#Glioma</span> <span>#DNA_Methylation</span> <span>#PrecisionOncology</span> <span>#CancerGenomics</span> <span>#MachineLearning</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>46</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>41</strong></div>
         <p class="date">2026-09-26</p>
         <h2>Deep Time-to-Event Models for Intrapartum Fetal Monitoring</h2>
         <p class="authors">Imai Aldeia, G. S.; Coggan, H.; Yang, Y.; Levine, L.; McCoy, J. A.; La Cava, W.</p>
@@ -286,31 +248,12 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.21.26363416v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.21.26363416v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> The study reframes intrapartum fetal monitoring as a time-to-event prediction problem, enabling models to estimate both imminent delivery and fetal acidosis from continuous CTG signals.</p>
-          <p><b>Clinical relevance:</b> This approach could help surface fetal distress risk earlier and more robustly during labor, rather than relying on a fixed pre-delivery window.</p>
-          <ul><li>Deep discrete-time survival modeling for delivery timing</li><li>Marked point process modeling to jointly capture delivery and acidosis</li><li>Adapted to continuous physiologic signals with fully observed events and partially observed labels</li></ul>
-          <p><b>Evidence signal:</b> Marked DeepHit showed strong discrimination for delivery within one hour, with test AUROC of 0.837 at 6 hours and 0.935 at 12 hours into labor, and it also performed competitively near delivery on internal and external validation.</p>
-          <p><b>Watch item:</b> Results are promising but require prospective validation before clinical use, especially because real-world deployment must handle label uncertainty and site-to-site differences in labor monitoring data.</p>
-          <div class="tags"><span>#AITimeToEvent</span> <span>#FetalMonitoring</span> <span>#SurvivalAnalysis</span> <span>#ClinicalAI</span> <span>#ObstetricAI</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>41</strong></div>
-        <p class="date">2026-09-25</p>
-        <h2>A neurocognitive speech taxonomy for voice biomarkers of Alzheimer&#x27;s disease</h2>
-        <p class="authors">Henley, B.; Yang, Z.; Sober, J.; Calhoun, V.; Goldstein, F.; Hajjar, I.</p>
-        <p class="abstract">INTRODUCTIONVoice data combined with large language models may detect cognitive impairment, yet an interpretable framework has not been formally established. We developed and validated a scalable and interpretable framework, the Neurocognitive Speech Taxonomy (NST). METHODSNST maps 314 voice features to 7 neurocognitive domains derived from neuropsychology, speech pathology, neurology and related fields. The domains capture features including articulatory precision, cognitive-linguistic, executive fluency &amp; planning, phonation &amp; laryngeal control, prosodic modulation, lexical-semantic, and morphosyntactic complexity. We evaluated NST structural stability, clinical validity and racial-educational equity in three cohorts (total N = 1,479). Cohort data included demographic and neuropsychological evaluations and AD biomarker status. We tested whether NST scores distinguish cognitive status (unimpaired vs impaired) and AD-biomarker status, track cognitive change, and correlate with AD neuroimaging measures. RESULTSNST showed stable cross-cohort structure (Mantel r = 0.71-0.77) and differentiated MCI (d = -0.39) and AD biomarker status (d = -0.23). NST tracked longitudinal cognitive change, correlated with hippocampal volume (r up to 0.28, P &lt; .001), and showed smaller racial and educational disparities relative to standard cognitive testing (NST d = 0.03-0.33, MoCA d = 0.37-0.72). DISCUSSIONNST provides a validated neurocognitive construct that facilitates interpretation of AI-driven voice biomarkers of AD. This study was not registered in a public trials registry.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.23.26363671v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.23.26363671v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> The study introduces the Neurocognitive Speech Taxonomy (NST), an interpretable framework that maps 314 voice features into 7 neurocognitive domains to help explain voice-based biomarkers of Alzheimer’s disease.</p>
-          <p><b>Clinical relevance:</b> NST may improve interpretability and fairness of AI voice screening tools for cognitive impairment, potentially aiding earlier detection and monitoring of Alzheimer’s-related change.</p>
-          <ul><li>Mapped 314 speech/voice features to 7 neurocognitive domains.</li><li>Validated NST across 3 cohorts (total N=1,479) with demographic, neuropsychological, biomarker, and imaging data.</li><li>Tested stability, diagnostic discrimination, longitudinal tracking, and equity versus standard cognitive testing.</li></ul>
-          <p><b>Evidence signal:</b> NST showed stable cross-cohort structure (Mantel r = 0.71–0.77), differentiated MCI and AD biomarker status, tracked cognitive change, and correlated with hippocampal volume (up to r = 0.28).</p>
-          <p><b>Watch item:</b> Findings support interpretability and validity, but the framework still needs broader external validation before routine clinical implementation.</p>
-          <div class="tags"><span>#AlzheimersDisease</span> <span>#VoiceBiomarkers</span> <span>#ArtificialIntelligence</span> <span>#Neuropsychology</span> <span>#DigitalHealth</span></div>
+          <p><b>Key insight:</b> The study reframes intrapartum fetal monitoring as a time-to-event prediction problem, enabling models to estimate the joint likelihood of imminent delivery and fetal acidosis from continuous CTG signals.</p>
+          <p><b>Clinical relevance:</b> If validated prospectively, this approach could help identify labor risk earlier than end-of-tracing models and support more timely obstetric decision-making.</p>
+          <ul><li>Built deep discrete-time survival and marked point process models for continuous physiological signals.</li><li>Predicted time to delivery alongside fetal acidosis using partially observed post-delivery labels.</li><li>Compared performance at multiple elapsed-time landmarks and tested external generalization at a second site.</li></ul>
+          <p><b>Evidence signal:</b> Marked DeepHit achieved AUROC of 0.837 at 6 hours and 0.935 at 12 hours into labor, with competitive near-delivery performance and external validation support.</p>
+          <p><b>Watch item:</b> The results are retrospective proof-of-principle, so real-world usefulness still depends on prospective validation, workflow integration, and careful handling of partially observed labels.</p>
+          <div class="tags"><span>#AIinHealthcare</span> <span>#TimeToEvent</span> <span>#FetalMonitoring</span> <span>#SurvivalAnalysis</span> <span>#MachineLearning</span></div>
         </section>
       </article>
     </section>

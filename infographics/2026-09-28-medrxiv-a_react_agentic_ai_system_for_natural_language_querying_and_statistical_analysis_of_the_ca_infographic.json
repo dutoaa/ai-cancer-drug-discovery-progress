@@ -1,24 +1,24 @@
 {
-  "key_insight": "An agentic LLM system can query TCGA clinical data in natural language, choose the right analysis tools, and deliver accurate, auditable answers.",
-  "clinical_relevance": "This could make large oncology clinical datasets easier to analyze for research questions involving survival, treatment, biomarkers, and patient characteristics.",
+  "key_insight": "An agentic LLM system using ReAct-style tool use can accurately answer natural-language questions and run statistical analyses on TCGA clinical data with auditable traces.",
+  "clinical_relevance": "It could make large cancer clinical repositories easier to query for research by returning clinically contextualized answers, survival analyses, and verified outputs.",
   "method": [
-    "Uses a ReAct-style LLM agent to select among 8 tools for extraction, statistics, survival analysis, hypothesis testing, and verification.",
-    "Cross-checks outputs against the curated TCGA Pan-Cancer Clinical Data Resource (CDR) and provides source-attributed, traceable results.",
-    "Evaluated on TCGA-Agent-Bench with 440 queries spanning five difficulty tiers."
+    "LLM acts as a ReAct agent that selects among eight tools",
+    "Performs data extraction, descriptive statistics, Kaplan-Meier survival analysis, log-rank tests, and hypothesis testing",
+    "Verifies results against the curated TCGA Pan-Cancer Clinical Data Resource and provides source attribution"
   ],
-  "evidence_signal": "The system reached 93.4% overall accuracy, outperforming a rule-based pipeline, single-pass LLM, and retrieval-augmented generation; it was especially strong on fields missing from the CDR, answering 100% of 26 targeted queries versus 3.8% for CDR-only.",
-  "watch_item": "Performance depends on tool design and data coverage, so results may be weaker when clinical fields are missing, ambiguous, or require careful validation.",
+  "evidence_signal": "On TCGA-Agent-Bench, the system achieved 93.4% overall accuracy across 440 queries, outperforming rule-based, single-pass LLM, and RAG baselines.",
+  "watch_item": "Performance depends on tool design and data coverage, so a CDR-only setup can miss important fields like drug treatments, TNM components, and biomarkers.",
   "hashtags": [
     "#PrecisionOncology",
-    "#TCGA",
+    "#CancerData",
     "#LLM",
-    "#ClinicalAI",
-    "#SurvivalAnalysis"
+    "#ReAct",
+    "#ClinicalAI"
   ],
   "paper_id": "2026-09-28-medrxiv-a_react_agentic_ai_system_for_natural_language_querying_and_statistical_analysis_of_the_ca",
   "paper_title": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data",
   "paper_date": "2026-09-28",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-01T14:03:30",
+  "generated_at": "2026-10-02T13:23:40",
   "generator": "openai"
 }

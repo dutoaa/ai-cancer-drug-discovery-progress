@@ -1,24 +1,24 @@
 {
-  "key_insight": "A structured-judgment model and several general-purpose LLMs all achieved high accuracy for extracting smoking history from clinical notes, but they differed meaningfully in latency, cost, and performance on complex cases.",
-  "clinical_relevance": "These tools can support lung cancer screening decision support by automating smoking-status, pack-year, and quit-date extraction needed to determine USPSTF and ACS eligibility.",
+  "key_insight": "A structured-judgment model and several general-purpose LLMs all extracted smoking history well enough for lung cancer screening decisions, with the biggest tradeoff being latency, cost, and performance on complex cases.",
+  "clinical_relevance": "For lung cancer screening CDS, fast and accurate extraction of smoking status, pack-years, and quit date from notes could support more consistent eligibility assessment in routine care.",
   "method": [
-    "Built a synthetic benchmark of 3,000 outpatient notes across template, messy, and arithmetic-heavy scenarios.",
-    "Compared TypeSafe Jev 1.13 with four LLMs using the same structured output schema.",
-    "Calculated screening eligibility from model outputs in code and measured accuracy, cost, and speed."
+    "3,000 synthetic outpatient notes were created across template, realistic messy, and arithmetic-heavy messy conditions.",
+    "Compared a low-cost structured-judgment model (TypeSafe Jev 1.13) against four LLMs using the same structured output schema.",
+    "Eligibility for USPSTF 2021 and ACS 2023 screening was computed from model outputs in code."
   ],
-  "evidence_signal": "Across 3,000 notes, all models showed high eligibility accuracy, with Jev fastest and cheapest among several models but less accurate than the strongest LLM on the most complex notes.",
-  "watch_item": "Because the benchmark was synthetic and note complexity affected errors, real-world performance, integration, and safety checks should be validated before deployment.",
+  "evidence_signal": "Across 3,000 notes, all systems showed high eligibility accuracy; the structured model was fastest and lowest cost, while the newest cost-efficient LLM was strongest on the most complex notes.",
+  "watch_item": "Synthetic benchmark results may not fully reflect real-world note variability, and complex arithmetic cases still caused more false screening flags for the structured model.",
   "hashtags": [
-    "#PrecisionOncology",
     "#LungCancerScreening",
     "#ClinicalDecisionSupport",
-    "#LLMEvaluation",
-    "#HealthAI"
+    "#LargeLanguageModels",
+    "#PrecisionOncology",
+    "#MedicalAI"
   ],
   "paper_id": "2026-09-26-medrxiv-extracting_smoking_history_from_clinical_notes_for_lung_cancer_screening_decision_support",
   "paper_title": "Extracting smoking history from clinical notes for lung cancer screening decision support: comparing a structured-judgment model with general-purpose large language models",
   "paper_date": "2026-09-26",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-01T14:03:41",
+  "generated_at": "2026-10-02T13:23:47",
   "generator": "openai"
 }
