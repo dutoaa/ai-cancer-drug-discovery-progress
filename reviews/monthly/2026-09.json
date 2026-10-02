@@ -1,0 +1,76 @@
+{
+  "repo_title": "AI Medicine",
+  "period": "month",
+  "label": "2026-09",
+  "author": "William Sun with help from OpenAI",
+  "paper_count": 97,
+  "analysis": {
+    "executive_summary": "September 2026 showed rapid maturation of AI in medicine, with the strongest activity in precision oncology and a clear shift from proof-of-concept models toward deployable, auditable systems. Many papers emphasized external validation, leakage-free evaluation, and benchmarking against human or clinical baselines, while others focused on agentic LLM workflows for chart abstraction, structured querying, and quality measurement. Imaging remained a major application area, spanning dermatology, radiology, pathology, and MRI, but the month also highlighted growing interest in multimodal and biologically grounded models using transcriptomics, proteomics, methylation, microbiome, and foundation-model-derived representations. Across the corpus, the dominant trend was not simply higher model performance, but improved clinical reliability: interpretability, provenance, robustness, and workflow integration were recurrent priorities.",
+    "major_themes": [
+      "Precision oncology dominated the month, especially imaging-based diagnosis, prognosis, and treatment-response prediction.",
+      "LLMs and agentic systems moved beyond chat interfaces into structured extraction, query, abstraction, and decision-support workflows.",
+      "Multiple studies prioritized rigorous validation designs, including external cohorts, nested cross-validation, leakage-free splits, and benchmark datasets.",
+      "Omics-based predictors gained prominence, with transcriptomic, proteomic, methylation, and microbiome features used to extend or refine clinical risk models.",
+      "Foundation models and pretrained encoders were increasingly used for rare cancers, low-label settings, and cross-domain generalization.",
+      "Interpretable and auditable AI became a clear theme, with several papers emphasizing source attribution, causal graphs, bottleneck features, or transparent pipelines.",
+      "Imaging AI continued to diversify, with advances in pathology, MRI, ultrasound, dermatology, and low-field or accelerated acquisition settings."
+    ],
+    "notable_papers": [
+      {
+        "title": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data",
+        "why_it_matters": "Shows a practical agentic LLM framework for querying large cancer datasets with auditable traces and benchmark evaluation, advancing toward trustworthy clinical analytics."
+      },
+      {
+        "title": "Fully Automated Abstraction of Longitudinal Breast Oncology Records with Off-The-Shelf Large Language Models",
+        "why_it_matters": "Demonstrates that general-purpose LLMs can perform high-concordance oncology chart abstraction at scale without fine-tuning, reducing a major research bottleneck."
+      },
+      {
+        "title": "Pretrained transformers applied to population cancer registries improve survival prediction in label-scarce and previously unseen cancers",
+        "why_it_matters": "Illustrates how self-supervised pretraining on registry data can transfer to rare cancers where supervised outcome labels are sparse."
+      },
+      {
+        "title": "Incremental Predictive Value and Representation of Transcriptomic Features for Immunotherapy Response in Advanced Urothelial Carcinoma",
+        "why_it_matters": "Makes a strong case for knowledge-guided feature design over unstable data-driven gene selection in immunotherapy response modeling."
+      },
+      {
+        "title": "Differentiating benign from malignant adnexal masses by biomarker-agnostic plasma proteomics using adaptive machine learning",
+        "why_it_matters": "Points toward a blood-based, biomarker-free triage strategy that could materially change ovarian mass workup if validated prospectively."
+      },
+      {
+        "title": "TRIGS and foundation model-based Tumour Infiltrating Lymphocyte scoring are prognostic for pathological complete response/event free survival in the triple negative patients in the PARTNER randomized controlled trial",
+        "why_it_matters": "Supports clinically meaningful automated pathology scoring methods that align with established biomarker workflows and predict outcomes."
+      },
+      {
+        "title": "LeCor: Learning to Be Corrected by Meta-Learned Test-Time Training for Interactive 3D Lung-Tumour Segmentation",
+        "why_it_matters": "Advances interactive segmentation by learning from clinician corrections at test time, a step toward practical human-in-the-loop radiotherapy tools."
+      },
+      {
+        "title": "GRIPNet: Gaussian Radial Intensity Prior Guided Architecture for Pulmonary Nodule Detection in CT",
+        "why_it_matters": "Highlights the value of incorporating imaging priors into detector design, improving small nodule detection where conventional architectures struggle."
+      },
+      {
+        "title": "Neuro-Symbolic AI for Automated Pathology Quality Measurement",
+        "why_it_matters": "Shows a credible route for combining LLM extraction and symbolic reasoning to automate complex quality measures from pathology reports."
+      }
+    ],
+    "field_progress": [
+      "AI systems are becoming more workflow-native, with outputs designed for clinical auditability, source tracing, and integration into existing data systems.",
+      "Benchmarking is shifting from generic accuracy to clinically relevant metrics such as lesion-wise Dice, AUPRC, calibration, robustness across cohorts, and utility under label scarcity.",
+      "Knowledge-guided representations are increasingly outperforming unconstrained feature discovery in small or noisy biomedical datasets.",
+      "The field is moving toward multimodal biology, where images, omics, and longitudinal EHR data are combined or compared to improve prediction and mechanistic insight.",
+      "There is growing attention to deployment constraints, including low-field MRI, HIPAA-compliant local LLM use, no-code interfaces, and computational efficiency.",
+      "Validation standards are improving, with more papers reporting external cohorts, held-out registries, and sensitivity to data leakage or thresholding choices."
+    ],
+    "open_questions": [
+      "How well do agentic LLM systems generalize across hospitals, specialties, and data standards without extensive local reconfiguration?",
+      "Which interpretability strategies are most useful to clinicians: symbolic rules, provenance traces, bottleneck concepts, or post hoc explanations?",
+      "Can omics-augmented predictors consistently add value beyond established clinical and imaging biomarkers in prospective trials?",
+      "What is the best way to evaluate AI tools when the clinical objective is workflow efficiency, not just classification accuracy?",
+      "How can models be made robust to dataset shift across scanners, institutions, demographic groups, and evolving clinical coding practices?",
+      "Which AI systems meaningfully improve decision-making or outcomes, rather than merely automating documentation or image processing?"
+    ],
+    "outlook": "The September 2026 literature suggests AI in medicine is entering a consolidation phase: the novelty is no longer just model scale, but trustworthiness, transferability, and clinical utility. The most promising work combines strong validation with actionable integration into real workflows, especially in oncology. Over the next year, the key test will be whether these systems can move from retrospective benchmarks to prospective deployment with measurable benefit, while maintaining transparency, safety, and fairness."
+  },
+  "markdown_file": "2026-09.md",
+  "generated_at": "2026-10-02T04:58:14"
+}
