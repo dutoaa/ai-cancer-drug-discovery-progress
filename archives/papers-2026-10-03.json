@@ -24,131 +24,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.07.15.26358188v2.full.pdf"
       }
     ],
-    "score": 60,
+    "score": 65,
     "infographic": {
-      "key_insight": "An agentic LLM system can turn complex TCGA clinical data into accurate natural-language answers by using specialized tools, not just a larger model.",
-      "clinical_relevance": "This could make oncology data analysis faster and more accessible for researchers by supporting auditable, clinically contextualized queries over large cancer datasets.",
+      "key_insight": "An agentic LLM system using ReAct-style tool use can accurately answer natural-language questions and run statistical analyses on TCGA clinical data with auditable traces.",
+      "clinical_relevance": "It could make large cancer clinical repositories easier to query for research by returning clinically contextualized answers, survival analyses, and verified outputs.",
       "method": [
-        "ReAct-style LLM agent chooses from 8 tools for extraction, statistics, survival analysis, hypothesis testing, and verification",
-        "Benchmarked on TCGA-Agent-Bench with 440 queries across 5 difficulty tiers",
-        "Compared against rule-based, single-pass LLM, and retrieval-augmented baselines"
+        "LLM acts as a ReAct agent that selects among eight tools",
+        "Performs data extraction, descriptive statistics, Kaplan-Meier survival analysis, log-rank tests, and hypothesis testing",
+        "Verifies results against the curated TCGA Pan-Cancer Clinical Data Resource and provides source attribution"
       ],
-      "evidence_signal": "The system reached 93.4% overall accuracy and outperformed a rule-based pipeline (87.1%), single-pass LLM (81.8%), and RAG (66.9% on a 50-query subset).",
-      "watch_item": "Performance depends on tool coverage and curated reference data, so gaps in source fields or tool errors could limit reliability.",
+      "evidence_signal": "On TCGA-Agent-Bench, the system achieved 93.4% overall accuracy across 440 queries, outperforming rule-based, single-pass LLM, and RAG baselines.",
+      "watch_item": "Performance depends on tool design and data coverage, so a CDR-only setup can miss important fields like drug treatments, TNM components, and biomarkers.",
       "hashtags": [
         "#PrecisionOncology",
-        "#CancerGenomics",
-        "#AgenticAI",
-        "#ClinicalAI",
-        "#TCGA"
+        "#CancerData",
+        "#LLM",
+        "#ReAct",
+        "#ClinicalAI"
       ],
       "paper_id": "2026-09-28-medrxiv-a_react_agentic_ai_system_for_natural_language_querying_and_statistical_analysis_of_the_ca",
       "paper_title": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data",
       "paper_date": "2026-09-28",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-03T12:11:47",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-29-medrxiv-striatal_representations_and_network_correlates_of_digital_motor_scores_in_parkinsons_dise",
-    "doi": "10.64898/2026.09.27.26364116",
-    "date": "2026-09-29",
-    "title": "Striatal representations and network correlates of digital motor scores in Parkinsons disease",
-    "authors": "Roeben, B.; Blum, D.; Gallardo Montes, B.; Ionescu, T. M.; Hansen, C.; Wurster, I.; von Thaler, A.-K.; Herfert, K.; Bender, B.; Eschweiler, G. W.; Gasser, T.; Brockmann, K.; Berg, D.; Maetzler, W.; la Fougere, C.; Reimold, M.",
-    "abstract": "Digital health technology (DHT) enables to detect and quantify charateristics motor dysfunction in Parkinsons disease (PD). However, the understanding of the relationship between dopaminergic nigrostriatal denervation and quantitative composite digital motor scores (DMS) captured by DHT remains largely limited to date. In this hybrid PET-MRI study, we used simultaneously acquired PET with 11C-d-threo-methylphenidate (11C-dMP-PET) - a tracer of presynaptic dopamine transporters - and resting-state-fMRI (rs-fMRI) to investigate this relationship and to explore associated neural network correlates in PD. Seventeen PD patients and 39 healthy controls underwent 11C-dMP-PET and rs-fMRI. Quantitative composite DMS for arm swing, gait and balance were calculated using DHT-derived parameters. Voxel-based correlation analysis of 11C-dMP-PET binding potential (BPNP) was performed for each DMS and resulting clusters were used for seed-based functional connectivity analyses. We found that DMS of arm swing, gait and balance exhibit differential striatal representations associated with dopaminergic denervation as assessed by 11C-dMP-PET. Specifically, lower BPNP correlated with higher (i. e. more pathologic) arm swing DMS in the central putamen and higher balance DMS in the right caudate, whereas the most robust correlation was observed for lower BPND with higher gait DMS in the right caudate and anteromedial putamen. Seed-based functional connectivity analysis revealed lower functional connectivity in a frontostriatal network encompassing the basal ganglia and medial frontal regions associated to pathological gait DMS in PD. Taken together, our study demonstrates striatal representations of key domains of PD motor dysfunction captured by DHT. Highlighting the complex interplay of gait motor control, we show that gait dysfunction is associated with dopaminergic denervation in the anteromedial executive subregion of the striatum and frontostriatal connectivity changes in regions involved in planning and initiation of movement sequences. Therefore, our study provides first preliminary insights into the relationship of dopaminergic degeneration and DMS encouraging further investigation in larger cohorts and longitudinal studies to construct and validate digital motor biomarkers obtained from DHT as outcome measures in clinical trials in PD. Abbreviated summaryUsing 11C-d-threo-methylphenidate-PET and resting-state-fMRI, Roeben et al. investigate the relationship between dopaminergic denervation and digital motor scores (DMS) in Parkinsons disease. They show that gait DMS are associated with dopaminergic denervation in the anteromedial executive striatum and frontostriatal connectivity changes in regions involved in planning and initiation of movement sequences.",
-    "category": "Clinical Translation",
-    "source": "medRxiv",
-    "published": "2026-09-29",
-    "updated": "2026-09-29",
-    "primary_category": "neurology",
-    "categories": [
-      "neurology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.27.26364116v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.27.26364116v1.full.pdf"
-      }
-    ],
-    "score": 59,
-    "infographic": {
-      "key_insight": "Digital motor scores from wearables map to specific striatal dopamine-denervation patterns in Parkinson’s disease, with gait showing the strongest link to frontostriatal dysfunction.",
-      "clinical_relevance": "These findings suggest digital assessments may help quantify and localize motor impairment in Parkinson’s disease, potentially supporting more precise monitoring of disease progression.",
-      "method": [
-        "17 Parkinson’s patients and 39 healthy controls underwent simultaneous 11C-dMP PET and resting-state fMRI.",
-        "Digital health technology was used to derive composite motor scores for arm swing, gait, and balance.",
-        "Voxel-based PET correlation and seed-based functional connectivity analyses linked motor scores to striatal and network changes."
-      ],
-      "evidence_signal": "The abstract reports differential striatal correlations for arm swing, gait, and balance, with the most robust association seen for gait in the right caudate and anteromedial putamen, plus reduced frontostriatal connectivity.",
-      "watch_item": "Small sample size and preliminary cross-sectional design limit generalizability and do not establish causality or clinical deployment readiness.",
-      "hashtags": [
-        "#ParkinsonsDisease",
-        "#DigitalHealth",
-        "#Neuroimaging",
-        "#Wearables",
-        "#MotorControl"
-      ],
-      "paper_id": "2026-09-29-medrxiv-striatal_representations_and_network_correlates_of_digital_motor_scores_in_parkinsons_dise",
-      "paper_title": "Striatal representations and network correlates of digital motor scores in Parkinsons disease",
-      "paper_date": "2026-09-29",
-      "paper_category": "Clinical Translation",
-      "generated_at": "2026-10-03T12:11:49",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-09-29-medrxiv-early_pregnancy_glycosylated_hemoglobin_in_relation_to_gestational_diabetes_mellitus_and_a",
-    "doi": "10.64898/2026.09.23.26362980",
-    "date": "2026-09-29",
-    "title": "Early Pregnancy Glycosylated Hemoglobin in Relation to Gestational Diabetes Mellitus and Adverse Pregnancy Outcomes: Evidence from a Multisite Low- and Middle-Income Countries Cohort",
-    "authors": "Yang, W.-C.; Sunil Joseph, S.; Vijayalekshmi, B.; Freeman, B. L.; Nisar, M. I.; Pan, Q.; Benjamin, S. J.; G, J. A.; Sharma, N.; Mazumder, S.; Hoodbhoy, Z.; Akelo, V.; Aweyo, F.; Smith, E. R.; Mores, C. N.; Oakley, E. M.; Spelke, M. B.; Mwape, H.; Mukuka, S.; Kasaro, M. P.; Cherian, A. G.",
-    "abstract": "BackgroundOral glucose tolerance test (OGTT), the gold standard for diagnosing gestational diabetes mellitus (GDM), faces significant implementation challenges, prompting interest in alternative biomarkers, such as glycated hemoglobin (HbA1c), for early detection. This study aimed to assess the association between early pregnancy HbA1c and subsequent GDM and adverse perinatal outcomes in low- and middle-income countries. MethodsWe analyzed data from the Pregnancy Risk, Infant Surveillance, and Measurement Alliance - Maternal and Newborn Health (PRISMA-MNH) cohort, which followed pregnant women enrolled before 20 weeks of gestation across five study sites in Kenya, India, Pakistan, and Zambia. We excluded participants with overt diabetes, severe anemia (Hb <7.0 g/dl), multiple gestations, or pregnancies that ended before 24 weeks of gestation. HbA1c was measured at enrollment. The primary outcome was GDM, diagnosed according to the International Association of Diabetes and Pregnancy Study Groups (IADPSG) criteria based on OGTT performed after 24 weeks of gestation. Secondary outcomes included hypertensive disorder of pregnancy, emergent Cesarean section, preterm birth, large for gestational age, and stillbirth after 28 weeks. We used AUC and ROC analyses to evaluate predictive performance and single- and two-threshold approaches to identify optimal cutoffs for predicting GDM. We used modified Poisson regression with robust standard errors to assess associations between early HbA1c and outcomes, and meta-analysis to pool site-specific estimates. ResultsAmong 10,918 pregnancies, GDM prevalence was 6.4%. Women with GDM were older (28.0{+/-}5.4 versus 26.0{+/-}5.3 years) and had higher BMI at enrollment (25.0{+/-}5.8 versus 22.9{+/-}5.0 kg/m2) than women without GDM. The AUC for HbA1c alone in predicting GDM was 0.65 (95% confidence interval 0.63-0.67). A single early HbA1c threshold of 5.4%, based on the largest Youdens index, showed limited predictive performance (sensitivity 46.7%, specificity 75.8%). A two-threshold approach identified rule-out and rule-in cutoffs of 5.0% (sensitivity 80.3%, specificity 35.6%) and 5.5% (sensitivity 34.5%, specificity 83.1%), respectively. In adjusted models, each 0.1% increase in HbA1c was associated with a 12% higher risk (RR 1.12, 95% CI 1.10-1.15) of GDM, while no significant associations were observed for any secondary outcomes. ConclusionEarly pregnancy HbA1c is independently associated with an increased risk of subsequent GDM. However, it demonstrated limited discriminatory ability as a standalone alternative to OGTT for identifying women who would later develop GDM. The identified rule-out threshold may help identify women at low risk of GDM, although the majority would still require OGTT for definitive diagnosis.",
-    "category": "Target Biology",
-    "source": "medRxiv",
-    "published": "2026-09-29",
-    "updated": "2026-09-29",
-    "primary_category": "public and global health",
-    "categories": [
-      "public and global health"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.23.26362980v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.23.26362980v1.full.pdf"
-      }
-    ],
-    "score": 51,
-    "infographic": {
-      "key_insight": "Early pregnancy HbA1c showed only modest ability to predict later gestational diabetes, with better use as a rough screening aid than a stand-alone diagnostic test.",
-      "clinical_relevance": "In low- and middle-income settings where OGTT is hard to implement, HbA1c may help triage women for follow-up, but it should not replace confirmatory testing.",
-      "method": [
-        "Multisite prospective cohort of 10,918 pregnancies enrolled before 20 weeks in Kenya, India, Pakistan, and Zambia",
-        "Early pregnancy HbA1c was measured at enrollment and compared with later OGTT-based GDM diagnosis",
-        "Regression and ROC/AUC analyses assessed prediction and links to adverse pregnancy outcomes"
-      ],
-      "evidence_signal": "HbA1c alone had an AUC of 0.65 for predicting GDM; a 5.4% cutoff had limited sensitivity and specificity, and two-threshold rule-out/rule-in cutoffs improved triage behavior but remained imperfect.",
-      "watch_item": "Performance was only moderate and site-specific implementation may vary, so HbA1c should be used cautiously alongside clinical context and confirmatory OGTT when feasible.",
-      "hashtags": [
-        "#GestationalDiabetes",
-        "#HbA1c",
-        "#PregnancyHealth",
-        "#GlobalHealth",
-        "#Diagnostics"
-      ],
-      "paper_id": "2026-09-29-medrxiv-early_pregnancy_glycosylated_hemoglobin_in_relation_to_gestational_diabetes_mellitus_and_a",
-      "paper_title": "Early Pregnancy Glycosylated Hemoglobin in Relation to Gestational Diabetes Mellitus and Adverse Pregnancy Outcomes: Evidence from a Multisite Low- and Middle-Income Countries Cohort",
-      "paper_date": "2026-09-29",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-10-03T12:11:51",
+      "generated_at": "2026-10-02T13:23:40",
       "generator": "openai"
     }
   },
@@ -177,29 +75,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.24.26363902v1.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 56,
     "infographic": {
-      "key_insight": "An exponentially weighted ensemble of five deep learning models improved lung adenocarcinoma histologic growth pattern classification from H&E whole-slide images.",
-      "clinical_relevance": "More accurate pattern classification in digital pathology may support better prognostic assessment and treatment planning for lung adenocarcinoma.",
+      "key_insight": "An exponentially weighted ensemble of five deep learning models improved histologic growth pattern classification in lung adenocarcinoma by combining complementary tissue-morphology signals.",
+      "clinical_relevance": "More reliable subtype classification from H&E whole-slide images could support prognosis and treatment planning in lung adenocarcinoma.",
       "method": [
-        "Built an ensemble from EfficientNet-B3, DeiT3, Swin Transformer, Vision Transformer, and ConvNeXt.",
-        "Assigned model weights using a softmax transform of each model’s Quadratic Weighted Kappa (QWK) score.",
-        "Evaluated performance with stratified 5-fold cross-validation on 25,545 image patches from the Dartmouth-Hitchcock dataset."
+        "Trained five architectures: EfficientNet-B3, DeiT3, Swin Transformer, Vision Transformer, and ConvNeXt.",
+        "Used softmax-weighted ensemble scores based on per-model Quadratic Weighted Kappa (QWK).",
+        "Evaluated on 25,545 image patches with stratified 5-fold cross-validation."
       ],
-      "evidence_signal": "The ensemble reached 96.52% accuracy and Cohen’s kappa of 0.9648, outperforming the best single model with a statistically significant gain and bootstrap confidence interval support.",
-      "watch_item": "Performance was measured on a single dataset and patch-based evaluation, so external validation and slide-level clinical testing are still needed.",
+      "evidence_signal": "On the Dartmouth-Hitchcock dataset, the ensemble reached 96.52% accuracy and kappa = 0.9648, outperforming the best single model with a statistically significant gain.",
+      "watch_item": "Performance was measured on one institutional dataset, so external validation is needed before broad clinical deployment.",
       "hashtags": [
         "#DigitalPathology",
         "#DeepLearning",
         "#LungAdenocarcinoma",
         "#HistologyAI",
-        "#CancerAI"
+        "#MedicalImaging"
       ],
       "paper_id": "2026-09-28-medrxiv-exponentially_weighted_ensemble_deep_learning_for_histologic_growth_pattern_classification",
       "paper_title": "Exponentially weighted ensemble deep learning for histologic growth pattern classification in lung adenocarcinoma",
       "paper_date": "2026-09-28",
       "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-10-03T12:11:53",
+      "generated_at": "2026-10-02T13:23:42",
       "generator": "openai"
     }
   },
@@ -228,17 +126,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.23.26355605v2.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 56,
     "infographic": {
-      "key_insight": "FRANK is a pan-cancer RNA-seq classifier designed to identify childhood tumor types with high accuracy using a data-efficient neural network approach.",
-      "clinical_relevance": "If validated in practice, this kind of classifier could help improve pediatric tumor subtype identification, supporting more consistent diagnostic decision-making.",
+      "key_insight": "FRANK is a data-efficient RNA-seq classifier that can identify pediatric tumor types across many cancer classes using a fully connected neural network plus augmentation and hierarchical penalties.",
+      "clinical_relevance": "If validated in practice, it could help speed and improve pediatric tumor subtype classification from transcriptomic data, supporting more accurate treatment decisions.",
       "method": [
-        "Trained a fully connected neural network on 11,467 transcriptomes covering 181 childhood tumor and normal tissue types.",
-        "Used data augmentation plus a hierarchical penalty term to enable learning from very small training sets.",
-        "Tested robustness across long-read RNA-seq and noisy/low-quality samples."
+        "Curated 11,467 transcriptomes covering 181 childhood tumor and normal tissue types",
+        "Trained a fully connected RNA-based classifier with extensive data augmentation",
+        "Used a hierarchical penalty term to improve classification across related tumor types"
       ],
-      "evidence_signal": "The model was validated on nine datasets totaling 16,398 samples and achieved 98.3% overall accuracy, while outperforming other published pediatric pan-cancer RNA-seq classifiers on an external dataset.",
-      "watch_item": "Performance in real-world clinical settings may depend on sample quality, sequencing platform, and how closely new cases match the training data.",
+      "evidence_signal": "In validation across nine datasets totaling 16,398 samples, FRANK achieved 98.3% overall accuracy and outperformed other published pediatric pan-cancer RNA-seq classifiers on an external dataset.",
+      "watch_item": "Performance is promising, but real-world deployment still needs prospective validation across diverse labs, sequencing platforms, and rare tumor subtypes.",
       "hashtags": [
         "#PrecisionOncology",
         "#PediatricCancer",
@@ -250,7 +148,58 @@
       "paper_title": "FRANK: a pan-cancer RNA-seq classifier for childhood tumors with data-efficient learning",
       "paper_date": "2026-09-27",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-03T12:11:55",
+      "generated_at": "2026-10-02T13:23:44",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-26-medrxiv-extracting_smoking_history_from_clinical_notes_for_lung_cancer_screening_decision_support",
+    "doi": "10.64898/2026.09.24.26363906",
+    "date": "2026-09-26",
+    "title": "Extracting smoking history from clinical notes for lung cancer screening decision support: comparing a structured-judgment model with general-purpose large language models",
+    "authors": "Wright, A.; Liu, S.; Wright, A. P.",
+    "abstract": "ObjectiveTo compare the accuracy, cost, and speed of a low-cost, non-generative structured-judgment model and four general-purpose large language models (LLMs) for extracting smoking status, pack-years, and quit date from clinical notes to support lung cancer screening (LCS) clinical decision support (CDS). Materials and MethodsWe built a synthetic, shareable benchmark of 3,000 outpatient notes in three conditions: 1,000 template-generated notes, 1,000 realistic, \"messy\" notes written by an LLM from structured facts, and 1,000 \"messy\" notes that required complex arithmetic to determine pack-years and quit dates. Ground truth reference labels were programmatically generated before each note was created. We compared TypeSafe Jev 1.13 with Claude Haiku 4.5, Claude Sonnet 5, GPT-6 Luna and GPT-6 Sol, each using an identical structured output schema. We determined United States Preventive Services Task Force (USPSTF) 2021 and American Cancer Society (ACS) 2023 eligibility from each systems output in code. ResultsJev made the correct eligibility decision for 99.1%, 99.9%, and 94.4% of notes in the three conditions, compared with 97.8%, 98.4%, and 98.1% for Haiku, 100.0%, 99.6%, and 99.8% for Sonnet, 99.7%, 98.8%, and 98.5% for Luna, and 100.0%, 99.8%, and 99.6% for Sol. In the complex condition, Jev produced 27 false positive and 14 false negative screening flags per 1,000 notes, the most of any system. Luna cost $0.12 to $0.21 per 1,000 notes and Jev $0.61 to $0.64, compared with $2.44 to $4.22 for Sol, $3.37 to $4.43 for Haiku, and $3.76 to $6.61 for Sonnet. Jev was the fastest system (median 0.45 to 1.21 seconds per note, compared with 1.71 to 3.50 seconds for the others). DiscussionAll models tested had high accuracy. The structured-judgment model had the lowest latency, which could allow for synchronous use in clinical decision support systems rather than batched, cached invocation. The cost of the structured-judgment model was low, but the newest cost-efficient LLM, Luna, was less expensive and more accurate on the complex notes, though its latency was higher. Accuracy, latency, and cost are all moving quickly as new models are released. ConclusionFast, low-cost language models could make real-time, note-based CDS practical, and current models are highly accurate. Prices and capabilities are changing rapidly, so continuous benchmarking and system updates are essential.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-09-26",
+    "updated": "2026-09-26",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.24.26363906v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.24.26363906v1.full.pdf"
+      }
+    ],
+    "score": 53,
+    "infographic": {
+      "key_insight": "A structured-judgment model and several general-purpose LLMs all extracted smoking history well enough for lung cancer screening decisions, with the biggest tradeoff being latency, cost, and performance on complex cases.",
+      "clinical_relevance": "For lung cancer screening CDS, fast and accurate extraction of smoking status, pack-years, and quit date from notes could support more consistent eligibility assessment in routine care.",
+      "method": [
+        "3,000 synthetic outpatient notes were created across template, realistic messy, and arithmetic-heavy messy conditions.",
+        "Compared a low-cost structured-judgment model (TypeSafe Jev 1.13) against four LLMs using the same structured output schema.",
+        "Eligibility for USPSTF 2021 and ACS 2023 screening was computed from model outputs in code."
+      ],
+      "evidence_signal": "Across 3,000 notes, all systems showed high eligibility accuracy; the structured model was fastest and lowest cost, while the newest cost-efficient LLM was strongest on the most complex notes.",
+      "watch_item": "Synthetic benchmark results may not fully reflect real-world note variability, and complex arithmetic cases still caused more false screening flags for the structured model.",
+      "hashtags": [
+        "#LungCancerScreening",
+        "#ClinicalDecisionSupport",
+        "#LargeLanguageModels",
+        "#PrecisionOncology",
+        "#MedicalAI"
+      ],
+      "paper_id": "2026-09-26-medrxiv-extracting_smoking_history_from_clinical_notes_for_lung_cancer_screening_decision_support",
+      "paper_title": "Extracting smoking history from clinical notes for lung cancer screening decision support: comparing a structured-judgment model with general-purpose large language models",
+      "paper_date": "2026-09-26",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-02T13:23:47",
       "generator": "openai"
     }
   },
@@ -279,29 +228,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.05.05.26352358v2.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 51,
     "infographic": {
-      "key_insight": "PI-RADS-compliant prostate MRI can be performed at 0.55T with acceptable image quality and lesion detection, especially when deep learning reconstruction is used.",
-      "clinical_relevance": "Low-field MRI could expand access to prostate imaging where 3T scanners are limited, while still supporting clinically usable diagnostic evaluation.",
+      "key_insight": "A 0.55T prostate MRI protocol can meet PI-RADS requirements and still produce diagnostic-quality images with lesion detection performance close to 3T.",
+      "clinical_relevance": "Low-field MRI could broaden access to prostate imaging by reducing scanner cost and complexity while preserving clinically usable results.",
       "method": [
-        "15 healthy volunteers and 22 patients with suspected prostate cancer underwent bi-parametric 0.55T prostate MRI.",
-        "Protocol included tri-planar T2-weighted imaging and axial DWI aligned with PI-RADS guidance.",
-        "Deep learning reconstruction was applied and the low-field protocol was compared against 3T in patients."
+        "15 healthy volunteers were scanned to optimize a PI-RADS-compliant bi-parametric protocol at 0.55T.",
+        "22 patients with suspected prostate cancer underwent 0.55T MRI, with 3T used as the reference standard.",
+        "Deep learning reconstruction and adjusted diffusion settings were used to improve image quality and efficiency."
       ],
-      "evidence_signal": "At 0.55T, 21/22 patients and all volunteers achieved acceptable diagnostic quality, and patient-level lesion detection was not significantly different from 3T.",
-      "watch_item": "Results are from a small single-study cohort, so broader validation is needed before routine implementation across scanners and sites.",
+      "evidence_signal": "Most participants achieved acceptable diagnostic quality (PI-QUAL ≥2/3), and patient-level lesion detection at 0.55T was not significantly different from 3T.",
+      "watch_item": "Results come from a small, single-study cohort, so broader validation is needed before routine implementation across sites.",
       "hashtags": [
         "#ProstateMRI",
         "#LowFieldMRI",
         "#PIRADS",
-        "#DeepLearningReconstruction",
-        "#PrecisionOncology"
+        "#PrecisionOncology",
+        "#MedicalImaging"
       ],
       "paper_id": "2026-09-28-medrxiv-feasibility_of_pi_rads_compliant_prostate_mri_at_0_55t",
       "paper_title": "Feasibility of PI-RADS Compliant Prostate MRI at 0.55T",
       "paper_date": "2026-09-28",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-03T12:11:57",
+      "generated_at": "2026-10-02T13:23:49",
       "generator": "openai"
     }
   },
@@ -330,29 +279,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.26.26364077v2.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 51,
     "infographic": {
-      "key_insight": "A small, reproducible RNA splicing signature can identify ReNU syndrome and distinguish patients with pathogenic RNU4-2 T-loop variants from controls.",
-      "clinical_relevance": "This work supports development of a quantitative biomarker to help track disease biology and test splice-targeted therapies in ReNU syndrome.",
+      "key_insight": "A small cross-tissue RNA splicing signature can act as a quantitative biomarker for ReNU syndrome, strongly distinguishing pathogenic RNU4-2 T-loop variants from controls.",
+      "clinical_relevance": "This biomarker could support preclinical and clinical development of therapies for ReNU syndrome by providing a reproducible readout of disease severity and treatment response.",
       "method": [
-        "Analyzed RNA-seq from two independent ReNU cohorts plus controls",
-        "Filtered 483 shared splicing events and narrowed to 105 alternative 5' splice-site events",
-        "Derived a minimal six-site signature and tested it in patient iPSC-derived cortical neuron-like cells"
+        "Analyzed RNA-seq data from two independent cohorts of people with ReNU syndrome and controls.",
+        "Focused on shared alternative splicing events, especially alternative 5 splice-site (A5SS) changes.",
+        "Derived a minimal 6-site splicing signature and tested it in blood and iPSC-derived neuron-like cells."
       ],
-      "evidence_signal": "The six-site signature perfectly separated 19 n.64_65insT cases from 54 controls and produced no false positives in 5,984 additional whole-blood controls.",
-      "watch_item": "The biomarker is strongest for T-loop variants and may not generalize equally well to Stem III variants or all tissues without further validation.",
+      "evidence_signal": "Across 30 ReNU syndrome cases and 54 controls, the 6-site signature perfectly separated 19 n.64_65insT cases from controls and produced no false positives in 5,984 additional whole-blood controls.",
+      "watch_item": "The signature appears specific to T-loop variants, so it may not generalize equally to all RNU4-2 variant classes or all sample types.",
       "hashtags": [
-        "#ReNUSyndrome",
         "#SplicingBiomarker",
-        "#RNASeq",
+        "#ReNUSyndrome",
+        "#RNAseq",
         "#TherapeuticDevelopment",
-        "#GenomicMedicine"
+        "#Genomics"
       ],
       "paper_id": "2026-09-28-medrxiv-a_cross_tissue_splicing_signature_as_a_quantitative_biomarker_for_renu_syndrome",
       "paper_title": "A cross-tissue splicing signature as a quantitative biomarker for ReNU syndrome",
       "paper_date": "2026-09-28",
       "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-03T12:11:59",
+      "generated_at": "2026-10-02T13:23:51",
       "generator": "openai"
     }
   },
@@ -381,29 +330,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.26.26364080v1.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 51,
     "infographic": {
-      "key_insight": "APOE effects on disease and plasma proteins vary by ancestry and sex, with SNAP25 emerging as a cross-ancestry biomarker linked to APOE-ε4 dosage.",
-      "clinical_relevance": "These results support ancestry-aware interpretation of APOE-based risk, especially for dementia and liver-related phenotypes, rather than assuming one-size-fits-all genetic risk estimates.",
+      "key_insight": "APOE allele effects vary across ancestry and sex, with 27 phenotype associations and proteomic signals suggesting both shared and population-specific biology.",
+      "clinical_relevance": "These findings support ancestry-aware interpretation of APOE-based risk, especially for dementia and liver-related phenotypes, and point to candidate biomarkers such as SNAP25 for future validation.",
       "method": [
-        "Phenome-wide association study of APOE genotypes in 367,757 All of Us participants across six genetic ancestry groups.",
-        "Tested APOE alleles against 2,632 phenotypes using an Alzheimer’s-disease-risk ordinal hierarchy, with adjustment for age, sex at birth, EHR length, and 16 genetic principal components.",
-        "Evaluated ε2 and ε4 dosage effects on plasma protein levels in 9,132 participants across five ancestries; assessed sex and ancestry heterogeneity."
+        "Phenome-wide association study in 367,757 All of Us participants across six genetic ancestry groups",
+        "Tested APOE genotypes against 2,632 phenotypes using an Alzheimer’s-disease-risk ordinal hierarchy",
+        "Analyzed plasma proteomics in 9,132 participants across five ancestries, including sex- and ancestry-stratified heterogeneity tests"
       ],
-      "evidence_signal": "The study identified 27 APOE-associated phenotypes, including nine with ancestry-specific effects, and found SNAP25 positively associated with APOE-ε4 dosage across ancestries.",
-      "watch_item": "Findings are observational and ancestry-stratified subgroup results may be sensitive to sample size, residual confounding, and unequal representation across populations.",
+      "evidence_signal": "The analysis found 27 APOE-associated phenotypes, 5 sex-heterogeneous lipid traits, 9 ancestry-specific associations, and proteomic links including SNAP25 across ancestries.",
+      "watch_item": "Results are observational and depend on EHR-derived phenotypes, so ancestry-specific findings and biomarker candidates need replication and functional validation before translation.",
       "hashtags": [
         "#APOE",
-        "#AncestryAware",
-        "#PhenomeWideAssociation",
+        "#AllOfUs",
+        "#Genomics",
         "#Proteomics",
-        "#Biomarkers"
+        "#PrecisionMedicine"
       ],
       "paper_id": "2026-09-28-medrxiv-phenome_wide_and_proteomic_analysis_of_apoe_alleles_across_different_ancestries_in_the_all",
       "paper_title": "Phenome-wide and proteomic analysis of APOE alleles across different ancestries in the All of Us Research Program",
       "paper_date": "2026-09-28",
       "paper_category": "Target Biology",
-      "generated_at": "2026-10-03T12:12:01",
+      "generated_at": "2026-10-02T13:23:54",
       "generator": "openai"
     }
   },
@@ -432,29 +381,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.27.26363725v1.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 51,
     "infographic": {
-      "key_insight": "Deep learning PVS segmentation can look accurate on paper yet still fail to preserve the biological associations needed for valid Alzheimer’s research inference.",
-      "clinical_relevance": "For AD biomarker studies, model selection should be based not only on Dice scores but also on whether the segmentations reproduce expected disease associations in the target cohort.",
+      "key_insight": "Open-source deep learning models for MRI-visible perivascular space segmentation can look accurate internally yet fail to generalize or preserve biologically meaningful associations in Alzheimer’s disease cohorts.",
+      "clinical_relevance": "For biomarker research and future clinical use, model choice and cohort-specific validation matter because segmentation performance alone may not predict whether downstream disease associations remain valid.",
       "method": [
-        "Benchmarked five open-source nnU-Net-based PVS segmentation models against manual labels",
-        "Tested performance in 60 multi-site ADNI-3 participants and 12 external VALDO scans",
-        "Compared overall, voxel, object, and lesion-wise Dice and checked biomarker association validity"
+        "Benchmarked five open-source nnU-Net-based PVS segmentation models against manual labels.",
+        "Tested performance in 60 multi-site ADNI-3 participants and 12 external VALDO challenge scans.",
+        "Compared overall, voxel, object, and lesion-wise Dice and evaluated preservation of PVS-amyloid associations."
       ],
-      "evidence_signal": "ADNI-PVS-Net had the best internal Dice (0.58±0.14) but dropped to ≤0.11 externally, while only AD-trained models reproduced the expected PVS-amyloid relationship.",
-      "watch_item": "External generalizability and downstream biological validity can diverge, and some models misclassified substantial white matter hyperintensity as PVS.",
+      "evidence_signal": "ADNI-PVS-Net had the best internal Dice (0.58±0.14) but dropped to ≤0.11 externally, while MedNet-PVS and mcPVS-Net generalized better (Dice 0.27–0.30) yet often misestimated PVS burden and only AD-trained models reproduced the expected PVS-amyloid relationship.",
+      "watch_item": "High Dice scores did not guarantee valid biomarker inference, and some models misclassified up to 32% of white matter hyperintensities as PVS.",
       "hashtags": [
-        "#AlzheimersDisease",
         "#DeepLearning",
         "#MRI",
+        "#AlzheimersDisease",
         "#Biomarkers",
-        "#MedicalAI"
+        "#ModelValidation"
       ],
       "paper_id": "2026-09-28-medrxiv-examining_the_clinical_utility_of_deep_learning_models_for_perivascular_space_segmentation",
       "paper_title": "Examining the Clinical Utility of Deep Learning Models for Perivascular Space Segmentation in Alzheimer's Disease",
       "paper_date": "2026-09-28",
       "paper_category": "Target Biology",
-      "generated_at": "2026-10-03T12:12:02",
+      "generated_at": "2026-10-02T13:23:56",
       "generator": "openai"
     }
   },
@@ -483,29 +432,80 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.25.26363954v1.full.pdf"
       }
     ],
-    "score": 42,
+    "score": 47,
     "infographic": {
-      "key_insight": "A founder population GWAS in Arab ICU patients identified a rare loss-of-function start-loss variant in UBE2L3 that was enriched in sepsis cases and may implicate UBE2L3 in infection susceptibility.",
-      "clinical_relevance": "The finding suggests a potential genetic risk marker and drug-target hypothesis for sepsis, but it is not ready for clinical use without replication and functional validation.",
+      "key_insight": "A founder loss-of-function variant in UBE2L3 was enriched in Arab ICU sepsis cases, suggesting UBE2L3 may influence sepsis susceptibility and be a potential therapeutic target.",
+      "clinical_relevance": "If validated, this finding could help guide genetic risk stratification and prioritize UBE2L3-focused drug discovery for sepsis.",
       "method": [
         "WGS-based GWAS and exome-wide association analysis in 210 Arab ICU patients",
-        "Prioritized rare deleterious founder variants using Firth regression, CADD, SIFT, and allele-frequency enrichment",
-        "Cross-checked UBE2L3 signal against All of Us bacterial infection burden and AI target-scoring tools"
+        "Prioritized deleterious founder variants using REGENIE Firth regression, CADD, and allele-frequency enrichment",
+        "Followed up UBE2L3 signals in All of Us and supported target relevance with AI drug-development scoring"
       ],
-      "evidence_signal": "The strongest case-level signal was a UBE2L3 start-loss variant seen in 3/68 sepsis cases versus 0/142 controls (Fisher’s exact P=0.026), with supportive external burden evidence in All of Us (SKAT-O P=2.38×10^-3).",
-      "watch_item": "Small sample size and very wide confidence intervals mean the UBE2L3 association needs independent replication before any translational or therapeutic use.",
+      "evidence_signal": "The strongest case-control signal was a novel UBE2L3 start-loss variant seen in 3/68 sepsis cases and 0/142 controls, with supportive association for UBE2L3 missense burden in All of Us bacterial infection data.",
+      "watch_item": "The UBE2L3 findings are based on small case numbers and broad confidence intervals, so independent replication and functional validation are needed before translation.",
       "hashtags": [
         "#SepsisGenetics",
         "#GWAS",
         "#WholeGenomeSequencing",
-        "#RareVariants",
+        "#UBE2L3",
         "#DrugDiscovery"
       ],
       "paper_id": "2026-09-28-medrxiv-genome_wide_association_study_of_sepsis_susceptibility_in_icu_patients_identifies_arab_fou",
       "paper_title": "Genome-Wide Association Study of Sepsis Susceptibility in ICU Patients Identifies Arab Founder Loss-of-Function Variant in UBE2L3",
       "paper_date": "2026-09-28",
       "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-03T12:12:04",
+      "generated_at": "2026-10-02T13:23:58",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-26-medrxiv-neuro_symbolic_ai_for_automated_pathology_quality_measurement",
+    "doi": "10.64898/2026.07.22.26358635",
+    "date": "2026-09-26",
+    "title": "Neuro-Symbolic AI for Automated Pathology Quality Measurement",
+    "authors": "Brann, F.; Tadele, L.; Skau, C.; Bocsi, G.; Clarke, A. K.",
+    "abstract": "BackgroundClinical quality measurement often relies on manual abstraction of medical records, an approach that is costly, burdensome, and often infeasible for measures requiring interpretation of narrative text; these constraints have shaped measure development itself, filtering out clinically important measures that are too difficult to operationalize. We evaluated whether neuro-symbolic artificial intelligence (NSAI), which combines large language model extraction with symbolic reasoning, could reliably abstract complex quality measures from narrative pathology reports. MethodsThe NSAI system decomposes each measure into atomic questions and is aligned to real-world reports through case-based refinement, an iterative human-in-the-loop process. Using 2,000 independently double-abstracted reports, we compared NSAI-based abstraction against trained human abstractors across four pathology quality measures established by the College of American Pathologists. ResultsThe NSAI systems agreement with the adjudicated gold standard (Cohens{kappa} = 0.95) matched or modestly exceeded that of the trained human abstractors measured against the same standard ({kappa} = 0.92), with particularly strong performance on Gastrointestinal Metaplasia (CAP 43). In component analyses, case-based refinement drove the largest accuracy gains (up to {Delta}{kappa} = +0.25), whereas architectural decomposition primarily reduced performance variance across language-model backends more than tenfold, a property essential for clinical deployment. ConclusionsThese findings suggest that automated abstraction could enable census-level quality measurement, reduce reporting burden, and expand the range of clinically meaningful measures that can be operationalized from narrative clinical documentation. Plain-Language SummaryChecking whether cancer pathology reports meet quality-of-care standards usually requires trained staff to read each report by hand, which is slow and costly. We tested an artificial-intelligence system that combines language models with rule-based logic to do this automatically, and found that it agreed with an expert-reviewed answer key as well as, or slightly better than, trained human reviewers, while producing consistent results across several different underlying AI models. Such a system could let health organizations monitor care quality across every patient record rather than a small sample, and measure aspects of care that are currently too labor-intensive to track.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-09-26",
+    "updated": "2026-09-26",
+    "primary_category": "health systems and quality improvement",
+    "categories": [
+      "health systems and quality improvement"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.22.26358635v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.22.26358635v2.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "A neuro-symbolic AI system can accurately abstract complex pathology quality measures from narrative reports by combining language-model extraction with symbolic reasoning.",
+      "clinical_relevance": "This could reduce manual chart review burden and make more pathology quality measures feasible for large-scale clinical reporting.",
+      "method": [
+        "Decomposed each quality measure into atomic questions for stepwise abstraction.",
+        "Used case-based refinement with human-in-the-loop alignment to real pathology reports.",
+        "Compared NSAI against trained human abstractors on 2,000 independently double-abstracted reports across four CAP measures."
+      ],
+      "evidence_signal": "Against the adjudicated gold standard, NSAI achieved Cohen’s kappa of 0.95, slightly exceeding trained human abstractors at 0.92.",
+      "watch_item": "Performance depends on careful measure decomposition and case-based refinement, so real-world deployment may require continued human oversight and validation across sites and report styles.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#PathologyAI",
+        "#NeuroSymbolicAI",
+        "#ClinicalNLP",
+        "#QualityMeasurement"
+      ],
+      "paper_id": "2026-09-26-medrxiv-neuro_symbolic_ai_for_automated_pathology_quality_measurement",
+      "paper_title": "Neuro-Symbolic AI for Automated Pathology Quality Measurement",
+      "paper_date": "2026-09-26",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-02T13:24:00",
       "generator": "openai"
     }
   },
@@ -534,29 +534,80 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.24.26363977v1.full.pdf"
       }
     ],
-    "score": 41,
+    "score": 46,
     "infographic": {
-      "key_insight": "Black participation in landmark hypertrophic cardiomyopathy trials was far below expectation, with only 3.98% of Black-or-White participants recorded as Black versus a 16.3% population expectation.",
-      "clinical_relevance": "Underrepresentation in pivotal HCM trials may limit how well trial findings reflect real-world patients, especially for Black communities affected by delayed specialist care and worse outcomes.",
+      "key_insight": "Black participation in landmark hypertrophic cardiomyopathy trials was far below population and site-catchment expectations, with pooled enrollment around one quarter of expected share.",
+      "clinical_relevance": "Trial underrepresentation can limit how well hypertrophic cardiomyopathy evidence generalizes to Black patients and may help explain persistent outcome disparities.",
       "method": [
-        "Reviewed 197 registered interventional HCM trials and identified 32 landmark-tier studies; demographic data were extractable for 16 and race reporting for 13.",
-        "Compared pooled Black participation against three benchmarks: US adult population, trial site-catchment counties, and a disease-referenced echocardiographic expectation.",
-        "Tested whether geography and quantitative eligibility thresholds could explain the enrollment gap using site addresses, census data, and NHANES."
+        "Reviewed 197 registered interventional HCM trials and identified 32 landmark-tier studies.",
+        "Extracted race data from 13 trials and pooled Black share among Black and White participants using random-effects meta-analysis.",
+        "Compared observed enrollment with US population, site-county catchment, and disease-referenced echocardiographic expectations."
       ],
-      "evidence_signal": "Across 13 trials, 70 of 1,780 Black-or-White participants were Black; pooled Black share was 3.98% and the participation-to-prevalence ratio was 0.24, with all trials below catchment-based expectations.",
-      "watch_item": "Interpretation is limited by incomplete race reporting and by the fact that geography and eligibility thresholds may not capture other structural barriers to enrollment.",
+      "evidence_signal": "Across 13 trials, 70 of 1,780 Black or White participants were Black, with a pooled Black share of 3.98% versus a 16.3% population expectation (PPR 0.24).",
+      "watch_item": "Not all trials reported race, and catchment-based estimates may not capture all real-world referral patterns or other unmeasured barriers to participation.",
       "hashtags": [
-        "#HypertrophicCardiomyopathy",
         "#ClinicalTrials",
         "#HealthEquity",
-        "#Representation",
-        "#TrialDesign"
+        "#Cardiology",
+        "#HCM",
+        "#RepresentationMatters"
       ],
       "paper_id": "2026-09-27-medrxiv-race_and_ethnicity_in_the_landmark_hypertrophic_cardiomyopathy_trials_representation_again",
       "paper_title": "Race and ethnicity in the landmark hypertrophic cardiomyopathy trials: representation against population, site-catchment, and disease-referenced expectations",
       "paper_date": "2026-09-27",
       "paper_category": "Target Biology",
-      "generated_at": "2026-10-03T12:12:08",
+      "generated_at": "2026-10-02T13:24:02",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-09-26-medrxiv-deep_time_to_event_models_for_intrapartum_fetal_monitoring",
+    "doi": "10.64898/2026.09.21.26363416",
+    "date": "2026-09-26",
+    "title": "Deep Time-to-Event Models for Intrapartum Fetal Monitoring",
+    "authors": "Imai Aldeia, G. S.; Coggan, H.; Yang, Y.; Levine, L.; McCoy, J. A.; La Cava, W.",
+    "abstract": "Timely detection of fetal distress during labor is a central pursuit of modern obstetric care. The primary measure used in this regard is fetal heart rate and contraction monitoring (echocardiotocography or CTG), which provides a continuous signal during labor. The vast majority of machine learning applications to CTG assume access to a 30 to 60 minute window just prior to delivery, which makes an untenable assumption that the timing of delivery is known. In this work, we reframe the problem as a time-to-event prediction task. We develop deep time-to-event models to predict the joint probability of imminent delivery and fetal acidosis, a biomarker of fetal hypoxia collected from umbilical cord gas after delivery. We develop a framework for this problem, drawing on deep discrete-time survival methods and marked point processes, adapting each to this particular setting (i.e., continuous physiological signals, fully observed events, partially observed labels). One approach dubbed Marked DeepHit accurately estimates delivery within one hour at multiple elapsed-time landmarks, with test-set AUROC of 0.837 [95% CI 0.692-0.970] and 0.935 [0.858-0.964] at 6 and 12 hours into labor, respectively. We find that these models also achieve competitive performance near delivery time compared to prior models trained specifically on the end of tracing, and outperform other clinical feature-based proposals, both on internal and external validation at a second site. These results give a proof-of-principle to support future prospective deployment of AI-EFM during labor.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-09-26",
+    "updated": "2026-09-26",
+    "primary_category": "obstetrics and gynecology",
+    "categories": [
+      "obstetrics and gynecology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363416v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363416v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "The study reframes intrapartum fetal monitoring as a time-to-event prediction problem, enabling models to estimate the joint likelihood of imminent delivery and fetal acidosis from continuous CTG signals.",
+      "clinical_relevance": "If validated prospectively, this approach could help identify labor risk earlier than end-of-tracing models and support more timely obstetric decision-making.",
+      "method": [
+        "Built deep discrete-time survival and marked point process models for continuous physiological signals.",
+        "Predicted time to delivery alongside fetal acidosis using partially observed post-delivery labels.",
+        "Compared performance at multiple elapsed-time landmarks and tested external generalization at a second site."
+      ],
+      "evidence_signal": "Marked DeepHit achieved AUROC of 0.837 at 6 hours and 0.935 at 12 hours into labor, with competitive near-delivery performance and external validation support.",
+      "watch_item": "The results are retrospective proof-of-principle, so real-world usefulness still depends on prospective validation, workflow integration, and careful handling of partially observed labels.",
+      "hashtags": [
+        "#AIinHealthcare",
+        "#TimeToEvent",
+        "#FetalMonitoring",
+        "#SurvivalAnalysis",
+        "#MachineLearning"
+      ],
+      "paper_id": "2026-09-26-medrxiv-deep_time_to_event_models_for_intrapartum_fetal_monitoring",
+      "paper_title": "Deep Time-to-Event Models for Intrapartum Fetal Monitoring",
+      "paper_date": "2026-09-26",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-02T13:24:05",
       "generator": "openai"
     }
   }

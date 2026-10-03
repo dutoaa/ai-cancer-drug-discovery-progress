@@ -1,13 +1,13 @@
 {
-  "key_insight": "FRANK is a data-efficient RNA-seq classifier that can identify pediatric tumor types across many cancer classes using a fully connected neural network plus augmentation and hierarchical penalties.",
-  "clinical_relevance": "If validated in practice, it could help speed and improve pediatric tumor subtype classification from transcriptomic data, supporting more accurate treatment decisions.",
+  "key_insight": "FRANK is a pan-cancer RNA-seq classifier designed to identify childhood tumor types with high accuracy using a data-efficient neural network approach.",
+  "clinical_relevance": "If validated in practice, this kind of classifier could help improve pediatric tumor subtype identification, supporting more consistent diagnostic decision-making.",
   "method": [
-    "Curated 11,467 transcriptomes covering 181 childhood tumor and normal tissue types",
-    "Trained a fully connected RNA-based classifier with extensive data augmentation",
-    "Used a hierarchical penalty term to improve classification across related tumor types"
+    "Trained a fully connected neural network on 11,467 transcriptomes covering 181 childhood tumor and normal tissue types.",
+    "Used data augmentation plus a hierarchical penalty term to enable learning from very small training sets.",
+    "Tested robustness across long-read RNA-seq and noisy/low-quality samples."
   ],
-  "evidence_signal": "In validation across nine datasets totaling 16,398 samples, FRANK achieved 98.3% overall accuracy and outperformed other published pediatric pan-cancer RNA-seq classifiers on an external dataset.",
-  "watch_item": "Performance is promising, but real-world deployment still needs prospective validation across diverse labs, sequencing platforms, and rare tumor subtypes.",
+  "evidence_signal": "The model was validated on nine datasets totaling 16,398 samples and achieved 98.3% overall accuracy, while outperforming other published pediatric pan-cancer RNA-seq classifiers on an external dataset.",
+  "watch_item": "Performance in real-world clinical settings may depend on sample quality, sequencing platform, and how closely new cases match the training data.",
   "hashtags": [
     "#PrecisionOncology",
     "#PediatricCancer",
@@ -19,6 +19,6 @@
   "paper_title": "FRANK: a pan-cancer RNA-seq classifier for childhood tumors with data-efficient learning",
   "paper_date": "2026-09-27",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-02T13:23:44",
+  "generated_at": "2026-10-03T12:11:55",
   "generator": "openai"
 }

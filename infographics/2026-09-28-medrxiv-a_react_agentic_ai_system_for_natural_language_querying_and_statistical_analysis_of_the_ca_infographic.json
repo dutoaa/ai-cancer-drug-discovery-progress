@@ -1,24 +1,24 @@
 {
-  "key_insight": "An agentic LLM system using ReAct-style tool use can accurately answer natural-language questions and run statistical analyses on TCGA clinical data with auditable traces.",
-  "clinical_relevance": "It could make large cancer clinical repositories easier to query for research by returning clinically contextualized answers, survival analyses, and verified outputs.",
+  "key_insight": "An agentic LLM system can turn complex TCGA clinical data into accurate natural-language answers by using specialized tools, not just a larger model.",
+  "clinical_relevance": "This could make oncology data analysis faster and more accessible for researchers by supporting auditable, clinically contextualized queries over large cancer datasets.",
   "method": [
-    "LLM acts as a ReAct agent that selects among eight tools",
-    "Performs data extraction, descriptive statistics, Kaplan-Meier survival analysis, log-rank tests, and hypothesis testing",
-    "Verifies results against the curated TCGA Pan-Cancer Clinical Data Resource and provides source attribution"
+    "ReAct-style LLM agent chooses from 8 tools for extraction, statistics, survival analysis, hypothesis testing, and verification",
+    "Benchmarked on TCGA-Agent-Bench with 440 queries across 5 difficulty tiers",
+    "Compared against rule-based, single-pass LLM, and retrieval-augmented baselines"
   ],
-  "evidence_signal": "On TCGA-Agent-Bench, the system achieved 93.4% overall accuracy across 440 queries, outperforming rule-based, single-pass LLM, and RAG baselines.",
-  "watch_item": "Performance depends on tool design and data coverage, so a CDR-only setup can miss important fields like drug treatments, TNM components, and biomarkers.",
+  "evidence_signal": "The system reached 93.4% overall accuracy and outperformed a rule-based pipeline (87.1%), single-pass LLM (81.8%), and RAG (66.9% on a 50-query subset).",
+  "watch_item": "Performance depends on tool coverage and curated reference data, so gaps in source fields or tool errors could limit reliability.",
   "hashtags": [
     "#PrecisionOncology",
-    "#CancerData",
-    "#LLM",
-    "#ReAct",
-    "#ClinicalAI"
+    "#CancerGenomics",
+    "#AgenticAI",
+    "#ClinicalAI",
+    "#TCGA"
   ],
   "paper_id": "2026-09-28-medrxiv-a_react_agentic_ai_system_for_natural_language_querying_and_statistical_analysis_of_the_ca",
   "paper_title": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data",
   "paper_date": "2026-09-28",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-02T13:23:40",
+  "generated_at": "2026-10-03T12:11:47",
   "generator": "openai"
 }

@@ -1,24 +1,24 @@
 {
-  "key_insight": "Open-source deep learning models for MRI-visible perivascular space segmentation can look accurate internally yet fail to generalize or preserve biologically meaningful associations in Alzheimer’s disease cohorts.",
-  "clinical_relevance": "For biomarker research and future clinical use, model choice and cohort-specific validation matter because segmentation performance alone may not predict whether downstream disease associations remain valid.",
+  "key_insight": "Deep learning PVS segmentation can look accurate on paper yet still fail to preserve the biological associations needed for valid Alzheimer’s research inference.",
+  "clinical_relevance": "For AD biomarker studies, model selection should be based not only on Dice scores but also on whether the segmentations reproduce expected disease associations in the target cohort.",
   "method": [
-    "Benchmarked five open-source nnU-Net-based PVS segmentation models against manual labels.",
-    "Tested performance in 60 multi-site ADNI-3 participants and 12 external VALDO challenge scans.",
-    "Compared overall, voxel, object, and lesion-wise Dice and evaluated preservation of PVS-amyloid associations."
+    "Benchmarked five open-source nnU-Net-based PVS segmentation models against manual labels",
+    "Tested performance in 60 multi-site ADNI-3 participants and 12 external VALDO scans",
+    "Compared overall, voxel, object, and lesion-wise Dice and checked biomarker association validity"
   ],
-  "evidence_signal": "ADNI-PVS-Net had the best internal Dice (0.58±0.14) but dropped to ≤0.11 externally, while MedNet-PVS and mcPVS-Net generalized better (Dice 0.27–0.30) yet often misestimated PVS burden and only AD-trained models reproduced the expected PVS-amyloid relationship.",
-  "watch_item": "High Dice scores did not guarantee valid biomarker inference, and some models misclassified up to 32% of white matter hyperintensities as PVS.",
+  "evidence_signal": "ADNI-PVS-Net had the best internal Dice (0.58±0.14) but dropped to ≤0.11 externally, while only AD-trained models reproduced the expected PVS-amyloid relationship.",
+  "watch_item": "External generalizability and downstream biological validity can diverge, and some models misclassified substantial white matter hyperintensity as PVS.",
   "hashtags": [
+    "#AlzheimersDisease",
     "#DeepLearning",
     "#MRI",
-    "#AlzheimersDisease",
     "#Biomarkers",
-    "#ModelValidation"
+    "#MedicalAI"
   ],
   "paper_id": "2026-09-28-medrxiv-examining_the_clinical_utility_of_deep_learning_models_for_perivascular_space_segmentation",
   "paper_title": "Examining the Clinical Utility of Deep Learning Models for Perivascular Space Segmentation in Alzheimer's Disease",
   "paper_date": "2026-09-28",
   "paper_category": "Target Biology",
-  "generated_at": "2026-10-02T13:23:56",
+  "generated_at": "2026-10-03T12:12:02",
   "generator": "openai"
 }
