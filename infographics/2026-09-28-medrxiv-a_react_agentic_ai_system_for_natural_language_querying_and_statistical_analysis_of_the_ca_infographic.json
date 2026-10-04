@@ -1,24 +1,24 @@
 {
-  "key_insight": "An agentic LLM system can turn complex TCGA clinical data into accurate natural-language answers by using specialized tools, not just a larger model.",
-  "clinical_relevance": "This could make oncology data analysis faster and more accessible for researchers by supporting auditable, clinically contextualized queries over large cancer datasets.",
+  "key_insight": "A ReAct-style AI agent can turn complex TCGA clinical data into accurate natural-language answers by choosing among multiple analysis tools instead of relying on a single model pass.",
+  "clinical_relevance": "The system can help researchers quickly query and statistically analyze cancer clinical records, including survival and treatment-related fields that are otherwise difficult to access.",
   "method": [
-    "ReAct-style LLM agent chooses from 8 tools for extraction, statistics, survival analysis, hypothesis testing, and verification",
-    "Benchmarked on TCGA-Agent-Bench with 440 queries across 5 difficulty tiers",
-    "Compared against rule-based, single-pass LLM, and retrieval-augmented baselines"
+    "LLM-based autonomous ReAct agent",
+    "Uses 8 tools for extraction, statistics, Kaplan-Meier survival, log-rank testing, hypothesis testing, and CDR verification",
+    "Returns answers with source attribution and auditable traces"
   ],
-  "evidence_signal": "The system reached 93.4% overall accuracy and outperformed a rule-based pipeline (87.1%), single-pass LLM (81.8%), and RAG (66.9% on a 50-query subset).",
-  "watch_item": "Performance depends on tool coverage and curated reference data, so gaps in source fields or tool errors could limit reliability.",
+  "evidence_signal": "On TCGA-Agent-Bench (440 queries), the system achieved 93.4% overall accuracy, outperforming rule-based, single-pass LLM, and RAG baselines.",
+  "watch_item": "Results depend on curated benchmark data and tool design, so performance may vary when moving to messier real-world datasets or missing-field scenarios.",
   "hashtags": [
     "#PrecisionOncology",
-    "#CancerGenomics",
-    "#AgenticAI",
-    "#ClinicalAI",
-    "#TCGA"
+    "#CancerAI",
+    "#ReAct",
+    "#ClinicalData",
+    "#StatisticalAnalysis"
   ],
   "paper_id": "2026-09-28-medrxiv-a_react_agentic_ai_system_for_natural_language_querying_and_statistical_analysis_of_the_ca",
   "paper_title": "A ReAct Agentic AI System for Natural Language Querying and Statistical Analysis of The Cancer Genome Atlas Clinical Data",
   "paper_date": "2026-09-28",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-03T12:11:47",
+  "generated_at": "2026-10-04T12:59:18",
   "generator": "openai"
 }

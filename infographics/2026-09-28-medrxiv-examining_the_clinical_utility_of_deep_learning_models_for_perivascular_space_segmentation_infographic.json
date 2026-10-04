@@ -1,24 +1,24 @@
 {
-  "key_insight": "Deep learning PVS segmentation can look accurate on paper yet still fail to preserve the biological associations needed for valid Alzheimer’s research inference.",
-  "clinical_relevance": "For AD biomarker studies, model selection should be based not only on Dice scores but also on whether the segmentations reproduce expected disease associations in the target cohort.",
+  "key_insight": "Deep learning PVS segmentation can look accurate on paper, yet only some models preserve the biological associations needed for trustworthy Alzheimer’s research.",
+  "clinical_relevance": "For AD biomarker studies, model choice and local validation matter because external Dice alone may not reflect whether PVS measurements support correct downstream inference.",
   "method": [
-    "Benchmarked five open-source nnU-Net-based PVS segmentation models against manual labels",
-    "Tested performance in 60 multi-site ADNI-3 participants and 12 external VALDO scans",
-    "Compared overall, voxel, object, and lesion-wise Dice and checked biomarker association validity"
+    "Benchmarked 5 open-source nnU-Net-based PVS segmentation models",
+    "Compared outputs to manual labels in 60 multi-site ADNI-3 scans and 12 VALDO challenge scans",
+    "Evaluated Dice at overall, voxel, object, and lesion levels, plus biomarker association validity"
   ],
-  "evidence_signal": "ADNI-PVS-Net had the best internal Dice (0.58±0.14) but dropped to ≤0.11 externally, while only AD-trained models reproduced the expected PVS-amyloid relationship.",
-  "watch_item": "External generalizability and downstream biological validity can diverge, and some models misclassified substantial white matter hyperintensity as PVS.",
+  "evidence_signal": "ADNI-PVS-Net had the best internal Dice (0.58±0.14) but dropped to ≤0.11 externally, while only AD-trained models reproduced the expected PVS–amyloid relationship.",
+  "watch_item": "Some models misclassified up to 32% of white matter hyperintensities as PVS, so cohort-specific manual validation is needed before clinical or research use.",
   "hashtags": [
     "#AlzheimersDisease",
     "#DeepLearning",
     "#MRI",
     "#Biomarkers",
-    "#MedicalAI"
+    "#Neuroimaging"
   ],
   "paper_id": "2026-09-28-medrxiv-examining_the_clinical_utility_of_deep_learning_models_for_perivascular_space_segmentation",
   "paper_title": "Examining the Clinical Utility of Deep Learning Models for Perivascular Space Segmentation in Alzheimer's Disease",
   "paper_date": "2026-09-28",
   "paper_category": "Target Biology",
-  "generated_at": "2026-10-03T12:12:02",
+  "generated_at": "2026-10-04T12:59:35",
   "generator": "openai"
 }
