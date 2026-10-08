@@ -1,24 +1,24 @@
 {
-  "key_insight": "Multilingual multimodal machine learning can accurately distinguish nonfluent/agrammatic from logopenic primary progressive aphasia in Catalan-Spanish bilinguals using connected speech.",
-  "clinical_relevance": "This could help speed up and standardize differential diagnosis for bilingual patients when language-specific expert assessment is limited.",
+  "key_insight": "Multilingual, multimodal machine learning can accurately distinguish nonfluent/agrammatic from logopenic PPA in Catalan-Spanish bilinguals using connected speech from either language.",
+  "clinical_relevance": "This could streamline bilingual aphasia assessment by reducing reliance on lengthy language-specific testing and helping support more scalable, faster differential diagnosis.",
   "method": [
-    "34 Catalan-Spanish simultaneous bilingual patients were recorded describing a picture in both dominant and non-dominant languages.",
-    "Four feature sets were extracted from speech: timing, word-level, linguistic, and image-text congruence features.",
-    "Multiple classifiers and an ensemble model were tested to separate nfvPPA from lvPPA."
+    "34 Catalan-Spanish simultaneous bilingual patients with PPA provided picture descriptions in both dominant and non-dominant languages.",
+    "Features from speech timing, word-level properties, linguistic analysis, and image-text congruence were extracted with tools including PRAAT, SpaCy, CLAN, and Multilingual-CLIP.",
+    "Feature sets were used in machine-learning classifiers and combined into an ensemble model; performance was compared between languages with McNemar testing."
   ],
-  "evidence_signal": "In this 34-patient study, the best model reached 93% macro-F1 in the non-dominant language and 92% in the dominant language, with no significant performance difference between languages.",
-  "watch_item": "Small sample size and single-prompt, bilingual-specific testing may limit generalizability and require external validation before routine use.",
+  "evidence_signal": "The best model reached F1 macro scores of 93% in the non-dominant language and 92% in the dominant language, with no significant performance difference between languages.",
+  "watch_item": "The study is small and specific to Catalan-Spanish simultaneous bilinguals, so broader clinical generalizability and real-world deployment still need validation.",
   "hashtags": [
-    "#AphasiaAI",
-    "#MultilingualML",
+    "#MachineLearning",
+    "#BilingualAphasia",
     "#SpeechAnalytics",
-    "#BilingualHealth",
-    "#NeurologyAI"
+    "#Neurolinguistics",
+    "#DigitalHealth"
   ],
   "paper_id": "2026-10-02-medrxiv-differentiating_nonfluent_agrammatic_and_logopenic_primary_progressive_aphasia_in_catalan",
   "paper_title": "Differentiating nonfluent/agrammatic and logopenic primary progressive aphasia in Catalan-Spanish bilinguals by applying multilingual multimodal machine learning to connected speech",
   "paper_date": "2026-10-02",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-07T14:05:48",
+  "generated_at": "2026-10-08T14:14:49",
   "generator": "openai"
 }

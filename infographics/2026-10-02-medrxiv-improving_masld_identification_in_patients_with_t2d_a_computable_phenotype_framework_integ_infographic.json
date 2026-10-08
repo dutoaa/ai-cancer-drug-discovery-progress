@@ -1,24 +1,24 @@
 {
-  "key_insight": "A rule-based computable phenotype that combines structured EHR data with clinical notes can improve MASLD identification in patients with type 2 diabetes.",
-  "clinical_relevance": "Better phenotyping could help researchers and health systems more reliably find MASLD cases in T2D populations for screening, cohort building, and outcomes studies.",
+  "key_insight": "A rule-based computable phenotype that combines structured EHR data with clinical note text can improve identification of MASLD in patients with type 2 diabetes.",
+  "clinical_relevance": "This approach could help clinicians and researchers more reliably find MASLD cases in real-world EHRs, supporting better risk stratification and population-level study.",
   "method": [
-    "Built five complementary phenotype algorithms using fibrosis indices and liver injury biomarkers.",
+    "Built five complementary phenotype algorithms using validated fibrosis indices and liver injury biomarkers.",
     "Added lightweight NLP to detect MASLD mentions in clinical notes with keyword matching, context filtering, and negation detection.",
-    "Evaluated performance across multiple thresholds and validated findings with age/sex-stratified analyses and manual chart review."
+    "Tested multiple thresholds and performed age/sex-stratified analyses plus manual chart review."
   ],
-  "evidence_signal": "The abstract reports systematic evaluation across threshold settings plus manual chart review and stratified analyses, supporting real-world feasibility and accuracy.",
-  "watch_item": "Performance may depend on note quality, site-specific documentation patterns, and the portability of rule-based thresholds across health systems.",
+  "evidence_signal": "The framework was evaluated across multiple threshold settings and validated with age- and sex-stratified analyses and manual chart review, supporting scalable real-world use.",
+  "watch_item": "Performance may vary across health systems because note styles, coding practices, and available labs differ, so external validation is important.",
   "hashtags": [
     "#MASLD",
     "#T2D",
-    "#EHRphenotyping",
-    "#ClinicalNLP",
-    "#ComputablePhenotype"
+    "#EHR",
+    "#ComputablePhenotype",
+    "#ClinicalNLP"
   ],
   "paper_id": "2026-10-02-medrxiv-improving_masld_identification_in_patients_with_t2d_a_computable_phenotype_framework_integ",
   "paper_title": "Improving MASLD Identification in Patients with T2D: A Computable Phenotype Framework Integrating Structured Data and Clinical Notes",
   "paper_date": "2026-10-02",
   "paper_category": "Target Biology",
-  "generated_at": "2026-10-07T14:05:54",
+  "generated_at": "2026-10-08T14:15:02",
   "generator": "openai"
 }
