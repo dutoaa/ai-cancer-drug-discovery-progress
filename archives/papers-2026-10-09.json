@@ -1,0 +1,461 @@
+[
+  {
+    "id": "2026-10-05-medrxiv-planner_executor_style_multimodal_agentic_system_to_answer_patient_questions_in_lung_cance",
+    "doi": "10.64898/2026.10.02.26364620",
+    "date": "2026-10-05",
+    "title": "Planner-Executor Style Multimodal Agentic System to Answer Patient Questions in Lung Cancer Screening CT",
+    "authors": "Sakiyama, K.; Serapio, A.; Ye, M.; Nowroozi, A.; Bondarenko, M.; Wu, Y.; Qi, K.; Liu, J.; Vella, M.; Yu, Y.; Schnitzler, T.; Rustagi, A. S.; Sohn, J. H.",
+    "abstract": "Background: Accurate patient understanding of lung cancer screening (LCS) results is critical for engagement and follow-up adherence, given the currently low screening uptake. While artificial intelligence (AI) systems show promise in facilitating patient communication, its effective use in clinical settings requires appropriate invocation of imaging tools and self-regulation by deferring certain questions to physicians. To this end, we developed and evaluated a planner-executor style multimodal agentic system to answer simulated patient questions about LCS CT results. Methods: This retrospective study utilized 116 LCS CT reports and images collected from a tertiary academic hospital. The system employed a multi-agent architecture (planner and executor) to mimic clinical reasoning. We developed a large language model (LLM)-based question generation framework to prepare a comprehensive set of 699 simulated patient questions, categorized as answerable and defer-to-doctor to assess self-regulation. Performance was evaluated on tool-calling, self-regulation accuracy (ability to correctly defer out-of-scope questions to a human provider) assessed by LLM-as-a-judge, and clinical quality assessed by a reader performance study with four physicians evaluating a subset of 100 responses. Results: The system demonstrated high overall tool-calling accuracy of 93.1% (646/694; 95% CI: 91.2%, 95.0%) and self-regulation accuracy of 92.6% (462/499; 90.2%, 94.8%). For answerable questions, the percentage of responses receiving perfect 5.0 scores across all readers included 78.9% (180/228) for clinical accuracy (inter-rater agreement: Gwet's AC2=0.92), and 73.2% (167/228) for patient understandability (0.86). For defer-to-doctor questions, the percentage of responses included 77.3% (133/172) for clinical accuracy (0.80) and 70.3% (121/172) for patient understandability (0.78). Conclusions: The planner-executor style multi-modal agentic system reliably answers patient-specific questions about LCS. Its high tool-calling and self-regulation performance demonstrates its potential as a safe and effective digital communication facilitator in LCS programs.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-05",
+    "updated": "2026-10-05",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364620v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364620v1.full.pdf"
+      }
+    ],
+    "score": 68,
+    "infographic": {
+      "key_insight": "A planner-executor multimodal AI system can answer many lung cancer screening CT patient questions while also deciding when to defer to a physician.",
+      "clinical_relevance": "This could help improve patient understanding of screening results and support follow-up communication in lung cancer screening programs.",
+      "method": [
+        "Used 116 lung cancer screening CT reports and images from a tertiary academic hospital.",
+        "Generated 699 simulated patient questions, split into answerable vs defer-to-doctor cases.",
+        "Evaluated tool-calling, self-regulation, and physician-rated clinical quality."
+      ],
+      "evidence_signal": "The system achieved 93.1% tool-calling accuracy and 92.6% self-regulation accuracy, with strong physician-rated scores for clinical accuracy and understandability.",
+      "watch_item": "Results came from simulated questions and a retrospective dataset, so real-world performance, safety, and workflow integration still need prospective validation.",
+      "hashtags": [
+        "#LungCancerScreening",
+        "#MedicalAI",
+        "#MultimodalAI",
+        "#PatientCommunication",
+        "#OncologyAI"
+      ],
+      "paper_id": "2026-10-05-medrxiv-planner_executor_style_multimodal_agentic_system_to_answer_patient_questions_in_lung_cance",
+      "paper_title": "Planner-Executor Style Multimodal Agentic System to Answer Patient Questions in Lung Cancer Screening CT",
+      "paper_date": "2026-10-05",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-08T14:14:38",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-03-medrxiv-assessing_ai_and_neurologist_diagnostic_reasoning_against_neuropathological_ground_truth",
+    "doi": "10.64898/2026.07.07.26356930",
+    "date": "2026-10-03",
+    "title": "Assessing AI and Neurologist Diagnostic Reasoning Against Neuropathological Ground Truth",
+    "authors": "Leng, Y.; Noori, A.; He, Y.; Favaro, A.; Dickson, J. R.; Serrano-Pozo, A.; Avetisyan, M.; Rodriguez, D.; Rosenberg, E. S.; Oakley, D. H.; Khurana, V. S.; Maslinski, J.; Glicksberg, B. S.; Syed, M.; Kubon, P. E.; Walker, J.; Suemoto, C. K.; Seshadri, S.; Clifton, D. A.; Zitnik, M.; Hyman, B. T.; Frosch, M. P.; Das, S.",
+    "abstract": "BACKGROUNDAccurate differential diagnosis of complex neurological disorders remains challenging due to overlapping clinical features and heterogeneous disease presentations. Although large language models (LLMs) show promise in clinical reasoning, prior studies have benchmarked performance against clinician consensus rather than biological ground truth. Evaluation of diagnostic AI in neurology requires benchmarks grounded in neuropathological findings. METHODSWe introduce NeuroBench, a curated benchmark of complex neurological cases with neuropathologically confirmed reference-standard diagnoses, and DIAGNO, a confidence-aware LLM-based system for neurological diagnosis. NeuroBench comprises 791 retrospective case summaries and corresponding autopsy-confirmed diagnoses across three independent health systems: 500 cases from the Massachusetts General Hospital (MGH) Brain Cutting Conference; 200 cases from the Mount Sinai Health System; and 91 cases from the University of Texas Health Science Center at San Antonio (UTHSA). Across all cases, DIAGNO generated top-3 differential diagnoses, employing retrieval-augmented generation for lower-confidence cases. In a subset of 203 complex MGH cases, performance was assessed by three independent blinded adjudicators who evaluated both DIAGNO and neurologists against neuropathological ground truth. RESULTSNeuroBench encompassed 59 unique neuropathological diagnoses, spanning conditions including cerebrovascular disease, brain tumors, neurological infections, and various neurodegenerative and inflammatory disorders. DIAGNO achieved 83.8% top-3 accuracy across the 500 MGH cases, 76.5% accuracy across the 200 Mount Sinai cases, and 92.3% accuracy across the 91 UTHSA cases. In the subset of 203 MGH cases, DIAGNO achieved higher top-3 accuracy (0.67 versus 0.63) and taxonomy-level accuracy (0.74 versus 0.67) than neurologists. In cases of disagreement, DIAGNO was more often correct than neurologists (29 versus 19 cases). Diagnostic concordance between DIAGNO and neurologists was high (90% agreement in top-3 predictions). In a real-world evaluation on eight cases from Mass General Brigham, neurologists rated DIAGNOs reasoning favorably (mean 4.03/5) across multiple dimensions. CONCLUSIONSNeuroBench establishes neuropathological confirmation as a reference standard for evaluating diagnostic AI in neurology, moving beyond clinician-based benchmarking to redefine the ceiling of diagnostic accuracy. Evaluated against this standard, DIAGNO achieved diagnostic performance comparable to neurologists and received favorable clinician ratings in real-world applications, supporting its potential as a clinical decision support tool in neurology.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-03",
+    "updated": "2026-10-03",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.07.26356930v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.07.26356930v2.full.pdf"
+      }
+    ],
+    "score": 58,
+    "infographic": {
+      "key_insight": "A confidence-aware LLM system, DIAGNO, matched or outperformed neurologists on neuropathology-grounded differential diagnosis in complex cases.",
+      "clinical_relevance": "This work suggests AI may help support high-stakes diagnostic reasoning when benchmarked against biological ground truth rather than clinician consensus.",
+      "method": [
+        "Built NeuroBench with 791 retrospective neurological cases tied to autopsy-confirmed diagnoses from three health systems.",
+        "Compared DIAGNO top-3 differentials to neurologists in a blinded subset of 203 complex MGH cases.",
+        "Used retrieval-augmented generation for lower-confidence cases and independent adjudication against neuropathological ground truth."
+      ],
+      "evidence_signal": "Across validation sets, DIAGNO reached 83.8% top-3 accuracy at MGH, 76.5% at Mount Sinai, and 92.3% at UTHSA; in the adjudicated MGH subset it slightly outperformed neurologists overall.",
+      "watch_item": "Results come from retrospective, curated cases and may not generalize to real-time bedside use, especially outside expert centers or for less complex presentations.",
+      "hashtags": [
+        "#AIinMedicine",
+        "#Neurology",
+        "#DiagnosticReasoning",
+        "#LLM",
+        "#MedicalAI"
+      ],
+      "paper_id": "2026-10-03-medrxiv-assessing_ai_and_neurologist_diagnostic_reasoning_against_neuropathological_ground_truth",
+      "paper_title": "Assessing AI and Neurologist Diagnostic Reasoning Against Neuropathological Ground Truth",
+      "paper_date": "2026-10-03",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-08T14:14:41",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-05-medrxiv-functional_organization_of_multimorbidity_links_chronic_disease_incidence_to_shared_geneti",
+    "doi": "10.64898/2026.10.02.26364618",
+    "date": "2026-10-05",
+    "title": "Functional organization of multimorbidity links chronic disease incidence to shared genetic architecture",
+    "authors": "Igumnov, D.; Melnikova, E.; Matrenok, S.; Denisov, K.; Kostiuk, K.; Nikolskaya, A.; Lopatina, L.; Tuna, S.; Avchaciov, K.; Feizi, A.; Fedichev, P.",
+    "abstract": "The multistage model of carcinogenesis explains the steep rise of cancer incidence with age through accumulated events, and reliability theory extends this principle to systems whose failure requires several components. We asked whether the same idea could explain why chronic diseases differ in how rapidly incidence rises with age, and whether multimorbidity could independently reveal the processes involved. In UK Biobank, linked health records allowed pre-assessment disease co-occurrence and subsequent incidence to be analysed separately. Using generative representation learning, we derived functional units (FUs) from co-occurrence patterns across 232 diagnoses in 502,355 participants. For each diagnosis, we counted linked FUs and compared this breadth with subsequent incidence. Diagnoses linked to more FUs showed steeper age dependence of incidence (Spearman {rho} = 0.50; 0.4618 among 196 diagnoses with rising hazards), and this relationship persisted in an age-free representation. The FUs had distinct genetic architectures, with lead-variant directions preserved in FinnGen and the Million Veteran Program. Their GWAS reached 34 regions missed by diagnosis and BMI comparators, while fine-mapping and molecular evidence connected FU loci to candidate genes enriched for approved drug targets. Together, these results extend a multistage principle from cancer to chronic disease and show that multimorbidity structure explains variation in age-dependent incidence.",
+    "category": "Therapeutic Discovery",
+    "source": "medRxiv",
+    "published": "2026-10-05",
+    "updated": "2026-10-05",
+    "primary_category": "epidemiology",
+    "categories": [
+      "epidemiology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364618v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364618v1.full.pdf"
+      }
+    ],
+    "score": 56,
+    "infographic": {
+      "key_insight": "Multimorbidity patterns can be grouped into functional units, and diagnoses connected to more units tend to show faster age-related incidence increases, suggesting shared biology behind chronic disease progression.",
+      "clinical_relevance": "This work may help explain which chronic diseases are more likely to emerge with age and could point to shared genetic targets relevant for future prevention or therapy research.",
+      "method": [
+        "Analyzed UK Biobank linked health records across 232 diagnoses in 502,355 participants",
+        "Used generative representation learning to derive functional units from disease co-occurrence patterns",
+        "Compared each diagnosis’s functional-unit breadth with later incidence and supported findings with GWAS, fine-mapping, and external cohorts"
+      ],
+      "evidence_signal": "The association between functional-unit breadth and age-dependent incidence was moderate but consistent (Spearman rho = 0.50 overall; 0.4618 in 196 diagnoses with rising hazards), and genetic directionality replicated in FinnGen and the Million Veteran Program.",
+      "watch_item": "The findings are observational and depend on linked-record coding and cohort composition, so they need prospective validation before clinical use.",
+      "hashtags": [
+        "#Multimorbidity",
+        "#Genetics",
+        "#Aging",
+        "#DiseaseIncidence",
+        "#UKBiobank"
+      ],
+      "paper_id": "2026-10-05-medrxiv-functional_organization_of_multimorbidity_links_chronic_disease_incidence_to_shared_geneti",
+      "paper_title": "Functional organization of multimorbidity links chronic disease incidence to shared genetic architecture",
+      "paper_date": "2026-10-05",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-10-08T14:14:44",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-02-medrxiv-hpv_stratified_causal_digital_twins_for_personalized_survival_benefit_estimation_in_head_a",
+    "doi": "10.64898/2026.09.30.26363910",
+    "date": "2026-10-02",
+    "title": "HPV-Stratified Causal Digital Twins for Personalized Survival Benefit Estimation in Head and Neck Cancer",
+    "authors": "Shah, K. D.; Chang, C.-W.; Zhou, J.; Ding, J.; Dhabaan, A.; Al-Hallaq, H. A.; Bates, J.; Stokes, W.; Yu, D. S.; Yang, X.",
+    "abstract": "PurposeDigital-twin frameworks can potentially offer a pathway toward individualized treatment but remain largely untested in radiation oncology. We present a causal digital-twin model for head-and-neck (H&N) cancer that estimates patient-specific survival benefit from chemoradiotherapy (CRT) versus radiotherapy (RT) alone, stratified by HPV status. MethodsUsing the public RADCURE cohort (n = 3,346), we developed a causal digital-twin framework in which patients were divided into HPV-positive and HPV-negative groups and assigned to training (RT start year [&le;] 2007) and test sets (RT start year > 2007). Bayesian-network structure learning identified each cohorts Markov Blanket around the 2-year survival endpoint (SVy2), yielding the minimal causally relevant feature set. A causal-forest model (double machine learning, DML framework) estimated the individualized treatment effect{tau} = P(Svy2 | CRT,X) - P(Svy2 | RT,X), with [Formula] denoting the model-estimated effect. Overlap restrictions were applied to mitigate extrapolation. Predictive discrimination (AUC, C-index), average treatment effects (ATE), individualized effects (ITE), and decision-curve analyses were computed. ResultsFor HPV-negative disease, internal evaluation demonstrated strong discriminative performance (test AUC = 0.72; C-index = 0.81, p < 0.01). The estimated test-set ATE favored CRT with a modest but positive improvement in SVy2 (mean [Formula]). Patterns in [Formula] were clinically coherent, including increased benefit in node-positive and good-performance patients and reduced benefit in high-burden or poor-performance presentations. Decision-curve analysis showed that a [Formula]-guided selective-CRT strategy provided higher net benefit than uniform treatment policies. HPV-positive disease exhibited substantially greater but less clinically structured treatment-effect heterogeneity, accompanied by reduced overlap and greater uncertainty. ConclusionThis study demonstrates a proof-of-concept causal digital-twin framework for interpretable, patient-specific survival simulation in H&N cancer. The model captures clinically plausible treatment-effect heterogeneity and establishes a foundation for multi-cohort validation and future integration into individualized treatment decision support.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-02",
+    "updated": "2026-10-02",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.30.26363910v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.30.26363910v1.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "A causal digital-twin model stratified by HPV status estimated who with head and neck cancer may gain more survival benefit from chemoradiotherapy versus radiotherapy alone.",
+      "clinical_relevance": "The approach could support more personalized treatment selection by identifying patients most likely to benefit from adding chemotherapy, while avoiding one-size-fits-all decisions.",
+      "method": [
+        "Used the public RADCURE cohort (n=3,346) and split patients by HPV status.",
+        "Learned each group’s minimal causal feature set with Bayesian-network Markov Blanket discovery around 2-year survival.",
+        "Estimated individualized treatment effects with a causal forest in a double machine learning framework and applied overlap restrictions."
+      ],
+      "evidence_signal": "In HPV-negative disease, the model showed solid test performance (AUC 0.72, C-index 0.81) and a modest positive average treatment effect favoring chemoradiotherapy; decision-curve analysis suggested higher net benefit for a selective-CRT strategy.",
+      "watch_item": "HPV-positive results showed greater heterogeneity but also reduced overlap and higher uncertainty, so prospective validation is needed before clinical use.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#HeadAndNeckCancer",
+        "#DigitalTwin",
+        "#CausalInference",
+        "#Radiotherapy"
+      ],
+      "paper_id": "2026-10-02-medrxiv-hpv_stratified_causal_digital_twins_for_personalized_survival_benefit_estimation_in_head_a",
+      "paper_title": "HPV-Stratified Causal Digital Twins for Personalized Survival Benefit Estimation in Head and Neck Cancer",
+      "paper_date": "2026-10-02",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-08T14:14:46",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-02-medrxiv-differentiating_nonfluent_agrammatic_and_logopenic_primary_progressive_aphasia_in_catalan",
+    "doi": "10.64898/2026.09.18.26363435",
+    "date": "2026-10-02",
+    "title": "Differentiating nonfluent/agrammatic and logopenic primary progressive aphasia in Catalan-Spanish bilinguals by applying multilingual multimodal machine learning to connected speech",
+    "authors": "Pugalenthi, L. S.; Collins, A. P.; Colomer, N. M.; Marques-Kiderle, S.-K.; Wagner Rodriguez, C. A.; Chaires, J. C. H.; Motta, W. A.; Filella-Merce, J.; Li, J. J.; Llanos, F.; Zhu, N.; Rubio-Guerra, S.; Illan-Gala, I.; Borrego-Ecija, S.; Llado, A.; Fortea, J.; Lleo, A.; Sanchez-Valle, R.; Henry, M. L.; Santos, M. A. S.; Grasso, S. M.",
+    "abstract": "BackgroundThe nonfluent/agrammatic (nfv) and logopenic (lv) variants of primary progressive aphasia (PPA) disrupt fluency through distinct underlying neurocognitive mechanisms. Differential diagnosis currently requires hours of cognitive-linguistic testing, with additional barriers for bilingual patients due to a shortage of bilingual service providers and a lack of well-established assessment methods. In English speakers, a promising automated approach for differentiating nfvPPA and lvPPA is to derive speech-timing measures and linguistic features from connected speech as input to machine learning (ML) classification algorithms. To our knowledge, this approach has not been evaluated in the context of bilingualism. MethodsThirty-four Catalan-Spanish simultaneous bilingual patients (lv = 24, nfv = 10) were asked to describe a picture (Western Aphasia Battery Picnic Scene) in both their dominant and non- dominant language. From the participants recorded response, we derived four feature sets: speech-timing measures, derived with PRAAT; word-level parameters, derived from corpora; linguistic features, derived with the natural language processing tools SpaCy and CLAN; image-text congruence scores, derived with the vision-language encoder Multilingual-CLIP. Each feature set was fed into classification algorithms for differentiating nfv from lv in participants non-dominant and dominant samples. Then, we combined each feature sets classifier into an ensemble model. We used the McNemar test to determine the statistical significance of differences in classification performance between responses in the non-dominant and dominant language. ResultsThe best-performing classifier achieved F1 macro scores of 93% (word-level parameters) and 92% (ensemble) in the non-dominant and dominant language, respectively. For all feature sets and ensemble models, classification performance did not significantly differ between the non-dominant and dominant language. Ensemble modeling did not significantly improve classification performance in either language. ConclusionsTaking advantage of recent advances in multilingual multimodal machine learning, we accurately differentiate Spanish-Catalan bilingual individuals with nfvPPA and lvPPA using a largely automated, time-efficient (1-2 minutes), and ecologically valid connected-speech-based approach. Future directions include evaluating this approach on larger datasets balanced by PPA subtype, using automated transcriptions of connected speech. Our study represents a step towards addressing current inequities in PPA differential diagnosis for non-English-speaking bilingual speakers. Trial registrationData from the clinical trial NCT05741853 was retrospectively analyzed",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-02",
+    "updated": "2026-10-02",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.18.26363435v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.18.26363435v2.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "Multilingual, multimodal machine learning can accurately distinguish nonfluent/agrammatic from logopenic PPA in Catalan-Spanish bilinguals using connected speech from either language.",
+      "clinical_relevance": "This could streamline bilingual aphasia assessment by reducing reliance on lengthy language-specific testing and helping support more scalable, faster differential diagnosis.",
+      "method": [
+        "34 Catalan-Spanish simultaneous bilingual patients with PPA provided picture descriptions in both dominant and non-dominant languages.",
+        "Features from speech timing, word-level properties, linguistic analysis, and image-text congruence were extracted with tools including PRAAT, SpaCy, CLAN, and Multilingual-CLIP.",
+        "Feature sets were used in machine-learning classifiers and combined into an ensemble model; performance was compared between languages with McNemar testing."
+      ],
+      "evidence_signal": "The best model reached F1 macro scores of 93% in the non-dominant language and 92% in the dominant language, with no significant performance difference between languages.",
+      "watch_item": "The study is small and specific to Catalan-Spanish simultaneous bilinguals, so broader clinical generalizability and real-world deployment still need validation.",
+      "hashtags": [
+        "#MachineLearning",
+        "#BilingualAphasia",
+        "#SpeechAnalytics",
+        "#Neurolinguistics",
+        "#DigitalHealth"
+      ],
+      "paper_id": "2026-10-02-medrxiv-differentiating_nonfluent_agrammatic_and_logopenic_primary_progressive_aphasia_in_catalan",
+      "paper_title": "Differentiating nonfluent/agrammatic and logopenic primary progressive aphasia in Catalan-Spanish bilinguals by applying multilingual multimodal machine learning to connected speech",
+      "paper_date": "2026-10-02",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-08T14:14:49",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-02-medrxiv-an_automated_explainable_ncct_based_clinical_decision_support_system_for_spontaneous_intra",
+    "doi": "10.64898/2026.09.30.26364459",
+    "date": "2026-10-02",
+    "title": "An automated, explainable, NCCT-based clinical decision-support system for spontaneous intracerebral hemorrhage.",
+    "authors": "Liu, C.; Shao, Q.; Li, Y.; Yuan, C.; Xiang, H.; Xu, Y.; Yin, C.; Zhang, J.; Liang, Y.; Yang, G.",
+    "abstract": "BackgroundSpontaneous intracerebral hemorrhage (ICH) has extremely high rates of disability and mortality. However, traditional CT imaging assessment relies solely on hematoma volume and rough anatomical location, making it difficult to account for prognostic heterogeneity and lacking precise individualized predictive tools. In recent years, radiomics has been able to extract texture and heterogeneity features from CT images at high throughput, and combined with machine learning algorithms, it has provided new possibilities for prognostic assessment. MethodsIn this retrospective, multicenter study, we included 2680 consecutive patients with spontaneous intracerebral hemorrhage, comprising a training cohort (n = 1876), an internal validation cohort (n = 804), and an independent external validation cohort (n = 196). We used deep learning algorithms to automatically segment hematomas and then extracted 1690 radiomics features from admission NCCT images. After reproducibility assessment, univariate screening, and LASSO feature selection, 42 valid radiomics features were integrated into a single radiomics feature spectrum (Rad-score). The Rad-score was combined with demographic features, clinical variables, and conventional CT radiomics features to construct two complementary machine learning models, used for functional outcome prediction and comprehensive prognostic stratification, respectively. Model performance was evaluated using R{superscript 2}, mean squared error (MSE), area under the receiver operating characteristic (AUC), calibration analysis, decision curve analysis, and independent external validation. Furthermore, the possibility of ambient temperature variation at symptom onset as a prognostic modifier was explored. ResultsAmong the 1,690 extracted radiomic features, 42 reproducible features were selected to construct the Rad-score. Incorporation of the radiomics signature substantially improved predictive performance compared with models based solely on conventional clinical and imaging variables. For functional outcome prediction, the integrated model increased the coefficient of determination (R{superscript 2}) from 0.35 to 0.93 while reducing the mean squared error (MSE) from 387 to 61. For prognostic risk stratification, the model based only on clinical variables achieved an AUC of 0.59, whereas the fully integrated model achieved an AUC of 0.95 and maintained robust performance in the external validation cohort (AUC=0.86). ConclusionsWe developed and validated a machine learning-based clinical decision support system integrating conventional CT radiomics and clinical variables for prognostic prediction and risk stratification in patients with ICH. By capturing quantitative imaging information beyond conventional CT markers, this framework significantly improved prognostic discrimination and demonstrated good generalizability across independent cohorts. These findings support the integration of quantitative imaging biomarkers into clinical decision-making for spontaneous ICH. Furthermore, the observed association between ambient temperature variation and disease progression warrants further investigation in prospective studies.",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-10-02",
+    "updated": "2026-10-02",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.30.26364459v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.30.26364459v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "An automated NCCT radiomics system can segment intracerebral hemorrhage and combine imaging, clinical, and demographic data to predict outcome more accurately than conventional assessment alone.",
+      "clinical_relevance": "If validated in practice, this type of explainable decision-support tool could help clinicians stratify spontaneous ICH prognosis earlier and more precisely using routine admission CT scans.",
+      "method": [
+        "Deep-learning hematoma segmentation on noncontrast CT.",
+        "Extracted 1,690 radiomics features and reduced them to 42 reproducible predictors to build a Rad-score.",
+        "Combined the Rad-score with clinical/demographic variables in machine-learning models for outcome prediction and prognostic stratification."
+      ],
+      "evidence_signal": "The study used 2,680 patients across training, internal validation, and external validation cohorts, and reported strong performance gains, including R² improving from 0.35 to 0.93 for functional outcome prediction when radiomics was added.",
+      "watch_item": "This is a retrospective multicenter model, so real-world performance, workflow integration, and generalizability still need prospective validation before routine use.",
+      "hashtags": [
+        "#Radiomics",
+        "#MedicalAI",
+        "#CTImaging",
+        "#ICH",
+        "#DecisionSupport"
+      ],
+      "paper_id": "2026-10-02-medrxiv-an_automated_explainable_ncct_based_clinical_decision_support_system_for_spontaneous_intra",
+      "paper_title": "An automated, explainable, NCCT-based clinical decision-support system for spontaneous intracerebral hemorrhage.",
+      "paper_date": "2026-10-02",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-10-08T14:14:52",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-02-medrxiv-multi_omics_approach_to_map_a_clinically_diverse_large_cohort_with_homozygous_founder_rag1",
+    "doi": "10.64898/2026.09.29.26363255",
+    "date": "2026-10-02",
+    "title": "Multi-omics approach to map a clinically diverse large cohort with homozygous founder RAG1 p.C176F variant among Old Order Mennonites",
+    "authors": "Potts, E.; Toth, M.; Brigatti, K. W.; Puffenberger, E. G.; Suhet, P. R.; Talib, M.; Koehler, A. E.; Gaal, Z.; Larsen, K. A.; Miller, R. Z.; Gibson, D. J.; Mendez, P.; An, Z.; Bednarski, J. J.; Blazso, P.; Bosticardo, M.; Chandra, S.; Chinn, I. K.; Clark, J. W.; Condino-Neto, A.; Delmonte, O. M.; Dimitrova, D.; Edwards, E. S. J.; Halade, G. V.; Heimall, J. R.; Hendel, A.; Henrickson, S. E.; Herman, K. E.; Joshi, A.; Kenney, H.; Kitcharoensakkul, M.; Magro, G.; Martin, E. C.; Oliveira-Junior, E. B.; Ong, M.-S.; Ospina, O. E.; Pala, F.; Palmer, K.; Raasch, J. P.; Salamon, M.; Scharer, C. D.; Sero",
+    "abstract": "Partially preserved function of recombination-activating genes (RAG) 1 and 2 can be linked to divergent and hard-to-predict clinical and immunological phenotypes, even among close relatives. It is unclear how intrinsic RAG hypomorphism interacts with extrinsic environmental pressures to shape clinical trajectory. We dissect this phenomenon in a unique cohort of 18 Old Order Mennonite individuals with a novel missense founder RAG1 variant (p.C176F) with 25.8% recombinase activity of wild-type protein. After studying a myriad of markers, we demonstrate varying severity and progression of clinical disease (predominantly in females) that paralleled decline in CMV-specific immune competence, break in tolerance with hallmark presence of antibodies to IFN, a TH1/IFN{gamma}-driven inflammatory milieu with elevated serum markers (CXCL9/10), expansion of follicular helper T cells and clonal B cells enriched for autoreactive-prone VH4.34 B cell receptor. BCR and TCR repertoires carry the fingerprints of both extrinsic and RAG-driven intrinsic changes. Through this experiment of nature, our cohort demonstrated that partial RAG deficiency (pRD) is not a monolithic disease but the result of compounded RAG intrinsic and extrinsic events. Overall, this study uses multi-omics approaches to dissect the contribution of a hypomorphic RAG variant to variable severity of clinical disease and immunological dysregulation at cellular and molecular level. Emerging biomarkers of a multi-omic roadmap should allow monitoring of progression of clinical disease and guide who and when to treat with hematopoietic stem cell transplant in pRD. One sentence summaryA unique cohort of pediatric and adult US Mennonite patients with shared novel partial RAG defect and variable penetrance of disease allow correlation of clinical severity with RAG-intrinsic and extrinsic factors driving plasticity in T and B cell competence to eliminate infections and tolerance to self.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-02",
+    "updated": "2026-10-02",
+    "primary_category": "allergy and immunology",
+    "categories": [
+      "allergy and immunology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.29.26363255v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.29.26363255v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "A homozygous founder RAG1 p.C176F variant in Old Order Mennonites causes a highly variable partial RAG deficiency, where intrinsic hypomorphic recombination defects combine with extrinsic immune pressures to drive diverse clinical and immune phenotypes.",
+      "clinical_relevance": "Multi-omic biomarkers such as CMV-specific immune decline, IFN-related signatures, and skewed B/T cell repertoires may help monitor disease progression and identify patients who could benefit from timely hematopoietic stem cell transplant.",
+      "method": [
+        "Studied 18 Old Order Mennonite individuals with a shared novel RAG1 founder variant.",
+        "Measured recombinase activity, immune cell phenotypes, cytokine/chemokine markers, and antibody signatures.",
+        "Profiled BCR and TCR repertoires to link intrinsic and extrinsic drivers of disease."
+      ],
+      "evidence_signal": "The cohort showed only 25.8% of wild-type recombinase activity, with clinically diverse outcomes that correlated with CMV competence loss, anti-IFN antibodies, elevated CXCL9/10, and repertoire changes.",
+      "watch_item": "This is a rare founder cohort, so findings may not generalize broadly and biomarker-guided treatment decisions still need prospective validation.",
+      "hashtags": [
+        "#RAG1",
+        "#Immunology",
+        "#MultiOmics",
+        "#PrimaryImmunodeficiency",
+        "#Biomarkers"
+      ],
+      "paper_id": "2026-10-02-medrxiv-multi_omics_approach_to_map_a_clinically_diverse_large_cohort_with_homozygous_founder_rag1",
+      "paper_title": "Multi-omics approach to map a clinically diverse large cohort with homozygous founder RAG1 p.C176F variant among Old Order Mennonites",
+      "paper_date": "2026-10-02",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-08T14:14:55",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-02-medrxiv-ai_assisted_nurse_led_skin_cancer_screening_in_a_teledermoscopy_framework_a_multi_site_eva",
+    "doi": "10.64898/2026.10.01.26364543",
+    "date": "2026-10-02",
+    "title": "AI-assisted nurse-led skin cancer screening in a teledermoscopy framework: a multi-site evaluation with one million lesions",
+    "authors": "Shaik, N. E. K.; Desai, N.; Wang, K.; Wild, L.; Dunn, A. G.; Oakley, A.; Palaniswami, M.; Vendrig, J.",
+    "abstract": "Nurse-led skin cancer screening extends specialist reach but depends on the nurse selecting which lesions to forward for diagnosis, and performance varies with experience. We evaluated whether real-time decision support using artificial intelligence (AI) improves malignancy detection in routine nurse-led teledermoscopy screening across MoleMap clinics in New Zealand and Australia (January 2024-July 2025). In this real-world study, clinics using AI decision support were compared with standard clinics. Nurses examined patients, captured dermoscopic images, and forwarded selected lesions to teledermatologists, who provided the reference diagnosis. The analytic cohort comprised 1,102,382 lesions from 98,422 patients across 577 sites. AI-assisted screening was associated with a higher malignancy detection rate than standard screening (25.5 vs 15.7 malignancies per 1,000 lesions; odds ratio adjusted for nurse experience 1.73, 95% CI 1.68-1.77), a finding consistent across all nurse-experience tiers and the three major malignant subtypes. AI assistance was also associated with a shift in recommended management: 21 additional intervention recommendations and 13 additional safety-netting recommendations (self-monitoring, short-term follow-up, or specialist referral) per 1,000 lesions, approximately balanced by 34 fewer no-action recommendations. The reference standard was teledermatologist diagnosis and allocation was not randomised; findings are therefore associational and require prospective, outcome-based confirmation.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-02",
+    "updated": "2026-10-02",
+    "primary_category": "dermatology",
+    "categories": [
+      "dermatology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.01.26364543v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.01.26364543v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "AI decision support for nurse-led teledermoscopy was associated with substantially higher malignancy detection and more escalated management recommendations across over 1.1 million lesions.",
+      "clinical_relevance": "If validated prospectively, real-time AI support could help nurse-led skin cancer screening catch more suspicious lesions while standardizing referral and follow-up decisions.",
+      "method": [
+        "Real-world multi-site comparison of AI-assisted vs standard nurse-led teledermoscopy clinics in New Zealand and Australia.",
+        "Nurses captured dermoscopic images and forwarded selected lesions; teledermatologists provided the reference diagnosis.",
+        "Analysis included 1,102,382 lesions from 98,422 patients across 577 sites, adjusted for nurse experience."
+      ],
+      "evidence_signal": "AI-assisted screening showed 25.5 vs 15.7 malignancies per 1,000 lesions, with adjusted odds ratio 1.73 (95% CI 1.68-1.77).",
+      "watch_item": "The study was observational and non-randomized, so the benefit is associational and needs prospective outcome-based confirmation.",
+      "hashtags": [
+        "#AIinHealthcare",
+        "#SkinCancer",
+        "#Teledermoscopy",
+        "#PrecisionOncology",
+        "#MedicalAI"
+      ],
+      "paper_id": "2026-10-02-medrxiv-ai_assisted_nurse_led_skin_cancer_screening_in_a_teledermoscopy_framework_a_multi_site_eva",
+      "paper_title": "AI-assisted nurse-led skin cancer screening in a teledermoscopy framework: a multi-site evaluation with one million lesions",
+      "paper_date": "2026-10-02",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-08T14:14:57",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-02-medrxiv-improving_masld_identification_in_patients_with_t2d_a_computable_phenotype_framework_integ",
+    "doi": "10.64898/2026.09.26.26364078",
+    "date": "2026-10-02",
+    "title": "Improving MASLD Identification in Patients with T2D: A Computable Phenotype Framework Integrating Structured Data and Clinical Notes",
+    "authors": "Chen, Y.; Sharma, A.; Yang, Q.; Chen, Y.; Yin, R.",
+    "abstract": "Metabolic dysfunction-associated steatotic liver disease (MASLD) is highly prevalent among individuals with type 2 diabetes (T2D), yet accurate identification from electronic health records (EHRs) remains challenging because clinically relevant information is fragmented across structured data and unstructured clinical documentation. We developed a rule-based computable phenotype (CP) framework that integrates structured EHRs with clinical notes for scalable MASLD identification in patients with T2D. The framework comprises five complementary CP algorithms derived from validated fibrosis indices and liver injury biomarkers, together with a lightweight natural language processing module that identifies MASLD-related evidence using keyword matching, contextual filtering, and negation detection. The proposed framework was systematically evaluated across multiple threshold settings, with additional validation through age- and sex-stratified analyses and manual chart review. The findings demonstrate that integrating structured and unstructured EHR data provides an accurate and scalable framework for real-world MASLD phenotyping and offers a practical strategy for developing CPs for other chronic diseases.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-02",
+    "updated": "2026-10-02",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.26.26364078v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.26.26364078v1.full.pdf"
+      }
+    ],
+    "score": 39,
+    "infographic": {
+      "key_insight": "A rule-based computable phenotype that combines structured EHR data with clinical note text can improve identification of MASLD in patients with type 2 diabetes.",
+      "clinical_relevance": "This approach could help clinicians and researchers more reliably find MASLD cases in real-world EHRs, supporting better risk stratification and population-level study.",
+      "method": [
+        "Built five complementary phenotype algorithms using validated fibrosis indices and liver injury biomarkers.",
+        "Added lightweight NLP to detect MASLD mentions in clinical notes with keyword matching, context filtering, and negation detection.",
+        "Tested multiple thresholds and performed age/sex-stratified analyses plus manual chart review."
+      ],
+      "evidence_signal": "The framework was evaluated across multiple threshold settings and validated with age- and sex-stratified analyses and manual chart review, supporting scalable real-world use.",
+      "watch_item": "Performance may vary across health systems because note styles, coding practices, and available labs differ, so external validation is important.",
+      "hashtags": [
+        "#MASLD",
+        "#T2D",
+        "#EHR",
+        "#ComputablePhenotype",
+        "#ClinicalNLP"
+      ],
+      "paper_id": "2026-10-02-medrxiv-improving_masld_identification_in_patients_with_t2d_a_computable_phenotype_framework_integ",
+      "paper_title": "Improving MASLD Identification in Patients with T2D: A Computable Phenotype Framework Integrating Structured Data and Clinical Notes",
+      "paper_date": "2026-10-02",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-08T14:15:02",
+      "generator": "openai"
+    }
+  }
+]
