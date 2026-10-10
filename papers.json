@@ -24,29 +24,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.29.26363734v1.full.pdf"
       }
     ],
-    "score": 79,
+    "score": 74,
     "infographic": {
-      "key_insight": "AlphaFISH combines spatial transcriptomics, spatial microbiome mapping, and AI to show that host-microbe interactions in colorectal tumors can predict aggressive disease and post-resection recurrence.",
-      "clinical_relevance": "This approach could help identify colorectal cancer patients at higher risk of recurrence after surgery by reading spatial biology directly from biopsy tissue.",
+      "key_insight": "AlphaFISH combines spatial host and microbiome profiling with AI to map colorectal cancer tissue ecosystems and identify bacterial-immune patterns linked to recurrence.",
+      "clinical_relevance": "This approach could help stratify colorectal cancer patients after resection by recurrence risk using biopsy-based spatial biomarkers, supporting more personalized follow-up.",
       "method": [
-        "Sequencing-free spatial profiling at subcellular resolution",
-        "Integrates spatial gene expression with microbial microenvironment data",
-        "Transformer model learns joint embeddings from dual-omics and tissue architecture"
+        "Sequencing-free spatial profiling of host transcripts and microbes at subcellular resolution",
+        "Cohort-scale dual-omics dataset built from 149 colorectal biopsies across 68 patients",
+        "Transformer model trained on joint gene, spatial, and microbiome embeddings"
       ],
-      "evidence_signal": "The study analyzed 149 biopsies from 68 patients, used a 4.27-million-cell reference atlas, and reported nearly 90% accuracy for pathology feature prediction and 81% accuracy for 1-year recurrence prediction in 28 followed patients.",
-      "watch_item": "The recurrence result is based on a relatively small follow-up cohort, so broader validation is needed before clinical use.",
+      "evidence_signal": "The model reported nearly 90% accuracy for predicting CRC pathological features and 81% accuracy for 1-year post-resection recurrence in 28 followed patients.",
+      "watch_item": "The recurrence result is based on a small follow-up set, so broader validation is needed before clinical implementation.",
       "hashtags": [
-        "#PrecisionOncology",
         "#ColorectalCancer",
         "#SpatialOmics",
         "#Microbiome",
-        "#ArtificialIntelligence"
+        "#ArtificialIntelligence",
+        "#PrecisionOncology"
       ],
       "paper_id": "2026-10-05-medrxiv-cohort_scale_spatial_host_microbiome_predicts_post_resection_recurrence_in_colorectal_canc",
       "paper_title": "Cohort-scale Spatial Host-Microbiome Predicts Post-Resection Recurrence in Colorectal Cancer",
       "paper_date": "2026-10-05",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-09T14:02:02",
+      "generated_at": "2026-10-10T13:11:29",
       "generator": "openai"
     }
   },
@@ -75,29 +75,131 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.07.03.26357236v2.full.pdf"
       }
     ],
-    "score": 75,
+    "score": 70,
     "infographic": {
-      "key_insight": "A Monte Carlo framework can turn published aggregate trial results into patient-level risk predictions for rare cancers, demonstrated here in Ewing sarcoma.",
-      "clinical_relevance": "It may help refine survivorship surveillance and future trial stratification, but it is not ready to replace individual clinical judgment or prospective validation.",
+      "key_insight": "A Monte Carlo framework can convert published aggregate trial results into patient-level risk estimates for rare cancers, using Ewing sarcoma as a proof of concept.",
+      "clinical_relevance": "The approach may help refine survivorship surveillance and future trial design, but it is not yet a substitute for patient-level validated decision support.",
       "method": [
-        "Six-stage discrete-event simulation combines genetic risk, serial biomarker dynamics, ctDNA-MRD, and competing mortality risks.",
-        "Adverse-effect modules project long-term toxicity across five organ systems from chemo and radiation exposure.",
-        "Genotype-conditional weighting improves subgroup discrimination versus equal weighting."
+        "Six-stage discrete-event Monte Carlo simulation",
+        "Integrates genetic risk, serial biomarkers, ctDNA-MRD, and competing mortality",
+        "Adds long-term toxicity modules across five organ systems"
       ],
-      "evidence_signal": "In published Ewing sarcoma data from more than 3,400 patients, the model reported 3.2% mean absolute error across 23 efficacy endpoints and stayed within confidence intervals for all 20 toxicity endpoints.",
-      "watch_item": "The approach was validated against aggregate published data and remains a hypothesis for transfer to other rare cancers until prospective patient-level validation is available.",
+      "evidence_signal": "In Ewing sarcoma data from more than 3,400 patients, the model reported 3.2% mean absolute error across 23 efficacy endpoints and stayed within published confidence intervals for all 20 toxicity endpoints.",
+      "watch_item": "The framework is validated on published aggregate data, so transfer to other rare cancers and real-world patient-level use still requires future validation.",
       "hashtags": [
         "#RareCancer",
         "#EwingSarcoma",
-        "#ComputationalModeling",
-        "#ctDNA",
-        "#Survivorship"
+        "#MonteCarloModeling",
+        "#ctDNAMRD",
+        "#CancerSurvivorship"
       ],
       "paper_id": "2026-10-05-medrxiv-withdrawn_multi_timepoint_risk_stratification_in_rare_cancers_a_computational_framework_va",
       "paper_title": "WITHDRAWN: Multi-Timepoint Risk Stratification in Rare Cancers: A Computational Framework Validated against Published Ewing Sarcoma Trial Data",
       "paper_date": "2026-10-05",
       "paper_category": "Target Biology",
-      "generated_at": "2026-10-09T14:02:06",
+      "generated_at": "2026-10-10T13:11:32",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-06-medrxiv-cross_cohort_generalizability_of_machine_learning_models_for_early_stage_node_negative_bre",
+    "doi": "10.64898/2026.10.02.26364592",
+    "date": "2026-10-06",
+    "title": "Cross-cohort generalizability of machine learning models for early-stage node-negative breast cancer relapse prediction",
+    "authors": "Ozdemir, C.; Gupta, S.",
+    "abstract": "BackgroundAdjuvant therapy decision in early-stage node-negative breast cancer remains one of the most challenging problems in oncology. Although most patients in this population achieve favorable outcomes with endocrine therapy alone, a subset remains at risk of relapse and may benefit from chemotherapy. Accurate identification of high-risk and low-risk patients is therefore essential to prevent both undertreatment and overtreatment. MethodsIn this study, machine learning models were assessed using MSK-IMPACT (n=645) and METABRIC (n=503) cohorts comprising node-negative stage I-II breast cancer patients. Three experimental settings were evaluated: training on MSK-IMPACT and testing on METABRIC, the reverse direction, and five-fold cross-validation on the combined cohort. Sensitivity analysis and data harmonization were applied to identify and mitigate cohort-specific bias. Survival analysis, SHapley Additive exPlanations (SHAP) interpretability, and ablation analyses were performed to validate clinical relevance and characterize feature contributions. ResultsThe combined cohort model achieved an area under the receiver operating characteristic curve (AUC) of 0.788{+/-}0.028 across five-fold cross-validation, while bidirectional cross-cohort validation yielded AUC of 0.741 when testing on MSK-IMPACT and AUC of 0.714 when testing on METABRIC. Survival validation on METABRIC out-of-fold predictions from the combined cohort model showed hazard ratios of 3.01 (95% CI: 2.28-3.98) for disease-free survival and 2.35 (95% CI: 1.79-3.09) for overall survival, consistent across Luminal A, Luminal B, and Triple-Negative subtypes. ConclusionValidated across two geographically independent cohorts, the proposed model enables cost-effective, gene expression-free identification of patients at high-risk of distant relapse and may facilitate adjuvant chemotherapy decision-making in early-stage node-negative breast cancer.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364592v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364592v1.full.pdf"
+      }
+    ],
+    "score": 67,
+    "infographic": {
+      "key_insight": "A machine learning model can identify early-stage node-negative breast cancer patients at higher relapse risk and remains moderately accurate across two independent cohorts.",
+      "clinical_relevance": "If validated further, this could help clinicians better target adjuvant chemotherapy and avoid overtreatment in lower-risk patients.",
+      "method": [
+        "Trained and tested models on MSK-IMPACT and METABRIC node-negative stage I-II breast cancer cohorts.",
+        "Evaluated three settings: within-cohort cross-validation and cross-cohort transfer in both directions.",
+        "Used sensitivity analysis, data harmonization, survival analysis, SHAP, and ablation testing to assess robustness and interpretability."
+      ],
+      "evidence_signal": "The combined-cohort model achieved AUC 0.788 ± 0.028 in five-fold cross-validation, with cross-cohort AUCs of 0.741 and 0.714, and showed significant survival separation on METABRIC.",
+      "watch_item": "Performance was lower when models were transferred between cohorts, so external validation and careful harmonization are still needed before clinical use.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#BreastCancer",
+        "#MachineLearning",
+        "#BiomarkerResearch",
+        "#ClinicalDecisionSupport"
+      ],
+      "paper_id": "2026-10-06-medrxiv-cross_cohort_generalizability_of_machine_learning_models_for_early_stage_node_negative_bre",
+      "paper_title": "Cross-cohort generalizability of machine learning models for early-stage node-negative breast cancer relapse prediction",
+      "paper_date": "2026-10-06",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-10T13:11:34",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-06-medrxiv-an_interpretable_cell_centric_representation_of_pancreatic_ductal_adenocarcinoma_matches_m",
+    "doi": "10.64898/2026.10.03.26364596",
+    "date": "2026-10-06",
+    "title": "An interpretable cell-centric representation of pancreatic ductal adenocarcinoma matches multiple-instance learning for clinical outcomes and leads to novel pathologist-driven histological biomarkers",
+    "authors": "Pelloux, M.; Tran, C. T.; Baig, J.; Khellaf, A.; Huang, S. L.; Nguyen, O. T.; Batardiere, M.; Diwan, S.-S.; Yang, Z.; Li, J.-L.; Vu, V.; Roy, S. F.; Soucy, G.; Nguyen, B. N.; Tessier-Cloutier, B.; Hosseini, M. S.; Knapp, D. J.; Valmary-Degano, S.; Trinh, V. Q.",
+    "abstract": "Current state of the art computational pathology foundation models attain satisfying accuracy most general pathology tasks including detection of pancreatic ductal adenocarcinoma (PDAC) but fail to provide sufficient explainability, operating as \"black boxes\". Some interpretability effort has been made, with models providing attention maps that project back on the slide the models high attended areas that pushed for the given prediction result, without further naming or reasoning explanation which can limit pathologists trust toward the prediction. We developed C3PRO, a cell-centric framework attempting to provide deeper understanding and explainability, by using embeddings extracted using a pathology foundation model, from cell centered tiles containing both the cell and its close neighborhood, which were then clustered into recurrent morphological phenotypes. A spatial graph was additionally constructed on top of the back-projected vocabulary to account for recurrent motifs. The evaluation of the model performance involved a cohort of 809 patients (825 diagnostic biopsies) using nested cross validation. C3PRO was benchmarked against four different multiple instance learning frameworks and achieved on-par performance for diagnostic (0.958 AUC), survival (0.617) and resectability (0.696) prediction, while providing additional insights compared to the strongest baseline models. Each clustered phenotype was probed and extracted as a representative tile mosaic and annotated by two expert pathologists, constituting a phenotype vocabulary available for statistical analysis. These phenotypes were scored by pathologists with physical brightfield microscopy and replicated the independent statistical significance impact on overall survival prediction from diagnostic biopsies. STATEMENT OF SIGNIFICANCEPathology foundation model multiple-instance-learning frameworks cannot be audited by the pathologists. We demonstrate that a representation constructed from identifiable cell phenotypes is on par with state-of-the-art models for diagnosis, prognosis, and resectability in pancreatic cancer. This approach also uncovers prognostic stromal states that expert observers cannot differentiate using light microscopy.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "primary_category": "pathology",
+    "categories": [
+      "pathology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.03.26364596v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.03.26364596v1.full.pdf"
+      }
+    ],
+    "score": 67,
+    "infographic": {
+      "key_insight": "C3PRO turns cell-centered pathology patches into interpretable phenotypes and spatial motifs that match black-box multiple-instance learning for PDAC prediction while adding pathologist-readable explanations.",
+      "clinical_relevance": "This could improve trust and auditability of pancreatic cancer biopsy predictions for diagnosis, survival, and resectability without sacrificing performance.",
+      "method": [
+        "Extracted embeddings from cell-centered tiles using a pathology foundation model",
+        "Clustered recurrent morphological phenotypes into a visual vocabulary and built a spatial graph of motif patterns",
+        "Benchmarked against four MIL models for diagnostic, survival, and resectability prediction"
+      ],
+      "evidence_signal": "Evaluated on 809 patients (825 diagnostic biopsies) with nested cross-validation, reaching AUC 0.958 for diagnosis, 0.617 for survival, and 0.696 for resectability, on par with top baselines.",
+      "watch_item": "The phenotype vocabulary and pathologist annotations still require external validation across sites, scanners, and broader patient cohorts before routine use.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#ComputationalPathology",
+        "#PancreaticCancer",
+        "#ExplainableAI",
+        "#DigitalPathology"
+      ],
+      "paper_id": "2026-10-06-medrxiv-an_interpretable_cell_centric_representation_of_pancreatic_ductal_adenocarcinoma_matches_m",
+      "paper_title": "An interpretable cell-centric representation of pancreatic ductal adenocarcinoma matches multiple-instance learning for clinical outcomes and leads to novel pathologist-driven histological biomarkers",
+      "paper_date": "2026-10-06",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-10T13:11:36",
       "generator": "openai"
     }
   },
@@ -126,17 +228,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364620v1.full.pdf"
       }
     ],
-    "score": 63,
+    "score": 58,
     "infographic": {
-      "key_insight": "A planner-executor multimodal AI system can answer patient questions about lung cancer screening CT results while deciding when to defer to a physician.",
-      "clinical_relevance": "This could improve patient understanding and follow-up in lung cancer screening programs without overstepping into questions that need clinician input.",
+      "key_insight": "A planner-executor multimodal AI system can answer many patient questions about lung cancer screening CT results while appropriately deferring out-of-scope questions to physicians.",
+      "clinical_relevance": "This could improve patient understanding of screening results and support follow-up adherence, but it is designed to assist communication rather than replace clinician judgment.",
       "method": [
-        "Used 116 lung cancer screening CT reports and images from a tertiary academic hospital",
-        "Generated 699 simulated patient questions, split into answerable vs defer-to-doctor categories",
-        "Evaluated tool-calling, self-regulation, and physician-rated response quality"
+        "Built a planner-executor multi-agent system to mimic clinical reasoning.",
+        "Used 116 lung cancer screening CT reports/images and an LLM-based framework to generate 699 simulated patient questions.",
+        "Evaluated tool-calling, self-regulation, and clinician-rated response quality."
       ],
-      "evidence_signal": "The system achieved 93.1% tool-calling accuracy and 92.6% self-regulation accuracy, with strong physician-rated clinical accuracy and understandability in a 100-response reader study.",
-      "watch_item": "Results were based on retrospective data and simulated questions, so real-world performance, safety, and patient comprehension still need prospective testing.",
+      "evidence_signal": "The system achieved 93.1% tool-calling accuracy and 92.6% self-regulation accuracy, with strong physician ratings for clinical accuracy and understandability on a subset of responses.",
+      "watch_item": "Performance was tested on retrospective data and simulated questions, so real-world safety, generalizability, and workflow integration still need prospective validation.",
       "hashtags": [
         "#LungCancerScreening",
         "#MedicalAI",
@@ -148,7 +250,58 @@
       "paper_title": "Planner-Executor Style Multimodal Agentic System to Answer Patient Questions in Lung Cancer Screening CT",
       "paper_date": "2026-10-05",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-09T14:02:09",
+      "generated_at": "2026-10-10T13:11:38",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-05-medrxiv-a_semi_automated_interactive_annotation_framework_for_intraoperative_neurosurgical_ultraso",
+    "doi": "10.64898/2026.10.03.26364663",
+    "date": "2026-10-05",
+    "title": "A Semi-Automated Interactive Annotation Framework for Intraoperative Neurosurgical Ultrasound: A Proof-of-Concept Study",
+    "authors": "Bertani, R.; Bahadir, S.; Ferreira, M. Y.; Campos Cardoso, L. J.; Thomas, G.; Ben-Shalom, N.",
+    "abstract": "ObjectivesIntraoperative ultrasound (IOUS) is an increasingly valuable real-time imaging modality in neurosurgery, enabling visualization of brain parenchyma, tumor margins, ventricular anatomy, and vascular structures during cranial procedures. Despite its clinical relevance, the development of artificial intelligence (AI)-assisted interpretation tools for neurosurgical IOUS has been limited by the scarcity of large, annotated datasets. Manual pixel-level annotation of ultrasound video frames is labor-intensive, requires specialized neuroanatomical expertise, and scales poorly. To address this bottleneck, we developed a proof-of-concept interactive semi-automated annotation pipeline designed to explore the feasibility of scalable, expert-guided labeling for intraoperative neurosurgical IOUS. MethodsWe implemented the system as a napari-based graphical interface coupled with a scikit-learn Random Forest (RF) pixel classifier. Real intraoperative neurosurgical ultrasound videos from five craniotomy cases were used as training material. A neurosurgical expert annotated a minimal set of representative frames using brush-based labeling to define anatomical classes of interest. For each labeled pixel, a feature vector was computed comprising raw intensity, multi-scale Gaussian filtering ({sigma} = 1, 2, 3), Laplacian of Gaussian, and Sobel edge magnitude. The RF classifier was trained on accumulated annotations using class-balanced weighting and out-of-bag (OOB) validation, then applied across full video sequences. An incremental accumulator module enabled multi-case training. Segmentation outputs were exported as TIFF overlays for expert quality review. ResultsAcross five intraoperative cases, sparse expert annotation of a small number of representative frames per case was sufficient to train case-specific Random Forest classifiers that propagated labels across the full video sequences. Out-of-bag estimation served as an internal coherence check during training, and the classifier additionally produced per-class probability maps that exposed regions of uncertainty at acoustic boundaries. On expert qualitative review, the auto-segmented frames were anatomically coherent, with the classifier reliably distinguishing anechoic fluid compartments from echogenic tissue interfaces; residual misclassification was concentrated in low-contrast boundary regions. ConclusionsThis proof-of-concept study demonstrates that semi-automated, expert-guided annotation of intraoperative neurosurgical ultrasound is technically feasible using classical machine learning. By combining neurosurgical domain expertise with an interactive, incremental annotation workflow applied to real intraoperative acquisitions, this framework represents a foundational step toward scalable generation of labeled datasets for neurosurgical IOUS. Future directions include formal multi-rater validation, expanded multi-class anatomical labeling, and eventual migration to deep learning architectures as annotated datasets grow. Practitioner PointsO_LIA napari-based interface coupled with a Random Forest pixel classifier can propagate sparse expert annotations across full intraoperative ultrasound video sequences, sharply reducing the manual labeling burden. C_LIO_LIThe classifiers per-class probability output highlights low-confidence, low-contrast acoustic boundaries, offering a built-in uncertainty signal that could inform real-time interpretation. C_LIO_LIThis lightweight, GPU-free workflow provides a practical, scalable first step toward building annotated video datasets that could eventually support deep learning-based interpretation of neurosurgical IOUS. C_LI",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-10-05",
+    "updated": "2026-10-05",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.03.26364663v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.03.26364663v1.full.pdf"
+      }
+    ],
+    "score": 58,
+    "infographic": {
+      "key_insight": "A semi-automated, expert-guided annotation pipeline can turn a small number of labeled intraoperative ultrasound frames into usable segmentation across full neurosurgical video sequences.",
+      "clinical_relevance": "If validated further, this approach could reduce the time and expertise needed to build AI tools for real-time brain tumor and anatomy interpretation during surgery.",
+      "method": [
+        "Napari-based interactive labeling interface for neurosurgical ultrasound videos",
+        "Random Forest pixel classifier trained on sparse expert brush annotations using intensity, multi-scale Gaussian, Laplacian of Gaussian, and Sobel features",
+        "Incremental multi-case training with OOB validation and exported TIFF overlays for review"
+      ],
+      "evidence_signal": "In five craniotomy cases, sparse annotations from a neurosurgical expert were sufficient to train case-specific models that propagated labels across full intraoperative ultrasound sequences, with OOB estimates and qualitative expert review used for assessment.",
+      "watch_item": "This is a proof-of-concept study with only five cases and qualitative review, so broader accuracy, robustness, and generalizability remain unproven.",
+      "hashtags": [
+        "#Neurosurgery",
+        "#IntraoperativeUltrasound",
+        "#AIAnnotation",
+        "#MedicalImagingAI",
+        "#ProofOfConcept"
+      ],
+      "paper_id": "2026-10-05-medrxiv-a_semi_automated_interactive_annotation_framework_for_intraoperative_neurosurgical_ultraso",
+      "paper_title": "A Semi-Automated Interactive Annotation Framework for Intraoperative Neurosurgical Ultrasound: A Proof-of-Concept Study",
+      "paper_date": "2026-10-05",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-10-10T13:11:39",
       "generator": "openai"
     }
   },
@@ -177,43 +330,145 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.03.26364667v1.full.pdf"
       }
     ],
-    "score": 57,
+    "score": 52,
     "infographic": {
-      "key_insight": "A local open-weight OCR+LLM pipeline on a single consumer GPU can accurately turn faxed oncology referral packets into structured clinical data.",
-      "clinical_relevance": "This could reduce manual chart-reading burden for referral intake while keeping protected health information on-device.",
+      "key_insight": "A local, open-weight OCR+LLM pipeline on a consumer GPU can accurately extract structured clinical information from faxed referral packets without sending PHI to a commercial cloud model.",
+      "clinical_relevance": "This could reduce manual chart review and help clinics organize incoming oncology referral information faster while keeping patient data on-device.",
       "method": [
-        "Generated 200 synthetic colorectal cancer referral packets from simulated records and rendered them as image-only faxes.",
-        "Used OvisOCR2 for transcription and Qwen3.8-27B for structured information extraction.",
-        "Compared 20 clinical outcomes against ground truth on 140 validation packets."
+        "Generated 200 synthetic colorectal cancer referral packets from simulated records",
+        "Rendered packets as fax images with no text layer",
+        "Used local OCR (OvisOCR2) plus open-weight LLM extraction (Qwen3.8-27B) on consumer hardware"
       ],
-      "evidence_signal": "Across 11,993 extracted facts, the pipeline showed 0.990 weighted accuracy, with laboratory values at 98.9%, dates at 99.7%, diagnoses at 100%, and no fabricated facts.",
-      "watch_item": "Results were based on synthetic referral packets, so real-world performance on messy, diverse faxed records still needs validation.",
+      "evidence_signal": "On 140 validation packets, the system achieved 0.990 weighted accuracy, with exact extraction of lab values at 98.9%, dates at 99.7%, diagnoses at 100%, and no fabricated facts among 11,993 extracted facts.",
+      "watch_item": "Results were based on synthetic referral packets, so real-world fax quality, document variation, and deployment workflows still need external validation.",
       "hashtags": [
-        "#AIinHealthcare",
         "#PrecisionOncology",
-        "#MedicalOCR",
+        "#HealthAI",
         "#LLM",
-        "#HealthInformatics"
+        "#OCR",
+        "#ClinicalWorkflow"
       ],
       "paper_id": "2026-10-05-medrxiv-extraction_of_clinical_information_from_faxed_medical_records_using_a_small_local_large_la",
       "paper_title": "Extraction of clinical information from faxed medical records using a small local large language model pipeline on consumer hardware",
       "paper_date": "2026-10-05",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-09T14:02:11",
+      "generated_at": "2026-10-10T13:11:41",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-10-03-medrxiv-assessing_ai_and_neurologist_diagnostic_reasoning_against_neuropathological_ground_truth",
-    "doi": "10.64898/2026.07.07.26356930",
-    "date": "2026-10-03",
-    "title": "Assessing AI and Neurologist Diagnostic Reasoning Against Neuropathological Ground Truth",
-    "authors": "Leng, Y.; Noori, A.; He, Y.; Favaro, A.; Dickson, J. R.; Serrano-Pozo, A.; Avetisyan, M.; Rodriguez, D.; Rosenberg, E. S.; Oakley, D. H.; Khurana, V. S.; Maslinski, J.; Glicksberg, B. S.; Syed, M.; Kubon, P. E.; Walker, J.; Suemoto, C. K.; Seshadri, S.; Clifton, D. A.; Zitnik, M.; Hyman, B. T.; Frosch, M. P.; Das, S.",
-    "abstract": "BACKGROUNDAccurate differential diagnosis of complex neurological disorders remains challenging due to overlapping clinical features and heterogeneous disease presentations. Although large language models (LLMs) show promise in clinical reasoning, prior studies have benchmarked performance against clinician consensus rather than biological ground truth. Evaluation of diagnostic AI in neurology requires benchmarks grounded in neuropathological findings. METHODSWe introduce NeuroBench, a curated benchmark of complex neurological cases with neuropathologically confirmed reference-standard diagnoses, and DIAGNO, a confidence-aware LLM-based system for neurological diagnosis. NeuroBench comprises 791 retrospective case summaries and corresponding autopsy-confirmed diagnoses across three independent health systems: 500 cases from the Massachusetts General Hospital (MGH) Brain Cutting Conference; 200 cases from the Mount Sinai Health System; and 91 cases from the University of Texas Health Science Center at San Antonio (UTHSA). Across all cases, DIAGNO generated top-3 differential diagnoses, employing retrieval-augmented generation for lower-confidence cases. In a subset of 203 complex MGH cases, performance was assessed by three independent blinded adjudicators who evaluated both DIAGNO and neurologists against neuropathological ground truth. RESULTSNeuroBench encompassed 59 unique neuropathological diagnoses, spanning conditions including cerebrovascular disease, brain tumors, neurological infections, and various neurodegenerative and inflammatory disorders. DIAGNO achieved 83.8% top-3 accuracy across the 500 MGH cases, 76.5% accuracy across the 200 Mount Sinai cases, and 92.3% accuracy across the 91 UTHSA cases. In the subset of 203 MGH cases, DIAGNO achieved higher top-3 accuracy (0.67 versus 0.63) and taxonomy-level accuracy (0.74 versus 0.67) than neurologists. In cases of disagreement, DIAGNO was more often correct than neurologists (29 versus 19 cases). Diagnostic concordance between DIAGNO and neurologists was high (90% agreement in top-3 predictions). In a real-world evaluation on eight cases from Mass General Brigham, neurologists rated DIAGNOs reasoning favorably (mean 4.03/5) across multiple dimensions. CONCLUSIONSNeuroBench establishes neuropathological confirmation as a reference standard for evaluating diagnostic AI in neurology, moving beyond clinician-based benchmarking to redefine the ceiling of diagnostic accuracy. Evaluated against this standard, DIAGNO achieved diagnostic performance comparable to neurologists and received favorable clinician ratings in real-world applications, supporting its potential as a clinical decision support tool in neurology.",
+    "id": "2026-10-05-medrxiv-data_efficient_prostate_micro_ultrasound_image_analysis_using_a_modality_specific_foundati",
+    "doi": "10.64898/2026.09.29.26364330",
+    "date": "2026-10-05",
+    "title": "Data-Efficient Prostate Micro-Ultrasound Image Analysis using a Modality-specific Foundation Model",
+    "authors": "Pang, K.; Fan, J.; Hung, A. L. Y.; Miao, Q.; Oh, C.; He, Q.; Wodlinger, B.; Kinnaird, A.; Brisbane, W.; Sung, K.",
+    "abstract": "Background and ObjectiveMicro-ultrasound (MicroUS) is an emerging high-resolution imaging modality for prostate cancer diagnosis and real-time biopsy guidance, but its automated analysis is limited by labor-intensive expert annotation. We aimed to develop and evaluate a foundation model for data-efficient MicroUS image analysis. MethodsWe developed {micro}FM, a MicroUS-specific foundation model pretrained using DINOv2-style self-supervised learning on 1,736,391 unlabeled images from 780 patients. The model was fine-tuned and evaluated in three downstream cohorts for prostate capsule segmentation (public, 75 patients), urethra segmentation (institutional, 105 patients), and prostate cancer lesion localization (institutional, 190 patients). Under limited annotation, {micro}FM was compared with randomly initialized models and foundation models pretrained on natural, medical, and ultrasound images. Evaluation used the Dice scores and 95th-percentile Hausdorff distance (HD95) for segmentation and free-response receiver operating characteristic analysis for lesion localization. Key Findings and Limitations{micro}FM improved performance across all three tasks, with the largest gains under limited annotation. With 10% of training scans, {micro}FM achieved Dice scores of 93.8% for prostate capsule segmentation and 58.4% for urethra segmentation, versus 87.9% and 47.0% for the strongest comparators. Corresponding HD95 values were 2.0 and 4.3 mm. For lesion localization, {micro}FM outperformed other models with approximately 0.75 sensitivity at two false-positive detections per 3D volume. Limitations include retrospective single-institution pretraining and lack of explicit 3D modeling. Conclusions and Clinical ImplicationsMicroUS-specific self-supervised pretraining improved data-efficient image analysis across prostate and urethra segmentation, and lesion localization. This approach may reduce annotation requirements for developing automated tools in MicroUS image analysis. Advancing PracticeO_ST_ABSWhat does the study add?C_ST_ABSThis study evaluates a deep learning model pretrained on a large-scale dataset of unlabeled prostate MicroUS images. The pretrained model was adapted to three clinically relevant image-analysis tasks: prostate capsule segmentation, urethra segmentation, and prostate cancer lesion localization. Substantial performance gains over other models were observed despite limited training data, suggesting that MicroUS-specific self-supervised pretraining may reduce expert annotation requirements for developing automated image-analysis tools. Patient SummaryWe developed a foundation model that learns from unlabeled prostate MicroUS images. It performed better with limited labeled data but requires independent validation before clinical use.",
     "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-10-03",
-    "updated": "2026-10-03",
+    "published": "2026-10-05",
+    "updated": "2026-10-05",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.29.26364330v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.29.26364330v1.full.pdf"
+      }
+    ],
+    "score": 52,
+    "infographic": {
+      "key_insight": "A MicroUS-specific foundation model ({micro}FM) pretrained on 1.7M unlabeled prostate ultrasound images improved data-efficient segmentation and lesion localization, especially when labeled data were scarce.",
+      "clinical_relevance": "This could lower annotation burden and accelerate development of automated tools for prostate cancer imaging and biopsy guidance in MicroUS workflows.",
+      "method": [
+        "Self-supervised DINOv2-style pretraining on 1,736,391 unlabeled MicroUS images from 780 patients",
+        "Fine-tuning on three downstream tasks: prostate capsule segmentation, urethra segmentation, and cancer lesion localization",
+        "Compared against random initialization and foundation models pretrained on natural, medical, and ultrasound images"
+      ],
+      "evidence_signal": "With only 10% of training scans, {micro}FM reached 93.8% Dice for capsule segmentation and 58.4% for urethra segmentation, and achieved about 0.75 sensitivity at 2 false positives per 3D volume for lesion localization.",
+      "watch_item": "Results come from retrospective, largely single-institution pretraining and the model does not include explicit 3D modeling, so external validation is needed before broader deployment.",
+      "hashtags": [
+        "#MicroUS",
+        "#FoundationModel",
+        "#ProstateCancer",
+        "#SelfSupervisedLearning",
+        "#MedicalAI"
+      ],
+      "paper_id": "2026-10-05-medrxiv-data_efficient_prostate_micro_ultrasound_image_analysis_using_a_modality_specific_foundati",
+      "paper_title": "Data-Efficient Prostate Micro-Ultrasound Image Analysis using a Modality-specific Foundation Model",
+      "paper_date": "2026-10-05",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-10T13:11:43",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-06-medrxiv-predicting_cervical_cancer_screening_utilization_among_women_of_reproductive_age_in_ethiop",
+    "doi": "10.64898/2026.10.02.26364565",
+    "date": "2026-10-06",
+    "title": "Predicting Cervical Cancer Screening Utilization Among Women of Reproductive Age in Ethiopia Using Supervised Machine Learning: A Nationally Representative 2024/25 EDHS Study",
+    "authors": "Gebiru, A. M.; Gelaw, N. B.; Mekonen, D. K.; Agazie, A. A.; Kelkay, M. M.; Gelaw, Y. D.; Godana, T. N.",
+    "abstract": "BackgroundCervical cancer is a leading malignancy and mortality cause among Ethiopian women. Despite screening expansions coverage remains low. Traditional models miss complex determinants. This study aimed to develop machine learning models to predict cervical cancer screening utilization and identify drivers using the 2024 to 2025 Ethiopian Demographic and Health Survey. MethodsA secondary analysis of the 2024 to 2025 Ethiopian Demographic and Health Survey was conducted among women aged 15 to 49. Six algorithms Logistic Regression, Decision Tree, Support Vector Machine, Random Forest, Gradient Boosting Machine and Extreme Gradient Boosting were trained. Synthetic Minority Over-sampling Technique handled class imbalance with a 4.2 percent screening prevalence. Models were evaluated on a holdout set using Area Under the Receiver Operating Characteristic curve, Area Under the Precision-Recall Curve, Brier score and Decision Curve Analysis. SHapley Additive exPlanations explained model predictions. ResultsExtreme Gradient Boosting achieved superior discrimination with an Area Under the Receiver Operating Characteristic curve of 0.896 and Area Under the Precision-Recall Curve of 0.781 outperforming baseline Logistic Regression at 0.772. Isotonic calibration optimized prediction loss with a Brier score of 0.038. Decision Curve Analysis confirmed clinical net benefit across thresholds from 5 percent to 55 percent. Explanatory analysis identified cancer awareness, education, autonomy, wealth quintile, recent health visits and urban residence as primary screening drivers. ConclusionsProbability-calibrated Extreme Gradient Boosting with explainability provides an accurate tool for identifying un-screened women in Ethiopia. Public health programs can deploy these tools in primary care applications to target outreach, optimize community engagement and accelerate World Health Organization elimination targets.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "primary_category": "epidemiology",
+    "categories": [
+      "epidemiology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364565v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364565v1.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "A calibrated Extreme Gradient Boosting model best predicted cervical cancer screening use in Ethiopian women, with awareness, education, autonomy, wealth, recent health visits, and urban residence as key drivers.",
+      "clinical_relevance": "This could help public health teams identify women less likely to be screened and target outreach more efficiently in primary care and community programs.",
+      "method": [
+        "Nationally representative secondary analysis of the 2024/25 Ethiopia Demographic and Health Survey",
+        "Compared Logistic Regression, Decision Tree, SVM, Random Forest, GBM, and XGBoost",
+        "Used SMOTE, holdout testing, calibration, and SHAP for explainability"
+      ],
+      "evidence_signal": "XGBoost achieved the strongest performance, with AUROC 0.896 and AUPRC 0.781, and isotonic calibration reduced Brier score to 0.038.",
+      "watch_item": "Because screening prevalence was very low and the model was developed on survey data, real-world deployment would need external validation and careful workflow integration.",
+      "hashtags": [
+        "#CervicalCancer",
+        "#MachineLearning",
+        "#PublicHealth",
+        "#Ethiopia",
+        "#HealthEquity"
+      ],
+      "paper_id": "2026-10-06-medrxiv-predicting_cervical_cancer_screening_utilization_among_women_of_reproductive_age_in_ethiop",
+      "paper_title": "Predicting Cervical Cancer Screening Utilization Among Women of Reproductive Age in Ethiopia Using Supervised Machine Learning: A Nationally Representative 2024/25 EDHS Study",
+      "paper_date": "2026-10-06",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-10T13:11:45",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-06-medrxiv-a_reduced_digital_motor_assessment_using_multimodal_biomarkers_in_parkinson_s_disease",
+    "doi": "10.64898/2026.10.05.26364743",
+    "date": "2026-10-06",
+    "title": "A Reduced Digital Motor Assessment using Multimodal Biomarkers in Parkinson's Disease",
+    "authors": "Rey Vilches, J.; Thomsen, T. H.; Biering-Sorensen, B.; Puthusserypady, S.; Tolu, S.",
+    "abstract": "AO_SCPLOWBSTRACTC_SCPLOWO_ST_ABSBackgroundC_ST_ABSWearable sensing and machine learning can support objective assessment of Parkinsons disease (PD), but performance depends on sensor placement, modality, and analysis, and studies often target selected motor tasks, whereas clinical assessment integrates multiple standardized movements. How discriminative information is distributed across tasks and modalities remains unclear, limiting comparability and translation. ObjectivesTo quantify standardized Movement Disorder Society Unified Parkinsons Disease Rating Scale Part III (MDS-UPDRS III) tasks across complementary modalities, determine task- and modality-specific contributions to discrimination, and identify complementary, stable candidate digital biomarkers. MethodsThirty-one participants with PD (Hoehn and Yahr stages I-III) and 30 age- and sex-matched healthy controls performed seven MDS-UPDRS III tasks (items 3.4-3.8, 3.10, 3.15). Unilateral surface electromyography from task-specific muscles and full-body inertial motion capture were acquired, which drove subject-specific musculoskeletal simulations. A leakage-free classification pipeline (in-fold feature selection, repeated cross-validation, permutation testing) was applied by task and modality, followed by sparse task fusion and stability-based biomarker selection. ResultsDiscrimination was concentrated in four upper-limb tasks, with pronation-supination (3.6) performing best (ROC-AUC 0.94; balanced accuracy 0.92). Multitask multimodal fusion maintained discrimination (ROC-AUC 0.93; balanced accuracy 0.92; sensitivity 0.87; specificity 0.97), retaining finger tapping (3.4), hand movements (3.5), pronation-supination (3.6), and postural tremor (3.15). Eighteen stable candidate biomarkers captured complementary alterations in movement execution, muscle activation, coordination, tremor, and proximal stabilization. ConclusionsIn this cohort, discriminative information converged on a four-task upper-limb assessment and a physiologically interpretable multimodal biomarker profile. These findings support shorter, clinically anchored digital motor assessment, pending independent clinical validation.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
     "primary_category": "neurology",
     "categories": [
       "neurology"
@@ -221,36 +476,87 @@
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.07.26356930v2"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364743v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.07.26356930v2.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364743v1.full.pdf"
       }
     ],
-    "score": 53,
+    "score": 51,
     "infographic": {
-      "key_insight": "A confidence-aware LLM system, DIAGNO, matched or outperformed neurologists when both were judged against autopsy-confirmed neuropathology across diverse complex neurological cases.",
-      "clinical_relevance": "This work suggests AI could support differential diagnosis in challenging neurology cases, but it is a decision-support tool rather than a substitute for expert clinical evaluation.",
+      "key_insight": "A multimodal digital assessment found that most Parkinson’s disease discrimination came from four upper-limb motor tasks, especially pronation-supination.",
+      "clinical_relevance": "This supports a shorter, clinically anchored movement assessment that could reduce testing burden while preserving diagnostic signal, if validated in independent cohorts.",
       "method": [
-        "Built NeuroBench from 791 retrospective cases with neuropathology-confirmed diagnoses across 3 health systems",
-        "Had DIAGNO generate top-3 differentials, using retrieval-augmented generation for lower-confidence cases",
-        "Compared DIAGNO with neurologists in a blinded subset using adjudicators against ground truth"
+        "31 people with Parkinson’s disease and 30 matched healthy controls completed seven standardized MDS-UPDRS III motor tasks.",
+        "Researchers combined surface EMG, inertial motion capture, and musculoskeletal simulations.",
+        "A leakage-free machine learning pipeline tested tasks and modalities separately, then fused the strongest signals and selected stable biomarkers."
       ],
-      "evidence_signal": "Across the benchmark, DIAGNO reached 83.8% top-3 accuracy at MGH, 76.5% at Mount Sinai, and 92.3% at UTHSA; in 203 complex MGH cases it slightly outperformed neurologists on top-3 and taxonomy-level accuracy.",
-      "watch_item": "The benchmark is retrospective and neurology-specific, so performance may not directly translate to real-time practice, different specialties, or settings without neuropathology-confirmed ground truth.",
+      "evidence_signal": "The best single task achieved ROC-AUC 0.94, and multimodal fusion maintained high performance with ROC-AUC 0.93 and balanced accuracy 0.92.",
+      "watch_item": "Results come from a relatively small cohort and still need independent clinical validation before use in routine care.",
       "hashtags": [
-        "#AIinMedicine",
-        "#Neurology",
-        "#ClinicalDecisionSupport",
-        "#LargeLanguageModels",
-        "#DiagnosticAccuracy"
+        "#ParkinsonsDisease",
+        "#DigitalBiomarkers",
+        "#Wearables",
+        "#MachineLearning",
+        "#MotorAssessment"
       ],
-      "paper_id": "2026-10-03-medrxiv-assessing_ai_and_neurologist_diagnostic_reasoning_against_neuropathological_ground_truth",
-      "paper_title": "Assessing AI and Neurologist Diagnostic Reasoning Against Neuropathological Ground Truth",
-      "paper_date": "2026-10-03",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-09T14:02:15",
+      "paper_id": "2026-10-06-medrxiv-a_reduced_digital_motor_assessment_using_multimodal_biomarkers_in_parkinson_s_disease",
+      "paper_title": "A Reduced Digital Motor Assessment using Multimodal Biomarkers in Parkinson's Disease",
+      "paper_date": "2026-10-06",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-10T13:11:47",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-06-medrxiv-a_modality_invariant_measure_of_neural_health",
+    "doi": "10.64898/2026.10.02.26364203",
+    "date": "2026-10-06",
+    "title": "A Modality-Invariant Measure of Neural Health",
+    "authors": "Sanchez Colon, L. A.; Niebur, E.; Kang, J.; Onyike, C.; Sarma, S.",
+    "abstract": "Quantifying neural health with a single measure remains a major unmet challenge. Here, we report a physiological marker based on the spatial distribution of signal-derived energy correlates in the resting brain. We hypothesize that energy organization in the healthy brain approaches an entropy-maximizing, homeostatically regulated state characterized by five properties: lognormal energy distributions, balanced spatial allocation, statistical independence between regions, low energy variance, and temporal stability. Together, these properties define an energetic profile that the Neural Health Index (NHI) summarizes as a single score, computable from (scalp/intracranial) electroencephalography, magnetoencephalography, or functional magnetic resonance imaging. Across 808 participants spanning neurological, psychiatric, neurodevelopmental, and neurodegenerative disorders, NHI distinguished healthy from clinical populations with sensitivity and specificity exceeding 95% in internal and external validation, scaled with disease severity, tracked pharmacological treatment exposure, and generalized to unseen diagnoses. These findings support NHI as a disease-agnostic, modality-invariant candidate biomarker for disease stratification and treatment monitoring.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364203v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364203v1.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "The study proposes a single Neural Health Index (NHI) that summarizes resting-brain energy organization into one modality-invariant score to distinguish healthy from clinical brain states.",
+      "clinical_relevance": "If validated further, NHI could help stratify patients and monitor treatment response across neurological, psychiatric, neurodevelopmental, and neurodegenerative conditions using EEG, MEG, or fMRI.",
+      "method": [
+        "Derived NHI from signal-based energy distributions in resting brain data.",
+        "Looked for five health-associated properties: lognormality, balanced spatial allocation, regional independence, low variance, and temporal stability.",
+        "Compared NHI across scalp/intracranial EEG, MEG, and fMRI datasets."
+      ],
+      "evidence_signal": "In 808 participants, NHI reportedly separated healthy from clinical groups with >95% sensitivity and specificity in internal and external validation, and it tracked disease severity and pharmacological exposure.",
+      "watch_item": "Although promising, the index needs broader prospective validation and careful standardization across acquisition sites, modalities, and patient populations before routine use.",
+      "hashtags": [
+        "#NeuralHealthIndex",
+        "#Biomarker",
+        "#BrainImaging",
+        "#EEG",
+        "#fMRI"
+      ],
+      "paper_id": "2026-10-06-medrxiv-a_modality_invariant_measure_of_neural_health",
+      "paper_title": "A Modality-Invariant Measure of Neural Health",
+      "paper_date": "2026-10-06",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-10T13:11:49",
       "generator": "openai"
     }
   },
@@ -279,29 +585,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364618v1.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
-      "key_insight": "A broader multimorbidity pattern—captured as 16 shared functional units across diagnoses—was linked to steeper age-related disease incidence and to distinct genetic architecture.",
-      "clinical_relevance": "This work may help researchers prioritize disease networks and genetic targets relevant to chronic disease progression, but it does not itself establish a treatment or clinical decision rule.",
+      "key_insight": "Multimorbidity patterns can be grouped into 16 functional units, and diseases linked to more units tend to have steeper age-related incidence, suggesting shared genetic architecture across chronic disease.",
+      "clinical_relevance": "This approach may help identify disease pathways and drug-targetable biology that underlie multiple chronic conditions, but it is not yet a clinical decision tool.",
       "method": [
-        "Analyzed UK Biobank linked health records across 232 diagnoses in 502,355 participants.",
-        "Used generative representation learning to derive 16 functional units from pre-assessment co-occurrence patterns.",
-        "Compared each diagnosis’s linked functional-unit breadth with later incidence and tested genetic signals in external cohorts and fine-mapping analyses."
+        "Analyzed linked health records from UK Biobank across 232 diagnoses in 502,355 participants.",
+        "Used generative representation learning to derive 16 functional units from pre-assessment disease co-occurrence.",
+        "Compared each diagnosis’s functional-unit breadth with later incidence and validated genetic signals in FinnGen and the Million Veteran Program."
       ],
-      "evidence_signal": "The main association was strong and consistent: diagnoses linked to more functional units showed steeper age dependence of incidence (Spearman rho = 0.50; 0.46 for 196 diagnoses with rising hazards).",
-      "watch_item": "The findings are observational and cohort-based, so they support association rather than causation and may not translate directly to individual patient care.",
+      "evidence_signal": "The association between functional-unit breadth and age-dependent incidence was moderate to strong (Spearman rho = 0.50 overall; 0.46 among diagnoses with rising hazards), and GWAS identified 34 regions missed by comparator analyses.",
+      "watch_item": "The findings are observational and population-based, so they need external validation before being used to guide prediction, diagnosis, or treatment.",
       "hashtags": [
         "#Multimorbidity",
-        "#Genetics",
-        "#CancerResearch",
-        "#UKBiobank",
-        "#Ageing"
+        "#Genomics",
+        "#Aging",
+        "#GWAS",
+        "#DrugDiscovery"
       ],
       "paper_id": "2026-10-05-medrxiv-functional_organization_of_multimorbidity_links_chronic_disease_incidence_to_shared_geneti",
       "paper_title": "Functional organization of multimorbidity links chronic disease incidence to shared genetic architecture",
       "paper_date": "2026-10-05",
       "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-09T14:02:18",
+      "generated_at": "2026-10-10T13:11:51",
       "generator": "openai"
     }
   },
@@ -330,17 +636,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.01.26364511v1.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
-      "key_insight": "In this open-label, waitlist-controlled trial, two psilocybin doses over two weeks were associated with meaningful short-term reductions in OCD symptoms in participants who had not benefited from prior standard therapies.",
-      "clinical_relevance": "The findings suggest psilocybin could be a potential adjunctive option for treatment-resistant OCD, but the evidence remains preliminary and is not yet practice-changing.",
+      "key_insight": "Two supervised psilocybin doses over two weeks were feasible and were associated with meaningful short-term reductions in OCD symptoms in a small open-label trial.",
+      "clinical_relevance": "This suggests psilocybin may be a potential adjunct for treatment-resistant OCD, but it remains investigational and not established as standard care.",
       "method": [
-        "37 adults with OCD were enrolled; 30 completed 1-month follow-up.",
-        "Participants received psilocybin 20 mg, then 30 mg if tolerated, under supportive conditions.",
-        "Immediate-treatment and waitlist-control groups were compared, with the waitlist group crossing over later."
+        "30 analyzed participants with prior failed psychotherapy or pharmacotherapy; 37 were enrolled total.",
+        "Waitlist-controlled open-label randomized design at Johns Hopkins.",
+        "Two doses: 20 mg psilocybin, then 30 mg if tolerated, with supportive monitoring."
       ],
-      "evidence_signal": "Compared with waitlist controls, the immediate-treatment group showed a significant decrease in Y-BOCS scores (F(2,56)=16.17, p<0.001), with improvement persisting one month after the second dose.",
-      "watch_item": "Open-label design, small sample size, and short follow-up limit causal certainty and generalizability.",
+      "evidence_signal": "Compared with waitlist, the immediate-treatment group had significantly lower Y-BOCS scores after dosing (F(2,56)=16.17, p<0.001), with effects persisting after crossover.",
+      "watch_item": "Small sample size, open-label design, and limited follow-up mean the results may overestimate benefit and need confirmation in larger blinded trials.",
       "hashtags": [
         "#Psilocybin",
         "#OCD",
@@ -352,7 +658,7 @@
       "paper_title": "An Open-Label Multidose Psilocybin Intervention for Obsessive-Compulsive Disorder.",
       "paper_date": "2026-10-05",
       "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-09T14:02:20",
+      "generated_at": "2026-10-10T13:11:53",
       "generator": "openai"
     }
   },
@@ -381,17 +687,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364612v1.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
-      "key_insight": "In this PANS cohort, pain and fatigue were common, and higher symptom burden at presentation predicted later progression toward fibromyalgia criteria.",
-      "clinical_relevance": "Early recognition of pain, fatigue, and other fibromyalgia-like symptoms in children with PANS may help identify those at higher risk for persistent symptom trajectories.",
+      "key_insight": "In children with PANS, pain and fatigue are common and a meaningful subset progress to fibromyalgia-like symptom burden, especially when symptom scores are already high at presentation.",
+      "clinical_relevance": "Early recognition of pain, fatigue, and cognitive symptoms may help identify PANS patients at higher risk for persistent fibromyalgia criteria over time.",
       "method": [
-        "Prospective observational cohort of 204 consecutive PANS patients at a Stanford clinic",
-        "Used the 2016 ACR Fibromyalgia Survey Questionnaire, including WPI and SSS",
-        "Applied Cox proportional hazards modeling to assess predictors of progression"
+        "Prospective observational cohort of 204 consecutive PANS patients seen at a Stanford clinic",
+        "Measured pain/fatigue and related symptoms with the 2016 ACR Fibromyalgia Survey Questionnaire (WPI and SSS)",
+        "Used clinician-recorded diagnoses and Cox proportional hazards modeling to assess progression risk"
       ],
-      "evidence_signal": "Among 204 patients, 42% met fibromyalgia threshold scores at least once during follow-up and 13.7% progressed to full ACR fibromyalgia criteria, with higher WPI and SSS at presentation linked to greater hazard.",
-      "watch_item": "Single-center observational data cannot prove causation, and results may not generalize beyond a specialty clinic population.",
+      "evidence_signal": "In this cohort, 42% met ACR fibromyalgia threshold scores at least once and 13.7% progressed to full criteria during follow-up; higher baseline WPI and SSS predicted faster progression.",
+      "watch_item": "Single-center observational data cannot prove causation, and results may not generalize beyond a specialty PANS clinic population.",
       "hashtags": [
         "#PANS",
         "#Fibromyalgia",
@@ -403,7 +709,58 @@
       "paper_title": "Prevalence and Predictors of Pain and Fatigue in Pediatric Acute-Onset Neuropsychiatric Syndrome (PANS)",
       "paper_date": "2026-10-05",
       "paper_category": "Clinical Translation",
-      "generated_at": "2026-10-09T14:02:24",
+      "generated_at": "2026-10-10T13:11:55",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-05-medrxiv-explainable_machine_learning_identifies_predictors_for_postural_instability_and_cognitive",
+    "doi": "10.64898/2026.09.30.26364120",
+    "date": "2026-10-05",
+    "title": "Explainable machine learning identifies predictors for postural instability and cognitive impairment in early Parkinsons Disease",
+    "authors": "Sailer, B.; Roeben, B.; Kiefer, C.; Achauer, L.-C.; Kemmner, R.; Wurster, I.; Lerche, S.; Bender, B.; Lindig, T.; Schulte, C.; Deuschle, C.; Erhardt, C.; Gasser, T.; Brockmann, K.; Kohlbacher, O.; Biergans, S.; Liepelt-Scarfone, I.",
+    "abstract": "Parkinsons disease (PD) exhibits considerable variability in symptom onset, severity, and clinical trajectories, making prediction of individual disease progression a complex challenge. Leveraging large multimodal datasets from two independent cohorts of early PD patients, we examined predictive features for progression to mild cognitive impairment (MCI) and postural instability (PI) using Explainable Boosting Machines (EBM) - an interpretable machine learning (ML) approach. We found comparable predictive performances of EBM models using a minimal clinico-demographic dataset compared to an extended multimodal dataset including volumetric brain imaging and fluid biomarkers. Baseline age and Montreal Cognitive Assessment total score were identified as most important predictive features for both MCI and PI using the minimal dataset, while additional motor, cognitive and imaging features were identified using the extended dataset. Our study highlights the potential of ML predictions of cognitive and motor endpoints of PD progression at the individual level bringing personalized clinical decision-making within reach.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-05",
+    "updated": "2026-10-05",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.30.26364120v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.30.26364120v1.full.pdf"
+      }
+    ],
+    "score": 43,
+    "infographic": {
+      "key_insight": "An interpretable machine-learning model could predict early Parkinson’s progression to mild cognitive impairment and postural instability using a small set of readily available clinical features, with only limited added benefit from multimodal biomarkers and imaging.",
+      "clinical_relevance": "If validated, this approach could help stratify early PD patients by risk of cognitive and motor worsening and support more personalized monitoring and planning.",
+      "method": [
+        "Explainable Boosting Machines (EBM) used for prediction in two independent early-PD cohorts.",
+        "Compared a minimal clinico-demographic feature set with an extended multimodal set including brain imaging and fluid biomarkers.",
+        "Identified baseline age and MoCA total score as the strongest predictors in the minimal model; additional motor, cognitive, and imaging features contributed in the extended model."
+      ],
+      "evidence_signal": "The abstract reports comparable predictive performance between the minimal and extended models across two independent cohorts, suggesting robust signal from standard clinical variables.",
+      "watch_item": "Performance and generalizability still need external validation before use in real-world clinical decision-making, especially given cohort-specific data and endpoint definitions.",
+      "hashtags": [
+        "#ParkinsonsDisease",
+        "#MachineLearning",
+        "#ExplainableAI",
+        "#Biomarkers",
+        "#DigitalHealth"
+      ],
+      "paper_id": "2026-10-05-medrxiv-explainable_machine_learning_identifies_predictors_for_postural_instability_and_cognitive",
+      "paper_title": "Explainable machine learning identifies predictors for postural instability and cognitive impairment in early Parkinsons Disease",
+      "paper_date": "2026-10-05",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-10T13:11:57",
       "generator": "openai"
     }
   }

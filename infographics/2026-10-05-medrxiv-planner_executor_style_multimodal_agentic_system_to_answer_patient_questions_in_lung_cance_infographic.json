@@ -1,13 +1,13 @@
 {
-  "key_insight": "A planner-executor multimodal AI system can answer patient questions about lung cancer screening CT results while deciding when to defer to a physician.",
-  "clinical_relevance": "This could improve patient understanding and follow-up in lung cancer screening programs without overstepping into questions that need clinician input.",
+  "key_insight": "A planner-executor multimodal AI system can answer many patient questions about lung cancer screening CT results while appropriately deferring out-of-scope questions to physicians.",
+  "clinical_relevance": "This could improve patient understanding of screening results and support follow-up adherence, but it is designed to assist communication rather than replace clinician judgment.",
   "method": [
-    "Used 116 lung cancer screening CT reports and images from a tertiary academic hospital",
-    "Generated 699 simulated patient questions, split into answerable vs defer-to-doctor categories",
-    "Evaluated tool-calling, self-regulation, and physician-rated response quality"
+    "Built a planner-executor multi-agent system to mimic clinical reasoning.",
+    "Used 116 lung cancer screening CT reports/images and an LLM-based framework to generate 699 simulated patient questions.",
+    "Evaluated tool-calling, self-regulation, and clinician-rated response quality."
   ],
-  "evidence_signal": "The system achieved 93.1% tool-calling accuracy and 92.6% self-regulation accuracy, with strong physician-rated clinical accuracy and understandability in a 100-response reader study.",
-  "watch_item": "Results were based on retrospective data and simulated questions, so real-world performance, safety, and patient comprehension still need prospective testing.",
+  "evidence_signal": "The system achieved 93.1% tool-calling accuracy and 92.6% self-regulation accuracy, with strong physician ratings for clinical accuracy and understandability on a subset of responses.",
+  "watch_item": "Performance was tested on retrospective data and simulated questions, so real-world safety, generalizability, and workflow integration still need prospective validation.",
   "hashtags": [
     "#LungCancerScreening",
     "#MedicalAI",
@@ -19,6 +19,6 @@
   "paper_title": "Planner-Executor Style Multimodal Agentic System to Answer Patient Questions in Lung Cancer Screening CT",
   "paper_date": "2026-10-05",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-09T14:02:09",
+  "generated_at": "2026-10-10T13:11:38",
   "generator": "openai"
 }

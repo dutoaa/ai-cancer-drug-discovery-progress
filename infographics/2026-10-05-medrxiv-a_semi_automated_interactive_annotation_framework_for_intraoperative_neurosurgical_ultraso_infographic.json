@@ -1,0 +1,24 @@
+{
+  "key_insight": "A semi-automated, expert-guided annotation pipeline can turn a small number of labeled intraoperative ultrasound frames into usable segmentation across full neurosurgical video sequences.",
+  "clinical_relevance": "If validated further, this approach could reduce the time and expertise needed to build AI tools for real-time brain tumor and anatomy interpretation during surgery.",
+  "method": [
+    "Napari-based interactive labeling interface for neurosurgical ultrasound videos",
+    "Random Forest pixel classifier trained on sparse expert brush annotations using intensity, multi-scale Gaussian, Laplacian of Gaussian, and Sobel features",
+    "Incremental multi-case training with OOB validation and exported TIFF overlays for review"
+  ],
+  "evidence_signal": "In five craniotomy cases, sparse annotations from a neurosurgical expert were sufficient to train case-specific models that propagated labels across full intraoperative ultrasound sequences, with OOB estimates and qualitative expert review used for assessment.",
+  "watch_item": "This is a proof-of-concept study with only five cases and qualitative review, so broader accuracy, robustness, and generalizability remain unproven.",
+  "hashtags": [
+    "#Neurosurgery",
+    "#IntraoperativeUltrasound",
+    "#AIAnnotation",
+    "#MedicalImagingAI",
+    "#ProofOfConcept"
+  ],
+  "paper_id": "2026-10-05-medrxiv-a_semi_automated_interactive_annotation_framework_for_intraoperative_neurosurgical_ultraso",
+  "paper_title": "A Semi-Automated Interactive Annotation Framework for Intraoperative Neurosurgical Ultrasound: A Proof-of-Concept Study",
+  "paper_date": "2026-10-05",
+  "paper_category": "Cancer AI Methods",
+  "generated_at": "2026-10-10T13:11:39",
+  "generator": "openai"
+}

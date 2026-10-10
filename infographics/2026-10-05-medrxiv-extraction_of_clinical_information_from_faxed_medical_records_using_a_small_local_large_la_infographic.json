@@ -1,24 +1,24 @@
 {
-  "key_insight": "A local open-weight OCR+LLM pipeline on a single consumer GPU can accurately turn faxed oncology referral packets into structured clinical data.",
-  "clinical_relevance": "This could reduce manual chart-reading burden for referral intake while keeping protected health information on-device.",
+  "key_insight": "A local, open-weight OCR+LLM pipeline on a consumer GPU can accurately extract structured clinical information from faxed referral packets without sending PHI to a commercial cloud model.",
+  "clinical_relevance": "This could reduce manual chart review and help clinics organize incoming oncology referral information faster while keeping patient data on-device.",
   "method": [
-    "Generated 200 synthetic colorectal cancer referral packets from simulated records and rendered them as image-only faxes.",
-    "Used OvisOCR2 for transcription and Qwen3.8-27B for structured information extraction.",
-    "Compared 20 clinical outcomes against ground truth on 140 validation packets."
+    "Generated 200 synthetic colorectal cancer referral packets from simulated records",
+    "Rendered packets as fax images with no text layer",
+    "Used local OCR (OvisOCR2) plus open-weight LLM extraction (Qwen3.8-27B) on consumer hardware"
   ],
-  "evidence_signal": "Across 11,993 extracted facts, the pipeline showed 0.990 weighted accuracy, with laboratory values at 98.9%, dates at 99.7%, diagnoses at 100%, and no fabricated facts.",
-  "watch_item": "Results were based on synthetic referral packets, so real-world performance on messy, diverse faxed records still needs validation.",
+  "evidence_signal": "On 140 validation packets, the system achieved 0.990 weighted accuracy, with exact extraction of lab values at 98.9%, dates at 99.7%, diagnoses at 100%, and no fabricated facts among 11,993 extracted facts.",
+  "watch_item": "Results were based on synthetic referral packets, so real-world fax quality, document variation, and deployment workflows still need external validation.",
   "hashtags": [
-    "#AIinHealthcare",
     "#PrecisionOncology",
-    "#MedicalOCR",
+    "#HealthAI",
     "#LLM",
-    "#HealthInformatics"
+    "#OCR",
+    "#ClinicalWorkflow"
   ],
   "paper_id": "2026-10-05-medrxiv-extraction_of_clinical_information_from_faxed_medical_records_using_a_small_local_large_la",
   "paper_title": "Extraction of clinical information from faxed medical records using a small local large language model pipeline on consumer hardware",
   "paper_date": "2026-10-05",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-09T14:02:11",
+  "generated_at": "2026-10-10T13:11:41",
   "generator": "openai"
 }

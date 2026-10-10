@@ -1,0 +1,24 @@
+{
+  "key_insight": "A MicroUS-specific foundation model ({micro}FM) pretrained on 1.7M unlabeled prostate ultrasound images improved data-efficient segmentation and lesion localization, especially when labeled data were scarce.",
+  "clinical_relevance": "This could lower annotation burden and accelerate development of automated tools for prostate cancer imaging and biopsy guidance in MicroUS workflows.",
+  "method": [
+    "Self-supervised DINOv2-style pretraining on 1,736,391 unlabeled MicroUS images from 780 patients",
+    "Fine-tuning on three downstream tasks: prostate capsule segmentation, urethra segmentation, and cancer lesion localization",
+    "Compared against random initialization and foundation models pretrained on natural, medical, and ultrasound images"
+  ],
+  "evidence_signal": "With only 10% of training scans, {micro}FM reached 93.8% Dice for capsule segmentation and 58.4% for urethra segmentation, and achieved about 0.75 sensitivity at 2 false positives per 3D volume for lesion localization.",
+  "watch_item": "Results come from retrospective, largely single-institution pretraining and the model does not include explicit 3D modeling, so external validation is needed before broader deployment.",
+  "hashtags": [
+    "#MicroUS",
+    "#FoundationModel",
+    "#ProstateCancer",
+    "#SelfSupervisedLearning",
+    "#MedicalAI"
+  ],
+  "paper_id": "2026-10-05-medrxiv-data_efficient_prostate_micro_ultrasound_image_analysis_using_a_modality_specific_foundati",
+  "paper_title": "Data-Efficient Prostate Micro-Ultrasound Image Analysis using a Modality-specific Foundation Model",
+  "paper_date": "2026-10-05",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-10T13:11:43",
+  "generator": "openai"
+}
