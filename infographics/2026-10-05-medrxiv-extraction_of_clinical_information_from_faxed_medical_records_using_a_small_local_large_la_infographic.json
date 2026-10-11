@@ -1,24 +1,24 @@
 {
-  "key_insight": "A local, open-weight OCR+LLM pipeline on a consumer GPU can accurately extract structured clinical information from faxed referral packets without sending PHI to a commercial cloud model.",
-  "clinical_relevance": "This could reduce manual chart review and help clinics organize incoming oncology referral information faster while keeping patient data on-device.",
+  "key_insight": "A local open-weight OCR+LLM pipeline can accurately turn faxed referral packets into structured clinical data on a consumer GPU without fabricating facts.",
+  "clinical_relevance": "This could reduce manual chart review burden and help protect PHI by keeping extraction entirely on-premises for oncology referral workflows.",
   "method": [
-    "Generated 200 synthetic colorectal cancer referral packets from simulated records",
-    "Rendered packets as fax images with no text layer",
-    "Used local OCR (OvisOCR2) plus open-weight LLM extraction (Qwen3.8-27B) on consumer hardware"
+    "Generated 200 synthetic colorectal cancer referral packets from simulated records and rendered them as fax images with no text layer.",
+    "Used OvisOCR2 to transcribe packets and Qwen3.8-27B to extract structured clinical fields.",
+    "Scored 20 outcome types against ground truth on 140 validation packets."
   ],
-  "evidence_signal": "On 140 validation packets, the system achieved 0.990 weighted accuracy, with exact extraction of lab values at 98.9%, dates at 99.7%, diagnoses at 100%, and no fabricated facts among 11,993 extracted facts.",
-  "watch_item": "Results were based on synthetic referral packets, so real-world fax quality, document variation, and deployment workflows still need external validation.",
+  "evidence_signal": "Across 7,879 laboratory values, 99.7% of dates, and 100% of diagnoses were extracted correctly, with weighted accuracy of 0.990 and no fabricated facts among 11,993 extracted facts.",
+  "watch_item": "Results were based on synthetic referral packets, so real-world fax variability, OCR noise, and site-specific document formats may reduce performance.",
   "hashtags": [
     "#PrecisionOncology",
     "#HealthAI",
     "#LLM",
     "#OCR",
-    "#ClinicalWorkflow"
+    "#ClinicalNLP"
   ],
   "paper_id": "2026-10-05-medrxiv-extraction_of_clinical_information_from_faxed_medical_records_using_a_small_local_large_la",
   "paper_title": "Extraction of clinical information from faxed medical records using a small local large language model pipeline on consumer hardware",
   "paper_date": "2026-10-05",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-10T13:11:41",
+  "generated_at": "2026-10-11T13:41:15",
   "generator": "openai"
 }

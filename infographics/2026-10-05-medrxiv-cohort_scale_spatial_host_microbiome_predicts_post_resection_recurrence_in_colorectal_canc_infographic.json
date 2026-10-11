@@ -1,24 +1,24 @@
 {
-  "key_insight": "AlphaFISH combines spatial host and microbiome profiling with AI to map colorectal cancer tissue ecosystems and identify bacterial-immune patterns linked to recurrence.",
-  "clinical_relevance": "This approach could help stratify colorectal cancer patients after resection by recurrence risk using biopsy-based spatial biomarkers, supporting more personalized follow-up.",
+  "key_insight": "AlphaFISH combines spatial host and microbiome profiling with AI to map how bacteria and cells interact in colorectal tumors and to predict recurrence risk after surgery.",
+  "clinical_relevance": "The approach could help identify high-risk colorectal cancer patients from biopsy tissue and support more precise post-resection monitoring.",
   "method": [
-    "Sequencing-free spatial profiling of host transcripts and microbes at subcellular resolution",
-    "Cohort-scale dual-omics dataset built from 149 colorectal biopsies across 68 patients",
-    "Transformer model trained on joint gene, spatial, and microbiome embeddings"
+    "Sequencing-free spatial profiling at subcellular resolution on 149 colorectal biopsies from 68 patients",
+    "Integrated spatial transcriptomics, spatial microbiome data, and a 4.27-million-cell scRNA-seq atlas for annotation",
+    "Trained a transformer model on >10 million subcellular sampling vectors to jointly model gene expression, tissue architecture, and microbes"
   ],
-  "evidence_signal": "The model reported nearly 90% accuracy for predicting CRC pathological features and 81% accuracy for 1-year post-resection recurrence in 28 followed patients.",
-  "watch_item": "The recurrence result is based on a small follow-up set, so broader validation is needed before clinical implementation.",
+  "evidence_signal": "The model reached nearly 90% accuracy for pathological feature prediction on unseen spatial omics inputs and 81% accuracy for 1-year recurrence prediction in 28 followed patients.",
+  "watch_item": "This is a promising cohort-scale study, but recurrence performance was tested in a relatively small follow-up group and will need broader external validation before clinical use.",
   "hashtags": [
     "#ColorectalCancer",
     "#SpatialOmics",
     "#Microbiome",
-    "#ArtificialIntelligence",
+    "#AIinOncology",
     "#PrecisionOncology"
   ],
   "paper_id": "2026-10-05-medrxiv-cohort_scale_spatial_host_microbiome_predicts_post_resection_recurrence_in_colorectal_canc",
   "paper_title": "Cohort-scale Spatial Host-Microbiome Predicts Post-Resection Recurrence in Colorectal Cancer",
   "paper_date": "2026-10-05",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-10T13:11:29",
+  "generated_at": "2026-10-11T13:40:59",
   "generator": "openai"
 }

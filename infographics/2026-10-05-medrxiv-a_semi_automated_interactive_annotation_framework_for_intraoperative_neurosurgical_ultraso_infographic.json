@@ -1,24 +1,24 @@
 {
-  "key_insight": "A semi-automated, expert-guided annotation pipeline can turn a small number of labeled intraoperative ultrasound frames into usable segmentation across full neurosurgical video sequences.",
-  "clinical_relevance": "If validated further, this approach could reduce the time and expertise needed to build AI tools for real-time brain tumor and anatomy interpretation during surgery.",
+  "key_insight": "A semi-automated, expert-guided annotation workflow can make intraoperative neurosurgical ultrasound labeling much faster and more scalable for AI development.",
+  "clinical_relevance": "If validated further, this approach could help build the annotated ultrasound datasets needed for future real-time brain tumor and anatomy AI tools in surgery.",
   "method": [
-    "Napari-based interactive labeling interface for neurosurgical ultrasound videos",
-    "Random Forest pixel classifier trained on sparse expert brush annotations using intensity, multi-scale Gaussian, Laplacian of Gaussian, and Sobel features",
-    "Incremental multi-case training with OOB validation and exported TIFF overlays for review"
+    "Napari-based interactive labeling with a scikit-learn Random Forest pixel classifier",
+    "Sparse expert brush annotations on representative intraoperative ultrasound frames from five craniotomy cases",
+    "Features included raw intensity, multi-scale Gaussian filtering, Laplacian of Gaussian, and Sobel edge magnitude"
   ],
-  "evidence_signal": "In five craniotomy cases, sparse annotations from a neurosurgical expert were sufficient to train case-specific models that propagated labels across full intraoperative ultrasound sequences, with OOB estimates and qualitative expert review used for assessment.",
-  "watch_item": "This is a proof-of-concept study with only five cases and qualitative review, so broader accuracy, robustness, and generalizability remain unproven.",
+  "evidence_signal": "In five intraoperative cases, sparse annotations were enough to train case-specific models that propagated labels across full video sequences, with out-of-bag validation and probability maps used to assess uncertainty.",
+  "watch_item": "This is a proof-of-concept on a very small, case-specific dataset, so generalization and real-world robustness remain unproven.",
   "hashtags": [
-    "#Neurosurgery",
-    "#IntraoperativeUltrasound",
-    "#AIAnnotation",
-    "#MedicalImagingAI",
-    "#ProofOfConcept"
+    "#NeurosurgeryAI",
+    "#UltrasoundAI",
+    "#MedicalImaging",
+    "#AnnotationTools",
+    "#CancerAI"
   ],
   "paper_id": "2026-10-05-medrxiv-a_semi_automated_interactive_annotation_framework_for_intraoperative_neurosurgical_ultraso",
   "paper_title": "A Semi-Automated Interactive Annotation Framework for Intraoperative Neurosurgical Ultrasound: A Proof-of-Concept Study",
   "paper_date": "2026-10-05",
   "paper_category": "Cancer AI Methods",
-  "generated_at": "2026-10-10T13:11:39",
+  "generated_at": "2026-10-11T13:41:13",
   "generator": "openai"
 }

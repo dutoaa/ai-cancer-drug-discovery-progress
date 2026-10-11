@@ -1,15 +1,15 @@
 {
-  "key_insight": "A MicroUS-specific foundation model ({micro}FM) pretrained on 1.7M unlabeled prostate ultrasound images improved data-efficient segmentation and lesion localization, especially when labeled data were scarce.",
-  "clinical_relevance": "This could lower annotation burden and accelerate development of automated tools for prostate cancer imaging and biopsy guidance in MicroUS workflows.",
+  "key_insight": "A MicroUS-specific foundation model pretrained on over 1.7 million unlabeled prostate ultrasound images enabled more data-efficient segmentation and lesion localization than generic pretrained or randomly initialized models.",
+  "clinical_relevance": "This could help reduce expert annotation needs and accelerate development of automated tools for prostate MicroUS biopsy guidance and image interpretation.",
   "method": [
-    "Self-supervised DINOv2-style pretraining on 1,736,391 unlabeled MicroUS images from 780 patients",
-    "Fine-tuning on three downstream tasks: prostate capsule segmentation, urethra segmentation, and cancer lesion localization",
-    "Compared against random initialization and foundation models pretrained on natural, medical, and ultrasound images"
+    "Pretrained {micro}FM with DINOv2-style self-supervised learning on 1,736,391 unlabeled images from 780 patients.",
+    "Fine-tuned the model on three tasks: prostate capsule segmentation, urethra segmentation, and prostate cancer lesion localization.",
+    "Compared performance under limited annotation against random initialization and foundation models pretrained on natural, medical, and ultrasound images."
   ],
-  "evidence_signal": "With only 10% of training scans, {micro}FM reached 93.8% Dice for capsule segmentation and 58.4% for urethra segmentation, and achieved about 0.75 sensitivity at 2 false positives per 3D volume for lesion localization.",
-  "watch_item": "Results come from retrospective, largely single-institution pretraining and the model does not include explicit 3D modeling, so external validation is needed before broader deployment.",
+  "evidence_signal": "In the 10% annotation setting, {micro}FM reached Dice scores of 93.8% for capsule segmentation and 58.4% for urethra segmentation, with lesion localization around 0.75 sensitivity at two false positives per 3D volume.",
+  "watch_item": "The model was pretrained retrospectively at a single institution and did not include explicit 3D modeling, which may limit generalizability.",
   "hashtags": [
-    "#MicroUS",
+    "#MicroUltrasound",
     "#FoundationModel",
     "#ProstateCancer",
     "#SelfSupervisedLearning",
@@ -19,6 +19,6 @@
   "paper_title": "Data-Efficient Prostate Micro-Ultrasound Image Analysis using a Modality-specific Foundation Model",
   "paper_date": "2026-10-05",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-10T13:11:43",
+  "generated_at": "2026-10-11T13:41:18",
   "generator": "openai"
 }

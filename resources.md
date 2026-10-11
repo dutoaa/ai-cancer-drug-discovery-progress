@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-10-10
+Generated: 2026-10-11
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. Cohort-scale Spatial Host-Microbiome Predicts Post-Resection Recurrence in Colorectal Cancer
