@@ -1,24 +1,24 @@
 {
-  "key_insight": "A cross-cohort machine learning model can identify early-stage node-negative breast cancer patients at higher relapse risk using clinical and cohort data, without relying on gene expression inputs.",
-  "clinical_relevance": "If externally validated, this approach could help distinguish patients who may need chemotherapy from those likely to do well with endocrine therapy alone, reducing over- and undertreatment.",
+  "key_insight": "A machine learning model trained on early-stage node-negative breast cancer cohorts can predict relapse risk and generalize across independent datasets.",
+  "clinical_relevance": "The approach may help identify patients who could benefit from chemotherapy while reducing overtreatment in lower-risk patients.",
   "method": [
-    "Trained and tested models on MSK-IMPACT and METABRIC breast cancer cohorts in both directions.",
-    "Evaluated five-fold cross-validation on the combined cohort to assess overall performance.",
-    "Used survival analysis, SHAP interpretability, and ablation testing to check clinical relevance and feature contributions."
+    "Trained and tested models on MSK-IMPACT (n=645) and METABRIC (n=503) cohorts",
+    "Compared cross-cohort transfer and combined-cohort five-fold cross-validation",
+    "Used survival analysis, SHAP interpretability, and ablation analyses to assess clinical relevance"
   ],
-  "evidence_signal": "The combined cohort model reached AUC 0.788±0.028, with cross-cohort AUCs of 0.741 and 0.714, and out-of-fold METABRIC validation showed strong survival separation (DFS HR 3.01; OS HR 2.35).",
-  "watch_item": "Performance may still vary across institutions, patient populations, and data preprocessing pipelines, so prospective validation is needed before clinical use.",
+  "evidence_signal": "The combined-cohort model reached AUC 0.788 ± 0.028 in five-fold cross-validation, with cross-cohort AUCs of 0.741 and 0.714 in the two transfer directions and strong survival associations on METABRIC.",
+  "watch_item": "Performance may vary by cohort, subtype, and data harmonization quality, so external prospective validation is still needed before clinical use.",
   "hashtags": [
-    "#PrecisionOncology",
     "#BreastCancer",
     "#MachineLearning",
-    "#BiomarkerFree",
-    "#CancerRiskPrediction"
+    "#PrecisionOncology",
+    "#RelapsePrediction",
+    "#Biomarkers"
   ],
   "paper_id": "2026-10-06-medrxiv-cross_cohort_generalizability_of_machine_learning_models_for_early_stage_node_negative_bre",
   "paper_title": "Cross-cohort generalizability of machine learning models for early-stage node-negative breast cancer relapse prediction",
   "paper_date": "2026-10-06",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-11T13:41:05",
+  "generated_at": "2026-10-12T16:21:09",
   "generator": "openai"
 }

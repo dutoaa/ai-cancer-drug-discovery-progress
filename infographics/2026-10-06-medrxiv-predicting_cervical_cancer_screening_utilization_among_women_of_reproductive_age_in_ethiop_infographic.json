@@ -1,24 +1,24 @@
 {
-  "key_insight": "An explainable machine-learning model, especially calibrated Extreme Gradient Boosting, can predict cervical cancer screening use in Ethiopian women with high accuracy and highlight who is most likely to be missed.",
-  "clinical_relevance": "The approach could help public health teams target outreach and primary-care screening invitations to women at highest risk of not being screened, supporting cervical cancer prevention efforts.",
+  "key_insight": "A calibrated Extreme Gradient Boosting model accurately predicted cervical cancer screening use in Ethiopian women and highlighted major social and access-related drivers of screening.",
+  "clinical_relevance": "This could help public health teams identify women less likely to be screened and target outreach, triage, and community engagement more efficiently.",
   "method": [
-    "Analyzed 2024–2025 Ethiopian Demographic and Health Survey data from women aged 15–49",
-    "Compared six supervised models, including logistic regression, decision tree, random forest, gradient boosting, and XGBoost",
-    "Used SMOTE for class imbalance, isotonic calibration, and SHAP to interpret drivers"
+    "Nationally representative secondary analysis of the 2024/25 Ethiopian Demographic and Health Survey (women aged 15–49).",
+    "Compared six supervised machine-learning models, with class imbalance addressed using SMOTE.",
+    "Used SHAP for explainability plus discrimination, calibration, and decision-curve evaluation."
   ],
-  "evidence_signal": "XGBoost performed best with AUROC 0.896 and AUPRC 0.781, and calibration improved the Brier score to 0.038 with net benefit across 5%–55% decision thresholds.",
-  "watch_item": "This is a model-development study on survey data, so performance may drop in real-world settings without external validation, workflow integration, and careful handling of equity and data quality.",
+  "evidence_signal": "Extreme Gradient Boosting performed best (AUROC 0.896, AUPRC 0.781), and isotonic calibration improved prediction with a Brier score of 0.038.",
+  "watch_item": "Because screening prevalence was very low and the study used holdout validation rather than external validation, real-world performance and generalizability should be confirmed before deployment.",
   "hashtags": [
     "#MachineLearning",
     "#CervicalCancer",
     "#PublicHealth",
-    "#PredictiveModeling",
-    "#Ethiopia"
+    "#Ethiopia",
+    "#ExplainableAI"
   ],
   "paper_id": "2026-10-06-medrxiv-predicting_cervical_cancer_screening_utilization_among_women_of_reproductive_age_in_ethiop",
   "paper_title": "Predicting Cervical Cancer Screening Utilization Among Women of Reproductive Age in Ethiopia Using Supervised Machine Learning: A Nationally Representative 2024/25 EDHS Study",
   "paper_date": "2026-10-06",
   "paper_category": "Target Biology",
-  "generated_at": "2026-10-11T13:41:21",
+  "generated_at": "2026-10-12T16:21:16",
   "generator": "openai"
 }
