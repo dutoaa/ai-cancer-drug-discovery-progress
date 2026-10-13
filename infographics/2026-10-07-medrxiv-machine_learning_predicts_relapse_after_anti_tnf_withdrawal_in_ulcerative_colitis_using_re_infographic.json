@@ -1,0 +1,24 @@
+{
+  "key_insight": "A semi-supervised machine learning model trained on rectal biopsy RNA-seq can help predict which ulcerative colitis patients are likely to relapse after stopping anti-TNF therapy.",
+  "clinical_relevance": "This could support safer treatment withdrawal decisions by identifying high-risk patients before anti-TNF discontinuation, while avoiding relapse in those more likely to remain in remission.",
+  "method": [
+    "Prospective BIOSTOP trial cohort of 136 ulcerative colitis patients.",
+    "Built a semi-supervised model using baseline rectal biopsy transcriptomics and a shared UMAP + LabelSpreading approach.",
+    "Focused on a targeted 38-gene panel and interpreted predictions with SHAP."
+  ],
+  "evidence_signal": "The model reached AUC 0.794, 90.3% sensitivity, and 73.1% specificity in the test cohort, with AUC 0.711 in the inference cohort.",
+  "watch_item": "Specificity was only moderate, so the model needs multi-center validation in larger and more diverse cohorts before clinical use.",
+  "hashtags": [
+    "#UlcerativeColitis",
+    "#MachineLearning",
+    "#Transcriptomics",
+    "#Biomarkers",
+    "#AntiTNF"
+  ],
+  "paper_id": "2026-10-07-medrxiv-machine_learning_predicts_relapse_after_anti_tnf_withdrawal_in_ulcerative_colitis_using_re",
+  "paper_title": "Machine learning predicts relapse after anti-TNF withdrawal in ulcerative colitis using rectal biopsy transcriptomics",
+  "paper_date": "2026-10-07",
+  "paper_category": "Target Biology",
+  "generated_at": "2026-10-13T14:43:17",
+  "generator": "openai"
+}

@@ -1,0 +1,24 @@
+{
+  "key_insight": "A local two-stage large language model pipeline can accurately identify hepatocellular carcinoma reports and extract structured pathology variables from German free-text reports without sending sensitive data خارج the institution.",
+  "clinical_relevance": "This could speed up pathology registry curation and quality control by turning unstructured reports into analyzable data while preserving privacy.",
+  "method": [
+    "Stage 1 used a lightweight gatekeeper model to筛选 confirmed HCC cases from 2,864 reports.",
+    "Stage 2 used a larger model to extract 15 predefined histopathology variables into JSON.",
+    "Performance was compared with expert-curated reference annotations using accuracy, macro F1, and Cohen’s kappa."
+  ],
+  "evidence_signal": "The best setup achieved zero classification errors in cohort identification, and the 31B model reached near-perfect extraction performance with Macro F1 > 0.99.",
+  "watch_item": "Real-world deployment still needs careful validation across other hospitals, report styles, and model updates to ensure reliability and generalizability.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#PathologyAI",
+    "#LLM",
+    "#DataExtraction",
+    "#PrivacyPreservingAI"
+  ],
+  "paper_id": "2026-10-08-medrxiv-large_language_models_for_structured_information_extraction_from_german_histopathology_rep",
+  "paper_title": "Large Language Models for Structured Information Extraction from German Histopathology Reports - Hepatocellular Carcinoma",
+  "paper_date": "2026-10-08",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-13T14:43:02",
+  "generator": "openai"
+}

@@ -1,0 +1,257 @@
+[
+  {
+    "id": "2026-10-06-medrxiv-cross_cohort_generalizability_of_machine_learning_models_for_early_stage_node_negative_bre",
+    "doi": "10.64898/2026.10.02.26364592",
+    "date": "2026-10-06",
+    "title": "Cross-cohort generalizability of machine learning models for early-stage node-negative breast cancer relapse prediction",
+    "authors": "Ozdemir, C.; Gupta, S.",
+    "abstract": "BackgroundAdjuvant therapy decision in early-stage node-negative breast cancer remains one of the most challenging problems in oncology. Although most patients in this population achieve favorable outcomes with endocrine therapy alone, a subset remains at risk of relapse and may benefit from chemotherapy. Accurate identification of high-risk and low-risk patients is therefore essential to prevent both undertreatment and overtreatment. MethodsIn this study, machine learning models were assessed using MSK-IMPACT (n=645) and METABRIC (n=503) cohorts comprising node-negative stage I-II breast cancer patients. Three experimental settings were evaluated: training on MSK-IMPACT and testing on METABRIC, the reverse direction, and five-fold cross-validation on the combined cohort. Sensitivity analysis and data harmonization were applied to identify and mitigate cohort-specific bias. Survival analysis, SHapley Additive exPlanations (SHAP) interpretability, and ablation analyses were performed to validate clinical relevance and characterize feature contributions. ResultsThe combined cohort model achieved an area under the receiver operating characteristic curve (AUC) of 0.788{+/-}0.028 across five-fold cross-validation, while bidirectional cross-cohort validation yielded AUC of 0.741 when testing on MSK-IMPACT and AUC of 0.714 when testing on METABRIC. Survival validation on METABRIC out-of-fold predictions from the combined cohort model showed hazard ratios of 3.01 (95% CI: 2.28-3.98) for disease-free survival and 2.35 (95% CI: 1.79-3.09) for overall survival, consistent across Luminal A, Luminal B, and Triple-Negative subtypes. ConclusionValidated across two geographically independent cohorts, the proposed model enables cost-effective, gene expression-free identification of patients at high-risk of distant relapse and may facilitate adjuvant chemotherapy decision-making in early-stage node-negative breast cancer.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364592v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364592v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "A machine learning model trained on early-stage node-negative breast cancer cohorts can predict relapse risk and generalize across independent datasets.",
+      "clinical_relevance": "The approach may help identify patients who could benefit from chemotherapy while reducing overtreatment in lower-risk patients.",
+      "method": [
+        "Trained and tested models on MSK-IMPACT (n=645) and METABRIC (n=503) cohorts",
+        "Compared cross-cohort transfer and combined-cohort five-fold cross-validation",
+        "Used survival analysis, SHAP interpretability, and ablation analyses to assess clinical relevance"
+      ],
+      "evidence_signal": "The combined-cohort model reached AUC 0.788 ± 0.028 in five-fold cross-validation, with cross-cohort AUCs of 0.741 and 0.714 in the two transfer directions and strong survival associations on METABRIC.",
+      "watch_item": "Performance may vary by cohort, subtype, and data harmonization quality, so external prospective validation is still needed before clinical use.",
+      "hashtags": [
+        "#BreastCancer",
+        "#MachineLearning",
+        "#PrecisionOncology",
+        "#RelapsePrediction",
+        "#Biomarkers"
+      ],
+      "paper_id": "2026-10-06-medrxiv-cross_cohort_generalizability_of_machine_learning_models_for_early_stage_node_negative_bre",
+      "paper_title": "Cross-cohort generalizability of machine learning models for early-stage node-negative breast cancer relapse prediction",
+      "paper_date": "2026-10-06",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-12T16:21:09",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-06-medrxiv-an_interpretable_cell_centric_representation_of_pancreatic_ductal_adenocarcinoma_matches_m",
+    "doi": "10.64898/2026.10.03.26364596",
+    "date": "2026-10-06",
+    "title": "An interpretable cell-centric representation of pancreatic ductal adenocarcinoma matches multiple-instance learning for clinical outcomes and leads to novel pathologist-driven histological biomarkers",
+    "authors": "Pelloux, M.; Tran, C. T.; Baig, J.; Khellaf, A.; Huang, S. L.; Nguyen, O. T.; Batardiere, M.; Diwan, S.-S.; Yang, Z.; Li, J.-L.; Vu, V.; Roy, S. F.; Soucy, G.; Nguyen, B. N.; Tessier-Cloutier, B.; Hosseini, M. S.; Knapp, D. J.; Valmary-Degano, S.; Trinh, V. Q.",
+    "abstract": "Current state of the art computational pathology foundation models attain satisfying accuracy most general pathology tasks including detection of pancreatic ductal adenocarcinoma (PDAC) but fail to provide sufficient explainability, operating as \"black boxes\". Some interpretability effort has been made, with models providing attention maps that project back on the slide the models high attended areas that pushed for the given prediction result, without further naming or reasoning explanation which can limit pathologists trust toward the prediction. We developed C3PRO, a cell-centric framework attempting to provide deeper understanding and explainability, by using embeddings extracted using a pathology foundation model, from cell centered tiles containing both the cell and its close neighborhood, which were then clustered into recurrent morphological phenotypes. A spatial graph was additionally constructed on top of the back-projected vocabulary to account for recurrent motifs. The evaluation of the model performance involved a cohort of 809 patients (825 diagnostic biopsies) using nested cross validation. C3PRO was benchmarked against four different multiple instance learning frameworks and achieved on-par performance for diagnostic (0.958 AUC), survival (0.617) and resectability (0.696) prediction, while providing additional insights compared to the strongest baseline models. Each clustered phenotype was probed and extracted as a representative tile mosaic and annotated by two expert pathologists, constituting a phenotype vocabulary available for statistical analysis. These phenotypes were scored by pathologists with physical brightfield microscopy and replicated the independent statistical significance impact on overall survival prediction from diagnostic biopsies. STATEMENT OF SIGNIFICANCEPathology foundation model multiple-instance-learning frameworks cannot be audited by the pathologists. We demonstrate that a representation constructed from identifiable cell phenotypes is on par with state-of-the-art models for diagnosis, prognosis, and resectability in pancreatic cancer. This approach also uncovers prognostic stromal states that expert observers cannot differentiate using light microscopy.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "primary_category": "pathology",
+    "categories": [
+      "pathology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.03.26364596v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.03.26364596v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "C3PRO turns pathology foundation-model features into interpretable cell- and neighborhood-based phenotypes that match black-box MIL performance while giving pathologists auditable histologic explanations.",
+      "clinical_relevance": "In pancreatic ductal adenocarcinoma biopsy slides, this approach could support diagnosis, survival risk, and resectability assessment with better transparency for clinical review.",
+      "method": [
+        "Extracted cell-centered tile embeddings from a pathology foundation model",
+        "Clustered embeddings into recurring morphological phenotypes and built a spatial graph of phenotype motifs",
+        "Compared C3PRO with four MIL baselines and had expert pathologists annotate representative phenotype mosaics"
+      ],
+      "evidence_signal": "Evaluated with nested cross-validation on 809 patients (825 biopsies), where C3PRO achieved AUC 0.958 for diagnosis, 0.617 for survival, and 0.696 for resectability, on par with top MIL models.",
+      "watch_item": "The phenotype vocabulary and statistical findings need external validation and workflow testing before routine clinical deployment, especially across sites and scanners.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#DigitalPathology",
+        "#PancreaticCancer",
+        "#ExplainableAI",
+        "#Histopathology"
+      ],
+      "paper_id": "2026-10-06-medrxiv-an_interpretable_cell_centric_representation_of_pancreatic_ductal_adenocarcinoma_matches_m",
+      "paper_title": "An interpretable cell-centric representation of pancreatic ductal adenocarcinoma matches multiple-instance learning for clinical outcomes and leads to novel pathologist-driven histological biomarkers",
+      "paper_date": "2026-10-06",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-12T16:21:13",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-06-medrxiv-predicting_cervical_cancer_screening_utilization_among_women_of_reproductive_age_in_ethiop",
+    "doi": "10.64898/2026.10.02.26364565",
+    "date": "2026-10-06",
+    "title": "Predicting Cervical Cancer Screening Utilization Among Women of Reproductive Age in Ethiopia Using Supervised Machine Learning: A Nationally Representative 2024/25 EDHS Study",
+    "authors": "Gebiru, A. M.; Gelaw, N. B.; Mekonen, D. K.; Agazie, A. A.; Kelkay, M. M.; Gelaw, Y. D.; Godana, T. N.",
+    "abstract": "BackgroundCervical cancer is a leading malignancy and mortality cause among Ethiopian women. Despite screening expansions coverage remains low. Traditional models miss complex determinants. This study aimed to develop machine learning models to predict cervical cancer screening utilization and identify drivers using the 2024 to 2025 Ethiopian Demographic and Health Survey. MethodsA secondary analysis of the 2024 to 2025 Ethiopian Demographic and Health Survey was conducted among women aged 15 to 49. Six algorithms Logistic Regression, Decision Tree, Support Vector Machine, Random Forest, Gradient Boosting Machine and Extreme Gradient Boosting were trained. Synthetic Minority Over-sampling Technique handled class imbalance with a 4.2 percent screening prevalence. Models were evaluated on a holdout set using Area Under the Receiver Operating Characteristic curve, Area Under the Precision-Recall Curve, Brier score and Decision Curve Analysis. SHapley Additive exPlanations explained model predictions. ResultsExtreme Gradient Boosting achieved superior discrimination with an Area Under the Receiver Operating Characteristic curve of 0.896 and Area Under the Precision-Recall Curve of 0.781 outperforming baseline Logistic Regression at 0.772. Isotonic calibration optimized prediction loss with a Brier score of 0.038. Decision Curve Analysis confirmed clinical net benefit across thresholds from 5 percent to 55 percent. Explanatory analysis identified cancer awareness, education, autonomy, wealth quintile, recent health visits and urban residence as primary screening drivers. ConclusionsProbability-calibrated Extreme Gradient Boosting with explainability provides an accurate tool for identifying un-screened women in Ethiopia. Public health programs can deploy these tools in primary care applications to target outreach, optimize community engagement and accelerate World Health Organization elimination targets.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "primary_category": "epidemiology",
+    "categories": [
+      "epidemiology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364565v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364565v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "A calibrated Extreme Gradient Boosting model accurately predicted cervical cancer screening use in Ethiopian women and highlighted major social and access-related drivers of screening.",
+      "clinical_relevance": "This could help public health teams identify women less likely to be screened and target outreach, triage, and community engagement more efficiently.",
+      "method": [
+        "Nationally representative secondary analysis of the 2024/25 Ethiopian Demographic and Health Survey (women aged 15–49).",
+        "Compared six supervised machine-learning models, with class imbalance addressed using SMOTE.",
+        "Used SHAP for explainability plus discrimination, calibration, and decision-curve evaluation."
+      ],
+      "evidence_signal": "Extreme Gradient Boosting performed best (AUROC 0.896, AUPRC 0.781), and isotonic calibration improved prediction with a Brier score of 0.038.",
+      "watch_item": "Because screening prevalence was very low and the study used holdout validation rather than external validation, real-world performance and generalizability should be confirmed before deployment.",
+      "hashtags": [
+        "#MachineLearning",
+        "#CervicalCancer",
+        "#PublicHealth",
+        "#Ethiopia",
+        "#ExplainableAI"
+      ],
+      "paper_id": "2026-10-06-medrxiv-predicting_cervical_cancer_screening_utilization_among_women_of_reproductive_age_in_ethiop",
+      "paper_title": "Predicting Cervical Cancer Screening Utilization Among Women of Reproductive Age in Ethiopia Using Supervised Machine Learning: A Nationally Representative 2024/25 EDHS Study",
+      "paper_date": "2026-10-06",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-12T16:21:16",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-06-medrxiv-a_reduced_digital_motor_assessment_using_multimodal_biomarkers_in_parkinson_s_disease",
+    "doi": "10.64898/2026.10.05.26364743",
+    "date": "2026-10-06",
+    "title": "A Reduced Digital Motor Assessment using Multimodal Biomarkers in Parkinson's Disease",
+    "authors": "Rey Vilches, J.; Thomsen, T. H.; Biering-Sorensen, B.; Puthusserypady, S.; Tolu, S.",
+    "abstract": "AO_SCPLOWBSTRACTC_SCPLOWO_ST_ABSBackgroundC_ST_ABSWearable sensing and machine learning can support objective assessment of Parkinsons disease (PD), but performance depends on sensor placement, modality, and analysis, and studies often target selected motor tasks, whereas clinical assessment integrates multiple standardized movements. How discriminative information is distributed across tasks and modalities remains unclear, limiting comparability and translation. ObjectivesTo quantify standardized Movement Disorder Society Unified Parkinsons Disease Rating Scale Part III (MDS-UPDRS III) tasks across complementary modalities, determine task- and modality-specific contributions to discrimination, and identify complementary, stable candidate digital biomarkers. MethodsThirty-one participants with PD (Hoehn and Yahr stages I-III) and 30 age- and sex-matched healthy controls performed seven MDS-UPDRS III tasks (items 3.4-3.8, 3.10, 3.15). Unilateral surface electromyography from task-specific muscles and full-body inertial motion capture were acquired, which drove subject-specific musculoskeletal simulations. A leakage-free classification pipeline (in-fold feature selection, repeated cross-validation, permutation testing) was applied by task and modality, followed by sparse task fusion and stability-based biomarker selection. ResultsDiscrimination was concentrated in four upper-limb tasks, with pronation-supination (3.6) performing best (ROC-AUC 0.94; balanced accuracy 0.92). Multitask multimodal fusion maintained discrimination (ROC-AUC 0.93; balanced accuracy 0.92; sensitivity 0.87; specificity 0.97), retaining finger tapping (3.4), hand movements (3.5), pronation-supination (3.6), and postural tremor (3.15). Eighteen stable candidate biomarkers captured complementary alterations in movement execution, muscle activation, coordination, tremor, and proximal stabilization. ConclusionsIn this cohort, discriminative information converged on a four-task upper-limb assessment and a physiologically interpretable multimodal biomarker profile. These findings support shorter, clinically anchored digital motor assessment, pending independent clinical validation.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364743v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364743v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "A multimodal, task-specific digital motor assessment can distinguish Parkinson’s disease from healthy controls using a reduced set of MDS-UPDRS III upper-limb tasks and stable biomarkers.",
+      "clinical_relevance": "This approach could support shorter, more objective, clinically anchored motor assessments if independently validated in broader patient populations.",
+      "method": [
+        "31 people with Parkinson’s disease and 30 age- and sex-matched healthy controls completed seven standardized MDS-UPDRS III tasks.",
+        "Researchers combined surface EMG, full-body inertial motion capture, and subject-specific musculoskeletal simulations.",
+        "A leakage-free machine-learning pipeline with cross-validation, permutation testing, task fusion, and stability-based biomarker selection was used."
+      ],
+      "evidence_signal": "Pronunciation-supination showed the strongest single-task performance (ROC-AUC 0.94), and fused multimodal assessment remained high-performing (ROC-AUC 0.93; balanced accuracy 0.92).",
+      "watch_item": "The findings come from a small cohort and require independent clinical validation before use in routine assessment.",
+      "hashtags": [
+        "#ParkinsonsDisease",
+        "#DigitalBiomarkers",
+        "#WearableSensors",
+        "#MachineLearning",
+        "#MovementDisorders"
+      ],
+      "paper_id": "2026-10-06-medrxiv-a_reduced_digital_motor_assessment_using_multimodal_biomarkers_in_parkinson_s_disease",
+      "paper_title": "A Reduced Digital Motor Assessment using Multimodal Biomarkers in Parkinson's Disease",
+      "paper_date": "2026-10-06",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-12T16:21:19",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-06-medrxiv-a_modality_invariant_measure_of_neural_health",
+    "doi": "10.64898/2026.10.02.26364203",
+    "date": "2026-10-06",
+    "title": "A Modality-Invariant Measure of Neural Health",
+    "authors": "Sanchez Colon, L. A.; Niebur, E.; Kang, J.; Onyike, C.; Sarma, S.",
+    "abstract": "Quantifying neural health with a single measure remains a major unmet challenge. Here, we report a physiological marker based on the spatial distribution of signal-derived energy correlates in the resting brain. We hypothesize that energy organization in the healthy brain approaches an entropy-maximizing, homeostatically regulated state characterized by five properties: lognormal energy distributions, balanced spatial allocation, statistical independence between regions, low energy variance, and temporal stability. Together, these properties define an energetic profile that the Neural Health Index (NHI) summarizes as a single score, computable from (scalp/intracranial) electroencephalography, magnetoencephalography, or functional magnetic resonance imaging. Across 808 participants spanning neurological, psychiatric, neurodevelopmental, and neurodegenerative disorders, NHI distinguished healthy from clinical populations with sensitivity and specificity exceeding 95% in internal and external validation, scaled with disease severity, tracked pharmacological treatment exposure, and generalized to unseen diagnoses. These findings support NHI as a disease-agnostic, modality-invariant candidate biomarker for disease stratification and treatment monitoring.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-06",
+    "updated": "2026-10-06",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364203v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364203v1.full.pdf"
+      }
+    ],
+    "score": 39,
+    "infographic": {
+      "key_insight": "The paper proposes a single modality-invariant Neural Health Index (NHI) that summarizes resting-brain energy organization into one score to separate healthy from clinical populations.",
+      "clinical_relevance": "If validated broadly, NHI could help with disease stratification and treatment monitoring across neurological, psychiatric, neurodevelopmental, and neurodegenerative conditions.",
+      "method": [
+        "Derived an energetic profile from resting EEG, MEG, or fMRI signal energy distributions.",
+        "Combined five features: lognormality, balanced spatial allocation, inter-regional independence, low variance, and temporal stability.",
+        "Compressed the profile into a single NHI score for cross-modality comparison."
+      ],
+      "evidence_signal": "In 808 participants, NHI reportedly distinguished healthy from clinical groups with >95% sensitivity and specificity in internal and external validation and generalized across unseen diagnoses.",
+      "watch_item": "The abstract reports strong validation, but real-world deployment will depend on independent replication, harmonized acquisition pipelines, and testing across sites and modalities.",
+      "hashtags": [
+        "#NeuralHealth",
+        "#Biomarker",
+        "#EEG",
+        "#fMRI",
+        "#ClinicalResearch"
+      ],
+      "paper_id": "2026-10-06-medrxiv-a_modality_invariant_measure_of_neural_health",
+      "paper_title": "A Modality-Invariant Measure of Neural Health",
+      "paper_date": "2026-10-06",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-12T16:21:21",
+      "generator": "openai"
+    }
+  }
+]

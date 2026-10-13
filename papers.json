@@ -1,66 +1,15 @@
 [
   {
-    "id": "2026-10-06-medrxiv-cross_cohort_generalizability_of_machine_learning_models_for_early_stage_node_negative_bre",
-    "doi": "10.64898/2026.10.02.26364592",
-    "date": "2026-10-06",
-    "title": "Cross-cohort generalizability of machine learning models for early-stage node-negative breast cancer relapse prediction",
-    "authors": "Ozdemir, C.; Gupta, S.",
-    "abstract": "BackgroundAdjuvant therapy decision in early-stage node-negative breast cancer remains one of the most challenging problems in oncology. Although most patients in this population achieve favorable outcomes with endocrine therapy alone, a subset remains at risk of relapse and may benefit from chemotherapy. Accurate identification of high-risk and low-risk patients is therefore essential to prevent both undertreatment and overtreatment. MethodsIn this study, machine learning models were assessed using MSK-IMPACT (n=645) and METABRIC (n=503) cohorts comprising node-negative stage I-II breast cancer patients. Three experimental settings were evaluated: training on MSK-IMPACT and testing on METABRIC, the reverse direction, and five-fold cross-validation on the combined cohort. Sensitivity analysis and data harmonization were applied to identify and mitigate cohort-specific bias. Survival analysis, SHapley Additive exPlanations (SHAP) interpretability, and ablation analyses were performed to validate clinical relevance and characterize feature contributions. ResultsThe combined cohort model achieved an area under the receiver operating characteristic curve (AUC) of 0.788{+/-}0.028 across five-fold cross-validation, while bidirectional cross-cohort validation yielded AUC of 0.741 when testing on MSK-IMPACT and AUC of 0.714 when testing on METABRIC. Survival validation on METABRIC out-of-fold predictions from the combined cohort model showed hazard ratios of 3.01 (95% CI: 2.28-3.98) for disease-free survival and 2.35 (95% CI: 1.79-3.09) for overall survival, consistent across Luminal A, Luminal B, and Triple-Negative subtypes. ConclusionValidated across two geographically independent cohorts, the proposed model enables cost-effective, gene expression-free identification of patients at high-risk of distant relapse and may facilitate adjuvant chemotherapy decision-making in early-stage node-negative breast cancer.",
+    "id": "2026-10-08-medrxiv-large_language_models_for_structured_information_extraction_from_german_histopathology_rep",
+    "doi": "10.64898/2026.10.07.26364402",
+    "date": "2026-10-08",
+    "title": "Large Language Models for Structured Information Extraction from German Histopathology Reports - Hepatocellular Carcinoma",
+    "authors": "Koch, N.; Hartmann, N.; Maennel, A.; Baretton, G.; Aust, D.; Hoenscheid, P.",
+    "abstract": "Background: Clinical registries and institutional quality control (QC) in pathology heavily depend on complex histopathological data. However, critical tumor characteristics are mostly locked in unstructured free-text reports. We hypothesize that locally deployed, resource-efficient language models operating within a secure institutional network can reliably extract relevant variables from German reports of hepatocellular carcinoma (HCC), thereby enabling automated data curation without transferring sensitive patient data. Methods: We developed a local, privacy-preserving open-weight Large Language Model (LLM) pipeline consisting of two consecutive stages: Stage 1 utilizes a lightweight gatekeeper model to isolate the target cohort of confirmed Hepatocellular Carcinoma cases from a screening pool of N = 2,864 reports. Stage 2 deploys a high-capacity model to extract 15 predefined histopathological variables, including tumor-node-metastasis staging, histological grading, vascular invasion, and selected immunohistochemical features into structured JSON format. For both Stages, pipeline performance was evaluated using Accuracy, Macro F1-scores, and Cohen's kappa compared to expert-curated reference annotations. Results: The top-performing Stage 1 gatekeeper isolated the target patient cohort with zero classification errors, effectively reaching complete agreement with the reference standard (ground truth) and correcting inaccurate administrative metadata. For Stage 2 feature extraction, current-generation models demonstrated robust structural reliability, reducing the burden of manual post-processing. The 31B model configuration (Gemma 4) virtually eliminated objective factual errors, achieving near-perfect agreement with the reference standard (Macro F1 > 0.99). Conclusion: Local two-stage pipelines offer a highly accurate, resource-efficient, and secure solution for clinical text processing. This framework serves as a privacy-preserving engine for institutional quality control and the scalable curation of pathology registries.",
     "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-10-06",
-    "updated": "2026-10-06",
-    "primary_category": "health informatics",
-    "categories": [
-      "health informatics"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364592v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364592v1.full.pdf"
-      }
-    ],
-    "score": 57,
-    "infographic": {
-      "key_insight": "A machine learning model trained on early-stage node-negative breast cancer cohorts can predict relapse risk and generalize across independent datasets.",
-      "clinical_relevance": "The approach may help identify patients who could benefit from chemotherapy while reducing overtreatment in lower-risk patients.",
-      "method": [
-        "Trained and tested models on MSK-IMPACT (n=645) and METABRIC (n=503) cohorts",
-        "Compared cross-cohort transfer and combined-cohort five-fold cross-validation",
-        "Used survival analysis, SHAP interpretability, and ablation analyses to assess clinical relevance"
-      ],
-      "evidence_signal": "The combined-cohort model reached AUC 0.788 ± 0.028 in five-fold cross-validation, with cross-cohort AUCs of 0.741 and 0.714 in the two transfer directions and strong survival associations on METABRIC.",
-      "watch_item": "Performance may vary by cohort, subtype, and data harmonization quality, so external prospective validation is still needed before clinical use.",
-      "hashtags": [
-        "#BreastCancer",
-        "#MachineLearning",
-        "#PrecisionOncology",
-        "#RelapsePrediction",
-        "#Biomarkers"
-      ],
-      "paper_id": "2026-10-06-medrxiv-cross_cohort_generalizability_of_machine_learning_models_for_early_stage_node_negative_bre",
-      "paper_title": "Cross-cohort generalizability of machine learning models for early-stage node-negative breast cancer relapse prediction",
-      "paper_date": "2026-10-06",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-12T16:21:09",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-06-medrxiv-an_interpretable_cell_centric_representation_of_pancreatic_ductal_adenocarcinoma_matches_m",
-    "doi": "10.64898/2026.10.03.26364596",
-    "date": "2026-10-06",
-    "title": "An interpretable cell-centric representation of pancreatic ductal adenocarcinoma matches multiple-instance learning for clinical outcomes and leads to novel pathologist-driven histological biomarkers",
-    "authors": "Pelloux, M.; Tran, C. T.; Baig, J.; Khellaf, A.; Huang, S. L.; Nguyen, O. T.; Batardiere, M.; Diwan, S.-S.; Yang, Z.; Li, J.-L.; Vu, V.; Roy, S. F.; Soucy, G.; Nguyen, B. N.; Tessier-Cloutier, B.; Hosseini, M. S.; Knapp, D. J.; Valmary-Degano, S.; Trinh, V. Q.",
-    "abstract": "Current state of the art computational pathology foundation models attain satisfying accuracy most general pathology tasks including detection of pancreatic ductal adenocarcinoma (PDAC) but fail to provide sufficient explainability, operating as \"black boxes\". Some interpretability effort has been made, with models providing attention maps that project back on the slide the models high attended areas that pushed for the given prediction result, without further naming or reasoning explanation which can limit pathologists trust toward the prediction. We developed C3PRO, a cell-centric framework attempting to provide deeper understanding and explainability, by using embeddings extracted using a pathology foundation model, from cell centered tiles containing both the cell and its close neighborhood, which were then clustered into recurrent morphological phenotypes. A spatial graph was additionally constructed on top of the back-projected vocabulary to account for recurrent motifs. The evaluation of the model performance involved a cohort of 809 patients (825 diagnostic biopsies) using nested cross validation. C3PRO was benchmarked against four different multiple instance learning frameworks and achieved on-par performance for diagnostic (0.958 AUC), survival (0.617) and resectability (0.696) prediction, while providing additional insights compared to the strongest baseline models. Each clustered phenotype was probed and extracted as a representative tile mosaic and annotated by two expert pathologists, constituting a phenotype vocabulary available for statistical analysis. These phenotypes were scored by pathologists with physical brightfield microscopy and replicated the independent statistical significance impact on overall survival prediction from diagnostic biopsies. STATEMENT OF SIGNIFICANCEPathology foundation model multiple-instance-learning frameworks cannot be audited by the pathologists. We demonstrate that a representation constructed from identifiable cell phenotypes is on par with state-of-the-art models for diagnosis, prognosis, and resectability in pancreatic cancer. This approach also uncovers prognostic stromal states that expert observers cannot differentiate using light microscopy.",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-10-06",
-    "updated": "2026-10-06",
+    "published": "2026-10-08",
+    "updated": "2026-10-08",
     "primary_category": "pathology",
     "categories": [
       "pathology"
@@ -68,50 +17,152 @@
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.03.26364596v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364402v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.03.26364596v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364402v1.full.pdf"
       }
     ],
-    "score": 57,
+    "score": 68,
     "infographic": {
-      "key_insight": "C3PRO turns pathology foundation-model features into interpretable cell- and neighborhood-based phenotypes that match black-box MIL performance while giving pathologists auditable histologic explanations.",
-      "clinical_relevance": "In pancreatic ductal adenocarcinoma biopsy slides, this approach could support diagnosis, survival risk, and resectability assessment with better transparency for clinical review.",
+      "key_insight": "A local two-stage large language model pipeline can accurately identify hepatocellular carcinoma reports and extract structured pathology variables from German free-text reports without sending sensitive data خارج the institution.",
+      "clinical_relevance": "This could speed up pathology registry curation and quality control by turning unstructured reports into analyzable data while preserving privacy.",
       "method": [
-        "Extracted cell-centered tile embeddings from a pathology foundation model",
-        "Clustered embeddings into recurring morphological phenotypes and built a spatial graph of phenotype motifs",
-        "Compared C3PRO with four MIL baselines and had expert pathologists annotate representative phenotype mosaics"
+        "Stage 1 used a lightweight gatekeeper model to筛选 confirmed HCC cases from 2,864 reports.",
+        "Stage 2 used a larger model to extract 15 predefined histopathology variables into JSON.",
+        "Performance was compared with expert-curated reference annotations using accuracy, macro F1, and Cohen’s kappa."
       ],
-      "evidence_signal": "Evaluated with nested cross-validation on 809 patients (825 biopsies), where C3PRO achieved AUC 0.958 for diagnosis, 0.617 for survival, and 0.696 for resectability, on par with top MIL models.",
-      "watch_item": "The phenotype vocabulary and statistical findings need external validation and workflow testing before routine clinical deployment, especially across sites and scanners.",
+      "evidence_signal": "The best setup achieved zero classification errors in cohort identification, and the 31B model reached near-perfect extraction performance with Macro F1 > 0.99.",
+      "watch_item": "Real-world deployment still needs careful validation across other hospitals, report styles, and model updates to ensure reliability and generalizability.",
       "hashtags": [
         "#PrecisionOncology",
-        "#DigitalPathology",
-        "#PancreaticCancer",
-        "#ExplainableAI",
-        "#Histopathology"
+        "#PathologyAI",
+        "#LLM",
+        "#DataExtraction",
+        "#PrivacyPreservingAI"
       ],
-      "paper_id": "2026-10-06-medrxiv-an_interpretable_cell_centric_representation_of_pancreatic_ductal_adenocarcinoma_matches_m",
-      "paper_title": "An interpretable cell-centric representation of pancreatic ductal adenocarcinoma matches multiple-instance learning for clinical outcomes and leads to novel pathologist-driven histological biomarkers",
-      "paper_date": "2026-10-06",
+      "paper_id": "2026-10-08-medrxiv-large_language_models_for_structured_information_extraction_from_german_histopathology_rep",
+      "paper_title": "Large Language Models for Structured Information Extraction from German Histopathology Reports - Hepatocellular Carcinoma",
+      "paper_date": "2026-10-08",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-12T16:21:13",
+      "generated_at": "2026-10-13T14:43:02",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-10-06-medrxiv-predicting_cervical_cancer_screening_utilization_among_women_of_reproductive_age_in_ethiop",
-    "doi": "10.64898/2026.10.02.26364565",
-    "date": "2026-10-06",
-    "title": "Predicting Cervical Cancer Screening Utilization Among Women of Reproductive Age in Ethiopia Using Supervised Machine Learning: A Nationally Representative 2024/25 EDHS Study",
-    "authors": "Gebiru, A. M.; Gelaw, N. B.; Mekonen, D. K.; Agazie, A. A.; Kelkay, M. M.; Gelaw, Y. D.; Godana, T. N.",
-    "abstract": "BackgroundCervical cancer is a leading malignancy and mortality cause among Ethiopian women. Despite screening expansions coverage remains low. Traditional models miss complex determinants. This study aimed to develop machine learning models to predict cervical cancer screening utilization and identify drivers using the 2024 to 2025 Ethiopian Demographic and Health Survey. MethodsA secondary analysis of the 2024 to 2025 Ethiopian Demographic and Health Survey was conducted among women aged 15 to 49. Six algorithms Logistic Regression, Decision Tree, Support Vector Machine, Random Forest, Gradient Boosting Machine and Extreme Gradient Boosting were trained. Synthetic Minority Over-sampling Technique handled class imbalance with a 4.2 percent screening prevalence. Models were evaluated on a holdout set using Area Under the Receiver Operating Characteristic curve, Area Under the Precision-Recall Curve, Brier score and Decision Curve Analysis. SHapley Additive exPlanations explained model predictions. ResultsExtreme Gradient Boosting achieved superior discrimination with an Area Under the Receiver Operating Characteristic curve of 0.896 and Area Under the Precision-Recall Curve of 0.781 outperforming baseline Logistic Regression at 0.772. Isotonic calibration optimized prediction loss with a Brier score of 0.038. Decision Curve Analysis confirmed clinical net benefit across thresholds from 5 percent to 55 percent. Explanatory analysis identified cancer awareness, education, autonomy, wealth quintile, recent health visits and urban residence as primary screening drivers. ConclusionsProbability-calibrated Extreme Gradient Boosting with explainability provides an accurate tool for identifying un-screened women in Ethiopia. Public health programs can deploy these tools in primary care applications to target outreach, optimize community engagement and accelerate World Health Organization elimination targets.",
-    "category": "Target Biology",
+    "id": "2026-10-07-medrxiv-multimodal_artificial_intelligence_predicts_pathological_response_and_prognosis_in_her2_po",
+    "doi": "10.64898/2026.10.05.26364736",
+    "date": "2026-10-07",
+    "title": "Multimodal Artificial Intelligence Predicts Pathological Response and Prognosis in HER2-Positive Early Breast Cancer Treated with Chemotherapy De-escalation Strategies: Analyses from PHERGain and PHERGain-2 Trials",
+    "authors": "Ruiz Borrego, M.; Cortes, J.; Stradella, A.; Bermejo, B.; Escriva de Romani, S.; Reboredo, C.; Albacar, C.; Garrigos, L.; Kummel, S.; Colleoni, M.; Gebhart, G.; Dalenc, F.; Kerrou, K.; Braga, S.; Schmid, P.; Marme, F.; Di Cosimo, S.; Notini, G.; Martinez Garcia, E.; Amaya-Garrido, A.; Alcala Lopez, D.; Mina, L.; Rodriguez Morato, J.; Tang, C.; Biswas, D.; Machura, B.; Witowski, J.; Geras, K. J.; Park, J.; Mancino, M.; Perez Garcia, J. M.; Llombart Cussac, A.",
+    "abstract": "BackgroundChemotherapy (CT) de-escalation strategies based on dual HER2 blockade with trastuzumab and pertuzumab (HP) have shown promising efficacy in HER2-positive (HER2+) early breast cancer (EBC), but biomarkers to guide patient selection are lacking. The Ataraxis Breast platform (ATX) uses artificial intelligence (AI) models integrating hematoxylin-eosin (HCE) whole-slide images and clinical variables to predict pathological complete response (pCR) and long-term outcomes. We evaluated ATX in the phase II PHERGain (NCT03161353) and PHERGain-2 (NCT04733118) trials. MethodsThe ATX NEO model was assessed for pCR prediction in PHERGain (n=306 evaluable patients) and PHERGain-2 (n=383 evaluable patients). The ATX RISK model was evaluated for prognosis in PHERGain (n=309 evaluable patients). Prespecified cutoffs classified patients into low-, medium-, and high-probability groups for pCR and low-or high-risk groups for recurrence. Associations with pCR were assessed using logistic regression. Prognostic performance was evaluated using Cox proportional hazards models, Kaplan-Meier estimates, and Harrells C-index. ResultsOverall pCR rates were 40.2% in PHERGain and 60.3% in PHERGain-2. Continuous NEO scores were significantly associated with pCR in both PHERGain (odds ratio [OR], 1.28; 95% CI, 1.11-1.48; P<0.001) and PHERGain-2 (OR, 1.30; 95% CI, 1.13-1.52; P<0.001). Using prespecified cutoffs, pCR rates increased across low-, medium-, and high-probability groups (19.2%, 41.3%, and 48.3% in PHERGain; 29.5%, 61.6%, and 70.1% in PHERGain-2). In PHERGain, the RISK score was significantly associated with event-free survival (hazard ratio per 1-SD increase, 1.56; 95% CI, 1.17-2.08; P=0.002; C-index, 0.66). Five-year event-free survival was 93.9% in the low-risk group and 83.1% in the high-risk group. ConclusionsNEO score was consistently associated with pCR across two independent HER2+ EBC trials, while RISK score provided prognostic information for long-term outcomes in PHERGain. Prespecified score categories identified clinically distinct response and risk groups. These findings support further evaluation of AI-based biomarkers to refine patient selection for CT de-escalation strategies in HER2+ EBC.",
+    "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-10-06",
-    "updated": "2026-10-06",
+    "published": "2026-10-07",
+    "updated": "2026-10-07",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364736v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364736v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "An AI tool combining pathology slide images with clinical data predicted both chemotherapy response and recurrence risk in HER2-positive early breast cancer across two trial datasets.",
+      "clinical_relevance": "If validated further, this approach could help identify patients most likely to benefit from chemotherapy de-escalation while flagging those who may need closer follow-up or more intensive therapy.",
+      "method": [
+        "AI model (ATX NEO) analyzed hematoxylin-eosin whole-slide images plus clinical variables to predict pathological complete response (pCR).",
+        "ATX RISK model assessed prognosis and recurrence risk in the PHERGain trial.",
+        "Performance was tested in PHERGain and PHERGain-2 using logistic regression, Cox models, Kaplan-Meier analysis, and C-index."
+      ],
+      "evidence_signal": "In evaluable patients, NEO scores were significantly associated with pCR in PHERGain (OR 1.28) and PHERGain-2 (OR 1.30), and RISK score predicted event-free survival in PHERGain (HR 1.56 per 1-SD increase; C-index 0.66).",
+      "watch_item": "These findings are promising but come from trial cohorts; external validation and practical workflow testing are still needed before routine clinical use.",
+      "hashtags": [
+        "#AIinOncology",
+        "#BreastCancer",
+        "#HER2Positive",
+        "#PrecisionOncology",
+        "#PathologyAI"
+      ],
+      "paper_id": "2026-10-07-medrxiv-multimodal_artificial_intelligence_predicts_pathological_response_and_prognosis_in_her2_po",
+      "paper_title": "Multimodal Artificial Intelligence Predicts Pathological Response and Prognosis in HER2-Positive Early Breast Cancer Treated with Chemotherapy De-escalation Strategies: Analyses from PHERGain and PHERGain-2 Trials",
+      "paper_date": "2026-10-07",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-13T14:43:05",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-07-medrxiv-implementing_ai_assisted_patient_friendly_imaging_report_summaries_to_enhance_oncology_car",
+    "doi": "10.64898/2026.10.05.26364529",
+    "date": "2026-10-07",
+    "title": "Implementing AI-assisted, patient-friendly imaging report summaries to enhance oncology care delivery: protocol for a randomized mixed-methods quality improvement study",
+    "authors": "Ryan Baumann, M.; Barton, H. J.; Voorheis, P.; Dahl, C.; DuBenske, L.; Commers, W.; Mast, K.; Campbell, T.; Patterson, B. W.; Emamekhoo, H.",
+    "abstract": "BackgroundAs required by the 21st Century Cures Act, all test results, including final radiology reports, are released to patients as soon as the results are finalized. However, radiology reports are primarily intended for communication between medical professionals and can often be difficult for patients to interpret, particularly in cancer care settings. We developed a tool that leverages a large language model (LLM; ChatGPT-5.2, OpenAI, San Francisco, CA) to draft a patient-friendly plain language version of imaging results (Patient-Friendly Scan Result Generation [PFSG] tool) that oncologists can incorporate into their communication with patients via patient portals. This article describes our mixed-methods study protocol. ObjectiveOur primary aims are to: 1) assess whether patients who receive patient-friendly versions of scan results report better understanding of their results than patients who do not; 2) assess whether introduction of the PFSG tool affects provider workload; and 3) explain how and under what circumstances the PFSG tool enhances communication and workflows, and affects patient and provider outcomes. MethodsWe will use an embedded mixed-methods, prospective cohort design within a quality improvement (QI) initiative. The PFSG tool will be implemented using a modified three-wave staircase trial design, with providers in randomized cohorts of oncology disease groups progressively gaining access to the tool over the course of the study. Approximately 60 providers from 11 oncology disease focus groups will be randomized. Longitudinal provider outcomes will be measured through surveys at one month pre-implementation, one month post-implementation, and three months post-implementation. Patient outcomes will be measured cross-sectionally through surveys at one month pre-implementation (n=350) and at post-implementation result point-of-contact (n=350). Additionally, we will conduct interviews with patients and oncologists to inform the iterative design of the tool and its implementation. ResultsThis study was funded in September 2025 and data collection began in February 2026. As of September 2026, the PFSG tool has been rolled out to all oncology providers, with Cohort 3 post-implementation data collection beginning in August 2026. A total of 738 patient baseline surveys have been collected and patient post-implementation data collection is in progress. ConclusionsThis is the protocol for a study of the implementation of a patient-friendly results tool in oncology provider workflows to facilitate improved communication of radiology results to oncology patients. The results of this study will lend evidence to the utility and acceptability of the study tool, and tools like it, to close an important oncology care gap. If the tool is shown to improve key oncology patient and provider outcomes, it may lead to development of a wider release for more general patient populations. Trial Registrationhttps://clinicaltrials.gov/study/NCT07532083",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-07",
+    "updated": "2026-10-07",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364529v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364529v1.full.pdf"
+      }
+    ],
+    "score": 55,
+    "infographic": {
+      "key_insight": "An LLM-based tool was built to turn oncology scan reports into patient-friendly plain-language summaries that can be shared through patient portals.",
+      "clinical_relevance": "If effective, this could improve patient understanding of imaging results while fitting into oncology workflows without replacing clinician review.",
+      "method": [
+        "Modified three-wave staircase rollout across randomized oncology disease groups",
+        "~60 providers from 11 disease focus groups, with surveys before and after implementation",
+        "Patient surveys plus interviews with patients and oncologists to assess communication, workload, and implementation"
+      ],
+      "evidence_signal": "This is a protocol rather than outcomes paper, so the abstract reports planned mixed-methods evaluation but no efficacy results yet.",
+      "watch_item": "AI-generated summaries may reduce confusion, but they still need careful oversight to avoid inaccuracies, over-simplification, or added clinician review burden.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#AIinHealthcare",
+        "#PatientCommunication",
+        "#RadiologyReports",
+        "#MixedMethods"
+      ],
+      "paper_id": "2026-10-07-medrxiv-implementing_ai_assisted_patient_friendly_imaging_report_summaries_to_enhance_oncology_car",
+      "paper_title": "Implementing AI-assisted, patient-friendly imaging report summaries to enhance oncology care delivery: protocol for a randomized mixed-methods quality improvement study",
+      "paper_date": "2026-10-07",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-13T14:43:08",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-07-medrxiv-rfm_a_lightweight_retinal_foundation_model_for_generalised_oculomics",
+    "doi": "10.64898/2026.10.02.26362554",
+    "date": "2026-10-07",
+    "title": "RFM: A Lightweight Retinal Foundation Model for Generalised Oculomics",
+    "authors": "Fajtl, J.; Welikala, R. A.; Shakespeare, R.; Chambers, R.; Bolter, L.; Anderson, J.; Remagnino, P.; Menon, A. P.; Johnson, G.; Rahman, F.; Olvera-Barrios, A.; Warwick, A.; Egan, C.; Tufail, A.; Owen, C. G.; Rudnicka, A. R.; Barman, S.",
+    "abstract": "Foundation models for colour fundus photography (CFP) are candidate visual encoders for multimodal medical AI, but existing models are large and are assessed under fine-tuning rather than the frozen-encoder conditions such systems impose. We present RFM (Retinal Foundation Model), a 64-million-parameter Vision Transformer initialised from DINOv3-Base and domain-adapted with the LeJEPA joint-embedding predictive self-supervised objective with domain-specific pretext tasks, on 4.3 million CFPs from the North East London Diabetic Eye Screening Programme. A single linear head per task on one frozen backbone measures representation generalisability, not fine-tuning capacity. Across six external datasets spanning diabetic retinopathy (DR) grading, glaucoma detection, ten UK Biobank biomarker phenotypes and 3-year incidence of myocardial infarction, ischaemic stroke and Parkinsons disease, RFM attains the lowest mean absolute error of any frozen model on all seven regression phenotypes and a higher area under the receiver operating characteristic curve (AUROC) than any RETFound variant on all eight matched classification benchmarks. It also attains the highest AUROC of any model evaluated on four of the five ophthalmic benchmarks, with 4.8 x fewer parameters than RETFound-MAE and RETFound-DINOv2. Applied to UK Biobank without retraining, RFM exceeds the best published retinal foundation-model AUROC for 3-year myocardial infarction and ischaemic stroke; the Parkinsons endpoint (11 cases) is inconclusive. DINOv3-Base without retinal pre-training, read the same way, stays competitive on DR grading but falls clearly behind on glaucoma, and the feature-extraction convention alone is worth up to 0.154 AUROC. One lightweight backbone yields generalised representations serving ophthalmic grading, biomarker regression and incidence prediction.",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-10-07",
+    "updated": "2026-10-07",
     "primary_category": "epidemiology",
     "categories": [
       "epidemiology"
@@ -119,50 +170,50 @@
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364565v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26362554v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364565v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26362554v1.full.pdf"
       }
     ],
-    "score": 41,
+    "score": 47,
     "infographic": {
-      "key_insight": "A calibrated Extreme Gradient Boosting model accurately predicted cervical cancer screening use in Ethiopian women and highlighted major social and access-related drivers of screening.",
-      "clinical_relevance": "This could help public health teams identify women less likely to be screened and target outreach, triage, and community engagement more efficiently.",
+      "key_insight": "A lightweight retinal foundation model, RFM, learned general-purpose features from fundus images that transferred well across eye disease grading and systemic risk prediction without fine-tuning.",
+      "clinical_relevance": "If validated further, a frozen retinal encoder like RFM could help power scalable screening and risk-stratification tools from routine colour fundus photography.",
       "method": [
-        "Nationally representative secondary analysis of the 2024/25 Ethiopian Demographic and Health Survey (women aged 15–49).",
-        "Compared six supervised machine-learning models, with class imbalance addressed using SMOTE.",
-        "Used SHAP for explainability plus discrimination, calibration, and decision-curve evaluation."
+        "Started from DINOv3-Base and domain-adapted it with the LeJEPA self-supervised objective.",
+        "Trained on 4.3 million colour fundus photographs from a diabetic eye screening programme.",
+        "Evaluated as a frozen backbone with one linear head per task across external ophthalmic and systemic prediction benchmarks."
       ],
-      "evidence_signal": "Extreme Gradient Boosting performed best (AUROC 0.896, AUPRC 0.781), and isotonic calibration improved prediction with a Brier score of 0.038.",
-      "watch_item": "Because screening prevalence was very low and the study used holdout validation rather than external validation, real-world performance and generalizability should be confirmed before deployment.",
+      "evidence_signal": "Across six external datasets, RFM reported the best mean absolute error on seven regression tasks and higher AUROC than RETFound variants on eight matched classification benchmarks, with strong results on ophthalmic tasks and 3-year cardiovascular incidence prediction.",
+      "watch_item": "The Parkinson’s outcome was inconclusive because the evaluation had only 11 cases, so broader prospective validation is still needed.",
       "hashtags": [
-        "#MachineLearning",
-        "#CervicalCancer",
-        "#PublicHealth",
-        "#Ethiopia",
-        "#ExplainableAI"
+        "#FoundationModel",
+        "#Oculomics",
+        "#RetinalAI",
+        "#SelfSupervisedLearning",
+        "#MedicalImaging"
       ],
-      "paper_id": "2026-10-06-medrxiv-predicting_cervical_cancer_screening_utilization_among_women_of_reproductive_age_in_ethiop",
-      "paper_title": "Predicting Cervical Cancer Screening Utilization Among Women of Reproductive Age in Ethiopia Using Supervised Machine Learning: A Nationally Representative 2024/25 EDHS Study",
-      "paper_date": "2026-10-06",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-10-12T16:21:16",
+      "paper_id": "2026-10-07-medrxiv-rfm_a_lightweight_retinal_foundation_model_for_generalised_oculomics",
+      "paper_title": "RFM: A Lightweight Retinal Foundation Model for Generalised Oculomics",
+      "paper_date": "2026-10-07",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-10-13T14:43:10",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-10-06-medrxiv-a_reduced_digital_motor_assessment_using_multimodal_biomarkers_in_parkinson_s_disease",
-    "doi": "10.64898/2026.10.05.26364743",
-    "date": "2026-10-06",
-    "title": "A Reduced Digital Motor Assessment using Multimodal Biomarkers in Parkinson's Disease",
-    "authors": "Rey Vilches, J.; Thomsen, T. H.; Biering-Sorensen, B.; Puthusserypady, S.; Tolu, S.",
-    "abstract": "AO_SCPLOWBSTRACTC_SCPLOWO_ST_ABSBackgroundC_ST_ABSWearable sensing and machine learning can support objective assessment of Parkinsons disease (PD), but performance depends on sensor placement, modality, and analysis, and studies often target selected motor tasks, whereas clinical assessment integrates multiple standardized movements. How discriminative information is distributed across tasks and modalities remains unclear, limiting comparability and translation. ObjectivesTo quantify standardized Movement Disorder Society Unified Parkinsons Disease Rating Scale Part III (MDS-UPDRS III) tasks across complementary modalities, determine task- and modality-specific contributions to discrimination, and identify complementary, stable candidate digital biomarkers. MethodsThirty-one participants with PD (Hoehn and Yahr stages I-III) and 30 age- and sex-matched healthy controls performed seven MDS-UPDRS III tasks (items 3.4-3.8, 3.10, 3.15). Unilateral surface electromyography from task-specific muscles and full-body inertial motion capture were acquired, which drove subject-specific musculoskeletal simulations. A leakage-free classification pipeline (in-fold feature selection, repeated cross-validation, permutation testing) was applied by task and modality, followed by sparse task fusion and stability-based biomarker selection. ResultsDiscrimination was concentrated in four upper-limb tasks, with pronation-supination (3.6) performing best (ROC-AUC 0.94; balanced accuracy 0.92). Multitask multimodal fusion maintained discrimination (ROC-AUC 0.93; balanced accuracy 0.92; sensitivity 0.87; specificity 0.97), retaining finger tapping (3.4), hand movements (3.5), pronation-supination (3.6), and postural tremor (3.15). Eighteen stable candidate biomarkers captured complementary alterations in movement execution, muscle activation, coordination, tremor, and proximal stabilization. ConclusionsIn this cohort, discriminative information converged on a four-task upper-limb assessment and a physiologically interpretable multimodal biomarker profile. These findings support shorter, clinically anchored digital motor assessment, pending independent clinical validation.",
+    "id": "2026-10-07-medrxiv-generalizing_amyloid_pathology_from_postmortem_human_brains_with_vision_foundation_models",
+    "doi": "10.64898/2026.10.05.26364184",
+    "date": "2026-10-07",
+    "title": "Generalizing Amyloid β Pathology from Postmortem Human Brains with Vision Foundation Models for Lesion Quantification",
+    "authors": "Chen, Y.; Boon, B. D. C.; Engelberg-Cook, E.; Zhu, L.; Rothberg, D.; Rozemuller, A.; Grinberg, L. T.; Ushizima, D.",
+    "abstract": "BackgroundTraditional neuropathological assessment of Alzheimers disease (AD) relies on manual, semiquantitative scoring of amyloid-beta (A{beta}) pathology. This approach is essential for diagnosis and staging but reduces a continuous and spatially heterogeneous process to ordinal categories and does not capture lesion level variation in plaque and vascular A{beta}. Amyloid PET enables longitudinal in vivo assessment but it has a limited dynamic range and lacks the sub-millimeter spatial resolution to resolve microscopic plaque morphologies or vascular compartments. MethodsWe developed ViTamyloid, a generalizable modular computational pathology pipeline for high throughput segmentation and classification of A{beta} pathology in digital histological slides of postmortem human brain tissue. In Stage 1, a pathologist supervised framework combining an EfficientNet B4 encoder with a U-Net decoder and a complementary Faster R CNN generated binary segmentation masks and separated confluent lesion candidates. In Stage 2, a frozen high resolution UNI2 h computational pathology foundation model paired with a trainable ViT Adapter classified candidates into five categories: classic cored plaques (CCP), coarse grained plaques (CGP), capillary cerebral amyloid angiopathy (CAA Type 1), parenchymal or leptomeningeal CAA (CAA Type 2), and Diffuse or other A{beta} positive pathology. We evaluated donor disjoint classification performance, tested generalizability across independent datasets with different antibodies, scanners, resolutions, and image quality, and deployed the pipeline across 1,630 whole slide images from two brain banks. ResultsThe ViTamyloid achieved a donor disjoint macro F1 of 0.903. AUPRC and AUROC were 0.964 and 0.994 for CCP, 0.947 and 0.990 for CGP, 0.970 and 0.990 for CAA Type 1, and 0.974 and 0.996 for CAA Type 2. The adapted classifier outperformed frozen UNI2 h features alone, which achieved a macro F1 of 0.795. Across independent reference datasets, ViTamy-loid showed higher performance than the published pipelines Amyloid-YOLO and PlaqueBox, with nominally significant differences in 26 of 32 paired comparisons. ConclusionViTamyloid provides a scalable framework for converting A{beta} immunohistochemistry into continuous, lesion resolved measurements of plaque and vascular pathology. By preserving lesion identity, morphology, and spatial information, the framework can support studies of AD heterogeneity, clini-copathologic relationships, biomarker concordance, and treatment response.",
     "category": "Target Biology",
     "source": "medRxiv",
-    "published": "2026-10-06",
-    "updated": "2026-10-06",
+    "published": "2026-10-07",
+    "updated": "2026-10-07",
     "primary_category": "neurology",
     "categories": [
       "neurology"
@@ -170,50 +221,50 @@
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364743v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364184v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364743v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364184v1.full.pdf"
       }
     ],
     "score": 41,
     "infographic": {
-      "key_insight": "A multimodal, task-specific digital motor assessment can distinguish Parkinson’s disease from healthy controls using a reduced set of MDS-UPDRS III upper-limb tasks and stable biomarkers.",
-      "clinical_relevance": "This approach could support shorter, more objective, clinically anchored motor assessments if independently validated in broader patient populations.",
+      "key_insight": "ViTamyloid uses vision foundation models to automatically segment and classify amyloid-β lesions in postmortem human brain slides, enabling more detailed lesion-level quantification than traditional semiquantitative scoring.",
+      "clinical_relevance": "This could improve neuropathology workflows by providing more scalable, standardized assessment of Alzheimer’s disease-related amyloid pathology and vascular involvement.",
       "method": [
-        "31 people with Parkinson’s disease and 30 age- and sex-matched healthy controls completed seven standardized MDS-UPDRS III tasks.",
-        "Researchers combined surface EMG, full-body inertial motion capture, and subject-specific musculoskeletal simulations.",
-        "A leakage-free machine-learning pipeline with cross-validation, permutation testing, task fusion, and stability-based biomarker selection was used."
+        "Stage 1: EfficientNet-B4 U-Net plus Faster R-CNN to detect and separate amyloid lesion candidates.",
+        "Stage 2: Frozen UNI2-h pathology foundation model with a trainable ViT Adapter to classify lesions into five categories.",
+        "Validated across donor-disjoint splits and tested on independent datasets with different stains, scanners, resolutions, and image quality."
       ],
-      "evidence_signal": "Pronunciation-supination showed the strongest single-task performance (ROC-AUC 0.94), and fused multimodal assessment remained high-performing (ROC-AUC 0.93; balanced accuracy 0.92).",
-      "watch_item": "The findings come from a small cohort and require independent clinical validation before use in routine assessment.",
+      "evidence_signal": "The model achieved 0.903 donor-disjoint macro F1, with high AUROC/AUPRC across lesion classes and better performance than frozen features alone and prior pipelines.",
+      "watch_item": "Performance was shown on retrospective digital pathology data, so real-world robustness may still depend on site-specific staining, scanning, and annotation variability.",
       "hashtags": [
-        "#ParkinsonsDisease",
-        "#DigitalBiomarkers",
-        "#WearableSensors",
-        "#MachineLearning",
-        "#MovementDisorders"
+        "#AlzheimersDisease",
+        "#DigitalPathology",
+        "#FoundationModels",
+        "#AmyloidBeta",
+        "#ComputationalPathology"
       ],
-      "paper_id": "2026-10-06-medrxiv-a_reduced_digital_motor_assessment_using_multimodal_biomarkers_in_parkinson_s_disease",
-      "paper_title": "A Reduced Digital Motor Assessment using Multimodal Biomarkers in Parkinson's Disease",
-      "paper_date": "2026-10-06",
+      "paper_id": "2026-10-07-medrxiv-generalizing_amyloid_pathology_from_postmortem_human_brains_with_vision_foundation_models",
+      "paper_title": "Generalizing Amyloid β Pathology from Postmortem Human Brains with Vision Foundation Models for Lesion Quantification",
+      "paper_date": "2026-10-07",
       "paper_category": "Target Biology",
-      "generated_at": "2026-10-12T16:21:19",
+      "generated_at": "2026-10-13T14:43:12",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-10-06-medrxiv-a_modality_invariant_measure_of_neural_health",
-    "doi": "10.64898/2026.10.02.26364203",
-    "date": "2026-10-06",
-    "title": "A Modality-Invariant Measure of Neural Health",
-    "authors": "Sanchez Colon, L. A.; Niebur, E.; Kang, J.; Onyike, C.; Sarma, S.",
-    "abstract": "Quantifying neural health with a single measure remains a major unmet challenge. Here, we report a physiological marker based on the spatial distribution of signal-derived energy correlates in the resting brain. We hypothesize that energy organization in the healthy brain approaches an entropy-maximizing, homeostatically regulated state characterized by five properties: lognormal energy distributions, balanced spatial allocation, statistical independence between regions, low energy variance, and temporal stability. Together, these properties define an energetic profile that the Neural Health Index (NHI) summarizes as a single score, computable from (scalp/intracranial) electroencephalography, magnetoencephalography, or functional magnetic resonance imaging. Across 808 participants spanning neurological, psychiatric, neurodevelopmental, and neurodegenerative disorders, NHI distinguished healthy from clinical populations with sensitivity and specificity exceeding 95% in internal and external validation, scaled with disease severity, tracked pharmacological treatment exposure, and generalized to unseen diagnoses. These findings support NHI as a disease-agnostic, modality-invariant candidate biomarker for disease stratification and treatment monitoring.",
+    "id": "2026-10-07-medrxiv-brain_region_and_solubility_dependent_proteomic_signatures_of_neurofibrillary_tangle_patho",
+    "doi": "10.64898/2026.10.04.26361149",
+    "date": "2026-10-07",
+    "title": "Brain region- and solubility-dependent proteomic signatures of neurofibrillary tangle pathology in Alzheimer's disease",
+    "authors": "Zeng, X.; Abrahamson, E.; Balogun, W. G.; Kofler, J. K.; Paljug, W.; Pivtoraiko, V. N.; Ikonomovic, M. D.; Karikari, T. K.",
+    "abstract": "Neurofibrillary tangles (NFTs) containing hyperphosphorylated tau proteins are a hallmark neuropathology of Alzheimers disease. However, the molecular basis underlying their spatial heterogeneity and biochemical complexity remain unclear. To address this, we performed mass spectrometry-based proteomic profiling of two neocortical regions with different susceptibilities to NFT pathology--the inferior temporal (IT) and middle frontal (MF) cortices--from 27 autopsy cases stratified by Braak NFT stage (Low 0-II, n=8; Mid III-IV, n=11; High V-VI, n=8). Brain homogenates were sequentially fractionated using buffers of increasing solubility (TBS, Na2CO, and Urea), followed by trypsin digestion and analysis by nanoLC-MS/MS with data-independent acquisition. Proteins were identified using PEAKS Studio 12 and linear mixed-effects models were applied to assess Braak stage-associated and region-specific changes in protein abundance and solubility. A total of 5,573 protein groups were identified, including 452 differentially expressed proteins (DEPs), 183 bidirectional expression proteins (BEPs), and 693 differentially soluble proteins (DSPs) associated with NFT pathology. These proteins were enriched in pathways related to cytoskeletal organization, synaptic transmission, metabolism, vesicular trafficking, and proteostasis. Marked regional differences were observed, with limited overlap between IT and MF across DEPs, BEPs, and DSPs. Protein change in MF was dynamic with a higher number of BEPs and suggested active cytoskeletal remodeling, whereas IT showed fewer BEPs and evidence of structural disruption, including alterations in intermediate filament components, consistent with vulnerability of IT and possible compensatory/plasticity changes in MF cortex. MF cortex had the greatest downregulation of DEPs between Low and Mid Braak stages, while the transition from Mid to High Braak stage showed upregulation of most of DEPs in both regions. In addition, widespread changes in protein solubility were observed, particularly decreased solubility at later Braak stages, implicating disruption of proteostasis. Together, these findings highlight region- and stage-dependent proteomic alterations associated with tau pathology and underscore their relevance for understanding disease mechanisms and informing biomarker development.",
     "category": "Target Biology",
     "source": "medRxiv",
-    "published": "2026-10-06",
-    "updated": "2026-10-06",
+    "published": "2026-10-07",
+    "updated": "2026-10-07",
     "primary_category": "neurology",
     "categories": [
       "neurology"
@@ -221,36 +272,87 @@
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364203v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.04.26361149v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.02.26364203v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.04.26361149v1.full.pdf"
       }
     ],
-    "score": 39,
+    "score": 41,
     "infographic": {
-      "key_insight": "The paper proposes a single modality-invariant Neural Health Index (NHI) that summarizes resting-brain energy organization into one score to separate healthy from clinical populations.",
-      "clinical_relevance": "If validated broadly, NHI could help with disease stratification and treatment monitoring across neurological, psychiatric, neurodevelopmental, and neurodegenerative conditions.",
+      "key_insight": "Alzheimer’s neurofibrillary tangles show strong region-specific and solubility-dependent proteomic changes, with the inferior temporal and middle frontal cortices exhibiting distinct patterns of cytoskeletal, synaptic, metabolic, and proteostasis disruption across Braak stages.",
+      "clinical_relevance": "These findings help explain why tau pathology affects brain regions differently and may inform biomarker discovery or region-aware therapeutic strategies targeting tau-related proteostasis and cytoskeletal remodeling.",
       "method": [
-        "Derived an energetic profile from resting EEG, MEG, or fMRI signal energy distributions.",
-        "Combined five features: lognormality, balanced spatial allocation, inter-regional independence, low variance, and temporal stability.",
-        "Compressed the profile into a single NHI score for cross-modality comparison."
+        "27 autopsy brain cases were grouped by Braak NFT stage and compared across inferior temporal and middle frontal cortices.",
+        "Homogenates were sequentially fractionated by solubility (TBS, Na2CO3, urea) before nanoLC-MS/MS proteomic analysis.",
+        "Linear mixed-effects models identified stage- and region-associated protein abundance and solubility changes."
       ],
-      "evidence_signal": "In 808 participants, NHI reportedly distinguished healthy from clinical groups with >95% sensitivity and specificity in internal and external validation and generalized across unseen diagnoses.",
-      "watch_item": "The abstract reports strong validation, but real-world deployment will depend on independent replication, harmonized acquisition pipelines, and testing across sites and modalities.",
+      "evidence_signal": "The study identified 5,573 protein groups and reported 452 differentially expressed proteins, 183 bidirectional expression proteins, and 693 differentially soluble proteins linked to NFT pathology.",
+      "watch_item": "Because the data are cross-sectional postmortem samples, the results show association rather than causal mechanisms and may not directly translate to living-patient intervention effects.",
       "hashtags": [
-        "#NeuralHealth",
-        "#Biomarker",
-        "#EEG",
-        "#fMRI",
-        "#ClinicalResearch"
+        "#AlzheimersDisease",
+        "#TauPathology",
+        "#Proteomics",
+        "#Neurodegeneration",
+        "#Biomarkers"
       ],
-      "paper_id": "2026-10-06-medrxiv-a_modality_invariant_measure_of_neural_health",
-      "paper_title": "A Modality-Invariant Measure of Neural Health",
-      "paper_date": "2026-10-06",
+      "paper_id": "2026-10-07-medrxiv-brain_region_and_solubility_dependent_proteomic_signatures_of_neurofibrillary_tangle_patho",
+      "paper_title": "Brain region- and solubility-dependent proteomic signatures of neurofibrillary tangle pathology in Alzheimer's disease",
+      "paper_date": "2026-10-07",
       "paper_category": "Target Biology",
-      "generated_at": "2026-10-12T16:21:21",
+      "generated_at": "2026-10-13T14:43:14",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-07-medrxiv-machine_learning_predicts_relapse_after_anti_tnf_withdrawal_in_ulcerative_colitis_using_re",
+    "doi": "10.64898/2026.10.05.26364793",
+    "date": "2026-10-07",
+    "title": "Machine learning predicts relapse after anti-TNF withdrawal in ulcerative colitis using rectal biopsy transcriptomics",
+    "authors": "Bouhddi, G.; Rapp, E.; Artiemjew, P.; Berset, I. P.; Lerang, F.; Hoff, D. A. L.; Bakkevold, E. S.; Lundin, K. E. A.; Jahnsen, F. L.; Domanska, D.",
+    "abstract": "BackgroundThere are currently no available biomarkers that predict the clinical outcome of ulcerative colitis (UC) patients after anti-TNF withdrawal. Here we developed a semi-supervised machine learning framework on RNA-seq data derived from rectal biopsies to predict relapse following anti-TNF discontinuation. MethodsWe included UC patients (n=136) enrolled in the prospective, randomized controlled BIOSTOP trial. Patients were assigned to a withdrawal group (stopped treatment immediately) or a maintenance group (stopped treatment after 2 years). A machine learning framework was trained on gene expression data from mucosal biopsies collected at baseline from the withdrawal group and validated in the maintenance group using baseline samples (test cohort) and 2-year follow-up samples (interference cohort). ResultsA semi-supervised machine learning model, combining a shared UMAP manifold representation with LabelSpreading on a targeted 38-gene panel achieved an AUC of 0.794, a sensitivity of 90.3%, and a specificity of 73.1% on the test cohort, and an AUC of 0.711, a sensitivity of 82.9%, and a specificity of 42.3% on the inference cohort. Applying Shapley Additive exPlanations (SHAP) we found that IL1B, TYROBP, REG1B, S100A8, and TNF showed the highest predictive importance for relapse risk, whereas MUC2, HMGCS2, and CDKN1A displayed the highest predictive importance for sustained remission. ConclusionThe high sensitivity makes the model a promising screening tool to prevent withdrawal-related relapse, though its moderate specificity underscores the need for multi-center validation in larger, more diverse cohorts before clinical deployment.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-07",
+    "updated": "2026-10-07",
+    "primary_category": "gastroenterology",
+    "categories": [
+      "gastroenterology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364793v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.05.26364793v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "A semi-supervised machine learning model trained on rectal biopsy RNA-seq can help predict which ulcerative colitis patients are likely to relapse after stopping anti-TNF therapy.",
+      "clinical_relevance": "This could support safer treatment withdrawal decisions by identifying high-risk patients before anti-TNF discontinuation, while avoiding relapse in those more likely to remain in remission.",
+      "method": [
+        "Prospective BIOSTOP trial cohort of 136 ulcerative colitis patients.",
+        "Built a semi-supervised model using baseline rectal biopsy transcriptomics and a shared UMAP + LabelSpreading approach.",
+        "Focused on a targeted 38-gene panel and interpreted predictions with SHAP."
+      ],
+      "evidence_signal": "The model reached AUC 0.794, 90.3% sensitivity, and 73.1% specificity in the test cohort, with AUC 0.711 in the inference cohort.",
+      "watch_item": "Specificity was only moderate, so the model needs multi-center validation in larger and more diverse cohorts before clinical use.",
+      "hashtags": [
+        "#UlcerativeColitis",
+        "#MachineLearning",
+        "#Transcriptomics",
+        "#Biomarkers",
+        "#AntiTNF"
+      ],
+      "paper_id": "2026-10-07-medrxiv-machine_learning_predicts_relapse_after_anti_tnf_withdrawal_in_ulcerative_colitis_using_re",
+      "paper_title": "Machine learning predicts relapse after anti-TNF withdrawal in ulcerative colitis using rectal biopsy transcriptomics",
+      "paper_date": "2026-10-07",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-13T14:43:17",
       "generator": "openai"
     }
   }

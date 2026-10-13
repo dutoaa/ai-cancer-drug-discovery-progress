@@ -1,0 +1,24 @@
+{
+  "key_insight": "A lightweight retinal foundation model, RFM, learned general-purpose features from fundus images that transferred well across eye disease grading and systemic risk prediction without fine-tuning.",
+  "clinical_relevance": "If validated further, a frozen retinal encoder like RFM could help power scalable screening and risk-stratification tools from routine colour fundus photography.",
+  "method": [
+    "Started from DINOv3-Base and domain-adapted it with the LeJEPA self-supervised objective.",
+    "Trained on 4.3 million colour fundus photographs from a diabetic eye screening programme.",
+    "Evaluated as a frozen backbone with one linear head per task across external ophthalmic and systemic prediction benchmarks."
+  ],
+  "evidence_signal": "Across six external datasets, RFM reported the best mean absolute error on seven regression tasks and higher AUROC than RETFound variants on eight matched classification benchmarks, with strong results on ophthalmic tasks and 3-year cardiovascular incidence prediction.",
+  "watch_item": "The Parkinson’s outcome was inconclusive because the evaluation had only 11 cases, so broader prospective validation is still needed.",
+  "hashtags": [
+    "#FoundationModel",
+    "#Oculomics",
+    "#RetinalAI",
+    "#SelfSupervisedLearning",
+    "#MedicalImaging"
+  ],
+  "paper_id": "2026-10-07-medrxiv-rfm_a_lightweight_retinal_foundation_model_for_generalised_oculomics",
+  "paper_title": "RFM: A Lightweight Retinal Foundation Model for Generalised Oculomics",
+  "paper_date": "2026-10-07",
+  "paper_category": "Cancer AI Methods",
+  "generated_at": "2026-10-13T14:43:10",
+  "generator": "openai"
+}

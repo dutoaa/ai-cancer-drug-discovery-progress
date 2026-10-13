@@ -1,0 +1,24 @@
+{
+  "key_insight": "ViTamyloid uses vision foundation models to automatically segment and classify amyloid-β lesions in postmortem human brain slides, enabling more detailed lesion-level quantification than traditional semiquantitative scoring.",
+  "clinical_relevance": "This could improve neuropathology workflows by providing more scalable, standardized assessment of Alzheimer’s disease-related amyloid pathology and vascular involvement.",
+  "method": [
+    "Stage 1: EfficientNet-B4 U-Net plus Faster R-CNN to detect and separate amyloid lesion candidates.",
+    "Stage 2: Frozen UNI2-h pathology foundation model with a trainable ViT Adapter to classify lesions into five categories.",
+    "Validated across donor-disjoint splits and tested on independent datasets with different stains, scanners, resolutions, and image quality."
+  ],
+  "evidence_signal": "The model achieved 0.903 donor-disjoint macro F1, with high AUROC/AUPRC across lesion classes and better performance than frozen features alone and prior pipelines.",
+  "watch_item": "Performance was shown on retrospective digital pathology data, so real-world robustness may still depend on site-specific staining, scanning, and annotation variability.",
+  "hashtags": [
+    "#AlzheimersDisease",
+    "#DigitalPathology",
+    "#FoundationModels",
+    "#AmyloidBeta",
+    "#ComputationalPathology"
+  ],
+  "paper_id": "2026-10-07-medrxiv-generalizing_amyloid_pathology_from_postmortem_human_brains_with_vision_foundation_models",
+  "paper_title": "Generalizing Amyloid β Pathology from Postmortem Human Brains with Vision Foundation Models for Lesion Quantification",
+  "paper_date": "2026-10-07",
+  "paper_category": "Target Biology",
+  "generated_at": "2026-10-13T14:43:12",
+  "generator": "openai"
+}
