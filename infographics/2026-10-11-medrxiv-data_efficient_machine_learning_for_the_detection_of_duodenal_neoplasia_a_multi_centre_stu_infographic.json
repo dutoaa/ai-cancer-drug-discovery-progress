@@ -1,0 +1,24 @@
+{
+  "key_insight": "A foundation-model-based, data-efficient pipeline can detect duodenal epithelial neoplasia in whole-slide biopsy images with strong cross-hospital generalizability despite few rare-tumour cases.",
+  "clinical_relevance": "This could help pathology workflows flag rare duodenal neoplasms earlier and more consistently, especially where annotated training data are limited.",
+  "method": [
+    "5-hospital H&E duodenal biopsy WSI dataset (8,027 normal; 401 neoplastic) at 10x",
+    "Patch embeddings from the Hibou-B foundation model with site-specific standardisation",
+    "PCA + Gaussian mixture model + Random Forest classifier, evaluated with leave-one-hospital-out and external testing"
+  ],
+  "evidence_signal": "Performance was 90% mean accuracy (AUC 0.96) in leave-one-hospital-out validation and 94% accuracy (AUC 0.97) on an independent external hospital test set.",
+  "watch_item": "Results come from a retrospective, multi-centre dataset and need prospective validation before routine deployment across broader lab settings.",
+  "hashtags": [
+    "#CancerAI",
+    "#DigitalPathology",
+    "#FoundationModels",
+    "#Histopathology",
+    "#RareTumors"
+  ],
+  "paper_id": "2026-10-11-medrxiv-data_efficient_machine_learning_for_the_detection_of_duodenal_neoplasia_a_multi_centre_stu",
+  "paper_title": "Data-efficient machine learning for the detection of duodenal neoplasia: a multi-centre study",
+  "paper_date": "2026-10-11",
+  "paper_category": "Cancer AI Methods",
+  "generated_at": "2026-10-15T12:20:33",
+  "generator": "openai"
+}

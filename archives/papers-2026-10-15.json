@@ -1,0 +1,206 @@
+[
+  {
+    "id": "2026-10-09-medrxiv-a_spatial_ai_based_biomarker_with_independent_prognostic_value_in_early_low_and_intermedia",
+    "doi": "10.64898/2026.10.07.26364961",
+    "date": "2026-10-09",
+    "title": "A spatial AI-based biomarker with independent prognostic value in early low- and intermediate- risk breast cancer",
+    "authors": "Boissin, C.; Xiang, Y.; Liu, B.; Vallon-Christersson, J.; Walker, E.; Hartman, J.; Rantalainen, M.",
+    "abstract": "BackgroundPatients with ER-positive/HER2-negative early breast cancer of low or intermediate grade are generally considered to have a favourable prognosis, yet a number will recur. This risk is poorly captured by standard clinicopathological factors. AI-based medical devices for whole slide image (WSI) analyses used for risk-stratification often predict on slide-level thereby overlooking spatial localisation of the biomarkers. We hypothesise that the spatial distribution of a previously reported AI-based marker provides independent prognostic value beyond its global score. Patients and MethodsThis Swedish multicentre cohort study includes 6106 patients with primary invasive breast cancer: 3078 from the Stockholm region (training) and 3028 from Sk[a]ne (independent test). Tile-level high-grade morphology scores were generated with ViT_DG, a vision-transformer adaptation of DeepGrade, and the presence of clusters of high-risk tiles localised at the invasive tumour front was defined as a binary biomarker. Primary analyses were pre-specified in the ER-positive/HER2-negative/lymph-node-negative and Grade 1-2 subgroup. Association with breast-cancer recurrence-free interval (BCRFI) and distant metastasis were assessed using multivariable Cox proportional hazards models (HR). ResultsIn the primary subgroup (n=1536 training; n=1403 test), tumour front clusters were present in 37% and 39% of patients. Cluster-positive status was associated with a 2.30-fold increased risk in the external test. Cluster-negative patients achieved a 10-year BCRFI of 95.3%, equivalent to Grade 1 patients and better than Grade 2 (92.4%), whereas cluster-positive patients (90.2%) did worse than the Grade 3 reference. The association was retained in patients classified as low-risk by ViT_DG (test set multivariable HR 2.86), identifying high-risk patients not captured by the global score. ConclusionsThe absence of high-risk morphology clusters at the tumour front is an independent prognostic indicator, identifying a low-risk group independently of the global AI biomarker classification. More broadly, preserving the spatial distribution of AI-derived predictions enables prognostic stratification beyond slide-level aggregation. ClinicalTrials.gov identifier: NCT02306096",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-09",
+    "updated": "2026-10-09",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364961v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364961v1.full.pdf"
+      }
+    ],
+    "score": 70,
+    "infographic": {
+      "key_insight": "A spatial AI biomarker that tracks whether high-risk morphology clusters are absent at the invasive tumor front can better stratify prognosis in early low- and intermediate-risk breast cancer than slide-level scoring alone.",
+      "clinical_relevance": "In ER-positive/HER2-negative, node-negative grade 1–2 breast cancer, this marker may help identify patients with truly low recurrence risk as well as a hidden high-risk subgroup missed by global AI scores.",
+      "method": [
+        "Vision-transformer tile scoring (ViT_DG) was applied to whole-slide images to detect high-grade morphology.",
+        "A binary biomarker was defined by the presence or absence of clustered high-risk tiles at the invasive tumor front.",
+        "Performance was tested in a Swedish multicenter cohort with a training set and an independent external validation set using multivariable Cox models."
+      ],
+      "evidence_signal": "In 2,939 primary-subgroup patients across training and external test sets, tumor-front cluster absence was associated with better 10-year BCRFI and cluster-positive status showed about a 2.30-fold higher recurrence risk in the external test cohort.",
+      "watch_item": "This is a retrospective pathology-AI study, so prospective validation and workflow standardization are needed before routine clinical use.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#BreastCancer",
+        "#DigitalPathology",
+        "#AIinMedicine",
+        "#Biomarkers"
+      ],
+      "paper_id": "2026-10-09-medrxiv-a_spatial_ai_based_biomarker_with_independent_prognostic_value_in_early_low_and_intermedia",
+      "paper_title": "A spatial AI-based biomarker with independent prognostic value in early low- and intermediate- risk breast cancer",
+      "paper_date": "2026-10-09",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-14T12:36:15",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-08-medrxiv-large_language_models_for_structured_information_extraction_from_german_histopathology_rep",
+    "doi": "10.64898/2026.10.07.26364402",
+    "date": "2026-10-08",
+    "title": "Large Language Models for Structured Information Extraction from German Histopathology Reports - Hepatocellular Carcinoma",
+    "authors": "Koch, N.; Hartmann, N.; Maennel, A.; Baretton, G.; Aust, D.; Hoenscheid, P.",
+    "abstract": "BackgroundClinical registries and institutional quality control (QC) in pathology heavily depend on complex histopathological data. However, critical tumor characteristics are mostly locked in unstructured free-text reports. We hypothesize that locally deployed, resource-eWicient language models operating within a secure institutional network can reliably extract relevant variables from German reports of hepatocellular carcinoma (HCC), thereby enabling automated data curation without transferring sensitive patient data. MethodsWe developed a local, privacy-preserving open-weight Large Language Model (LLM) pipeline consisting of two consecutive stages: Stage 1 utilizes a lightweight gatekeeper model to isolate the target cohort of confirmed Hepatocellular Carcinoma cases from a screening pool of N = 2,864 reports. Stage 2 deploys a high-capacity model to extract 15 predefined histopathological variables, including tumor-node-metastasis staging, histological grading, vascular invasion, and selected immunohistochemical features into structured JSON format. For both Stages, pipeline performance was evaluated using Accuracy, Macro F1-scores, and Cohens kappa compared to expert-curated reference annotations. ResultsThe top-performing Stage 1 gatekeeper isolated the target patient cohort with zero classification errors, effectively reaching complete agreement with the reference standard (ground truth) and correcting inaccurate administrative metadata. For Stage 2 feature extraction, current-generation models demonstrated robust structural reliability, reducing the burden of manual post-processing. The 31B model configuration (Gemma 4) virtually eliminated objective factual errors, achieving near-perfect agreement with the reference standard (Macro F1 > 0.99). ConclusionLocal two-stage pipelines offer a highly accurate, resource-efficient, and secure solution for clinical text processing. This framework serves as a privacy-preserving engine for institutional quality control and the scalable curation of pathology registries.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-08",
+    "updated": "2026-10-08",
+    "primary_category": "pathology",
+    "categories": [
+      "pathology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364402v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364402v1.full.pdf"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "A local two-stage LLM pipeline can accurately identify hepatocellular carcinoma reports and extract structured pathology variables from German free-text reports without sending patient data outside the institution.",
+      "clinical_relevance": "This could speed up pathology quality control and registry curation by turning unstructured reports into usable structured data in a privacy-preserving way.",
+      "method": [
+        "Stage 1 used a lightweight gatekeeper model to screen 2,864 reports for confirmed HCC cases.",
+        "Stage 2 used a higher-capacity open-weight model to extract 15 predefined histopathology variables into JSON.",
+        "Both stages were compared against expert-curated reference annotations using accuracy, macro F1, and Cohen’s kappa."
+      ],
+      "evidence_signal": "The best gatekeeper achieved zero classification errors, and the top Stage 2 model reached near-perfect agreement with the reference standard, with Macro F1 > 0.99.",
+      "watch_item": "Performance was shown on a specific German HCC report setting, so external validation is needed before broader deployment.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#PathologyAI",
+        "#LLM",
+        "#ClinicalNLP",
+        "#PrivacyPreservingAI"
+      ],
+      "paper_id": "2026-10-08-medrxiv-large_language_models_for_structured_information_extraction_from_german_histopathology_rep",
+      "paper_title": "Large Language Models for Structured Information Extraction from German Histopathology Reports - Hepatocellular Carcinoma",
+      "paper_date": "2026-10-08",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-14T12:36:18",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-09-medrxiv-a_blood_based_synaptic_biomarker_in_neuronally_enriched_extracellular_vesicles_predicts_di",
+    "doi": "10.64898/2026.10.07.26364982",
+    "date": "2026-10-09",
+    "title": "A Blood-Based Synaptic Biomarker in Neuronally-Enriched Extracellular Vesicles Predicts Disability Progression in Progressive Multiple Sclerosis",
+    "authors": "Jank, L.; Kumar, M. K. S.; Joshi, D.; Minney, V.; Eskinder, R.; Thapa, R.; Heller, J. G.; Filippatou, A. G.; Siavoshi, F.; Smith, M. D.; Harp, C.; Abioye, I.; Sotirchos, E. S.; Dewey, B. E.; Saidha, S.; Fitzgerald, K. C.; Calabresi, P. A.; Mowry, E. M.; Bhargava, P.",
+    "abstract": "Progressive multiple sclerosis (PMS) lacks blood-based biomarkers of the neurodegenerative processes driving disability. We measured synaptopodin, a postsynaptic protein, in neuronal-enriched extracellular vesicles (NEVs) across two independent cohorts: the SPRINT-MS trial (n=184) and a real-world validation cohort (n=268). A one SD increase in baseline synaptopodin was associated with [~]32% lower risk of confirmed disability progression in PMS (p=0.011), with the strongest effect in secondary PMS (SPMS) ([~]57% lower odds, p=0.019). This SPMS association was replicated in the validation cohort ([~]60% lower odds, p=0.009). Higher baseline synaptopodin was associated with future slower whole-brain atrophy and preserved microstructural integrity across MRI metrics (p=0.007-0.013). Longitudinal changes in NEV synaptopodin were associated with disability worsening (p=0.007) and paralleled MRI microstructural changes. NEV synaptopodin, but not NfL, was associated with confirmed disability progression in PMS participants with both biomarkers measured (HR 0.71 vs 1.12, p=0.007 vs 0.22 for NEV synaptopodin and NfL, respectively) and SPMS (HR 0.58 vs 1.10, p=0.003 vs 0.50). Adding synaptopodin, but not NfL, to a base model improved discrimination for disability progression in SPMS in both cohorts (e.g. validation AUC 0.755 to 0.838, p=0.005). These findings identify NEV synaptopodin as a prognostic and longitudinal, blood biomarker of synaptic integrity in PMS, particularly SPMS, complementing NfL.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-09",
+    "updated": "2026-10-09",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364982v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364982v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "Neuronally-enriched extracellular vesicle synaptopodin is a blood-based marker of synaptic integrity that predicts disability progression in progressive multiple sclerosis, especially secondary progressive MS.",
+      "clinical_relevance": "If validated further, this biomarker could help identify people with progressive MS at higher risk of worsening and improve monitoring beyond standard neurofilament light chain (NfL).",
+      "method": [
+        "Measured synaptopodin in neuronal-enriched extracellular vesicles (NEVs) from blood.",
+        "Analyzed two independent cohorts: SPRINT-MS (n=184) and a real-world validation cohort (n=268).",
+        "Linked baseline and longitudinal biomarker levels to disability progression and MRI measures of brain atrophy/microstructural integrity."
+      ],
+      "evidence_signal": "Across two cohorts, higher baseline NEV synaptopodin was associated with lower risk of confirmed disability progression and showed stronger predictive performance than NfL in SPMS, with replication in the validation cohort.",
+      "watch_item": "This is promising but still observational/biomarker-based, so broader external validation and standardized assay workflows are needed before routine clinical use.",
+      "hashtags": [
+        "#MultipleSclerosis",
+        "#Biomarkers",
+        "#SynapticHealth",
+        "#Neurodegeneration",
+        "#ExtracellularVesicles"
+      ],
+      "paper_id": "2026-10-09-medrxiv-a_blood_based_synaptic_biomarker_in_neuronally_enriched_extracellular_vesicles_predicts_di",
+      "paper_title": "A Blood-Based Synaptic Biomarker in Neuronally-Enriched Extracellular Vesicles Predicts Disability Progression in Progressive Multiple Sclerosis",
+      "paper_date": "2026-10-09",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-14T12:36:20",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-09-medrxiv-efficiency_of_a_multi_step_screening_and_enrichment_process_for_prospective_sepsis_cohort",
+    "doi": "10.64898/2026.10.07.26364969",
+    "date": "2026-10-09",
+    "title": "Efficiency of a Multi-step Screening and Enrichment Process for Prospective Sepsis Cohort Enrollment",
+    "authors": "Cosimi, L. A.; Qi, W.; Naz-McLean, S.; Pan, K.; Li, S.; Laibinis, H. H.; Rooney, A. R.; Moran, C.; Valentine, G. C.; Hwang, S.; Deguine, J.; Pickard, J.; Hung, D. T.; Woolley, A. E.",
+    "abstract": "BackgroundHost response and biomarker research to advance sepsis therapeutics requires well-characterized cohorts with longitudinal biospecimens across a range of hosts and infections. Automated screening based on SIRS criteria is sensitive but nonspecific and identifies more candidates than research teams can approach, sample, and follow longitudinally. We evaluated a structured enrichment review by non-physician study staff, done after automated screening in a hospital-wide prospective sepsis cohort. MethodsThe CISID cohort is a prospective observational study of hospitalized patients with suspected sepsis, enrolling adults from the ED, inpatient wards, and ICUs at a tertiary academic medical center. Patients were identified through: (1) automated electronic health record screening for two or more SIRS criteria with a 24-hour lookback, documentation of microbiologic culture or PCR, and receipt of a new antibiotic; (2) a sepsis enrichment step of structured chart review by trained non-physician study staff; and (3) discussion with the primary clinical team. Enrolled patients underwent physician adjudication into four diagnostic categories. To evaluate the enrichment step, we analyzed all patients screened during a 9-week period, assigned a composite \"sepsis-likely\" variable (CDC Adult Sepsis Event criteria or ICD-10 code R65.20/R65.21 within 48 hours before or after screening), and assessed mortality across each stage of screening. We also assessed concordance of the composite with physician adjudication among enrolled patients. ResultsFrom November 2023 through February 2026, 4,318 patients screened in through EHR-based automated screening; 1,220 (28%) were flagged for enrollment, and 288 were enrolled. Physician adjudication classified 209 (73%) as sepsis, 46 (16%) as infection without sepsis, 14 (5%) were classified as undifferentiated critical illness, and 19 (6.6%) as non-infectious sepsis mimics. Patients with sepsis were severely ill (median SOFA score, 9; ICU admission, 80%; shock, 48%), and 51% were immunocompromised; mortality was 14% in hospital and 27% at 90 days. In a 9-week sample of 907 screened encounters, 21% of those deferred and 70% of those flagged for enrollment met the sepsis-likely composite, a 3.3-fold increase in prevalence after structured study team review. ConclusionsA brief structured enrichment review after automated screening tripled the prevalence of EHR-based sepsis indicators among patients selected for enrollment, while concentrating enrollment efforts on roughly one-quarter of screened-in patients in this hospital-wide, all-source suspected-sepsis cohort. This approach may help prospective cohorts direct limited biospecimen resources toward patients most informative for host-response and biomarker research.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-09",
+    "updated": "2026-10-09",
+    "primary_category": "infectious diseases",
+    "categories": [
+      "infectious diseases"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364969v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364969v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "A multi-step screening workflow using automated EHR flags followed by structured staff review greatly narrows a large sepsis candidate pool into a smaller, higher-yield enrollment set.",
+      "clinical_relevance": "This approach may help research teams efficiently recruit better-characterized sepsis cohorts for biomarker and host-response studies without overwhelming clinical staff.",
+      "method": [
+        "Automated EHR screening identified adults with suspected sepsis using SIRS criteria, recent culture/PCR, and new antibiotic exposure.",
+        "Non-physician study staff performed structured chart review as an enrichment step before discussion with the primary clinical team.",
+        "Enrolled patients were physician-adjudicated into diagnostic categories and compared with a composite sepsis-likely definition."
+      ],
+      "evidence_signal": "In 4,318 screened patients, 1,220 were flagged and 288 enrolled; among enrolled patients, 73% were adjudicated as sepsis, and the 9-week evaluation included 907 screened encounters.",
+      "watch_item": "Because the workflow depends on local EHR rules, staffing, and team discussions, performance and feasibility may vary across hospitals and patient populations.",
+      "hashtags": [
+        "#SepsisResearch",
+        "#CohortEnrollment",
+        "#EHRScreening",
+        "#BiomarkerStudies",
+        "#ClinicalResearch"
+      ],
+      "paper_id": "2026-10-09-medrxiv-efficiency_of_a_multi_step_screening_and_enrichment_process_for_prospective_sepsis_cohort",
+      "paper_title": "Efficiency of a Multi-step Screening and Enrichment Process for Prospective Sepsis Cohort Enrollment",
+      "paper_date": "2026-10-09",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-14T12:36:22",
+      "generator": "openai"
+    }
+  }
+]

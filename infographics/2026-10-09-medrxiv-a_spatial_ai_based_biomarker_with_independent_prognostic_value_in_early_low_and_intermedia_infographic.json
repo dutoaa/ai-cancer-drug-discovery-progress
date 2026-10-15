@@ -1,24 +1,24 @@
 {
-  "key_insight": "A spatial AI biomarker that tracks whether high-risk morphology clusters are absent at the invasive tumor front can better stratify prognosis in early low- and intermediate-risk breast cancer than slide-level scoring alone.",
-  "clinical_relevance": "In ER-positive/HER2-negative, node-negative grade 1–2 breast cancer, this marker may help identify patients with truly low recurrence risk as well as a hidden high-risk subgroup missed by global AI scores.",
+  "key_insight": "A spatial AI biomarker that detects high-risk morphology clusters at the invasive tumor front adds independent prognostic value beyond the overall slide score in early low- and intermediate-risk breast cancer.",
+  "clinical_relevance": "This approach may better identify which patients with ER-positive/HER2-negative disease are truly low risk versus those who still need closer follow-up or additional treatment consideration.",
   "method": [
-    "Vision-transformer tile scoring (ViT_DG) was applied to whole-slide images to detect high-grade morphology.",
-    "A binary biomarker was defined by the presence or absence of clustered high-risk tiles at the invasive tumor front.",
-    "Performance was tested in a Swedish multicenter cohort with a training set and an independent external validation set using multivariable Cox models."
+    "6106 Swedish breast cancer cases were split into a Stockholm training cohort and an independent Skåne test cohort.",
+    "A vision-transformer model (ViT_DG) scored tile-level high-grade morphology on whole-slide images.",
+    "A binary biomarker was defined by the presence of high-risk tile clusters at the invasive tumor front and tested with multivariable Cox models."
   ],
-  "evidence_signal": "In 2,939 primary-subgroup patients across training and external test sets, tumor-front cluster absence was associated with better 10-year BCRFI and cluster-positive status showed about a 2.30-fold higher recurrence risk in the external test cohort.",
-  "watch_item": "This is a retrospective pathology-AI study, so prospective validation and workflow standardization are needed before routine clinical use.",
+  "evidence_signal": "In the ER-positive/HER2-negative/lymph-node-negative, grade 1-2 subgroup, cluster-positive status predicted worse recurrence outcomes, with an external test-set hazard ratio of 2.30 and retained value even among cases labeled low-risk by the global AI score.",
+  "watch_item": "This is retrospective, pathology-image based evidence from a Swedish cohort, so external validation and workflow standardization are still needed before routine implementation.",
   "hashtags": [
     "#PrecisionOncology",
-    "#BreastCancer",
     "#DigitalPathology",
-    "#AIinMedicine",
-    "#Biomarkers"
+    "#AIinCancer",
+    "#BreastCancer",
+    "#PrognosticBiomarker"
   ],
   "paper_id": "2026-10-09-medrxiv-a_spatial_ai_based_biomarker_with_independent_prognostic_value_in_early_low_and_intermedia",
   "paper_title": "A spatial AI-based biomarker with independent prognostic value in early low- and intermediate- risk breast cancer",
   "paper_date": "2026-10-09",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-14T12:36:15",
+  "generated_at": "2026-10-15T12:20:35",
   "generator": "openai"
 }

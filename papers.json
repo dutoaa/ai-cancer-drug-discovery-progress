@@ -1,5 +1,56 @@
 [
   {
+    "id": "2026-10-11-medrxiv-data_efficient_machine_learning_for_the_detection_of_duodenal_neoplasia_a_multi_centre_stu",
+    "doi": "10.64898/2026.10.08.26365053",
+    "date": "2026-10-11",
+    "title": "Data-efficient machine learning for the detection of duodenal neoplasia: a multi-centre study",
+    "authors": "Di Lisio, F.; Soilleux, E. J.; Jaeckle, F.",
+    "abstract": "BackgroundMachine Learning (ML) has shown promise in histopathological diagnosis, but rare tumours, like duodenal epithelial neoplasms, are challenging because large, labelled datasets are difficult to assemble. We propose a data-efficient ML pipeline for detecting duodenal epithelial neoplasia in whole-slide images. MethodsWe assembled a five-hospital dataset of haematoxylin and eosin-stained duodenal biopsy whole slide images (WSIs) at 10x magnification, comprising 8,027 normal and 401 neoplastic biopsies, including adenomas, carcinomas and neuroendocrine tumours. WSIs were divided into patches and encoded using the Hibou-B foundation model. We compared global standardisation with unsupervised site-specific standardisation of patch embeddings. Our pipeline combined principal component analysis, a Gaussian mixture model and a Random Forest classifier. We assessed generalisability using leave-one-hospital-out cross-validation across four hospitals and on an independent test set from a fifth hospital. ResultsIn leave-one-hospital-out cross-validation, the pipeline achieved a mean accuracy of 90%, sensitivity of 96%, specificity of 83% and an AUC of 0.96. On the external test hospital, it achieved 94% accuracy, 93% sensitivity, 95% specificity, and AUC of 0.97. Site-specific standardisation improved mean cross-validation accuracy by 20 percentage points compared with global standardisation, while the Gaussian mixture pipeline improved accuracy by 12 percentage points compared with mean pooling of patch embeddings. ConclusionsWe present a data-efficient ML approach for detecting duodenal epithelial neoplasia from WSIs. Strong performance was maintained across hospitals and on an independent external test cohort despite the limited number of neoplastic training cases, supporting the feasibility of foundation-model-based approaches for rare histopathological diagnoses.",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-10-11",
+    "updated": "2026-10-11",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365053v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365053v1.full.pdf"
+      }
+    ],
+    "score": 65,
+    "infographic": {
+      "key_insight": "A foundation-model-based, data-efficient pipeline can detect duodenal epithelial neoplasia in whole-slide biopsy images with strong cross-hospital generalizability despite few rare-tumour cases.",
+      "clinical_relevance": "This could help pathology workflows flag rare duodenal neoplasms earlier and more consistently, especially where annotated training data are limited.",
+      "method": [
+        "5-hospital H&E duodenal biopsy WSI dataset (8,027 normal; 401 neoplastic) at 10x",
+        "Patch embeddings from the Hibou-B foundation model with site-specific standardisation",
+        "PCA + Gaussian mixture model + Random Forest classifier, evaluated with leave-one-hospital-out and external testing"
+      ],
+      "evidence_signal": "Performance was 90% mean accuracy (AUC 0.96) in leave-one-hospital-out validation and 94% accuracy (AUC 0.97) on an independent external hospital test set.",
+      "watch_item": "Results come from a retrospective, multi-centre dataset and need prospective validation before routine deployment across broader lab settings.",
+      "hashtags": [
+        "#CancerAI",
+        "#DigitalPathology",
+        "#FoundationModels",
+        "#Histopathology",
+        "#RareTumors"
+      ],
+      "paper_id": "2026-10-11-medrxiv-data_efficient_machine_learning_for_the_detection_of_duodenal_neoplasia_a_multi_centre_stu",
+      "paper_title": "Data-efficient machine learning for the detection of duodenal neoplasia: a multi-centre study",
+      "paper_date": "2026-10-11",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-10-15T12:20:33",
+      "generator": "openai"
+    }
+  },
+  {
     "id": "2026-10-09-medrxiv-a_spatial_ai_based_biomarker_with_independent_prognostic_value_in_early_low_and_intermedia",
     "doi": "10.64898/2026.10.07.26364961",
     "date": "2026-10-09",
@@ -24,80 +75,131 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364961v1.full.pdf"
       }
     ],
-    "score": 70,
+    "score": 65,
     "infographic": {
-      "key_insight": "A spatial AI biomarker that tracks whether high-risk morphology clusters are absent at the invasive tumor front can better stratify prognosis in early low- and intermediate-risk breast cancer than slide-level scoring alone.",
-      "clinical_relevance": "In ER-positive/HER2-negative, node-negative grade 1–2 breast cancer, this marker may help identify patients with truly low recurrence risk as well as a hidden high-risk subgroup missed by global AI scores.",
+      "key_insight": "A spatial AI biomarker that detects high-risk morphology clusters at the invasive tumor front adds independent prognostic value beyond the overall slide score in early low- and intermediate-risk breast cancer.",
+      "clinical_relevance": "This approach may better identify which patients with ER-positive/HER2-negative disease are truly low risk versus those who still need closer follow-up or additional treatment consideration.",
       "method": [
-        "Vision-transformer tile scoring (ViT_DG) was applied to whole-slide images to detect high-grade morphology.",
-        "A binary biomarker was defined by the presence or absence of clustered high-risk tiles at the invasive tumor front.",
-        "Performance was tested in a Swedish multicenter cohort with a training set and an independent external validation set using multivariable Cox models."
+        "6106 Swedish breast cancer cases were split into a Stockholm training cohort and an independent Skåne test cohort.",
+        "A vision-transformer model (ViT_DG) scored tile-level high-grade morphology on whole-slide images.",
+        "A binary biomarker was defined by the presence of high-risk tile clusters at the invasive tumor front and tested with multivariable Cox models."
       ],
-      "evidence_signal": "In 2,939 primary-subgroup patients across training and external test sets, tumor-front cluster absence was associated with better 10-year BCRFI and cluster-positive status showed about a 2.30-fold higher recurrence risk in the external test cohort.",
-      "watch_item": "This is a retrospective pathology-AI study, so prospective validation and workflow standardization are needed before routine clinical use.",
+      "evidence_signal": "In the ER-positive/HER2-negative/lymph-node-negative, grade 1-2 subgroup, cluster-positive status predicted worse recurrence outcomes, with an external test-set hazard ratio of 2.30 and retained value even among cases labeled low-risk by the global AI score.",
+      "watch_item": "This is retrospective, pathology-image based evidence from a Swedish cohort, so external validation and workflow standardization are still needed before routine implementation.",
       "hashtags": [
         "#PrecisionOncology",
-        "#BreastCancer",
         "#DigitalPathology",
-        "#AIinMedicine",
-        "#Biomarkers"
+        "#AIinCancer",
+        "#BreastCancer",
+        "#PrognosticBiomarker"
       ],
       "paper_id": "2026-10-09-medrxiv-a_spatial_ai_based_biomarker_with_independent_prognostic_value_in_early_low_and_intermedia",
       "paper_title": "A spatial AI-based biomarker with independent prognostic value in early low- and intermediate- risk breast cancer",
       "paper_date": "2026-10-09",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-14T12:36:15",
+      "generated_at": "2026-10-15T12:20:35",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-10-08-medrxiv-large_language_models_for_structured_information_extraction_from_german_histopathology_rep",
-    "doi": "10.64898/2026.10.07.26364402",
-    "date": "2026-10-08",
-    "title": "Large Language Models for Structured Information Extraction from German Histopathology Reports - Hepatocellular Carcinoma",
-    "authors": "Koch, N.; Hartmann, N.; Maennel, A.; Baretton, G.; Aust, D.; Hoenscheid, P.",
-    "abstract": "BackgroundClinical registries and institutional quality control (QC) in pathology heavily depend on complex histopathological data. However, critical tumor characteristics are mostly locked in unstructured free-text reports. We hypothesize that locally deployed, resource-eWicient language models operating within a secure institutional network can reliably extract relevant variables from German reports of hepatocellular carcinoma (HCC), thereby enabling automated data curation without transferring sensitive patient data. MethodsWe developed a local, privacy-preserving open-weight Large Language Model (LLM) pipeline consisting of two consecutive stages: Stage 1 utilizes a lightweight gatekeeper model to isolate the target cohort of confirmed Hepatocellular Carcinoma cases from a screening pool of N = 2,864 reports. Stage 2 deploys a high-capacity model to extract 15 predefined histopathological variables, including tumor-node-metastasis staging, histological grading, vascular invasion, and selected immunohistochemical features into structured JSON format. For both Stages, pipeline performance was evaluated using Accuracy, Macro F1-scores, and Cohens kappa compared to expert-curated reference annotations. ResultsThe top-performing Stage 1 gatekeeper isolated the target patient cohort with zero classification errors, effectively reaching complete agreement with the reference standard (ground truth) and correcting inaccurate administrative metadata. For Stage 2 feature extraction, current-generation models demonstrated robust structural reliability, reducing the burden of manual post-processing. The 31B model configuration (Gemma 4) virtually eliminated objective factual errors, achieving near-perfect agreement with the reference standard (Macro F1 > 0.99). ConclusionLocal two-stage pipelines offer a highly accurate, resource-efficient, and secure solution for clinical text processing. This framework serves as a privacy-preserving engine for institutional quality control and the scalable curation of pathology registries.",
-    "category": "Precision Oncology",
+    "id": "2026-10-11-medrxiv-a_multi_domain_eeg_framework_integrating_spectral_functional_connectivity_and_topological",
+    "doi": "10.64898/2026.10.08.26365043",
+    "date": "2026-10-11",
+    "title": "A Multi-Domain EEG Framework Integrating Spectral, Functional Connectivity, and Topological Features for Subject-Level ADHD Classification",
+    "authors": "Rohani, F.; Mostafavi, S.; Ebrahimifakhar, P.; Zomorrodi, R.; Mueller, A.",
+    "abstract": "BackgroundAttention-Deficit/Hyperactivity Disorder (ADHD) is a common neurodevelopmental disorder characterized by persistent symptoms of inattention, hyperactivity, and impulsivity that significantly affect cognitive, academic, and social functioning. Although electroencephalography (EEG) has emerged as a promising non-invasive tool for identifying objective neurophysiological biomarkers of ADHD because of its high temporal resolution and cost-effectiveness, many existing machine learning studies rely on single-domain EEG features, which may not adequately capture the complex functional organization of the brain. MethodsThis study proposes a subject-level EEG classification framework that integrates three complementary feature domains: spectral characteristics, weighted Phase Lag Index (wPLI)-based functional connectivity, and topological descriptors derived from persistent homology. EEG recordings from 121 subjects were preprocessed and segmented into overlapping windows for feature extraction. Window-level features were aggregated to generate subject-level representations. Recursive Feature Elimination (RFE) was employed to select the 110 most informative features from an initial set of 1,043 descriptors. Five machine learning classifiers, including Support Vector Machine (SVM), Random Forest, XGBoost, CatBoost, and Multi-Layer Perceptron (MLP), were evaluated using stratified five-fold cross-validation. An ablation study was further conducted to assess the contribution of each feature domain. Model interpretability was investigated using SHapley Additive exPlanations (SHAP) and Local Interpretable Model-agnostic Explanations (LIME), two widely adopted Explainable Artificial Intelligence techniques for interpreting machine learning models. ResultsAmong the evaluated classifiers, the SVM achieved the highest classification performance, yielding an accuracy of 80.17%, an F1-score of 80.95%, a balanced accuracy of 80.14%, a receiver operating characteristic area under the curve (ROC-AUC) of 86.72%, and a precision-recall area under the curve (PR-AUC) of 87.34%. The ablation study demonstrated that combining spectral, functional connectivity, and topological features consistently outperformed individual feature domains, highlighting the complementary nature of these representations. Explainable AI analyses further identified functional connectivity features as the primary contributors to classification performance while confirming the additional value of spectral and topological descriptors. ConclusionsThe proposed framework demonstrates that integrating spectral analysis, functional connectivity, and topological data analysis provides an effective and interpretable approach for subject-level ADHD classification from EEG recordings. The combination of recursive feature selection, multi-domain feature fusion, ablation analysis, and Explainable Artificial Intelligence establishes a transparent and reproducible pipeline that may facilitate the development of reliable EEG-based clinical decision-support systems for ADHD.",
+    "category": "Target Biology",
     "source": "medRxiv",
-    "published": "2026-10-08",
-    "updated": "2026-10-08",
-    "primary_category": "pathology",
+    "published": "2026-10-11",
+    "updated": "2026-10-11",
+    "primary_category": "health informatics",
     "categories": [
-      "pathology"
+      "health informatics"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364402v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365043v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364402v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365043v1.full.pdf"
       }
     ],
-    "score": 63,
+    "score": 57,
     "infographic": {
-      "key_insight": "A local two-stage LLM pipeline can accurately identify hepatocellular carcinoma reports and extract structured pathology variables from German free-text reports without sending patient data outside the institution.",
-      "clinical_relevance": "This could speed up pathology quality control and registry curation by turning unstructured reports into usable structured data in a privacy-preserving way.",
+      "key_insight": "A multi-domain EEG model combining spectral, connectivity, and topological features improved subject-level ADHD classification, with SVM performing best.",
+      "clinical_relevance": "This work suggests a more informative, interpretable EEG-based approach for supporting ADHD research and future biomarker development, though it is not a clinical diagnostic tool.",
       "method": [
-        "Stage 1 used a lightweight gatekeeper model to screen 2,864 reports for confirmed HCC cases.",
-        "Stage 2 used a higher-capacity open-weight model to extract 15 predefined histopathology variables into JSON.",
-        "Both stages were compared against expert-curated reference annotations using accuracy, macro F1, and Cohen’s kappa."
+        "121-subject EEG dataset preprocessed into overlapping windows",
+        "Extracted 1,043 features across spectral, wPLI connectivity, and persistent homology domains",
+        "Applied recursive feature elimination and compared five classifiers with five-fold cross-validation"
       ],
-      "evidence_signal": "The best gatekeeper achieved zero classification errors, and the top Stage 2 model reached near-perfect agreement with the reference standard, with Macro F1 > 0.99.",
-      "watch_item": "Performance was shown on a specific German HCC report setting, so external validation is needed before broader deployment.",
+      "evidence_signal": "Using stratified five-fold cross-validation, the top SVM model reached 80.17% accuracy, 80.95% F1-score, 86.72% ROC-AUC, and 87.34% PR-AUC.",
+      "watch_item": "Performance was evaluated on a relatively small sample, so external validation on independent datasets is needed before broader use.",
       "hashtags": [
-        "#PrecisionOncology",
-        "#PathologyAI",
-        "#LLM",
-        "#ClinicalNLP",
-        "#PrivacyPreservingAI"
+        "#EEG",
+        "#ADHD",
+        "#MachineLearning",
+        "#Biomarkers",
+        "#ExplainableAI"
       ],
-      "paper_id": "2026-10-08-medrxiv-large_language_models_for_structured_information_extraction_from_german_histopathology_rep",
-      "paper_title": "Large Language Models for Structured Information Extraction from German Histopathology Reports - Hepatocellular Carcinoma",
-      "paper_date": "2026-10-08",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-14T12:36:18",
+      "paper_id": "2026-10-11-medrxiv-a_multi_domain_eeg_framework_integrating_spectral_functional_connectivity_and_topological",
+      "paper_title": "A Multi-Domain EEG Framework Integrating Spectral, Functional Connectivity, and Topological Features for Subject-Level ADHD Classification",
+      "paper_date": "2026-10-11",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-15T12:20:38",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-11-medrxiv-ai_assisted_tissue_based_antibody_interpretation_in_autoimmune_encephalitis_prospective_va",
+    "doi": "10.64898/2026.10.08.26365042",
+    "date": "2026-10-11",
+    "title": "AI-Assisted Tissue-Based Antibody Interpretation in Autoimmune Encephalitis: Prospective Validation and Reader Study",
+    "authors": "Cao, Z.; Xie, D.; Zou, S.; Li, D.; Martinez-Martinez, P.; Zong, S.; Zhang, Z.",
+    "abstract": "Tissue-based assays provide broad screening for neural autoantibodies but remain vulnerable to technical and reader-dependent variability. We evaluated an integrated workflow combining automated 3,3'-diaminobenzidine tissue-based assay processing, digital whole-slide imaging, and interpretable deep learning. Model development used 2,357 retrospective serum and cerebrospinal fluid images referred from more than 80 institutions and processed in a centralized laboratory, with reference labels established by expert-consensus tissue-based assay interpretation. A prospective validation cohort included 200 images from 200 unique patients (154 positive and 46 negative; 100 serum and 100 cerebrospinal fluid). The same images were evaluated by two expert and two novice readers in a fixed-order two-round study, with unaided interpretation followed by artificial-intelligence-assisted interpretation after a washout of at least two weeks. The standalone binary classifier achieved an area under the receiver operating characteristic curve of 0.922, accuracy of 86.5%, sensitivity of 85.7%, and specificity of 89.1% in prospective validation. Pooled reader accuracy was 90.4% in the unaided round and 97.4% in the artificial-intelligence-assisted round (McNemar P < 0.001), with specificity of 82.6% and 99.5%, respectively. Novice-reader accuracy was 83.3% unaided and 96.5% with artificial-intelligence assistance (P < 0.001), approaching unaided expert accuracy of 97.5%. Among tissue-based-assay-positive cases, reader accuracy for cytoplasmic/nuclear antigen-associated versus neural surface antigen-associated staining-pattern subclassification was 88.8% unaided and 94.0% with artificial-intelligence assistance (P < 0.001). These findings support further multicentre, cross-platform evaluation of artificial-intelligence-assisted neural autoantibody tissue interpretation. Abbreviated summaryCao et al. report prospective validation of an automated tissue-based neural autoantibody workflow combining digital imaging and interpretable deep learning. Artificial-intelligence-assisted reading was associated with higher interpretation accuracy, particularly among less-experienced readers, supporting further multicentre validation across laboratories and imaging platforms.",
+    "category": "Therapeutic Discovery",
+    "source": "medRxiv",
+    "published": "2026-10-11",
+    "updated": "2026-10-11",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365042v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365042v1.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "An AI-assisted workflow for tissue-based antibody interpretation improved accuracy, especially for novice readers, compared with unaided interpretation.",
+      "clinical_relevance": "This could help standardize autoimmune encephalitis autoantibody screening and reduce reader-dependent variability in centralized laboratory workflows.",
+      "method": [
+        "Trained an interpretable deep-learning model on 2,357 retrospective serum and CSF tissue-based assay images from >80 institutions.",
+        "Prospectively validated the system on 200 new images from 200 unique patients using expert-consensus labels.",
+        "Compared two experts and two novices reading the same cases unaided versus with AI assistance after a washout period."
+      ],
+      "evidence_signal": "In prospective validation, the standalone classifier achieved AUROC 0.922 and the AI-assisted reader round raised pooled accuracy from 90.4% to 97.4% (McNemar P < 0.001).",
+      "watch_item": "Results come from a centralized, prospective validation setting, so multicenter cross-platform performance and real-world workflow robustness still need confirmation.",
+      "hashtags": [
+        "#AIPathology",
+        "#AutoimmuneEncephalitis",
+        "#DigitalPathology",
+        "#MachineLearning",
+        "#DiagnosticAccuracy"
+      ],
+      "paper_id": "2026-10-11-medrxiv-ai_assisted_tissue_based_antibody_interpretation_in_autoimmune_encephalitis_prospective_va",
+      "paper_title": "AI-Assisted Tissue-Based Antibody Interpretation in Autoimmune Encephalitis: Prospective Validation and Reader Study",
+      "paper_date": "2026-10-11",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-10-15T12:20:39",
       "generator": "openai"
     }
   },
@@ -126,29 +228,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364982v1.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 41,
     "infographic": {
-      "key_insight": "Neuronally-enriched extracellular vesicle synaptopodin is a blood-based marker of synaptic integrity that predicts disability progression in progressive multiple sclerosis, especially secondary progressive MS.",
-      "clinical_relevance": "If validated further, this biomarker could help identify people with progressive MS at higher risk of worsening and improve monitoring beyond standard neurofilament light chain (NfL).",
+      "key_insight": "Neuronally-enriched extracellular vesicle synaptopodin in blood is a prognostic marker of disability progression and brain integrity decline in progressive multiple sclerosis, especially SPMS.",
+      "clinical_relevance": "If validated broadly, this blood-based biomarker could help identify progressive MS patients at higher risk of worsening and improve monitoring beyond neurofilament light chain alone.",
       "method": [
-        "Measured synaptopodin in neuronal-enriched extracellular vesicles (NEVs) from blood.",
-        "Analyzed two independent cohorts: SPRINT-MS (n=184) and a real-world validation cohort (n=268).",
-        "Linked baseline and longitudinal biomarker levels to disability progression and MRI measures of brain atrophy/microstructural integrity."
+        "Measured synaptopodin in neuronal-enriched extracellular vesicles from blood",
+        "Tested associations in two cohorts: SPRINT-MS (n=184) and a real-world validation cohort (n=268)",
+        "Linked baseline and longitudinal biomarker levels to disability progression and MRI outcomes"
       ],
-      "evidence_signal": "Across two cohorts, higher baseline NEV synaptopodin was associated with lower risk of confirmed disability progression and showed stronger predictive performance than NfL in SPMS, with replication in the validation cohort.",
-      "watch_item": "This is promising but still observational/biomarker-based, so broader external validation and standardized assay workflows are needed before routine clinical use.",
+      "evidence_signal": "Across two cohorts, higher baseline NEV synaptopodin was associated with lower risk of confirmed disability progression and stronger MRI preservation signals, with replication in the validation cohort and added predictive value over NfL in SPMS.",
+      "watch_item": "This is an observational biomarker study, so clinical utility will depend on external validation, assay standardization, and clear thresholds for use in practice.",
       "hashtags": [
         "#MultipleSclerosis",
         "#Biomarkers",
-        "#SynapticHealth",
+        "#ExtracellularVesicles",
         "#Neurodegeneration",
-        "#ExtracellularVesicles"
+        "#Synaptopodin"
       ],
       "paper_id": "2026-10-09-medrxiv-a_blood_based_synaptic_biomarker_in_neuronally_enriched_extracellular_vesicles_predicts_di",
       "paper_title": "A Blood-Based Synaptic Biomarker in Neuronally-Enriched Extracellular Vesicles Predicts Disability Progression in Progressive Multiple Sclerosis",
       "paper_date": "2026-10-09",
       "paper_category": "Target Biology",
-      "generated_at": "2026-10-14T12:36:20",
+      "generated_at": "2026-10-15T12:20:42",
       "generator": "openai"
     }
   },
@@ -177,29 +279,80 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364969v1.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 41,
     "infographic": {
-      "key_insight": "A multi-step screening workflow using automated EHR flags followed by structured staff review greatly narrows a large sepsis candidate pool into a smaller, higher-yield enrollment set.",
-      "clinical_relevance": "This approach may help research teams efficiently recruit better-characterized sepsis cohorts for biomarker and host-response studies without overwhelming clinical staff.",
+      "key_insight": "A two-step screening workflow—automated EHR flagging followed by structured non-physician chart review—substantially narrows a large candidate pool to a higher-yield prospective sepsis cohort.",
+      "clinical_relevance": "This approach may improve efficiency for enrolling well-characterized sepsis patients for biomarker and host-response studies, while reducing burden on clinical teams and study staff.",
       "method": [
-        "Automated EHR screening identified adults with suspected sepsis using SIRS criteria, recent culture/PCR, and new antibiotic exposure.",
-        "Non-physician study staff performed structured chart review as an enrichment step before discussion with the primary clinical team.",
-        "Enrolled patients were physician-adjudicated into diagnostic categories and compared with a composite sepsis-likely definition."
+        "Automated EHR screening for SIRS criteria, microbiologic testing, and new antibiotic use",
+        "Structured enrichment review by trained non-physician staff",
+        "Primary team discussion plus physician adjudication into diagnostic categories"
       ],
-      "evidence_signal": "In 4,318 screened patients, 1,220 were flagged and 288 enrolled; among enrolled patients, 73% were adjudicated as sepsis, and the 9-week evaluation included 907 screened encounters.",
-      "watch_item": "Because the workflow depends on local EHR rules, staffing, and team discussions, performance and feasibility may vary across hospitals and patient populations.",
+      "evidence_signal": "In 4,318 screened patients, 1,220 (28%) were flagged and 288 enrolled; among enrolled patients, 73% were adjudicated as sepsis, supporting enrichment of the final cohort.",
+      "watch_item": "The workflow may improve cohort quality but still depends on local EHR data capture, staff expertise, and site-specific adjudication practices, which could limit generalizability.",
       "hashtags": [
         "#SepsisResearch",
         "#CohortEnrollment",
         "#EHRScreening",
-        "#BiomarkerStudies",
-        "#ClinicalResearch"
+        "#ClinicalTrialOps",
+        "#BiomarkerStudies"
       ],
       "paper_id": "2026-10-09-medrxiv-efficiency_of_a_multi_step_screening_and_enrichment_process_for_prospective_sepsis_cohort",
       "paper_title": "Efficiency of a Multi-step Screening and Enrichment Process for Prospective Sepsis Cohort Enrollment",
       "paper_date": "2026-10-09",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-14T12:36:22",
+      "generated_at": "2026-10-15T12:20:44",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-09-medrxiv-ai_enabled_echocardiography_identifies_prominent_epicardial_adipose_tissue_associated_with",
+    "doi": "10.64898/2026.07.22.26358690",
+    "date": "2026-10-09",
+    "title": "AI-Enabled Echocardiography Identifies Prominent Epicardial Adipose Tissue Associated With an Adverse Cardiometabolic Profile",
+    "authors": "Aminorroaya, A.; Coppi, A.; McNamara, R. L.; Lima, J. A. C.; Krumholz, H. M.; Antoniades, C.; Khera, R.; Oikonomou, E. K.",
+    "abstract": "BackgroundExcess epicardial adipose tissue (EAT) is associated with cardiovascular-kidney-metabolic (CKM) dysfunction, but its assessment has traditionally required advanced imaging. ObjectivesWe investigated whether AI-enabled echocardiography could characterize epicardial adiposity and identify residual cardiometabolic risk beyond body mass index (BMI). MethodsWe developed PanAdipo, a video-based deep learning model in 1,114,441 videos from 28,797 studies across the Yale-New Haven Health System (YNHHS; 2016-2022), using report-derived expert reader labels of prominent EAT (2.3% of studies). PanAdipo was evaluated in five cohorts: a temporally distinct YNHHS transthoracic echocardiography (TTE) set (n=4,588 patients contributing 5,130 studies), an emergency department point-of-care ultrasound (POCUS) cohort (n=10,957), the geographically distinct MIMIC-IV dataset (n=4,549), the community-based Multi-Ethnic Study of Atherosclerosis (MESA Exam 6, n=2,740), and in held-out YNHHS patients with paired coronary CT angiography within 12 months (n=5,167). Analyses examined discrimination of the report label and of CT-defined high indexed EAT volume, correlation with paired cardiac CT phenotypes, and BMI-adjusted associations with cardiometabolic biomarkers and newly documented metabolic disease. ResultsIn the held-out health system test set, PanAdipo identified prominent EAT documented in clinical reports with an area under the receiver operating characteristic curve (AUROC) of 0.86 (95% CI, 0.82-0.91) across all views and of up to 0.93 when combining apical 4-chamber and parasternal views. Against paired CT-derived measurements, PanAdipo discriminated age- and sex-specific high EAT (EAT/heart volume [&ge;]95th percentile) with AUROCs of 0.91 to 0.95 across age-sex groups and correlated more strongly with indexed EAT volume ({rho}=0.76) than with BMI ({rho}=0.41, all P<0.001); PanAdipo alone explained 53% of indexed EAT volume variance, versus 23% for age, sex, and BMI combined. In MESA, higher scores were associated with an adverse metabolic profile (higher HOMA-IR [{beta}=0.17 per SD; 95% CI, 0.11-0.22]) after adjustment for age, sex, and BMI. In health system TTE and POCUS cohorts, higher scores were associated with newly documented MASLD/MASH (BMI-adjusted HRpooled 1.31 [1.03-1.67] per SD of log[PanAdipo]) and hyperlipidemia (1.11 [1.04-1.18]). ConclusionsAI-enabled echocardiography provides a scalable digital biomarker that characterizes prominent epicardial adiposity and is associated with an adverse cardiometabolic profile, highlighting a role for echocardiography in metabolic risk stratification. CONDENSED ABSTRACTEpicardial adipose tissue (EAT) is linked to cardiometabolic risk, but its assessment has traditionally required advanced imaging. We developed PanAdipo, a deep learning model that derives a digital biomarker of EAT from routine echocardiography. PanAdipo tracks CT-defined epicardial adiposity ({rho}=0.76; AUROC 0.91-0.95 for age-/sex-specific high indexed-EAT), yet correlates modestly with body mass index (BMI; {rho}=0.19-0.41). After BMI adjustment, higher scores were associated with insulin resistance in a community-based cohort and newly documented metabolic disease across health systems. AI-enabled echocardiography may provide a scalable window into epicardial adiposity, with potential applications for enriching trial populations and monitoring response to cardiometabolic therapies.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-09",
+    "updated": "2026-10-09",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.22.26358690v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.07.22.26358690v2.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "AI-enabled echocardiography can detect prominent epicardial adipose tissue and uncover cardiometabolic risk that is not explained by BMI alone.",
+      "clinical_relevance": "This approach could help clinicians flag patients with hidden epicardial fat burden using routine ultrasound, supporting earlier risk stratification without requiring advanced imaging.",
+      "method": [
+        "Trained the PanAdipo deep learning model on 1,114,441 echocardiography videos from 28,797 studies labeled by expert report review.",
+        "Validated the model across multiple external cohorts, including TTE, POCUS, MIMIC-IV, MESA, and paired cardiac CT datasets.",
+        "Compared AI scores with CT-defined epicardial adipose tissue and with cardiometabolic biomarkers and newly documented metabolic disease."
+      ],
+      "evidence_signal": "PanAdipo achieved AUROC 0.86 for report-labeled prominent EAT and up to 0.95 for CT-defined high EAT, while correlating more strongly with indexed EAT volume (rho=0.76) than BMI (rho=0.41).",
+      "watch_item": "Performance was strongest in retrospective, multi-cohort validation, so prospective testing and workflow integration are still needed before routine deployment.",
+      "hashtags": [
+        "#AIinHealth",
+        "#Echocardiography",
+        "#EpicardialFat",
+        "#CardiometabolicRisk",
+        "#MachineLearning"
+      ],
+      "paper_id": "2026-10-09-medrxiv-ai_enabled_echocardiography_identifies_prominent_epicardial_adipose_tissue_associated_with",
+      "paper_title": "AI-Enabled Echocardiography Identifies Prominent Epicardial Adipose Tissue Associated With an Adverse Cardiometabolic Profile",
+      "paper_date": "2026-10-09",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-15T12:20:48",
       "generator": "openai"
     }
   }
