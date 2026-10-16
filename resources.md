@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-10-15
+Generated: 2026-10-16
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. Data-efficient machine learning for the detection of duodenal neoplasia: a multi-centre study
@@ -11,15 +11,31 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.10.08.26365053v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-10-11-medrxiv-data_efficient_machine_learning_for_the_detection_of_duodenal_neoplasia_a_multi_centre_stu_infographic.json
 
-## 2. A spatial AI-based biomarker with independent prognostic value in early low- and intermediate- risk breast cancer
+## 2. Developing an OMOP-Standardized Prostate Cancer Database and Improving Data Quality Using NLP and PSA-Based Algorithms
 
-- Date: 2026-10-09
+- Date: 2026-10-12
 - Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.07.26364961v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.10.07.26364961v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-10-09-medrxiv-a_spatial_ai_based_biomarker_with_independent_prognostic_value_in_early_low_and_intermedia_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.30.26356984v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.30.26356984v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-10-12-medrxiv-developing_an_omop_standardized_prostate_cancer_database_and_improving_data_quality_using_infographic.json
 
-## 3. A Multi-Domain EEG Framework Integrating Spectral, Functional Connectivity, and Topological Features for Subject-Level ADHD Classification
+## 3. Language eligibility criteria and enrolled racial and ethnic composition in US clinical trials: a cross-sectional study
+
+- Date: 2026-10-13
+- Category: Clinical Translation
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.09.26365106v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.09.26365106v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-10-13-medrxiv-language_eligibility_criteria_and_enrolled_racial_and_ethnic_composition_in_us_clinical_tr_infographic.json
+
+## 4. Decision models can offload structured clinical tasks from large language models
+
+- Date: 2026-10-12
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.09.26365130v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.09.26365130v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-10-12-medrxiv-decision_models_can_offload_structured_clinical_tasks_from_large_language_models_infographic.json
+
+## 5. A Multi-Domain EEG Framework Integrating Spectral, Functional Connectivity, and Topological Features for Subject-Level ADHD Classification
 
 - Date: 2026-10-11
 - Category: Target Biology
@@ -27,34 +43,10 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.10.08.26365043v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-10-11-medrxiv-a_multi_domain_eeg_framework_integrating_spectral_functional_connectivity_and_topological_infographic.json
 
-## 4. AI-Assisted Tissue-Based Antibody Interpretation in Autoimmune Encephalitis: Prospective Validation and Reader Study
+## 6. AI-Assisted Tissue-Based Antibody Interpretation in Autoimmune Encephalitis: Prospective Validation and Reader Study
 
 - Date: 2026-10-11
 - Category: Therapeutic Discovery
 - Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.08.26365042v1
 - PDF: https://www.medrxiv.org/content/10.64898/2026.10.08.26365042v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-10-11-medrxiv-ai_assisted_tissue_based_antibody_interpretation_in_autoimmune_encephalitis_prospective_va_infographic.json
-
-## 5. A Blood-Based Synaptic Biomarker in Neuronally-Enriched Extracellular Vesicles Predicts Disability Progression in Progressive Multiple Sclerosis
-
-- Date: 2026-10-09
-- Category: Target Biology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.07.26364982v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.10.07.26364982v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-10-09-medrxiv-a_blood_based_synaptic_biomarker_in_neuronally_enriched_extracellular_vesicles_predicts_di_infographic.json
-
-## 6. Efficiency of a Multi-step Screening and Enrichment Process for Prospective Sepsis Cohort Enrollment
-
-- Date: 2026-10-09
-- Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.07.26364969v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.10.07.26364969v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-10-09-medrxiv-efficiency_of_a_multi_step_screening_and_enrichment_process_for_prospective_sepsis_cohort_infographic.json
-
-## 7. AI-Enabled Echocardiography Identifies Prominent Epicardial Adipose Tissue Associated With an Adverse Cardiometabolic Profile
-
-- Date: 2026-10-09
-- Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.07.22.26358690v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.07.22.26358690v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-10-09-medrxiv-ai_enabled_echocardiography_identifies_prominent_epicardial_adipose_tissue_associated_with_infographic.json

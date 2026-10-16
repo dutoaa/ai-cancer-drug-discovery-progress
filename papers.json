@@ -24,21 +24,21 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365053v1.full.pdf"
       }
     ],
-    "score": 65,
+    "score": 60,
     "infographic": {
-      "key_insight": "A foundation-model-based, data-efficient pipeline can detect duodenal epithelial neoplasia in whole-slide biopsy images with strong cross-hospital generalizability despite few rare-tumour cases.",
-      "clinical_relevance": "This could help pathology workflows flag rare duodenal neoplasms earlier and more consistently, especially where annotated training data are limited.",
+      "key_insight": "A foundation-model-based, data-efficient pipeline can detect duodenal epithelial neoplasia from whole-slide histology with strong performance despite very limited rare-tumour training data.",
+      "clinical_relevance": "This approach could help pathologists triage duodenal biopsy slides more consistently across hospitals, especially for rare lesions where labelled examples are scarce.",
       "method": [
-        "5-hospital H&E duodenal biopsy WSI dataset (8,027 normal; 401 neoplastic) at 10x",
-        "Patch embeddings from the Hibou-B foundation model with site-specific standardisation",
-        "PCA + Gaussian mixture model + Random Forest classifier, evaluated with leave-one-hospital-out and external testing"
+        "10x H&E whole-slide biopsy patches were encoded with the Hibou-B foundation model.",
+        "Patch embeddings were reduced with PCA, clustered by a Gaussian mixture model, and classified with a Random Forest.",
+        "Performance was compared using global versus site-specific standardisation and tested with leave-one-hospital-out validation plus an external hospital cohort."
       ],
-      "evidence_signal": "Performance was 90% mean accuracy (AUC 0.96) in leave-one-hospital-out validation and 94% accuracy (AUC 0.97) on an independent external hospital test set.",
-      "watch_item": "Results come from a retrospective, multi-centre dataset and need prospective validation before routine deployment across broader lab settings.",
+      "evidence_signal": "Across 8,027 normal and 401 neoplastic biopsies from five hospitals, the model reached 90% mean cross-validation accuracy and 94% accuracy on an independent external test hospital.",
+      "watch_item": "The dataset is still relatively small for rare neoplasms and performance may vary with slide preparation, scanner differences, or deployment to new sites.",
       "hashtags": [
         "#CancerAI",
         "#DigitalPathology",
-        "#FoundationModels",
+        "#MachineLearning",
         "#Histopathology",
         "#RareTumors"
       ],
@@ -46,58 +46,160 @@
       "paper_title": "Data-efficient machine learning for the detection of duodenal neoplasia: a multi-centre study",
       "paper_date": "2026-10-11",
       "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-10-15T12:20:33",
+      "generated_at": "2026-10-16T12:02:50",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-10-09-medrxiv-a_spatial_ai_based_biomarker_with_independent_prognostic_value_in_early_low_and_intermedia",
-    "doi": "10.64898/2026.10.07.26364961",
-    "date": "2026-10-09",
-    "title": "A spatial AI-based biomarker with independent prognostic value in early low- and intermediate- risk breast cancer",
-    "authors": "Boissin, C.; Xiang, Y.; Liu, B.; Vallon-Christersson, J.; Walker, E.; Hartman, J.; Rantalainen, M.",
-    "abstract": "BackgroundPatients with ER-positive/HER2-negative early breast cancer of low or intermediate grade are generally considered to have a favourable prognosis, yet a number will recur. This risk is poorly captured by standard clinicopathological factors. AI-based medical devices for whole slide image (WSI) analyses used for risk-stratification often predict on slide-level thereby overlooking spatial localisation of the biomarkers. We hypothesise that the spatial distribution of a previously reported AI-based marker provides independent prognostic value beyond its global score. Patients and MethodsThis Swedish multicentre cohort study includes 6106 patients with primary invasive breast cancer: 3078 from the Stockholm region (training) and 3028 from Sk[a]ne (independent test). Tile-level high-grade morphology scores were generated with ViT_DG, a vision-transformer adaptation of DeepGrade, and the presence of clusters of high-risk tiles localised at the invasive tumour front was defined as a binary biomarker. Primary analyses were pre-specified in the ER-positive/HER2-negative/lymph-node-negative and Grade 1-2 subgroup. Association with breast-cancer recurrence-free interval (BCRFI) and distant metastasis were assessed using multivariable Cox proportional hazards models (HR). ResultsIn the primary subgroup (n=1536 training; n=1403 test), tumour front clusters were present in 37% and 39% of patients. Cluster-positive status was associated with a 2.30-fold increased risk in the external test. Cluster-negative patients achieved a 10-year BCRFI of 95.3%, equivalent to Grade 1 patients and better than Grade 2 (92.4%), whereas cluster-positive patients (90.2%) did worse than the Grade 3 reference. The association was retained in patients classified as low-risk by ViT_DG (test set multivariable HR 2.86), identifying high-risk patients not captured by the global score. ConclusionsThe absence of high-risk morphology clusters at the tumour front is an independent prognostic indicator, identifying a low-risk group independently of the global AI biomarker classification. More broadly, preserving the spatial distribution of AI-derived predictions enables prognostic stratification beyond slide-level aggregation. ClinicalTrials.gov identifier: NCT02306096",
+    "id": "2026-10-12-medrxiv-developing_an_omop_standardized_prostate_cancer_database_and_improving_data_quality_using",
+    "doi": "10.64898/2026.06.30.26356984",
+    "date": "2026-10-12",
+    "title": "Developing an OMOP-Standardized Prostate Cancer Database and Improving Data Quality Using NLP and PSA-Based Algorithms",
+    "authors": "Wang, J.; Jackson, J. C.; Garza, A.; Nalla, S.; Ninnemann, T.; Zhang, Y.; Kuo, Y.-F.",
+    "abstract": "ObjectiveTo develop and evaluate an Observational Medical Outcomes Partnership-(OMOP-) standardized prostate cancer database from the University of Texas Medical Branch (UTMB) Epic Electronic Health Record (EHR) and improve data quality using natural language processing(NLP) and prostate-specific antigen-(PSA) based algorithms. Materials and MethodsWe built a data pipeline to transform UTMB Epic EHR data for patients identified through the Galveston Cancer Registry (2010-2021) into OMOP Common Data Model (CDM) v5.4. Data quality was assessed by comparing the OMOP-standardized data with Galveston Cancer Registry data using availability agreement, Cohens kappa and Intraclass Correlation Coefficient. NLP was used to extract PSA, Gleason score, and cancer stage from clinical text, and PSA-based algorithms were used to identify missing treatment and biochemical recurrence. ResultsWe extracted 815 analytic cases from UTMB EHR. Among them, 700 (85.9%) were complete and concordant with the cancer registry. PSA showed excellent value agreement. Structured Gleason score and stage data were sparse (n<20), but NLP greately improved capture. Treatment agreement was good compared with the cancer registry and improved slightly for radical prostatectomy after applying a PSA-based algorithm. Using PSA trajectories, we identified 60 cases of biochemical recurrence. DiscussionThe OMOP-standardized data from UTMB showed good agreement with the cancer registry. However, structured EHR fields incompletely captured diagnosis, pathology, and treatment details. NLP and PSA-based algorithms substantially improved data capture. Manual review also revealed errors in registry data, showing that OMOP-standardized EHR data can complement and help improve cancer registry quality. Conclusion: OMOP standardization combined with NLP and PSA-based algorithms improved prostate cancer data quality and research readiness. Lay SummaryElectronic health record (EHR) systems contain valuable long-term health information about cancer, but their use is limited by difficulties in data extraction, the lack of standard data formats, and missing information in structured fields. In this study, we built a data pipeline to convert EHR data into the Observational Medical Outcomes Partnership (OMOP) Common Data Model, a widely used standard format that facilitates data sharing and collaborative research. To address missing data, we used natural language processing (NLP, a computational technique that enables computers to interpret human language) to extract prostate-specific antigen (PSA) levels, Gleason scores (a measure of cancer aggressiveness), and cancer stages from unstructured clinical notes. We also applied algorithms that track PSA blood trends over time to identify unrecorded cancer treatments and detect cancer recurrence. Comparing this database with a cancer registry demonstrated that standardized EHR records provide accurate clinical information and long-term follow-up. While structured EHR fields lacked key tumor characteristics, NLP dramatically improved their capture. Tracking PSA trends identified previously unrecorded treatments and flagged 60 potential cancer recurrences. Overall, combining standardized EHR formats with NLP and PSA-based algorithms creates a rich database to support real-world prostate cancer research.",
     "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "primary_category": "oncology",
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "primary_category": "health informatics",
     "categories": [
-      "oncology"
+      "health informatics"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364961v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.30.26356984v2"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364961v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.30.26356984v2.full.pdf"
       }
     ],
-    "score": 65,
+    "score": 59,
     "infographic": {
-      "key_insight": "A spatial AI biomarker that detects high-risk morphology clusters at the invasive tumor front adds independent prognostic value beyond the overall slide score in early low- and intermediate-risk breast cancer.",
-      "clinical_relevance": "This approach may better identify which patients with ER-positive/HER2-negative disease are truly low risk versus those who still need closer follow-up or additional treatment consideration.",
+      "key_insight": "OMOP standardization plus NLP and PSA-based rules substantially improved prostate cancer data capture from EHRs, making the dataset more usable for research.",
+      "clinical_relevance": "Better-structured prostate cancer records can support more reliable outcomes research, registry validation, and future precision oncology studies.",
       "method": [
-        "6106 Swedish breast cancer cases were split into a Stockholm training cohort and an independent Skåne test cohort.",
-        "A vision-transformer model (ViT_DG) scored tile-level high-grade morphology on whole-slide images.",
-        "A binary biomarker was defined by the presence of high-risk tile clusters at the invasive tumor front and tested with multivariable Cox models."
+        "Transformed UTMB Epic EHR data for registry-identified prostate cancer patients into OMOP CDM v5.4.",
+        "Used NLP to extract PSA, Gleason score, and cancer stage from clinical notes.",
+        "Applied PSA-based algorithms to identify missing treatments and biochemical recurrence."
       ],
-      "evidence_signal": "In the ER-positive/HER2-negative/lymph-node-negative, grade 1-2 subgroup, cluster-positive status predicted worse recurrence outcomes, with an external test-set hazard ratio of 2.30 and retained value even among cases labeled low-risk by the global AI score.",
-      "watch_item": "This is retrospective, pathology-image based evidence from a Swedish cohort, so external validation and workflow standardization are still needed before routine implementation.",
+      "evidence_signal": "The pipeline produced 815 analytic cases, with 700 (85.9%) complete and concordant with the cancer registry, PSA showing excellent agreement, and NLP markedly improving sparse Gleason/stage capture.",
+      "watch_item": "Performance depends on data quality, and both structured EHR fields and cancer registry entries can contain gaps or errors, so results may need local validation before deployment.",
       "hashtags": [
         "#PrecisionOncology",
-        "#DigitalPathology",
-        "#AIinCancer",
-        "#BreastCancer",
-        "#PrognosticBiomarker"
+        "#OMOP",
+        "#EHR",
+        "#NLP",
+        "#CancerDataQuality"
       ],
-      "paper_id": "2026-10-09-medrxiv-a_spatial_ai_based_biomarker_with_independent_prognostic_value_in_early_low_and_intermedia",
-      "paper_title": "A spatial AI-based biomarker with independent prognostic value in early low- and intermediate- risk breast cancer",
-      "paper_date": "2026-10-09",
+      "paper_id": "2026-10-12-medrxiv-developing_an_omop_standardized_prostate_cancer_database_and_improving_data_quality_using",
+      "paper_title": "Developing an OMOP-Standardized Prostate Cancer Database and Improving Data Quality Using NLP and PSA-Based Algorithms",
+      "paper_date": "2026-10-12",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-15T12:20:35",
+      "generated_at": "2026-10-16T12:02:53",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-13-medrxiv-language_eligibility_criteria_and_enrolled_racial_and_ethnic_composition_in_us_clinical_tr",
+    "doi": "10.64898/2026.10.09.26365106",
+    "date": "2026-10-13",
+    "title": "Language eligibility criteria and enrolled racial and ethnic composition in US clinical trials: a cross-sectional study",
+    "authors": "Tolas, A.; Du, L. Y.; Schutz, N.; Schmiedmayer, P.; O'Sullivan, J. W.; Johnson, A.; Longenecker, C. K.; Sarraju, A.; Rodriguez, F.; Yang, E.; Kim, D. S.",
+    "abstract": "BACKGROUND: Federal policy now requires sponsors to submit diversity action plans for clinical trials, yet the modifiable features of trial design associated with enrolled composition remain poorly characterized. English-language proficiency requirements are written into eligibility criteria and recorded as free text in a public registry, making them visible and, in principle, amenable to revision, but their relationship to enrolled composition has been examined only within single disease areas and in small samples of trials. We examined whether these requirements and documented language accommodation were associated with the racial and ethnic composition of enrolled participants. METHODS AND FINDINGS: We conducted a cross-sectional study of interventional trials registered on ClinicalTrials.gov with at least one US site and posted results, using a registry snapshot retrieved in October 2026. The primary cohort comprised the 44,487 trials with exclusively US sites, of which 21,924 (49.3%) reported baseline race and 17,434 (39.2%) reported baseline ethnicity with counts that reconciled with the posted denominator. Both exposures were classified from free-text eligibility criteria using regular expressions validated against independent physician review of 150 trials. For the English-language requirement classifier, sensitivity was 88.2% and specificity was 99.2%. The outcome was the trial-level proportion of enrolled participants in each category, analyzed using generalized linear models adjusted for intervention class, therapeutic area, sponsor, phase, enrollment, sites, start year, US Census region, and the population composition of the trial's site states. An English-language proficiency requirement appeared in 5,736 trials (12.9%); its prevalence rose from 7.4% of trials starting in 2010 to 26.2% in 2023 (odds ratio [OR] per decade 2.91, P<0.001), whereas documented accommodation, an eligibility statement allowing participation in a language other than English (Spanish in 99.9% of flagged trials), remained rare (788 trials, 1.8%). The requirement was associated with lower enrolled proportions of Asian (OR=0.85, 95% CI 0.77-0.93, P=0.001) and Hispanic/Latinx participants (OR=0.85, 95% CI 0.79-0.91, P<0.001), with no evidence of an association for White participants (OR=0.99, 95% CI 0.95-1.04, P=0.75). Documented accommodation was associated with a higher proportion of Hispanic/Latinx participants (OR=3.23, 95% CI 2.82-3.71, P<0.001). Geographic adjustment did not change the statistical significance of the requirement associations and attenuated the accommodation association. The main limitations were the cross-sectional design, which precludes causal inference; the restriction of enrollment analyses to trials reporting baseline demographics, which were more recent than those without such reporting; and possible misclassification of automatically classified exposures. CONCLUSIONS: English-language proficiency requirements became more than three times as common between 2010 and 2023 and were associated with lower enrolled proportions of Asian and Hispanic/Latinx participants. Less common documented language accommodation was associated with a higher enrolled proportion of Hispanic/Latinx participants. Because these criteria are investigator-written and publicly recorded, they may be a tractable target for improving enrollment equity, although whether revising them changes who enrolls requires prospective evaluation",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "primary_category": "epidemiology",
+    "categories": [
+      "epidemiology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.09.26365106v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.09.26365106v1.full.pdf"
+      }
+    ],
+    "score": 56,
+    "infographic": {
+      "key_insight": "Trials that require English proficiency enroll fewer Asian and Hispanic/Latinx participants, while language accommodation remains uncommon.",
+      "clinical_relevance": "Reviewing and revising language eligibility criteria could be a practical way to improve trial diversity and better reflect the populations affected by cancer and other diseases.",
+      "method": [
+        "Cross-sectional analysis of ClinicalTrials.gov interventional trials with at least one US site and posted results.",
+        "Eligibility criteria were parsed with validated regular expressions to identify English-language requirements and language accommodations.",
+        "Enrolled race and ethnicity composition was analyzed with adjusted generalized linear models across 44,487 trials."
+      ],
+      "evidence_signal": "Among exclusively US-site trials, 12.9% included an English-language requirement and 1.8% documented language accommodation; the classifier showed 88.2% sensitivity and 99.2% specificity.",
+      "watch_item": "Associations are observational and registry-based, so they cannot prove causation and may be influenced by missing or inconsistently reported enrollment data.",
+      "hashtags": [
+        "#ClinicalTrials",
+        "#TrialDiversity",
+        "#LanguageAccess",
+        "#HealthEquity",
+        "#CancerResearch"
+      ],
+      "paper_id": "2026-10-13-medrxiv-language_eligibility_criteria_and_enrolled_racial_and_ethnic_composition_in_us_clinical_tr",
+      "paper_title": "Language eligibility criteria and enrolled racial and ethnic composition in US clinical trials: a cross-sectional study",
+      "paper_date": "2026-10-13",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-10-16T12:02:56",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-12-medrxiv-decision_models_can_offload_structured_clinical_tasks_from_large_language_models",
+    "doi": "10.64898/2026.10.09.26365130",
+    "date": "2026-10-12",
+    "title": "Decision models can offload structured clinical tasks from large language models",
+    "authors": "Ariel, D.; Laban, G.; Endelman, S.; Balicer, R.; Dagan, N.; Cohen, S.",
+    "abstract": "Decision models like Jev read text and return probabilities, categories, or ordinal levels, with confidence scores for the latter two, at a fraction of large language models (LLMs) cost. We explored how Jev could be integrated into clinical workflows for all these output types: mortality risk estimation, categorical Choosing-Wisely decisions for patient questions, and ordinal colon cancer staging. With standard LLM-style inputs, Jev trailed five flagship LLMs: mortality AUROC was 0.822 versus 0.837-0.846; Choosing-Wisely accuracy, 87.7% versus 98.4-100%; and staging accuracy, 45.4% versus 94.2-100%. Developer-recommended input alterations improved staging accuracy to 75.8% with medical context, 82.1% with task decomposition, and 85.8% with both. None of Jevs staging errors had full confidence. Using Jev for fully confident staging decisions and LLMs for the rest was non-inferior to each LLM alone and cut flagship LLM costs by 33-44%. Prompted as designed, decision models may efficiently share structured clinical tasks with LLMs.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-12",
+    "updated": "2026-10-12",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.09.26365130v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.09.26365130v1.full.pdf"
+      }
+    ],
+    "score": 53,
+    "infographic": {
+      "key_insight": "A decision model can handle some structured clinical tasks at much lower cost than large language models, but its performance depends strongly on how the task is framed.",
+      "clinical_relevance": "In precision oncology workflows, decision models could help offload low-risk structured tasks such as mortality estimation, triage questions, and staging, reserving LLMs for harder or uncertain cases.",
+      "method": [
+        "Compared Jev with five flagship LLMs on three clinical tasks: mortality risk, Choosing Wisely-style categorical decisions, and ordinal colon cancer staging.",
+        "Tested standard LLM-style prompts versus developer-recommended input changes, including added medical context and task decomposition.",
+        "Evaluated a hybrid workflow using Jev only for fully confident staging predictions and LLMs for the remaining cases."
+      ],
+      "evidence_signal": "With standard inputs, Jev underperformed LLMs on all tasks, but tailored prompting raised staging accuracy from 45.4% to 85.8%, and a hybrid approach reduced flagship LLM costs by 33-44% while remaining non-inferior.",
+      "watch_item": "The system still depends on confidence calibration and careful task design, since incorrect low-confidence or poorly framed outputs could limit safe real-world deployment.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#ClinicalAI",
+        "#DecisionModels",
+        "#LargeLanguageModels",
+        "#WorkflowEfficiency"
+      ],
+      "paper_id": "2026-10-12-medrxiv-decision_models_can_offload_structured_clinical_tasks_from_large_language_models",
+      "paper_title": "Decision models can offload structured clinical tasks from large language models",
+      "paper_date": "2026-10-12",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-16T12:02:58",
       "generator": "openai"
     }
   },
@@ -126,29 +228,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365043v1.full.pdf"
       }
     ],
-    "score": 57,
+    "score": 52,
     "infographic": {
-      "key_insight": "A multi-domain EEG model combining spectral, connectivity, and topological features improved subject-level ADHD classification, with SVM performing best.",
-      "clinical_relevance": "This work suggests a more informative, interpretable EEG-based approach for supporting ADHD research and future biomarker development, though it is not a clinical diagnostic tool.",
+      "key_insight": "A multi-domain EEG model that combines spectral, connectivity, and topological features improved subject-level ADHD classification, with SVM performing best.",
+      "clinical_relevance": "This approach could support more objective, non-invasive ADHD biomarker research by capturing brain-signal patterns that single-feature models may miss.",
       "method": [
-        "121-subject EEG dataset preprocessed into overlapping windows",
-        "Extracted 1,043 features across spectral, wPLI connectivity, and persistent homology domains",
-        "Applied recursive feature elimination and compared five classifiers with five-fold cross-validation"
+        "EEG from 121 subjects was preprocessed and split into overlapping windows.",
+        "Features were extracted from three domains: spectral measures, wPLI-based functional connectivity, and persistent homology/topology descriptors.",
+        "Recursive Feature Elimination reduced 1,043 features to 110, and five classifiers were tested with stratified five-fold cross-validation."
       ],
-      "evidence_signal": "Using stratified five-fold cross-validation, the top SVM model reached 80.17% accuracy, 80.95% F1-score, 86.72% ROC-AUC, and 87.34% PR-AUC.",
-      "watch_item": "Performance was evaluated on a relatively small sample, so external validation on independent datasets is needed before broader use.",
+      "evidence_signal": "In cross-validated evaluation, SVM achieved 80.17% accuracy, 80.95% F1-score, 80.14% balanced accuracy, 86.72% ROC-AUC, and 87.34% PR-AUC.",
+      "watch_item": "Results come from a relatively small cohort and window-based feature aggregation, so external validation on independent datasets is needed before broader use.",
       "hashtags": [
         "#EEG",
         "#ADHD",
         "#MachineLearning",
-        "#Biomarkers",
+        "#BrainConnectivity",
         "#ExplainableAI"
       ],
       "paper_id": "2026-10-11-medrxiv-a_multi_domain_eeg_framework_integrating_spectral_functional_connectivity_and_topological",
       "paper_title": "A Multi-Domain EEG Framework Integrating Spectral, Functional Connectivity, and Topological Features for Subject-Level ADHD Classification",
       "paper_date": "2026-10-11",
       "paper_category": "Target Biology",
-      "generated_at": "2026-10-15T12:20:38",
+      "generated_at": "2026-10-16T12:03:01",
       "generator": "openai"
     }
   },
@@ -177,182 +279,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365042v1.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
-      "key_insight": "An AI-assisted workflow for tissue-based antibody interpretation improved accuracy, especially for novice readers, compared with unaided interpretation.",
-      "clinical_relevance": "This could help standardize autoimmune encephalitis autoantibody screening and reduce reader-dependent variability in centralized laboratory workflows.",
+      "key_insight": "An interpretable AI workflow for tissue-based neural autoantibody interpretation improved reader accuracy, especially for novice readers, compared with unaided interpretation.",
+      "clinical_relevance": "This could make autoimmune encephalitis testing more consistent and reduce reader-dependent variability in specialized lab settings.",
       "method": [
-        "Trained an interpretable deep-learning model on 2,357 retrospective serum and CSF tissue-based assay images from >80 institutions.",
-        "Prospectively validated the system on 200 new images from 200 unique patients using expert-consensus labels.",
-        "Compared two experts and two novices reading the same cases unaided versus with AI assistance after a washout period."
+        "Trained on 2,357 retrospective serum and CSF tissue-based assay images from >80 institutions.",
+        "Validated prospectively on 200 images from 200 unique patients.",
+        "Compared expert and novice readers with and without AI assistance in a two-round blinded study."
       ],
-      "evidence_signal": "In prospective validation, the standalone classifier achieved AUROC 0.922 and the AI-assisted reader round raised pooled accuracy from 90.4% to 97.4% (McNemar P < 0.001).",
-      "watch_item": "Results come from a centralized, prospective validation setting, so multicenter cross-platform performance and real-world workflow robustness still need confirmation.",
+      "evidence_signal": "In prospective validation, the standalone classifier reached AUC 0.922 with 86.5% accuracy, while pooled reader accuracy rose from 90.4% unaided to 97.4% with AI assistance.",
+      "watch_item": "Results were generated in a centralized-lab setting, so cross-platform and multicentre generalizability still needs confirmation.",
       "hashtags": [
-        "#AIPathology",
+        "#AIinPathology",
         "#AutoimmuneEncephalitis",
         "#DigitalPathology",
-        "#MachineLearning",
+        "#DeepLearning",
         "#DiagnosticAccuracy"
       ],
       "paper_id": "2026-10-11-medrxiv-ai_assisted_tissue_based_antibody_interpretation_in_autoimmune_encephalitis_prospective_va",
       "paper_title": "AI-Assisted Tissue-Based Antibody Interpretation in Autoimmune Encephalitis: Prospective Validation and Reader Study",
       "paper_date": "2026-10-11",
       "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-15T12:20:39",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-09-medrxiv-a_blood_based_synaptic_biomarker_in_neuronally_enriched_extracellular_vesicles_predicts_di",
-    "doi": "10.64898/2026.10.07.26364982",
-    "date": "2026-10-09",
-    "title": "A Blood-Based Synaptic Biomarker in Neuronally-Enriched Extracellular Vesicles Predicts Disability Progression in Progressive Multiple Sclerosis",
-    "authors": "Jank, L.; Kumar, M. K. S.; Joshi, D.; Minney, V.; Eskinder, R.; Thapa, R.; Heller, J. G.; Filippatou, A. G.; Siavoshi, F.; Smith, M. D.; Harp, C.; Abioye, I.; Sotirchos, E. S.; Dewey, B. E.; Saidha, S.; Fitzgerald, K. C.; Calabresi, P. A.; Mowry, E. M.; Bhargava, P.",
-    "abstract": "Progressive multiple sclerosis (PMS) lacks blood-based biomarkers of the neurodegenerative processes driving disability. We measured synaptopodin, a postsynaptic protein, in neuronal-enriched extracellular vesicles (NEVs) across two independent cohorts: the SPRINT-MS trial (n=184) and a real-world validation cohort (n=268). A one SD increase in baseline synaptopodin was associated with [~]32% lower risk of confirmed disability progression in PMS (p=0.011), with the strongest effect in secondary PMS (SPMS) ([~]57% lower odds, p=0.019). This SPMS association was replicated in the validation cohort ([~]60% lower odds, p=0.009). Higher baseline synaptopodin was associated with future slower whole-brain atrophy and preserved microstructural integrity across MRI metrics (p=0.007-0.013). Longitudinal changes in NEV synaptopodin were associated with disability worsening (p=0.007) and paralleled MRI microstructural changes. NEV synaptopodin, but not NfL, was associated with confirmed disability progression in PMS participants with both biomarkers measured (HR 0.71 vs 1.12, p=0.007 vs 0.22 for NEV synaptopodin and NfL, respectively) and SPMS (HR 0.58 vs 1.10, p=0.003 vs 0.50). Adding synaptopodin, but not NfL, to a base model improved discrimination for disability progression in SPMS in both cohorts (e.g. validation AUC 0.755 to 0.838, p=0.005). These findings identify NEV synaptopodin as a prognostic and longitudinal, blood biomarker of synaptic integrity in PMS, particularly SPMS, complementing NfL.",
-    "category": "Target Biology",
-    "source": "medRxiv",
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "primary_category": "neurology",
-    "categories": [
-      "neurology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364982v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364982v1.full.pdf"
-      }
-    ],
-    "score": 41,
-    "infographic": {
-      "key_insight": "Neuronally-enriched extracellular vesicle synaptopodin in blood is a prognostic marker of disability progression and brain integrity decline in progressive multiple sclerosis, especially SPMS.",
-      "clinical_relevance": "If validated broadly, this blood-based biomarker could help identify progressive MS patients at higher risk of worsening and improve monitoring beyond neurofilament light chain alone.",
-      "method": [
-        "Measured synaptopodin in neuronal-enriched extracellular vesicles from blood",
-        "Tested associations in two cohorts: SPRINT-MS (n=184) and a real-world validation cohort (n=268)",
-        "Linked baseline and longitudinal biomarker levels to disability progression and MRI outcomes"
-      ],
-      "evidence_signal": "Across two cohorts, higher baseline NEV synaptopodin was associated with lower risk of confirmed disability progression and stronger MRI preservation signals, with replication in the validation cohort and added predictive value over NfL in SPMS.",
-      "watch_item": "This is an observational biomarker study, so clinical utility will depend on external validation, assay standardization, and clear thresholds for use in practice.",
-      "hashtags": [
-        "#MultipleSclerosis",
-        "#Biomarkers",
-        "#ExtracellularVesicles",
-        "#Neurodegeneration",
-        "#Synaptopodin"
-      ],
-      "paper_id": "2026-10-09-medrxiv-a_blood_based_synaptic_biomarker_in_neuronally_enriched_extracellular_vesicles_predicts_di",
-      "paper_title": "A Blood-Based Synaptic Biomarker in Neuronally-Enriched Extracellular Vesicles Predicts Disability Progression in Progressive Multiple Sclerosis",
-      "paper_date": "2026-10-09",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-10-15T12:20:42",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-09-medrxiv-efficiency_of_a_multi_step_screening_and_enrichment_process_for_prospective_sepsis_cohort",
-    "doi": "10.64898/2026.10.07.26364969",
-    "date": "2026-10-09",
-    "title": "Efficiency of a Multi-step Screening and Enrichment Process for Prospective Sepsis Cohort Enrollment",
-    "authors": "Cosimi, L. A.; Qi, W.; Naz-McLean, S.; Pan, K.; Li, S.; Laibinis, H. H.; Rooney, A. R.; Moran, C.; Valentine, G. C.; Hwang, S.; Deguine, J.; Pickard, J.; Hung, D. T.; Woolley, A. E.",
-    "abstract": "BackgroundHost response and biomarker research to advance sepsis therapeutics requires well-characterized cohorts with longitudinal biospecimens across a range of hosts and infections. Automated screening based on SIRS criteria is sensitive but nonspecific and identifies more candidates than research teams can approach, sample, and follow longitudinally. We evaluated a structured enrichment review by non-physician study staff, done after automated screening in a hospital-wide prospective sepsis cohort. MethodsThe CISID cohort is a prospective observational study of hospitalized patients with suspected sepsis, enrolling adults from the ED, inpatient wards, and ICUs at a tertiary academic medical center. Patients were identified through: (1) automated electronic health record screening for two or more SIRS criteria with a 24-hour lookback, documentation of microbiologic culture or PCR, and receipt of a new antibiotic; (2) a sepsis enrichment step of structured chart review by trained non-physician study staff; and (3) discussion with the primary clinical team. Enrolled patients underwent physician adjudication into four diagnostic categories. To evaluate the enrichment step, we analyzed all patients screened during a 9-week period, assigned a composite \"sepsis-likely\" variable (CDC Adult Sepsis Event criteria or ICD-10 code R65.20/R65.21 within 48 hours before or after screening), and assessed mortality across each stage of screening. We also assessed concordance of the composite with physician adjudication among enrolled patients. ResultsFrom November 2023 through February 2026, 4,318 patients screened in through EHR-based automated screening; 1,220 (28%) were flagged for enrollment, and 288 were enrolled. Physician adjudication classified 209 (73%) as sepsis, 46 (16%) as infection without sepsis, 14 (5%) were classified as undifferentiated critical illness, and 19 (6.6%) as non-infectious sepsis mimics. Patients with sepsis were severely ill (median SOFA score, 9; ICU admission, 80%; shock, 48%), and 51% were immunocompromised; mortality was 14% in hospital and 27% at 90 days. In a 9-week sample of 907 screened encounters, 21% of those deferred and 70% of those flagged for enrollment met the sepsis-likely composite, a 3.3-fold increase in prevalence after structured study team review. ConclusionsA brief structured enrichment review after automated screening tripled the prevalence of EHR-based sepsis indicators among patients selected for enrollment, while concentrating enrollment efforts on roughly one-quarter of screened-in patients in this hospital-wide, all-source suspected-sepsis cohort. This approach may help prospective cohorts direct limited biospecimen resources toward patients most informative for host-response and biomarker research.",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "primary_category": "infectious diseases",
-    "categories": [
-      "infectious diseases"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364969v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26364969v1.full.pdf"
-      }
-    ],
-    "score": 41,
-    "infographic": {
-      "key_insight": "A two-step screening workflow—automated EHR flagging followed by structured non-physician chart review—substantially narrows a large candidate pool to a higher-yield prospective sepsis cohort.",
-      "clinical_relevance": "This approach may improve efficiency for enrolling well-characterized sepsis patients for biomarker and host-response studies, while reducing burden on clinical teams and study staff.",
-      "method": [
-        "Automated EHR screening for SIRS criteria, microbiologic testing, and new antibiotic use",
-        "Structured enrichment review by trained non-physician staff",
-        "Primary team discussion plus physician adjudication into diagnostic categories"
-      ],
-      "evidence_signal": "In 4,318 screened patients, 1,220 (28%) were flagged and 288 enrolled; among enrolled patients, 73% were adjudicated as sepsis, supporting enrichment of the final cohort.",
-      "watch_item": "The workflow may improve cohort quality but still depends on local EHR data capture, staff expertise, and site-specific adjudication practices, which could limit generalizability.",
-      "hashtags": [
-        "#SepsisResearch",
-        "#CohortEnrollment",
-        "#EHRScreening",
-        "#ClinicalTrialOps",
-        "#BiomarkerStudies"
-      ],
-      "paper_id": "2026-10-09-medrxiv-efficiency_of_a_multi_step_screening_and_enrichment_process_for_prospective_sepsis_cohort",
-      "paper_title": "Efficiency of a Multi-step Screening and Enrichment Process for Prospective Sepsis Cohort Enrollment",
-      "paper_date": "2026-10-09",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-15T12:20:44",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-09-medrxiv-ai_enabled_echocardiography_identifies_prominent_epicardial_adipose_tissue_associated_with",
-    "doi": "10.64898/2026.07.22.26358690",
-    "date": "2026-10-09",
-    "title": "AI-Enabled Echocardiography Identifies Prominent Epicardial Adipose Tissue Associated With an Adverse Cardiometabolic Profile",
-    "authors": "Aminorroaya, A.; Coppi, A.; McNamara, R. L.; Lima, J. A. C.; Krumholz, H. M.; Antoniades, C.; Khera, R.; Oikonomou, E. K.",
-    "abstract": "BackgroundExcess epicardial adipose tissue (EAT) is associated with cardiovascular-kidney-metabolic (CKM) dysfunction, but its assessment has traditionally required advanced imaging. ObjectivesWe investigated whether AI-enabled echocardiography could characterize epicardial adiposity and identify residual cardiometabolic risk beyond body mass index (BMI). MethodsWe developed PanAdipo, a video-based deep learning model in 1,114,441 videos from 28,797 studies across the Yale-New Haven Health System (YNHHS; 2016-2022), using report-derived expert reader labels of prominent EAT (2.3% of studies). PanAdipo was evaluated in five cohorts: a temporally distinct YNHHS transthoracic echocardiography (TTE) set (n=4,588 patients contributing 5,130 studies), an emergency department point-of-care ultrasound (POCUS) cohort (n=10,957), the geographically distinct MIMIC-IV dataset (n=4,549), the community-based Multi-Ethnic Study of Atherosclerosis (MESA Exam 6, n=2,740), and in held-out YNHHS patients with paired coronary CT angiography within 12 months (n=5,167). Analyses examined discrimination of the report label and of CT-defined high indexed EAT volume, correlation with paired cardiac CT phenotypes, and BMI-adjusted associations with cardiometabolic biomarkers and newly documented metabolic disease. ResultsIn the held-out health system test set, PanAdipo identified prominent EAT documented in clinical reports with an area under the receiver operating characteristic curve (AUROC) of 0.86 (95% CI, 0.82-0.91) across all views and of up to 0.93 when combining apical 4-chamber and parasternal views. Against paired CT-derived measurements, PanAdipo discriminated age- and sex-specific high EAT (EAT/heart volume [&ge;]95th percentile) with AUROCs of 0.91 to 0.95 across age-sex groups and correlated more strongly with indexed EAT volume ({rho}=0.76) than with BMI ({rho}=0.41, all P<0.001); PanAdipo alone explained 53% of indexed EAT volume variance, versus 23% for age, sex, and BMI combined. In MESA, higher scores were associated with an adverse metabolic profile (higher HOMA-IR [{beta}=0.17 per SD; 95% CI, 0.11-0.22]) after adjustment for age, sex, and BMI. In health system TTE and POCUS cohorts, higher scores were associated with newly documented MASLD/MASH (BMI-adjusted HRpooled 1.31 [1.03-1.67] per SD of log[PanAdipo]) and hyperlipidemia (1.11 [1.04-1.18]). ConclusionsAI-enabled echocardiography provides a scalable digital biomarker that characterizes prominent epicardial adiposity and is associated with an adverse cardiometabolic profile, highlighting a role for echocardiography in metabolic risk stratification. CONDENSED ABSTRACTEpicardial adipose tissue (EAT) is linked to cardiometabolic risk, but its assessment has traditionally required advanced imaging. We developed PanAdipo, a deep learning model that derives a digital biomarker of EAT from routine echocardiography. PanAdipo tracks CT-defined epicardial adiposity ({rho}=0.76; AUROC 0.91-0.95 for age-/sex-specific high indexed-EAT), yet correlates modestly with body mass index (BMI; {rho}=0.19-0.41). After BMI adjustment, higher scores were associated with insulin resistance in a community-based cohort and newly documented metabolic disease across health systems. AI-enabled echocardiography may provide a scalable window into epicardial adiposity, with potential applications for enriching trial populations and monitoring response to cardiometabolic therapies.",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-10-09",
-    "updated": "2026-10-09",
-    "primary_category": "cardiovascular medicine",
-    "categories": [
-      "cardiovascular medicine"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.22.26358690v2"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.07.22.26358690v2.full.pdf"
-      }
-    ],
-    "score": 41,
-    "infographic": {
-      "key_insight": "AI-enabled echocardiography can detect prominent epicardial adipose tissue and uncover cardiometabolic risk that is not explained by BMI alone.",
-      "clinical_relevance": "This approach could help clinicians flag patients with hidden epicardial fat burden using routine ultrasound, supporting earlier risk stratification without requiring advanced imaging.",
-      "method": [
-        "Trained the PanAdipo deep learning model on 1,114,441 echocardiography videos from 28,797 studies labeled by expert report review.",
-        "Validated the model across multiple external cohorts, including TTE, POCUS, MIMIC-IV, MESA, and paired cardiac CT datasets.",
-        "Compared AI scores with CT-defined epicardial adipose tissue and with cardiometabolic biomarkers and newly documented metabolic disease."
-      ],
-      "evidence_signal": "PanAdipo achieved AUROC 0.86 for report-labeled prominent EAT and up to 0.95 for CT-defined high EAT, while correlating more strongly with indexed EAT volume (rho=0.76) than BMI (rho=0.41).",
-      "watch_item": "Performance was strongest in retrospective, multi-cohort validation, so prospective testing and workflow integration are still needed before routine deployment.",
-      "hashtags": [
-        "#AIinHealth",
-        "#Echocardiography",
-        "#EpicardialFat",
-        "#CardiometabolicRisk",
-        "#MachineLearning"
-      ],
-      "paper_id": "2026-10-09-medrxiv-ai_enabled_echocardiography_identifies_prominent_epicardial_adipose_tissue_associated_with",
-      "paper_title": "AI-Enabled Echocardiography Identifies Prominent Epicardial Adipose Tissue Associated With an Adverse Cardiometabolic Profile",
-      "paper_date": "2026-10-09",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-15T12:20:48",
+      "generated_at": "2026-10-16T12:03:03",
       "generator": "openai"
     }
   }

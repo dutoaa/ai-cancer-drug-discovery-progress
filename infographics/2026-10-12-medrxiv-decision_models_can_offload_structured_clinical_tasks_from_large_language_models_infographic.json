@@ -1,0 +1,24 @@
+{
+  "key_insight": "A decision model can handle some structured clinical tasks at much lower cost than large language models, but its performance depends strongly on how the task is framed.",
+  "clinical_relevance": "In precision oncology workflows, decision models could help offload low-risk structured tasks such as mortality estimation, triage questions, and staging, reserving LLMs for harder or uncertain cases.",
+  "method": [
+    "Compared Jev with five flagship LLMs on three clinical tasks: mortality risk, Choosing Wisely-style categorical decisions, and ordinal colon cancer staging.",
+    "Tested standard LLM-style prompts versus developer-recommended input changes, including added medical context and task decomposition.",
+    "Evaluated a hybrid workflow using Jev only for fully confident staging predictions and LLMs for the remaining cases."
+  ],
+  "evidence_signal": "With standard inputs, Jev underperformed LLMs on all tasks, but tailored prompting raised staging accuracy from 45.4% to 85.8%, and a hybrid approach reduced flagship LLM costs by 33-44% while remaining non-inferior.",
+  "watch_item": "The system still depends on confidence calibration and careful task design, since incorrect low-confidence or poorly framed outputs could limit safe real-world deployment.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#ClinicalAI",
+    "#DecisionModels",
+    "#LargeLanguageModels",
+    "#WorkflowEfficiency"
+  ],
+  "paper_id": "2026-10-12-medrxiv-decision_models_can_offload_structured_clinical_tasks_from_large_language_models",
+  "paper_title": "Decision models can offload structured clinical tasks from large language models",
+  "paper_date": "2026-10-12",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-16T12:02:58",
+  "generator": "openai"
+}

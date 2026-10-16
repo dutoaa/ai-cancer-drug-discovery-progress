@@ -1,17 +1,17 @@
 {
-  "key_insight": "A foundation-model-based, data-efficient pipeline can detect duodenal epithelial neoplasia in whole-slide biopsy images with strong cross-hospital generalizability despite few rare-tumour cases.",
-  "clinical_relevance": "This could help pathology workflows flag rare duodenal neoplasms earlier and more consistently, especially where annotated training data are limited.",
+  "key_insight": "A foundation-model-based, data-efficient pipeline can detect duodenal epithelial neoplasia from whole-slide histology with strong performance despite very limited rare-tumour training data.",
+  "clinical_relevance": "This approach could help pathologists triage duodenal biopsy slides more consistently across hospitals, especially for rare lesions where labelled examples are scarce.",
   "method": [
-    "5-hospital H&E duodenal biopsy WSI dataset (8,027 normal; 401 neoplastic) at 10x",
-    "Patch embeddings from the Hibou-B foundation model with site-specific standardisation",
-    "PCA + Gaussian mixture model + Random Forest classifier, evaluated with leave-one-hospital-out and external testing"
+    "10x H&E whole-slide biopsy patches were encoded with the Hibou-B foundation model.",
+    "Patch embeddings were reduced with PCA, clustered by a Gaussian mixture model, and classified with a Random Forest.",
+    "Performance was compared using global versus site-specific standardisation and tested with leave-one-hospital-out validation plus an external hospital cohort."
   ],
-  "evidence_signal": "Performance was 90% mean accuracy (AUC 0.96) in leave-one-hospital-out validation and 94% accuracy (AUC 0.97) on an independent external hospital test set.",
-  "watch_item": "Results come from a retrospective, multi-centre dataset and need prospective validation before routine deployment across broader lab settings.",
+  "evidence_signal": "Across 8,027 normal and 401 neoplastic biopsies from five hospitals, the model reached 90% mean cross-validation accuracy and 94% accuracy on an independent external test hospital.",
+  "watch_item": "The dataset is still relatively small for rare neoplasms and performance may vary with slide preparation, scanner differences, or deployment to new sites.",
   "hashtags": [
     "#CancerAI",
     "#DigitalPathology",
-    "#FoundationModels",
+    "#MachineLearning",
     "#Histopathology",
     "#RareTumors"
   ],
@@ -19,6 +19,6 @@
   "paper_title": "Data-efficient machine learning for the detection of duodenal neoplasia: a multi-centre study",
   "paper_date": "2026-10-11",
   "paper_category": "Cancer AI Methods",
-  "generated_at": "2026-10-15T12:20:33",
+  "generated_at": "2026-10-16T12:02:50",
   "generator": "openai"
 }
