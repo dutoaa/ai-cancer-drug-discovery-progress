@@ -1,24 +1,24 @@
 {
-  "key_insight": "A foundation-model-based, data-efficient pipeline can detect duodenal epithelial neoplasia from whole-slide histology with strong performance despite very limited rare-tumour training data.",
-  "clinical_relevance": "This approach could help pathologists triage duodenal biopsy slides more consistently across hospitals, especially for rare lesions where labelled examples are scarce.",
+  "key_insight": "A foundation-model-based, data-efficient pipeline can detect rare duodenal epithelial neoplasia from whole-slide biopsy images with strong cross-site performance.",
+  "clinical_relevance": "This approach could help pathology labs screen rare duodenal lesions more reliably when labelled training data are limited.",
   "method": [
-    "10x H&E whole-slide biopsy patches were encoded with the Hibou-B foundation model.",
-    "Patch embeddings were reduced with PCA, clustered by a Gaussian mixture model, and classified with a Random Forest.",
-    "Performance was compared using global versus site-specific standardisation and tested with leave-one-hospital-out validation plus an external hospital cohort."
+    "Five-hospital H&E WSI dataset of 8,027 normal and 401 neoplastic duodenal biopsies",
+    "Patch-level encoding with the Hibou-B foundation model plus PCA, Gaussian mixture modeling, and Random Forest classification",
+    "Compared global vs unsupervised site-specific standardisation and validated with leave-one-hospital-out and external testing"
   ],
-  "evidence_signal": "Across 8,027 normal and 401 neoplastic biopsies from five hospitals, the model reached 90% mean cross-validation accuracy and 94% accuracy on an independent external test hospital.",
-  "watch_item": "The dataset is still relatively small for rare neoplasms and performance may vary with slide preparation, scanner differences, or deployment to new sites.",
+  "evidence_signal": "The pipeline achieved 90% mean accuracy in leave-one-hospital-out cross-validation and 94% accuracy on an independent external hospital test set, with AUC up to 0.97.",
+  "watch_item": "Performance was strong but the neoplastic class was still relatively small, so broader prospective validation is needed before routine deployment.",
   "hashtags": [
-    "#CancerAI",
-    "#DigitalPathology",
-    "#MachineLearning",
+    "#AIPathology",
+    "#CancerDiagnostics",
+    "#FoundationModels",
     "#Histopathology",
-    "#RareTumors"
+    "#RareTumours"
   ],
   "paper_id": "2026-10-11-medrxiv-data_efficient_machine_learning_for_the_detection_of_duodenal_neoplasia_a_multi_centre_stu",
   "paper_title": "Data-efficient machine learning for the detection of duodenal neoplasia: a multi-centre study",
   "paper_date": "2026-10-11",
   "paper_category": "Cancer AI Methods",
-  "generated_at": "2026-10-16T12:02:50",
+  "generated_at": "2026-10-17T11:18:31",
   "generator": "openai"
 }

@@ -1,24 +1,24 @@
 {
-  "key_insight": "A multi-domain EEG model that combines spectral, connectivity, and topological features improved subject-level ADHD classification, with SVM performing best.",
-  "clinical_relevance": "This approach could support more objective, non-invasive ADHD biomarker research by capturing brain-signal patterns that single-feature models may miss.",
+  "key_insight": "A multi-domain EEG model that combines spectral, connectivity, and topological features can classify ADHD at the subject level more accurately than single-feature approaches.",
+  "clinical_relevance": "This work supports the development of non-invasive, explainable EEG-based tools that may aid future ADHD screening and biomarker research.",
   "method": [
-    "EEG from 121 subjects was preprocessed and split into overlapping windows.",
-    "Features were extracted from three domains: spectral measures, wPLI-based functional connectivity, and persistent homology/topology descriptors.",
-    "Recursive Feature Elimination reduced 1,043 features to 110, and five classifiers were tested with stratified five-fold cross-validation."
+    "Preprocessed EEG from 121 subjects and split it into overlapping windows for feature extraction.",
+    "Built 1,043 features across spectral, wPLI functional connectivity, and persistent homology domains, then reduced them to 110 using RFE.",
+    "Compared SVM, Random Forest, XGBoost, CatBoost, and MLP with stratified 5-fold cross-validation and used SHAP/LIME for interpretability."
   ],
-  "evidence_signal": "In cross-validated evaluation, SVM achieved 80.17% accuracy, 80.95% F1-score, 80.14% balanced accuracy, 86.72% ROC-AUC, and 87.34% PR-AUC.",
-  "watch_item": "Results come from a relatively small cohort and window-based feature aggregation, so external validation on independent datasets is needed before broader use.",
+  "evidence_signal": "The best model was SVM, with 80.17% accuracy, 80.95% F1-score, 80.14% balanced accuracy, 86.72% ROC-AUC, and 87.34% PR-AUC.",
+  "watch_item": "Performance was based on a relatively small single-study cohort, so external validation and real-world robustness testing are still needed.",
   "hashtags": [
     "#EEG",
     "#ADHD",
     "#MachineLearning",
-    "#BrainConnectivity",
-    "#ExplainableAI"
+    "#ExplainableAI",
+    "#Neuroimaging"
   ],
   "paper_id": "2026-10-11-medrxiv-a_multi_domain_eeg_framework_integrating_spectral_functional_connectivity_and_topological",
   "paper_title": "A Multi-Domain EEG Framework Integrating Spectral, Functional Connectivity, and Topological Features for Subject-Level ADHD Classification",
   "paper_date": "2026-10-11",
   "paper_category": "Target Biology",
-  "generated_at": "2026-10-16T12:03:01",
+  "generated_at": "2026-10-17T11:18:41",
   "generator": "openai"
 }
