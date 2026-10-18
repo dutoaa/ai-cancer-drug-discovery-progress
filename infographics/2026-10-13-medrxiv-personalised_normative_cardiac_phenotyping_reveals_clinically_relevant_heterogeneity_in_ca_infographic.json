@@ -1,24 +1,24 @@
 {
-  "key_insight": "Personalised “normative twin” cardiac models reveal hidden, reproducible patterns of heart-shape deviation that identify clinically relevant risk beyond standard measurements like ejection fraction and strain.",
-  "clinical_relevance": "This approach could improve risk stratification—especially for atrial fibrillation in people with preserved ejection fraction—by spotting abnormal cardiac phenotypes that conventional biomarkers miss.",
+  "key_insight": "A personalised “normative twin” model of heart shape reveals hidden, reproducible deviation patterns that conventional cardiac biomarkers miss and that map to different future risk profiles.",
+  "clinical_relevance": "This approach could improve risk stratification in people with preserved ejection fraction, especially for predicting incident atrial fibrillation and, in a separate model, stroke.",
   "method": [
-    "Built age-, sex-, and body-habitus-matched digital twins of expected healthy cardiac function.",
-    "Compared individuals against two independent shape representations: HeartSSM (128D) and MeshHeart cVAE (64D).",
-    "Derived deviation-from-norm scores and tested whether they improved prediction of outcomes beyond standard cardiac biomarkers."
+    "Compared each patient’s cardiac shape to an age-, sex-, and body-habitus-matched healthy digital twin.",
+    "Learned deviation patterns from two independent shape representations: HeartSSM (128D) and MeshHeart cVAE (64D).",
+    "Tested whether deviation scores added predictive value beyond standard biomarkers and against placebo noise controls."
   ],
-  "evidence_signal": "In UK Biobank cohorts, deviation scores improved cardiovascular risk prediction, with the strongest signal for incident atrial fibrillation in preserved-EF participants (ΔC up to +0.068; LR P = 3.3 × 10^-8), plus a smaller independent stroke signal in the MeshHeart cVAE cohort; placebo noise controls were negative.",
-  "watch_item": "Generalizability and deployment need careful validation across imaging protocols and external populations, since signals varied by representation and some outcomes appeared only in one cohort/model.",
+  "evidence_signal": "In UK Biobank cohorts, the method improved prediction beyond ejection fraction, volumes, mass, and strain; the strongest result was for incident atrial fibrillation in preserved-EF individuals (ΔC = +0.068, cross-validated ΔC = +0.063, P = 3.3 × 10^-8), with a smaller independent signal for stroke in the other representation.",
+  "watch_item": "Generalizability and clinical deployment still need careful validation across sites, imaging pipelines, and populations before routine use.",
   "hashtags": [
     "#CardiacPhenotyping",
     "#DigitalTwin",
     "#RiskStratification",
-    "#DeepLearning",
-    "#UKBiobank"
+    "#MachineLearning",
+    "#CardiovascularImaging"
   ],
   "paper_id": "2026-10-13-medrxiv-personalised_normative_cardiac_phenotyping_reveals_clinically_relevant_heterogeneity_in_ca",
   "paper_title": "Personalised normative cardiac phenotyping reveals clinically relevant heterogeneity in cardiac shape and outcome risk",
   "paper_date": "2026-10-13",
   "paper_category": "Target Biology",
-  "generated_at": "2026-10-17T11:18:36",
+  "generated_at": "2026-10-18T11:52:40",
   "generator": "openai"
 }

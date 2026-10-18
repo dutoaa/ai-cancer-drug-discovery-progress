@@ -1,24 +1,24 @@
 {
-  "key_insight": "Decision models can handle structured clinical subtasks cheaply, while LLMs remain stronger for harder or less certain cases.",
-  "clinical_relevance": "A hybrid workflow that routes confident structured decisions to a decision model and the rest to an LLM could reduce cost without sacrificing performance.",
+  "key_insight": "A decision model can handle structured clinical predictions at lower cost than an LLM, but it works best when paired with LLMs rather than used alone.",
+  "clinical_relevance": "For oncology workflows, a hybrid setup could route confident structured decisions to a cheaper decision model and reserve LLMs for the harder cases, reducing cost while maintaining performance.",
   "method": [
-    "Compared a decision model (Jev) with five flagship LLMs on three clinical tasks.",
-    "Tasks included mortality risk prediction, Choosing-Wisely category decisions, and ordinal colon cancer staging.",
-    "Tested standard prompting plus developer-guided input changes such as added context and task decomposition."
+    "Compared a decision model (Jev) with five flagship LLMs across three clinical tasks: mortality risk, Choosing Wisely questions, and colon cancer staging.",
+    "Tested standard LLM-style prompts, then applied developer-recommended input changes for staging, including medical context and task decomposition.",
+    "Evaluated a hybrid strategy where Jev handled fully confident staging decisions and LLMs handled the remainder."
   ],
-  "evidence_signal": "On standard inputs, Jev underperformed LLMs, but with improved prompting it reached 75.8% to 85.8% staging accuracy; routing only fully confident staging cases to Jev made the hybrid approach non-inferior and cut LLM costs by 33% to 44%.",
-  "watch_item": "The hybrid approach depends on reliable confidence calibration and may not transfer equally well across tasks or settings without careful validation.",
+  "evidence_signal": "In the abstract, Jev lagged the LLMs on all tasks with standard inputs, but staging improved from 45.4% accuracy to 85.8% with both input changes, and the hybrid approach was non-inferior while cutting LLM costs by 33-44%.",
+  "watch_item": "The main concern is that decision-model performance depends heavily on prompt/input design, so deployment would need careful validation, confidence thresholds, and workflow integration.",
   "hashtags": [
     "#PrecisionOncology",
+    "#LargeLanguageModels",
     "#ClinicalAI",
-    "#LLM",
     "#DecisionModels",
-    "#HealthInformatics"
+    "#HealthAI"
   ],
   "paper_id": "2026-10-12-medrxiv-decision_models_can_offload_structured_clinical_tasks_from_large_language_models",
   "paper_title": "Decision models can offload structured clinical tasks from large language models",
   "paper_date": "2026-10-12",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-17T11:18:38",
+  "generated_at": "2026-10-18T11:52:42",
   "generator": "openai"
 }
