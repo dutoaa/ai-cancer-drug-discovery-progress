@@ -1,24 +1,26 @@
 {
-  "key_insight": "The paper shows that reinforcement learning with patient-specific, partially verifiable rewards can improve an LLM’s sequential treatment-planning reasoning in colon cancer under incomplete clinical information.",
-  "clinical_relevance": "This approach could support more structured, evidence-aligned treatment recommendation workflows where multiple clinically defensible paths may exist for the same partially observed patient.",
+  "key_insight": "Reinforcement learning improved an LLM’s interactive colon cancer treatment planning using patient-specific rewards derived from clinical decision processes.",
+  "clinical_relevance": "This study explores first-line treatment planning—not drug discovery—and does not establish clinical safety or patient benefit.",
   "method": [
-    "Formulated oncology treatment planning as an interactive reinforcement learning problem under partial observability.",
-    "Built patient-specific, process-aware rewards from real-world clinical decision processes in records.",
-    "Optimized Llama-3.1-8B-Instruct with GRPO and GDPO to improve information gathering, treatment choice, and reasoning alignment."
+    "Model planning as sequential information gathering under partial observability.",
+    "Construct process-aware rewards from real-world clinical records.",
+    "Train Llama-3.1-8B-Instruct with GRPO and GDPO reinforcement learning."
   ],
-  "evidence_signal": "In the reported interactive evaluation, the GDPO-trained policy improved Mean@3 scalar clinical reward by 79.60% over base Llama and exceeded GPT-5.2 by 18.82% while reducing query count during training.",
-  "watch_item": "Because the reward signal is derived from partially observed real-world records, results may depend on dataset quality, reward design, and how well the simulated environment matches clinical practice.",
+  "evidence_signal": "In the study’s interactive evaluation, GDPO increased Mean@3 scalar clinical reward by 79.60% over base Llama and exceeded GPT-5.2 by 18.82%, while query counts decreased during training.",
+  "watch_item": "Higher reward scores do not establish better patient outcomes; prospective clinical validation is needed.",
   "hashtags": [
     "#PrecisionOncology",
+    "#ColonCancer",
     "#ReinforcementLearning",
     "#ClinicalAI",
-    "#LLM",
-    "#ColonCancer"
+    "#TreatmentPlanning"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-12-arxiv-reinforcement_learning_in_partially_verifiable_environments_for_colon_cancer_treatment_pla",
   "paper_title": "Reinforcement Learning In Partially Verifiable Environments for Colon Cancer Treatment Planning",
   "paper_date": "2026-10-12",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-18T20:26:12",
+  "generated_at": "2026-10-18T20:42:57",
   "generator": "openai"
 }

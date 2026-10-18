@@ -1,24 +1,26 @@
 {
-  "key_insight": "TDAL learns how to choose the next perturbation online, rather than relying on a fixed acquisition rule, so the selection strategy can adapt as screening feedback accumulates.",
-  "clinical_relevance": "More adaptive perturbation screening could help prioritize the most informative genetic or drug targets sooner, potentially improving discovery efficiency in therapeutic research.",
+  "key_insight": "TDAL learns how to select perturbation experiments as screening progresses, balancing immediate hits with future discoveries instead of using a fixed acquisition function.",
+  "clinical_relevance": "More efficient genetic and drug perturbation screening could support cancer target discovery, but the abstract does not establish clinical benefit.",
   "method": [
-    "Frames budgeted perturbation discovery as a sequential decision problem.",
-    "Uses temporal difference learning to update the acquisition function from a single screening trajectory.",
-    "Applies Hellinger distance and leave-batch-out replay to estimate future value and expand training signals."
+    "Learns an acquisition function online using temporal difference learning from a single screening trajectory.",
+    "Uses Hellinger distance between updated hit probabilities to weight future discovery value.",
+    "Reuses measured outcomes through leave-batch-out virtual transitions to address sparse training data."
   ],
-  "evidence_signal": "Across eight public perturbation screens covering single, double, and triple perturbations, TDAL averaged rank 1.63 among 11 methods and ranked first on four tasks.",
-  "watch_item": "Because TDAL learns from prior screening trajectories and virtual transitions, performance may depend on how well the training screens match the new experimental setting.",
+  "evidence_signal": "Across eight public screens covering single, double, and triple perturbations, TDAL achieved an average rank of 1.63 among 11 methods and ranked first on four tasks.",
+  "watch_item": "Benchmark rankings do not establish prospective laboratory performance or quantify experimental cost savings.",
   "hashtags": [
+    "#AIDrugDiscovery",
     "#ActiveLearning",
-    "#DrugDiscovery",
     "#PerturbationScreening",
-    "#TherapeuticDiscovery",
-    "#MachineLearning"
+    "#TargetDiscovery",
+    "#CancerResearch"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-15-arxiv-beyond_fixed_acquisition_functions_temporal_difference_active_learning_for_perturbation_di",
   "paper_title": "Beyond Fixed Acquisition Functions: Temporal Difference Active Learning for Perturbation Discovery",
   "paper_date": "2026-10-15",
   "paper_category": "Therapeutic Discovery",
-  "generated_at": "2026-10-18T20:26:29",
+  "generated_at": "2026-10-18T20:43:18",
   "generator": "openai"
 }

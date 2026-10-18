@@ -1,24 +1,26 @@
 {
-  "key_insight": "A GPT2 table-to-text approach can turn small, imbalanced clinical datasets into stronger disease prediction models by leveraging contextual clinical language rather than relying only on traditional statistical learning.",
-  "clinical_relevance": "This could help surface clinically meaningful patterns in low-volume records and improve prediction performance for conditions with scarce positive cases, while still supporting interpretability.",
+  "key_insight": "A GPT2-based table-to-text framework showed strong disease-prediction performance on small clinical datasets, including thyroid cancer recurrence—not cancer drug discovery.",
+  "clinical_relevance": "The approach may support research into thyroid cancer recurrence prediction when labeled data are scarce, but clinical readiness is not established.",
   "method": [
-    "Converted structured patient records into physician-style text.",
-    "Used GPT4-generated paraphrasing to augment minority-class examples.",
-    "Fine-tuned GPT2 on four public healthcare datasets and applied gradient-based explainability."
+    "Convert structured clinical records into physician-style text.",
+    "Use GPT4-generated medical paraphrases to improve minority-class representation, then fine-tune GPT2.",
+    "Apply gradient-based explainability to identify influential clinical features."
   ],
-  "evidence_signal": "Across heart disease, heart failure, chronic kidney disease, and thyroid cancer recurrence datasets, the model reported average precision, specificity, sensitivity, and F1-score of 0.96, 0.97, 0.96, and 0.96.",
-  "watch_item": "Results come from public benchmark datasets, so real-world performance and robustness on local clinical data, shifting documentation styles, or rare edge cases may need further validation.",
+  "evidence_signal": "Across four public datasets, the abstract reports average precision of 0.96, specificity of 0.97, sensitivity of 0.96, and F1-score of 0.96, with improvements over comparator models.",
+  "watch_item": "The abstract does not report external clinical validation or whether paraphrase generation was isolated to training data to prevent leakage.",
   "hashtags": [
-    "#GPT2",
     "#ClinicalAI",
-    "#MachineLearning",
-    "#HealthcareData",
+    "#ThyroidCancer",
+    "#RecurrencePrediction",
+    "#LowDataLearning",
     "#ExplainableAI"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-13-medrxiv-can_gpt_be_used_as_an_alternative_prediction_model_to_traditional_machine_learning_and_neu",
   "paper_title": "Can GPT Be Used as an Alternative Prediction Model to Traditional Machine Learning and Neural Networks on Low-Volume Clinical Data?",
   "paper_date": "2026-10-13",
   "paper_category": "Cancer AI Methods",
-  "generated_at": "2026-10-18T20:26:07",
+  "generated_at": "2026-10-18T20:42:50",
   "generator": "openai"
 }

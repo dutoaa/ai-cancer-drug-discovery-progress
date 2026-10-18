@@ -1,24 +1,26 @@
 {
-  "key_insight": "Accurate tumor-growth predictions can still come from the wrong growth law, so model selection should check both fit quality and mathematical validity.",
-  "clinical_relevance": "For precision oncology, this work suggests that automated tumor-model discovery must be interpreted cautiously because misleading equations could affect downstream forecasting and treatment planning.",
+  "key_insight": "Accurate tumor-growth curve fits and plausible AI explanations can mask incorrect governing growth laws.",
+  "clinical_relevance": "This modeling study supports more rigorous validation of AI-assisted tumor-growth models but does not establish clinical utility or drug-discovery benefits.",
   "method": [
-    "Generate synthetic sparse/noisy tumor-growth data from Gompertz dynamics",
-    "Compare symbolic regression candidates using admissibility checks, coefficient refitting, and LLM-based ranking",
-    "Evaluate trajectory fit, forecasting, and recovered growth law separately"
+    "Generate candidate growth laws using symbolic regression and check mathematical admissibility.",
+    "Refit coefficients using physics-informed neural networks or nonlinear least squares.",
+    "Explore archived LLM rankings against selection by training error."
   ],
-  "evidence_signal": "In the abstract’s synthetic control, dense noiseless data recovered the true family, but sparse noisy data often produced alternative laws; nonlinear least squares usually improved law error, while PINN refitting often worsened it.",
-  "watch_item": "LLM rankings and strong trajectory fits did not reliably indicate the correct governing equation, so implementation should not rely on prediction error alone.",
+  "evidence_signal": "Synthetic Gompertz experiments recovered the generating family with dense noiseless data, but sparse noisy data often yielded alternative laws; nonlinear least squares usually reduced law error, while neural-network refitting often increased it.",
+  "watch_item": "Synthetic-data results and exploratory LLM rankings do not establish reliability in patient data; forecasting accuracy and growth-law recovery require separate evaluation.",
   "hashtags": [
-    "#PrecisionOncology",
+    "#TumorGrowthModeling",
     "#SymbolicRegression",
-    "#TumorGrowth",
-    "#AIinMedicine",
-    "#ModelSelection"
+    "#ScientificMachineLearning",
+    "#PrecisionOncology",
+    "#AIValidation"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-12-arxiv-ai_assisted_tumor_growth_law_discovery_from_sparse_data_refitting_and_llm_based_ranking",
   "paper_title": "AI-Assisted Tumor-Growth Law Discovery from Sparse Data: Refitting and LLM-Based Ranking",
   "paper_date": "2026-10-12",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-18T20:26:27",
+  "generated_at": "2026-10-18T20:43:16",
   "generator": "openai"
 }

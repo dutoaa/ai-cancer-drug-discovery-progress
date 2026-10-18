@@ -1,24 +1,26 @@
 {
-  "key_insight": "The paper shows that a frozen large language model can teach a domain-specific molecular generator to follow high-level natural-language discovery goals, even when the target space is initially poorly covered.",
-  "clinical_relevance": "This could help accelerate early-stage cancer therapeutic discovery by steering peptide and small-molecule generators toward candidate designs with desired bioactivity, though it remains a preclinical research approach.",
+  "key_insight": "LLM-to-Flow Distillation teaches scientific generators to pursue natural-language discovery goals using an adaptive, frozen LLM teacher rather than an explicit proxy reward.",
+  "clinical_relevance": "The approach could support anticancer peptide discovery, but the abstract does not establish experimental efficacy, safety, or clinical benefit.",
   "method": [
-    "LLM sets adaptive intermediate sub-goals based on the generator's current capabilities",
-    "The model judges sampled candidates under each objective and turns those judgments into preferences",
-    "Preferences are distilled into the generator with DPO to iteratively align outputs to the final goal"
+    "The LLM builds intermediate goals tailored to the generator’s current capabilities.",
+    "The LLM judges generated candidates to create preference signals.",
+    "Direct preference optimization (DPO) iteratively aligns the generator with the discovery goal."
   ],
-  "evidence_signal": "The abstract reports experiments on therapeutic peptides and small-molecule design, showing improved goal-directed control toward natural-language discovery tasks.",
-  "watch_item": "Performance depends on the LLM's judgments and on reliable experimental priors, so weak proxy reasoning or mismatched objectives could steer the generator toward misleading candidates.",
+  "evidence_signal": "Experiments on therapeutic peptides and small-molecule structure design demonstrate goal-directed generative control, though the abstract reports no quantitative results or experimental validation.",
+  "watch_item": "LLM-derived preferences may not reflect biological activity, so generated candidates require independent experimental validation.",
   "hashtags": [
-    "#AIforDrugDiscovery",
-    "#CancerTherapeutics",
-    "#GenerativeDesign",
-    "#LLM",
-    "#MolecularGeneration"
+    "#AIDrugDiscovery",
+    "#CancerResearch",
+    "#GenerativeAI",
+    "#PeptideDesign",
+    "#LLMDistillation"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-12-arxiv-llm_to_flow_distillation_teaching_natural_language_goals_to_scientific_generators",
   "paper_title": "LLM-to-Flow Distillation: Teaching Natural Language Goals to Scientific Generators",
   "paper_date": "2026-10-12",
   "paper_category": "Therapeutic Discovery",
-  "generated_at": "2026-10-18T20:26:35",
+  "generated_at": "2026-10-18T20:43:26",
   "generator": "openai"
 }

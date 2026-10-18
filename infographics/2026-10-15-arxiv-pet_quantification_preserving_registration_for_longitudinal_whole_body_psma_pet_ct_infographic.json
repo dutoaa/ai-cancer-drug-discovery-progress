@@ -1,24 +1,26 @@
 {
-  "key_insight": "A diffeomorphic PET/CT registration pipeline was tailored to preserve PSMA PET quantification while aligning longitudinal whole-body scans.",
-  "clinical_relevance": "By better preserving lesion uptake metrics like MTV and TLG during image alignment, the approach may support more reliable longitudinal assessment of treatment response in PSMA PET/CT.",
+  "key_insight": "A PET-aware AI registration method aligns longitudinal whole-body PSMA PET/CT scans while limiting changes to quantitative tumor measurements.",
+  "clinical_relevance": "More consistent scan alignment could support longitudinal cancer imaging research and treatment-response assessment; this is an imaging method, not a drug-discovery study.",
   "method": [
-    "Affine pre-registration followed by coarse-to-fine multi-modal deformable registration using LapIRN",
-    "Test-time instance optimization to adapt the model per case",
-    "PET biomarker preservation losses for MTV/TLG plus Jacobian-based constraints and skeletal rigidity regularization"
+    "Adapted coarse-to-fine diffeomorphic LapIRN with affine pre-registration and multimodal deformable registration.",
+    "Added test-time instance optimization and skeletal rigidity regularization.",
+    "Introduced MTV and TLG preservation losses with Jacobian-based constraints."
   ],
-  "evidence_signal": "On the reported evaluation protocol, the submitted system achieved 81.0% DSC, 6.17 mm HD95, and 3.3% error for both MTV and TLG.",
-  "watch_item": "Performance is reported on a challenge evaluation protocol, so robustness and generalizability to other scanners, cohorts, and clinical workflows still need validation.",
+  "evidence_signal": "For the Learn2Reg 2026 PSMAReg challenge submission, the authors report 81.0% DSC, 6.17 mm HD95, and 3.3% errors for both MTV and TLG under their evaluation protocol.",
+  "watch_item": "The abstract does not specify evaluation sample size or external validation, leaving generalizability uncertain.",
   "hashtags": [
     "#PSMAPET",
-    "#PETCT",
+    "#MedicalImagingAI",
     "#ImageRegistration",
-    "#CancerImaging",
-    "#QuantitativeImaging"
+    "#QuantitativeImaging",
+    "#CancerResearch"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-15-arxiv-pet_quantification_preserving_registration_for_longitudinal_whole_body_psma_pet_ct",
   "paper_title": "PET Quantification-Preserving Registration for Longitudinal Whole-Body PSMA PET/CT",
   "paper_date": "2026-10-15",
   "paper_category": "Target Biology",
-  "generated_at": "2026-10-18T20:26:24",
+  "generated_at": "2026-10-18T20:43:12",
   "generator": "openai"
 }

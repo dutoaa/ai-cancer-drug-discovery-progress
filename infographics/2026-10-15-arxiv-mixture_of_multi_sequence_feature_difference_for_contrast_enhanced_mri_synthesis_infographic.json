@@ -1,24 +1,26 @@
 {
-  "key_insight": "A dynamic Mixture of Feature Difference module improves synthesis of contrast-enhanced MRI from non-contrast brain MRI by learning both sequence-specific features and their explicit differences.",
-  "clinical_relevance": "This could reduce the need for contrast-agent injections, lowering scan risk and cost while helping support tumor visualization and downstream segmentation.",
+  "key_insight": "Mixture of Feature Difference (MoFD) synthesizes contrast-enhanced brain MRI from non-contrast sequences by adaptively combining sequence features and their differences.",
+  "clinical_relevance": "This imaging research, not drug discovery, could potentially reduce contrast-agent exposure and scan costs while supporting brain tumor assessment.",
   "method": [
-    "Uses multiple non-contrast MRI sequences as input for CE-MRI synthesis.",
-    "Adaptively weights informative source features and inter-sequence differences via MoFD.",
-    "Includes an adversarial or regression-based training variant to balance perceptual quality and structural fidelity."
+    "Extract features from multiple non-contrast MRI sequences.",
+    "Dynamically weight individual features and explicit inter-sequence differences.",
+    "Compare adversarial and regression-based synthesis variants."
   ],
-  "evidence_signal": "The abstract reports superior fidelity and perceptual quality on UCSF-PDGM and UPenn-GBM, with reconstructed tumor regions and segmentation performance comparable to real CE-MRI.",
-  "watch_item": "Performance is dataset-dependent and the adversarial variant may improve visual realism at the expense of structural fidelity, so external validation is important.",
+  "evidence_signal": "On UCSF-PDGM and UPenn-GBM, the method outperformed baselines in image fidelity and perceptual quality, with tumor segmentation performance reported as comparable to real contrast-enhanced MRI.",
+  "watch_item": "The abstract does not establish prospective clinical reliability, so synthetic images should not be assumed interchangeable with acquired contrast-enhanced MRI.",
   "hashtags": [
+    "#BrainTumorImaging",
+    "#MRISynthesis",
+    "#MedicalAI",
     "#PrecisionOncology",
-    "#MRI",
-    "#MedicalImagingAI",
-    "#TumorSegmentation",
-    "#ImageSynthesis"
+    "#ContrastEnhancedMRI"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-15-arxiv-mixture_of_multi_sequence_feature_difference_for_contrast_enhanced_mri_synthesis",
   "paper_title": "Mixture of Multi-Sequence Feature Difference for Contrast-Enhanced MRI Synthesis",
   "paper_date": "2026-10-15",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-18T20:26:32",
+  "generated_at": "2026-10-18T20:43:22",
   "generator": "openai"
 }

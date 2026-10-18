@@ -39,12 +39,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.22087v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.22087v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Pathology foundation models can retrieve morphologically similar salivary gland tumor cases from an archive without task-specific training, helping extend case-based diagnosis to rare subtypes.</p>
-          <p><b>Clinical relevance:</b> This could make departmental whole-slide archives searchable for differential diagnosis support, especially when rare tumors fall outside a pathologist’s usual experience.</p>
-          <ul><li>Used region-of-interest (ROI) images from whole-slide pathology slides as queries.</li><li>Compared four foundation models: Atlas2, Atlas2-B, Atlas2-S, and UNI2h.</li><li>Evaluated leave-one-case-out retrieval on 137 salivary gland tumor cases across 12 ICD-O morphology categories.</li></ul>
-          <p><b>Evidence signal:</b> Atlas2 achieved the strongest retrieval performance, with Top-1/3/5 accuracy of 62.5%/76.7%/81.3% and the best separation of correct vs incorrect matches in modified Chamfer similarity (AUC 0.754).</p>
-          <p><b>Watch item:</b> Performance was tested on a relatively small, imbalanced single-dataset cohort, so broader validation is needed before routine deployment.</p>
-          <div class="tags"><span>#PathologyAI</span> <span>#FoundationModels</span> <span>#CancerDiagnostics</span> <span>#DigitalPathology</span> <span>#PrecisionOncology</span></div>
+          <p><b>Key insight:</b> Pathology foundation models retrieved similar salivary gland tumor cases without task-specific training, with Atlas2 achieving the highest reported retrieval performance.</p>
+          <p><b>Clinical relevance:</b> Searching diagnosed case archives could support pathologists’ differential diagnosis of rare tumors, but this study evaluates case retrieval—not drug discovery or clinical outcomes.</p>
+          <ul><li>Query a digitized archive using a manually or automatically selected whole-slide image region.</li><li>Use foundation-model representations to retrieve morphologically similar cases with ICD-O codes and slides.</li><li>Compare Atlas2, Atlas2-B, Atlas2-S and UNI2h using leave-one-case-out evaluation.</li></ul>
+          <p><b>Evidence signal:</b> Across 137 cases spanning 12 ICD-O morphology categories, Atlas2 achieved 62.5%, 76.7% and 81.3% Top-1, Top-3 and Top-5 retrieval, respectively.</p>
+          <p><b>Watch item:</b> The small, imbalanced dataset and lack of reported external validation limit conclusions about performance in other pathology archives.</p>
+          <div class="tags"><span>#ComputationalPathology</span> <span>#FoundationModels</span> <span>#SalivaryGlandTumors</span> <span>#CaseRetrieval</span> <span>#PrecisionOncology</span></div>
         </section>
       </article>
     
@@ -58,12 +58,12 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.08.19.26360765v3" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.08.19.26360765v3.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A GPT2 table-to-text approach can turn small, imbalanced clinical datasets into stronger disease prediction models by leveraging contextual clinical language rather than relying only on traditional statistical learning.</p>
-          <p><b>Clinical relevance:</b> This could help surface clinically meaningful patterns in low-volume records and improve prediction performance for conditions with scarce positive cases, while still supporting interpretability.</p>
-          <ul><li>Converted structured patient records into physician-style text.</li><li>Used GPT4-generated paraphrasing to augment minority-class examples.</li><li>Fine-tuned GPT2 on four public healthcare datasets and applied gradient-based explainability.</li></ul>
-          <p><b>Evidence signal:</b> Across heart disease, heart failure, chronic kidney disease, and thyroid cancer recurrence datasets, the model reported average precision, specificity, sensitivity, and F1-score of 0.96, 0.97, 0.96, and 0.96.</p>
-          <p><b>Watch item:</b> Results come from public benchmark datasets, so real-world performance and robustness on local clinical data, shifting documentation styles, or rare edge cases may need further validation.</p>
-          <div class="tags"><span>#GPT2</span> <span>#ClinicalAI</span> <span>#MachineLearning</span> <span>#HealthcareData</span> <span>#ExplainableAI</span></div>
+          <p><b>Key insight:</b> A GPT2-based table-to-text framework showed strong disease-prediction performance on small clinical datasets, including thyroid cancer recurrence—not cancer drug discovery.</p>
+          <p><b>Clinical relevance:</b> The approach may support research into thyroid cancer recurrence prediction when labeled data are scarce, but clinical readiness is not established.</p>
+          <ul><li>Convert structured clinical records into physician-style text.</li><li>Use GPT4-generated medical paraphrases to improve minority-class representation, then fine-tune GPT2.</li><li>Apply gradient-based explainability to identify influential clinical features.</li></ul>
+          <p><b>Evidence signal:</b> Across four public datasets, the abstract reports average precision of 0.96, specificity of 0.97, sensitivity of 0.96, and F1-score of 0.96, with improvements over comparator models.</p>
+          <p><b>Watch item:</b> The abstract does not report external clinical validation or whether paraphrase generation was isolated to training data to prevent leakage.</p>
+          <div class="tags"><span>#ClinicalAI</span> <span>#ThyroidCancer</span> <span>#RecurrencePrediction</span> <span>#LowDataLearning</span> <span>#ExplainableAI</span></div>
         </section>
       </article>
     
@@ -77,12 +77,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.22014v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.22014v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> GraphBEAT turns sparse, irregular EHR timelines into time-bucketed graphs to improve early gastrointestinal cancer risk stratification.</p>
-          <p><b>Clinical relevance:</b> This could help flag higher-risk patients months earlier using routinely collected diagnoses and lab results, potentially supporting earlier diagnostic workup.</p>
-          <ul><li>Groups longitudinal EHR events into time buckets</li><li>Builds temporally directed patient graphs with feature, value, and time-position nodes</li><li>Uses time-decay message passing plus multi-head attention pooling to produce patient-level risk representations</li></ul>
-          <p><b>Evidence signal:</b> Trained and tested on multi-site longitudinal diagnosis codes and laboratory tests, GraphBEAT outperformed GraphSAGE, GAT, GCN, Transformer, and LSTM at 12-, 24-, and 36-month lead times.</p>
-          <p><b>Watch item:</b> Performance was shown in retrospective EHR data, so prospective validation and careful site-specific calibration would be needed before deployment.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#EHRAI</span> <span>#GraphNeuralNetworks</span> <span>#CancerRiskStratification</span> <span>#TemporalLearning</span></div>
+          <p><b>Key insight:</b> GraphBEAT outperformed tested graph and sequence models for early gastrointestinal cancer risk prediction while using substantially less computation.</p>
+          <p><b>Clinical relevance:</b> This research could support earlier risk stratification for pancreatic, liver, and intestinal cancers; it addresses risk prediction, not cancer drug discovery.</p>
+          <ul><li>Groups diagnosis codes and laboratory results into time buckets and patient-specific temporal graphs.</li><li>Encodes event identity, observed value, and timing, with context-aware, time-decay message passing.</li><li>Uses multi-head attention pooling to generate patient-level representations.</li></ul>
+          <p><b>Evidence signal:</b> In multi-site longitudinal EHR evaluations at 12-, 24-, and 36-month diagnostic lead times, GraphBEAT outperformed all tested baselines and required over 250× fewer FLOPs per patient and over 20× fewer parameters than Transformer and LSTM baselines.</p>
+          <p><b>Watch item:</b> The abstract does not report absolute predictive performance or prospective clinical validation, leaving real-world utility uncertain.</p>
+          <div class="tags"><span>#GraphBEAT</span> <span>#CancerRiskPrediction</span> <span>#GraphNeuralNetworks</span> <span>#ElectronicHealthRecords</span> <span>#PrecisionOncology</span></div>
         </section>
       </article>
     
@@ -96,12 +96,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.16975v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.16975v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> MADDIE is a multi-agent LLM system that coordinates specialized agents to run an end-to-end, adaptive drug discovery workflow and generate candidate molecules plus synthesis routes.</p>
-          <p><b>Clinical relevance:</b> By automating early-stage hit-to-lead and synthesis planning, MADDIE could speed preclinical oncology drug discovery, but it is not a clinical treatment and still requires laboratory and translational validation.</p>
-          <ul><li>Orchestrator agent plans and coordinates the workflow.</li><li>Specialized workers handle hit identification, lead optimization, synthesis planning, and evaluation.</li><li>Agents can be recombined flexibly to adapt strategies across targets.</li></ul>
-          <p><b>Evidence signal:</b> In evaluation across 50 protein targets, MADDIE reportedly generated molecules meeting key property requirements and synthesis routes, outperforming existing agentic systems, generative models, and general-purpose LLMs.</p>
-          <p><b>Watch item:</b> Results are based on in silico benchmarking, so real-world success will depend on experimental validation, target selection, and practical chemistry constraints.</p>
-          <div class="tags"><span>#AIinDrugDiscovery</span> <span>#CancerResearch</span> <span>#MultiAgentAI</span> <span>#MedicinalChemistry</span> <span>#LLM</span></div>
+          <p><b>Key insight:</b> MADDIE coordinates specialized AI agents in flexible workflows to propose drug candidates and synthesis routes.</p>
+          <p><b>Clinical relevance:</b> MADDIE could support early-stage therapeutic discovery, but the abstract does not establish cancer-specific efficacy or patient benefit.</p>
+          <ul><li>A central Orchestrator coordinates four specialized agents.</li><li>HitIdentifier, LeadOptimizer, Synthesizer, and Evaluator handle complementary discovery tasks.</li><li>Adaptive workflows support iterative candidate design and evaluation.</li></ul>
+          <p><b>Evidence signal:</b> Across 50 protein targets, the authors report molecules meeting key property requirements with synthesis routes and better performance than agentic systems, generative models, and general-purpose LLMs.</p>
+          <p><b>Watch item:</b> The abstract reports no experimental validation of candidate activity or synthesis routes, leaving real-world feasibility uncertain.</p>
+          <div class="tags"><span>#AIDrugDiscovery</span> <span>#MultiAgentAI</span> <span>#TherapeuticDiscovery</span> <span>#MedicinalChemistry</span> <span>#MADDIE</span></div>
         </section>
       </article>
     
@@ -115,12 +115,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.17426v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.17426v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> The paper shows that reinforcement learning with patient-specific, partially verifiable rewards can improve an LLM’s sequential treatment-planning reasoning in colon cancer under incomplete clinical information.</p>
-          <p><b>Clinical relevance:</b> This approach could support more structured, evidence-aligned treatment recommendation workflows where multiple clinically defensible paths may exist for the same partially observed patient.</p>
-          <ul><li>Formulated oncology treatment planning as an interactive reinforcement learning problem under partial observability.</li><li>Built patient-specific, process-aware rewards from real-world clinical decision processes in records.</li><li>Optimized Llama-3.1-8B-Instruct with GRPO and GDPO to improve information gathering, treatment choice, and reasoning alignment.</li></ul>
-          <p><b>Evidence signal:</b> In the reported interactive evaluation, the GDPO-trained policy improved Mean@3 scalar clinical reward by 79.60% over base Llama and exceeded GPT-5.2 by 18.82% while reducing query count during training.</p>
-          <p><b>Watch item:</b> Because the reward signal is derived from partially observed real-world records, results may depend on dataset quality, reward design, and how well the simulated environment matches clinical practice.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#ReinforcementLearning</span> <span>#ClinicalAI</span> <span>#LLM</span> <span>#ColonCancer</span></div>
+          <p><b>Key insight:</b> Reinforcement learning improved an LLM’s interactive colon cancer treatment planning using patient-specific rewards derived from clinical decision processes.</p>
+          <p><b>Clinical relevance:</b> This study explores first-line treatment planning—not drug discovery—and does not establish clinical safety or patient benefit.</p>
+          <ul><li>Model planning as sequential information gathering under partial observability.</li><li>Construct process-aware rewards from real-world clinical records.</li><li>Train Llama-3.1-8B-Instruct with GRPO and GDPO reinforcement learning.</li></ul>
+          <p><b>Evidence signal:</b> In the study’s interactive evaluation, GDPO increased Mean@3 scalar clinical reward by 79.60% over base Llama and exceeded GPT-5.2 by 18.82%, while query counts decreased during training.</p>
+          <p><b>Watch item:</b> Higher reward scores do not establish better patient outcomes; prospective clinical validation is needed.</p>
+          <div class="tags"><span>#PrecisionOncology</span> <span>#ColonCancer</span> <span>#ReinforcementLearning</span> <span>#ClinicalAI</span> <span>#TreatmentPlanning</span></div>
         </section>
       </article>
     
@@ -134,12 +134,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.16264v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.16264v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Time-domain EEG autoencoders can learn broad spectral shifts, but standard reconstruction losses tend to under-represent high-frequency information because of 1/f-like power decay.</p>
-          <p><b>Clinical relevance:</b> For EEG-based cancer and brain-disorder biomarker pipelines, preserving subtle high-frequency signatures may improve latent features used for early detection and stratification.</p>
-          <ul><li>Compared LSTMVAE, VAEEG, Transformer, and an EEG foundation model for unsupervised representation learning.</li><li>Used synthetic experiments to test how spectral content is retained under time-domain reconstruction.</li><li>Examined whether larger latent spaces and loss/gradient choices change high-frequency attenuation.</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports both synthetic experiments and empirical validation, showing that autoencoders captured macro-scale changes like alpha slowing but weakened high-frequency components under MSE-based training.</p>
-          <p><b>Watch item:</b> Increasing latent dimensionality can reduce attenuation, but it also reduces compactness and may hurt generative stability.</p>
-          <div class="tags"><span>#EEG</span> <span>#RepresentationLearning</span> <span>#Autoencoder</span> <span>#SpectralBias</span> <span>#DeepLearning</span></div>
+          <p><b>Key insight:</b> Time-domain EEG representation learning can under-represent high-frequency signals because mean squared error favors larger, low-frequency components.</p>
+          <p><b>Clinical relevance:</b> The findings may inform EEG biomarker research for brain disorders, but the abstract does not address cancer drug discovery or establish clinical utility.</p>
+          <ul><li>Investigated three autoencoder architectures: LSTMVAE, VAEEG and Transformer.</li><li>Evaluated a state-of-the-art EEG foundation model.</li><li>Examined spectral bias and the effects of increasing latent dimensionality.</li></ul>
+          <p><b>Evidence signal:</b> Synthetic experiments and empirical validation showed that autoencoders captured broad changes such as alpha slowing while attenuating higher-frequency information; no numerical performance results are provided in the abstract.</p>
+          <p><b>Watch item:</b> Larger latent representations reduced attenuation but compromised compactness and generative stability; spectral losses and gradient balancing are proposed directions rather than established solutions.</p>
+          <div class="tags"><span>#EEG</span> <span>#RepresentationLearning</span> <span>#SpectralBias</span> <span>#Autoencoders</span> <span>#BrainBiomarkers</span></div>
         </section>
       </article>
     
@@ -153,12 +153,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.21395v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.21395v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Quantum features help most when they add complementary information to classical features, rather than replacing them outright.</p>
-          <p><b>Clinical relevance:</b> For cancer drug discovery workflows, this suggests quantum machine learning may be useful only if the representation and fusion strategy match the prediction target and data structure.</p>
-          <ul><li>Built a classical-quantum multi-view framework that keeps the full classical input alongside simulated quantum features.</li><li>Compared concatenation and attention fusion against single-view, replacement, and masking controls.</li><li>Tested controlled synthetic targets and benchmark datasets to isolate when complementary views improve prediction.</li></ul>
-          <p><b>Evidence signal:</b> Across controlled experiments and benchmarks, fusion improved performance on several datasets, but classical baselines still led on some tasks and results depended on representation choice and available views.</p>
-          <p><b>Watch item:</b> The study uses simulated quantum features and mixed benchmark outcomes, so gains may not transfer universally and depend on careful representation selection.</p>
-          <div class="tags"><span>#QuantumMachineLearning</span> <span>#MultiViewFusion</span> <span>#DrugDiscovery</span> <span>#AIResearch</span> <span>#PredictiveModeling</span></div>
+          <p><b>Key insight:</b> Classical–quantum fusion can improve prediction when its representations capture complementary relationships, but matched classical representations can provide the same benefit.</p>
+          <p><b>Clinical relevance:</b> Breast cancer diagnostic benchmarking suggests relevance to biomedical prediction, but the abstract does not establish cancer drug discovery utility or clinical benefit.</p>
+          <ul><li>Preserve full classical inputs alongside simulated quantum features.</li><li>Combine representations using concatenation or attention.</li><li>Assess contributions using single-view, replacement and masking controls.</li></ul>
+          <p><b>Evidence signal:</b> Controlled experiments and benchmark evaluations showed improved mean performance over classical baselines on four datasets, including Wisconsin Diagnostic Breast Cancer, while classical baselines led on Digits and Covertype.</p>
+          <p><b>Watch item:</b> Gains depend on representation–target alignment and fusion strategy; competitive classical controls mean the findings do not establish a uniquely quantum advantage.</p>
+          <div class="tags"><span>#QuantumMachineLearning</span> <span>#MultiViewLearning</span> <span>#BiomedicalAI</span> <span>#RepresentationLearning</span> <span>#ClassicalQuantumFusion</span></div>
         </section>
       </article>
     
@@ -172,12 +172,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.22336v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.22336v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A robust reinforcement learning framework can learn adaptive cancer treatment policies that stay effective across different patients and remain reliable despite biomarker error and shifts in disease dynamics.</p>
-          <p><b>Clinical relevance:</b> For precision oncology, this approach could help design more dependable adaptive therapy strategies, especially when patient measurements are imperfect or disease behavior changes over time.</p>
-          <ul><li>Models each patient as a hidden context to capture between-patient variability.</li><li>Uses robust contextual Markov decision processes to jointly address generalization and uncertainty.</li><li>Tests the learned policy in a metastatic prostate cancer simulator calibrated to clinical data.</li></ul>
-          <p><b>Evidence signal:</b> In simulator evaluations calibrated to clinical data, the proposed policy outperformed the existing adaptive therapy method and Pareto-dominated it across a diverse range of scenarios.</p>
-          <p><b>Watch item:</b> Results come from simulation, so real-world clinical impact still depends on prospective validation and careful handling of measurement and model mismatch.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#ReinforcementLearning</span> <span>#AdaptiveTherapy</span> <span>#ProstateCancer</span> <span>#RobustAI</span></div>
+          <p><b>Key insight:</b> Robust reinforcement learning learned adaptive treatment policies that outperformed an existing adaptive therapy method in simulated metastatic prostate cancer despite biomarker errors and shifts in disease dynamics.</p>
+          <p><b>Clinical relevance:</b> The approach could inform more reliable treatment adaptation in precision oncology, but it is not a drug discovery method or clinically validated treatment strategy.</p>
+          <ul><li>Represent patient differences as hidden context in a contextual Markov decision process.</li><li>Learn policies robust to biomarker measurement errors and uncertain disease dynamics.</li><li>Evaluate adaptive therapy policies in a simulator calibrated to clinical data.</li></ul>
+          <p><b>Evidence signal:</b> In simulation, the robust policies Pareto-dominated the existing method across diverse scenarios, with almost no performance loss under accurate biomarkers and anticipated disease dynamics.</p>
+          <p><b>Watch item:</b> Simulator-based results require prospective clinical validation before patient-care use.</p>
+          <div class="tags"><span>#ReinforcementLearning</span> <span>#PrecisionOncology</span> <span>#AdaptiveTherapy</span> <span>#ProstateCancer</span> <span>#RobustAI</span></div>
         </section>
       </article>
     
@@ -191,12 +191,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.18543v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.18543v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Segment Anything Model 2 can produce transferable object-level embeddings (“object pointers”) during segmentation that capture tumour-relevant information, sometimes outperforming standard encoder features for prediction.</p>
-          <p><b>Clinical relevance:</b> These results suggest a new way to reuse segmentation models for precision oncology tasks such as tumour type or recurrence prediction, especially when labelled data are limited.</p>
-          <ul><li>Used SAM2 object pointers from the segmentation pathway as features instead of only encoder outputs.</li><li>Added a task-guided variant that jointly optimizes object pointers for segmentation plus downstream tumour prediction.</li><li>Compared against conventional encoder transfer and radiomics on two PET/CT tumour prediction tasks.</li></ul>
-          <p><b>Evidence signal:</b> Across two PET/CT evaluation tasks, task-guided pointers improved cancer-type classification, while segmentation-only pointers performed best for recurrence prediction.</p>
-          <p><b>Watch item:</b> The approach still needs broader validation across larger, diverse datasets and clinical settings before it can be considered robust for deployment.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#FoundationModels</span> <span>#SegmentationAI</span> <span>#Radiomics</span> <span>#TumorPrediction</span></div>
+          <p><b>Key insight:</b> SAM2’s object-level representations encode tumour-discriminative information, offering an alternative to conventional encoder-based features.</p>
+          <p><b>Clinical relevance:</b> These representations could support imaging-based cancer-type and recurrence prediction, but the study does not establish clinical utility or address drug discovery directly.</p>
+          <ul><li>Extract compact object pointers produced during SAM2 segmentation.</li><li>Add an auxiliary prediction objective to create task-guided object pointers.</li><li>Compare downstream prediction with encoder-based features and radiomics.</li></ul>
+          <p><b>Evidence signal:</b> Across two PET/CT tumour prediction tasks, task-guided pointers improved cancer-type classification over encoder-based transfer and radiomics, while segmentation-only pointers performed best for recurrence prediction.</p>
+          <p><b>Watch item:</b> The abstract provides no sample sizes, effect sizes, or external-validation details, limiting assessment of robustness and generalisability.</p>
+          <div class="tags"><span>#PrecisionOncology</span> <span>#MedicalImagingAI</span> <span>#FoundationModels</span> <span>#TumourSegmentation</span> <span>#RepresentationLearning</span></div>
         </section>
       </article>
     
@@ -210,12 +210,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.17603v2" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.17603v2" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A morphology-aware deep learning model can use tissue structure on whole-slide images to predict 5-year colorectal cancer survival, with strongest signals emerging from adipose and stroma as well as tumor regions.</p>
-          <p><b>Clinical relevance:</b> If validated further, this approach could help stratify colorectal cancer patients by recurrence/mortality risk using routinely collected pathology slides.</p>
-          <ul><li>Weakly supervised multiple-instance learning on H&amp;E whole-slide images</li><li>Uses tissue morphology labels as structural supervision plus contrastive learning</li><li>Adds diversity regularization and gated-attention pooling to improve prognostic representation</li></ul>
-          <p><b>Evidence signal:</b> The model was developed on Alliance/CALGB 89803 (n=424), analyzed with TCGA-COAD/READ (n=562), and externally evaluated on SurGen (n=218), reaching AUCs up to 0.678 externally and 0.70 in pooled out-of-fold ensemble testing.</p>
-          <p><b>Watch item:</b> Performance is promising but still modest and should be treated cautiously until prospectively validated across broader institutions, scanners, and pathology workflows.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#DigitalPathology</span> <span>#DeepLearning</span> <span>#ColorectalCancer</span> <span>#SurvivalPrediction</span></div>
+          <p><b>Key insight:</b> MorphContrast uses tissue morphology to guide AI prediction of five-year colorectal cancer survival from whole-slide images, with prognostic signals extending beyond tumor tissue.</p>
+          <p><b>Clinical relevance:</b> This prognosis study—not drug discovery—could inform future risk-stratification research but does not establish clinical utility or guide treatment.</p>
+          <ul><li>Combines morphology-aware contrastive learning with gated-attention multiple-instance pooling.</li><li>Contrasts tissue patches within and across patients, using outcome-discordant, morphology-matched patches as hard negatives.</li><li>Adds diversity regularization to discourage representational collapse.</li></ul>
+          <p><b>Evidence signal:</b> Retrospective analysis used TCGA (n=562), Alliance/CALGB 89803 (n=424), and external SurGen data (n=218); single-model/ensemble AUCs were 0.642/0.70 internally and 0.669/0.678 externally.</p>
+          <p><b>Watch item:</b> Modest external discrimination and post hoc ensemble evaluation warrant prospective validation before clinical use.</p>
+          <div class="tags"><span>#ColorectalCancer</span> <span>#ComputationalPathology</span> <span>#SurvivalPrediction</span> <span>#ContrastiveLearning</span> <span>#PrecisionOncology</span></div>
         </section>
       </article>
     
@@ -229,12 +229,12 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.10.12.26365129v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.10.12.26365129v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Among cancer patients in Northwest Russia, COVID-19 vaccination was associated with substantially better overall survival.</p>
-          <p><b>Clinical relevance:</b> These registry-linked findings suggest vaccination may be an important protective factor in oncology populations, though causality cannot be proven from this observational study.</p>
-          <ul><li>Retrospective population-based cohort using cancer registry, vaccination records, and AI-read chest CT data</li><li>1,144 cancer patients with CT scans from Aug 2020 to Apr 2021; landmark analyses used to reduce immortal time bias</li><li>Compared vaccinated vs unvaccinated survival with Kaplan-Meier and multivariable Cox models</li></ul>
-          <p><b>Evidence signal:</b> Vaccination was associated with higher 3-year overall survival (80.3% vs 45.7%) and a lower adjusted mortality hazard (HR 0.40, 95% CI 0.25-0.64) in the primary landmark analysis.</p>
-          <p><b>Watch item:</b> This is an observational registry study with low vaccination coverage and possible residual confounding, so the survival association should not be interpreted as proof of causation.</p>
-          <div class="tags"><span>#CancerResearch</span> <span>#COVID19Vaccination</span> <span>#SurvivalAnalysis</span> <span>#RegistryStudy</span> <span>#PrecisionOncology</span></div>
+          <p><b>Key insight:</b> COVID-19 vaccination was associated with better overall survival among cancer patients in Northwestern Russia; this was not an AI drug discovery study.</p>
+          <p><b>Clinical relevance:</b> The findings highlight low vaccination coverage and an association with survival in cancer patients, without establishing causality.</p>
+          <ul><li>Linked cancer registry, vaccination records, and AI-analyzed chest CT data for 1,144 patients.</li><li>Compared survival using Kaplan–Meier and adjusted Cox regression analyses.</li><li>Used March and November 2021 landmark analyses to mitigate immortal time bias.</li></ul>
+          <p><b>Evidence signal:</b> Only 6.6% received vaccination; the primary landmark analysis reported 3-year survival of 80.3% versus 45.7% and an adjusted mortality hazard ratio of 0.40 (95% CI 0.25–0.64).</p>
+          <p><b>Watch item:</b> Vaccinated patients had earlier-stage cancer and less active treatment, so residual confounding may partly explain the survival association despite adjustment.</p>
+          <div class="tags"><span>#CancerResearch</span> <span>#COVID19Vaccination</span> <span>#RealWorldEvidence</span> <span>#AIImaging</span> <span>#SurvivalAnalysis</span></div>
         </section>
       </article>
     
@@ -248,12 +248,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.21451v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.21451v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A diffeomorphic PET/CT registration pipeline was tailored to preserve PSMA PET quantification while aligning longitudinal whole-body scans.</p>
-          <p><b>Clinical relevance:</b> By better preserving lesion uptake metrics like MTV and TLG during image alignment, the approach may support more reliable longitudinal assessment of treatment response in PSMA PET/CT.</p>
-          <ul><li>Affine pre-registration followed by coarse-to-fine multi-modal deformable registration using LapIRN</li><li>Test-time instance optimization to adapt the model per case</li><li>PET biomarker preservation losses for MTV/TLG plus Jacobian-based constraints and skeletal rigidity regularization</li></ul>
-          <p><b>Evidence signal:</b> On the reported evaluation protocol, the submitted system achieved 81.0% DSC, 6.17 mm HD95, and 3.3% error for both MTV and TLG.</p>
-          <p><b>Watch item:</b> Performance is reported on a challenge evaluation protocol, so robustness and generalizability to other scanners, cohorts, and clinical workflows still need validation.</p>
-          <div class="tags"><span>#PSMAPET</span> <span>#PETCT</span> <span>#ImageRegistration</span> <span>#CancerImaging</span> <span>#QuantitativeImaging</span></div>
+          <p><b>Key insight:</b> A PET-aware AI registration method aligns longitudinal whole-body PSMA PET/CT scans while limiting changes to quantitative tumor measurements.</p>
+          <p><b>Clinical relevance:</b> More consistent scan alignment could support longitudinal cancer imaging research and treatment-response assessment; this is an imaging method, not a drug-discovery study.</p>
+          <ul><li>Adapted coarse-to-fine diffeomorphic LapIRN with affine pre-registration and multimodal deformable registration.</li><li>Added test-time instance optimization and skeletal rigidity regularization.</li><li>Introduced MTV and TLG preservation losses with Jacobian-based constraints.</li></ul>
+          <p><b>Evidence signal:</b> For the Learn2Reg 2026 PSMAReg challenge submission, the authors report 81.0% DSC, 6.17 mm HD95, and 3.3% errors for both MTV and TLG under their evaluation protocol.</p>
+          <p><b>Watch item:</b> The abstract does not specify evaluation sample size or external validation, leaving generalizability uncertain.</p>
+          <div class="tags"><span>#PSMAPET</span> <span>#MedicalImagingAI</span> <span>#ImageRegistration</span> <span>#QuantitativeImaging</span> <span>#CancerResearch</span></div>
         </section>
       </article>
     
@@ -267,12 +267,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.18851v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.18851v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> MFG trains an LLM to improve molecules over multiple turns using feedback, making multi-objective optimization more progressive and feedback-aware.</p>
-          <p><b>Clinical relevance:</b> This could help generate drug-like candidates that better balance potency-related properties while preserving structural similarity, a useful step in early therapeutic discovery.</p>
-          <ul><li>Built a reinforcement learning framework on top of GeLLM³O for iterative molecular optimization.</li><li>Added a feedback vector encoding property gains and similarity to the starting molecule.</li><li>Used a feedback-aligned reward to encourage improvement across successive turns.</li></ul>
-          <p><b>Evidence signal:</b> Across ten multi-objective optimization tasks, GeLLM³O-MFG achieved an average similarity-constrained success rate of 81.50%, compared with 70.81% for the base model.</p>
-          <p><b>Watch item:</b> The approach depends on the quality of feedback signals and reward design, so performance may be sensitive to task setup and may not directly translate to experimental drug candidates.</p>
-          <div class="tags"><span>#AIforDrugDiscovery</span> <span>#MolecularOptimization</span> <span>#ReinforcementLearning</span> <span>#LLM</span> <span>#TherapeuticDiscovery</span></div>
+          <p><b>Key insight:</b> Training an LLM to use feedback across successive molecular edits improved multi-objective optimization while preserving similarity to the starting molecule.</p>
+          <p><b>Clinical relevance:</b> This approach could support early-stage therapeutic discovery, but the abstract provides no cancer-specific or clinical validation.</p>
+          <ul><li>Use reinforcement learning to train GeLLM³O for multi-turn molecular optimization.</li><li>Track property improvements and source-molecule similarity in a feedback vector.</li><li>Align rewards with feedback to encourage progressive improvement across turns.</li></ul>
+          <p><b>Evidence signal:</b> Across 10 multi-objective optimization tasks, GeLLM³O-MFG achieved an average similarity-constrained success rate of 81.50%, versus 70.81% for the base model.</p>
+          <p><b>Watch item:</b> Computational optimization success does not establish experimental activity, safety, or therapeutic benefit.</p>
+          <div class="tags"><span>#AIDrugDiscovery</span> <span>#MolecularOptimization</span> <span>#ReinforcementLearning</span> <span>#LargeLanguageModels</span> <span>#TherapeuticDiscovery</span></div>
         </section>
       </article>
     
@@ -286,12 +286,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.16891v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.16891v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Accurate tumor-growth predictions can still come from the wrong growth law, so model selection should check both fit quality and mathematical validity.</p>
-          <p><b>Clinical relevance:</b> For precision oncology, this work suggests that automated tumor-model discovery must be interpreted cautiously because misleading equations could affect downstream forecasting and treatment planning.</p>
-          <ul><li>Generate synthetic sparse/noisy tumor-growth data from Gompertz dynamics</li><li>Compare symbolic regression candidates using admissibility checks, coefficient refitting, and LLM-based ranking</li><li>Evaluate trajectory fit, forecasting, and recovered growth law separately</li></ul>
-          <p><b>Evidence signal:</b> In the abstract’s synthetic control, dense noiseless data recovered the true family, but sparse noisy data often produced alternative laws; nonlinear least squares usually improved law error, while PINN refitting often worsened it.</p>
-          <p><b>Watch item:</b> LLM rankings and strong trajectory fits did not reliably indicate the correct governing equation, so implementation should not rely on prediction error alone.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#SymbolicRegression</span> <span>#TumorGrowth</span> <span>#AIinMedicine</span> <span>#ModelSelection</span></div>
+          <p><b>Key insight:</b> Accurate tumor-growth curve fits and plausible AI explanations can mask incorrect governing growth laws.</p>
+          <p><b>Clinical relevance:</b> This modeling study supports more rigorous validation of AI-assisted tumor-growth models but does not establish clinical utility or drug-discovery benefits.</p>
+          <ul><li>Generate candidate growth laws using symbolic regression and check mathematical admissibility.</li><li>Refit coefficients using physics-informed neural networks or nonlinear least squares.</li><li>Explore archived LLM rankings against selection by training error.</li></ul>
+          <p><b>Evidence signal:</b> Synthetic Gompertz experiments recovered the generating family with dense noiseless data, but sparse noisy data often yielded alternative laws; nonlinear least squares usually reduced law error, while neural-network refitting often increased it.</p>
+          <p><b>Watch item:</b> Synthetic-data results and exploratory LLM rankings do not establish reliability in patient data; forecasting accuracy and growth-law recovery require separate evaluation.</p>
+          <div class="tags"><span>#TumorGrowthModeling</span> <span>#SymbolicRegression</span> <span>#ScientificMachineLearning</span> <span>#PrecisionOncology</span> <span>#AIValidation</span></div>
         </section>
       </article>
     
@@ -305,12 +305,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.22122v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.22122v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> TDAL learns how to choose the next perturbation online, rather than relying on a fixed acquisition rule, so the selection strategy can adapt as screening feedback accumulates.</p>
-          <p><b>Clinical relevance:</b> More adaptive perturbation screening could help prioritize the most informative genetic or drug targets sooner, potentially improving discovery efficiency in therapeutic research.</p>
-          <ul><li>Frames budgeted perturbation discovery as a sequential decision problem.</li><li>Uses temporal difference learning to update the acquisition function from a single screening trajectory.</li><li>Applies Hellinger distance and leave-batch-out replay to estimate future value and expand training signals.</li></ul>
-          <p><b>Evidence signal:</b> Across eight public perturbation screens covering single, double, and triple perturbations, TDAL averaged rank 1.63 among 11 methods and ranked first on four tasks.</p>
-          <p><b>Watch item:</b> Because TDAL learns from prior screening trajectories and virtual transitions, performance may depend on how well the training screens match the new experimental setting.</p>
-          <div class="tags"><span>#ActiveLearning</span> <span>#DrugDiscovery</span> <span>#PerturbationScreening</span> <span>#TherapeuticDiscovery</span> <span>#MachineLearning</span></div>
+          <p><b>Key insight:</b> TDAL learns how to select perturbation experiments as screening progresses, balancing immediate hits with future discoveries instead of using a fixed acquisition function.</p>
+          <p><b>Clinical relevance:</b> More efficient genetic and drug perturbation screening could support cancer target discovery, but the abstract does not establish clinical benefit.</p>
+          <ul><li>Learns an acquisition function online using temporal difference learning from a single screening trajectory.</li><li>Uses Hellinger distance between updated hit probabilities to weight future discovery value.</li><li>Reuses measured outcomes through leave-batch-out virtual transitions to address sparse training data.</li></ul>
+          <p><b>Evidence signal:</b> Across eight public screens covering single, double, and triple perturbations, TDAL achieved an average rank of 1.63 among 11 methods and ranked first on four tasks.</p>
+          <p><b>Watch item:</b> Benchmark rankings do not establish prospective laboratory performance or quantify experimental cost savings.</p>
+          <div class="tags"><span>#AIDrugDiscovery</span> <span>#ActiveLearning</span> <span>#PerturbationScreening</span> <span>#TargetDiscovery</span> <span>#CancerResearch</span></div>
         </section>
       </article>
     
@@ -324,12 +324,12 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.06.30.26356984v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.06.30.26356984v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Standardizing prostate cancer EHR data to OMOP and adding NLP plus PSA-based algorithms substantially improved capture of key clinical details and research readiness.</p>
-          <p><b>Clinical relevance:</b> This approach can help researchers build more complete prostate cancer datasets for real-world studies, while also flagging missing or inconsistent registry/EHR information.</p>
-          <ul><li>Converted UTMB Epic EHR records for registry-identified prostate cancer patients into OMOP CDM v5.4.</li><li>Used NLP to extract PSA, Gleason score, and cancer stage from clinical text.</li><li>Applied PSA-based algorithms to identify missing treatment data and biochemical recurrence.</li></ul>
-          <p><b>Evidence signal:</b> Among 815 analytic cases, 700 (85.9%) were complete and concordant with the cancer registry, PSA agreement was excellent, and NLP substantially improved capture of sparse Gleason score and stage data.</p>
-          <p><b>Watch item:</b> Findings come from a single health system and some key fields were sparse in structured EHR data, so performance may vary when scaled to other sites or data models.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#OMOP</span> <span>#EHRData</span> <span>#NaturalLanguageProcessing</span> <span>#ProstateCancer</span></div>
+          <p><b>Key insight:</b> OMOP standardization combined with NLP and PSA-based algorithms improved prostate cancer data completeness and research readiness, rather than directly advancing drug discovery.</p>
+          <p><b>Clinical relevance:</b> More complete longitudinal prostate cancer records could support observational research on treatment and recurrence, but clinical benefits were not evaluated.</p>
+          <ul><li>Mapped UTMB Epic EHR data for registry-identified patients from 2010–2021 to OMOP CDM v5.4.</li><li>Used NLP to extract PSA values, Gleason scores, and cancer stage from clinical text.</li><li>Applied PSA-based algorithms to identify missing treatment information and biochemical recurrence.</li></ul>
+          <p><b>Evidence signal:</b> Of 815 analytic cases, 700 (85.9%) were complete and concordant with registry data; NLP improved sparse pathology capture, and PSA trajectories identified 60 biochemical recurrence cases.</p>
+          <p><b>Watch item:</b> Single-institution findings and errors found in registry data warrant external validation of extraction and inference algorithms.</p>
+          <div class="tags"><span>#ProstateCancer</span> <span>#OMOP</span> <span>#ClinicalNLP</span> <span>#DataQuality</span> <span>#RealWorldData</span></div>
         </section>
       </article>
     
@@ -343,12 +343,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.21703v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.21703v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> A dynamic Mixture of Feature Difference module improves synthesis of contrast-enhanced MRI from non-contrast brain MRI by learning both sequence-specific features and their explicit differences.</p>
-          <p><b>Clinical relevance:</b> This could reduce the need for contrast-agent injections, lowering scan risk and cost while helping support tumor visualization and downstream segmentation.</p>
-          <ul><li>Uses multiple non-contrast MRI sequences as input for CE-MRI synthesis.</li><li>Adaptively weights informative source features and inter-sequence differences via MoFD.</li><li>Includes an adversarial or regression-based training variant to balance perceptual quality and structural fidelity.</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports superior fidelity and perceptual quality on UCSF-PDGM and UPenn-GBM, with reconstructed tumor regions and segmentation performance comparable to real CE-MRI.</p>
-          <p><b>Watch item:</b> Performance is dataset-dependent and the adversarial variant may improve visual realism at the expense of structural fidelity, so external validation is important.</p>
-          <div class="tags"><span>#PrecisionOncology</span> <span>#MRI</span> <span>#MedicalImagingAI</span> <span>#TumorSegmentation</span> <span>#ImageSynthesis</span></div>
+          <p><b>Key insight:</b> Mixture of Feature Difference (MoFD) synthesizes contrast-enhanced brain MRI from non-contrast sequences by adaptively combining sequence features and their differences.</p>
+          <p><b>Clinical relevance:</b> This imaging research, not drug discovery, could potentially reduce contrast-agent exposure and scan costs while supporting brain tumor assessment.</p>
+          <ul><li>Extract features from multiple non-contrast MRI sequences.</li><li>Dynamically weight individual features and explicit inter-sequence differences.</li><li>Compare adversarial and regression-based synthesis variants.</li></ul>
+          <p><b>Evidence signal:</b> On UCSF-PDGM and UPenn-GBM, the method outperformed baselines in image fidelity and perceptual quality, with tumor segmentation performance reported as comparable to real contrast-enhanced MRI.</p>
+          <p><b>Watch item:</b> The abstract does not establish prospective clinical reliability, so synthetic images should not be assumed interchangeable with acquired contrast-enhanced MRI.</p>
+          <div class="tags"><span>#BrainTumorImaging</span> <span>#MRISynthesis</span> <span>#MedicalAI</span> <span>#PrecisionOncology</span> <span>#ContrastEnhancedMRI</span></div>
         </section>
       </article>
     
@@ -362,12 +362,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.16914v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.16914v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> FOCUS is a CNS-focused pathology foundation model pretrained on 27,930 frozen sections that improves intraoperative diagnosis and biomarker prediction.</p>
-          <p><b>Clinical relevance:</b> It may help surgeons and pathologists make faster, more accurate CNS resection decisions during frozen-section assessment, including better lymphoma detection.</p>
-          <ul><li>Pretrained a subspecialty foundation model on 27,930 frozen-section pathology slides enriched for CNS tissue.</li><li>Evaluated on 11 internal diagnostic tasks and 12 biomarker-prediction tasks, including a WHO-aligned diagnostic hierarchy.</li><li>Compared model-assisted performance with six neuropathologists across hierarchical diagnosis and lymphoma detection.</li></ul>
-          <p><b>Evidence signal:</b> FOCUS achieved mean AUCs of 0.969 for diagnostic tasks and 0.877 for biomarker-prediction tasks, with strong performance in temporal and external cohorts.</p>
-          <p><b>Watch item:</b> Performance in real-world intraoperative workflow still needs prospective validation, since frozen-section artefacts and site-specific practice patterns can affect deployment.</p>
-          <div class="tags"><span>#AIPathology</span> <span>#CNSPathology</span> <span>#FrozenSection</span> <span>#FoundationModel</span> <span>#DigitalPathology</span></div>
+          <p><b>Key insight:</b> FOCUS is a CNS-focused pathology foundation model that improved intraoperative frozen-section diagnosis and biomarker prediction, rather than drug discovery.</p>
+          <p><b>Clinical relevance:</b> FOCUS could support more detailed intraoperative CNS tumor assessment, particularly lymphoma detection, while providing provisional molecular information.</p>
+          <ul><li>Pretrained on 27,930 frozen sections enriched for CNS tissue.</li><li>Evaluated on diagnostic and biomarker-prediction tasks, including temporal and external cohorts.</li><li>Organized ten diagnostic tasks into a WHO-aligned hierarchy and assessed assistance in six neuropathologists.</li></ul>
+          <p><b>Evidence signal:</b> FOCUS achieved mean AUCs of 0.969 across 11 internal diagnostic tasks and 0.877 across 12 biomarker-prediction tasks; assistance increased junior readers’ lymphoma sensitivity from 81.6% to 94.7%.</p>
+          <p><b>Watch item:</b> Prospective workflow validation is needed to establish real-time reliability and effects on surgical decisions and patient outcomes.</p>
+          <div class="tags"><span>#AIPathology</span> <span>#CNSOncology</span> <span>#FoundationModels</span> <span>#IntraoperativeDiagnosis</span> <span>#BiomarkerPrediction</span></div>
         </section>
       </article>
     
@@ -381,12 +381,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.17246v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.17246v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> The paper shows that a frozen large language model can teach a domain-specific molecular generator to follow high-level natural-language discovery goals, even when the target space is initially poorly covered.</p>
-          <p><b>Clinical relevance:</b> This could help accelerate early-stage cancer therapeutic discovery by steering peptide and small-molecule generators toward candidate designs with desired bioactivity, though it remains a preclinical research approach.</p>
-          <ul><li>LLM sets adaptive intermediate sub-goals based on the generator&#x27;s current capabilities</li><li>The model judges sampled candidates under each objective and turns those judgments into preferences</li><li>Preferences are distilled into the generator with DPO to iteratively align outputs to the final goal</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports experiments on therapeutic peptides and small-molecule design, showing improved goal-directed control toward natural-language discovery tasks.</p>
-          <p><b>Watch item:</b> Performance depends on the LLM&#x27;s judgments and on reliable experimental priors, so weak proxy reasoning or mismatched objectives could steer the generator toward misleading candidates.</p>
-          <div class="tags"><span>#AIforDrugDiscovery</span> <span>#CancerTherapeutics</span> <span>#GenerativeDesign</span> <span>#LLM</span> <span>#MolecularGeneration</span></div>
+          <p><b>Key insight:</b> LLM-to-Flow Distillation teaches scientific generators to pursue natural-language discovery goals using an adaptive, frozen LLM teacher rather than an explicit proxy reward.</p>
+          <p><b>Clinical relevance:</b> The approach could support anticancer peptide discovery, but the abstract does not establish experimental efficacy, safety, or clinical benefit.</p>
+          <ul><li>The LLM builds intermediate goals tailored to the generator’s current capabilities.</li><li>The LLM judges generated candidates to create preference signals.</li><li>Direct preference optimization (DPO) iteratively aligns the generator with the discovery goal.</li></ul>
+          <p><b>Evidence signal:</b> Experiments on therapeutic peptides and small-molecule structure design demonstrate goal-directed generative control, though the abstract reports no quantitative results or experimental validation.</p>
+          <p><b>Watch item:</b> LLM-derived preferences may not reflect biological activity, so generated candidates require independent experimental validation.</p>
+          <div class="tags"><span>#AIDrugDiscovery</span> <span>#CancerResearch</span> <span>#GenerativeAI</span> <span>#PeptideDesign</span> <span>#LLMDistillation</span></div>
         </section>
       </article>
     
@@ -400,12 +400,12 @@
         <div class="links"><a href="https://arxiv.org/abs/2610.19123v1" target="_blank" rel="noreferrer">arXiv</a> <a href="https://arxiv.org/pdf/2610.19123v1" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> PairIT uses a modest autoregressive transformer to make targeted, local edits to a seed molecule so it can optimize one or more desired properties in low-data settings.</p>
-          <p><b>Clinical relevance:</b> This could help speed early-stage medicinal chemistry by proposing more relevant analogs from limited assay data, but it is a research tool rather than a direct clinical decision aid.</p>
-          <ul><li>Trains on matched pairs of structurally similar molecules so the model learns chemically meaningful edits.</li><li>Uses prompt tokens to specify target property, direction, and approximate change magnitude.</li><li>Can add reinforcement learning after pretraining to balance property improvement against staying close to the seed molecule.</li></ul>
-          <p><b>Evidence signal:</b> The abstract reports empirical validation on MoleculeNet and Therapeutics Data Commons, showing robust seeded molecular optimization with a 68M-parameter transformer in low-data regimes.</p>
-          <p><b>Watch item:</b> Performance depends on careful paired-data curation, and gains may plateau with larger pretraining datasets, so results may not generalize without task-specific tuning.</p>
-          <div class="tags"><span>#AIDrugDiscovery</span> <span>#MoleculeOptimization</span> <span>#Transformers</span> <span>#LowDataML</span> <span>#MedicinalChemistry</span></div>
+          <p><b>Key insight:</b> PairIT trains autoregressive transformers on structurally similar molecule pairs to optimize seed molecules with limited data.</p>
+          <p><b>Clinical relevance:</b> The approach could support early-stage cancer drug discovery by refining candidate molecules, but the abstract reports no cancer-specific or clinical validation.</p>
+          <ul><li>Learn local molecular edits from matched pairs represented as SMILES sequences.</li><li>Use prompt tokens to specify properties, desired directions, and approximate changes, combining tokens for multi-property optimization.</li><li>Transfer from pretraining to small datasets, with optional reinforcement learning to balance optimization against seed similarity.</li></ul>
+          <p><b>Evidence signal:</b> Evaluations on MoleculeNet and Therapeutics Data Commons datasets report robust low-data seeded optimization with a 68M-parameter transformer and diminishing returns from larger pretraining datasets.</p>
+          <p><b>Watch item:</b> Performance depends on appropriate paired-data curation; computational optimization does not establish experimental activity, safety, or efficacy.</p>
+          <div class="tags"><span>#AIDrugDiscovery</span> <span>#MolecularOptimization</span> <span>#LowDataLearning</span> <span>#GenerativeAI</span> <span>#DrugDiscoveryResearch</span></div>
         </section>
       </article>
     </section>

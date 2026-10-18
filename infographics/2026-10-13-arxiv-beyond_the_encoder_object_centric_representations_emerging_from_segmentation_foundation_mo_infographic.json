@@ -1,24 +1,26 @@
 {
-  "key_insight": "Segment Anything Model 2 can produce transferable object-level embeddings (“object pointers”) during segmentation that capture tumour-relevant information, sometimes outperforming standard encoder features for prediction.",
-  "clinical_relevance": "These results suggest a new way to reuse segmentation models for precision oncology tasks such as tumour type or recurrence prediction, especially when labelled data are limited.",
+  "key_insight": "SAM2’s object-level representations encode tumour-discriminative information, offering an alternative to conventional encoder-based features.",
+  "clinical_relevance": "These representations could support imaging-based cancer-type and recurrence prediction, but the study does not establish clinical utility or address drug discovery directly.",
   "method": [
-    "Used SAM2 object pointers from the segmentation pathway as features instead of only encoder outputs.",
-    "Added a task-guided variant that jointly optimizes object pointers for segmentation plus downstream tumour prediction.",
-    "Compared against conventional encoder transfer and radiomics on two PET/CT tumour prediction tasks."
+    "Extract compact object pointers produced during SAM2 segmentation.",
+    "Add an auxiliary prediction objective to create task-guided object pointers.",
+    "Compare downstream prediction with encoder-based features and radiomics."
   ],
-  "evidence_signal": "Across two PET/CT evaluation tasks, task-guided pointers improved cancer-type classification, while segmentation-only pointers performed best for recurrence prediction.",
-  "watch_item": "The approach still needs broader validation across larger, diverse datasets and clinical settings before it can be considered robust for deployment.",
+  "evidence_signal": "Across two PET/CT tumour prediction tasks, task-guided pointers improved cancer-type classification over encoder-based transfer and radiomics, while segmentation-only pointers performed best for recurrence prediction.",
+  "watch_item": "The abstract provides no sample sizes, effect sizes, or external-validation details, limiting assessment of robustness and generalisability.",
   "hashtags": [
     "#PrecisionOncology",
+    "#MedicalImagingAI",
     "#FoundationModels",
-    "#SegmentationAI",
-    "#Radiomics",
-    "#TumorPrediction"
+    "#TumourSegmentation",
+    "#RepresentationLearning"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-13-arxiv-beyond_the_encoder_object_centric_representations_emerging_from_segmentation_foundation_mo",
   "paper_title": "Beyond the Encoder: Object-Centric Representations Emerging from Segmentation Foundation Models",
   "paper_date": "2026-10-13",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-18T20:26:19",
+  "generated_at": "2026-10-18T20:43:06",
   "generator": "openai"
 }

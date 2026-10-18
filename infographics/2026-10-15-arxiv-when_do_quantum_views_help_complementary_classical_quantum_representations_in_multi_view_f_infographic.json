@@ -1,24 +1,26 @@
 {
-  "key_insight": "Quantum features help most when they add complementary information to classical features, rather than replacing them outright.",
-  "clinical_relevance": "For cancer drug discovery workflows, this suggests quantum machine learning may be useful only if the representation and fusion strategy match the prediction target and data structure.",
+  "key_insight": "Classical–quantum fusion can improve prediction when its representations capture complementary relationships, but matched classical representations can provide the same benefit.",
+  "clinical_relevance": "Breast cancer diagnostic benchmarking suggests relevance to biomedical prediction, but the abstract does not establish cancer drug discovery utility or clinical benefit.",
   "method": [
-    "Built a classical-quantum multi-view framework that keeps the full classical input alongside simulated quantum features.",
-    "Compared concatenation and attention fusion against single-view, replacement, and masking controls.",
-    "Tested controlled synthetic targets and benchmark datasets to isolate when complementary views improve prediction."
+    "Preserve full classical inputs alongside simulated quantum features.",
+    "Combine representations using concatenation or attention.",
+    "Assess contributions using single-view, replacement and masking controls."
   ],
-  "evidence_signal": "Across controlled experiments and benchmarks, fusion improved performance on several datasets, but classical baselines still led on some tasks and results depended on representation choice and available views.",
-  "watch_item": "The study uses simulated quantum features and mixed benchmark outcomes, so gains may not transfer universally and depend on careful representation selection.",
+  "evidence_signal": "Controlled experiments and benchmark evaluations showed improved mean performance over classical baselines on four datasets, including Wisconsin Diagnostic Breast Cancer, while classical baselines led on Digits and Covertype.",
+  "watch_item": "Gains depend on representation–target alignment and fusion strategy; competitive classical controls mean the findings do not establish a uniquely quantum advantage.",
   "hashtags": [
     "#QuantumMachineLearning",
-    "#MultiViewFusion",
-    "#DrugDiscovery",
-    "#AIResearch",
-    "#PredictiveModeling"
+    "#MultiViewLearning",
+    "#BiomedicalAI",
+    "#RepresentationLearning",
+    "#ClassicalQuantumFusion"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-15-arxiv-when_do_quantum_views_help_complementary_classical_quantum_representations_in_multi_view_f",
   "paper_title": "When do quantum views help? Complementary classical-quantum representations in multi-view fusion",
   "paper_date": "2026-10-15",
   "paper_category": "Therapeutic Discovery",
-  "generated_at": "2026-10-18T20:26:15",
+  "generated_at": "2026-10-18T20:43:01",
   "generator": "openai"
 }

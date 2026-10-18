@@ -1,24 +1,26 @@
 {
-  "key_insight": "Pathology foundation models can retrieve morphologically similar salivary gland tumor cases from an archive without task-specific training, helping extend case-based diagnosis to rare subtypes.",
-  "clinical_relevance": "This could make departmental whole-slide archives searchable for differential diagnosis support, especially when rare tumors fall outside a pathologist’s usual experience.",
+  "key_insight": "Pathology foundation models retrieved similar salivary gland tumor cases without task-specific training, with Atlas2 achieving the highest reported retrieval performance.",
+  "clinical_relevance": "Searching diagnosed case archives could support pathologists’ differential diagnosis of rare tumors, but this study evaluates case retrieval—not drug discovery or clinical outcomes.",
   "method": [
-    "Used region-of-interest (ROI) images from whole-slide pathology slides as queries.",
-    "Compared four foundation models: Atlas2, Atlas2-B, Atlas2-S, and UNI2h.",
-    "Evaluated leave-one-case-out retrieval on 137 salivary gland tumor cases across 12 ICD-O morphology categories."
+    "Query a digitized archive using a manually or automatically selected whole-slide image region.",
+    "Use foundation-model representations to retrieve morphologically similar cases with ICD-O codes and slides.",
+    "Compare Atlas2, Atlas2-B, Atlas2-S and UNI2h using leave-one-case-out evaluation."
   ],
-  "evidence_signal": "Atlas2 achieved the strongest retrieval performance, with Top-1/3/5 accuracy of 62.5%/76.7%/81.3% and the best separation of correct vs incorrect matches in modified Chamfer similarity (AUC 0.754).",
-  "watch_item": "Performance was tested on a relatively small, imbalanced single-dataset cohort, so broader validation is needed before routine deployment.",
+  "evidence_signal": "Across 137 cases spanning 12 ICD-O morphology categories, Atlas2 achieved 62.5%, 76.7% and 81.3% Top-1, Top-3 and Top-5 retrieval, respectively.",
+  "watch_item": "The small, imbalanced dataset and lack of reported external validation limit conclusions about performance in other pathology archives.",
   "hashtags": [
-    "#PathologyAI",
+    "#ComputationalPathology",
     "#FoundationModels",
-    "#CancerDiagnostics",
-    "#DigitalPathology",
+    "#SalivaryGlandTumors",
+    "#CaseRetrieval",
     "#PrecisionOncology"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-15-arxiv-pathology_foundation_models_for_training_free_case_retrieval_in_salivary_gland_tumors",
   "paper_title": "Pathology foundation models for training-free case retrieval in salivary gland tumors",
   "paper_date": "2026-10-15",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-18T20:26:05",
+  "generated_at": "2026-10-18T20:42:47",
   "generator": "openai"
 }
