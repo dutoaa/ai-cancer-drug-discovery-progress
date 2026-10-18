@@ -24,29 +24,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.19.26360765v3.full.pdf"
       }
     ],
-    "score": 69,
+    "score": 64,
     "infographic": {
-      "key_insight": "A GPT-2 table-to-text framework can outperform traditional ML and neural networks on small, imbalanced clinical datasets by turning structured records into clinically meaningful text for prediction.",
-      "clinical_relevance": "This approach may help improve early disease risk prediction from low-volume hospital data while keeping the output more interpretable for clinicians.",
+      "key_insight": "A GPT2 table-to-text approach can outperform traditional ML and neural models for prediction on small, imbalanced clinical datasets by using clinical-language context instead of relying only on statistical patterns.",
+      "clinical_relevance": "This may help clinicians and researchers build more reliable disease prediction tools from low-volume electronic health record data, especially when positive cases are rare.",
       "method": [
         "Converted structured clinical variables into physician-style text.",
-        "Used GPT-4 paraphrasing to augment minority-class examples while preserving medical meaning.",
-        "Fine-tuned GPT-2 on four public datasets and applied gradient-based explainability to identify important features."
+        "Used GPT4-based medical paraphrasing to augment minority-class examples.",
+        "Fine-tuned GPT2 on four public healthcare datasets and added gradient-based explainability."
       ],
-      "evidence_signal": "Across heart disease, heart failure, chronic kidney disease, and thyroid cancer recurrence datasets, the model reported average precision, specificity, sensitivity, and F1-score of 0.96, 0.97, 0.96, and 0.96.",
-      "watch_item": "Results come from public benchmark datasets, so performance and clinical utility may differ in real-world settings with noisier data, different prevalence, or site-specific biases.",
+      "evidence_signal": "Across heart disease, heart failure, chronic kidney disease, and thyroid cancer recurrence datasets, the model reported average precision 0.96, specificity 0.97, sensitivity 0.96, and F1-score 0.96.",
+      "watch_item": "Performance was shown on public datasets, so real-world validation and careful checking for synthetic-text bias or leakage would be needed before clinical use.",
       "hashtags": [
+        "#CancerAI",
         "#HealthAI",
         "#GPT2",
         "#ClinicalPrediction",
-        "#MachineLearning",
-        "#MedicalAI"
+        "#ExplainableAI"
       ],
       "paper_id": "2026-10-13-medrxiv-can_gpt_be_used_as_an_alternative_prediction_model_to_traditional_machine_learning_and_neu",
       "paper_title": "Can GPT Be Used as an Alternative Prediction Model to Traditional Machine Learning and Neural Networks on Low-Volume Clinical Data?",
       "paper_date": "2026-10-13",
       "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-10-17T11:18:27",
+      "generated_at": "2026-10-18T11:52:32",
       "generator": "openai"
     }
   },
@@ -75,80 +75,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.12.26365129v1.full.pdf"
       }
     ],
-    "score": 59,
+    "score": 54,
     "infographic": {
-      "key_insight": "In this Northwestern Russia registry study, cancer patients who received at least one COVID-19 vaccine dose had better overall survival than unvaccinated patients.",
-      "clinical_relevance": "The findings suggest vaccination may be an important survival-associated preventive measure for cancer patients, especially those at higher risk of severe COVID-19 outcomes.",
+      "key_insight": "Among cancer patients in Northwest Russia, receiving at least one COVID-19 vaccine dose before the landmark date was associated with markedly better overall survival.",
+      "clinical_relevance": "The findings suggest vaccination may be an important protective factor for cancer patients, alongside stage and treatment status, but the results are observational rather than proof of causation.",
       "method": [
-        "Retrospective population-based cohort linking cancer registry, vaccination records, and AI-analyzed chest CT data.",
-        "Primary landmark survival analysis among patients alive on March 1, 2021, with multivariable Cox adjustment.",
-        "Sensitivity analysis repeated with a later landmark date to reduce immortal time bias."
+        "Population-based retrospective cohort using cancer registry, vaccination records, and CT-linked AI data.",
+        "Kaplan-Meier and multivariable Cox models compared vaccinated vs unvaccinated patients.",
+        "Landmark analyses were used to reduce immortal time bias, with a sensitivity analysis at a later date."
       ],
-      "evidence_signal": "Among 1,144 cancer patients, only 6.6% were vaccinated, and vaccination was associated with improved 3-year overall survival and a lower adjusted mortality hazard.",
-      "watch_item": "Because this is observational registry research, residual confounding and selection differences between vaccinated and unvaccinated patients may still influence the association.",
+      "evidence_signal": "In 1,136 patients in the primary landmark analysis, vaccination was associated with higher 3-year OS (80.3% vs 45.7%) and a lower adjusted mortality hazard (HR 0.40, 95% CI 0.25-0.64).",
+      "watch_item": "Vaccinated patients had earlier-stage disease and were less likely to be on active treatment, so residual confounding and selection bias may influence the association.",
       "hashtags": [
-        "#CancerResearch",
-        "#COVID19Vaccine",
-        "#SurvivalAnalysis",
         "#PrecisionOncology",
-        "#RegistryStudy"
+        "#CancerSurvivorship",
+        "#COVID19Vaccine",
+        "#RegistryStudy",
+        "#RealWorldEvidence"
       ],
       "paper_id": "2026-10-13-medrxiv-covid_19_vaccination_and_survival_of_cancer_patients_in_northwestern_russia_a_historical_r",
       "paper_title": "COVID-19 vaccination and survival of cancer patients in Northwestern Russia: a historical registry-based cohort study",
       "paper_date": "2026-10-13",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-17T11:18:29",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-11-medrxiv-data_efficient_machine_learning_for_the_detection_of_duodenal_neoplasia_a_multi_centre_stu",
-    "doi": "10.64898/2026.10.08.26365053",
-    "date": "2026-10-11",
-    "title": "Data-efficient machine learning for the detection of duodenal neoplasia: a multi-centre study",
-    "authors": "Di Lisio, F.; Soilleux, E. J.; Jaeckle, F.",
-    "abstract": "BackgroundMachine Learning (ML) has shown promise in histopathological diagnosis, but rare tumours, like duodenal epithelial neoplasms, are challenging because large, labelled datasets are difficult to assemble. We propose a data-efficient ML pipeline for detecting duodenal epithelial neoplasia in whole-slide images. MethodsWe assembled a five-hospital dataset of haematoxylin and eosin-stained duodenal biopsy whole slide images (WSIs) at 10x magnification, comprising 8,027 normal and 401 neoplastic biopsies, including adenomas, carcinomas and neuroendocrine tumours. WSIs were divided into patches and encoded using the Hibou-B foundation model. We compared global standardisation with unsupervised site-specific standardisation of patch embeddings. Our pipeline combined principal component analysis, a Gaussian mixture model and a Random Forest classifier. We assessed generalisability using leave-one-hospital-out cross-validation across four hospitals and on an independent test set from a fifth hospital. ResultsIn leave-one-hospital-out cross-validation, the pipeline achieved a mean accuracy of 90%, sensitivity of 96%, specificity of 83% and an AUC of 0.96. On the external test hospital, it achieved 94% accuracy, 93% sensitivity, 95% specificity, and AUC of 0.97. Site-specific standardisation improved mean cross-validation accuracy by 20 percentage points compared with global standardisation, while the Gaussian mixture pipeline improved accuracy by 12 percentage points compared with mean pooling of patch embeddings. ConclusionsWe present a data-efficient ML approach for detecting duodenal epithelial neoplasia from WSIs. Strong performance was maintained across hospitals and on an independent external test cohort despite the limited number of neoplastic training cases, supporting the feasibility of foundation-model-based approaches for rare histopathological diagnoses.",
-    "category": "Cancer AI Methods",
-    "source": "medRxiv",
-    "published": "2026-10-11",
-    "updated": "2026-10-11",
-    "primary_category": "health informatics",
-    "categories": [
-      "health informatics"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365053v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365053v1.full.pdf"
-      }
-    ],
-    "score": 55,
-    "infographic": {
-      "key_insight": "A foundation-model-based, data-efficient pipeline can detect rare duodenal epithelial neoplasia from whole-slide biopsy images with strong cross-site performance.",
-      "clinical_relevance": "This approach could help pathology labs screen rare duodenal lesions more reliably when labelled training data are limited.",
-      "method": [
-        "Five-hospital H&E WSI dataset of 8,027 normal and 401 neoplastic duodenal biopsies",
-        "Patch-level encoding with the Hibou-B foundation model plus PCA, Gaussian mixture modeling, and Random Forest classification",
-        "Compared global vs unsupervised site-specific standardisation and validated with leave-one-hospital-out and external testing"
-      ],
-      "evidence_signal": "The pipeline achieved 90% mean accuracy in leave-one-hospital-out cross-validation and 94% accuracy on an independent external hospital test set, with AUC up to 0.97.",
-      "watch_item": "Performance was strong but the neoplastic class was still relatively small, so broader prospective validation is needed before routine deployment.",
-      "hashtags": [
-        "#AIPathology",
-        "#CancerDiagnostics",
-        "#FoundationModels",
-        "#Histopathology",
-        "#RareTumours"
-      ],
-      "paper_id": "2026-10-11-medrxiv-data_efficient_machine_learning_for_the_detection_of_duodenal_neoplasia_a_multi_centre_stu",
-      "paper_title": "Data-efficient machine learning for the detection of duodenal neoplasia: a multi-centre study",
-      "paper_date": "2026-10-11",
-      "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-10-17T11:18:31",
+      "generated_at": "2026-10-18T11:52:35",
       "generator": "openai"
     }
   },
@@ -177,29 +126,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.06.30.26356984v2.full.pdf"
       }
     ],
-    "score": 54,
+    "score": 49,
     "infographic": {
-      "key_insight": "Standardizing prostate cancer EHR data to OMOP and adding NLP/PSA-based algorithms substantially improved capture of key clinical details and research readiness.",
-      "clinical_relevance": "This approach can make real-world prostate cancer data more reliable for outcomes research, registry validation, and future precision oncology studies.",
+      "key_insight": "Standardizing EHR data with OMOP, then layering NLP and PSA-based rules, can materially improve prostate cancer data completeness and research usability.",
+      "clinical_relevance": "This approach may help researchers build more reliable prostate cancer datasets for outcomes studies, registry validation, and biomarker tracking.",
       "method": [
-        "Transformed UTMB Epic EHR records for registry-identified prostate cancer patients into OMOP CDM v5.4.",
-        "Used NLP to extract PSA, Gleason score, and cancer stage from clinical notes.",
-        "Applied PSA-based algorithms to identify missing treatments and biochemical recurrence."
+        "Converted UTMB Epic EHR records for registry-identified prostate cancer patients into OMOP CDM v5.4",
+        "Used NLP to extract PSA, Gleason score, and cancer stage from clinical notes",
+        "Applied PSA-based algorithms to find missing treatment information and biochemical recurrence"
       ],
-      "evidence_signal": "Of 815 analytic cases, 700 (85.9%) were complete and concordant with the cancer registry, with excellent PSA agreement and improved capture of sparse structured pathology/staging data after NLP.",
-      "watch_item": "Results depend on data quality, local documentation patterns, and manual validation; registry and EHR records can still contain errors or missing fields.",
+      "evidence_signal": "In 815 analytic cases, 700 (85.9%) were complete and concordant with the cancer registry, PSA showed excellent agreement, and NLP substantially improved capture of sparse Gleason and stage data.",
+      "watch_item": "Performance depends on local EHR structure, note quality, and algorithm tuning, so manual validation is still important before broad deployment.",
       "hashtags": [
         "#PrecisionOncology",
-        "#RealWorldData",
         "#OMOP",
-        "#NLPinHealthcare",
-        "#CancerDataQuality"
+        "#EHRData",
+        "#NLP",
+        "#CancerRegistry"
       ],
       "paper_id": "2026-10-12-medrxiv-developing_an_omop_standardized_prostate_cancer_database_and_improving_data_quality_using",
       "paper_title": "Developing an OMOP-Standardized Prostate Cancer Database and Improving Data Quality Using NLP and PSA-Based Algorithms",
       "paper_date": "2026-10-12",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-17T11:18:33",
+      "generated_at": "2026-10-18T11:52:36",
       "generator": "openai"
     }
   },
@@ -228,29 +177,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.09.26365106v1.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
-      "key_insight": "Trials with English-language eligibility requirements enrolled fewer Asian and Hispanic/Latinx participants, while language accommodation was uncommon.",
-      "clinical_relevance": "Adding explicit language accommodations to trial criteria could be a practical way to improve representation in US clinical trial enrollment.",
+      "key_insight": "Trials that required English proficiency enrolled fewer Asian and Hispanic/Latinx participants, while explicit language accommodation was uncommon.",
+      "clinical_relevance": "Reviewing and revising language eligibility criteria could be a practical way to improve trial inclusivity and better align enrollment with diversity goals.",
       "method": [
-        "Cross-sectional analysis of ClinicalTrials.gov interventional trials with at least one US site and posted results.",
-        "Eligibility criteria were mined with regular expressions to detect English-language requirements and language accommodations.",
-        "Associations with enrolled race/ethnicity proportions were modeled with adjustments for trial and site characteristics."
+        "Cross-sectional analysis of US interventional ClinicalTrials.gov trials with posted results.",
+        "Eligibility criteria were mined with validated regex classifiers for English-language requirements and language accommodation.",
+        "Enrollment composition was modeled with adjusted generalized linear models accounting for trial and site characteristics."
       ],
-      "evidence_signal": "In 44,487 US-only trials, an English-language requirement appeared in 12.9% and was associated with lower enrolled proportions of Asian and Hispanic/Latinx participants; language accommodation was documented in only 1.8% of trials.",
-      "watch_item": "This is an observational registry study, so the associations do not prove causation and may be influenced by incomplete race/ethnicity reporting in some trials.",
+      "evidence_signal": "Among 44,487 US-site trials, 12.9% had an English-language requirement; it was linked to lower enrolled proportions of Asian and Hispanic/Latinx participants.",
+      "watch_item": "This is observational registry-based evidence, so associations may reflect unmeasured trial or site factors rather than direct causal effects.",
       "hashtags": [
         "#ClinicalTrials",
         "#HealthEquity",
-        "#TrialDesign",
         "#DiversityInResearch",
-        "#LanguageAccess"
+        "#LanguageAccess",
+        "#CancerResearch"
       ],
       "paper_id": "2026-10-13-medrxiv-language_eligibility_criteria_and_enrolled_racial_and_ethnic_composition_in_us_clinical_tr",
       "paper_title": "Language eligibility criteria and enrolled racial and ethnic composition in US clinical trials: a cross-sectional study",
       "paper_date": "2026-10-13",
       "paper_category": "Clinical Translation",
-      "generated_at": "2026-10-17T11:18:34",
+      "generated_at": "2026-10-18T11:52:38",
       "generator": "openai"
     }
   },
@@ -279,29 +228,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.12.26365269v1.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
-      "key_insight": "Personalised “normative twin” cardiac models reveal hidden, reproducible patterns of heart-shape deviation that identify clinically relevant risk beyond standard measurements like ejection fraction and strain.",
-      "clinical_relevance": "This approach could improve risk stratification—especially for atrial fibrillation in people with preserved ejection fraction—by spotting abnormal cardiac phenotypes that conventional biomarkers miss.",
+      "key_insight": "A personalised “normative twin” model of heart shape reveals hidden, reproducible deviation patterns that conventional cardiac biomarkers miss and that map to different future risk profiles.",
+      "clinical_relevance": "This approach could improve risk stratification in people with preserved ejection fraction, especially for predicting incident atrial fibrillation and, in a separate model, stroke.",
       "method": [
-        "Built age-, sex-, and body-habitus-matched digital twins of expected healthy cardiac function.",
-        "Compared individuals against two independent shape representations: HeartSSM (128D) and MeshHeart cVAE (64D).",
-        "Derived deviation-from-norm scores and tested whether they improved prediction of outcomes beyond standard cardiac biomarkers."
+        "Compared each patient’s cardiac shape to an age-, sex-, and body-habitus-matched healthy digital twin.",
+        "Learned deviation patterns from two independent shape representations: HeartSSM (128D) and MeshHeart cVAE (64D).",
+        "Tested whether deviation scores added predictive value beyond standard biomarkers and against placebo noise controls."
       ],
-      "evidence_signal": "In UK Biobank cohorts, deviation scores improved cardiovascular risk prediction, with the strongest signal for incident atrial fibrillation in preserved-EF participants (ΔC up to +0.068; LR P = 3.3 × 10^-8), plus a smaller independent stroke signal in the MeshHeart cVAE cohort; placebo noise controls were negative.",
-      "watch_item": "Generalizability and deployment need careful validation across imaging protocols and external populations, since signals varied by representation and some outcomes appeared only in one cohort/model.",
+      "evidence_signal": "In UK Biobank cohorts, the method improved prediction beyond ejection fraction, volumes, mass, and strain; the strongest result was for incident atrial fibrillation in preserved-EF individuals (ΔC = +0.068, cross-validated ΔC = +0.063, P = 3.3 × 10^-8), with a smaller independent signal for stroke in the other representation.",
+      "watch_item": "Generalizability and clinical deployment still need careful validation across sites, imaging pipelines, and populations before routine use.",
       "hashtags": [
         "#CardiacPhenotyping",
         "#DigitalTwin",
         "#RiskStratification",
-        "#DeepLearning",
-        "#UKBiobank"
+        "#MachineLearning",
+        "#CardiovascularImaging"
       ],
       "paper_id": "2026-10-13-medrxiv-personalised_normative_cardiac_phenotyping_reveals_clinically_relevant_heterogeneity_in_ca",
       "paper_title": "Personalised normative cardiac phenotyping reveals clinically relevant heterogeneity in cardiac shape and outcome risk",
       "paper_date": "2026-10-13",
       "paper_category": "Target Biology",
-      "generated_at": "2026-10-17T11:18:36",
+      "generated_at": "2026-10-18T11:52:40",
       "generator": "openai"
     }
   },
@@ -330,131 +279,29 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.09.26365130v1.full.pdf"
       }
     ],
-    "score": 48,
+    "score": 43,
     "infographic": {
-      "key_insight": "Decision models can handle structured clinical subtasks cheaply, while LLMs remain stronger for harder or less certain cases.",
-      "clinical_relevance": "A hybrid workflow that routes confident structured decisions to a decision model and the rest to an LLM could reduce cost without sacrificing performance.",
+      "key_insight": "A decision model can handle structured clinical predictions at lower cost than an LLM, but it works best when paired with LLMs rather than used alone.",
+      "clinical_relevance": "For oncology workflows, a hybrid setup could route confident structured decisions to a cheaper decision model and reserve LLMs for the harder cases, reducing cost while maintaining performance.",
       "method": [
-        "Compared a decision model (Jev) with five flagship LLMs on three clinical tasks.",
-        "Tasks included mortality risk prediction, Choosing-Wisely category decisions, and ordinal colon cancer staging.",
-        "Tested standard prompting plus developer-guided input changes such as added context and task decomposition."
+        "Compared a decision model (Jev) with five flagship LLMs across three clinical tasks: mortality risk, Choosing Wisely questions, and colon cancer staging.",
+        "Tested standard LLM-style prompts, then applied developer-recommended input changes for staging, including medical context and task decomposition.",
+        "Evaluated a hybrid strategy where Jev handled fully confident staging decisions and LLMs handled the remainder."
       ],
-      "evidence_signal": "On standard inputs, Jev underperformed LLMs, but with improved prompting it reached 75.8% to 85.8% staging accuracy; routing only fully confident staging cases to Jev made the hybrid approach non-inferior and cut LLM costs by 33% to 44%.",
-      "watch_item": "The hybrid approach depends on reliable confidence calibration and may not transfer equally well across tasks or settings without careful validation.",
+      "evidence_signal": "In the abstract, Jev lagged the LLMs on all tasks with standard inputs, but staging improved from 45.4% accuracy to 85.8% with both input changes, and the hybrid approach was non-inferior while cutting LLM costs by 33-44%.",
+      "watch_item": "The main concern is that decision-model performance depends heavily on prompt/input design, so deployment would need careful validation, confidence thresholds, and workflow integration.",
       "hashtags": [
         "#PrecisionOncology",
+        "#LargeLanguageModels",
         "#ClinicalAI",
-        "#LLM",
         "#DecisionModels",
-        "#HealthInformatics"
+        "#HealthAI"
       ],
       "paper_id": "2026-10-12-medrxiv-decision_models_can_offload_structured_clinical_tasks_from_large_language_models",
       "paper_title": "Decision models can offload structured clinical tasks from large language models",
       "paper_date": "2026-10-12",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-17T11:18:38",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-11-medrxiv-a_multi_domain_eeg_framework_integrating_spectral_functional_connectivity_and_topological",
-    "doi": "10.64898/2026.10.08.26365043",
-    "date": "2026-10-11",
-    "title": "A Multi-Domain EEG Framework Integrating Spectral, Functional Connectivity, and Topological Features for Subject-Level ADHD Classification",
-    "authors": "Rohani, F.; Mostafavi, S.; Ebrahimifakhar, P.; Zomorrodi, R.; Mueller, A.",
-    "abstract": "BackgroundAttention-Deficit/Hyperactivity Disorder (ADHD) is a common neurodevelopmental disorder characterized by persistent symptoms of inattention, hyperactivity, and impulsivity that significantly affect cognitive, academic, and social functioning. Although electroencephalography (EEG) has emerged as a promising non-invasive tool for identifying objective neurophysiological biomarkers of ADHD because of its high temporal resolution and cost-effectiveness, many existing machine learning studies rely on single-domain EEG features, which may not adequately capture the complex functional organization of the brain. MethodsThis study proposes a subject-level EEG classification framework that integrates three complementary feature domains: spectral characteristics, weighted Phase Lag Index (wPLI)-based functional connectivity, and topological descriptors derived from persistent homology. EEG recordings from 121 subjects were preprocessed and segmented into overlapping windows for feature extraction. Window-level features were aggregated to generate subject-level representations. Recursive Feature Elimination (RFE) was employed to select the 110 most informative features from an initial set of 1,043 descriptors. Five machine learning classifiers, including Support Vector Machine (SVM), Random Forest, XGBoost, CatBoost, and Multi-Layer Perceptron (MLP), were evaluated using stratified five-fold cross-validation. An ablation study was further conducted to assess the contribution of each feature domain. Model interpretability was investigated using SHapley Additive exPlanations (SHAP) and Local Interpretable Model-agnostic Explanations (LIME), two widely adopted Explainable Artificial Intelligence techniques for interpreting machine learning models. ResultsAmong the evaluated classifiers, the SVM achieved the highest classification performance, yielding an accuracy of 80.17%, an F1-score of 80.95%, a balanced accuracy of 80.14%, a receiver operating characteristic area under the curve (ROC-AUC) of 86.72%, and a precision-recall area under the curve (PR-AUC) of 87.34%. The ablation study demonstrated that combining spectral, functional connectivity, and topological features consistently outperformed individual feature domains, highlighting the complementary nature of these representations. Explainable AI analyses further identified functional connectivity features as the primary contributors to classification performance while confirming the additional value of spectral and topological descriptors. ConclusionsThe proposed framework demonstrates that integrating spectral analysis, functional connectivity, and topological data analysis provides an effective and interpretable approach for subject-level ADHD classification from EEG recordings. The combination of recursive feature selection, multi-domain feature fusion, ablation analysis, and Explainable Artificial Intelligence establishes a transparent and reproducible pipeline that may facilitate the development of reliable EEG-based clinical decision-support systems for ADHD.",
-    "category": "Target Biology",
-    "source": "medRxiv",
-    "published": "2026-10-11",
-    "updated": "2026-10-11",
-    "primary_category": "health informatics",
-    "categories": [
-      "health informatics"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365043v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365043v1.full.pdf"
-      }
-    ],
-    "score": 47,
-    "infographic": {
-      "key_insight": "A multi-domain EEG model that combines spectral, connectivity, and topological features can classify ADHD at the subject level more accurately than single-feature approaches.",
-      "clinical_relevance": "This work supports the development of non-invasive, explainable EEG-based tools that may aid future ADHD screening and biomarker research.",
-      "method": [
-        "Preprocessed EEG from 121 subjects and split it into overlapping windows for feature extraction.",
-        "Built 1,043 features across spectral, wPLI functional connectivity, and persistent homology domains, then reduced them to 110 using RFE.",
-        "Compared SVM, Random Forest, XGBoost, CatBoost, and MLP with stratified 5-fold cross-validation and used SHAP/LIME for interpretability."
-      ],
-      "evidence_signal": "The best model was SVM, with 80.17% accuracy, 80.95% F1-score, 80.14% balanced accuracy, 86.72% ROC-AUC, and 87.34% PR-AUC.",
-      "watch_item": "Performance was based on a relatively small single-study cohort, so external validation and real-world robustness testing are still needed.",
-      "hashtags": [
-        "#EEG",
-        "#ADHD",
-        "#MachineLearning",
-        "#ExplainableAI",
-        "#Neuroimaging"
-      ],
-      "paper_id": "2026-10-11-medrxiv-a_multi_domain_eeg_framework_integrating_spectral_functional_connectivity_and_topological",
-      "paper_title": "A Multi-Domain EEG Framework Integrating Spectral, Functional Connectivity, and Topological Features for Subject-Level ADHD Classification",
-      "paper_date": "2026-10-11",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-10-17T11:18:41",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-11-medrxiv-ai_assisted_tissue_based_antibody_interpretation_in_autoimmune_encephalitis_prospective_va",
-    "doi": "10.64898/2026.10.08.26365042",
-    "date": "2026-10-11",
-    "title": "AI-Assisted Tissue-Based Antibody Interpretation in Autoimmune Encephalitis: Prospective Validation and Reader Study",
-    "authors": "Cao, Z.; Xie, D.; Zou, S.; Li, D.; Martinez-Martinez, P.; Zong, S.; Zhang, Z.",
-    "abstract": "Tissue-based assays provide broad screening for neural autoantibodies but remain vulnerable to technical and reader-dependent variability. We evaluated an integrated workflow combining automated 3,3'-diaminobenzidine tissue-based assay processing, digital whole-slide imaging, and interpretable deep learning. Model development used 2,357 retrospective serum and cerebrospinal fluid images referred from more than 80 institutions and processed in a centralized laboratory, with reference labels established by expert-consensus tissue-based assay interpretation. A prospective validation cohort included 200 images from 200 unique patients (154 positive and 46 negative; 100 serum and 100 cerebrospinal fluid). The same images were evaluated by two expert and two novice readers in a fixed-order two-round study, with unaided interpretation followed by artificial-intelligence-assisted interpretation after a washout of at least two weeks. The standalone binary classifier achieved an area under the receiver operating characteristic curve of 0.922, accuracy of 86.5%, sensitivity of 85.7%, and specificity of 89.1% in prospective validation. Pooled reader accuracy was 90.4% in the unaided round and 97.4% in the artificial-intelligence-assisted round (McNemar P < 0.001), with specificity of 82.6% and 99.5%, respectively. Novice-reader accuracy was 83.3% unaided and 96.5% with artificial-intelligence assistance (P < 0.001), approaching unaided expert accuracy of 97.5%. Among tissue-based-assay-positive cases, reader accuracy for cytoplasmic/nuclear antigen-associated versus neural surface antigen-associated staining-pattern subclassification was 88.8% unaided and 94.0% with artificial-intelligence assistance (P < 0.001). These findings support further multicentre, cross-platform evaluation of artificial-intelligence-assisted neural autoantibody tissue interpretation. Abbreviated summaryCao et al. report prospective validation of an automated tissue-based neural autoantibody workflow combining digital imaging and interpretable deep learning. Artificial-intelligence-assisted reading was associated with higher interpretation accuracy, particularly among less-experienced readers, supporting further multicentre validation across laboratories and imaging platforms.",
-    "category": "Therapeutic Discovery",
-    "source": "medRxiv",
-    "published": "2026-10-11",
-    "updated": "2026-10-11",
-    "primary_category": "neurology",
-    "categories": [
-      "neurology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365042v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365042v1.full.pdf"
-      }
-    ],
-    "score": 41,
-    "infographic": {
-      "key_insight": "An AI-assisted digital workflow for tissue-based autoantibody interpretation improved accuracy and consistency in autoimmune encephalitis screening, especially for less-experienced readers.",
-      "clinical_relevance": "This could help laboratories reduce reader-dependent variability and improve confidence in neural autoantibody testing, supporting more reliable diagnostic workflows.",
-      "method": [
-        "Trained on 2,357 retrospective serum and CSF tissue-based assay images from >80 institutions",
-        "Validated prospectively on 200 unique-patient images with expert consensus reference labels",
-        "Compared unaided vs AI-assisted interpretation by two experts and two novices in a two-round reader study"
-      ],
-      "evidence_signal": "In prospective validation, the standalone classifier reached AUROC 0.922 with 86.5% accuracy, and AI assistance raised pooled reader accuracy from 90.4% to 97.4% (McNemar P < 0.001).",
-      "watch_item": "Results came from centralized, expert-reviewed images in a single workflow, so broader multicenter and cross-platform validation is still needed before routine deployment.",
-      "hashtags": [
-        "#AIinPathology",
-        "#AutoimmuneEncephalitis",
-        "#DigitalPathology",
-        "#Neuroimmunology",
-        "#MachineLearning"
-      ],
-      "paper_id": "2026-10-11-medrxiv-ai_assisted_tissue_based_antibody_interpretation_in_autoimmune_encephalitis_prospective_va",
-      "paper_title": "AI-Assisted Tissue-Based Antibody Interpretation in Autoimmune Encephalitis: Prospective Validation and Reader Study",
-      "paper_date": "2026-10-11",
-      "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-17T11:18:43",
+      "generated_at": "2026-10-18T11:52:42",
       "generator": "openai"
     }
   }

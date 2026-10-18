@@ -1,0 +1,24 @@
+{
+  "key_insight": "GraphBEAT turns sparse, irregular EHR timelines into time-bucketed graphs to improve early gastrointestinal cancer risk stratification.",
+  "clinical_relevance": "This could help flag higher-risk patients months earlier using routinely collected diagnoses and lab results, potentially supporting earlier diagnostic workup.",
+  "method": [
+    "Groups longitudinal EHR events into time buckets",
+    "Builds temporally directed patient graphs with feature, value, and time-position nodes",
+    "Uses time-decay message passing plus multi-head attention pooling to produce patient-level risk representations"
+  ],
+  "evidence_signal": "Trained and tested on multi-site longitudinal diagnosis codes and laboratory tests, GraphBEAT outperformed GraphSAGE, GAT, GCN, Transformer, and LSTM at 12-, 24-, and 36-month lead times.",
+  "watch_item": "Performance was shown in retrospective EHR data, so prospective validation and careful site-specific calibration would be needed before deployment.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#EHRAI",
+    "#GraphNeuralNetworks",
+    "#CancerRiskStratification",
+    "#TemporalLearning"
+  ],
+  "paper_id": "2026-10-15-arxiv-graphbeat_graph_based_bucketized_event_aggregation_over_time_for_early_risk_stratification",
+  "paper_title": "GraphBEAT: Graph-based Bucketized Event Aggregation Over Time for Early Risk Stratification of Gastrointestinal Cancers",
+  "paper_date": "2026-10-15",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-18T20:26:08",
+  "generator": "openai"
+}

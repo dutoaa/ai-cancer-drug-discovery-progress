@@ -1,0 +1,24 @@
+{
+  "key_insight": "MFG trains an LLM to improve molecules over multiple turns using feedback, making multi-objective optimization more progressive and feedback-aware.",
+  "clinical_relevance": "This could help generate drug-like candidates that better balance potency-related properties while preserving structural similarity, a useful step in early therapeutic discovery.",
+  "method": [
+    "Built a reinforcement learning framework on top of GeLLM³O for iterative molecular optimization.",
+    "Added a feedback vector encoding property gains and similarity to the starting molecule.",
+    "Used a feedback-aligned reward to encourage improvement across successive turns."
+  ],
+  "evidence_signal": "Across ten multi-objective optimization tasks, GeLLM³O-MFG achieved an average similarity-constrained success rate of 81.50%, compared with 70.81% for the base model.",
+  "watch_item": "The approach depends on the quality of feedback signals and reward design, so performance may be sensitive to task setup and may not directly translate to experimental drug candidates.",
+  "hashtags": [
+    "#AIforDrugDiscovery",
+    "#MolecularOptimization",
+    "#ReinforcementLearning",
+    "#LLM",
+    "#TherapeuticDiscovery"
+  ],
+  "paper_id": "2026-10-13-arxiv-mfg_multi_turn_feedback_guided_molecular_optimization",
+  "paper_title": "MFG: Multi-turn Feedback Guided Molecular Optimization",
+  "paper_date": "2026-10-13",
+  "paper_category": "Therapeutic Discovery",
+  "generated_at": "2026-10-18T20:26:26",
+  "generator": "openai"
+}

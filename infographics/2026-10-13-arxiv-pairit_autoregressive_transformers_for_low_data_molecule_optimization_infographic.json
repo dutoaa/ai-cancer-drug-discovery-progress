@@ -1,0 +1,24 @@
+{
+  "key_insight": "PairIT uses a modest autoregressive transformer to make targeted, local edits to a seed molecule so it can optimize one or more desired properties in low-data settings.",
+  "clinical_relevance": "This could help speed early-stage medicinal chemistry by proposing more relevant analogs from limited assay data, but it is a research tool rather than a direct clinical decision aid.",
+  "method": [
+    "Trains on matched pairs of structurally similar molecules so the model learns chemically meaningful edits.",
+    "Uses prompt tokens to specify target property, direction, and approximate change magnitude.",
+    "Can add reinforcement learning after pretraining to balance property improvement against staying close to the seed molecule."
+  ],
+  "evidence_signal": "The abstract reports empirical validation on MoleculeNet and Therapeutics Data Commons, showing robust seeded molecular optimization with a 68M-parameter transformer in low-data regimes.",
+  "watch_item": "Performance depends on careful paired-data curation, and gains may plateau with larger pretraining datasets, so results may not generalize without task-specific tuning.",
+  "hashtags": [
+    "#AIDrugDiscovery",
+    "#MoleculeOptimization",
+    "#Transformers",
+    "#LowDataML",
+    "#MedicinalChemistry"
+  ],
+  "paper_id": "2026-10-13-arxiv-pairit_autoregressive_transformers_for_low_data_molecule_optimization",
+  "paper_title": "PairIT: Autoregressive Transformers for Low-Data Molecule Optimization",
+  "paper_date": "2026-10-13",
+  "paper_category": "Therapeutic Discovery",
+  "generated_at": "2026-10-18T20:26:36",
+  "generator": "openai"
+}

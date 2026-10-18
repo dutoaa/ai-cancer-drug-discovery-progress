@@ -1,24 +1,24 @@
 {
-  "key_insight": "Standardizing EHR data with OMOP, then layering NLP and PSA-based rules, can materially improve prostate cancer data completeness and research usability.",
-  "clinical_relevance": "This approach may help researchers build more reliable prostate cancer datasets for outcomes studies, registry validation, and biomarker tracking.",
+  "key_insight": "Standardizing prostate cancer EHR data to OMOP and adding NLP plus PSA-based algorithms substantially improved capture of key clinical details and research readiness.",
+  "clinical_relevance": "This approach can help researchers build more complete prostate cancer datasets for real-world studies, while also flagging missing or inconsistent registry/EHR information.",
   "method": [
-    "Converted UTMB Epic EHR records for registry-identified prostate cancer patients into OMOP CDM v5.4",
-    "Used NLP to extract PSA, Gleason score, and cancer stage from clinical notes",
-    "Applied PSA-based algorithms to find missing treatment information and biochemical recurrence"
+    "Converted UTMB Epic EHR records for registry-identified prostate cancer patients into OMOP CDM v5.4.",
+    "Used NLP to extract PSA, Gleason score, and cancer stage from clinical text.",
+    "Applied PSA-based algorithms to identify missing treatment data and biochemical recurrence."
   ],
-  "evidence_signal": "In 815 analytic cases, 700 (85.9%) were complete and concordant with the cancer registry, PSA showed excellent agreement, and NLP substantially improved capture of sparse Gleason and stage data.",
-  "watch_item": "Performance depends on local EHR structure, note quality, and algorithm tuning, so manual validation is still important before broad deployment.",
+  "evidence_signal": "Among 815 analytic cases, 700 (85.9%) were complete and concordant with the cancer registry, PSA agreement was excellent, and NLP substantially improved capture of sparse Gleason score and stage data.",
+  "watch_item": "Findings come from a single health system and some key fields were sparse in structured EHR data, so performance may vary when scaled to other sites or data models.",
   "hashtags": [
     "#PrecisionOncology",
     "#OMOP",
     "#EHRData",
-    "#NLP",
-    "#CancerRegistry"
+    "#NaturalLanguageProcessing",
+    "#ProstateCancer"
   ],
   "paper_id": "2026-10-12-medrxiv-developing_an_omop_standardized_prostate_cancer_database_and_improving_data_quality_using",
   "paper_title": "Developing an OMOP-Standardized Prostate Cancer Database and Improving Data Quality Using NLP and PSA-Based Algorithms",
   "paper_date": "2026-10-12",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-18T11:52:36",
+  "generated_at": "2026-10-18T20:26:30",
   "generator": "openai"
 }

@@ -1,0 +1,24 @@
+{
+  "key_insight": "TDAL learns how to choose the next perturbation online, rather than relying on a fixed acquisition rule, so the selection strategy can adapt as screening feedback accumulates.",
+  "clinical_relevance": "More adaptive perturbation screening could help prioritize the most informative genetic or drug targets sooner, potentially improving discovery efficiency in therapeutic research.",
+  "method": [
+    "Frames budgeted perturbation discovery as a sequential decision problem.",
+    "Uses temporal difference learning to update the acquisition function from a single screening trajectory.",
+    "Applies Hellinger distance and leave-batch-out replay to estimate future value and expand training signals."
+  ],
+  "evidence_signal": "Across eight public perturbation screens covering single, double, and triple perturbations, TDAL averaged rank 1.63 among 11 methods and ranked first on four tasks.",
+  "watch_item": "Because TDAL learns from prior screening trajectories and virtual transitions, performance may depend on how well the training screens match the new experimental setting.",
+  "hashtags": [
+    "#ActiveLearning",
+    "#DrugDiscovery",
+    "#PerturbationScreening",
+    "#TherapeuticDiscovery",
+    "#MachineLearning"
+  ],
+  "paper_id": "2026-10-15-arxiv-beyond_fixed_acquisition_functions_temporal_difference_active_learning_for_perturbation_di",
+  "paper_title": "Beyond Fixed Acquisition Functions: Temporal Difference Active Learning for Perturbation Discovery",
+  "paper_date": "2026-10-15",
+  "paper_category": "Therapeutic Discovery",
+  "generated_at": "2026-10-18T20:26:29",
+  "generator": "openai"
+}

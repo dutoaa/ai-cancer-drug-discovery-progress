@@ -1,24 +1,24 @@
 {
-  "key_insight": "A GPT2 table-to-text approach can outperform traditional ML and neural models for prediction on small, imbalanced clinical datasets by using clinical-language context instead of relying only on statistical patterns.",
-  "clinical_relevance": "This may help clinicians and researchers build more reliable disease prediction tools from low-volume electronic health record data, especially when positive cases are rare.",
+  "key_insight": "A GPT2 table-to-text approach can turn small, imbalanced clinical datasets into stronger disease prediction models by leveraging contextual clinical language rather than relying only on traditional statistical learning.",
+  "clinical_relevance": "This could help surface clinically meaningful patterns in low-volume records and improve prediction performance for conditions with scarce positive cases, while still supporting interpretability.",
   "method": [
-    "Converted structured clinical variables into physician-style text.",
-    "Used GPT4-based medical paraphrasing to augment minority-class examples.",
-    "Fine-tuned GPT2 on four public healthcare datasets and added gradient-based explainability."
+    "Converted structured patient records into physician-style text.",
+    "Used GPT4-generated paraphrasing to augment minority-class examples.",
+    "Fine-tuned GPT2 on four public healthcare datasets and applied gradient-based explainability."
   ],
-  "evidence_signal": "Across heart disease, heart failure, chronic kidney disease, and thyroid cancer recurrence datasets, the model reported average precision 0.96, specificity 0.97, sensitivity 0.96, and F1-score 0.96.",
-  "watch_item": "Performance was shown on public datasets, so real-world validation and careful checking for synthetic-text bias or leakage would be needed before clinical use.",
+  "evidence_signal": "Across heart disease, heart failure, chronic kidney disease, and thyroid cancer recurrence datasets, the model reported average precision, specificity, sensitivity, and F1-score of 0.96, 0.97, 0.96, and 0.96.",
+  "watch_item": "Results come from public benchmark datasets, so real-world performance and robustness on local clinical data, shifting documentation styles, or rare edge cases may need further validation.",
   "hashtags": [
-    "#CancerAI",
-    "#HealthAI",
     "#GPT2",
-    "#ClinicalPrediction",
+    "#ClinicalAI",
+    "#MachineLearning",
+    "#HealthcareData",
     "#ExplainableAI"
   ],
   "paper_id": "2026-10-13-medrxiv-can_gpt_be_used_as_an_alternative_prediction_model_to_traditional_machine_learning_and_neu",
   "paper_title": "Can GPT Be Used as an Alternative Prediction Model to Traditional Machine Learning and Neural Networks on Low-Volume Clinical Data?",
   "paper_date": "2026-10-13",
   "paper_category": "Cancer AI Methods",
-  "generated_at": "2026-10-18T11:52:32",
+  "generated_at": "2026-10-18T20:26:07",
   "generator": "openai"
 }

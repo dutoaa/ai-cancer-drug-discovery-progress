@@ -1,0 +1,24 @@
+{
+  "key_insight": "Time-domain EEG autoencoders can learn broad spectral shifts, but standard reconstruction losses tend to under-represent high-frequency information because of 1/f-like power decay.",
+  "clinical_relevance": "For EEG-based cancer and brain-disorder biomarker pipelines, preserving subtle high-frequency signatures may improve latent features used for early detection and stratification.",
+  "method": [
+    "Compared LSTMVAE, VAEEG, Transformer, and an EEG foundation model for unsupervised representation learning.",
+    "Used synthetic experiments to test how spectral content is retained under time-domain reconstruction.",
+    "Examined whether larger latent spaces and loss/gradient choices change high-frequency attenuation."
+  ],
+  "evidence_signal": "The abstract reports both synthetic experiments and empirical validation, showing that autoencoders captured macro-scale changes like alpha slowing but weakened high-frequency components under MSE-based training.",
+  "watch_item": "Increasing latent dimensionality can reduce attenuation, but it also reduces compactness and may hurt generative stability.",
+  "hashtags": [
+    "#EEG",
+    "#RepresentationLearning",
+    "#Autoencoder",
+    "#SpectralBias",
+    "#DeepLearning"
+  ],
+  "paper_id": "2026-10-12-arxiv-spectral_considerations_on_unsupervised_time_domain_eeg_representation_learning_with_deep",
+  "paper_title": "Spectral Considerations on Unsupervised Time-domain EEG Representation Learning with Deep Networks",
+  "paper_date": "2026-10-12",
+  "paper_category": "Cancer AI Methods",
+  "generated_at": "2026-10-18T20:26:13",
+  "generator": "openai"
+}
