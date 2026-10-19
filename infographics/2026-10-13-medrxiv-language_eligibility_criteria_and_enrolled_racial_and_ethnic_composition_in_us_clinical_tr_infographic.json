@@ -1,24 +1,26 @@
 {
-  "key_insight": "Trials that required English proficiency enrolled fewer Asian and Hispanic/Latinx participants, while explicit language accommodation was uncommon.",
-  "clinical_relevance": "Reviewing and revising language eligibility criteria could be a practical way to improve trial inclusivity and better align enrollment with diversity goals.",
+  "key_insight": "English-language eligibility requirements became more common in US clinical trials and were associated with a lower enrolled proportion of Asian participants.",
+  "clinical_relevance": "Reviewing language requirements and accommodations may help sponsors address barriers to representative trial enrollment, though this study does not establish causality.",
   "method": [
-    "Cross-sectional analysis of US interventional ClinicalTrials.gov trials with posted results.",
-    "Eligibility criteria were mined with validated regex classifiers for English-language requirements and language accommodation.",
-    "Enrollment composition was modeled with adjusted generalized linear models accounting for trial and site characteristics."
+    "Cross-sectional analysis of 44,487 interventional trials with exclusively US sites and posted results on ClinicalTrials.gov.",
+    "Classified language requirements and accommodations from eligibility text using rules validated against physician review.",
+    "Modeled trial-level racial and ethnic composition with adjustment for trial characteristics and geographic population composition."
   ],
-  "evidence_signal": "Among 44,487 US-site trials, 12.9% had an English-language requirement; it was linked to lower enrolled proportions of Asian and Hispanic/Latinx participants.",
-  "watch_item": "This is observational registry-based evidence, so associations may reflect unmeasured trial or site factors rather than direct causal effects.",
+  "evidence_signal": "English requirements appeared in 12.9% of trials and documented accommodations in 1.8%; requirements were associated with lower Asian enrollment proportions (adjusted OR 0.85, 95% CI 0.77–0.93).",
+  "watch_item": "Race and ethnicity reporting was incomplete, and the supplied abstract is truncated; this is trial-inclusivity research, not an AI cancer drug-discovery study.",
   "hashtags": [
     "#ClinicalTrials",
-    "#HealthEquity",
-    "#DiversityInResearch",
+    "#TrialDiversity",
     "#LanguageAccess",
-    "#CancerResearch"
+    "#HealthEquity",
+    "#ClinicalResearch"
   ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
   "paper_id": "2026-10-13-medrxiv-language_eligibility_criteria_and_enrolled_racial_and_ethnic_composition_in_us_clinical_tr",
   "paper_title": "Language eligibility criteria and enrolled racial and ethnic composition in US clinical trials: a cross-sectional study",
   "paper_date": "2026-10-13",
   "paper_category": "Clinical Translation",
-  "generated_at": "2026-10-18T11:52:38",
+  "generated_at": "2026-10-19T14:12:10",
   "generator": "openai"
 }

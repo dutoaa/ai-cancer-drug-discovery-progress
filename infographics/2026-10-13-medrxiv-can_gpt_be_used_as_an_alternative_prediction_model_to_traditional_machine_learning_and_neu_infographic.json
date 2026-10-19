@@ -1,17 +1,17 @@
 {
-  "key_insight": "A GPT2-based table-to-text framework showed strong disease-prediction performance on small clinical datasets, including thyroid cancer recurrence—not cancer drug discovery.",
-  "clinical_relevance": "The approach may support research into thyroid cancer recurrence prediction when labeled data are scarce, but clinical readiness is not established.",
+  "key_insight": "A Distil GPT2 table-to-text framework reported strong disease prediction on small clinical datasets, including thyroid cancer recurrence, rather than addressing drug discovery.",
+  "clinical_relevance": "The approach may support research into recurrence prediction when labeled clinical data are scarce, but clinical utility remains unestablished.",
   "method": [
     "Convert structured clinical records into physician-style text.",
-    "Use GPT4-generated medical paraphrases to improve minority-class representation, then fine-tune GPT2.",
-    "Apply gradient-based explainability to identify influential clinical features."
+    "Fine-tune Distil GPT2 using original text and GPT4-generated paraphrases to improve minority-class representation.",
+    "Use gradient-based explainability to identify influential clinical features."
   ],
-  "evidence_signal": "Across four public datasets, the abstract reports average precision of 0.96, specificity of 0.97, sensitivity of 0.96, and F1-score of 0.96, with improvements over comparator models.",
-  "watch_item": "The abstract does not report external clinical validation or whether paraphrase generation was isolated to training data to prevent leakage.",
+  "evidence_signal": "Across four public datasets covering heart disease, heart failure, chronic kidney disease, and thyroid cancer recurrence, reported average precision, specificity, sensitivity, and F1-score were 0.96, 0.97, 0.96, and 0.96, respectively.",
+  "watch_item": "The abstract does not detail external validation or safeguards against leakage from synthetic paraphrases, limiting confidence in real-world generalization.",
   "hashtags": [
-    "#ClinicalAI",
+    "#CancerAI",
     "#ThyroidCancer",
-    "#RecurrencePrediction",
+    "#ClinicalPrediction",
     "#LowDataLearning",
     "#ExplainableAI"
   ],
@@ -21,6 +21,6 @@
   "paper_title": "Can GPT Be Used as an Alternative Prediction Model to Traditional Machine Learning and Neural Networks on Low-Volume Clinical Data?",
   "paper_date": "2026-10-13",
   "paper_category": "Cancer AI Methods",
-  "generated_at": "2026-10-18T20:42:50",
+  "generated_at": "2026-10-19T14:12:02",
   "generator": "openai"
 }

@@ -1,54 +1,54 @@
 [
   {
-    "id": "2026-10-15-arxiv-pathology_foundation_models_for_training_free_case_retrieval_in_salivary_gland_tumors",
-    "arxiv_id": "2610.22087v1",
-    "date": "2026-10-15",
-    "title": "Pathology foundation models for training-free case retrieval in salivary gland tumors",
-    "authors": "Maximilian J. Roesel, Niklas Kiermeyer, Philipp Keyl, Frederick Klauschen",
-    "abstract": "In pathology, pattern recognition relies on a frame of reference built through extensive training and experience, which may still fall short when encountering rare cancer subtypes. Archives of previously diagnosed tumors often contain relevant precedents, yet identifying the most relevant cases remains challenging. Here we explore whether content-based retrieval with current pathology foundation models facilitates rare cancer diagnostics without any task-specific training. Pathologists can query a digitized archive using a region of interest (ROI) from a whole slide image (WSI) and retrieve morphologically similar cases, along with their ICD-O codes and corresponding WSIs. The ROI can be selected manually or automatically using a gated attention-based multiple instance learning model. We evaluate our approach by leave-one-case-out on an imbalanced dataset of 137 salivary gland tumor cases spanning 12 ICD-O morphology categories, comparing four pathology foundation models (Atlas2, Atlas2-B, Atlas2-S, and UNI2h). Top-1/3/5 retrieval was 62.5%/76.7%/81.3% for Atlas2, 50.2/66.6/72.9% for UNI2h, 52.3%/71.5%/77.6% for Atlas2-B and 54.4/65.2/73.7% for Atlas2-S. Macro-averaged F1 ranged from 69.0% for the smallest model Atlas2-S to 76.6% for the largest model Atlas2 across the five classes with at least ten cases. Our modified Chamfer similarity separated correct from incorrect matches among the Top-5 more reliably for Atlas2 (AUC 0.754) than for Atlas2-B (0.679, p = 0.020) and Atlas2-S (0.653, p = 0.003), but not UNI2h (0.697, p = 0.196). Requiring no additional training or manual annotation, this approach makes departmental archives searchable with pathology foundation models, providing a low-barrier route to case-based differential diagnosis and extending the individual frame of reference to the collective experience of the department.",
+    "id": "2026-10-13-medrxiv-mri_biomarkers_for_brain_metastases_in_lung_cancer_using_machine_learning",
+    "doi": "10.64898/2026.10.12.26365323",
+    "date": "2026-10-13",
+    "title": "MRI Biomarkers for Brain Metastases in Lung Cancer Using Machine Learning",
+    "authors": "Chadha, S.; Sritharan, D. V.; Sharma, R.; Dolezal, D.; Chande, S.; Breuer, G.; Fu, D.; Gupta, A.; Hossain, J. O.; Srinivasan, A.; Weiss, D.; Chiang, V. L.; Nguyen, D. X.; Aneja, S.",
+    "abstract": "PurposeExisting prognostic models for brain metastases from lung cancer rely on clinical variables and do not capture the biological heterogeneity of host or tumor factors underlying survival outcomes. We evaluated whether MRI-derived radiomic biomarkers improve prognostic stratification beyond clinical variables. We also investigated their biological correlates using matched histopathology. Experimental DesignThis retrospective study included 103 patients with brain metastases from lung cancer and matched pre-operative MRI and histopathology. Radiomic features from T1-weighted contrast-enhanced and T2-weighted fluid-attenuated inversion recovery sequences were combined with clinical variables to train Cox proportional hazards, random survival forest, and DeepSurv models for overall survival (OS), CNS progression, and leptomeningeal (LM) progression. Risk groups from an imaging-only model were compared for clinical and histopathologic differences. ResultsImaging features improved prognostic performance beyond clinical variables across all modeling frameworks, with the combined clinical-imaging DeepSurv model achieving the highest concordance index for OS (0.728). Risk groups from the best-performing model for each endpoint differed significantly in OS (median 26.7 vs. 9.1 months, p < 0.001) and LM progression (p = 0.003), but not in CNS progression. Imaging-only risk groups did not differ significantly in any clinical variable, but high-risk patients were less likely to have tumor-infiltrating lymphocytes (46% vs. 77%, p = 0.010) and PD-L1 expression [&ge;] 50% (10% vs. 32%, p = 0.049). ConclusionsMRI radiomic biomarkers provide prognostic information beyond established clinical variables in lung cancer brain metastases and correspond to features of the tumor immune microenvironment, supporting their potential to refine risk stratification. Statement of Translational RelevanceBrain metastases affect 30-40% of patients with lung cancer. Existing prognostic models rely on clinical variables, which do not fully capture the biological heterogeneity that drives outcomes. We show that machine learning models integrating MRI-derived radiomic features with clinical variables improve prognostic discrimination beyond clinical variables alone. Because these biomarkers are derived from standard-of-care pre-operative imaging, they can be generated without additional testing or delay to treatment planning. Using matched histopathology from resected lesions, we further show that imaging-defined risk groups do not simply reproduce established clinical risk factors but instead correspond to differences in the tumor immune microenvironment, including tumor-infiltrating lymphocytes and PD-L1 expression. These findings support the use of quantitative imaging biomarkers as a non-invasive method to refine risk stratification at diagnosis, informing treatment selection and clinical trial enrollment for patients with brain metastases from lung cancer.",
     "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-15T15:40:48Z",
-    "updated": "2026-10-15T15:40:48Z",
-    "primary_category": "cs.CV",
+    "source": "medRxiv",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "primary_category": "oncology",
     "categories": [
-      "cs.CV"
+      "oncology"
     ],
     "links": [
       {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.22087v1"
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.12.26365323v1"
       },
       {
         "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.22087v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.12.26365323v1.full.pdf"
       }
     ],
-    "score": 64,
+    "score": 71,
     "infographic": {
-      "key_insight": "Pathology foundation models retrieved similar salivary gland tumor cases without task-specific training, with Atlas2 achieving the highest reported retrieval performance.",
-      "clinical_relevance": "Searching diagnosed case archives could support pathologists’ differential diagnosis of rare tumors, but this study evaluates case retrieval—not drug discovery or clinical outcomes.",
+      "key_insight": "MRI radiomic features improved survival prediction beyond clinical variables in lung cancer brain metastases and were associated with tumor immune features.",
+      "clinical_relevance": "These biomarkers could refine prognostic risk stratification, but the study does not establish treatment-selection or drug-discovery benefits.",
       "method": [
-        "Query a digitized archive using a manually or automatically selected whole-slide image region.",
-        "Use foundation-model representations to retrieve morphologically similar cases with ICD-O codes and slides.",
-        "Compare Atlas2, Atlas2-B, Atlas2-S and UNI2h using leave-one-case-out evaluation."
+        "Retrospective analysis of 103 patients with matched preoperative MRI and histopathology.",
+        "Combined contrast-enhanced T1 and T2-FLAIR radiomics with clinical variables using Cox, random survival forest, and DeepSurv models.",
+        "Evaluated overall survival, CNS progression, and leptomeningeal progression; compared imaging-only risk groups with immune pathology."
       ],
-      "evidence_signal": "Across 137 cases spanning 12 ICD-O morphology categories, Atlas2 achieved 62.5%, 76.7% and 81.3% Top-1, Top-3 and Top-5 retrieval, respectively.",
-      "watch_item": "The small, imbalanced dataset and lack of reported external validation limit conclusions about performance in other pathology archives.",
+      "evidence_signal": "The clinical-imaging DeepSurv model achieved an overall-survival concordance index of 0.728; endpoint-specific risk groups separated overall survival (26.7 vs. 9.1 months) and leptomeningeal progression, but not CNS progression.",
+      "watch_item": "The small retrospective cohort and lack of external validation reported in the abstract limit confidence in generalizability.",
       "hashtags": [
-        "#ComputationalPathology",
-        "#FoundationModels",
-        "#SalivaryGlandTumors",
-        "#CaseRetrieval",
-        "#PrecisionOncology"
+        "#PrecisionOncology",
+        "#BrainMetastases",
+        "#LungCancer",
+        "#Radiomics",
+        "#MachineLearning"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
-      "paper_id": "2026-10-15-arxiv-pathology_foundation_models_for_training_free_case_retrieval_in_salivary_gland_tumors",
-      "paper_title": "Pathology foundation models for training-free case retrieval in salivary gland tumors",
-      "paper_date": "2026-10-15",
+      "paper_id": "2026-10-13-medrxiv-mri_biomarkers_for_brain_metastases_in_lung_cancer_using_machine_learning",
+      "paper_title": "MRI Biomarkers for Brain Metastases in Lung Cancer Using Machine Learning",
+      "paper_date": "2026-10-13",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-18T20:42:47",
+      "generated_at": "2026-10-19T14:11:58",
       "generator": "openai"
     }
   },
@@ -58,7 +58,7 @@
     "date": "2026-10-13",
     "title": "Can GPT Be Used as an Alternative Prediction Model to Traditional Machine Learning and Neural Networks on Low-Volume Clinical Data?",
     "authors": "Bin Akter, S.; Akter, S.; Eisenberg, D.; Hill, C.; Lotvola, A.; Fresneda Fernandez, J.; Sarkar Pias, T.; Rafiqul Islam, M.; Islam, H.",
-    "abstract": "Background and Objective: Early and reliable disease prediction from structured clinical data remains challenging when datasets are small, highly imbalanced, and contain limited positive disease cases. Conventional machine learning (ML) and deep learning approaches often struggle to capture clinically meaningful relationships under such low-data representation conditions due to weak statistical associations between features and prediction targets. This study proposes a clinically grounded GPT2-based table-to-text framework for disease prediction using structured healthcare datasets, motivated by the contextual reasoning capability of GPT models to better capture clinically meaningful relationships when statistical learning alone becomes insufficient due to limited data availability. Methods & Materials: Structured clinical records were transformed into physician-style textual descriptions and enriched through GPT4-generated medical paraphrasing to improve minority-class representation while preserving clinical meaning. Both the original and generated clinical texts were used to fine-tune a GPT2 model across four public healthcare datasets, including heart disease, heart failure, chronic kidney disease, and thyroid cancer recurrence. Gradient-based explainable AI analysis was additionally incorporated to identify clinically important features influencing prediction outcomes. Results: The proposed framework demonstrated consistently strong predictive performance with average precision, specificity, sensitivity, and F1-score of 0.96, 0.97, 0.96, and 0.96, respectively. The model achieved improved sensitivity, stronger generalization, and more stable predictive behavior compared with traditional ML, deep learning, transformer-based, and GAN-augmented approaches. Importantly, the framework consistently emphasized clinically meaningful variables even under severe class imbalance where conventional ML and neural network models often struggled. Conclusions: The proposed GPT2-based table-to-text framework provides a practical and clinically interpretable approach for disease prediction from limited structured healthcare data. By integrating contextual clinical reasoning with explainable prediction mechanisms, the framework demonstrates strong potential for early risk detection, transparent clinical decision support, and reliable deployment in real-world low-resource healthcare environments.",
+    "abstract": "Background and ObjectiveEarly and reliable disease prediction from structured clinical data remains challenging when datasets are small, highly imbalanced, and contain limited positive disease cases. Conventional machine learning (ML) and deep learning approaches often struggle to capture clinically meaningful relationships under such low-data representation conditions due to weak statistical associations between features and prediction targets. This study proposes a clinically grounded Distil GPT2-based table-to-text framework for disease prediction using structured healthcare datasets, motivated by the contextual reasoning capability of GPT models to better capture clinically meaningful relationships when statistical learning alone becomes insufficient due to limited data availability. Methods & MaterialsStructured clinical records were transformed into physician-style textual descriptions and enriched through GPT4-generated medical paraphrasing to improve minority-class representation while preserving clinical meaning. Both the original and generated clinical texts were used to fine-tune a Distil GPT2 model across four public healthcare datasets, including heart disease, heart failure, chronic kidney disease, and thyroid cancer recurrence. Gradient-based explainable AI analysis was additionally incorporated to identify clinically important features influencing prediction outcomes. ResultsThe proposed framework demonstrated consistently strong predictive performance across four clinical datasets, achieving average precision, specificity, sensitivity, and F1-score of 0.96, 0.97, 0.96, and 0.96, respectively. The model achieved improved sensitivity, stronger generalization, and more stable predictive behavior compared with traditional ML, deep learning, transformer-based, and GAN-augmented approaches. Importantly, the framework consistently emphasized clinically meaningful variables even under severe class imbalance, where conventional ML and neural network models often struggled to identify key clinically relevant relationships. ConclusionsThe proposed Distil GPT2-based table-to-text framework provides a practical and clinically interpretable approach for disease prediction from limited structured healthcare data. By integrating contextual clinical reasoning with explainable prediction mechanisms, the framework suggests strong potential for early risk detection, transparent clinical decision support, and reliable deployment in real-world data-scarce healthcare settings.",
     "category": "Cancer AI Methods",
     "source": "medRxiv",
     "published": "2026-10-13",
@@ -77,21 +77,21 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.19.26360765v3.full.pdf"
       }
     ],
-    "score": 64,
+    "score": 59,
     "infographic": {
-      "key_insight": "A GPT2-based table-to-text framework showed strong disease-prediction performance on small clinical datasets, including thyroid cancer recurrence—not cancer drug discovery.",
-      "clinical_relevance": "The approach may support research into thyroid cancer recurrence prediction when labeled data are scarce, but clinical readiness is not established.",
+      "key_insight": "A Distil GPT2 table-to-text framework reported strong disease prediction on small clinical datasets, including thyroid cancer recurrence, rather than addressing drug discovery.",
+      "clinical_relevance": "The approach may support research into recurrence prediction when labeled clinical data are scarce, but clinical utility remains unestablished.",
       "method": [
         "Convert structured clinical records into physician-style text.",
-        "Use GPT4-generated medical paraphrases to improve minority-class representation, then fine-tune GPT2.",
-        "Apply gradient-based explainability to identify influential clinical features."
+        "Fine-tune Distil GPT2 using original text and GPT4-generated paraphrases to improve minority-class representation.",
+        "Use gradient-based explainability to identify influential clinical features."
       ],
-      "evidence_signal": "Across four public datasets, the abstract reports average precision of 0.96, specificity of 0.97, sensitivity of 0.96, and F1-score of 0.96, with improvements over comparator models.",
-      "watch_item": "The abstract does not report external clinical validation or whether paraphrase generation was isolated to training data to prevent leakage.",
+      "evidence_signal": "Across four public datasets covering heart disease, heart failure, chronic kidney disease, and thyroid cancer recurrence, reported average precision, specificity, sensitivity, and F1-score were 0.96, 0.97, 0.96, and 0.96, respectively.",
+      "watch_item": "The abstract does not detail external validation or safeguards against leakage from synthetic paraphrases, limiting confidence in real-world generalization.",
       "hashtags": [
-        "#ClinicalAI",
+        "#CancerAI",
         "#ThyroidCancer",
-        "#RecurrencePrediction",
+        "#ClinicalPrediction",
         "#LowDataLearning",
         "#ExplainableAI"
       ],
@@ -101,438 +101,7 @@
       "paper_title": "Can GPT Be Used as an Alternative Prediction Model to Traditional Machine Learning and Neural Networks on Low-Volume Clinical Data?",
       "paper_date": "2026-10-13",
       "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-10-18T20:42:50",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-15-arxiv-graphbeat_graph_based_bucketized_event_aggregation_over_time_for_early_risk_stratification",
-    "arxiv_id": "2610.22014v1",
-    "date": "2026-10-15",
-    "title": "GraphBEAT: Graph-based Bucketized Event Aggregation Over Time for Early Risk Stratification of Gastrointestinal Cancers",
-    "authors": "Leo Y. Li-Han, Chris Varghese, Elizabeth B. Habermann, Mark J. Truty, William R. G. Perry, Cornelius A. Thiels",
-    "abstract": "Longitudinal electronic health records (EHRs) contain complementary diagnostic and laboratory information about patient health. However, irregularity, sparsity, heterogeneity, and incompleteness in documentation complicate EHR modeling. To address the problem, we introduce GraphBEAT (Graph-based Bucketized Event Aggregation over Time), a temporal graph representation learning framework that groups clinical events into time buckets and transforms observed features into patient-specific, temporally directed graphs to enable early risk stratification for gastrointestinal cancers. Each node in an EHR graph encodes feature identity, observed value, and temporal position of clinical events. A context-aware, time-decay message-passing mechanism models transitions between successive buckets, followed by multi-head attention pooling to generate patient-level representations. GraphBEAT was trained and evaluated on multi-site longitudinal diagnosis codes and laboratory tests to predict pancreatic, liver, and intestinal cancer at 12-, 24-, and 36-month diagnostic lead times. In all experimental setups, GraphBEAT consistently outperformed baseline graph neural networks (GraphSAGE, GAT, and GCN) and sequence modeling approaches (Transformer and long short-term memory [LSTM]). GraphBEAT also required over 250x fewer floating-point operations per patient and over 20x fewer parameters than the Transformer and LSTM baselines. These results support GraphBEAT as an accurate and computationally efficient approach for cancer risk stratification from sparse, heterogeneous longitudinal health records.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-15T14:55:39Z",
-    "updated": "2026-10-15T14:55:39Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG",
-      "cs.AI",
-      "eess.SP"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.22014v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.22014v1"
-      }
-    ],
-    "score": 62,
-    "infographic": {
-      "key_insight": "GraphBEAT outperformed tested graph and sequence models for early gastrointestinal cancer risk prediction while using substantially less computation.",
-      "clinical_relevance": "This research could support earlier risk stratification for pancreatic, liver, and intestinal cancers; it addresses risk prediction, not cancer drug discovery.",
-      "method": [
-        "Groups diagnosis codes and laboratory results into time buckets and patient-specific temporal graphs.",
-        "Encodes event identity, observed value, and timing, with context-aware, time-decay message passing.",
-        "Uses multi-head attention pooling to generate patient-level representations."
-      ],
-      "evidence_signal": "In multi-site longitudinal EHR evaluations at 12-, 24-, and 36-month diagnostic lead times, GraphBEAT outperformed all tested baselines and required over 250× fewer FLOPs per patient and over 20× fewer parameters than Transformer and LSTM baselines.",
-      "watch_item": "The abstract does not report absolute predictive performance or prospective clinical validation, leaving real-world utility uncertain.",
-      "hashtags": [
-        "#GraphBEAT",
-        "#CancerRiskPrediction",
-        "#GraphNeuralNetworks",
-        "#ElectronicHealthRecords",
-        "#PrecisionOncology"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-15-arxiv-graphbeat_graph_based_bucketized_event_aggregation_over_time_for_early_risk_stratification",
-      "paper_title": "GraphBEAT: Graph-based Bucketized Event Aggregation Over Time for Early Risk Stratification of Gastrointestinal Cancers",
-      "paper_date": "2026-10-15",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-18T20:42:53",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-12-arxiv-maddie_multi_agent_drug_discovery_engine",
-    "arxiv_id": "2610.16975v1",
-    "date": "2026-10-12",
-    "title": "MADDIE: Multi-Agent Drug Discovery Engine",
-    "authors": "Ye Liu, Reza Averly, Avery Meyer, Frazier N. Baker, Ruoxi Gao, Daniel Adu-Ampratwum",
-    "abstract": "Drug discovery remains a resource-intensive and time-consuming process, involving billions of dollars and a decade of development to advance a drug to market. While many in silico tools have accelerated this process, operating them still demands substantial time, effort, and expertise from medicinal chemists. Autonomous systems built on Large Language Models (LLMs) have emerged as a promising solution, yet current designs limit their performance. Existing single-agent systems scale poorly to long-horizon, multi-step, and realistic tasks, whereas multi-agent systems typically execute predefined workflows that cannot capture the iterative, non-linear nature of a real drug discovery campaign. Here, we present MADDIE, a multi-agent drug discovery engine. It comprises a central agent, Orchestrator, and four specialized worker agents: HitIdentifier, LeadOptimizer, Synthesizer, and Evaluator, each representing a critical step in a drug discovery campaign. Under Orchestrator's orchestration and coordination, these worker agents are composed into flexible workflows, enabling MADDIE to adapt its strategy and navigate the drug discovery pipeline end-to-end. Across 50 protein targets, MADDIE produces molecules satisfying key property requirements and their synthesis routes, outperforming existing agentic systems, generative models, and general-purpose LLMs by a wide margin. Our analysis reveals how these agents collaborate and that MADDIE can employ different strategies across targets to achieve the campaign's goal, while still being efficient in time and tokens. Together, they demonstrate MADDIE as a low-cost, effective, and efficient autonomous engine for accelerating drug discovery. Code and dataset is available via https://github.com/ninglab/MADDIE.",
-    "category": "Therapeutic Discovery",
-    "source": "arXiv",
-    "published": "2026-10-12T15:37:37Z",
-    "updated": "2026-10-12T15:37:37Z",
-    "primary_category": "cs.AI",
-    "categories": [
-      "cs.AI"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.16975v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.16975v1"
-      }
-    ],
-    "score": 61,
-    "infographic": {
-      "key_insight": "MADDIE coordinates specialized AI agents in flexible workflows to propose drug candidates and synthesis routes.",
-      "clinical_relevance": "MADDIE could support early-stage therapeutic discovery, but the abstract does not establish cancer-specific efficacy or patient benefit.",
-      "method": [
-        "A central Orchestrator coordinates four specialized agents.",
-        "HitIdentifier, LeadOptimizer, Synthesizer, and Evaluator handle complementary discovery tasks.",
-        "Adaptive workflows support iterative candidate design and evaluation."
-      ],
-      "evidence_signal": "Across 50 protein targets, the authors report molecules meeting key property requirements with synthesis routes and better performance than agentic systems, generative models, and general-purpose LLMs.",
-      "watch_item": "The abstract reports no experimental validation of candidate activity or synthesis routes, leaving real-world feasibility uncertain.",
-      "hashtags": [
-        "#AIDrugDiscovery",
-        "#MultiAgentAI",
-        "#TherapeuticDiscovery",
-        "#MedicinalChemistry",
-        "#MADDIE"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-12-arxiv-maddie_multi_agent_drug_discovery_engine",
-      "paper_title": "MADDIE: Multi-Agent Drug Discovery Engine",
-      "paper_date": "2026-10-12",
-      "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-18T20:42:55",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-12-arxiv-reinforcement_learning_in_partially_verifiable_environments_for_colon_cancer_treatment_pla",
-    "arxiv_id": "2610.17426v1",
-    "date": "2026-10-12",
-    "title": "Reinforcement Learning In Partially Verifiable Environments for Colon Cancer Treatment Planning",
-    "authors": "Li-Ching Chen, Andrés Franco Valiente, Yuta Ishiyama, Zachary R. Chalmers, William Chen, Kelsey Natsuhara",
-    "abstract": "Clinical decision-making is a sequential process of information collection, clinical inference, and forecasting under partial observability, often without a uniquely correct treatment decision. Large language models (LLMs) have demonstrated strong medical question-answering capabilities but extending these advances to clinical reasoning remains challenging because many clinical tasks are only partially verifiable. Recent clinical reinforcement learning (RL) work has therefore largely focused on diagnostic endpoints, where correctness can be more directly verified. Oncology treatment decision making is a particularly challenging instance of this problem that extends beyond medical question-answering in which multiple decision trajectories can be clinically defensible for the same partially observed patient state. We formulate oncology treatment planning as an interactive RL problem under partial observability and construct patient-specific, process-aware rewards from decision processes observed in real world clinical records. The agent must learn to sequentially acquire information from a structured patient representation before committing to a first-line treatment recommendation, and is evaluated on information gathering, treatment selection, and reasoning alignment. Using GRPO and GDPO to optimize Llama-3.1-8B-Instruct within this environment, RL substantially improves the base policy beyond frontier model capabilities. The GDPO-trained policy increases Mean@3 scalar clinical reward by $79.60\\%$ over base Llama and exceeds GPT-5.2 by $18.82\\%$ under the same interactive environment, while reducing query count during training. Overall, our results show that patient-specific, partially verifiable rewards can provide an effective learning signal for interactive clinical RL when both the patient state and the underlying clinical decision process are only partially observed.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-12T21:39:21Z",
-    "updated": "2026-10-12T21:39:21Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.17426v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.17426v1"
-      }
-    ],
-    "score": 60,
-    "infographic": {
-      "key_insight": "Reinforcement learning improved an LLM’s interactive colon cancer treatment planning using patient-specific rewards derived from clinical decision processes.",
-      "clinical_relevance": "This study explores first-line treatment planning—not drug discovery—and does not establish clinical safety or patient benefit.",
-      "method": [
-        "Model planning as sequential information gathering under partial observability.",
-        "Construct process-aware rewards from real-world clinical records.",
-        "Train Llama-3.1-8B-Instruct with GRPO and GDPO reinforcement learning."
-      ],
-      "evidence_signal": "In the study’s interactive evaluation, GDPO increased Mean@3 scalar clinical reward by 79.60% over base Llama and exceeded GPT-5.2 by 18.82%, while query counts decreased during training.",
-      "watch_item": "Higher reward scores do not establish better patient outcomes; prospective clinical validation is needed.",
-      "hashtags": [
-        "#PrecisionOncology",
-        "#ColonCancer",
-        "#ReinforcementLearning",
-        "#ClinicalAI",
-        "#TreatmentPlanning"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-12-arxiv-reinforcement_learning_in_partially_verifiable_environments_for_colon_cancer_treatment_pla",
-      "paper_title": "Reinforcement Learning In Partially Verifiable Environments for Colon Cancer Treatment Planning",
-      "paper_date": "2026-10-12",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-18T20:42:57",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-12-arxiv-spectral_considerations_on_unsupervised_time_domain_eeg_representation_learning_with_deep",
-    "arxiv_id": "2610.16264v1",
-    "date": "2026-10-12",
-    "title": "Spectral Considerations on Unsupervised Time-domain EEG Representation Learning with Deep Networks",
-    "authors": "David Aquilué-Llorens, Abel Puigseslloses, Angel Blanco, Claire Braboszcz, Aureli Soria-Frisch",
-    "abstract": "Electroencephalography (EEG) is a non-invasive, scalable source of quantitative biomarkers for the early diagnosis of brain disorders, and deep representation learning has become a powerful paradigm for extracting information-rich latent features from raw signals. However, neural networks tend to under-represent high-frequency information, a concern that is especially acute for EEG given its oscillatory nature and characteristic $1/f^χ$ power decay, which risks masking disease-relevant high-frequency signatures. In this study, we systematically investigate the spectral constraints of unsupervised time-domain feature extraction across three autoencoder architectures (LSTMVAE, VAEEG, Transformer) and a state-of-the-art EEG foundation model. Using synthetic experiments and empirical validation, we show that while autoencoders capture macro-scale shifts such as alpha slowing, they remain biased against higher frequencies due to a magnitude-driven masking effect induced by the Mean Squared Error loss under 1/f-decaying spectra. Increasing latent dimensionality mitigates this attenuation but sacrifices latent compactness and generative stability. We argue that, as the field advances toward large-scale foundation-level feature extractors, it is imperative to move beyond simple time-domain reconstruction and to integrate spectral-domain loss terms and gradient-balancing techniques, so that the subtle high-frequency transients critical for diagnosing complex brain disorders are preserved in the latent representation.",
-    "category": "Cancer AI Methods",
-    "source": "arXiv",
-    "published": "2026-10-12T06:45:09Z",
-    "updated": "2026-10-12T06:45:09Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.16264v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.16264v1"
-      }
-    ],
-    "score": 59,
-    "infographic": {
-      "key_insight": "Time-domain EEG representation learning can under-represent high-frequency signals because mean squared error favors larger, low-frequency components.",
-      "clinical_relevance": "The findings may inform EEG biomarker research for brain disorders, but the abstract does not address cancer drug discovery or establish clinical utility.",
-      "method": [
-        "Investigated three autoencoder architectures: LSTMVAE, VAEEG and Transformer.",
-        "Evaluated a state-of-the-art EEG foundation model.",
-        "Examined spectral bias and the effects of increasing latent dimensionality."
-      ],
-      "evidence_signal": "Synthetic experiments and empirical validation showed that autoencoders captured broad changes such as alpha slowing while attenuating higher-frequency information; no numerical performance results are provided in the abstract.",
-      "watch_item": "Larger latent representations reduced attenuation but compromised compactness and generative stability; spectral losses and gradient balancing are proposed directions rather than established solutions.",
-      "hashtags": [
-        "#EEG",
-        "#RepresentationLearning",
-        "#SpectralBias",
-        "#Autoencoders",
-        "#BrainBiomarkers"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-12-arxiv-spectral_considerations_on_unsupervised_time_domain_eeg_representation_learning_with_deep",
-      "paper_title": "Spectral Considerations on Unsupervised Time-domain EEG Representation Learning with Deep Networks",
-      "paper_date": "2026-10-12",
-      "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-10-18T20:42:59",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-15-arxiv-when_do_quantum_views_help_complementary_classical_quantum_representations_in_multi_view_f",
-    "arxiv_id": "2610.21395v1",
-    "date": "2026-10-15",
-    "title": "When do quantum views help? Complementary classical-quantum representations in multi-view fusion",
-    "authors": "Azadeh Alavi, Fatemeh Kouchmeshki, Hossein Akhoundi, Yongli Re, Abdolrahman Alavi, Muhammad Usman",
-    "abstract": "Recent studies have reported promising results from quantum machine learning in drug discovery, healthcare, materials science and cybersecurity. Research includes comparisons with classical machine learning algorithms and the development of sequential hybrid pipelines. We propose that fusion can improve prediction when classical and quantum representations capture complementary predictive relationships. Our classical-quantum multi-view framework preserves the full classical input alongside simulated quantum features. Concatenation and attention combine the views; single-view comparisons, replacement and masking controls assess both views' contributions. Controlled angular-polynomial experiments distinguish targets adequately represented by a single view from those that depend on complementary angular and polynomial relationships. For these mixed targets, fusion improves prediction by combining the relevant feature sets, while matched classical representations recover the same benefit, linking the improvement to their complementary predictive content. Controlled classification tests further show that gains depend on alignment between the chosen representation and the target, and on a suitable fusion rule. Benchmark validation shows improved mean predictive performance over classical baselines on Wine, Wisconsin Diagnostic Breast Cancer, three-class Fashion-MNIST and Steel Plates Faults within the evaluated protocols. Classical replacement and masking controls remain competitive, classical baselines lead on Digits and Covertype, and outcomes with missing or corrupted views depend on the available inputs. These findings support evaluating quantum representations for their complementary predictive contribution and matching the representation and fusion strategy to the target relationships.",
-    "category": "Therapeutic Discovery",
-    "source": "arXiv",
-    "published": "2026-10-15T07:15:23Z",
-    "updated": "2026-10-15T07:15:23Z",
-    "primary_category": "quant-ph",
-    "categories": [
-      "quant-ph",
-      "cs.AI"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.21395v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.21395v1"
-      }
-    ],
-    "score": 58,
-    "infographic": {
-      "key_insight": "Classical–quantum fusion can improve prediction when its representations capture complementary relationships, but matched classical representations can provide the same benefit.",
-      "clinical_relevance": "Breast cancer diagnostic benchmarking suggests relevance to biomedical prediction, but the abstract does not establish cancer drug discovery utility or clinical benefit.",
-      "method": [
-        "Preserve full classical inputs alongside simulated quantum features.",
-        "Combine representations using concatenation or attention.",
-        "Assess contributions using single-view, replacement and masking controls."
-      ],
-      "evidence_signal": "Controlled experiments and benchmark evaluations showed improved mean performance over classical baselines on four datasets, including Wisconsin Diagnostic Breast Cancer, while classical baselines led on Digits and Covertype.",
-      "watch_item": "Gains depend on representation–target alignment and fusion strategy; competitive classical controls mean the findings do not establish a uniquely quantum advantage.",
-      "hashtags": [
-        "#QuantumMachineLearning",
-        "#MultiViewLearning",
-        "#BiomedicalAI",
-        "#RepresentationLearning",
-        "#ClassicalQuantumFusion"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-15-arxiv-when_do_quantum_views_help_complementary_classical_quantum_representations_in_multi_view_f",
-      "paper_title": "When do quantum views help? Complementary classical-quantum representations in multi-view fusion",
-      "paper_date": "2026-10-15",
-      "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-18T20:43:01",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-15-arxiv-robust_reinforcement_learning_for_dynamic_treatment_regimes_under_model_and_measurement_un",
-    "arxiv_id": "2610.22336v1",
-    "date": "2026-10-15",
-    "title": "Robust Reinforcement Learning for Dynamic Treatment Regimes under Model and Measurement Uncertainty",
-    "authors": "Chengze Xie, Xuan Wang, Ying Ding, Hairong Wang, Yan Li",
-    "abstract": "We develop a robust reinforcement learning (RL) framework for learning adaptive treatment policies that generalize across patients and remain reliable under errors in the measured biomarker and shifts in the disease dynamics. By modeling the patient as a hidden context, we address generalization and robustness in a unified manner through robust contextual Markov decision processes. Applying our framework to adaptive therapy for metastatic prostate cancer in a simulator calibrated to clinical data, we obtain generalizable and robust policies that substantially outperform the existing adaptive therapy method. In particular, we attain robustness with almost no loss of performance when the biomarker is accurate and the disease evolves as anticipated, and find that the resulting policy Pareto-dominates the existing method across a diverse array of scenarios. Our findings suggest that robust RL holds great promise as a principled methodology for learning reliable adaptive treatment policies.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-15T17:54:13Z",
-    "updated": "2026-10-15T17:54:13Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.22336v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.22336v1"
-      }
-    ],
-    "score": 54,
-    "infographic": {
-      "key_insight": "Robust reinforcement learning learned adaptive treatment policies that outperformed an existing adaptive therapy method in simulated metastatic prostate cancer despite biomarker errors and shifts in disease dynamics.",
-      "clinical_relevance": "The approach could inform more reliable treatment adaptation in precision oncology, but it is not a drug discovery method or clinically validated treatment strategy.",
-      "method": [
-        "Represent patient differences as hidden context in a contextual Markov decision process.",
-        "Learn policies robust to biomarker measurement errors and uncertain disease dynamics.",
-        "Evaluate adaptive therapy policies in a simulator calibrated to clinical data."
-      ],
-      "evidence_signal": "In simulation, the robust policies Pareto-dominated the existing method across diverse scenarios, with almost no performance loss under accurate biomarkers and anticipated disease dynamics.",
-      "watch_item": "Simulator-based results require prospective clinical validation before patient-care use.",
-      "hashtags": [
-        "#ReinforcementLearning",
-        "#PrecisionOncology",
-        "#AdaptiveTherapy",
-        "#ProstateCancer",
-        "#RobustAI"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-15-arxiv-robust_reinforcement_learning_for_dynamic_treatment_regimes_under_model_and_measurement_un",
-      "paper_title": "Robust Reinforcement Learning for Dynamic Treatment Regimes under Model and Measurement Uncertainty",
-      "paper_date": "2026-10-15",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-18T20:43:04",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-13-arxiv-beyond_the_encoder_object_centric_representations_emerging_from_segmentation_foundation_mo",
-    "arxiv_id": "2610.18543v1",
-    "date": "2026-10-13",
-    "title": "Beyond the Encoder: Object-Centric Representations Emerging from Segmentation Foundation Models",
-    "authors": "Michalis Pistos, Bartłomiej W. Papież",
-    "abstract": "Foundation models are increasingly used as feature extractors for downstream tasks with limited data, typically through representations obtained from their encoders. However, foundation models trained for structured tasks such as segmentation also form object-specific representations during task execution, whose transferability remains largely unexplored. We investigate Segment Anything Model 2 (SAM2) object pointers, compact object-level representations produced through the segmentation pathway, as transferable representations for downstream tumour prediction. Through experiments on two PET/CT tumour prediction tasks, we find that object pointers learned using segmentation supervision alone already encode tumour-discriminative information, despite never being optimised for the downstream labels. We further introduce task-guided object pointers, where an auxiliary objective jointly shapes the object pointer space for the downstream prediction together with segmentation. Task-guided pointers improve cancer-type classification, outperforming conventional encoder-based transfer and radiomics, while segmentation-only pointers perform best on the more challenging recurrence prediction task. Representation analyses reveal associations between object pointers and interpretable radiomics features, class-dependent organisation of the learned representation space, and explicit spatial grounding around the segmented tumour. Together, these findings suggest that useful transferable representations can emerge through the execution of a foundation model's primary task, providing an alternative to conventional encoder-based transfer.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-13T15:22:00Z",
-    "updated": "2026-10-13T15:22:00Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV",
-      "cs.LG"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.18543v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.18543v1"
-      }
-    ],
-    "score": 54,
-    "infographic": {
-      "key_insight": "SAM2’s object-level representations encode tumour-discriminative information, offering an alternative to conventional encoder-based features.",
-      "clinical_relevance": "These representations could support imaging-based cancer-type and recurrence prediction, but the study does not establish clinical utility or address drug discovery directly.",
-      "method": [
-        "Extract compact object pointers produced during SAM2 segmentation.",
-        "Add an auxiliary prediction objective to create task-guided object pointers.",
-        "Compare downstream prediction with encoder-based features and radiomics."
-      ],
-      "evidence_signal": "Across two PET/CT tumour prediction tasks, task-guided pointers improved cancer-type classification over encoder-based transfer and radiomics, while segmentation-only pointers performed best for recurrence prediction.",
-      "watch_item": "The abstract provides no sample sizes, effect sizes, or external-validation details, limiting assessment of robustness and generalisability.",
-      "hashtags": [
-        "#PrecisionOncology",
-        "#MedicalImagingAI",
-        "#FoundationModels",
-        "#TumourSegmentation",
-        "#RepresentationLearning"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-13-arxiv-beyond_the_encoder_object_centric_representations_emerging_from_segmentation_foundation_mo",
-      "paper_title": "Beyond the Encoder: Object-Centric Representations Emerging from Segmentation Foundation Models",
-      "paper_date": "2026-10-13",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-18T20:43:06",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-13-arxiv-morphology_aware_deep_learning_predicts_colorectal_cancer_survival_from_whole_slide_images",
-    "arxiv_id": "2610.17603v2",
-    "date": "2026-10-13",
-    "title": "Morphology-aware deep learning predicts colorectal cancer survival from whole-slide images",
-    "authors": "Hikmat Khan, Metin N. Gurcan, Anil Parwani, Wendy L. Frankel, Wei Chen, Muhammad Khalid Khan Niazi",
-    "abstract": "Background: Five-year survival prediction from hematoxylin-and-eosin whole-slide images could support risk stratification, but the task is weakly supervised, and the tissue morphologies carrying prognostic information remain incompletely characterized. Methods: We conducted a retrospective secondary analysis using TCGA-COAD/READ (n=562) for morphology-specific analysis, Alliance/ CALGB 89803 (n=424) for model development, and SurGen (n=218) for external evaluation. We propose MorphContrast, a morphology-aware contrastive multiple-instance learning framework that uses tissue labels as structural supervision for five-year survival prediction. MorphContrast combines gated-attention pooling with three auxiliary objectives: patch-level morphology labels define within-patient contrasts, outcome concordance or discordance defines cross-patient contrasts within matched morphologies, and diversity regularization discourages representational collapse. Morphology-matched patches from patients with discordant outcomes serve as hard negatives, encouraging prognostic discrimination within comparable histologic contexts. Results: Morphology-specific models show weak but distributed prognostic discrimination: adipose tissue achieves an area under the receiver operating characteristic curve (AUC) of 0.622, stroma achieves 0.604, and both perform comparably to tumor epithelium (0.601-0.605). On Alliance/CALGB 89803, the single model achieves an AUC of 0.642, while the post hoc ensemble reaches a pooled out-of-fold AUC of 0.70 and a risk-group hazard ratio of 3.79 (95% confidence interval: 2.55-5.63). On the external SurGen colon cancer cohort (n=218), the single model and ensemble achieve AUCs of 0.669 and 0.678, respectively. Conclusions: These findings support tissue morphology as structural supervision for outcome-aware representation learning in colorectal cancer prognosis.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-13T02:22:42Z",
-    "updated": "2026-10-14T15:31:32Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV",
-      "cs.AI",
-      "cs.LG"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.17603v2"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.17603v2"
-      }
-    ],
-    "score": 54,
-    "infographic": {
-      "key_insight": "MorphContrast uses tissue morphology to guide AI prediction of five-year colorectal cancer survival from whole-slide images, with prognostic signals extending beyond tumor tissue.",
-      "clinical_relevance": "This prognosis study—not drug discovery—could inform future risk-stratification research but does not establish clinical utility or guide treatment.",
-      "method": [
-        "Combines morphology-aware contrastive learning with gated-attention multiple-instance pooling.",
-        "Contrasts tissue patches within and across patients, using outcome-discordant, morphology-matched patches as hard negatives.",
-        "Adds diversity regularization to discourage representational collapse."
-      ],
-      "evidence_signal": "Retrospective analysis used TCGA (n=562), Alliance/CALGB 89803 (n=424), and external SurGen data (n=218); single-model/ensemble AUCs were 0.642/0.70 internally and 0.669/0.678 externally.",
-      "watch_item": "Modest external discrimination and post hoc ensemble evaluation warrant prospective validation before clinical use.",
-      "hashtags": [
-        "#ColorectalCancer",
-        "#ComputationalPathology",
-        "#SurvivalPrediction",
-        "#ContrastiveLearning",
-        "#PrecisionOncology"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-13-arxiv-morphology_aware_deep_learning_predicts_colorectal_cancer_survival_from_whole_slide_images",
-      "paper_title": "Morphology-aware deep learning predicts colorectal cancer survival from whole-slide images",
-      "paper_date": "2026-10-13",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-18T20:43:08",
+      "generated_at": "2026-10-19T14:12:02",
       "generator": "openai"
     }
   },
@@ -561,21 +130,21 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.12.26365129v1.full.pdf"
       }
     ],
-    "score": 54,
+    "score": 49,
     "infographic": {
-      "key_insight": "COVID-19 vaccination was associated with better overall survival among cancer patients in Northwestern Russia; this was not an AI drug discovery study.",
-      "clinical_relevance": "The findings highlight low vaccination coverage and an association with survival in cancer patients, without establishing causality.",
+      "key_insight": "COVID-19 vaccination was associated with better overall survival among cancer patients in Northwestern Russia; this was not a drug-discovery study.",
+      "clinical_relevance": "The findings highlight vaccination coverage and COVID-19 burden as relevant factors in cancer outcomes, without establishing a causal survival benefit.",
       "method": [
         "Linked cancer registry, vaccination records, and AI-analyzed chest CT data for 1,144 patients.",
-        "Compared survival using Kaplan–Meier and adjusted Cox regression analyses.",
+        "Compared survival using Kaplan–Meier analysis and adjusted Cox regression.",
         "Used March and November 2021 landmark analyses to mitigate immortal time bias."
       ],
-      "evidence_signal": "Only 6.6% received vaccination; the primary landmark analysis reported 3-year survival of 80.3% versus 45.7% and an adjusted mortality hazard ratio of 0.40 (95% CI 0.25–0.64).",
-      "watch_item": "Vaccinated patients had earlier-stage cancer and less active treatment, so residual confounding may partly explain the survival association despite adjustment.",
+      "evidence_signal": "Vaccination coverage was 6.6%; the primary landmark analysis found 3-year survival of 80.3% versus 45.7% and an adjusted mortality HR of 0.40 (95% CI 0.25–0.64), with an attenuated association in sensitivity analysis.",
+      "watch_item": "The retrospective design, small vaccinated group, and differences in cancer stage and treatment leave potential residual confounding.",
       "hashtags": [
         "#CancerResearch",
         "#COVID19Vaccination",
-        "#RealWorldEvidence",
+        "#RegistryStudy",
         "#AIImaging",
         "#SurvivalAnalysis"
       ],
@@ -585,488 +154,166 @@
       "paper_title": "COVID-19 vaccination and survival of cancer patients in Northwestern Russia: a historical registry-based cohort study",
       "paper_date": "2026-10-13",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-18T20:43:10",
+      "generated_at": "2026-10-19T14:12:05",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-10-15-arxiv-pet_quantification_preserving_registration_for_longitudinal_whole_body_psma_pet_ct",
-    "arxiv_id": "2610.21451v1",
-    "date": "2026-10-15",
-    "title": "PET Quantification-Preserving Registration for Longitudinal Whole-Body PSMA PET/CT",
-    "authors": "Fryderyk Kögl, Anna Reithmeir, Daniel M. Lang, Emily Chan, Rickmer Braren, Julia A. Schnabel",
-    "abstract": "We adapt the diffeomorphic coarse-to-fine LapIRN architecture for longitudinal whole-body PSMA PET/CT registration in the Learn2Reg 2026 PSMAReg challenge. The method combines affine pre-registration, multi-modal deformable registration, and test-time instance optimization. We further introduce PET biomarker preservation losses for metabolic tumor volume (MTV) and total lesion glycolysis (TLG), including Jacobian-based constraints, and a per-structure rigidity regularization for skeletal structures. The submitted configuration achieved 81.0% DSC and 6.17 mm HD95, with MTV and TLG errors of 3.3% and 3.3%, respectively, on our evaluation protocol. Code is available at https://github.com/koegl/psmareg.",
-    "category": "Target Biology",
-    "source": "arXiv",
-    "published": "2026-10-15T07:54:21Z",
-    "updated": "2026-10-15T07:54:21Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.21451v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.21451v1"
-      }
-    ],
-    "score": 51,
-    "infographic": {
-      "key_insight": "A PET-aware AI registration method aligns longitudinal whole-body PSMA PET/CT scans while limiting changes to quantitative tumor measurements.",
-      "clinical_relevance": "More consistent scan alignment could support longitudinal cancer imaging research and treatment-response assessment; this is an imaging method, not a drug-discovery study.",
-      "method": [
-        "Adapted coarse-to-fine diffeomorphic LapIRN with affine pre-registration and multimodal deformable registration.",
-        "Added test-time instance optimization and skeletal rigidity regularization.",
-        "Introduced MTV and TLG preservation losses with Jacobian-based constraints."
-      ],
-      "evidence_signal": "For the Learn2Reg 2026 PSMAReg challenge submission, the authors report 81.0% DSC, 6.17 mm HD95, and 3.3% errors for both MTV and TLG under their evaluation protocol.",
-      "watch_item": "The abstract does not specify evaluation sample size or external validation, leaving generalizability uncertain.",
-      "hashtags": [
-        "#PSMAPET",
-        "#MedicalImagingAI",
-        "#ImageRegistration",
-        "#QuantitativeImaging",
-        "#CancerResearch"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-15-arxiv-pet_quantification_preserving_registration_for_longitudinal_whole_body_psma_pet_ct",
-      "paper_title": "PET Quantification-Preserving Registration for Longitudinal Whole-Body PSMA PET/CT",
-      "paper_date": "2026-10-15",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-10-18T20:43:12",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-13-arxiv-mfg_multi_turn_feedback_guided_molecular_optimization",
-    "arxiv_id": "2610.18851v1",
+    "id": "2026-10-13-medrxiv-multimodal_machine_learning_based_clinical_and_genomic_prognostic_factors_for_progression",
+    "doi": "10.64898/2026.10.09.26364892",
     "date": "2026-10-13",
-    "title": "MFG: Multi-turn Feedback Guided Molecular Optimization",
-    "authors": "Trieu Nguyen, Frazier N. Baker, Ruoxi Gao, Daniel Adu-Ampratwum, Xia Ning",
-    "abstract": "Multi-objective molecular optimization is a critical process in drug discovery that aims to modify a given molecule to simultaneously improve multiple properties while maintaining a similar overall structure. This process often requires iterative modifications guided by computational or experimental feedback. Recent large language model (LLM)-based methods have begun to explore this iterative approach; however, these methods are not explicitly trained to leverage such feedback, while existing approaches primarily focus on single-turn molecular optimization. To address this gap, we introduce Multi-turn Feedback Guided (MFG) molecular optimization, a reinforcement learning framework that trains an LLM to progressively optimize molecules using feedback from previous turns. MFG introduces a feedback vector capturing both property improvements and source molecule similarity, alongside a feedback-aligned reward function that promotes progressive improvement across turns. We apply MFG over $\\text{GeLLM}^{3}\\text{O}$, a state-of-the-art LLM model for multi-objective molecular optimization, evaluate $\\text{GeLLM}^{3}\\text{O-MFG}$ on ten multi-objective molecular optimization tasks. The results demonstrate that $\\text{GeLLM}^{3}\\text{O-MFG}$ achieves the highest average similarity-constrained success rate ($81.50%$), outperforming the base model $\\text{GeLLM}^{3}\\text{O}$ ($70.81%$).",
-    "category": "Therapeutic Discovery",
-    "source": "arXiv",
-    "published": "2026-10-13T17:58:41Z",
-    "updated": "2026-10-13T17:58:41Z",
-    "primary_category": "cs.AI",
-    "categories": [
-      "cs.AI",
-      "cs.LG",
-      "q-bio.QM"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.18851v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.18851v1"
-      }
-    ],
-    "score": 51,
-    "infographic": {
-      "key_insight": "Training an LLM to use feedback across successive molecular edits improved multi-objective optimization while preserving similarity to the starting molecule.",
-      "clinical_relevance": "This approach could support early-stage therapeutic discovery, but the abstract provides no cancer-specific or clinical validation.",
-      "method": [
-        "Use reinforcement learning to train GeLLM³O for multi-turn molecular optimization.",
-        "Track property improvements and source-molecule similarity in a feedback vector.",
-        "Align rewards with feedback to encourage progressive improvement across turns."
-      ],
-      "evidence_signal": "Across 10 multi-objective optimization tasks, GeLLM³O-MFG achieved an average similarity-constrained success rate of 81.50%, versus 70.81% for the base model.",
-      "watch_item": "Computational optimization success does not establish experimental activity, safety, or therapeutic benefit.",
-      "hashtags": [
-        "#AIDrugDiscovery",
-        "#MolecularOptimization",
-        "#ReinforcementLearning",
-        "#LargeLanguageModels",
-        "#TherapeuticDiscovery"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-13-arxiv-mfg_multi_turn_feedback_guided_molecular_optimization",
-      "paper_title": "MFG: Multi-turn Feedback Guided Molecular Optimization",
-      "paper_date": "2026-10-13",
-      "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-18T20:43:14",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-12-arxiv-ai_assisted_tumor_growth_law_discovery_from_sparse_data_refitting_and_llm_based_ranking",
-    "arxiv_id": "2610.16891v1",
-    "date": "2026-10-12",
-    "title": "AI-Assisted Tumor-Growth Law Discovery from Sparse Data: Refitting and LLM-Based Ranking",
-    "authors": "Yitian Lu, Weinan Wang",
-    "abstract": "Inferring tumor-growth laws from sparse, noisy observations requires more than accurate curve fitting. We study an AI-assisted workflow involving symbolic regression, mathematical admissibility checks, coefficient refitting, and large language model (LLM) ranking. Synthetic Gompertz data allow trajectory fit, forecasting, and recovery of the governing growth law to be assessed separately. A dense noiseless control recovers the generating family, but sparse noisy sampling frequently leads to alternative forms. Among retained candidates in the tested configurations, physics-informed neural network refitting often increases growth-law error, whereas classical nonlinear least squares usually reduces it. A separate exploratory analysis of archived LLM rankings shows no consistent improvement over selection by training error and identifies errors in mathematical reasoning. Plausible saturation, accurate trajectory fits, and convincing explanations can therefore coexist with incorrect growth laws. Mathematical validity and law recovery require evaluation alongside predictive performance.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-12T14:47:40Z",
-    "updated": "2026-10-12T14:47:40Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.16891v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.16891v1"
-      }
-    ],
-    "score": 50,
-    "infographic": {
-      "key_insight": "Accurate tumor-growth curve fits and plausible AI explanations can mask incorrect governing growth laws.",
-      "clinical_relevance": "This modeling study supports more rigorous validation of AI-assisted tumor-growth models but does not establish clinical utility or drug-discovery benefits.",
-      "method": [
-        "Generate candidate growth laws using symbolic regression and check mathematical admissibility.",
-        "Refit coefficients using physics-informed neural networks or nonlinear least squares.",
-        "Explore archived LLM rankings against selection by training error."
-      ],
-      "evidence_signal": "Synthetic Gompertz experiments recovered the generating family with dense noiseless data, but sparse noisy data often yielded alternative laws; nonlinear least squares usually reduced law error, while neural-network refitting often increased it.",
-      "watch_item": "Synthetic-data results and exploratory LLM rankings do not establish reliability in patient data; forecasting accuracy and growth-law recovery require separate evaluation.",
-      "hashtags": [
-        "#TumorGrowthModeling",
-        "#SymbolicRegression",
-        "#ScientificMachineLearning",
-        "#PrecisionOncology",
-        "#AIValidation"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-12-arxiv-ai_assisted_tumor_growth_law_discovery_from_sparse_data_refitting_and_llm_based_ranking",
-      "paper_title": "AI-Assisted Tumor-Growth Law Discovery from Sparse Data: Refitting and LLM-Based Ranking",
-      "paper_date": "2026-10-12",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-18T20:43:16",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-15-arxiv-beyond_fixed_acquisition_functions_temporal_difference_active_learning_for_perturbation_di",
-    "arxiv_id": "2610.22122v1",
-    "date": "2026-10-15",
-    "title": "Beyond Fixed Acquisition Functions: Temporal Difference Active Learning for Perturbation Discovery",
-    "authors": "Xudong Zhang, Jianzhe Li, Yitong Tang, Peijie Zhou",
-    "abstract": "Genetic and drug perturbation screens are important tools for elucidating disease mechanisms and validating therapeutic targets, but experimental costs limit the number of candidates that can be tested. Existing perturbation screening methods typically update the surrogate model with feedback while keeping the acquisition function fixed, limiting their ability to adapt selection to different response landscapes. Experimental feedback reveals current hits and informs subsequent selection by updating candidate predictions, providing a training signal for learning how to select experiments. We formulate budgeted perturbation discovery as a sequential decision problem and propose Temporal Difference Active Learning (TDAL), which learns an acquisition function online through temporal difference learning from a single screening trajectory, accounting for current hits and future discoveries. TDAL uses the Hellinger distance between hit probabilities for unmeasured candidates before and after an experiment to weight successor value, and reuses measured outcomes through leave-batch-out (LBO) to construct virtual transitions and alleviate training data scarcity. Across eight public screens spanning single, double, and triple perturbations under varied experimental configurations, TDAL achieves an average rank of 1.63 among eleven methods and ranks first on four tasks, demonstrating its adaptability across response landscapes.",
-    "category": "Therapeutic Discovery",
-    "source": "arXiv",
-    "published": "2026-10-15T16:00:11Z",
-    "updated": "2026-10-15T16:00:11Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.22122v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.22122v1"
-      }
-    ],
-    "score": 49,
-    "infographic": {
-      "key_insight": "TDAL learns how to select perturbation experiments as screening progresses, balancing immediate hits with future discoveries instead of using a fixed acquisition function.",
-      "clinical_relevance": "More efficient genetic and drug perturbation screening could support cancer target discovery, but the abstract does not establish clinical benefit.",
-      "method": [
-        "Learns an acquisition function online using temporal difference learning from a single screening trajectory.",
-        "Uses Hellinger distance between updated hit probabilities to weight future discovery value.",
-        "Reuses measured outcomes through leave-batch-out virtual transitions to address sparse training data."
-      ],
-      "evidence_signal": "Across eight public screens covering single, double, and triple perturbations, TDAL achieved an average rank of 1.63 among 11 methods and ranked first on four tasks.",
-      "watch_item": "Benchmark rankings do not establish prospective laboratory performance or quantify experimental cost savings.",
-      "hashtags": [
-        "#AIDrugDiscovery",
-        "#ActiveLearning",
-        "#PerturbationScreening",
-        "#TargetDiscovery",
-        "#CancerResearch"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-15-arxiv-beyond_fixed_acquisition_functions_temporal_difference_active_learning_for_perturbation_di",
-      "paper_title": "Beyond Fixed Acquisition Functions: Temporal Difference Active Learning for Perturbation Discovery",
-      "paper_date": "2026-10-15",
-      "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-18T20:43:18",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-12-medrxiv-developing_an_omop_standardized_prostate_cancer_database_and_improving_data_quality_using",
-    "doi": "10.64898/2026.06.30.26356984",
-    "date": "2026-10-12",
-    "title": "Developing an OMOP-Standardized Prostate Cancer Database and Improving Data Quality Using NLP and PSA-Based Algorithms",
-    "authors": "Wang, J.; Jackson, J. C.; Garza, A.; Nalla, S.; Ninnemann, T.; Zhang, Y.; Kuo, Y.-F.",
-    "abstract": "ObjectiveTo develop and evaluate an Observational Medical Outcomes Partnership-(OMOP-) standardized prostate cancer database from the University of Texas Medical Branch (UTMB) Epic Electronic Health Record (EHR) and improve data quality using natural language processing(NLP) and prostate-specific antigen-(PSA) based algorithms. Materials and MethodsWe built a data pipeline to transform UTMB Epic EHR data for patients identified through the Galveston Cancer Registry (2010-2021) into OMOP Common Data Model (CDM) v5.4. Data quality was assessed by comparing the OMOP-standardized data with Galveston Cancer Registry data using availability agreement, Cohens kappa and Intraclass Correlation Coefficient. NLP was used to extract PSA, Gleason score, and cancer stage from clinical text, and PSA-based algorithms were used to identify missing treatment and biochemical recurrence. ResultsWe extracted 815 analytic cases from UTMB EHR. Among them, 700 (85.9%) were complete and concordant with the cancer registry. PSA showed excellent value agreement. Structured Gleason score and stage data were sparse (n<20), but NLP greately improved capture. Treatment agreement was good compared with the cancer registry and improved slightly for radical prostatectomy after applying a PSA-based algorithm. Using PSA trajectories, we identified 60 cases of biochemical recurrence. DiscussionThe OMOP-standardized data from UTMB showed good agreement with the cancer registry. However, structured EHR fields incompletely captured diagnosis, pathology, and treatment details. NLP and PSA-based algorithms substantially improved data capture. Manual review also revealed errors in registry data, showing that OMOP-standardized EHR data can complement and help improve cancer registry quality. Conclusion: OMOP standardization combined with NLP and PSA-based algorithms improved prostate cancer data quality and research readiness. Lay SummaryElectronic health record (EHR) systems contain valuable long-term health information about cancer, but their use is limited by difficulties in data extraction, the lack of standard data formats, and missing information in structured fields. In this study, we built a data pipeline to convert EHR data into the Observational Medical Outcomes Partnership (OMOP) Common Data Model, a widely used standard format that facilitates data sharing and collaborative research. To address missing data, we used natural language processing (NLP, a computational technique that enables computers to interpret human language) to extract prostate-specific antigen (PSA) levels, Gleason scores (a measure of cancer aggressiveness), and cancer stages from unstructured clinical notes. We also applied algorithms that track PSA blood trends over time to identify unrecorded cancer treatments and detect cancer recurrence. Comparing this database with a cancer registry demonstrated that standardized EHR records provide accurate clinical information and long-term follow-up. While structured EHR fields lacked key tumor characteristics, NLP dramatically improved their capture. Tracking PSA trends identified previously unrecorded treatments and flagged 60 potential cancer recurrences. Overall, combining standardized EHR formats with NLP and PSA-based algorithms creates a rich database to support real-world prostate cancer research.",
+    "title": "Multimodal Machine Learning-Based Clinical and Genomic Prognostic Factors for Progression-Free Survival in Metastatic Breast Cancer Using Phase III MONALEESA Trials",
+    "authors": "Wang, C.; Paul, R.; Li, Y.; Smith, S.; Cao, Q.; Chang, S. H.; Charlab, R.; Coroller, T.; Huang, R.; Amiri-Kordestani, L.; Li, Z.; Liu, Q.; Osgood, C.; Peyrard, S.; Sahiner, B.; Santana-Quintero, L.; Su, F.; Zarate, J. P.; Zhu, H.; Ohlssen, D.; Petrick, N.; Amatya, A.; Solovieff, N.",
+    "abstract": "PurposeCyclin-dependent kinase 4/6 inhibitors in combination with endocrine therapy have become widely adopted as a first-line treatment approach for hormone receptor-positive (HR+)/human epidermal growth factor receptor 2-negative (HER2-) advanced breast cancer (ABC). Through a collaboration between Novartis and the US Food and Drug Administration, we integrated multimodal data from phase III MONALEESA trials to identify novel prognostic factors for HR+/HER2-ABC. Experimental DesignBaseline clinical and genomics data were collected from patients in the MONALEESA-2, -3, and -7 trials. Circulating tumor DNA (ctDNA) from plasma samples and gene expression in archival tumor biopsies were analyzed. Machine learning models were trained (n = 1,355) on progression-free survival (PFS) using multimodal features via fusion models. In a test set (n = 382), prognostic performances were evaluated using the Kaplan-Meier, Cox, and Weibull models. ResultsThe late fusion model achieved a prognostic performance (C-index: 0.727, 95% CI: 0.641-0.799) slightly outperforming early fusion (C-index: 0.718, 95% CI: 0.631-0.791) and single-modality models. Model-based risk stratification identified distinct low- and high-risk groups (PFS HR, 0.28; 95% CI: 0.20-0.38). Among the top 40 features for progression risk (18 clinical, 20 gene expression, and 2 ctDNA), these were associated with higher risk: liver involvement, higher histological grades, early relapse; lower STC2 and RBBP8 expressions and higher FBX05 expression; and higher tumor mutational burden and ctDNA purity. ConclusionsIntegrating clinical and genomic modalities improved progression risk prediction compared with single-modality models, while highlighting salient features that inform the underlying biology and support hypothesis generation.",
     "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-10-12",
-    "updated": "2026-10-12",
-    "primary_category": "health informatics",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "primary_category": "oncology",
     "categories": [
-      "health informatics"
+      "oncology"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.30.26356984v2"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.09.26364892v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.06.30.26356984v2.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.09.26364892v1.full.pdf"
       }
     ],
     "score": 49,
     "infographic": {
-      "key_insight": "OMOP standardization combined with NLP and PSA-based algorithms improved prostate cancer data completeness and research readiness, rather than directly advancing drug discovery.",
-      "clinical_relevance": "More complete longitudinal prostate cancer records could support observational research on treatment and recurrence, but clinical benefits were not evaluated.",
+      "key_insight": "Combining clinical, tumor gene-expression, and circulating tumor DNA data modestly improved machine-learning prediction of progression-free survival in HR+/HER2− advanced breast cancer.",
+      "clinical_relevance": "The findings may support prognostic research and biological hypothesis generation, but do not establish treatment-selection utility or identify new drugs.",
       "method": [
-        "Mapped UTMB Epic EHR data for registry-identified patients from 2010–2021 to OMOP CDM v5.4.",
-        "Used NLP to extract PSA values, Gleason scores, and cancer stage from clinical text.",
-        "Applied PSA-based algorithms to identify missing treatment information and biochemical recurrence."
+        "Integrated baseline data from phase III MONALEESA-2, -3, and -7 trials.",
+        "Trained early- and late-fusion models using clinical features, tumor gene expression, and plasma ctDNA.",
+        "Evaluated progression-free survival prediction and model-based risk groups in a held-out test set."
       ],
-      "evidence_signal": "Of 815 analytic cases, 700 (85.9%) were complete and concordant with registry data; NLP improved sparse pathology capture, and PSA trajectories identified 60 biochemical recurrence cases.",
-      "watch_item": "Single-institution findings and errors found in registry data warrant external validation of extraction and inference algorithms.",
+      "evidence_signal": "Models were trained on 1,355 patients and tested on 382; late fusion achieved a C-index of 0.727 (95% CI, 0.641–0.799), with low- versus high-risk groups showing a PFS hazard ratio of 0.28 (95% CI, 0.20–0.38).",
+      "watch_item": "External validation and prospective assessment of clinical utility are needed before implementation beyond the MONALEESA trial populations.",
       "hashtags": [
-        "#ProstateCancer",
-        "#OMOP",
-        "#ClinicalNLP",
-        "#DataQuality",
-        "#RealWorldData"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-12-medrxiv-developing_an_omop_standardized_prostate_cancer_database_and_improving_data_quality_using",
-      "paper_title": "Developing an OMOP-Standardized Prostate Cancer Database and Improving Data Quality Using NLP and PSA-Based Algorithms",
-      "paper_date": "2026-10-12",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-18T20:43:20",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-15-arxiv-mixture_of_multi_sequence_feature_difference_for_contrast_enhanced_mri_synthesis",
-    "arxiv_id": "2610.21703v1",
-    "date": "2026-10-15",
-    "title": "Mixture of Multi-Sequence Feature Difference for Contrast-Enhanced MRI Synthesis",
-    "authors": "Jonghun Kim, Junmo Kwon, Hyunjin Park",
-    "abstract": "Contrast-enhanced magnetic resonance imaging (CE-MRI) is crucial for accurately diagnosing and segmenting brain tumors. However, the acquisition of CE-MRI requires injecting contrast agents, which poses potential health risks and increases scan costs. Here, we propose a CE-MRI synthesis method from non-contrast sequences, reducing both risk and cost. Unlike existing methods that rely on channel-wise concatenation to fuse multi-sequence information for synthesis, we introduce a Mixture of Feature Difference (MoFD) module. The proposed module uses a dynamic weighting strategy to adaptively select and aggregate informative features from both individual source sequences and explicit differences among them. Quantitative and qualitative evaluations demonstrate that our proposed method outperforms baselines in terms of image fidelity and perceptual quality on the UCSF-PDGM and UPenn-GBM datasets. Our method successfully reconstructs tumor regions and achieves segmentation performance comparable to that obtained with real CE-MRI. Our ablation studies show that although adversarial learning improves perceptual quality, a regression-based variant of our method achieves higher structural fidelity.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-15T11:24:00Z",
-    "updated": "2026-10-15T11:24:00Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.21703v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.21703v1"
-      }
-    ],
-    "score": 48,
-    "infographic": {
-      "key_insight": "Mixture of Feature Difference (MoFD) synthesizes contrast-enhanced brain MRI from non-contrast sequences by adaptively combining sequence features and their differences.",
-      "clinical_relevance": "This imaging research, not drug discovery, could potentially reduce contrast-agent exposure and scan costs while supporting brain tumor assessment.",
-      "method": [
-        "Extract features from multiple non-contrast MRI sequences.",
-        "Dynamically weight individual features and explicit inter-sequence differences.",
-        "Compare adversarial and regression-based synthesis variants."
-      ],
-      "evidence_signal": "On UCSF-PDGM and UPenn-GBM, the method outperformed baselines in image fidelity and perceptual quality, with tumor segmentation performance reported as comparable to real contrast-enhanced MRI.",
-      "watch_item": "The abstract does not establish prospective clinical reliability, so synthetic images should not be assumed interchangeable with acquired contrast-enhanced MRI.",
-      "hashtags": [
-        "#BrainTumorImaging",
-        "#MRISynthesis",
-        "#MedicalAI",
         "#PrecisionOncology",
-        "#ContrastEnhancedMRI"
+        "#BreastCancer",
+        "#MultimodalAI",
+        "#ctDNA",
+        "#PrognosticModeling"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
-      "paper_id": "2026-10-15-arxiv-mixture_of_multi_sequence_feature_difference_for_contrast_enhanced_mri_synthesis",
-      "paper_title": "Mixture of Multi-Sequence Feature Difference for Contrast-Enhanced MRI Synthesis",
-      "paper_date": "2026-10-15",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-18T20:43:22",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-12-arxiv-focus_a_subspecialty_foundation_model_for_intraoperative_central_nervous_system_pathology",
-    "arxiv_id": "2610.16914v1",
-    "date": "2026-10-12",
-    "title": "FOCUS: A Subspecialty Foundation Model for Intraoperative Central Nervous System Pathology",
-    "authors": "Xing Liu, Yifan Guo, Hongtai Lv, Lei Lou, Yuyi Tan, Jiang Du",
-    "abstract": "Intraoperative frozen-section diagnosis of central nervous system (CNS) lesions guides surgical decisions but is challenged by artefacts, diagnostic complexity and time constraints. Most pathology foundation models have limited exposure to CNS frozen tissue. Here we present FOCUS, a subspecialty foundation model pretrained on 27,930 frozen-sections enriched for CNS tissue. FOCUS led 11 internal diagnostic and 12 biomarker-prediction tasks, with mean AUCs of 0.969 and 0.877, respectively, retaining leading performance in temporal and external cohorts. To provide more comprehensive diagnostic information, we further organized ten diagnostic tasks into a WHO-aligned diagnostic hierarchy and separately evaluated FOCUS for lymphoma detection, a critical task for intraoperative surgical decision-making. In reader assessments by six neuropathologists, FOCUS assistance enabled junior readers to approach or exceed unassisted senior readers in hierarchical diagnosis and raised junior readers' lymphoma sensitivity from 81.6% to 94.7%. FOCUS could improve diagnostic accuracy and granularity, inform lymphoma-related resection decisions and provide provisional molecular information. Such capabilities highlight the potential of FOCUS to provide robust, clinically actionable support for intraoperative CNS pathology.",
-    "category": "Target Biology",
-    "source": "arXiv",
-    "published": "2026-10-12T14:59:04Z",
-    "updated": "2026-10-12T14:59:04Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.16914v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.16914v1"
-      }
-    ],
-    "score": 48,
-    "infographic": {
-      "key_insight": "FOCUS is a CNS-focused pathology foundation model that improved intraoperative frozen-section diagnosis and biomarker prediction, rather than drug discovery.",
-      "clinical_relevance": "FOCUS could support more detailed intraoperative CNS tumor assessment, particularly lymphoma detection, while providing provisional molecular information.",
-      "method": [
-        "Pretrained on 27,930 frozen sections enriched for CNS tissue.",
-        "Evaluated on diagnostic and biomarker-prediction tasks, including temporal and external cohorts.",
-        "Organized ten diagnostic tasks into a WHO-aligned hierarchy and assessed assistance in six neuropathologists."
-      ],
-      "evidence_signal": "FOCUS achieved mean AUCs of 0.969 across 11 internal diagnostic tasks and 0.877 across 12 biomarker-prediction tasks; assistance increased junior readers’ lymphoma sensitivity from 81.6% to 94.7%.",
-      "watch_item": "Prospective workflow validation is needed to establish real-time reliability and effects on surgical decisions and patient outcomes.",
-      "hashtags": [
-        "#AIPathology",
-        "#CNSOncology",
-        "#FoundationModels",
-        "#IntraoperativeDiagnosis",
-        "#BiomarkerPrediction"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-12-arxiv-focus_a_subspecialty_foundation_model_for_intraoperative_central_nervous_system_pathology",
-      "paper_title": "FOCUS: A Subspecialty Foundation Model for Intraoperative Central Nervous System Pathology",
-      "paper_date": "2026-10-12",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-10-18T20:43:24",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-12-arxiv-llm_to_flow_distillation_teaching_natural_language_goals_to_scientific_generators",
-    "arxiv_id": "2610.17246v1",
-    "date": "2026-10-12",
-    "title": "LLM-to-Flow Distillation: Teaching Natural Language Goals to Scientific Generators",
-    "authors": "Riccardo De Santi, Federico Di Gennaro, Angelo Gnazzo, Sophia Tang, Pranam Chatterjee, Fanny Yang",
-    "abstract": "Generative discovery in science requires coupling high-level scientific reasoning with the ability to generate samples respecting the structure of a design space. Yet these capabilities remain largely separated: foundation LLMs encode broad chemical and biological knowledge, while domain-specific flow- and diffusion-based generators capture the priors needed to produce valid sequences and geometries. We study how to align such scientific generators to high-level natural-language discovery goals without requiring an explicit proxy reward, which is often unavailable or poorly captured by learned predictors in experimental sciences. We introduce LLM-to-Flow Distillation (LFD), where a frozen LLM acts as an adaptive teacher for a domain-specific generator. Given a goal such as 'generate peptides with promising anticancer activity', the teacher constructs a curriculum of intermediate sub-goals aware of the flow's current capabilities, and progressively directs them toward the original discovery goal. At each round, the LLM judges sampled candidates under the current objective. These judgments induce preferences that are iteratively distilled into the generator through DPO. This procedure provides dense learning signals even when the initial model places negligible probability on designs satisfying the final goal, enabling adaptation toward poorly covered, out-of-distribution regions. Experiments on therapeutic peptides and small-molecule structure design demonstrate that LFD enables a new form of generative control: aligning arbitrary domain-specific scientific generators to scientific discovery tasks expressed via high-level natural-language goals.",
-    "category": "Therapeutic Discovery",
-    "source": "arXiv",
-    "published": "2026-10-12T18:11:58Z",
-    "updated": "2026-10-12T18:11:58Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.17246v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.17246v1"
-      }
-    ],
-    "score": 47,
-    "infographic": {
-      "key_insight": "LLM-to-Flow Distillation teaches scientific generators to pursue natural-language discovery goals using an adaptive, frozen LLM teacher rather than an explicit proxy reward.",
-      "clinical_relevance": "The approach could support anticancer peptide discovery, but the abstract does not establish experimental efficacy, safety, or clinical benefit.",
-      "method": [
-        "The LLM builds intermediate goals tailored to the generator’s current capabilities.",
-        "The LLM judges generated candidates to create preference signals.",
-        "Direct preference optimization (DPO) iteratively aligns the generator with the discovery goal."
-      ],
-      "evidence_signal": "Experiments on therapeutic peptides and small-molecule structure design demonstrate goal-directed generative control, though the abstract reports no quantitative results or experimental validation.",
-      "watch_item": "LLM-derived preferences may not reflect biological activity, so generated candidates require independent experimental validation.",
-      "hashtags": [
-        "#AIDrugDiscovery",
-        "#CancerResearch",
-        "#GenerativeAI",
-        "#PeptideDesign",
-        "#LLMDistillation"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-12-arxiv-llm_to_flow_distillation_teaching_natural_language_goals_to_scientific_generators",
-      "paper_title": "LLM-to-Flow Distillation: Teaching Natural Language Goals to Scientific Generators",
-      "paper_date": "2026-10-12",
-      "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-18T20:43:26",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-13-arxiv-pairit_autoregressive_transformers_for_low_data_molecule_optimization",
-    "arxiv_id": "2610.19123v1",
-    "date": "2026-10-13",
-    "title": "PairIT: Autoregressive Transformers for Low-Data Molecule Optimization",
-    "authors": "Hannah Lawrence, Bodhi P. Vani, Ji Won Park, Natasa Tagasovska, Samuel Don Stanton, Andrew Martin Watkins",
-    "abstract": "Generating novel molecules with desired properties is a central challenge in drug discovery. Although foundational work focused on de novo generation, practical use cases require a more complex setting: conditioning on an initial seed molecule, optimizing multiple properties, and operating in data-sparse regimes. We introduce PairIT, a flexible training framework for autoregressive transformers over SMILES sequences that enables seeded generation by learning from pairs of structurally similar molecules. By leveraging matched pairs, the model learns to generate local, chemically meaningful edits that improve a property of the seed molecule. Prompt tokens extend this framework by specifying the target property, desired direction, and approximate magnitude of change. Multiple prompt tokens can be concatenated to enable multi-property optimization at inference time. For properties where pair supervision alone is insufficient, reinforcement learning post-training can further improve optimization, providing a tunable trade-off between proximity to the seed and the optimization objective. PairIT naturally supports pretraining on a large dataset and fine-tuning on a smaller dataset, which is critical for performance in data-sparse regimes. Surprisingly, we observe diminishing returns to the scale of the pretraining dataset. We demonstrate empirically on MoleculeNet and Therapeutics Data Commons datasets that, with appropriate paired-data curation, a standard transformer model of modest size (68M parameters) can achieve robust seeded molecular optimization in low-data regimes.",
-    "category": "Therapeutic Discovery",
-    "source": "arXiv",
-    "published": "2026-10-13T19:57:58Z",
-    "updated": "2026-10-13T19:57:58Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG",
-      "cs.AI",
-      "physics.chem-ph"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.19123v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.19123v1"
-      }
-    ],
-    "score": 46,
-    "infographic": {
-      "key_insight": "PairIT trains autoregressive transformers on structurally similar molecule pairs to optimize seed molecules with limited data.",
-      "clinical_relevance": "The approach could support early-stage cancer drug discovery by refining candidate molecules, but the abstract reports no cancer-specific or clinical validation.",
-      "method": [
-        "Learn local molecular edits from matched pairs represented as SMILES sequences.",
-        "Use prompt tokens to specify properties, desired directions, and approximate changes, combining tokens for multi-property optimization.",
-        "Transfer from pretraining to small datasets, with optional reinforcement learning to balance optimization against seed similarity."
-      ],
-      "evidence_signal": "Evaluations on MoleculeNet and Therapeutics Data Commons datasets report robust low-data seeded optimization with a 68M-parameter transformer and diminishing returns from larger pretraining datasets.",
-      "watch_item": "Performance depends on appropriate paired-data curation; computational optimization does not establish experimental activity, safety, or efficacy.",
-      "hashtags": [
-        "#AIDrugDiscovery",
-        "#MolecularOptimization",
-        "#LowDataLearning",
-        "#GenerativeAI",
-        "#DrugDiscoveryResearch"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-13-arxiv-pairit_autoregressive_transformers_for_low_data_molecule_optimization",
-      "paper_title": "PairIT: Autoregressive Transformers for Low-Data Molecule Optimization",
+      "paper_id": "2026-10-13-medrxiv-multimodal_machine_learning_based_clinical_and_genomic_prognostic_factors_for_progression",
+      "paper_title": "Multimodal Machine Learning-Based Clinical and Genomic Prognostic Factors for Progression-Free Survival in Metastatic Breast Cancer Using Phase III MONALEESA Trials",
       "paper_date": "2026-10-13",
-      "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-18T20:43:28",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-19T14:12:07",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-13-medrxiv-language_eligibility_criteria_and_enrolled_racial_and_ethnic_composition_in_us_clinical_tr",
+    "doi": "10.64898/2026.10.09.26365106",
+    "date": "2026-10-13",
+    "title": "Language eligibility criteria and enrolled racial and ethnic composition in US clinical trials: a cross-sectional study",
+    "authors": "Tolas, A.; Du, L. Y.; Schutz, N.; Schmiedmayer, P.; O'Sullivan, J. W.; Johnson, A.; Longenecker, C. K.; Sarraju, A.; Rodriguez, F.; Yang, E.; Kim, D. S.",
+    "abstract": "BACKGROUNDFederal policy now requires sponsors to submit diversity action plans for clinical trials, yet the modifiable features of trial design associated with enrolled composition remain poorly characterized. English-language proficiency requirements are written into eligibility criteria and recorded as free text in a public registry, making them visible and, in principle, amenable to revision, but their relationship to enrolled composition has been examined only within single disease areas and in small samples of trials. We examined whether these requirements and documented language accommodation were associated with the racial and ethnic composition of enrolled participants. METHODS AND FINDINGSWe conducted a cross-sectional study of interventional trials registered on ClinicalTrials.gov with at least one US site and posted results, using a registry snapshot retrieved in October 2026. The primary cohort comprised the 44,487 trials with exclusively US sites, of which 21,924 (49.3%) reported baseline race and 17,434 (39.2%) reported baseline ethnicity with counts that reconciled with the posted denominator. Both exposures were classified from free-text eligibility criteria using regular expressions validated against independent physician review of 150 trials. For the English-language requirement classifier, sensitivity was 88.2% and specificity was 99.2%. The outcome was the trial-level proportion of enrolled participants in each category, analyzed using generalized linear models adjusted for intervention class, therapeutic area, sponsor, phase, enrollment, sites, start year, US Census region, and the population composition of the trials site states. An English-language proficiency requirement appeared in 5,736 trials (12.9%); its prevalence rose from 7.4% of trials starting in 2010 to 26.2% in 2023 (odds ratio [OR] per decade 2.91, P<0.001), whereas documented accommodation, an eligibility statement allowing participation in a language other than English (Spanish in 99.9% of flagged trials), remained rare (788 trials, 1.8%). The requirement was associated with lower enrolled proportions of Asian (OR=0.85, 95% CI 0.77-0.93, P=0.001) and Hispanic/Latinx participants (OR=0.85, 95% CI 0.79-0.91, P<0.001), with no evidence of an association for White participants (OR=0.99, 95% CI 0.95-1.04, P=0.75). Documented accommodation was associated with a higher proportion of Hispanic/Latinx participants (OR=3.23, 95% CI 2.82-3.71, P<0.001). Geographic adjustment did not change the statistical significance of the requirement associations and attenuated the accommodation association. The main limitations were the cross-sectional design, which precludes causal inference; the restriction of enrollment analyses to trials reporting baseline demographics, which were more recent than those without such reporting; and possible misclassification of automatically classified exposures. CONCLUSIONSEnglish-language proficiency requirements became more than three times as common between 2010 and 2023 and were associated with lower enrolled proportions of Asian and Hispanic/Latinx participants. Less common documented language accommodation was associated with a higher enrolled proportion of Hispanic/Latinx participants. Because these criteria are investigator-written and publicly recorded, they may be a tractable target for improving enrollment equity, although whether revising them changes who enrolls requires prospective evaluation.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "primary_category": "epidemiology",
+    "categories": [
+      "epidemiology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.09.26365106v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.09.26365106v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "English-language eligibility requirements became more common in US clinical trials and were associated with a lower enrolled proportion of Asian participants.",
+      "clinical_relevance": "Reviewing language requirements and accommodations may help sponsors address barriers to representative trial enrollment, though this study does not establish causality.",
+      "method": [
+        "Cross-sectional analysis of 44,487 interventional trials with exclusively US sites and posted results on ClinicalTrials.gov.",
+        "Classified language requirements and accommodations from eligibility text using rules validated against physician review.",
+        "Modeled trial-level racial and ethnic composition with adjustment for trial characteristics and geographic population composition."
+      ],
+      "evidence_signal": "English requirements appeared in 12.9% of trials and documented accommodations in 1.8%; requirements were associated with lower Asian enrollment proportions (adjusted OR 0.85, 95% CI 0.77–0.93).",
+      "watch_item": "Race and ethnicity reporting was incomplete, and the supplied abstract is truncated; this is trial-inclusivity research, not an AI cancer drug-discovery study.",
+      "hashtags": [
+        "#ClinicalTrials",
+        "#TrialDiversity",
+        "#LanguageAccess",
+        "#HealthEquity",
+        "#ClinicalResearch"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-13-medrxiv-language_eligibility_criteria_and_enrolled_racial_and_ethnic_composition_in_us_clinical_tr",
+      "paper_title": "Language eligibility criteria and enrolled racial and ethnic composition in US clinical trials: a cross-sectional study",
+      "paper_date": "2026-10-13",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-10-19T14:12:10",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-13-medrxiv-personalised_normative_cardiac_phenotyping_reveals_clinically_relevant_heterogeneity_in_ca",
+    "doi": "10.64898/2026.10.12.26365269",
+    "date": "2026-10-13",
+    "title": "Personalised normative cardiac phenotyping reveals clinically relevant heterogeneity in cardiac shape and outcome risk",
+    "authors": "Li, Z.; Bai, W.; Matthews, P. M.; Kainz, B.; Qiao, M.",
+    "abstract": "Standard cardiac biomarkers such as ejection fraction, ventricular volumes, and strain compress complex three-dimensional heart dynamics into a small set of predefined measurements, leaving clinically important heterogeneity unrecognised. Here we propose a personalised normative cardiac frame-work in which each individual is compared to a digital twin representing expected healthy cardiac function given their age, sex, and body habitus. We show that structured patterns of deviation from these normative twins, discovered through systematic exploration of a generative cardiac dynamics space, constitute novel dynamic phenotypes that are not captured by conventional biomarkers. Applied independently to two UK Biobank cardiac cohorts with distinct shape representation, a 128-dimensional four-chamber statistical shape descriptor (HeartSSM, n = 52,365) and a 64-dimensional deep generative latent space from a conditional variational mesh autoencoder (MeshHeart cVAE, n = up to 39,376), we identify reproducible, continuous deviation-from-normative-twin scores (three discrete deviation phenotypes in the HeartSSM cohort) that improve cardiovascular risk stratification beyond ejection fraction, ventricular volumes, myocardial mass, and strain. The strongest effect was seen for incident atrial fibrillation among individuals with preserved ejection fraction ([&ge;]50%): incremental C-index {Delta}C = +0.068 (5-fold cross-validated {Delta}C = +0.063; likelihood-ratio P = 3.3 x 10-8), with a separate, smaller effect for incident stroke in the same preserved-EF subgroup in the independent MeshHeart cVAE representation (which showed no signal for atrial fibrillation) ({Delta}C = +0.024, P = 2.6 x 10-4). Both effects were checked against placebo controls in which the deviation scores were replaced by Gaussian noise. To test whether the normative twin generalises beyond UK Biobanks specific scanning and processing pipeline, we applied the MeshHeart cVAE normative twin, unmodified, to an independent external cohort of healthy volunteers imaged at a different hospital (Gen-Scan/Hammersmith, n = 315): deviation scores in this cohort were of comparable magnitude to the UK Biobank healthy reference (ratio of means = 1.09; Mann-Whitney P = 1.4 x 10-5), indicating that the normative twin captures cross-site-transferable structure rather than a scanner- or pipeline-specific artefact. Our findings suggest that cardiac phenotyping can move beyond predefined measurements toward data-driven dynamic phenotypes that better capture the heterogeneity underlying cardiovascular disease risk, even among individuals whose ejection fraction appears normal.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.12.26365269v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.12.26365269v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "This cardiac imaging study—not cancer drug discovery—uses personalised healthy digital twins to reveal heart-shape and motion deviations associated with cardiovascular risk beyond conventional biomarkers.",
+      "clinical_relevance": "Deviation scores may improve risk stratification in people with preserved ejection fraction, but predictive signals differed between cardiac representations.",
+      "method": [
+        "Generate expected healthy cardiac function matched to age, sex and body habitus.",
+        "Measure individual deviations using statistical shape models and a generative mesh autoencoder.",
+        "Test added risk-prediction value beyond conventional cardiac biomarkers, with cross-validation and Gaussian-noise controls."
+      ],
+      "evidence_signal": "In two UK Biobank cohorts (HeartSSM n=52,365; MeshHeart n≤39,376), preserved-EF analyses showed improved discrimination for atrial fibrillation with HeartSSM (ΔC=0.068; cross-validated ΔC=0.063) and stroke with MeshHeart (ΔC=0.024), which showed no atrial-fibrillation signal.",
+      "watch_item": "External testing involved 315 healthy volunteers rather than outcome validation; clinical utility and transportability of risk predictions remain unestablished.",
+      "hashtags": [
+        "#CardiacImaging",
+        "#DigitalTwins",
+        "#AIinMedicine",
+        "#CardiovascularRisk",
+        "#PrecisionPhenotyping"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-13-medrxiv-personalised_normative_cardiac_phenotyping_reveals_clinically_relevant_heterogeneity_in_ca",
+      "paper_title": "Personalised normative cardiac phenotyping reveals clinically relevant heterogeneity in cardiac shape and outcome risk",
+      "paper_date": "2026-10-13",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-19T14:12:13",
       "generator": "openai"
     }
   }
