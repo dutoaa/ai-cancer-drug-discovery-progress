@@ -1,0 +1,26 @@
+{
+  "key_insight": "PMTM retains and updates tumor evidence across imaging scales to segment brain tumors when one or more MRI sequences are unavailable.",
+  "clinical_relevance": "This imaging study—not a drug discovery study—could support tumor delineation with incomplete MRI inputs, but clinical utility remains unestablished.",
+  "method": [
+    "Accepts any non-empty subset of T1ce, T1, FLAIR, and T2 MRI.",
+    "Pools modality evidence into a compact subject-specific memory, updated through a learned gate across encoder stages.",
+    "Uses memory-guided residual fusion, modality-token mixing, and semantic supervision at four stages."
+  ],
+  "evidence_signal": "Across all 15 non-empty modality subsets and three tumor regions, mean Dice scores were 75.31%, 77.54%, and 80.47% on BraTS2018, BraTS2020, and BraTS2023 GLI, respectively, exceeding RobustSeg, RFNet, and mmFormer in the reported experiments.",
+  "watch_item": "Benchmark results do not establish prospective clinical performance or robustness to real-world MRI acquisition differences.",
+  "hashtags": [
+    "#BrainTumorSegmentation",
+    "#MedicalImagingAI",
+    "#MultimodalMRI",
+    "#MissingModalities",
+    "#PrecisionOncology"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-19-arxiv-progressive_multi_scale_tumor_state_memory_for_incomplete_multimodal_brain_tumor_segmentat",
+  "paper_title": "Progressive multi-scale tumor-state memory for incomplete multimodal brain tumor segmentation",
+  "paper_date": "2026-10-19",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-20T12:25:19",
+  "generator": "openai"
+}

@@ -1,0 +1,26 @@
+{
+  "key_insight": "GSMR3D uses one model per MRI contrast to reconstruct varied 3D resolutions, preserving tumour-relevant information without separate models for each acquisition geometry.",
+  "clinical_relevance": "The approach could support shorter brain MRI acquisitions while retaining information useful for tumour segmentation and metastasis detection; it is imaging research, not cancer drug discovery.",
+  "method": [
+    "Represents MRI volumes with learned anisotropic 3D Gaussian prototypes.",
+    "Uses scale-conditioned frequency encoding for arbitrary isotropic and anisotropic reconstruction.",
+    "Applies an exact measurement-consistency projection to match acquired low-resolution data."
+  ],
+  "evidence_signal": "Trained on 3,731 contrast-enhanced T1 and 30,254 T1 brain MRI volumes, GSMR3D improved perceptual metrics across evaluated geometries and achieved the highest lesion sensitivity on an independent brain-metastasis cohort.",
+  "watch_item": "Specialist models retained higher PSNR in anisotropic settings, and downstream task results do not establish prospective clinical benefit.",
+  "hashtags": [
+    "#MRISuperResolution",
+    "#MedicalImagingAI",
+    "#BrainTumourImaging",
+    "#PrecisionOncology",
+    "#ImagingResearch"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-17-arxiv-arbitrary_scale_anisotropic_3d_mri_super_resolution_with_gaussian_prototypes",
+  "paper_title": "Arbitrary-Scale Anisotropic 3D MRI Super-Resolution with Gaussian Prototypes",
+  "paper_date": "2026-10-17",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-20T12:25:10",
+  "generator": "openai"
+}

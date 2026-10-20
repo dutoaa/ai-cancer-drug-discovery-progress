@@ -1,0 +1,26 @@
+{
+  "key_insight": "The gDR-Learner estimates how treatment effects vary across a target population beyond a randomized trial, including settings with incomplete covariate data.",
+  "clinical_relevance": "This statistical methods study could help assess treatment-effect heterogeneity beyond trial participants; it is not an AI cancer drug discovery study.",
+  "method": [
+    "Combines cross-fitted machine learning with doubly robust estimation to generalize conditional average treatment effects.",
+    "Extends estimation to covariates observed only in the trial or a target-population subsample.",
+    "Constructs weighted conformal intervals for individual treatment effects under covariate shift."
+  ],
+  "evidence_signal": "In simulations, gDR-Learner had the lowest estimation error among tested methods with complete covariates and outperformed the weighted T-Learner with incomplete covariates; an application reanalyzed the Coronary Artery Surgery Study.",
+  "watch_item": "Generalization depends on the assumptions needed to link trial and target populations; incomplete covariates remain an implementation challenge.",
+  "hashtags": [
+    "#CausalInference",
+    "#MachineLearning",
+    "#TreatmentHeterogeneity",
+    "#TrialGeneralizability",
+    "#DoublyRobust"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-18-arxiv-dr_learners_for_generalizing_cates_from_a_randomized_controlled_trial",
+  "paper_title": "DR-Learners for Generalizing CATEs from a Randomized Controlled Trial",
+  "paper_date": "2026-10-18",
+  "paper_category": "Target Biology",
+  "generated_at": "2026-10-20T12:25:12",
+  "generator": "openai"
+}

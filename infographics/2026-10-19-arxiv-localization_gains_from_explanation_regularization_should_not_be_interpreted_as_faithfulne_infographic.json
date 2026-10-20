@@ -1,0 +1,26 @@
+{
+  "key_insight": "More tumor-focused saliency maps do not necessarily explain a classifier’s decisions more faithfully.",
+  "clinical_relevance": "For brain tumor MRI AI, better visual alignment with lesions should not be treated as evidence of more reliable explanations or clinical readiness.",
+  "method": [
+    "Compared cross-entropy training with Contrastive Grad-CAM Consistency regularization.",
+    "Used a single-channel ResNet-50 for three-class brain tumor MRI classification.",
+    "Evaluated localization, classification accuracy, and perturbation-based faithfulness separately."
+  ],
+  "evidence_signal": "In five-fold patient-grouped cross-validation, localization improved (PG: 27.24% to 36.02%; RMA: 11.17% to 18.01%), but faithfulness was mixed: insertion improved, deletion worsened, and IROF was unchanged.",
+  "watch_item": "This imaging case study does not establish generalizability, clinical benefit, or relevance to cancer drug discovery.",
+  "hashtags": [
+    "#ExplainableAI",
+    "#MedicalImaging",
+    "#BrainTumor",
+    "#ExplanationFaithfulness",
+    "#AIValidation"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-19-arxiv-localization_gains_from_explanation_regularization_should_not_be_interpreted_as_faithfulne",
+  "paper_title": "Localization Gains from Explanation Regularization Should Not Be Interpreted as Faithfulness Gains.",
+  "paper_date": "2026-10-19",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-20T12:25:22",
+  "generator": "openai"
+}

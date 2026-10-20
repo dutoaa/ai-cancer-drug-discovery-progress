@@ -1,0 +1,26 @@
+{
+  "key_insight": "LLM-generated SQL enabled rapid, explicit screening for potential cancer trial eligibility, with 95.8% agreement against physician consensus.",
+  "clinical_relevance": "This approach could help identify trials for clinician review, but it does not establish full eligibility or guide treatment selection.",
+  "method": [
+    "Converted unstructured trial criteria into reusable SQL eligibility rules.",
+    "Structured 24 synthetic patient vignettes for rule-based matching without further LLM inference.",
+    "Screened 746 recruiting US trials for advanced breast, colon, and non-small cell lung cancers."
+  ],
+  "evidence_signal": "Across 240 patient–trial pairs from 10 trials, agreement was 230/240, sensitivity 83.3%, and specificity 100%; screening all 746 trials took a median 0.459 seconds per patient, excluding data preparation.",
+  "watch_item": "Validation used synthetic patients and omitted laboratory results and comorbidities; missed matches highlight the need for further validation.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#ClinicalTrialMatching",
+    "#ArtificialIntelligence",
+    "#CancerResearch",
+    "#EligibilityScreening"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-15-medrxiv-quantifying_cancer_clinical_trial_eligibility_using_artificial_intelligence_based_matching",
+  "paper_title": "Quantifying Cancer Clinical Trial Eligibility Using Artificial Intelligence-Based Matching",
+  "paper_date": "2026-10-15",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-20T12:25:02",
+  "generator": "openai"
+}

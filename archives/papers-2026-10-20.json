@@ -1,0 +1,320 @@
+[
+  {
+    "id": "2026-10-13-medrxiv-mri_biomarkers_for_brain_metastases_in_lung_cancer_using_machine_learning",
+    "doi": "10.64898/2026.10.12.26365323",
+    "date": "2026-10-13",
+    "title": "MRI Biomarkers for Brain Metastases in Lung Cancer Using Machine Learning",
+    "authors": "Chadha, S.; Sritharan, D. V.; Sharma, R.; Dolezal, D.; Chande, S.; Breuer, G.; Fu, D.; Gupta, A.; Hossain, J. O.; Srinivasan, A.; Weiss, D.; Chiang, V. L.; Nguyen, D. X.; Aneja, S.",
+    "abstract": "PurposeExisting prognostic models for brain metastases from lung cancer rely on clinical variables and do not capture the biological heterogeneity of host or tumor factors underlying survival outcomes. We evaluated whether MRI-derived radiomic biomarkers improve prognostic stratification beyond clinical variables. We also investigated their biological correlates using matched histopathology. Experimental DesignThis retrospective study included 103 patients with brain metastases from lung cancer and matched pre-operative MRI and histopathology. Radiomic features from T1-weighted contrast-enhanced and T2-weighted fluid-attenuated inversion recovery sequences were combined with clinical variables to train Cox proportional hazards, random survival forest, and DeepSurv models for overall survival (OS), CNS progression, and leptomeningeal (LM) progression. Risk groups from an imaging-only model were compared for clinical and histopathologic differences. ResultsImaging features improved prognostic performance beyond clinical variables across all modeling frameworks, with the combined clinical-imaging DeepSurv model achieving the highest concordance index for OS (0.728). Risk groups from the best-performing model for each endpoint differed significantly in OS (median 26.7 vs. 9.1 months, p < 0.001) and LM progression (p = 0.003), but not in CNS progression. Imaging-only risk groups did not differ significantly in any clinical variable, but high-risk patients were less likely to have tumor-infiltrating lymphocytes (46% vs. 77%, p = 0.010) and PD-L1 expression [&ge;] 50% (10% vs. 32%, p = 0.049). ConclusionsMRI radiomic biomarkers provide prognostic information beyond established clinical variables in lung cancer brain metastases and correspond to features of the tumor immune microenvironment, supporting their potential to refine risk stratification. Statement of Translational RelevanceBrain metastases affect 30-40% of patients with lung cancer. Existing prognostic models rely on clinical variables, which do not fully capture the biological heterogeneity that drives outcomes. We show that machine learning models integrating MRI-derived radiomic features with clinical variables improve prognostic discrimination beyond clinical variables alone. Because these biomarkers are derived from standard-of-care pre-operative imaging, they can be generated without additional testing or delay to treatment planning. Using matched histopathology from resected lesions, we further show that imaging-defined risk groups do not simply reproduce established clinical risk factors but instead correspond to differences in the tumor immune microenvironment, including tumor-infiltrating lymphocytes and PD-L1 expression. These findings support the use of quantitative imaging biomarkers as a non-invasive method to refine risk stratification at diagnosis, informing treatment selection and clinical trial enrollment for patients with brain metastases from lung cancer.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.12.26365323v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.12.26365323v1.full.pdf"
+      }
+    ],
+    "score": 71,
+    "infographic": {
+      "key_insight": "MRI radiomic features improved survival prediction beyond clinical variables in lung cancer brain metastases and were associated with tumor immune features.",
+      "clinical_relevance": "These biomarkers could refine prognostic risk stratification, but the study does not establish treatment-selection or drug-discovery benefits.",
+      "method": [
+        "Retrospective analysis of 103 patients with matched preoperative MRI and histopathology.",
+        "Combined contrast-enhanced T1 and T2-FLAIR radiomics with clinical variables using Cox, random survival forest, and DeepSurv models.",
+        "Evaluated overall survival, CNS progression, and leptomeningeal progression; compared imaging-only risk groups with immune pathology."
+      ],
+      "evidence_signal": "The clinical-imaging DeepSurv model achieved an overall-survival concordance index of 0.728; endpoint-specific risk groups separated overall survival (26.7 vs. 9.1 months) and leptomeningeal progression, but not CNS progression.",
+      "watch_item": "The small retrospective cohort and lack of external validation reported in the abstract limit confidence in generalizability.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#BrainMetastases",
+        "#LungCancer",
+        "#Radiomics",
+        "#MachineLearning"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-13-medrxiv-mri_biomarkers_for_brain_metastases_in_lung_cancer_using_machine_learning",
+      "paper_title": "MRI Biomarkers for Brain Metastases in Lung Cancer Using Machine Learning",
+      "paper_date": "2026-10-13",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-19T14:11:58",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-13-medrxiv-can_gpt_be_used_as_an_alternative_prediction_model_to_traditional_machine_learning_and_neu",
+    "doi": "10.64898/2026.08.19.26360765",
+    "date": "2026-10-13",
+    "title": "Can GPT Be Used as an Alternative Prediction Model to Traditional Machine Learning and Neural Networks on Low-Volume Clinical Data?",
+    "authors": "Bin Akter, S.; Akter, S.; Eisenberg, D.; Hill, C.; Lotvola, A.; Fresneda Fernandez, J.; Sarkar Pias, T.; Rafiqul Islam, M.; Islam, H.",
+    "abstract": "Background and ObjectiveEarly and reliable disease prediction from structured clinical data remains challenging when datasets are small, highly imbalanced, and contain limited positive disease cases. Conventional machine learning (ML) and deep learning approaches often struggle to capture clinically meaningful relationships under such low-data representation conditions due to weak statistical associations between features and prediction targets. This study proposes a clinically grounded Distil GPT2-based table-to-text framework for disease prediction using structured healthcare datasets, motivated by the contextual reasoning capability of GPT models to better capture clinically meaningful relationships when statistical learning alone becomes insufficient due to limited data availability. Methods & MaterialsStructured clinical records were transformed into physician-style textual descriptions and enriched through GPT4-generated medical paraphrasing to improve minority-class representation while preserving clinical meaning. Both the original and generated clinical texts were used to fine-tune a Distil GPT2 model across four public healthcare datasets, including heart disease, heart failure, chronic kidney disease, and thyroid cancer recurrence. Gradient-based explainable AI analysis was additionally incorporated to identify clinically important features influencing prediction outcomes. ResultsThe proposed framework demonstrated consistently strong predictive performance across four clinical datasets, achieving average precision, specificity, sensitivity, and F1-score of 0.96, 0.97, 0.96, and 0.96, respectively. The model achieved improved sensitivity, stronger generalization, and more stable predictive behavior compared with traditional ML, deep learning, transformer-based, and GAN-augmented approaches. Importantly, the framework consistently emphasized clinically meaningful variables even under severe class imbalance, where conventional ML and neural network models often struggled to identify key clinically relevant relationships. ConclusionsThe proposed Distil GPT2-based table-to-text framework provides a practical and clinically interpretable approach for disease prediction from limited structured healthcare data. By integrating contextual clinical reasoning with explainable prediction mechanisms, the framework suggests strong potential for early risk detection, transparent clinical decision support, and reliable deployment in real-world data-scarce healthcare settings.",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.19.26360765v3"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.19.26360765v3.full.pdf"
+      }
+    ],
+    "score": 59,
+    "infographic": {
+      "key_insight": "A Distil GPT2 table-to-text framework reported strong disease prediction on small clinical datasets, including thyroid cancer recurrence, rather than addressing drug discovery.",
+      "clinical_relevance": "The approach may support research into recurrence prediction when labeled clinical data are scarce, but clinical utility remains unestablished.",
+      "method": [
+        "Convert structured clinical records into physician-style text.",
+        "Fine-tune Distil GPT2 using original text and GPT4-generated paraphrases to improve minority-class representation.",
+        "Use gradient-based explainability to identify influential clinical features."
+      ],
+      "evidence_signal": "Across four public datasets covering heart disease, heart failure, chronic kidney disease, and thyroid cancer recurrence, reported average precision, specificity, sensitivity, and F1-score were 0.96, 0.97, 0.96, and 0.96, respectively.",
+      "watch_item": "The abstract does not detail external validation or safeguards against leakage from synthetic paraphrases, limiting confidence in real-world generalization.",
+      "hashtags": [
+        "#CancerAI",
+        "#ThyroidCancer",
+        "#ClinicalPrediction",
+        "#LowDataLearning",
+        "#ExplainableAI"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-13-medrxiv-can_gpt_be_used_as_an_alternative_prediction_model_to_traditional_machine_learning_and_neu",
+      "paper_title": "Can GPT Be Used as an Alternative Prediction Model to Traditional Machine Learning and Neural Networks on Low-Volume Clinical Data?",
+      "paper_date": "2026-10-13",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-10-19T14:12:02",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-13-medrxiv-covid_19_vaccination_and_survival_of_cancer_patients_in_northwestern_russia_a_historical_r",
+    "doi": "10.64898/2026.10.12.26365129",
+    "date": "2026-10-13",
+    "title": "COVID-19 vaccination and survival of cancer patients in Northwestern Russia: a historical registry-based cohort study",
+    "authors": "Dyachenko, A. A.; Bogdanov, M. A.; Bogdanov, D. V.; Meldo, A. A.; Chernina, V. Y.; Gombolevskiy, V. A.; Grjibovski, A. M.; Valkov, M. Y.",
+    "abstract": "BackgroundCancer patients face a significantly elevated risk of severe COVID-19 outcomes. Although vaccination is a cornerstone of prevention, data on vaccination coverage and association with survival among Russian cancer patients remain scarce. We assessed COVID-19 vaccination coverage and its association with overall survival in a population-based cohort of cancer patients in Northwest Russia. MethodsThis retrospective registry-based cohort study integrated data from the Population-Based Cancer Registry (PBCR) of the Arkhangelsk Region and the Nenets Autonomous Okrug, regional vaccination records, and an artificial intelligence (AI)-based analysis of chest computed tomography (CT) scans. The cohort consisted of 1,144 cancer patients who underwent CT between August 2020 and April 2021. Vaccination status was ascertained via data linkage. Overall survival (OS) was compared between vaccinated and unvaccinated patients using Kaplan-Meier analysis and multivariable Cox proportional hazards regression, adjusted for demographic, clinical, and AI-derived CT biomarkers. To mitigate immortal time bias, the primary analysis used a landmark approach restricted to patients alive on March 1, 2021 (N = 1,136). A sensitivity analysis used a November 1, 2021 landmark (N = 894). Vaccination status was defined as receipt of at least one dose before the landmark date. ResultsOnly 6.6% (n=76) of patients received at least one dose of a COVID-19 vaccine (Sputnik V or Sputnik Light). Vaccinated patients were more likely to have earlier-stage cancer and were less likely to be receiving active treatment. In the primary landmark analysis, vaccination was associated with a significantly higher 3-year OS (80.3% vs. 45.7%, p < 0.001). In multivariable analysis, vaccination was independently associated with a 60% lower hazard of all-cause mortality (adjusted HR 0.40, 95% CI 0.25-0.64). AI-detected COVID-19 pneumonia on baseline CT was also an independent predictor of poorer survival (adjusted HR 1.32, 95% CI 1.09-1.59). In the sensitivity analysis (November 1, 2021 landmark), the adjusted HR for vaccination was 0.56 (95% CI 0.34-0.92), showing a consistent but attenuated association. ConclusionThis study reveals critically low COVID-19 vaccination coverage among cancer patients in Northwest Russia. Nevertheless, vaccination was strongly associated with a substantial survival benefit, underscoring its importance as a potentially lifesaving intervention for this vulnerable population.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.12.26365129v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.12.26365129v1.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "COVID-19 vaccination was associated with better overall survival among cancer patients in Northwestern Russia; this was not a drug-discovery study.",
+      "clinical_relevance": "The findings highlight vaccination coverage and COVID-19 burden as relevant factors in cancer outcomes, without establishing a causal survival benefit.",
+      "method": [
+        "Linked cancer registry, vaccination records, and AI-analyzed chest CT data for 1,144 patients.",
+        "Compared survival using Kaplan–Meier analysis and adjusted Cox regression.",
+        "Used March and November 2021 landmark analyses to mitigate immortal time bias."
+      ],
+      "evidence_signal": "Vaccination coverage was 6.6%; the primary landmark analysis found 3-year survival of 80.3% versus 45.7% and an adjusted mortality HR of 0.40 (95% CI 0.25–0.64), with an attenuated association in sensitivity analysis.",
+      "watch_item": "The retrospective design, small vaccinated group, and differences in cancer stage and treatment leave potential residual confounding.",
+      "hashtags": [
+        "#CancerResearch",
+        "#COVID19Vaccination",
+        "#RegistryStudy",
+        "#AIImaging",
+        "#SurvivalAnalysis"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-13-medrxiv-covid_19_vaccination_and_survival_of_cancer_patients_in_northwestern_russia_a_historical_r",
+      "paper_title": "COVID-19 vaccination and survival of cancer patients in Northwestern Russia: a historical registry-based cohort study",
+      "paper_date": "2026-10-13",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-19T14:12:05",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-13-medrxiv-multimodal_machine_learning_based_clinical_and_genomic_prognostic_factors_for_progression",
+    "doi": "10.64898/2026.10.09.26364892",
+    "date": "2026-10-13",
+    "title": "Multimodal Machine Learning-Based Clinical and Genomic Prognostic Factors for Progression-Free Survival in Metastatic Breast Cancer Using Phase III MONALEESA Trials",
+    "authors": "Wang, C.; Paul, R.; Li, Y.; Smith, S.; Cao, Q.; Chang, S. H.; Charlab, R.; Coroller, T.; Huang, R.; Amiri-Kordestani, L.; Li, Z.; Liu, Q.; Osgood, C.; Peyrard, S.; Sahiner, B.; Santana-Quintero, L.; Su, F.; Zarate, J. P.; Zhu, H.; Ohlssen, D.; Petrick, N.; Amatya, A.; Solovieff, N.",
+    "abstract": "PurposeCyclin-dependent kinase 4/6 inhibitors in combination with endocrine therapy have become widely adopted as a first-line treatment approach for hormone receptor-positive (HR+)/human epidermal growth factor receptor 2-negative (HER2-) advanced breast cancer (ABC). Through a collaboration between Novartis and the US Food and Drug Administration, we integrated multimodal data from phase III MONALEESA trials to identify novel prognostic factors for HR+/HER2-ABC. Experimental DesignBaseline clinical and genomics data were collected from patients in the MONALEESA-2, -3, and -7 trials. Circulating tumor DNA (ctDNA) from plasma samples and gene expression in archival tumor biopsies were analyzed. Machine learning models were trained (n = 1,355) on progression-free survival (PFS) using multimodal features via fusion models. In a test set (n = 382), prognostic performances were evaluated using the Kaplan-Meier, Cox, and Weibull models. ResultsThe late fusion model achieved a prognostic performance (C-index: 0.727, 95% CI: 0.641-0.799) slightly outperforming early fusion (C-index: 0.718, 95% CI: 0.631-0.791) and single-modality models. Model-based risk stratification identified distinct low- and high-risk groups (PFS HR, 0.28; 95% CI: 0.20-0.38). Among the top 40 features for progression risk (18 clinical, 20 gene expression, and 2 ctDNA), these were associated with higher risk: liver involvement, higher histological grades, early relapse; lower STC2 and RBBP8 expressions and higher FBX05 expression; and higher tumor mutational burden and ctDNA purity. ConclusionsIntegrating clinical and genomic modalities improved progression risk prediction compared with single-modality models, while highlighting salient features that inform the underlying biology and support hypothesis generation.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.09.26364892v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.09.26364892v1.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "Combining clinical, tumor gene-expression, and circulating tumor DNA data modestly improved machine-learning prediction of progression-free survival in HR+/HER2− advanced breast cancer.",
+      "clinical_relevance": "The findings may support prognostic research and biological hypothesis generation, but do not establish treatment-selection utility or identify new drugs.",
+      "method": [
+        "Integrated baseline data from phase III MONALEESA-2, -3, and -7 trials.",
+        "Trained early- and late-fusion models using clinical features, tumor gene expression, and plasma ctDNA.",
+        "Evaluated progression-free survival prediction and model-based risk groups in a held-out test set."
+      ],
+      "evidence_signal": "Models were trained on 1,355 patients and tested on 382; late fusion achieved a C-index of 0.727 (95% CI, 0.641–0.799), with low- versus high-risk groups showing a PFS hazard ratio of 0.28 (95% CI, 0.20–0.38).",
+      "watch_item": "External validation and prospective assessment of clinical utility are needed before implementation beyond the MONALEESA trial populations.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#BreastCancer",
+        "#MultimodalAI",
+        "#ctDNA",
+        "#PrognosticModeling"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-13-medrxiv-multimodal_machine_learning_based_clinical_and_genomic_prognostic_factors_for_progression",
+      "paper_title": "Multimodal Machine Learning-Based Clinical and Genomic Prognostic Factors for Progression-Free Survival in Metastatic Breast Cancer Using Phase III MONALEESA Trials",
+      "paper_date": "2026-10-13",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-19T14:12:07",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-13-medrxiv-language_eligibility_criteria_and_enrolled_racial_and_ethnic_composition_in_us_clinical_tr",
+    "doi": "10.64898/2026.10.09.26365106",
+    "date": "2026-10-13",
+    "title": "Language eligibility criteria and enrolled racial and ethnic composition in US clinical trials: a cross-sectional study",
+    "authors": "Tolas, A.; Du, L. Y.; Schutz, N.; Schmiedmayer, P.; O'Sullivan, J. W.; Johnson, A.; Longenecker, C. K.; Sarraju, A.; Rodriguez, F.; Yang, E.; Kim, D. S.",
+    "abstract": "BACKGROUNDFederal policy now requires sponsors to submit diversity action plans for clinical trials, yet the modifiable features of trial design associated with enrolled composition remain poorly characterized. English-language proficiency requirements are written into eligibility criteria and recorded as free text in a public registry, making them visible and, in principle, amenable to revision, but their relationship to enrolled composition has been examined only within single disease areas and in small samples of trials. We examined whether these requirements and documented language accommodation were associated with the racial and ethnic composition of enrolled participants. METHODS AND FINDINGSWe conducted a cross-sectional study of interventional trials registered on ClinicalTrials.gov with at least one US site and posted results, using a registry snapshot retrieved in October 2026. The primary cohort comprised the 44,487 trials with exclusively US sites, of which 21,924 (49.3%) reported baseline race and 17,434 (39.2%) reported baseline ethnicity with counts that reconciled with the posted denominator. Both exposures were classified from free-text eligibility criteria using regular expressions validated against independent physician review of 150 trials. For the English-language requirement classifier, sensitivity was 88.2% and specificity was 99.2%. The outcome was the trial-level proportion of enrolled participants in each category, analyzed using generalized linear models adjusted for intervention class, therapeutic area, sponsor, phase, enrollment, sites, start year, US Census region, and the population composition of the trials site states. An English-language proficiency requirement appeared in 5,736 trials (12.9%); its prevalence rose from 7.4% of trials starting in 2010 to 26.2% in 2023 (odds ratio [OR] per decade 2.91, P<0.001), whereas documented accommodation, an eligibility statement allowing participation in a language other than English (Spanish in 99.9% of flagged trials), remained rare (788 trials, 1.8%). The requirement was associated with lower enrolled proportions of Asian (OR=0.85, 95% CI 0.77-0.93, P=0.001) and Hispanic/Latinx participants (OR=0.85, 95% CI 0.79-0.91, P<0.001), with no evidence of an association for White participants (OR=0.99, 95% CI 0.95-1.04, P=0.75). Documented accommodation was associated with a higher proportion of Hispanic/Latinx participants (OR=3.23, 95% CI 2.82-3.71, P<0.001). Geographic adjustment did not change the statistical significance of the requirement associations and attenuated the accommodation association. The main limitations were the cross-sectional design, which precludes causal inference; the restriction of enrollment analyses to trials reporting baseline demographics, which were more recent than those without such reporting; and possible misclassification of automatically classified exposures. CONCLUSIONSEnglish-language proficiency requirements became more than three times as common between 2010 and 2023 and were associated with lower enrolled proportions of Asian and Hispanic/Latinx participants. Less common documented language accommodation was associated with a higher enrolled proportion of Hispanic/Latinx participants. Because these criteria are investigator-written and publicly recorded, they may be a tractable target for improving enrollment equity, although whether revising them changes who enrolls requires prospective evaluation.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "primary_category": "epidemiology",
+    "categories": [
+      "epidemiology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.09.26365106v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.09.26365106v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "English-language eligibility requirements became more common in US clinical trials and were associated with a lower enrolled proportion of Asian participants.",
+      "clinical_relevance": "Reviewing language requirements and accommodations may help sponsors address barriers to representative trial enrollment, though this study does not establish causality.",
+      "method": [
+        "Cross-sectional analysis of 44,487 interventional trials with exclusively US sites and posted results on ClinicalTrials.gov.",
+        "Classified language requirements and accommodations from eligibility text using rules validated against physician review.",
+        "Modeled trial-level racial and ethnic composition with adjustment for trial characteristics and geographic population composition."
+      ],
+      "evidence_signal": "English requirements appeared in 12.9% of trials and documented accommodations in 1.8%; requirements were associated with lower Asian enrollment proportions (adjusted OR 0.85, 95% CI 0.77–0.93).",
+      "watch_item": "Race and ethnicity reporting was incomplete, and the supplied abstract is truncated; this is trial-inclusivity research, not an AI cancer drug-discovery study.",
+      "hashtags": [
+        "#ClinicalTrials",
+        "#TrialDiversity",
+        "#LanguageAccess",
+        "#HealthEquity",
+        "#ClinicalResearch"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-13-medrxiv-language_eligibility_criteria_and_enrolled_racial_and_ethnic_composition_in_us_clinical_tr",
+      "paper_title": "Language eligibility criteria and enrolled racial and ethnic composition in US clinical trials: a cross-sectional study",
+      "paper_date": "2026-10-13",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-10-19T14:12:10",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-13-medrxiv-personalised_normative_cardiac_phenotyping_reveals_clinically_relevant_heterogeneity_in_ca",
+    "doi": "10.64898/2026.10.12.26365269",
+    "date": "2026-10-13",
+    "title": "Personalised normative cardiac phenotyping reveals clinically relevant heterogeneity in cardiac shape and outcome risk",
+    "authors": "Li, Z.; Bai, W.; Matthews, P. M.; Kainz, B.; Qiao, M.",
+    "abstract": "Standard cardiac biomarkers such as ejection fraction, ventricular volumes, and strain compress complex three-dimensional heart dynamics into a small set of predefined measurements, leaving clinically important heterogeneity unrecognised. Here we propose a personalised normative cardiac frame-work in which each individual is compared to a digital twin representing expected healthy cardiac function given their age, sex, and body habitus. We show that structured patterns of deviation from these normative twins, discovered through systematic exploration of a generative cardiac dynamics space, constitute novel dynamic phenotypes that are not captured by conventional biomarkers. Applied independently to two UK Biobank cardiac cohorts with distinct shape representation, a 128-dimensional four-chamber statistical shape descriptor (HeartSSM, n = 52,365) and a 64-dimensional deep generative latent space from a conditional variational mesh autoencoder (MeshHeart cVAE, n = up to 39,376), we identify reproducible, continuous deviation-from-normative-twin scores (three discrete deviation phenotypes in the HeartSSM cohort) that improve cardiovascular risk stratification beyond ejection fraction, ventricular volumes, myocardial mass, and strain. The strongest effect was seen for incident atrial fibrillation among individuals with preserved ejection fraction ([&ge;]50%): incremental C-index {Delta}C = +0.068 (5-fold cross-validated {Delta}C = +0.063; likelihood-ratio P = 3.3 x 10-8), with a separate, smaller effect for incident stroke in the same preserved-EF subgroup in the independent MeshHeart cVAE representation (which showed no signal for atrial fibrillation) ({Delta}C = +0.024, P = 2.6 x 10-4). Both effects were checked against placebo controls in which the deviation scores were replaced by Gaussian noise. To test whether the normative twin generalises beyond UK Biobanks specific scanning and processing pipeline, we applied the MeshHeart cVAE normative twin, unmodified, to an independent external cohort of healthy volunteers imaged at a different hospital (Gen-Scan/Hammersmith, n = 315): deviation scores in this cohort were of comparable magnitude to the UK Biobank healthy reference (ratio of means = 1.09; Mann-Whitney P = 1.4 x 10-5), indicating that the normative twin captures cross-site-transferable structure rather than a scanner- or pipeline-specific artefact. Our findings suggest that cardiac phenotyping can move beyond predefined measurements toward data-driven dynamic phenotypes that better capture the heterogeneity underlying cardiovascular disease risk, even among individuals whose ejection fraction appears normal.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-13",
+    "updated": "2026-10-13",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.12.26365269v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.12.26365269v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "This cardiac imaging study—not cancer drug discovery—uses personalised healthy digital twins to reveal heart-shape and motion deviations associated with cardiovascular risk beyond conventional biomarkers.",
+      "clinical_relevance": "Deviation scores may improve risk stratification in people with preserved ejection fraction, but predictive signals differed between cardiac representations.",
+      "method": [
+        "Generate expected healthy cardiac function matched to age, sex and body habitus.",
+        "Measure individual deviations using statistical shape models and a generative mesh autoencoder.",
+        "Test added risk-prediction value beyond conventional cardiac biomarkers, with cross-validation and Gaussian-noise controls."
+      ],
+      "evidence_signal": "In two UK Biobank cohorts (HeartSSM n=52,365; MeshHeart n≤39,376), preserved-EF analyses showed improved discrimination for atrial fibrillation with HeartSSM (ΔC=0.068; cross-validated ΔC=0.063) and stroke with MeshHeart (ΔC=0.024), which showed no atrial-fibrillation signal.",
+      "watch_item": "External testing involved 315 healthy volunteers rather than outcome validation; clinical utility and transportability of risk predictions remain unestablished.",
+      "hashtags": [
+        "#CardiacImaging",
+        "#DigitalTwins",
+        "#AIinMedicine",
+        "#CardiovascularRisk",
+        "#PrecisionPhenotyping"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-13-medrxiv-personalised_normative_cardiac_phenotyping_reveals_clinically_relevant_heterogeneity_in_ca",
+      "paper_title": "Personalised normative cardiac phenotyping reveals clinically relevant heterogeneity in cardiac shape and outcome risk",
+      "paper_date": "2026-10-13",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-19T14:12:13",
+      "generator": "openai"
+    }
+  }
+]

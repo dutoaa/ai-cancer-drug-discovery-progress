@@ -1,0 +1,26 @@
+{
+  "key_insight": "CoRe-WM learns how breast MRI response states evolve during treatment, then uses frozen representations to predict pathologic complete response (pCR).",
+  "clinical_relevance": "The approach could support research into treatment-response assessment during neoadjuvant chemotherapy, rather than relying on pretreatment imaging alone.",
+  "method": [
+    "Predicts the next latent imaging state from longitudinal breast DCE-MRI.",
+    "Conditions state transitions on patient clinical profiles and assigned therapy, with a separate lesion-morphology response pathway.",
+    "Freezes pretrained model parameters and trains a linear pCR readout at each decision point."
+  ],
+  "evidence_signal": "In five-fold cross-validation on I-SPY2, CoRe-WM reportedly achieved the highest discrimination among evaluated methods at every prospective decision point and showed cross-cohort transfer to I-SPY1.",
+  "watch_item": "The abstract provides no numerical performance estimates or prospective clinical validation; this is treatment-response prediction research, not drug discovery or evidence for changing treatment.",
+  "hashtags": [
+    "#BreastCancer",
+    "#PrecisionOncology",
+    "#MedicalImagingAI",
+    "#WorldModels",
+    "#TreatmentResponse"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-18-arxiv-core_wm_conditioned_response_state_world_modeling_for_longitudinal_treatment_response_pred",
+  "paper_title": "CoRe-WM: Conditioned Response-State World Modeling for Longitudinal Treatment-Response Prediction in Breast DCE-MRI",
+  "paper_date": "2026-10-18",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-20T12:24:48",
+  "generator": "openai"
+}

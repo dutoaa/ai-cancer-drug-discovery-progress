@@ -1,0 +1,26 @@
+{
+  "key_insight": "Combining multi-scale foundation-model and FastVim features improved patch-level prostate Gleason grading over the best single-scale model.",
+  "clinical_relevance": "This pathology AI approach could support more consistent prostate cancer grading, but it is not a drug-discovery method or a clinically validated tool.",
+  "method": [
+    "Combine frozen pathology foundation-model features with raw-image features from a lightweight, distilled FastVim.",
+    "Use Mamba state-space models to encode spatial context at each scale.",
+    "Jointly train a fusion head to produce one patch-level grade prediction."
+  ],
+  "evidence_signal": "On PANDA with 5-fold cross-validation, macro F1 reached 0.894 and Gleason pattern 5 F1 reached 0.802—reported relative gains of 12% and 21% over the best single-scale model.",
+  "watch_item": "External validation and slide-level clinical evaluation are needed before translating patch-level results into practice.",
+  "hashtags": [
+    "#ComputationalPathology",
+    "#ProstateCancer",
+    "#GleasonGrading",
+    "#FoundationModels",
+    "#MultiScaleAI"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-19-arxiv-multi_scale_fusion_of_fast_vision_mamba_and_foundation_model_features_for_patch_level_glea",
+  "paper_title": "Multi-scale Fusion of Fast Vision Mamba and Foundation Model Features for Patch-Level Gleason Grading in Computational Pathology",
+  "paper_date": "2026-10-19",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-20T12:24:58",
+  "generator": "openai"
+}

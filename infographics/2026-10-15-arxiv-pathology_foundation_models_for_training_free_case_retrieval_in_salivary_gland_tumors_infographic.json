@@ -1,13 +1,13 @@
 {
-  "key_insight": "Pathology foundation models retrieved similar salivary gland tumor cases without task-specific training, with Atlas2 achieving the highest reported retrieval performance.",
-  "clinical_relevance": "Searching diagnosed case archives could support pathologists’ differential diagnosis of rare tumors, but this study evaluates case retrieval—not drug discovery or clinical outcomes.",
+  "key_insight": "Pathology foundation models enabled training-free retrieval of similar salivary gland tumor cases, with Atlas2 achieving the highest reported Top-1/3/5 retrieval performance.",
+  "clinical_relevance": "Retrieving archived cases and their diagnostic codes could support case-based differential diagnosis of rare tumors, though this study did not evaluate clinical diagnostic benefit or drug discovery.",
   "method": [
-    "Query a digitized archive using a manually or automatically selected whole-slide image region.",
-    "Use foundation-model representations to retrieve morphologically similar cases with ICD-O codes and slides.",
-    "Compare Atlas2, Atlas2-B, Atlas2-S and UNI2h using leave-one-case-out evaluation."
+    "Query a digitized archive with a manually or automatically selected whole-slide image region.",
+    "Retrieve morphologically similar cases, ICD-O codes, and corresponding slides without task-specific retrieval training.",
+    "Compare Atlas2, Atlas2-B, Atlas2-S, and UNI2h using leave-one-case-out evaluation."
   ],
-  "evidence_signal": "Across 137 cases spanning 12 ICD-O morphology categories, Atlas2 achieved 62.5%, 76.7% and 81.3% Top-1, Top-3 and Top-5 retrieval, respectively.",
-  "watch_item": "The small, imbalanced dataset and lack of reported external validation limit conclusions about performance in other pathology archives.",
+  "evidence_signal": "Among 137 cases across 12 ICD-O categories, Atlas2 achieved 62.5%, 76.7%, and 81.3% Top-1/3/5 retrieval; macro-F1 was assessed only for the five classes with at least 10 cases.",
+  "watch_item": "The small, imbalanced dataset limits generalizability; broader external validation is needed before routine diagnostic use.",
   "hashtags": [
     "#ComputationalPathology",
     "#FoundationModels",
@@ -21,6 +21,6 @@
   "paper_title": "Pathology foundation models for training-free case retrieval in salivary gland tumors",
   "paper_date": "2026-10-15",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-18T20:42:47",
+  "generated_at": "2026-10-20T12:25:24",
   "generator": "openai"
 }

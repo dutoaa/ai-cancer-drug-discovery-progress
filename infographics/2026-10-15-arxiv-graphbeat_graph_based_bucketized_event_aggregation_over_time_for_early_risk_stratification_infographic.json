@@ -1,19 +1,19 @@
 {
-  "key_insight": "GraphBEAT outperformed tested graph and sequence models for early gastrointestinal cancer risk prediction while using substantially less computation.",
-  "clinical_relevance": "This research could support earlier risk stratification for pancreatic, liver, and intestinal cancers; it addresses risk prediction, not cancer drug discovery.",
+  "key_insight": "GraphBEAT outperformed tested graph and sequence models for gastrointestinal cancer risk stratification while using substantially fewer computational resources.",
+  "clinical_relevance": "The framework could support earlier identification of pancreatic, liver, and intestinal cancer risk from longitudinal health records; it is not a drug discovery method.",
   "method": [
-    "Groups diagnosis codes and laboratory results into time buckets and patient-specific temporal graphs.",
-    "Encodes event identity, observed value, and timing, with context-aware, time-decay message passing.",
-    "Uses multi-head attention pooling to generate patient-level representations."
+    "Groups diagnosis and laboratory events into time buckets to build patient-specific, temporally directed graphs.",
+    "Encodes event identity, observed value, and temporal position in graph nodes.",
+    "Combines context-aware, time-decay message passing with multi-head attention pooling."
   ],
-  "evidence_signal": "In multi-site longitudinal EHR evaluations at 12-, 24-, and 36-month diagnostic lead times, GraphBEAT outperformed all tested baselines and required over 250× fewer FLOPs per patient and over 20× fewer parameters than Transformer and LSTM baselines.",
-  "watch_item": "The abstract does not report absolute predictive performance or prospective clinical validation, leaving real-world utility uncertain.",
+  "evidence_signal": "In multi-site EHR evaluations at 12-, 24-, and 36-month diagnostic lead times, GraphBEAT outperformed all tested baselines and required over 250× fewer operations per patient and over 20× fewer parameters than Transformer and LSTM models.",
+  "watch_item": "The abstract does not report absolute predictive performance, calibration, or prospective clinical validation, leaving real-world utility uncertain.",
   "hashtags": [
-    "#GraphBEAT",
-    "#CancerRiskPrediction",
+    "#PrecisionOncology",
     "#GraphNeuralNetworks",
+    "#CancerRiskPrediction",
     "#ElectronicHealthRecords",
-    "#PrecisionOncology"
+    "#GastrointestinalCancer"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "GraphBEAT: Graph-based Bucketized Event Aggregation Over Time for Early Risk Stratification of Gastrointestinal Cancers",
   "paper_date": "2026-10-15",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-18T20:42:53",
+  "generated_at": "2026-10-20T12:25:29",
   "generator": "openai"
 }

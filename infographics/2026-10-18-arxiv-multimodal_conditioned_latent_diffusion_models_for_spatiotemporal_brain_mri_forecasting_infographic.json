@@ -1,0 +1,26 @@
+{
+  "key_insight": "MC-LDM forecasts patient-specific brain MRI changes in Alzheimer’s disease using multimodal training signals; this is not cancer drug discovery research.",
+  "clinical_relevance": "The approach could support research into Alzheimer’s progression while reducing inference-time biomarker requirements, but clinical utility remains unestablished.",
+  "method": [
+    "Fine-tunes a latent diffusion model with Low-Rank Adaptation (LoRA).",
+    "Uses MRI, tau-PET, Clinical Dementia Rating, and APOE4 during training.",
+    "Predicts unavailable biomarkers from baseline MRI and patient covariates, requiring only MRI, APOE4, and metadata at inference."
+  ],
+  "evidence_signal": "Trained on 1,355 ADNI visits from 852 subjects, MC-LDM reduced average regional volumetric MAE by 18% versus the second-best baseline on an independent test set of 664 visits.",
+  "watch_item": "The abstract does not establish generalizability beyond ADNI or whether improved volumetric accuracy translates into clinically useful individual forecasts.",
+  "hashtags": [
+    "#AlzheimersResearch",
+    "#BrainMRI",
+    "#LatentDiffusion",
+    "#MultimodalAI",
+    "#DiseaseProgression"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-18-arxiv-multimodal_conditioned_latent_diffusion_models_for_spatiotemporal_brain_mri_forecasting",
+  "paper_title": "Multimodal-Conditioned Latent Diffusion Models for Spatiotemporal Brain MRI Forecasting",
+  "paper_date": "2026-10-18",
+  "paper_category": "Target Biology",
+  "generated_at": "2026-10-20T12:25:00",
+  "generator": "openai"
+}

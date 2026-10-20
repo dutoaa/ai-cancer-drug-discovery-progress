@@ -1,0 +1,26 @@
+{
+  "key_insight": "PRISM uses chemical priors as label-free learning signals to improve solubility prediction for unseen compounds, solvents, and solvent mixtures.",
+  "clinical_relevance": "Better solubility prediction could support drug discovery, including oncology programs, but this study does not establish cancer-specific or clinical benefits.",
+  "method": [
+    "Convert hydrophobic, electrostatic, polarizability, and substructural priors into relational teachers.",
+    "Pretrain four encoders by matching distance-based neighborhood distributions using KL divergence.",
+    "For mixed-solvent prediction, freeze the encoders and train a lightweight fusion-and-composition head."
+  ],
+  "evidence_signal": "Across scaffold, solute, and solvent out-of-distribution evaluations, PRISM matched or surpassed baselines; mixed-solvent tests showed stronger performance and lower run-to-run variation, with ablations supporting the contribution of chemical relations.",
+  "watch_item": "The abstract provides no dataset sizes or numerical effect estimates, limiting assessment of improvement magnitude and practical generalizability.",
+  "hashtags": [
+    "#AIDrugDiscovery",
+    "#SolubilityPrediction",
+    "#SelfSupervisedLearning",
+    "#OODGeneralization",
+    "#ChemicalMachineLearning"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-19-arxiv-prism_prior_relational_information_for_self_supervised_modeling_to_enhance_solubility_ood",
+  "paper_title": "PRISM: Prior Relational Information for Self-supervised Modeling to Enhance Solubility OOD Generalization",
+  "paper_date": "2026-10-19",
+  "paper_category": "Therapeutic Discovery",
+  "generated_at": "2026-10-20T12:25:17",
+  "generator": "openai"
+}

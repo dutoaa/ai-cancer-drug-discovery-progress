@@ -1,0 +1,26 @@
+{
+  "key_insight": "An adult-trained kidney MRI segmentation model showed promising transfer to pediatric Wilms tumors, but non-inferiority to a pediatric-specific model was not demonstrated.",
+  "clinical_relevance": "Adult MRI datasets may help develop pediatric tumor segmentation tools, although these findings concern imaging rather than cancer drug discovery.",
+  "method": [
+    "Trained a segmentation model on single-sequence T1- or T2-weighted adult kidney MRI.",
+    "Evaluated it on held-out adult scans and pediatric Wilms tumor scans.",
+    "Compared pediatric performance with a pediatric-specific nnU-Net using Dice scores and 95th-percentile Hausdorff distance."
+  ],
+  "evidence_signal": "Median lesion Dice scores were 0.86 on adult test scans and 0.85 on pediatric scans, versus 0.90 for the pediatric-specific model.",
+  "watch_item": "Non-inferiority was not established, underscoring the value of pediatric training data and further validation before clinical use.",
+  "hashtags": [
+    "#WilmsTumor",
+    "#PediatricOncology",
+    "#MedicalImagingAI",
+    "#MRISegmentation",
+    "#CrossDomainGeneralization"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-16-arxiv-from_adult_renal_masses_to_pediatric_wilms_tumors_evaluating_cross_domain_generalization_o",
+  "paper_title": "From Adult Renal Masses to Pediatric Wilms Tumors: Evaluating Cross-Domain Generalization of Kidney Lesion Segmentation on MRI",
+  "paper_date": "2026-10-16",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-20T12:24:53",
+  "generator": "openai"
+}

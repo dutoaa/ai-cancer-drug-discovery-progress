@@ -1,0 +1,26 @@
+{
+  "key_insight": "GenFish ranks potential protein targets for molecules using generative retrieval without explicitly treating unmeasured molecule–protein pairs as negatives.",
+  "clinical_relevance": "The approach could support target discovery and drug repurposing, including oncology research, but the abstract reports no cancer-specific or clinical validation.",
+  "method": [
+    "Encode frozen protein language-model features as shared semantic identifiers using residual vector quantization.",
+    "Predict identifier sequences autoregressively from a molecular fingerprint.",
+    "Rank proteins by identifier likelihood."
+  ],
+  "evidence_signal": "On ProTargetBench, covering 20,431 reviewed human proteins, GenFish achieved higher mean performance across all three full-catalogue retrieval metrics than seven baselines on 198 held-out molecules.",
+  "watch_item": "Recovery of recorded associations does not establish new biological targets; predictions require experimental validation.",
+  "hashtags": [
+    "#AIDrugDiscovery",
+    "#TargetIdentification",
+    "#GenerativeRetrieval",
+    "#Proteomics",
+    "#DrugRepurposing"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-17-arxiv-generative_retrieval_for_reverse_target_fishing_with_a_proteome_scale_benchmark",
+  "paper_title": "Generative Retrieval for Reverse Target Fishing with a Proteome-Scale Benchmark",
+  "paper_date": "2026-10-17",
+  "paper_category": "Therapeutic Discovery",
+  "generated_at": "2026-10-20T12:24:51",
+  "generator": "openai"
+}

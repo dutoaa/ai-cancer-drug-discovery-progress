@@ -1,0 +1,26 @@
+{
+  "key_insight": "Cross-cohort breast cancer subtype accuracy is distorted by incompatible label sets, making label-space alignment essential before attributing performance differences to model skill.",
+  "clinical_relevance": "Reliable subtype evaluation matters because subtype boundaries can affect treatment interpretation, but this study does not establish improved treatment outcomes.",
+  "method": [
+    "Transfer a METABRIC-trained subtype classifier to TCGA-BRCA and GSE21653.",
+    "Separate label-space restriction from optional EM prior calibration.",
+    "Evaluate multimodal transfer, response prediction, and survival discrimination."
+  ],
+  "evidence_signal": "Restricting predictions to each target cohort’s allowed labels raised accuracy from 73.76% to 79.74% in TCGA-BRCA (n=987) and from 63.16% to 68.42% in GSE21653 (n=266), without retraining.",
+  "watch_item": "Allowed labels must come from cohort documentation, not unlabelled predictions; optional EM calibration improved Brier performance but reduced macro F1.",
+  "hashtags": [
+    "#BreastCancer",
+    "#PrecisionOncology",
+    "#MolecularSubtyping",
+    "#AIValidation",
+    "#DatasetShift"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-18-arxiv-label_space_mismatch_distorts_cross_cohort_evaluation_in_breast_cancer_molecular_subtyping",
+  "paper_title": "Label-Space Mismatch Distorts Cross-Cohort Evaluation in Breast Cancer Molecular Subtyping",
+  "paper_date": "2026-10-18",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-20T12:25:33",
+  "generator": "openai"
+}
