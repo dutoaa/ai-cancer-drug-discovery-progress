@@ -1,19 +1,19 @@
 {
   "key_insight": "LLM-generated SQL enabled rapid, explicit screening for potential cancer trial eligibility, with 95.8% agreement against physician consensus.",
-  "clinical_relevance": "This approach could help identify trials for clinician review, but it does not establish full eligibility or guide treatment selection.",
+  "clinical_relevance": "This approach could support trial prescreening for advanced cancers, but does not establish definitive eligibility.",
   "method": [
-    "Converted unstructured trial criteria into reusable SQL eligibility rules.",
-    "Structured 24 synthetic patient vignettes for rule-based matching without further LLM inference.",
-    "Screened 746 recruiting US trials for advanced breast, colon, and non-small cell lung cancers."
+    "Collected 746 recruiting US treatment trials for advanced breast, colon, and non-small cell lung cancers.",
+    "Converted trial criteria into reusable SQL and 24 synthetic patient vignettes into structured records.",
+    "Used rule-based matching without further LLM inference and validated results against physician review."
   ],
-  "evidence_signal": "Across 240 patient–trial pairs from 10 trials, agreement was 230/240, sensitivity 83.3%, and specificity 100%; screening all 746 trials took a median 0.459 seconds per patient, excluding data preparation.",
-  "watch_item": "Validation used synthetic patients and omitted laboratory results and comorbidities; missed matches highlight the need for further validation.",
+  "evidence_signal": "Matching agreed with physician consensus on 230/240 patient-trial pairs (83.3% sensitivity; 100% specificity), with a median runtime of 0.459 seconds per patient across 746 trials, excluding patient-data preparation.",
+  "watch_item": "Evaluation used synthetic patients and omitted laboratory results and comorbidities; missed matches and real-world performance require further validation.",
   "hashtags": [
     "#PrecisionOncology",
     "#ClinicalTrialMatching",
     "#ArtificialIntelligence",
     "#CancerResearch",
-    "#EligibilityScreening"
+    "#ClinicalInformatics"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Quantifying Cancer Clinical Trial Eligibility Using Artificial Intelligence-Based Matching",
   "paper_date": "2026-10-15",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-20T12:25:02",
+  "generated_at": "2026-10-21T12:36:43",
   "generator": "openai"
 }

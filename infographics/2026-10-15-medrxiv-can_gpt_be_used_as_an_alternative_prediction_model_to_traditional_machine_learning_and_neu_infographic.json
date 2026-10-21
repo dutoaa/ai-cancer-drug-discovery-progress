@@ -1,0 +1,26 @@
+{
+  "key_insight": "A Distil GPT2 table-to-text framework showed strong disease prediction performance on small clinical datasets, including thyroid cancer recurrence; it did not study drug discovery.",
+  "clinical_relevance": "The approach may support research into prediction from limited, imbalanced clinical data, but clinical utility remains unproven.",
+  "method": [
+    "Convert structured patient records into physician-style text.",
+    "Use GPT4-generated medical paraphrases to increase minority-class representation and fine-tune Distil GPT2.",
+    "Apply gradient-based explainability to identify influential clinical features."
+  ],
+  "evidence_signal": "Across four public datasets covering heart disease, heart failure, chronic kidney disease, and thyroid cancer recurrence, reported average precision, specificity, sensitivity, and F1-score were 0.96, 0.97, 0.96, and 0.96, respectively.",
+  "watch_item": "The abstract does not specify external validation or safeguards against leakage from paraphrased records, limiting confidence in real-world generalization.",
+  "hashtags": [
+    "#ClinicalAI",
+    "#ThyroidCancer",
+    "#DiseasePrediction",
+    "#SmallData",
+    "#ExplainableAI"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-15-medrxiv-can_gpt_be_used_as_an_alternative_prediction_model_to_traditional_machine_learning_and_neu",
+  "paper_title": "Can GPT Be Used as an Alternative Prediction Model to Traditional Machine Learning and Neural Networks on Low-Volume Clinical Data?",
+  "paper_date": "2026-10-15",
+  "paper_category": "Cancer AI Methods",
+  "generated_at": "2026-10-21T12:36:46",
+  "generator": "openai"
+}
