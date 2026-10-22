@@ -1,0 +1,26 @@
+{
+  "key_insight": "HistoLoop iteratively refines spatial context to predict gene expression from H&E histology images, achieving the highest average correlation among compared methods.",
+  "clinical_relevance": "Predicted spatial gene expression could support research into tumor biology, but the abstract does not establish clinical utility or drug discovery outcomes.",
+  "method": [
+    "Construct context tokens from current tissue-spot states at progressively finer resolutions.",
+    "Use a shared spatial Transformer and cross-attention to retrieve spot-specific context.",
+    "Update persistent spot states through memory-mediated refinement before rebuilding context."
+  ],
+  "evidence_signal": "Under HEST-Bench HVG50 evaluation, HistoLoop achieved the highest macro-averaged gene-wise Pearson correlation among compared methods across six cancer-specific tasks spanning five organs in HEST-1K.",
+  "watch_item": "The abstract reports benchmark performance without numerical effect sizes; generalization beyond the evaluated tasks remains unestablished.",
+  "hashtags": [
+    "#ComputationalPathology",
+    "#SpatialTranscriptomics",
+    "#PrecisionOncology",
+    "#HistologyAI",
+    "#GeneExpressionPrediction"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-20-arxiv-histoloop_iterative_contextual_inference_with_a_looped_transformer_for_histology_based_spa",
+  "paper_title": "HistoLoop: Iterative Contextual Inference with a Looped Transformer for Histology-Based Spatial Gene Expression Prediction",
+  "paper_date": "2026-10-20",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-22T12:40:08",
+  "generator": "openai"
+}

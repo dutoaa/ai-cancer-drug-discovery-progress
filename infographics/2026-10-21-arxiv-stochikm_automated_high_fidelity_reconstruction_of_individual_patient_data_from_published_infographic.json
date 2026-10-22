@@ -1,0 +1,26 @@
+{
+  "key_insight": "StochIKM reconstructs multiple plausible individual patient datasets from published Kaplan–Meier curves under explicit fidelity constraints, rather than returning a single reconstruction.",
+  "clinical_relevance": "The method could support secondary analyses of oncology trial survival outcomes when original patient-level data are unavailable.",
+  "method": [
+    "Uses a vision-capable language model to digitize published Kaplan–Meier figures.",
+    "Constrains reconstructions to match risk tables exactly, curves within image resolution, and reported medians, intervals and event counts.",
+    "Stochastically generates a set of datasets satisfying these constraints."
+  ],
+  "evidence_signal": "In simulations and 79 published oncology trial arms, StochIKM matched reported risk tables and medians more closely than LLM-improved IPDfromKM.",
+  "watch_item": "Fidelity depends on correct figure digitization, and admissible reconstructions do not uniquely recover the original patient data.",
+  "hashtags": [
+    "#OncologyResearch",
+    "#SurvivalAnalysis",
+    "#KaplanMeier",
+    "#PatientDataReconstruction",
+    "#AIForResearch"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-21-arxiv-stochikm_automated_high_fidelity_reconstruction_of_individual_patient_data_from_published",
+  "paper_title": "StochIKM: Automated High-Fidelity Reconstruction of Individual Patient Data from Published Kaplan-Meier Curves",
+  "paper_date": "2026-10-21",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-22T12:40:10",
+  "generator": "openai"
+}

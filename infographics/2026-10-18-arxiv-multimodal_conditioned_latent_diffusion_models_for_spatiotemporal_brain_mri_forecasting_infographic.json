@@ -1,13 +1,13 @@
 {
-  "key_insight": "MC-LDM forecasts patient-specific brain MRI changes in Alzheimer’s disease using multimodal training signals; this is not cancer drug discovery research.",
-  "clinical_relevance": "The approach could support research into Alzheimer’s progression while reducing inference-time biomarker requirements, but clinical utility remains unestablished.",
+  "key_insight": "MC-LDM uses multimodal training signals to forecast patient-specific brain MRI changes in Alzheimer’s disease, not cancer drug discovery.",
+  "clinical_relevance": "The approach could support research on Alzheimer’s progression while requiring only baseline MRI, APOE4 status, and patient metadata at inference; clinical utility remains unproven.",
   "method": [
-    "Fine-tunes a latent diffusion model with Low-Rank Adaptation (LoRA).",
-    "Uses MRI, tau-PET, Clinical Dementia Rating, and APOE4 during training.",
-    "Predicts unavailable biomarkers from baseline MRI and patient covariates, requiring only MRI, APOE4, and metadata at inference."
+    "Fine-tune a latent diffusion model using Low-Rank Adaptation (LoRA).",
+    "Integrate MRI, tau-PET, Clinical Dementia Rating, and APOE4 during training.",
+    "Predict unavailable biomarkers from MRI features and patient covariates to condition forecasts at inference."
   ],
   "evidence_signal": "Trained on 1,355 ADNI visits from 852 subjects, MC-LDM reduced average regional volumetric MAE by 18% versus the second-best baseline on an independent test set of 664 visits.",
-  "watch_item": "The abstract does not establish generalizability beyond ADNI or whether improved volumetric accuracy translates into clinically useful individual forecasts.",
+  "watch_item": "Performance beyond the reported ADNI evaluation and the clinical reliability of generated trajectories require further validation.",
   "hashtags": [
     "#AlzheimersResearch",
     "#BrainMRI",
@@ -21,6 +21,6 @@
   "paper_title": "Multimodal-Conditioned Latent Diffusion Models for Spatiotemporal Brain MRI Forecasting",
   "paper_date": "2026-10-18",
   "paper_category": "Target Biology",
-  "generated_at": "2026-10-20T12:25:00",
+  "generated_at": "2026-10-22T12:40:31",
   "generator": "openai"
 }

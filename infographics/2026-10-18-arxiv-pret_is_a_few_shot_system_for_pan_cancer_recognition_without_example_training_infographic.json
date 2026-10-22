@@ -1,12 +1,13 @@
 {
-  "key_insight": "PRET is a few-shot AI system for pan-cancer recognition in pathology—not drug discovery—that uses a small set of examples without task-specific training.",
-  "clinical_relevance": "PRET could support pathology workflows where labeled data and specialist capacity are limited, but the reported results do not establish readiness for routine clinical use.",
+  "key_insight": "PRET uses a few example slides to recognize cancers across organs, hospitals and tasks without task-specific training; it targets pathology recognition, not drug discovery.",
+  "clinical_relevance": "The system could help scale AI-assisted pathology where labeled data and pathologists are scarce, but the reported results do not establish readiness for routine clinical use.",
   "method": [
-    "Uses a few example slides for cancer recognition without task-specific training.",
-    "Targets recognition across different organs, hospitals, and tasks."
+    "Few-shot pan-cancer recognition using example slides.",
+    "No task-specific training on those examples.",
+    "Evaluated across organs, hospitals and recognition tasks."
   ],
-  "evidence_signal": "Across 23 international benchmarks containing 4,484 whole-slide images, PRET reportedly outperformed existing approaches on 20 tasks and achieved over 97% AUC on 15 benchmarks; with eight example slides, it outperformed 11 pathologists in a lymph node metastasis evaluation.",
-  "watch_item": "Prospective clinical validation is needed to establish reliability, generalizability, and safe integration into pathology workflows.",
+  "evidence_signal": "Across 23 international benchmarks containing 4,484 whole-slide images, PRET outperformed existing approaches on 20 tasks and achieved over 97% AUC on 15 benchmarks; with eight example slides, it also outperformed 11 pathologists in a lymph node metastasis evaluation.",
+  "watch_item": "Prospective validation in real-world clinical workflows is needed before assuming these benchmark results generalize to routine care.",
   "hashtags": [
     "#AIPathology",
     "#PrecisionOncology",
@@ -20,6 +21,6 @@
   "paper_title": "PRET is a few-shot system for pan-cancer recognition without example training",
   "paper_date": "2026-10-18",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-20T12:24:56",
+  "generated_at": "2026-10-22T12:40:26",
   "generator": "openai"
 }

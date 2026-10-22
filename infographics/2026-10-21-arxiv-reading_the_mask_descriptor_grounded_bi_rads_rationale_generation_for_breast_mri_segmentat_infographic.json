@@ -1,0 +1,26 @@
+{
+  "key_insight": "BI-RADS-grounded descriptors derived from breast MRI segmentation masks can guide an LLM to generate highly faithful lesion-assessment rationales.",
+  "clinical_relevance": "This imaging-explainability approach—not drug discovery—could provide draft rationales for radiologist review and final sign-off.",
+  "method": [
+    "Extract eight quantitative radiomic measurements, lesion size, and component count from masks and dynamic contrast-enhanced MRI.",
+    "Map measurements to descriptors through a BI-RADS-based decision tree.",
+    "Constrain an LLM to verbalize only the derived descriptor records."
+  ],
+  "evidence_signal": "Across 1,506 MAMA-MIA cases, expert and automatic masks yielded 3,012 rationales with 99.98% faithfulness and 99.3% counterfactual accuracy.",
+  "watch_item": "Descriptor agreement between expert and automatic masks declined from 0.832 for Good masks to 0.549 for Missed masks; faithful wording does not establish clinical correctness.",
+  "hashtags": [
+    "#BreastMRI",
+    "#BIRADS",
+    "#ExplainableAI",
+    "#MedicalImaging",
+    "#RadiologyResearch"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-21-arxiv-reading_the_mask_descriptor_grounded_bi_rads_rationale_generation_for_breast_mri_segmentat",
+  "paper_title": "Reading the Mask: Descriptor-Grounded BI-RADS Rationale Generation for Breast MRI Segmentation",
+  "paper_date": "2026-10-21",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-22T12:39:50",
+  "generator": "openai"
+}

@@ -1,0 +1,26 @@
+{
+  "key_insight": "VGL-stGen connects lung tissue morphology with molecular states in one multimodal model supporting 13 evaluated tasks.",
+  "clinical_relevance": "The model could support exploratory lung cancer biology research by linking histology, gene expression and cell identity, but clinical utility and drug discovery impact remain unestablished.",
+  "method": [
+    "Adapt a pretrained medical vision-language model using paired lung H&E images, spatial transcriptomics and single-cell references.",
+    "Transfer cell-type supervision to histology through gene-conditioned pseudo-labels.",
+    "Generate task-specific labels, gene lists and expression levels, fixing queried gene identities for conditional expression completion."
+  ],
+  "evidence_signal": "Across 13 tasks using one checkpoint, fixing queried gene identities improved conditional completion, and image-permutation experiments indicated that correctly paired histology added information beyond observed expression.",
+  "watch_item": "External classification partly relied on computational references with shared annotation lineage, and prior exposure to some H&E sources limits claims of independent generalization.",
+  "hashtags": [
+    "#MultimodalAI",
+    "#SpatialTranscriptomics",
+    "#ComputationalPathology",
+    "#LungCancerResearch",
+    "#TargetBiology"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-20-arxiv-vgl_stgen_learning_a_shared_multimodal_model_for_lung_histology_and_spatial_transcriptomic",
+  "paper_title": "VGL-stGen: Learning a shared multimodal model for lung histology and spatial transcriptomics",
+  "paper_date": "2026-10-20",
+  "paper_category": "Target Biology",
+  "generated_at": "2026-10-22T12:39:52",
+  "generator": "openai"
+}

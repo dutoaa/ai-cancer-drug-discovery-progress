@@ -1,0 +1,26 @@
+{
+  "key_insight": "Clinical System One (CS1) is a compact AI model for fast clinical-record judgments, supporting record review and trial matching rather than directly discovering cancer drugs.",
+  "clinical_relevance": "CS1 could help prioritize patients for clinical trial eligibility review, with uncertain judgments routed to humans.",
+  "method": [
+    "Train a 4-billion-parameter model on 12.4 million question–answer pairs from 3.6 million patients.",
+    "Answer multiple typed questions per forward pass, with a probability for each answer.",
+    "Pair CS1 with a generalist language-model agent to synthesize cited evidence and screen trial criteria."
+  ],
+  "evidence_signal": "On 963,408 held-out patients, CS1 outperformed open decision models up to 27 billion parameters on 13 of 14 independently scored tasks; across 21 external datasets, it approached the strongest tested model with 6.4-fold faster inference.",
+  "watch_item": "The abstract does not establish prospective clinical benefit or cancer-specific performance; trial eligibility judgments require clinical verification.",
+  "hashtags": [
+    "#ClinicalAI",
+    "#ClinicalTrialMatching",
+    "#PatientRecords",
+    "#EfficientAI",
+    "#HumanOversight"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-19-arxiv-a_general_purpose_system_one_decision_model_for_clinical_records",
+  "paper_title": "A general-purpose System One decision model for clinical records",
+  "paper_date": "2026-10-19",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-22T12:40:16",
+  "generator": "openai"
+}

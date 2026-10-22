@@ -1,19 +1,19 @@
 {
-  "key_insight": "CoRe-WM learns how breast MRI response states evolve during treatment, then uses frozen representations to predict pathologic complete response (pCR).",
-  "clinical_relevance": "The approach could support research into treatment-response assessment during neoadjuvant chemotherapy, rather than relying on pretreatment imaging alone.",
+  "key_insight": "CoRe-WM learns evolving breast MRI response states to predict pathologic complete response after neoadjuvant chemotherapy, rather than learning representations directly from outcome labels.",
+  "clinical_relevance": "The approach could support treatment-response assessment at successive imaging visits, but clinical benefit has not been established.",
   "method": [
     "Predicts the next latent imaging state from longitudinal breast DCE-MRI.",
-    "Conditions state transitions on patient clinical profiles and assigned therapy, with a separate lesion-morphology response pathway.",
-    "Freezes pretrained model parameters and trains a linear pCR readout at each decision point."
+    "Conditions state transitions on patient clinical profiles and assigned therapy while separating response dynamics from imaging appearance.",
+    "Freezes the pretrained model and trains a linear readout to predict pathologic complete response."
   ],
-  "evidence_signal": "In five-fold cross-validation on I-SPY2, CoRe-WM reportedly achieved the highest discrimination among evaluated methods at every prospective decision point and showed cross-cohort transfer to I-SPY1.",
-  "watch_item": "The abstract provides no numerical performance estimates or prospective clinical validation; this is treatment-response prediction research, not drug discovery or evidence for changing treatment.",
+  "evidence_signal": "In five-fold cross-validation on I-SPY2, CoRe-WM showed the highest discrimination among evaluated methods at every prospective decision point; transfer was also assessed on I-SPY1.",
+  "watch_item": "The abstract provides no numerical performance estimates, and prospective clinical validation is needed before use in treatment decisions.",
   "hashtags": [
-    "#BreastCancer",
     "#PrecisionOncology",
+    "#BreastCancer",
+    "#TreatmentResponse",
     "#MedicalImagingAI",
-    "#WorldModels",
-    "#TreatmentResponse"
+    "#WorldModels"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "CoRe-WM: Conditioned Response-State World Modeling for Longitudinal Treatment-Response Prediction in Breast DCE-MRI",
   "paper_date": "2026-10-18",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-20T12:24:48",
+  "generated_at": "2026-10-22T12:40:06",
   "generator": "openai"
 }

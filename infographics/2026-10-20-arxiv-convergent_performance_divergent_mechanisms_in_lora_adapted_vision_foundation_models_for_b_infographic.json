@@ -1,0 +1,26 @@
+{
+  "key_insight": "Four vision backbones achieved similar brain tumour segmentation performance after LoRA adaptation but showed different internal changes and effects on Alzheimer's classification.",
+  "clinical_relevance": "For research on brain MRI, segmentation accuracy alone may not identify models that preserve performance across tasks; this study does not evaluate cancer drug discovery or clinical outcomes.",
+  "method": [
+    "Adapted DINOv3, SigLIP2, MerMED-FM and BiomedCLIP ViT-B/16 backbones using LoRA.",
+    "Examined attention divergence, weight changes and activation patching to identify causally relevant layers.",
+    "Tested LoRA restricted to early-to-mid layers against full-layer adaptation."
+  ],
+  "evidence_signal": "Across six datasets covering tumour segmentation and Alzheimer's classification, mean segmentation Dice was 78–81%; adaptation improved classification for DINOv3 but degraded it for the other three backbones.",
+  "watch_item": "Layer-restricted LoRA reduced classification degradation in the affected backbones, but broader generalisation and clinical utility remain unestablished.",
+  "hashtags": [
+    "#BrainMRI",
+    "#BrainTumourSegmentation",
+    "#LoRA",
+    "#VisionFoundationModels",
+    "#MechanisticInterpretability"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-20-arxiv-convergent_performance_divergent_mechanisms_in_lora_adapted_vision_foundation_models_for_b",
+  "paper_title": "Convergent Performance, Divergent Mechanisms in LoRA-Adapted Vision Foundation Models for Brain MRI",
+  "paper_date": "2026-10-20",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-22T12:40:03",
+  "generator": "openai"
+}
