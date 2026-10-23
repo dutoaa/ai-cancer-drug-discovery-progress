@@ -1,1072 +1,160 @@
 [
   {
-    "id": "2026-10-21-arxiv-an_interpretable_deep_learning_method_for_early_hepatocellular_carcinoma_diagnosis_on_mult",
-    "arxiv_id": "2610.29616v1",
-    "date": "2026-10-21",
-    "title": "An interpretable deep learning method for early hepatocellular carcinoma diagnosis on multiphase CT",
-    "authors": "Emma Sarfati, Alexandre Bône, Pietro Gori, Sisi Yang, Marc-Michel Rohé, François Nicolas",
-    "abstract": "Early diagnosis of hepatocellular carcinoma is critical to preserve access to curative treatment options. The Liver Imaging Reporting and Data System (LI-RADS) provides a standardized framework for non-invasive diagnosis on multiphase computed tomography, based on major visual imaging features. However, these features may be difficult to assess consistently, particularly in small liver lesions. We developed dLI-RADS, an interpretable artificial intelligence method designed to estimate the probability of hepatocellular carcinoma from multiphase computed tomography images of manually segmented liver lesions, while remaining aligned with LI-RADS-related imaging concepts. dLI-RADS combines neural network-derived predictions with handcrafted quantitative imaging measurements reflecting LI-RADS major features and integrates these inputs using logistic regression. In this multicenter retrospective study, patients with multiphase computed tomography and at least one liver lesion were included, while lesions larger than 40 mm were excluded. Histology served as the reference standard for hepatocellular carcinoma, and a composite reference standard was used for non-hepatocellular carcinoma lesions. The lesion-level accuracy of dLI-RADS and LI-RADS were compared on the internal evaluation set using 10,000-repetition bootstrap non-inferiority tests, with 5% margins and significance levels. On the external test set, sensitivities were similarly compared. dLI-RADS was non-inferior to LI-RADS for lesion-level accuracy in the internal evaluation set, achieving 80% accuracy compared with 74% for LI-RADS (p = 0.04)...",
+    "id": "2026-10-20-medrxiv-privacy_preserving_large_language_model_deployment_for_oncology_registry_abstraction_struc",
+    "doi": "10.64898/2026.05.18.26353541",
+    "date": "2026-10-20",
+    "title": "Privacy-Preserving Large Language Model Deployment for Oncology Registry Abstraction: Structure-Aware Evaluation in a Real-World Clinical Setting",
+    "authors": "Moldovan, M.; Enikeev, R.; Chu, M.; Amalraj, A.; Koli, P. P.; Abdul, S. S.; Sivaraj, H.; Iqbal, U.; Toh, C. K.",
+    "abstract": "Objectives Structuring oncology clinical notes into registry-grade variables is essential for research and care but remains labour-intensive and error-prone. This study developed and evaluated a privacy-preserving large language model pipeline for oncology registry abstraction in a real-world clinical setting.<br> Methods An open-source Meta Llama 3.3 70B-based pipeline, prompted without task-specific fine-tuning, was deployed to extract over 50 variables from 6,700 oncology notes at a cancer centre in Singapore. Data were de-identified locally using a Hide-In-Plain-Sight approach, ensuring no identifiable data left hospital infrastructure. Performance was assessed on 200 randomly sampled notes with adjudicated ground truth, using a structure-aware framework that classified outputs as correct, missing, spurious, or incorrect.<br> Results F1 scores were high across variables, including diagnosis (97.2%), histology (95.8%), stage (92.6%), biomarkers (91.4%), and treatments (88.1%). Preliminary transferability testing on 50 external notes showed strong performance for core diagnostic variables, with reduced performance for list-valued variables.<br> Discussion The structure-aware evaluation approach separated omissions from fabrications, providing more clinically actionable insight than aggregate metrics alone.<br> Conclusion Privacy-preserving large language models achieved high extraction accuracy under a clinician-verified reference standard, supporting their feasibility for oncology registry abstraction in real-world clinical settings. Keywords: Large language models; Oncology registry abstraction; Natural language processing; Privacy-preserving AI; Clinical data extraction<br> What is already known on this topic Structuring oncology clinical notes into registry-grade variables is essential for cancer research and care but remains labour-intensive, costly, and inconsistent from one reviewer to the next when performed manually. Large language models offer potential to automate this task, but their use in real-world registries has been limited by concerns over patient data privacy, reliance on task-specific fine-tuning, and evaluation methods that obscure the difference between missing and fabricated information.<br> What this study adds This study shows that an open-source, privacy-preserving large language model pipeline, deployed entirely within hospital infrastructure without task-specific fine-tuning, can extract over 50 registry variables from oncology notes with high accuracy (F1 scores 88-97% across key variables), validated against ground truth checked by two clinicians. Using a structure-aware evaluation framework, we demonstrate that errors can be meaningfully separated into missing, spurious, and incorrect categories, offering clearer insight into model behaviour than aggregate accuracy metrics alone, and show preliminary evidence of transferability to notes from an external setting.<br> How this study might affect research, practice or policy These findings support the feasibility of deploying privacy-preserving, locally hosted large language models for oncology registry abstraction without requiring identifiable data to leave hospital systems or extensive model customisation. The structure-aware evaluation framework is also shared as a reusable template, enabling other institutions to validate similar AI extraction tools in a consistent, clinically meaningful way before wider implementation.</br>",
     "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-21T11:56:23Z",
-    "updated": "2026-10-21T11:56:23Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.29616v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.29616v1"
-      }
-    ],
-    "score": 78,
-    "infographic": {
-      "key_insight": "dLI-RADS combines deep learning with interpretable imaging measurements to estimate hepatocellular carcinoma probability from multiphase CT—not to discover drugs.",
-      "clinical_relevance": "The method could support imaging-based assessment of small liver lesions, where LI-RADS features can be difficult to evaluate consistently.",
-      "method": [
-        "Analyzes manually segmented liver lesions on multiphase CT.",
-        "Combines neural network predictions with quantitative measurements reflecting LI-RADS major features.",
-        "Integrates these inputs using logistic regression."
-      ],
-      "evidence_signal": "In a multicenter retrospective study excluding lesions larger than 40 mm, internal lesion-level accuracy was 80% for dLI-RADS versus 74% for LI-RADS, meeting the reported non-inferiority criterion (p = 0.04).",
-      "watch_item": "Retrospective evaluation and manual segmentation limit workflow readiness; external-test results are not provided in the supplied abstract excerpt.",
-      "hashtags": [
-        "#HepatocellularCarcinoma",
-        "#MedicalImagingAI",
-        "#InterpretableAI",
-        "#LIRADS",
-        "#PrecisionOncology"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-21-arxiv-an_interpretable_deep_learning_method_for_early_hepatocellular_carcinoma_diagnosis_on_mult",
-      "paper_title": "An interpretable deep learning method for early hepatocellular carcinoma diagnosis on multiphase CT",
-      "paper_date": "2026-10-21",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-22T12:39:45",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-16-medrxiv-multimodal_profiling_for_prediction_of_primary_resistance_to_anti_pd_l_1_therapy_in_advanc",
-    "doi": "10.64898/2026.01.09.26343779",
-    "date": "2026-10-16",
-    "title": "Multimodal profiling for prediction of primary resistance to anti-PD-(L)1 therapy in advanced non-small-cell lung cancer: the prospective PIONeeR biomarkers study",
-    "authors": "Barlesi, F.; Monville, F.; Vely, F.; Greillier, L.; Sabatier, F.; Dales, J.-P.; Bakhmach, A.; Pouchin, A.; Ciccolini, J.; Garcia, S.; Ngoi, N.; Foa, C.; Arnaud, L.; Bokobza, S.; Vaglio, A.; Karlsen, M.; Dufosse, P.; Audigier-Valette, C.; Letreut, J.; Laborde, L.; Milpied, P.; Perol, D.; Boussena, M.; Bigarre, C.; Hamimed, M.; Malkoun, R.; Leca, V.; Landri, M.; Le Ray, M.; Roumieux, M.; Mazieres, J.; Perol, M.; Fieschi-Meric, J.; Vivier, E.; Benzekry, S.",
-    "abstract": "BackgroundPretreatment prediction of primary resistance to anti-PD-(L)1 therapy in advanced non-small-cell lung cancer (NSCLC) remains an unmet clinical need. Existing biomarkers -- including PD-L1 expression and tumour mutational burden (TMB) -- are insufficiently discriminatory, and multimodal predictive models targeting primary resistance are still lacking to precisely drive patients treatment strategy. MethodsPIONeeR was a prospective, multicentre biomarker study conducted across 17 centres (NCT03493581). Adults with advanced NSCLC initiating standard-of-care first-line platinum-based chemotherapy plus anti-PD-(L)1 therapy, or second-or-later-line anti- PD-(L)1 monotherapy, were enrolled. Pretreatment multimodal profiling spanned six biological layers: clinical, routine medical biology, high-dimensional circulating immune phenotyping, soluble vascular markers, tumour immune contexture with digital pathology analysis of multiplex immunohistochemistry and immunofluorescence, transcriptomics and genomics. The primary endpoint was prediction of primary resistance (PrR). Thirty-six feature-selection methods and ten machine learning models (360 pipelines) were benchmarked within a .632 optimism-correction framework. ResultsBetween March 2018 and January 2023, 439 patients were enrolled (269 first-line, 170 subsequent-line); 435 were evaluable for PrR, which occurred in 39.5%. Individual biomarkers showed broad but modest associations with PrR (maximum AUROC 0.64). In the first-line chemo-immunotherapy setting, the multimodal signature achieved an optimism-corrected AUROC of 0.69 {+/-} 0.06 and a Positive Predictive Value (PPV) of 0.51 {+/-} 0.11 against a primary-resistance prevalence of 30%, outperforming PD-L1 (PPV 0.36 {+/-} 0.02) and TMB (PPV 0.35 {+/-} 0.03). In the subsequent-line setting it achieved an AUROC of 0.69 {+/-} 0.08 and a PPV of 0.64 {+/-} 0.08, where PD-L1 alone performed at least as well (PPV 0.68). The 18-feature signature included stromal regulatory T-cell infiltration, circulating transitional B cells, and multiple routine laboratory variables, with treatment-setting-dependent contributions. InterpretationDespite comprehensive multimodal pretreatment profiling, primary resistance to anti- PD-(L)1 therapy in advanced NSCLC cannot be captured by isolated biomarkers alone. Complete results are publicly accessible through an interactive dashboard (https://compo.inria.fr/pioneer-dashboard/), a reference resource for future meta-analyses. Multimodal integration improved risk stratification while highlighting the strong contribution of routinely available baseline variables. These findings support the development of clinically pragmatic models to identify patients who should access next-generation immunotherapy strategies aimed at overcoming primary resistance to PD-(L)1 inhibition.",
-    "category": "Target Biology",
     "source": "medRxiv",
-    "published": "2026-10-16",
-    "updated": "2026-10-16",
-    "primary_category": "oncology",
+    "published": "2026-10-20",
+    "updated": "2026-10-20",
+    "primary_category": "health informatics",
     "categories": [
-      "oncology"
+      "health informatics"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.01.09.26343779v3"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.18.26353541v2"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.01.09.26343779v3.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.18.26353541v2.full.pdf"
       }
     ],
-    "score": 73,
+    "score": 78,
     "infographic": {
-      "key_insight": "Multimodal machine learning modestly predicted primary resistance to anti-PD-(L)1 therapy in advanced NSCLC, outperforming PD-L1 and TMB in first-line chemo-immunotherapy but not PD-L1 in later-line therapy.",
-      "clinical_relevance": "The signature could support research into pretreatment resistance stratification, but these findings do not establish readiness for treatment selection.",
+      "key_insight": "A privacy-preserving Llama 3.3 70B pipeline achieved high accuracy in oncology registry abstraction, rather than cancer drug discovery.",
+      "clinical_relevance": "The approach could support cancer research by converting clinical notes into structured registry data while keeping identifiable information within hospital infrastructure.",
       "method": [
-        "Prospective biomarker profiling across 17 centres, integrating clinical, laboratory, circulating immune, vascular, tumour immune and molecular data.",
-        "Benchmarked 360 feature-selection and machine-learning pipelines using .632 optimism correction.",
-        "Identified an 18-feature signature including stromal regulatory T cells, circulating transitional B cells and routine laboratory variables."
+        "Extracted over 50 variables from 6,700 oncology notes without task-specific fine-tuning.",
+        "Used local Hide-In-Plain-Sight de-identification to protect patient information.",
+        "Classified outputs as correct, missing, spurious, or incorrect."
       ],
-      "evidence_signal": "Among 435 evaluable patients, 39.5% had primary resistance; corrected AUROC was 0.69 in both treatment settings, with first-line PPV of 0.51 versus 0.36 for PD-L1 and 0.35 for TMB.",
-      "watch_item": "Discrimination remained modest, and the abstract reports internal optimism correction rather than independent external validation.",
+      "evidence_signal": "Evaluation on 200 randomly sampled notes with adjudicated ground truth yielded F1 scores of 97.2% for diagnosis, 95.8% for histology, 92.6% for stage, 91.4% for biomarkers, and 88.1% for treatments.",
+      "watch_item": "External testing covered only 50 notes and showed reduced performance for list-valued variables, leaving broader generalizability uncertain.",
       "hashtags": [
-        "#NSCLC",
-        "#Immunotherapy",
-        "#MachineLearning",
-        "#MultimodalBiomarkers",
-        "#PrimaryResistance"
+        "#OncologyInformatics",
+        "#CancerRegistries",
+        "#PrivacyPreservingAI",
+        "#LargeLanguageModels",
+        "#ClinicalNLP"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
-      "paper_id": "2026-10-16-medrxiv-multimodal_profiling_for_prediction_of_primary_resistance_to_anti_pd_l_1_therapy_in_advanc",
-      "paper_title": "Multimodal profiling for prediction of primary resistance to anti-PD-(L)1 therapy in advanced non-small-cell lung cancer: the prospective PIONeeR biomarkers study",
-      "paper_date": "2026-10-16",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-10-22T12:39:47",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-21-arxiv-reading_the_mask_descriptor_grounded_bi_rads_rationale_generation_for_breast_mri_segmentat",
-    "arxiv_id": "2610.29358v1",
-    "date": "2026-10-21",
-    "title": "Reading the Mask: Descriptor-Grounded BI-RADS Rationale Generation for Breast MRI Segmentation",
-    "authors": "Hrishikesh Singh, Aarti Sharma, Divyanshu Kumar, Millie Pant",
-    "abstract": "Deep learning based models accurately delineate tumours on dynamic contrast-enhanced MRI (DCE-MRI), but segmentation masks alone do not provide the rationales or reasoning used by radiologists to assess the lesion suspicion. This limits the explainability as well the clinical integration. We investigate whether clinically relevant descriptors can instead be derived from the segmentation masks and their dynamic contrast-enhancement series. We have used Breast Imaging Reporting and Data System (BI-RADS) guidelines as a structured framework. Using these guidelines we designed a BI-RADS decision tree with eight quantitative measurements using radiomics, together with the lesion size and component count, that determine the descriptors at eight nodes. Using these descriptors we generate natural-language rationale using a large language model. The model was constrained to express only the derived records from the decision tree. After applying this framework to the expert and automatic masks of each of the 1,506 cases in the MAMA-MIA dataset, we generated a reproducible corpus of 3,012 BI-RADS grounded rationales. We obtained a faithfulness score of 99.98% and a counterfactual accuracy of 99.3%, indicating that the generated rationales faithfully verbalises the measured descriptors and correctly reflects changes in the underlying record. Agreement between the descriptors from expert and automatic masks falls from 0.832 to 0.549 as mask quality falls from Good to Missed. The generated rationales are intended as draft representations for radiologist review and final sign-off rather than autonomous clinical reports.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-21T07:50:20Z",
-    "updated": "2026-10-21T07:50:20Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV",
-      "cs.AI"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.29358v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.29358v1"
-      }
-    ],
-    "score": 72,
-    "infographic": {
-      "key_insight": "BI-RADS-grounded descriptors derived from breast MRI segmentation masks can guide an LLM to generate highly faithful lesion-assessment rationales.",
-      "clinical_relevance": "This imaging-explainability approach—not drug discovery—could provide draft rationales for radiologist review and final sign-off.",
-      "method": [
-        "Extract eight quantitative radiomic measurements, lesion size, and component count from masks and dynamic contrast-enhanced MRI.",
-        "Map measurements to descriptors through a BI-RADS-based decision tree.",
-        "Constrain an LLM to verbalize only the derived descriptor records."
-      ],
-      "evidence_signal": "Across 1,506 MAMA-MIA cases, expert and automatic masks yielded 3,012 rationales with 99.98% faithfulness and 99.3% counterfactual accuracy.",
-      "watch_item": "Descriptor agreement between expert and automatic masks declined from 0.832 for Good masks to 0.549 for Missed masks; faithful wording does not establish clinical correctness.",
-      "hashtags": [
-        "#BreastMRI",
-        "#BIRADS",
-        "#ExplainableAI",
-        "#MedicalImaging",
-        "#RadiologyResearch"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-21-arxiv-reading_the_mask_descriptor_grounded_bi_rads_rationale_generation_for_breast_mri_segmentat",
-      "paper_title": "Reading the Mask: Descriptor-Grounded BI-RADS Rationale Generation for Breast MRI Segmentation",
-      "paper_date": "2026-10-21",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-22T12:39:50",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-20-arxiv-vgl_stgen_learning_a_shared_multimodal_model_for_lung_histology_and_spatial_transcriptomic",
-    "arxiv_id": "2610.28266v1",
-    "date": "2026-10-20",
-    "title": "VGL-stGen: Learning a shared multimodal model for lung histology and spatial transcriptomics",
-    "authors": "Haenara Shin, Dongjoo Lee, Sungwoo Bae, Kwon Joong Na, Daeseung Lee, Hongyoon Choi",
-    "abstract": "VGL-stGen is a multimodal large language model adapted from a pretrained medical vision-language model using paired lung H&E and spatial transcriptomics with single-cell references. Training integrates image-expression and expression-cell-type pairs, and gene-conditioned pseudo-labels transfer transcriptomic cell-type supervision to histology images. One deployed checkpoint supports thirteen evaluated tasks spanning tissue and cell-type classification, gene prediction and conditional expression completion from combinations of histology, cell identity and observed gene expression. Task-specific decoding produces categorical labels, gene lists and structured expression levels. For conditional completion, fixing queried gene identities and predicting their levels autoregressively improves structured prediction. Controlled adaptation shows that restricting supervision to requested expression-level tokens can further improve image-conditioned completion. Image-permutation experiments indicate that correctly paired histology adds information beyond observed expression. External classification relies partly on computational references with shared annotation lineage, and some H&E sources were exposed during cancer training or model development. Within these conditions, VGL-stGen demonstrates how a medical vision-language backbone can learn from spatial transcriptomics and histology to connect tissue morphology and molecular states through shared generative modeling.",
-    "category": "Target Biology",
-    "source": "arXiv",
-    "published": "2026-10-20T14:22:47Z",
-    "updated": "2026-10-20T14:22:47Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV",
-      "cs.AI",
-      "q-bio.QM"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.28266v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.28266v1"
-      }
-    ],
-    "score": 72,
-    "infographic": {
-      "key_insight": "VGL-stGen connects lung tissue morphology with molecular states in one multimodal model supporting 13 evaluated tasks.",
-      "clinical_relevance": "The model could support exploratory lung cancer biology research by linking histology, gene expression and cell identity, but clinical utility and drug discovery impact remain unestablished.",
-      "method": [
-        "Adapt a pretrained medical vision-language model using paired lung H&E images, spatial transcriptomics and single-cell references.",
-        "Transfer cell-type supervision to histology through gene-conditioned pseudo-labels.",
-        "Generate task-specific labels, gene lists and expression levels, fixing queried gene identities for conditional expression completion."
-      ],
-      "evidence_signal": "Across 13 tasks using one checkpoint, fixing queried gene identities improved conditional completion, and image-permutation experiments indicated that correctly paired histology added information beyond observed expression.",
-      "watch_item": "External classification partly relied on computational references with shared annotation lineage, and prior exposure to some H&E sources limits claims of independent generalization.",
-      "hashtags": [
-        "#MultimodalAI",
-        "#SpatialTranscriptomics",
-        "#ComputationalPathology",
-        "#LungCancerResearch",
-        "#TargetBiology"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-20-arxiv-vgl_stgen_learning_a_shared_multimodal_model_for_lung_histology_and_spatial_transcriptomic",
-      "paper_title": "VGL-stGen: Learning a shared multimodal model for lung histology and spatial transcriptomics",
-      "paper_date": "2026-10-20",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-10-22T12:39:52",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-19-arxiv-rest_reliability_guided_spatial_transcriptomics_supervision_for_gene_expression_prediction",
-    "arxiv_id": "2610.26988v1",
-    "date": "2026-10-19",
-    "title": "REST: Reliability-Guided Spatial Transcriptomics Supervision for Gene Expression Prediction from Histopathological HE-Stained Images",
-    "authors": "Lanfeng Zhong, Xiangyu Sun, Guixuan Xu, Rongzhao Zhang, Jie Xu, Shaoting Zhang",
-    "abstract": "Histopathology is central to cancer diagnosis, but morphology in Hematoxylin and Eosin (HE)-stained images does not directly reveal the molecular states that characterize disease heterogeneity and inform tumor characterization, prognostic assessment, and biomarker discovery. Spatial Transcriptomics (ST) measures spatially resolved gene expression, providing molecular information within tissue architecture, yet differences in assay coverage and spot informativeness make paired HE--ST observations unequally reliable for representation learning. We propose Reliability-Guided Spatial Transcriptomics (REST) supervision with Biological Program Bank (BPB), a program-structured and reliability-guided ST-supervised training framework for predicting molecular information from H\\&E images. REST constructs BPB from curated signature, pathway, and cell-type gene sets to provide a shared structure for ST encoding, reliability estimation, and molecular reconstruction. Guided by BPB, Spot-Reliability Contrastive Alignment (SRCA) measures the reliability of each spot from assay-level program coverage and spot-level activity dispersion, and reweights HE--ST alignment accordingly. Biology-Informed Program Reconstruction (BIPR) further uses learnable program queries to reconstruct member-gene expression from histological morphology. REST's training corpus comprised 209 samples (407,475 spots across 16 organs); evaluation used 70 disjoint samples (230,056 spots across eight organs) for gene-expression, pathway-activity, and cell-signature prediction. REST achieved the highest Macro correlation among state-of-the-art ST-supervised training methods and outperformed existing pathology foundation models. Code is available at https://github.com/lanfz2000/REST.",
-    "category": "Target Biology",
-    "source": "arXiv",
-    "published": "2026-10-19T06:07:51Z",
-    "updated": "2026-10-19T06:07:51Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.26988v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.26988v1"
-      }
-    ],
-    "score": 72,
-    "infographic": {
-      "key_insight": "REST improves prediction of molecular information from H&E tissue images by weighting spatial-transcriptomics supervision according to its reliability.",
-      "clinical_relevance": "The approach could support research into tumor heterogeneity and biomarker discovery, but clinical utility and drug-discovery impact remain unproven.",
-      "method": [
-        "Organize curated gene signatures, pathways, and cell types into a Biological Program Bank.",
-        "Weight image–transcriptomics alignment using assay coverage and spot-level activity dispersion.",
-        "Use learnable biological-program queries to reconstruct gene expression from tissue morphology."
-      ],
-      "evidence_signal": "Trained on 209 samples (407,475 spots; 16 organs) and evaluated on 70 disjoint samples (230,056 spots; eight organs), REST achieved the highest Macro correlation among compared ST-supervised methods and outperformed existing pathology foundation models.",
-      "watch_item": "The abstract reports no effect sizes or prospective clinical validation, limiting assessment of practical benefit.",
-      "hashtags": [
-        "#SpatialTranscriptomics",
-        "#ComputationalPathology",
-        "#GeneExpression",
-        "#CancerResearch",
-        "#BiomarkerDiscovery"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-19-arxiv-rest_reliability_guided_spatial_transcriptomics_supervision_for_gene_expression_prediction",
-      "paper_title": "REST: Reliability-Guided Spatial Transcriptomics Supervision for Gene Expression Prediction from Histopathological HE-Stained Images",
-      "paper_date": "2026-10-19",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-10-22T12:39:56",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-20-arxiv-caps_clinically_verifiable_anatomy_prioritized_synthesis_for_missing_mri_imputation_in_bra",
-    "arxiv_id": "2610.28179v1",
-    "date": "2026-10-20",
-    "title": "CAPS: Clinically-Verifiable Anatomy-Prioritized Synthesis for Missing MRI Imputation in Brain Tumor Segmentation",
-    "authors": "Cecilia Diana-Albelda, Arthur Longuefosse, Mario Rubén Paz Campos, Álvaro García-Martín, Jesus Bescos",
-    "abstract": "Multi-parametric MRI is the gold standard for neuro-oncology, yet acquiring complete 4-modality protocols may be unfeasible in real-world clinical practice. When handling missing modalities, existing automated systems force a critical compromise: robust segmenters operate as uninterpretable \"black boxes\" that bypass image generation, while standard synthesis models often produce blurry reconstructions lacking diagnostic reliability. To address this issue, we propose CAPS, a Clinically-Verifiable Anatomy-Prioritized Synthesis framework that reconciles computational precision with clinical transparency. Our multi-modal generative architecture is driven by a hybrid objective function (L_1 + L_AFP + L_DualDice) that explicitly enforces the preservation of deep anatomical features and strict topological boundaries, rather than relying solely on pixel-wise optimization. Evaluated comprehensively on the BraTS Adult Glioma dataset, the framework achieves superior synthesis fidelity across intensity-based metrics, and demonstrates robust downstream segmentation performance (82.38% mean Dice), successfully restoring verifiable visual context. Furthermore, the framework exhibits exceptional zero-shot cross-domain generalization, maintaining high structural fidelity across completely unseen Meningioma, Pediatric, and Sub-Saharan African cohorts without domain-specific adaptation. Finally, a blinded radiological assessment confirms that our anatomy-aware approach significantly enhances both perceived image quality and clinical utility, providing clinicians with the reliable visual evidence required to trust downstream automated workflows.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-20T13:17:35Z",
-    "updated": "2026-10-20T13:17:35Z",
-    "primary_category": "eess.IV",
-    "categories": [
-      "eess.IV",
-      "cs.CV"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.28179v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.28179v1"
-      }
-    ],
-    "score": 68,
-    "infographic": {
-      "key_insight": "CAPS synthesizes missing brain MRI modalities while prioritizing anatomical preservation to support tumor segmentation with inspectable image outputs.",
-      "clinical_relevance": "This imaging study—not drug discovery—could help support automated brain tumor assessment when complete MRI protocols are unavailable.",
-      "method": [
-        "Uses a multimodal generative architecture to synthesize missing MRI modalities.",
-        "Combines pixel-wise, anatomical-feature, and dual-Dice objectives.",
-        "Prioritizes anatomical structures and tumor boundaries over pixel similarity alone."
-      ],
-      "evidence_signal": "The abstract reports 82.38% mean downstream segmentation Dice on BraTS Adult Glioma, zero-shot evaluation on three unseen cohorts, and improved perceived image quality and clinical utility in a blinded radiological assessment.",
-      "watch_item": "Synthesized images may introduce misleading features; prospective clinical validation is needed before routine use.",
-      "hashtags": [
-        "#BrainTumor",
-        "#MedicalImaging",
-        "#MRI",
-        "#GenerativeAI",
-        "#PrecisionOncology"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-20-arxiv-caps_clinically_verifiable_anatomy_prioritized_synthesis_for_missing_mri_imputation_in_bra",
-      "paper_title": "CAPS: Clinically-Verifiable Anatomy-Prioritized Synthesis for Missing MRI Imputation in Brain Tumor Segmentation",
+      "paper_id": "2026-10-20-medrxiv-privacy_preserving_large_language_model_deployment_for_oncology_registry_abstraction_struc",
+      "paper_title": "Privacy-Preserving Large Language Model Deployment for Oncology Registry Abstraction: Structure-Aware Evaluation in a Real-World Clinical Setting",
       "paper_date": "2026-10-20",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-22T12:39:58",
+      "generated_at": "2026-10-23T12:19:46",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-10-21-arxiv-an_evidence_driven_multi_agent_compound_ai_system_for_head_and_neck_proton_radiotherapy_pl",
-    "arxiv_id": "2610.29010v1",
-    "date": "2026-10-21",
-    "title": "An Evidence-Driven Multi-Agent Compound AI System for Head and Neck Proton Radiotherapy Planning",
-    "authors": "Qingqing Wang, Liqiang Xiao, Chang Chang",
-    "abstract": "Radiation treatment planning requires balancing competing objectives to satisfy clinical criteria while accommodating physicians' preferences. This study aims to develop an evidence-driven, multi-agent compound AI system that integrates DRL-based automated treatment planning with LLM-based conversational plan refinement for proton PBS therapy. A policy network trained using PPO first generates multiple plans without human intervention, from which one is selected as the target plan and the others serve as references for subsequent refinements. For challenging cases requiring further adjustments, an LLM-based multi-agent system enables plan refinement through natural language interactions. The system comprises a planning agent that recommends evidence-supported adjustments, a chatbot providing a unified conversational interface, and an evaluation agent that retrieves clinical metrics and identifies constraint violations. To enhance domain-specific reasoning, the planning agent based on Qwen3-14B is designed to justify its recommendations using evidence from previously generated plans and post-trained on task-specific data using SFT and GRPO. The framework was trained and evaluated using 21 patients with H&N cancers, with 5 PPO-generated plans per patient. Of these, 50 plans were selected for instruction-guided refinement. Compared with the base LLM, the post-trained Qwen3-14B demonstrated improved instruction-following, information retrieval and domain-specific reasoning capabilities. The resulting adjustments more effectively improved user-prioritized objectives while limiting deterioration in competing objectives, yielding more clinically appropriate trade-offs in patient-specific plan refinement. The proposed compound AI system provides a user-friendly planning platform, offering a promising approach to personalized proton PBS treatment planning.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-21T00:21:19Z",
-    "updated": "2026-10-21T00:21:19Z",
-    "primary_category": "cs.AI",
-    "categories": [
-      "cs.AI"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.29010v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.29010v1"
-      }
-    ],
-    "score": 66,
-    "infographic": {
-      "key_insight": "An evidence-driven multi-agent AI system combines automated proton radiotherapy planning with conversational refinement to better balance competing treatment objectives.",
-      "clinical_relevance": "For head and neck cancers, the approach could help planners tailor proton therapy plans to physician priorities; this is treatment-planning research, not drug discovery.",
-      "method": [
-        "A PPO-trained reinforcement learning policy generates five candidate plans per patient.",
-        "Planning, chatbot and evaluation agents support natural-language refinement using prior plans and clinical metrics.",
-        "The Qwen3-14B planning agent is post-trained with supervised fine-tuning and group relative policy optimization."
-      ],
-      "evidence_signal": "The framework was trained and evaluated using 21 patients and 50 plans selected for refinement; post-trained Qwen3-14B showed better instruction-following, retrieval and planning trade-offs than the base model.",
-      "watch_item": "The small patient cohort and absence of reported prospective clinical outcomes limit conclusions about generalizability and patient benefit.",
-      "hashtags": [
-        "#PrecisionOncology",
-        "#ProtonTherapy",
-        "#HeadAndNeckCancer",
-        "#MultiAgentAI",
-        "#RadiotherapyPlanning"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-21-arxiv-an_evidence_driven_multi_agent_compound_ai_system_for_head_and_neck_proton_radiotherapy_pl",
-      "paper_title": "An Evidence-Driven Multi-Agent Compound AI System for Head and Neck Proton Radiotherapy Planning",
-      "paper_date": "2026-10-21",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-22T12:40:00",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-20-arxiv-convergent_performance_divergent_mechanisms_in_lora_adapted_vision_foundation_models_for_b",
-    "arxiv_id": "2610.28255v1",
-    "date": "2026-10-20",
-    "title": "Convergent Performance, Divergent Mechanisms in LoRA-Adapted Vision Foundation Models for Brain MRI",
-    "authors": "Cecilia Diana-Albelda, Fiona Kekwick, Raghav Mehta, Aleksandra Kulbaka, Paul M. Matthews, Jesus Bescos",
-    "abstract": "Adapting Vision Foundation Models (VFMs) to medical imaging via LoRA has become standard practice, yet model selection is guided almost entirely by downstream task metrics, treating backbones with similar performance as interchangeable. We investigate whether equal performance implies equal internal representational shift. We analyse four ViT-B/16 backbones, DINOv3, SigLIP2, MerMED-FM, and BiomedCLIP, pre-trained with different objectives (self-distillation vs. contrastive vision-language) and on different data domains (natural vs. medical images). We adapt each to brain tumour segmentation and evaluate on six datasets covering both segmentation and Alzheimer's disease classification. Using attention divergence, weight-change analysis, and activation patching, we find that the four models converge to similar segmentation performance (mean Dice 78-81%) through markedly different internal dynamics, yet diverge in cross-task transfer: segmentation adaptation improves Alzheimer's disease classification for DINOv3 but degrades it for the other three backbones. We reveal a dissociation between modification magnitude and causal importance: the most heavily modified layers are not the causally relevant ones, with early-to-mid layers identified as sufficient for segmentation recovery. Restricting LoRA to these layers matches or approaches full-layer segmentation while reducing classification degradation in the three affected backbones, providing a mechanistically grounded strategy that is more parameter-efficient and more robust than standard full-layer adaptation.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-20T14:12:44Z",
-    "updated": "2026-10-20T14:12:44Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV",
-      "cs.LG"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.28255v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.28255v1"
-      }
-    ],
-    "score": 66,
-    "infographic": {
-      "key_insight": "Four vision backbones achieved similar brain tumour segmentation performance after LoRA adaptation but showed different internal changes and effects on Alzheimer's classification.",
-      "clinical_relevance": "For research on brain MRI, segmentation accuracy alone may not identify models that preserve performance across tasks; this study does not evaluate cancer drug discovery or clinical outcomes.",
-      "method": [
-        "Adapted DINOv3, SigLIP2, MerMED-FM and BiomedCLIP ViT-B/16 backbones using LoRA.",
-        "Examined attention divergence, weight changes and activation patching to identify causally relevant layers.",
-        "Tested LoRA restricted to early-to-mid layers against full-layer adaptation."
-      ],
-      "evidence_signal": "Across six datasets covering tumour segmentation and Alzheimer's classification, mean segmentation Dice was 78–81%; adaptation improved classification for DINOv3 but degraded it for the other three backbones.",
-      "watch_item": "Layer-restricted LoRA reduced classification degradation in the affected backbones, but broader generalisation and clinical utility remain unestablished.",
-      "hashtags": [
-        "#BrainMRI",
-        "#BrainTumourSegmentation",
-        "#LoRA",
-        "#VisionFoundationModels",
-        "#MechanisticInterpretability"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-20-arxiv-convergent_performance_divergent_mechanisms_in_lora_adapted_vision_foundation_models_for_b",
-      "paper_title": "Convergent Performance, Divergent Mechanisms in LoRA-Adapted Vision Foundation Models for Brain MRI",
-      "paper_date": "2026-10-20",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-22T12:40:03",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-18-arxiv-core_wm_conditioned_response_state_world_modeling_for_longitudinal_treatment_response_pred",
-    "arxiv_id": "2610.25333v1",
-    "date": "2026-10-18",
-    "title": "CoRe-WM: Conditioned Response-State World Modeling for Longitudinal Treatment-Response Prediction in Breast DCE-MRI",
-    "authors": "Lin Zhao, Bowen Chen, Qiaohui Gao, Shaowen Wan, Xiang Li, Wei Liu",
-    "abstract": "Pathologic complete response (pCR) after neoadjuvant chemotherapy is a key prognostic indicator in aggressive breast cancer, yet existing prediction approaches either rely on pretreatment imaging alone, missing the patient's evolving response, or optimize multi-visit classifiers under direct outcome supervision, coupling representation learning with the clinical endpoint. We formulate longitudinal pCR prediction as a world-modeling problem and propose Conditioned Response-state World Modeling (CoRe-WM), which learns a latent state-transition model that predicts the next imaging state from the observed sequence. The transition function is conditioned on patient clinical profile and assigned therapy through additive shift and feature-wise modulation, enabling patient- and treatment-specific dynamics. A Factorized Response State pathway further decouples treatment-response dynamics from imaging appearance by encoding the structural prior that response manifests primarily in lesion morphology. After pretraining, all parameters are frozen and a linear readout predicts pCR at each clinical decision point. We evaluate CoRe-WM on I-SPY2 under five-fold cross-validation and assess cross-cohort transfer on I-SPY1. CoRe-WM achieves the highest discrimination among all evaluated methods at every prospective decision point, and demonstrates robust cross-cohort transfer. Ablation studies identify patient-profile conditioning and the factorized response pathway as the principal contributors. These results establish world-model-based representation learning as a promising framework for outcome prediction in oncology and beyond.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-18T15:25:09Z",
-    "updated": "2026-10-18T15:25:09Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.25333v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.25333v1"
-      }
-    ],
-    "score": 66,
-    "infographic": {
-      "key_insight": "CoRe-WM learns evolving breast MRI response states to predict pathologic complete response after neoadjuvant chemotherapy, rather than learning representations directly from outcome labels.",
-      "clinical_relevance": "The approach could support treatment-response assessment at successive imaging visits, but clinical benefit has not been established.",
-      "method": [
-        "Predicts the next latent imaging state from longitudinal breast DCE-MRI.",
-        "Conditions state transitions on patient clinical profiles and assigned therapy while separating response dynamics from imaging appearance.",
-        "Freezes the pretrained model and trains a linear readout to predict pathologic complete response."
-      ],
-      "evidence_signal": "In five-fold cross-validation on I-SPY2, CoRe-WM showed the highest discrimination among evaluated methods at every prospective decision point; transfer was also assessed on I-SPY1.",
-      "watch_item": "The abstract provides no numerical performance estimates, and prospective clinical validation is needed before use in treatment decisions.",
-      "hashtags": [
-        "#PrecisionOncology",
-        "#BreastCancer",
-        "#TreatmentResponse",
-        "#MedicalImagingAI",
-        "#WorldModels"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-18-arxiv-core_wm_conditioned_response_state_world_modeling_for_longitudinal_treatment_response_pred",
-      "paper_title": "CoRe-WM: Conditioned Response-State World Modeling for Longitudinal Treatment-Response Prediction in Breast DCE-MRI",
-      "paper_date": "2026-10-18",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-22T12:40:06",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-20-arxiv-histoloop_iterative_contextual_inference_with_a_looped_transformer_for_histology_based_spa",
-    "arxiv_id": "2610.28339v1",
-    "date": "2026-10-20",
-    "title": "HistoLoop: Iterative Contextual Inference with a Looped Transformer for Histology-Based Spatial Gene Expression Prediction",
-    "authors": "Ziang Liu, Jie Liu, Shuai Li, Yigui Feng, Qinglin Wang",
-    "abstract": "Predicting spatial gene expression from H&E images offers a scalable complement to experimental spatial transcriptomics. However, despite progress in spatial context modeling, how to construct subsequent context from spot states updated by earlier contextual interactions remains underexplored. We introduce HistoLoop, a looped Transformer that formulates prediction as iterative contextual inference. At each refinement step, HistoLoop aggregates the current spot states into context tokens at the corresponding resolution, processes them with a shared spatial Transformer, and retrieves spot-specific contextual information through cross-attention. A memory-mediated update integrates this information into persistent spot states, which are then used to construct context at the next, finer resolution. Under the HEST-Bench HVG50 evaluation protocol, HistoLoop achieves the highest macro-averaged gene-wise Pearson correlation among the compared methods across six cancer-specific tasks spanning five organs in HEST-1K. Ablation studies support the importance of recurrent state refinement and reconstructing context from updated spot states at progressively finer resolutions. Expression-derived clustering further suggests that HistoLoop better captures spatially organized multigene patterns.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-20T15:05:54Z",
-    "updated": "2026-10-20T15:05:54Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.28339v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.28339v1"
-      }
-    ],
-    "score": 64,
-    "infographic": {
-      "key_insight": "HistoLoop iteratively refines spatial context to predict gene expression from H&E histology images, achieving the highest average correlation among compared methods.",
-      "clinical_relevance": "Predicted spatial gene expression could support research into tumor biology, but the abstract does not establish clinical utility or drug discovery outcomes.",
-      "method": [
-        "Construct context tokens from current tissue-spot states at progressively finer resolutions.",
-        "Use a shared spatial Transformer and cross-attention to retrieve spot-specific context.",
-        "Update persistent spot states through memory-mediated refinement before rebuilding context."
-      ],
-      "evidence_signal": "Under HEST-Bench HVG50 evaluation, HistoLoop achieved the highest macro-averaged gene-wise Pearson correlation among compared methods across six cancer-specific tasks spanning five organs in HEST-1K.",
-      "watch_item": "The abstract reports benchmark performance without numerical effect sizes; generalization beyond the evaluated tasks remains unestablished.",
-      "hashtags": [
-        "#ComputationalPathology",
-        "#SpatialTranscriptomics",
-        "#PrecisionOncology",
-        "#HistologyAI",
-        "#GeneExpressionPrediction"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-20-arxiv-histoloop_iterative_contextual_inference_with_a_looped_transformer_for_histology_based_spa",
-      "paper_title": "HistoLoop: Iterative Contextual Inference with a Looped Transformer for Histology-Based Spatial Gene Expression Prediction",
-      "paper_date": "2026-10-20",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-22T12:40:08",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-21-arxiv-stochikm_automated_high_fidelity_reconstruction_of_individual_patient_data_from_published",
-    "arxiv_id": "2610.29122v1",
-    "date": "2026-10-21",
-    "title": "StochIKM: Automated High-Fidelity Reconstruction of Individual Patient Data from Published Kaplan-Meier Curves",
-    "authors": "Liangze Ke, Daniel Zelterman, Wei Wei, Guannan Gong",
-    "abstract": "Individual patient data are the gold standard for secondary analysis of time-to-event evidence, but they are rarely released, and reconstruction from a published Kaplan-Meier figure could help. Existing methods all claim high fidelity, each judged by whichever agreements it happens to achieve, and each returns a single dataset although the map from figure to data is not bijective. We define fidelity explicitly: a dataset is admissible when it reproduces the risk table exactly, follows the digitized curve to within the image resolution, and respects the printed median, interval and event count. We propose StochIKM, a stochastic algorithm that digitizes the figure with a vision-capable language model and uses the high-fidelity definition as constraints, returning an admissible set of individual patient datasets. A solution is guaranteed to exist whenever the figure has been read correctly, so a failure indicts either the published figure or its digitization. In simulation and in 79 arms from published oncology trials, StochIKM reproduces the published risk tables and medians more closely than LLM-improved IPDfromKM, a high-impact alternative.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-21T03:05:49Z",
-    "updated": "2026-10-21T03:05:49Z",
-    "primary_category": "cs.AI",
-    "categories": [
-      "cs.AI",
-      "stat.AP"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.29122v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.29122v1"
-      }
-    ],
-    "score": 63,
-    "infographic": {
-      "key_insight": "StochIKM reconstructs multiple plausible individual patient datasets from published Kaplan–Meier curves under explicit fidelity constraints, rather than returning a single reconstruction.",
-      "clinical_relevance": "The method could support secondary analyses of oncology trial survival outcomes when original patient-level data are unavailable.",
-      "method": [
-        "Uses a vision-capable language model to digitize published Kaplan–Meier figures.",
-        "Constrains reconstructions to match risk tables exactly, curves within image resolution, and reported medians, intervals and event counts.",
-        "Stochastically generates a set of datasets satisfying these constraints."
-      ],
-      "evidence_signal": "In simulations and 79 published oncology trial arms, StochIKM matched reported risk tables and medians more closely than LLM-improved IPDfromKM.",
-      "watch_item": "Fidelity depends on correct figure digitization, and admissible reconstructions do not uniquely recover the original patient data.",
-      "hashtags": [
-        "#OncologyResearch",
-        "#SurvivalAnalysis",
-        "#KaplanMeier",
-        "#PatientDataReconstruction",
-        "#AIForResearch"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-21-arxiv-stochikm_automated_high_fidelity_reconstruction_of_individual_patient_data_from_published",
-      "paper_title": "StochIKM: Automated High-Fidelity Reconstruction of Individual Patient Data from Published Kaplan-Meier Curves",
-      "paper_date": "2026-10-21",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-22T12:40:10",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-17-arxiv-generative_retrieval_for_reverse_target_fishing_with_a_proteome_scale_benchmark",
-    "arxiv_id": "2610.24458v1",
-    "date": "2026-10-17",
-    "title": "Generative Retrieval for Reverse Target Fishing with a Proteome-Scale Benchmark",
-    "authors": "Zhichao Deng, Haichuan Tan, Xin Hong, Huaizhi Wang, Tao Huang, Bowen Gao",
-    "abstract": "Reverse target fishing identifies protein targets for a query molecule and is central to drug discovery and repurposing. Discriminative approaches adapted from virtual screening face sparse, long-tailed associations and missing-not-at-random measurements: treating unrecorded pairs as negatives can suppress genuine targets. We reformulate the task as generative retrieval and introduce GenFish. Residual vector quantization converts frozen protein language model features into shared semantic identifiers. Given a molecular fingerprint, GenFish autoregressively models codes conditioned on the query and preceding code, ranking proteins by identifier likelihood without explicitly labeling unrecorded pairs as negatives. We introduce ProTargetBench, the first proteome-scale benchmark for reverse target fishing to jointly support measured-panel discrimination and full-catalogue recovery of experimentally recorded positives. Covering 20,431 UniProt-reviewed human proteins, it integrates curated bioactivity evidence and distinguishes experimental inactivity from unmeasured associations. On 198 held-out molecules, GenFish achieves higher mean performance across all three full-catalogue retrieval metrics than four discriminative neural baselines and three non-neural baselines, including ligand-based methods. A controlled positive-hiding experiment shows that targeted removal of false-negative competition improves contrastive retrieval beyond matched random masking; GenFish remains stronger under the same incomplete supervision. Pfam alignment indicates that the semantic identifiers capture biologically meaningful relationships among proteins. These results establish generative retrieval as a principled paradigm for reverse target fishing under incomplete bioactivity records.",
-    "category": "Therapeutic Discovery",
-    "source": "arXiv",
-    "published": "2026-10-17T04:56:40Z",
-    "updated": "2026-10-17T04:56:40Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.24458v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.24458v1"
-      }
-    ],
-    "score": 62,
-    "infographic": {
-      "key_insight": "GenFish ranks potential protein targets for molecules using generative retrieval without treating unmeasured molecule–protein pairs as negatives.",
-      "clinical_relevance": "This approach could support target discovery and drug repurposing, including oncology research, but the abstract reports no cancer-specific or clinical validation.",
-      "method": [
-        "Convert frozen protein language-model features into shared semantic identifiers using residual vector quantization.",
-        "Predict identifier sequences autoregressively from molecular fingerprints.",
-        "Rank proteins by identifier likelihood across a human-protein catalogue."
-      ],
-      "evidence_signal": "On ProTargetBench, covering 20,431 reviewed human proteins, GenFish achieved higher mean performance on all three full-catalogue retrieval metrics than seven baselines across 198 held-out molecules.",
-      "watch_item": "Evaluation relies on incomplete recorded bioactivity; predicted targets require experimental validation.",
-      "hashtags": [
-        "#AIDrugDiscovery",
-        "#TargetIdentification",
-        "#GenerativeRetrieval",
-        "#DrugRepurposing",
-        "#Proteomics"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-17-arxiv-generative_retrieval_for_reverse_target_fishing_with_a_proteome_scale_benchmark",
-      "paper_title": "Generative Retrieval for Reverse Target Fishing with a Proteome-Scale Benchmark",
-      "paper_date": "2026-10-17",
-      "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-22T12:40:13",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-19-arxiv-a_general_purpose_system_one_decision_model_for_clinical_records",
-    "arxiv_id": "2610.27099v1",
+    "id": "2026-10-19-medrxiv-clinical_referral_text_overrides_mri_evidence_in_multimodal_large_language_models_glioma_v",
+    "doi": "10.64898/2026.10.17.26365809",
     "date": "2026-10-19",
-    "title": "A general-purpose System One decision model for clinical records",
-    "authors": "Andrew Zhang, Trinh T. L. Vuong, Sophia J. Wagner, Dongmin Bang, Tong Ding, Yuchang Su",
-    "abstract": "Clinical care, health-system operations and biomedical discovery depend on extracting reliable answers from patient records, yet applying diverse clinical questions across entire populations remains computationally expensive. Here we present Clinical System One (CS1), a 4-billion-parameter decision model for fast, typed judgments from clinical records, along with two agentic harnesses in which CS1 works together with a generalist language model. CS1-4B is trained on 12.4 million questions and answers from 3.6 million patients across a multi-hospital health system, combining structured-data keys, observed outcomes and language-model supervision across clinical notes, diagnostic reports and patient timelines. It answers multiple typed questions in a single forward pass without task-specific retraining, and each answer carries a probability that can route uncertain cases to human review. On 963,408 held-out patients, CS1-4B outperformed open decision models up to 27 billion parameters on 13 of 14 tasks scored independently of its training teacher. Across 21 external data sets, its aggregate performance approached that of the strongest tested 27-billion-parameter model, with 6.4-fold faster inference in a matched workload. Integrating CS1-4B with a language model agent produced cited answers over complete multi-year patient histories and screened a patient population against the eligibility criteria of 17 registered clinical trials, placing four times as many judged-eligible patients among its top 20 candidates as keyword search while using 690-fold fewer language-model tokens than a language model reading every record. These findings support a division of labour in clinical AI, with small decision models performing repeated record reading and generative models formulating questions and synthesizing evidence.",
+    "title": "Clinical referral text overrides MRI evidence in multimodal large language models: glioma versus brain abscess",
+    "authors": "Beste, N. C.; Bauer, F.; Lopez, N.; Schoemig, T.; Schoenfeld, M.; Zopfs, D.; Goertz, L.; Persigehl, T.; Kabbasch, C.; Schlamann, M.; Maintz, D.; Gertz, R. J.; Weitzer, N.; Kottlors, J.",
+    "abstract": "ObjectivesTo determine how strongly clinical referral text, rather than image content, drives the decisions of multimodal large language models (LLMs) differentiating glioma from brain abscess on MRI. Materials and methodsThis retrospective single-center study included 60 contrast-enhanced T1-weighted brain MRI examinations (30 gliomas, 30 abscesses; reference-standard diagnosis). One axial slice per case was paired with five referral texts (explicitly inflammatory to explicitly tumor-suggestive) under three prompt instructions and submitted 20 times each to GPT-4o, Claude Sonnet 5, Gemini 3.5 Flash, and Qwen 3.6 (72,000 answers). The primary outcome was the text-driven span (difference in tumor-call frequency between explicit inflammatory and explicit tumor text). Two blinded radiologists classified the images without text; sensitivity, specificity, and accuracy were compared descriptively. ResultsPatients (29 women) had a mean age of 55.8 {+/-} 16.4 years. With neutral text, models answered tumor in 45-67% of queries (specificity, 0.38-0.78), versus 52% and 60% for radiologists (specificity, 0.77 and 0.63). The text-driven span was 0.79-1.00 (p < 0.001 for all models), whereas confirmed gliomas and abscesses differed by only 0.01-0.10 in three models and 0.25 in Gemini 3.5 Flash. Subtle wording produced at least 83% of the span in three models. An instruction to ignore the text reduced the span to 0.48-0.70 in three models and to 0.04 in Gemini 3.5 Flash, partly through reversion to a tumor default. Model accuracy was 0.52-0.73 versus 0.78 and 0.73 for radiologists. ConclusionMultimodal LLMs deferred to referral text over imaging evidence in differentiating glioma from brain abscess, and prompt instructions did not reliably correct this. Key PointsO_ST_ABSQuestionC_ST_ABSMultimodal large language models receive images together with clinical referral text, but how strongly the text rather than the image determines their diagnosis is unknown. FindingsChanging only the referral text largely reversed the glioma-versus-abscess decision for identical MRI images in four models; instructions to ignore the text reduced this inconsistently. Clinical relevanceBefore clinical use, multimodal large language models require model- and task-specific testing of their susceptibility to referral text, because instructing them to prioritize the image is not a dependable safeguard against text-driven misdiagnosis.",
     "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-19T18:00:51Z",
-    "updated": "2026-10-19T18:00:51Z",
-    "primary_category": "cs.AI",
+    "source": "medRxiv",
+    "published": "2026-10-19",
+    "updated": "2026-10-19",
+    "primary_category": "radiology and imaging",
     "categories": [
-      "cs.AI"
+      "radiology and imaging"
     ],
     "links": [
       {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.27099v1"
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.17.26365809v1"
       },
       {
         "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.27099v1"
-      }
-    ],
-    "score": 61,
-    "infographic": {
-      "key_insight": "Clinical System One (CS1) is a compact AI model for fast clinical-record judgments, supporting record review and trial matching rather than directly discovering cancer drugs.",
-      "clinical_relevance": "CS1 could help prioritize patients for clinical trial eligibility review, with uncertain judgments routed to humans.",
-      "method": [
-        "Train a 4-billion-parameter model on 12.4 million question–answer pairs from 3.6 million patients.",
-        "Answer multiple typed questions per forward pass, with a probability for each answer.",
-        "Pair CS1 with a generalist language-model agent to synthesize cited evidence and screen trial criteria."
-      ],
-      "evidence_signal": "On 963,408 held-out patients, CS1 outperformed open decision models up to 27 billion parameters on 13 of 14 independently scored tasks; across 21 external datasets, it approached the strongest tested model with 6.4-fold faster inference.",
-      "watch_item": "The abstract does not establish prospective clinical benefit or cancer-specific performance; trial eligibility judgments require clinical verification.",
-      "hashtags": [
-        "#ClinicalAI",
-        "#ClinicalTrialMatching",
-        "#PatientRecords",
-        "#EfficientAI",
-        "#HumanOversight"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-19-arxiv-a_general_purpose_system_one_decision_model_for_clinical_records",
-      "paper_title": "A general-purpose System One decision model for clinical records",
-      "paper_date": "2026-10-19",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-22T12:40:16",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-16-arxiv-from_adult_renal_masses_to_pediatric_wilms_tumors_evaluating_cross_domain_generalization_o",
-    "arxiv_id": "2610.23568v1",
-    "date": "2026-10-16",
-    "title": "From Adult Renal Masses to Pediatric Wilms Tumors: Evaluating Cross-Domain Generalization of Kidney Lesion Segmentation on MRI",
-    "authors": "Sarah de Boer, Myrthe A. D. Buser, Hartmut Häntze, Jawed Nawabi, Lisa C. Adams, Alida F. W. van der Steeg",
-    "abstract": "Deep learning segmentation models for pediatric oncology are often trained on small, single-center cohorts, whereas much larger datasets exist for adult diseases, such as kidney cancer. Whether models trained on adult renal lesions generalize to pediatric Wilms tumors remains unclear. We trained a segmentation model on single-sequence T1- or T2-weighted adult kidney MRI and evaluated it on a held-out adult test set and a pediatric Wilms tumor cohort, where it was compared with a pediatric-specific nnU-Net. Segmentation performance was quantified using the Dice similarity coefficient (DSC) and 95th-percentile Hausdorff distance. On the adult test set, the model achieved a median DSC of 0.86 for renal lesions. On the pediatric cohort, the adult-trained model achieved a median DSC of 0.85 compared with 0.90 for the pediatric-specific model. Despite differences in age, anatomy, and tumor type, the adult-trained model showed promising performance on pediatric Wilms tumors, with only a modest difference in median DSC compared with the pediatric-specific model. However, non-inferiority could not be shown, highlighting the value of pediatric training data. In future work, a fine-tuning strategy could be explored.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-16T14:52:37Z",
-    "updated": "2026-10-16T14:52:37Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.23568v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.23568v1"
-      }
-    ],
-    "score": 60,
-    "infographic": {
-      "key_insight": "An adult-trained kidney MRI segmentation model showed promising transfer to pediatric Wilms tumors, but non-inferiority to a pediatric-specific model was not demonstrated.",
-      "clinical_relevance": "Adult MRI data may help support pediatric tumor segmentation research, though the findings underscore the value of pediatric training data rather than establish clinical readiness.",
-      "method": [
-        "Trained a segmentation model on single-sequence T1- or T2-weighted adult kidney MRI.",
-        "Tested on held-out adult data and a pediatric Wilms tumor cohort against a pediatric-specific nnU-Net.",
-        "Evaluated Dice similarity coefficient and 95th-percentile Hausdorff distance."
-      ],
-      "evidence_signal": "Median lesion Dice scores were 0.86 on adult test data and 0.85 on pediatric data, versus 0.90 for the pediatric-specific model.",
-      "watch_item": "Cross-domain non-inferiority was not established; pediatric fine-tuning remains a proposed strategy, not a demonstrated improvement.",
-      "hashtags": [
-        "#WilmsTumor",
-        "#MedicalImagingAI",
-        "#MRISegmentation",
-        "#PediatricOncology",
-        "#DomainGeneralization"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-16-arxiv-from_adult_renal_masses_to_pediatric_wilms_tumors_evaluating_cross_domain_generalization_o",
-      "paper_title": "From Adult Renal Masses to Pediatric Wilms Tumors: Evaluating Cross-Domain Generalization of Kidney Lesion Segmentation on MRI",
-      "paper_date": "2026-10-16",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-22T12:40:19",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-19-arxiv-cross_disorder_learning_of_imaging_derived_joint_mophometric_markers_in_alzheimer_s_and_pa",
-    "arxiv_id": "2610.27150v1",
-    "date": "2026-10-19",
-    "title": "Cross-disorder Learning of Imaging-derived Joint Mophometric Markers in Alzheimer's and Parkinson's Diseases",
-    "authors": "Yuji Zhao, Boris Gutman",
-    "abstract": "As two most prevalent neurodegenerative diseases (NDDs), Alzheimer's disease (AD) and Parkinson's disease (PD) shared commonalities both in symptomology and pathophysiology. However, to what extent and in what way these two distinct disorders overlap remain underexplored. In this study, we propose an explicit, interpretable and spatially adaptive transfer learning framework to elucidate the morphometric biomarkers linked to AD and PD. We applied such high-dimensional machine learning model to two most popular open-source neuroimaging datasets, i.e., Alzheimer's Disease Neuroimaging Initiative (ADNI) and Parkinson's Progression Markers Initiative (PPMI). On the one hand, our cross-disorder classifier revealed neuro-anatomical alteration patterns well aligning with previous neuroimaging research findings and underscoring patients' clinical presentations. On the other hand, the spatially adaptive trained classifier using shared prior achieved statistically superior diagnostic performance compared to respective individual models, which further highlights the cross-disorder framework's efficacy on modeling limited-size datasets across disease domains.",
-    "category": "Target Biology",
-    "source": "arXiv",
-    "published": "2026-10-19T18:44:09Z",
-    "updated": "2026-10-19T18:44:09Z",
-    "primary_category": "q-bio.QM",
-    "categories": [
-      "q-bio.QM",
-      "cs.LG",
-      "q-bio.NC"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.27150v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.27150v1"
-      }
-    ],
-    "score": 58,
-    "infographic": {
-      "key_insight": "An interpretable cross-disorder learning framework identified shared and disease-linked brain morphometric patterns in Alzheimer's and Parkinson's diseases—not cancer drug discovery.",
-      "clinical_relevance": "The findings may inform research on overlapping neurodegenerative changes, but do not establish clinical diagnostic utility or treatment targets.",
-      "method": [
-        "Applied high-dimensional transfer learning to brain imaging data.",
-        "Used a spatially adaptive classifier with a shared cross-disorder prior.",
-        "Compared joint learning with separate disease-specific models."
-      ],
-      "evidence_signal": "Using ADNI and PPMI datasets, the shared-prior classifier achieved statistically superior diagnostic performance versus individual models and identified anatomical patterns consistent with prior research; the abstract provides no sample sizes or performance metrics.",
-      "watch_item": "Independent validation is needed before translating these research classifiers into clinical use.",
-      "hashtags": [
-        "#AlzheimersResearch",
-        "#ParkinsonsResearch",
-        "#Neuroimaging",
-        "#TransferLearning",
-        "#MorphometricBiomarkers"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-19-arxiv-cross_disorder_learning_of_imaging_derived_joint_mophometric_markers_in_alzheimer_s_and_pa",
-      "paper_title": "Cross-disorder Learning of Imaging-derived Joint Mophometric Markers in Alzheimer's and Parkinson's Diseases",
-      "paper_date": "2026-10-19",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-10-22T12:40:21",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-19-arxiv-hierdta_hierarchical_structure_aware_representation_learning_for_drug_target_affinity_pred",
-    "arxiv_id": "2610.27001v1",
-    "date": "2026-10-19",
-    "title": "HierDTA: Hierarchical Structure-Aware Representation Learning for Drug--Target Affinity Prediction",
-    "authors": "Huangchao Xu, Baohua Zhang, Qian Liu, Zhong Jin, Yi Du",
-    "abstract": "Drug--target affinity (DTA) prediction plays an important role in computer-aided drug discovery, where reliable computational models can help prioritize compound--protein pairs before experimental validation. A key challenge in DTA prediction is to effectively mine multi-level molecular information from drug structures while accurately modeling the binding-site environment of target proteins. To address these issues, we introduce HierDTA, a hierarchical structure-aware framework for DTA prediction. \\textcolor{black}{HierDTA represents each drug as an atom--motif heterogeneous graph and introduces an augmentation module that propagates functional-motif semantics to the corresponding atoms. For proteins, kinase-domain structures are converted into residue interaction graphs. The resulting atom and residue representations are integrated using cross-attention to capture pair-specific relationships, while molecule fingerprints and pretrained ESM-2 embeddings provide complementary global information. Compared with state-of-the-art methods, HierDTA achieves superior performance on the Davis dataset across all metrics and attains the highest \\(r_m^2\\) of 0.791 on KIBA. It also exhibits strong generalization under cold-start settings, particularly on KIBA, where MSE is reduced by 21.7\\% in the unseen-protein scenario. Ablation study and interpretability analysis supported the contributions of the hierarchical augmentation and interaction components.} Case studies further showed that HierDTA provided early enrichment of candidate bioactive compounds. These results indicate that HierDTA is an effective framework for affinity prediction and target-specific virtual screening.",
-    "category": "Therapeutic Discovery",
-    "source": "arXiv",
-    "published": "2026-10-19T09:17:26Z",
-    "updated": "2026-10-19T09:17:26Z",
-    "primary_category": "cs.LG",
-    "categories": [
-      "cs.LG",
-      "cs.AI"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.27001v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.27001v1"
-      }
-    ],
-    "score": 58,
-    "infographic": {
-      "key_insight": "HierDTA combines hierarchical drug structures and protein binding-site information to improve drug–target affinity prediction.",
-      "clinical_relevance": "The framework could help prioritize compounds for cancer-relevant kinase targets before experimental testing, but clinical benefit has not been established.",
-      "method": [
-        "Represents drugs as atom–motif graphs, propagating functional-motif information to atoms.",
-        "Models kinase-domain structures as residue interaction graphs and links drug–protein features through cross-attention.",
-        "Adds molecular fingerprints and pretrained ESM-2 embeddings for complementary global information."
-      ],
-      "evidence_signal": "The abstract reports leading performance across all evaluated Davis metrics, the highest KIBA r_m² of 0.791, and a 21.7% MSE reduction in KIBA’s unseen-protein setting.",
-      "watch_item": "Benchmark and virtual-screening results require prospective experimental validation before use in cancer drug development.",
-      "hashtags": [
-        "#AIDrugDiscovery",
-        "#DrugTargetAffinity",
-        "#GraphLearning",
-        "#KinaseTargets",
-        "#VirtualScreening"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-19-arxiv-hierdta_hierarchical_structure_aware_representation_learning_for_drug_target_affinity_pred",
-      "paper_title": "HierDTA: Hierarchical Structure-Aware Representation Learning for Drug--Target Affinity Prediction",
-      "paper_date": "2026-10-19",
-      "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-22T12:40:23",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-18-arxiv-pret_is_a_few_shot_system_for_pan_cancer_recognition_without_example_training",
-    "arxiv_id": "2610.25054v1",
-    "date": "2026-10-18",
-    "title": "PRET is a few-shot system for pan-cancer recognition without example training",
-    "authors": "Yi Li, Ziyu Ning, Tianqi Xiang, Qixiang Zhang, Zhihao Lin, Min Yi",
-    "abstract": "Pathological examination stands as the cornerstone in cancer diagnosis, impacting millions worldwide annually. With the shortage of pathologists globally, artificial intelligence (AI) has emerged rapidly to automate the diagnostics process. However, conventional AI models require substantial labeled data for each disease, posing huge challenges in scalability and practicality. Therefore, we introduce PRET (pan-cancer recognition without examples training), a few-shot system to achieve flexible, scalable, and effective cancer recognition across diverse organs, hospitals and tasks without training. Evaluated on 23 international benchmarks comprising 4,484 whole-slide images, our method outperforms existing approaches across 20 tasks, achieving over 97% area under the curve on 15 benchmarks with a maximum improvement of 36.76%. Notably, PRET delivers clinical-grade diagnostic performance in lymph node metastasis detection using only eight slide examples, outperforming 11 pathologists. By offering a flexible and cost-effective solution for pan-cancer recognition, PRET paves the way for accessible and equitable AI-based pathology systems, particularly benefiting minority populations and underserved regions.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-18T06:48:27Z",
-    "updated": "2026-10-18T06:48:27Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.25054v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.25054v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.17.26365809v1.full.pdf"
       }
     ],
     "score": 57,
     "infographic": {
-      "key_insight": "PRET uses a few example slides to recognize cancers across organs, hospitals and tasks without task-specific training; it targets pathology recognition, not drug discovery.",
-      "clinical_relevance": "The system could help scale AI-assisted pathology where labeled data and pathologists are scarce, but the reported results do not establish readiness for routine clinical use.",
+      "key_insight": "Four multimodal LLMs relied more on referral wording than MRI evidence when distinguishing glioma from brain abscess.",
+      "clinical_relevance": "Referral-text sensitivity could undermine AI-assisted brain lesion assessment; this study evaluates diagnostic robustness, not cancer drug discovery.",
       "method": [
-        "Few-shot pan-cancer recognition using example slides.",
-        "No task-specific training on those examples.",
-        "Evaluated across organs, hospitals and recognition tasks."
+        "Retrospective single-center study of 60 MRI examinations: 30 gliomas and 30 abscesses.",
+        "Paired one axial slice per case with five referral texts and three prompt instructions across four models.",
+        "Collected 72,000 responses and compared performance descriptively with two blinded radiologists."
       ],
-      "evidence_signal": "Across 23 international benchmarks containing 4,484 whole-slide images, PRET outperformed existing approaches on 20 tasks and achieved over 97% AUC on 15 benchmarks; with eight example slides, it also outperformed 11 pathologists in a lymph node metastasis evaluation.",
-      "watch_item": "Prospective validation in real-world clinical workflows is needed before assuming these benchmark results generalize to routine care.",
+      "evidence_signal": "Changing referral text shifted tumor-call frequency by 79–100 percentage points; model accuracy was 52–73%, versus 78% and 73% for radiologists.",
+      "watch_item": "Single-slice, single-center testing limits generalizability, and instructions to ignore referral text did not consistently eliminate its influence.",
       "hashtags": [
-        "#AIPathology",
-        "#PrecisionOncology",
-        "#FewShotLearning",
-        "#CancerRecognition",
-        "#DigitalPathology"
+        "#MedicalAI",
+        "#NeuroOncology",
+        "#BrainMRI",
+        "#MultimodalLLMs",
+        "#AIRobustness"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
-      "paper_id": "2026-10-18-arxiv-pret_is_a_few_shot_system_for_pan_cancer_recognition_without_example_training",
-      "paper_title": "PRET is a few-shot system for pan-cancer recognition without example training",
-      "paper_date": "2026-10-18",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-22T12:40:26",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-19-arxiv-multi_scale_fusion_of_fast_vision_mamba_and_foundation_model_features_for_patch_level_glea",
-    "arxiv_id": "2610.25904v1",
-    "date": "2026-10-19",
-    "title": "Multi-scale Fusion of Fast Vision Mamba and Foundation Model Features for Patch-Level Gleason Grading in Computational Pathology",
-    "authors": "Zihe Zhang, Weimiao Yu, Piumi Don Simonge",
-    "abstract": "Automated Gleason grading of prostate whole slide images (WSIs) enables faster and more consistent cancer risk stratification. However, it remains a challenging task due to the subtle morphological differences between grades, the severe class imbalance arising from rare patterns, and the diagnostic features that span multiple spatial scales. Pathology foundation models (FMs) extract strong patch representations but often operate at a single-scale, which limits spatial context and disproportionately affects classes that depend on broader context. The challenge of fusing multiple scales and complementary models, with minimal data and computational resources, remains unresolved. We propose a multi-scale classifier built on state-space models. Our method combines two complementary feature sources: a frozen foundation model, and a lightweight FastVim, pre-trained on ImageNet and distilled from the foundation model, that reads the raw image crops. At each scale, a Mamba model encodes the features from both sources with linear-time spatial context, and a jointly trained head fuses the encoded representations into one prediction. On the PANDA dataset, our method reaches macro F1 of 0.894 and Gleason 5 F1 of 0.802 under 5-fold cross-validation, a 12% and 21% relative improvement over the best single-scale model. A controlled study over 5 foundation models, 5 base classifiers and 3 scales confirms that the gain holds across encoders, with larger improvements observed at smaller scales.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-19T07:04:28Z",
-    "updated": "2026-10-19T07:04:28Z",
-    "primary_category": "cs.CV",
-    "categories": [
-      "cs.CV"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.25904v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.25904v1"
-      }
-    ],
-    "score": 56,
-    "infographic": {
-      "key_insight": "Fusing multi-scale foundation-model and FastVim features improved patch-level Gleason grading, rather than cancer drug discovery.",
-      "clinical_relevance": "More consistent automated Gleason grading could support prostate cancer risk assessment, but clinical utility remains unproven.",
-      "method": [
-        "Combine frozen pathology foundation-model features with image features from a lightweight, distilled FastVim.",
-        "Encode both feature sources at multiple scales using Mamba state-space models.",
-        "Fuse encoded representations through a jointly trained classification head."
-      ],
-      "evidence_signal": "On PANDA with 5-fold cross-validation, macro F1 reached 0.894 and Gleason pattern 5 F1 reached 0.802—reported relative gains of 12% and 21% over the best single-scale model.",
-      "watch_item": "The abstract reports no external validation or prospective clinical evaluation, leaving real-world generalizability uncertain.",
-      "hashtags": [
-        "#ComputationalPathology",
-        "#ProstateCancer",
-        "#GleasonGrading",
-        "#FoundationModels",
-        "#MultiScaleAI"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-19-arxiv-multi_scale_fusion_of_fast_vision_mamba_and_foundation_model_features_for_patch_level_glea",
-      "paper_title": "Multi-scale Fusion of Fast Vision Mamba and Foundation Model Features for Patch-Level Gleason Grading in Computational Pathology",
+      "paper_id": "2026-10-19-medrxiv-clinical_referral_text_overrides_mri_evidence_in_multimodal_large_language_models_glioma_v",
+      "paper_title": "Clinical referral text overrides MRI evidence in multimodal large language models: glioma versus brain abscess",
       "paper_date": "2026-10-19",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-22T12:40:29",
+      "generated_at": "2026-10-23T12:19:49",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-10-18-arxiv-multimodal_conditioned_latent_diffusion_models_for_spatiotemporal_brain_mri_forecasting",
-    "arxiv_id": "2610.25481v2",
-    "date": "2026-10-18",
-    "title": "Multimodal-Conditioned Latent Diffusion Models for Spatiotemporal Brain MRI Forecasting",
-    "authors": "Antonio Scardace, Silvia Ingala, Sebastiano Battiato, Daniele Ravì",
-    "abstract": "Spatiotemporal forecasting of 3D anatomical changes is a critical generative vision challenge for modeling Alzheimer's Disease (AD) progression. While brain MRI forecasting from single-modality data has advanced, other key complementary multimodal biomarkers remain underutilized. In this work, we propose the Multimodal-Conditioned Latent Diffusion Model (MC-LDM), a novel framework for patient-specific brain MRI synthesis. MC-LDM leverages multimodal biomarkers---MRI, tau-PET, Clinical Dementia Rating (CDR), and APOE4---during training, but relies only on baseline MRI, APOE4, and patient metadata at inference, reflecting realistic clinical availability. Our contributions are threefold: (1) a Latent Diffusion Model (LDM) fine-tuned via Low-Rank Adaptation (LoRA) for data-efficient learning; (2) a multimodal conditioning that integrates molecular and clinical signals to model heterogeneous disease trajectories; and (3) auxiliary predictors estimating unobserved multimodal biomarkers from MRI features and patient covariates to condition the diffusion model, removing the need for these assessments at inference. Trained on 1,355 visits from 852 subjects in the Alzheimer's Disease Neuroimaging Initiative (ADNI), MC-LDM reduces average regional volumetric MAE by 18% over the second-best baseline on an independent test set of 664 visits. To our knowledge, MC-LDM represents the first diffusion-based framework to leverage multimodal priors for MRI forecasting. This conceptual advancement enables patient-specific trajectory generation that captures aspects of AD heterogeneity not observable from structural anatomy alone, bridging the gap between rich multimodal supervision and the strict constraints of routine clinical deployment. Code is available at: https://github.com/antonioscardace/MC-LDM.",
-    "category": "Target Biology",
-    "source": "arXiv",
-    "published": "2026-10-18T19:09:40Z",
-    "updated": "2026-10-20T10:25:35Z",
-    "primary_category": "cs.CV",
+    "id": "2026-10-19-medrxiv-ai_assisted_interpretation_of_neurologic_autoantibody_cell_based_assays",
+    "doi": "10.64898/2026.10.16.26365578",
+    "date": "2026-10-19",
+    "title": "AI-Assisted Interpretation of Neurologic Autoantibody Cell-Based Assays",
+    "authors": "Qi, Z.; Cao, Z.; Tan, H.; Tang, B.; Shi, S. X.; Jia, R.; Yao, Y.; Chen, J.; Zhang, Z.; Wan, J.; Zheng, P.",
+    "abstract": "Neurologic autoantibody cell-based assay images are difficult to interpret when fluorescence is weak, focal or dominated by background signal. We developed a visual artificial intelligence overlay that transfers detected cell boundaries from the structural channel to the antibody-staining image and evaluated standalone model concordance and its association with reader classifications. The analysis used 2 763 records for model development and 499 held-out records spanning 14 antibody targets. Four readers assessed the held-out records first without assistance and then with the boundary overlay and model category available. The selected model agreed with the reader-derived three-class reference in 85.2% of records, but recall was lowest for weak-positive or equivocal records. Reader agreement increased in the assisted session, and almost all revised ratings moved towards the model category. The combined display may support consistent visual review while also creating a risk of model-directed anchoring; its role as a second-read aid requires independent validation.",
+    "category": "Therapeutic Discovery",
+    "source": "medRxiv",
+    "published": "2026-10-19",
+    "updated": "2026-10-19",
+    "primary_category": "neurology",
     "categories": [
-      "cs.CV",
-      "cs.AI"
+      "neurology"
     ],
     "links": [
       {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.25481v2"
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.16.26365578v1"
       },
       {
         "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.25481v2"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.16.26365578v1.full.pdf"
       }
     ],
-    "score": 56,
+    "score": 47,
     "infographic": {
-      "key_insight": "MC-LDM uses multimodal training signals to forecast patient-specific brain MRI changes in Alzheimer’s disease, not cancer drug discovery.",
-      "clinical_relevance": "The approach could support research on Alzheimer’s progression while requiring only baseline MRI, APOE4 status, and patient metadata at inference; clinical utility remains unproven.",
+      "key_insight": "An AI boundary overlay supported more consistent reader interpretation of neurologic autoantibody assay images, but revisions largely followed the model’s category.",
+      "clinical_relevance": "This study concerns laboratory image interpretation—not cancer drug discovery—and suggests a potential second-read aid requiring independent validation.",
       "method": [
-        "Fine-tune a latent diffusion model using Low-Rank Adaptation (LoRA).",
-        "Integrate MRI, tau-PET, Clinical Dementia Rating, and APOE4 during training.",
-        "Predict unavailable biomarkers from MRI features and patient covariates to condition forecasts at inference."
+        "Transferred detected cell boundaries from a structural channel onto antibody-staining images.",
+        "Developed models using 2,763 records and evaluated 499 held-out records across 14 antibody targets.",
+        "Compared four readers’ classifications before and after access to the overlay and model category."
       ],
-      "evidence_signal": "Trained on 1,355 ADNI visits from 852 subjects, MC-LDM reduced average regional volumetric MAE by 18% versus the second-best baseline on an independent test set of 664 visits.",
-      "watch_item": "Performance beyond the reported ADNI evaluation and the clinical reliability of generated trajectories require further validation.",
+      "evidence_signal": "The selected model achieved 85.2% agreement with a reader-derived three-class reference; recall was lowest for weak-positive or equivocal records, while reader agreement increased with assistance.",
+      "watch_item": "Almost all revised ratings moved toward the model category, raising anchoring concerns; greater agreement does not establish greater diagnostic accuracy.",
       "hashtags": [
-        "#AlzheimersResearch",
-        "#BrainMRI",
-        "#LatentDiffusion",
-        "#MultimodalAI",
-        "#DiseaseProgression"
+        "#NeurologicAutoantibodies",
+        "#CellBasedAssays",
+        "#MedicalAI",
+        "#HumanAIInteraction",
+        "#DiagnosticResearch"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
-      "paper_id": "2026-10-18-arxiv-multimodal_conditioned_latent_diffusion_models_for_spatiotemporal_brain_mri_forecasting",
-      "paper_title": "Multimodal-Conditioned Latent Diffusion Models for Spatiotemporal Brain MRI Forecasting",
-      "paper_date": "2026-10-18",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-10-22T12:40:31",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-20-arxiv-temporal_evidence_allocation_for_longitudinal_clinical_retrieval_a_position_and_technical",
-    "arxiv_id": "2610.27682v1",
-    "date": "2026-10-20",
-    "title": "Temporal Evidence Allocation For Longitudinal Clinical Retrieval: A Position And Technical Report",
-    "authors": "Soumya Ranjan Sahoo, Divya Bharti, Sanand Sasidharan",
-    "abstract": "Electronic health records are written to support care, not retrieval. Across years of oncology notes, the primary diagnosis is restated in report after report, while the events that shape a patient's course, such as a recurrence or a change in therapy, may be recorded only once. A retriever that ranks passages by similarity to the query keeps returning the repeated material and can miss these transitions, that is, it exhibits temporal redundancy across historical narratives. We argue that longitudinal clinical retrieval should be treated as allocating a limited evidence budget across time, not just ranking by relevance. We separate the task into three objectives: temporal evidence allocation, candidate reconstruction, and clinical validation. In Study A (13 clinical queries over 20 patient records, with two-stage reconstruction), the Temporal-15 configuration reaches a milestone slot recall of 0.538, compared with 0.388 for the Global-50 baseline. However, it also retrieves far more evidence (496 versus 50 indexed units per query), so the gain cannot be credited to allocation alone. When evidence is held fixed, removing prompted precedence rules raises schema-order reversals from 0.010 to 0.080. A five-patient, single-query pilot with fixed budgets finds that wider temporal coverage does not reliably yield more dated milestones. Together, these results suggest that how much a record says about a period is a poor guide to how useful that period is as evidence. Because no expert reference timelines are available, our measurements describe retrieval behavior rather than clinical accuracy. This position and technical report presents the retrieval analysis behind the Onco-CONSTRUE framework and sets out a research agenda for budget-constrained longitudinal clinical retrieval.",
-    "category": "Precision Oncology",
-    "source": "arXiv",
-    "published": "2026-10-20T05:54:39Z",
-    "updated": "2026-10-20T05:54:39Z",
-    "primary_category": "cs.AI",
-    "categories": [
-      "cs.AI"
-    ],
-    "links": [
-      {
-        "title": "arXiv",
-        "url": "https://arxiv.org/abs/2610.27682v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://arxiv.org/pdf/2610.27682v1"
-      }
-    ],
-    "score": 55,
-    "infographic": {
-      "key_insight": "Longitudinal oncology retrieval should allocate limited evidence across time rather than repeatedly retrieve similar passages, but the benefit of temporal allocation alone remains unproven.",
-      "clinical_relevance": "This retrieval research—not a drug discovery study—could help surface treatment changes and recurrences in oncology records, without establishing clinical accuracy.",
-      "method": [
-        "Separate temporal evidence allocation, candidate reconstruction, and clinical validation.",
-        "Compare temporal retrieval with a global baseline using two-stage reconstruction.",
-        "Test precedence rules and temporal coverage under fixed evidence budgets."
-      ],
-      "evidence_signal": "Across 13 queries and 20 patient records, Temporal-15 achieved milestone slot recall of 0.538 versus 0.388 for Global-50, but retrieved 496 versus 50 indexed units per query.",
-      "watch_item": "Unequal retrieval budgets confound the recall gain, and absent expert reference timelines, results measure retrieval behavior rather than clinical accuracy.",
-      "hashtags": [
-        "#PrecisionOncology",
-        "#ClinicalAI",
-        "#InformationRetrieval",
-        "#LongitudinalEHR",
-        "#TemporalReasoning"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-20-arxiv-temporal_evidence_allocation_for_longitudinal_clinical_retrieval_a_position_and_technical",
-      "paper_title": "Temporal Evidence Allocation For Longitudinal Clinical Retrieval: A Position And Technical Report",
-      "paper_date": "2026-10-20",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-22T12:40:33",
+      "paper_id": "2026-10-19-medrxiv-ai_assisted_interpretation_of_neurologic_autoantibody_cell_based_assays",
+      "paper_title": "AI-Assisted Interpretation of Neurologic Autoantibody Cell-Based Assays",
+      "paper_date": "2026-10-19",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-10-23T12:19:52",
       "generator": "openai"
     }
   }

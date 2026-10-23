@@ -1,0 +1,26 @@
+{
+  "key_insight": "A privacy-preserving Llama 3.3 70B pipeline achieved high accuracy in oncology registry abstraction, rather than cancer drug discovery.",
+  "clinical_relevance": "The approach could support cancer research by converting clinical notes into structured registry data while keeping identifiable information within hospital infrastructure.",
+  "method": [
+    "Extracted over 50 variables from 6,700 oncology notes without task-specific fine-tuning.",
+    "Used local Hide-In-Plain-Sight de-identification to protect patient information.",
+    "Classified outputs as correct, missing, spurious, or incorrect."
+  ],
+  "evidence_signal": "Evaluation on 200 randomly sampled notes with adjudicated ground truth yielded F1 scores of 97.2% for diagnosis, 95.8% for histology, 92.6% for stage, 91.4% for biomarkers, and 88.1% for treatments.",
+  "watch_item": "External testing covered only 50 notes and showed reduced performance for list-valued variables, leaving broader generalizability uncertain.",
+  "hashtags": [
+    "#OncologyInformatics",
+    "#CancerRegistries",
+    "#PrivacyPreservingAI",
+    "#LargeLanguageModels",
+    "#ClinicalNLP"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-20-medrxiv-privacy_preserving_large_language_model_deployment_for_oncology_registry_abstraction_struc",
+  "paper_title": "Privacy-Preserving Large Language Model Deployment for Oncology Registry Abstraction: Structure-Aware Evaluation in a Real-World Clinical Setting",
+  "paper_date": "2026-10-20",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-23T12:19:46",
+  "generator": "openai"
+}
