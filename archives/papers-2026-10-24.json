@@ -1,0 +1,161 @@
+[
+  {
+    "id": "2026-10-20-medrxiv-privacy_preserving_large_language_model_deployment_for_oncology_registry_abstraction_struc",
+    "doi": "10.64898/2026.05.18.26353541",
+    "date": "2026-10-20",
+    "title": "Privacy-Preserving Large Language Model Deployment for Oncology Registry Abstraction: Structure-Aware Evaluation in a Real-World Clinical Setting",
+    "authors": "Moldovan, M.; Enikeev, R.; Chu, M.; Amalraj, A.; Koli, P. P.; Abdul, S. S.; Sivaraj, H.; Iqbal, U.; Toh, C. K.",
+    "abstract": "Objectives Structuring oncology clinical notes into registry-grade variables is essential for research and care but remains labour-intensive and error-prone. This study developed and evaluated a privacy-preserving large language model pipeline for oncology registry abstraction in a real-world clinical setting.<br> Methods An open-source Meta Llama 3.3 70B-based pipeline, prompted without task-specific fine-tuning, was deployed to extract over 50 variables from 6,700 oncology notes at a cancer centre in Singapore. Data were de-identified locally using a Hide-In-Plain-Sight approach, ensuring no identifiable data left hospital infrastructure. Performance was assessed on 200 randomly sampled notes with adjudicated ground truth, using a structure-aware framework that classified outputs as correct, missing, spurious, or incorrect.<br> Results F1 scores were high across variables, including diagnosis (97.2%), histology (95.8%), stage (92.6%), biomarkers (91.4%), and treatments (88.1%). Preliminary transferability testing on 50 external notes showed strong performance for core diagnostic variables, with reduced performance for list-valued variables.<br> Discussion The structure-aware evaluation approach separated omissions from fabrications, providing more clinically actionable insight than aggregate metrics alone.<br> Conclusion Privacy-preserving large language models achieved high extraction accuracy under a clinician-verified reference standard, supporting their feasibility for oncology registry abstraction in real-world clinical settings. Keywords: Large language models; Oncology registry abstraction; Natural language processing; Privacy-preserving AI; Clinical data extraction<br> What is already known on this topic Structuring oncology clinical notes into registry-grade variables is essential for cancer research and care but remains labour-intensive, costly, and inconsistent from one reviewer to the next when performed manually. Large language models offer potential to automate this task, but their use in real-world registries has been limited by concerns over patient data privacy, reliance on task-specific fine-tuning, and evaluation methods that obscure the difference between missing and fabricated information.<br> What this study adds This study shows that an open-source, privacy-preserving large language model pipeline, deployed entirely within hospital infrastructure without task-specific fine-tuning, can extract over 50 registry variables from oncology notes with high accuracy (F1 scores 88-97% across key variables), validated against ground truth checked by two clinicians. Using a structure-aware evaluation framework, we demonstrate that errors can be meaningfully separated into missing, spurious, and incorrect categories, offering clearer insight into model behaviour than aggregate accuracy metrics alone, and show preliminary evidence of transferability to notes from an external setting.<br> How this study might affect research, practice or policy These findings support the feasibility of deploying privacy-preserving, locally hosted large language models for oncology registry abstraction without requiring identifiable data to leave hospital systems or extensive model customisation. The structure-aware evaluation framework is also shared as a reusable template, enabling other institutions to validate similar AI extraction tools in a consistent, clinically meaningful way before wider implementation.</br>",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-20",
+    "updated": "2026-10-20",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.18.26353541v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.05.18.26353541v2.full.pdf"
+      }
+    ],
+    "score": 78,
+    "infographic": {
+      "key_insight": "A privacy-preserving Llama 3.3 70B pipeline achieved high accuracy in oncology registry abstraction, rather than cancer drug discovery.",
+      "clinical_relevance": "The approach could support cancer research by converting clinical notes into structured registry data while keeping identifiable information within hospital infrastructure.",
+      "method": [
+        "Extracted over 50 variables from 6,700 oncology notes without task-specific fine-tuning.",
+        "Used local Hide-In-Plain-Sight de-identification to protect patient information.",
+        "Classified outputs as correct, missing, spurious, or incorrect."
+      ],
+      "evidence_signal": "Evaluation on 200 randomly sampled notes with adjudicated ground truth yielded F1 scores of 97.2% for diagnosis, 95.8% for histology, 92.6% for stage, 91.4% for biomarkers, and 88.1% for treatments.",
+      "watch_item": "External testing covered only 50 notes and showed reduced performance for list-valued variables, leaving broader generalizability uncertain.",
+      "hashtags": [
+        "#OncologyInformatics",
+        "#CancerRegistries",
+        "#PrivacyPreservingAI",
+        "#LargeLanguageModels",
+        "#ClinicalNLP"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-20-medrxiv-privacy_preserving_large_language_model_deployment_for_oncology_registry_abstraction_struc",
+      "paper_title": "Privacy-Preserving Large Language Model Deployment for Oncology Registry Abstraction: Structure-Aware Evaluation in a Real-World Clinical Setting",
+      "paper_date": "2026-10-20",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-23T12:19:46",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-19-medrxiv-clinical_referral_text_overrides_mri_evidence_in_multimodal_large_language_models_glioma_v",
+    "doi": "10.64898/2026.10.17.26365809",
+    "date": "2026-10-19",
+    "title": "Clinical referral text overrides MRI evidence in multimodal large language models: glioma versus brain abscess",
+    "authors": "Beste, N. C.; Bauer, F.; Lopez, N.; Schoemig, T.; Schoenfeld, M.; Zopfs, D.; Goertz, L.; Persigehl, T.; Kabbasch, C.; Schlamann, M.; Maintz, D.; Gertz, R. J.; Weitzer, N.; Kottlors, J.",
+    "abstract": "ObjectivesTo determine how strongly clinical referral text, rather than image content, drives the decisions of multimodal large language models (LLMs) differentiating glioma from brain abscess on MRI. Materials and methodsThis retrospective single-center study included 60 contrast-enhanced T1-weighted brain MRI examinations (30 gliomas, 30 abscesses; reference-standard diagnosis). One axial slice per case was paired with five referral texts (explicitly inflammatory to explicitly tumor-suggestive) under three prompt instructions and submitted 20 times each to GPT-4o, Claude Sonnet 5, Gemini 3.5 Flash, and Qwen 3.6 (72,000 answers). The primary outcome was the text-driven span (difference in tumor-call frequency between explicit inflammatory and explicit tumor text). Two blinded radiologists classified the images without text; sensitivity, specificity, and accuracy were compared descriptively. ResultsPatients (29 women) had a mean age of 55.8 {+/-} 16.4 years. With neutral text, models answered tumor in 45-67% of queries (specificity, 0.38-0.78), versus 52% and 60% for radiologists (specificity, 0.77 and 0.63). The text-driven span was 0.79-1.00 (p < 0.001 for all models), whereas confirmed gliomas and abscesses differed by only 0.01-0.10 in three models and 0.25 in Gemini 3.5 Flash. Subtle wording produced at least 83% of the span in three models. An instruction to ignore the text reduced the span to 0.48-0.70 in three models and to 0.04 in Gemini 3.5 Flash, partly through reversion to a tumor default. Model accuracy was 0.52-0.73 versus 0.78 and 0.73 for radiologists. ConclusionMultimodal LLMs deferred to referral text over imaging evidence in differentiating glioma from brain abscess, and prompt instructions did not reliably correct this. Key PointsO_ST_ABSQuestionC_ST_ABSMultimodal large language models receive images together with clinical referral text, but how strongly the text rather than the image determines their diagnosis is unknown. FindingsChanging only the referral text largely reversed the glioma-versus-abscess decision for identical MRI images in four models; instructions to ignore the text reduced this inconsistently. Clinical relevanceBefore clinical use, multimodal large language models require model- and task-specific testing of their susceptibility to referral text, because instructing them to prioritize the image is not a dependable safeguard against text-driven misdiagnosis.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-19",
+    "updated": "2026-10-19",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.17.26365809v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.17.26365809v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "Four multimodal LLMs relied more on referral wording than MRI evidence when distinguishing glioma from brain abscess.",
+      "clinical_relevance": "Referral-text sensitivity could undermine AI-assisted brain lesion assessment; this study evaluates diagnostic robustness, not cancer drug discovery.",
+      "method": [
+        "Retrospective single-center study of 60 MRI examinations: 30 gliomas and 30 abscesses.",
+        "Paired one axial slice per case with five referral texts and three prompt instructions across four models.",
+        "Collected 72,000 responses and compared performance descriptively with two blinded radiologists."
+      ],
+      "evidence_signal": "Changing referral text shifted tumor-call frequency by 79–100 percentage points; model accuracy was 52–73%, versus 78% and 73% for radiologists.",
+      "watch_item": "Single-slice, single-center testing limits generalizability, and instructions to ignore referral text did not consistently eliminate its influence.",
+      "hashtags": [
+        "#MedicalAI",
+        "#NeuroOncology",
+        "#BrainMRI",
+        "#MultimodalLLMs",
+        "#AIRobustness"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-19-medrxiv-clinical_referral_text_overrides_mri_evidence_in_multimodal_large_language_models_glioma_v",
+      "paper_title": "Clinical referral text overrides MRI evidence in multimodal large language models: glioma versus brain abscess",
+      "paper_date": "2026-10-19",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-23T12:19:49",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-19-medrxiv-ai_assisted_interpretation_of_neurologic_autoantibody_cell_based_assays",
+    "doi": "10.64898/2026.10.16.26365578",
+    "date": "2026-10-19",
+    "title": "AI-Assisted Interpretation of Neurologic Autoantibody Cell-Based Assays",
+    "authors": "Qi, Z.; Cao, Z.; Tan, H.; Tang, B.; Shi, S. X.; Jia, R.; Yao, Y.; Chen, J.; Zhang, Z.; Wan, J.; Zheng, P.",
+    "abstract": "Neurologic autoantibody cell-based assay images are difficult to interpret when fluorescence is weak, focal or dominated by background signal. We developed a visual artificial intelligence overlay that transfers detected cell boundaries from the structural channel to the antibody-staining image and evaluated standalone model concordance and its association with reader classifications. The analysis used 2 763 records for model development and 499 held-out records spanning 14 antibody targets. Four readers assessed the held-out records first without assistance and then with the boundary overlay and model category available. The selected model agreed with the reader-derived three-class reference in 85.2% of records, but recall was lowest for weak-positive or equivocal records. Reader agreement increased in the assisted session, and almost all revised ratings moved towards the model category. The combined display may support consistent visual review while also creating a risk of model-directed anchoring; its role as a second-read aid requires independent validation.",
+    "category": "Therapeutic Discovery",
+    "source": "medRxiv",
+    "published": "2026-10-19",
+    "updated": "2026-10-19",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.16.26365578v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.16.26365578v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "An AI boundary overlay supported more consistent reader interpretation of neurologic autoantibody assay images, but revisions largely followed the model’s category.",
+      "clinical_relevance": "This study concerns laboratory image interpretation—not cancer drug discovery—and suggests a potential second-read aid requiring independent validation.",
+      "method": [
+        "Transferred detected cell boundaries from a structural channel onto antibody-staining images.",
+        "Developed models using 2,763 records and evaluated 499 held-out records across 14 antibody targets.",
+        "Compared four readers’ classifications before and after access to the overlay and model category."
+      ],
+      "evidence_signal": "The selected model achieved 85.2% agreement with a reader-derived three-class reference; recall was lowest for weak-positive or equivocal records, while reader agreement increased with assistance.",
+      "watch_item": "Almost all revised ratings moved toward the model category, raising anchoring concerns; greater agreement does not establish greater diagnostic accuracy.",
+      "hashtags": [
+        "#NeurologicAutoantibodies",
+        "#CellBasedAssays",
+        "#MedicalAI",
+        "#HumanAIInteraction",
+        "#DiagnosticResearch"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-19-medrxiv-ai_assisted_interpretation_of_neurologic_autoantibody_cell_based_assays",
+      "paper_title": "AI-Assisted Interpretation of Neurologic Autoantibody Cell-Based Assays",
+      "paper_date": "2026-10-19",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-10-23T12:19:52",
+      "generator": "openai"
+    }
+  }
+]

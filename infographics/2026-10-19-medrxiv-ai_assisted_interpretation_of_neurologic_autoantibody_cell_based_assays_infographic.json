@@ -1,19 +1,19 @@
 {
-  "key_insight": "An AI boundary overlay supported more consistent reader interpretation of neurologic autoantibody assay images, but revisions largely followed the model’s category.",
-  "clinical_relevance": "This study concerns laboratory image interpretation—not cancer drug discovery—and suggests a potential second-read aid requiring independent validation.",
+  "key_insight": "An AI-generated cell-boundary overlay showed potential to improve consistency in neurologic autoantibody assay interpretation; this study did not investigate cancer drug discovery.",
+  "clinical_relevance": "The combined overlay and model category may support second-read review of difficult fluorescence images, pending independent validation.",
   "method": [
     "Transferred detected cell boundaries from a structural channel onto antibody-staining images.",
-    "Developed models using 2,763 records and evaluated 499 held-out records across 14 antibody targets.",
-    "Compared four readers’ classifications before and after access to the overlay and model category."
+    "Compared standalone model classifications with a reader-derived three-class reference.",
+    "Had four readers assess held-out records first unaided, then with the overlay and model category."
   ],
-  "evidence_signal": "The selected model achieved 85.2% agreement with a reader-derived three-class reference; recall was lowest for weak-positive or equivocal records, while reader agreement increased with assistance.",
-  "watch_item": "Almost all revised ratings moved toward the model category, raising anchoring concerns; greater agreement does not establish greater diagnostic accuracy.",
+  "evidence_signal": "Using 2,763 development records and 499 held-out records across 14 antibody targets, the selected model achieved 85.2% reference concordance, with lowest recall for weak-positive or equivocal records.",
+  "watch_item": "Higher assisted reader agreement may reflect model-directed anchoring: almost all revised ratings moved toward the model category.",
   "hashtags": [
-    "#NeurologicAutoantibodies",
-    "#CellBasedAssays",
     "#MedicalAI",
-    "#HumanAIInteraction",
-    "#DiagnosticResearch"
+    "#Neuroimmunology",
+    "#Autoantibodies",
+    "#CellBasedAssays",
+    "#HumanAIInteraction"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "AI-Assisted Interpretation of Neurologic Autoantibody Cell-Based Assays",
   "paper_date": "2026-10-19",
   "paper_category": "Therapeutic Discovery",
-  "generated_at": "2026-10-23T12:19:52",
+  "generated_at": "2026-10-24T11:45:54",
   "generator": "openai"
 }
