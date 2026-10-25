@@ -24,23 +24,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.06.10.26355415v2.full.pdf"
       }
     ],
-    "score": 80,
+    "score": 75,
     "infographic": {
-      "key_insight": "Combining AI predictions from radiology Findings and Impressions improved detection of documented brain metastases compared with either section alone.",
-      "clinical_relevance": "The pipeline could support cancer registry surveillance of brain metastases arising after cancer diagnosis; it is not a drug discovery or treatment-selection tool.",
+      "key_insight": "Combining AI predictions from radiology Findings and Impressions improved identification of brain metastases compared with either section alone.",
+      "clinical_relevance": "The pipeline could expand cancer registry surveillance to brain metastases detected after the initial cancer diagnosis; it is not a drug discovery tool.",
       "method": [
-        "Manually labeled brain/head radiology reports from a population-based cancer cohort.",
-        "Trained separate Bio_ClinicalBERT models on Findings and Impressions using 1,879 samples.",
-        "Used the higher section-level probability as the report-level prediction."
+        "Manually labeled brain/head radiology reports from an Alberta cancer cohort.",
+        "Trained separate Bio_ClinicalBERT models on Findings and Impressions, using the higher probability as the report-level prediction.",
+        "Validated internally in Alberta and externally in Ontario and British Columbia."
       ],
-      "evidence_signal": "Internal validation on 1,833 reports from 357 patients yielded 88.8% sensitivity and 49.9% precision at a 0.4 threshold; external sensitivity was 91.8% in Ontario and 72.6% in British Columbia.",
-      "watch_item": "Modest internal precision and variable external sensitivity warrant local validation and assessment of false-positive review workload before deployment.",
+      "evidence_signal": "Trained on 1,879 samples, the model achieved 88.8% sensitivity and 49.9% precision on 1,833 internal-validation reports at a 0.4 threshold; external sensitivity was 91.8% in Ontario and 72.6% in British Columbia.",
+      "watch_item": "Modest internal precision and variable external sensitivity warrant assessing false-positive review burden and local performance before surveillance deployment.",
       "hashtags": [
         "#BrainMetastases",
         "#ClinicalNLP",
         "#CancerSurveillance",
-        "#RadiologyAI",
-        "#CancerRegistries"
+        "#CancerRegistries",
+        "#AIValidation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -48,7 +48,7 @@
       "paper_title": "Natural Language Processing Based Solution for Labeling Brain Metastasis Identified in Radiology Reports",
       "paper_date": "2026-10-21",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-24T11:45:40",
+      "generated_at": "2026-10-25T12:14:51",
       "generator": "openai"
     }
   },
@@ -77,23 +77,23 @@
         "url": "https://www.medrxiv.org/content/10.1101/2025.10.02.25337154v2.full.pdf"
       }
     ],
-    "score": 72,
+    "score": 67,
     "infographic": {
-      "key_insight": "Adding patient-reported outcomes to surrogate endpoints improved machine learning prediction of trial-level overall survival benefit in oncology.",
-      "clinical_relevance": "Combining patient experience with surrogate efficacy measures may help assess treatment benefit during oncology drug development.",
+      "key_insight": "Adding patient-reported outcomes to surrogate endpoints improved machine learning prediction of overall survival benefit in oncology trials.",
+      "clinical_relevance": "Combining patients’ reported experiences with efficacy endpoints may strengthen trial-level assessment of cancer treatments, without replacing overall survival follow-up.",
       "method": [
-        "Reviewed FDA approval-supporting oncology trials from 2013–2023 reporting survival, surrogate endpoints, and patient-reported outcomes.",
-        "Compared models using surrogate endpoints alone versus surrogate endpoints plus patient-reported outcomes.",
-        "Evaluated models with repeated five-fold trial-grouped cross-validation and leave-one-trial-out validation."
+        "Reviewed FDA oncology approval trials from 2013–2023 reporting overall survival, surrogate endpoints, and patient-reported outcomes.",
+        "Compared machine learning models using surrogate endpoints alone versus surrogate endpoints plus patient-reported outcomes.",
+        "Evaluated performance using repeated five-fold trial-grouped cross-validation and leave-one-trial-out validation."
       ],
-      "evidence_signal": "Across 100 trials involving 68,987 participants, adding patient-reported outcomes increased AUC-ROC from 0.67 to 0.79; leave-one-trial-out validation confirmed improved discrimination.",
-      "watch_item": "Validation was limited to the included approval-supporting trials; broader generalizability and use beyond trial-level prediction remain unestablished.",
+      "evidence_signal": "Across 100 trials involving 68,987 participants, adding patient-reported outcomes increased AUC-ROC from 0.67 to 0.79; leave-one-trial-out validation confirmed improvement (difference 0.132; 95% CI, 0.017–0.248).",
+      "watch_item": "Findings from selected approval-supporting trials require external validation before broader use and do not establish individual-patient survival prediction.",
       "hashtags": [
         "#PrecisionOncology",
         "#MachineLearning",
         "#PatientReportedOutcomes",
-        "#ClinicalTrials",
-        "#SurvivalPrediction"
+        "#OverallSurvival",
+        "#ClinicalTrials"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -101,7 +101,7 @@
       "paper_title": "Improving Survival Prediction from Surrogate Endpoints Through Integration of Patient-Reported Outcomes Using Machine Learning",
       "paper_date": "2026-10-21",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-24T11:45:42",
+      "generated_at": "2026-10-25T12:14:53",
       "generator": "openai"
     }
   },
@@ -130,23 +130,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.05.18.26353541v2.full.pdf"
       }
     ],
-    "score": 67,
+    "score": 62,
     "infographic": {
       "key_insight": "A privacy-preserving Llama 3.3 70B pipeline accurately extracted oncology registry variables from clinical notes without task-specific fine-tuning.",
-      "clinical_relevance": "The approach could support oncology registry abstraction for research and care documentation; it did not evaluate cancer drug discovery or treatment outcomes.",
+      "clinical_relevance": "The approach could support oncology registry abstraction for research and care documentation; it did not evaluate cancer drug discovery or patient outcomes.",
       "method": [
         "Extracted over 50 variables from 6,700 oncology notes at a Singapore cancer centre.",
-        "De-identified data locally using Hide-In-Plain-Sight, keeping identifiable data within hospital infrastructure.",
-        "Classified outputs as correct, missing, spurious, or incorrect against adjudicated ground truth."
+        "De-identified notes locally using a Hide-In-Plain-Sight approach, keeping identifiable data within hospital infrastructure.",
+        "Classified outputs as correct, missing, spurious, or incorrect against an adjudicated reference standard."
       ],
       "evidence_signal": "Evaluation on 200 randomly sampled notes yielded F1 scores of 97.2% for diagnosis, 95.8% for histology, 92.6% for stage, 91.4% for biomarkers, and 88.1% for treatments.",
-      "watch_item": "External testing was preliminary, covering only 50 notes, and showed reduced performance for list-valued variables.",
+      "watch_item": "Transferability testing was preliminary, involving only 50 external notes, with reduced performance for list-valued variables.",
       "hashtags": [
         "#OncologyInformatics",
         "#CancerRegistries",
         "#ClinicalNLP",
         "#PrivacyPreservingAI",
-        "#LLMEvaluation"
+        "#LargeLanguageModels"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -154,7 +154,7 @@
       "paper_title": "Privacy-Preserving Large Language Model Deployment for Oncology Registry Abstraction: Structure-Aware Evaluation in a Real-World Clinical Setting",
       "paper_date": "2026-10-20",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-24T11:45:44",
+      "generated_at": "2026-10-25T12:14:56",
       "generator": "openai"
     }
   },
@@ -164,7 +164,7 @@
     "date": "2026-10-21",
     "title": "Biological age measured by DNA methylation clocks and neurodegenerative diseases: A systematic review and meta-analysis",
     "authors": "Kua, Z.; Tay, J. H.; Low, A.; Wang, W.; Yeo, B. T. T.; Dong, Y.; Kandiah, N.; Biessels, G. J.; Maier, A. B.",
-    "abstract": "Hallmarks of biological ageing are closely interconnected with neurodegenerative diseases. Deoxyribonucleic acid methylation (DNAm) clocks quantify biological age and may serve as peripheral biomarkers of neurodegenerative diseases. This systematic review and meta-analysis aim to examine associations between DNAm-based biological age metrics and neurodegenerative diseases. Six databases were systematically searched from 1st January 2011 to 15th April 2026 for studies reporting associations between DNAm-based ages and neurodegenerative diseases including all-cause dementia, Parkinson's Disease, Multiple Sclerosis, and Amyotrophic Lateral Sclerosis. Correlated-and-hierarchical-effects meta-analyses were fitted using restricted maximum likelihood with Knapp-Hartung adjustment. Of 42,023 records screened, 37 observational studies (n=46365; 60.5% female; median of mean age 69.4 years [IQR 62.5-73.3)) and seven Mendelian randomization studies met inclusion criteria. In longitudinal meta-analyses, higher GrimAge epigenetic age acceleration (EAA) was significantly associated with higher dementia risk (HR per SD 1.11 [95% CI 1.02-1.20]; I^2 = 0.0%; p = 0.018), whereas Horvath1 EAA, Hannum EAA, PhenoAge EAA, and DunedinPACE were not significantly associated with dementia risk. Evidence for other neurodegenerative diseases were heterogeneous across clock generations and study designs. Mendelian randomization provided limited evidence for causality. Higher GrimAge EAA was the only DNAm age measure consistently predictive of higher all-cause dementia risk. Overall, however, DNAm age clocks show limited and inconsistent associations with neurodegenerative diseases, providing insufficient support for their use as disease biomarkers. These findings highlight the need to develop and independently validate disease-specific DNAm clocks and undertake pathway analyses to identify methylation changes associated with neurodegeneration and the biological processes they reflect.",
+    "abstract": "Hallmarks of biological ageing are closely interconnected with neurodegenerative diseases. Deoxyribonucleic acid methylation (DNAm) clocks quantify biological age and may serve as peripheral biomarkers of neurodegenerative diseases. This systematic review and meta-analysis aim to examine associations between DNAm-based biological age metrics and neurodegenerative diseases. Six databases were systematically searched from 1st January 2011 to 15th April 2026 for studies reporting associations between DNAm-based ages and neurodegenerative diseases including all-cause dementia, Parkinsons Disease, Multiple Sclerosis, and Amyotrophic Lateral Sclerosis. Correlated-and-hierarchical-effects meta-analyses were fitted using restricted maximum likelihood with Knapp-Hartung adjustment. Of 42,023 records screened, 37 observational studies (n=46 365; 60.5% female; median of mean age 69.4 years [IQR 62.5-73.3)) and seven Mendelian randomization studies met inclusion criteria. In longitudinal meta-analyses, higher GrimAge epigenetic age acceleration (EAA) was significantly associated with higher dementia risk (HR per SD 1.11 [95% CI 1.02-1.20]; I{superscript 2} = 0.0%; p = 0.018), whereas Horvath1 EAA, Hannum EAA, PhenoAge EAA, and DunedinPACE were not significantly associated with dementia risk. Evidence for other neurodegenerative diseases were heterogeneous across clock generations and study designs. Mendelian randomization provided limited evidence for causality. Higher GrimAge EAA was the only DNAm age measure consistently predictive of higher all-cause dementia risk. Overall, however, DNAm age clocks show limited and inconsistent associations with neurodegenerative diseases, providing insufficient support for their use as disease biomarkers. These findings highlight the need to develop and independently validate disease-specific DNAm clocks and undertake pathway analyses to identify methylation changes associated with neurodegeneration and the biological processes they reflect.",
     "category": "Target Biology",
     "source": "medRxiv",
     "published": "2026-10-21",
@@ -183,21 +183,21 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.21.26365867v1.full.pdf"
       }
     ],
-    "score": 62,
+    "score": 57,
     "infographic": {
-      "key_insight": "GrimAge acceleration was the only DNA methylation age measure consistently associated with higher all-cause dementia risk; associations across other clocks and neurodegenerative diseases were limited or inconsistent.",
-      "clinical_relevance": "Current evidence does not support DNA methylation clocks as neurodegenerative disease biomarkers.",
+      "key_insight": "GrimAge acceleration was the only DNA methylation age measure consistently associated with higher all-cause dementia risk, while overall findings across neurodegenerative diseases were limited and inconsistent.",
+      "clinical_relevance": "Current evidence is insufficient to support DNA methylation clocks as neurodegenerative disease biomarkers; this paper does not address AI-driven cancer drug discovery.",
       "method": [
-        "Systematic review of six databases for studies linking DNA methylation age measures to neurodegenerative diseases.",
+        "Systematic review across six databases of DNA methylation age metrics and neurodegenerative diseases.",
         "Correlated-and-hierarchical-effects meta-analyses with restricted maximum likelihood and Knapp–Hartung adjustment.",
-        "Assessment of observational associations and Mendelian randomization evidence."
+        "Included observational and Mendelian randomization studies."
       ],
-      "evidence_signal": "The review included 37 observational studies (46,365 participants) and seven Mendelian randomization studies; longitudinal analyses linked each SD increase in GrimAge acceleration to higher dementia risk (HR 1.11, 95% CI 1.02–1.20).",
-      "watch_item": "Mendelian randomization provided limited evidence for causality, and disease-specific clocks require independent validation.",
+      "evidence_signal": "Across 37 observational studies involving 46,365 participants and seven Mendelian randomization studies, longitudinal pooling linked higher GrimAge acceleration to dementia risk (HR per SD 1.11, 95% CI 1.02–1.20).",
+      "watch_item": "Causal evidence was limited, and disease-specific clocks require development and independent validation before potential clinical use.",
       "hashtags": [
         "#EpigeneticClocks",
-        "#BiologicalAge",
         "#DNAMethylation",
+        "#BiologicalAging",
         "#Neurodegeneration",
         "#DementiaResearch"
       ],
@@ -207,7 +207,7 @@
       "paper_title": "Biological age measured by DNA methylation clocks and neurodegenerative diseases: A systematic review and meta-analysis",
       "paper_date": "2026-10-21",
       "paper_category": "Target Biology",
-      "generated_at": "2026-10-24T11:45:47",
+      "generated_at": "2026-10-25T12:14:58",
       "generator": "openai"
     }
   },
@@ -236,23 +236,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.17.26365809v1.full.pdf"
       }
     ],
-    "score": 52,
+    "score": 47,
     "infographic": {
-      "key_insight": "Referral wording largely reversed multimodal AI decisions between glioma and brain abscess on identical MRI images, outweighing imaging evidence.",
-      "clinical_relevance": "These findings raise concerns about referral-text bias in AI-assisted brain tumor assessment; this study evaluated diagnosis, not cancer drug discovery.",
+      "key_insight": "Referral text strongly shifted multimodal LLM decisions between glioma and brain abscess, outweighing MRI evidence in this study.",
+      "clinical_relevance": "For AI-assisted brain imaging interpretation, referral wording may bias classification, and instructions to ignore it did not reliably resolve the problem.",
       "method": [
-        "Retrospective, single-center study of 60 MRI examinations: 30 gliomas and 30 abscesses.",
-        "Paired one axial slice per case with five referral texts and three prompt instructions across four multimodal models.",
-        "Collected 72,000 responses and descriptively compared performance with two blinded radiologists."
+        "Retrospective single-center study of 60 MRI examinations: 30 gliomas and 30 abscesses.",
+        "Four multimodal LLMs assessed one axial slice per case with five referral texts and three prompt instructions.",
+        "Repeated queries yielded 72,000 answers; two blinded radiologists assessed images without referral text."
       ],
-      "evidence_signal": "Changing explicit inflammatory text to explicit tumor-suggestive text shifted tumor-call frequency by 79–100 percentage points; model accuracy was 52–73%, versus 78% and 73% for radiologists.",
-      "watch_item": "Single-center, single-slice testing limits generalizability, and instructions to ignore referral text did not reliably eliminate its influence.",
+      "evidence_signal": "Changing referral text shifted tumor-call frequency by 79–100 percentage points; model accuracy was 52–73%, versus 78% and 73% for radiologists.",
+      "watch_item": "The small, single-center, single-slice evaluation limits generalizability; this was a diagnostic AI study, not cancer drug discovery research.",
       "hashtags": [
         "#MultimodalAI",
         "#Glioma",
         "#BrainMRI",
-        "#AIBias",
-        "#DiagnosticSafety"
+        "#DiagnosticBias",
+        "#AIValidation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -260,7 +260,7 @@
       "paper_title": "Clinical referral text overrides MRI evidence in multimodal large language models: glioma versus brain abscess",
       "paper_date": "2026-10-19",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-24T11:45:49",
+      "generated_at": "2026-10-25T12:15:01",
       "generator": "openai"
     }
   },
@@ -289,22 +289,22 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.14.26365111v1.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
       "key_insight": "CAMBY will investigate how brain network structure and function relate to persistent concussion symptoms in adolescents; it is not an AI or cancer drug discovery study.",
-      "clinical_relevance": "The study could inform future targeted neurostimulation trials for persistent concussion symptoms, but it does not test a treatment.",
+      "clinical_relevance": "Findings could inform future targeted neurostimulation trials for persistent concussion symptoms, but the study does not test a treatment.",
       "method": [
         "Prospective observational study of adolescents aged 12–18 with a concussion history.",
         "Collect MRI, MEG, and neuropsychological measures at least one month after concussion.",
-        "Compare persistent-symptom and recovered groups and test relationships among network microstructure, neural activity, and neuropsychological features."
+        "Compare persistent-symptom and recovered groups and examine relationships between brain networks and neuropsychological features."
       ],
-      "evidence_signal": "The abstract describes a study protocol and planned analyses, with no participant counts or outcome results reported.",
-      "watch_item": "Observational associations cannot establish that brain network alterations cause persistent symptoms or that targeting them will improve recovery.",
+      "evidence_signal": "This protocol describes planned imaging and neuropsychological comparisons but reports no participant results or treatment outcomes.",
+      "watch_item": "Observational associations cannot establish that brain network differences cause persistent symptoms or predict benefit from neurostimulation.",
       "hashtags": [
         "#ConcussionResearch",
         "#AdolescentBrainHealth",
-        "#BrainNetworks",
         "#Neuroimaging",
+        "#BrainNetworks",
         "#StudyProtocol"
       ],
       "model": "gpt-6.1-sol",
@@ -313,7 +313,7 @@
       "paper_title": "Concussion, Attention, and Mental Health: A Brain Network Study in Youth (CAMBY) - Study Protocol",
       "paper_date": "2026-10-20",
       "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-24T11:45:52",
+      "generated_at": "2026-10-25T12:15:03",
       "generator": "openai"
     }
   },
@@ -342,17 +342,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.16.26365578v1.full.pdf"
       }
     ],
-    "score": 42,
+    "score": 37,
     "infographic": {
-      "key_insight": "An AI-generated cell-boundary overlay showed potential to improve consistency in neurologic autoantibody assay interpretation; this study did not investigate cancer drug discovery.",
-      "clinical_relevance": "The combined overlay and model category may support second-read review of difficult fluorescence images, pending independent validation.",
+      "key_insight": "An AI cell-boundary overlay showed promise for more consistent interpretation of neurologic autoantibody assays, not cancer drug discovery.",
+      "clinical_relevance": "The combined overlay and model category may support second-read review, but clinical utility requires independent validation.",
       "method": [
-        "Transferred detected cell boundaries from a structural channel onto antibody-staining images.",
-        "Compared standalone model classifications with a reader-derived three-class reference.",
-        "Had four readers assess held-out records first unaided, then with the overlay and model category."
+        "Transfer detected cell boundaries from the structural channel onto antibody-staining images.",
+        "Compare model classifications with a reader-derived three-class reference.",
+        "Have four readers assess held-out records first unassisted, then with the overlay and model category."
       ],
-      "evidence_signal": "Using 2,763 development records and 499 held-out records across 14 antibody targets, the selected model achieved 85.2% reference concordance, with lowest recall for weak-positive or equivocal records.",
-      "watch_item": "Higher assisted reader agreement may reflect model-directed anchoring: almost all revised ratings moved toward the model category.",
+      "evidence_signal": "Using 2,763 development records and 499 held-out records across 14 antibody targets, the selected model achieved 85.2% reference agreement; reader agreement increased with assistance.",
+      "watch_item": "Recall was lowest for weak-positive or equivocal records, and nearly all revised reader ratings shifted toward the model category, raising anchoring concerns.",
       "hashtags": [
         "#MedicalAI",
         "#Neuroimmunology",
@@ -366,7 +366,7 @@
       "paper_title": "AI-Assisted Interpretation of Neurologic Autoantibody Cell-Based Assays",
       "paper_date": "2026-10-19",
       "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-10-24T11:45:54",
+      "generated_at": "2026-10-25T12:15:05",
       "generator": "openai"
     }
   }

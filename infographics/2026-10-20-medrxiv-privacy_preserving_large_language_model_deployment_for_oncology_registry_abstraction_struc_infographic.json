@@ -1,19 +1,19 @@
 {
   "key_insight": "A privacy-preserving Llama 3.3 70B pipeline accurately extracted oncology registry variables from clinical notes without task-specific fine-tuning.",
-  "clinical_relevance": "The approach could support oncology registry abstraction for research and care documentation; it did not evaluate cancer drug discovery or treatment outcomes.",
+  "clinical_relevance": "The approach could support oncology registry abstraction for research and care documentation; it did not evaluate cancer drug discovery or patient outcomes.",
   "method": [
     "Extracted over 50 variables from 6,700 oncology notes at a Singapore cancer centre.",
-    "De-identified data locally using Hide-In-Plain-Sight, keeping identifiable data within hospital infrastructure.",
-    "Classified outputs as correct, missing, spurious, or incorrect against adjudicated ground truth."
+    "De-identified notes locally using a Hide-In-Plain-Sight approach, keeping identifiable data within hospital infrastructure.",
+    "Classified outputs as correct, missing, spurious, or incorrect against an adjudicated reference standard."
   ],
   "evidence_signal": "Evaluation on 200 randomly sampled notes yielded F1 scores of 97.2% for diagnosis, 95.8% for histology, 92.6% for stage, 91.4% for biomarkers, and 88.1% for treatments.",
-  "watch_item": "External testing was preliminary, covering only 50 notes, and showed reduced performance for list-valued variables.",
+  "watch_item": "Transferability testing was preliminary, involving only 50 external notes, with reduced performance for list-valued variables.",
   "hashtags": [
     "#OncologyInformatics",
     "#CancerRegistries",
     "#ClinicalNLP",
     "#PrivacyPreservingAI",
-    "#LLMEvaluation"
+    "#LargeLanguageModels"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Privacy-Preserving Large Language Model Deployment for Oncology Registry Abstraction: Structure-Aware Evaluation in a Real-World Clinical Setting",
   "paper_date": "2026-10-20",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-24T11:45:44",
+  "generated_at": "2026-10-25T12:14:56",
   "generator": "openai"
 }

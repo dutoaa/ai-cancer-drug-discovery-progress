@@ -1,19 +1,19 @@
 {
-  "key_insight": "Referral wording largely reversed multimodal AI decisions between glioma and brain abscess on identical MRI images, outweighing imaging evidence.",
-  "clinical_relevance": "These findings raise concerns about referral-text bias in AI-assisted brain tumor assessment; this study evaluated diagnosis, not cancer drug discovery.",
+  "key_insight": "Referral text strongly shifted multimodal LLM decisions between glioma and brain abscess, outweighing MRI evidence in this study.",
+  "clinical_relevance": "For AI-assisted brain imaging interpretation, referral wording may bias classification, and instructions to ignore it did not reliably resolve the problem.",
   "method": [
-    "Retrospective, single-center study of 60 MRI examinations: 30 gliomas and 30 abscesses.",
-    "Paired one axial slice per case with five referral texts and three prompt instructions across four multimodal models.",
-    "Collected 72,000 responses and descriptively compared performance with two blinded radiologists."
+    "Retrospective single-center study of 60 MRI examinations: 30 gliomas and 30 abscesses.",
+    "Four multimodal LLMs assessed one axial slice per case with five referral texts and three prompt instructions.",
+    "Repeated queries yielded 72,000 answers; two blinded radiologists assessed images without referral text."
   ],
-  "evidence_signal": "Changing explicit inflammatory text to explicit tumor-suggestive text shifted tumor-call frequency by 79–100 percentage points; model accuracy was 52–73%, versus 78% and 73% for radiologists.",
-  "watch_item": "Single-center, single-slice testing limits generalizability, and instructions to ignore referral text did not reliably eliminate its influence.",
+  "evidence_signal": "Changing referral text shifted tumor-call frequency by 79–100 percentage points; model accuracy was 52–73%, versus 78% and 73% for radiologists.",
+  "watch_item": "The small, single-center, single-slice evaluation limits generalizability; this was a diagnostic AI study, not cancer drug discovery research.",
   "hashtags": [
     "#MultimodalAI",
     "#Glioma",
     "#BrainMRI",
-    "#AIBias",
-    "#DiagnosticSafety"
+    "#DiagnosticBias",
+    "#AIValidation"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Clinical referral text overrides MRI evidence in multimodal large language models: glioma versus brain abscess",
   "paper_date": "2026-10-19",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-24T11:45:49",
+  "generated_at": "2026-10-25T12:15:01",
   "generator": "openai"
 }
