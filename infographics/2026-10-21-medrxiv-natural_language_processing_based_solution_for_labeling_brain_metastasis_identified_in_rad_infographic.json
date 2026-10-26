@@ -1,19 +1,19 @@
 {
-  "key_insight": "Combining AI predictions from radiology Findings and Impressions improved identification of brain metastases compared with either section alone.",
-  "clinical_relevance": "The pipeline could expand cancer registry surveillance to brain metastases detected after the initial cancer diagnosis; it is not a drug discovery tool.",
+  "key_insight": "An NLP ensemble identified brain metastases in radiology reports, supporting cancer surveillance rather than drug discovery.",
+  "clinical_relevance": "The pipeline could help cancer registries capture brain metastases arising after initial cancer diagnosis that current surveillance may miss.",
   "method": [
-    "Manually labeled brain/head radiology reports from an Alberta cancer cohort.",
-    "Trained separate Bio_ClinicalBERT models on Findings and Impressions, using the higher probability as the report-level prediction.",
-    "Validated internally in Alberta and externally in Ontario and British Columbia."
+    "Manually labeled brain/head radiology reports from a population-based Alberta cancer cohort.",
+    "Trained separate Bio_ClinicalBERT models on Findings and Impressions sections.",
+    "Used the higher section-level probability as the report prediction and validated across three Canadian provinces."
   ],
-  "evidence_signal": "Trained on 1,879 samples, the model achieved 88.8% sensitivity and 49.9% precision on 1,833 internal-validation reports at a 0.4 threshold; external sensitivity was 91.8% in Ontario and 72.6% in British Columbia.",
-  "watch_item": "Modest internal precision and variable external sensitivity warrant assessing false-positive review burden and local performance before surveillance deployment.",
+  "evidence_signal": "Trained on 1,879 samples, the ensemble achieved 88.8% sensitivity and 49.9% precision on 1,833 internal-validation reports from 357 patients at a 0.4 threshold; external sensitivity was 91.8% in Ontario and 72.6% in British Columbia.",
+  "watch_item": "Modest internal precision and variable external sensitivity warrant local validation and review workflows before registry implementation.",
   "hashtags": [
     "#BrainMetastases",
     "#ClinicalNLP",
     "#CancerSurveillance",
-    "#CancerRegistries",
-    "#AIValidation"
+    "#RadiologyAI",
+    "#PrecisionOncology"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Natural Language Processing Based Solution for Labeling Brain Metastasis Identified in Radiology Reports",
   "paper_date": "2026-10-21",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-25T12:14:51",
+  "generated_at": "2026-10-26T13:46:45",
   "generator": "openai"
 }

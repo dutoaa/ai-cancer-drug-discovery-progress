@@ -1,19 +1,19 @@
 {
-  "key_insight": "A privacy-preserving Llama 3.3 70B pipeline accurately extracted oncology registry variables from clinical notes without task-specific fine-tuning.",
+  "key_insight": "A privacy-preserving Llama 3.3 70B pipeline extracted oncology registry variables with high accuracy without task-specific fine-tuning.",
   "clinical_relevance": "The approach could support oncology registry abstraction for research and care documentation; it did not evaluate cancer drug discovery or patient outcomes.",
   "method": [
     "Extracted over 50 variables from 6,700 oncology notes at a Singapore cancer centre.",
-    "De-identified notes locally using a Hide-In-Plain-Sight approach, keeping identifiable data within hospital infrastructure.",
-    "Classified outputs as correct, missing, spurious, or incorrect against an adjudicated reference standard."
+    "Used local Hide-In-Plain-Sight de-identification so identifiable data stayed within hospital infrastructure.",
+    "Classified outputs as correct, missing, spurious, or incorrect using structure-aware evaluation."
   ],
-  "evidence_signal": "Evaluation on 200 randomly sampled notes yielded F1 scores of 97.2% for diagnosis, 95.8% for histology, 92.6% for stage, 91.4% for biomarkers, and 88.1% for treatments.",
-  "watch_item": "Transferability testing was preliminary, involving only 50 external notes, with reduced performance for list-valued variables.",
+  "evidence_signal": "Against adjudicated ground truth for 200 randomly sampled notes, F1 scores ranged from 88.1% for treatments to 97.2% for diagnosis; preliminary transferability testing used 50 external notes.",
+  "watch_item": "External testing was small and showed reduced performance for list-valued variables, leaving broader generalizability uncertain.",
   "hashtags": [
     "#OncologyInformatics",
     "#CancerRegistries",
-    "#ClinicalNLP",
     "#PrivacyPreservingAI",
-    "#LargeLanguageModels"
+    "#ClinicalNLP",
+    "#LLMEvaluation"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Privacy-Preserving Large Language Model Deployment for Oncology Registry Abstraction: Structure-Aware Evaluation in a Real-World Clinical Setting",
   "paper_date": "2026-10-20",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-25T12:14:56",
+  "generated_at": "2026-10-26T13:46:51",
   "generator": "openai"
 }
