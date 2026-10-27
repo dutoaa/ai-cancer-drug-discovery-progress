@@ -1,0 +1,26 @@
+{
+  "key_insight": "IMPGAT learns single-cell gating strategies from sample-level cell-type frequencies, without requiring explicit cell-level training labels.",
+  "clinical_relevance": "The approach could support standardized leukemia flow cytometry analysis and phenotypic drug screening, but does not directly demonstrate drug discovery or clinical benefit.",
+  "method": [
+    "Uses weakly supervised multiple-instance learning.",
+    "Applies induced set attention to assign single-cell marker profiles to cell populations.",
+    "Trains without explicit cell-level labels or unsupervised clustering."
+  ],
+  "evidence_signal": "Across ALL and AML cohorts totaling 711 measurements from 268 individuals and 240 million cells, ALL abundance errors showed no statistically significant difference from human interexpert variability, while AML blast quantification matched a supervised state-of-the-art model.",
+  "watch_item": "Errors primarily involved expert-labeled non-cellular events, highlighting the absence of explicit physical priors for identifying debris and doublets.",
+  "hashtags": [
+    "#FlowCytometry",
+    "#WeaklySupervisedLearning",
+    "#LeukemiaResearch",
+    "#SingleCellAnalysis",
+    "#PhenotypicScreening"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-21-medrxiv-implicit_reconstruction_of_gating_strategies_from_sample_level_flow_cytometry_annotations",
+  "paper_title": "Implicit reconstruction of gating strategies from sample-level flow cytometry annotations",
+  "paper_date": "2026-10-21",
+  "paper_category": "Therapeutic Discovery",
+  "generated_at": "2026-10-27T12:54:18",
+  "generator": "openai"
+}
