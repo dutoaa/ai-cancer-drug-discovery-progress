@@ -1,0 +1,479 @@
+[
+  {
+    "id": "2026-10-21-medrxiv-natural_language_processing_based_solution_for_labeling_brain_metastasis_identified_in_rad",
+    "doi": "10.64898/2026.06.10.26355415",
+    "date": "2026-10-21",
+    "title": "Natural Language Processing Based Solution for Labeling Brain Metastasis Identified in Radiology Reports",
+    "authors": "Liu, T.; Han, Y. T.; Zuo, H.; Das, S.; Lin, H.-M.; Colak, E.; Istasy, M.; Ladak, A. M.; Bigenimana, J. C.; Gondara, L.; Simkin, J.; Lee, J.; Roozbeh, D.; Nichol, A. M.; Easaw, J.; Walker, E.; Yip, S.; Mou, L.; Yuan, Y.",
+    "abstract": "PurposeBrain metastases (BM) far exceed primary CNS tumours and constitute the majority workload for neuro-oncology care providers. Currently, the cancer registries only capture synchronous BMs, which is only a small proportion of all BMs. We aim to develop and validate a natural language processing (NLP) algorithm that identifies brain metastases in radiology reports, enabling scalable surveillance of asynchronous BMs. MethodsUsing population-based cancer registry data in Alberta, Canada, we identified a cancer cohort diagnosed between 2012-2019 with follow-up to 2022. All brain/head radiology reports at and post-cancer diagnosis were identified. Reports were sampled through a multi-phase approach and manually labeled for BM presence. We trained two Bio_ClinicalBERT models on the \"Findings\" and \"Impressions\" sections, respectively, and took the maximum predicted probability as the report-level prediction. Internal and external validation used reports from the Canadian provinces of Alberta, Ontario, and British Columbia. ResultsThe models were trained on 1,879 samples. For internal validation, 1,833 reports from 357 patients were tested. At a probability threshold of 0.4, the model achieved a sensitivity of 0.888 and precision of 0.499. The ensemble substantially outperformed single-section models, which achieved sensitivities of only 67.8% (Findings) and 74.2% (Impressions). On external validation, sensitivity was 0.918 in Ontario and 0.726 in British Columbia, demonstrating robustness across diverse data distributions. ConclusionsAn NLP-based pipeline processing both Findings and Impressions sections has been developed and validated in three Canadian provinces. It meets cancer registry operational requirements and to be implemented into the surveillance workflow in Alberta and British Columbia, providing a foundation for population-level BM surveillance.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-21",
+    "updated": "2026-10-21",
+    "primary_category": "epidemiology",
+    "categories": [
+      "epidemiology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.10.26355415v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.10.26355415v2.full.pdf"
+      }
+    ],
+    "score": 65,
+    "infographic": {
+      "key_insight": "An NLP ensemble combining radiology Findings and Impressions identified brain metastases more sensitively than either section alone.",
+      "clinical_relevance": "The pipeline could expand cancer registry surveillance to brain metastases developing after the initial cancer diagnosis; it is not a drug discovery tool.",
+      "method": [
+        "Manually labeled brain/head radiology reports from an Alberta cancer cohort diagnosed in 2012–2019.",
+        "Trained separate Bio_ClinicalBERT models for Findings and Impressions, using the higher probability as the report-level prediction.",
+        "Validated internally in Alberta and externally in Ontario and British Columbia."
+      ],
+      "evidence_signal": "Trained on 1,879 samples, the ensemble achieved 88.8% sensitivity and 49.9% precision on 1,833 internal-validation reports at a 0.4 threshold; external sensitivity was 91.8% in Ontario and 72.6% in British Columbia.",
+      "watch_item": "Modest internal precision and variable external sensitivity warrant local validation and review workflows before registry implementation.",
+      "hashtags": [
+        "#BrainMetastases",
+        "#ClinicalNLP",
+        "#CancerSurveillance",
+        "#RadiologyAI",
+        "#CancerRegistries"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-21-medrxiv-natural_language_processing_based_solution_for_labeling_brain_metastasis_identified_in_rad",
+      "paper_title": "Natural Language Processing Based Solution for Labeling Brain Metastasis Identified in Radiology Reports",
+      "paper_date": "2026-10-21",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-27T12:53:58",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-21-medrxiv-ai_empowered_multimodal_data_integration_and_knowledge_discovery_for_pharmacovigilance",
+    "doi": "10.64898/2026.10.20.26365969",
+    "date": "2026-10-21",
+    "title": "AI-Empowered Multimodal Data Integration and Knowledge Discovery for Pharmacovigilance",
+    "authors": "Li, Y.; Zhou, H.; Yeh, F.-Y.; Sun, Z.; Zheng, J.; Alzaidi, S.; Guan, H.; Li, J.; Seger, D. L.; Wang, L.; Li, M.; Li, X.; Chen, T.; Plasek, J. M.; Li, H.; Jiang, A.; Hong, P.; Li, F.; Zhang, W.; Cui, L.; Bates, D. W.; Zhou, L.; He, Y.; Tao, C.",
+    "abstract": "Biomedical artificial intelligence (AI) increasingly relies on heterogeneous data sources, yet differences in data structure, terminology, evidence quality, and provenance complicate their integration into reliable knowledge resources. Here, we develop an evidence-aware framework for processing and integrating heterogeneous pharmacovigilance data from FDA Adverse Event Reporting System (FAERS) reports, biomedical literature, clinical trials, and electronic health records in Mass General Brigham. The framework combines large language model (LLM)-based information extraction, ontology-driven semantic normalization, cross-source evidence assessment, statistical and machine learning-based prioritization, and ingredient-based adverse drug event (ADE) relationship inference to transform heterogeneous evidence into a structured and evidence-based knowledge resource. The constructed knowledge system contains 11,588 drug nodes, 44,843 ingredient nodes, 3,275 ADE nodes, 993 indication nodes, and more than 2.47 million relationships, with each drug-ADE relationship assigned a confidence score. We further developed a drug-level web interface for accessing the knowledge resource and validated its utility in downstream AI tasks. Specifically, incorporating the developed knowledge resource improved the comprehensiveness, relevance, and overall quality of LLM-based drug-specific ADE synthesis and improved the precision and F1 score of clinical ADE relation extraction. These results demonstrate that AI-assisted processing combined with evidence-aware curation can transform heterogeneous biomedical evidence into reusable, AI-ready knowledge with explicit provenance and evidence strength information. The framework provides a general strategy for integrating heterogeneous biomedical data to support reproducible knowledge construction and downstream biomedical AI applications.",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-10-21",
+    "updated": "2026-10-21",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.20.26365969v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.20.26365969v1.full.pdf"
+      }
+    ],
+    "score": 59,
+    "infographic": {
+      "key_insight": "An evidence-aware AI framework integrates heterogeneous drug-safety data into a reusable knowledge resource that improves downstream AI tasks.",
+      "clinical_relevance": "The resource could support drug-safety research, but the abstract does not establish cancer-specific utility, drug discovery benefits, or improved patient outcomes.",
+      "method": [
+        "Integrate FAERS reports, biomedical literature, clinical trials, and Mass General Brigham electronic health records.",
+        "Combine LLM extraction, ontology-based normalization, and cross-source evidence assessment.",
+        "Prioritize drug–adverse event relationships using statistical and machine learning methods, ingredient-based inference, and confidence scores."
+      ],
+      "evidence_signal": "The resource contains 11,588 drug nodes and over 2.47 million relationships; downstream evaluations reported better LLM adverse-event synthesis and improved precision and F1 for clinical adverse-event relation extraction.",
+      "watch_item": "Confidence-scored associations do not establish causality, and the abstract provides no quantitative performance gains or external validation results.",
+      "hashtags": [
+        "#Pharmacovigilance",
+        "#BiomedicalAI",
+        "#KnowledgeIntegration",
+        "#DrugSafety",
+        "#EvidenceAwareAI"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-21-medrxiv-ai_empowered_multimodal_data_integration_and_knowledge_discovery_for_pharmacovigilance",
+      "paper_title": "AI-Empowered Multimodal Data Integration and Knowledge Discovery for Pharmacovigilance",
+      "paper_date": "2026-10-21",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-10-27T12:54:01",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-21-medrxiv-improving_survival_prediction_from_surrogate_endpoints_through_integration_of_patient_repo",
+    "doi": "10.1101/2025.10.02.25337154",
+    "date": "2026-10-21",
+    "title": "Improving Survival Prediction from Surrogate Endpoints Through Integration of Patient-Reported Outcomes Using Machine Learning",
+    "authors": "Sun, Y.; Wang, Y.; Luu, H. P. K.; Liu, A.; Zhang, C.; Muluneh, B.; Zheng, W.; Yao, H.; Basch, E.; Zhou, J.",
+    "abstract": "IntroductionOverall survival (OS) is the gold standard for demonstrating treatment benefit in oncology but requires prolonged follow-up. Surrogate efficacy endpoints, such as progression-free survival, can shorten trial duration and reduce costs but may not consistently reflect overall survival benefit. We hypothesized that integrating patient-reported outcomes (PROs) with surrogate endpoints would improve trial-level prediction of OS benefit. MethodsWe reviewed clinical trials supporting FDA oncology drug approvals from 2013 to 2023 that reported OS, at least one surrogate efficacy endpoint, and PROs. Machine learning models predicted OS benefit were developed using surrogate endpoints alone or surrogate endpoint features combined with PROs. Both models were validated using repeated five-fold trial-grouped cross-validation and leave-one-trial-out validation. ResultsA total of 100 clinical trials (103 between-arm comparisons, 68,987 participants) met inclusion criteria. Compared with control arms, 68% of active treatment arms demonstrated OS benefit, 83.5% showed surrogate endpoints improvement, and 35.9% showed improvement in PROs. Adding PROs to machine learning models increased area under the receiver operating characteristic curve (AUC-ROC) from 0.67 (95% CI, 0.55-0.78) to 0.79 (95% CI, 0.69-0.87), an absolute increase of 0.12 indicating improved model discrimination. Leave-one-trial-out validation confirmed the improvement (AUC-ROC, 0.663 versus 0.795; paired difference, 0.132; 95% CI, 0.017-0.248). ConclusionsIntegrating PROs with surrogate endpoints improved prediction of OS benefit, supporting machine learning as a quantitative framework for combining complementary endpoints in oncology drug development.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-21",
+    "updated": "2026-10-21",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.10.02.25337154v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.1101/2025.10.02.25337154v2.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "Adding patient-reported outcomes to surrogate endpoints improved machine learning prediction of trial-level overall survival benefit, increasing AUC-ROC from 0.67 to 0.79.",
+      "clinical_relevance": "Combining patients’ reported experiences with efficacy endpoints may strengthen assessment of survival benefit in oncology drug development.",
+      "method": [
+        "Reviewed trials supporting FDA oncology drug approvals from 2013–2023.",
+        "Compared models using surrogate endpoints alone versus surrogate endpoints plus patient-reported outcomes.",
+        "Evaluated performance with repeated five-fold trial-grouped cross-validation and leave-one-trial-out validation."
+      ],
+      "evidence_signal": "Across 100 trials, 103 between-arm comparisons, and 68,987 participants, leave-one-trial-out validation showed an AUC-ROC increase of 0.132 (95% CI, 0.017–0.248).",
+      "watch_item": "Validation was internal to selected approval-supporting trials; generalizability to other settings and use as a substitute for observed survival remain unestablished.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#MachineLearning",
+        "#PatientReportedOutcomes",
+        "#SurrogateEndpoints",
+        "#ClinicalTrials"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-21-medrxiv-improving_survival_prediction_from_surrogate_endpoints_through_integration_of_patient_repo",
+      "paper_title": "Improving Survival Prediction from Surrogate Endpoints Through Integration of Patient-Reported Outcomes Using Machine Learning",
+      "paper_date": "2026-10-21",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-27T12:54:03",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-21-medrxiv-near_infrared_spectroscopy_during_non_ischaemic_handgrip_exercise_reveals_divergent_muscle",
+    "doi": "10.64898/2026.10.21.26364901",
+    "date": "2026-10-21",
+    "title": "Near infrared spectroscopy during non-ischaemic handgrip exercise reveals divergent muscle oxygenation signatures in mitochondrial disease and sarcopenia",
+    "authors": "Devine, H.; Brito da Silva, A.; Hillman, S.; Brownstein, C.; Smith, S.; Rao, K.; Pickett, S.; Turnbull, D.; Whittaker, R.; Hurst, C.; Witham, M. D.; Sayer, A. A.; Bulea, T.; Cooper, R.; Suetterlin, K.",
+    "abstract": "BackgroundMitochondrial dysfunction is a hallmark of ageing and is implicated in the pathogenesis of sarcopenia. Genetically confirmed mitochondrial disease provides a biologically definitive model of impaired oxidative phosphorylation against which novel functional assessments can be validated. We investigated whether a brief, submaximal, non-ischaemic intermittent isometric handgrip exercise protocol combined with Near Infra-Red Spectroscopy (NIRS) could detect distinct muscle oxygenation signatures in mitochondrial disease and sarcopenia. MethodsAdults with genetically confirmed mitochondrial disease (n=10, 7 female) and group-matched controls (n=19, 11 female), underwent assessment of maximal grip force, handgrip relaxation kinetics and a 3-minute intermittent submaximal isometric handgrip test (40% maximal voluntary contraction, 1Hz contraction/relaxation) with continuous force recording at 2000Hz and simultaneous NIRS. Findings were compared with 23 community-dwelling older adults from the Muscle Ageing and Sarcopenia Study (MASS) Lifecourse cohort (n=23, 13 female) including seven with probable or confirmed sarcopenia according to European Working Group on Sarcopenia in Older People (EWGSOP2) criteria. ResultsParticipants with mitochondrial disease demonstrated an attenuated reduction in tissue saturation index (TSI) during exercise compared with controls (TSI %{middle dot}s150-180s: -59.9{+/-}94.5 vs -175.1{+/-}128.4; p=0.02). Total haemoglobin (THb) responses did not differ between groups (p=0.10). In contrast, participants with probable or confirmed sarcopenia showed exaggerated reduction in TSI compared with non-sarcopenic participants (TSI %{middle dot}s150-180s: -256.5{+/-}146.0 vs -121.2{+/-}95.2; p=0.05), while THb responses remained similar. The association between sarcopenia and TSI differed by sex (interaction coefficient -240, p=0.016), with greater TSI reductions observed in males with sarcopenia. Differences in TSI between mitochondrial disease and control groups were independent of age and sex. No statistically significant associations were observed between THb responses and age, sex or force production. ConclusionsA brief, non-ischaemic handgrip exercise protocol combined with NIRS identified divergent muscle oxygenation responses in mitochondrial disease and sarcopenia. The attenuated TSI response observed in genetically confirmed mitochondrial disease is consistent with impaired oxygen utilisation secondary to defective oxidative phosphorylation, whereas the exaggerated TSI reduction observed in sarcopenia suggests a distinct physiological mechanism, potentially involving impaired oxygen delivery, reduced muscle efficiency, or both. This portable and non-invasive approach has significant potential as a physiological biomarker for mechanistic studies and clinical trials in ageing and neuromuscular disease. More broadly, our findings demonstrate how biologically defined rare diseases can provide a powerful framework for interpreting mechanisms in common heterogeneous age-related conditions.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-10-21",
+    "updated": "2026-10-21",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.21.26364901v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.21.26364901v1.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "During brief handgrip exercise, muscle oxygen saturation fell less in mitochondrial disease but more in sarcopenia than in their respective comparison groups.",
+      "clinical_relevance": "These contrasting oxygenation patterns suggest NIRS could help characterize muscle dysfunction, but diagnostic usefulness remains unproven.",
+      "method": [
+        "Compared 10 adults with genetically confirmed mitochondrial disease with 19 matched controls.",
+        "Assessed 23 older adults, including 7 with probable or confirmed sarcopenia.",
+        "Recorded force and NIRS during 3 minutes of intermittent handgrip exercise at 40% maximal voluntary contraction."
+      ],
+      "evidence_signal": "Late-exercise tissue saturation responses differed for mitochondrial disease versus controls (p=0.02) and sarcopenia versus non-sarcopenia (p=0.05), while total haemoglobin responses were similar.",
+      "watch_item": "Small samples, including only seven sarcopenia cases, limit generalizability; this study concerns muscle physiology, not AI cancer drug discovery.",
+      "hashtags": [
+        "#NearInfraredSpectroscopy",
+        "#MitochondrialDisease",
+        "#Sarcopenia",
+        "#MusclePhysiology",
+        "#ClinicalTranslation"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-21-medrxiv-near_infrared_spectroscopy_during_non_ischaemic_handgrip_exercise_reveals_divergent_muscle",
+      "paper_title": "Near infrared spectroscopy during non-ischaemic handgrip exercise reveals divergent muscle oxygenation signatures in mitochondrial disease and sarcopenia",
+      "paper_date": "2026-10-21",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-10-27T12:54:05",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-21-medrxiv-source_linked_multispecialty_clinical_reasoning_and_tumour_board_decision_making_in_colore",
+    "doi": "10.64898/2026.10.19.26365647",
+    "date": "2026-10-21",
+    "title": "Source-linked multispecialty clinical reasoning and tumour-board decision-making in colorectal cancer",
+    "authors": "Gombolevskiy, V. A.; Sekacheva, M. I.; Sanikovich, V. D.; Bagmet, N. N.; Balaeva, D. A.; Nechaev, N. B.; Nesterov, A. I.; Bokov, A. A.; Panin, I. I.; Bespalov, I. R.; Gribakina, A. V.; Dylov, D. V.; Oseledets, I. V.",
+    "abstract": "Clinical records preserve patient findings and final recommendations but rarely capture how specialists select evidence, develop alternative interpretations, disagree, and converge on a management strategy. We describe a dataset derived from ten retrospectively selected, completed cases of histologically confirmed colorectal cancer. For each case, an administrator uploaded de-identified textual clinical records to an authenticated web-based annotation platform. A medical oncologist, surgical oncologist, and radiation oncologist, each with more than ten years of clinical experience, independently linked relevant source fragments to patient-specific interpretations and documented clinical problems, differential hypotheses, uncertainty, and diagnostic and treatment strategies. After the three records were locked, a large language model generated candidate questions for review by the tumour-board chair. The four physicians then discussed each case online; recordings were automatically transcribed and verified by two medical residents. The dataset comprises 30 source-linked specialist reasoning records, 10 verified case-level discussion transcripts, 10 final tumour-board decisions, and associated provenance and quality-control metadata. It supports research on evidence-grounded reasoning, cross-specialty disagreement, multidisciplinary decision-making, and multi-agent clinical decision support.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-21",
+    "updated": "2026-10-21",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.19.26365647v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.19.26365647v1.full.pdf"
+      }
+    ],
+    "score": 48,
+    "infographic": {
+      "key_insight": "This colorectal cancer dataset captures source-linked specialist reasoning and tumour-board decisions, rather than AI cancer drug discovery.",
+      "clinical_relevance": "It provides a research resource for studying how specialists interpret evidence, resolve disagreements, and formulate multidisciplinary management strategies.",
+      "method": [
+        "Three experienced oncology specialists independently linked clinical source text to interpretations, uncertainties, and proposed strategies.",
+        "After records were locked, an LLM generated candidate discussion questions for tumour-board chair review.",
+        "Four physicians discussed each case; two medical residents verified automatically generated transcripts."
+      ],
+      "evidence_signal": "Ten retrospectively selected cases yielded 30 specialist reasoning records, 10 verified discussion transcripts, and 10 final tumour-board decisions with provenance and quality-control metadata.",
+      "watch_item": "The small, retrospective dataset does not establish generalizability or demonstrate improved clinical outcomes from AI support.",
+      "hashtags": [
+        "#ColorectalCancer",
+        "#PrecisionOncology",
+        "#ClinicalReasoning",
+        "#TumourBoard",
+        "#ClinicalAI"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-21-medrxiv-source_linked_multispecialty_clinical_reasoning_and_tumour_board_decision_making_in_colore",
+      "paper_title": "Source-linked multispecialty clinical reasoning and tumour-board decision-making in colorectal cancer",
+      "paper_date": "2026-10-21",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-27T12:54:08",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-21-medrxiv-biological_age_measured_by_dna_methylation_clocks_and_neurodegenerative_diseases_a_systema",
+    "doi": "10.64898/2026.10.21.26365867",
+    "date": "2026-10-21",
+    "title": "Biological age measured by DNA methylation clocks and neurodegenerative diseases: A systematic review and meta-analysis",
+    "authors": "Kua, Z.; Tay, J. H.; Low, A.; Wang, W.; Yeo, B. T. T.; Dong, Y.; Kandiah, N.; Biessels, G. J.; Maier, A. B.",
+    "abstract": "Hallmarks of biological ageing are closely interconnected with neurodegenerative diseases. Deoxyribonucleic acid methylation (DNAm) clocks quantify biological age and may serve as peripheral biomarkers of neurodegenerative diseases. This systematic review and meta-analysis aim to examine associations between DNAm-based biological age metrics and neurodegenerative diseases. Six databases were systematically searched from 1st January 2011 to 15th April 2026 for studies reporting associations between DNAm-based ages and neurodegenerative diseases including all-cause dementia, Parkinsons Disease, Multiple Sclerosis, and Amyotrophic Lateral Sclerosis. Correlated-and-hierarchical-effects meta-analyses were fitted using restricted maximum likelihood with Knapp-Hartung adjustment. Of 42,023 records screened, 37 observational studies (n=46 365; 60.5% female; median of mean age 69.4 years [IQR 62.5-73.3)) and seven Mendelian randomization studies met inclusion criteria. In longitudinal meta-analyses, higher GrimAge epigenetic age acceleration (EAA) was significantly associated with higher dementia risk (HR per SD 1.11 [95% CI 1.02-1.20]; I{superscript 2} = 0.0%; p = 0.018), whereas Horvath1 EAA, Hannum EAA, PhenoAge EAA, and DunedinPACE were not significantly associated with dementia risk. Evidence for other neurodegenerative diseases were heterogeneous across clock generations and study designs. Mendelian randomization provided limited evidence for causality. Higher GrimAge EAA was the only DNAm age measure consistently predictive of higher all-cause dementia risk. Overall, however, DNAm age clocks show limited and inconsistent associations with neurodegenerative diseases, providing insufficient support for their use as disease biomarkers. These findings highlight the need to develop and independently validate disease-specific DNAm clocks and undertake pathway analyses to identify methylation changes associated with neurodegeneration and the biological processes they reflect.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-21",
+    "updated": "2026-10-21",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.21.26365867v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.21.26365867v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "GrimAge epigenetic age acceleration was the only DNA methylation age measure consistently associated with higher all-cause dementia risk; associations across other clocks and neurodegenerative diseases were limited or inconsistent.",
+      "clinical_relevance": "Current evidence is insufficient to support DNA methylation clocks as neurodegenerative disease biomarkers; this paper does not address AI or cancer drug discovery.",
+      "method": [
+        "Systematic search of six databases for studies linking DNA methylation age metrics to neurodegenerative diseases.",
+        "Correlated-and-hierarchical-effects meta-analyses with restricted maximum likelihood and Knapp–Hartung adjustment.",
+        "Review of Mendelian randomization evidence for causality."
+      ],
+      "evidence_signal": "The review included 37 observational studies with 46,365 participants and seven Mendelian randomization studies; longitudinal meta-analysis linked each SD increase in GrimAge acceleration to higher dementia risk (HR 1.11, 95% CI 1.02–1.20).",
+      "watch_item": "Associations do not establish causality, and disease-specific methylation clocks require development and independent validation.",
+      "hashtags": [
+        "#EpigeneticClocks",
+        "#DNAMethylation",
+        "#BiologicalAging",
+        "#Neurodegeneration",
+        "#MetaAnalysis"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-21-medrxiv-biological_age_measured_by_dna_methylation_clocks_and_neurodegenerative_diseases_a_systema",
+      "paper_title": "Biological age measured by DNA methylation clocks and neurodegenerative diseases: A systematic review and meta-analysis",
+      "paper_date": "2026-10-21",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-27T12:54:11",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-21-medrxiv-quantifying_statistical_power_gains_from_prognostic_modeling_in_huntington_s_disease",
+    "doi": "10.64898/2026.10.19.26365884",
+    "date": "2026-10-21",
+    "title": "Quantifying statistical power gains from prognostic modeling in Huntington's Disease",
+    "authors": "Noguerol Puente, C.; Brizzi, F.; Soubret, A.; McColgan, P.; Long, J.; Boareto, M.",
+    "abstract": "Background and ObjectivesHuntingtons disease is a rare neurodegenerative disease in which optimizing clinical trial design is essential. Although baseline characteristics are known to predict disease progression, the statistical efficiency gains achievable by formally integrating prognostic predictions into trial analyses have not been systematically quantified. We aimed to benchmark prognostic modeling approaches, quantify the trial efficiency gains from prognostic covariate adjustment, and deliver a ready-to-deploy framework for immediate implementation. MethodsWe developed a two-step modeling pipeline using longitudinal Enroll-HD natural history data (NCT01574053) to train nine machine learning algorithms to predict disease progression across five UHDRS endpoints. For this, we used 16 predictive baseline covariates representing stage of disease (baseline score levels), disease specific (CAP, CAG length), demographics and co-medication use that could be quantified in one clinical visit. For Total Function Capacity (TFC), frequently used as a primary endpoint in clinical trials, we also devised a minimal prognostic model based on 6 covariates. Model performance was tested using the placebo arm of the GENERATION-HD1 phase 3 trial (NCT03761849). ResultsModels were trained on 16,398 Enroll-HD participants and tested on 260 participants from the GENERATION-HD1 placebo arm. Models that take into account nonlinear relationships between the covariates showed no performance advantage over linear-based models on the test set. For TFC, a minimal six-covariate linear prognostic model performed on par with the full 16-feature model. Adjusting for the prognostic score increased the signal-to-noise ratio across different trial visits by 8-18%, raising statistical power from 80% to up to 90% at a fixed sample size, or, equivalently, reducing required sample size by 15-28% compared to unadjusted analyses (no covariate adjustment). Compared to routinely used covariate adjustments (including baseline score, age, CAG repeat length, and CAP score), adjusting for a prognostic score consistently delivered meaningful additional efficiency gains. DiscussionPrognostic covariate adjustment using a simple six-covariate linear score derived from a single baseline visit yields meaningful gains in statistical power for HD clinical trials, while remaining fully embedded within standard, regulator-accepted analysis frameworks. This approach offers a practical and immediately deployable tool to improve trial design.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-10-21",
+    "updated": "2026-10-21",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.19.26365884v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.19.26365884v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "In Huntington’s disease trial analyses, prognostic covariate adjustment increased statistical power from 80% to up to 90% at fixed sample size, or reduced required sample size by 15–28% versus no adjustment.",
+      "clinical_relevance": "These findings could support more efficient Huntington’s disease trials; this study concerns trial methodology, not cancer drug discovery or treatment efficacy.",
+      "method": [
+        "Trained nine algorithms using 16 baseline covariates to predict progression across five UHDRS endpoints.",
+        "Developed a minimal six-covariate linear model for Total Functional Capacity (TFC).",
+        "Evaluated predictions and efficiency gains using an independent trial placebo arm."
+      ],
+      "evidence_signal": "Models were trained on 16,398 Enroll-HD participants and tested on 260 GENERATION-HD1 placebo participants; nonlinear models showed no performance advantage over linear-based models.",
+      "watch_item": "Evaluation in a single trial placebo arm leaves generalizability to other trial populations and settings uncertain.",
+      "hashtags": [
+        "#HuntingtonsDisease",
+        "#ClinicalTrialDesign",
+        "#PrognosticModeling",
+        "#CovariateAdjustment",
+        "#StatisticalPower"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-21-medrxiv-quantifying_statistical_power_gains_from_prognostic_modeling_in_huntington_s_disease",
+      "paper_title": "Quantifying statistical power gains from prognostic modeling in Huntington's Disease",
+      "paper_date": "2026-10-21",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-10-27T12:54:14",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-21-medrxiv-perisynaptic_matrix_gene_variants_underlie_dystoniagenenet_endophenotypes_in_isolated_foca",
+    "doi": "10.64898/2026.10.19.26365640",
+    "date": "2026-10-21",
+    "title": "Perisynaptic matrix gene variants underlie DystoniaGeneNet endophenotypes in isolated focal dystonia",
+    "authors": "Domingo, A.; Yao, D.; Kshatriya, N.; Mangkalaphiban, K.; Battistella, G.; O'Flynn, L.; Reese, B.; Hincher, M.; Yadav, R.; Sharma, N.; Williams, L.; Fearon, C.; Killian, O.; Reilly, R. B.; Hutchinson, M.; Raymond, D.; Saunders-Pullman, R.; Bressman, S.; Frucht, S.; Talkowski, M.; Simonyan, K.; Ozelius, L.",
+    "abstract": "Isolated focal dystonia is a rare movement disorder characterized by abnormalities in brain structure and function. The genes underlying isolated focal dystonia are not fully elucidated, and genetic studies are constrained by incomplete penetrance and small family sizes. Neuroimaging endophenotypes shared by patients and unaffected relatives can reveal genetic liability independently of clinical manifestation and offer a strategy for advancing gene discovery. We developed DystoniaGeneNet, a 3D convolutional neural network that predicts familial status from T1-weighted brain MRIs. We then used its predictions to guide genetic analyses in isolated focal dystonia. DystoniaGeneNet was trained on 40 patients with familial laryngeal dystonia and 40 healthy controls, then applied to independent cohorts of 21 patients with familial isolated focal dystonia, 364 patients with sporadic dystonia, and 98 unaffected relatives. Model predictions were incorporated into variant prioritization and segregation analysis in 214 individuals with whole-exome sequencing data, and results were replicated in another 738 independent exomes, in genetic data from a hospital-based biobank (892 dystonia cases, 2,475 controls), and in the All of Us Research Program genetic data (1,343 dystonia cases, 6,840 controls). DystoniaGeneNet discriminated familial dystonia from healthy controls in the training set and correctly classified 85.7% of independent familial cases, using a biomarker centred on the corpus callosum and inferior temporal gyrus. Across the discovery and replication cohorts, we identified rare, likely pathogenic genetic variants in RAP1GAP and TNN segregating with disease in families. Additional variants were found in singletons with isolated focal dystonia. In patients with clinically sporadic dystonia but predicted to have familial features, we observed multiple rare variants in ITSN2, including three high-confidence loss-of-function variants, and an enrichment of damaging missense variants in its Dbl homology domain. To determine the functional impact of discovered genetic variants, we assessed gene expression and splicing via qPCR and RNA sequencing (n = 74), revealing reduced RAP1GAP and ITSN2 expression in variant carriers. At the pathway level, rare nonsynonymous variants in brain-expressed matrisome genes were associated with dystonia (P = 0.012). Our strategy utilizing a deep learning-derived neuroimaging endophenotype to empower gene discovery uncovered RAP1GAP, TNN, and ITSN2 as novel genes associated with isolated focal dystonia. These genes converge on perisynaptic extracellular matrix-synapse signalling, implicating a mechanism linked to synaptic plasticity deficits, and identifying a molecular substrate for network-level brain abnormalities that characterize this disorder. Further, we exemplify a generalizable framework for leveraging endophenotypes in rare neurogenetic diseases with incomplete penetrance.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-21",
+    "updated": "2026-10-21",
+    "primary_category": "genetic and genomic medicine",
+    "categories": [
+      "genetic and genomic medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.19.26365640v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.19.26365640v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "In isolated focal dystonia—not cancer—AI-derived brain imaging features helped prioritize rare variants in RAP1GAP, TNN and ITSN2.",
+      "clinical_relevance": "The findings may advance dystonia gene discovery but do not establish a diagnostic test or treatment.",
+      "method": [
+        "Trained DystoniaGeneNet, a 3D convolutional neural network, on T1-weighted MRIs from 40 familial laryngeal dystonia patients and 40 healthy controls.",
+        "Used model predictions to guide variant prioritization and family segregation analyses in 214 exomes.",
+        "Evaluated genetic findings in 738 independent exomes and two additional case-control datasets."
+      ],
+      "evidence_signal": "The model correctly classified 85.7% of 21 independent familial cases; genetic analyses identified rare RAP1GAP and TNN variants segregating with disease and highlighted ITSN2 variants in predicted familial-like sporadic cases.",
+      "watch_item": "Small imaging training and familial evaluation cohorts limit generalizability, and the supplied abstract truncates the functional results.",
+      "hashtags": [
+        "#Dystonia",
+        "#Neurogenetics",
+        "#AI",
+        "#Neuroimaging",
+        "#GeneDiscovery"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-21-medrxiv-perisynaptic_matrix_gene_variants_underlie_dystoniagenenet_endophenotypes_in_isolated_foca",
+      "paper_title": "Perisynaptic matrix gene variants underlie DystoniaGeneNet endophenotypes in isolated focal dystonia",
+      "paper_date": "2026-10-21",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-27T12:54:16",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-21-medrxiv-implicit_reconstruction_of_gating_strategies_from_sample_level_flow_cytometry_annotations",
+    "doi": "10.64898/2026.10.20.26365931",
+    "date": "2026-10-21",
+    "title": "Implicit reconstruction of gating strategies from sample-level flow cytometry annotations",
+    "authors": "Buser, M.; Szczepanowski, M.; Laqua, A.; Chitadze, G.; Baldus, C.; Brueggemann, M.; Marr, C.",
+    "abstract": "Flow cytometry is central to clinical hematology, generating extensive archives comprising billions of single-cell profiles linked to expert-derived diagnostic summaries. While these records represent a largely untapped repository of collective expert knowledge, the underlying single-cell annotations required for supervised machine learning are typically not recorded in a standardized, accessible format. We present IMPGAT (implicit gating), a weakly supervised multiple-instance learning framework that reconstructs single-cell gating strategies directly from existing sample-level cell-type frequency distributions. The model utilizes an induced set attention mechanism to map single-cell marker profiles to specific cell populations, requiring neither explicit cell-level labels nor unsupervised clustering during training. We evaluate the framework on acute lymphoblastic leukemia (ALL) and acute myeloid leukemia (AML) cohorts, totaling 711 measurements from 268 individuals and 240 million single cells. In ALL, the models quantification of cell-type abundances shows no statistically significant difference from human interexpert variability. In AML, the framework achieves blast quantification on par with a recently established supervised state-of-the-art model that relies on explicit single-cell annotations for training. Error analysis shows that mismatches between model predictions and expert gating primarily involve expert-labeled non-cellular events, reflecting the non-incorporation of any explicit physical prior knowledge (such as the geometric relationships traditionally used to identify doublets and debris in scatter cytograms) in model training. Conversely, model certainty correlates with phenotypic borderline cases where manual bisection is inherently difficult. Our approach enables the systematic utilization of retrospective clinical records for the development of automated, standardized gating logic and is applicable to broader high-throughput contexts, such as large-scale immune monitoring or phenotypic drug screening.",
+    "category": "Therapeutic Discovery",
+    "source": "medRxiv",
+    "published": "2026-10-21",
+    "updated": "2026-10-21",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.20.26365931v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.20.26365931v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "IMPGAT learns single-cell gating strategies from sample-level cell-type frequencies, without requiring explicit cell-level training labels.",
+      "clinical_relevance": "The approach could support standardized leukemia flow cytometry analysis and phenotypic drug screening, but does not directly demonstrate drug discovery or clinical benefit.",
+      "method": [
+        "Uses weakly supervised multiple-instance learning.",
+        "Applies induced set attention to assign single-cell marker profiles to cell populations.",
+        "Trains without explicit cell-level labels or unsupervised clustering."
+      ],
+      "evidence_signal": "Across ALL and AML cohorts totaling 711 measurements from 268 individuals and 240 million cells, ALL abundance errors showed no statistically significant difference from human interexpert variability, while AML blast quantification matched a supervised state-of-the-art model.",
+      "watch_item": "Errors primarily involved expert-labeled non-cellular events, highlighting the absence of explicit physical priors for identifying debris and doublets.",
+      "hashtags": [
+        "#FlowCytometry",
+        "#WeaklySupervisedLearning",
+        "#LeukemiaResearch",
+        "#SingleCellAnalysis",
+        "#PhenotypicScreening"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-21-medrxiv-implicit_reconstruction_of_gating_strategies_from_sample_level_flow_cytometry_annotations",
+      "paper_title": "Implicit reconstruction of gating strategies from sample-level flow cytometry annotations",
+      "paper_date": "2026-10-21",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-10-27T12:54:18",
+      "generator": "openai"
+    }
+  }
+]
