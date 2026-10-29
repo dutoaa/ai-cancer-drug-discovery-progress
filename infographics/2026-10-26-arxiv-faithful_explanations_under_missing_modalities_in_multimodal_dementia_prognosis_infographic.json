@@ -1,0 +1,26 @@
+{
+  "key_insight": "In multimodal dementia prognosis—not cancer drug discovery—missing inputs can produce phantom attributions and misleading AI-generated explanations, while checks against restored data improve faithfulness.",
+  "clinical_relevance": "The findings highlight a reliability concern for clinician-facing prognostic reports when tests such as amyloid PET or cerebrospinal fluid biomarkers are unavailable.",
+  "method": [
+    "Masked every subset of four costly modalities in 307 ADNI participants to predict 36-month progression from mild cognitive impairment to Alzheimer’s disease.",
+    "Restored masked data to measure how missing evidence actually changed predictions.",
+    "Compared five missing-data strategies and evaluated 51,200 reports from four language models under four prompting regimes."
+  ],
+  "evidence_signal": "All five strategies attributed 12%–23% of predictions to unobserved modalities; checking claims against executed restorations raised accuracy about missing-test effects from 27%–41% to 69% for open-weight narrators and 99.9% for a proprietary model.",
+  "watch_item": "Evaluation used artificially masked complete cases, so performance under real-world missingness and in other patient populations remains uncertain.",
+  "hashtags": [
+    "#DementiaResearch",
+    "#MultimodalAI",
+    "#ExplainableAI",
+    "#MissingData",
+    "#AIFaithfulness"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-26-arxiv-faithful_explanations_under_missing_modalities_in_multimodal_dementia_prognosis",
+  "paper_title": "Faithful Explanations under Missing Modalities in Multimodal Dementia Prognosis",
+  "paper_date": "2026-10-26",
+  "paper_category": "Target Biology",
+  "generated_at": "2026-10-29T13:51:11",
+  "generator": "openai"
+}

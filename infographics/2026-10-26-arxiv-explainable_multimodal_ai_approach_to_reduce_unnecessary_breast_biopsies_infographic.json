@@ -1,0 +1,26 @@
+{
+  "key_insight": "An explainable AI model combining mammograms and radiology reports improved biopsy-outcome prediction over image-only and text-only models.",
+  "clinical_relevance": "The approach may help identify benign findings among patients recommended for breast biopsy, but the reported results do not establish that biopsies can safely be avoided.",
+  "method": [
+    "Extracted mammography features with a Vision Transformer and report embeddings with DeBERTa-V3-Large.",
+    "Combined image and text features through late fusion to predict biopsy outcomes.",
+    "Used Grad-CAM to highlight image regions influencing predictions."
+  ],
+  "evidence_signal": "Using an in-house dataset of 1,632 patients, each with four mammography views and a report, the model achieved test AUC 0.72 versus 0.66 for images alone and 0.68 for text alone; specificity was 18% at 99% sensitivity.",
+  "watch_item": "External and prospective validation are needed before clinical use; performance on one in-house dataset does not establish safe biopsy reduction.",
+  "hashtags": [
+    "#BreastCancerResearch",
+    "#MultimodalAI",
+    "#ExplainableAI",
+    "#MedicalImaging",
+    "#BiopsyPrediction"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-26-arxiv-explainable_multimodal_ai_approach_to_reduce_unnecessary_breast_biopsies",
+  "paper_title": "Explainable Multimodal AI Approach to Reduce Unnecessary Breast Biopsies",
+  "paper_date": "2026-10-26",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-29T13:51:04",
+  "generator": "openai"
+}

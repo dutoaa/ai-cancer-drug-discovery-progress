@@ -1,0 +1,26 @@
+{
+  "key_insight": "A lightweight lung tumor segmentation model reports a Dice score of 0.90812 with 430,052 parameters and 0.549 GMAC, targeting lower computational demands rather than drug discovery.",
+  "clinical_relevance": "Efficient segmentation could support lung cancer assessment and treatment planning in resource-limited settings, but clinical utility is not established by the abstract.",
+  "method": [
+    "Uses ENet with UNet-style encoder–decoder skip connections.",
+    "Adds Convolutional Block Attention Modules (CBAM) to improve feature representation.",
+    "Uses Grad-CAM to visualize prediction-relevant regions."
+  ],
+  "evidence_signal": "Trained on TCIA data via the Medical Segmentation Decathlon and evaluated on LIDC-IDRI, the model achieved a Dice score of 0.90812 at a threshold of 0.5.",
+  "watch_item": "Lower computational cost does not establish energy savings or clinical readiness; direct energy measurements and prospective workflow validation are needed.",
+  "hashtags": [
+    "#LungCancer",
+    "#TumorSegmentation",
+    "#EfficientAI",
+    "#MedicalImaging",
+    "#ExplainableAI"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-24-arxiv-energy_efficient_lung_tumor_segmentation_with_a_modified_cbam_enet_skip_model",
+  "paper_title": "Energy Efficient Lung Tumor Segmentation with a modified CBAM ENet Skip Model",
+  "paper_date": "2026-10-24",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-29T13:51:19",
+  "generator": "openai"
+}

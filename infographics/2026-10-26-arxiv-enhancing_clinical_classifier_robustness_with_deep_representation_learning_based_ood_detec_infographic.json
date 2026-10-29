@@ -1,0 +1,26 @@
+{
+  "key_insight": "Deep representation-based out-of-distribution detection identified unfamiliar DNA methylation profiles, with 1D-Subspace Analysis performing best among five tested methods.",
+  "clinical_relevance": "This approach could provide a quality-control layer for methylation-based tumor classification by flagging samples outside a model’s training distribution; it does not evaluate cancer drugs.",
+  "method": [
+    "Train deep neural classifiers on public sarcoma and brain tumor methylation cohorts.",
+    "Extract 200- and 500-dimensional bottleneck embeddings and compare five OOD detection methods.",
+    "Use spectral discrepancy to distinguish in-distribution from out-of-distribution samples."
+  ],
+  "evidence_signal": "Evaluation included cross-validation, holdout samples, and an independent clinical dataset, where the method achieved mean AUROC 0.976 and TNR@95TPR 0.935.",
+  "watch_item": "Performance on broader unseen tumor types and across laboratory platforms requires validation before routine clinical deployment.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#DNAMethylation",
+    "#TumorClassification",
+    "#OODDetection",
+    "#AIQualityControl"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-26-arxiv-enhancing_clinical_classifier_robustness_with_deep_representation_learning_based_ood_detec",
+  "paper_title": "Enhancing Clinical Classifier Robustness with Deep Representation Learning Based OOD Detection on DNA Methylation Data",
+  "paper_date": "2026-10-26",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-29T13:50:49",
+  "generator": "openai"
+}

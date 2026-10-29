@@ -1,0 +1,26 @@
+{
+  "key_insight": "Federated breast imaging models showed strong normal-versus-sick discrimination, but acquisition-year confounding calls into question whether they learned pathology.",
+  "clinical_relevance": "This imaging study—not drug discovery—does not establish reliable benign-versus-malignant discrimination or clinical readiness.",
+  "method": [
+    "Compared CLIP, BiomedCLIP, and an ImageNet-pretrained vision transformer using federated learning on two public breast imaging datasets.",
+    "Evaluated client-level differential privacy and a CLIP ablation without the text pathway.",
+    "Measured patient-level ROC-AUC, bootstrap confidence intervals, threshold sensitivity, model agreement, and communication cost."
+  ],
+  "evidence_signal": "Normal-versus-sick ROC-AUC was 0.940–0.990, versus 0.974 for acquisition year alone; benign-versus-malignant ROC-AUC was 0.504–0.637, with all 95% confidence intervals including 0.50.",
+  "watch_item": "Differential privacy reduced ROC-AUC by 0.375 when applied to the full model state rather than only trainable parameters, highlighting implementation sensitivity.",
+  "hashtags": [
+    "#BreastImaging",
+    "#FederatedLearning",
+    "#VisionLanguageModels",
+    "#DifferentialPrivacy",
+    "#AIValidation"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-26-arxiv-evaluating_federated_vision_language_and_vision_only_models_for_privacy_aware_breast_cance",
+  "paper_title": "Evaluating Federated Vision-Language and Vision-Only Models for Privacy-Aware Breast Cancer Imaging",
+  "paper_date": "2026-10-26",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-29T13:50:58",
+  "generator": "openai"
+}

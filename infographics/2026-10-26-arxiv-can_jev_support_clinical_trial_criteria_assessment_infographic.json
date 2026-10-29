@@ -1,0 +1,26 @@
+{
+  "key_insight": "JEV matched Qwen Flash on two trial-prescreening datasets and outperformed it on MIMIC-III, with lower observed latency and estimated cost.",
+  "clinical_relevance": "JEV could support criterion-level trial prescreening by flagging potential information gaps for human review, but this study did not evaluate cancer drug discovery or clinical outcomes.",
+  "method": [
+    "Retrospectively compared non-generative JEV with schema-constrained Qwen Flash against reference labels.",
+    "Assessed criteria individually and in batches sharing patient context.",
+    "Evaluated under strict Zero Data Retention policies."
+  ],
+  "evidence_signal": "Across 2,048 patient-condition pairs from TrialGPT and MIMIC-derived datasets, JEV achieved batch macro-F1 of 0.768 versus Qwen's 0.534 on MIMIC-III, with similar scores on the other datasets and 53%–74% lower estimated cost per condition.",
+  "watch_item": "Errors in interpreting clinical evidence require verification against patient records before outputs inform eligibility decisions.",
+  "hashtags": [
+    "#ClinicalTrialPrescreening",
+    "#ClinicalAI",
+    "#EligibilityAssessment",
+    "#EvidenceGaps",
+    "#HumanOversight"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-26-arxiv-can_jev_support_clinical_trial_criteria_assessment",
+  "paper_title": "Can JEV Support Clinical Trial Criteria Assessment?",
+  "paper_date": "2026-10-26",
+  "paper_category": "Virtual Screening",
+  "generated_at": "2026-10-29T13:51:01",
+  "generator": "openai"
+}

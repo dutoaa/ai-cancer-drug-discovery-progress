@@ -1,0 +1,26 @@
+{
+  "key_insight": "Strong diagnostic performance did not ensure reliable downstream cancer-care reasoning, with LLM failure patterns shifting across care phases.",
+  "clinical_relevance": "This cancer-care evaluation—not a drug-discovery study—highlights the need for phase-specific safeguards before clinical use of LLMs.",
+  "method": [
+    "Built NPC-RubricBench from longitudinal nasopharyngeal carcinoma records across two cancer centers.",
+    "Evaluated 30 general-purpose and medical LLMs across six care phases using patient-specific criteria and decision-time evidence.",
+    "Compared error patterns and the effects of broad versus checklist-like prompts."
+  ],
+  "evidence_signal": "The benchmark included 405 patients, 941 patient-phase units and 17,688 criteria; explicit decision errors dominated anatomical staging (48.2%), while omissions dominated initial work-up (33.4%) and post-treatment follow-up (30.4%).",
+  "watch_item": "Checklist-like prompts improved Decision Quality but reduced Evidence Faithfulness and Safety Adherence, and generalizability beyond this disease and two-center dataset remains uncertain.",
+  "hashtags": [
+    "#MedicalAI",
+    "#PrecisionOncology",
+    "#LLMEvaluation",
+    "#CancerCare",
+    "#AISafety"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-26-arxiv-patient_specific_rubric_based_evaluation_of_large_language_models_across_longitudinal_canc",
+  "paper_title": "Patient-specific rubric-based evaluation of large language models across longitudinal cancer care",
+  "paper_date": "2026-10-26",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-29T13:50:39",
+  "generator": "openai"
+}
