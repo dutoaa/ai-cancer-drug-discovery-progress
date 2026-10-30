@@ -1,19 +1,19 @@
 {
   "key_insight": "Deep learning predicted HPV/p16 status from routine vulvar cancer slides more accurately than it distinguished all three molecular subtypes.",
-  "clinical_relevance": "This approach could support HPV-stratified retrospective outcome research without consuming additional tissue; it is not a validated replacement for ancillary testing.",
+  "clinical_relevance": "Slide-based predictions could support retrospective HPV-stratified outcome research when ancillary testing is unavailable, without consuming additional tissue.",
   "method": [
-    "Extracted features from routine H&E whole-slide images using H-optimus-1.",
+    "Extracted features from hematoxylin and eosin whole-slide images using H-optimus-1.",
     "Trained attention-based models: HERA for HPV/p16 status and HERMES for three molecular subtypes.",
-    "Developed models on 644 patients and tested them on 286 patients from two independent cohorts."
+    "Developed models on 644 patients and tested them on 286 patients from independent cohorts."
   ],
-  "evidence_signal": "Independent testing yielded an AUC of 0.84 for HERA and a macro-average AUC of 0.70 for HERMES; predicted groups also showed prognostic separation.",
-  "watch_item": "Broader external validation of discrimination and calibration across scanners and populations is needed, particularly given limited separation of HPV-independent subtypes.",
+  "evidence_signal": "Independent testing yielded an AUC of 0.84 (95% CI 0.75–0.91) for HERA and a macro-average AUC of 0.70 (0.66–0.75) for HERMES; predicted groups also showed prognostic separation.",
+  "watch_item": "External validation of discrimination and calibration across scanners and populations is needed, particularly given HERA’s 0.68 sensitivity and HERMES’s limited separation of HPV-independent subtypes.",
   "hashtags": [
-    "#VulvarCancer",
+    "#PrecisionOncology",
     "#DigitalPathology",
+    "#VulvarCancer",
     "#DeepLearning",
-    "#HPV",
-    "#PrecisionOncology"
+    "#HPV"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Predicting HPV/p16 Status and Molecular Subtypes from Histopathology Slides using Deep Learning in Vulvar Squamous Cell Carcinoma",
   "paper_date": "2026-10-24",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-29T13:51:21",
+  "generated_at": "2026-10-30T13:45:14",
   "generator": "openai"
 }

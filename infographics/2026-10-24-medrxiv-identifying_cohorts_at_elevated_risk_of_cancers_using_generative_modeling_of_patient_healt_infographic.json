@@ -1,0 +1,26 @@
+{
+  "key_insight": "GenEHR uses longitudinal health records to identify cohorts at elevated cancer risk, rather than discover cancer drugs.",
+  "clinical_relevance": "If prospectively validated, GenEHR-CancerRisk could help prioritize high-risk patients for screening and prevention, including for pancreatic and ovarian cancers.",
+  "method": [
+    "Train an autoregressive generative model on EHRs from millions of patients across diverse health systems.",
+    "Model diagnoses, medications, lab values, procedures, and irregular intervals between visits.",
+    "Apply parameter-efficient supervised adaptation to predict first cancer diagnoses across 17 cancer types within five years."
+  ],
+  "evidence_signal": "Retrospective evaluation in five large EHR cohorts found substantially improved prediction performance after supervised adaptation; the abstract provides no numerical performance estimates.",
+  "watch_item": "Prospective validation is needed to establish clinical benefit before use in screening decisions.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#GenerativeAI",
+    "#CancerRisk",
+    "#ElectronicHealthRecords",
+    "#ClinicalAI"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-24-medrxiv-identifying_cohorts_at_elevated_risk_of_cancers_using_generative_modeling_of_patient_healt",
+  "paper_title": "Identifying cohorts at elevated risk of cancers using generative modeling of patient health states",
+  "paper_date": "2026-10-24",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-30T13:45:17",
+  "generator": "openai"
+}

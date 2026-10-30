@@ -1,0 +1,26 @@
+{
+  "key_insight": "MedGemma with structured radiologist descriptors met the prespecified non-inferiority criterion versus EU-TIRADS for thyroid nodule malignancy discrimination; configurations without those descriptors performed worse.",
+  "clinical_relevance": "This diagnostic AI study—not drug discovery—suggests potential to reduce false positives, but with additional missed cancers and no demonstrated advantage over EU-TIRADS ≥5.",
+  "method": [
+    "Retrospective thyroid ultrasound study using two Tunisian centers and selected public-dataset images.",
+    "Fine-tuned MedGemma 1.5 4B across four input configurations, with patient-level training, validation and sealed test splits.",
+    "Compared performance against expert-rated EU-TIRADS; EU-TIRADS categories were never model inputs."
+  ],
+  "evidence_signal": "Among 256 test nodules, including 51 malignant nodules, the descriptor-enhanced model achieved AUROC 0.953 versus 0.948 for EU-TIRADS; at a validation-fixed threshold, it reclassified 72 EU-TIRADS ≥4 false positives as negative while missing two additional cancers.",
+  "watch_item": "Retrospective, FNA-selected data and reliance on radiologist descriptors warrant prospective external validation before clinical implementation.",
+  "hashtags": [
+    "#ThyroidCancer",
+    "#MedicalAI",
+    "#Ultrasound",
+    "#DiagnosticAccuracy",
+    "#VisionLanguageModels"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-24-medrxiv-fine_tuned_medical_vision_language_model_medgemma_1_5_4b_with_and_without_structured_radio",
+  "paper_title": "Fine-tuned Medical Vision-Language Model (MedGemma 1.5 4B) with and without Structured Radiologist Descriptors versus EU-TIRADS for Malignancy Risk Stratification of Thyroid Nodules at Ultrasound: A Tunisian Multicenter Diagnostic Accuracy Study",
+  "paper_date": "2026-10-24",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-10-30T13:45:20",
+  "generator": "openai"
+}
