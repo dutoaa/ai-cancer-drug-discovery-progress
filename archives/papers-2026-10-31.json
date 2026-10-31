@@ -1,0 +1,320 @@
+[
+  {
+    "id": "2026-10-26-medrxiv-inclinico_agent_for_clinical_trial_endpoint_prediction_and_prospective_evaluation",
+    "doi": "10.64898/2026.10.13.26365373",
+    "date": "2026-10-26",
+    "title": "inClinico Agent for clinical trial endpoint prediction and prospective evaluation",
+    "authors": "Chen, J.; Duan, C.; Gou, W.; Wang, J.; Zheng, Z.; Leung, H.; Naumov, V.; Sidorenko, D.; Aliper, A.; Ren, F.; Pun, F. W.; Zhavoronkov, A.",
+    "abstract": "High attrition rates across clinical drug development impose immense clinical and financial burdens, yet prospectively forecasting whether an individual trial will achieve its primary endpoint remains challenging. Here we present a machine-learning system that predicts clinical trial success across phases I-IV, independently modeling studies with efficacy versus safety/toxicity primary endpoints. To prevent lookahead bias and outcome leakage, models are trained on registration-time features, including target and mechanism-of-action precedent, drug modality and novelty, trial design and operational characteristics, and frozen literature-derived target-choice embeddings. Each prediction yields a continuous Predictive Trial Index (PTI) between 0 and 1 reflecting success probability. On a test set of trials initiated in 2021 or later, the efficacy model achieved an area under the receiver operating characteristic curve (AUROC) of 0.828 (95% CI 0.812-0.845; n = 2,347) and the safety/toxicity model reached 0.809 (95% CI 0.787-0.831; n = 1,485). These models are embedded in inClinico Agent, an agentic AI system integrating frontier large language models (LLMs) with deterministic scoring engines, retrieval tools and specialized clinical skills. We also introduce ClinicoBench, a prospective benchmark of 3,235 ongoing trials evaluated by inClinico Agent and five frontier LLMs, establishing a leakage-free foundation for tracking prospective predictive accuracy as trials reach completion.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-10-26",
+    "updated": "2026-10-26",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.13.26365373v3"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.13.26365373v3.full.pdf"
+      }
+    ],
+    "score": 65,
+    "infographic": {
+      "key_insight": "inClinico Agent combines machine-learning trial-success predictions with LLM-based tools to estimate whether phase I–IV studies will meet their primary endpoints.",
+      "clinical_relevance": "The system could support clinical development prioritization, including oncology, but the abstract reports neither cancer-specific performance nor patient-treatment benefits.",
+      "method": [
+        "Model efficacy and safety/toxicity endpoints separately using registration-time features.",
+        "Generate a Predictive Trial Index from 0 to 1 using trial, drug, target and frozen literature-derived features.",
+        "Integrate prediction engines with LLMs, retrieval tools and specialized clinical skills."
+      ],
+      "evidence_signal": "For trials initiated in 2021 or later, AUROC was 0.828 for efficacy (n=2,347) and 0.809 for safety/toxicity (n=1,485); ClinicoBench adds 3,235 ongoing trials for prospective tracking.",
+      "watch_item": "Prospective accuracy remains to be established as ongoing trials complete; AUROC alone does not establish probability calibration or decision-making benefit.",
+      "hashtags": [
+        "#ClinicalTrialPrediction",
+        "#AIInDrugDevelopment",
+        "#ClinicalTranslation",
+        "#ProspectiveValidation",
+        "#inClinicoAgent"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-26-medrxiv-inclinico_agent_for_clinical_trial_endpoint_prediction_and_prospective_evaluation",
+      "paper_title": "inClinico Agent for clinical trial endpoint prediction and prospective evaluation",
+      "paper_date": "2026-10-26",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-10-30T13:45:05",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-26-medrxiv-can_language_models_diagnose_sepsis_a_head_to_head_evaluation_against_353_physicians",
+    "doi": "10.64898/2026.10.23.26366291",
+    "date": "2026-10-26",
+    "title": "Can Language Models Diagnose Sepsis? A Head-to-Head Evaluation Against 353 Physicians",
+    "authors": "Macias-Fassio, E.; Betancur, D.; Pruenza, C.; Giglio, A.; Gallano, G.; Borges-Sa, M.; Morales, A.; Fierrez, J.",
+    "abstract": "ImportanceSepsis is a leading cause of in-hospital mortality, where timely and accurate diagnosis is critical yet frequently delayed. Whether large language models (LLMs) can diagnose sepsis reliably -- and whether they do so fairly, consistently, and with well-calibrated confidence -- remains unknown. ObjectiveTo evaluate the diagnostic capabilities of LLMs on standardised sepsis vignettes before and after biomarker disclosure, benchmarked against physicians, and to characterise their robustness, stability, bias and confidence calibration. DesignRetrospective in-silico study based on six anonymised real cases spanning the diagnostic spectrum from no infection to septic shock. For each case, the reference-standard diagnosis was assigned, following the Sepsis-3 framework. Each case was evaluated under a two-stage (pre- and post-biomarker disclosure) protocol. To assess potential demographic bias, every case was additionally presented while systematically varying the patients sex, age, and language. Setting and ParticipantsFive locally deployed LLMs (DeepSeek-4, Qwen3.8-27B, its quantised variant, Gemma-4-31B, and the domain-specific MedGemma) were evaluated in a controlled evaluation pipeline and compared with responses from 353 clinicians, using identical clinical vignettes. Main Outcomes and MeasuresDiagnostic accuracy before/after biomarker disclosure, per-vignette error, sensitivity to demographic attributes (diagnosis-change rate) and its directional component, reproducibility across repetitions and confidence calibration. ResultsBefore biomarkers, model accuracy ranged 40-67%, comparable to physicians (57%). After disclosure, physician accuracy was 61%, exceeded by Qwen3.8-27B (91%), its quantised variant (86%) and Gemma-4-31B (83%); DeepSeek-4 reached 64% and MedGemma 56%, the only model below physicians. Biomarkers rescued confirmatory cases (pancreatitis-associated sepsis), whereas post-surgical sepsis remained difficult for models and physicians alike. Quantisation cost only 5 accuracy points. Patient sex and age showed no directional bias, and language was the only bias. Gemma-4-31B was the most reproducible model, the Qwen models were the most accurate and best calibrated, and MedGemma the least. Conclusions and RelevanceLLMs, including quantised variants, can provide accurate informed decision support for sepsis, surpassing physicians once laboratory data are available. However, robustness, calibration, and language fairness varied independently of accuracy and should guide model selection and clinical validation.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-26",
+    "updated": "2026-10-26",
+    "primary_category": "infectious diseases",
+    "categories": [
+      "infectious diseases"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.23.26366291v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.23.26366291v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "In this sepsis study—not cancer drug discovery—three of five language models exceeded physicians’ diagnostic accuracy after biomarker disclosure.",
+      "clinical_relevance": "The findings suggest potential for biomarker-informed diagnostic support, but do not establish safety or effectiveness in clinical practice.",
+      "method": [
+        "Evaluated five locally deployed language models on six anonymised clinical cases with Sepsis-3 reference diagnoses.",
+        "Compared model responses with those of 353 clinicians before and after biomarker disclosure.",
+        "Assessed demographic and language sensitivity, reproducibility, and confidence calibration."
+      ],
+      "evidence_signal": "After biomarker disclosure, accuracy was 91% for Qwen3.8-27B, 86% for its quantised variant, and 83% for Gemma-4-31B, versus 61% for physicians.",
+      "watch_item": "Only six cases were evaluated in silico; language-related bias and difficulty with post-surgical sepsis warrant broader validation.",
+      "hashtags": [
+        "#Sepsis",
+        "#MedicalAI",
+        "#LargeLanguageModels",
+        "#DiagnosticResearch",
+        "#AIValidation"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-26-medrxiv-can_language_models_diagnose_sepsis_a_head_to_head_evaluation_against_353_physicians",
+      "paper_title": "Can Language Models Diagnose Sepsis? A Head-to-Head Evaluation Against 353 Physicians",
+      "paper_date": "2026-10-26",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-30T13:45:09",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-26-medrxiv-longitudinal_ai_models_predict_cancer_adverse_events",
+    "doi": "10.64898/2026.10.22.26364879",
+    "date": "2026-10-26",
+    "title": "Longitudinal AI Models Predict Cancer Adverse Events",
+    "authors": "Fu, C.; Yu, J.; Shi, R.; Waters, M.; Pavlak, M.; Arfe, A.; Shah, S. P.; Battle, A.; kehl, K. L.; Bot, B. M.; US Cancer AI Alliance, ; Schultz, N.; Morris, Q. D.; Jee, J.",
+    "abstract": "Clinical interventions for cancer treatment toxicities can reduce morbidity, mortality, and healthcare cost, if high risk patients can be identified. We developed SPARC, a transformer-based foundation model, using real-world, longitudinal, routinely collected health measurements, to predict adverse event risk. Pre-training and fine-tuning SPARC on 101,920,379 measurements from 224,047 patients with cancer led to state-of-the-art performance at predicting cancer-related adverse events on (i) held-out data from the development cohort, (ii) a prospective validation cohort from the same center (Npatients=23,126), (iii) multiple publicly available external datasets (Npatients=26,012), and (iv) external, multi-hospital cohorts (Npatients=562,620, 206,840). SPARC generalized to multiple external centers and identified patients most likely to benefit from an intervention (G-CSF). Pooled multi-institution, more than single-institution, fine-tuning improved generalizability. We release SPARC as a community resource. Our results highlight the utility of AI time series models in oncologic management.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-26",
+    "updated": "2026-10-26",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.22.26364879v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.22.26364879v1.full.pdf"
+      }
+    ],
+    "score": 54,
+    "infographic": {
+      "key_insight": "SPARC uses longitudinal health measurements to predict cancer-related adverse events, focusing on toxicity risk rather than drug discovery.",
+      "clinical_relevance": "The model could support toxicity-prevention research by identifying high-risk patients, including those potentially most likely to benefit from G-CSF.",
+      "method": [
+        "Transformer-based foundation model using routinely collected longitudinal health measurements.",
+        "Pre-trained and fine-tuned to predict cancer-related adverse events.",
+        "Compared pooled multi-institution with single-institution fine-tuning for generalizability."
+      ],
+      "evidence_signal": "Development used 101,920,379 measurements from 224,047 patients; evaluation included held-out data, a prospective same-center cohort of 23,126 patients, public external datasets totaling 26,012 patients, and external multi-hospital cohorts of 562,620 and 206,840 patients.",
+      "watch_item": "The abstract reports predictive performance but does not establish that model-guided care improves patient outcomes.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#CancerAI",
+        "#AdverseEventPrediction",
+        "#LongitudinalHealthData",
+        "#FoundationModels"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-26-medrxiv-longitudinal_ai_models_predict_cancer_adverse_events",
+      "paper_title": "Longitudinal AI Models Predict Cancer Adverse Events",
+      "paper_date": "2026-10-26",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-30T13:45:12",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-24-medrxiv-predicting_hpv_p16_status_and_molecular_subtypes_from_histopathology_slides_using_deep_lea",
+    "doi": "10.64898/2026.10.22.26366203",
+    "date": "2026-10-24",
+    "title": "Predicting HPV/p16 Status and Molecular Subtypes from Histopathology Slides using Deep Learning in Vulvar Squamous Cell Carcinoma",
+    "authors": "van den Berg, N.; van der Kolk, W.; Landsbergen, K.; Kortekaas, K.; Nooij, L.; van Velzen, A. F.; te Grootenhuis, N.; the AIRMEC Consortium, ; Horeweg, N.; van Doorn, L.; Oonk, M.; Bart, J.; Bosse, T.",
+    "abstract": "Vulvar squamous cell carcinoma (VSCC) comprises three prognostically distinct molecular subtypes: human papillomavirus (HPV)-associated, HPV-independent/p53-wildtype, and HPV-independent/p53-abnormal. Classification requires p16/p53 immunohistochemistry, which consumes tissue and is often incomplete in retrospective cohorts. We investigated whether deep learning could predict HPV/p16 status and molecular subtypes directly from routine hematoxylin and eosin-stained whole-slide images. Using features extracted with H-optimus-1, we developed two attention-based multiple-instance learning models: HERA, predicting HPV/p16 status, and HERMES, predicting the three molecular subtypes. Models were developed on 644 patients from three Dutch VSCC cohorts and tested on 286 patients from two independent cohorts. In independent testing, HERA achieved an area under the curve (AUC) of 0.84 (95% CI 0.75-0.91), with specificity 0.93, negative predictive value 0.94, and sensitivity 0.68. HERA-predicted groups reproduced the prognostic separation of HPV testing (log-rank p<0.001). HERMES achieved a macro-average AUC of 0.70 (0.66-0.75), with good discrimination for HPV-associated (0.80) but limited separation of HPV-independent/p53-abnormal (AUC 0.68) and HPV-independent/p53-wildtype (AUC 0.63). HERMES-predicted classes reproduced the prognostic hierarchy, with 5-year recurrence rates of 14.0% (HPV-associated), 31.1% (HPV-independent/p53-wildtype) and 43.3% (HPV-independent/p53-abnormal) (p=0.0051). Highly attended tiles showed basaloid cells and koilocytotic-like atypia in HPV-associated tumors, keratinizing nests with desmoplastic stroma in HPV-independent/p53-abnormal tumors, and well-differentiated keratinocytes with spongiosis in HPV-independent/p53-wildtype tumors. HERA could assign HPV/p16 status to large retrospective VSCC cohorts lacking ancillary testing, without consuming tissue, enabling HPV-stratified outcome analyses. Before such use, external validation of its discrimination and calibration across scanners and populations is required. HERMES suggests that molecular subtype information is encoded in hematoxylin and eosin-stained slides, but requires improved distinction between the HPV-independent subtypes.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-24",
+    "updated": "2026-10-24",
+    "primary_category": "pathology",
+    "categories": [
+      "pathology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.22.26366203v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.22.26366203v1.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "Deep learning predicted HPV/p16 status from routine vulvar cancer slides more accurately than it distinguished all three molecular subtypes.",
+      "clinical_relevance": "Slide-based predictions could support retrospective HPV-stratified outcome research when ancillary testing is unavailable, without consuming additional tissue.",
+      "method": [
+        "Extracted features from hematoxylin and eosin whole-slide images using H-optimus-1.",
+        "Trained attention-based models: HERA for HPV/p16 status and HERMES for three molecular subtypes.",
+        "Developed models on 644 patients and tested them on 286 patients from independent cohorts."
+      ],
+      "evidence_signal": "Independent testing yielded an AUC of 0.84 (95% CI 0.75–0.91) for HERA and a macro-average AUC of 0.70 (0.66–0.75) for HERMES; predicted groups also showed prognostic separation.",
+      "watch_item": "External validation of discrimination and calibration across scanners and populations is needed, particularly given HERA’s 0.68 sensitivity and HERMES’s limited separation of HPV-independent subtypes.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#DigitalPathology",
+        "#VulvarCancer",
+        "#DeepLearning",
+        "#HPV"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-24-medrxiv-predicting_hpv_p16_status_and_molecular_subtypes_from_histopathology_slides_using_deep_lea",
+      "paper_title": "Predicting HPV/p16 Status and Molecular Subtypes from Histopathology Slides using Deep Learning in Vulvar Squamous Cell Carcinoma",
+      "paper_date": "2026-10-24",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-30T13:45:14",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-24-medrxiv-identifying_cohorts_at_elevated_risk_of_cancers_using_generative_modeling_of_patient_healt",
+    "doi": "10.64898/2026.09.09.26362676",
+    "date": "2026-10-24",
+    "title": "Identifying cohorts at elevated risk of cancers using generative modeling of patient health states",
+    "authors": "Khan, A.; Forster, D. T.; Harsh, M.; Zheng, C.; Warner, E. T.; Ritter, D.; Chang, A.; Wei, Q.; Sorensen, T. K.; Marks, D. S.; Sequist, L. V.; Hadlock, J. J.; Fillmore, N. R.; Sander, C.",
+    "abstract": "While large language models are powerful generators of new text, forecasting disease progression from longitudinal health histories remains a challenging problem. We introduce GenEHR, an autoregressive generative model trained on electronic health records (EHRs) from millions of patients in diverse health systems. The model learns from real-world multimodal patient histories, including diagnoses, medications, lab values, and procedures while explicitly representing irregular intervals between visits to forecast future clinical events. We combine the general-purpose patient representation learned during foundational training with parameter-efficient supervised adaptation for the task of risk stratification for 17 cancer types. In five large EHR cohorts, supervised adaptation substantially improved prediction performance of a first cancer diagnosis within a five year horizon window. Our retrospective results support the prospective evaluation of GenEHR-CancerRisk as a clinical decision-support tool for prioritizing high-risk patients for screening and prevention of aggressive cancer types, such as pancreatic and ovarian cancer.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-24",
+    "updated": "2026-10-24",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.09.26362676v4"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.09.26362676v4.full.pdf"
+      }
+    ],
+    "score": 44,
+    "infographic": {
+      "key_insight": "GenEHR uses longitudinal health records to identify cohorts at elevated cancer risk, rather than discover cancer drugs.",
+      "clinical_relevance": "If prospectively validated, GenEHR-CancerRisk could help prioritize high-risk patients for screening and prevention, including for pancreatic and ovarian cancers.",
+      "method": [
+        "Train an autoregressive generative model on EHRs from millions of patients across diverse health systems.",
+        "Model diagnoses, medications, lab values, procedures, and irregular intervals between visits.",
+        "Apply parameter-efficient supervised adaptation to predict first cancer diagnoses across 17 cancer types within five years."
+      ],
+      "evidence_signal": "Retrospective evaluation in five large EHR cohorts found substantially improved prediction performance after supervised adaptation; the abstract provides no numerical performance estimates.",
+      "watch_item": "Prospective validation is needed to establish clinical benefit before use in screening decisions.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#GenerativeAI",
+        "#CancerRisk",
+        "#ElectronicHealthRecords",
+        "#ClinicalAI"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-24-medrxiv-identifying_cohorts_at_elevated_risk_of_cancers_using_generative_modeling_of_patient_healt",
+      "paper_title": "Identifying cohorts at elevated risk of cancers using generative modeling of patient health states",
+      "paper_date": "2026-10-24",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-30T13:45:17",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-24-medrxiv-fine_tuned_medical_vision_language_model_medgemma_1_5_4b_with_and_without_structured_radio",
+    "doi": "10.64898/2026.10.21.26366156",
+    "date": "2026-10-24",
+    "title": "Fine-tuned Medical Vision-Language Model (MedGemma 1.5 4B) with and without Structured Radiologist Descriptors versus EU-TIRADS for Malignancy Risk Stratification of Thyroid Nodules at Ultrasound: A Tunisian Multicenter Diagnostic Accuracy Study",
+    "authors": "BOU ALI, M. N.; Lassoued, N.; Mahmoud, H.; Mnif, E.; Haouet, S.; Ben Rhouma, K.; Elsakly, M. K.; Hasnaoui, M.",
+    "abstract": "PurposeTo evaluate a medical vision-language foundation model fine-tuned on thyroid ultrasound images, with or without the radiologists structured descriptors, against expert-rated EU-TIRADS for the classification of thyroid nodules as benign or malignant. Materials and MethodsThis retrospective study included nodules that underwent ultrasound-guided fine-needle aspiration (FNA) between January 2019 and August 2025 in two Tunisian centers, with consecutive recruitment, together with a selection of images from an international public dataset. Of 1,580 nodules, 1,456 (272 malignant; 1,280 patients) with an interpretable cytological or histological reference standard were allocated at patient level to training (n = 942), validation (n = 258) and a test set sealed before training (n = 256; 51 malignant). MedGemma 1.5 4B was fine-tuned with low-rank adaptation under four input configurations: the image with nodule biometry, with or without age and sex (A, B); A with chain-of-thought supervision (C); and A plus the eleven qualitative descriptors of the radiologists structured report (D). The EU-TIRADS category was never a model input. Areas under the receiver operating characteristic curve (AUROCs) were compared with DeLongs test and a prespecified non-inferiority margin of 0.05; EU-TIRADS [&ge;] 4 was the prespecified comparator, with [&ge;] 5 as a sensitivity analysis. ResultsConfig D reached an AUROC of 0.953 (95% CI 0.909-0.976), versus 0.948 (0.894-0.972) for EU-TIRADS (difference +0.004, 95% CI -0.016 to +0.025), which met the non-inferiority criterion; Configs A-C, without the qualitative descriptors, reached 0.883-0.892 (Holm-adjusted p = 0.045 versus EU-TIRADS). At [&ge;] 4, EU-TIRADS had a sensitivity of 98.0% and produced 94 false positives among 205 benign nodules; at a threshold fixed on validation data, Config D reclassified 72 of them as negative while missing two additional cancers. Against EU-TIRADS [&ge;] 5 (sensitivity 92.2%, specificity 95.1%), Config D at its native threshold (88.2%, 94.1%) did not classify more nodules correctly (McNemar p = 0.22), and at its two other thresholds it classified fewer nodules correctly (p = 0.004 and 0.007). Raw probabilities were miscalibrated (expected calibration error 0.117 for Config D), and Platt scaling within the test set reduced this error to 0.019-0.040. ConclusionGiven the ultrasound image together with the radiologists structured descriptors, the fine-tuned model matched expert EU-TIRADS discrimination and, against the [&ge;] 4 threshold, reclassified most false positives as negative, a gain concentrated in category 4 and based on only three cancers in category 4. It is best positioned as a report-standardizing second reader in the EU-TIRADS 4 gray zone, pending prospective external validation. Summary StatementA fine-tuned medical vision-language model given the ultrasound image and the radiologists structured report matched expert EU-TIRADS discrimination of thyroid nodules and would have deferred most aspirations of benign category 4 nodules, at the cost of one or two missed category 4 cancers depending on the threshold, based on only three cancers in category 4. Key PointsO_LIOn a test set of 256 thyroid nodules sealed before training, the model given the ultrasound image and the radiologists 16-field structured report reached an area under the receiver operating characteristic curve of 0.953, non-inferior to expert EU-TIRADS (0.948). C_LIO_LIAgainst EU-TIRADS 4 or higher, the model reclassified as negative 72 of the 94 false-positive nodules at a threshold fixed on validation data, at the cost of two additional missed cancers. C_LIO_LIAdding the radiologists qualitative descriptors to the image raised the area under the curve from 0.892 (Config A) to 0.953, and Platt scaling reduced the calibration error of the model from 0.117 to 0.019-0.040. C_LI",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-24",
+    "updated": "2026-10-24",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.21.26366156v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.21.26366156v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "MedGemma with structured radiologist descriptors met the prespecified non-inferiority criterion versus EU-TIRADS for thyroid nodule malignancy discrimination; configurations without those descriptors performed worse.",
+      "clinical_relevance": "This diagnostic AI study—not drug discovery—suggests potential to reduce false positives, but with additional missed cancers and no demonstrated advantage over EU-TIRADS ≥5.",
+      "method": [
+        "Retrospective thyroid ultrasound study using two Tunisian centers and selected public-dataset images.",
+        "Fine-tuned MedGemma 1.5 4B across four input configurations, with patient-level training, validation and sealed test splits.",
+        "Compared performance against expert-rated EU-TIRADS; EU-TIRADS categories were never model inputs."
+      ],
+      "evidence_signal": "Among 256 test nodules, including 51 malignant nodules, the descriptor-enhanced model achieved AUROC 0.953 versus 0.948 for EU-TIRADS; at a validation-fixed threshold, it reclassified 72 EU-TIRADS ≥4 false positives as negative while missing two additional cancers.",
+      "watch_item": "Retrospective, FNA-selected data and reliance on radiologist descriptors warrant prospective external validation before clinical implementation.",
+      "hashtags": [
+        "#ThyroidCancer",
+        "#MedicalAI",
+        "#Ultrasound",
+        "#DiagnosticAccuracy",
+        "#VisionLanguageModels"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-24-medrxiv-fine_tuned_medical_vision_language_model_medgemma_1_5_4b_with_and_without_structured_radio",
+      "paper_title": "Fine-tuned Medical Vision-Language Model (MedGemma 1.5 4B) with and without Structured Radiologist Descriptors versus EU-TIRADS for Malignancy Risk Stratification of Thyroid Nodules at Ultrasound: A Tunisian Multicenter Diagnostic Accuracy Study",
+      "paper_date": "2026-10-24",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-30T13:45:20",
+      "generator": "openai"
+    }
+  }
+]

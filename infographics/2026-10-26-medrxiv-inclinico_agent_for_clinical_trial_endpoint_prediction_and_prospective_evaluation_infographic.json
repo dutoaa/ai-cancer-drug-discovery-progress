@@ -1,19 +1,19 @@
 {
-  "key_insight": "inClinico Agent combines machine-learning trial-success predictions with LLM-based tools to estimate whether phase I–IV studies will meet their primary endpoints.",
-  "clinical_relevance": "The system could support clinical development prioritization, including oncology, but the abstract reports neither cancer-specific performance nor patient-treatment benefits.",
+  "key_insight": "inClinico Agent combines machine-learning trial-success predictions with LLM tools, forecasting primary endpoint outcomes across phases I–IV rather than discovering cancer drugs.",
+  "clinical_relevance": "The system could inform trial planning and research prioritization, but the abstract does not establish cancer-specific performance or patient benefit.",
   "method": [
-    "Model efficacy and safety/toxicity endpoints separately using registration-time features.",
-    "Generate a Predictive Trial Index from 0 to 1 using trial, drug, target and frozen literature-derived features.",
-    "Integrate prediction engines with LLMs, retrieval tools and specialized clinical skills."
+    "Train separate models for efficacy and safety/toxicity primary endpoints.",
+    "Use registration-time trial features and frozen literature embeddings to limit outcome leakage.",
+    "Combine probability scores with LLMs, retrieval tools and specialized clinical skills."
   ],
-  "evidence_signal": "For trials initiated in 2021 or later, AUROC was 0.828 for efficacy (n=2,347) and 0.809 for safety/toxicity (n=1,485); ClinicoBench adds 3,235 ongoing trials for prospective tracking.",
-  "watch_item": "Prospective accuracy remains to be established as ongoing trials complete; AUROC alone does not establish probability calibration or decision-making benefit.",
+  "evidence_signal": "For trials initiated in 2021 or later, AUROC was 0.828 for efficacy (n=2,347) and 0.809 for safety/toxicity (n=1,485); ClinicoBench adds prospective tracking of 3,235 ongoing trials.",
+  "watch_item": "Prospective predictive accuracy remains to be established as benchmark trials complete.",
   "hashtags": [
-    "#ClinicalTrialPrediction",
-    "#AIInDrugDevelopment",
+    "#ClinicalTrialAI",
+    "#TrialOutcomePrediction",
     "#ClinicalTranslation",
     "#ProspectiveValidation",
-    "#inClinicoAgent"
+    "#MachineLearning"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "inClinico Agent for clinical trial endpoint prediction and prospective evaluation",
   "paper_date": "2026-10-26",
   "paper_category": "Clinical Translation",
-  "generated_at": "2026-10-30T13:45:05",
+  "generated_at": "2026-10-31T13:13:54",
   "generator": "openai"
 }

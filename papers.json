@@ -1,5 +1,58 @@
 [
   {
+    "id": "2026-10-26-medrxiv-development_and_validation_of_an_automated_image_based_method_for_prognostic_stratificatio",
+    "doi": "10.64898/2026.10.22.26366204",
+    "date": "2026-10-26",
+    "title": "Development and Validation of an Automated Image-Based Method for Prognostic Stratification in Lung Adenocarcinoma using Immunohistochemical Markers",
+    "authors": "Carraro, F.; Sanguesa, M.; Irisarri, A.; Orive, D.; Sainz, C.; Arganda-Carreras, I.; Calvo, A.; Montuenga, L. M.; Ortiz de Solorzano, C.; Ariz, M.",
+    "abstract": "We present an automated image-based framework for quantifying biomarker expression in immunohistochemical (IHC) images and introduce the Marker Expression Level (MEL) score as an objective alternative to visual H-scoring. MEL addresses key limitations of existing automated methods by integrating tissue-region segmentation with tumour-area-weighted marker quantification, normalization to mitigate inter-sample and inter-batch staining variability, and robust quantification of nuclear, cytoplasmic, and membrane-associated biomarkers. The complete pipeline was developed as an open-source Fiji/ImageJ tool and is publicly available. We evaluated MEL using IHC images from 128 lung adenocarcinoma patients stained for BRCA1, GLUT1, and QKI, three markers forming a prognostic signature previously described by our group. Tissue regions were segmented using a machine learning-based Fiji plugin, and MEL scores were calculated within tumour regions. A normalization strategy accounted for inter-TMA staining variability. Agreement with visual H-scores was assessed using Spearman correlation. Prognostic performance was evaluated using Cox regression to derive a Combined Prognostic Index (CPI) incorporating MEL scores and tumour stage. Segmentation achieved high accuracy across tissue regions (Dice coefficients 0.69-0.99), with lower performance in highly immune-infiltrated stromal areas. MEL scores significantly correlated with visual H-scores for all markers ({rho} = 0.61-0.69, p < 0.001). Normalization improved agreement for GLUT1 ({rho} = 0.39 to 0.62). The derived CPI stratified patients into distinct risk groups with significant differences in disease-free and overall survival (p < 0.05), comparable to visual scoring. MEL provides a reproducible and scalable alternative to expert visual H-scoring and standard semi-automated approaches such as QuPath. Its integration with prognostic modelling reproduced a validated survival signature with performance comparable to expert scoring, supporting clinical and translational applicability. MEL is not a marginal refinement of existing digital scoring methods, but rather a clinically oriented and biologically adaptable framework designed to improve the robustness and reproducibility of automated IHC quantification.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-26",
+    "updated": "2026-10-26",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.22.26366204v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.22.26366204v1.full.pdf"
+      }
+    ],
+    "score": 62,
+    "infographic": {
+      "key_insight": "Automated Marker Expression Level (MEL) scoring quantified lung adenocarcinoma biomarkers and supported prognostic stratification comparable to expert visual scoring.",
+      "clinical_relevance": "This framework could support scalable prognostic biomarker assessment, but it evaluates prognosis rather than drug discovery or treatment selection.",
+      "method": [
+        "Segment tissue regions using a machine-learning Fiji plugin.",
+        "Calculate tumour-area-weighted MEL scores for BRCA1, GLUT1 and QKI, normalizing staining variability.",
+        "Combine MEL scores with tumour stage in a Cox-derived Combined Prognostic Index."
+      ],
+      "evidence_signal": "In 128 patients, MEL correlated with visual H-scores (Spearman ρ = 0.61–0.69; p < 0.001), and the combined index separated disease-free and overall survival risk groups (p < 0.05).",
+      "watch_item": "Independent external validation is not described in the abstract, and segmentation performed less well in highly immune-infiltrated stroma.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#LungAdenocarcinoma",
+        "#DigitalPathology",
+        "#MachineLearning",
+        "#PrognosticBiomarkers"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-26-medrxiv-development_and_validation_of_an_automated_image_based_method_for_prognostic_stratificatio",
+      "paper_title": "Development and Validation of an Automated Image-Based Method for Prognostic Stratification in Lung Adenocarcinoma using Immunohistochemical Markers",
+      "paper_date": "2026-10-26",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-31T13:13:51",
+      "generator": "openai"
+    }
+  },
+  {
     "id": "2026-10-26-medrxiv-inclinico_agent_for_clinical_trial_endpoint_prediction_and_prospective_evaluation",
     "doi": "10.64898/2026.10.13.26365373",
     "date": "2026-10-26",
@@ -24,23 +77,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.13.26365373v3.full.pdf"
       }
     ],
-    "score": 65,
+    "score": 60,
     "infographic": {
-      "key_insight": "inClinico Agent combines machine-learning trial-success predictions with LLM-based tools to estimate whether phase I–IV studies will meet their primary endpoints.",
-      "clinical_relevance": "The system could support clinical development prioritization, including oncology, but the abstract reports neither cancer-specific performance nor patient-treatment benefits.",
+      "key_insight": "inClinico Agent combines machine-learning trial-success predictions with LLM tools, forecasting primary endpoint outcomes across phases I–IV rather than discovering cancer drugs.",
+      "clinical_relevance": "The system could inform trial planning and research prioritization, but the abstract does not establish cancer-specific performance or patient benefit.",
       "method": [
-        "Model efficacy and safety/toxicity endpoints separately using registration-time features.",
-        "Generate a Predictive Trial Index from 0 to 1 using trial, drug, target and frozen literature-derived features.",
-        "Integrate prediction engines with LLMs, retrieval tools and specialized clinical skills."
+        "Train separate models for efficacy and safety/toxicity primary endpoints.",
+        "Use registration-time trial features and frozen literature embeddings to limit outcome leakage.",
+        "Combine probability scores with LLMs, retrieval tools and specialized clinical skills."
       ],
-      "evidence_signal": "For trials initiated in 2021 or later, AUROC was 0.828 for efficacy (n=2,347) and 0.809 for safety/toxicity (n=1,485); ClinicoBench adds 3,235 ongoing trials for prospective tracking.",
-      "watch_item": "Prospective accuracy remains to be established as ongoing trials complete; AUROC alone does not establish probability calibration or decision-making benefit.",
+      "evidence_signal": "For trials initiated in 2021 or later, AUROC was 0.828 for efficacy (n=2,347) and 0.809 for safety/toxicity (n=1,485); ClinicoBench adds prospective tracking of 3,235 ongoing trials.",
+      "watch_item": "Prospective predictive accuracy remains to be established as benchmark trials complete.",
       "hashtags": [
-        "#ClinicalTrialPrediction",
-        "#AIInDrugDevelopment",
+        "#ClinicalTrialAI",
+        "#TrialOutcomePrediction",
         "#ClinicalTranslation",
         "#ProspectiveValidation",
-        "#inClinicoAgent"
+        "#MachineLearning"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -48,7 +101,60 @@
       "paper_title": "inClinico Agent for clinical trial endpoint prediction and prospective evaluation",
       "paper_date": "2026-10-26",
       "paper_category": "Clinical Translation",
-      "generated_at": "2026-10-30T13:45:05",
+      "generated_at": "2026-10-31T13:13:54",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-26-medrxiv-training_free_generation_of_4d_ct_and_other_rare_acquisitions_improves_segmentation_across",
+    "doi": "10.64898/2026.10.22.26365566",
+    "date": "2026-10-26",
+    "title": "Training-free generation of 4D CT and other rare acquisitions improves segmentation across modalities",
+    "authors": "Sadee, C.; Dils, A.; Hundal, N. S.; Wan, K.; Chun, A.; Shukla, A.; Xi, I. L.; Van Puyvelde, M.; Hartmann, K.; Shah, P.; Hirschvogel, M.; Zhou, W.; Lin, C.; Gangaram, V.; Er, A. G.; Seweryn, M.; Van Criekinge, W.; Nandi, T. N.; Aniegbe, J. I.; Shen, L.; Ilo, A. C.; Immel-Sadee, F.; Nnamani, A. O.; Levin, D. L.; Hao, M.; McDonald, E. S.; Achilefu, N. C.; Iloanusi, N. I.; Poplack, S. P.; Dashevsky, B. Z.; Damrauer, S. M.; Okoye, I.; Gevaert, O.",
+    "abstract": "RationaleRoutine clinical imaging captures anatomy under a limited set of physiologic and acquisition conditions, leaving segmentation models with sparse examples of how lesions and surrounding tissues deform with compression, respiration, or vascular pulsation. Standard image augmentation expands training datasets but does not explicitly model the mechanics underlying these changes. Patient-specific biomechanical simulation offers an approach to generate anatomically consistent images and corresponding segmentation masks under conditions absent from the original scan, without additional imaging or training a generative model. We hypothesized that incorporating this mechanistically grounded variability into training improves segmentation across imaging modalities. MethodsWe evaluate across three segmentation tasks: breast cancer on 3D digital breast tomosynthesis, lung tumors on chest CT, and carotid plaque on ultrasound. From each routine scan, patient-specific biomechanical models generate acquisitions absent from the original study--a range of breast compressions, the respiratory cycle, and arterial wall distension across the cardiac cycle. The resulting displacement fields deform both images and masks. Segmentation models were trained with and without the generated data across a range of standard image augmentation techniques, evaluated via cross-validation and held-out test sets. Realism was assessed through blinded reader studies, and generated respiratory motion was validated against real 4D CT. ResultsTraining on the generated acquisitions improved segmentation across modalities, increasing Dice scores by 6.6% for breast (p<0.05), 10.1% for lung (p<0.05), and 4.5% for carotid plaque (p>0.05) relative to the routine scans alone. Generated respiratory motion closely matched real gated 4D CT, with Dice of 0.94 {+/-} 0.02 for lung volume overlap. Blinded readers discriminated generated from real images at near chance (AUC: breast 0.61, lung 0.41, carotid 0.46). ConclusionsMechanistic simulation generates imaging acquisitions that clinical systems do not supply, without training data or additional scanning, and improves AI-based disease detection across modalities.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-26",
+    "updated": "2026-10-26",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.22.26365566v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.22.26365566v1.full.pdf"
+      }
+    ],
+    "score": 54,
+    "infographic": {
+      "key_insight": "Patient-specific biomechanical simulation generated realistic imaging variations without training a generative model, improving segmentation across three imaging modalities.",
+      "clinical_relevance": "This imaging study—not drug discovery research—suggests simulated acquisitions could improve tumor and plaque segmentation without additional patient scanning.",
+      "method": [
+        "Model breast compression, respiratory motion, and arterial wall distension from routine scans.",
+        "Use simulated displacement fields to deform images and corresponding segmentation masks.",
+        "Compare segmentation training with versus without generated acquisitions."
+      ],
+      "evidence_signal": "Cross-validation and held-out testing showed reported Dice increases of 6.6% for breast and 10.1% for lung (both p<0.05), and 4.5% for carotid plaque (p>0.05); simulated lung motion achieved 0.94 ± 0.02 volume-overlap Dice against real 4D CT.",
+      "watch_item": "The carotid improvement was not statistically significant, and segmentation gains do not establish better clinical outcomes.",
+      "hashtags": [
+        "#MedicalImaging",
+        "#BiomechanicalSimulation",
+        "#ImageSegmentation",
+        "#CancerAI",
+        "#SyntheticData"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-26-medrxiv-training_free_generation_of_4d_ct_and_other_rare_acquisitions_improves_segmentation_across",
+      "paper_title": "Training-free generation of 4D CT and other rare acquisitions improves segmentation across modalities",
+      "paper_date": "2026-10-26",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-10-31T13:13:57",
       "generator": "openai"
     }
   },
@@ -77,23 +183,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.23.26366291v1.full.pdf"
       }
     ],
-    "score": 57,
+    "score": 52,
     "infographic": {
-      "key_insight": "In this sepsis study—not cancer drug discovery—three of five language models exceeded physicians’ diagnostic accuracy after biomarker disclosure.",
-      "clinical_relevance": "The findings suggest potential for biomarker-informed diagnostic support, but do not establish safety or effectiveness in clinical practice.",
+      "key_insight": "In a sepsis vignette study—not cancer drug discovery—three language models exceeded physicians’ diagnostic accuracy after biomarker disclosure.",
+      "clinical_relevance": "The results suggest potential for biomarker-informed diagnostic support, but do not establish safety or effectiveness in clinical care.",
       "method": [
-        "Evaluated five locally deployed language models on six anonymised clinical cases with Sepsis-3 reference diagnoses.",
+        "Evaluated five locally deployed language models on six anonymised real-case vignettes with Sepsis-3 reference diagnoses.",
         "Compared model responses with those of 353 clinicians before and after biomarker disclosure.",
-        "Assessed demographic and language sensitivity, reproducibility, and confidence calibration."
+        "Varied patient sex, age and language, and assessed reproducibility and confidence calibration."
       ],
-      "evidence_signal": "After biomarker disclosure, accuracy was 91% for Qwen3.8-27B, 86% for its quantised variant, and 83% for Gemma-4-31B, versus 61% for physicians.",
-      "watch_item": "Only six cases were evaluated in silico; language-related bias and difficulty with post-surgical sepsis warrant broader validation.",
+      "evidence_signal": "After biomarker disclosure, accuracy was 91% for Qwen3.8-27B, 86% for its quantised variant and 83% for Gemma-4-31B, versus 61% for physicians.",
+      "watch_item": "Only six cases were studied retrospectively in silico; language-related bias and difficult post-surgical cases warrant broader prospective validation.",
       "hashtags": [
         "#Sepsis",
         "#MedicalAI",
         "#LargeLanguageModels",
         "#DiagnosticResearch",
-        "#AIValidation"
+        "#AIEvaluation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -101,7 +207,7 @@
       "paper_title": "Can Language Models Diagnose Sepsis? A Head-to-Head Evaluation Against 353 Physicians",
       "paper_date": "2026-10-26",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-30T13:45:09",
+      "generated_at": "2026-10-31T13:13:59",
       "generator": "openai"
     }
   },
@@ -130,23 +236,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.22.26364879v1.full.pdf"
       }
     ],
-    "score": 54,
+    "score": 49,
     "infographic": {
-      "key_insight": "SPARC uses longitudinal health measurements to predict cancer-related adverse events, focusing on toxicity risk rather than drug discovery.",
-      "clinical_relevance": "The model could support toxicity-prevention research by identifying high-risk patients, including those potentially most likely to benefit from G-CSF.",
+      "key_insight": "SPARC uses longitudinal health measurements to predict cancer-related adverse events, focusing on treatment toxicity rather than drug discovery.",
+      "clinical_relevance": "Risk predictions could help target toxicity-prevention strategies, including identifying patients most likely to benefit from G-CSF.",
       "method": [
-        "Transformer-based foundation model using routinely collected longitudinal health measurements.",
-        "Pre-trained and fine-tuned to predict cancer-related adverse events.",
-        "Compared pooled multi-institution with single-institution fine-tuning for generalizability."
+        "Transformer-based foundation model using routinely collected health measurements.",
+        "Pre-trained and fine-tuned on longitudinal cancer patient data.",
+        "Compared single-institution and pooled multi-institution fine-tuning."
       ],
-      "evidence_signal": "Development used 101,920,379 measurements from 224,047 patients; evaluation included held-out data, a prospective same-center cohort of 23,126 patients, public external datasets totaling 26,012 patients, and external multi-hospital cohorts of 562,620 and 206,840 patients.",
-      "watch_item": "The abstract reports predictive performance but does not establish that model-guided care improves patient outcomes.",
+      "evidence_signal": "Development used 101,920,379 measurements from 224,047 patients, with evaluation on held-out data, a prospective same-center cohort, public datasets, and two large external multi-hospital cohorts.",
+      "watch_item": "Predictive performance and prospective validation do not establish that model-guided care improves patient outcomes; clinical implementation needs further evaluation.",
       "hashtags": [
         "#PrecisionOncology",
-        "#CancerAI",
+        "#ClinicalAI",
+        "#CancerTreatment",
         "#AdverseEventPrediction",
-        "#LongitudinalHealthData",
-        "#FoundationModels"
+        "#PatientSafety"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -154,74 +260,180 @@
       "paper_title": "Longitudinal AI Models Predict Cancer Adverse Events",
       "paper_date": "2026-10-26",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-30T13:45:12",
+      "generated_at": "2026-10-31T13:14:01",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-10-24-medrxiv-predicting_hpv_p16_status_and_molecular_subtypes_from_histopathology_slides_using_deep_lea",
-    "doi": "10.64898/2026.10.22.26366203",
-    "date": "2026-10-24",
-    "title": "Predicting HPV/p16 Status and Molecular Subtypes from Histopathology Slides using Deep Learning in Vulvar Squamous Cell Carcinoma",
-    "authors": "van den Berg, N.; van der Kolk, W.; Landsbergen, K.; Kortekaas, K.; Nooij, L.; van Velzen, A. F.; te Grootenhuis, N.; the AIRMEC Consortium, ; Horeweg, N.; van Doorn, L.; Oonk, M.; Bart, J.; Bosse, T.",
-    "abstract": "Vulvar squamous cell carcinoma (VSCC) comprises three prognostically distinct molecular subtypes: human papillomavirus (HPV)-associated, HPV-independent/p53-wildtype, and HPV-independent/p53-abnormal. Classification requires p16/p53 immunohistochemistry, which consumes tissue and is often incomplete in retrospective cohorts. We investigated whether deep learning could predict HPV/p16 status and molecular subtypes directly from routine hematoxylin and eosin-stained whole-slide images. Using features extracted with H-optimus-1, we developed two attention-based multiple-instance learning models: HERA, predicting HPV/p16 status, and HERMES, predicting the three molecular subtypes. Models were developed on 644 patients from three Dutch VSCC cohorts and tested on 286 patients from two independent cohorts. In independent testing, HERA achieved an area under the curve (AUC) of 0.84 (95% CI 0.75-0.91), with specificity 0.93, negative predictive value 0.94, and sensitivity 0.68. HERA-predicted groups reproduced the prognostic separation of HPV testing (log-rank p<0.001). HERMES achieved a macro-average AUC of 0.70 (0.66-0.75), with good discrimination for HPV-associated (0.80) but limited separation of HPV-independent/p53-abnormal (AUC 0.68) and HPV-independent/p53-wildtype (AUC 0.63). HERMES-predicted classes reproduced the prognostic hierarchy, with 5-year recurrence rates of 14.0% (HPV-associated), 31.1% (HPV-independent/p53-wildtype) and 43.3% (HPV-independent/p53-abnormal) (p=0.0051). Highly attended tiles showed basaloid cells and koilocytotic-like atypia in HPV-associated tumors, keratinizing nests with desmoplastic stroma in HPV-independent/p53-abnormal tumors, and well-differentiated keratinocytes with spongiosis in HPV-independent/p53-wildtype tumors. HERA could assign HPV/p16 status to large retrospective VSCC cohorts lacking ancillary testing, without consuming tissue, enabling HPV-stratified outcome analyses. Before such use, external validation of its discrimination and calibration across scanners and populations is required. HERMES suggests that molecular subtype information is encoded in hematoxylin and eosin-stained slides, but requires improved distinction between the HPV-independent subtypes.",
+    "id": "2026-10-26-medrxiv-establishment_of_an_anti_nephrin_autoantibody_assay_and_the_predictive_and_diagnostic_sign",
+    "doi": "10.64898/2026.10.24.26366391",
+    "date": "2026-10-26",
+    "title": "Establishment of an Anti-Nephrin Autoantibody Assay and the Predictive and Diagnostic Significance of Pre-treatment Antibody Titers in Pediatric Nephrotic Syndrome",
+    "authors": "Horinouchi, T.; Muto, M.; Ozeki, T.; Nagano, C.; Inoki, Y.; Ichikawa, Y.; Sakakibara, N.; Kiriyama, M.; Sakai, Y. T.; Morita Yamamoto, E.; Podolinnaia, V.; Kim, J.; Tanaka, A.; Atarashi, Y.; Nagatsuka, N.; Miwa, K.; Onishi, M.; Ganguly, A.; Kita, K.; Maharjan, B. D.; Yamamura, T.; Kamei, K.; Hamada, R.; Yamamura, N.; Goto, M.; Ban, H.; Kaku, Y.; Kuroki, R.; Fujita, N.; Miyano, H.; Kise, T.; Fujimaru, R.; Kaito, H.; Hidawa, E.; Ikezumi, Y.; Shimabukuro, W.; Okuda, Y.; Shima, Y.; Nada, T.; Akiyama, S.; Fujioka, K.; Miyanishi, M.; Ishikura, K.; Nakanishi, K.; Isaka, Y.; Maruyama, S.; Harada, A.;",
+    "abstract": "IntroductionAnti-nephrin autoantibodies have been implicated in podocytopathies, including minimal change disease and focal segmental glomerulosclerosis. However, their prevalence, longitudinal dynamics, and clinical significance in first-onset nephrotic syndrome (NS) including steroid-sensitive NS (SSNS) and steroid-resistant NS (SRNS) remain unclear. MethodsWe established a highly sensitive anti-nephrin autoantibody assay using a modified recombinant nephrin antigen and the automated immunoassay platform, and applied it to a prospective Japanese pediatric, multicenter, cohort with first-onset NS and an independent validation cohort. Anti-nephrin autoantibody titers were evaluated before and after treatment and analyzed in relation to clinical phenotypes, genetic risk alleles, and tissue findings. The assay was validated using immunoprecipitation- Western blotting (IP-WB) in representative samples, assessing IgG-nephrin colocalization in evaluable kidney biopsy specimens, and antigen inhibition assays in all antibody-positive samples from the validation cohort. ResultsIn the pediatric discovery cohort (n = 103), all patients with SSNS (n = 83, 100%) and nine of 16 with SRNS (56.3%) were positive for anti-nephrin autoantibodies, whereas all patients with IgA nephropathy (IgAN) with NS onset were negative (n = 4, 0%). Standard-range positivity was associated with SSNS (77/77, 100%), high-titer positivity with SRNS (9/15, 60.0%), and antibody negativity was restricted to non-SSNS diseases, comprising SRNS (7/11, 63.6%) and IgAN (4/11, 36.4%) (P < 0.0001). Similarly, in the independent validation cohort (n = 42), high-titer positivity was associated with SRNS (1/1, 100%), standard-range positivity with SSNS (30/33, 90.9%), and antibody negativity identified IgAN and membranous nephropathy (5/8, 62.5%) or SRNS (3/8, 37.5%). Orthogonal validation by IP-WB, IgG-nephrin colocalization, and antigen inhibition assays was concordant. ConclusionsAnti-nephrin autoimmunity is a hallmark of NS and identifies distinct clinical phenotypes at disease onset. The automated immunoassay for anti-nephrin autoantibodies enables rapid, highly sensitive, and automated antibody measurement and may serve as a diagnostic triage tool for early etiologic stratification and clinical characterization of NS at disease onset. Lay SummaryNephrotic syndrome is a kidney disease in which proteins leak into the urine because of a damaged kidney filtration barrier. Recent studies suggest that some patients produce autoantibodies against nephrin, a key protein required for normal kidney filtration. However, accurately measuring these antibodies has been difficult. In this study, we developed a highly sensitive automated blood test for anti-nephrin autoantibodies and used it in Japanese children with newly diagnosed nephrotic syndrome. We found that all children with steroid-sensitive nephrotic syndrome were positive for anti-nephrin autoantibodies at disease onset. In contrast, children with very high antibody levels or no detectable antibodies were more likely to have steroid-resistant disease or other kidney diseases. These findings were confirmed in an independent validation cohort. This blood test may help improve diagnosis, predict treatment response, and support more personalized management of nephrotic syndrome.",
     "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-10-24",
-    "updated": "2026-10-24",
-    "primary_category": "pathology",
+    "published": "2026-10-26",
+    "updated": "2026-10-26",
+    "primary_category": "nephrology",
     "categories": [
-      "pathology"
+      "nephrology"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.22.26366203v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.24.26366391v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.22.26366203v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.24.26366391v1.full.pdf"
       }
     ],
-    "score": 49,
+    "score": 46,
     "infographic": {
-      "key_insight": "Deep learning predicted HPV/p16 status from routine vulvar cancer slides more accurately than it distinguished all three molecular subtypes.",
-      "clinical_relevance": "Slide-based predictions could support retrospective HPV-stratified outcome research when ancillary testing is unavailable, without consuming additional tissue.",
+      "key_insight": "In pediatric first-onset nephrotic syndrome, anti-nephrin antibody levels distinguished clinical phenotypes: standard-range positivity was associated with steroid sensitivity, while high titers were enriched in steroid resistance.",
+      "clinical_relevance": "Pretreatment antibody testing may help characterize pediatric nephrotic syndrome, but this study concerns kidney disease—not AI, cancer, or drug discovery.",
       "method": [
-        "Extracted features from hematoxylin and eosin whole-slide images using H-optimus-1.",
-        "Trained attention-based models: HERA for HPV/p16 status and HERMES for three molecular subtypes.",
-        "Developed models on 644 patients and tested them on 286 patients from independent cohorts."
+        "Developed an automated immunoassay using modified recombinant nephrin.",
+        "Evaluated pretreatment and post-treatment antibodies in a prospective Japanese pediatric discovery cohort and an independent validation cohort.",
+        "Used immunoprecipitation–Western blotting, biopsy colocalization, and antigen inhibition for orthogonal validation."
       ],
-      "evidence_signal": "Independent testing yielded an AUC of 0.84 (95% CI 0.75–0.91) for HERA and a macro-average AUC of 0.70 (0.66–0.75) for HERMES; predicted groups also showed prognostic separation.",
-      "watch_item": "External validation of discrimination and calibration across scanners and populations is needed, particularly given HERA’s 0.68 sensitivity and HERMES’s limited separation of HPV-independent subtypes.",
+      "evidence_signal": "In the discovery cohort (n=103), antibodies were detected in 83/83 steroid-sensitive cases and 9/16 steroid-resistant cases; phenotype associations were also observed in the validation cohort (n=42).",
+      "watch_item": "Small phenotype subgroups and the Japanese pediatric study setting limit generalizability; broader prospective validation is needed before routine clinical use.",
       "hashtags": [
-        "#PrecisionOncology",
-        "#DigitalPathology",
-        "#VulvarCancer",
-        "#DeepLearning",
-        "#HPV"
+        "#NephroticSyndrome",
+        "#AntiNephrin",
+        "#PediatricNephrology",
+        "#Autoantibodies",
+        "#BiomarkerResearch"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
-      "paper_id": "2026-10-24-medrxiv-predicting_hpv_p16_status_and_molecular_subtypes_from_histopathology_slides_using_deep_lea",
-      "paper_title": "Predicting HPV/p16 Status and Molecular Subtypes from Histopathology Slides using Deep Learning in Vulvar Squamous Cell Carcinoma",
-      "paper_date": "2026-10-24",
+      "paper_id": "2026-10-26-medrxiv-establishment_of_an_anti_nephrin_autoantibody_assay_and_the_predictive_and_diagnostic_sign",
+      "paper_title": "Establishment of an Anti-Nephrin Autoantibody Assay and the Predictive and Diagnostic Significance of Pre-treatment Antibody Titers in Pediatric Nephrotic Syndrome",
+      "paper_date": "2026-10-26",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-30T13:45:14",
+      "generated_at": "2026-10-31T13:14:04",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-10-24-medrxiv-identifying_cohorts_at_elevated_risk_of_cancers_using_generative_modeling_of_patient_healt",
-    "doi": "10.64898/2026.09.09.26362676",
-    "date": "2026-10-24",
-    "title": "Identifying cohorts at elevated risk of cancers using generative modeling of patient health states",
-    "authors": "Khan, A.; Forster, D. T.; Harsh, M.; Zheng, C.; Warner, E. T.; Ritter, D.; Chang, A.; Wei, Q.; Sorensen, T. K.; Marks, D. S.; Sequist, L. V.; Hadlock, J. J.; Fillmore, N. R.; Sander, C.",
-    "abstract": "While large language models are powerful generators of new text, forecasting disease progression from longitudinal health histories remains a challenging problem. We introduce GenEHR, an autoregressive generative model trained on electronic health records (EHRs) from millions of patients in diverse health systems. The model learns from real-world multimodal patient histories, including diagnoses, medications, lab values, and procedures while explicitly representing irregular intervals between visits to forecast future clinical events. We combine the general-purpose patient representation learned during foundational training with parameter-efficient supervised adaptation for the task of risk stratification for 17 cancer types. In five large EHR cohorts, supervised adaptation substantially improved prediction performance of a first cancer diagnosis within a five year horizon window. Our retrospective results support the prospective evaluation of GenEHR-CancerRisk as a clinical decision-support tool for prioritizing high-risk patients for screening and prevention of aggressive cancer types, such as pancreatic and ovarian cancer.",
+    "id": "2026-10-26-medrxiv-using_diffusion_similarity_networks_to_identify_track_and_predict_movement_disorders",
+    "doi": "10.64898/2026.10.22.26366240",
+    "date": "2026-10-26",
+    "title": "Using Diffusion Similarity Networks to Identify, Track, and Predict Movement Disorders",
+    "authors": "Shalaby, A.; Chitta, K. K.; Alijanpourotaghsara, A.; Choi, J. W.; Hitti, F. L.; Chiang, F. L.; Sharma, V. D.; Kim, W. H.; Pouratian, N.; Lee, J.",
+    "abstract": "Characterizing individual structural brain alterations in movement disorders like Parkinsons disease (PD) and Essential Tremor (ET) remains a significant challenge in clinical neuroscience. While brain structural connectivity (SC) derived from Diffusion Tensor Imaging (DTI) tractography maps physical white matter pathways, it fails to capture localized microstructural remodelings within gray matter structures. In this study, we use Diffusion Similarity Networks (DSNs) as a novel framework to estimate microstructural connectivity from diffusion weighted imaging (DWI). First, we evaluate the ability of DSNs to differentiate individuals with PD from healthy controls (HC). We used Similarity Network Fusion (SNF) to visualize differences between the fused networks of both groups as well as the Brain Connectivity Toolbox (BCT) to quantify changes in network topology, including transitivity, clustering coefficient, global efficiency, and betweenness centrality. Second, to evaluate the capacity of DSNs to track disease progression over time, we utilized longitudinal data extracted from the Parkinsons Progression Markers Initiative (PPMI) database, mapping distinct functional subnetwork degeneration trajectories in PD patients. Finally, we developed a predictive Graph Neural Network (GNN) framework on a locally collected cohort to address the challenging task of differentiating PD from ET, utilizing DSNs as highly discriminant input features. Our results demonstrate that DSN metrics successfully capture distinct structural signatures that reliably separate clinical phenotypes, while longitudinal modeling reveals an accelerated, progressive decay in specific motor and basal ganglia subnetwork topologies over time. Furthermore, the GNN model achieved high classification performance (Balanced accuracy = 0.8684, AUC= 0.9420) in distinguishing PD from ET globally, with local explainability analysis successfully showing the specific brain Regions of Interest (ROIs) driving the differential diagnosis. Overall, these findings demonstrate that Diffusion Similarity Networks serve as a robust, non-invasive biomarker for movement disorders, offering deep insights into disease progression and an explainable AI tool for clinical decision support.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-26",
+    "updated": "2026-10-26",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.22.26366240v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.22.26366240v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "Diffusion Similarity Networks captured brain microstructural signatures associated with Parkinson’s disease and essential tremor; this study concerns movement disorders, not cancer drug discovery.",
+      "clinical_relevance": "These imaging-derived networks may support future movement-disorder differentiation and progression monitoring, but clinical utility remains unestablished.",
+      "method": [
+        "Constructed Diffusion Similarity Networks from diffusion-weighted brain imaging.",
+        "Used network fusion and topology metrics to compare Parkinson’s disease with healthy controls and examine longitudinal changes.",
+        "Trained a graph neural network to distinguish Parkinson’s disease from essential tremor and identify influential brain regions."
+      ],
+      "evidence_signal": "Longitudinal PPMI data indicated progressive motor and basal ganglia subnetwork changes, while a local-cohort classifier achieved 0.8684 balanced accuracy and 0.9420 AUC for Parkinson’s disease versus essential tremor.",
+      "watch_item": "The abstract does not report cohort sizes or external classifier validation, limiting assessment of generalizability.",
+      "hashtags": [
+        "#ParkinsonsDisease",
+        "#EssentialTremor",
+        "#DiffusionMRI",
+        "#GraphNeuralNetworks",
+        "#Neuroimaging"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-26-medrxiv-using_diffusion_similarity_networks_to_identify_track_and_predict_movement_disorders",
+      "paper_title": "Using Diffusion Similarity Networks to Identify, Track, and Predict Movement Disorders",
+      "paper_date": "2026-10-26",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-31T13:14:06",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-26-medrxiv-a_family_aware_all_of_us_benchmark_for_polygenic_prediction_and_genomic_machine_learning",
+    "doi": "10.64898/2026.10.22.26366229",
+    "date": "2026-10-26",
+    "title": "A family-aware All of Us benchmark for polygenic prediction and genomic machine learning",
+    "authors": "Ren, G.; Wu, K.; Ren, C.; Nyiha, I.; Wu, K.; Yang, J.",
+    "abstract": "Polygenic risk scores (PRSs) have improved substantially in predictive performance, yet results remain difficult to compare across studies that differ in cohorts, phenotype definitions, and evaluation procedures. Comparison to machine-learning methods is harder still, since their performance depends strongly on how data are partitioned and whether related individuals leak across splits. Here, we introduce a family-aware benchmark for polygenic prediction built on version 9 of the All of Us Research Program (AoU). The benchmark assigns entire family components to fixed discovery, calibration, and test partitions, reserves first-degree relatives for within-family evaluation, and separates models trained only on AoU discovery data from those using external GWAS summary statistics. This enables direct comparison between conventional PRS pipelines and machine-learning models trained under identical data budgets. We report results for 14 binary disease traits. Our strongest scores explain 5.7-24.9% of liability-scale variance, with particularly strong prediction for Alzheimers disease, type 2 diabetes, prostate cancer, glaucoma, and inflammatory bowel disease, and match or exceed published commercial and academic scores for most traits. Across 12 traits with interpretable within-family estimates of within-sibship-to-population effect ratio, 11 confidence intervals included a ratio of 1. Type 2 diabetes showed an attenuation ratio of 0.86 [0.76, 0.97].",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-10-26",
+    "updated": "2026-10-26",
+    "primary_category": "genetic and genomic medicine",
+    "categories": [
+      "genetic and genomic medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.22.26366229v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.22.26366229v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "A family-aware All of Us benchmark enables fairer comparison of polygenic risk scores and genomic machine-learning models, rather than studying cancer drug discovery.",
+      "clinical_relevance": "Strong prediction for several diseases, including prostate cancer, supports further risk-prediction research but does not establish clinical utility.",
+      "method": [
+        "Assign family components to fixed discovery, calibration, and test partitions to prevent related-individual leakage.",
+        "Reserve first-degree relatives for within-family evaluation.",
+        "Separate AoU-only training from external-GWAS-assisted models and compare methods under identical data budgets."
+      ],
+      "evidence_signal": "Across 14 binary disease traits in All of Us version 9, the strongest scores explained 5.7–24.9% of liability-scale variance; 11 of 12 interpretable within-family effect-ratio confidence intervals included 1.",
+      "watch_item": "Type 2 diabetes showed within-family attenuation of 0.86 (confidence interval: 0.76–0.97), cautioning against assuming population-level prediction transfers unchanged within families.",
+      "hashtags": [
+        "#PolygenicRiskScores",
+        "#GenomicMachineLearning",
+        "#AllOfUs",
+        "#FamilyAwareBenchmark",
+        "#RiskPrediction"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-26-medrxiv-a_family_aware_all_of_us_benchmark_for_polygenic_prediction_and_genomic_machine_learning",
+      "paper_title": "A family-aware All of Us benchmark for polygenic prediction and genomic machine learning",
+      "paper_date": "2026-10-26",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-10-31T13:14:08",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-26-medrxiv-exhaustive_white_blood_cell_extraction_and_profiling_across_whole_slide_images_of_blood_an",
+    "doi": "10.64898/2026.10.23.26366335",
+    "date": "2026-10-26",
+    "title": "Exhaustive white blood cell extraction and profiling across whole-slide images of blood and bone marrow smears",
+    "authors": "Deutges, M.; Ghete, T.; Namsaraeva, A.; Sembill, S.; Metzler, M.; Marr, C.; Buser, M.",
+    "abstract": "Blood and bone marrow smears are central to diagnosing hematological disorders. While whole-slide scanning enables automated single-cell profiling at scale, the computational burden of gigapixel images has confined automated analysis to manually pre-selected regions of interest. Here, we present HemAutomaton, a framework built on neural cellular automata that extracts white blood cells across entire whole-slide images without manual region selection and with minimal annotation requirements. HemAutomaton matches the in-domain detection accuracy of Faster R-CNN while surpassing it under domain shifts, operating at a fraction of the computational cost and with over 10,000-fold fewer parameters. Across three blood cancer cohorts, we extract over 100 million single-cell images and achieve annotation-efficient differential counting via few-shot classification using a pretrained hematology foundation model. Slide-wide spatial analysis uncovers consistent blast-frequency gradients across smears and demonstrates that automated blast counts match expert evaluations within inter-expert variability. Scaling automated profiling from hundreds to tens of thousands of cells per smear overcomes conventional sampling limits and establishes the foundation for more sensitive AI supported hematological assessments.",
     "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-10-24",
-    "updated": "2026-10-24",
+    "published": "2026-10-26",
+    "updated": "2026-10-26",
     "primary_category": "health informatics",
     "categories": [
       "health informatics"
@@ -229,91 +441,38 @@
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.09.26362676v4"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.23.26366335v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.09.26362676v4.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.23.26366335v1.full.pdf"
       }
     ],
     "score": 44,
     "infographic": {
-      "key_insight": "GenEHR uses longitudinal health records to identify cohorts at elevated cancer risk, rather than discover cancer drugs.",
-      "clinical_relevance": "If prospectively validated, GenEHR-CancerRisk could help prioritize high-risk patients for screening and prevention, including for pancreatic and ovarian cancers.",
+      "key_insight": "HemAutomaton enables whole-slide white blood cell extraction and profiling without manual region selection, expanding analysis to tens of thousands of cells per smear.",
+      "clinical_relevance": "For blood cancer assessment—not drug discovery—automated profiling could support more comprehensive differential and blast counting.",
       "method": [
-        "Train an autoregressive generative model on EHRs from millions of patients across diverse health systems.",
-        "Model diagnoses, medications, lab values, procedures, and irregular intervals between visits.",
-        "Apply parameter-efficient supervised adaptation to predict first cancer diagnoses across 17 cancer types within five years."
+        "Use neural cellular automata to extract white blood cells across entire blood and bone marrow smear images.",
+        "Apply few-shot classification with a pretrained hematology foundation model for annotation-efficient differential counting.",
+        "Analyze slide-wide cell distributions to identify spatial blast-frequency gradients."
       ],
-      "evidence_signal": "Retrospective evaluation in five large EHR cohorts found substantially improved prediction performance after supervised adaptation; the abstract provides no numerical performance estimates.",
-      "watch_item": "Prospective validation is needed to establish clinical benefit before use in screening decisions.",
+      "evidence_signal": "Across three blood cancer cohorts, over 100 million cell images were extracted; detection matched Faster R-CNN in-domain and exceeded it under domain shifts, while automated blast counts agreed with experts within inter-expert variability.",
+      "watch_item": "Broader clinical validation is needed to establish performance across laboratories, staining protocols, scanners, and patient populations.",
       "hashtags": [
-        "#PrecisionOncology",
-        "#GenerativeAI",
-        "#CancerRisk",
-        "#ElectronicHealthRecords",
-        "#ClinicalAI"
+        "#HematologyAI",
+        "#BloodCancerResearch",
+        "#DigitalPathology",
+        "#WholeSlideImaging",
+        "#CellProfiling"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
-      "paper_id": "2026-10-24-medrxiv-identifying_cohorts_at_elevated_risk_of_cancers_using_generative_modeling_of_patient_healt",
-      "paper_title": "Identifying cohorts at elevated risk of cancers using generative modeling of patient health states",
-      "paper_date": "2026-10-24",
+      "paper_id": "2026-10-26-medrxiv-exhaustive_white_blood_cell_extraction_and_profiling_across_whole_slide_images_of_blood_an",
+      "paper_title": "Exhaustive white blood cell extraction and profiling across whole-slide images of blood and bone marrow smears",
+      "paper_date": "2026-10-26",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-30T13:45:17",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-24-medrxiv-fine_tuned_medical_vision_language_model_medgemma_1_5_4b_with_and_without_structured_radio",
-    "doi": "10.64898/2026.10.21.26366156",
-    "date": "2026-10-24",
-    "title": "Fine-tuned Medical Vision-Language Model (MedGemma 1.5 4B) with and without Structured Radiologist Descriptors versus EU-TIRADS for Malignancy Risk Stratification of Thyroid Nodules at Ultrasound: A Tunisian Multicenter Diagnostic Accuracy Study",
-    "authors": "BOU ALI, M. N.; Lassoued, N.; Mahmoud, H.; Mnif, E.; Haouet, S.; Ben Rhouma, K.; Elsakly, M. K.; Hasnaoui, M.",
-    "abstract": "PurposeTo evaluate a medical vision-language foundation model fine-tuned on thyroid ultrasound images, with or without the radiologists structured descriptors, against expert-rated EU-TIRADS for the classification of thyroid nodules as benign or malignant. Materials and MethodsThis retrospective study included nodules that underwent ultrasound-guided fine-needle aspiration (FNA) between January 2019 and August 2025 in two Tunisian centers, with consecutive recruitment, together with a selection of images from an international public dataset. Of 1,580 nodules, 1,456 (272 malignant; 1,280 patients) with an interpretable cytological or histological reference standard were allocated at patient level to training (n = 942), validation (n = 258) and a test set sealed before training (n = 256; 51 malignant). MedGemma 1.5 4B was fine-tuned with low-rank adaptation under four input configurations: the image with nodule biometry, with or without age and sex (A, B); A with chain-of-thought supervision (C); and A plus the eleven qualitative descriptors of the radiologists structured report (D). The EU-TIRADS category was never a model input. Areas under the receiver operating characteristic curve (AUROCs) were compared with DeLongs test and a prespecified non-inferiority margin of 0.05; EU-TIRADS [&ge;] 4 was the prespecified comparator, with [&ge;] 5 as a sensitivity analysis. ResultsConfig D reached an AUROC of 0.953 (95% CI 0.909-0.976), versus 0.948 (0.894-0.972) for EU-TIRADS (difference +0.004, 95% CI -0.016 to +0.025), which met the non-inferiority criterion; Configs A-C, without the qualitative descriptors, reached 0.883-0.892 (Holm-adjusted p = 0.045 versus EU-TIRADS). At [&ge;] 4, EU-TIRADS had a sensitivity of 98.0% and produced 94 false positives among 205 benign nodules; at a threshold fixed on validation data, Config D reclassified 72 of them as negative while missing two additional cancers. Against EU-TIRADS [&ge;] 5 (sensitivity 92.2%, specificity 95.1%), Config D at its native threshold (88.2%, 94.1%) did not classify more nodules correctly (McNemar p = 0.22), and at its two other thresholds it classified fewer nodules correctly (p = 0.004 and 0.007). Raw probabilities were miscalibrated (expected calibration error 0.117 for Config D), and Platt scaling within the test set reduced this error to 0.019-0.040. ConclusionGiven the ultrasound image together with the radiologists structured descriptors, the fine-tuned model matched expert EU-TIRADS discrimination and, against the [&ge;] 4 threshold, reclassified most false positives as negative, a gain concentrated in category 4 and based on only three cancers in category 4. It is best positioned as a report-standardizing second reader in the EU-TIRADS 4 gray zone, pending prospective external validation. Summary StatementA fine-tuned medical vision-language model given the ultrasound image and the radiologists structured report matched expert EU-TIRADS discrimination of thyroid nodules and would have deferred most aspirations of benign category 4 nodules, at the cost of one or two missed category 4 cancers depending on the threshold, based on only three cancers in category 4. Key PointsO_LIOn a test set of 256 thyroid nodules sealed before training, the model given the ultrasound image and the radiologists 16-field structured report reached an area under the receiver operating characteristic curve of 0.953, non-inferior to expert EU-TIRADS (0.948). C_LIO_LIAgainst EU-TIRADS 4 or higher, the model reclassified as negative 72 of the 94 false-positive nodules at a threshold fixed on validation data, at the cost of two additional missed cancers. C_LIO_LIAdding the radiologists qualitative descriptors to the image raised the area under the curve from 0.892 (Config A) to 0.953, and Platt scaling reduced the calibration error of the model from 0.117 to 0.019-0.040. C_LI",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-10-24",
-    "updated": "2026-10-24",
-    "primary_category": "radiology and imaging",
-    "categories": [
-      "radiology and imaging"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.21.26366156v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.21.26366156v1.full.pdf"
-      }
-    ],
-    "score": 41,
-    "infographic": {
-      "key_insight": "MedGemma with structured radiologist descriptors met the prespecified non-inferiority criterion versus EU-TIRADS for thyroid nodule malignancy discrimination; configurations without those descriptors performed worse.",
-      "clinical_relevance": "This diagnostic AI study—not drug discovery—suggests potential to reduce false positives, but with additional missed cancers and no demonstrated advantage over EU-TIRADS ≥5.",
-      "method": [
-        "Retrospective thyroid ultrasound study using two Tunisian centers and selected public-dataset images.",
-        "Fine-tuned MedGemma 1.5 4B across four input configurations, with patient-level training, validation and sealed test splits.",
-        "Compared performance against expert-rated EU-TIRADS; EU-TIRADS categories were never model inputs."
-      ],
-      "evidence_signal": "Among 256 test nodules, including 51 malignant nodules, the descriptor-enhanced model achieved AUROC 0.953 versus 0.948 for EU-TIRADS; at a validation-fixed threshold, it reclassified 72 EU-TIRADS ≥4 false positives as negative while missing two additional cancers.",
-      "watch_item": "Retrospective, FNA-selected data and reliance on radiologist descriptors warrant prospective external validation before clinical implementation.",
-      "hashtags": [
-        "#ThyroidCancer",
-        "#MedicalAI",
-        "#Ultrasound",
-        "#DiagnosticAccuracy",
-        "#VisionLanguageModels"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-24-medrxiv-fine_tuned_medical_vision_language_model_medgemma_1_5_4b_with_and_without_structured_radio",
-      "paper_title": "Fine-tuned Medical Vision-Language Model (MedGemma 1.5 4B) with and without Structured Radiologist Descriptors versus EU-TIRADS for Malignancy Risk Stratification of Thyroid Nodules at Ultrasound: A Tunisian Multicenter Diagnostic Accuracy Study",
-      "paper_date": "2026-10-24",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-10-30T13:45:20",
+      "generated_at": "2026-10-31T13:14:10",
       "generator": "openai"
     }
   }
