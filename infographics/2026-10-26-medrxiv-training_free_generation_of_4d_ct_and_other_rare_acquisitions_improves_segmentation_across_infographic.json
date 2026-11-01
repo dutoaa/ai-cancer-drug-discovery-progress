@@ -1,18 +1,18 @@
 {
   "key_insight": "Patient-specific biomechanical simulation generated realistic imaging variations without training a generative model, improving segmentation across three imaging modalities.",
-  "clinical_relevance": "This imaging study—not drug discovery research—suggests simulated acquisitions could improve tumor and plaque segmentation without additional patient scanning.",
+  "clinical_relevance": "The approach could improve AI delineation of breast cancers and lung tumors from routine scans without additional imaging; this study concerns segmentation, not drug discovery.",
   "method": [
-    "Model breast compression, respiratory motion, and arterial wall distension from routine scans.",
-    "Use simulated displacement fields to deform images and corresponding segmentation masks.",
-    "Compare segmentation training with versus without generated acquisitions."
+    "Simulate breast compression, respiratory motion, and arterial wall distension from routine scans.",
+    "Apply simulated displacement fields to both images and segmentation masks.",
+    "Compare segmentation models trained with and without generated acquisitions."
   ],
-  "evidence_signal": "Cross-validation and held-out testing showed reported Dice increases of 6.6% for breast and 10.1% for lung (both p<0.05), and 4.5% for carotid plaque (p>0.05); simulated lung motion achieved 0.94 ± 0.02 volume-overlap Dice against real 4D CT.",
-  "watch_item": "The carotid improvement was not statistically significant, and segmentation gains do not establish better clinical outcomes.",
+  "evidence_signal": "Cross-validation and held-out testing showed reported Dice improvements of 6.6% for breast and 10.1% for lung (both p<0.05), and 4.5% for carotid plaque (p>0.05); simulated lung volumes overlapped real 4D CT with Dice 0.94 ± 0.02.",
+  "watch_item": "Carotid improvement was not statistically significant, and segmentation gains do not establish improved clinical outcomes.",
   "hashtags": [
     "#MedicalImaging",
+    "#CancerAI",
     "#BiomechanicalSimulation",
     "#ImageSegmentation",
-    "#CancerAI",
     "#SyntheticData"
   ],
   "model": "gpt-6.1-sol",
@@ -21,6 +21,6 @@
   "paper_title": "Training-free generation of 4D CT and other rare acquisitions improves segmentation across modalities",
   "paper_date": "2026-10-26",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-31T13:13:57",
+  "generated_at": "2026-11-01T13:57:36",
   "generator": "openai"
 }

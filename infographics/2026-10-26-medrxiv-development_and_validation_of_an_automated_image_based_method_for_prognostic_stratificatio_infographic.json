@@ -1,17 +1,17 @@
 {
-  "key_insight": "Automated Marker Expression Level (MEL) scoring quantified lung adenocarcinoma biomarkers and supported prognostic stratification comparable to expert visual scoring.",
-  "clinical_relevance": "This framework could support scalable prognostic biomarker assessment, but it evaluates prognosis rather than drug discovery or treatment selection.",
+  "key_insight": "An automated image-analysis framework quantified lung adenocarcinoma biomarkers and reproduced prognostic stratification comparable to expert visual scoring.",
+  "clinical_relevance": "The approach could support more reproducible prognostic research in lung adenocarcinoma, but does not establish treatment-selection or drug-discovery utility.",
   "method": [
-    "Segment tissue regions using a machine-learning Fiji plugin.",
-    "Calculate tumour-area-weighted MEL scores for BRCA1, GLUT1 and QKI, normalizing staining variability.",
-    "Combine MEL scores with tumour stage in a Cox-derived Combined Prognostic Index."
+    "Segment tissue regions using machine learning in an open-source Fiji/ImageJ pipeline.",
+    "Calculate tumour-area-weighted Marker Expression Level (MEL) scores with staining normalization.",
+    "Combine BRCA1, GLUT1 and QKI MEL scores with tumour stage in a Cox-based prognostic index."
   ],
   "evidence_signal": "In 128 patients, MEL correlated with visual H-scores (Spearman ρ = 0.61–0.69; p < 0.001), and the combined index separated disease-free and overall survival risk groups (p < 0.05).",
-  "watch_item": "Independent external validation is not described in the abstract, and segmentation performed less well in highly immune-infiltrated stroma.",
+  "watch_item": "Independent external validation is not described in the abstract, and segmentation performed less well in highly immune-infiltrated stromal regions.",
   "hashtags": [
     "#PrecisionOncology",
-    "#LungAdenocarcinoma",
     "#DigitalPathology",
+    "#LungAdenocarcinoma",
     "#MachineLearning",
     "#PrognosticBiomarkers"
   ],
@@ -21,6 +21,6 @@
   "paper_title": "Development and Validation of an Automated Image-Based Method for Prognostic Stratification in Lung Adenocarcinoma using Immunohistochemical Markers",
   "paper_date": "2026-10-26",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-10-31T13:13:51",
+  "generated_at": "2026-11-01T13:57:28",
   "generator": "openai"
 }

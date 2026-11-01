@@ -1,0 +1,26 @@
+{
+  "key_insight": "An AI-derived focal TIL score captures localized immune infiltration in lung adenocarcinoma and was associated with overall survival among patients treated with immune checkpoint inhibitors.",
+  "clinical_relevance": "Routine H&E pathology images may support prognostic assessment, but this study does not establish that the score predicts immunotherapy benefit or should guide treatment.",
+  "method": [
+    "Detect lymphocytes using a deep learning model trained on immunohistochemistry-derived ground truth.",
+    "Segment tumor and adjacent stroma using a model trained on consensus pathologist annotations.",
+    "Quantify localized lymphocyte density across tissue tiles rather than relying on a global average."
+  ],
+  "evidence_signal": "Analytical validation achieved lymphocyte concordance CCC=0.90 and segmentation Dice=0.87; in 685 ICI-treated patients, the score was associated with overall survival (HR=0.60, 95% CI 0.48–0.75; P<0.001), with reported prognostic performance exceeding PD-L1.",
+  "watch_item": "Prospective validation and comparison with patients not receiving ICI are needed before interpreting the score as predictive of treatment benefit.",
+  "hashtags": [
+    "#PrecisionOncology",
+    "#ComputationalPathology",
+    "#LungAdenocarcinoma",
+    "#TumorInfiltratingLymphocytes",
+    "#CancerAI"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-28-medrxiv-quantifying_localized_tumor_infiltrating_lymphocytes_by_deep_learning_on_h_e_images_analyt",
+  "paper_title": "Quantifying Localized Tumor-Infiltrating Lymphocytes by Deep Learning on H&E Images: Analytical Validation and Prognostic Value in Lung Adenocarcinoma",
+  "paper_date": "2026-10-28",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-11-01T13:57:20",
+  "generator": "openai"
+}
