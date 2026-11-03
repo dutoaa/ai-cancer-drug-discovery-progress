@@ -1,0 +1,26 @@
+{
+  "key_insight": "A deep learning MRI biomarker mapped glioma infiltration beyond contrast-enhancing margins, reaching an independent test-set AUC of 0.942 after augmentation optimization.",
+  "clinical_relevance": "The investigational infiltration maps may support surgical planning, radiotherapy targeting, and glioma burden assessment; this is imaging biomarker research, not drug discovery.",
+  "method": [
+    "Trained a 3D convolutional neural network on multiparametric MRI patches.",
+    "Used localized glioma biopsies as histopathologic ground truth and peritumoral metastasis regions as non-tumor controls.",
+    "Applied patient-level cross-validation, independent testing, and optimized augmentation to generate voxel-wise infiltration maps."
+  ],
+  "evidence_signal": "The abstract reports 121 biopsy-localized samples from 56 glioma patients and 104 control samples from 26 metastasis patients; optimization increased test accuracy from 74.5% to 85.5% and AUC from 0.859 to 0.942 (p = 0.008).",
+  "watch_item": "Prospective clinical utility remains unproven, and the abstract inconsistently reports the metastasis cohort size as 24 versus 26 patients.",
+  "hashtags": [
+    "#Glioma",
+    "#Glioblastoma",
+    "#DeepLearning",
+    "#MultiparametricMRI",
+    "#ImagingBiomarkers"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-28-medrxiv-biopsy_validated_deep_learning_mapping_of_glioma_infiltration_beyond_contrast_enhancement",
+  "paper_title": "Biopsy-Validated Deep Learning Mapping of Glioma Infiltration Beyond Contrast Enhancement Using Multiparametric MRI",
+  "paper_date": "2026-10-28",
+  "paper_category": "Target Biology",
+  "generated_at": "2026-11-03T14:47:21",
+  "generator": "openai"
+}

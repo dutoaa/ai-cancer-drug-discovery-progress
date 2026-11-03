@@ -1,19 +1,19 @@
 {
   "key_insight": "An AI-derived focal TIL score captures localized immune infiltration on routine lung adenocarcinoma pathology images and was associated with overall survival after immune checkpoint inhibitor therapy.",
-  "clinical_relevance": "The score may support future prognostic biomarker research, but this study does not establish its ability to guide treatment selection.",
+  "clinical_relevance": "The score may support future prognostic biomarker research in lung adenocarcinoma, but this study does not establish its ability to guide treatment selection.",
   "method": [
-    "Detect lymphocytes on H&E images using deep learning trained on immunohistochemistry-derived ground truth.",
+    "Detect lymphocytes on H&E images using a deep learning model trained with immunohistochemistry-derived ground truth.",
     "Segment tumor and adjacent stroma using a model trained on consensus pathologist annotations.",
-    "Quantify tile-level TIL density to capture localized infiltration rather than a global average."
+    "Quantify tile-level lymphocyte density across scorable tissue to capture spatial heterogeneity."
   ],
-  "evidence_signal": "Analytical validation yielded lymphocyte detection CCC=0.90 and region segmentation Dice=0.87; among 685 ICI-treated patients, the score was associated with overall survival (HR=0.60, 95% CI 0.48–0.75; P<0.001) and reportedly outperformed PD-L1.",
-  "watch_item": "Association in an ICI-treated cohort does not establish prediction of treatment benefit; prospective validation is needed before clinical implementation.",
+  "evidence_signal": "Analytical validation yielded lymphocyte detection CCC=0.90 and segmentation Dice=0.87; among 685 ICI-treated patients, the focal TIL score was associated with overall survival (HR=0.60, 95% CI 0.48–0.75; P<0.001), with reported prognostic performance exceeding PD-L1.",
+  "watch_item": "An association within an ICI-treated cohort does not establish prediction of treatment benefit; independent prospective validation is needed before clinical implementation.",
   "hashtags": [
     "#PrecisionOncology",
-    "#DigitalPathology",
-    "#TumorInfiltratingLymphocytes",
+    "#ComputationalPathology",
     "#LungAdenocarcinoma",
-    "#Immunotherapy"
+    "#TumorInfiltratingLymphocytes",
+    "#ImmunotherapyBiomarkers"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Quantifying Localized Tumor-Infiltrating Lymphocytes by Deep Learning on H&E Images: Analytical Validation and Prognostic Value in Lung Adenocarcinoma",
   "paper_date": "2026-10-28",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-11-02T16:43:27",
+  "generated_at": "2026-11-03T14:47:16",
   "generator": "openai"
 }

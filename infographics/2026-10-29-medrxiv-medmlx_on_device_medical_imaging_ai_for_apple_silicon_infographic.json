@@ -1,0 +1,26 @@
+{
+  "key_insight": "MedMLX brings 21 established medical imaging AI models to Apple Silicon, closely matching original software outputs without specialized NVIDIA hardware.",
+  "clinical_relevance": "Local organ and tumor imaging workflows could become more accessible to oncology researchers, but this study does not establish clinical benefit or support cancer drug discovery claims.",
+  "method": [
+    "Reimplemented segmentation, detection, synthesis and report-generation models in Apple's MLX framework.",
+    "Compared outputs on public cases from 11 imaging datasets against original CPU and NVIDIA GPU implementations.",
+    "Measured memory use and processing time on a 64 GB Apple M1 Max."
+  ],
+  "evidence_signal": "Agreement criteria were met in 211 of 212 comparisons; a memory-saving setting kept 19 of 21 models below 16 GB, with median memory savings of 49% and a median processing-time increase of 13%.",
+  "watch_item": "Software agreement is not clinical validation, and performance measured on one Apple hardware configuration may not generalize to other devices or datasets.",
+  "hashtags": [
+    "#MedicalImagingAI",
+    "#AppleSilicon",
+    "#OnDeviceAI",
+    "#OncologyResearch",
+    "#ReproducibleAI"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-10-29-medrxiv-medmlx_on_device_medical_imaging_ai_for_apple_silicon",
+  "paper_title": "MedMLX: On-Device Medical Imaging AI for Apple Silicon",
+  "paper_date": "2026-10-29",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-11-03T14:47:29",
+  "generator": "openai"
+}

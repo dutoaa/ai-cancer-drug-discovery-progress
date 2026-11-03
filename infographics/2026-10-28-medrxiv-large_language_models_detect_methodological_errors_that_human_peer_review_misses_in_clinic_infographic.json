@@ -1,26 +1,26 @@
 {
-  "key_insight": "In a benchmark using clinical trial reports with inserted methodological errors, 15 LLMs detected 53%–99% of major errors across two test sets.",
-  "clinical_relevance": "The findings suggest a potential role for LLM-assisted review of clinical trial research, not evidence of improved cancer drug discovery or patient outcomes.",
+  "key_insight": "In this benchmark, LLMs detected many inserted methodological errors in clinical trial reports, suggesting a potential role in supporting peer review rather than cancer drug discovery.",
+  "clinical_relevance": "AI-assisted review could help identify flaws in clinical trial evidence, but the abstract does not establish oncology-specific benefits or improved patient outcomes.",
   "method": [
-    "Tested 15 LLMs, including four open-weight models, on three previously studied randomized trial reports.",
-    "Repeated testing on 58 randomized trials published in 2026, including all eligible phase 3 trials.",
-    "Scored 1,796 reviews using two blinded LLM judges."
+    "Tested 15 LLMs, including four open-weight models, on three trial reports containing inserted errors.",
+    "Repeated testing on three trials published in 2026 to reduce memorization risk.",
+    "Evaluated error detection and flags in control reports without inserted errors."
   ],
-  "evidence_signal": "Major-error detection ranged from 53%–96% on the original reports, versus a previously reported 27% mean for untrained human reviewers, and 58%–99% on the 2026 trials.",
-  "watch_item": "Models also flagged 14%–29% of error types in control reports without inserted errors, raising concerns about false alarms and the need for expert verification.",
+  "evidence_signal": "Major-error detection ranged from 53%–96% initially and 51%–99% on newer trials, compared with a 27% mean for untrained human reviewers in an earlier experiment.",
+  "watch_item": "Models also flagged 2%–29% of error types in unmodified control reports, underscoring the need for expert verification of AI-generated critiques.",
   "hashtags": [
+    "#AIResearch",
     "#ClinicalTrials",
     "#PeerReview",
-    "#LargeLanguageModels",
     "#ResearchIntegrity",
-    "#ClinicalTranslation"
+    "#LargeLanguageModels"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
   "paper_id": "2026-10-28-medrxiv-large_language_models_detect_methodological_errors_that_human_peer_review_misses_in_clinic",
   "paper_title": "Large language models detect methodological errors that human peer review misses in clinical trials",
   "paper_date": "2026-10-28",
-  "paper_category": "Clinical Translation",
-  "generated_at": "2026-11-02T16:43:32",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-11-03T14:47:48",
   "generator": "openai"
 }
