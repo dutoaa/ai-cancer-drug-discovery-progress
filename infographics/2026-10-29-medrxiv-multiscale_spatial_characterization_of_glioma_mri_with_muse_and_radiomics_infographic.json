@@ -1,13 +1,13 @@
 {
-  "key_insight": "MUSE maps glioma MRI heterogeneity by physical distance and direction, showing substantial overlap with directional radiomics rather than evidence of drug discovery.",
-  "clinical_relevance": "This research may support imaging-based characterization of glioma, but it does not establish clinical utility or guide treatment selection.",
+  "key_insight": "MUSE captured scale- and direction-dependent glioma MRI heterogeneity, with substantial overlap with directional radiomics rather than clearly independent molecular information.",
+  "clinical_relevance": "These imaging measurements may support research into glioma characterization, but the study does not establish clinical utility or evaluate cancer drug discovery.",
   "method": [
-    "Analyzed postcontrast T1-weighted MRI and enhancing-tumor segmentations from 416 UCSF-PDGM patients.",
-    "Compared native 3D MUSE variograms with directional GLCM radiomics in 375 paired cases.",
-    "Tested IDH associations using patient-level permutations and evaluated a separate 3D CNN for IDH classification."
+    "Analyzed postcontrast T1-weighted MRI and enhancing-tumor segmentations from UCSF-PDGM.",
+    "Compared native 3D MUSE variograms with directional GLCM radiomics and tested associations with IDH status.",
+    "Evaluated a separate 3D residual CNN for image-based IDH classification."
   ],
-  "evidence_signal": "MUSE and half GLCM contrast correlated strongly across 9,371 aligned offsets (r = 0.954); the independent CNN achieved out-of-fold IDH ROC-AUC 0.792 and PR-AUC 0.414.",
-  "watch_item": "In grade-4 tumors, the MUSE–IDH association weakened after directional GLCM adjustment (p = 0.256), limiting evidence of added molecular information beyond those radiomic features.",
+  "evidence_signal": "Among 416 patients, including 375 with paired radiomics, aligned MUSE and GLCM measurements correlated strongly (r = 0.954); the independent CNN achieved out-of-fold IDH ROC-AUC 0.792.",
+  "watch_item": "In the grade-4 subgroup, only 24 of 364 tumors were IDH-mutant, and the MUSE–IDH association was attenuated after directional GLCM adjustment (p = 0.256).",
   "hashtags": [
     "#Glioma",
     "#MRI",
@@ -21,6 +21,6 @@
   "paper_title": "Multiscale Spatial Characterization of Glioma MRI with MUSE and Radiomics",
   "paper_date": "2026-10-29",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-11-03T14:47:41",
+  "generated_at": "2026-11-04T14:59:59",
   "generator": "openai"
 }

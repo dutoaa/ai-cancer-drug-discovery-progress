@@ -1,19 +1,19 @@
 {
-  "key_insight": "PhenOM, a single foundation model for medical-event prediction—not cancer drug discovery—was validated on thousands of tasks covering more than 1,770 outcomes.",
-  "clinical_relevance": "The model could support patient-level risk assessment and screening across clinical specialties, but the abstract does not establish improved clinical outcomes.",
+  "key_insight": "PhenOM, a single foundation model for medical-event prediction—not cancer drug discovery—validated thousands of predictive tasks spanning more than 1,770 outcomes.",
+  "clinical_relevance": "The model could support patient-level risk assessment and screening across clinical domains, but the abstract does not establish benefits for clinical decisions or patient outcomes.",
   "method": [
     "Trained on longitudinal medical-event data from more than 400 million patient records.",
-    "Evaluated Future Risk, Screening, Care Opportunity, and Treatment Effect tasks, with prediction horizons up to five years.",
+    "Evaluated Future Risk, Screening, Care Opportunity, and Treatment Effect tasks.",
     "Defined eligible populations and outcomes using standardized medical codes where possible."
   ],
-  "evidence_signal": "On evaluation data excluded from training, 80% of predictive tasks achieved AUROC ≥0.70 and 30% achieved ≥0.80; 177 example tasks were presented.",
-  "watch_item": "Performance varied by outcome and clinical domain; AUROC alone does not establish calibration, clinical utility, or causal treatment effects.",
+  "evidence_signal": "On data excluded from training, 80% of predictive tasks achieved AUROC ≥0.70 and 30% achieved ≥0.80; the paper presents 177 example tasks.",
+  "watch_item": "Performance varied by outcome and domain; held-out AUROC alone does not establish calibration, external generalizability, or clinical utility.",
   "hashtags": [
-    "#HealthcareAI",
     "#FoundationModels",
-    "#RiskPrediction",
+    "#PredictiveAI",
     "#RealWorldData",
-    "#ClinicalResearch"
+    "#ClinicalResearch",
+    "#ModelValidation"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Performance of a foundation model to generate thousands of predicted outcomes across multiple use cases",
   "paper_date": "2026-10-29",
   "paper_category": "Virtual Screening",
-  "generated_at": "2026-11-03T14:47:24",
+  "generated_at": "2026-11-04T14:59:47",
   "generator": "openai"
 }

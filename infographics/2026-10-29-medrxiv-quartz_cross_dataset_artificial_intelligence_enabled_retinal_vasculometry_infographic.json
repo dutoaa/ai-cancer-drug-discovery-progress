@@ -1,19 +1,19 @@
 {
-  "key_insight": "QUARTZ automates retinal vessel measurement across diverse image datasets to support biomarker research; this paper does not study cancer drug discovery.",
-  "clinical_relevance": "Retinal vessel morphology may inform research into ocular and systemic diseases, but clinical benefit is not established here.",
+  "key_insight": "QUARTZ is an AI-enabled retinal vasculometry system that improves cross-dataset vessel analysis; this paper concerns retinal imaging, not cancer drug discovery.",
+  "clinical_relevance": "Automated retinal vessel measurements could support research into ocular and systemic disease biomarkers, but this abstract does not establish clinical benefit.",
   "method": [
-    "Uses AI-enabled retinal vasculometry to measure vessel topology and size.",
-    "Leverages 26 annotated datasets to improve cross-dataset generalisation.",
-    "Extracts useful information from lower-quality, partially illuminated images."
+    "Uses 26 annotated retinal image datasets spanning diverse populations, diseases, cameras, and imaging protocols.",
+    "Segments arterioles, venules, vessels, optic discs, and optic cups, and classifies image quality.",
+    "Extracts information from lower-quality, partially illuminated images."
   ],
   "evidence_signal": "External EPIC-Norfolk evaluation reported F1 scores of 0.8305 for arterioles, 0.8477 for venules, 0.8741 for vessels, 0.9532 for optic discs, 0.8677 for optic cups, and 0.9197 for image quality classification.",
-  "watch_item": "Cross-dataset improvements were not observed for optic cup segmentation or image quality classification, so gains should not be assumed across all tasks.",
+  "watch_item": "Cross-dataset improvements were not observed for optic cup segmentation or image quality classification, indicating that generalisation gains were task-dependent.",
   "hashtags": [
     "#RetinalImaging",
     "#ArtificialIntelligence",
     "#Vasculometry",
     "#BiomarkerResearch",
-    "#CrossDatasetValidation"
+    "#CrossDatasetGeneralisation"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "QUARTZ: Cross-Dataset Artificial Intelligence-Enabled Retinal Vasculometry",
   "paper_date": "2026-10-29",
   "paper_category": "Target Biology",
-  "generated_at": "2026-11-03T14:47:44",
+  "generated_at": "2026-11-04T15:00:02",
   "generator": "openai"
 }

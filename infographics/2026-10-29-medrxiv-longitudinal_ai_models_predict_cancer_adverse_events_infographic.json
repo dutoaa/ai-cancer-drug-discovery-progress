@@ -1,19 +1,19 @@
 {
-  "key_insight": "SPARC uses longitudinal health measurements to predict cancer-related adverse events, supporting toxicity risk assessment rather than drug discovery.",
-  "clinical_relevance": "The model identified patients most likely to benefit from G-CSF, suggesting potential to support targeted toxicity prevention.",
+  "key_insight": "SPARC uses longitudinal health measurements to predict cancer-related adverse events, supporting toxicity-risk research rather than drug discovery.",
+  "clinical_relevance": "Risk prediction could help target supportive care, including G-CSF, but clinical benefit from model-guided care requires prospective evaluation.",
   "method": [
-    "Transformer-based foundation model using routinely collected health measurements.",
-    "Pre-trained and fine-tuned on 101,920,379 measurements from 224,047 patients with cancer.",
-    "Pooled multi-institution fine-tuning improved generalizability more than single-institution fine-tuning."
+    "Transformer-based foundation model trained on routinely collected health measurements.",
+    "Pre-trained and fine-tuned to predict cancer-related adverse events.",
+    "Pooled multi-institution fine-tuning improved generalizability over single-institution fine-tuning."
   ],
-  "evidence_signal": "The abstract reports state-of-the-art prediction on held-out data, a same-center prospective cohort (23,126 patients), public external datasets (26,012), and two external multi-hospital cohorts (562,620 and 206,840).",
-  "watch_item": "The abstract does not establish that model-guided care improves patient outcomes; prospective clinical impact evaluation remains important.",
+  "evidence_signal": "Training used 101,920,379 measurements from 224,047 patients; evaluation included held-out data, a prospective same-center cohort of 23,126 patients, and external cohorts of 26,012, 562,620, and 206,840 patients.",
+  "watch_item": "The abstract does not report numerical performance or demonstrate that deploying SPARC improves patient outcomes.",
   "hashtags": [
     "#PrecisionOncology",
     "#ClinicalAI",
     "#CancerToxicity",
-    "#FoundationModels",
-    "#RealWorldData"
+    "#LongitudinalData",
+    "#FoundationModels"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Longitudinal AI Models Predict Cancer Adverse Events",
   "paper_date": "2026-10-29",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-11-03T14:47:33",
+  "generated_at": "2026-11-04T14:59:54",
   "generator": "openai"
 }
