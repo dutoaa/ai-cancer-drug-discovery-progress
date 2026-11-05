@@ -1,0 +1,26 @@
+{
+  "key_insight": "Pretrained MobileNet with differential attention achieved the best slide-level discrimination of high- versus low-grade serous ovarian carcinoma, while adding spatial attention showed no detectable benefit.",
+  "clinical_relevance": "This grading study—not drug discovery—could inform future pathology decision-support tools, but does not establish clinical readiness.",
+  "method": [
+    "Compared CNN attention variants, pretrained MobileNet, and a Phikon foundation-model benchmark.",
+    "Used stain normalisation, slide-level pooling, and five-fold slide-grouped cross-validation.",
+    "Evaluated three training seeds with within-fold threshold selection and multiplicity-adjusted statistical comparisons."
+  ],
+  "evidence_signal": "On 259 slides (217 high-grade, 42 low-grade), pretrained MobileNet achieved AUC 0.862 ± 0.005 and MCC 0.460, significantly outperforming the no-attention baseline.",
+  "watch_item": "The small, imbalanced single-cohort evaluation and colour-only AUC of 0.66 warrant external validation for stain-related confounding and generalisability.",
+  "hashtags": [
+    "#OvarianCancer",
+    "#ComputationalPathology",
+    "#AttentionMechanisms",
+    "#TransferLearning",
+    "#AIValidation"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-11-01-medrxiv-which_attention_helps_a_slide_level_ablation_of_attention_augmented_cnns_for_serous_ovaria",
+  "paper_title": "Which Attention Helps? A Slide-Level Ablation of Attention-Augmented CNNs for Serous Ovarian Carcinoma Grading",
+  "paper_date": "2026-11-01",
+  "paper_category": "Clinical Translation",
+  "generated_at": "2026-11-05T15:04:19",
+  "generator": "openai"
+}
