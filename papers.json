@@ -1,15 +1,15 @@
 [
   {
-    "id": "2026-10-30-medrxiv-deep_learning_reveals_prognostic_information_beyond_ajcc_stage_in_routine_histopathology_o",
-    "doi": "10.64898/2026.10.29.26366599",
-    "date": "2026-10-30",
-    "title": "Deep learning reveals prognostic information beyond AJCC stage in routine histopathology of early-stage melanoma: the population-based D-ESMEL study",
-    "authors": "Ouwerkerk, J.; Akram, F.; Hollestein, L.; Kerkour, T.; Zhou, C.; Stubbs, A.; Mooyaart, A.; Li, Y.",
-    "abstract": "Of all melanoma patients who develop distant metastasis over time, 41% were initially diagnosed with stage I/II. More accurate prognostic models are needed to select patients for potential (neo)adjuvant therapy. We hypothesise that histopathological features in whole slide images (WSIs) from primary early-stage melanomas provide additional information beyond American Joint Committee on Cancer (AJCC) stage. We utilised data from the population-based Dutch Early-Stage Melanoma (D-ESMEL) study. This included a discovery set (n=328) of case-control sets matched on follow-up time and known prognostic features (i.e. Breslow thickness, ulceration, age, and sex) and a validation cohort based on >5,500 patients following a nested case-control (NCC) design with stage-matched controls (n=266). We developed an end- to-end deep learning workflow to automatically extract relevant patches from WSIs and predict patient-level metastatic risk based on histopathological features independent of AJCC stage. The discovery set served as a training set for the workflow using 10-fold cross-validation. The prognostic performance of this model and its independence from clinical risk factors was evaluated in the validation cohort using odds ratios (OR) and the weighted C-index. We achieved a balanced accuracy of 0{middle dot}88 ({micro}: 0{middle dot}81; 95% CI: 0{middle dot}77-0{middle dot}85) in the best validation fold of the discovery set. In the validation cohort, metastatic risk predictions from the deep learning model were an independent prognostic factor (adjusted OR: 1{middle dot}97; p<0{middle dot}01). Combining the deep learning predictions (C-index: 0{middle dot}86) with AJCC stage (C-index: 0{middle dot}80) yielded the highest C-index of 0{middle dot}87, significantly improving the C-index compared to AJCC stage alone (p<0{middle dot}001). Our histopathology-based deep learning model was rigorously evaluated in a population-based cohort and demonstrated added prognostic value beyond AJCC stage. Further investigations of the underlying biological features could improve clinical decision making and patient outcomes.",
+    "id": "2026-11-02-medrxiv-variantscape_retrospective_study_of_large_language_model_based_extraction_of_variant_treat",
+    "doi": "10.64898/2026.08.02.26359492",
+    "date": "2026-11-02",
+    "title": "Variantscape: Retrospective Study of Large Language Model-Based Extraction of Variant-Treatment-Cancer Associations from Published Oncology Abstracts",
+    "authors": "Wosny, M.; Blindu, A. S.; Boesch, M.; Peres, T.; Niederhauser, T.; Fruh, M.; Rothermundt, C.; Hastings, J.",
+    "abstract": "ObjectivesPrecision oncology relies on accurate interpretation of tumour-detected gene variants, to guide personalised treatment decisions. However, interpretation of variants in context requires extensive information that is often buried within unstructured biomedical literature and obscured by inconsistent nomenclature, making manual retrieval labour-intensive and prone to omissions. In this study, our aim was to evaluate the potential of large language models to extract variant-treatment-cancer associations at scale from published abstracts. DesignWe developed Variantscape, a large-scale, automated pipeline and open-access web tool. It integrates traditional natural language processing methods with state-of-the-art large language models to extract, standardise, and analyse co-associations between genetic variants, cancer types, and therapeutic interventions from published biomedical abstracts. ResultsFrom over 3.7 million abstracts published between January 2014 and October 2026, 886,195 articles containing gene names were eligible for extraction. Among these, 37,895 (4.3%) mentioned a variant, cancer type, and therapeutic agent together, covering 11,985 unique variants across 197 cancer types and 547 therapeutic agents. LLM verification against the abstract text confirmed at least one association in 35,224 papers, giving a literature-derived graph of 10,571 nodes and 44,644 verified edges. Canonical alterations in well-studied cancers (e.g., BRAF V600E in melanoma) were strongly linked to established treatments, while several rare variants also emerged with high-confidence literature support. ConclusionsBy applying large language models to biomedical literature, Variantscape enables scalable, context-aware extraction of trilateral variant-treatment-cancer relationships. This approach supports early evidence synthesis/hypothesis generation, highlights underrecognized or rare associations for MTB preparation, and offers a practical resource for accelerating discovery and supporting precision oncology research and translation. FundingThis study was funded by the School of Medicine at the University of St. Gallen in Switzerland under grant number 2300380. Article SummaryO_ST_ABSStrengths and limitations of this studyC_ST_ABS[bullet] Variantscape combines traditional natural language processing with large language models to enable scalable, automated extraction of variant-cancer-treatment relationships from over 3.7 million biomedical abstracts, substantially reducing the manual search burden inherent to existing molecular tumour board workflows. [bullet]The pipeline applies large language model-based inference to standardise inconsistent genetic nomenclature across the literature, improving the comparability and reliability of extracted associations that would otherwise be obscured by terminological variation. [bullet]Variantscape is designed as a continuously updatable, open-access resource, meaning it can incorporate newly published evidence without requiring repeated manual intervention. [bullet]The pipeline relies solely on abstract-level text rather than full-text articles, which may limit the depth and granularity of extracted associations, as key methodological details, variant context, and nuanced clinical findings are frequently reported only within the body of published papers. [bullet]Automated extraction using large language models introduces a risk of misattribution of variant-cancer-treatment relationships, and without systematic manual validation of outputs, the precision of identified associations at scale remains difficult to fully characterise.",
     "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-10-30",
-    "updated": "2026-10-30",
+    "published": "2026-11-02",
+    "updated": "2026-11-02",
     "primary_category": "health informatics",
     "categories": [
       "health informatics"
@@ -17,38 +17,91 @@
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.29.26366599v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.02.26359492v2"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.29.26366599v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.02.26359492v2.full.pdf"
       }
     ],
-    "score": 57,
+    "score": 95,
     "infographic": {
-      "key_insight": "Deep learning of routine melanoma histopathology added prognostic information beyond AJCC stage, with the combined model achieving a C-index of 0.87 versus 0.80 for stage alone.",
-      "clinical_relevance": "This prognostic approach could support future risk stratification in early-stage melanoma, but it does not establish treatment benefit or discover new drugs.",
+      "key_insight": "Variantscape uses large language models to map literature-reported links between genetic variants, cancer types, and treatments at scale.",
+      "clinical_relevance": "The tool may support precision oncology research and molecular tumour board preparation, but extracted associations do not establish treatment benefit.",
       "method": [
-        "Automatically extracted relevant patches from primary melanoma whole-slide images.",
-        "Trained a patient-level metastatic-risk model using 328 patients and 10-fold cross-validation.",
-        "Evaluated independent prognostic value in a population-based nested case-control validation sample."
+        "Screen biomedical abstracts for gene mentions using traditional NLP.",
+        "Use LLMs to extract and standardise variant–treatment–cancer associations.",
+        "Verify associations against abstract text and assemble an open-access knowledge graph."
       ],
-      "evidence_signal": "Validation included 266 patients sampled from a cohort of more than 5,500; model predictions remained independently prognostic (adjusted OR 1.97, p<0.01), and combining them with AJCC stage improved discrimination versus stage alone (p<0.001).",
-      "watch_item": "Clinical deployment requires further validation across settings and evidence that model-guided decisions improve outcomes.",
+      "evidence_signal": "Among 886,195 gene-containing abstracts, LLM verification identified at least one association in 35,224 papers, yielding 44,644 verified graph edges.",
+      "watch_item": "Verification was LLM-based and limited to abstracts; independent expert validation and clinical utility evaluation are not reported in the supplied abstract.",
       "hashtags": [
-        "#Melanoma",
-        "#DigitalPathology",
-        "#DeepLearning",
         "#PrecisionOncology",
-        "#CancerPrognosis"
+        "#LargeLanguageModels",
+        "#CancerResearch",
+        "#BiomedicalNLP",
+        "#EvidenceSynthesis"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
-      "paper_id": "2026-10-30-medrxiv-deep_learning_reveals_prognostic_information_beyond_ajcc_stage_in_routine_histopathology_o",
-      "paper_title": "Deep learning reveals prognostic information beyond AJCC stage in routine histopathology of early-stage melanoma: the population-based D-ESMEL study",
-      "paper_date": "2026-10-30",
+      "paper_id": "2026-11-02-medrxiv-variantscape_retrospective_study_of_large_language_model_based_extraction_of_variant_treat",
+      "paper_title": "Variantscape: Retrospective Study of Large Language Model-Based Extraction of Variant-Treatment-Cancer Associations from Published Oncology Abstracts",
+      "paper_date": "2026-11-02",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-11-05T15:04:17",
+      "generated_at": "2026-11-06T14:44:52",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-02-medrxiv-alzheimers_disease_and_psychiatric_polygenic_risk_are_disease_specific_and_independent_of",
+    "doi": "10.64898/2026.10.31.26366908",
+    "date": "2026-11-02",
+    "title": "Alzheimers disease and psychiatric polygenic risk are disease-specific and independent of plasma biomarkers in a real-world young-onset dementia cohort.",
+    "authors": "Bhalala, O. G.; Longfei, W.; Gerring, Z. F.; Han, J.; Kang, M. J.; Trounson, B. O.; Loi, S. M.; Velakoulis, D.; Eratne, D.; Bahlo, M.; The MiND Study Group,",
+    "abstract": "Background: Young onset dementia is frequently misdiagnosed, particularly where neurodegenerative and primary psychiatric disorders (PPD) overlap. Plasma biomarkers measure current pathology, whereas polygenic risk scores (PRS) capture lifelong genetic risk. Whether PRS derived from late-onset and population samples transfer to young-onset presentations, and how they relate to plasma biomarkers, is unknown. Methods: We studied 687 participants of European ancestry from the Markers in Neuropsychiatric Disorders (MiND) Study, a prospective young-onset neuropsychiatry cohort: 195 healthy controls (HC), 283 PPD, 55 Alzheimers disease (AD) and 154 non-AD neurodegenerative disease (oNDG). PRS for AD, a cross-disorder psychiatric factor (PSY), frontotemporal dementia, Lewy body dementia and Parkinsons disease were computed with PRS CS, excluding the APOE locus. Plasma NfL, GFAP and p-tau217 were available for 332 participants. Models were adjusted for age, sex and APOE e4 dose. Results: Relative to HC, the AD PRS was associated with AD (OR 1.69 per SD, 95% CI 1.17-2.45) but not PPD (0.95, 0.77-1.16). The PSY PRS showed the reciprocal pattern (PPD 1.29, 1.05-1.58; AD 1.00, 0.72-1.40). No PRS was associated with any plasma protein. In distinguishing PPD from oNDG, NfL was the strongest discriminator (OR 2.15, 1.62-2.83). The AD PRS was also associated with oNDG (1.38, 1.11-1.71), without improving discrimination (AUC 0.764 for NfL alone versus 0.773 combined). Conclusion: In young onset presentations, AD and psychiatric polygenic risk are disease-specific and independent of plasma biomarkers of neurodegeneration. Their combined diagnostic value requires evaluation in larger, longitudinal pre-clinical cohorts.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-11-02",
+    "updated": "2026-11-02",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.31.26366908v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.31.26366908v1.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "In a young-onset neuropsychiatry cohort, Alzheimer’s and psychiatric polygenic scores showed distinct disease associations, with no detected associations with measured plasma biomarkers.",
+      "clinical_relevance": "Genetic risk scores may capture information distinct from plasma biomarkers, but their added diagnostic value remains unproven.",
+      "method": [
+        "Studied 687 European-ancestry participants: 195 controls, 283 with primary psychiatric disorders, 55 with Alzheimer’s disease and 154 with other neurodegenerative diseases.",
+        "Computed five polygenic risk scores excluding APOE; adjusted models for age, sex and APOE ε4 dose.",
+        "Assessed plasma NfL, GFAP and p-tau217 in a 332-participant subset."
+      ],
+      "evidence_signal": "Alzheimer’s and psychiatric scores were associated with their respective diagnoses versus controls (OR per SD: 1.69 and 1.29); adding the Alzheimer’s score to NfL did not improve psychiatric-versus-other-neurodegenerative discrimination meaningfully (AUC 0.764 to 0.773).",
+      "watch_item": "European-ancestry sampling and limited biomarker availability constrain generalizability; diagnostic utility requires larger, longitudinal validation.",
+      "hashtags": [
+        "#YoungOnsetDementia",
+        "#AlzheimersResearch",
+        "#PolygenicRisk",
+        "#PlasmaBiomarkers",
+        "#Neuropsychiatry"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-02-medrxiv-alzheimers_disease_and_psychiatric_polygenic_risk_are_disease_specific_and_independent_of",
+      "paper_title": "Alzheimers disease and psychiatric polygenic risk are disease-specific and independent of plasma biomarkers in a real-world young-onset dementia cohort.",
+      "paper_date": "2026-11-02",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-11-06T14:44:54",
       "generator": "openai"
     }
   },
@@ -77,20 +130,20 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351441v2.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
-      "key_insight": "Pretrained MobileNet with differential attention achieved the best slide-level discrimination of high- versus low-grade serous ovarian carcinoma, while adding spatial attention showed no detectable benefit.",
-      "clinical_relevance": "This grading study—not drug discovery—could inform future pathology decision-support tools, but does not establish clinical readiness.",
+      "key_insight": "For slide-level ovarian serous carcinoma grading, pretrained MobileNet performed best, while adding spatial attention to channel attention showed no detectable benefit.",
+      "clinical_relevance": "Distinguishing high-grade from low-grade serous carcinoma could support pathology workflows, but this study evaluates classification—not drug discovery or clinical readiness.",
       "method": [
-        "Compared CNN attention variants, pretrained MobileNet, and a Phikon foundation-model benchmark.",
-        "Used stain normalisation, slide-level pooling, and five-fold slide-grouped cross-validation.",
-        "Evaluated three training seeds with within-fold threshold selection and multiplicity-adjusted statistical comparisons."
+        "Compared CNN attention variants, pretrained MobileNet with differential attention, and a Phikon foundation-model benchmark.",
+        "Used stain normalisation, slide-level pooling, and five-fold slide-grouped cross-validation to prevent slide leakage.",
+        "Evaluated three training seeds with within-fold threshold selection and multiplicity-corrected statistical comparisons."
       ],
-      "evidence_signal": "On 259 slides (217 high-grade, 42 low-grade), pretrained MobileNet achieved AUC 0.862 ± 0.005 and MCC 0.460, significantly outperforming the no-attention baseline.",
-      "watch_item": "The small, imbalanced single-cohort evaluation and colour-only AUC of 0.66 warrant external validation for stain-related confounding and generalisability.",
+      "evidence_signal": "On 259 UBC-OCEAN slides (217 high-grade, 42 low-grade), pretrained MobileNet achieved AUC 0.862 ± 0.005 and MCC 0.460, outperforming the no-attention baseline and Squeeze-and-Excitation model.",
+      "watch_item": "The imbalanced, single-cohort evaluation and colour-only AUC of 0.66 warrant external validation for stain-related confounding and generalisability.",
       "hashtags": [
-        "#OvarianCancer",
         "#ComputationalPathology",
+        "#OvarianCancer",
         "#AttentionMechanisms",
         "#TransferLearning",
         "#AIValidation"
@@ -101,60 +154,7 @@
       "paper_title": "Which Attention Helps? A Slide-Level Ablation of Attention-Augmented CNNs for Serous Ovarian Carcinoma Grading",
       "paper_date": "2026-11-01",
       "paper_category": "Clinical Translation",
-      "generated_at": "2026-11-05T15:04:19",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-10-30-medrxiv-a_regenerative_stem_cell_phenotype_marked_by_anxa1_defines_aggressive_colorectal_cancer_bi",
-    "doi": "10.64898/2026.10.28.26366700",
-    "date": "2026-10-30",
-    "title": "A regenerative stem cell phenotype marked by ANXA1 defines aggressive colorectal cancer biology",
-    "authors": "Rotte-Wettig, H. S.; Domingo, E.; Valbuena, G.; Nasreddin, N.; Harkin, A.; Iveson, T.; Saunders, M. P.; Oien, K. A.; Maka, N.; Pezzella, F.; Campo, L.; Browne, M.; Glaire, M.; Hay, J.; Edwards, J.; Sansom, O. J.; Kelly, C.; Tomlinson, I.; Kerr, R.; Kerr, D.; TransSCOT consortium, ; imCMS Consortium, ; Leedham, S.; Church, D. N.; Braeutigam, K.; Koelzer, V. H.",
-    "abstract": "BackgroundLGR5 and ANXA1 are markers for specific intestinal stem cell states. LGR5+/ANXA1- crypt base columnar cells (CBCs) maintain homeostasis, whereas ANXA1+/LGR5- regenerative stem cells (RSCs) are present in fetal and repairing epithelium. Both states have been described in colorectal cancer (CRC), yet their clinical significance remains unclear. We aimed to determine how ANXA1 and LGR5 expression relates to molecular subtype, immune microenvironment and outcome in CRC. MethodsDual-colour in situ hybridisation for ANXA1 and LGR5 was performed on tissue microarrays from 2163 patients in the randomised SCOT trial (ISRCTN59757862). AI-based digital pathology quantified marker-positive area by compartment and image based consensus molecular subtype (imCMS). Markers were related to clinicopathological, molecular and immune data, and to survival using Kaplan-Meier and multivariable Cox analyses. ResultsANXA1 and LGR5 showed inverse enrichment among a diverse group of parameters. ANXA1 was highest in CMS1 and LGR5 in CMS2, with CMS3 and CMS4 being intermediate. ANXA1 dominance was associated with right-sidedness, mismatch repair deficiency, BRAF-V600E mutation, high stromal content, T4 stage, low stromal FoxP3 and high epithelial CD68 density. Combining both markers improved prognostic discrimination compared with either alone (cancer-specific survival p<0.001; recurrence-free interval p=0.004), with ANXA1 dominance remaining an independent predictor of recurrence after adjustment (HR 1.43, 95% CI 1.08-1.90, p=0.014). ConclusionRelative ANXA1 enrichment defines an aggressive, stroma-rich, macrophage-enriched CRC subgroup with poor prognosis.",
-    "category": "Precision Oncology",
-    "source": "medRxiv",
-    "published": "2026-10-30",
-    "updated": "2026-10-30",
-    "primary_category": "oncology",
-    "categories": [
-      "oncology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.28.26366700v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.10.28.26366700v1.full.pdf"
-      }
-    ],
-    "score": 41,
-    "infographic": {
-      "key_insight": "ANXA1 enrichment relative to LGR5 marks an aggressive colorectal cancer phenotype associated with abundant stroma, macrophage enrichment and poorer prognosis.",
-      "clinical_relevance": "Combined ANXA1/LGR5 assessment may support prognostic stratification, but this study does not establish treatment selection or drug discovery utility.",
-      "method": [
-        "Dual-colour in situ hybridisation measured ANXA1 and LGR5 in tumour tissue from 2,163 SCOT trial patients.",
-        "AI-based digital pathology quantified marker-positive areas by tissue compartment and image-based molecular subtype.",
-        "Marker patterns were related to molecular features, immune context and survival using multivariable analyses."
-      ],
-      "evidence_signal": "Combined markers improved prognostic discrimination over either alone; ANXA1 dominance independently predicted recurrence after adjustment (HR 1.43, 95% CI 1.08–1.90; p=0.014).",
-      "watch_item": "These observational biomarker findings require independent validation and assay standardisation before clinical implementation.",
-      "hashtags": [
-        "#ColorectalCancer",
-        "#DigitalPathology",
-        "#ANXA1",
-        "#CancerBiomarkers",
-        "#PrecisionOncology"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-10-30-medrxiv-a_regenerative_stem_cell_phenotype_marked_by_anxa1_defines_aggressive_colorectal_cancer_bi",
-      "paper_title": "A regenerative stem cell phenotype marked by ANXA1 defines aggressive colorectal cancer biology",
-      "paper_date": "2026-10-30",
-      "paper_category": "Precision Oncology",
-      "generated_at": "2026-11-05T15:04:21",
+      "generated_at": "2026-11-06T14:44:56",
       "generator": "openai"
     }
   }

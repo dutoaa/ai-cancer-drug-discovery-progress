@@ -1,0 +1,161 @@
+[
+  {
+    "id": "2026-10-30-medrxiv-deep_learning_reveals_prognostic_information_beyond_ajcc_stage_in_routine_histopathology_o",
+    "doi": "10.64898/2026.10.29.26366599",
+    "date": "2026-10-30",
+    "title": "Deep learning reveals prognostic information beyond AJCC stage in routine histopathology of early-stage melanoma: the population-based D-ESMEL study",
+    "authors": "Ouwerkerk, J.; Akram, F.; Hollestein, L.; Kerkour, T.; Zhou, C.; Stubbs, A.; Mooyaart, A.; Li, Y.",
+    "abstract": "Of all melanoma patients who develop distant metastasis over time, 41% were initially diagnosed with stage I/II. More accurate prognostic models are needed to select patients for potential (neo)adjuvant therapy. We hypothesise that histopathological features in whole slide images (WSIs) from primary early-stage melanomas provide additional information beyond American Joint Committee on Cancer (AJCC) stage. We utilised data from the population-based Dutch Early-Stage Melanoma (D-ESMEL) study. This included a discovery set (n=328) of case-control sets matched on follow-up time and known prognostic features (i.e. Breslow thickness, ulceration, age, and sex) and a validation cohort based on >5,500 patients following a nested case-control (NCC) design with stage-matched controls (n=266). We developed an end- to-end deep learning workflow to automatically extract relevant patches from WSIs and predict patient-level metastatic risk based on histopathological features independent of AJCC stage. The discovery set served as a training set for the workflow using 10-fold cross-validation. The prognostic performance of this model and its independence from clinical risk factors was evaluated in the validation cohort using odds ratios (OR) and the weighted C-index. We achieved a balanced accuracy of 0{middle dot}88 ({micro}: 0{middle dot}81; 95% CI: 0{middle dot}77-0{middle dot}85) in the best validation fold of the discovery set. In the validation cohort, metastatic risk predictions from the deep learning model were an independent prognostic factor (adjusted OR: 1{middle dot}97; p<0{middle dot}01). Combining the deep learning predictions (C-index: 0{middle dot}86) with AJCC stage (C-index: 0{middle dot}80) yielded the highest C-index of 0{middle dot}87, significantly improving the C-index compared to AJCC stage alone (p<0{middle dot}001). Our histopathology-based deep learning model was rigorously evaluated in a population-based cohort and demonstrated added prognostic value beyond AJCC stage. Further investigations of the underlying biological features could improve clinical decision making and patient outcomes.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-30",
+    "updated": "2026-10-30",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.29.26366599v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.29.26366599v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "Deep learning of routine melanoma histopathology added prognostic information beyond AJCC stage, with the combined model achieving a C-index of 0.87 versus 0.80 for stage alone.",
+      "clinical_relevance": "This prognostic approach could support future risk stratification in early-stage melanoma, but it does not establish treatment benefit or discover new drugs.",
+      "method": [
+        "Automatically extracted relevant patches from primary melanoma whole-slide images.",
+        "Trained a patient-level metastatic-risk model using 328 patients and 10-fold cross-validation.",
+        "Evaluated independent prognostic value in a population-based nested case-control validation sample."
+      ],
+      "evidence_signal": "Validation included 266 patients sampled from a cohort of more than 5,500; model predictions remained independently prognostic (adjusted OR 1.97, p<0.01), and combining them with AJCC stage improved discrimination versus stage alone (p<0.001).",
+      "watch_item": "Clinical deployment requires further validation across settings and evidence that model-guided decisions improve outcomes.",
+      "hashtags": [
+        "#Melanoma",
+        "#DigitalPathology",
+        "#DeepLearning",
+        "#PrecisionOncology",
+        "#CancerPrognosis"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-30-medrxiv-deep_learning_reveals_prognostic_information_beyond_ajcc_stage_in_routine_histopathology_o",
+      "paper_title": "Deep learning reveals prognostic information beyond AJCC stage in routine histopathology of early-stage melanoma: the population-based D-ESMEL study",
+      "paper_date": "2026-10-30",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-11-05T15:04:17",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-01-medrxiv-which_attention_helps_a_slide_level_ablation_of_attention_augmented_cnns_for_serous_ovaria",
+    "doi": "10.64898/2026.04.21.26351441",
+    "date": "2026-11-01",
+    "title": "Which Attention Helps? A Slide-Level Ablation of Attention-Augmented CNNs for Serous Ovarian Carcinoma Grading",
+    "authors": "Rani, A.; Mishra, S.",
+    "abstract": "BackgroundDistinguishing high-grade (HGSC) from low-grade serous carcinoma (LGSC) is clinically consequential yet difficult, as the subtypes share a serous morphology but differ in prognosis and treatment. Prior deep-learning studies report near-perfect accuracy, but often under patch-level evaluation that leaks slide information between training and testing. MethodsWe present a leakage-controlled, slide-level ablation of attention-augmented CNNs for this binary task on the UBC-OCEAN cohort (259 whole-slide images; 217 HGSC, 42 LGSC). Under an identical protocol with five-fold slide-grouped cross-validation, Macenko stain normalisation, and slide-level pooling, we compared a from-scratch backbone with no attention, Squeeze-and-Excitation, channel-only CBAM and full CBAM, a lightweight CBAM variant, and an ImageNet-pretrained MobileNet with a differential-attention module. A pathology foundation model (Phikon) with attention-based multiple-instance aggregation was evaluated as a modern benchmark. Results are reported across three training seeds, with decision thresholds selected within folds, and compared using DeLong and McNemar tests with Holm correction and bootstrap confidence intervals. ResultsThe pretrained model performed best (AUC 0.862 {+/-} 0.005, MCC 0.460) and was the most stable across seeds. It significantly outranked both the Squeeze-and-Excitation model (DeLong, Holm p = 0.002) and the no-attention baseline (p = 0.019). Full CBAM also outranked Squeeze-and-Excitation (p = 0.010), but adding the spatial-attention branch to channel attention produced no detectable change (0.824 to 0.822; p = 0.50), and the lightweight model did not match the deep one once training variance was accounted for. The foundation-model benchmark reached AUC 0.834 {+/-} 0.018, below the pretrained MobileNet. A colour-only classifier reached AUC 0.66, indicating part of the separability is attributable to stain and colour rather than morphology. ConclusionUnder leakage-free evaluation, performance is more modest than commonly reported. Transfer learning and the avoidance of a weak channel-only configuration produced the clearest gains, while finer attention design, network size and a pathology-specific foundation model produced no detectable improvement. With only 42 LGSC slides the task remains underpowered for finer distinctions, and most architectural differences could not be resolved.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-11-01",
+    "updated": "2026-11-01",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351441v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351441v2.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "Pretrained MobileNet with differential attention achieved the best slide-level discrimination of high- versus low-grade serous ovarian carcinoma, while adding spatial attention showed no detectable benefit.",
+      "clinical_relevance": "This grading study—not drug discovery—could inform future pathology decision-support tools, but does not establish clinical readiness.",
+      "method": [
+        "Compared CNN attention variants, pretrained MobileNet, and a Phikon foundation-model benchmark.",
+        "Used stain normalisation, slide-level pooling, and five-fold slide-grouped cross-validation.",
+        "Evaluated three training seeds with within-fold threshold selection and multiplicity-adjusted statistical comparisons."
+      ],
+      "evidence_signal": "On 259 slides (217 high-grade, 42 low-grade), pretrained MobileNet achieved AUC 0.862 ± 0.005 and MCC 0.460, significantly outperforming the no-attention baseline.",
+      "watch_item": "The small, imbalanced single-cohort evaluation and colour-only AUC of 0.66 warrant external validation for stain-related confounding and generalisability.",
+      "hashtags": [
+        "#OvarianCancer",
+        "#ComputationalPathology",
+        "#AttentionMechanisms",
+        "#TransferLearning",
+        "#AIValidation"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-01-medrxiv-which_attention_helps_a_slide_level_ablation_of_attention_augmented_cnns_for_serous_ovaria",
+      "paper_title": "Which Attention Helps? A Slide-Level Ablation of Attention-Augmented CNNs for Serous Ovarian Carcinoma Grading",
+      "paper_date": "2026-11-01",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-11-05T15:04:19",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-10-30-medrxiv-a_regenerative_stem_cell_phenotype_marked_by_anxa1_defines_aggressive_colorectal_cancer_bi",
+    "doi": "10.64898/2026.10.28.26366700",
+    "date": "2026-10-30",
+    "title": "A regenerative stem cell phenotype marked by ANXA1 defines aggressive colorectal cancer biology",
+    "authors": "Rotte-Wettig, H. S.; Domingo, E.; Valbuena, G.; Nasreddin, N.; Harkin, A.; Iveson, T.; Saunders, M. P.; Oien, K. A.; Maka, N.; Pezzella, F.; Campo, L.; Browne, M.; Glaire, M.; Hay, J.; Edwards, J.; Sansom, O. J.; Kelly, C.; Tomlinson, I.; Kerr, R.; Kerr, D.; TransSCOT consortium, ; imCMS Consortium, ; Leedham, S.; Church, D. N.; Braeutigam, K.; Koelzer, V. H.",
+    "abstract": "BackgroundLGR5 and ANXA1 are markers for specific intestinal stem cell states. LGR5+/ANXA1- crypt base columnar cells (CBCs) maintain homeostasis, whereas ANXA1+/LGR5- regenerative stem cells (RSCs) are present in fetal and repairing epithelium. Both states have been described in colorectal cancer (CRC), yet their clinical significance remains unclear. We aimed to determine how ANXA1 and LGR5 expression relates to molecular subtype, immune microenvironment and outcome in CRC. MethodsDual-colour in situ hybridisation for ANXA1 and LGR5 was performed on tissue microarrays from 2163 patients in the randomised SCOT trial (ISRCTN59757862). AI-based digital pathology quantified marker-positive area by compartment and image based consensus molecular subtype (imCMS). Markers were related to clinicopathological, molecular and immune data, and to survival using Kaplan-Meier and multivariable Cox analyses. ResultsANXA1 and LGR5 showed inverse enrichment among a diverse group of parameters. ANXA1 was highest in CMS1 and LGR5 in CMS2, with CMS3 and CMS4 being intermediate. ANXA1 dominance was associated with right-sidedness, mismatch repair deficiency, BRAF-V600E mutation, high stromal content, T4 stage, low stromal FoxP3 and high epithelial CD68 density. Combining both markers improved prognostic discrimination compared with either alone (cancer-specific survival p<0.001; recurrence-free interval p=0.004), with ANXA1 dominance remaining an independent predictor of recurrence after adjustment (HR 1.43, 95% CI 1.08-1.90, p=0.014). ConclusionRelative ANXA1 enrichment defines an aggressive, stroma-rich, macrophage-enriched CRC subgroup with poor prognosis.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-10-30",
+    "updated": "2026-10-30",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.28.26366700v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.28.26366700v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "ANXA1 enrichment relative to LGR5 marks an aggressive colorectal cancer phenotype associated with abundant stroma, macrophage enrichment and poorer prognosis.",
+      "clinical_relevance": "Combined ANXA1/LGR5 assessment may support prognostic stratification, but this study does not establish treatment selection or drug discovery utility.",
+      "method": [
+        "Dual-colour in situ hybridisation measured ANXA1 and LGR5 in tumour tissue from 2,163 SCOT trial patients.",
+        "AI-based digital pathology quantified marker-positive areas by tissue compartment and image-based molecular subtype.",
+        "Marker patterns were related to molecular features, immune context and survival using multivariable analyses."
+      ],
+      "evidence_signal": "Combined markers improved prognostic discrimination over either alone; ANXA1 dominance independently predicted recurrence after adjustment (HR 1.43, 95% CI 1.08–1.90; p=0.014).",
+      "watch_item": "These observational biomarker findings require independent validation and assay standardisation before clinical implementation.",
+      "hashtags": [
+        "#ColorectalCancer",
+        "#DigitalPathology",
+        "#ANXA1",
+        "#CancerBiomarkers",
+        "#PrecisionOncology"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-10-30-medrxiv-a_regenerative_stem_cell_phenotype_marked_by_anxa1_defines_aggressive_colorectal_cancer_bi",
+      "paper_title": "A regenerative stem cell phenotype marked by ANXA1 defines aggressive colorectal cancer biology",
+      "paper_date": "2026-10-30",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-11-05T15:04:21",
+      "generator": "openai"
+    }
+  }
+]
