@@ -24,22 +24,22 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.02.26359492v2.full.pdf"
       }
     ],
-    "score": 95,
+    "score": 90,
     "infographic": {
       "key_insight": "Variantscape uses large language models to map literature-reported links between genetic variants, cancer types, and treatments at scale.",
-      "clinical_relevance": "The tool may support precision oncology research and molecular tumour board preparation, but extracted associations do not establish treatment benefit.",
+      "clinical_relevance": "The resource may support precision oncology research and molecular tumour board preparation, but extracted associations do not establish treatment efficacy.",
       "method": [
-        "Screen biomedical abstracts for gene mentions using traditional NLP.",
-        "Use LLMs to extract and standardise variant–treatment–cancer associations.",
-        "Verify associations against abstract text and assemble an open-access knowledge graph."
+        "Screen biomedical abstracts for gene mentions.",
+        "Combine traditional NLP and LLMs to extract and standardise variant–treatment–cancer associations.",
+        "Use LLMs to verify associations against abstract text and build a searchable graph."
       ],
-      "evidence_signal": "Among 886,195 gene-containing abstracts, LLM verification identified at least one association in 35,224 papers, yielding 44,644 verified graph edges.",
-      "watch_item": "Verification was LLM-based and limited to abstracts; independent expert validation and clinical utility evaluation are not reported in the supplied abstract.",
+      "evidence_signal": "Of 886,195 gene-containing articles, 37,895 mentioned all three entity types; LLM verification confirmed at least one association in 35,224 papers, yielding 44,644 verified graph edges.",
+      "watch_item": "Verification was LLM-based and limited to abstracts; the supplied abstract reports no independent expert-validation metrics.",
       "hashtags": [
         "#PrecisionOncology",
+        "#ArtificialIntelligence",
         "#LargeLanguageModels",
         "#CancerResearch",
-        "#BiomedicalNLP",
         "#EvidenceSynthesis"
       ],
       "model": "gpt-6.1-sol",
@@ -48,7 +48,166 @@
       "paper_title": "Variantscape: Retrospective Study of Large Language Model-Based Extraction of Variant-Treatment-Cancer Associations from Published Oncology Abstracts",
       "paper_date": "2026-11-02",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-11-06T14:44:52",
+      "generated_at": "2026-11-07T13:41:46",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-03-medrxiv-comprehensive_real_world_utilization_treatment_trajectories_and_outcomes_of_immune_checkpo",
+    "doi": "10.64898/2026.11.02.26367076",
+    "date": "2026-11-03",
+    "title": "Comprehensive real-world utilization, treatment trajectories, and outcomes of immune checkpoint inhibitors across cancer types: the multicenter FAIR-ICI cohort",
+    "authors": "Ha, L. T.; Ver Donck, F.; Bassez, I.; Oeste, C. L.; Vulsteke, C.; Delombaerde, D.; Hens, D.; Prenen, H.; Croes, L.; De Meulenaere, A.; Debruyne, P. R.; Verhaert, M.; Aspeslagh, S.; Brusselaers, N.; Verbiest, A.",
+    "abstract": "BackgroundImmune checkpoint inhibitors (ICIs) have transformed cancer treatment, yet evidence on their utilization, treatment trajectories, and effectiveness in routine clinical practice remains limited. We characterized real-world ICI use and outcomes across cancer types using the multicenter FAIR-ICI cohort and explored differences between real-world and pivotal trial outcomes. MethodsWe conducted a retrospective cohort study of adults receiving ICIs across four Belgian hospitals. Structured and unstructured electronic health record data were harmonized using the Observational Medical Outcomes Partnership Common Data Model (OMOP-CDM) and natural language processing. We evaluated overall survival (OS), time on treatment (ToT), time to next treatment (TTNT), ICI discontinuation (>12-week treatment gap without re-initiation), and post-discontinuation survival. OS was descriptively compared with pivotal trials, and prognostic factors were assessed using multivariable Cox regression. An interactive public dashboard was developed to enable exploration of cohort characteristics, treatment patterns, and outcomes. ResultsAmong 3,231 ICI-treated patients, 2,514 (77.8%) had metastatic disease. Among metastatic patients, 568 (22.6%) discontinued ICI without subsequent systemic therapy. Median post-discontinuation OS was 21.4 months (95% CI 16.5-37.2), with 49.1% alive at 24 months. ToT and TTNT were generally shorter than OS, particularly in melanoma (median OS 78 months; ToT 7 months; TTNT 26 months). Real-world survival was frequently less favorable than in pivotal trials. ECOG [&ge;]2 was associated with poorer OS than ECOG 0-1 (adjusted HR 2.18, 95% CI 1.82-2.60). In NSCLC patients receiving pembrolizumab plus chemotherapy, survival with ECOG 0-1 more closely approximated trial outcomes, whereas survival with ECOG [&ge;]2 was substantially poorer. ConclusionsReal-world ICI treatment trajectories extend beyond active treatment, with some patients experiencing prolonged survival after discontinuation. Differences between real-world and trial outcomes highlight the importance of patient characteristics, particularly performance status, when interpreting trial evidence in routine care. FAIR-ICI provides a scalable framework for evaluating real-world immunotherapy effectiveness, treatment trajectories, and future investigations of treatment-related toxicity. HighlightsO_LIFAIR-ICI studied 3,231 patients across four Belgian hospitals and provides an interactive dashboard for subgroup exploration. C_LIO_LIAmong metastatic patients, 22.6% stopped ICIs without subsequent systemic therapy, with 49.1% alive at 24 months after stopping. C_LIO_LITime on treatment and time to next treatment were generally shorter than overall survival. C_LIO_LIReal-world survival was frequently less favorable than in pivotal clinical trials. C_LIO_LIPoor ECOG performance status was strongly associated with shorter survival and may contribute to trial-real-world differences. C_LI",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-11-03",
+    "updated": "2026-11-03",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.02.26367076v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.02.26367076v1.full.pdf"
+      }
+    ],
+    "score": 83,
+    "infographic": {
+      "key_insight": "In the FAIR-ICI cohort, survival extended beyond active immunotherapy for some patients, while real-world outcomes were often less favorable than pivotal trial results.",
+      "clinical_relevance": "Performance status was important when interpreting outcomes: ECOG ≥2 was associated with poorer overall survival than ECOG 0–1.",
+      "method": [
+        "Retrospective study of 3,231 adults receiving immune checkpoint inhibitors at four Belgian hospitals.",
+        "Harmonized electronic health records using OMOP-CDM and natural language processing.",
+        "Evaluated survival and treatment trajectories, with descriptive trial comparisons and multivariable Cox regression."
+      ],
+      "evidence_signal": "Among 568 metastatic patients who discontinued immunotherapy without subsequent systemic therapy, median post-discontinuation survival was 21.4 months (95% CI 16.5–37.2), with 49.1% alive at 24 months.",
+      "watch_item": "This observational treatment-outcomes study—not an AI drug-discovery study—cannot establish that discontinuation causes prolonged survival or that trial–practice differences reflect treatment effectiveness alone.",
+      "hashtags": [
+        "#Immunotherapy",
+        "#RealWorldEvidence",
+        "#CancerOutcomes",
+        "#TreatmentTrajectories",
+        "#ClinicalTranslation"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-03-medrxiv-comprehensive_real_world_utilization_treatment_trajectories_and_outcomes_of_immune_checkpo",
+      "paper_title": "Comprehensive real-world utilization, treatment trajectories, and outcomes of immune checkpoint inhibitors across cancer types: the multicenter FAIR-ICI cohort",
+      "paper_date": "2026-11-03",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-11-07T13:41:50",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-02-medrxiv-identifying_interstitial_lung_disease_with_large_language_models_on_clinical_notes_and_cla",
+    "doi": "10.64898/2026.10.30.26366942",
+    "date": "2026-11-02",
+    "title": "Identifying interstitial lung disease with large language models on clinical notes and claims",
+    "authors": "Larghero, G.; Schneeweiss, S.; Gu, B.; Anand, P.; Lin, J. K.; Yang, J.",
+    "abstract": "BackgroundInterstitial lung disease (ILD) is a potentially fatal toxicity of immune check-point inhibitors and antibody-drug conjugates. Drug-safety studies in healthcare databases identify ILD with claims-based algorithms that trade positive predictive value (PPV) against sensitivity. We assessed whether large language models (LLMs) improve on these algorithms, with and without electronic health record (EHR) notes, and whether these gains translate into measurable epidemiological benefits. MethodsIn 309 oncology patients with ILD diagnosis codes at Mass General Brigham, adjudicated by two pulmonologists, we compared 12 open-access LLMs with 20 published claims-based algorithms. LLMs received claims, EHR notes, or both, without task-specific training. Measures were PPV and yield (proportion classified positive). We projected the attenuation of a drug-induced ILD odds ratio under non-differential outcome misclassification. FindingsLLMs extended the PPV-yield frontier of the published algorithms with all three inputs. Across the 36 model-input evaluations, LLM PPV exceeded that of the best algorithm without specialist-coding requirements (Algorithm 4) by 14.3 percentage points on average. With claims alone, Qwen3-8B achieved 89.8% PPV (95% CI 78.2-95.6) at 15.9% yield, versus 86.7% at 4.9% for the highest-PPV algorithm. With notes alone, Qwen3-32B achieved 78.9% PPV at 49.2% yield, versus 64.6% at 51.1% for Algorithm 4. With combined claims and notes, Qwen3-14B achieved 100.0% PPV at 24.3% yield. Under a simulated drug-safety scenario with a true odds ratio of 3.0, the projected observed odds ratio was 2.67 with combined inputs versus 1.07 with Algorithm 4, corresponding to a 46-fold difference in the estimated sample size required for 80% power (591 versus 27,200 patients). InterpretationZero-shot LLMs offer a higher-PPV alternative to rule-based claims pheno-typing for ILD, on all three input types. Because the claims-only configuration uses the same claims data as existing algorithms, it could be deployed in administrative databases without linked notes, and may recover drug-safety signal otherwise lost to outcome misclassification. FundingNational Institute on Aging, National Library of Medicine, PCORI, and the National Institute of Arthritis and Musculoskeletal and Skin Diseases. Research in contextO_ST_ABSEvidence before this studyC_ST_ABSWe searched PubMed up to August 2026 for studies on claims or electronic health record (EHR)-based identification of interstitial lung disease and on machine-learning or large language model (LLM) phenotyping of clinical conditions. Search terms included \"interstitial lung disease or pneumonitis\", \"administrative claims\", \"computational phenotyping\", \"rule-based algorithms\", \"machine learning\", and \"large language models\". We also screened the reference lists of relevant articles. The literature search suggested that identifying ILD in longitudinal claims data is unreliable because the relevant diagnosis codes are nonspecific, and validated rule-based algorithms face a structural tradeoff between PPV and coverage. Supervised machine-learning classifiers have outperformed rule-based ILD identification on electronic health record data, and zero-shot LLMs have already shown the ability to phenotype chronic conditions from structured codes. No study, however, had compared a zero-shot LLM head-to-head against validated, published claims-based algorithms for a specific, high-stakes drug-safety outcome on a single fixed cohort, isolated the contribution of the input substrate from that of the model, or quantified the downstream consequence for pharmacoepidemiologic effect estimation. Added value of this studyOn a single, fixed, expert-adjudicated cohort, the evaluated LLMs achieved higher positive predictive value (PPV) than all 20 published claims-based algorithms at comparable yield (the proportion of patients classified as ILD-positive), whether the models received structured claims, clinical notes, or both. Across the 36 model-input evaluations, PPV exceeded that of the most inclusive published rule by 19.7 percentage points on average, and did so in 33 of 36 evaluations. We show that clinical notes generally increased yield, while the resulting PPV-yield trade-off depended on the model and input combination. Restricting the input to a single EHR note type preserved the advantage over rule-based phenotyping in matched comparisons on the patients possessing that EHR note type. Most consequentially, this improvement reduces the sample size required to detect a hypothesised drug-ILD association from approximately 27,200 patients for the best existing algorithm for the task to 591 when using LLMs, and offer a deployable upgrade for the note-free administrative databases where rule-based algorithms are the current standard. Implications of all the available evidenceFor pharmacovigilance of treatment-related ILD, the limiting step is often not the size of the available claims database but the misclassification that erodes the very signal under surveillance. Replacing rule-based claims phenotyping algorithms with zero-shot LLM-based alternatives transforms a high-PPV, low-yield classifier into one that recovers many more patients at the same PPV, converting a classifier that can render drug-safety associations statistically invisible into one that makes them detectable in cohorts of feasible size. Pending external validation, this offers a practical route to more sensitive post-marketing surveillance of the pulmonary toxicity of immune checkpoint inhibitors and antibody-drug conjugates. More broadly, we hypothesise that this advantage is not specific to ILD: zero-shot LLM phenotyping may recover drug-safety signal for other outcomes that diagnosis codes capture poorly but that are well documented in clinical text, a possibility that warrants dedicated evaluation.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-11-02",
+    "updated": "2026-11-02",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.30.26366942v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.30.26366942v1.full.pdf"
+      }
+    ],
+    "score": 66,
+    "infographic": {
+      "key_insight": "Zero-shot LLMs improved the precision–yield trade-off for identifying interstitial lung disease (ILD) in oncology patients compared with published claims-based algorithms.",
+      "clinical_relevance": "More accurate ILD identification could strengthen safety studies of immune checkpoint inhibitors and antibody–drug conjugates, rather than directly support cancer drug discovery.",
+      "method": [
+        "Compared 12 open-access LLMs with 20 published claims-based algorithms.",
+        "Provided claims, clinical notes, or both without task-specific training.",
+        "Measured positive predictive value (PPV) and classification yield, then modeled drug-safety signal attenuation."
+      ],
+      "evidence_signal": "Among 309 patients with ILD diagnosis codes adjudicated by two pulmonologists, claims-only Qwen3-8B achieved 89.8% PPV at 15.9% yield, versus 86.7% PPV at 4.9% yield for the highest-PPV algorithm.",
+      "watch_item": "Validation beyond this single-health-system, diagnosis-code-selected cohort is needed; projected drug-safety and sample-size benefits were simulated, not observed.",
+      "hashtags": [
+        "#ClinicalAI",
+        "#DrugSafety",
+        "#Oncology",
+        "#InterstitialLungDisease",
+        "#RealWorldEvidence"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-02-medrxiv-identifying_interstitial_lung_disease_with_large_language_models_on_clinical_notes_and_cla",
+      "paper_title": "Identifying interstitial lung disease with large language models on clinical notes and claims",
+      "paper_date": "2026-11-02",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-11-07T13:41:52",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-03-medrxiv-enhancing_deep_sleep_with_auditory_stimulation_to_boost_cognitive_training_responsiveness",
+    "doi": "10.64898/2026.11.02.26367082",
+    "date": "2026-11-03",
+    "title": "Enhancing deep sleep with auditory stimulation to boost cognitive training responsiveness in people with Parkinson's disease and mild cognitive impairment: Rationale and design of the double-blind randomized controlled trial PD-CogT-Sleep",
+    "authors": "Ophey, A.; Kleinsorge, M. T.; Wallimann, N. A.; Maric, A.; Loosli, S. V.; Mollenhauer, B.; Balint, B.; Huber, R.; Baumann, C. R.; Kalbe, E.; Schreiner, S. J.",
+    "abstract": "BackgroundCognitive training (CogT) is an established non-pharmacological intervention for people with Parkinsons disease (PD) and mild cognitive impairment (PD-MCI). However, overall effects on cognitive outcomes are small to moderate and interindividually highly heterogeneous. Sleep -especially deep sleep-could be an important determinant of CogT responsiveness in PD, and may have beneficial effects on PD pathophysiology. Therefore, the enhancement of deep sleep by phase-targeted auditory stimulation (PTAS) could strengthen the effects of CogT on cognitive symptoms and counteract disease progression. MethodsPD-CogT-Sleep is a monocentric, partly decentralized, double-blind, randomized sham-controlled trial that combines two remotely delivered non-pharmacological interventions, to assess the additive effect of PTAS on digital CogT responsiveness in people with PD-MCI. The primary outcome is executive functions; Secondary and exploratory outcomes include further cognitive functions, participant-reported outcome measures, blood-based biomarkers, and high-density sleep electroencephalography markers. Outcomes are assessed at baseline, five weeks post-allocation and at 3-month follow-up. We aim to consecutively recruit N=50 participants, who will be randomized 1:1 to receive CogT+PTAS or CogT+Sham. DiscussionThe PD-CogT-Sleep study integrates wearable and digital technologies to systematically combine a novel, non-invasive, sleep-enhancing intervention (PTAS) with established CogT to improve cognition and evaluate PTAS disease-modifying potential through its effects on blood-based biomarkers in PD-MCI. The expected results will foster our understanding of the interplay of sleep, cognition, and neurodegeneration, and may guide further development of safe, feasible, scalable, patient-centered, technology-based non-pharmacological interventions counteracting cognitive decline in neurodegenerative diseases. GRAPHICAL ABSTRACT O_FIG O_LINKSMALLFIG WIDTH=200 HEIGHT=151 SRC=\"FIGDIR/small/26367082v1_ufig1.gif\" ALT=\"Figure 1\"> View larger version (52K): org.highwire.dtl.DTLVardef@295637org.highwire.dtl.DTLVardef@1db476dorg.highwire.dtl.DTLVardef@12e5050org.highwire.dtl.DTLVardef@19aed36_HPS_FORMAT_FIGEXP M_FIG C_FIG Study Design Overview: PD-CogT-Sleep is a randomized controlled double-blind clinical trial on the effects of deep sleep enhancement with phase-targeted auditory stimulation vs. sham on the responsiveness of cognitive training. Created in https://BioRender.com HIGHLIGHTSO_LIEffects of cognitive training (CogT) in Parkinsons disease (PD) are heterogeneous C_LIO_LIDeep sleep could be an important determinant of CogT responsiveness, but is altered in PD C_LIO_LIPhase-targeted auditory stimulation (PTAS) enhances slow waves to restore deep sleep C_LIO_LICombining wearable and digital technology allows remote PTAS and CogT application C_LIO_LIPD-CogT-Sleep is a double-blind, partly decentralized RCT on CogT+PTAS vs. CogT+Sham C_LI",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-11-03",
+    "updated": "2026-11-03",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.02.26367082v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.02.26367082v1.full.pdf"
+      }
+    ],
+    "score": 59,
+    "infographic": {
+      "key_insight": "PD-CogT-Sleep will test whether deep-sleep enhancement using phase-targeted auditory stimulation improves cognitive training responsiveness in people with Parkinson’s disease and mild cognitive impairment.",
+      "clinical_relevance": "If effective, this non-pharmacological combination could strengthen cognitive training benefits, but cognitive and disease-modifying effects remain unproven.",
+      "method": [
+        "Single-center, partly decentralized, double-blind, randomized sham-controlled trial targeting 50 participants.",
+        "Participants randomized 1:1 to digital cognitive training plus auditory stimulation or cognitive training plus sham.",
+        "Assessments at baseline, five weeks post-allocation, and three-month follow-up."
+      ],
+      "evidence_signal": "This design paper reports no efficacy results; planned evaluation prioritizes executive function, with additional cognitive, participant-reported, blood biomarker, and sleep EEG outcomes.",
+      "watch_item": "The small, single-center trial may limit generalizability, and exploratory biomarker changes would not establish slowed disease progression.",
+      "hashtags": [
+        "#ParkinsonsDisease",
+        "#MildCognitiveImpairment",
+        "#DeepSleep",
+        "#CognitiveTraining",
+        "#ClinicalTrial"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-03-medrxiv-enhancing_deep_sleep_with_auditory_stimulation_to_boost_cognitive_training_responsiveness",
+      "paper_title": "Enhancing deep sleep with auditory stimulation to boost cognitive training responsiveness in people with Parkinson's disease and mild cognitive impairment: Rationale and design of the double-blind randomized controlled trial PD-CogT-Sleep",
+      "paper_date": "2026-11-03",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-11-07T13:41:55",
       "generator": "openai"
     }
   },
@@ -77,17 +236,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.10.31.26366908v1.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
-      "key_insight": "In a young-onset neuropsychiatry cohort, Alzheimer’s and psychiatric polygenic scores showed distinct disease associations, with no detected associations with measured plasma biomarkers.",
-      "clinical_relevance": "Genetic risk scores may capture information distinct from plasma biomarkers, but their added diagnostic value remains unproven.",
+      "key_insight": "In a young-onset neuropsychiatry cohort, Alzheimer’s and psychiatric polygenic risk showed distinct disease associations, with no detected association with plasma biomarkers.",
+      "clinical_relevance": "Genetic risk scores may capture information distinct from current pathology, but their added diagnostic value remains unproven.",
       "method": [
-        "Studied 687 European-ancestry participants: 195 controls, 283 with primary psychiatric disorders, 55 with Alzheimer’s disease and 154 with other neurodegenerative diseases.",
-        "Computed five polygenic risk scores excluding APOE; adjusted models for age, sex and APOE ε4 dose.",
-        "Assessed plasma NfL, GFAP and p-tau217 in a 332-participant subset."
+        "Studied 687 European-ancestry participants: healthy controls, primary psychiatric disorders, Alzheimer’s disease and other neurodegenerative diseases.",
+        "Calculated five polygenic risk scores excluding the APOE locus; adjusted models for age, sex and APOE ε4 dose.",
+        "Assessed plasma NfL, GFAP and p-tau217 in 332 participants."
       ],
-      "evidence_signal": "Alzheimer’s and psychiatric scores were associated with their respective diagnoses versus controls (OR per SD: 1.69 and 1.29); adding the Alzheimer’s score to NfL did not improve psychiatric-versus-other-neurodegenerative discrimination meaningfully (AUC 0.764 to 0.773).",
-      "watch_item": "European-ancestry sampling and limited biomarker availability constrain generalizability; diagnostic utility requires larger, longitudinal validation.",
+      "evidence_signal": "Alzheimer’s and psychiatric risk scores were associated with their respective diagnoses versus controls (OR per SD 1.69 and 1.29); adding Alzheimer’s genetic risk to NfL changed discrimination between psychiatric and other neurodegenerative disorders only slightly (AUC 0.764 to 0.773).",
+      "watch_item": "European-ancestry sampling limits generalizability, and larger longitudinal preclinical cohorts are needed to establish diagnostic utility.",
       "hashtags": [
         "#YoungOnsetDementia",
         "#AlzheimersResearch",
@@ -101,7 +260,7 @@
       "paper_title": "Alzheimers disease and psychiatric polygenic risk are disease-specific and independent of plasma biomarkers in a real-world young-onset dementia cohort.",
       "paper_date": "2026-11-02",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-06T14:44:54",
+      "generated_at": "2026-11-07T13:41:57",
       "generator": "openai"
     }
   },
@@ -130,20 +289,20 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.04.21.26351441v2.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 41,
     "infographic": {
-      "key_insight": "For slide-level ovarian serous carcinoma grading, pretrained MobileNet performed best, while adding spatial attention to channel attention showed no detectable benefit.",
-      "clinical_relevance": "Distinguishing high-grade from low-grade serous carcinoma could support pathology workflows, but this study evaluates classification—not drug discovery or clinical readiness.",
+      "key_insight": "Pretrained MobileNet with differential attention achieved the highest slide-level AUC (0.862), while adding spatial attention to channel attention showed no detectable benefit.",
+      "clinical_relevance": "This study evaluates AI-assisted distinction of high- versus low-grade serous ovarian carcinoma, not drug discovery, and does not establish readiness for clinical use.",
       "method": [
-        "Compared CNN attention variants, pretrained MobileNet with differential attention, and a Phikon foundation-model benchmark.",
-        "Used stain normalisation, slide-level pooling, and five-fold slide-grouped cross-validation to prevent slide leakage.",
+        "Compared CNN attention variants, pretrained MobileNet, and a Phikon foundation-model benchmark.",
+        "Used stain normalization, slide-level pooling, and five-fold slide-grouped cross-validation.",
         "Evaluated three training seeds with within-fold threshold selection and multiplicity-corrected statistical comparisons."
       ],
-      "evidence_signal": "On 259 UBC-OCEAN slides (217 high-grade, 42 low-grade), pretrained MobileNet achieved AUC 0.862 ± 0.005 and MCC 0.460, outperforming the no-attention baseline and Squeeze-and-Excitation model.",
-      "watch_item": "The imbalanced, single-cohort evaluation and colour-only AUC of 0.66 warrant external validation for stain-related confounding and generalisability.",
+      "evidence_signal": "On 259 UBC-OCEAN slides (217 high-grade, 42 low-grade), pretrained MobileNet achieved AUC 0.862 ± 0.005 and MCC 0.460, significantly outperforming the no-attention baseline.",
+      "watch_item": "Class imbalance, a single-cohort evaluation, and colour-only AUC of 0.66 warrant independent validation and scrutiny of stain-related confounding.",
       "hashtags": [
-        "#ComputationalPathology",
         "#OvarianCancer",
+        "#ComputationalPathology",
         "#AttentionMechanisms",
         "#TransferLearning",
         "#AIValidation"
@@ -154,7 +313,7 @@
       "paper_title": "Which Attention Helps? A Slide-Level Ablation of Attention-Augmented CNNs for Serous Ovarian Carcinoma Grading",
       "paper_date": "2026-11-01",
       "paper_category": "Clinical Translation",
-      "generated_at": "2026-11-06T14:44:56",
+      "generated_at": "2026-11-07T13:41:59",
       "generator": "openai"
     }
   }

@@ -1,16 +1,16 @@
 {
-  "key_insight": "For slide-level ovarian serous carcinoma grading, pretrained MobileNet performed best, while adding spatial attention to channel attention showed no detectable benefit.",
-  "clinical_relevance": "Distinguishing high-grade from low-grade serous carcinoma could support pathology workflows, but this study evaluates classification—not drug discovery or clinical readiness.",
+  "key_insight": "Pretrained MobileNet with differential attention achieved the highest slide-level AUC (0.862), while adding spatial attention to channel attention showed no detectable benefit.",
+  "clinical_relevance": "This study evaluates AI-assisted distinction of high- versus low-grade serous ovarian carcinoma, not drug discovery, and does not establish readiness for clinical use.",
   "method": [
-    "Compared CNN attention variants, pretrained MobileNet with differential attention, and a Phikon foundation-model benchmark.",
-    "Used stain normalisation, slide-level pooling, and five-fold slide-grouped cross-validation to prevent slide leakage.",
+    "Compared CNN attention variants, pretrained MobileNet, and a Phikon foundation-model benchmark.",
+    "Used stain normalization, slide-level pooling, and five-fold slide-grouped cross-validation.",
     "Evaluated three training seeds with within-fold threshold selection and multiplicity-corrected statistical comparisons."
   ],
-  "evidence_signal": "On 259 UBC-OCEAN slides (217 high-grade, 42 low-grade), pretrained MobileNet achieved AUC 0.862 ± 0.005 and MCC 0.460, outperforming the no-attention baseline and Squeeze-and-Excitation model.",
-  "watch_item": "The imbalanced, single-cohort evaluation and colour-only AUC of 0.66 warrant external validation for stain-related confounding and generalisability.",
+  "evidence_signal": "On 259 UBC-OCEAN slides (217 high-grade, 42 low-grade), pretrained MobileNet achieved AUC 0.862 ± 0.005 and MCC 0.460, significantly outperforming the no-attention baseline.",
+  "watch_item": "Class imbalance, a single-cohort evaluation, and colour-only AUC of 0.66 warrant independent validation and scrutiny of stain-related confounding.",
   "hashtags": [
-    "#ComputationalPathology",
     "#OvarianCancer",
+    "#ComputationalPathology",
     "#AttentionMechanisms",
     "#TransferLearning",
     "#AIValidation"
@@ -21,6 +21,6 @@
   "paper_title": "Which Attention Helps? A Slide-Level Ablation of Attention-Augmented CNNs for Serous Ovarian Carcinoma Grading",
   "paper_date": "2026-11-01",
   "paper_category": "Clinical Translation",
-  "generated_at": "2026-11-06T14:44:56",
+  "generated_at": "2026-11-07T13:41:59",
   "generator": "openai"
 }

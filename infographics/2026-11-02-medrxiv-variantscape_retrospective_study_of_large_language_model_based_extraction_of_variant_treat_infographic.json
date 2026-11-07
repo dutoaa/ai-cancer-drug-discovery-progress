@@ -1,18 +1,18 @@
 {
   "key_insight": "Variantscape uses large language models to map literature-reported links between genetic variants, cancer types, and treatments at scale.",
-  "clinical_relevance": "The tool may support precision oncology research and molecular tumour board preparation, but extracted associations do not establish treatment benefit.",
+  "clinical_relevance": "The resource may support precision oncology research and molecular tumour board preparation, but extracted associations do not establish treatment efficacy.",
   "method": [
-    "Screen biomedical abstracts for gene mentions using traditional NLP.",
-    "Use LLMs to extract and standardise variant–treatment–cancer associations.",
-    "Verify associations against abstract text and assemble an open-access knowledge graph."
+    "Screen biomedical abstracts for gene mentions.",
+    "Combine traditional NLP and LLMs to extract and standardise variant–treatment–cancer associations.",
+    "Use LLMs to verify associations against abstract text and build a searchable graph."
   ],
-  "evidence_signal": "Among 886,195 gene-containing abstracts, LLM verification identified at least one association in 35,224 papers, yielding 44,644 verified graph edges.",
-  "watch_item": "Verification was LLM-based and limited to abstracts; independent expert validation and clinical utility evaluation are not reported in the supplied abstract.",
+  "evidence_signal": "Of 886,195 gene-containing articles, 37,895 mentioned all three entity types; LLM verification confirmed at least one association in 35,224 papers, yielding 44,644 verified graph edges.",
+  "watch_item": "Verification was LLM-based and limited to abstracts; the supplied abstract reports no independent expert-validation metrics.",
   "hashtags": [
     "#PrecisionOncology",
+    "#ArtificialIntelligence",
     "#LargeLanguageModels",
     "#CancerResearch",
-    "#BiomedicalNLP",
     "#EvidenceSynthesis"
   ],
   "model": "gpt-6.1-sol",
@@ -21,6 +21,6 @@
   "paper_title": "Variantscape: Retrospective Study of Large Language Model-Based Extraction of Variant-Treatment-Cancer Associations from Published Oncology Abstracts",
   "paper_date": "2026-11-02",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-11-06T14:44:52",
+  "generated_at": "2026-11-07T13:41:46",
   "generator": "openai"
 }
