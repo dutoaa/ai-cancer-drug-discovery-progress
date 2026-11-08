@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-11-07
+Generated: 2026-11-08
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. Variantscape: Retrospective Study of Large Language Model-Based Extraction of Variant-Treatment-Cancer Associations from Published Oncology Abstracts
@@ -35,18 +35,18 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.11.02.26367082v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-03-medrxiv-enhancing_deep_sleep_with_auditory_stimulation_to_boost_cognitive_training_responsiveness_infographic.json
 
-## 5. Alzheimers disease and psychiatric polygenic risk are disease-specific and independent of plasma biomarkers in a real-world young-onset dementia cohort.
+## 5. AI-Based MRI Radiomics for Preoperative Detection of Tumor Deposits in Rectal Cancer: A Bivariate Diagnostic Accuracy Meta-analysis
+
+- Date: 2026-11-03
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.02.26367109v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.02.26367109v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-03-medrxiv-ai_based_mri_radiomics_for_preoperative_detection_of_tumor_deposits_in_rectal_cancer_a_biv_infographic.json
+
+## 6. Alzheimers disease and psychiatric polygenic risk are disease-specific and independent of plasma biomarkers in a real-world young-onset dementia cohort.
 
 - Date: 2026-11-02
 - Category: Target Biology
 - Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.31.26366908v1
 - PDF: https://www.medrxiv.org/content/10.64898/2026.10.31.26366908v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-02-medrxiv-alzheimers_disease_and_psychiatric_polygenic_risk_are_disease_specific_and_independent_of_infographic.json
-
-## 6. Which Attention Helps? A Slide-Level Ablation of Attention-Augmented CNNs for Serous Ovarian Carcinoma Grading
-
-- Date: 2026-11-01
-- Category: Clinical Translation
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.04.21.26351441v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.04.21.26351441v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-01-medrxiv-which_attention_helps_a_slide_level_ablation_of_attention_augmented_cnns_for_serous_ovaria_infographic.json

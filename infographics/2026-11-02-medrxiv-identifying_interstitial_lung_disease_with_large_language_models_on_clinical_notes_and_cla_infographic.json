@@ -1,19 +1,19 @@
 {
-  "key_insight": "Zero-shot LLMs improved the precision–yield trade-off for identifying interstitial lung disease (ILD) in oncology patients compared with published claims-based algorithms.",
-  "clinical_relevance": "More accurate ILD identification could strengthen safety studies of immune checkpoint inhibitors and antibody–drug conjugates, rather than directly support cancer drug discovery.",
+  "key_insight": "Zero-shot large language models improved the positive predictive value–yield trade-off for identifying interstitial lung disease (ILD) compared with published claims-based algorithms.",
+  "clinical_relevance": "More accurate ILD identification could strengthen cancer-drug safety studies by reducing outcome misclassification and preserving toxicity signals.",
   "method": [
-    "Compared 12 open-access LLMs with 20 published claims-based algorithms.",
-    "Provided claims, clinical notes, or both without task-specific training.",
-    "Measured positive predictive value (PPV) and classification yield, then modeled drug-safety signal attenuation."
+    "Evaluated 12 open-access LLMs using claims, clinical notes, or both, without task-specific training.",
+    "Compared performance with 20 published claims-based algorithms using positive predictive value (PPV) and yield.",
+    "Projected effects of outcome misclassification on drug-safety odds ratios and study sample sizes."
   ],
-  "evidence_signal": "Among 309 patients with ILD diagnosis codes adjudicated by two pulmonologists, claims-only Qwen3-8B achieved 89.8% PPV at 15.9% yield, versus 86.7% PPV at 4.9% yield for the highest-PPV algorithm.",
-  "watch_item": "Validation beyond this single-health-system, diagnosis-code-selected cohort is needed; projected drug-safety and sample-size benefits were simulated, not observed.",
+  "evidence_signal": "Among 309 oncology patients with ILD diagnosis codes and pulmonologist-adjudicated outcomes, claims-only Qwen3-8B achieved 89.8% PPV at 15.9% yield, versus 86.7% PPV at 4.9% yield for the highest-PPV algorithm.",
+  "watch_item": "Validation beyond this single-health-system, diagnosis-code-selected cohort is needed; projected drug-safety benefits were simulated, not demonstrated in a prospective study.",
   "hashtags": [
     "#ClinicalAI",
     "#DrugSafety",
-    "#Oncology",
     "#InterstitialLungDisease",
-    "#RealWorldEvidence"
+    "#LargeLanguageModels",
+    "#Pharmacoepidemiology"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Identifying interstitial lung disease with large language models on clinical notes and claims",
   "paper_date": "2026-11-02",
   "paper_category": "Clinical Translation",
-  "generated_at": "2026-11-07T13:41:52",
+  "generated_at": "2026-11-08T14:01:15",
   "generator": "openai"
 }
