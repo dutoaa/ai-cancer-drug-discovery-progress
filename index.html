@@ -22,7 +22,7 @@
     <header>
       <div>
         <h1>AI Cancer Drug Discovery Research Papers - Daily Top 20</h1>
-        <p class="sub">Collected 2026-11-11. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
+        <p class="sub">Collected 2026-11-12. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
       </div>
       <nav class="actions">
         <a href="papers.json">Data JSON</a>
@@ -31,7 +31,7 @@
     </header>
     <section class="grid">
       <article class="paper">
-        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>54</strong></div>
+        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>49</strong></div>
         <p class="date">2026-11-06</p>
         <h2>Statistical design of Path to Prevention platform trial in early neuronal alpha-synuclein disease</h2>
         <p class="authors">Wendelberger, B.; Allen-Savietta, C.; Crawford, A.; Brumm, M. C.; Choi, S. H.; Kopil, C. M.; Schneider, R. B.; Kuhl, M. M.; Lafontant, D.-E.; Ecklund, D.; Fabrizio, K.; Foroud, T.; Goldstein, F. S.; Kamp, C.; Kieburtz, K.; Larson, D. N.; Luthra, N.; Pavese, N.; Siderowf, A.; Stanley, C. E.; Tanner, C. M.; Tropea, T. F.; Willson, T.; Chowdhury, S.; Marek, K.; Simuni, T.; Coffey, C. S.</p>
@@ -39,18 +39,37 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.11.04.26367306v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.11.04.26367306v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> P2P is a phase 2A platform trial designed to efficiently evaluate multiple investigational therapies in early neuronal alpha-synuclein disease, not AI-driven cancer drug discovery.</p>
+          <p><b>Key insight:</b> Path to Prevention is a phase 2A platform trial designed to efficiently evaluate multiple investigational therapies for early neuronal alpha-synuclein disease, not AI-driven cancer drug discovery.</p>
           <p><b>Clinical relevance:</b> The trial targets a biological disease continuum that can precede clinically manifest Parkinson’s disease; treatment benefits remain unproven.</p>
-          <ul><li>Randomized, double-blind regimens assign 125 participants to active therapy and a variable number to placebo, with 96–144 weeks of treated follow-up.</li><li>Separate longitudinal Bayesian mixed-effects models evaluate DAT SPECT bilateral putamen binding and MDS-UPDRS Part III motor scores.</li><li>Analyses use shared placebo controls, dynamically discount controls from other regimens, and supplement estimates with nonrandomized PPMI cohort data.</li></ul>
-          <p><b>Evidence signal:</b> Endpoint selection drew on PPMI modeling and analyses, and simulations used longitudinal data from 275 P2P-eligible participants; the supplied abstract is truncated and reports no efficacy results.</p>
-          <p><b>Watch item:</b> Borrowing shared and nonrandomized controls requires careful assessment of comparability to limit bias.</p>
-          <div class="tags"><span>#ParkinsonsResearch</span> <span>#AlphaSynuclein</span> <span>#PlatformTrials</span> <span>#BayesianMethods</span> <span>#ClinicalTrialDesign</span></div>
+          <ul><li>Randomized, double-blind regimens assign 125 participants to active therapy and a variable number to placebo, with 96–144 weeks of treated follow-up.</li><li>Separate longitudinal Bayesian models assess DAT SPECT bilateral putamen binding and MDS-UPDRS Part III motor scores.</li><li>Models fully weight regimen-specific placebo controls, dynamically discount other regimens’ controls, and supplement estimates with observational PPMI controls.</li></ul>
+          <p><b>Evidence signal:</b> Endpoint selection drew on PPMI modeling, and simulations were informed by longitudinal data from 275 P2P-eligible PPMI participants; the supplied abstract is truncated and reports no treatment efficacy results.</p>
+          <p><b>Watch item:</b> Borrowing shared placebo and non-randomized observational controls requires careful assessment of comparability and potential bias.</p>
+          <div class="tags"><span>#ParkinsonsResearch</span> <span>#AlphaSynuclein</span> <span>#PlatformTrials</span> <span>#BayesianStatistics</span> <span>#ClinicalTrialDesign</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Therapeutic Discovery</span><span>medRxiv</span><strong>46</strong></div>
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>46</strong></div>
+        <p class="date">2026-11-07</p>
+        <h2>Dense Breast Tissue Segmentation under Limited Annotation: Comparing CNNs, Transformers, Self-Supervision, and Prompting</h2>
+        <p class="authors">Qu, B.; Liu, W.; Zhou, L.; Guo, X.; Malin, B.; Yin, Z.</p>
+        <p class="abstract">Dense breast tissue reduces the sensitivity of mammographic screening and is an important risk factor for breast cancer, making accurate dense-tissue segmentation particularly important when expert pixel-level annotations are limited. We empirically study dense breast tissue segmentation under limited pixel-level supervision using a small expert-annotated dataset (596 images) together with an in-domain unlabeled mammography dataset (20,000 images). We compare classical pixel-level segmentation methods, CNN and U-Net encoder-decoder models, transformer-based models, self-supervised pre-training, fine-tuning strategies, loss functions, and prompt-based MedSAM variants under a unified evaluation protocol. CNN-based models achieve the best standalone segmentation performance while providing the most favorable balance between accuracy and computational cost. In contrast, the adaptive fuzzy c-means + SVM baseline and transformer-based models perform worse in this low-label setting. Our analysis of prompt-based MedSAM further shows that SAM-style models are highly sensitive to prompt quality. Box and breast-region prompts lead to poor performance, whereas CNN-generated dense prompts substantially improve MedSAM performance. However, even with mask-decoder fine-tuning, CNN-prompted MedSAM does not outperform the best standalone CNN model, suggesting that current SAM-style models require stronger prompts or adaptation beyond the mask decoder for diffuse breast-density segmentation. Additionally, a density-calibrated hybrid loss primarily improves percentdensity calibration by reducing the test MAE from 14.8 to 11.8 percentage points. Our computational cost analysis indicates that many generic self-supervised learning and parameter-efficient adaptation strategies provide limited practical benefit relative to their additional cost. These findings offer practical guidance for developing reproducible dense breast tissue segmentation models in mammography studies with limited labeled data.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.02.23.26346855v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.02.23.26346855v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> With limited labeled mammograms, standalone CNNs delivered the best dense breast tissue segmentation and accuracy–compute balance, outperforming transformer and prompted MedSAM approaches.</p>
+          <p><b>Clinical relevance:</b> More accurate dense-tissue segmentation could support breast-density assessment in mammography research; this study does not evaluate cancer drug discovery or clinical outcomes.</p>
+          <ul><li>Compared classical segmentation, CNN/U-Net and transformer models under a unified evaluation protocol.</li><li>Evaluated self-supervised pre-training, fine-tuning strategies and loss functions.</li><li>Tested MedSAM with box, breast-region and CNN-generated dense prompts.</li></ul>
+          <p><b>Evidence signal:</b> The study used 596 expert-annotated images and 20,000 unlabeled mammograms; a density-calibrated hybrid loss reduced test percent-density MAE from 14.8 to 11.8 percentage points.</p>
+          <p><b>Watch item:</b> The small annotated dataset limits conclusions about generalizability, and MedSAM performance was highly sensitive to prompt quality.</p>
+          <div class="tags"><span>#BreastImaging</span> <span>#DenseBreastTissue</span> <span>#MedicalImageSegmentation</span> <span>#LimitedLabelLearning</span> <span>#AIResearch</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Therapeutic Discovery</span><span>medRxiv</span><strong>41</strong></div>
         <p class="date">2026-11-06</p>
         <h2>Genotypic infection endpoint analysis to understand efficacy and escape potential of the malaria monoclonal antibody CIS43LS</h2>
         <p class="authors">Schwabl, P.; Niangaly, A.; Nickols, W.; Callier, V.; Mateja, A.; Kayentao, K.; Ongoiba, A.; Skinner, J.; Preston, A. C.; Doumbo, S.; Doumtabe, D.; Amaya-Romero, J. E.; Kelley, K. K.; Li, S.; Laws, M.; Peterson, M. E.; Tran, T. M.; Murphy, S. C.; Traore, B.; Seder, R. A.; Crompton, P. D.; Potter, G. E.; Neafsey, D. E.</p>
@@ -58,18 +77,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.11.04.26367264v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.11.04.26367264v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Genotyping malaria infections throughout follow-up provided a more comprehensive assessment of CIS43LS efficacy than time-to-first-infection analysis, with no evidence of escape-associated changes in its target epitope.</p>
-          <p><b>Clinical relevance:</b> For malaria prevention research—not AI cancer drug discovery—genotypic endpoints can clarify protection against repeated infections and differences by baseline infection status.</p>
-          <ul><li>Genotyped all detected Plasmodium falciparum infections in a phase 2 trial involving 330 Malian adults.</li><li>Estimated molecular force of infection: the rate of newly acquired parasite strains.</li><li>Compared strain-acquisition rates between CIS43LS and placebo arms over six months.</li></ul>
-          <p><b>Evidence signal:</b> Six-month efficacy against new-strain acquisition was 86.5% (95% CI: 80.1–90.8) at 40 mg/kg and 70.7% (61.0–78.0) at 10 mg/kg, with greater precision than time-to-first analysis in monthly and baseline-status comparisons.</p>
-          <p><b>Watch item:</b> The absence of detected escape polymorphisms over six months in this adult cohort does not rule out escape in other populations or with longer follow-up.</p>
-          <div class="tags"><span>#Malaria</span> <span>#CIS43LS</span> <span>#MonoclonalAntibodies</span> <span>#ParasiteGenomics</span> <span>#ClinicalTrialMethods</span></div>
+          <p><b>Key insight:</b> Genotyping all detected malaria infections provided a more comprehensive assessment of CIS43LS efficacy than time-to-first-infection analysis, with improved precision in subgroup and monthly analyses.</p>
+          <p><b>Clinical relevance:</b> For malaria prevention research—not AI cancer drug discovery—tracking new parasite strains can clarify protection across follow-up and assess potential antibody escape.</p>
+          <ul><li>Genotyped all detected Plasmodium falciparum infections in a phase 2 trial involving 330 Malian adults.</li><li>Calculated molecular force of infection: the rate of newly acquired parasite strains.</li><li>Compared strain acquisition between CIS43LS and placebo arms and examined the antibody-targeted epitope for escape polymorphisms.</li></ul>
+          <p><b>Evidence signal:</b> Over six months, CIS43LS reduced molecular force of infection by 86.5% (95% CI: 80.1–90.8) at 40 mg/kg and 70.7% (61.0–78.0) at 10 mg/kg; no evidence of epitope escape polymorphisms was found.</p>
+          <p><b>Watch item:</b> Findings from one six-month trial in Malian adults do not establish long-term protection or rule out escape in other populations.</p>
+          <div class="tags"><span>#MalariaResearch</span> <span>#CIS43LS</span> <span>#MonoclonalAntibodies</span> <span>#ParasiteGenomics</span> <span>#ClinicalTrialMethods</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>46</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>41</strong></div>
         <p class="date">2026-11-06</p>
         <h2>Polygenic overlap of physical activity with schizophrenia and Parkinson&#x27;s disease</h2>
         <p class="authors">van der Walt, K.; Shadrin, A.; Tesfaye, M.; van der Meer, D.; Andreassen, O.; Rokicki, J.; Campbell, M.</p>
@@ -77,18 +96,18 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.06.23.26356304v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.06.23.26356304v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Physical activity shares substantial polygenic architecture with schizophrenia and Parkinson’s disease, despite negligible overall genetic correlations because shared variants have mixed effect directions.</p>
-          <p><b>Clinical relevance:</b> These findings provide a genetic basis for investigating activity changes across neuropsychiatric disorders, but do not establish a clinical biomarker or treatment.</p>
-          <ul><li>Enhanced objectively measured activity GWAS using self-reported activity GWAS.</li><li>Compared activity genetics with schizophrenia and Parkinson’s disease GWAS.</li><li>Assessed overlap using causal mixture modelling, local genetic correlations and conjunctional false discovery rate analysis.</li></ul>
-          <p><b>Evidence signal:</b> Analyses included objectively measured activity in 89,683 participants, schizophrenia in 53,386 cases and 77,258 controls, and Parkinson’s disease in 63,555 cases, 17,700 proxy cases and 1,746,386 controls; overall genetic correlations were negligible (rg −0.02 to 0.02; p &gt; 0.05).</p>
-          <p><b>Watch item:</b> Shared genetic architecture does not establish causality or validate activity-based clinical prediction; this is not an AI cancer drug discovery study.</p>
-          <div class="tags"><span>#PhysicalActivity</span> <span>#Schizophrenia</span> <span>#ParkinsonsDisease</span> <span>#PolygenicOverlap</span> <span>#GWAS</span></div>
+          <p><b>Key insight:</b> Physical activity shares substantial genetic influences with schizophrenia and Parkinson’s disease despite negligible overall genetic correlations, reflecting mixed effect directions.</p>
+          <p><b>Clinical relevance:</b> The findings offer biological context for studying physical activity as a candidate digital biomarker in neuropsychiatric disorders, not evidence for cancer drug discovery or clinical use.</p>
+          <ul><li>Enhanced objectively measured activity GWAS with self-reported activity data.</li><li>Compared activity genetics with schizophrenia and Parkinson’s disease GWAS.</li><li>Combined causal mixture modelling, local genetic correlations and conjunctional false discovery rate analysis.</li></ul>
+          <p><b>Evidence signal:</b> Analyses included 89,683 participants with objectively measured activity and large disorder GWAS, finding substantial polygenic overlap despite genetic correlations of −0.02 to 0.02 (p &gt; 0.05).</p>
+          <p><b>Watch item:</b> Shared genetic architecture does not establish causality or validate physical activity for individual diagnosis or monitoring.</p>
+          <div class="tags"><span>#PhysicalActivity</span> <span>#Schizophrenia</span> <span>#ParkinsonsDisease</span> <span>#PolygenicOverlap</span> <span>#DigitalBiomarkers</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>46</strong></div>
+        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>41</strong></div>
         <p class="date">2026-11-06</p>
         <h2>Path to Prevention Platform Trial in Early-Stage Neuronal Alpha-Synuclein Disease: Study Design</h2>
         <p class="authors">Schneider, R. B.; Coffey, C. S.; Kopil, C. M.; Kuhl, M. M.; Allen-Savietta, C.; Brumm, M. C.; Choi, S. H.; Crawford, A.; Ecklund, D.; Fabrizio, K.; Foroud, T.; Goldstein, F. S.; Kamp, C.; Kieburtz, K.; Lafontant, D.-E.; Larson, D. N.; Luthra, N.; Pavese, N.; Siderowf, A.; Stanley, C. E.; Tropea, T. F.; Wendelberger, B.; Tanner, C. M.; Willson, T.; Chowdhury, S.; Marek, K.; Simuni, T.</p>
@@ -96,88 +115,12 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.11.04.26367309v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.11.04.26367309v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Path to Prevention (P2P) is a phase 2A platform trial designed to test interventions in early-stage neuronal α-synuclein disease before clinically defined Parkinson’s disease or a related disorder.</p>
-          <p><b>Clinical relevance:</b> The trial targets adults aged 60 or older with abnormal α-synuclein, dopaminergic dysfunction, and prodromal signs or symptoms but no functional impairment.</p>
-          <ul><li>Randomized, double-blind, placebo-controlled platform embedded within the observational PPMI cohort.</li><li>Approximately 35 North American and European sites; 125 active-treatment participants and at least 125 shared placebo participants per regimen.</li><li>Two primary endpoints track putamen dopamine-transporter binding and MDS-UPDRS Part III motor scores.</li></ul>
-          <p><b>Evidence signal:</b> The abstract describes a study design, not efficacy results, with treatment lasting up to 144 weeks and Bayesian modeling incorporating data from non-enrolled PPMI participants.</p>
-          <p><b>Watch item:</b> Whether treatment at this biological stage delays clinically meaningful disease progression remains unproven; this paper is not about AI or cancer drug discovery.</p>
+          <p><b>Key insight:</b> Path to Prevention (P2P) is a platform trial designed to test interventions in early-stage neuronal α-synuclein disease before a clinical Parkinson’s diagnosis; it is not an AI cancer drug discovery study.</p>
+          <p><b>Clinical relevance:</b> The trial targets a biologically defined population without functional impairment to evaluate interventions intended to slow disease progression.</p>
+          <ul><li>Phase 2A, randomized, double-blind, placebo-controlled platform embedded within the observational PPMI cohort.</li><li>Enrolls adults aged ≥60 with NSD Stage 2B at approximately 35 sites across North America and Europe.</li><li>Each regimen includes 125 active-treatment participants and at least 125 shared placebo controls, with treatment lasting up to 144 weeks.</li></ul>
+          <p><b>Evidence signal:</b> This design report provides no efficacy results; primary endpoints assess changes in putamen dopamine-transporter binding and MDS-UPDRS Part III motor scores.</p>
+          <p><b>Watch item:</b> Bayesian modeling uses data from non-enrolled PPMI participants, making comparability with trial participants an important consideration.</p>
           <div class="tags"><span>#ParkinsonsResearch</span> <span>#AlphaSynuclein</span> <span>#PlatformTrial</span> <span>#EarlyIntervention</span> <span>#ClinicalTrialDesign</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>41</strong></div>
-        <p class="date">2026-11-05</p>
-        <h2>Suvorexant Inversely Affects Phosphorylated Tau in Human Cerebrospinal Fluid and Plasma</h2>
-        <p class="authors">Pedersen, T. J.; Yu, J.; Li, A.; Ibanez, L.; Bubu, O. M.; Lucey, B. P.</p>
-        <p class="abstract">Alzheimer disease (AD) is characterized by amyloid-{beta} plaques and neurofibrillary tangles of tau. Suvorexant, a dual orexin receptor antagonist, was previously shown to acutely reduce the ratio of phosphorylated tau-181 to unphosphorylated tau-181 (pT181/T181) in cerebrospinal fluid (CSF). However, its effects on plasma pT181/T181 and broader proteomic networks remain unknown. Here, we conducted a secondary analysis of samples from a randomized, placebo-controlled trial of 25 participants receiving placebo or suvorexant 20 mg. Paired CSF and plasma samples were collected longitudinally via indwelling intrathecal and intravenous catheters. Plasma AD biomarkers were quantified by mass spectrometry, and proteomic profiling was performed using the SomaScan 11K assay on samples from hours 0, 16, and 24. Suvorexant increased pT181/T181 in plasma while decreasing it in CSF between 08:00-16:00. At the pathway level, suvorexant increased the extracellular abundance of proteins associated with translation, RNA binding, cytoskeletal organization and endosomal sorting, centrally at 16 hours and peripherally at 24 hours, and decreased cytokine and receptor-ligand signaling and serine protease activity in plasma at 24 hours. As plasma biomarkers are increasingly used for clinical screening and trial enrollment, factors that influence their levels, including medications, must be identified and their effects on interpretation understood.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.11.03.26367196v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.11.03.26367196v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Suvorexant increased the phosphorylated-to-unphosphorylated tau-181 ratio in plasma while decreasing it in cerebrospinal fluid, showing opposite biomarker responses across compartments.</p>
-          <p><b>Clinical relevance:</b> Medication-related changes in plasma tau biomarkers may complicate their interpretation for Alzheimer disease screening and trial enrollment.</p>
-          <ul><li>Secondary analysis of a randomized, placebo-controlled trial involving 25 participants receiving placebo or suvorexant 20 mg.</li><li>Longitudinal paired cerebrospinal fluid and plasma sampling via indwelling catheters.</li><li>Mass spectrometry for plasma Alzheimer biomarkers and SomaScan 11K proteomics at hours 0, 16, and 24.</li></ul>
-          <p><b>Evidence signal:</b> Opposite plasma and cerebrospinal fluid pT181/T181 changes occurred between 08:00 and 16:00, alongside proteomic pathway shifts centrally at 16 hours and peripherally at 24 hours.</p>
-          <p><b>Watch item:</b> This small, acute secondary analysis does not establish long-term effects on Alzheimer disease progression or clinical benefit.</p>
-          <div class="tags"><span>#AlzheimersResearch</span> <span>#Suvorexant</span> <span>#TauBiomarkers</span> <span>#Proteomics</span> <span>#TargetBiology</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>41</strong></div>
-        <p class="date">2026-11-05</p>
-        <h2>Phenome-wide and proteomic analysis of APOE alleles across different ancestries in the All of Us Research Program</h2>
-        <p class="authors">Mejia Garcia, A.; Valderrama-Carmona, P.; Zheng, T. M.; Wang, Z.; Tsao, H. M.; Jung, J.; Orozco, C. A.; Su, C.-Y.; Zhou, S.</p>
-        <p class="abstract">BackgroundApolipoprotein E (APOE) {varepsilon}4 is the strongest common genetic risk factor for Alzheimers disease and a determinant of cardiometabolic risk, yet studies of APOE genotypes with disease associations and plasma proteomic signatures have been primarily restricted to European-ancestry cohorts. MethodsWe performed a phenome-wide association study of APOE genotype in 367,757 All of Us participants across six genetic ancestry groups. APOE alleles were tested against 2,632 phenotypes using an ordinal Alzheimers-disease-risk hierarchy ({varepsilon}2/{varepsilon}2 &lt; {varepsilon}2/{varepsilon}3 &lt; {varepsilon}3/{varepsilon}3 &lt; {varepsilon}2/{varepsilon}4 &lt; {varepsilon}3/{varepsilon}4 &lt; {varepsilon}4/{varepsilon}4), adjusted for age, sex at birth, EHR length, and 16 genetic principal components. Sex- and ancestry-stratified analyses used Cochrans Q for heterogeneity. We evaluated {varepsilon}2 and {varepsilon}4 dosage effects on plasma protein levels in 9,132 participants across five ancestries. FindingsWe identified 27 phenotypes associated with APOE, mainly in neurological and lipid-related traits. Five lipid-related traits showed sex heterogeneity, with larger effects in females. Nine associations showed ancestry-specific effects. APOE {varepsilon}4 showed stronger protection against fatty liver disease in East Asians with lack of protection in African ancestry; and larger dementia risk for Europeans. Finally, SNAP25 was identified as positively associated with APOE {varepsilon}4 dosage across ancestries, and CDC42EP1, APOA1 and ITGB5 shown associations with APOE {varepsilon}2/{varepsilon}4 specifically in non-European populations. InterpretationAncestry-heterogeneous APOE effects, particularly for liver and dementia phenotypes, argue for ancestry-aware interpretation of APOE-based risk. Plasma SNAP25 is a candidate ancestry-portable biomarker of APOE-{varepsilon}4 effects, and ancestry-specific proteins nominate mechanisms for the observed phenotypic heterogeneity. Research in context Evidence before this studyThe APOE {varepsilon}4 variant is an established genetic risk factor for hyperlipidemia, Alzheimers disease, dementia, ischemic heart disease and, more recently, non-alcoholic fatty liver disease. Prior phenome-wide association studies (PheWAS) of APOE have been conducted largely in European-ancestry cohorts. A recent APOE PheWAS in the All of Us Research Program (n = 181,880) identified 17 Bonferroni-significant phenotypes and preliminary evidence of ancestry heterogeneity for hyperlipidemia and mild cognitive impairment, but statistical power in non-European groups limited systematic characterization of ancestry-specific effects. Recent plasma proteomic studies have described APOE-associated protein signatures shared with neurodegenerative diseases, but these were confined to European-ancestry participants, leaving open whether such signatures generalize across ancestries. Added value of this studyUsing the All of Us v9 release, we approximately doubled the sample size of the prior APOE PheWAS in this cohort (n = 367,757 across six ancestry groups, including [~]146,000 non-European participants), enabling the first well-powered assessment of ancestry heterogeneity of APOE effects. We identify 27 Bonferroni-significant phecodes, 11 novel compared to the previous APOE PheWAS in All of Us -- including vascular dementia, dementia with Lewy bodies, and angina pectoris. We detect significant sex heterogeneity for five lipid-related phecodes and significant ancestry heterogeneity for nine phecodes, including stronger protection against fatty liver and chronic liver disease in East Asian participants and larger dementia risk in European participants. Complementing the phenotypic analysis, we present the first ancestry-stratified plasma proteomic characterization of APOE genotypes (n = 9,132), identifying SNAP25 as a robust APOE-{varepsilon}4-associated protein across ancestries and ancestry-specific signals for IL32, CDC42EP1, APOA1, and ITGB5. Implications of all the available evidenceAPOE-associated risk estimates derived predominantly from European-ancestry data may not transfer directly to other populations, and our findings support incorporating ancestry into the interpretation and calibration of APOE-based risk prediction. The ancestry-heterogeneous protection against liver disease and the parallel APOA1 signal absent in East and South Asian participants together offer a mechanistic hypothesis linking APOE-driven lipid partitioning to hepatic outcomes. Plasma SNAP25 is proposed as an accessible, ancestry-portable biomarker of APOE-{varepsilon}4 effects and Alzheimers disease progression. Ancestry-specific proteins (IL32 and CDC42EP1 in African ancestry, ITGB5 in Admixed American ancestry) constitute potential drivers of ancestry heterogeneity in APOE-related disease risk.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.26.26364080v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.26.26364080v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> APOE associations with dementia, liver disease and plasma proteins varied by ancestry, while SNAP25 increased with APOE ε4 dosage across ancestries.</p>
-          <p><b>Clinical relevance:</b> The findings support ancestry-aware research on APOE-related risk and biomarkers, but do not establish clinical tests or treatment recommendations.</p>
-          <ul><li>Tested APOE genotype associations with 2,632 phenotypes in 367,757 All of Us participants across six genetic ancestry groups.</li><li>Adjusted for demographic and genetic covariates and assessed sex- and ancestry-related heterogeneity.</li><li>Evaluated APOE ε2 and ε4 dosage associations with plasma proteins in 9,132 participants across five ancestries.</li></ul>
-          <p><b>Evidence signal:</b> The study identified 27 associated phenotypes, including nine associations with ancestry-specific effects and five lipid-related traits with larger effects in females.</p>
-          <p><b>Watch item:</b> These observational associations require independent validation; this is APOE target-biology research, not an AI cancer drug discovery study.</p>
-          <div class="tags"><span>#APOE</span> <span>#TargetBiology</span> <span>#Proteomics</span> <span>#GeneticAncestry</span> <span>#AllOfUs</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>41</strong></div>
-        <p class="date">2026-11-05</p>
-        <h2>A scalable invariant causal discovery framework reveals direct genetic and clinical determinants of complex human traits</h2>
-        <p class="authors">Yin, L.; Liu, M.; Shi, Y.; Qiu, J.; So, H.-C.</p>
-        <p class="abstract">Identifying genetic and clinical factors that exert direct causal effects on complex traits is central to precision medicine, yet remains a major challenge. Association-based methods cannot distinguish cause from consequence, and existing causal frameworks are limited by stringent assumptions or computational intractability in high-dimensional settings. Invariant causal prediction (ICP) offers a principled alternative but has seen minimal application in genetic epidemiology due to exponential complexity. Here, we introduce the Invariant Generalized Covariance Measure (I-GCM), a scalable framework that integrates ICP principles with machine learning to identify direct causal variables. I-GCM combines PC-simple screening with a generalized covariance measure (GCM) computed via gradient-boosted trees to test invariance across environments, capturing both linear and nonlinear dependencies. In simulations (up to 3,000 variables, 50,000 samples), I-GCM achieved PPV of [~]0.84-1.00 and specificity [&amp;ge;]0.99, outperforming PC-simple by 0.21-0.29 in precision with comparable sensitivity. Applying I-GCM to the UK Biobank, we identified direct causal genes and clinical risk factors for COVID-19 susceptibility and severity and for HDL and triglyceride levels, with many findings supported by existing literature and pathway enrichment. Notably, JAK1 was identified as a direct causal gene for severe COVID-19, consistent with clinical use of the JAK1-targeting therapy baricitinib. To our knowledge, this is among the first applications of invariance-based causal discovery to genetic epidemiology at a biobank scale. By bridging statistical causality and translational medicine, I-GCM offers a scalable, interpretable, and high-precision framework for mechanistic discovery and therapeutic target prioritization.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.1101/2024.08.29.24312763v3" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.1101/2024.08.29.24312763v3.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> I-GCM combines causal invariance testing with machine learning to prioritize candidate direct genetic and clinical determinants of complex traits, rather than cancer drug discovery specifically.</p>
-          <p><b>Clinical relevance:</b> The framework could support therapeutic target prioritization, with JAK1 identified for severe COVID-19 in alignment with the clinical use of JAK1-targeting baricitinib.</p>
-          <ul><li>Use PC-simple screening to narrow candidate variables.</li><li>Apply gradient-boosted trees within generalized covariance testing.</li><li>Test invariance across environments to identify candidate direct causes.</li></ul>
-          <p><b>Evidence signal:</b> Simulations with up to 3,000 variables and 50,000 samples achieved positive predictive values of approximately 0.84–1.00 and specificity ≥0.99; UK Biobank applications examined COVID-19 outcomes, HDL and triglycerides.</p>
-          <p><b>Watch item:</b> Causal interpretations depend on modeling and environment assumptions; literature support does not substitute for experimental validation.</p>
-          <div class="tags"><span>#CausalDiscovery</span> <span>#MachineLearning</span> <span>#TargetBiology</span> <span>#GeneticEpidemiology</span> <span>#TherapeuticTargets</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>41</strong></div>
-        <p class="date">2026-11-05</p>
-        <h2>Divergent Causes of Death After Ischemic and Hemorrhagic Stroke in the Reperfusion Era: A Contemporary Cohort Study</h2>
-        <p class="authors">Kadiyala, V.; Simpkins, A. N.; Chugh, H.; Czarny, R.; Uy-Evanado, A.; Bosson, N.; Tatonetti, N.; Reinier, K.; Chugh, S. S.</p>
-        <p class="abstract">BackgroundContemporary data on long-term, cause-specific mortality among stroke survivors are sparse, and much of the existing evidence derives from studies performed before the modern reperfusion era. We sought to characterize long-term cause-specific mortality among stroke survivors to discharge (differentiated by stroke subtype) when compared to in-hospital stroke decedents treated under contemporary standards of care. MethodsUsing a hybrid billing-code/imaging and large language model-assisted chart-review pipeline, we identified adults hospitalized for ischemic or hemorrhagic stroke in the Observational Study of Cardiac Arrest Risk (OSCAR) cohort (Cedars-Sinai Health System, Los Angeles) between 2017 and 2020, followed through June 30, 2025. Cause of death was determined and classified into 10 categories. ResultsAmong 1,344 stroke patients (mean age 74.0 {+/-} 14.9 years; ischemic n=1,036 [77.1%], hemorrhagic n=308 [22.9%]), 203 (15.1%) did not survive the index stroke. Of the 1,141 discharged survivors, 625 (54.8%) died over a median follow-up of 5.2 years. Cerebrovascular causes predominated during index stroke hospitalization (36.0%) but accounted for only 15.5% of post-stroke discharge deaths. Among ischemic stroke survivors, cardiac disease was the leading cause of death (31.6%), with sudden cardiac arrest alone accounting for 10.9% of deaths. Among hemorrhagic stroke survivors, cancer (38.9%) was the leading cause of death. Despite these divergent cause-of-death profiles, overall survival did not differ significantly by subtype (median 5.5 vs 5.8 years; P=0.90). ConclusionsIn this contemporary, reperfusion-era cohort, causes of death shifted from cerebrovascular predominance in the acute phase to heart disease/cardiac arrest after ischemic stroke, and malignancy after hemorrhagic stroke. These findings argue for development of subtype-specific post-stroke surveillance, including structured longitudinal cardiac and sudden-death risk assessment for ischemic stroke survivors.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.11.03.26367230v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.11.03.26367230v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Among patients who survived hospitalization for stroke, cardiac disease led subsequent deaths after ischemic stroke, while cancer led after hemorrhagic stroke.</p>
-          <p><b>Clinical relevance:</b> These findings support research into subtype-specific follow-up, including longitudinal cardiac and sudden-death risk assessment after ischemic stroke.</p>
-          <ul><li>Identified 1,344 adults hospitalized with stroke in the Cedars-Sinai OSCAR cohort during 2017–2020.</li><li>Used billing codes, imaging, and large language model-assisted chart review; classified causes of death into 10 categories.</li><li>Followed patients through June 30, 2025, comparing mortality patterns by stroke subtype and hospitalization survival.</li></ul>
-          <p><b>Evidence signal:</b> Among 1,141 discharged survivors, 625 died over a median 5.2-year follow-up; cardiac disease accounted for 31.6% of deaths after ischemic stroke and cancer for 38.9% after hemorrhagic stroke.</p>
-          <p><b>Watch item:</b> This observational, single-health-system study identifies mortality patterns but does not establish whether subtype-specific surveillance improves outcomes.</p>
-          <div class="tags"><span>#StrokeResearch</span> <span>#IschemicStroke</span> <span>#HemorrhagicStroke</span> <span>#CardiovascularRisk</span> <span>#ClinicalTranslation</span></div>
         </section>
       </article>
     </section>
