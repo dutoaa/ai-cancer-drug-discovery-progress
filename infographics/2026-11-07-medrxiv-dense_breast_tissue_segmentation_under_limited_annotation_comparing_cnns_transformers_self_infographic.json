@@ -1,19 +1,19 @@
 {
-  "key_insight": "With limited labeled mammograms, standalone CNNs delivered the best dense breast tissue segmentation and accuracy–compute balance, outperforming transformer and prompted MedSAM approaches.",
-  "clinical_relevance": "More accurate dense-tissue segmentation could support breast-density assessment in mammography research; this study does not evaluate cancer drug discovery or clinical outcomes.",
+  "key_insight": "Standalone CNNs delivered the best dense breast tissue segmentation and accuracy–compute balance, outperforming transformers and CNN-prompted MedSAM under limited annotation.",
+  "clinical_relevance": "More accurate dense-tissue segmentation could support breast-density assessment in mammography, where dense tissue can obscure cancers and is associated with increased breast cancer risk.",
   "method": [
-    "Compared classical segmentation, CNN/U-Net and transformer models under a unified evaluation protocol.",
-    "Evaluated self-supervised pre-training, fine-tuning strategies and loss functions.",
-    "Tested MedSAM with box, breast-region and CNN-generated dense prompts."
+    "Compared classical methods, CNN/U-Net models, transformers, and prompt-based MedSAM.",
+    "Evaluated self-supervised pretraining, fine-tuning strategies, and loss functions.",
+    "Tested box, breast-region, and CNN-generated dense prompts for MedSAM."
   ],
-  "evidence_signal": "The study used 596 expert-annotated images and 20,000 unlabeled mammograms; a density-calibrated hybrid loss reduced test percent-density MAE from 14.8 to 11.8 percentage points.",
-  "watch_item": "The small annotated dataset limits conclusions about generalizability, and MedSAM performance was highly sensitive to prompt quality.",
+  "evidence_signal": "Using 596 expert-annotated images and 20,000 unlabeled mammograms under a unified evaluation protocol, a density-calibrated hybrid loss reduced percent-density test MAE from 14.8 to 11.8 percentage points.",
+  "watch_item": "MedSAM performance depended strongly on prompt quality, and mask-decoder fine-tuning did not make it outperform the best standalone CNN.",
   "hashtags": [
     "#BreastImaging",
-    "#DenseBreastTissue",
+    "#BreastDensity",
     "#MedicalImageSegmentation",
-    "#LimitedLabelLearning",
-    "#AIResearch"
+    "#LimitedAnnotation",
+    "#AIinOncology"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Dense Breast Tissue Segmentation under Limited Annotation: Comparing CNNs, Transformers, Self-Supervision, and Prompting",
   "paper_date": "2026-11-07",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-11-12T15:43:06",
+  "generated_at": "2026-11-13T15:03:22",
   "generator": "openai"
 }
