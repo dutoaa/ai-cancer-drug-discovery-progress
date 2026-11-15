@@ -1,19 +1,19 @@
 {
-  "key_insight": "In Alzheimer’s disease research, strong AI segmentation accuracy did not guarantee preservation of biologically meaningful associations between perivascular spaces and amyloid biomarkers.",
-  "clinical_relevance": "AI-derived perivascular space measurements require cohort-specific validation before they can reliably support Alzheimer’s disease biomarker research.",
+  "key_insight": "In this Alzheimer’s MRI study—not cancer drug discovery—strong PVS segmentation accuracy did not guarantee preservation of biologically meaningful associations.",
+  "clinical_relevance": "Model choice may alter research conclusions about PVS burden and Alzheimer’s biomarkers, supporting cohort-specific validation before clinical inference.",
   "method": [
-    "Benchmarked five open-source nnU-Net-based segmentation models against manual MRI labels.",
-    "Evaluated segmentation across brain regions, diagnoses, scanners, and lesion burdens.",
-    "Tested whether model-derived measurements reproduced manual-label associations with Alzheimer’s-related biomarkers."
+    "Benchmarked five open-source nnU-Net-based PVS segmentation models against manual labels.",
+    "Evaluated segmentation across brain regions, diagnoses, scanners, PVS severity, and white matter hyperintensity burden.",
+    "Tested whether model-derived PVS burden reproduced manual-label associations with Alzheimer’s biomarkers."
   ],
   "evidence_signal": "Across 60 ADNI-3 participants and 12 external VALDO scans, ADNI-PVS-Net achieved internal Dice of 0.58 ± 0.14 but external Dice ≤0.11; only AD-trained models reproduced the expected PVS–amyloid relationship.",
-  "watch_item": "Some models misclassified up to 32% of white matter hyperintensities as perivascular spaces, potentially distorting downstream biological inference.",
+  "watch_item": "External validation was limited to 12 scans, and some models misclassified up to 32% of white matter hyperintensities as PVS.",
   "hashtags": [
     "#AlzheimersResearch",
     "#PerivascularSpaces",
     "#DeepLearning",
     "#MRISegmentation",
-    "#BiomarkerValidation"
+    "#ModelValidation"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Examining the Clinical Utility of Deep Learning Models for Perivascular Space Segmentation in Alzheimer's Disease",
   "paper_date": "2026-11-10",
   "paper_category": "Target Biology",
-  "generated_at": "2026-11-14T13:54:28",
+  "generated_at": "2026-11-15T14:28:26",
   "generator": "openai"
 }

@@ -1,18 +1,18 @@
 {
-  "key_insight": "LLMs labeled incidental findings in lung cancer screening CT reports with moderate to almost perfect agreement, but no model–prompt combination led across all nine findings.",
-  "clinical_relevance": "This report-labeling research—not cancer drug discovery—could support identification of incidental findings for research and screening-program review.",
+  "key_insight": "LLMs labeled incidental findings in lung cancer screening CT reports with moderate to almost perfect agreement, but no model–prompt combination performed best across all nine findings.",
+  "clinical_relevance": "This report-labeling research could support incidental-finding data extraction in lung cancer screening; it did not evaluate cancer drug discovery or patient outcomes.",
   "method": [
     "Retrospective analysis of 300 CT reports from one Dutch academic hospital.",
-    "Compared four LLMs using four prompting strategies each, plus keyword-based search, against radiologist labels.",
-    "Assessed nine incidental findings using Cohen’s kappa, sensitivity, specificity, and F1 scores."
+    "Compared GPT-5, GPT-4-Turbo, Llama-3.1-8B-INST, MedGemma-4B-IT, and keyword search against radiologist labels.",
+    "Tested four prompting strategies per LLM, with and without chain-of-thought."
   ],
-  "evidence_signal": "GPT-5 achieved kappa values of 0.71–0.97 for seven findings; the highest reported agreement for interstitial lung abnormalities and mediastinal mass was moderate (0.48 and 0.42, respectively).",
-  "watch_item": "Single-center results require external validation, and variable performance across findings argues against assuming one model–prompt combination is universally reliable.",
+  "evidence_signal": "GPT-5 achieved Cohen’s κ of 0.71–0.97 for seven findings; the highest reported agreement for interstitial lung abnormalities and mediastinal mass was moderate (κ=0.48 and 0.42, respectively), and non-chain-of-thought prompts performed best for most findings.",
+  "watch_item": "The small, single-center retrospective dataset limits generalizability; broader validation is needed before clinical implementation.",
   "hashtags": [
-    "#RadiologyAI",
     "#LungCancerScreening",
-    "#IncidentalFindings",
+    "#RadiologyAI",
     "#LargeLanguageModels",
+    "#IncidentalFindings",
     "#ClinicalNLP"
   ],
   "model": "gpt-6.1-sol",
@@ -21,6 +21,6 @@
   "paper_title": "Large Language Models to Label CT Radiology Reports for Incidental Findings Found in Lung Cancer Screening: A Comparative Analysis",
   "paper_date": "2026-11-10",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-11-14T13:54:21",
+  "generated_at": "2026-11-15T14:28:19",
   "generator": "openai"
 }

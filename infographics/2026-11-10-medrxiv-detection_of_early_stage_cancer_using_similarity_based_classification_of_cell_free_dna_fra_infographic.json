@@ -1,18 +1,18 @@
 {
-  "key_insight": "Blackjack uses just two cfDNA fragmentation-similarity features to distinguish cancer from healthy samples, including early-stage cancers.",
-  "clinical_relevance": "This blood-based detection approach could support multi-cancer screening research; it is not a drug discovery method or an established clinical screening test.",
+  "key_insight": "Blackjack uses just two cfDNA fragmentation-similarity features to detect cancer with high accuracy in cross-validation, including early-stage disease.",
+  "clinical_relevance": "This blood-based detection approach could support less invasive multi-cancer screening, but the study concerns cancer detection—not drug discovery—and does not establish clinical screening utility.",
   "method": [
-    "Encode DNA sequence context around cfDNA fragmentation sites in a position probability matrix.",
-    "Measure similarity to matrices from known healthy and cancer cohorts.",
+    "Encode DNA sequence context around plasma cfDNA fragmentation sites in position probability matrices.",
+    "Calculate similarity to reference matrices from healthy and cancer cohorts.",
     "Use the two similarity features in logistic regression to classify samples."
   ],
-  "evidence_signal": "Cross-validation on two external whole-genome sequencing datasets yielded a minimum AUC of 0.993 and sensitivity of 91.8% at 98% specificity; stage I sensitivity was 89.8%.",
-  "watch_item": "Cross-validation performance does not establish real-world screening benefit; prospective validation in intended screening populations is needed.",
+  "evidence_signal": "Cross-validation on two external whole-genome sequencing datasets yielded minimum AUC 0.993 and sensitivity 91.8% at 98% specificity overall; stage I sensitivity was 89.8% and stage II sensitivity was 90.2%.",
+  "watch_item": "Prospective validation in representative screening populations is needed to determine real-world performance and clinical utility.",
   "hashtags": [
     "#PrecisionOncology",
     "#LiquidBiopsy",
     "#EarlyCancerDetection",
-    "#CellFreeDNA",
+    "#cfDNA",
     "#MachineLearning"
   ],
   "model": "gpt-6.1-sol",
@@ -21,6 +21,6 @@
   "paper_title": "Detection of early-stage cancer using similarity-based classification of cell-free DNA fragmentation patterns",
   "paper_date": "2026-11-10",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-11-14T13:54:19",
+  "generated_at": "2026-11-15T14:28:17",
   "generator": "openai"
 }

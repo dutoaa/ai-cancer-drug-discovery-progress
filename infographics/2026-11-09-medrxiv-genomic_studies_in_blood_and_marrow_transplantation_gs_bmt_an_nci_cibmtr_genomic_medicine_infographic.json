@@ -1,19 +1,19 @@
 {
-  "key_insight": "GS-BMT establishes a large donor–recipient genomic research platform for blood and marrow transplantation, rather than an AI drug-discovery program.",
-  "clinical_relevance": "The initiative aims to improve individualized transplant risk prediction and donor selection, but clinical utility remains to be demonstrated.",
+  "key_insight": "GS-BMT establishes a large donor–recipient genomic research platform for blood and marrow transplantation, rather than an AI drug-discovery study.",
+  "clinical_relevance": "The initiative aims to improve transplant risk prediction and donor selection, but the reported analyses do not establish clinical utility.",
   "method": [
-    "Assemble 30,718 allogeneic transplant donor–recipient pairs from the United States, 2000–2019.",
-    "Generate genome-wide SNP genotyping, with sequencing and methylation profiling in selected subsets.",
-    "Compare clinical survival models in AML and assess inherited CHIP susceptibility using donor polygenic scores."
+    "Genome-wide SNP genotyping of 30,718 donor–recipient pairs, with sequencing and methylation profiling in selected subsets.",
+    "Compared Cox, random survival forest, and deep neural network survival models in 9,262 patients with acute myeloid leukemia.",
+    "Assessed inherited susceptibility to clonal hematopoiesis using polygenic scores in 19,750 donors."
   ],
-  "evidence_signal": "Among 9,262 AML patients, clinical-only Cox, random survival forest, and deep neural network models showed similarly modest survival discrimination (C-indices 0.63, 0.62, and 0.62); CHIP polygenic scores were assessed in 19,750 donors.",
-  "watch_item": "The reported CHIP risk thresholds rely on assumed effect sizes, not demonstrated clinical outcomes, and do not establish a basis for donor selection.",
+  "evidence_signal": "Clinical-variable survival models showed similarly modest discrimination (C-index: 0.63, 0.62, 0.62), while donor polygenic scores differed slightly by relatedness but not age.",
+  "watch_item": "The polygenic-score risk scenarios were illustrative assumptions, not demonstrated clinical risk estimates, and require outcome validation before informing donor selection.",
   "hashtags": [
     "#TransplantGenomics",
-    "#HematologicCancer",
-    "#SurvivalPrediction",
+    "#AML",
+    "#MachineLearning",
     "#PolygenicScores",
-    "#PrecisionMedicine"
+    "#PrecisionOncology"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Genomic Studies in Blood and Marrow Transplantation (GS-BMT): An NCI-CIBMTR genomic medicine initiative in hematopoietic cell transplantation",
   "paper_date": "2026-11-09",
   "paper_category": "Target Biology",
-  "generated_at": "2026-11-14T13:54:16",
+  "generated_at": "2026-11-15T14:28:14",
   "generator": "openai"
 }

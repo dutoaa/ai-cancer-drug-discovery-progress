@@ -24,23 +24,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367662v1.full.pdf"
       }
     ],
-    "score": 65,
+    "score": 60,
     "infographic": {
-      "key_insight": "LungAI improved malignancy risk assessment for screening-detected lung nodules and, when integrated with Lung-RADS v2022, reduced cancers assigned to 12-month surveillance and benign biopsy referrals.",
-      "clinical_relevance": "This imaging AI study—not a drug-discovery study—suggests potential to refine screening triage, with reported reductions of 46% in cancers assigned to the slowest surveillance pathway and 20% in benign biopsy referrals.",
+      "key_insight": "LungAI refined lung nodule risk assessment beyond size-based features and, when integrated with Lung-RADS, reduced cancers assigned to 12-month surveillance by 46% and benign biopsy referrals by 20% in the study analysis.",
+      "clinical_relevance": "This imaging AI study—not a cancer drug discovery study—suggests potential to improve screening triage by identifying higher-risk nodules while reducing unnecessary invasive workup.",
       "method": [
-        "Validated a deep-learning nodule malignancy classifier on a held-out NLST test cohort.",
-        "Compared discrimination with Sybil, nodule diameter, estimated volume, and Lung-RADS v2022.",
-        "Applied prespecified score cutpoints to reclassify cases within existing Lung-RADS management pathways."
+        "Validated a deep learning malignancy classifier on held-out NLST low-dose CT examinations.",
+        "Compared performance with Sybil, nodule diameter, volume, and radiologist-assigned Lung-RADS v2022.",
+        "Used prespecified score cutpoints to reclassify cases along existing Lung-RADS management pathways."
       ],
-      "evidence_signal": "Across 2,747 CT examinations from 1,244 patients, including 89 cancers, LungAI achieved AUROC 0.92 and AUPRC 0.47; versus weighted Lung-RADS assessments, AUPRC improved significantly but AUROC did not.",
-      "watch_item": "LungAI is investigational and not FDA-cleared; triage estimates relied on a weighted, cancer-enriched annotated subset rather than prospective implementation outcomes.",
+      "evidence_signal": "Across 2,747 examinations from 1,244 patients, including 89 cancers, LungAI achieved AUROC 0.92 and AUPRC 0.47; versus weighted Lung-RADS assessments, AUPRC improved significantly but AUROC did not.",
+      "watch_item": "LungAI is investigational and not FDA-cleared; triage estimates relied on a weighted, cancer-enriched annotated subset rather than prospective clinical implementation.",
       "hashtags": [
-        "#LungCancer",
         "#LungCancerScreening",
         "#MedicalAI",
         "#LungRADS",
-        "#ImagingBiomarkers"
+        "#ImagingBiomarkers",
+        "#ClinicalValidation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -48,7 +48,7 @@
       "paper_title": "LungAI: An AI Biomarker that Refines Lung-RADS v2022 Triage of Screen-Detected Pulmonary Nodules",
       "paper_date": "2026-11-10",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-14T13:54:13",
+      "generated_at": "2026-11-15T14:28:11",
       "generator": "openai"
     }
   },
@@ -77,23 +77,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367367v1.full.pdf"
       }
     ],
-    "score": 60,
+    "score": 55,
     "infographic": {
-      "key_insight": "GS-BMT establishes a large donor–recipient genomic research platform for blood and marrow transplantation, rather than an AI drug-discovery program.",
-      "clinical_relevance": "The initiative aims to improve individualized transplant risk prediction and donor selection, but clinical utility remains to be demonstrated.",
+      "key_insight": "GS-BMT establishes a large donor–recipient genomic research platform for blood and marrow transplantation, rather than an AI drug-discovery study.",
+      "clinical_relevance": "The initiative aims to improve transplant risk prediction and donor selection, but the reported analyses do not establish clinical utility.",
       "method": [
-        "Assemble 30,718 allogeneic transplant donor–recipient pairs from the United States, 2000–2019.",
-        "Generate genome-wide SNP genotyping, with sequencing and methylation profiling in selected subsets.",
-        "Compare clinical survival models in AML and assess inherited CHIP susceptibility using donor polygenic scores."
+        "Genome-wide SNP genotyping of 30,718 donor–recipient pairs, with sequencing and methylation profiling in selected subsets.",
+        "Compared Cox, random survival forest, and deep neural network survival models in 9,262 patients with acute myeloid leukemia.",
+        "Assessed inherited susceptibility to clonal hematopoiesis using polygenic scores in 19,750 donors."
       ],
-      "evidence_signal": "Among 9,262 AML patients, clinical-only Cox, random survival forest, and deep neural network models showed similarly modest survival discrimination (C-indices 0.63, 0.62, and 0.62); CHIP polygenic scores were assessed in 19,750 donors.",
-      "watch_item": "The reported CHIP risk thresholds rely on assumed effect sizes, not demonstrated clinical outcomes, and do not establish a basis for donor selection.",
+      "evidence_signal": "Clinical-variable survival models showed similarly modest discrimination (C-index: 0.63, 0.62, 0.62), while donor polygenic scores differed slightly by relatedness but not age.",
+      "watch_item": "The polygenic-score risk scenarios were illustrative assumptions, not demonstrated clinical risk estimates, and require outcome validation before informing donor selection.",
       "hashtags": [
         "#TransplantGenomics",
-        "#HematologicCancer",
-        "#SurvivalPrediction",
+        "#AML",
+        "#MachineLearning",
         "#PolygenicScores",
-        "#PrecisionMedicine"
+        "#PrecisionOncology"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -101,7 +101,7 @@
       "paper_title": "Genomic Studies in Blood and Marrow Transplantation (GS-BMT): An NCI-CIBMTR genomic medicine initiative in hematopoietic cell transplantation",
       "paper_date": "2026-11-09",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-14T13:54:16",
+      "generated_at": "2026-11-15T14:28:14",
       "generator": "openai"
     }
   },
@@ -130,22 +130,22 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.08.26366892v1.full.pdf"
       }
     ],
-    "score": 59,
+    "score": 54,
     "infographic": {
-      "key_insight": "Blackjack uses just two cfDNA fragmentation-similarity features to distinguish cancer from healthy samples, including early-stage cancers.",
-      "clinical_relevance": "This blood-based detection approach could support multi-cancer screening research; it is not a drug discovery method or an established clinical screening test.",
+      "key_insight": "Blackjack uses just two cfDNA fragmentation-similarity features to detect cancer with high accuracy in cross-validation, including early-stage disease.",
+      "clinical_relevance": "This blood-based detection approach could support less invasive multi-cancer screening, but the study concerns cancer detection—not drug discovery—and does not establish clinical screening utility.",
       "method": [
-        "Encode DNA sequence context around cfDNA fragmentation sites in a position probability matrix.",
-        "Measure similarity to matrices from known healthy and cancer cohorts.",
+        "Encode DNA sequence context around plasma cfDNA fragmentation sites in position probability matrices.",
+        "Calculate similarity to reference matrices from healthy and cancer cohorts.",
         "Use the two similarity features in logistic regression to classify samples."
       ],
-      "evidence_signal": "Cross-validation on two external whole-genome sequencing datasets yielded a minimum AUC of 0.993 and sensitivity of 91.8% at 98% specificity; stage I sensitivity was 89.8%.",
-      "watch_item": "Cross-validation performance does not establish real-world screening benefit; prospective validation in intended screening populations is needed.",
+      "evidence_signal": "Cross-validation on two external whole-genome sequencing datasets yielded minimum AUC 0.993 and sensitivity 91.8% at 98% specificity overall; stage I sensitivity was 89.8% and stage II sensitivity was 90.2%.",
+      "watch_item": "Prospective validation in representative screening populations is needed to determine real-world performance and clinical utility.",
       "hashtags": [
         "#PrecisionOncology",
         "#LiquidBiopsy",
         "#EarlyCancerDetection",
-        "#CellFreeDNA",
+        "#cfDNA",
         "#MachineLearning"
       ],
       "model": "gpt-6.1-sol",
@@ -154,7 +154,7 @@
       "paper_title": "Detection of early-stage cancer using similarity-based classification of cell-free DNA fragmentation patterns",
       "paper_date": "2026-11-10",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-11-14T13:54:19",
+      "generated_at": "2026-11-15T14:28:17",
       "generator": "openai"
     }
   },
@@ -183,22 +183,22 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367611v1.full.pdf"
       }
     ],
-    "score": 57,
+    "score": 52,
     "infographic": {
-      "key_insight": "LLMs labeled incidental findings in lung cancer screening CT reports with moderate to almost perfect agreement, but no model–prompt combination led across all nine findings.",
-      "clinical_relevance": "This report-labeling research—not cancer drug discovery—could support identification of incidental findings for research and screening-program review.",
+      "key_insight": "LLMs labeled incidental findings in lung cancer screening CT reports with moderate to almost perfect agreement, but no model–prompt combination performed best across all nine findings.",
+      "clinical_relevance": "This report-labeling research could support incidental-finding data extraction in lung cancer screening; it did not evaluate cancer drug discovery or patient outcomes.",
       "method": [
         "Retrospective analysis of 300 CT reports from one Dutch academic hospital.",
-        "Compared four LLMs using four prompting strategies each, plus keyword-based search, against radiologist labels.",
-        "Assessed nine incidental findings using Cohen’s kappa, sensitivity, specificity, and F1 scores."
+        "Compared GPT-5, GPT-4-Turbo, Llama-3.1-8B-INST, MedGemma-4B-IT, and keyword search against radiologist labels.",
+        "Tested four prompting strategies per LLM, with and without chain-of-thought."
       ],
-      "evidence_signal": "GPT-5 achieved kappa values of 0.71–0.97 for seven findings; the highest reported agreement for interstitial lung abnormalities and mediastinal mass was moderate (0.48 and 0.42, respectively).",
-      "watch_item": "Single-center results require external validation, and variable performance across findings argues against assuming one model–prompt combination is universally reliable.",
+      "evidence_signal": "GPT-5 achieved Cohen’s κ of 0.71–0.97 for seven findings; the highest reported agreement for interstitial lung abnormalities and mediastinal mass was moderate (κ=0.48 and 0.42, respectively), and non-chain-of-thought prompts performed best for most findings.",
+      "watch_item": "The small, single-center retrospective dataset limits generalizability; broader validation is needed before clinical implementation.",
       "hashtags": [
-        "#RadiologyAI",
         "#LungCancerScreening",
-        "#IncidentalFindings",
+        "#RadiologyAI",
         "#LargeLanguageModels",
+        "#IncidentalFindings",
         "#ClinicalNLP"
       ],
       "model": "gpt-6.1-sol",
@@ -207,7 +207,7 @@
       "paper_title": "Large Language Models to Label CT Radiology Reports for Incidental Findings Found in Lung Cancer Screening: A Comparative Analysis",
       "paper_date": "2026-11-10",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-11-14T13:54:21",
+      "generated_at": "2026-11-15T14:28:19",
       "generator": "openai"
     }
   },
@@ -236,17 +236,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367442v1.full.pdf"
       }
     ],
-    "score": 54,
+    "score": 49,
     "infographic": {
       "key_insight": "Computational analysis identified three psoriatic arthritis synovial pathotypes—Dense Myeloid, Fibro-Stromal, and Angio-Lymphoid—rather than cancer drug discovery targets.",
-      "clinical_relevance": "These tissue patterns could support future treatment stratification in psoriatic arthritis, but their predictive utility remains unvalidated.",
+      "clinical_relevance": "These tissue patterns may support future treatment stratification in psoriatic arthritis, but are not validated for clinical decision-making.",
       "method": [
         "Ultrasound-guided synovial biopsies from 61 patients, including 22 with psoriatic arthritis.",
-        "Multi-modal staining and automated whole-slide image analysis quantified immune, vascular, and stromal features.",
+        "Multi-modal staining and automated whole-slide image analysis quantified immune, vascular, and fibrotic features.",
         "Unsupervised hierarchical clustering identified pathotypes and explored clinical and treatment-response associations."
       ],
-      "evidence_signal": "In the 22-patient psoriatic arthritis cohort, reported treatment-response rates were 44% for Fibro-Stromal, 50% for Dense Myeloid, and 80% for Angio-Lymphoid, described as a trend rather than a validated predictive effect.",
-      "watch_item": "The small discovery cohort requires independent prospective validation before pathotypes or the proposed four-marker decision tree can guide treatment.",
+      "evidence_signal": "In the small psoriatic arthritis cohort, reported treatment-response rates were 44% for Fibro-Stromal, 50% for Dense Myeloid, and 80% for Angio-Lymphoid, described as a trend.",
+      "watch_item": "The small discovery cohort and lack of reported independent validation limit conclusions about treatment prediction.",
       "hashtags": [
         "#PsoriaticArthritis",
         "#SynovialPathotypes",
@@ -260,7 +260,7 @@
       "paper_title": "Redefining Synovial Pathotypes in Psoriatic Arthritis through Multi-Modal Histology and Machine Learning (The PSYNOVIUM Study)",
       "paper_date": "2026-11-09",
       "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-11-14T13:54:24",
+      "generated_at": "2026-11-15T14:28:21",
       "generator": "openai"
     }
   },
@@ -289,17 +289,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.08.26365143v1.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
-      "key_insight": "Serum brain-derived tau (BD-tau) distinguished traumatic brain injury (TBI) from spinal cord injury (SCI), highlighting its potential as an injury-specific blood biomarker.",
-      "clinical_relevance": "If validated, serum BD-tau could support acute neurotrauma differentiation and injury-specific trial enrollment; this study does not address AI or cancer drug discovery.",
+      "key_insight": "Serum brain-derived tau (BD-tau) distinguished traumatic brain injury (TBI) from spinal cord injury (SCI), supporting its potential as an injury-specific neurotrauma biomarker.",
+      "clinical_relevance": "If validated, blood-based BD-tau testing could support early neurotrauma differentiation, triage, and injury-specific trial enrollment.",
       "method": [
-        "Measured baseline serum BD-tau across multiple cohorts comprising 285 TBI patients, 57 SCI patients, and 22 controls.",
-        "Compared discrimination with paired cerebrospinal fluid measurements and established blood biomarkers.",
-        "Tracked serum BD-tau trajectories for up to 144 hours post-injury."
+        "Measured baseline serum BD-tau in multiple cohorts comprising 285 TBI patients, 57 SCI patients, and 22 controls.",
+        "Compared injury-type discrimination with paired cerebrospinal fluid measurements and established blood biomarkers.",
+        "Tracked serum BD-tau trajectories up to 144 hours after injury."
       ],
-      "evidence_signal": "Baseline serum BD-tau distinguished TBI from SCI with AUC 0.91 (95% CI 0.87–0.96), while separate comparisons favored serum over cerebrospinal fluid and established blood biomarkers.",
-      "watch_item": "Performance in mixed brain–spinal injuries and broader acute-care populations, along with actionable diagnostic thresholds, requires further validation.",
+      "evidence_signal": "Serum BD-tau distinguished TBI from SCI with an AUC of 0.91 (95% CI 0.87–0.96) overall and outperformed established blood biomarkers in a comparison analysis (AUC 0.82 versus 0.53–0.71; all DeLong p<0.001).",
+      "watch_item": "Findings from neuro-intensive care cohorts require validation in broader acute-care populations, including patients with concurrent brain and spinal cord injuries.",
       "hashtags": [
         "#BrainDerivedTau",
         "#Neurotrauma",
@@ -313,7 +313,7 @@
       "paper_title": "Serum brain-derived tau distinguishes acute neurotrauma diagnoses",
       "paper_date": "2026-11-10",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-14T13:54:26",
+      "generated_at": "2026-11-15T14:28:24",
       "generator": "openai"
     }
   },
@@ -342,23 +342,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.27.26363725v2.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
-      "key_insight": "In Alzheimer’s disease research, strong AI segmentation accuracy did not guarantee preservation of biologically meaningful associations between perivascular spaces and amyloid biomarkers.",
-      "clinical_relevance": "AI-derived perivascular space measurements require cohort-specific validation before they can reliably support Alzheimer’s disease biomarker research.",
+      "key_insight": "In this Alzheimer’s MRI study—not cancer drug discovery—strong PVS segmentation accuracy did not guarantee preservation of biologically meaningful associations.",
+      "clinical_relevance": "Model choice may alter research conclusions about PVS burden and Alzheimer’s biomarkers, supporting cohort-specific validation before clinical inference.",
       "method": [
-        "Benchmarked five open-source nnU-Net-based segmentation models against manual MRI labels.",
-        "Evaluated segmentation across brain regions, diagnoses, scanners, and lesion burdens.",
-        "Tested whether model-derived measurements reproduced manual-label associations with Alzheimer’s-related biomarkers."
+        "Benchmarked five open-source nnU-Net-based PVS segmentation models against manual labels.",
+        "Evaluated segmentation across brain regions, diagnoses, scanners, PVS severity, and white matter hyperintensity burden.",
+        "Tested whether model-derived PVS burden reproduced manual-label associations with Alzheimer’s biomarkers."
       ],
       "evidence_signal": "Across 60 ADNI-3 participants and 12 external VALDO scans, ADNI-PVS-Net achieved internal Dice of 0.58 ± 0.14 but external Dice ≤0.11; only AD-trained models reproduced the expected PVS–amyloid relationship.",
-      "watch_item": "Some models misclassified up to 32% of white matter hyperintensities as perivascular spaces, potentially distorting downstream biological inference.",
+      "watch_item": "External validation was limited to 12 scans, and some models misclassified up to 32% of white matter hyperintensities as PVS.",
       "hashtags": [
         "#AlzheimersResearch",
         "#PerivascularSpaces",
         "#DeepLearning",
         "#MRISegmentation",
-        "#BiomarkerValidation"
+        "#ModelValidation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -366,7 +366,7 @@
       "paper_title": "Examining the Clinical Utility of Deep Learning Models for Perivascular Space Segmentation in Alzheimer's Disease",
       "paper_date": "2026-11-10",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-14T13:54:28",
+      "generated_at": "2026-11-15T14:28:26",
       "generator": "openai"
     }
   },
@@ -395,17 +395,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367445v1.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 41,
     "infographic": {
-      "key_insight": "Plasma p-tau217 was elevated in both Alzheimer’s disease (AD) and amyotrophic lateral sclerosis (ALS), while the p-tau217/NfL ratio better distinguished the two diseases.",
-      "clinical_relevance": "These findings support research into combined biomarkers rather than interpreting elevated p-tau217 alone as specific to AD.",
+      "key_insight": "Plasma p-tau217 was elevated in both Alzheimer’s disease (AD) and amyotrophic lateral sclerosis (ALS), while the p-tau217/NfL ratio distinguished ALS from AD better than p-tau217 alone.",
+      "clinical_relevance": "These findings suggest that interpreting p-tau217 alongside NfL may improve research-level differentiation of ALS and AD, but do not establish a clinical diagnostic test.",
       "method": [
-        "Measured five plasma biomarkers in 551 participants across 10 diagnostic groups, including amyloid-PET-negative controls.",
-        "Compared biomarker levels and p-tau217-inferred amyloid positivity across groups.",
-        "Evaluated discrimination using ROC-AUC and tested clinical and longitudinal associations within ALS."
+        "Studied 551 participants across 10 diagnostic groups, including 45 amyloid-PET-negative cognitively unimpaired controls.",
+        "Measured baseline plasma p-tau217, p-tau181, Aβ42/40, NfL, and GFAP.",
+        "Compared biomarker profiles and ROC-AUC performance; tested clinical and longitudinal associations within ALS."
       ],
-      "evidence_signal": "The p-tau217/NfL ratio distinguished ALS from AD with an AUC of 0.92 (95% CI 0.85–0.97), versus 0.65 (0.52–0.76) for p-tau217 alone.",
-      "watch_item": "The main comparisons were cross-sectional, amyloid positivity was inferred from p-tau217, and no ALS clinical or longitudinal association survived multiple-comparison correction.",
+      "evidence_signal": "The p-tau217/NfL ratio distinguished ALS from AD with an ROC-AUC of 0.92 (95% CI 0.85–0.97), versus 0.65 (95% CI 0.52–0.76) for p-tau217 alone.",
+      "watch_item": "Amyloid positivity was inferred from p-tau217 rather than independently confirmed across patient groups, limiting interpretation of elevated p-tau217.",
       "hashtags": [
         "#Neurodegeneration",
         "#PlasmaBiomarkers",
@@ -419,7 +419,7 @@
       "paper_title": "Plasma phosphorylated tau species across neurodegenerative and cerebrovascular diseases: An ONDRI study",
       "paper_date": "2026-11-09",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-14T13:54:30",
+      "generated_at": "2026-11-15T14:28:28",
       "generator": "openai"
     }
   }

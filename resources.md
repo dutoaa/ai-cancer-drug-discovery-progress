@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-11-14
+Generated: 2026-11-15
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. LungAI: An AI Biomarker that Refines Lung-RADS v2022 Triage of Screen-Detected Pulmonary Nodules
