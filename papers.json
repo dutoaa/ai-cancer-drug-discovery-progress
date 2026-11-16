@@ -24,23 +24,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367662v1.full.pdf"
       }
     ],
-    "score": 60,
+    "score": 55,
     "infographic": {
-      "key_insight": "LungAI refined lung nodule risk assessment beyond size-based features and, when integrated with Lung-RADS, reduced cancers assigned to 12-month surveillance by 46% and benign biopsy referrals by 20% in the study analysis.",
-      "clinical_relevance": "This imaging AI study—not a cancer drug discovery study—suggests potential to improve screening triage by identifying higher-risk nodules while reducing unnecessary invasive workup.",
+      "key_insight": "LungAI refined lung-nodule risk assessment beyond size-based features, reducing cancers assigned to 12-month surveillance by 46% and benign biopsy referrals by 20% in a weighted retrospective analysis.",
+      "clinical_relevance": "This investigational imaging biomarker could improve screening triage within Lung-RADS v2022; it is not a cancer drug discovery tool.",
       "method": [
         "Validated a deep learning malignancy classifier on held-out NLST low-dose CT examinations.",
-        "Compared performance with Sybil, nodule diameter, volume, and radiologist-assigned Lung-RADS v2022.",
-        "Used prespecified score cutpoints to reclassify cases along existing Lung-RADS management pathways."
+        "Compared discrimination with Sybil, nodule diameter, volume, and radiologist-assigned Lung-RADS v2022.",
+        "Applied prespecified score cutpoints to reclassify examinations along existing Lung-RADS management pathways."
       ],
-      "evidence_signal": "Across 2,747 examinations from 1,244 patients, including 89 cancers, LungAI achieved AUROC 0.92 and AUPRC 0.47; versus weighted Lung-RADS assessments, AUPRC improved significantly but AUROC did not.",
-      "watch_item": "LungAI is investigational and not FDA-cleared; triage estimates relied on a weighted, cancer-enriched annotated subset rather than prospective clinical implementation.",
+      "evidence_signal": "Among 2,747 examinations from 1,244 patients, including 89 cancers, LungAI achieved AUROC 0.92 (95% CI 0.88–0.95); versus weighted Lung-RADS, AUPRC improved significantly but AUROC did not.",
+      "watch_item": "LungAI is not FDA-cleared, and triage benefits were estimated from a weighted, cancer-enriched annotated subset rather than demonstrated prospectively.",
       "hashtags": [
         "#LungCancerScreening",
         "#MedicalAI",
-        "#LungRADS",
         "#ImagingBiomarkers",
-        "#ClinicalValidation"
+        "#LungRADS",
+        "#ResearchValidation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -48,60 +48,7 @@
       "paper_title": "LungAI: An AI Biomarker that Refines Lung-RADS v2022 Triage of Screen-Detected Pulmonary Nodules",
       "paper_date": "2026-11-10",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-15T14:28:11",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-09-medrxiv-genomic_studies_in_blood_and_marrow_transplantation_gs_bmt_an_nci_cibmtr_genomic_medicine",
-    "doi": "10.64898/2026.11.06.26367367",
-    "date": "2026-11-09",
-    "title": "Genomic Studies in Blood and Marrow Transplantation (GS-BMT): An NCI-CIBMTR genomic medicine initiative in hematopoietic cell transplantation",
-    "authors": "Gadalla, S. M.; Lee, N.; Wu, X.; Pirsl, F.; Schmidt, G.; Rafati, M.; Hutchinson, A.; Vogt, A.; Hicks, B.; Liu, J.; Wang, J.; Gaddam, S.; Li, S.; Saber, W.; Chanock, S.; Kraft, P.; Savage, S. A.; Hong, H. G.; Spellman, S. R.",
-    "abstract": "BackgroundGenomic studies in hematopoietic cell transplantation (HCT) are limited by sample sizes and targeted approaches. MethodsThe Genomic Studies in Blood and Marrow Transplantation (GS-BMT) project is a collaboration between the National Cancer Institute (NCI) and the CIBMTR(R) designed to investigate recipient and donor determinants of HCT outcomes. We are generating genome-wide SNP-array genotyping for all samples, and sequencing and methylation profiling for selected subsets. We report study design and cohort characteristics and present two proof-of-concept analyses: comparison of conventional and machine learning prediction of overall survival after HCT in 9,262 patients with acute myeloid leukemia (AML), and assessment of inherited susceptibility to clonal hematopoiesis of indeterminate potential (CHIP) among 19,750 HCT donors using polygenic scores (PGS). ResultsGS-BMT includes 30,718 donor-recipient pairs who received allogeneic HCT in the United States between 2000 and 2019. In AML, clinical variables alone provided modest prediction for post-transplant survival, with similar performance for Cox proportional hazards, random survival forest, and deep neural network survival models (C-index=0.63, 0.62, and 0.62, respectively). In donors, CHIP-PGS did not differ by age (p=0.76) but was modestly lower in unrelated vs. related donors (-0.06 standard deviation [SD]; p=0.002). In an illustrative analysis assuming risk of event increases by 50% or 80% per PGS-SD, the top 5.2% and 12.3% of the donors, respectively, would have at least twice the risk of a donor with the average PGS. ConclusionsGS-BMT establishes a large genomic platform aiming to improve individualized risk prediction, donor selection, and precision medicine in HCT.",
-    "category": "Target Biology",
-    "source": "medRxiv",
-    "published": "2026-11-09",
-    "updated": "2026-11-09",
-    "primary_category": "transplantation",
-    "categories": [
-      "transplantation"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367367v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367367v1.full.pdf"
-      }
-    ],
-    "score": 55,
-    "infographic": {
-      "key_insight": "GS-BMT establishes a large donor–recipient genomic research platform for blood and marrow transplantation, rather than an AI drug-discovery study.",
-      "clinical_relevance": "The initiative aims to improve transplant risk prediction and donor selection, but the reported analyses do not establish clinical utility.",
-      "method": [
-        "Genome-wide SNP genotyping of 30,718 donor–recipient pairs, with sequencing and methylation profiling in selected subsets.",
-        "Compared Cox, random survival forest, and deep neural network survival models in 9,262 patients with acute myeloid leukemia.",
-        "Assessed inherited susceptibility to clonal hematopoiesis using polygenic scores in 19,750 donors."
-      ],
-      "evidence_signal": "Clinical-variable survival models showed similarly modest discrimination (C-index: 0.63, 0.62, 0.62), while donor polygenic scores differed slightly by relatedness but not age.",
-      "watch_item": "The polygenic-score risk scenarios were illustrative assumptions, not demonstrated clinical risk estimates, and require outcome validation before informing donor selection.",
-      "hashtags": [
-        "#TransplantGenomics",
-        "#AML",
-        "#MachineLearning",
-        "#PolygenicScores",
-        "#PrecisionOncology"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-09-medrxiv-genomic_studies_in_blood_and_marrow_transplantation_gs_bmt_an_nci_cibmtr_genomic_medicine",
-      "paper_title": "Genomic Studies in Blood and Marrow Transplantation (GS-BMT): An NCI-CIBMTR genomic medicine initiative in hematopoietic cell transplantation",
-      "paper_date": "2026-11-09",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-11-15T14:28:14",
+      "generated_at": "2026-11-16T16:39:30",
       "generator": "openai"
     }
   },
@@ -130,17 +77,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.08.26366892v1.full.pdf"
       }
     ],
-    "score": 54,
+    "score": 49,
     "infographic": {
-      "key_insight": "Blackjack uses just two cfDNA fragmentation-similarity features to detect cancer with high accuracy in cross-validation, including early-stage disease.",
-      "clinical_relevance": "This blood-based detection approach could support less invasive multi-cancer screening, but the study concerns cancer detection—not drug discovery—and does not establish clinical screening utility.",
+      "key_insight": "Blackjack uses just two similarity features from cell-free DNA fragmentation patterns to distinguish cancer from healthy samples, including early-stage cancers.",
+      "clinical_relevance": "This research could support blood-based multi-cancer early detection, rather than drug discovery, but does not establish readiness for clinical screening.",
       "method": [
         "Encode DNA sequence context around plasma cfDNA fragmentation sites in position probability matrices.",
-        "Calculate similarity to reference matrices from healthy and cancer cohorts.",
+        "Measure each sample’s similarity to healthy and cancer reference cohorts.",
         "Use the two similarity features in logistic regression to classify samples."
       ],
-      "evidence_signal": "Cross-validation on two external whole-genome sequencing datasets yielded minimum AUC 0.993 and sensitivity 91.8% at 98% specificity overall; stage I sensitivity was 89.8% and stage II sensitivity was 90.2%.",
-      "watch_item": "Prospective validation in representative screening populations is needed to determine real-world performance and clinical utility.",
+      "evidence_signal": "Cross-validation on two external whole-genome sequencing datasets achieved a minimum AUC of 0.993 and 91.8% sensitivity at 98% specificity overall; stage I sensitivity was 89.8%.",
+      "watch_item": "Prospective validation in representative screening populations is needed to establish real-world performance and false-positive burden.",
       "hashtags": [
         "#PrecisionOncology",
         "#LiquidBiopsy",
@@ -154,7 +101,7 @@
       "paper_title": "Detection of early-stage cancer using similarity-based classification of cell-free DNA fragmentation patterns",
       "paper_date": "2026-11-10",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-11-15T14:28:17",
+      "generated_at": "2026-11-16T16:39:33",
       "generator": "openai"
     }
   },
@@ -183,17 +130,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367611v1.full.pdf"
       }
     ],
-    "score": 52,
+    "score": 47,
     "infographic": {
-      "key_insight": "LLMs labeled incidental findings in lung cancer screening CT reports with moderate to almost perfect agreement, but no model–prompt combination performed best across all nine findings.",
-      "clinical_relevance": "This report-labeling research could support incidental-finding data extraction in lung cancer screening; it did not evaluate cancer drug discovery or patient outcomes.",
+      "key_insight": "LLMs labeled incidental findings in lung cancer screening CT reports with moderate to almost perfect agreement, but no model–prompt combination performed best across all findings.",
+      "clinical_relevance": "This report-labeling study—not cancer drug discovery research—suggests potential to support incidental-finding data extraction for lung screening research.",
       "method": [
         "Retrospective analysis of 300 CT reports from one Dutch academic hospital.",
-        "Compared GPT-5, GPT-4-Turbo, Llama-3.1-8B-INST, MedGemma-4B-IT, and keyword search against radiologist labels.",
+        "Compared four LLMs and keyword search for labeling nine specific incidental findings against a radiologist reference.",
         "Tested four prompting strategies per LLM, with and without chain-of-thought."
       ],
-      "evidence_signal": "GPT-5 achieved Cohen’s κ of 0.71–0.97 for seven findings; the highest reported agreement for interstitial lung abnormalities and mediastinal mass was moderate (κ=0.48 and 0.42, respectively), and non-chain-of-thought prompts performed best for most findings.",
-      "watch_item": "The small, single-center retrospective dataset limits generalizability; broader validation is needed before clinical implementation.",
+      "evidence_signal": "GPT-5 achieved Cohen’s κ of 0.71–0.97 for seven findings; the best reported agreement for interstitial lung abnormalities and mediastinal mass was moderate (κ=0.48 and 0.42, respectively).",
+      "watch_item": "Single-center results and finding-dependent performance warrant external validation before clinical workflow use.",
       "hashtags": [
         "#LungCancerScreening",
         "#RadiologyAI",
@@ -207,60 +154,7 @@
       "paper_title": "Large Language Models to Label CT Radiology Reports for Incidental Findings Found in Lung Cancer Screening: A Comparative Analysis",
       "paper_date": "2026-11-10",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-11-15T14:28:19",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-09-medrxiv-redefining_synovial_pathotypes_in_psoriatic_arthritis_through_multi_modal_histology_and_ma",
-    "doi": "10.64898/2026.11.06.26367442",
-    "date": "2026-11-09",
-    "title": "Redefining Synovial Pathotypes in Psoriatic Arthritis through Multi-Modal Histology and Machine Learning (The PSYNOVIUM Study)",
-    "authors": "Hum, R. M.; Christofi, M.; Smith, S. L.; Tan, Y.; Shukla, R.; Marshall, L. M.; Smith, M.; Williams, A.; Orozco, G.; Viatte, S.; Buch, M.; Barton, A.; Ho, P.; Martin, P.",
-    "abstract": "BackgroundSynovial inflammation in psoriatic arthritis (PsA) lacks a validated histological classification framework. Current approaches apply rheumatoid arthritis (RA) synovial pathotypes to PsA, which overlooks immunobiological differences between the diseases and limits the predictive power of tissue stratification. We aimed to define data-driven, PsA-specific synovial pathotypes to facilitate tissue-driven precision medicine. MethodsIn this cross-sectional study, ultrasound-guided synovial biopsies were obtained from 61 patients with PsA (n=22), seropositive RA (n=23), seronegative RA (n=10), and other inflammatory arthritides (n=6). Sections underwent multi-modal staining, including H&E, picrosirius red, and immunohisto-chemistry for CD3, CD20, CD68, CD138, and CD31. Whole-slide digital image analysis and automated pixel classifiers quantified cellular and stromal metrics. Unsupervised hierarchical clustering identified intrinsic PsA pathotypes, which were correlated with clinical disease activity, radiographic osteoarthritis (OA), and longitudinal treatment responses. FindingsWhile a subset of PsA patients shared an inflammatory signature with seropositive RA, unsupervised clustering of the PsA cohort revealed three distinct, novel pathotypes: Dense Myeloid (macrophage-driven), Fibro-Stromal (fibrosis and pauci-immune), and Angio-Lymphoid (hypervascular with significant CD138+ plasma cell infiltration). Pathotypes were independent of treatment and concurrent radiographic knee OA. The Fibro-Stromal pathotype correlated with significantly higher cutaneous psoriasis severity. Longitudinally, patients with the Fibro-Stromal pathotype exhibited a trend toward lower treatment response (44%) following standard interventions (methotrexate or TNF inhibitors) compared to the Dense Myeloid (50%) and Angio-Lymphoid (80%) pathotypes. InterpretationWe present the first computationally derived synovial pathotypes specific to PsA, revealing distinct plasma cell and fibrotic architectures not captured by RA-centric models. To enable clinical translation, we distilled these findings into a pragmatic, four-marker diagnostic decision tree (CD31, CD68, CD138, and picrosirius red) designed for routine histopathology workflows, providing a staging ground for biomarker-stratified clinical trials in PsA. FundingFunding from the NIHR Biomedical Research Centre: Manchester, Arthritis UK, the Wellcome Trust, Brit-PACT, the National Psoriasis Foundation, and the Medical Research Council. Research in contextO_ST_ABSEvidence before this studyC_ST_ABSThe potential clinical utility of tissue-based patient stratification is well established in rheumatoid arthritis (RA), where baseline synovial pathotypes (lympho-myeloid, diffuse-myeloid, and pauciimmune) have guided targeted biologic therapy in landmark precision medicine trials. However, psoriatic arthritis (PsA) exhibits a fundamentally distinct synovial microenvironment, characterised by unique vascular architecture, altered stromal fibroblast phenotypes, and distinct immune infiltrates intertwined with the IL-23/IL-17 cytokine axis. Consequently, attempting to classify PsA synovial tissue using established RA-derived scoring systems risks misrepresenting intrinsic disease biology. There is currently no validated, disease-specific histological classification system for PsA, which forces therapeutic decision-making to rely on an empirical, trial-and-error approach rather than underlying target tissue pathobiology. Added value of this studyTo our knowledge, this is the first study to define data-driven, computationally derived synovial pathotypes entirely specific to PsA. By leveraging multi-modal digital pathology and unsupervised machine learning, we deconstructed the PsA synovium into three biologically distinct pathotypes: Dense Myeloid, Fibro-Stromal, and Angio-Lymphoid. We demonstrated that the highly inflammatory PsA microenvironment is distinctly driven by CD138+ plasma cells rather than the CD20+ B cells typically observed in RA. Furthermore, we identified a striking tissue-level divergence: patients with the highly fibrotic, pauci-immune Fibro-Stromal pathotype exhibited the most severe cutaneous psoriasis and demonstrated a trend toward higher failure rates on standard therapies, independent of concurrent osteoarthritis. Crucially, we translated these high-dimensional computational findings into a pragmatic, four-marker diagnostic decision tree (incorporating CD31, CD68, CD138, and picrosirius red). Implications of all the available evidenceThis study establishes that PsA synovial pathology requires a dedicated, disease-specific classification framework. The proposed diagnostic decision tree can be integrated into routine clinical histopathology workflows without the immediate need for advanced spatial or single-cell transcriptomics. Furthermore, the correlation between the Fibro-Stromal pathotype, severe skin disease, and poor joint response to standard therapies provides a biological rationale for stratifying this specific subgroup towards early IL-17 or IL-23 inhibitor intervention alongside conventional synthetic disease-modifying antirheumatic drugs. Ultimately, these novel PsA pathotypes provide the vital staging ground required to design and execute biomarker-stratified, tissue-driven clinical trials, paving the way for precision medicine in PsA.",
-    "category": "Therapeutic Discovery",
-    "source": "medRxiv",
-    "published": "2026-11-09",
-    "updated": "2026-11-09",
-    "primary_category": "rheumatology",
-    "categories": [
-      "rheumatology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367442v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367442v1.full.pdf"
-      }
-    ],
-    "score": 49,
-    "infographic": {
-      "key_insight": "Computational analysis identified three psoriatic arthritis synovial pathotypes—Dense Myeloid, Fibro-Stromal, and Angio-Lymphoid—rather than cancer drug discovery targets.",
-      "clinical_relevance": "These tissue patterns may support future treatment stratification in psoriatic arthritis, but are not validated for clinical decision-making.",
-      "method": [
-        "Ultrasound-guided synovial biopsies from 61 patients, including 22 with psoriatic arthritis.",
-        "Multi-modal staining and automated whole-slide image analysis quantified immune, vascular, and fibrotic features.",
-        "Unsupervised hierarchical clustering identified pathotypes and explored clinical and treatment-response associations."
-      ],
-      "evidence_signal": "In the small psoriatic arthritis cohort, reported treatment-response rates were 44% for Fibro-Stromal, 50% for Dense Myeloid, and 80% for Angio-Lymphoid, described as a trend.",
-      "watch_item": "The small discovery cohort and lack of reported independent validation limit conclusions about treatment prediction.",
-      "hashtags": [
-        "#PsoriaticArthritis",
-        "#SynovialPathotypes",
-        "#MachineLearning",
-        "#DigitalPathology",
-        "#PrecisionMedicine"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-09-medrxiv-redefining_synovial_pathotypes_in_psoriatic_arthritis_through_multi_modal_histology_and_ma",
-      "paper_title": "Redefining Synovial Pathotypes in Psoriatic Arthritis through Multi-Modal Histology and Machine Learning (The PSYNOVIUM Study)",
-      "paper_date": "2026-11-09",
-      "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-11-15T14:28:21",
+      "generated_at": "2026-11-16T16:39:36",
       "generator": "openai"
     }
   },
@@ -289,17 +183,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.08.26365143v1.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 41,
     "infographic": {
-      "key_insight": "Serum brain-derived tau (BD-tau) distinguished traumatic brain injury (TBI) from spinal cord injury (SCI), supporting its potential as an injury-specific neurotrauma biomarker.",
-      "clinical_relevance": "If validated, blood-based BD-tau testing could support early neurotrauma differentiation, triage, and injury-specific trial enrollment.",
+      "key_insight": "Serum brain-derived tau (BD-tau) distinguished traumatic brain injury (TBI) from spinal cord injury (SCI), supporting its potential as an injury-specific blood biomarker.",
+      "clinical_relevance": "If validated, serum BD-tau could support acute neurotrauma differentiation, triage, and injury-specific trial enrollment; this study concerns neurotrauma, not AI cancer drug discovery.",
       "method": [
-        "Measured baseline serum BD-tau in multiple cohorts comprising 285 TBI patients, 57 SCI patients, and 22 controls.",
-        "Compared injury-type discrimination with paired cerebrospinal fluid measurements and established blood biomarkers.",
-        "Tracked serum BD-tau trajectories up to 144 hours after injury."
+        "Multi-cohort assessment of 285 patients with TBI, 57 with SCI, and 22 controls.",
+        "Compared serum BD-tau with paired cerebrospinal fluid measurements and established blood biomarkers.",
+        "Tracked serum BD-tau trajectories through 144 hours after injury."
       ],
-      "evidence_signal": "Serum BD-tau distinguished TBI from SCI with an AUC of 0.91 (95% CI 0.87–0.96) overall and outperformed established blood biomarkers in a comparison analysis (AUC 0.82 versus 0.53–0.71; all DeLong p<0.001).",
-      "watch_item": "Findings from neuro-intensive care cohorts require validation in broader acute-care populations, including patients with concurrent brain and spinal cord injuries.",
+      "evidence_signal": "Serum BD-tau distinguished TBI from SCI with AUC 0.91 (95% CI 0.87–0.96) overall and outperformed comparator blood biomarkers in a separate reported comparison (AUC 0.82 versus 0.53–0.71; all DeLong p<0.001).",
+      "watch_item": "The abstract does not establish clinical decision thresholds or performance in mixed TBI–SCI presentations, requiring further validation before routine use.",
       "hashtags": [
         "#BrainDerivedTau",
         "#Neurotrauma",
@@ -313,7 +207,7 @@
       "paper_title": "Serum brain-derived tau distinguishes acute neurotrauma diagnoses",
       "paper_date": "2026-11-10",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-15T14:28:24",
+      "generated_at": "2026-11-16T16:39:38",
       "generator": "openai"
     }
   },
@@ -342,23 +236,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.27.26363725v2.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 41,
     "infographic": {
-      "key_insight": "In this Alzheimer’s MRI study—not cancer drug discovery—strong PVS segmentation accuracy did not guarantee preservation of biologically meaningful associations.",
-      "clinical_relevance": "Model choice may alter research conclusions about PVS burden and Alzheimer’s biomarkers, supporting cohort-specific validation before clinical inference.",
+      "key_insight": "In this Alzheimer’s MRI study—not cancer drug discovery—strong PVS segmentation accuracy did not guarantee preservation of biologically relevant associations.",
+      "clinical_relevance": "Automated PVS measurements require cohort-specific validation before supporting Alzheimer’s biomarker research or clinical inference.",
       "method": [
         "Benchmarked five open-source nnU-Net-based PVS segmentation models against manual labels.",
-        "Evaluated segmentation across brain regions, diagnoses, scanners, PVS severity, and white matter hyperintensity burden.",
+        "Evaluated performance across brain regions, diagnoses, scanners, PVS severity, and white matter hyperintensity burden.",
         "Tested whether model-derived PVS burden reproduced manual-label associations with Alzheimer’s biomarkers."
       ],
       "evidence_signal": "Across 60 ADNI-3 participants and 12 external VALDO scans, ADNI-PVS-Net achieved internal Dice of 0.58 ± 0.14 but external Dice ≤0.11; only AD-trained models reproduced the expected PVS–amyloid relationship.",
-      "watch_item": "External validation was limited to 12 scans, and some models misclassified up to 32% of white matter hyperintensities as PVS.",
+      "watch_item": "Domain shifts and white matter hyperintensity misclassification can distort PVS burden and downstream biomarker associations, even when Dice scores appear competitive.",
       "hashtags": [
         "#AlzheimersResearch",
         "#PerivascularSpaces",
         "#DeepLearning",
         "#MRISegmentation",
-        "#ModelValidation"
+        "#BiomarkerValidation"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -366,60 +260,7 @@
       "paper_title": "Examining the Clinical Utility of Deep Learning Models for Perivascular Space Segmentation in Alzheimer's Disease",
       "paper_date": "2026-11-10",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-15T14:28:26",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-09-medrxiv-plasma_phosphorylated_tau_species_across_neurodegenerative_and_cerebrovascular_diseases_an",
-    "doi": "10.64898/2026.11.06.26367445",
-    "date": "2026-11-09",
-    "title": "Plasma phosphorylated tau species across neurodegenerative and cerebrovascular diseases: An ONDRI study",
-    "authors": "Sanchez, E.; Connon, P.; Pasternak, M.; Abrahao, A.; Keith, J.; Dilliott, A. A.; Baril, A.-A.; Frank, A.; Lang, A. E.; Pollock, B. G.; Marras, C.; Fischer, C. E.; Seitz, D.; Dowlatshahi, D.; Grimes, D. A.; Tang-Wai, D. F.; Sahlas, D. J.; Rogaeva, E.; Finger, E.; Tan, K.; Binns, M. A.; Tartaglia, M. C.; Borrie, M.; Freedman, M.; Goncalves, R. A.; Swartz, R. H.; Hegele, R. A.; Dixon, R. A.; Mirza, S. S.; Farhan, S. M. K.; Black, S. E.; Kumar, S.; Pasternak, S. H.; Rajji, T. K.; Steeves, T.; Swardfager, W.; Zetterberg, H.; Kvartsberg, H.; Munoz, D. P.; Zinman, L.; Strong, M. J.; Masellis, M.",
-    "abstract": "Elevated plasma phosphorylated tau (p-tau) species are proposed as specific biomarkers of Alzheimers disease (AD) pathology but have also been reported in amyotrophic lateral sclerosis (ALS). Their profile across neurodegenerative and cerebrovascular diseases, as well as their discriminatory value when combined with other plasma biomarkers, remain uncertain. We studied 551 participants (ages 40.1 to 87.1 years; 207 women), comprising 506 patients from the Ontario Neurodegenerative Disease Research Initiative (ONDRI) multi-site cohort and 45 amyloid-{beta} (A{beta}) PET-negative cognitively unimpaired controls from the Brain-Eye Amyloid Memory study. Ten diagnostic groups were studied: mild cognitive impairment (MCI), AD, Parkinsons disease subdivided into cognitively unimpaired (CU), MCI, and dementia, frontotemporal dementia (FTD), cerebrovascular disease (CVD) subdivided into cognitively unimpaired (CU) and cognitively impaired (CI), ALS, and the control group. Baseline visit plasma measurements included p-tau217, p-tau181, A{beta}42/40, neurofilament light chain (NfL), and glial fibrillary acidic protein (GFAP). Cross-sectional analyses compared biomarker levels as well as p-tau217-based inference of amyloid positivity status across diagnostic groups. Receiver operating characteristic-area under the curve (ROC-AUC) analyses ascertained the discriminatory capacity of these biomarkers and ratio combinations. Within the ALS group, baseline biomarker measures were also tested for association against baseline clinical features as well as longitudinal measures of neuropsychological change. P-tau217, p-tau181, GFAP, and NfL differed across groups (all P < 0.001). Compared to controls, p-tau217 was elevated in AD and ALS, p-tau181 and GFAP only in AD, and NfL in ALS and FTD. Inferred amyloid-{beta} positivity was more probable in MCI, AD, ALS, and cognitively impaired CVD groups compared to controls (all P < 0.05). The p-tau217 to NfL ratio discriminated ALS from AD with an ROC-AUC of 0.92 (95% CI 0.85-0.97) compared to p-tau217 alone at 0.65 (95% CI 0.52-0.76). No ALS clinical or longitudinal association survived correction for multiple comparisons. Elevated p-tau217 and inferred amyloid-{beta} positivity in ALS provide further evidence that the assay signal is not necessarily specific for AD pathology. However, the use of p-tau217 in combination with NfL provides improved discriminatory power between ALS and AD, supporting the use of plasma biomarker combinations rather than sole reliance on individual plasma biomarkers. Inferred amyloid-{beta} positivity in cognitively impaired CVD may indicate AD and/or cerebral amyloid angiopathy co-pathology. Currently available plasma biomarkers should therefore be used as diagnostic complements and interpreted within clinical context rather than as standalone molecular diagnoses.",
-    "category": "Target Biology",
-    "source": "medRxiv",
-    "published": "2026-11-09",
-    "updated": "2026-11-09",
-    "primary_category": "neurology",
-    "categories": [
-      "neurology"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367445v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.06.26367445v1.full.pdf"
-      }
-    ],
-    "score": 41,
-    "infographic": {
-      "key_insight": "Plasma p-tau217 was elevated in both Alzheimer’s disease (AD) and amyotrophic lateral sclerosis (ALS), while the p-tau217/NfL ratio distinguished ALS from AD better than p-tau217 alone.",
-      "clinical_relevance": "These findings suggest that interpreting p-tau217 alongside NfL may improve research-level differentiation of ALS and AD, but do not establish a clinical diagnostic test.",
-      "method": [
-        "Studied 551 participants across 10 diagnostic groups, including 45 amyloid-PET-negative cognitively unimpaired controls.",
-        "Measured baseline plasma p-tau217, p-tau181, Aβ42/40, NfL, and GFAP.",
-        "Compared biomarker profiles and ROC-AUC performance; tested clinical and longitudinal associations within ALS."
-      ],
-      "evidence_signal": "The p-tau217/NfL ratio distinguished ALS from AD with an ROC-AUC of 0.92 (95% CI 0.85–0.97), versus 0.65 (95% CI 0.52–0.76) for p-tau217 alone.",
-      "watch_item": "Amyloid positivity was inferred from p-tau217 rather than independently confirmed across patient groups, limiting interpretation of elevated p-tau217.",
-      "hashtags": [
-        "#Neurodegeneration",
-        "#PlasmaBiomarkers",
-        "#PhosphorylatedTau",
-        "#AlzheimersResearch",
-        "#ALSResearch"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-09-medrxiv-plasma_phosphorylated_tau_species_across_neurodegenerative_and_cerebrovascular_diseases_an",
-      "paper_title": "Plasma phosphorylated tau species across neurodegenerative and cerebrovascular diseases: An ONDRI study",
-      "paper_date": "2026-11-09",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-11-15T14:28:28",
+      "generated_at": "2026-11-16T16:39:41",
       "generator": "openai"
     }
   }

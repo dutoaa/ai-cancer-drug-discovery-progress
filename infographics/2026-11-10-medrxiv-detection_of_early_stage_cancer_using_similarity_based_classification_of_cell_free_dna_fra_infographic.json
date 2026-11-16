@@ -1,13 +1,13 @@
 {
-  "key_insight": "Blackjack uses just two cfDNA fragmentation-similarity features to detect cancer with high accuracy in cross-validation, including early-stage disease.",
-  "clinical_relevance": "This blood-based detection approach could support less invasive multi-cancer screening, but the study concerns cancer detection—not drug discovery—and does not establish clinical screening utility.",
+  "key_insight": "Blackjack uses just two similarity features from cell-free DNA fragmentation patterns to distinguish cancer from healthy samples, including early-stage cancers.",
+  "clinical_relevance": "This research could support blood-based multi-cancer early detection, rather than drug discovery, but does not establish readiness for clinical screening.",
   "method": [
     "Encode DNA sequence context around plasma cfDNA fragmentation sites in position probability matrices.",
-    "Calculate similarity to reference matrices from healthy and cancer cohorts.",
+    "Measure each sample’s similarity to healthy and cancer reference cohorts.",
     "Use the two similarity features in logistic regression to classify samples."
   ],
-  "evidence_signal": "Cross-validation on two external whole-genome sequencing datasets yielded minimum AUC 0.993 and sensitivity 91.8% at 98% specificity overall; stage I sensitivity was 89.8% and stage II sensitivity was 90.2%.",
-  "watch_item": "Prospective validation in representative screening populations is needed to determine real-world performance and clinical utility.",
+  "evidence_signal": "Cross-validation on two external whole-genome sequencing datasets achieved a minimum AUC of 0.993 and 91.8% sensitivity at 98% specificity overall; stage I sensitivity was 89.8%.",
+  "watch_item": "Prospective validation in representative screening populations is needed to establish real-world performance and false-positive burden.",
   "hashtags": [
     "#PrecisionOncology",
     "#LiquidBiopsy",
@@ -21,6 +21,6 @@
   "paper_title": "Detection of early-stage cancer using similarity-based classification of cell-free DNA fragmentation patterns",
   "paper_date": "2026-11-10",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-11-15T14:28:17",
+  "generated_at": "2026-11-16T16:39:33",
   "generator": "openai"
 }

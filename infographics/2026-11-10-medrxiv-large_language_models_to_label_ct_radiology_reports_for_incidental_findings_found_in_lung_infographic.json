@@ -1,13 +1,13 @@
 {
-  "key_insight": "LLMs labeled incidental findings in lung cancer screening CT reports with moderate to almost perfect agreement, but no model–prompt combination performed best across all nine findings.",
-  "clinical_relevance": "This report-labeling research could support incidental-finding data extraction in lung cancer screening; it did not evaluate cancer drug discovery or patient outcomes.",
+  "key_insight": "LLMs labeled incidental findings in lung cancer screening CT reports with moderate to almost perfect agreement, but no model–prompt combination performed best across all findings.",
+  "clinical_relevance": "This report-labeling study—not cancer drug discovery research—suggests potential to support incidental-finding data extraction for lung screening research.",
   "method": [
     "Retrospective analysis of 300 CT reports from one Dutch academic hospital.",
-    "Compared GPT-5, GPT-4-Turbo, Llama-3.1-8B-INST, MedGemma-4B-IT, and keyword search against radiologist labels.",
+    "Compared four LLMs and keyword search for labeling nine specific incidental findings against a radiologist reference.",
     "Tested four prompting strategies per LLM, with and without chain-of-thought."
   ],
-  "evidence_signal": "GPT-5 achieved Cohen’s κ of 0.71–0.97 for seven findings; the highest reported agreement for interstitial lung abnormalities and mediastinal mass was moderate (κ=0.48 and 0.42, respectively), and non-chain-of-thought prompts performed best for most findings.",
-  "watch_item": "The small, single-center retrospective dataset limits generalizability; broader validation is needed before clinical implementation.",
+  "evidence_signal": "GPT-5 achieved Cohen’s κ of 0.71–0.97 for seven findings; the best reported agreement for interstitial lung abnormalities and mediastinal mass was moderate (κ=0.48 and 0.42, respectively).",
+  "watch_item": "Single-center results and finding-dependent performance warrant external validation before clinical workflow use.",
   "hashtags": [
     "#LungCancerScreening",
     "#RadiologyAI",
@@ -21,6 +21,6 @@
   "paper_title": "Large Language Models to Label CT Radiology Reports for Incidental Findings Found in Lung Cancer Screening: A Comparative Analysis",
   "paper_date": "2026-11-10",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-11-15T14:28:19",
+  "generated_at": "2026-11-16T16:39:36",
   "generator": "openai"
 }
