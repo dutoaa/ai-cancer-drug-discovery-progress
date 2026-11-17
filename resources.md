@@ -1,44 +1,44 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-11-16
+Generated: 2026-11-17
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
-## 1. LungAI: An AI Biomarker that Refines Lung-RADS v2022 Triage of Screen-Detected Pulmonary Nodules
+## 1. Cytokine Signatures of Immune Checkpoint Inhibitor Myocarditis and the Modifying Role of Clonal Hematopoiesis: A Machine-Learning and Multi-Omics Study
 
-- Date: 2026-11-10
-- Category: Target Biology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.09.26367662v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.09.26367662v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-10-medrxiv-lungai_an_ai_biomarker_that_refines_lung_rads_v2022_triage_of_screen_detected_pulmonary_no_infographic.json
-
-## 2. Detection of early-stage cancer using similarity-based classification of cell-free DNA fragmentation patterns
-
-- Date: 2026-11-10
+- Date: 2026-11-12
 - Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.08.26366892v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.08.26366892v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-10-medrxiv-detection_of_early_stage_cancer_using_similarity_based_classification_of_cell_free_dna_fra_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.11.26367634v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.11.26367634v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-12-medrxiv-cytokine_signatures_of_immune_checkpoint_inhibitor_myocarditis_and_the_modifying_role_of_c_infographic.json
 
-## 3. Large Language Models to Label CT Radiology Reports for Incidental Findings Found in Lung Cancer Screening: A Comparative Analysis
+## 2. Prediction of Subsolid Pulmonary Nodule Evolution from Baseline CT Using Temporal Imaging Models
 
-- Date: 2026-11-10
+- Date: 2026-11-11
 - Category: Precision Oncology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.09.26367611v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.09.26367611v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-10-medrxiv-large_language_models_to_label_ct_radiology_reports_for_incidental_findings_found_in_lung_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.08.12.26360292v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.08.12.26360292v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-11-medrxiv-prediction_of_subsolid_pulmonary_nodule_evolution_from_baseline_ct_using_temporal_imaging_infographic.json
 
-## 4. Serum brain-derived tau distinguishes acute neurotrauma diagnoses
+## 3. Environmental toxic metal exposure and conditional mortality survival among US adults: a prospective cohort study
 
-- Date: 2026-11-10
+- Date: 2026-11-12
 - Category: Target Biology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.08.26365143v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.08.26365143v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-10-medrxiv-serum_brain_derived_tau_distinguishes_acute_neurotrauma_diagnoses_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.06.29.26356268v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.06.29.26356268v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-12-medrxiv-environmental_toxic_metal_exposure_and_conditional_mortality_survival_among_us_adults_a_pr_infographic.json
 
-## 5. Examining the Clinical Utility of Deep Learning Models for Perivascular Space Segmentation in Alzheimer's Disease
+## 4. AToP: An Explainability Framework for Transformer-Based EHR Predictions Using Attribution-Guided Temporal Pattern Mining
 
-- Date: 2026-11-10
-- Category: Target Biology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.09.27.26363725v2
-- PDF: https://www.medrxiv.org/content/10.64898/2026.09.27.26363725v2.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-10-medrxiv-examining_the_clinical_utility_of_deep_learning_models_for_perivascular_space_segmentation_infographic.json
+- Date: 2026-11-12
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.10.26367753v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.10.26367753v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-12-medrxiv-atop_an_explainability_framework_for_transformer_based_ehr_predictions_using_attribution_g_infographic.json
+
+## 5. Serum Raman spectroscopy as a blood-based triage test for bladder cancer: a retrospective proof-of-concept study
+
+- Date: 2026-11-11
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.10.26.26366501v2
+- PDF: https://www.medrxiv.org/content/10.64898/2026.10.26.26366501v2.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-11-medrxiv-serum_raman_spectroscopy_as_a_blood_based_triage_test_for_bladder_cancer_a_retrospective_p_infographic.json

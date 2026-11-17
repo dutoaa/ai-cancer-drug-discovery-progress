@@ -1,121 +1,68 @@
 [
   {
-    "id": "2026-11-10-medrxiv-lungai_an_ai_biomarker_that_refines_lung_rads_v2022_triage_of_screen_detected_pulmonary_no",
-    "doi": "10.64898/2026.11.09.26367662",
-    "date": "2026-11-10",
-    "title": "LungAI: An AI Biomarker that Refines Lung-RADS v2022 Triage of Screen-Detected Pulmonary Nodules",
-    "authors": "Suri, H.; Keselman, Y.; Legel, L.; Govette, J.; Mullen, B.; Choradia, N.; Sartawi, T.; Abtin, F.; Moghanaki, D.; Thomson, C. C.; Yankelevitz, D. F.; Ahuja, Y.",
-    "abstract": "BackgroundThe Lung-RADS algorithm standardizes the management of screen-detected pulmonary nodules, but its risk assessment is driven chiefly by nodule size and attenuation. This misallocates a meaningful fraction of patients: a nontrivial share of small malignancies receive 12-month surveillance while large benign nodules proceed to invasive workup. Artificial intelligence (AI) may supply risk information independent of the imaging features Lung-RADS already uses. MethodsWe validated LungAI, an investigational deep learning nodule malignancy classifier not yet cleared by the US Food and Drug Administration (FDA), on the held-out NLST test partition of Ardila et al. (2,747 low-dose CT examinations from 1,244 patients with [&ge;]1 solid or part-solid 4-30 mm nodule; 89 pathologically confirmed cancers, prevalence 3.2%). We compared discrimination against Sybil, mean nodule diameter, and estimated nodule volume. A board-certified radiologist assigned Lung-RADS v2022 categories to a positives-enriched random subset (226 eligible examinations; 78 cancers), projected to the full cohort by contingency weighting. A per-category reclassification algorithm shifted patients along the existing Lung-RADS management ladder using a-priori score cutpoints. We evaluated a separately locked follow-up configuration on examinations with a prior scan. ResultsLungAI achieved AUROC 0.92 (95% CI 0.88-0.95) and AUPRC 0.47 (0.35-0.61), outperforming Sybil ({Delta}AUROC 0.07; {Delta}AUPRC 0.18), diameter ({Delta}AUROC 0.14; {Delta}AUPRC 0.34), and volume ({Delta}AUROC 0.14; {Delta}AUPRC 0.38; all P<0.001). Against Lung-RADS v2022 scored ordinally on the weighted annotated subset, LungAI improved AUPRC ({Delta}AUPRC 0.31, P=0.003) but not AUROC ({Delta}AUROC 0.03, P=0.20). LungAI added discriminative information independent of diameter (likelihood-ratio {chi}2=161, P<10-36; {Delta}AUROC 0.10) and, on follow-up examinations, independent of delta diameter, volume doubling time, and new-nodule status ({chi}2=79, P<10-18). Integrated with Lung-RADS, LungAI reduced cancers on the slowest (12-month rescan) pathway by 46% (3.1[-&gt;]1.6 per 1,000 examinations) and benign biopsy referrals by 20% (32.7[-&gt;]26.2 per 1,000 examinations) at approximately unchanged total biopsy volume (51.0[-&gt;]50.1 per 1,000). Assuming full adherence to recommended follow-up, the combined approach yielded 25 months of net diagnostic lead time, an estimated net cost saving of [~]$2,200, and 6.5 fewer benign biopsies per 1,000 examinations; accounting for published adherence rates, it yielded 1.6 additional cancer diagnoses within 1 year per 1,000 examinations. ConclusionsLungAI contributes malignancy-risk information orthogonal to the size- and growth-based features underlying Lung-RADS and improves the allocation of screening patients across the existing management spectrum while potentially decreasing invasive procedures for benign lesions. Multi-site, multi-geography validation is required to demonstrate practical generalizability.",
-    "category": "Target Biology",
-    "source": "medRxiv",
-    "published": "2026-11-10",
-    "updated": "2026-11-10",
-    "primary_category": "radiology and imaging",
-    "categories": [
-      "radiology and imaging"
-    ],
-    "links": [
-      {
-        "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367662v1"
-      },
-      {
-        "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367662v1.full.pdf"
-      }
-    ],
-    "score": 55,
-    "infographic": {
-      "key_insight": "LungAI refined lung-nodule risk assessment beyond size-based features, reducing cancers assigned to 12-month surveillance by 46% and benign biopsy referrals by 20% in a weighted retrospective analysis.",
-      "clinical_relevance": "This investigational imaging biomarker could improve screening triage within Lung-RADS v2022; it is not a cancer drug discovery tool.",
-      "method": [
-        "Validated a deep learning malignancy classifier on held-out NLST low-dose CT examinations.",
-        "Compared discrimination with Sybil, nodule diameter, volume, and radiologist-assigned Lung-RADS v2022.",
-        "Applied prespecified score cutpoints to reclassify examinations along existing Lung-RADS management pathways."
-      ],
-      "evidence_signal": "Among 2,747 examinations from 1,244 patients, including 89 cancers, LungAI achieved AUROC 0.92 (95% CI 0.88–0.95); versus weighted Lung-RADS, AUPRC improved significantly but AUROC did not.",
-      "watch_item": "LungAI is not FDA-cleared, and triage benefits were estimated from a weighted, cancer-enriched annotated subset rather than demonstrated prospectively.",
-      "hashtags": [
-        "#LungCancerScreening",
-        "#MedicalAI",
-        "#ImagingBiomarkers",
-        "#LungRADS",
-        "#ResearchValidation"
-      ],
-      "model": "gpt-6.1-sol",
-      "service_tier": "ultrafast",
-      "paper_id": "2026-11-10-medrxiv-lungai_an_ai_biomarker_that_refines_lung_rads_v2022_triage_of_screen_detected_pulmonary_no",
-      "paper_title": "LungAI: An AI Biomarker that Refines Lung-RADS v2022 Triage of Screen-Detected Pulmonary Nodules",
-      "paper_date": "2026-11-10",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-11-16T16:39:30",
-      "generator": "openai"
-    }
-  },
-  {
-    "id": "2026-11-10-medrxiv-detection_of_early_stage_cancer_using_similarity_based_classification_of_cell_free_dna_fra",
-    "doi": "10.64898/2026.11.08.26366892",
-    "date": "2026-11-10",
-    "title": "Detection of early-stage cancer using similarity-based classification of cell-free DNA fragmentation patterns",
-    "authors": "Wood, D. E.; Ballew, B. J.; Roy, J.",
-    "abstract": "Current cancer screening efforts face the dual problems of low patient adherence and a lack of available tests for many cancers, which motivates the development of less invasive multi-cancer early detection strategies. Such strategies will likely involve the use of liquid biopsies, which can analyze biomarkers found in blood for the presence of cancer. We introduce Blackjack, a new detection approach that focuses on the fragmentation patterns of plasma-derived cell-free DNA (cfDNA). Blackjack characterizes a persons cfDNA fragmentation sites with a position probability matrix (PPM) that encodes information about the sequence context of the sites. For classification, Blackjack computes two features that represent the similarity of an individuals PPM to those of known healthy and cancer cohorts. With these two features, Blackjack then uses logistic regression to classify a new sample as being from a healthy individual or a person with cancer. In cross-validation experiments using two external whole genome sequencing datasets, Blackjack showed high performance, achieving a minimum area under the receiver operating characteristic curve (AUC) of 0.993 and minimum sensitivity (Sn) of 91.8% (at 98% specificity). This high performance was also present for stage I (AUC 0.991, Sn 89.8%) and stage II cancers (AUC 0.993, Sn 90.2%), and across eight different cancers (minimum AUC 0.985, minimum Sn 80.0%). We demonstrate that Blackjacks accuracy is stable at low simulated sequencing depths ([~]0.24x), and that tissue of origin prediction using Blackjacks similarity measures is high (minimum 82% accuracy of the top two predicted tissues). Our findings show that cfDNA fragmentation site contexts have valuable signals for early cancer detection, and that developing diagnostics with machine learning can benefit from a focus on having a small number of informative features.",
+    "id": "2026-11-12-medrxiv-cytokine_signatures_of_immune_checkpoint_inhibitor_myocarditis_and_the_modifying_role_of_c",
+    "doi": "10.64898/2026.11.11.26367634",
+    "date": "2026-11-12",
+    "title": "Cytokine Signatures of Immune Checkpoint Inhibitor Myocarditis and the Modifying Role of Clonal Hematopoiesis: A Machine-Learning and Multi-Omics Study",
+    "authors": "Manchanda, N.; Chehayeb, R. J.; Hong, D.; Jeyashanmugaraja, A.; Singh, J.; Cross, J. L.; Vijayram, A.; Martinez, C. M.; Jayakrishnan, R.; Christofides, A.; Lin, D.; Im, Y.; VanOudenhove, J.; Biancon, G.; Ibrahim, E.; Ardasheva, A.; Lin, E. Y. S.; Levine, R.; Cheng, E.; Halene, S.; Hwa, J.; Smith, N.; Villani, C.; Zhu, H.; Jha, A.; Kwan, J. M.",
+    "abstract": "BackgroundImmune checkpoint inhibitor (ICI) myocarditis affects up to 2% of patients on ICI and has up to a 50% mortality. Clonal Hematopoiesis of Indeterminate Potential (CHIP) is a risk factor for ICI myocarditis. ObjectivesTo leverage a multi-omics approach to evaluate cytokines associated with ICI myocarditis, immunosuppression resistance, CHIP in ICI myocarditis and implicated pathways and cell type contributions. Methods236 cardio-oncology patients were enrolled, including 88 who were on ICI. Cytokine profiling from patients on ICI were sampled and analyzed using machine learning and explainable artificial intelligence. Single-cell multi-omics of peripheral blood from Yale (n=19), Stanford (n=25), and MGH (n=63) evaluated cell-type contributions of cytokines and implicated pathways. Validation of Yale proteomic analyses was done using the Stanford CYTOF dataset. ResultsTop features associated with ICI myocarditis included IL13, CXCL10, PDGF-A, CCL13, CCL17 and KITlg. Top KEGG pathways associated with ICI myocarditis and immunosuppression resistant ICI myocarditis included JAK-STAT signaling, IL17 signaling and lipid/atherosclerosis pathways. At the single-cell level, the consensus signals distinguishing myocarditis from non-myocarditis across cohorts was predominantly driven by module-level JAK-STAT, T-cell, and Toll-like receptor activation. Similar transcription gene programs were activated in CHIP carriers including modules implicated in the pro-inflammatory immune response, such as NF-kappa B, IL17, MAPK, and TNF pathways within CHIP cells spanning lymphoid (cytotoxic CD8+ NKT, and natural killer cells) and myeloid lineages. ConclusionsAcross cohorts, JAK-STAT signaling emerges as a convergent and potentially actionable axis in ICI myocarditis that is further amplified in CHIP carriers, supporting cytokine-guided risk stratification and JAK-STAT-directed immunosuppression as testable strategies.",
     "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-11-10",
-    "updated": "2026-11-10",
-    "primary_category": "oncology",
+    "published": "2026-11-12",
+    "updated": "2026-11-12",
+    "primary_category": "cardiovascular medicine",
     "categories": [
-      "oncology"
+      "cardiovascular medicine"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.08.26366892v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367634v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.08.26366892v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367634v1.full.pdf"
       }
     ],
-    "score": 49,
+    "score": 52,
     "infographic": {
-      "key_insight": "Blackjack uses just two similarity features from cell-free DNA fragmentation patterns to distinguish cancer from healthy samples, including early-stage cancers.",
-      "clinical_relevance": "This research could support blood-based multi-cancer early detection, rather than drug discovery, but does not establish readiness for clinical screening.",
+      "key_insight": "Multi-omics and machine learning identified JAK–STAT signaling as a convergent feature of immune checkpoint inhibitor myocarditis, with amplified inflammatory programs in CHIP carriers.",
+      "clinical_relevance": "These findings nominate cytokine-guided risk stratification and JAK–STAT-directed treatment as research strategies for this potentially fatal cancer-immunotherapy complication.",
       "method": [
-        "Encode DNA sequence context around plasma cfDNA fragmentation sites in position probability matrices.",
-        "Measure each sample’s similarity to healthy and cancer reference cohorts.",
-        "Use the two similarity features in logistic regression to classify samples."
+        "Machine learning and explainable AI analyzed cytokine profiles from ICI-treated patients.",
+        "Single-cell multi-omics mapped immune-cell contributions and inflammatory pathways across three cohorts.",
+        "Stanford CyTOF data provided validation of Yale proteomic analyses."
       ],
-      "evidence_signal": "Cross-validation on two external whole-genome sequencing datasets achieved a minimum AUC of 0.993 and 91.8% sensitivity at 98% specificity overall; stage I sensitivity was 89.8%.",
-      "watch_item": "Prospective validation in representative screening populations is needed to establish real-world performance and false-positive burden.",
+      "evidence_signal": "The study enrolled 236 cardio-oncology patients, including 88 receiving ICI, and analyzed single-cell data from Yale (n=19), Stanford (n=25), and MGH (n=63), finding convergent module-level JAK–STAT signals.",
+      "watch_item": "The abstract reports associations, not validated clinical prediction performance or evidence that JAK–STAT-directed treatment improves outcomes.",
       "hashtags": [
         "#PrecisionOncology",
-        "#LiquidBiopsy",
-        "#EarlyCancerDetection",
-        "#cfDNA",
+        "#CancerImmunotherapy",
+        "#CardioOncology",
+        "#MultiOmics",
         "#MachineLearning"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
-      "paper_id": "2026-11-10-medrxiv-detection_of_early_stage_cancer_using_similarity_based_classification_of_cell_free_dna_fra",
-      "paper_title": "Detection of early-stage cancer using similarity-based classification of cell-free DNA fragmentation patterns",
-      "paper_date": "2026-11-10",
+      "paper_id": "2026-11-12-medrxiv-cytokine_signatures_of_immune_checkpoint_inhibitor_myocarditis_and_the_modifying_role_of_c",
+      "paper_title": "Cytokine Signatures of Immune Checkpoint Inhibitor Myocarditis and the Modifying Role of Clonal Hematopoiesis: A Machine-Learning and Multi-Omics Study",
+      "paper_date": "2026-11-12",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-11-16T16:39:33",
+      "generated_at": "2026-11-17T16:36:54",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-11-10-medrxiv-large_language_models_to_label_ct_radiology_reports_for_incidental_findings_found_in_lung",
-    "doi": "10.64898/2026.11.09.26367611",
-    "date": "2026-11-10",
-    "title": "Large Language Models to Label CT Radiology Reports for Incidental Findings Found in Lung Cancer Screening: A Comparative Analysis",
-    "authors": "van der Graaf, F.; Antonissen, N.; Scholten, E. T.; Schalkx, H.; Prokop, M.; Jacobs, C.",
-    "abstract": "ObjectiveTo compare LLM and prompting strategies for labeling Specific Incidental Findings (SIFs) occurring during lung cancer screening, in radiology reports. Materials and MethodsIn this retrospective study, 300 CT reports from a Dutch academic hospital were included between 19th March 2003 and 28th December 2020. GPT-5, GPT-4-Turbo, Llama-3.1-8B-INST, MedGemma-4B-IT, a keyword-based search method, and a radiologist labelled the reports for the presence or absence of nine SIFs. The radiologists scores were the reference standard. Each LLM was evaluated with four different prompting strategies: two without Chain-of-Thought (CoT), and two with CoT (one zero shot, one few shot). The automated labelling methods were evaluated against the radiologist primarily using Cohens Kappa, and additionally sensitivity, specificity, and F1 scores. ResultsGPT-5 achieved substantial or almost perfect agreement for seven out of nine SIFs: aortic valve disease, bronchiectasis, consolidation, coronary artery calcification, emphysema, abnormality in mediastinal lymph nodes, and thyroid abnormalities, with Cohen {kappa} values of 0.81 (0.70, 0.93), 0.97 (0.93, 1.00), 0.71 (0.62, 0.82), 0.92 (0.87, 0.96), 0.91 (0.84, 0.97), 0.71 (0.62, 0.80), and 0.92 (0.86, 0.98) respectively. For the remaining two SIFs, moderate LLM agreement was obtained with MedGemma-4B-IT and with GPT-4-Turbo with Cohen {kappa} values of 0.48 (0.40, 0.60), 0.42 (0.31, 0.58) for interstitial lung abnormalities and mediastinal mass respectively. The highest agreement was obtained with the non-CoT prompt strategies for most SIFs. ConclusionThis study demonstrated that LLMs can automatically label radiology reports with agreement ranging from almost perfect to moderate, but not one LLM - prompt combination achieved the highest agreement across all SIFs.",
+    "id": "2026-11-11-medrxiv-prediction_of_subsolid_pulmonary_nodule_evolution_from_baseline_ct_using_temporal_imaging",
+    "doi": "10.64898/2026.08.12.26360292",
+    "date": "2026-11-11",
+    "title": "Prediction of Subsolid Pulmonary Nodule Evolution from Baseline CT Using Temporal Imaging Models",
+    "authors": "Bondarenko, M.; Qi, K.; Nowroozi, A.; Kim, J.; Kunzang, B.; Lee, A.; Liu, J.; Tran, N.; Weng, S.; Vella, M.; Chaudhari, G.; Schnizler, T.; Innanje, A.; Chen, T.; Sohn, J. H.",
+    "abstract": "BackgroundPrediction of subsolid pulmonary nodule (SSN) progression from baseline CT may improve risk stratification and surveillance planning, but prior approaches have largely relied on fixed follow-up intervals. MethodsThis retrospective single-center study evaluated interval-aware temporal imaging models for predicting future SSN growth and morphology across heterogeneous surveillance durations. A total of 24,946 longitudinal scan pairings derived from 2,543 clinician-reviewed SSNs in 426 patients were analyzed. A discriminative deep learning model predicted interval growth from baseline CT, segmentation masks, and interscan interval information, while a temporally conditioned generative model predicted future lesion morphology. ResultsThe discriminative model achieved an area under the receiver operating characteristic curve of 0.772 (95% confidence interval: 0.704-0.818), with sensitivity of 80.2% and specificity of 58.7% on the test cohort. The generative model predicted future lesion morphology with a Dice similarity coefficient of 0.706 {+/-} 0.186. Prediction performance decreased with increasing follow-up duration, although both models generalized across intervals ranging from months to years. ConclusionInterval-aware temporal imaging models enable the prediction of future SSN growth and morphology from baseline CT while accounting for variable surveillance intervals. These findings suggest a framework for time-aware, personalized risk assessment that may support individualized surveillance strategies and future AI-assisted management of pulmonary adenocarcinoma spectrum lesions.",
     "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-11-10",
-    "updated": "2026-11-10",
+    "published": "2026-11-11",
+    "updated": "2026-11-11",
     "primary_category": "radiology and imaging",
     "categories": [
       "radiology and imaging"
@@ -123,144 +70,197 @@
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367611v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.12.26360292v2"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.09.26367611v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.12.26360292v2.full.pdf"
       }
     ],
     "score": 47,
     "infographic": {
-      "key_insight": "LLMs labeled incidental findings in lung cancer screening CT reports with moderate to almost perfect agreement, but no model–prompt combination performed best across all findings.",
-      "clinical_relevance": "This report-labeling study—not cancer drug discovery research—suggests potential to support incidental-finding data extraction for lung screening research.",
+      "key_insight": "Interval-aware AI models predicted future subsolid pulmonary nodule growth and morphology from baseline CT across variable follow-up durations.",
+      "clinical_relevance": "This imaging research—not drug discovery—may support personalized nodule surveillance, but clinical utility remains unproven.",
       "method": [
-        "Retrospective analysis of 300 CT reports from one Dutch academic hospital.",
-        "Compared four LLMs and keyword search for labeling nine specific incidental findings against a radiologist reference.",
-        "Tested four prompting strategies per LLM, with and without chain-of-thought."
+        "Retrospective, single-center analysis of longitudinal CT scan pairs.",
+        "Discriminative model used baseline CT, segmentation masks, and interscan interval to predict growth.",
+        "Temporally conditioned generative model predicted future lesion morphology."
       ],
-      "evidence_signal": "GPT-5 achieved Cohen’s κ of 0.71–0.97 for seven findings; the best reported agreement for interstitial lung abnormalities and mediastinal mass was moderate (κ=0.48 and 0.42, respectively).",
-      "watch_item": "Single-center results and finding-dependent performance warrant external validation before clinical workflow use.",
+      "evidence_signal": "Among 24,946 scan pairings from 2,543 nodules in 426 patients, test growth-prediction AUROC was 0.772 (95% CI: 0.704–0.818), and morphology Dice similarity was 0.706 ± 0.186.",
+      "watch_item": "Performance declined at longer follow-up intervals; external validation is needed before clinical implementation.",
       "hashtags": [
-        "#LungCancerScreening",
-        "#RadiologyAI",
-        "#LargeLanguageModels",
-        "#IncidentalFindings",
-        "#ClinicalNLP"
+        "#PrecisionOncology",
+        "#MedicalImagingAI",
+        "#PulmonaryNodules",
+        "#TemporalModeling",
+        "#LungCancerResearch"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
-      "paper_id": "2026-11-10-medrxiv-large_language_models_to_label_ct_radiology_reports_for_incidental_findings_found_in_lung",
-      "paper_title": "Large Language Models to Label CT Radiology Reports for Incidental Findings Found in Lung Cancer Screening: A Comparative Analysis",
-      "paper_date": "2026-11-10",
+      "paper_id": "2026-11-11-medrxiv-prediction_of_subsolid_pulmonary_nodule_evolution_from_baseline_ct_using_temporal_imaging",
+      "paper_title": "Prediction of Subsolid Pulmonary Nodule Evolution from Baseline CT Using Temporal Imaging Models",
+      "paper_date": "2026-11-11",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-11-16T16:39:36",
+      "generated_at": "2026-11-17T16:36:57",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-11-10-medrxiv-serum_brain_derived_tau_distinguishes_acute_neurotrauma_diagnoses",
-    "doi": "10.64898/2026.11.08.26365143",
-    "date": "2026-11-10",
-    "title": "Serum brain-derived tau distinguishes acute neurotrauma diagnoses",
-    "authors": "Shi, R.; Svirsky, S. E.; Balogun, W. G.; Zeng, X.; Fedak, J. D.; Nafash, M.; Brodman, S. T.; Okonkwo, D. O.; Puccio, A. M.; Karikari, T. K.",
-    "abstract": "Traumatic brain injury (TBI) and spinal cord injury (SCI) are two common forms of neurotrauma that can present with overlapping clinical features, complicating early diagnosis and management particularly in acute and mixed-trauma settings.1-3 Accurate and rapid biological differentiation remains an unmet need.4 We hypothesized that brain-derived tau (BD-tau), an ultrasensitive blood-based biomarker preferentially selective for tau protein originating from the brain, would distinguish TBI from SCI. In a multi-cohort assessment of 342 patients admitted to the neuro-intensive care unit (285 with TBI, 57 with SCI), and 22 controls, baseline serum BD-tau concentrations were markedly elevated in TBI compared with SCI, discriminating between the two populations with high accuracy (area under the curve [AUC]=0.91, 95%CI 0.87-0.96). In paired serum-cerebrospinal fluid (CSF) samples, serum BD-tau significantly outperformed CSF BD-tau for injury-type discrimination (AUC=0.95, 95%CI 0.89-0.99 vs. 0.80, 95%CI 0.71-0.89). Baseline serum BD-tau also showed superior discrimination of TBI from SCI compared with established blood biomarkers of neurotrauma, including neurofilament light chain, glial fibrillary acidic protein, and ubiquitin C-terminal hydrolase L1 (AUC=0.82, 95%CI 0.76-0.88; vs. 0.53, 95%CI 0.43-0.63; 0.67, 95%CI 0.58-0.76; 0.71, 95%CI 0.64-0.79; all DeLong p<0.001). Longitudinally, serum BD-tau remained persistently elevated in TBI, but not SCI, for up to 144 hours post-injury, with distinct temporal trajectories between injury types. Together, these findings indicate that serum BD-tau enables rapid and minimally invasive differentiation of TBI from SCI and may support early clinical decision-making, triage, and enrollment into injury-specific therapeutic trials, highlighting the potential of circulating biomarkers to improve precision diagnostics in acute neurotrauma care.",
+    "id": "2026-11-12-medrxiv-environmental_toxic_metal_exposure_and_conditional_mortality_survival_among_us_adults_a_pr",
+    "doi": "10.64898/2026.06.29.26356268",
+    "date": "2026-11-12",
+    "title": "Environmental toxic metal exposure and conditional mortality survival among US adults: a prospective cohort study",
+    "authors": "Fang, X.; Schwartz, J.",
+    "abstract": "BackgroundHeavy metal exposure has been associated with mortality, but differences in early and median survival times remain unclear. We estimated associations of blood lead and mercury and urinary cadmium and arsenic at lower conditional survival-time quantiles. MethodsWe linked the 1999-2014 National Health and Nutrition Examination Survey to mortality records through Dec 31, 2019, including 24,338 adults aged 40 years or older. Weighted censored quantile regression estimated associations at the 10th, 25th, and 50th percentiles, adjusting for age and other confounders across five imputations. Mercury and arsenic analyses used 2003-2014 cycles; urinary-metal cohorts required observed estimated glomerular filtration rate [&ge;]60 mL/min per 1.73 mZ. FindingsOf 24,338 participants, 6,992 died. Doubling urinary cadmium was associated with 1.71-1.92, 1.50-1.67, and 1.35-1.53 years shorter conditional survival at the 10th, 25th, and 50th percentiles (n=7,061). Corresponding blood lead estimates were 0.63-0.71, 0.55-0.65, and 0.61-0.63 years shorter (n=24,021). Some median estimates were not estimable. Cadmium associations persisted after lead adjustment; lead associations did not persist after cadmium adjustment. Arsenic had no statistically significant association with mortality in this study. Mercury was associated with longer survival despite adjustment for fish or omega-3 intake, possibly reflecting residual confounding. InterpretationLow-to-moderate cadmium exposure was associated with shorter survival, with the largest absolute loss among adults who die earliest. These findings support continued efforts to reduce cadmium exposure, with particular benefit for adults most vulnerable to premature death. FundingNone. Research in contextO_ST_ABSEvidence before this studyC_ST_ABSWe searched PubMed from database inception to Nov 10, 2026, without language restrictions, using metal names and biomarker terms combined with \"mortality\", \"survival\", \"quantile regression\", \"life expectancy\", and related terms. We prioritised prospective studies in adult populations and systematic reviews, supplemented by targeted searches for analyses of survival time. Previous studies have associated lead and cadmium exposure with higher all-cause and cardiovascular mortality. Evidence for mercury has varied across populations and exposure levels, and findings for low-level arsenic exposure in US adults have been less conclusive. Most cohort studies reported relative hazards, although earlier research examined metal-associated differences in longevity and used machine learning to investigate variation in lead-associated survival. Evidence remained limited on how associations with metal biomarkers differ between early and median conditional survival times in general populations. Added value of this studyAmong 24,338 US adults aged 40 years or older in NHANES 1999-2014, with mortality follow-up through 2019, we estimated associations of four metal biomarkers with the 10th, 25th, and 50th conditional percentiles of survival time after examination. Censored quantile regression provided estimands in years of life. In the urinary cadmium cohort of 7,061 participants with an estimated glomerular filtration rate of at least 60 mL/min per 1.73 mZ, a doubling of cadmium was associated with 1.71-1.92 years shorter to 10% mortality, compared with 1.35-1.53 years at the median. The cadmium associations persisted in NHANES III, although the largest estimate in that cohort was at the median. Lead and survival time associations were attenuated after adjustment for cadmium. Arsenic estimates were not significant. We observed positive association between blood mercury and survival time, which might reflect some residual confounding that we couldnt control for. Implications of all the available evidenceThe evidence supports continued population-level efforts to reduce cadmium and lead exposure. With CQR, we were able to estimate the survival differences in years of life and for earlier deaths, providing valuable information for public health messages. Future studies using repeated exposure measurements and evaluations of exposure-reduction policies are needed.",
     "category": "Target Biology",
     "source": "medRxiv",
-    "published": "2026-11-10",
-    "updated": "2026-11-10",
-    "primary_category": "neurology",
+    "published": "2026-11-12",
+    "updated": "2026-11-12",
+    "primary_category": "epidemiology",
     "categories": [
-      "neurology"
+      "epidemiology"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.08.26365143v1"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.29.26356268v2"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.11.08.26365143v1.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.29.26356268v2.full.pdf"
       }
     ],
-    "score": 41,
+    "score": 46,
     "infographic": {
-      "key_insight": "Serum brain-derived tau (BD-tau) distinguished traumatic brain injury (TBI) from spinal cord injury (SCI), supporting its potential as an injury-specific blood biomarker.",
-      "clinical_relevance": "If validated, serum BD-tau could support acute neurotrauma differentiation, triage, and injury-specific trial enrollment; this study concerns neurotrauma, not AI cancer drug discovery.",
+      "key_insight": "Higher urinary cadmium was associated with shorter survival, with the largest absolute differences at the earliest conditional survival quantile.",
+      "clinical_relevance": "The findings support population-level cadmium exposure reduction, but do not establish causality or guide individual treatment.",
       "method": [
-        "Multi-cohort assessment of 285 patients with TBI, 57 with SCI, and 22 controls.",
-        "Compared serum BD-tau with paired cerebrospinal fluid measurements and established blood biomarkers.",
-        "Tracked serum BD-tau trajectories through 144 hours after injury."
+        "Linked NHANES 1999–2014 data for 24,338 US adults aged 40 or older to mortality records through 2019.",
+        "Used weighted censored quantile regression to assess survival at the 10th, 25th, and 50th percentiles, adjusting for confounders across five imputations.",
+        "Examined blood lead and mercury and urinary cadmium and arsenic; urinary-metal analyses required preserved kidney function."
       ],
-      "evidence_signal": "Serum BD-tau distinguished TBI from SCI with AUC 0.91 (95% CI 0.87–0.96) overall and outperformed comparator blood biomarkers in a separate reported comparison (AUC 0.82 versus 0.53–0.71; all DeLong p<0.001).",
-      "watch_item": "The abstract does not establish clinical decision thresholds or performance in mixed TBI–SCI presentations, requiring further validation before routine use.",
+      "evidence_signal": "Among 7,061 participants in the cadmium analysis, each doubling of urinary cadmium was associated with 1.71–1.92 years shorter conditional survival at the 10th percentile versus 1.35–1.53 years at the median.",
+      "watch_item": "This observational environmental-health study—not AI cancer drug discovery—remains vulnerable to residual confounding, and some median survival estimates were not estimable.",
       "hashtags": [
-        "#BrainDerivedTau",
-        "#Neurotrauma",
-        "#TraumaticBrainInjury",
-        "#SpinalCordInjury",
-        "#BloodBiomarkers"
+        "#EnvironmentalHealth",
+        "#Cadmium",
+        "#ToxicMetalExposure",
+        "#SurvivalAnalysis",
+        "#NHANES"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
-      "paper_id": "2026-11-10-medrxiv-serum_brain_derived_tau_distinguishes_acute_neurotrauma_diagnoses",
-      "paper_title": "Serum brain-derived tau distinguishes acute neurotrauma diagnoses",
-      "paper_date": "2026-11-10",
+      "paper_id": "2026-11-12-medrxiv-environmental_toxic_metal_exposure_and_conditional_mortality_survival_among_us_adults_a_pr",
+      "paper_title": "Environmental toxic metal exposure and conditional mortality survival among US adults: a prospective cohort study",
+      "paper_date": "2026-11-12",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-16T16:39:38",
+      "generated_at": "2026-11-17T16:37:01",
       "generator": "openai"
     }
   },
   {
-    "id": "2026-11-10-medrxiv-examining_the_clinical_utility_of_deep_learning_models_for_perivascular_space_segmentation",
-    "doi": "10.64898/2026.09.27.26363725",
-    "date": "2026-11-10",
-    "title": "Examining the Clinical Utility of Deep Learning Models for Perivascular Space Segmentation in Alzheimer's Disease",
-    "authors": "Tang, S.; Younes, K.; Penukonda, E.; Hausle, I.; Thropp, P.; Lupo, J. M.; Tosun, D.",
-    "abstract": "Open-source deep learning models promise scalable quantification of MRI-visible perivascular spaces (PVS), an emerging marker of glymphatic dysfunction in Alzheimers disease (AD). Whether these models remain valid when applied to heterogeneous AD cohorts and preserve ground-truth derived biological associations has not been established. We benchmarked five open-source nnU-Net-based PVS segmentation models (nnU-Net T1, nnU-Net T1+FLAIR, mcPVS-Net, MedNet-PVS, ADNI-PVS-Net) against manual labels in 60 multi-site ADNI-3 participants balanced across cognitively unimpaired, mild cognitive impairment, and AD dementia, and in 12 publicly available scans from the VAscular Lesions Detection and segmentatiOn challenge (VALDO) challenge. We evaluated overall, voxel, object, and lesion-wise Dice; stratified performance by region, diagnosis, scanner, PVS severity, and white matter hyperintensity (WMH) burden; and tested whether model-derived PVS burden reproduced ground-truth derived associations with AD-related biomarkers. Despite high internal performance, all models showed a specialist-generalist trade-off: the AD-trained ADNI-PVS-Net achieved highest internal performance (overall Dice = 0.58{+/-}0.14) but degraded most externally (Dice [&le;] 0.11), while MedNet-PVS and mcPVS-Net generalized externally (Dice 0.27-0.30) but systematically misestimated PVS burden. Models were relatively robust across scanner and diagnosis but inconsistent across PVS severity, and some misclassified up to 32% of WMH as PVS. Notably, only AD-trained models reproduced the expected PVS-amyloid biomarker relationship; other models returned a null result, despite comparable or superior Dice scores. These findings show that internal segmentation accuracy and external generalizability alone do not guarantee downstream inferential validity. Careful model selection and cohort-specific validation against manual labels should precede clinical inference in AD.",
-    "category": "Target Biology",
+    "id": "2026-11-12-medrxiv-atop_an_explainability_framework_for_transformer_based_ehr_predictions_using_attribution_g",
+    "doi": "10.64898/2026.11.10.26367753",
+    "date": "2026-11-12",
+    "title": "AToP: An Explainability Framework for Transformer-Based EHR Predictions Using Attribution-Guided Temporal Pattern Mining",
+    "authors": "Belouali, A.; Kharrazi, H.",
+    "abstract": "ObjectiveTo develop and evaluate AToP (Attribution to Temporal Patterns), a post-hoc explainability framework that converts per-token Integrated Gradients (IG) from a Transformer into structured temporal pattern narratives. Materials and MethodsAToP was applied to a single-stream Transformer trained on MIMIC-IV v3.1 (218,196 patients; 12.6% unplanned 30-day readmission). It mines frequent episodes from salient-token subsequences in the training cohort, aggregates attribution among patients whose records contain each token or pattern, and collapses near-duplicates by patient overlap. Validation used masking, reversed-order analysis, token-level faithfulness tests, and KernelSHAP comparison. ResultsThe Transformer achieved AUROC 0.77 and PR-AUC 0.34. Population-weighted attribution emphasized high-prevalence codes with small per-patient impact. Carrier-conditional attribution, the mean among patients with the token, surfaced rare high-attribution psychiatric markers including psychosis, self-harm overdose, suicidal ideation (SI), and severe major depressive disorder (MDD). Pattern-level attribution identified within-visit co-occurrences and cross-visit trajectories not captured by token rankings. Risk-increasing patterns included psychiatric sequences ({MDD, SI} [-&gt;] SI) and oncologic progressions (cancer anemia [-&gt;] ascites). Obstetric and chest pain evaluation patterns were associated with lower predicted readmission. DiscussionThe framework provides two complementary views of model predictions: carrier-conditional aggregation highlights rare, highly attributed clinical features, while temporal pattern analysis identifies within-visit combinations and cross-visit trajectories missed by token-level rankings. Masking and visit-order reversal provided evidence of correspondence with model behavior, but pattern attributions do not represent unique effects or establish clinical validity. ConclusionAToP turns a Transformers attributions into visit-anchored temporal pattern narratives, showing which events, in which order, contribute to its readmission predictions.",
+    "category": "Precision Oncology",
     "source": "medRxiv",
-    "published": "2026-11-10",
-    "updated": "2026-11-10",
-    "primary_category": "radiology and imaging",
+    "published": "2026-11-12",
+    "updated": "2026-11-12",
+    "primary_category": "health informatics",
     "categories": [
-      "radiology and imaging"
+      "health informatics"
     ],
     "links": [
       {
         "title": "medRxiv",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.27.26363725v2"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.10.26367753v1"
       },
       {
         "title": "PDF",
-        "url": "https://www.medrxiv.org/content/10.64898/2026.09.27.26363725v2.full.pdf"
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.10.26367753v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "AToP translates Transformer attributions into visit-anchored event patterns that explain predicted readmission risk, rather than discovering cancer drugs.",
+      "clinical_relevance": "Oncology-related sequences, such as cancer anemia followed by ascites, were associated with higher model-predicted readmission risk, without establishing clinical validity.",
+      "method": [
+        "Compute per-token Integrated Gradients for a Transformer predicting unplanned 30-day readmission.",
+        "Mine frequent temporal patterns from salient events and merge patterns with overlapping patient populations.",
+        "Compare population-weighted and carrier-conditional attributions to reveal common versus rare influential features."
+      ],
+      "evidence_signal": "Using MIMIC-IV v3.1 data from 218,196 patients, the model achieved AUROC 0.77 and PR-AUC 0.34; evaluation included masking, visit-order reversal, token-level faithfulness tests, and KernelSHAP comparison.",
+      "watch_item": "Pattern attributions describe model behavior, not independent causal effects or clinically validated risk factors.",
+      "hashtags": [
+        "#ExplainableAI",
+        "#TemporalPatternMining",
+        "#ElectronicHealthRecords",
+        "#ReadmissionPrediction",
+        "#OncologyInformatics"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-12-medrxiv-atop_an_explainability_framework_for_transformer_based_ehr_predictions_using_attribution_g",
+      "paper_title": "AToP: An Explainability Framework for Transformer-Based EHR Predictions Using Attribution-Guided Temporal Pattern Mining",
+      "paper_date": "2026-11-12",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-11-17T16:37:03",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-11-medrxiv-serum_raman_spectroscopy_as_a_blood_based_triage_test_for_bladder_cancer_a_retrospective_p",
+    "doi": "10.64898/2026.10.26.26366501",
+    "date": "2026-11-11",
+    "title": "Serum Raman spectroscopy as a blood-based triage test for bladder cancer: a retrospective proof-of-concept study",
+    "authors": "Milligan, K.; Smith, I.; Flugge, A.; Fakhrua Aldeen, N.; Shine, B.; Muldoon, C.",
+    "abstract": "BackgroundBladder cancer remains one of the most common urological malignancies. Current diagnostic pathways rely heavily on cystoscopy, an invasive investigation with significant cost and resource implications. A rapid blood-based assay capable of improving patient stratification before cystoscopy could reduce unnecessary invasive investigations while maintaining diagnostic sensitivity. MethodsArchived serum samples from patients with histologically confirmed bladder cancer and symptomatic control subjects were analysed using dried-serum Raman spectroscopy. Raman spectra were incorporated into supervised machine-learning classification models to generate predicted probabilities of bladder cancer. Diagnostic performance was evaluated using receiver operating characteristic (ROC) analysis. ResultsThe study included 49 patients with bladder cancer and 97 symptomatic controls. Predicted probabilities of bladder cancer were substantially higher in cancer patients than in controls. The Raman classifier demonstrated excellent diagnostic discrimination (AUC approximately 0.90). Incorporation of age into the classification model produced little additional improvement (AUC approximately 0.91). ConclusionsMachine learning-assisted analysis of dried-serum Raman spectra demonstrates promising diagnostic performance for bladder cancer. Prospective evaluation is warranted to determine its role as a minimally invasive triage test within contemporary bladder cancer diagnostic pathways.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-11-11",
+    "updated": "2026-11-11",
+    "primary_category": "urology",
+    "categories": [
+      "urology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.26.26366501v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.10.26.26366501v2.full.pdf"
       }
     ],
     "score": 41,
     "infographic": {
-      "key_insight": "In this Alzheimer’s MRI study—not cancer drug discovery—strong PVS segmentation accuracy did not guarantee preservation of biologically relevant associations.",
-      "clinical_relevance": "Automated PVS measurements require cohort-specific validation before supporting Alzheimer’s biomarker research or clinical inference.",
+      "key_insight": "Machine learning applied to dried-serum Raman spectra showed promising discrimination between bladder cancer and symptomatic controls in a retrospective proof-of-concept study.",
+      "clinical_relevance": "This blood-based approach could help prioritize patients for cystoscopy, but its clinical role remains unproven.",
       "method": [
-        "Benchmarked five open-source nnU-Net-based PVS segmentation models against manual labels.",
-        "Evaluated performance across brain regions, diagnoses, scanners, PVS severity, and white matter hyperintensity burden.",
-        "Tested whether model-derived PVS burden reproduced manual-label associations with Alzheimer’s biomarkers."
+        "Analysed archived serum using dried-serum Raman spectroscopy.",
+        "Used supervised machine learning to estimate bladder cancer probabilities.",
+        "Evaluated ROC performance with and without age."
       ],
-      "evidence_signal": "Across 60 ADNI-3 participants and 12 external VALDO scans, ADNI-PVS-Net achieved internal Dice of 0.58 ± 0.14 but external Dice ≤0.11; only AD-trained models reproduced the expected PVS–amyloid relationship.",
-      "watch_item": "Domain shifts and white matter hyperintensity misclassification can distort PVS burden and downstream biomarker associations, even when Dice scores appear competitive.",
+      "evidence_signal": "Among 49 bladder cancer patients and 97 symptomatic controls, classifier AUC was approximately 0.90, increasing to approximately 0.91 with age.",
+      "watch_item": "Prospective validation is needed to establish sensitivity at clinically relevant triage thresholds before considering implementation.",
       "hashtags": [
-        "#AlzheimersResearch",
-        "#PerivascularSpaces",
-        "#DeepLearning",
-        "#MRISegmentation",
-        "#BiomarkerValidation"
+        "#BladderCancer",
+        "#RamanSpectroscopy",
+        "#MachineLearning",
+        "#CancerDiagnostics",
+        "#PrecisionOncology"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
-      "paper_id": "2026-11-10-medrxiv-examining_the_clinical_utility_of_deep_learning_models_for_perivascular_space_segmentation",
-      "paper_title": "Examining the Clinical Utility of Deep Learning Models for Perivascular Space Segmentation in Alzheimer's Disease",
-      "paper_date": "2026-11-10",
-      "paper_category": "Target Biology",
-      "generated_at": "2026-11-16T16:39:41",
+      "paper_id": "2026-11-11-medrxiv-serum_raman_spectroscopy_as_a_blood_based_triage_test_for_bladder_cancer_a_retrospective_p",
+      "paper_title": "Serum Raman spectroscopy as a blood-based triage test for bladder cancer: a retrospective proof-of-concept study",
+      "paper_date": "2026-11-11",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-11-17T16:37:05",
       "generator": "openai"
     }
   }
