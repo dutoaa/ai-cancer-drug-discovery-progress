@@ -1,19 +1,19 @@
 {
-  "key_insight": "AToP translates Transformer attributions into visit-anchored event patterns that explain predicted readmission risk, rather than discovering cancer drugs.",
-  "clinical_relevance": "Oncology-related sequences, such as cancer anemia followed by ascites, were associated with higher model-predicted readmission risk, without establishing clinical validity.",
+  "key_insight": "AToP converts Transformer attributions into visit-anchored temporal patterns that explain predicted readmission risk, rather than discovering cancer drugs.",
+  "clinical_relevance": "Oncologic sequences such as cancer anemia followed by ascites contributed to higher predicted readmission risk, offering research insights rather than validated clinical guidance.",
   "method": [
-    "Compute per-token Integrated Gradients for a Transformer predicting unplanned 30-day readmission.",
-    "Mine frequent temporal patterns from salient events and merge patterns with overlapping patient populations.",
-    "Compare population-weighted and carrier-conditional attributions to reveal common versus rare influential features."
+    "Compute per-token Integrated Gradients for a Transformer predicting 30-day readmission.",
+    "Mine frequent temporal patterns from salient events and collapse near-duplicates.",
+    "Summarize attribution among patients carrying each token or pattern."
   ],
-  "evidence_signal": "Using MIMIC-IV v3.1 data from 218,196 patients, the model achieved AUROC 0.77 and PR-AUC 0.34; evaluation included masking, visit-order reversal, token-level faithfulness tests, and KernelSHAP comparison.",
-  "watch_item": "Pattern attributions describe model behavior, not independent causal effects or clinically validated risk factors.",
+  "evidence_signal": "Using MIMIC-IV v3.1 data from 218,196 patients, the Transformer achieved AUROC 0.77 and PR-AUC 0.34; evaluation included masking, visit-order reversal, token-level faithfulness tests, and KernelSHAP comparison.",
+  "watch_item": "Pattern attributions reflect model behavior, not unique causal effects or established clinical validity.",
   "hashtags": [
     "#ExplainableAI",
+    "#ClinicalAI",
+    "#EHR",
     "#TemporalPatternMining",
-    "#ElectronicHealthRecords",
-    "#ReadmissionPrediction",
-    "#OncologyInformatics"
+    "#ReadmissionPrediction"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "AToP: An Explainability Framework for Transformer-Based EHR Predictions Using Attribution-Guided Temporal Pattern Mining",
   "paper_date": "2026-11-12",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-11-17T16:37:03",
+  "generated_at": "2026-11-18T16:05:40",
   "generator": "openai"
 }
