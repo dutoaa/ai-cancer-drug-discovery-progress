@@ -1,18 +1,18 @@
 {
-  "key_insight": "DxToniaNet estimated leg dystonia severity in children with cerebral palsy from clinical videos; this study concerns movement assessment, not cancer drug discovery.",
-  "clinical_relevance": "Automated video scoring could support more objective severity measurement in care and clinical trials, pending further validation.",
+  "key_insight": "DxToniaNet estimated leg dystonia severity from videos of children with cerebral palsy with a reported mean absolute error of 1.71 GDRS points; this is not cancer or drug discovery research.",
+  "clinical_relevance": "Video-based scoring could support more consistent severity measurement in cerebral palsy care and trials, but clinical utility requires further validation.",
   "method": [
-    "OpenPose tracked bilateral knee, ankle, and toe coordinates during a seated hand open-close task.",
-    "Normalized coordinates yielded 69 movement variance and amplitude features.",
-    "A neural network estimated expert-rated Global Dystonia Rating Scale leg scores."
+    "Used OpenPose to extract bilateral knee, ankle, and toe coordinates during a seated hand open-close task.",
+    "Calculated 69 normalized movement features to train a neural network against median expert GDRS leg scores.",
+    "Used five-fold cross-validation at Center 1 and independent testing at Center 2."
   ],
-  "evidence_signal": "The study analyzed recordings from 298 children across two centers, using dystonia-positive videos for development and testing; five-fold validation preceded independent-center testing, with reported MAE of 1.71 points and 90–94% accuracy distinguishing videos more than 4 points apart.",
-  "watch_item": "Retrospective evaluation restricted to dystonia-positive videos does not establish performance for screening or prospective clinical use.",
+  "evidence_signal": "The retrospective study analyzed recordings from 298 children across two centers, using videos with median expert GDRS scores ≥1 for modeling; reported MAE was 1.71 points and accuracy was 90–94% for distinguishing videos differing by more than 4 GDRS points.",
+  "watch_item": "Retrospective evaluation restricted to videos showing dystonia does not establish prospective performance or reliable detection of absent dystonia.",
   "hashtags": [
+    "#DxToniaNet",
     "#CerebralPalsy",
     "#Dystonia",
-    "#DeepLearning",
-    "#PoseEstimation",
+    "#ComputerVision",
     "#ClinicalAI"
   ],
   "model": "gpt-6.1-sol",
@@ -21,6 +21,6 @@
   "paper_title": "DxToniaNet: A Neural Network for Estimating the Severity of Leg Dystonia in Children with Cerebral Palsy",
   "paper_date": "2026-11-13",
   "paper_category": "Cancer AI Methods",
-  "generated_at": "2026-11-18T16:05:30",
+  "generated_at": "2026-11-19T16:11:17",
   "generator": "openai"
 }

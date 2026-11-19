@@ -1,19 +1,19 @@
 {
-  "key_insight": "Integrating standardized trial data with biomedical ontologies improved vaccine trial retrieval and adverse-event ranking; this study concerns vaccine trial analytics, not AI cancer drug discovery.",
-  "clinical_relevance": "The framework could support cross-trial vaccine research and study planning, but does not establish clinical benefit or validate treatment decisions.",
+  "key_insight": "Integrating vaccine trial records with a common data model and biomedical ontologies improved semantic retrieval and supported trial comparison and design recommendations.",
+  "clinical_relevance": "This vaccine informatics study—not cancer drug discovery—could support clinical research planning but does not establish patient benefit.",
   "method": [
-    "Mapped 9,147 vaccine-related AACT records into the Study-Experiment-Assay Common Data Model.",
-    "Linked vaccine products and reported adverse events to VO and OAE ontologies in relational tables and a Neo4j knowledge graph.",
-    "Evaluated semantic retrieval, adverse-event ranking, trial similarity, and machine-learning-based design recommendations."
+    "Mapped 9,147 vaccine study records from AACT into SEA-CDM.",
+    "Linked vaccines and adverse events to VO and OAE ontologies in relational tables and a Neo4j knowledge graph.",
+    "Evaluated semantic queries, adverse-event ranking, trial similarity, and machine-learning design recommendations."
   ],
-  "evidence_signal": "Ontology-expanded queries retrieved 41 candidate RNA vaccine trials versus 16 with exact identifier matching, while context-aware adverse-event ranking improved recall@10 from 0.317 to 0.383.",
-  "watch_item": "Design recommendation performance varied across 23 vaccine classes under leave-one-Material-out evaluation, limiting claims of broad generalizability.",
+  "evidence_signal": "Ontology-expanded queries retrieved 41 candidate RNA vaccine trials versus 16 with exact identifier matching; adverse-event recall@10 increased from 0.317 to 0.383, and trial-similarity Hits@10 reached 0.950.",
+  "watch_item": "Design-recommendation performance varied across 23 vaccine classes under leave-one-Material-out evaluation, limiting confidence in generalization.",
   "hashtags": [
     "#VaccineResearch",
-    "#ClinicalTrialInformatics",
+    "#ClinicalTrials",
     "#BiomedicalOntologies",
     "#KnowledgeGraphs",
-    "#MachineLearning"
+    "#ClinicalInformatics"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Ontology-Based SEA-CDM Integration for Vaccine Clinical Trials: Query, Similarity, and Design Recommendation",
   "paper_date": "2026-11-13",
   "paper_category": "Clinical Translation",
-  "generated_at": "2026-11-18T16:05:36",
+  "generated_at": "2026-11-19T16:11:29",
   "generator": "openai"
 }

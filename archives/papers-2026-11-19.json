@@ -1,0 +1,267 @@
+[
+  {
+    "id": "2026-11-13-medrxiv-dxtonianet_a_neural_network_for_estimating_the_severity_of_leg_dystonia_in_children_with_c",
+    "doi": "10.64898/2026.11.11.26367859",
+    "date": "2026-11-13",
+    "title": "DxToniaNet: A Neural Network for Estimating the Severity of Leg Dystonia in Children with Cerebral Palsy",
+    "authors": "Bajpai, R.; Rust, A.; Lott, E.; Kim, S.; Gandham, S.; Chintalapati, K.; Blackburn, J.; Gelineau-Morel, R.; Kruer, M. C.; Mingbunjerdsuk, D.; O'Malley, J.; Tochen, L.; Waugh, J. L.; Wu, S.; Feyma, T.; Perlmutter, J. S.; Aravamuthan, B. R.",
+    "abstract": "ImportanceLeg dystonia affects 50-80% of children with cerebral palsy (CP), but severity assessment remains subjective and time-consuming. Objective tools are urgently needed to quantify leg dystonia severity in clinical care and clinical trials. ObjectiveTo develop and validate a deep neural network (DxToniaNet) for leg dystonia severity estimation using 2D clinical video recordings. Design, Setting, and ParticipantsWe retrospectively analyzed video recordings of 298 children with cerebral palsy undergoing a seated hand open-close task as part of routine clinical care (Center 1: 193 videos, 720p/30fps; Center 2: 105 videos, 4K/60fps). Videos were rated for leg dystonia severity by a group of 7 experts using the Global Dystonia Rating Scale (GDRS) leg subscore (range 0-40) which has a minimum clinically important difference (MCID) of 4 points. Videos displaying leg dystonia (median expert GDRS score [&ge;]1) were used to develop and test a machine learning model (DxToniaNet) for estimating leg dystonia severity. Open-source software (OpenPose) estimated bilateral knee, ankle, and toe coordinates, normalized for height and camera positioning, and 69 variance and amplitude features were calculated based on established expert-cited features of leg dystonia. A neural network, DxToniaNet, was developed, trained and validated using 5-fold cross-validation on Center 1 videos before final testing on independent Center 2 videos. Main Outcome(s) and Measure(s){square}Mean absolute error (MAE), root mean square error (RMSE), and accuracy in differentiating between videos with clinically meaningful differences in GDRS scores were calculated relative to experts median GDRS scores. ResultsWhen estimating experts leg GDRS scores in testing data, the proposed machine learning (ML) model yielded a MAE of 1.71 {+/-} 1.68 and RMSE of 2.21 {+/-} 0.34 (significantly less than the GDRS MCID of 4), and 90-94% accuracy in differentiating between videos with greater than a 4-point difference in the GDRS. Conclusions and RelevanceWe have demonstrated that DxToniaNet can accurately estimate leg dystonia severity compared to experts assessments with a small (clinically insignificant) error margin. Our methodology supports generalizability since DxToniaNet was developed and tested using independent videos datasets from different centers, recorded under different conditions. In the future, DxToniaNet may help facilitate standardized leg dystonia severity estimation in clinical care and clinical trials. Key pointsO_ST_ABSQuestionC_ST_ABSCan a deep learning model use clinically-acquired videos to accurately estimate experts leg dystonia severity assessments in children with cerebral palsy? FindingsAn automated deep learning model (DxToniaNet) trained and tested on clinically-acquired smartphone videos of 298 children with cerebral palsy estimates leg dystonia severity with 90-94% accuracy compared to experts assessments. MeaningDxToniaNet is an objective and free tool to estimate leg dystonia severity and may thus help facilitate standardized tracking of longitudinal treatment responses and clinical trial outcomes.",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-11-13",
+    "updated": "2026-11-13",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367859v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367859v1.full.pdf"
+      }
+    ],
+    "score": 58,
+    "infographic": {
+      "key_insight": "DxToniaNet estimated leg dystonia severity in children with cerebral palsy from clinical videos; this study concerns movement assessment, not cancer drug discovery.",
+      "clinical_relevance": "Automated video scoring could support more objective severity measurement in care and clinical trials, pending further validation.",
+      "method": [
+        "OpenPose tracked bilateral knee, ankle, and toe coordinates during a seated hand open-close task.",
+        "Normalized coordinates yielded 69 movement variance and amplitude features.",
+        "A neural network estimated expert-rated Global Dystonia Rating Scale leg scores."
+      ],
+      "evidence_signal": "The study analyzed recordings from 298 children across two centers, using dystonia-positive videos for development and testing; five-fold validation preceded independent-center testing, with reported MAE of 1.71 points and 90–94% accuracy distinguishing videos more than 4 points apart.",
+      "watch_item": "Retrospective evaluation restricted to dystonia-positive videos does not establish performance for screening or prospective clinical use.",
+      "hashtags": [
+        "#CerebralPalsy",
+        "#Dystonia",
+        "#DeepLearning",
+        "#PoseEstimation",
+        "#ClinicalAI"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-13-medrxiv-dxtonianet_a_neural_network_for_estimating_the_severity_of_leg_dystonia_in_children_with_c",
+      "paper_title": "DxToniaNet: A Neural Network for Estimating the Severity of Leg Dystonia in Children with Cerebral Palsy",
+      "paper_date": "2026-11-13",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-11-18T16:05:30",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-12-medrxiv-cytokine_signatures_of_immune_checkpoint_inhibitor_myocarditis_and_the_modifying_role_of_c",
+    "doi": "10.64898/2026.11.11.26367634",
+    "date": "2026-11-12",
+    "title": "Cytokine Signatures of Immune Checkpoint Inhibitor Myocarditis and the Modifying Role of Clonal Hematopoiesis: A Machine-Learning and Multi-Omics Study",
+    "authors": "Manchanda, N.; Chehayeb, R. J.; Hong, D.; Jeyashanmugaraja, A.; Singh, J.; Cross, J. L.; Vijayram, A.; Martinez, C. M.; Jayakrishnan, R.; Christofides, A.; Lin, D.; Im, Y.; VanOudenhove, J.; Biancon, G.; Ibrahim, E.; Ardasheva, A.; Lin, E. Y. S.; Levine, R.; Cheng, E.; Halene, S.; Hwa, J.; Smith, N.; Villani, C.; Zhu, H.; Jha, A.; Kwan, J. M.",
+    "abstract": "BackgroundImmune checkpoint inhibitor (ICI) myocarditis affects up to 2% of patients on ICI and has up to a 50% mortality. Clonal Hematopoiesis of Indeterminate Potential (CHIP) is a risk factor for ICI myocarditis. ObjectivesTo leverage a multi-omics approach to evaluate cytokines associated with ICI myocarditis, immunosuppression resistance, CHIP in ICI myocarditis and implicated pathways and cell type contributions. Methods236 cardio-oncology patients were enrolled, including 88 who were on ICI. Cytokine profiling from patients on ICI were sampled and analyzed using machine learning and explainable artificial intelligence. Single-cell multi-omics of peripheral blood from Yale (n=19), Stanford (n=25), and MGH (n=63) evaluated cell-type contributions of cytokines and implicated pathways. Validation of Yale proteomic analyses was done using the Stanford CYTOF dataset. ResultsTop features associated with ICI myocarditis included IL13, CXCL10, PDGF-A, CCL13, CCL17 and KITlg. Top KEGG pathways associated with ICI myocarditis and immunosuppression resistant ICI myocarditis included JAK-STAT signaling, IL17 signaling and lipid/atherosclerosis pathways. At the single-cell level, the consensus signals distinguishing myocarditis from non-myocarditis across cohorts was predominantly driven by module-level JAK-STAT, T-cell, and Toll-like receptor activation. Similar transcription gene programs were activated in CHIP carriers including modules implicated in the pro-inflammatory immune response, such as NF-kappa B, IL17, MAPK, and TNF pathways within CHIP cells spanning lymphoid (cytotoxic CD8+ NKT, and natural killer cells) and myeloid lineages. ConclusionsAcross cohorts, JAK-STAT signaling emerges as a convergent and potentially actionable axis in ICI myocarditis that is further amplified in CHIP carriers, supporting cytokine-guided risk stratification and JAK-STAT-directed immunosuppression as testable strategies.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-11-12",
+    "updated": "2026-11-12",
+    "primary_category": "cardiovascular medicine",
+    "categories": [
+      "cardiovascular medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367634v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367634v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "Multi-omics and machine learning identified JAK–STAT signaling as a convergent immune signature of checkpoint inhibitor myocarditis, with amplified inflammatory programs in CHIP carriers.",
+      "clinical_relevance": "These findings nominate cytokine-guided risk stratification and JAK–STAT-directed immunosuppression for future testing, rather than establish clinical benefit.",
+      "method": [
+        "Machine learning and explainable AI analyzed cytokine profiles from patients receiving immune checkpoint inhibitors.",
+        "Single-cell multi-omics mapped immune-cell contributions and inflammatory pathways across three cohorts.",
+        "Stanford CyTOF data provided validation of Yale proteomic analyses."
+      ],
+      "evidence_signal": "The study enrolled 236 cardio-oncology patients, including 88 receiving checkpoint inhibitors, and analyzed single-cell cohorts from Yale (n=19), Stanford (n=25), and MGH (n=63).",
+      "watch_item": "The abstract reports associations but no prospective predictive performance or treatment efficacy, so clinical implementation requires further validation.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#CardioOncology",
+        "#ImmuneCheckpointInhibitors",
+        "#MultiOmics",
+        "#MachineLearning"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-12-medrxiv-cytokine_signatures_of_immune_checkpoint_inhibitor_myocarditis_and_the_modifying_role_of_c",
+      "paper_title": "Cytokine Signatures of Immune Checkpoint Inhibitor Myocarditis and the Modifying Role of Clonal Hematopoiesis: A Machine-Learning and Multi-Omics Study",
+      "paper_date": "2026-11-12",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-11-18T16:05:33",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-13-medrxiv-ontology_based_sea_cdm_integration_for_vaccine_clinical_trials_query_similarity_and_design",
+    "doi": "10.64898/2026.11.11.26367833",
+    "date": "2026-11-13",
+    "title": "Ontology-Based SEA-CDM Integration for Vaccine Clinical Trials: Query, Similarity, and Design Recommendation",
+    "authors": "Zhu, J.; Yeh, F.-Y.; Zheng, J.; He, Y.",
+    "abstract": "ClinicalTrials.gov provides valuable information for vaccine research, but fragmented data structures and inconsistent vaccine naming complicate systematic cross-trial analysis. The Study-Experiment-Assay Common Data Model (SEA-CDM) provides a standardized structure for biomedical study data, while biomedical ontologies supply semantic relationships among concepts. We extracted 9,147 vaccine-related study records from the Aggregate Analysis of ClinicalTrials.gov (AACT) database, mapped their records into SEA-CDM, and linked vaccine products and reported adverse events (AEs) to the Vaccine Ontology (VO) and Ontology of Adverse Events (OAE), respectively. Building on the existing Ontology-based SEA Network (OSEAN), we organized the integrated data into relational tables and a Neo4j knowledge graph while retaining links to original registrations. We evaluated three applications to assess semantic trial retrieval, context-aware AE ranking and trial similarity, and trial design recommendation. First, VO-based query expansion retrieved 41 candidate RNA vaccine trials compared with 16 using exact VO identifier matching. Second, a context-aware AE ranking model incorporating SEA-CDM features and VO-derived vaccine families improved recall@10 from 0.317 to 0.383 over a frequency-based baseline. TransE and CompGCN embeddings achieved Hits@10 of 0.950 and 0.946, respectively, for retrieving trials sharing the same VO identifier within disease-specific candidate sets. Third, an ontology-based clinical trial design recommendation model was developed using several machine learning methods under leave-one-Material-out evaluation across 23 vaccine classes, although performance varied across classes. These findings demonstrate how structural and semantic integration can support multiple clinical trial analyses using vaccine studies as a case study. This framework provides a foundation for extending ontology-supported data integration and analysis to other clinical research domains.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-11-13",
+    "updated": "2026-11-13",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367833v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367833v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "Integrating standardized trial data with biomedical ontologies improved vaccine trial retrieval and adverse-event ranking; this study concerns vaccine trial analytics, not AI cancer drug discovery.",
+      "clinical_relevance": "The framework could support cross-trial vaccine research and study planning, but does not establish clinical benefit or validate treatment decisions.",
+      "method": [
+        "Mapped 9,147 vaccine-related AACT records into the Study-Experiment-Assay Common Data Model.",
+        "Linked vaccine products and reported adverse events to VO and OAE ontologies in relational tables and a Neo4j knowledge graph.",
+        "Evaluated semantic retrieval, adverse-event ranking, trial similarity, and machine-learning-based design recommendations."
+      ],
+      "evidence_signal": "Ontology-expanded queries retrieved 41 candidate RNA vaccine trials versus 16 with exact identifier matching, while context-aware adverse-event ranking improved recall@10 from 0.317 to 0.383.",
+      "watch_item": "Design recommendation performance varied across 23 vaccine classes under leave-one-Material-out evaluation, limiting claims of broad generalizability.",
+      "hashtags": [
+        "#VaccineResearch",
+        "#ClinicalTrialInformatics",
+        "#BiomedicalOntologies",
+        "#KnowledgeGraphs",
+        "#MachineLearning"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-13-medrxiv-ontology_based_sea_cdm_integration_for_vaccine_clinical_trials_query_similarity_and_design",
+      "paper_title": "Ontology-Based SEA-CDM Integration for Vaccine Clinical Trials: Query, Similarity, and Design Recommendation",
+      "paper_date": "2026-11-13",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-11-18T16:05:36",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-12-medrxiv-environmental_toxic_metal_exposure_and_conditional_mortality_survival_among_us_adults_a_pr",
+    "doi": "10.64898/2026.06.29.26356268",
+    "date": "2026-11-12",
+    "title": "Environmental toxic metal exposure and conditional mortality survival among US adults: a prospective cohort study",
+    "authors": "Fang, X.; Schwartz, J.",
+    "abstract": "BackgroundHeavy metal exposure has been associated with mortality, but differences in early and median survival times remain unclear. We estimated associations of blood lead and mercury and urinary cadmium and arsenic at lower conditional survival-time quantiles. MethodsWe linked the 1999-2014 National Health and Nutrition Examination Survey to mortality records through Dec 31, 2019, including 24,338 adults aged 40 years or older. Weighted censored quantile regression estimated associations at the 10th, 25th, and 50th percentiles, adjusting for age and other confounders across five imputations. Mercury and arsenic analyses used 2003-2014 cycles; urinary-metal cohorts required observed estimated glomerular filtration rate [&ge;]60 mL/min per 1.73 mZ. FindingsOf 24,338 participants, 6,992 died. Doubling urinary cadmium was associated with 1.71-1.92, 1.50-1.67, and 1.35-1.53 years shorter conditional survival at the 10th, 25th, and 50th percentiles (n=7,061). Corresponding blood lead estimates were 0.63-0.71, 0.55-0.65, and 0.61-0.63 years shorter (n=24,021). Some median estimates were not estimable. Cadmium associations persisted after lead adjustment; lead associations did not persist after cadmium adjustment. Arsenic had no statistically significant association with mortality in this study. Mercury was associated with longer survival despite adjustment for fish or omega-3 intake, possibly reflecting residual confounding. InterpretationLow-to-moderate cadmium exposure was associated with shorter survival, with the largest absolute loss among adults who die earliest. These findings support continued efforts to reduce cadmium exposure, with particular benefit for adults most vulnerable to premature death. FundingNone. Research in contextO_ST_ABSEvidence before this studyC_ST_ABSWe searched PubMed from database inception to Nov 10, 2026, without language restrictions, using metal names and biomarker terms combined with \"mortality\", \"survival\", \"quantile regression\", \"life expectancy\", and related terms. We prioritised prospective studies in adult populations and systematic reviews, supplemented by targeted searches for analyses of survival time. Previous studies have associated lead and cadmium exposure with higher all-cause and cardiovascular mortality. Evidence for mercury has varied across populations and exposure levels, and findings for low-level arsenic exposure in US adults have been less conclusive. Most cohort studies reported relative hazards, although earlier research examined metal-associated differences in longevity and used machine learning to investigate variation in lead-associated survival. Evidence remained limited on how associations with metal biomarkers differ between early and median conditional survival times in general populations. Added value of this studyAmong 24,338 US adults aged 40 years or older in NHANES 1999-2014, with mortality follow-up through 2019, we estimated associations of four metal biomarkers with the 10th, 25th, and 50th conditional percentiles of survival time after examination. Censored quantile regression provided estimands in years of life. In the urinary cadmium cohort of 7,061 participants with an estimated glomerular filtration rate of at least 60 mL/min per 1.73 mZ, a doubling of cadmium was associated with 1.71-1.92 years shorter to 10% mortality, compared with 1.35-1.53 years at the median. The cadmium associations persisted in NHANES III, although the largest estimate in that cohort was at the median. Lead and survival time associations were attenuated after adjustment for cadmium. Arsenic estimates were not significant. We observed positive association between blood mercury and survival time, which might reflect some residual confounding that we couldnt control for. Implications of all the available evidenceThe evidence supports continued population-level efforts to reduce cadmium and lead exposure. With CQR, we were able to estimate the survival differences in years of life and for earlier deaths, providing valuable information for public health messages. Future studies using repeated exposure measurements and evaluations of exposure-reduction policies are needed.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-11-12",
+    "updated": "2026-11-12",
+    "primary_category": "epidemiology",
+    "categories": [
+      "epidemiology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.29.26356268v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.06.29.26356268v2.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "Higher urinary cadmium was associated with shorter conditional survival, with the largest absolute difference at the earliest survival-time percentile.",
+      "clinical_relevance": "The findings support population-level efforts to reduce cadmium exposure but do not establish causality or guide individual treatment.",
+      "method": [
+        "Linked NHANES 1999–2014 data for 24,338 US adults aged ≥40 to mortality records through 2019.",
+        "Used weighted censored quantile regression to estimate adjusted associations at the 10th, 25th, and 50th survival-time percentiles.",
+        "Examined blood lead and mercury and urinary cadmium and arsenic."
+      ],
+      "evidence_signal": "Among 7,061 participants in the cadmium analysis, doubling urinary cadmium was associated with 1.71–1.92 years shorter conditional survival at the 10th percentile and 1.35–1.53 years shorter at the median.",
+      "watch_item": "This observational environmental-exposure study—not AI cancer drug discovery research—cannot rule out residual confounding, and some median estimates were not estimable.",
+      "hashtags": [
+        "#EnvironmentalHealth",
+        "#CadmiumExposure",
+        "#HeavyMetals",
+        "#SurvivalAnalysis",
+        "#NHANES"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-12-medrxiv-environmental_toxic_metal_exposure_and_conditional_mortality_survival_among_us_adults_a_pr",
+      "paper_title": "Environmental toxic metal exposure and conditional mortality survival among US adults: a prospective cohort study",
+      "paper_date": "2026-11-12",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-11-18T16:05:38",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-12-medrxiv-atop_an_explainability_framework_for_transformer_based_ehr_predictions_using_attribution_g",
+    "doi": "10.64898/2026.11.10.26367753",
+    "date": "2026-11-12",
+    "title": "AToP: An Explainability Framework for Transformer-Based EHR Predictions Using Attribution-Guided Temporal Pattern Mining",
+    "authors": "Belouali, A.; Kharrazi, H.",
+    "abstract": "ObjectiveTo develop and evaluate AToP (Attribution to Temporal Patterns), a post-hoc explainability framework that converts per-token Integrated Gradients (IG) from a Transformer into structured temporal pattern narratives. Materials and MethodsAToP was applied to a single-stream Transformer trained on MIMIC-IV v3.1 (218,196 patients; 12.6% unplanned 30-day readmission). It mines frequent episodes from salient-token subsequences in the training cohort, aggregates attribution among patients whose records contain each token or pattern, and collapses near-duplicates by patient overlap. Validation used masking, reversed-order analysis, token-level faithfulness tests, and KernelSHAP comparison. ResultsThe Transformer achieved AUROC 0.77 and PR-AUC 0.34. Population-weighted attribution emphasized high-prevalence codes with small per-patient impact. Carrier-conditional attribution, the mean among patients with the token, surfaced rare high-attribution psychiatric markers including psychosis, self-harm overdose, suicidal ideation (SI), and severe major depressive disorder (MDD). Pattern-level attribution identified within-visit co-occurrences and cross-visit trajectories not captured by token rankings. Risk-increasing patterns included psychiatric sequences ({MDD, SI} [-&gt;] SI) and oncologic progressions (cancer anemia [-&gt;] ascites). Obstetric and chest pain evaluation patterns were associated with lower predicted readmission. DiscussionThe framework provides two complementary views of model predictions: carrier-conditional aggregation highlights rare, highly attributed clinical features, while temporal pattern analysis identifies within-visit combinations and cross-visit trajectories missed by token-level rankings. Masking and visit-order reversal provided evidence of correspondence with model behavior, but pattern attributions do not represent unique effects or establish clinical validity. ConclusionAToP turns a Transformers attributions into visit-anchored temporal pattern narratives, showing which events, in which order, contribute to its readmission predictions.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-11-12",
+    "updated": "2026-11-12",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.10.26367753v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.10.26367753v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "AToP converts Transformer attributions into visit-anchored temporal patterns that explain predicted readmission risk, rather than discovering cancer drugs.",
+      "clinical_relevance": "Oncologic sequences such as cancer anemia followed by ascites contributed to higher predicted readmission risk, offering research insights rather than validated clinical guidance.",
+      "method": [
+        "Compute per-token Integrated Gradients for a Transformer predicting 30-day readmission.",
+        "Mine frequent temporal patterns from salient events and collapse near-duplicates.",
+        "Summarize attribution among patients carrying each token or pattern."
+      ],
+      "evidence_signal": "Using MIMIC-IV v3.1 data from 218,196 patients, the Transformer achieved AUROC 0.77 and PR-AUC 0.34; evaluation included masking, visit-order reversal, token-level faithfulness tests, and KernelSHAP comparison.",
+      "watch_item": "Pattern attributions reflect model behavior, not unique causal effects or established clinical validity.",
+      "hashtags": [
+        "#ExplainableAI",
+        "#ClinicalAI",
+        "#EHR",
+        "#TemporalPatternMining",
+        "#ReadmissionPrediction"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-12-medrxiv-atop_an_explainability_framework_for_transformer_based_ehr_predictions_using_attribution_g",
+      "paper_title": "AToP: An Explainability Framework for Transformer-Based EHR Predictions Using Attribution-Guided Temporal Pattern Mining",
+      "paper_date": "2026-11-12",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-11-18T16:05:40",
+      "generator": "openai"
+    }
+  }
+]
