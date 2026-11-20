@@ -1,0 +1,320 @@
+[
+  {
+    "id": "2026-11-15-medrxiv-deep_learning_of_fluorescence_lifetime_imaging_ophthalmoscopy_for_type_2_diabetes_classifi",
+    "doi": "10.64898/2026.08.04.26359728",
+    "date": "2026-11-15",
+    "title": "Deep Learning of Fluorescence Lifetime Imaging Ophthalmoscopy for Type 2 Diabetes Classification",
+    "authors": "Kwon, S.; Lee, C. S.; Lee, A. Y.; Zhang, L.",
+    "abstract": "PurposeTo evaluate whether fluorescence lifetime imaging ophthalmoscopy (FLIO) combined with deep learning can detect metabolic signatures for classification of type 2 diabetes mellitus (T2DM). DesignCross-sectional analysis of participants included in the AI-READI dataset (version 3) with FLIO imaging. Subjects1,783 participants from the AI-READI dataset (version 3) with HbA1c measurements and FLIO imaging scans: 425 normoglycemic, 569 prediabetic, and 789 diabetic. MethodsGlycemic groups were defined from self-reported diagnosis, glucose-lowering medication, and HbA1c. Center-of-mass mean lifetime ({tau}CMM) maps, corrected for background and system timing offset, were generated from the raw time-resolved FLIO scans. Group differences in central-window {tau}CMM were tested by one-way ANOVA and by age-adjusted analysis of covariance. Convolutional neural networks (CNNs), ResNet-18, and XGBoost were trained on {tau}CMM maps for three-class (normal, prediabetic, diabetic) and two binary (normal vs. impaired; normal vs. diabetic) classification of T2DM and compared them with an age-only classifier and with models combining FLIO and age. Main Outcome MeasuresMacro-averaged area under the receiver operating characteristic curve (AUROC), sensitivity, specificity, accuracy, F1 score, and positive predictive value (PPV). ResultsGroup-averaged {tau}CMM was longer in prediabetic and diabetic than in normoglycemic participants in both the SSC (p < 0.001) and the LSC (p < 0.001), but only the SSC difference remained significant after age adjustment (p = 0.017). For 3-class classification, the CNN using FLIO achieved the highest AUROC (0.60 {+/-} 0.04), compared with 0.51 {+/-} 0.03 for an age-only classifier. ResNet-18 and XGBoost showed similar performance. Binary classification of normal vs. diabetic participants yielded AUROC 0.67 {+/-} 0.04 (CNN), 0.64 {+/-} 0.04 (ResNet-18), and 0.62 {+/-} 0.04 (XGBoost). All three FLIO models exceeded the age-only classifier in all T2DM classification tasks, whereas adding age to the FLIO models did not improve model performance. ConclusionsFLIO-derived {tau}CMM maps capture retinal signals associated with diabetes status that exceed what age alone provides, but yield modest classification performance with current artificial intelligence models. These findings highlight both the potential and the challenges of using FLIO for early metabolic screening and monitoring, informing future development of clinically applicable imaging biomarkers.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-11-15",
+    "updated": "2026-11-15",
+    "primary_category": "endocrinology",
+    "categories": [
+      "endocrinology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.04.26359728v3"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.08.04.26359728v3.full.pdf"
+      }
+    ],
+    "score": 63,
+    "infographic": {
+      "key_insight": "Deep learning identified retinal fluorescence lifetime patterns associated with type 2 diabetes, with modest classification performance beyond age alone.",
+      "clinical_relevance": "This study concerns diabetes, not cancer drug discovery, and suggests a potential retinal metabolic biomarker rather than a validated diagnostic tool.",
+      "method": [
+        "Generated corrected mean fluorescence lifetime maps from FLIO retinal scans.",
+        "Trained CNN, ResNet-18, and XGBoost models for three-class and binary glycemic-status classification.",
+        "Compared FLIO models with age-only and combined FLIO-plus-age models."
+      ],
+      "evidence_signal": "In 1,783 participants, the FLIO CNN achieved AUROC 0.60 ± 0.04 for three-class classification versus 0.51 ± 0.03 for age alone, and 0.67 ± 0.04 for normal versus diabetic classification.",
+      "watch_item": "The cross-sectional analysis and modest discrimination do not establish prospective diagnostic utility; external validation is needed.",
+      "hashtags": [
+        "#Type2Diabetes",
+        "#RetinalImaging",
+        "#FLIO",
+        "#DeepLearning",
+        "#MetabolicBiomarkers"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-15-medrxiv-deep_learning_of_fluorescence_lifetime_imaging_ophthalmoscopy_for_type_2_diabetes_classifi",
+      "paper_title": "Deep Learning of Fluorescence Lifetime Imaging Ophthalmoscopy for Type 2 Diabetes Classification",
+      "paper_date": "2026-11-15",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-11-19T16:11:14",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-13-medrxiv-dxtonianet_a_neural_network_for_estimating_the_severity_of_leg_dystonia_in_children_with_c",
+    "doi": "10.64898/2026.11.11.26367859",
+    "date": "2026-11-13",
+    "title": "DxToniaNet: A Neural Network for Estimating the Severity of Leg Dystonia in Children with Cerebral Palsy",
+    "authors": "Bajpai, R.; Rust, A.; Lott, E.; Kim, S.; Gandham, S.; Chintalapati, K.; Blackburn, J.; Gelineau-Morel, R.; Kruer, M. C.; Mingbunjerdsuk, D.; O'Malley, J.; Tochen, L.; Waugh, J. L.; Wu, S.; Feyma, T.; Perlmutter, J. S.; Aravamuthan, B. R.",
+    "abstract": "ImportanceLeg dystonia affects 50-80% of children with cerebral palsy (CP), but severity assessment remains subjective and time-consuming. Objective tools are urgently needed to quantify leg dystonia severity in clinical care and clinical trials. ObjectiveTo develop and validate a deep neural network (DxToniaNet) for leg dystonia severity estimation using 2D clinical video recordings. Design, Setting, and ParticipantsWe retrospectively analyzed video recordings of 298 children with cerebral palsy undergoing a seated hand open-close task as part of routine clinical care (Center 1: 193 videos, 720p/30fps; Center 2: 105 videos, 4K/60fps). Videos were rated for leg dystonia severity by a group of 7 experts using the Global Dystonia Rating Scale (GDRS) leg subscore (range 0-40) which has a minimum clinically important difference (MCID) of 4 points. Videos displaying leg dystonia (median expert GDRS score [&ge;]1) were used to develop and test a machine learning model (DxToniaNet) for estimating leg dystonia severity. Open-source software (OpenPose) estimated bilateral knee, ankle, and toe coordinates, normalized for height and camera positioning, and 69 variance and amplitude features were calculated based on established expert-cited features of leg dystonia. A neural network, DxToniaNet, was developed, trained and validated using 5-fold cross-validation on Center 1 videos before final testing on independent Center 2 videos. Main Outcome(s) and Measure(s){square}Mean absolute error (MAE), root mean square error (RMSE), and accuracy in differentiating between videos with clinically meaningful differences in GDRS scores were calculated relative to experts median GDRS scores. ResultsWhen estimating experts leg GDRS scores in testing data, the proposed machine learning (ML) model yielded a MAE of 1.71 {+/-} 1.68 and RMSE of 2.21 {+/-} 0.34 (significantly less than the GDRS MCID of 4), and 90-94% accuracy in differentiating between videos with greater than a 4-point difference in the GDRS. Conclusions and RelevanceWe have demonstrated that DxToniaNet can accurately estimate leg dystonia severity compared to experts assessments with a small (clinically insignificant) error margin. Our methodology supports generalizability since DxToniaNet was developed and tested using independent videos datasets from different centers, recorded under different conditions. In the future, DxToniaNet may help facilitate standardized leg dystonia severity estimation in clinical care and clinical trials. Key pointsO_ST_ABSQuestionC_ST_ABSCan a deep learning model use clinically-acquired videos to accurately estimate experts leg dystonia severity assessments in children with cerebral palsy? FindingsAn automated deep learning model (DxToniaNet) trained and tested on clinically-acquired smartphone videos of 298 children with cerebral palsy estimates leg dystonia severity with 90-94% accuracy compared to experts assessments. MeaningDxToniaNet is an objective and free tool to estimate leg dystonia severity and may thus help facilitate standardized tracking of longitudinal treatment responses and clinical trial outcomes.",
+    "category": "Cancer AI Methods",
+    "source": "medRxiv",
+    "published": "2026-11-13",
+    "updated": "2026-11-13",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367859v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367859v1.full.pdf"
+      }
+    ],
+    "score": 53,
+    "infographic": {
+      "key_insight": "DxToniaNet estimated leg dystonia severity from videos of children with cerebral palsy with a reported mean absolute error of 1.71 GDRS points; this is not cancer or drug discovery research.",
+      "clinical_relevance": "Video-based scoring could support more consistent severity measurement in cerebral palsy care and trials, but clinical utility requires further validation.",
+      "method": [
+        "Used OpenPose to extract bilateral knee, ankle, and toe coordinates during a seated hand open-close task.",
+        "Calculated 69 normalized movement features to train a neural network against median expert GDRS leg scores.",
+        "Used five-fold cross-validation at Center 1 and independent testing at Center 2."
+      ],
+      "evidence_signal": "The retrospective study analyzed recordings from 298 children across two centers, using videos with median expert GDRS scores ≥1 for modeling; reported MAE was 1.71 points and accuracy was 90–94% for distinguishing videos differing by more than 4 GDRS points.",
+      "watch_item": "Retrospective evaluation restricted to videos showing dystonia does not establish prospective performance or reliable detection of absent dystonia.",
+      "hashtags": [
+        "#DxToniaNet",
+        "#CerebralPalsy",
+        "#Dystonia",
+        "#ComputerVision",
+        "#ClinicalAI"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-13-medrxiv-dxtonianet_a_neural_network_for_estimating_the_severity_of_leg_dystonia_in_children_with_c",
+      "paper_title": "DxToniaNet: A Neural Network for Estimating the Severity of Leg Dystonia in Children with Cerebral Palsy",
+      "paper_date": "2026-11-13",
+      "paper_category": "Cancer AI Methods",
+      "generated_at": "2026-11-19T16:11:17",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-15-medrxiv-age_at_menopause_and_dementia_risk_blood_based_biomarker_evidence_from_a_us_national_study",
+    "doi": "10.64898/2026.11.12.26367954",
+    "date": "2026-11-15",
+    "title": "Age at Menopause and Dementia Risk: Blood-Based Biomarker Evidence from a US National Study",
+    "authors": "Gutierrez, S.; Caunca, M. R.; Guo, M.; Hayes-Larson, E.; Milani, S. A.; Gilsanz, P.; Torres, J. M.; Casaletto, K. B.",
+    "abstract": "ImportanceEarlier age at menopause associates with increased later life dementia risk, but the biological links that underlie this relationship remain poorly understood in population-based samples. ObjectiveTo evaluate the relationship between history of menopausal timing and AD/ADRD-related blood-based biomarkers in postmenopausal women. DesignObservational study using the U.S. Health and Retirement Study. AD/ADRD-related biomarkers were measured from venous blood draws conducted in 2016 and released in 2025. We estimated linear and nonlinear associations between spontaneous menopause timing and biomarkers, accounting for sociodemographic and health covariates. We evaluated effect modification by APOE 4 carrier status. Secondary analyses evaluated associations with hysterectomy history. SettingPopulation-based. ParticipantsCommunity-dwelling post-menopausal women aged 65 years or older. ExposurePrimary: Self-reported spontaneous age of menopause among women with no history of hysterectomy. Secondary: Self-reported history of hysterectomy (oophorectomy history was not assessed). Main Outcomes and MeasuresNeurofilament light chain (NfL) and glial fibrillary acidic protein (GFAP) measured in plasma, and phosphorylated tau (p-tau181) and growth differentiation factor 15 (GDF-15), measured in serum, by Simoa or ELLA. ResultsAmong 1449 women [&ge;] 65 years, 38.4% self-reported a hysterectomy. Among 893 postmenopausal women without a history of hysterectomy (mean [SD] age at biomarker collection, 75.2 [7.2] years; mean age at menopause, 50.2 [5.2] years), menopausal timing was nonlinearly associated with NfL. Between menopausal ages 45-50, menopause timing was associated with higher NfL (0.010 SD units/year, [95% CI: -0.007, 0.027]), while from menopausal ages 50-55, the association reversed (b= -0.031, [95% CI: -0.051, -0.011]). Associations with GFAP or pTau-181 were not significant, but were directionally similar to those observed for NfL. Later menopausal timing linearly associated with lower GDF-15 (b = -0.015, [95% CI: -0.027, -0.004]). Self-reported hysterectomy was associated with higher GDF-15 (b= 0.118, [95% CI: 0.015, 0.220]), but not other biomarkers. Associations did not significantly differ by APOE {varepsilon}4 status. Conclusions and RelevanceIn a nationally representative study, earlier age at menopause in midlife was associated with later life AD/ADRDs biomarkers reflecting neuroaxonal degeneration and inflammation, underscoring the importance of understanding reproductive aging in dementia risk. KEY POINTSO_ST_ABSQuestionC_ST_ABSWhat is the association between menopausal timing and blood-based Alzheimers disease and related dementias (AD/ADRD) biomarkers among postmenopausal women 65 years and older in the United States? FindingsMenopausal timing is associated with higher NfL in women who experienced menopause before age 50, but lower NfL in women with menopausal ages after 50. Earlier menopausal timing is linearly associated with higher GDF-15. Secondary analyses showed associations between hysterectomy history and higher GDF-15. MeaningYounger menopausal timing associates with higher AD/ADRD-related biomarkers measured decades later in a population-based cohort, underscoring a link between reproductive aging and future neurodegenerative risk.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-11-15",
+    "updated": "2026-11-15",
+    "primary_category": "epidemiology",
+    "categories": [
+      "epidemiology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367954v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367954v1.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "In older postmenopausal women, menopausal timing showed a nonlinear association with blood NfL and a linear association with GDF-15, offering clues to links between reproductive aging and dementia-related biology.",
+      "clinical_relevance": "These observational biomarker findings may inform dementia research but do not establish dementia risk prediction or support changes in clinical care.",
+      "method": [
+        "Analyzed U.S. Health and Retirement Study participants aged 65 or older using blood collected in 2016.",
+        "Modeled self-reported spontaneous menopause timing against NfL, GFAP, p-tau181 and GDF-15, adjusting for sociodemographic and health factors.",
+        "Evaluated APOE ε4 effect modification and examined hysterectomy history in secondary analyses."
+      ],
+      "evidence_signal": "Among 893 women without hysterectomy, later menopause between ages 50–55 was associated with lower NfL (−0.031 SD/year; 95% CI, −0.051 to −0.011); GFAP and p-tau181 associations were not significant.",
+      "watch_item": "Self-reported reproductive history and observational biomarker associations cannot establish causality or demonstrate effects on dementia incidence.",
+      "hashtags": [
+        "#Menopause",
+        "#DementiaResearch",
+        "#BloodBiomarkers",
+        "#ReproductiveAging",
+        "#PopulationHealth"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-15-medrxiv-age_at_menopause_and_dementia_risk_blood_based_biomarker_evidence_from_a_us_national_study",
+      "paper_title": "Age at Menopause and Dementia Risk: Blood-Based Biomarker Evidence from a US National Study",
+      "paper_date": "2026-11-15",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-11-19T16:11:19",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-15-medrxiv-wearable_sensors_predict_exertion_without_changes_in_pulse_rate_for_frail_end_stage_kidney",
+    "doi": "10.64898/2026.11.12.26367919",
+    "date": "2026-11-15",
+    "title": "Wearable Sensors Predict Exertion Without Changes in Pulse Rate for Frail End-Stage Kidney Disease Patients",
+    "authors": "Deehring, M. E.; Lorenz, E. C.; Katzman, H. P.; Isac, R.; Sasangohar, F.; Dhala, A.; Yamagami, M.",
+    "abstract": "End-Stage Kidney Disease (ESKD) patients require careful exertion monitoring during prehabilitation to ensure safety and efficacy. Traditional prehabilitation typically relies on heart rate to estimate physical exertion; however, this is problematic for ESKD patients due to their lower physical capacity and the high prevalence of beta-blocker prescriptions, which prevent typical heart rate responses during exercise. In this study, we investigated whether multi-modal wearable sensors could better predict the Rating of Perceived Exertion (RPE) in (N=13) ESKD patients and (N=13) healthy older adult controls. We collected continuous physiological data--including pulse rate, electrodermal activity, skin temperature, and accelerometer data--using a commercial smartwatch during prehabilitation sessions. Using individualized machine learning pipelines, we compared regression models built solely on pulse rate against comprehensive multi-feature models. We found distinct differences between the groups: baseline pulse-rate models performed substantially worse for the ESKD cohort, whereas they maintained predictive validity for controls. Conversely, multi-feature models significantly improved predictive performance for ESKD participants, achieving a Root Mean Square Error of 1.33. Feature selection confirmed that ESKD models relied heavily on physiological data beyond pulse rate to compensate for the lack of cardiovascular variability. These results demonstrate that heart rate alone is an insufficient biomarker for this population, and that remote exertion monitoring for ESKD patients requires distinct, multi-modal predictive algorithms rather than those designed for healthy adults.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-11-15",
+    "updated": "2026-11-15",
+    "primary_category": "rehabilitation medicine and physical therapy",
+    "categories": [
+      "rehabilitation medicine and physical therapy"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367919v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367919v1.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "Multimodal wearable-sensor models predicted perceived exertion better than pulse-rate-only models in patients with end-stage kidney disease (ESKD).",
+      "clinical_relevance": "The findings suggest a potential approach to exertion monitoring during ESKD prehabilitation; this study concerns kidney disease, not cancer drug discovery.",
+      "method": [
+        "Collected smartwatch pulse rate, electrodermal activity, skin temperature, and accelerometer data during prehabilitation.",
+        "Built individualized machine-learning regression models to predict Rating of Perceived Exertion.",
+        "Compared pulse-rate-only models with multi-feature models in ESKD patients and healthy older controls."
+      ],
+      "evidence_signal": "Among 13 ESKD patients and 13 controls, multi-feature models significantly improved ESKD prediction, achieving a root mean square error of 1.33 RPE units.",
+      "watch_item": "The small cohort and individualized modeling require broader validation before clinical implementation.",
+      "hashtags": [
+        "#KidneyDisease",
+        "#WearableSensors",
+        "#MachineLearning",
+        "#Prehabilitation",
+        "#ExertionMonitoring"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-15-medrxiv-wearable_sensors_predict_exertion_without_changes_in_pulse_rate_for_frail_end_stage_kidney",
+      "paper_title": "Wearable Sensors Predict Exertion Without Changes in Pulse Rate for Frail End-Stage Kidney Disease Patients",
+      "paper_date": "2026-11-15",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-11-19T16:11:22",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-15-medrxiv-anatomy_aware_3d_gan_with_local_mask_refinement_for_brain_mri_inpainting",
+    "doi": "10.64898/2026.11.12.26367904",
+    "date": "2026-11-15",
+    "title": "Anatomy-Aware 3D GAN with Local Mask Refinement for Brain MRI Inpainting",
+    "authors": "Rahimi, A. F.; Rai, H. M.; Mushtaq, S. Y. A.",
+    "abstract": "Brain tumor MRI inpainting aims to synthesize plausible healthy-appearing tissue in regions removed from pathological scans. We present an anatomy-aware three-dimensional generative adversarial network for Task 4 of the BraTS 2026 challenge. The method combines mask-aware gated convolutions, mirrored contralateral context, attention-modulated skip fusion, boundary-aware refinement, and a local masked-region refiner, each adapted from established components in the image synthesis and inpainting literature. The model is trained with a two-stage objective that first emphasizes voxel-wise and structural reconstruction and then applies low-weight adversarial fine-tuning. On a deterministic local held-out split, the proposed method substantially improves over a simple 3D AutoEncoder baseline but does not surpass the challenges Pix2Pix3D baseline. On the official BraTS 2026 Task 4 evaluation server, the submitted model obtained a mean SSIM of 0.658 and a mean PSNR of 14.81 dB over 219 evaluated cases, lower than the local held-out figures. We report these results transparently, analyze likely contributing factors, and identify the controlled ablations (removal of the mirrored-context channel and of the two-stage schedule) required to isolate the contribution of each architectural component.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-11-15",
+    "updated": "2026-11-15",
+    "primary_category": "radiology and imaging",
+    "categories": [
+      "radiology and imaging"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367904v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367904v1.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "An anatomy-aware 3D GAN improved brain MRI inpainting over a simple 3D AutoEncoder but did not outperform the challenge’s Pix2Pix3D baseline.",
+      "clinical_relevance": "The method synthesizes healthy-appearing tissue in masked brain tumor MRI regions for research, not drug discovery or validated clinical decision-making.",
+      "method": [
+        "Combines mask-aware gated convolutions with mirrored contralateral brain context.",
+        "Uses attention-modulated skip fusion, boundary-aware refinement, and local masked-region refinement.",
+        "Trains with reconstruction objectives followed by low-weight adversarial fine-tuning."
+      ],
+      "evidence_signal": "Official BraTS 2026 Task 4 evaluation across 219 cases yielded mean SSIM 0.658 and PSNR 14.81 dB, below local held-out results.",
+      "watch_item": "Controlled ablations are still needed to isolate the contributions of mirrored context and the two-stage training schedule.",
+      "hashtags": [
+        "#BrainMRI",
+        "#MRIInpainting",
+        "#GenerativeAI",
+        "#BrainTumorResearch",
+        "#MedicalImaging"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-15-medrxiv-anatomy_aware_3d_gan_with_local_mask_refinement_for_brain_mri_inpainting",
+      "paper_title": "Anatomy-Aware 3D GAN with Local Mask Refinement for Brain MRI Inpainting",
+      "paper_date": "2026-11-15",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-11-19T16:11:26",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-13-medrxiv-ontology_based_sea_cdm_integration_for_vaccine_clinical_trials_query_similarity_and_design",
+    "doi": "10.64898/2026.11.11.26367833",
+    "date": "2026-11-13",
+    "title": "Ontology-Based SEA-CDM Integration for Vaccine Clinical Trials: Query, Similarity, and Design Recommendation",
+    "authors": "Zhu, J.; Yeh, F.-Y.; Zheng, J.; He, Y.",
+    "abstract": "ClinicalTrials.gov provides valuable information for vaccine research, but fragmented data structures and inconsistent vaccine naming complicate systematic cross-trial analysis. The Study-Experiment-Assay Common Data Model (SEA-CDM) provides a standardized structure for biomedical study data, while biomedical ontologies supply semantic relationships among concepts. We extracted 9,147 vaccine-related study records from the Aggregate Analysis of ClinicalTrials.gov (AACT) database, mapped their records into SEA-CDM, and linked vaccine products and reported adverse events (AEs) to the Vaccine Ontology (VO) and Ontology of Adverse Events (OAE), respectively. Building on the existing Ontology-based SEA Network (OSEAN), we organized the integrated data into relational tables and a Neo4j knowledge graph while retaining links to original registrations. We evaluated three applications to assess semantic trial retrieval, context-aware AE ranking and trial similarity, and trial design recommendation. First, VO-based query expansion retrieved 41 candidate RNA vaccine trials compared with 16 using exact VO identifier matching. Second, a context-aware AE ranking model incorporating SEA-CDM features and VO-derived vaccine families improved recall@10 from 0.317 to 0.383 over a frequency-based baseline. TransE and CompGCN embeddings achieved Hits@10 of 0.950 and 0.946, respectively, for retrieving trials sharing the same VO identifier within disease-specific candidate sets. Third, an ontology-based clinical trial design recommendation model was developed using several machine learning methods under leave-one-Material-out evaluation across 23 vaccine classes, although performance varied across classes. These findings demonstrate how structural and semantic integration can support multiple clinical trial analyses using vaccine studies as a case study. This framework provides a foundation for extending ontology-supported data integration and analysis to other clinical research domains.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-11-13",
+    "updated": "2026-11-13",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367833v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.11.26367833v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "Integrating vaccine trial records with a common data model and biomedical ontologies improved semantic retrieval and supported trial comparison and design recommendations.",
+      "clinical_relevance": "This vaccine informatics study—not cancer drug discovery—could support clinical research planning but does not establish patient benefit.",
+      "method": [
+        "Mapped 9,147 vaccine study records from AACT into SEA-CDM.",
+        "Linked vaccines and adverse events to VO and OAE ontologies in relational tables and a Neo4j knowledge graph.",
+        "Evaluated semantic queries, adverse-event ranking, trial similarity, and machine-learning design recommendations."
+      ],
+      "evidence_signal": "Ontology-expanded queries retrieved 41 candidate RNA vaccine trials versus 16 with exact identifier matching; adverse-event recall@10 increased from 0.317 to 0.383, and trial-similarity Hits@10 reached 0.950.",
+      "watch_item": "Design-recommendation performance varied across 23 vaccine classes under leave-one-Material-out evaluation, limiting confidence in generalization.",
+      "hashtags": [
+        "#VaccineResearch",
+        "#ClinicalTrials",
+        "#BiomedicalOntologies",
+        "#KnowledgeGraphs",
+        "#ClinicalInformatics"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-13-medrxiv-ontology_based_sea_cdm_integration_for_vaccine_clinical_trials_query_similarity_and_design",
+      "paper_title": "Ontology-Based SEA-CDM Integration for Vaccine Clinical Trials: Query, Similarity, and Design Recommendation",
+      "paper_date": "2026-11-13",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-11-19T16:11:29",
+      "generator": "openai"
+    }
+  }
+]
