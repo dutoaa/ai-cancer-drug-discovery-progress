@@ -1,19 +1,19 @@
 {
   "key_insight": "An anatomy-aware 3D GAN improved brain MRI inpainting over a simple 3D AutoEncoder but did not outperform the challenge’s Pix2Pix3D baseline.",
-  "clinical_relevance": "This imaging research synthesizes healthy-appearing tissue within masked tumor regions; it does not demonstrate drug discovery or clinical benefit.",
+  "clinical_relevance": "This imaging research synthesizes plausible healthy-appearing tissue in tumor-masked regions; it does not establish drug-discovery utility or clinical benefit.",
   "method": [
-    "Combines mask-aware gated convolutions with mirrored contralateral context.",
-    "Uses attention-modulated skip fusion, boundary-aware refinement, and a local masked-region refiner.",
-    "Trains first for reconstruction, then adds low-weight adversarial fine-tuning."
+    "Combines mask-aware gated convolutions, mirrored contralateral context, and attention-modulated skip fusion.",
+    "Uses boundary-aware refinement and a local masked-region refiner.",
+    "Trains with reconstruction objectives followed by low-weight adversarial fine-tuning."
   ],
-  "evidence_signal": "Official BraTS 2026 Task 4 evaluation across 219 cases yielded mean SSIM 0.658 and PSNR 14.81 dB, below local held-out results.",
-  "watch_item": "Controlled ablations are still needed to isolate component contributions, and synthesized tissue should not be interpreted as verified healthy anatomy.",
+  "evidence_signal": "Official BraTS 2026 Task 4 evaluation across 219 cases yielded mean SSIM 0.658 and mean PSNR 14.81 dB, below local held-out results.",
+  "watch_item": "Controlled ablations are still needed to isolate the contributions of mirrored context and the two-stage training schedule.",
   "hashtags": [
     "#BrainMRI",
-    "#MRIInpainting",
+    "#MedicalImageInpainting",
     "#GenerativeAI",
-    "#BrainTumorResearch",
-    "#MedicalImaging"
+    "#BraTS",
+    "#OncologyImaging"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Anatomy-Aware 3D GAN with Local Mask Refinement for Brain MRI Inpainting",
   "paper_date": "2026-11-15",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-11-20T15:53:03",
+  "generated_at": "2026-11-21T15:02:39",
   "generator": "openai"
 }

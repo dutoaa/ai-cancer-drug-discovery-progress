@@ -1,19 +1,19 @@
 {
-  "key_insight": "Deep learning identified retinal fluorescence lifetime signals associated with type 2 diabetes, with modest classification performance beyond age alone.",
-  "clinical_relevance": "This study concerns diabetes classification—not cancer drug discovery—and suggests a potential research role for retinal metabolic imaging, not a validated diagnostic tool.",
+  "key_insight": "Deep learning of retinal fluorescence lifetime maps modestly distinguished type 2 diabetes status, outperforming an age-only classifier.",
+  "clinical_relevance": "This diabetes imaging study—not cancer drug discovery—suggests retinal fluorescence may capture diabetes-associated metabolic signals, but does not establish clinical screening utility.",
   "method": [
-    "Generated corrected mean fluorescence lifetime maps from FLIO retinal scans.",
-    "Compared CNN, ResNet-18, and XGBoost models across three-class and binary glycemic classification tasks.",
-    "Evaluated age-adjusted group differences and compared FLIO models with age-only and FLIO-plus-age models."
+    "Generated corrected mean fluorescence lifetime maps from FLIO scans.",
+    "Compared CNN, ResNet-18, and XGBoost models for three-class and binary glycemic classification.",
+    "Tested age-adjusted group differences and compared FLIO models with age-only and combined models."
   ],
-  "evidence_signal": "Among 1,783 AI-READI participants, the CNN achieved AUROC 0.60 ± 0.04 for three-class classification versus 0.51 ± 0.03 for age alone, and 0.67 ± 0.04 for normal versus diabetic classification.",
-  "watch_item": "The cross-sectional analysis and modest discrimination do not establish clinical utility; external validation is not reported in the supplied abstract.",
+  "evidence_signal": "In 1,783 participants, the FLIO CNN achieved AUROC 0.60 ± 0.04 for three-class classification and 0.67 ± 0.04 for normal versus diabetic classification; adding age did not improve performance.",
+  "watch_item": "Modest discrimination and a cross-sectional design limit clinical interpretation; external validation is needed before screening use.",
   "hashtags": [
     "#Type2Diabetes",
     "#RetinalImaging",
     "#FLIO",
     "#DeepLearning",
-    "#MetabolicImaging"
+    "#MetabolicBiomarkers"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Deep Learning of Fluorescence Lifetime Imaging Ophthalmoscopy for Type 2 Diabetes Classification",
   "paper_date": "2026-11-15",
   "paper_category": "Target Biology",
-  "generated_at": "2026-11-20T15:52:47",
+  "generated_at": "2026-11-21T15:02:16",
   "generator": "openai"
 }

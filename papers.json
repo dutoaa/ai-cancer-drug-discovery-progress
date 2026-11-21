@@ -1,5 +1,58 @@
 [
   {
+    "id": "2026-11-15-medrxiv-flahyrecovery_is_an_ai_gene_expression_based_immune_profiling_biomarker_for_decision_suppo",
+    "doi": "10.64898/2026.11.12.26367994",
+    "date": "2026-11-15",
+    "title": "FlahyRecovery is an AI & gene expression based immune profiling biomarker for decision support in precision oncology",
+    "authors": "Singh, P.; No Last Name, S.; Mason, C.; Singh, J.",
+    "abstract": "BackgroundAccurate characterization of the tumor microenvironment (TME) is crucial for inferring tumor biology, subsequent tumor behavior, and predicting therapeutic response. Current characterization methods are inadequate in capturing the complexity of immune signaling networks, hindering robust clinical decision making. To address this, we have developed FlahyRecovery - an artificial intelligence (AI) and gene expression based immune profiling biomarker, implemented via a supervised classification machine learning model, that integrates response prediction and prognostic insights to personalize treatment design, particularly immunotherapy. MethodsGene expression data of 7424 tumor specimens across 14 cancers was annotated specimen wise into three immune subtypes: Elevated Immunity (Hot) with high cytotoxic T-cell infiltration, Suppressed Immunity (Cold) marked by immune exclusion and stromal dominance, and Moderate Immunity (Intermediate) exhibiting mixed features. Following annotation validation, an AI model was trained and tested on the annotated data to classify new tumor specimens into the three immune subtypes - Elevated Immunity (Hot), Suppressed Immunity (Cold) and Moderate Immunity (Intermediate) based on the expression of a panel of 1275 genes involved in immune cell signaling and immune signal transduction. ResultsIn a multi-tumor validation cohort (N=1337), the subtyping model showed a sensitivity of 79%, a specificity of 89%, and a one-vs-rest AUC of 0.93. Elevated Immunity tumors correlated with prolonged survival and immunotherapy response, while Suppressed Immunity tumors correlated with treatment resistance and need for combination therapy. ConclusionArtificial intelligence can be effectively used to process tumor biology digitized via next-generation sequencing, to accurately mark the TME from an immunological perspective. Its clinical utility mechanisms andying patients who can benefit from immunotherapies, identifying treatment resistance mechanisms, and informing combination treatment regimes.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-11-15",
+    "updated": "2026-11-15",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367994v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367994v1.full.pdf"
+      }
+    ],
+    "score": 87,
+    "infographic": {
+      "key_insight": "FlahyRecovery uses AI and gene expression to classify tumors into three immune subtypes associated with survival and immunotherapy response.",
+      "clinical_relevance": "This immune-profiling biomarker could support precision oncology research and treatment stratification, but it is not a drug discovery system or a validated treatment recommendation tool.",
+      "method": [
+        "Annotated 7,424 tumor specimens across 14 cancers as Elevated (Hot), Suppressed (Cold), or Moderate (Intermediate) Immunity.",
+        "Trained and tested a supervised classifier using expression of 1,275 immune-related genes.",
+        "Evaluated immune-subtype classification in a multi-tumor validation cohort."
+      ],
+      "evidence_signal": "In 1,337 validation specimens, the model achieved 79% sensitivity, 89% specificity, and a one-vs-rest AUC of 0.93 for immune subtyping.",
+      "watch_item": "Subtype classification accuracy does not establish treatment benefit; prospective clinical utility and quantitative response-prediction results are not reported in the abstract.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#AIInCancer",
+        "#GeneExpression",
+        "#TumorMicroenvironment",
+        "#ImmunotherapyBiomarkers"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-15-medrxiv-flahyrecovery_is_an_ai_gene_expression_based_immune_profiling_biomarker_for_decision_suppo",
+      "paper_title": "FlahyRecovery is an AI & gene expression based immune profiling biomarker for decision support in precision oncology",
+      "paper_date": "2026-11-15",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-11-21T15:02:11",
+      "generator": "openai"
+    }
+  },
+  {
     "id": "2026-11-16-medrxiv-integrating_histopathology_foundation_models_and_prame_immunohistochemistry_in_melanoma_di",
     "doi": "10.64898/2026.11.14.26368089",
     "date": "2026-11-16",
@@ -24,17 +77,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.14.26368089v1.full.pdf"
       }
     ],
-    "score": 71,
+    "score": 66,
     "infographic": {
-      "key_insight": "Combining histopathology AI, predicted morphological features, and manually assessed PRAME staining showed strong melanoma discrimination but little improvement over AI alone.",
+      "key_insight": "Combining histopathology AI, predicted morphological features, and manually assessed PRAME staining achieved high melanoma discrimination but little improvement over AI alone.",
       "clinical_relevance": "This diagnostic research—not drug discovery—offers a structured way to combine AI outputs with established pathology findings, without establishing readiness for clinical use.",
       "method": [
-        "Analyze whole-slide images using the Virchow2 foundation model and STAMP framework.",
-        "Predict malignancy and established morphological features from histology.",
-        "Combine AI predictions with manually assessed PRAME immunohistochemistry."
+        "Analyzed whole-slide images using the Virchow2 foundation model and STAMP framework.",
+        "Trained models to predict malignancy and established histopathological features.",
+        "Integrated AI scores and predicted features with manually assessed PRAME immunohistochemistry."
       ],
-      "evidence_signal": "In a retrospective cohort of 1,000 lesions, models trained on 800 cases and tested on 200 temporally held-out cases achieved malignancy AUROCs of 0.970 for AI alone and 0.972 for the integrated model.",
-      "watch_item": "Performance in this PRAME-tested retrospective cohort requires external and prospective validation before broader clinical implementation.",
+      "evidence_signal": "In a retrospective cohort of 1,000 melanocytic lesions, models trained on 800 cases achieved test AUROCs of 0.970 for AI alone and 0.972 for the integrated model on 200 temporally held-out cases.",
+      "watch_item": "The retrospective, PRAME-tested cohort and minimal discrimination gain warrant external and prospective validation before clinical implementation.",
       "hashtags": [
         "#MelanomaResearch",
         "#ComputationalPathology",
@@ -48,7 +101,7 @@
       "paper_title": "Integrating Histopathology Foundation Models and PRAME Immunohistochemistry in Melanoma Diagnosis",
       "paper_date": "2026-11-16",
       "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-11-20T15:52:44",
+      "generated_at": "2026-11-21T15:02:14",
       "generator": "openai"
     }
   },
@@ -77,23 +130,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.04.26359728v3.full.pdf"
       }
     ],
-    "score": 58,
+    "score": 53,
     "infographic": {
-      "key_insight": "Deep learning identified retinal fluorescence lifetime signals associated with type 2 diabetes, with modest classification performance beyond age alone.",
-      "clinical_relevance": "This study concerns diabetes classification—not cancer drug discovery—and suggests a potential research role for retinal metabolic imaging, not a validated diagnostic tool.",
+      "key_insight": "Deep learning of retinal fluorescence lifetime maps modestly distinguished type 2 diabetes status, outperforming an age-only classifier.",
+      "clinical_relevance": "This diabetes imaging study—not cancer drug discovery—suggests retinal fluorescence may capture diabetes-associated metabolic signals, but does not establish clinical screening utility.",
       "method": [
-        "Generated corrected mean fluorescence lifetime maps from FLIO retinal scans.",
-        "Compared CNN, ResNet-18, and XGBoost models across three-class and binary glycemic classification tasks.",
-        "Evaluated age-adjusted group differences and compared FLIO models with age-only and FLIO-plus-age models."
+        "Generated corrected mean fluorescence lifetime maps from FLIO scans.",
+        "Compared CNN, ResNet-18, and XGBoost models for three-class and binary glycemic classification.",
+        "Tested age-adjusted group differences and compared FLIO models with age-only and combined models."
       ],
-      "evidence_signal": "Among 1,783 AI-READI participants, the CNN achieved AUROC 0.60 ± 0.04 for three-class classification versus 0.51 ± 0.03 for age alone, and 0.67 ± 0.04 for normal versus diabetic classification.",
-      "watch_item": "The cross-sectional analysis and modest discrimination do not establish clinical utility; external validation is not reported in the supplied abstract.",
+      "evidence_signal": "In 1,783 participants, the FLIO CNN achieved AUROC 0.60 ± 0.04 for three-class classification and 0.67 ± 0.04 for normal versus diabetic classification; adding age did not improve performance.",
+      "watch_item": "Modest discrimination and a cross-sectional design limit clinical interpretation; external validation is needed before screening use.",
       "hashtags": [
         "#Type2Diabetes",
         "#RetinalImaging",
         "#FLIO",
         "#DeepLearning",
-        "#MetabolicImaging"
+        "#MetabolicBiomarkers"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -101,7 +154,166 @@
       "paper_title": "Deep Learning of Fluorescence Lifetime Imaging Ophthalmoscopy for Type 2 Diabetes Classification",
       "paper_date": "2026-11-15",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-20T15:52:47",
+      "generated_at": "2026-11-21T15:02:16",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-17-medrxiv-sex_and_gender_reporting_and_female_participation_relative_to_disease_burden_in_clinicaltr",
+    "doi": "10.64898/2026.11.14.26368113",
+    "date": "2026-11-17",
+    "title": "Sex and Gender Reporting and Female Participation Relative to Disease Burden in ClinicalTrials.gov",
+    "authors": "Green, M. D.; Aziz, M.; Sullenger, R. D.; Yoo, B. J.; O'Brien, E. C.; Navar, A. M.; Duroseau, B.; Thorpe, R. J.; Brantner, C. L.",
+    "abstract": "ImportanceAssessing representation by sex assigned at birth and gender identity requires reporting of both in trials. If disclosure of full gender and sex participation from clinicaltrials.gov this is limited, it poses challenges in characterization and understanding of those participant experiences. ObjectiveTo determine how often ClinicalTrials.gov trials published trials report sex and gender, which characteristics are associated with reporting, and how participants female share compares with that of the general public. Design, Setting, and ParticipantsCross-sectional study of interventional trials registered to ClinicalTrials.gov, with or without US sites, with primary completion on or after September 27, 2008, and results first posted from January 1, 2009, through April 30, 2026. ExposuresFunder type, phase, US sites, enrollment, primary completion year, number of countries, and therapeutic area. Main Outcomes and MeasuresReporting of sex and gender, and the female participation-to-prevalence ratio (PPR; trial female share divided by the number of people with the condition). ResultsAmong 58,007 trials (median enrollment, 72 [IQR, 31 to 206]; 42,644 [74%] with US sites), 553 (0.95%) reported gender and 57,683 (99.44%) reported sex. Gender reporting was more common with National Institutes of Health (NIH) funding (odds ratio [OR], 9.05; 95% CI, 6.65 to 12.6), US sites (OR, 4.21; 95% CI, 2.96 to 6.22), and larger enrollment. Across 10 conditions (15,552 mixed-sex trials), median PPR ranged from 0.68 (95% CI, 0.64 to 0.71) for chronic obstructive pulmonary disease to 1.05 (95% CI, 1.01 to 1.09) for obesity and had a relatively lower female share in 8. Among the 10 conditions most prevalent in our cohort, 6,917 of 16,097 trial condition combinations (43.0%) reached a PPR of at least 0.90; odds of reaching it were higher for NIH-funded (OR, 1.22; 95% CI, 1.11 to 1.34) and lower for government-funded trials (OR, 0.26; 95% CI, 0.20 to 0.33) as compared to industry-funded trials. Conclusions and RelevanceIn ClinicalTrials.gov, sex reporting is nearly universal, whereas gender reporting is concentrated among NIH-funded, US-based, and larger trials. Female trial enrollment fell below the female share of people with the condition for most conditions, emphasizing the benefit of condition-specific benchmarks in clinical trials.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-11-17",
+    "updated": "2026-11-17",
+    "primary_category": "public and global health",
+    "categories": [
+      "public and global health"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.14.26368113v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.14.26368113v1.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "Sex was reported in 99.44% of trials, but gender in only 0.95%, revealing a major gap in characterizing participant representation.",
+      "clinical_relevance": "Female participation below disease prevalence in 8 of 10 assessed conditions raises questions about how well trial populations represent affected populations.",
+      "method": [
+        "Cross-sectional analysis of 58,007 interventional trials with results posted on ClinicalTrials.gov.",
+        "Examined trial characteristics associated with sex and gender reporting.",
+        "Compared female enrollment share with female disease prevalence using participation-to-prevalence ratios (PPRs)."
+      ],
+      "evidence_signal": "Across 16,097 trial–condition combinations, 43.0% achieved a PPR of at least 0.90; condition-level median PPRs ranged from 0.68 for COPD to 1.05 for obesity.",
+      "watch_item": "Registry reporting may not reflect what trials actually collected, and these observational associations do not establish causality.",
+      "hashtags": [
+        "#ClinicalTrials",
+        "#SexAndGender",
+        "#ResearchEquity",
+        "#FemaleRepresentation",
+        "#ClinicalTranslation"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-17-medrxiv-sex_and_gender_reporting_and_female_participation_relative_to_disease_burden_in_clinicaltr",
+      "paper_title": "Sex and Gender Reporting and Female Participation Relative to Disease Burden in ClinicalTrials.gov",
+      "paper_date": "2026-11-17",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-11-21T15:02:19",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-17-medrxiv-deep_time_to_event_models_for_intrapartum_fetal_monitoring",
+    "doi": "10.64898/2026.09.21.26363416",
+    "date": "2026-11-17",
+    "title": "Deep Time-to-Event Models for Intrapartum Fetal Monitoring",
+    "authors": "Imai Aldeia, G. S.; Coggan, H.; Yang, Y.; Levine, L.; McCoy, J. A.; La Cava, W.",
+    "abstract": "Timely detection of fetal distress during labor is a central pursuit of modern obstetric care. The primary measure used in this regard is fetal heart rate and contraction monitoring (echocar-diotocography or CTG), which provides a continuous signal during labor. The vast majority of machine learning applications to CTG assume access to a 30 to 60 minute window just prior to delivery, which makes an untenable assumption that the timing of delivery is known. In this work, we reframe the problem as a time-to-event prediction task. We develop deep time-to-event models to predict the joint probability of imminent delivery and fetal acidosis, a biomarker of fetal hypoxia collected from umbilical cord gas after delivery. We develop a framework for this problem, drawing on deep discrete-time survival methods and marked point processes, adapting each to this particular setting (i.e., continuous physiological signals, fully observed events, partially observed labels). One approach dubbed Marked DeepHit accurately estimates acidemic delivery within one hour at multiple elapsed-time land-marks, with test-set AUROC of 0.837 [95% CI 0.692-0.970] and 0.935 [0.858-0.964] at 6 and 12 hours into labor, respectively. We find that these models also achieve competitive performance near delivery time compared to prior models trained specifically on the end of tracing, and outperform other clinical feature-based proposals, both on internal and external validation at a second site. These results give a proof-of-principle to support prospective evaluation of AI-EFM during labor. Data and Code AvailabilityWe use data from a multi-site academic health system (University of Pennsylvania Health System) and the CTU-UHB repository (Chuda[c]ek et al., 2014). Access to CTU-UHB is openly available under the terms of the data use agreement on Physionet. Code for this paper is available at https://github.com/cavalab/deep-tte-intrapartum-fetal-monitoring. Institutional Review Board (IRB)This study was approved by the Institutional Review Board at University of Pennsylvania under a waiver of informed consent.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-11-17",
+    "updated": "2026-11-17",
+    "primary_category": "obstetrics and gynecology",
+    "categories": [
+      "obstetrics and gynecology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363416v2"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.09.21.26363416v2.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "This obstetric AI study—not cancer drug discovery research—uses time-to-event models to predict imminent delivery with fetal acidosis without assuming delivery timing is known.",
+      "clinical_relevance": "Predicting acidemic delivery during labor could support earlier recognition of fetal risk, but clinical benefit remains unproven.",
+      "method": [
+        "Analyze continuous fetal heart rate and contraction signals.",
+        "Adapt deep discrete-time survival models and marked point processes to partially observed acidosis labels.",
+        "Jointly predict delivery timing and fetal acidosis."
+      ],
+      "evidence_signal": "Marked DeepHit predicted acidemic delivery within one hour with test AUROCs of 0.837 (95% CI 0.692–0.970) at 6 hours and 0.935 (0.858–0.964) at 12 hours into labor; the study also reports external validation at a second site.",
+      "watch_item": "These proof-of-principle results require prospective evaluation before clinical implementation.",
+      "hashtags": [
+        "#FetalMonitoring",
+        "#TimeToEvent",
+        "#MedicalAI",
+        "#Obstetrics",
+        "#ClinicalValidation"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-17-medrxiv-deep_time_to_event_models_for_intrapartum_fetal_monitoring",
+      "paper_title": "Deep Time-to-Event Models for Intrapartum Fetal Monitoring",
+      "paper_date": "2026-11-17",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-11-21T15:02:21",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-17-medrxiv-morphostain_physics_guided_latent_diffusion_and_morphological_distillation_for_multiplex_s",
+    "doi": "10.64898/2026.11.15.26368147",
+    "date": "2026-11-17",
+    "title": "MorphoStain: Physics-Guided Latent Diffusion and Morphological Distillation for Multiplex Stain Decomposition in Alzheimer's Neuropathology",
+    "authors": "Saraei, M.; Zand, M.; Rahmani, S.",
+    "abstract": "Multiplex immunohistochemistry (mIHC) enables simultaneous biomarker profiling, yet unmixing colocalized targets with identical spectra, such as dual-DAB marking Tau and Amyloid-{beta} in Alzheimers pathology, remains mathematically ill-posed. We propose MorphoStain, an unsupervised, physics-guided framework for morphological stain decomposition with epistemic uncertainty quantification. MorphoStain models stain separation via a conditional Latent Diffusion Teacher operating on a Beer- Lambert optical-density manifold, guided by pathology foundation models. To enable real-time clinical throughput, the teacher is distilled into a FastStudentU-Net (0.12M parameters, > 1,400 x compression), while a Symmetric Morphological Routing Module dynamically disentangles identical chromogen overlap. Evaluated on 9,908 held-out patches from the SEA-AD cohort, MorphoStain achieves 40.56 dB PSNR and 0.9961 SSIM at 140.1 FPS, showing statistically significant gains over InverseAE (Cohens d = 3.52) and NMF (Cohens d = 7.02), with p < 0.001 for both comparisons.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-11-17",
+    "updated": "2026-11-17",
+    "primary_category": "pathology",
+    "categories": [
+      "pathology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.15.26368147v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.15.26368147v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "MorphoStain uses physics-guided AI to separate overlapping Tau and amyloid-β stain signals in Alzheimer’s neuropathology, not cancer drug discovery.",
+      "clinical_relevance": "The approach could support research quantification of Alzheimer’s pathology, but the abstract does not establish clinical diagnostic utility.",
+      "method": [
+        "Unsupervised latent diffusion teacher guided by Beer–Lambert optical-density physics and pathology foundation models.",
+        "Morphological routing to disentangle targets sharing the same chromogen.",
+        "Distillation into a 0.12-million-parameter U-Net for fast inference."
+      ],
+      "evidence_signal": "On 9,908 held-out SEA-AD patches, the authors report 40.56 dB PSNR, 0.9961 SSIM and 140.1 FPS, with significant gains over InverseAE and NMF (both p < 0.001).",
+      "watch_item": "Identical-spectrum separation remains mathematically ill-posed; high image-similarity scores alone do not establish biologically accurate target attribution.",
+      "hashtags": [
+        "#AlzheimersResearch",
+        "#DigitalPathology",
+        "#MultiplexIHC",
+        "#DiffusionModels",
+        "#ComputationalPathology"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-17-medrxiv-morphostain_physics_guided_latent_diffusion_and_morphological_distillation_for_multiplex_s",
+      "paper_title": "MorphoStain: Physics-Guided Latent Diffusion and Morphological Distillation for Multiplex Stain Decomposition in Alzheimer's Neuropathology",
+      "paper_date": "2026-11-17",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-11-21T15:02:24",
       "generator": "openai"
     }
   },
@@ -130,23 +342,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.08.09.26360027v2.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
-      "key_insight": "Population-based reference equations contextualize neurodegeneration blood biomarkers using age, sex, body-mass index, and renal function to generate individualized expected concentrations, percentiles, and Z-scores.",
-      "clinical_relevance": "This neurodegeneration study—not AI cancer drug discovery—supports research into more consistent biomarker interpretation rather than establishing standalone diagnostic thresholds.",
+      "key_insight": "This neurodegeneration biomarker study—not an AI cancer drug discovery study—developed population-based equations to express blood biomarker concentrations as individualized percentiles and Z-scores.",
+      "clinical_relevance": "Accounting for age, sex, body-mass index, and renal function may improve biomarker interpretation while preserving disease-associated patterns.",
       "method": [
         "Analyzed plasma from cognitively unimpaired participants in two French population-based cohorts.",
-        "Used generalized additive models to derive reference equations for NfL, GFAP, p-tau181, amyloid-β40, amyloid-β42, and biomarker ratios.",
-        "Applied Z-scores to clinical cohorts and developed NfL cross-calibration equations across analytical methods and sample matrices."
+        "Modeled NfL, GFAP, p-tau181, amyloid-β40, amyloid-β42, and ratios using generalized additive models.",
+        "Developed NfL cross-calibration equations across analytical methods and sample matrices."
       ],
-      "evidence_signal": "Reference samples included 5,123 participants for amyloid biomarkers and p-tau181 and 5,122 for NfL and GFAP; disease-associated profiles were preserved, and NfL cross-calibration agreement exceeded an intraclass correlation coefficient of 0.90.",
-      "watch_item": "The cross-sectional French reference cohorts do not establish longitudinal predictive performance or generalizability to other populations.",
+      "evidence_signal": "Reference populations included 5,123 participants for amyloid biomarkers and p-tau181 and 5,122 for NfL and GFAP; NfL cross-calibration achieved intraclass correlation coefficients above 0.90.",
+      "watch_item": "Generalizability beyond the French reference cohorts and diagnostic utility require further validation; Z-scores alone do not establish a diagnosis.",
       "hashtags": [
         "#Neurodegeneration",
         "#BloodBiomarkers",
         "#ReferenceEquations",
         "#ZScores",
-        "#BiomarkerStandardization"
+        "#BiomarkerCalibration"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -154,7 +366,7 @@
       "paper_title": "Population-based reference equations and Z-scores for blood biomarkers of neurodegenerative diseases",
       "paper_date": "2026-11-16",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-20T15:52:49",
+      "generated_at": "2026-11-21T15:02:26",
       "generator": "openai"
     }
   },
@@ -183,17 +395,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.13.26368017v1.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
       "key_insight": "Nirsevimab was associated with 78.1% effectiveness against RSV-associated hospitalization in eligible high-risk children aged 8–23 months entering their second RSV season.",
-      "clinical_relevance": "The findings support protection against severe RSV in this eligible population; the study concerns RSV prevention, not AI or cancer drug discovery.",
+      "clinical_relevance": "The findings support nirsevimab’s potential to prevent severe RSV in this population; this study concerns RSV prevention, not AI or cancer drug discovery.",
       "method": [
-        "Retrospective test-negative case-control study across 26 hospitals in 24 U.S. states during the 2024–2025 and 2025–2026 RSV seasons.",
+        "Retrospective test-negative case-control study across 26 hospitals in 24 U.S. states during two RSV seasons.",
         "Compared prior nirsevimab receipt in RSV-positive and RSV-negative children hospitalized with respiratory symptoms.",
-        "Adjusted logistic regression for age, hospitalization month and year, census region, and sex."
+        "Adjusted for age, hospitalization month and year, census region, and sex."
       ],
-      "evidence_signal": "Among 106 RSV-positive cases and 125 RSV-negative controls, nirsevimab receipt was 19.8% versus 42.4%; adjusted effectiveness was 78.1% (95% CI, 55.2%–89.3%).",
-      "watch_item": "The small observational sample, dominated by children with chronic lung disease of prematurity, limits generalizability and may retain residual confounding.",
+      "evidence_signal": "Among 106 RSV-positive cases and 125 RSV-negative controls, adjusted effectiveness was 78.1% (95% CI, 55.2%–89.3%); nirsevimab receipt was 19.8% versus 42.4%, respectively.",
+      "watch_item": "The small observational sample, predominantly eligible because of chronic lung disease of prematurity, limits certainty and generalizability to other high-risk groups.",
       "hashtags": [
         "#RSV",
         "#Nirsevimab",
@@ -207,7 +419,7 @@
       "paper_title": "Nirsevimab effectiveness against RSV hospitalizations in children 8-23 months at risk of severe RSV",
       "paper_date": "2026-11-16",
       "paper_category": "Therapeutic Discovery",
-      "generated_at": "2026-11-20T15:52:51",
+      "generated_at": "2026-11-21T15:02:28",
       "generator": "openai"
     }
   },
@@ -236,22 +448,22 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.13.26368064v1.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
       "key_insight": "Thoracic aortic diameter and stiffness showed distinct circulating protein associations, suggesting different biological processes underlying these imaging traits.",
-      "clinical_relevance": "These findings may inform future aortic biomarker research but do not establish a screening test or treatment target.",
+      "clinical_relevance": "These findings may inform future biomarker research for aortic remodelling but do not establish a screening test or treatment strategy.",
       "method": [
-        "Studied 2,920 circulating proteins in 6,773 UK Biobank participants with plasma proteomic and cardiac imaging data.",
+        "Analysed 2,920 circulating proteins in 6,773 UK Biobank participants with plasma proteomics and cardiac imaging.",
         "Used multivariable linear regression with false discovery rate correction.",
-        "Applied ranked pathway enrichment and secondary principal component analysis."
+        "Applied ranked-protein pathway enrichment and secondary principal component analysis."
       ],
       "evidence_signal": "Fully adjusted models identified 417 proteins associated with aortic diameter and six with stiffness; the imaging traits were modestly correlated (r = 0.21).",
-      "watch_item": "This is an observational aortic proteomics study—not AI cancer drug discovery—and its associations require independent validation before clinical translation.",
+      "watch_item": "This is an observational aortic biology study, not AI cancer drug discovery; associations changed with adjustment and do not establish causality.",
       "hashtags": [
-        "#AorticResearch",
+        "#AorticBiology",
         "#Proteomics",
         "#UKBiobank",
-        "#BiomarkerDiscovery",
+        "#BiomarkerResearch",
         "#TargetBiology"
       ],
       "model": "gpt-6.1-sol",
@@ -260,7 +472,7 @@
       "paper_title": "Distinct circulating proteomic patterns associated with thoracic aortic diameter and stiffness: A proteome-wide study in the UK Biobank",
       "paper_date": "2026-11-16",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-20T15:52:53",
+      "generated_at": "2026-11-21T15:02:30",
       "generator": "openai"
     }
   },
@@ -289,17 +501,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.13.26367931v1.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
-      "key_insight": "Wearable-derived sleep and activity patterns enabled AI detection of Parkinson’s disease and showed potential to identify associated pathology; this study is not about cancer drug discovery.",
-      "clinical_relevance": "Passive wearable monitoring warrants further evaluation for Parkinson’s screening and biomarker-enriched research recruitment, but is not established as a diagnostic tool.",
+      "key_insight": "An AI model using wearable sleep and activity data distinguished Parkinson’s disease from healthy controls and detected associated pathological hallmarks; this is not a cancer drug discovery study.",
+      "clinical_relevance": "Passive wearable monitoring could support future Parkinson’s screening and research cohort enrichment, but clinical use requires further validation.",
       "method": [
         "Derived sleep and activity metrics from free-living wrist accelerometry.",
-        "Trained SAM-PD to distinguish Parkinson’s disease from healthy controls and validated it externally without retraining.",
+        "Trained SAM-PD to distinguish Parkinson’s disease from healthy controls and tested it independently without retraining.",
         "Compared SAM-PD with the MDS prodromal risk score for detecting dopaminergic deficit and α-synuclein pathology."
       ],
-      "evidence_signal": "SAM-PD achieved AUROC 0.93 in the U.S. cohort (n=159) and 0.95 in an independent European cohort (n=40), with at-risk cohort AUROCs of 0.86 for dopaminergic deficit and 0.76 for α-synuclein pathology.",
-      "watch_item": "Small cohorts and limited pathology-positive cases require larger, representative validation before screening implementation.",
+      "evidence_signal": "SAM-PD achieved AUROC 0.93 in the U.S. cohort (n=159) and 0.95 in an independent European cohort using a different device (n=40); at-risk cohort AUROCs were 0.86 for dopaminergic deficit and 0.76 for α-synuclein pathology.",
+      "watch_item": "Small cohorts, particularly the independent validation sample, limit confidence in population-scale screening performance.",
       "hashtags": [
         "#ParkinsonsDisease",
         "#WearableSensors",
@@ -313,7 +525,7 @@
       "paper_title": "Wearable-based sleep and activity tracking detects Parkinson's disease and associated pathological hallmarks",
       "paper_date": "2026-11-15",
       "paper_category": "Cancer AI Methods",
-      "generated_at": "2026-11-20T15:52:56",
+      "generated_at": "2026-11-21T15:02:32",
       "generator": "openai"
     }
   },
@@ -342,22 +554,22 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367954v1.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 41,
     "infographic": {
-      "key_insight": "Menopausal timing showed a nonlinear association with blood NfL and a linear association with GDF-15 in older women, providing observational evidence relevant to dementia biology—not AI cancer drug discovery.",
-      "clinical_relevance": "These findings may inform research into menopause-related dementia vulnerability but do not establish causality or support clinical risk prediction.",
+      "key_insight": "Menopausal timing showed a nonlinear association with blood NfL and a linear association with GDF-15 in older women, suggesting links to neuroaxonal injury and systemic stress rather than cancer drug discovery.",
+      "clinical_relevance": "These observational biomarker associations may inform research into menopause and dementia biology but do not establish dementia risk or guide treatment.",
       "method": [
-        "Observational analysis of the U.S. Health and Retirement Study using blood collected in 2016.",
-        "Modeled self-reported spontaneous menopause timing against four blood biomarkers, adjusting for sociodemographic and health factors.",
+        "Analyzed U.S. Health and Retirement Study participants aged 65 or older using blood collected in 2016.",
+        "Modeled self-reported spontaneous menopause timing against NfL, GFAP, p-tau181 and GDF-15, adjusting for sociodemographic and health factors.",
         "Evaluated APOE ε4 effect modification and separately examined hysterectomy history."
       ],
-      "evidence_signal": "Among 893 women without hysterectomy, later menopause between ages 50–55 was associated with lower NfL (−0.031 SD/year; 95% CI −0.051 to −0.011); overall, later menopause was associated with lower GDF-15, while GFAP and p-tau181 associations were not significant.",
-      "watch_item": "The supplied abstract is truncated, and self-reported reproductive history plus observational biomarker associations cannot establish effects on subsequent dementia risk.",
+      "evidence_signal": "Among 893 women without hysterectomy, later menopause between ages 50–55 was associated with lower NfL (−0.031 SD/year; 95% CI −0.051 to −0.011); GFAP and p-tau181 associations were not statistically significant.",
+      "watch_item": "Self-reported reproductive history, unmeasured oophorectomy status and observational biomarker data limit causal interpretation and inference about clinical dementia.",
       "hashtags": [
         "#Menopause",
         "#DementiaResearch",
         "#BloodBiomarkers",
-        "#NeurofilamentLight",
+        "#Neurodegeneration",
         "#PopulationHealth"
       ],
       "model": "gpt-6.1-sol",
@@ -366,7 +578,7 @@
       "paper_title": "Age at Menopause and Dementia Risk: Blood-Based Biomarker Evidence from a US National Study",
       "paper_date": "2026-11-15",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-20T15:52:58",
+      "generated_at": "2026-11-21T15:02:35",
       "generator": "openai"
     }
   },
@@ -395,17 +607,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367919v1.full.pdf"
       }
     ],
-    "score": 46,
+    "score": 41,
     "infographic": {
-      "key_insight": "Multi-sensor wearable models predicted perceived exertion better than pulse-rate-only models in patients with end-stage kidney disease (ESKD).",
-      "clinical_relevance": "The findings suggest a potential role for multi-sensor monitoring during ESKD prehabilitation; this study concerns exertion monitoring, not cancer drug discovery.",
+      "key_insight": "Multimodal wearable models predicted perceived exertion better than pulse-rate-only models in frail patients with end-stage kidney disease (ESKD).",
+      "clinical_relevance": "The findings may inform exertion monitoring during ESKD prehabilitation; this study does not address cancer or drug discovery.",
       "method": [
         "Collected smartwatch pulse rate, electrodermal activity, skin temperature, and accelerometer data during prehabilitation.",
-        "Built individualized machine-learning models to predict Rating of Perceived Exertion (RPE).",
-        "Compared pulse-rate-only regression with multi-feature models in ESKD patients and healthy older controls."
+        "Built individualized machine-learning models to predict Rating of Perceived Exertion.",
+        "Compared pulse-rate-only models with multi-feature models."
       ],
-      "evidence_signal": "Among 13 ESKD patients and 13 controls, multi-feature models significantly improved ESKD predictions, achieving an RPE root mean square error of 1.33.",
-      "watch_item": "The small cohort and individualized modeling require broader validation before routine clinical use.",
+      "evidence_signal": "Among 13 ESKD participants and 13 healthy older controls, multi-feature models significantly improved ESKD predictions, achieving a root mean square error of 1.33.",
+      "watch_item": "The small cohort and individualized modeling warrant larger, independent validation before clinical implementation.",
       "hashtags": [
         "#KidneyDisease",
         "#WearableSensors",
@@ -419,7 +631,7 @@
       "paper_title": "Wearable Sensors Predict Exertion Without Changes in Pulse Rate for Frail End-Stage Kidney Disease Patients",
       "paper_date": "2026-11-15",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-11-20T15:53:00",
+      "generated_at": "2026-11-21T15:02:37",
       "generator": "openai"
     }
   },
@@ -448,23 +660,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.12.26367904v1.full.pdf"
       }
     ],
-    "score": 44,
+    "score": 39,
     "infographic": {
       "key_insight": "An anatomy-aware 3D GAN improved brain MRI inpainting over a simple 3D AutoEncoder but did not outperform the challenge’s Pix2Pix3D baseline.",
-      "clinical_relevance": "This imaging research synthesizes healthy-appearing tissue within masked tumor regions; it does not demonstrate drug discovery or clinical benefit.",
+      "clinical_relevance": "This imaging research synthesizes plausible healthy-appearing tissue in tumor-masked regions; it does not establish drug-discovery utility or clinical benefit.",
       "method": [
-        "Combines mask-aware gated convolutions with mirrored contralateral context.",
-        "Uses attention-modulated skip fusion, boundary-aware refinement, and a local masked-region refiner.",
-        "Trains first for reconstruction, then adds low-weight adversarial fine-tuning."
+        "Combines mask-aware gated convolutions, mirrored contralateral context, and attention-modulated skip fusion.",
+        "Uses boundary-aware refinement and a local masked-region refiner.",
+        "Trains with reconstruction objectives followed by low-weight adversarial fine-tuning."
       ],
-      "evidence_signal": "Official BraTS 2026 Task 4 evaluation across 219 cases yielded mean SSIM 0.658 and PSNR 14.81 dB, below local held-out results.",
-      "watch_item": "Controlled ablations are still needed to isolate component contributions, and synthesized tissue should not be interpreted as verified healthy anatomy.",
+      "evidence_signal": "Official BraTS 2026 Task 4 evaluation across 219 cases yielded mean SSIM 0.658 and mean PSNR 14.81 dB, below local held-out results.",
+      "watch_item": "Controlled ablations are still needed to isolate the contributions of mirrored context and the two-stage training schedule.",
       "hashtags": [
         "#BrainMRI",
-        "#MRIInpainting",
+        "#MedicalImageInpainting",
         "#GenerativeAI",
-        "#BrainTumorResearch",
-        "#MedicalImaging"
+        "#BraTS",
+        "#OncologyImaging"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -472,7 +684,7 @@
       "paper_title": "Anatomy-Aware 3D GAN with Local Mask Refinement for Brain MRI Inpainting",
       "paper_date": "2026-11-15",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-11-20T15:53:03",
+      "generated_at": "2026-11-21T15:02:39",
       "generator": "openai"
     }
   }
