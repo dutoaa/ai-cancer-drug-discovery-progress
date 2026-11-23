@@ -1,19 +1,19 @@
 {
   "key_insight": "MorphoStain uses physics-guided AI to separate overlapping Tau and amyloid-β staining in Alzheimer’s neuropathology, not cancer drug discovery.",
-  "clinical_relevance": "The approach could support research quantification of Alzheimer’s pathology, but clinical utility is not established by the abstract.",
+  "clinical_relevance": "The framework could support neuropathology biomarker analysis, but the abstract does not establish diagnostic utility or clinical readiness.",
   "method": [
-    "Uses a latent diffusion teacher constrained by Beer–Lambert optical-density physics and guided by pathology foundation models.",
-    "Distills the teacher into a 0.12-million-parameter FastStudentU-Net for rapid inference.",
-    "Applies morphological routing to disentangle identical chromogen signals and estimates epistemic uncertainty."
+    "Unsupervised latent diffusion models stain separation on a Beer–Lambert optical-density manifold.",
+    "Morphological routing disentangles targets sharing the same chromogen.",
+    "Teacher distillation produces a compact 0.12-million-parameter U-Net with uncertainty quantification."
   ],
   "evidence_signal": "On 9,908 held-out SEA-AD patches, the authors report 40.56 dB PSNR, 0.9961 SSIM and 140.1 FPS, with significant gains over InverseAE and NMF (both p < 0.001).",
-  "watch_item": "Identical-spectrum separation remains intrinsically ill-posed; reconstruction metrics alone do not establish biological accuracy or generalization across laboratories.",
+  "watch_item": "Identical-spectrum separation is inherently ill-posed; external-cohort validation and confirmation of biological fidelity remain important.",
   "hashtags": [
     "#AlzheimersResearch",
-    "#DigitalPathology",
-    "#MultiplexImmunohistochemistry",
-    "#LatentDiffusion",
-    "#StainDecomposition"
+    "#ComputationalPathology",
+    "#MultiplexImaging",
+    "#DiffusionModels",
+    "#BiomarkerAnalysis"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "MorphoStain: Physics-Guided Latent Diffusion and Morphological Distillation for Multiplex Stain Decomposition in Alzheimer's Neuropathology",
   "paper_date": "2026-11-17",
   "paper_category": "Target Biology",
-  "generated_at": "2026-11-22T15:00:39",
+  "generated_at": "2026-11-23T18:53:57",
   "generator": "openai"
 }
