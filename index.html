@@ -22,7 +22,7 @@
     <header>
       <div>
         <h1>AI Cancer Drug Discovery Research Papers - Daily Top 20</h1>
-        <p class="sub">Collected 2026-11-23. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
+        <p class="sub">Collected 2026-11-24. Ranked from recent arXiv and medRxiv AI cancer drug discovery papers, with OpenAI infographic summaries where credentials are available.</p>
       </div>
       <nav class="actions">
         <a href="papers.json">Data JSON</a>
@@ -31,7 +31,64 @@
     </header>
     <section class="grid">
       <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>54</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>52</strong></div>
+        <p class="date">2026-11-19</p>
+        <h2>Virtual spatial transcriptomics links kidney histopathology to disease-associated molecular programs</h2>
+        <p class="authors">Nonchev, K.; Jang, Y.; Nlandu Khodo, S.; Koelzer, V. H.; Raetsch, G.; Moor, M. B.</p>
+        <p class="abstract">IntroductionSpatial transcriptomics can resolve compartment-specific molecular programs in kidney disease, but its cost and technical requirements limit its use in clinical diagnostics and in large biopsy archives. Predicting spatial gene expression from routine histology with artificial intelligence could extend molecular characterization to existing clinically annotated kidney tissue collections. MethodsWe adapted DeepSpot-M, a pretrained multimodal foundation model that predicts spatial gene expression from histology, using paired hematoxylin and eosin images and Visium spatial transcriptomics from 209 Kidney Precision Medicine Project (KPMP) participants. We evaluated virtual profiles in held-out human biopsies, associated them with histopathologic and biochemical injury markers in 567 rats with defined nephrotoxin exposures from a public toxicogenomics database, and generated a virtual atlas from 1 534 histology slides of 476 additional KPMP participants. ResultsKidney-specific adaptation of DeepSpot-M doubled the mean Pearson correlation of each models 1 000 best-predicted genes (0.43 versus 0.22) and exceeded recent foundation models. Virtual profiles preserved the direction of all 13 disease-marker differences in measured expression, including tubular injury, maladaptive repair, gluconeogenesis, and fibrosis-associated programs. All 11 measured associations between molecular programs and estimated glomerular filtration rate (eGFR) were also preserved. Without rat-specific training, a virtual injury score distinguished moderate or severe histopathologic lesions (area under the curve, 0.85) and at least twofold blood urea nitrogen elevation (0.82). In our atlas of 5.46 million virtual spots, higher proximal tubule program scores were associated with higher eGFR (partial r, 0.32) and less interstitial fibrosis (-0.57), and program-pathology associations agreed with those of measured Visium profiles in independent participants (Spearman{rho} , 0.64). ConclusionsKidney-adapted virtual spatial transcriptomics links histology-derived molecular programs to experimental renal injury and human clinical and histologic phenotypes. Our approach enables spatial molecular analyses in routine biopsy histology, which could help decipher disease-associated pathways in existing biopsy archives. Translational StatementSpatial molecular profiling of kidney biopsies is informative but too costly for routine use, whereas hematoxylin and eosin sections exist for nearly every biopsy. We show that a model adapted to paired kidney histology and spatial transcriptomics infers programs of tubular injury, metabolic differentiation, and fibrosis from routine histology, and that these programs track kidney function and pathology across 476 participants. Applied to existing archives, virtual spatial transcriptomics could stratify heterogeneous patients by tissue molecular state, prioritize biopsies for targeted assays, and support biomarker discovery and trial enrichment once validated prospectively.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.11.17.26368273v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.11.17.26368273v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> Kidney-adapted AI predicted spatial gene expression from routine histology, linking tissue features to injury, repair, and fibrosis-associated molecular programs.</p>
+          <p><b>Clinical relevance:</b> This kidney disease study—not cancer drug discovery—could extend molecular characterization to archived biopsies, but does not establish clinical diagnostic utility.</p>
+          <ul><li>Adapted DeepSpot-M using paired histology and spatial transcriptomics from 209 KPMP participants.</li><li>Evaluated predictions in held-out human biopsies and 567 rats with defined nephrotoxin exposures.</li><li>Generated 5.46 million virtual spots from 1,534 slides covering 476 additional KPMP participants.</li></ul>
+          <p><b>Evidence signal:</b> Mean gene-expression prediction correlation improved from 0.22 to 0.43 for each model’s 1,000 best-predicted genes; predictions preserved all 13 disease-marker differences and all 11 measured associations with eGFR.</p>
+          <p><b>Watch item:</b> Predicted expression is not a direct molecular measurement; broader validation is needed before clinical use.</p>
+          <div class="tags"><span>#SpatialTranscriptomics</span> <span>#KidneyDisease</span> <span>#ComputationalPathology</span> <span>#AIinBiology</span> <span>#TargetBiology</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>50</strong></div>
+        <p class="date">2026-11-19</p>
+        <h2>An LLM-assisted Pipeline for Identifying ClinicalTrials.gov Registry Changes and Their Association with Primary Endpoint Positivity</h2>
+        <p class="authors">Purevdorj, A.; Dennstaedt, F.; Zwahlen, D. R.; Windisch, P.</p>
+        <p class="abstract">Registration of randomized clinical trials (RCTs) in a public registry such as ClinicalTrials.gov should minimize the risk of reporting bias. However, records may be modified during a trial and the resulting discrepancies are not always apparent without a detailed examination of all version histories, a process that is cumbersome when performed manually. We developed an automated workflow to investigate whether specific changes to RCT registry entries are associated with primary endpoint positivity. Our pipeline extracts RCT records from ClinicalTrials.gov and systematically detects changes between successive versions using a combination of deterministic textual analysis and large language model (LLM)-assisted classification. We could show a positive association between trial positivity and changes to primary outcomes (OR 1.91; 95% CI 1.48-2.47) as well as to arms and interventions (OR 2.10; 95% CI 1.62-2.73). Associations were weaker when changes occurred exclusively before the primary completion date, pointing to the importance of timing in evaluating potentially consequential modifications to RCT design. Our automated pipeline can enable analysis of trial registration records at scale, facilitating the work of reviewers and meta-scientists to promote research integrity.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.11.17.26368319v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.11.17.26368319v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> An LLM-assisted analysis linked changes in trial registry entries to higher odds of primary endpoint positivity, without establishing causation.</p>
+          <p><b>Clinical relevance:</b> This trial-transparency research, rather than cancer drug discovery, could help reviewers identify registry changes warranting closer scrutiny.</p>
+          <ul><li>Extract randomized clinical trial records from ClinicalTrials.gov.</li><li>Detect changes across successive versions using deterministic text analysis and LLM-assisted classification.</li><li>Assess associations with primary endpoint positivity and the timing of changes.</li></ul>
+          <p><b>Evidence signal:</b> Primary outcome changes were associated with endpoint positivity (OR 1.91; 95% CI 1.48–2.47), as were arm/intervention changes (OR 2.10; 95% CI 1.62–2.73); associations were weaker for changes occurring exclusively before primary completion.</p>
+          <p><b>Watch item:</b> The abstract does not report sample size or LLM classification accuracy, limiting assessment of robustness.</p>
+          <div class="tags"><span>#ClinicalTrials</span> <span>#ResearchIntegrity</span> <span>#TrialRegistration</span> <span>#LargeLanguageModels</span> <span>#MetaResearch</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>49</strong></div>
+        <p class="date">2026-11-19</p>
+        <h2>Prospective prediction of clinical trial outcomes from public evidence</h2>
+        <p class="authors">Xu, J.; Zhang, W.; Yuan, Y.; Wu, C.</p>
+        <p class="abstract">Predicting clinical trial outcomes requires interpreting biological and clinical evidence in the context of a specific intervention, population and study design. Here we test whether a general-purpose large language model (LLM) can predict trial outcomes from publicly available evidence. We introduce TrialDossier, which assembles standardized evidence dossiers, and TrialOutlook, which uses these dossiers with GPT-5 to estimate the probability that a trial meets its prespecified primary endpoint. Among 694 ongoing trials with results expected within six months of cohort assembly, 69 outcomes first disclosed after forecast recording had been adjudicated by 20 October 2026. TrialOutlook achieved an area under the receiver operating characteristic curve of 0.819 (95% confidence interval, 0.708-0.914) and an average precision of 0.860. TrialOutlook correctly identified 27 of 29 failures (93.1%) and incorrectly classified 17 of 40 successes as failures. We further recorded forecasts for 5,809 ongoing trials associated with US-listed companies and established a public benchmark linking archived evidence and fixed forecasts to adjudicated outcomes as they become available.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.11.17.26368242v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.11.17.26368242v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> An evidence-based GPT-5 workflow showed promising prospective prediction of clinical trial outcomes, rather than cancer drug discovery specifically.</p>
+          <p><b>Clinical relevance:</b> The approach could support trial research prioritization, but does not establish treatment efficacy or guide individual patient care.</p>
+          <ul><li>TrialDossier assembles standardized dossiers from public evidence.</li><li>TrialOutlook uses GPT-5 to estimate whether trials will meet prespecified primary endpoints.</li><li>Fixed forecasts are linked to subsequently disclosed, adjudicated outcomes.</li></ul>
+          <p><b>Evidence signal:</b> Among 69 adjudicated outcomes from 694 ongoing trials, AUROC was 0.819 (95% CI, 0.708–0.914) and average precision was 0.860; 27 of 29 failures were identified, but 17 of 40 successes were classified as failures.</p>
+          <p><b>Watch item:</b> Only 69 outcomes were adjudicated, and the substantial misclassification of successful trials warrants caution before operational use.</p>
+          <div class="tags"><span>#ClinicalTrials</span> <span>#TrialPrediction</span> <span>#ArtificialIntelligence</span> <span>#ClinicalTranslation</span> <span>#ProspectiveValidation</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>49</strong></div>
         <p class="date">2026-11-18</p>
         <h2>Early-life hallmarks of polygenic liability to adult internalizing-cardiometabolic multimorbidity</h2>
         <p class="authors">Tsang, R. S. M.; Stow, D.; Katzourou, I. K.; LINC Consortium, ; van den Bree, M. B. M.; Khandaker, G. M.; Timpson, N. J.</p>
@@ -39,18 +96,37 @@
         <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.05.01.26352146v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.05.01.26352146v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Genetic liability to adult internalizing–cardiometabolic multimorbidity is associated with early-life mental and cardiometabolic changes and higher levels of inflammatory proteins.</p>
-          <p><b>Clinical relevance:</b> These findings highlight potential early biological pathways linking mental and cardiometabolic conditions, but do not establish clinical screening or treatment strategies.</p>
-          <ul><li>Studied 5,934 participants in the UK ALSPAC birth cohort.</li><li>Used mixed-effects models to assess associations between polygenic liability and trajectories of 12 health outcomes.</li><li>Examined circulating inflammatory proteins at ages 9 and 24 using the Olink Target 96 Inflammation panel.</li></ul>
+          <p><b>Key insight:</b> Genetic liability to adult internalizing–cardiometabolic multimorbidity is associated with early-life health changes and higher circulating inflammatory proteins.</p>
+          <p><b>Clinical relevance:</b> These findings highlight potential early biological markers of shared mental and cardiometabolic disease liability, but do not establish clinical screening or treatment utility.</p>
+          <ul><li>Analyzed 5,934 participants in the UK ALSPAC birth cohort.</li><li>Used mixed-effects models to assess associations between polygenic liability and trajectories of 12 mental and cardiometabolic outcomes.</li><li>Tested associations with circulating inflammatory proteins at ages 9 and 24 using the Olink Target 96 Inflammation panel.</li></ul>
           <p><b>Evidence signal:</b> Higher polygenic liability was consistently associated with higher IL6, TNFSF14 and HGF levels at both ages 9 and 24.</p>
-          <p><b>Watch item:</b> Observational associations in one UK cohort do not establish causality or generalizability; this is not an AI cancer drug discovery study.</p>
-          <div class="tags"><span>#PolygenicLiability</span> <span>#Multimorbidity</span> <span>#Inflammation</span> <span>#LifeCourseResearch</span> <span>#CardiometabolicHealth</span></div>
+          <p><b>Watch item:</b> This observational cohort study does not establish causality or evaluate AI, cancer drug discovery, or clinical interventions.</p>
+          <div class="tags"><span>#PolygenicLiability</span> <span>#Multimorbidity</span> <span>#Inflammation</span> <span>#CardiometabolicHealth</span> <span>#LongitudinalResearch</span></div>
         </section>
       </article>
     
 
       <article class="paper">
-        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>51</strong></div>
+        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>46</strong></div>
+        <p class="date">2026-11-19</p>
+        <h2>ADSMoE: A mixture-of-experts-based transformer autoencoder for discovering multimodal Alzheimer&#x27;s disease subtypes</h2>
+        <p class="authors">Meng, W.; Pan, J.; Yin, M.; Zhuang, P.; Gong, K.; Lin, M.; Xu, J.; Burns, M.; Wu, Y.; Yin, R.</p>
+        <p class="abstract">Alzheimers disease (AD) exhibits substantial biological and clinical heterogeneity, posing critical challenges for advancing precision medicine. Existing data-driven approaches often rely on modality-specific clustering or predefined biomarker trajectories, limiting their ability to discover disease subtypes from incomplete, heterogeneous real-world data. In this study, we introduce ADSMoE, a mixture-of-experts (MoE)-based multimodal representation learning framework that jointly identifies AD subtypes as latent disease signatures while accommodating incomplete modality combinations. ADSMoE integrates a Fleximodal MoE encoder that accommodates arbitrary combinations of available modalities with a novel subtype-specific MoE decoder to capture complementary disease characteristics through expert specialization. Using data from 5,422 participants across three independent cohorts, we trained ADSMoE on the ADNI cohort and externally validated the identified subtypes in NACC and UKB without model retraining. The proposed ADSMoE identified four AD subtypes with distinct neuroimaging patterns, genetic and proteomic associations, and clinical characteristics. Benchmarking analyses demonstrated robust subtype discovery and strong biological and clinical relevance, while external validation revealed consistent subtype-associated characteristics across independent cohorts. ADSMoE advances AD subtyping by uncovering biologically and clinically meaningful AD heterogeneity from incomplete multimodal data, providing a scalable framework for disease stratification, biomarker discovery, and future precision medicine applications in AD.</p>
+        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.11.16.26368224v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.11.16.26368224v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
+        <section class="info">
+          <h3>OpenAI Infographic Summary</h3>
+          <p><b>Key insight:</b> ADSMoE identified four biologically and clinically distinct Alzheimer’s disease subtypes from incomplete multimodal data.</p>
+          <p><b>Clinical relevance:</b> The subtypes could support future Alzheimer’s disease stratification and biomarker research, but clinical utility is not established.</p>
+          <ul><li>Uses a mixture-of-experts transformer autoencoder to learn multimodal disease signatures.</li><li>Handles varying combinations of available modalities with a Fleximodal MoE encoder.</li><li>Captures complementary subtype characteristics with a subtype-specific MoE decoder.</li></ul>
+          <p><b>Evidence signal:</b> Across 5,422 participants in three cohorts, ADSMoE was trained on ADNI and externally validated in NACC and UKB without retraining, showing consistent subtype-associated characteristics.</p>
+          <p><b>Watch item:</b> The abstract does not establish whether subtype assignments improve prospective clinical decisions or treatment outcomes.</p>
+          <div class="tags"><span>#AlzheimersDisease</span> <span>#MultimodalAI</span> <span>#MixtureOfExperts</span> <span>#DiseaseSubtyping</span> <span>#BiomarkerResearch</span></div>
+        </section>
+      </article>
+    
+
+      <article class="paper">
+        <div class="meta"><span>Precision Oncology</span><span>medRxiv</span><strong>46</strong></div>
         <p class="date">2026-11-18</p>
         <h2>PedDx: An End-to-End Deep Learning Framework for Pediatric Posterior Fossa Tumor Diagnosis with Agentic AI-Enabled Independent External Evaluation</h2>
         <p class="authors">Fathi Kazerooni, A.; Batal, F.; Vunnava, B.; Damaraju, E.; Tavallaii, A.; Gandhi, D.; Gottipati, A.; Zhu, P.; Chrysochoou, D.; Varshochi, S.; Adib Moradi, S.; Familiar, A. M.; Chiang, A.; Vaghani, Y.; Azemi, G.; Doig, M.; To, M.-S.; Luck, A.; Kim, M. C.; Khalili, N.; Khalili, N.; Jain, P.; Lee, C.; Hansford, J. R.; Di Ieva, A.; Storm, P. B.; Resnick, A. C.; Reddy, K.; Vossough, A.; Nabavizadeh, A.</p>
@@ -59,68 +135,11 @@
         <section class="info">
           <h3>OpenAI Infographic Summary</h3>
           <p><b>Key insight:</b> PedDx classifies pediatric posterior fossa tumors from MRI, with higher accuracy among cases retained after confidence-based abstention.</p>
-          <p><b>Clinical relevance:</b> This diagnostic AI research—not drug discovery—may inform future imaging-based assessment, but does not establish readiness for clinical use.</p>
-          <ul><li>Segmentation-free analysis of T2-weighted MRI using pretrained 3DINO representations.</li><li>Calibrated predictions and confidence-based abstention.</li><li>Agentic workflow producing predictions and structured quality-control reports.</li></ul>
-          <p><b>Evidence signal:</b> Evaluation included 492 discovery, 114 replication, 129 external-validation and 40 independently tested cases; accuracy was 79.8%, 81.4% and 92.5% in the three test cohorts, rising to 90.5%, 88.7% and 97.3% among non-abstained cases.</p>
-          <p><b>Watch item:</b> Out-of-distribution testing revealed confidently incorrect predictions, while imaging perturbations exposed acquisition and alignment vulnerabilities.</p>
-          <div class="tags"><span>#PediatricNeuroOncology</span> <span>#DiagnosticAI</span> <span>#BrainTumorMRI</span> <span>#ExternalValidation</span> <span>#AIUncertainty</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Clinical Translation</span><span>medRxiv</span><strong>41</strong></div>
-        <p class="date">2026-11-17</p>
-        <h2>Sex and Gender Reporting and Female Participation Relative to Disease Burden in ClinicalTrials.gov</h2>
-        <p class="authors">Green, M. D.; Aziz, M.; Sullenger, R. D.; Yoo, B. J.; O&#x27;Brien, E. C.; Navar, A. M.; Duroseau, B.; Thorpe, R. J.; Brantner, C. L.</p>
-        <p class="abstract">ImportanceAssessing representation by sex assigned at birth and gender identity requires reporting of both in trials. If disclosure of full gender and sex participation from clinicaltrials.gov this is limited, it poses challenges in characterization and understanding of those participant experiences. ObjectiveTo determine how often ClinicalTrials.gov trials published trials report sex and gender, which characteristics are associated with reporting, and how participants female share compares with that of the general public. Design, Setting, and ParticipantsCross-sectional study of interventional trials registered to ClinicalTrials.gov, with or without US sites, with primary completion on or after September 27, 2008, and results first posted from January 1, 2009, through April 30, 2026. ExposuresFunder type, phase, US sites, enrollment, primary completion year, number of countries, and therapeutic area. Main Outcomes and MeasuresReporting of sex and gender, and the female participation-to-prevalence ratio (PPR; trial female share divided by the number of people with the condition). ResultsAmong 58,007 trials (median enrollment, 72 [IQR, 31 to 206]; 42,644 [74%] with US sites), 553 (0.95%) reported gender and 57,683 (99.44%) reported sex. Gender reporting was more common with National Institutes of Health (NIH) funding (odds ratio [OR], 9.05; 95% CI, 6.65 to 12.6), US sites (OR, 4.21; 95% CI, 2.96 to 6.22), and larger enrollment. Across 10 conditions (15,552 mixed-sex trials), median PPR ranged from 0.68 (95% CI, 0.64 to 0.71) for chronic obstructive pulmonary disease to 1.05 (95% CI, 1.01 to 1.09) for obesity and had a relatively lower female share in 8. Among the 10 conditions most prevalent in our cohort, 6,917 of 16,097 trial condition combinations (43.0%) reached a PPR of at least 0.90; odds of reaching it were higher for NIH-funded (OR, 1.22; 95% CI, 1.11 to 1.34) and lower for government-funded trials (OR, 0.26; 95% CI, 0.20 to 0.33) as compared to industry-funded trials. Conclusions and RelevanceIn ClinicalTrials.gov, sex reporting is nearly universal, whereas gender reporting is concentrated among NIH-funded, US-based, and larger trials. Female trial enrollment fell below the female share of people with the condition for most conditions, emphasizing the benefit of condition-specific benchmarks in clinical trials.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.11.14.26368113v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.11.14.26368113v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Across ClinicalTrials.gov trials, sex reporting was nearly universal, gender reporting was rare, and female participation was generally low relative to disease burden.</p>
-          <p><b>Clinical relevance:</b> Incomplete gender reporting and female underrepresentation can limit assessment of how broadly trial findings apply.</p>
-          <ul><li>Cross-sectional analysis of 58,007 interventional trials with posted results.</li><li>Assessed reporting associations with funding, location, enrollment, and other trial characteristics.</li><li>Compared female trial participation with female disease prevalence using participation-to-prevalence ratios (PPRs) across 10 conditions.</li></ul>
-          <p><b>Evidence signal:</b> Sex was reported in 99.44% of trials and gender in 0.95%; 43.0% of 16,097 trial–condition combinations achieved a female PPR of at least 0.90.</p>
-          <p><b>Watch item:</b> This observational registry analysis identifies reporting and representation gaps, not their causes; it does not evaluate AI or cancer drug discovery.</p>
-          <div class="tags"><span>#ClinicalTrials</span> <span>#SexAndGender</span> <span>#TrialRepresentation</span> <span>#HealthEquity</span> <span>#ClinicalResearch</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>41</strong></div>
-        <p class="date">2026-11-17</p>
-        <h2>Deep Time-to-Event Models for Intrapartum Fetal Monitoring</h2>
-        <p class="authors">Imai Aldeia, G. S.; Coggan, H.; Yang, Y.; Levine, L.; McCoy, J. A.; La Cava, W.</p>
-        <p class="abstract">Timely detection of fetal distress during labor is a central pursuit of modern obstetric care. The primary measure used in this regard is fetal heart rate and contraction monitoring (echocar-diotocography or CTG), which provides a continuous signal during labor. The vast majority of machine learning applications to CTG assume access to a 30 to 60 minute window just prior to delivery, which makes an untenable assumption that the timing of delivery is known. In this work, we reframe the problem as a time-to-event prediction task. We develop deep time-to-event models to predict the joint probability of imminent delivery and fetal acidosis, a biomarker of fetal hypoxia collected from umbilical cord gas after delivery. We develop a framework for this problem, drawing on deep discrete-time survival methods and marked point processes, adapting each to this particular setting (i.e., continuous physiological signals, fully observed events, partially observed labels). One approach dubbed Marked DeepHit accurately estimates acidemic delivery within one hour at multiple elapsed-time land-marks, with test-set AUROC of 0.837 [95% CI 0.692-0.970] and 0.935 [0.858-0.964] at 6 and 12 hours into labor, respectively. We find that these models also achieve competitive performance near delivery time compared to prior models trained specifically on the end of tracing, and outperform other clinical feature-based proposals, both on internal and external validation at a second site. These results give a proof-of-principle to support prospective evaluation of AI-EFM during labor. Data and Code AvailabilityWe use data from a multi-site academic health system (University of Pennsylvania Health System) and the CTU-UHB repository (Chuda[c]ek et al., 2014). Access to CTU-UHB is openly available under the terms of the data use agreement on Physionet. Code for this paper is available at https://github.com/cavalab/deep-tte-intrapartum-fetal-monitoring. Institutional Review Board (IRB)This study was approved by the Institutional Review Board at University of Pennsylvania under a waiver of informed consent.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.09.21.26363416v2" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.09.21.26363416v2.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> Marked DeepHit predicts the joint probability of imminent delivery and fetal acidosis from labor-monitoring signals without assuming delivery timing is known.</p>
-          <p><b>Clinical relevance:</b> This fetal-monitoring research—not cancer drug discovery—could support earlier recognition of acidemic delivery risk, but clinical benefit remains unproven.</p>
-          <ul><li>Reframes continuous fetal heart rate and contraction monitoring as time-to-event prediction.</li><li>Adapts deep discrete-time survival models and marked point processes.</li><li>Models delivery timing and partially observed fetal acidosis labels jointly.</li></ul>
-          <p><b>Evidence signal:</b> Test-set AUROC for acidemic delivery within one hour was 0.837 (95% CI 0.692–0.970) at 6 hours into labor and 0.935 (0.858–0.964) at 12 hours; evaluations also included external validation at a second site.</p>
-          <p><b>Watch item:</b> Prospective evaluation is needed to establish real-time reliability and clinical usefulness before deployment.</p>
-          <div class="tags"><span>#FetalMonitoring</span> <span>#TimeToEvent</span> <span>#DeepLearning</span> <span>#Obstetrics</span> <span>#ClinicalAI</span></div>
-        </section>
-      </article>
-    
-
-      <article class="paper">
-        <div class="meta"><span>Target Biology</span><span>medRxiv</span><strong>37</strong></div>
-        <p class="date">2026-11-17</p>
-        <h2>MorphoStain: Physics-Guided Latent Diffusion and Morphological Distillation for Multiplex Stain Decomposition in Alzheimer&#x27;s Neuropathology</h2>
-        <p class="authors">Saraei, M.; Zand, M.; Rahmani, S.</p>
-        <p class="abstract">Multiplex immunohistochemistry (mIHC) enables simultaneous biomarker profiling, yet unmixing colocalized targets with identical spectra, such as dual-DAB marking Tau and Amyloid-{beta} in Alzheimers pathology, remains mathematically ill-posed. We propose MorphoStain, an unsupervised, physics-guided framework for morphological stain decomposition with epistemic uncertainty quantification. MorphoStain models stain separation via a conditional Latent Diffusion Teacher operating on a Beer- Lambert optical-density manifold, guided by pathology foundation models. To enable real-time clinical throughput, the teacher is distilled into a FastStudentU-Net (0.12M parameters, &gt; 1,400 x compression), while a Symmetric Morphological Routing Module dynamically disentangles identical chromogen overlap. Evaluated on 9,908 held-out patches from the SEA-AD cohort, MorphoStain achieves 40.56 dB PSNR and 0.9961 SSIM at 140.1 FPS, showing statistically significant gains over InverseAE (Cohens d = 3.52) and NMF (Cohens d = 7.02), with p &lt; 0.001 for both comparisons.</p>
-        <div class="links"><a href="https://www.medrxiv.org/content/10.64898/2026.11.15.26368147v1" target="_blank" rel="noreferrer">medRxiv</a> <a href="https://www.medrxiv.org/content/10.64898/2026.11.15.26368147v1.full.pdf" target="_blank" rel="noreferrer">PDF</a></div>
-        <section class="info">
-          <h3>OpenAI Infographic Summary</h3>
-          <p><b>Key insight:</b> MorphoStain uses physics-guided AI to separate overlapping Tau and amyloid-β staining in Alzheimer’s neuropathology, not cancer drug discovery.</p>
-          <p><b>Clinical relevance:</b> The framework could support neuropathology biomarker analysis, but the abstract does not establish diagnostic utility or clinical readiness.</p>
-          <ul><li>Unsupervised latent diffusion models stain separation on a Beer–Lambert optical-density manifold.</li><li>Morphological routing disentangles targets sharing the same chromogen.</li><li>Teacher distillation produces a compact 0.12-million-parameter U-Net with uncertainty quantification.</li></ul>
-          <p><b>Evidence signal:</b> On 9,908 held-out SEA-AD patches, the authors report 40.56 dB PSNR, 0.9961 SSIM and 140.1 FPS, with significant gains over InverseAE and NMF (both p &lt; 0.001).</p>
-          <p><b>Watch item:</b> Identical-spectrum separation is inherently ill-posed; external-cohort validation and confirmation of biological fidelity remain important.</p>
-          <div class="tags"><span>#AlzheimersResearch</span> <span>#ComputationalPathology</span> <span>#MultiplexImaging</span> <span>#DiffusionModels</span> <span>#BiomarkerAnalysis</span></div>
+          <p><b>Clinical relevance:</b> This diagnostic AI research—not drug discovery—could inform future pediatric tumor assessment, but does not establish readiness for clinical use.</p>
+          <ul><li>Uses T2-weighted MRI and pretrained 3DINO representations without tumor segmentation.</li><li>Combines calibrated predictions with confidence-based abstention.</li><li>Tests external reproducibility through an independently executed agentic workflow.</li></ul>
+          <p><b>Evidence signal:</b> Evaluation included 492 discovery, 114 replication, 129 external validation, and 40 independently tested cases; accuracy rose from 79.8%, 81.4%, and 92.5% to 90.5%, 88.7%, and 97.3%, respectively, among non-abstained cases.</p>
+          <p><b>Watch item:</b> Out-of-distribution inputs produced confidently incorrect predictions, and imaging perturbations exposed acquisition and alignment vulnerabilities.</p>
+          <div class="tags"><span>#PediatricOncology</span> <span>#DiagnosticAI</span> <span>#BrainTumors</span> <span>#MRI</span> <span>#ExternalValidation</span></div>
         </section>
       </article>
     </section>
