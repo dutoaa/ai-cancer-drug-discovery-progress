@@ -1,18 +1,18 @@
 {
-  "key_insight": "An LLM-assisted analysis linked changes in trial registry entries to higher odds of primary endpoint positivity, without establishing causation.",
-  "clinical_relevance": "This trial-transparency research, rather than cancer drug discovery, could help reviewers identify registry changes warranting closer scrutiny.",
+  "key_insight": "An LLM-assisted registry analysis found that changes to trial primary outcomes and arms/interventions were associated with higher odds of primary endpoint positivity.",
+  "clinical_relevance": "This research-integrity tool could help reviewers assess trial-reporting transparency; it does not evaluate cancer drugs or guide treatment.",
   "method": [
-    "Extract randomized clinical trial records from ClinicalTrials.gov.",
-    "Detect changes across successive versions using deterministic text analysis and LLM-assisted classification.",
-    "Assess associations with primary endpoint positivity and the timing of changes."
+    "Extract randomized trial records and version histories from ClinicalTrials.gov.",
+    "Detect registry changes using deterministic text analysis and LLM-assisted classification.",
+    "Assess associations between registry changes, their timing, and primary endpoint positivity."
   ],
-  "evidence_signal": "Primary outcome changes were associated with endpoint positivity (OR 1.91; 95% CI 1.48–2.47), as were arm/intervention changes (OR 2.10; 95% CI 1.62–2.73); associations were weaker for changes occurring exclusively before primary completion.",
-  "watch_item": "The abstract does not report sample size or LLM classification accuracy, limiting assessment of robustness.",
+  "evidence_signal": "Primary outcome changes were associated with positivity (OR 1.91; 95% CI 1.48–2.47), as were arms/intervention changes (OR 2.10; 95% CI 1.62–2.73); associations were weaker for changes occurring exclusively before primary completion.",
+  "watch_item": "These associations do not establish causation or misconduct, and the abstract does not report LLM classification accuracy.",
   "hashtags": [
     "#ClinicalTrials",
     "#ResearchIntegrity",
-    "#TrialRegistration",
     "#LargeLanguageModels",
+    "#TrialTransparency",
     "#MetaResearch"
   ],
   "model": "gpt-6.1-sol",
@@ -21,6 +21,6 @@
   "paper_title": "An LLM-assisted Pipeline for Identifying ClinicalTrials.gov Registry Changes and Their Association with Primary Endpoint Positivity",
   "paper_date": "2026-11-19",
   "paper_category": "Clinical Translation",
-  "generated_at": "2026-11-24T18:30:20",
+  "generated_at": "2026-11-25T17:44:24",
   "generator": "openai"
 }

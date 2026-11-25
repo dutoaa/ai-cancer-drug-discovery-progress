@@ -1,19 +1,19 @@
 {
-  "key_insight": "An evidence-based GPT-5 workflow showed promising prospective prediction of clinical trial outcomes, rather than cancer drug discovery specifically.",
-  "clinical_relevance": "The approach could support trial research prioritization, but does not establish treatment efficacy or guide individual patient care.",
+  "key_insight": "TrialOutlook used public evidence and GPT-5 to predict whether clinical trials would meet their primary endpoints, rather than discover cancer drugs.",
+  "clinical_relevance": "The approach may support clinical research prioritization, but it does not establish treatment efficacy or guide individual patient care.",
   "method": [
-    "TrialDossier assembles standardized dossiers from public evidence.",
-    "TrialOutlook uses GPT-5 to estimate whether trials will meet prespecified primary endpoints.",
-    "Fixed forecasts are linked to subsequently disclosed, adjudicated outcomes."
+    "TrialDossier assembles standardized dossiers from publicly available evidence.",
+    "TrialOutlook uses GPT-5 to estimate each trial’s probability of meeting its prespecified primary endpoint.",
+    "Archived evidence and fixed forecasts are linked to subsequently adjudicated outcomes."
   ],
-  "evidence_signal": "Among 69 adjudicated outcomes from 694 ongoing trials, AUROC was 0.819 (95% CI, 0.708–0.914) and average precision was 0.860; 27 of 29 failures were identified, but 17 of 40 successes were classified as failures.",
-  "watch_item": "Only 69 outcomes were adjudicated, and the substantial misclassification of successful trials warrants caution before operational use.",
+  "evidence_signal": "Among 69 adjudicated outcomes from 694 ongoing trials, AUROC was 0.819 (95% CI, 0.708–0.914) and average precision was 0.860; 27 of 29 failures were identified, while 17 of 40 successes were incorrectly classified as failures.",
+  "watch_item": "Only 69 outcomes were adjudicated, so performance needs confirmation as more results emerge; the abstract does not establish cancer-specific performance.",
   "hashtags": [
-    "#ClinicalTrials",
-    "#TrialPrediction",
+    "#ClinicalTrialPrediction",
     "#ArtificialIntelligence",
     "#ClinicalTranslation",
-    "#ProspectiveValidation"
+    "#ProspectiveValidation",
+    "#EvidenceSynthesis"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "Prospective prediction of clinical trial outcomes from public evidence",
   "paper_date": "2026-11-19",
   "paper_category": "Clinical Translation",
-  "generated_at": "2026-11-24T18:30:22",
+  "generated_at": "2026-11-25T17:44:26",
   "generator": "openai"
 }

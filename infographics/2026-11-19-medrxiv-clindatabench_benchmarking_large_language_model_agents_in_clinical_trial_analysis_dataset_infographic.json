@@ -1,0 +1,26 @@
+{
+  "key_insight": "ClinDataBench shows that LLM agents can construct clinical trial analysis datasets, but fewer validator findings do not guarantee correct data derivations.",
+  "clinical_relevance": "This work could support more reliable preparation of regulatory trial evidence; it does not evaluate cancer treatments or discover new drugs.",
+  "method": [
+    "Agents transform 22 public CDISC pilot study domains, an analysis plan and specifications into 13 ADaM datasets, Define-XML metadata and offline rebuild code.",
+    "A host-only evaluator separately measures standards conformance, selected derivations, reproducibility and effort.",
+    "Compare initial submissions, self-refinement and revision using agents’ own validator reports."
+  ],
+  "evidence_signal": "In an exploratory six-model pilot, all four CRITIC workflows with usable validator comparisons reduced findings, but none reduced failed derivations.",
+  "watch_item": "Structural validation cannot establish analytical correctness: the package with the fewest findings lacked all 234 efficacy summary records in the specified form.",
+  "hashtags": [
+    "#ClinDataBench",
+    "#ClinicalTrials",
+    "#LLMAgents",
+    "#CDISC",
+    "#DataValidation"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-11-19-medrxiv-clindatabench_benchmarking_large_language_model_agents_in_clinical_trial_analysis_dataset",
+  "paper_title": "ClinDataBench: Benchmarking Large Language Model Agents in Clinical Trial Analysis Dataset Construction",
+  "paper_date": "2026-11-19",
+  "paper_category": "Therapeutic Discovery",
+  "generated_at": "2026-11-25T17:44:22",
+  "generator": "openai"
+}
