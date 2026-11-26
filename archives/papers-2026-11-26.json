@@ -1,0 +1,373 @@
+[
+  {
+    "id": "2026-11-20-medrxiv-lcatlas_a_point_of_care_tool_for_predicting_immunotherapy_outcomes_in_non_small_cell_lung",
+    "doi": "10.64898/2026.11.18.26368446",
+    "date": "2026-11-20",
+    "title": "LCatlas: A Point-Of-Care Tool for Predicting Immunotherapy Outcomes in Non-Small Cell Lung Cancer",
+    "authors": "Park, S. Y.; Leyba, A.; Yeung, W.; Hsu, R. C.; Nieva, J.; Lee, H. Y.",
+    "abstract": "Non-small cell lung cancer (NSCLC) remains a leading cause of cancer mortality, with a minority of patients experiencing durable responses to first-line immune checkpoint inhibitors (ICIs). Currently, there are no easily accessible tools to predict clinical benefit to first-line immunotherapy. To address this gap, we developed LCatlas (https://www.lcatlas.org), a point-of-care web application designed to predict immunotherapy outcomes and inform evidence-based treatment decisions. Using data from 79 NSCLC patients receiving first-line immunotherapy, we extracted demographic, clinical, and molecular features from electronic medical records and compared three independent approaches-statistical model (logistic regression), machine learning (XGboost), and AI model (TabTransformer) to identify the most effective predictor. LCatlas accepts nine variables--gender, smoking history, bone/pleura/liver metastasis, PD-L1 tumor staining, albumin level, hemoglobin level, lymphocyte count, neutrophil count, and platelet count-to predict responses to both immunotherapy and immunotherapy plus chemotherapy. LCatlas cross-validation yielded an area under the curve (AUC) of 79% [72% - 85%], with sensitivity of 87% [72% - 95%] and specificity of 78% [64% - 89%], outperforming previous studies including high-volume data-driven deep-learning approaches. In a validation cohort consisting of 28 individuals, it demonstrated a prediction accuracy of 82%. LCatlas may serve as a valuable point-of-care tool by identifying patients likely to experience extended immunotherapy or combination therapy using readily available medical data. Its evidence-based approach can optimize personalized treatment planning and thereby promote quality and safety of care.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-11-20",
+    "updated": "2026-11-20",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.18.26368446v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.18.26368446v1.full.pdf"
+      }
+    ],
+    "score": 84,
+    "infographic": {
+      "key_insight": "LCatlas is a web-based tool that uses routinely available patient data to predict first-line immunotherapy outcomes in non-small cell lung cancer, rather than discover new drugs.",
+      "clinical_relevance": "The tool could support research-informed assessment of immunotherapy outcomes, but its reported performance does not establish readiness to guide treatment decisions.",
+      "method": [
+        "Used demographic, clinical, and molecular data from 79 patients receiving first-line immunotherapy.",
+        "Compared logistic regression, XGBoost, and TabTransformer prediction approaches.",
+        "Accepts nine reported input categories to predict outcomes with immunotherapy alone or combined with chemotherapy."
+      ],
+      "evidence_signal": "The abstract reports cross-validation AUC of 0.79 (0.72–0.85), sensitivity of 87%, specificity of 78%, and 82% accuracy in a 28-person validation cohort.",
+      "watch_item": "Small development and validation cohorts limit confidence in generalizability; larger prospective evaluations are needed before clinical implementation.",
+      "hashtags": [
+        "#NSCLC",
+        "#Immunotherapy",
+        "#PrecisionOncology",
+        "#MachineLearning",
+        "#OutcomePrediction"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-20-medrxiv-lcatlas_a_point_of_care_tool_for_predicting_immunotherapy_outcomes_in_non_small_cell_lung",
+      "paper_title": "LCatlas: A Point-Of-Care Tool for Predicting Immunotherapy Outcomes in Non-Small Cell Lung Cancer",
+      "paper_date": "2026-11-20",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-11-25T17:44:17",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-19-medrxiv-virtual_spatial_transcriptomics_links_kidney_histopathology_to_disease_associated_molecula",
+    "doi": "10.64898/2026.11.17.26368273",
+    "date": "2026-11-19",
+    "title": "Virtual spatial transcriptomics links kidney histopathology to disease-associated molecular programs",
+    "authors": "Nonchev, K.; Jang, Y.; Nlandu Khodo, S.; Koelzer, V. H.; Raetsch, G.; Moor, M. B.",
+    "abstract": "IntroductionSpatial transcriptomics can resolve compartment-specific molecular programs in kidney disease, but its cost and technical requirements limit its use in clinical diagnostics and in large biopsy archives. Predicting spatial gene expression from routine histology with artificial intelligence could extend molecular characterization to existing clinically annotated kidney tissue collections. MethodsWe adapted DeepSpot-M, a pretrained multimodal foundation model that predicts spatial gene expression from histology, using paired hematoxylin and eosin images and Visium spatial transcriptomics from 209 Kidney Precision Medicine Project (KPMP) participants. We evaluated virtual profiles in held-out human biopsies, associated them with histopathologic and biochemical injury markers in 567 rats with defined nephrotoxin exposures from a public toxicogenomics database, and generated a virtual atlas from 1 534 histology slides of 476 additional KPMP participants. ResultsKidney-specific adaptation of DeepSpot-M doubled the mean Pearson correlation of each models 1 000 best-predicted genes (0.43 versus 0.22) and exceeded recent foundation models. Virtual profiles preserved the direction of all 13 disease-marker differences in measured expression, including tubular injury, maladaptive repair, gluconeogenesis, and fibrosis-associated programs. All 11 measured associations between molecular programs and estimated glomerular filtration rate (eGFR) were also preserved. Without rat-specific training, a virtual injury score distinguished moderate or severe histopathologic lesions (area under the curve, 0.85) and at least twofold blood urea nitrogen elevation (0.82). In our atlas of 5.46 million virtual spots, higher proximal tubule program scores were associated with higher eGFR (partial r, 0.32) and less interstitial fibrosis (-0.57), and program-pathology associations agreed with those of measured Visium profiles in independent participants (Spearman{rho} , 0.64). ConclusionsKidney-adapted virtual spatial transcriptomics links histology-derived molecular programs to experimental renal injury and human clinical and histologic phenotypes. Our approach enables spatial molecular analyses in routine biopsy histology, which could help decipher disease-associated pathways in existing biopsy archives. Translational StatementSpatial molecular profiling of kidney biopsies is informative but too costly for routine use, whereas hematoxylin and eosin sections exist for nearly every biopsy. We show that a model adapted to paired kidney histology and spatial transcriptomics infers programs of tubular injury, metabolic differentiation, and fibrosis from routine histology, and that these programs track kidney function and pathology across 476 participants. Applied to existing archives, virtual spatial transcriptomics could stratify heterogeneous patients by tissue molecular state, prioritize biopsies for targeted assays, and support biomarker discovery and trial enrichment once validated prospectively.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-11-19",
+    "updated": "2026-11-19",
+    "primary_category": "nephrology",
+    "categories": [
+      "nephrology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368273v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368273v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "Kidney-adapted AI predicted spatial gene expression from routine histology, linking tissue features to injury, repair and fibrosis programs.",
+      "clinical_relevance": "This research could extend molecular characterization to archived kidney biopsies, but does not establish a clinical diagnostic or treatment-selection tool.",
+      "method": [
+        "Adapted DeepSpot-M using paired histology and Visium data from 209 KPMP participants.",
+        "Evaluated predictions in held-out human biopsies and 567 rats with defined nephrotoxin exposures.",
+        "Generated 5.46 million virtual spots from 1,534 slides of 476 additional KPMP participants."
+      ],
+      "evidence_signal": "Mean gene-expression correlation improved from 0.22 to 0.43 for each model’s 1,000 best-predicted genes; predictions preserved all 13 disease-marker directions and all 11 measured eGFR associations.",
+      "watch_item": "Predicted expression is not a direct molecular measurement; generalizability and clinical utility require further validation, and this study concerns kidney disease rather than cancer drug discovery.",
+      "hashtags": [
+        "#SpatialTranscriptomics",
+        "#KidneyResearch",
+        "#DigitalPathology",
+        "#ArtificialIntelligence",
+        "#TargetBiology"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-19-medrxiv-virtual_spatial_transcriptomics_links_kidney_histopathology_to_disease_associated_molecula",
+      "paper_title": "Virtual spatial transcriptomics links kidney histopathology to disease-associated molecular programs",
+      "paper_date": "2026-11-19",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-11-25T17:44:20",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-19-medrxiv-clindatabench_benchmarking_large_language_model_agents_in_clinical_trial_analysis_dataset",
+    "doi": "10.64898/2026.11.17.26368316",
+    "date": "2026-11-19",
+    "title": "ClinDataBench: Benchmarking Large Language Model Agents in Clinical Trial Analysis Dataset Construction",
+    "authors": "Li, Z.; Luo, Y.; Feng, Y.; Xu, J.",
+    "abstract": "A new drug reaches patients only after the U.S. Food and Drug Administration (FDA) has reviewed its trial evidence, which every application carries as analysis datasets in the Clinical Data Interchange Standards Consortium (CDISC) Analysis Data Model (ADaM) format that programmers derive by hand from raw trial data, a statistical analysis plan (SAP) and dataset specifications. Coding agents built on large language models (LLMs) could take over this work, and a slow-changing industry will adopt them only with evidence of what they get right and wrong. However, work on large language models (LLMs) for CDISC data stops short of evaluating a complete, conformant and reproducible package, and the standard validator checks structure rather than whether each value is derived correctly. We introduce ClinDataBench, built on the public CDISC pilot study: an agent receives 22 Study Data Tabulation Model (SDTM) domains, the statistical analysis plan (SAP) and specifications, and must deliver 13 Analysis Data Model (ADaM) datasets, Define-XML metadata and a program that rebuilds them offline. Agents run in containers whose only network route is their model API, restricting online access to published reference outputs during execution. A host-only evaluator scores conformance under the Pinnacle 21 Community (P21) validator, selected derivations, clean reconstruction and effort separately. We compare three settings: Base, which submits the agents first package; Self-Refine, which revises it without external validation feedback; and CRITIC, which revises it with the agents own validator report. In an exploratory pilot with six models, the three closed models and DeepSeek delivered all 13 datasets in every setting and eleven of their twelve packages rebuilt semantically, while two other open-weight models delivered no complete package. Validator findings ranged from 15 to 64 dataset-rule pairs. Four of six CRITIC workflows had usable validator comparisons, and each reduced its finding count. None reduced its failed derivation count. The package with the fewest findings carried none of the 234 efficacy summary records in the form the specifications define, showing that lower validator finding counts do not necessarily indicate more correct derivations.",
+    "category": "Therapeutic Discovery",
+    "source": "medRxiv",
+    "published": "2026-11-19",
+    "updated": "2026-11-19",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368316v1.full.pdf"
+      }
+    ],
+    "score": 47,
+    "infographic": {
+      "key_insight": "ClinDataBench shows that LLM agents can construct clinical trial analysis datasets, but fewer validator findings do not guarantee correct data derivations.",
+      "clinical_relevance": "This work could support more reliable preparation of regulatory trial evidence; it does not evaluate cancer treatments or discover new drugs.",
+      "method": [
+        "Agents transform 22 public CDISC pilot study domains, an analysis plan and specifications into 13 ADaM datasets, Define-XML metadata and offline rebuild code.",
+        "A host-only evaluator separately measures standards conformance, selected derivations, reproducibility and effort.",
+        "Compare initial submissions, self-refinement and revision using agents’ own validator reports."
+      ],
+      "evidence_signal": "In an exploratory six-model pilot, all four CRITIC workflows with usable validator comparisons reduced findings, but none reduced failed derivations.",
+      "watch_item": "Structural validation cannot establish analytical correctness: the package with the fewest findings lacked all 234 efficacy summary records in the specified form.",
+      "hashtags": [
+        "#ClinDataBench",
+        "#ClinicalTrials",
+        "#LLMAgents",
+        "#CDISC",
+        "#DataValidation"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-19-medrxiv-clindatabench_benchmarking_large_language_model_agents_in_clinical_trial_analysis_dataset",
+      "paper_title": "ClinDataBench: Benchmarking Large Language Model Agents in Clinical Trial Analysis Dataset Construction",
+      "paper_date": "2026-11-19",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-11-25T17:44:22",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-19-medrxiv-an_llm_assisted_pipeline_for_identifying_clinicaltrials_gov_registry_changes_and_their_ass",
+    "doi": "10.64898/2026.11.17.26368319",
+    "date": "2026-11-19",
+    "title": "An LLM-assisted Pipeline for Identifying ClinicalTrials.gov Registry Changes and Their Association with Primary Endpoint Positivity",
+    "authors": "Purevdorj, A.; Dennstaedt, F.; Zwahlen, D. R.; Windisch, P.",
+    "abstract": "Registration of randomized clinical trials (RCTs) in a public registry such as ClinicalTrials.gov should minimize the risk of reporting bias. However, records may be modified during a trial and the resulting discrepancies are not always apparent without a detailed examination of all version histories, a process that is cumbersome when performed manually. We developed an automated workflow to investigate whether specific changes to RCT registry entries are associated with primary endpoint positivity. Our pipeline extracts RCT records from ClinicalTrials.gov and systematically detects changes between successive versions using a combination of deterministic textual analysis and large language model (LLM)-assisted classification. We could show a positive association between trial positivity and changes to primary outcomes (OR 1.91; 95% CI 1.48-2.47) as well as to arms and interventions (OR 2.10; 95% CI 1.62-2.73). Associations were weaker when changes occurred exclusively before the primary completion date, pointing to the importance of timing in evaluating potentially consequential modifications to RCT design. Our automated pipeline can enable analysis of trial registration records at scale, facilitating the work of reviewers and meta-scientists to promote research integrity.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-11-19",
+    "updated": "2026-11-19",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368319v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368319v1.full.pdf"
+      }
+    ],
+    "score": 45,
+    "infographic": {
+      "key_insight": "An LLM-assisted registry analysis found that changes to trial primary outcomes and arms/interventions were associated with higher odds of primary endpoint positivity.",
+      "clinical_relevance": "This research-integrity tool could help reviewers assess trial-reporting transparency; it does not evaluate cancer drugs or guide treatment.",
+      "method": [
+        "Extract randomized trial records and version histories from ClinicalTrials.gov.",
+        "Detect registry changes using deterministic text analysis and LLM-assisted classification.",
+        "Assess associations between registry changes, their timing, and primary endpoint positivity."
+      ],
+      "evidence_signal": "Primary outcome changes were associated with positivity (OR 1.91; 95% CI 1.48–2.47), as were arms/intervention changes (OR 2.10; 95% CI 1.62–2.73); associations were weaker for changes occurring exclusively before primary completion.",
+      "watch_item": "These associations do not establish causation or misconduct, and the abstract does not report LLM classification accuracy.",
+      "hashtags": [
+        "#ClinicalTrials",
+        "#ResearchIntegrity",
+        "#LargeLanguageModels",
+        "#TrialTransparency",
+        "#MetaResearch"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-19-medrxiv-an_llm_assisted_pipeline_for_identifying_clinicaltrials_gov_registry_changes_and_their_ass",
+      "paper_title": "An LLM-assisted Pipeline for Identifying ClinicalTrials.gov Registry Changes and Their Association with Primary Endpoint Positivity",
+      "paper_date": "2026-11-19",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-11-25T17:44:24",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-19-medrxiv-prospective_prediction_of_clinical_trial_outcomes_from_public_evidence",
+    "doi": "10.64898/2026.11.17.26368242",
+    "date": "2026-11-19",
+    "title": "Prospective prediction of clinical trial outcomes from public evidence",
+    "authors": "Xu, J.; Zhang, W.; Yuan, Y.; Wu, C.",
+    "abstract": "Predicting clinical trial outcomes requires interpreting biological and clinical evidence in the context of a specific intervention, population and study design. Here we test whether a general-purpose large language model (LLM) can predict trial outcomes from publicly available evidence. We introduce TrialDossier, which assembles standardized evidence dossiers, and TrialOutlook, which uses these dossiers with GPT-5 to estimate the probability that a trial meets its prespecified primary endpoint. Among 694 ongoing trials with results expected within six months of cohort assembly, 69 outcomes first disclosed after forecast recording had been adjudicated by 20 October 2026. TrialOutlook achieved an area under the receiver operating characteristic curve of 0.819 (95% confidence interval, 0.708-0.914) and an average precision of 0.860. TrialOutlook correctly identified 27 of 29 failures (93.1%) and incorrectly classified 17 of 40 successes as failures. We further recorded forecasts for 5,809 ongoing trials associated with US-listed companies and established a public benchmark linking archived evidence and fixed forecasts to adjudicated outcomes as they become available.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-11-19",
+    "updated": "2026-11-19",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368242v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26368242v1.full.pdf"
+      }
+    ],
+    "score": 44,
+    "infographic": {
+      "key_insight": "TrialOutlook used public evidence and GPT-5 to predict whether clinical trials would meet their primary endpoints, rather than discover cancer drugs.",
+      "clinical_relevance": "The approach may support clinical research prioritization, but it does not establish treatment efficacy or guide individual patient care.",
+      "method": [
+        "TrialDossier assembles standardized dossiers from publicly available evidence.",
+        "TrialOutlook uses GPT-5 to estimate each trial’s probability of meeting its prespecified primary endpoint.",
+        "Archived evidence and fixed forecasts are linked to subsequently adjudicated outcomes."
+      ],
+      "evidence_signal": "Among 69 adjudicated outcomes from 694 ongoing trials, AUROC was 0.819 (95% CI, 0.708–0.914) and average precision was 0.860; 27 of 29 failures were identified, while 17 of 40 successes were incorrectly classified as failures.",
+      "watch_item": "Only 69 outcomes were adjudicated, so performance needs confirmation as more results emerge; the abstract does not establish cancer-specific performance.",
+      "hashtags": [
+        "#ClinicalTrialPrediction",
+        "#ArtificialIntelligence",
+        "#ClinicalTranslation",
+        "#ProspectiveValidation",
+        "#EvidenceSynthesis"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-19-medrxiv-prospective_prediction_of_clinical_trial_outcomes_from_public_evidence",
+      "paper_title": "Prospective prediction of clinical trial outcomes from public evidence",
+      "paper_date": "2026-11-19",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-11-25T17:44:26",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-19-medrxiv-adsmoe_a_mixture_of_experts_based_transformer_autoencoder_for_discovering_multimodal_alzhe",
+    "doi": "10.64898/2026.11.16.26368224",
+    "date": "2026-11-19",
+    "title": "ADSMoE: A mixture-of-experts-based transformer autoencoder for discovering multimodal Alzheimer's disease subtypes",
+    "authors": "Meng, W.; Pan, J.; Yin, M.; Zhuang, P.; Gong, K.; Lin, M.; Xu, J.; Burns, M.; Wu, Y.; Yin, R.",
+    "abstract": "Alzheimers disease (AD) exhibits substantial biological and clinical heterogeneity, posing critical challenges for advancing precision medicine. Existing data-driven approaches often rely on modality-specific clustering or predefined biomarker trajectories, limiting their ability to discover disease subtypes from incomplete, heterogeneous real-world data. In this study, we introduce ADSMoE, a mixture-of-experts (MoE)-based multimodal representation learning framework that jointly identifies AD subtypes as latent disease signatures while accommodating incomplete modality combinations. ADSMoE integrates a Fleximodal MoE encoder that accommodates arbitrary combinations of available modalities with a novel subtype-specific MoE decoder to capture complementary disease characteristics through expert specialization. Using data from 5,422 participants across three independent cohorts, we trained ADSMoE on the ADNI cohort and externally validated the identified subtypes in NACC and UKB without model retraining. The proposed ADSMoE identified four AD subtypes with distinct neuroimaging patterns, genetic and proteomic associations, and clinical characteristics. Benchmarking analyses demonstrated robust subtype discovery and strong biological and clinical relevance, while external validation revealed consistent subtype-associated characteristics across independent cohorts. ADSMoE advances AD subtyping by uncovering biologically and clinically meaningful AD heterogeneity from incomplete multimodal data, providing a scalable framework for disease stratification, biomarker discovery, and future precision medicine applications in AD.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-11-19",
+    "updated": "2026-11-19",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.16.26368224v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.16.26368224v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "ADSMoE identified four Alzheimer's disease subtypes with distinct biological and clinical characteristics by learning from incomplete multimodal data.",
+      "clinical_relevance": "The findings may support future Alzheimer's disease stratification and biomarker discovery, but do not establish clinical utility or treatment guidance.",
+      "method": [
+        "Uses a mixture-of-experts transformer autoencoder to learn multimodal disease signatures.",
+        "A flexible encoder accommodates varying combinations of available modalities.",
+        "A subtype-specific decoder captures complementary disease characteristics through expert specialization."
+      ],
+      "evidence_signal": "Across 5,422 participants in three cohorts, ADSMoE was trained on ADNI and externally validated in NACC and UKB without retraining, with consistent subtype-associated characteristics reported.",
+      "watch_item": "The abstract does not report quantitative validation metrics or demonstrate that subtype assignment improves clinical decisions.",
+      "hashtags": [
+        "#AlzheimersResearch",
+        "#MultimodalAI",
+        "#MixtureOfExperts",
+        "#DiseaseSubtyping",
+        "#BiomarkerDiscovery"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-19-medrxiv-adsmoe_a_mixture_of_experts_based_transformer_autoencoder_for_discovering_multimodal_alzhe",
+      "paper_title": "ADSMoE: A mixture-of-experts-based transformer autoencoder for discovering multimodal Alzheimer's disease subtypes",
+      "paper_date": "2026-11-19",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-11-25T17:44:28",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-19-medrxiv-patient_expressed_needs_burdens_and_barriers_in_taiwanese_online_health_discussions_a_taiw",
+    "doi": "10.64898/2026.11.17.26365957",
+    "date": "2026-11-19",
+    "title": "Patient-Expressed Needs, Burdens and Barriers in Taiwanese Online Health Discussions: A Taiwan-Contextualized Friction Framework Applied With Large Language Model-Based Social Listening",
+    "authors": "Liu, Z.-Y.; Chieh, T.; Kuo, C.-F.",
+    "abstract": "BackgroundPatients difficulties with illness and care (not understanding a result, distress, daily restrictions, not knowing where to go, family strain) may not surface in clinical encounters or records. Regulatory guidance on patient-focused drug development recognizes social-media listening as a source of patient experience data, but no systematic framework exists for Traditional Chinese discussions in Taiwan, and keyword pipelines measure such content poorly. ObjectiveTo characterize patient-expressed needs, burdens and barriers (\"frictions\") in Taiwanese online health discussions with an eight-domain, Taiwan-contextualized framework, identify whose frictions they are, and assess how securely each is measured. MethodsFrom a 13.6-million-unit archive of the PTT forum and three ask-a-physician services, seeded samples of 9,131 pipeline-flagged units and 1,000 unflagged forum articles (10,130 distinct units) were read in full by a large language model under rubrics for relevance, author (patient or family member) and eight domains: information gap, emotional burden, lifestyle burden, medication experience, system navigation, access barrier, caregiver burden and cost burden. Profiles were reported separately for forum articles and physician submissions and checked against a second vendor, two physicians independent labels of 160 accepted and rejected units, and the archives keyword pipeline. ResultsAmong 2,395 model-confirmed forum articles, 83.1% voiced at least one friction: information gap 59.5% (physicians 86%-93%), emotional burden 39.0%, medication experience 24.1%, lifestyle burden 22.2% and system navigation 16.3%; access barrier, caregiver burden and cost burden were each below 7%. Of 3,105 submissions, nearly all were questions and 53.8% also carried a burden. Navigation rarely concerned insurance (9.1%). Family-authored forum articles (14.5%) more often voiced emotional burden (54.9% vs 36.3%), navigation (34.8% vs 13.2%; instrument-dependent) and access barriers (16.4% vs 4.7%), and patient-authored articles lifestyle burden (24.8% vs 6.9%); caregiver burden came with emotional burden in 86.0% of articles voicing it. Emotional and lifestyle burden were commoner in forum articles than submissions under the model, a second vendor and both physicians; medication experience and navigation were instrument-dependent, and physicians disagreed on cost (32% vs 4%). The keyword pipeline had stored its information-gap output for 29.9% of model-confirmed reference-stratum units and over-counted insurance navigation 2.9-fold; its relevance flag was 50.5% precise for forum articles and reached an estimated 42.9% of patient-voice articles. ConclusionsSystematic listening organized Taiwanese patients and families online accounts into eight clinically interpretable friction domains, led by the need to understand and by emotional burden, with family-authored posts more often voicing navigation and access difficulty. These expressed concerns may not surface in routine encounters; they identify candidate targets for patient-centred communication and services, which require evaluation. Some domain levels depended on the reader, and keyword pipelines missed or distorted them, so such work needs full-text reading, explicit definitions and clinician checks.",
+    "category": "Therapeutic Discovery",
+    "source": "medRxiv",
+    "published": "2026-11-19",
+    "updated": "2026-11-19",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26365957v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.17.26365957v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "LLM-based analysis of Taiwanese online health discussions found patient-expressed frictions in 83.1% of confirmed forum articles, most commonly information gaps and emotional burden.",
+      "clinical_relevance": "The findings may inform patient-centered communication and support priorities; this study did not evaluate cancer drug discovery or treatment outcomes.",
+      "method": [
+        "Applied an eight-domain, Taiwan-contextualized friction framework to Traditional Chinese health discussions.",
+        "Used an LLM to assess relevance, patient or family authorship, and expressed needs across 10,130 distinct sampled units.",
+        "Checked results against a second vendor, two physicians’ independent labels, and a keyword pipeline."
+      ],
+      "evidence_signal": "Among 2,395 model-confirmed forum articles, 59.5% expressed information gaps and 39.0% emotional burden; physician review covered 160 accepted and rejected units.",
+      "watch_item": "Online, pipeline-seeded samples may not represent all patients, and some findings were instrument-dependent; the supplied abstract is truncated.",
+      "hashtags": [
+        "#PatientExperience",
+        "#SocialListening",
+        "#LargeLanguageModels",
+        "#TaiwanHealth",
+        "#PatientCenteredResearch"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-19-medrxiv-patient_expressed_needs_burdens_and_barriers_in_taiwanese_online_health_discussions_a_taiw",
+      "paper_title": "Patient-Expressed Needs, Burdens and Barriers in Taiwanese Online Health Discussions: A Taiwan-Contextualized Friction Framework Applied With Large Language Model-Based Social Listening",
+      "paper_date": "2026-11-19",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-11-25T17:44:30",
+      "generator": "openai"
+    }
+  }
+]

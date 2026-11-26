@@ -1,6 +1,6 @@
 # AI Medicine Progress Public Resources
 
-Generated: 2026-11-25
+Generated: 2026-11-26
 Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 
 ## 1. LCatlas: A Point-Of-Care Tool for Predicting Immunotherapy Outcomes in Non-Small Cell Lung Cancer
@@ -11,50 +11,42 @@ Public site: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/
 - PDF: https://www.medrxiv.org/content/10.64898/2026.11.18.26368446v1.full.pdf
 - Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-20-medrxiv-lcatlas_a_point_of_care_tool_for_predicting_immunotherapy_outcomes_in_non_small_cell_lung_infographic.json
 
-## 2. Virtual spatial transcriptomics links kidney histopathology to disease-associated molecular programs
+## 2. The ITE-Transformer: A pre-trained foundation model for predicting individualized treatment effects from electronic health records
 
-- Date: 2026-11-19
+- Date: 2026-11-20
+- Category: Precision Oncology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.19.26368479v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.19.26368479v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-20-medrxiv-the_ite_transformer_a_pre_trained_foundation_model_for_predicting_individualized_treatment_infographic.json
+
+## 3. Evaluation of Semaphorin 3G (SEMA3G) as a biofluid biomarker of cerebral amyloid angiopathy: evidence from neurodegenerative disease and memory clinic cohorts
+
+- Date: 2026-11-20
 - Category: Target Biology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.17.26368273v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.17.26368273v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-19-medrxiv-virtual_spatial_transcriptomics_links_kidney_histopathology_to_disease_associated_molecula_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.18.26368450v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.18.26368450v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-20-medrxiv-evaluation_of_semaphorin_3g_sema3g_as_a_biofluid_biomarker_of_cerebral_amyloid_angiopathy_infographic.json
 
-## 3. ClinDataBench: Benchmarking Large Language Model Agents in Clinical Trial Analysis Dataset Construction
+## 4. Beyond Consensus: Human Ground Truth, Expert Disagreement, and Clinical Relevance in Pathology AI
 
-- Date: 2026-11-19
-- Category: Therapeutic Discovery
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.17.26368316v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.17.26368316v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-19-medrxiv-clindatabench_benchmarking_large_language_model_agents_in_clinical_trial_analysis_dataset_infographic.json
-
-## 4. An LLM-assisted Pipeline for Identifying ClinicalTrials.gov Registry Changes and Their Association with Primary Endpoint Positivity
-
-- Date: 2026-11-19
+- Date: 2026-11-20
 - Category: Clinical Translation
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.17.26368319v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.17.26368319v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-19-medrxiv-an_llm_assisted_pipeline_for_identifying_clinicaltrials_gov_registry_changes_and_their_ass_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.18.26368395v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.18.26368395v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-20-medrxiv-beyond_consensus_human_ground_truth_expert_disagreement_and_clinical_relevance_in_patholog_infographic.json
 
-## 5. Prospective prediction of clinical trial outcomes from public evidence
+## 5. Circulating gelsolin tracks disease stage in amyotrophic lateral sclerosis across four cohorts
 
-- Date: 2026-11-19
-- Category: Clinical Translation
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.17.26368242v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.17.26368242v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-19-medrxiv-prospective_prediction_of_clinical_trial_outcomes_from_public_evidence_infographic.json
-
-## 6. ADSMoE: A mixture-of-experts-based transformer autoencoder for discovering multimodal Alzheimer's disease subtypes
-
-- Date: 2026-11-19
+- Date: 2026-11-20
 - Category: Target Biology
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.16.26368224v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.16.26368224v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-19-medrxiv-adsmoe_a_mixture_of_experts_based_transformer_autoencoder_for_discovering_multimodal_alzhe_infographic.json
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.18.26368465v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.18.26368465v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-20-medrxiv-circulating_gelsolin_tracks_disease_stage_in_amyotrophic_lateral_sclerosis_across_four_coh_infographic.json
 
-## 7. Patient-Expressed Needs, Burdens and Barriers in Taiwanese Online Health Discussions: A Taiwan-Contextualized Friction Framework Applied With Large Language Model-Based Social Listening
+## 6. Discovery and Cross-Omic Replication of a Candidate Plasma Proteomic Signature for Anti-TNF Response in Crohn's Disease
 
-- Date: 2026-11-19
-- Category: Therapeutic Discovery
-- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.17.26365957v1
-- PDF: https://www.medrxiv.org/content/10.64898/2026.11.17.26365957v1.full.pdf
-- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-19-medrxiv-patient_expressed_needs_burdens_and_barriers_in_taiwanese_online_health_discussions_a_taiw_infographic.json
+- Date: 2026-11-20
+- Category: Target Biology
+- Source: medRxiv - https://www.medrxiv.org/content/10.64898/2026.11.18.26368439v1
+- PDF: https://www.medrxiv.org/content/10.64898/2026.11.18.26368439v1.full.pdf
+- Infographic JSON: https://dutoaa.github.io/ai-cancer-drug-discovery-progress/infographics/2026-11-20-medrxiv-discovery_and_cross_omic_replication_of_a_candidate_plasma_proteomic_signature_for_anti_tn_infographic.json

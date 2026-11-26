@@ -1,19 +1,19 @@
 {
-  "key_insight": "LCatlas is a web-based tool that uses routinely available patient data to predict first-line immunotherapy outcomes in non-small cell lung cancer, rather than discover new drugs.",
-  "clinical_relevance": "The tool could support research-informed assessment of immunotherapy outcomes, but its reported performance does not establish readiness to guide treatment decisions.",
+  "key_insight": "LCatlas is a web-based tool that uses routine patient data to predict first-line immunotherapy outcomes in non-small cell lung cancer, rather than discover new drugs.",
+  "clinical_relevance": "The tool could support research-informed treatment discussions about immunotherapy alone or with chemotherapy, but clinical utility remains to be established.",
   "method": [
-    "Used demographic, clinical, and molecular data from 79 patients receiving first-line immunotherapy.",
-    "Compared logistic regression, XGBoost, and TabTransformer prediction approaches.",
-    "Accepts nine reported input categories to predict outcomes with immunotherapy alone or combined with chemotherapy."
+    "Extracted demographic, clinical, and molecular features from records of 79 patients.",
+    "Compared logistic regression, XGBoost, and TabTransformer models.",
+    "Used nine input categories, including metastatic sites, PD-L1 staining, and routine blood measurements."
   ],
-  "evidence_signal": "The abstract reports cross-validation AUC of 0.79 (0.72–0.85), sensitivity of 87%, specificity of 78%, and 82% accuracy in a 28-person validation cohort.",
-  "watch_item": "Small development and validation cohorts limit confidence in generalizability; larger prospective evaluations are needed before clinical implementation.",
+  "evidence_signal": "Reported cross-validation AUC was 0.79 [0.72–0.85], with 87% sensitivity and 78% specificity; accuracy was 82% in a separate 28-person validation cohort.",
+  "watch_item": "Small development and validation cohorts limit confidence in generalizability; broader prospective validation is needed before routine clinical use.",
   "hashtags": [
+    "#PrecisionOncology",
     "#NSCLC",
     "#Immunotherapy",
-    "#PrecisionOncology",
     "#MachineLearning",
-    "#OutcomePrediction"
+    "#ClinicalPrediction"
   ],
   "model": "gpt-6.1-sol",
   "service_tier": "ultrafast",
@@ -21,6 +21,6 @@
   "paper_title": "LCatlas: A Point-Of-Care Tool for Predicting Immunotherapy Outcomes in Non-Small Cell Lung Cancer",
   "paper_date": "2026-11-20",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-11-25T17:44:17",
+  "generated_at": "2026-11-26T17:27:58",
   "generator": "openai"
 }
