@@ -1,0 +1,320 @@
+[
+  {
+    "id": "2026-11-20-medrxiv-lcatlas_a_point_of_care_tool_for_predicting_immunotherapy_outcomes_in_non_small_cell_lung",
+    "doi": "10.64898/2026.11.18.26368446",
+    "date": "2026-11-20",
+    "title": "LCatlas: A Point-Of-Care Tool for Predicting Immunotherapy Outcomes in Non-Small Cell Lung Cancer",
+    "authors": "Park, S. Y.; Leyba, A.; Yeung, W.; Hsu, R. C.; Nieva, J.; Lee, H. Y.",
+    "abstract": "Non-small cell lung cancer (NSCLC) remains a leading cause of cancer mortality, with a minority of patients experiencing durable responses to first-line immune checkpoint inhibitors (ICIs). Currently, there are no easily accessible tools to predict clinical benefit to first-line immunotherapy. To address this gap, we developed LCatlas (https://www.lcatlas.org), a point-of-care web application designed to predict immunotherapy outcomes and inform evidence-based treatment decisions. Using data from 79 NSCLC patients receiving first-line immunotherapy, we extracted demographic, clinical, and molecular features from electronic medical records and compared three independent approaches-statistical model (logistic regression), machine learning (XGboost), and AI model (TabTransformer) to identify the most effective predictor. LCatlas accepts nine variables--gender, smoking history, bone/pleura/liver metastasis, PD-L1 tumor staining, albumin level, hemoglobin level, lymphocyte count, neutrophil count, and platelet count-to predict responses to both immunotherapy and immunotherapy plus chemotherapy. LCatlas cross-validation yielded an area under the curve (AUC) of 79% [72% - 85%], with sensitivity of 87% [72% - 95%] and specificity of 78% [64% - 89%], outperforming previous studies including high-volume data-driven deep-learning approaches. In a validation cohort consisting of 28 individuals, it demonstrated a prediction accuracy of 82%. LCatlas may serve as a valuable point-of-care tool by identifying patients likely to experience extended immunotherapy or combination therapy using readily available medical data. Its evidence-based approach can optimize personalized treatment planning and thereby promote quality and safety of care.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-11-20",
+    "updated": "2026-11-20",
+    "primary_category": "oncology",
+    "categories": [
+      "oncology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.18.26368446v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.18.26368446v1.full.pdf"
+      }
+    ],
+    "score": 79,
+    "infographic": {
+      "key_insight": "LCatlas is a web-based tool that uses routine patient data to predict first-line immunotherapy outcomes in non-small cell lung cancer, rather than discover new drugs.",
+      "clinical_relevance": "The tool could support research-informed treatment discussions about immunotherapy alone or with chemotherapy, but clinical utility remains to be established.",
+      "method": [
+        "Extracted demographic, clinical, and molecular features from records of 79 patients.",
+        "Compared logistic regression, XGBoost, and TabTransformer models.",
+        "Used nine input categories, including metastatic sites, PD-L1 staining, and routine blood measurements."
+      ],
+      "evidence_signal": "Reported cross-validation AUC was 0.79 [0.72–0.85], with 87% sensitivity and 78% specificity; accuracy was 82% in a separate 28-person validation cohort.",
+      "watch_item": "Small development and validation cohorts limit confidence in generalizability; broader prospective validation is needed before routine clinical use.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#NSCLC",
+        "#Immunotherapy",
+        "#MachineLearning",
+        "#ClinicalPrediction"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-20-medrxiv-lcatlas_a_point_of_care_tool_for_predicting_immunotherapy_outcomes_in_non_small_cell_lung",
+      "paper_title": "LCatlas: A Point-Of-Care Tool for Predicting Immunotherapy Outcomes in Non-Small Cell Lung Cancer",
+      "paper_date": "2026-11-20",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-11-26T17:27:58",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-20-medrxiv-the_ite_transformer_a_pre_trained_foundation_model_for_predicting_individualized_treatment",
+    "doi": "10.64898/2026.11.19.26368479",
+    "date": "2026-11-20",
+    "title": "The ITE-Transformer: A pre-trained foundation model for predicting individualized treatment effects from electronic health records",
+    "authors": "Arceri, C.; Angelis, E.; Heesen, P.; Melnychuk, V.; Bendszus, M.; Bauer, S.; Feuerriegel, S.",
+    "abstract": "Transformer-based foundation models have shown strong potential for modeling longitudinal electronic health records (EHRs), yet existing models focus primarily on risk prediction rather than treatment effect estimation, which limits evidence generation. Here, we introduce the ITE-Transformer, a transformer-based framework that combines self-supervised representation learning from longitudinal patient trajectories with doubly robust causal machine learning for predicting individualized treatment effects (ITEs). As a result, our ITE-Transformer allows to study counterfactual questions of how an individual patients outcome may differ under alternative treatment strategies. The ITE-Transformer learns temporally contextualized representations of patients diagnosis and medication histories and subsequently uses these representations to predict treatment assignment, treatment-specific outcome risks, and patient-specific ITEs. The ITE-Transformer is trained using structured EHR data from[~] 350,000 participants in the All of Us Research Program and evaluated in two clinically different comparative-effectiveness tasks: (i) GLP-1 receptor agonists versus DPP-4 inhibitors among patients with type 2 diabetes, with major adverse cardiovascular events as the outcome, and (ii) immunotherapy versus chemotherapy in a pan-cancer cohort, with all-cause mortality as the outcome. Across both applications, the ITE-Transformer improves the discrimination and calibration of treatment assignment and outcome models compared with existing tabular machine learning approaches and an otherwise identical transformer trained without self-supervised pre-training. The ITE-Transformer further identifies substantial heterogeneity in predicted ITEs and yields interpretable patterns of treatment response associated with patients diagnoses, medication histories, and comorbidities. Together, our work demonstrates how clinical foundation models can be developed for analyzing heterogeneity in treatment effects and thus support real-world evidence generation.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-11-20",
+    "updated": "2026-11-20",
+    "primary_category": "health informatics",
+    "categories": [
+      "health informatics"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.19.26368479v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.19.26368479v1.full.pdf"
+      }
+    ],
+    "score": 69,
+    "infographic": {
+      "key_insight": "The ITE-Transformer combines pre-trained EHR representations with causal machine learning to estimate how treatment effects may vary across individual patients.",
+      "clinical_relevance": "In oncology, the model could support real-world research comparing immunotherapy with chemotherapy, rather than discovering new drugs or establishing treatment recommendations.",
+      "method": [
+        "Self-supervised pre-training on longitudinal diagnosis and medication histories.",
+        "Prediction of treatment assignment and treatment-specific outcome risks.",
+        "Doubly robust causal learning to estimate individualized treatment effects."
+      ],
+      "evidence_signal": "Trained on structured EHRs from approximately 350,000 All of Us participants, the model improved treatment-assignment and outcome-model discrimination and calibration versus tabular models and a non-pre-trained transformer across diabetes and pan-cancer comparisons.",
+      "watch_item": "Observational EHR estimates remain vulnerable to unmeasured confounding, and better predictive performance does not establish accurate individual causal effects.",
+      "hashtags": [
+        "#PrecisionOncology",
+        "#CausalMachineLearning",
+        "#ClinicalFoundationModels",
+        "#RealWorldEvidence",
+        "#TreatmentEffectHeterogeneity"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-20-medrxiv-the_ite_transformer_a_pre_trained_foundation_model_for_predicting_individualized_treatment",
+      "paper_title": "The ITE-Transformer: A pre-trained foundation model for predicting individualized treatment effects from electronic health records",
+      "paper_date": "2026-11-20",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-11-26T17:28:00",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-20-medrxiv-evaluation_of_semaphorin_3g_sema3g_as_a_biofluid_biomarker_of_cerebral_amyloid_angiopathy",
+    "doi": "10.64898/2026.11.18.26368450",
+    "date": "2026-11-20",
+    "title": "Evaluation of Semaphorin 3G (SEMA3G) as a biofluid biomarker of cerebral amyloid angiopathy: evidence from neurodegenerative disease and memory clinic cohorts",
+    "authors": "Michaelian, J. C.; Shi, L.; Barnett, M.; Wang, D.; Wang, C.; Naismith, S. L.; Drummond, E.",
+    "abstract": "IntroductionCerebral amyloid angiopathy (CAA) is characterised by amyloid-beta (A{beta}) deposition in cerebral vessels, and frequently co-occurs with Alzheimers disease (AD). Diagnosis based on MRI-based Boston criteria is not definitive, and CAA biofluid biomarkers are needed. Semaphorin 3G (SEMA3G) was recently shown to be selectively enriched in CAA-affected vessels, and correlated with CAA severity. We therefore evaluated SEMA3G as a biofluid biomarker of CAA. MethodsSEMA3G profiles were examined across diagnoses in the Global Neurodegeneration Proteomics Consortium dataset (GNPC) in cerebrospinal fluid (CSF) (N=1982) and plasma (N=6917). SEMA3G was then evaluated in the Healthy Brain Ageing (HBA) memory clinic cohort (N=161) with 3T MRI, where lobar cerebral microbleed burden was used as a proxy for CAA likelihood, with participants grouped by microbleed count (0, 1-2, or [&ge;]3). ResultsCSF and plasma SEMA3G were significantly lower in AD and frontotemporal dementia (FTD) compared to cognitively unimpaired controls in GNPC, and were associated with hypertension. Longitudinally, plasma SEMA3G declined significantly over time in mild cognitive impairment (MCI) and AD. In the HBA cohort, plasma SEMA3G did not differ by cerebral microbleed burden on MRI, nor correlate with plasma A{beta} isoforms and white matter hyperintensities. DiscussionAlthough CSF and plasma SEMA3G levels were significantly lower in AD and FTD, plasma SEMA3G was not associated with CAA-associated MRI features in individuals at risk of AD. While these findings do not support plasma SEMA3G for identifying individuals with higher CAA-associated burden, its potential utility warrants further evaluation in genetically susceptible or neuropathologically confirmed CAA cohorts. Research-in-ContextO_LISystematic review: We reviewed the literature using traditional sources (e.g. PubMed). SEMA3G has been shown to be selectively enriched in CAA-affected blood vessels across multiple brain regions and neurodegenerative conditions, but not in amyloid plaques or in CAA-negative blood vessels, highlighting its specificity for CAA. To date, no studies have examined whether SEMA3G is a viable central or peripheral biofluid biomarker of CAA. C_LIO_LIInterpretation: CSF and plasma SEMA3G were consistently lower in AD and FTD, and plasma SEMA3G declined significantly over time in MCI and AD. However, plasma SEMA3G was not associated with features of CAA (lobar cerebral microbleeds, white matter hyperintensities, A{beta}40), suggesting that plasma SEMA3G has limited utility in identifying individuals with higher CAA-associated burden or elevated ARIA risk. C_LIO_LIFuture Directions: Future studies should evaluate SEMA3Gs potential as a biomarker of CAA in genetically-susceptible or neuropathologically confirmed CAA cohorts. C_LI HighlightsO_LIIn the GNPC cohort, CSF and plasma SEMA3G were significantly lower in AD and FTD at baseline, and plasma SEMA3G decreased significantly over time in MCI and AD. C_LIO_LIA cluster of AD cases had particularly high levels of plasma SEMA3G that exceeded all other groups, but the biological cause of this remains unknown. C_LIO_LIIn a memory clinic cohort, plasma SEMA3G did not differ significantly between participants with no (0), low (1-2), or higher ([&ge;]3) cerebral microbleed burden on MRI or correlate with other neuroimaging markers (i.e., white matter hyperintensities) of CAA. C_LIO_LIPlasma SEMA3G levels were inversely correlated with plasma NfL in the higher ([&ge;]3) cerebral microbleed burden group. C_LI",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-11-20",
+    "updated": "2026-11-20",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.18.26368450v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.18.26368450v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "SEMA3G levels were lower in Alzheimer’s disease and frontotemporal dementia, but plasma levels did not distinguish cerebral amyloid angiopathy–associated MRI burden.",
+      "clinical_relevance": "These findings do not support plasma SEMA3G for identifying higher cerebral amyloid angiopathy burden in memory clinic patients.",
+      "method": [
+        "Compared SEMA3G across diagnoses in GNPC cerebrospinal fluid (n=1,982) and plasma (n=6,917) datasets.",
+        "Assessed longitudinal plasma SEMA3G changes in mild cognitive impairment and Alzheimer’s disease.",
+        "Evaluated plasma SEMA3G against MRI lobar microbleed groups (0, 1–2, ≥3) in 161 memory clinic participants."
+      ],
+      "evidence_signal": "Plasma SEMA3G declined over time in mild cognitive impairment and Alzheimer’s disease, but was not associated with microbleed burden, white matter hyperintensities, or plasma amyloid-beta isoforms in the memory clinic cohort.",
+      "watch_item": "Microbleeds were a proxy for cerebral amyloid angiopathy; validation in genetically susceptible or neuropathologically confirmed cohorts remains needed.",
+      "hashtags": [
+        "#SEMA3G",
+        "#CerebralAmyloidAngiopathy",
+        "#BiomarkerResearch",
+        "#AlzheimersDisease",
+        "#Neurodegeneration"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-20-medrxiv-evaluation_of_semaphorin_3g_sema3g_as_a_biofluid_biomarker_of_cerebral_amyloid_angiopathy",
+      "paper_title": "Evaluation of Semaphorin 3G (SEMA3G) as a biofluid biomarker of cerebral amyloid angiopathy: evidence from neurodegenerative disease and memory clinic cohorts",
+      "paper_date": "2026-11-20",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-11-26T17:28:02",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-20-medrxiv-beyond_consensus_human_ground_truth_expert_disagreement_and_clinical_relevance_in_patholog",
+    "doi": "10.64898/2026.11.18.26368395",
+    "date": "2026-11-20",
+    "title": "Beyond Consensus: Human Ground Truth, Expert Disagreement, and Clinical Relevance in Pathology AI",
+    "authors": "Kawamoto, M.; Lami, K.; Gaia, F.; Ishijima, S.; Sato, S.; Achcar, R. D.; Almutrafi, A. R.; Attanoos, R.; Augustyniak, J.; Beasley, M. B.; Berezowska, S.; Brcic, L.; Cavazza, A.; Chang, W.-C.; Churg, A.; Cooper, W. A.; Fabro, A. T.; Hebisawa, A.; Jiragawasan, C.; Kern, I.; Kitamura, Y.; Konopka, K. E.; Kunugi, S.; Larsen, B. T.; Losmanova, T.; Matsumura, M.; Marchevsky, A.; Munkhdelger, J.; Nascimento, E. C. T. d.; Okudera, K.; Othman, N. B.; Saito-Koyama, R.; Sawazumi, T.; Schneider, F.; Tachibana, Y.; Takano, A.; Tavora, F.; Tsushima, Y.; Wan, L. F.; Wright, J. L.; Yoshimura, M.; Uegami, W.;",
+    "abstract": "Human consensus is often treated as ground truth in clinical artificial intelligence (AI), yet greater agreement does not necessarily ensure greater clinical relevance. We investigated how expert panel size, composition, and consensus formation influence the reproducibility and clinical relevance of reference standards across three independent pathology cohorts evaluated by international expert pathologists: 50 transbronchial lung cryobiopsy cases from patients with interstitial lung disease assessed by 27 pathologists, 95 resected lung adenocarcinomas evaluated by 11 pathologists, and 596 images of pulmonary granulomatous lesions evaluated by 12 pathologists. Larger panels produced more stable collective judgments but did not improve associations with disease progression or survival in the first two cohorts, instead converging toward consensus classifications with weaker outcome associations. Groups of pathologists identified solely by their diagnostic behavior generated consensus classifications with differing clinical relevance. In lung adenocarcinoma, examination of cases graded differently by the all-rater consensus and a distinct pathologist cluster revealed specific morphological patterns potentially contributing to these differences, suggesting that expert disagreement may contain clinically informative signals. In the granuloma cohort, a modified Delphi process increased agreement, with Krippendorffs rising from 0.351 to 0.539, while disease-morphology associations changed only modestly. These findings demonstrate that reproducibility and clinical relevance are distinct properties of expert-derived reference standards. Expert disagreement should therefore not be regarded solely as noise to be eliminated, but also as a potential source of clinically meaningful information. Identifying and independently validating outcome-associated morphological features may enable refinement of existing consensus frameworks, supporting the development of more clinically relevant, task-specific ground truth for pathology AI.",
+    "category": "Clinical Translation",
+    "source": "medRxiv",
+    "published": "2026-11-20",
+    "updated": "2026-11-20",
+    "primary_category": "pathology",
+    "categories": [
+      "pathology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.18.26368395v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.18.26368395v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "In pathology AI, stronger expert consensus can improve reproducibility without improving clinical relevance, while disagreement may preserve informative signals.",
+      "clinical_relevance": "Reference standards for pathology AI should be evaluated for outcome relevance, not agreement alone.",
+      "method": [
+        "Compared expert panel size, composition, and consensus across three pathology cohorts.",
+        "Examined links between consensus classifications and disease progression or survival in two cohorts.",
+        "Evaluated agreement and disease–morphology associations after a modified Delphi process in granuloma images."
+      ],
+      "evidence_signal": "Across 50 lung cryobiopsy cases, 95 lung adenocarcinomas, and 596 granuloma images, larger panels stabilized judgments without improving outcome associations in the first two cohorts; Delphi agreement increased from 0.351 to 0.539 in the third.",
+      "watch_item": "Potentially informative morphological features require independent validation before they can refine AI reference standards.",
+      "hashtags": [
+        "#PathologyAI",
+        "#ClinicalTranslation",
+        "#ExpertDisagreement",
+        "#GroundTruth",
+        "#LungCancerResearch"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-20-medrxiv-beyond_consensus_human_ground_truth_expert_disagreement_and_clinical_relevance_in_patholog",
+      "paper_title": "Beyond Consensus: Human Ground Truth, Expert Disagreement, and Clinical Relevance in Pathology AI",
+      "paper_date": "2026-11-20",
+      "paper_category": "Clinical Translation",
+      "generated_at": "2026-11-26T17:28:04",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-20-medrxiv-circulating_gelsolin_tracks_disease_stage_in_amyotrophic_lateral_sclerosis_across_four_coh",
+    "doi": "10.64898/2026.11.18.26368465",
+    "date": "2026-11-20",
+    "title": "Circulating gelsolin tracks disease stage in amyotrophic lateral sclerosis across four cohorts",
+    "authors": "Strange, A.; Weinreich, M.; Klimovski, H.; Holdom, C.; Daniel, A.; Baidoun, M.; Mahiddine, F.; Wong, K.; Magen, I.; Chen, Y.; Turner, M.; Talbot, K.; Lester, D. G.; Thompson, A. G.; Hornstein, E.; Zhang, S.; Cooper-Knock, J.; Shaw, P. J.",
+    "abstract": "Amyotrophic lateral sclerosis is a fatal neurodegenerative disease with highly variable survival, and blood biomarkers beyond neurofilament light chain (NfL) are needed for prognosis and trial stratification. A biomarker of progress through an individualised disease course may be prognostic but independent of the rate of neurodegeneration. We analysed the serum proteome (5,401 proteins) and plasma and cerebrospinal fluid metabolomes (1,659 metabolites) of 94 patients with amyotrophic lateral sclerosis and 39 controls recruited in Sheffield, UK, and replicated findings in cohorts from Tel Aviv, Oxford and the United States (AnswerALS). We defined \"disease stage\" as the fraction of the onset-to-death interval elapsed at sampling. In contrast we define the rate of neurodegeneration by total survival time or the rate of symptom progression quantified using the D50 model of functional decline. Survival-associated proteins were enriched for stage associations in Sheffield (odds ratio = 5.1) and in the Oxford (2.9), and Tel Aviv (1.6) replication cohorts. Sixty-eight proteins not including NfL tracked stage across four cohorts, implicating systemic inflammation and muscle remodelling; the same biology is tracked by 149 plasma and 58 CSF stage-associated metabolites. Stage-associated proteins that rose with stage also rose with age in UK Biobank (17 of 17 age-associated proteins), and the proteomic age gap rose nominally with disease stage (partial Spearman r = 0.25, P = 0.027; BH-adjusted P = 0.055). Circulating gelsolin (GSN) fell with advancing disease in all four cohorts. NfL tracked disease aggressiveness (standardised {beta} 0.56, P = 1.1 x 10-{superscript 1}) but not stage (0.13, P = 0.056), whereas GSN tracked stage (-0.41, P = 8.4 x 10-) but not the rate of symptom progression (-0.08, P = 0.25). GSN explained 7-10% of the variance between patients in disease stage quantified by survival time and 19% of the variance in stage quantified by functional decline; this is comparable to the variance in the rate of neurodegeneration which is captured by circulating NfL. Accounting for disease stage separates markers of disease rate from markers of disease position, refining both biomarker discovery and biological interpretation in amyotrophic lateral sclerosis (ALS).",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-11-20",
+    "updated": "2026-11-20",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.18.26368465v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.18.26368465v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "In this ALS biomarker study—not AI cancer drug discovery—circulating gelsolin declined with advancing disease stage across four cohorts, distinguishing disease position from progression rate.",
+      "clinical_relevance": "Gelsolin could complement neurofilament light chain in research on prognosis and trial stratification by capturing a different dimension of ALS progression.",
+      "method": [
+        "Profiled 5,401 serum proteins and 1,659 plasma and cerebrospinal fluid metabolites in 94 ALS patients and 39 controls in Sheffield.",
+        "Defined disease stage as the fraction of the onset-to-death interval elapsed at sampling.",
+        "Replicated findings in Tel Aviv, Oxford and US AnswerALS cohorts."
+      ],
+      "evidence_signal": "Gelsolin tracked stage across all four cohorts and explained 7–10% of between-patient stage variance using survival-based staging and 19% using functional-decline-based staging.",
+      "watch_item": "Survival-based staging depends on knowing eventual survival, so prospective usefulness and clinical implementation require further validation.",
+      "hashtags": [
+        "#ALS",
+        "#Gelsolin",
+        "#Biomarkers",
+        "#Proteomics",
+        "#DiseaseStaging"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-20-medrxiv-circulating_gelsolin_tracks_disease_stage_in_amyotrophic_lateral_sclerosis_across_four_coh",
+      "paper_title": "Circulating gelsolin tracks disease stage in amyotrophic lateral sclerosis across four cohorts",
+      "paper_date": "2026-11-20",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-11-26T17:28:06",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-20-medrxiv-discovery_and_cross_omic_replication_of_a_candidate_plasma_proteomic_signature_for_anti_tn",
+    "doi": "10.64898/2026.11.18.26368439",
+    "date": "2026-11-20",
+    "title": "Discovery and Cross-Omic Replication of a Candidate Plasma Proteomic Signature for Anti-TNF Response in Crohn's Disease",
+    "authors": "Ghandikota, S.; Jegga, A. G.; Karns, R.; Hyams, J. S.; Boyle, B.; Noe, J.; Jackson, K.; Lynch, K.; Dillmann, J. R.; Nasr, A.; Aviles, T.; Denson, L. A.; Minar, P.",
+    "abstract": "Background and AimsDespite expanding therapeutic options for Crohns disease (CD), treatment selection remains largely empiric. Identifying biomarkers linking inflammatory endotypes to treatment outcomes could inform first-line therapy selection. We sought to identify baseline plasma proteins associated with clinical, biochemical, and endoscopic outcomes in patients with CD receiving anti-TNF therapy. MethodsIn this prospective multicenter cohort, children and young adults with CD initiating infliximab or adalimumab underwent plasma proteomic profiling at baseline and months 3 and 12 using SomaScan v4.1 (7,322 analytes) with deep remission (clinical and endoscopic) as the primary outcome. Rank-based composite correlation analysis identified candidate proteins associated with prespecified treatment outcomes, followed by functional enrichment analyses. Regularized machine learning models were used to derive and evaluate a candidate protein signature. ResultsIn a cohort of 80 participants, mean age 13.7 (SD 3.5) years, 42.5% female, and 90% White, composite rank analysis identified 73 candidate proteins associated with one or more outcomes. Seven candidate proteins (IFNA6, IGHM, MBL2, UBASH3A, REG1A, GABBR2, and NTS) were retained for evaluation. In an independent adult cohort (n=324), models based on whole-blood expression of the seven corresponding genes achieved mean AUPRCs of 0.71 (baseline) and 0.76 (week 14) for the cohort-defined primary response outcome. ConclusionsPlasma proteomic profiling identified a candidate 7 protein signature associated with anti-TNF treatment outcomes in CD. Cross-omic replication demonstrated consistent outcome-associated signals in an independent cohort. Although orthogonal validation of the protein signature is needed, these findings support the potential of proteomic biomarkers to guide biologically informed treatment selection.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-11-20",
+    "updated": "2026-11-20",
+    "primary_category": "gastroenterology",
+    "categories": [
+      "gastroenterology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.18.26368439v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.18.26368439v1.full.pdf"
+      }
+    ],
+    "score": 41,
+    "infographic": {
+      "key_insight": "A candidate seven-protein plasma signature was associated with anti-TNF treatment outcomes in Crohn’s disease, with cross-omic replication in an independent adult cohort.",
+      "clinical_relevance": "The findings could inform future biomarker-guided treatment selection in Crohn’s disease, rather than cancer drug discovery.",
+      "method": [
+        "Profiled 7,322 plasma analytes at baseline and months 3 and 12 in 80 young patients starting infliximab or adalimumab.",
+        "Used rank-based association analysis, functional enrichment, and regularized machine learning to identify a candidate seven-protein signature.",
+        "Evaluated corresponding whole-blood gene-expression signals in an independent cohort of 324 adults."
+      ],
+      "evidence_signal": "Adult gene-expression models achieved mean AUPRCs of 0.71 at baseline and 0.76 at week 14 for the adult cohort’s primary response outcome.",
+      "watch_item": "Cross-omic replication does not establish protein-level predictive validity; orthogonal validation is needed before clinical use.",
+      "hashtags": [
+        "#CrohnsDisease",
+        "#AntiTNF",
+        "#Proteomics",
+        "#BiomarkerDiscovery",
+        "#PrecisionMedicine"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-20-medrxiv-discovery_and_cross_omic_replication_of_a_candidate_plasma_proteomic_signature_for_anti_tn",
+      "paper_title": "Discovery and Cross-Omic Replication of a Candidate Plasma Proteomic Signature for Anti-TNF Response in Crohn's Disease",
+      "paper_date": "2026-11-20",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-11-26T17:28:08",
+      "generator": "openai"
+    }
+  }
+]

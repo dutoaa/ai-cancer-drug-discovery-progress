@@ -1,0 +1,26 @@
+{
+  "key_insight": "CB-COMIL explains melanoma immunotherapy-response predictions through four supervised concepts, but those concepts are not interchangeable with measured biology.",
+  "clinical_relevance": "The approach could support more interpretable immunotherapy-response research, but clinical utility for treatment selection remains unproven.",
+  "method": [
+    "Analyzes multiplex immunofluorescence whole-slide images using a concept bottleneck model.",
+    "Routes predictions through immune:tumour ratio, CD8/SOX10 balance, CD68 relative signal and PD-L1 evasion index.",
+    "Decomposes each prediction exactly into contributions from the four concepts."
+  ],
+  "evidence_signal": "Developed on 211 slides and tested on 42 independently acquired slides, CB-COMIL achieved macro-F1 0.69 versus 0.67 for an opaque comparator (difference 0.020; 95% CI −0.103 to 0.144).",
+  "watch_item": "In 41 slides with complete measurements, replacing learned concepts with measured counterparts reduced macro-F1 from 0.68 to 0.48 despite correlations of 0.61–0.76, cautioning against interpreting learned concepts as direct biological measurements.",
+  "hashtags": [
+    "#Melanoma",
+    "#Immunotherapy",
+    "#ExplainableAI",
+    "#DigitalPathology",
+    "#PrecisionOncology"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-11-23-medrxiv-cb_comil_interpretable_prediction_of_melanoma_immunotherapyresponse_from_multiplex_immunof",
+  "paper_title": "CB-COMIL: interpretable prediction of melanoma immunotherapyresponse from multiplex immunofluorescence whole-slide images",
+  "paper_date": "2026-11-23",
+  "paper_category": "Precision Oncology",
+  "generated_at": "2026-11-27T17:06:55",
+  "generator": "openai"
+}
