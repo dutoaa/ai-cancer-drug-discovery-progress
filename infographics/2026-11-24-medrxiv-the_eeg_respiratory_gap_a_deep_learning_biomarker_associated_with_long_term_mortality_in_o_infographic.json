@@ -1,0 +1,26 @@
+{
+  "key_insight": "In obstructive sleep apnea, the EEG-Respiratory Gap captures differences between EEG-derived and measured respiratory-event burden associated with long-term mortality beyond AHI.",
+  "clinical_relevance": "These EEG-derived metrics may offer prognostic information beyond respiratory-event frequency, but clinical utility remains unestablished.",
+  "method": [
+    "Developed a deep-learning model to estimate AHI from a single EEG channel.",
+    "Calculated ΔAHIbrain to reflect EEG-derived AHI above or below expectations for measured AHI.",
+    "Estimated AHIbrain,event-free from epochs without scored respiratory events."
+  ],
+  "evidence_signal": "Developed using 22,044 sleep recordings, the model correlated with measured AHI internally (r = 0.88) and across three external test sets (r = 0.50–0.62); both gap metrics were associated with all-cause and non-CVD mortality among participants initially free of CVD after adjustment for AHI and clinical risk factors.",
+  "watch_item": "Lower external correlations raise generalizability concerns, and mortality associations do not establish causality or clinical benefit.",
+  "hashtags": [
+    "#SleepApnea",
+    "#EEG",
+    "#DeepLearning",
+    "#DigitalBiomarkers",
+    "#MortalityRisk"
+  ],
+  "model": "gpt-6.1-sol",
+  "service_tier": "ultrafast",
+  "paper_id": "2026-11-24-medrxiv-the_eeg_respiratory_gap_a_deep_learning_biomarker_associated_with_long_term_mortality_in_o",
+  "paper_title": "The EEG-Respiratory Gap: a deep learning biomarker associated with long-term mortality in obstructive sleep apnea",
+  "paper_date": "2026-11-24",
+  "paper_category": "Target Biology",
+  "generated_at": "2026-11-28T15:56:19",
+  "generator": "openai"
+}

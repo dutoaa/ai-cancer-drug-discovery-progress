@@ -24,17 +24,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.20.26368610v1.full.pdf"
       }
     ],
-    "score": 107,
+    "score": 102,
     "infographic": {
       "key_insight": "Poorer baseline prognosis was associated with greater survival benefit from chemotherapy-containing regimens versus pembrolizumab alone in head and neck and urothelial cancers, with a less certain pattern in lung cancer.",
-      "clinical_relevance": "These findings question the assumption that immunotherapy alone offers the best benefit–risk balance for patients with poor prognosis, but do not establish individual treatment recommendations.",
+      "clinical_relevance": "These findings question the assumption that immunotherapy alone necessarily offers better outcomes for patients with poorer prognosis.",
       "method": [
-        "Emulated five first-line treatment trials using US electronic health records from 8,688 patients treated during 2011–2023.",
+        "Emulated five first-line treatment trials using US electronic health records across advanced solid tumors.",
         "Used machine learning to predict baseline 6-month survival.",
-        "Applied overlap-weighted regression to assess differences in 2-year restricted mean survival time across prognosis levels."
+        "Applied overlap-weighted regression to assess treatment differences in 2-year restricted mean survival time by prognosis."
       ],
-      "evidence_signal": "The treatment-benefit difference between poor- and favorable-prognosis groups was 102.4 days in head and neck cancer and 51.4 days in urothelial cancer; colorectal cancer and melanoma showed overall immunotherapy benefit without clear variation by prognosis.",
-      "watch_item": "Observational target trial emulations remain vulnerable to unmeasured confounding; this study evaluates treatment outcomes rather than AI-driven drug discovery.",
+      "evidence_signal": "Among 8,688 patients treated during 2011–2023, prognosis-related treatment differences were significant in head and neck and urothelial cancers, while immunotherapy improved overall restricted mean survival in colorectal cancer and melanoma without clear variation by prognosis.",
+      "watch_item": "This observational treatment-comparison study—not AI drug discovery—may retain residual confounding and does not establish individualized treatment recommendations.",
       "hashtags": [
         "#PrecisionOncology",
         "#Immunotherapy",
@@ -48,7 +48,60 @@
       "paper_title": "Baseline Prognosis and Treatment Benefit From First-Line Immunotherapy Strategies: Target Trial Emulations Across Advanced Solid Tumors",
       "paper_date": "2026-11-23",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-11-27T17:06:51",
+      "generated_at": "2026-11-28T15:56:01",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-24-medrxiv-at_home_ankle_and_wrist_accelerometry_and_machine_learning_capture_motor_impairment_and_di",
+    "doi": "10.64898/2026.11.21.26368661",
+    "date": "2026-11-24",
+    "title": "At-home ankle and wrist accelerometry and machine learning capture motor impairment and disease progression in ataxia-telangiectasia",
+    "authors": "Kulkarni, D. D.; Toivonen, A. R.; Luddy, A.; Reiling, S.; Thornton, J.; Hoche, F.; Gupta, A. S.",
+    "abstract": "BackgroundAtaxia-telangiectasia (A-T) is a rare, childhood-onset neurodegenerative disorder for which sensitive, age-appropriate motor outcome measures are needed to support emerging clinical trials. Clinician-rated ataxia scales are limited by subjectivity, low granularity, and floor and ceiling effects. We evaluated whether at-home wearable accelerometry, combined with machine-learned composite scores derived from submovement features, captures cross-sectional motor impairment and longitudinal disease progression in A-T. Methods43 children with classic A-T (median age 9.0 years; IQR 5.7-13.4) and 50 age- and sex-matched controls wore GENEActiv accelerometers on the ankle and wrist during one week of natural behavior at home, repeated at 6- to 12-month intervals. From 85 submovement, activity-intensity, and spectral features per sensor site, we trained composite severity models targeting the Brief Ataxia Rating Scale (BARS) gait subscore (ankle) and BARS total score (wrist). FindingsAnkle composite scores correlated strongly with BARS gait (r = 0.88), BARS total (r = 0.88), and caregiver-reported CPCHILD (r = -0.69); wrist composite scores correlated with BARS total (r = 0.88), BARS arm (r = 0.84), and CPCHILD (r = -0.78). Both models discriminated A-T from controls with large effect sizes (ankle Cohens d = 2.28; wrist d = 2.98) and demonstrated excellent within-week reliability (ICC = 0.95 ankle; 0.92 wrist). The ankle composite captured disease progression sensitively (Mean-to-Standard Deviation Ratio [MSDR] = 0.98; p < 0.0001). In a matched subset with both sensor and clinical data, ankle composite slopes significantly captured progression (Wilcoxon vs zero, p = 0.0036), whereas BARS total (p = 0.079) and BARS gait (p = 0.30) did not. InterpretationAt-home ankle-based wearable accelerometry provides a sensitive, interpretable, and ecologically valid measure of motor function and disease progression in A-T and may serve as a candidate outcome measure for clinical trials. Research in contextO_ST_ABSEvidence before this studyC_ST_ABSWe searched PubMed and Google Scholar for articles published up to September 2026 using the terms \"ataxia-telangiectasia\", \"wearable\", \"accelerometer\", \"digital biomarker\", and \"motor outcome measure\". Clinician-rated ataxia scales remain the standard for assessing motor severity in A-T, but are limited by rater subjectivity, low granularity, and age-dependent baseline scores in children. Task-based wearable assessments have shown promise but share the limitations of requiring structured protocols and participant cooperation. At-home wearable accelerometry using submovement analysis had been applied to the wrist in children with A-T in one prior study by our group, demonstrating cross-sectional validity and longitudinal change over one year. Ankle-worn sensors had been used to estimate ataxia severity in children with A-T during a supervised gait assessment, and at-home ankle-based submovement measures and machine-learned composite scores had shown strong sensitivity in adult cerebellar ataxias. However, at-home composite scores and ankle-based measures had not been evaluated in A-T, and no study had compared ankle and wrist sensor sites in a pediatric A-T cohort or assessed longitudinal sensitivity of ankle-derived measures against clinician-rated scales in A-T. Added value of this studyIn an expanded pediatric cohort of 43 children with A-T and 50 controls followed for up to 5.8 years, we show that machine-learned composite scores derived from ankle and wrist accelerometer data collected during natural behavior at home correlate strongly with clinician-rated ataxia severity and caregiver-reported function, distinguish A-T from controls across age groups, and demonstrate high within-week reliability. The ankle composite captured disease progression with higher sensitivity than clinician-rated BARS, including in non-ambulatory individuals, whereas the wrist composite did not reach significance as a longitudinal measure. Both models identified a consistent motor signature of ataxia across upper and lower limbs. Implications of all the available evidencePassive at-home ankle accelerometry combined with submovement-based machine learning provides a sensitive, low-burden, and scalable measure of motor function and disease progression in A-T. This approach could complement clinician-rated scales as an objective outcome measure to increase clinical trial efficiency and provide early evidence for treatment efficacy. The low-cost single-sensor design supports geographically distributed trial enrollment, which is particularly relevant for rare diseases like A-T.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-11-24",
+    "updated": "2026-11-24",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.21.26368661v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.21.26368661v1.full.pdf"
+      }
+    ],
+    "score": 71,
+    "infographic": {
+      "key_insight": "At-home accelerometry combined with machine learning captured motor impairment in children with ataxia-telangiectasia (A-T), with ankle scores also detecting disease progression.",
+      "clinical_relevance": "Ankle-based scores may offer a sensitive outcome measure for A-T clinical trials; this study did not evaluate cancer drug discovery.",
+      "method": [
+        "43 children with classic A-T and 50 matched controls wore ankle and wrist accelerometers at home for one week.",
+        "Monitoring was repeated at 6- to 12-month intervals.",
+        "Machine-learning models combined 85 features per sensor site to estimate clinician-rated motor severity."
+      ],
+      "evidence_signal": "Ankle scores correlated with BARS gait ratings (r = 0.88), showed high within-week reliability (ICC = 0.95), and detected progression in a matched subset (p = 0.0036), where BARS changes were not statistically significant.",
+      "watch_item": "The relatively small pediatric cohort warrants independent validation before these scores are adopted as clinical-trial outcomes.",
+      "hashtags": [
+        "#AtaxiaTelangiectasia",
+        "#WearableSensors",
+        "#MachineLearning",
+        "#DigitalBiomarkers",
+        "#ClinicalTrials"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-24-medrxiv-at_home_ankle_and_wrist_accelerometry_and_machine_learning_capture_motor_impairment_and_di",
+      "paper_title": "At-home ankle and wrist accelerometry and machine learning capture motor impairment and disease progression in ataxia-telangiectasia",
+      "paper_date": "2026-11-24",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-11-28T15:56:03",
       "generator": "openai"
     }
   },
@@ -77,17 +130,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.05.14.26353271v2.full.pdf"
       }
     ],
-    "score": 67,
+    "score": 62,
     "infographic": {
-      "key_insight": "This withdrawn study reports that machine learning predicted distant melanoma metastasis at diagnosis; it concerns risk prediction, not drug discovery.",
-      "clinical_relevance": "The proposed model could inform research on staging-imaging selection, but this withdrawn study does not establish a basis for clinical use.",
+      "key_insight": "This withdrawn study reported that machine learning could predict distant melanoma metastasis at diagnosis; it did not investigate cancer drug discovery.",
+      "clinical_relevance": "The proposed use was to inform research on staging-imaging selection, not to establish a validated clinical decision tool.",
       "method": [
-        "Analyzed SEER data from 2010–2022 for 51,285 adults with melanoma as their first and only primary malignancy.",
-        "Developed models using routine clinicopathologic and demographic variables, including an Explainable Boosting Machine.",
-        "Examined predictive contributions, decision curves, and imaging cost consequences."
+        "Analyzed routinely recorded clinicopathologic and demographic variables from SEER.",
+        "Evaluated machine learning models, including an Explainable Boosting Machine.",
+        "Examined predictor contributions, decision curves, and imaging costs."
       ],
-      "evidence_signal": "The abstract reports cross-validation consistency, AUROC 0.947, AUPRC 0.610, and specificity 0.843 at 90% sensitivity; external validation is not described.",
-      "watch_item": "The paper is marked withdrawn, with no reason provided here; its findings and online calculator should not guide care without independent validation.",
+      "evidence_signal": "Among 51,285 adults in SEER (2010–2022), the abstract reported AUROC 0.947, AUPRC 0.610, and specificity 0.843 at 90% sensitivity, with consistent cross-validation performance.",
+      "watch_item": "The paper is withdrawn, and the abstract reports no independent external validation; its findings and online calculator should not guide patient care.",
       "hashtags": [
         "#Melanoma",
         "#MachineLearning",
@@ -101,7 +154,7 @@
       "paper_title": "WITHDRAWN: Predicting Distant Melanoma Metastasis at Diagnosis Using Machine Learning",
       "paper_date": "2026-11-23",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-11-27T17:06:53",
+      "generated_at": "2026-11-28T15:56:04",
       "generator": "openai"
     }
   },
@@ -130,23 +183,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.19.26368529v1.full.pdf"
       }
     ],
-    "score": 64,
+    "score": 59,
     "infographic": {
-      "key_insight": "CB-COMIL explains melanoma immunotherapy-response predictions through four supervised concepts, but those concepts are not interchangeable with measured biology.",
-      "clinical_relevance": "The approach could support more interpretable immunotherapy-response research, but clinical utility for treatment selection remains unproven.",
+      "key_insight": "CB-COMIL explains melanoma immunotherapy-response predictions through four supervised concepts, but these learned concepts are not interchangeable with measured biological values.",
+      "clinical_relevance": "This research could support more interpretable immunotherapy-response prediction, but it does not establish readiness for treatment decisions.",
       "method": [
         "Analyzes multiplex immunofluorescence whole-slide images using a concept bottleneck model.",
-        "Routes predictions through immune:tumour ratio, CD8/SOX10 balance, CD68 relative signal and PD-L1 evasion index.",
-        "Decomposes each prediction exactly into contributions from the four concepts."
+        "Uses immune:tumour ratio, CD8/SOX10 balance, CD68 relative signal and PD-L1 evasion index.",
+        "Decomposes each prediction exactly into concept contributions."
       ],
-      "evidence_signal": "Developed on 211 slides and tested on 42 independently acquired slides, CB-COMIL achieved macro-F1 0.69 versus 0.67 for an opaque comparator (difference 0.020; 95% CI −0.103 to 0.144).",
-      "watch_item": "In 41 slides with complete measurements, replacing learned concepts with measured counterparts reduced macro-F1 from 0.68 to 0.48 despite correlations of 0.61–0.76, cautioning against interpreting learned concepts as direct biological measurements.",
+      "evidence_signal": "Developed on 211 slides and independently tested on 42, CB-COMIL achieved macro-F1 0.69 versus 0.67 for an opaque comparator (difference 0.020; 95% CI −0.103 to 0.144).",
+      "watch_item": "Although learned concepts correlated with measured counterparts (Spearman ρ 0.61–0.76), substituting measurements reduced macro-F1 from 0.68 to 0.48 in 41 slides, cautioning against interpreting concepts as direct biological measurements.",
       "hashtags": [
+        "#PrecisionOncology",
         "#Melanoma",
         "#Immunotherapy",
         "#ExplainableAI",
-        "#DigitalPathology",
-        "#PrecisionOncology"
+        "#ComputationalPathology"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -154,7 +207,60 @@
       "paper_title": "CB-COMIL: interpretable prediction of melanoma immunotherapyresponse from multiplex immunofluorescence whole-slide images",
       "paper_date": "2026-11-23",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-11-27T17:06:55",
+      "generated_at": "2026-11-28T15:56:06",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-24-medrxiv-llm_generated_patient_friendly_discharge_letters_for_newly_diagnosed_rheumatic_and_musculo",
+    "doi": "10.64898/2026.11.23.26368739",
+    "date": "2026-11-24",
+    "title": "LLM-generated patient-friendly discharge letters for newly diagnosed rheumatic and musculoskeletal diseases: a prospective feasibility study",
+    "authors": "Kremer, P.; Klemm, J.; Wallmeier, P.; Holzer, M.-T.; Pauz, J.; Xiong, T.; Koetter, I.; Melderis, S.; Haase, I.; Krusche, M.",
+    "abstract": "BackgroundA new diagnosis of a rheumatic and musculoskeletal disease (RMD) creates substantial information needs, with medical discharge letters often serving as a primary source of information for patients. This study aimed to assess the feasibility, content quality and patient-reported usefulness of large language model (LLM)-generated patient-friendly discharge letters in rheumatology inpatient care. MethodsIn this prospective, single-centre, single-arm feasibility study, standard discharge letters were transformed into patient-friendly versions using GPT models, reviewed by treating physicians and provided alongside the originals. We assessed physician review time, corrections, information fidelity, readability, understandability and patient-reported evaluations at follow-up. ResultsOf 58 enrolled patients, 52 (89.7%) completed follow-up. Compared with the original letters, patient-friendly letters showed significantly higher Flesch Reading Ease scores (mean difference 11.4, 95% confidence interval 9.8 to 12.9) and higher understandability scores on the Patient Education Materials Assessment Tool (+10.0 percentage points, 95% confidence interval 6.8 to 13.4). Physicians rated all 58 unedited drafts as \"very good\" or \"good\", and review took less than five minutes for 43/58 (74.1%) letters. Unedited LLM drafts contained eleven medical discrepancies in 10/58 (17.2%) letters, ten of which were corrected before discharge. In the final physician-reviewed letters, 310/311 (99.7%) applicable letter-domain assessments were classified as correctly retained or simplified. At follow-up, 42/51 (82.4%) patients rated perceived comparative comprehensibility favourably and 44/51 (86.3%) wished to receive similar letters in future. ConclusionsPhysician-reviewed, LLM-generated discharge letters were feasible to implement in routine rheumatology care, with limited physician review time and high patient acceptance. Although text-based readability and assessed understandability improved, objective patient comprehension and clinical benefit remain to be established. Discrepancies in unedited drafts underscore the need for physician oversight. Trial registrationGerman Clinical Trials Register (DRKS), DRKS00036980. Registered 26 May 2025.",
+    "category": "Precision Oncology",
+    "source": "medRxiv",
+    "published": "2026-11-24",
+    "updated": "2026-11-24",
+    "primary_category": "rheumatology",
+    "categories": [
+      "rheumatology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.23.26368739v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.23.26368739v1.full.pdf"
+      }
+    ],
+    "score": 57,
+    "infographic": {
+      "key_insight": "In this rheumatology study—not cancer drug discovery—physician-reviewed, LLM-generated discharge letters improved readability and assessed understandability compared with standard letters.",
+      "clinical_relevance": "Patient-friendly letters may support communication after a new rheumatic or musculoskeletal diagnosis, but improved patient comprehension and clinical outcomes remain unproven.",
+      "method": [
+        "Prospective, single-centre, single-arm feasibility study enrolling 58 patients.",
+        "GPT models simplified standard discharge letters; physicians reviewed drafts before patients received both versions.",
+        "Evaluated review time, medical discrepancies, information fidelity, readability and patient feedback."
+      ],
+      "evidence_signal": "Readability increased by 11.4 Flesch points and assessed understandability by 10.0 percentage points; 44/51 follow-up respondents (86.3%) wanted similar letters in future.",
+      "watch_item": "Unedited drafts contained 11 medical discrepancies across 10/58 letters; ten discrepancies were corrected before discharge, underscoring the need for physician oversight.",
+      "hashtags": [
+        "#Rheumatology",
+        "#GenerativeAI",
+        "#PatientCommunication",
+        "#HealthLiteracy",
+        "#ClinicalResearch"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-24-medrxiv-llm_generated_patient_friendly_discharge_letters_for_newly_diagnosed_rheumatic_and_musculo",
+      "paper_title": "LLM-generated patient-friendly discharge letters for newly diagnosed rheumatic and musculoskeletal diseases: a prospective feasibility study",
+      "paper_date": "2026-11-24",
+      "paper_category": "Precision Oncology",
+      "generated_at": "2026-11-28T15:56:08",
       "generator": "openai"
     }
   },
@@ -183,23 +289,23 @@
         "url": "https://www.medrxiv.org/content/10.1101/2024.12.13.24318579v2.full.pdf"
       }
     ],
-    "score": 59,
+    "score": 54,
     "infographic": {
-      "key_insight": "Combining plasma DNA fragmentomics with glycoprotein biomarkers detected malignant pancreatic cystic neoplasms better than either approach alone.",
-      "clinical_relevance": "This investigational diagnostic approach could help refine selection for endoscopic ultrasound, but it is not a drug discovery study or an established clinical test.",
+      "key_insight": "Combining plasma DNA fragmentomics with glycoprotein biomarkers distinguished malignant from benign pancreatic cystic neoplasms with an AUROC of 0.92.",
+      "clinical_relevance": "This diagnostic biomarker approach—not a drug discovery study—could help refine selection for endoscopic ultrasound, pending further validation.",
       "method": [
         "Performed whole-genome sequencing of pretreatment plasma DNA from 341 participants.",
-        "Trained and validated a fragmentomics machine-learning model using 121 pancreatic cancer cases and 121 matched healthy controls.",
-        "Independently evaluated 99 patients with pancreatic cysts referred for endoscopic ultrasound, including combinations with CA19-9, CA125 and CEA."
+        "Trained and validated a machine-learning fragmentomics model using 121 pancreatic cancer patients and 121 matched healthy controls.",
+        "Independently evaluated 99 patients with pancreatic cystic neoplasms, comparing and combining fragmentomics with glycoprotein biomarkers."
       ],
-      "evidence_signal": "Among 99 cyst patients, 11 had malignancy during 24.6 months of follow-up; combined biomarkers achieved AUROC 0.92 versus 0.67 for fragmentomics alone, with 91% sensitivity and 88% specificity.",
-      "watch_item": "Only 11 malignant cyst cases were evaluated in an endoscopic-ultrasound referral cohort, so broader prospective validation is needed before clinical implementation.",
+      "evidence_signal": "Among 99 cyst patients, 11 had malignant disease during 24.6 months of follow-up; combined biomarkers achieved 91% sensitivity, 88% specificity, 99% negative predictive value and 48% positive predictive value.",
+      "watch_item": "Only 11 malignant cyst cases were evaluated in an endoscopic-ultrasound referral cohort, limiting precision and generalizability to broader screening populations.",
       "hashtags": [
         "#PancreaticCysts",
-        "#DNAFragmentomics",
+        "#Fragmentomics",
+        "#LiquidBiopsy",
         "#MachineLearning",
-        "#CancerBiomarkers",
-        "#LiquidBiopsy"
+        "#CancerDetection"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -207,7 +313,7 @@
       "paper_title": "Plasma DNA fragmentomic analysis for evaluation of patients with pancreatic cystic neoplasms",
       "paper_date": "2026-11-23",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-27T17:06:58",
+      "generated_at": "2026-11-28T15:56:10",
       "generator": "openai"
     }
   },
@@ -217,7 +323,7 @@
     "date": "2026-11-23",
     "title": "Mechanistic Assessment of Norepinephrine Therapy versus Angiotensin-II on Organ Function in Septic Shock (MANTRA): Study Protocol for a multicenter open-label randomized trial",
     "authors": "Filbin, M.; Leisman, D. E.; Pachano-Bravo, A.; Goldberg, M. B.; Hibbert, K. A.; Nelson, O.; Rappaport, B.; Mahler, S. A.; Harris, L.; Besong, E. B.; Reeves, B.; Maves, R. C.; Petrilli, A.; Schaich, C. L.; Files, D. C.; Gibbs, K.; Chappell, M. C.; Khanna, A. K.",
-    "abstract": "IntroductionNorepinephrine remains first-line vasopressor therapy for septic shock despite its association at high doses with undesirable cardiovascular, kidney, and immune effects. Angiotensin-II (Ang-II) is a non-catecholamine vasopressor of the renin-angiotensin-aldosterone system (RAAS) now approved to increase blood pressure in vasodilatory shock. RAAS dysregulation is common in septic shock and may represent a treatable trait. However, few prospective investigations evaluate the effect of early Ang-II use in septic shock on dysfunctional RAAS biology, host-response, or clinical outcomes. Therefore, we designed a mechanistic clinical trial to test the hypothesis that early Ang-II therapy in septic shock normalizes systemic RAAS abnormalities and modulates innate immune responses. Methods and AnalysisThe Mechanistic Assessment of Norepinephrine TheRapy vs. Angiotensin-II in Septic Shock (MANTRA) trial is an investigator-initiated, prospective, multicenter, open-label, randomized mechanistic clinical trial. Adults with septic shock by Sepsis-3 criteria receiving a norepinephrine-equivalent dose (NED) of 0.10-0.50 mcg/kg/min will be randomized 1:1 to primary Ang-II (to a maximum 40 ng/kg/min) or norepinephrine (to a maximum 35 mcg/min) treatment strategies over a 48-hour period. The primary outcome is the between-group difference in plasma renin trajectory from baseline to 24 hours represented as a treatment-by-time interaction term in a linear mixed-effects model. With n=78, the trial has 90% power (at two-sided =0.05) to detect a 25% between-group difference in 24-hour renin. Secondary clinical outcomes include longitudinal NED, hours alive and vasopressor-free at 72 hours, a 28-day composite outcome (days alive and free of vasopressors, renal replacement therapy, and mechanical ventilation), treatment failure requiring crossover or protocol discontinuation, and thrombotic and arrhythmia events through 28 days. Secondary mechanistic outcomes include serial RAAS biomarkers (prorenin, soluble prorenin receptor, angiotensinogen, ACE, ACE2, Ang-II, angiotensin-(1-7), aldosterone, and DPP3), immune measures (ex vivo monocyte function, monocyte gene expression, plasma cytokines), and organ injury biomarkers. Enrollment is planned from 11/2026-7/2030. Ethics and DisseminationThe study has been approved by the Advocate Health/Wake Forest University School of Medicine ethics commitee (IRB00115287). Informed consent is required. Results will be submitted for publication in peer-reviewed journals and presented at national and international scientific meetings, regardless of the direction of findings. Results will be posted to ClinicalTrials.gov. Trial RegistrationClinicaltrials.gov - NCT06746753 Administrative InformationThis manuscript has been written in accordance with the SPIRIT (Standard Protocol Items: Recommendations for Interventional Trials) guidelines. The administrative information is described in Table 1. O_TBL View this table: org.highwire.dtl.DTLVardef@121cbdborg.highwire.dtl.DTLVardef@1cec59borg.highwire.dtl.DTLVardef@f471eorg.highwire.dtl.DTLVardef@1060ee9org.highwire.dtl.DTLVardef@bcecc0_HPS_FORMAT_FIGEXP M_TBL O_FLOATNOTable 1.C_FLOATNO O_TABLECAPTIONAdministrative Information C_TABLECAPTION C_TBL Protocol VersionProtocol Version 2, 11-08-2026 - NCT06746753 OPEN SCIENCEO_ST_ABSTrial RegistrationC_ST_ABSMechanistic Assessment of Norepinephrine Therapy vs. Angiotensin-II in Septic Shock (MANTRA); Trial identification number NCT06746753; date of registration: 03-31-2026. https://clinicaltrials.gov/study/NCT06746753 Data SharingData will be available from the corresponding author on reasonable request. Funding and conflicts of interestSources of funding and support: National Institutes of Health (NIH) National Heart Lung Blood Institute (NHLBI) R01HL177834 (U.S. NIH Grant/Contract) Dissemination Policy Dissemination PolicyKey findings will be published in peer-reviewed journals, and presented at national and international scientific meetings, ensuring confidentiality of individual participants. Strengths and limitations of this studyO_LIThe active-comparator design tests angiotensin-II against norepinephrine under identical protocolised MAP targets, allowing the comparison of drug-specific RAAS modulatory effects independent of differential effects on blood pressure restoration. C_LIO_LISerial sampling profiles RAAS peptides, innate immune function, and organ-injury biomarkers facilitates mechanistic evaluation of how vasopressor strategy shapes the host response within a randomized clinical experiment. C_LIO_LIAlthough the sample size is adequate for the biomarker primary endpoints and to establish feasibility for a larger trial, it does not provide sufficient power for hard clinical endpoints, which remain exploratory. C_LIO_LIClinicians retain discretion over background and rescue vasopressors, steroids, and treatment crossover, which may attenuate differences between-arms. C_LIO_LIThe 48-hour intervention window limits inference about clinician-assessed outcomes and the durability of treatment effect. C_LI",
+    "abstract": "IntroductionNorepinephrine remains first-line vasopressor therapy for septic shock despite its association at high doses with undesirable cardiovascular, kidney, and immune effects. Angiotensin-II (Ang-II) is a non-catecholamine vasopressor of the renin-angiotensin-aldosterone system (RAAS) now approved to increase blood pressure in vasodilatory shock. RAAS dysregulation is common in septic shock and may represent a treatable trait. However, few prospective investigations evaluate the effect of early Ang-II use in septic shock on dysfunctional RAAS biology, host-response, or clinical outcomes. Therefore, we designed a mechanistic clinical trial to test the hypothesis that early Ang-II therapy in septic shock normalizes systemic RAAS abnormalities and modulates innate immune responses. Methods and AnalysisThe Mechanistic Assessment of Norepinephrine TheRapy vs. Angiotensin-II in Septic Shock (MANTRA) trial is an investigator-initiated, prospective, multicenter, open-label, randomized mechanistic clinical trial. Adults with septic shock by Sepsis-3 criteria receiving a norepinephrine-equivalent dose (NED) of 0.10-0.50 mcg/kg/min will be randomized 1:1 to primary Ang-II (to a maximum 40 ng/kg/min) or norepinephrine (to a maximum 35 mcg/min) treatment strategies over a 48-hour period. The primary outcome is the between-group difference in plasma renin trajectory from baseline to 24 hours represented as a treatment-by-time interaction term in a linear mixed-effects model. With n=78, the trial has 90% power (at two-sided =0.05) to detect a 25% between-group difference in 24-hour renin. Secondary clinical outcomes include longitudinal NED, hours alive and vasopressor-free at 72 hours, a 28-day composite outcome (days alive and free of vasopressors, renal replacement therapy, and mechanical ventilation), treatment failure requiring crossover or protocol discontinuation, and thrombotic and arrhythmia events through 28 days. Secondary mechanistic outcomes include serial RAAS biomarkers (prorenin, soluble prorenin receptor, angiotensinogen, ACE, ACE2, Ang-II, angiotensin-(1-7), aldosterone, and DPP3), immune measures (ex vivo monocyte function, monocyte gene expression, plasma cytokines), and organ injury biomarkers. Enrollment is planned from 11/2026-7/2030. Ethics and DisseminationThe study has been approved by the Advocate Health/Wake Forest University School of Medicine ethics commitee (IRB00115287). Informed consent is required. Results will be submitted for publication in peer-reviewed journals and presented at national and international scientific meetings, regardless of the direction of findings. Results will be posted to ClinicalTrials.gov. Trial RegistrationClinicaltrials.gov - NCT06746753 Administrative InformationThis manuscript has been written in accordance with the SPIRIT (Standard Protocol Items: Recommendations for Interventional Trials) guidelines. The administrative information is described in Table 1. O_TBL View this table: org.highwire.dtl.DTLVardef@662b4eorg.highwire.dtl.DTLVardef@1a524a7org.highwire.dtl.DTLVardef@109851aorg.highwire.dtl.DTLVardef@1739forg.highwire.dtl.DTLVardef@14ddb1c_HPS_FORMAT_FIGEXP M_TBL O_FLOATNOTable 1.C_FLOATNO O_TABLECAPTIONAdministrative Information C_TABLECAPTION C_TBL Protocol VersionProtocol Version 2, 11-08-2026 - NCT06746753 OPEN SCIENCEO_ST_ABSTrial RegistrationC_ST_ABSMechanistic Assessment of Norepinephrine Therapy vs. Angiotensin-II in Septic Shock (MANTRA); Trial identification number NCT06746753; date of registration: 03-31-2026. https://clinicaltrials.gov/study/NCT06746753 Data SharingData will be available from the corresponding author on reasonable request. Funding and conflicts of interestSources of funding and support: National Institutes of Health (NIH) National Heart Lung Blood Institute (NHLBI) R01HL177834 (U.S. NIH Grant/Contract) Dissemination Policy Dissemination PolicyKey findings will be published in peer-reviewed journals, and presented at national and international scientific meetings, ensuring confidentiality of individual participants. Strengths and limitations of this studyO_LIThe active-comparator design tests angiotensin-II against norepinephrine under identical protocolised MAP targets, allowing the comparison of drug-specific RAAS modulatory effects independent of differential effects on blood pressure restoration. C_LIO_LISerial sampling profiles RAAS peptides, innate immune function, and organ-injury biomarkers facilitates mechanistic evaluation of how vasopressor strategy shapes the host response within a randomized clinical experiment. C_LIO_LIAlthough the sample size is adequate for the biomarker primary endpoints and to establish feasibility for a larger trial, it does not provide sufficient power for hard clinical endpoints, which remain exploratory. C_LIO_LIClinicians retain discretion over background and rescue vasopressors, steroids, and treatment crossover, which may attenuate differences between-arms. C_LIO_LIThe 48-hour intervention window limits inference about clinician-assessed outcomes and the durability of treatment effect. C_LI",
     "category": "Target Biology",
     "source": "medRxiv",
     "published": "2026-11-23",
@@ -236,17 +342,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.09.12.26362906v2.full.pdf"
       }
     ],
-    "score": 59,
+    "score": 54,
     "infographic": {
-      "key_insight": "MANTRA will test whether early angiotensin-II therapy normalizes renin–angiotensin–aldosterone system abnormalities and modulates innate immune responses in septic shock.",
-      "clinical_relevance": "This septic shock study—not AI or cancer drug discovery—may clarify biological differences between angiotensin-II and norepinephrine treatment strategies.",
+      "key_insight": "MANTRA will test whether early angiotensin-II therapy, compared with norepinephrine, normalizes renin–angiotensin–aldosterone system abnormalities and alters innate immune responses in septic shock.",
+      "clinical_relevance": "This septic shock study—not AI or cancer drug discovery research—may clarify biological effects of vasopressor selection, but clinical benefits remain unproven.",
       "method": [
-        "Prospective, multicenter, open-label randomized mechanistic trial targeting 78 adults with septic shock.",
-        "Participants receive a primary angiotensin-II or norepinephrine strategy for 48 hours, allocated 1:1.",
-        "Primary analysis compares plasma renin trajectories from baseline to 24 hours; secondary measures assess immune biology, organ support, and safety."
+        "Prospective, multicenter, open-label randomized mechanistic trial enrolling 78 adults with septic shock.",
+        "Participants receive primary angiotensin-II or norepinephrine strategies in a 1:1 allocation over 48 hours.",
+        "Primary analysis compares plasma renin trajectories from baseline to 24 hours; secondary measures assess RAAS biology, immune responses, organ support, and safety."
       ],
-      "evidence_signal": "The protocol reports 90% power to detect a 25% between-group difference in 24-hour renin at a two-sided alpha of 0.05; no trial results are reported.",
-      "watch_item": "The small, open-label mechanistic design cannot by itself establish improved survival or other patient-centered benefits.",
+      "evidence_signal": "The protocol specifies 90% power at a two-sided significance level of 0.05 to detect a 25% between-group difference in 24-hour renin; no trial results are reported.",
+      "watch_item": "The small, open-label trial prioritizes a mechanistic biomarker endpoint, so it cannot establish definitive clinical benefit.",
       "hashtags": [
         "#SepticShock",
         "#AngiotensinII",
@@ -260,7 +366,7 @@
       "paper_title": "Mechanistic Assessment of Norepinephrine Therapy versus Angiotensin-II on Organ Function in Septic Shock (MANTRA): Study Protocol for a multicenter open-label randomized trial",
       "paper_date": "2026-11-23",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-27T17:07:00",
+      "generated_at": "2026-11-28T15:56:12",
       "generator": "openai"
     }
   },
@@ -289,17 +395,17 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.19.26368516v1.full.pdf"
       }
     ],
-    "score": 59,
+    "score": 54,
     "infographic": {
-      "key_insight": "An interpretable AI model predicted 12-month liver cancer risk in people with cirrhosis better than two established risk scores while separately modeling competing death or transplantation.",
-      "clinical_relevance": "The model could support research into risk-tailored hepatocellular carcinoma surveillance, but this study does not establish improved patient outcomes.",
+      "key_insight": "An interpretable AI model predicted 12-month liver cancer risk in people with cirrhosis better than established scores while distinguishing cancer from competing death or transplantation.",
+      "clinical_relevance": "The model could support research into risk-stratified hepatocellular carcinoma surveillance, but clinical benefit has not been established.",
       "method": [
-        "Used regional routine health data from 17,177 adults with cirrhosis in Andalusia.",
-        "Trained an Explainable Boosting Machine using demographics, diagnosis codes and eight routine laboratory tests.",
-        "Predicted HCC, death or transplantation without HCC, or no event over 12 months."
+        "Trained an Explainable Boosting Machine on 17,177 adults with cirrhosis using demographics, diagnosis codes and eight routine laboratory tests.",
+        "Predicted three outcomes: hepatocellular carcinoma, death or liver transplantation without cancer, and event-free survival.",
+        "Used repeated cross-validation and routine-encounter comparisons with aMAP and the Toronto HCC Risk Index."
       ],
-      "evidence_signal": "Across 20 repeats of 5-fold cross-validation, HCC AUROC was 0.734; at routine encounters, time-dependent AUC exceeded aMAP (0.790 vs 0.688) and the Toronto HCC Risk Index (0.761 vs 0.703).",
-      "watch_item": "Evidence comes from one Spanish region; prospective validation elsewhere is needed before clinical implementation, and this is risk-prediction research rather than drug discovery.",
+      "evidence_signal": "Cross-validation HCC AUROC was 0.734; routine-encounter 12-month AUC was 0.790 versus 0.688 for aMAP and 0.761 versus 0.703 for the Toronto score in their respective comparisons.",
+      "watch_item": "The supplied abstract is truncated; reported validation is within Andalusia, leaving generalizability and prospective clinical utility uncertain.",
       "hashtags": [
         "#HepatocellularCarcinoma",
         "#Cirrhosis",
@@ -313,7 +419,113 @@
       "paper_title": "Interpretable competing-risk prediction of hepatocellular carcinoma in cirrhosis from region-wide routine health data",
       "paper_date": "2026-11-23",
       "paper_category": "Precision Oncology",
-      "generated_at": "2026-11-27T17:07:02",
+      "generated_at": "2026-11-28T15:56:14",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-24-medrxiv-disease_specific_versus_symptom_specific_neuroimaging_phenotypes_across_alzheimer_s_diseas",
+    "doi": "10.64898/2026.11.16.26368132",
+    "date": "2026-11-24",
+    "title": "Disease-specific versus symptom-specific neuroimaging phenotypes across Alzheimer's Disease, Parkinson's Disease, and Small Vessel Disease",
+    "authors": "Lazari, A.; Broulidakis, J.; Gillis, G.; Bhalerao, G.; Halls, D.; Wickham, F.; Tendler, B. C.; Sotiropoulos, S. N.; Griffanti, L.; Husain, M.; Mars, R. B.",
+    "abstract": "BackgroundNeurodegenerative disorders are common in ageing populations, and arise from several distinct pathophysiological causes. Yet, they also share many symptoms, including cognitive and neuropsychiatric ones. It is unclear to what extent the impact of neurodegeneration on brain systems is unique or shared across disorders, and whether shared symptoms are driven by degeneration of the same brain systems. MethodsWe collected data from n=251 participants with Alzheimers Disease, Parkinsons Disease, Small Vessel Disease, and age-matched healthy controls. All participants underwent harmonized cognitive and neuropsychiatric assessment and were scanned using the UK-Biobank MRI protocol capturing features including brain volume, white matter lesions and microstructure, tract volume, iron content, and functional connectivity. ResultsWe replicated established case-control brain changes in Alzheimers Disease, Parkinsons Disease and Small Vessel Disease compared to healthy controls. Leveraging this joint standardised dataset, we identified distinct neuroimaging features of individual neurodegenerative disorders, providing evidence for robust diagnosis-specific brain changes. Importantly, however, there was also a large degree of transdiagnostic similarity across neuroimaging markers. Testing for transdiagnostic associations between symptoms and brain phenotypes, we found that lower medial frontal pole connectivity to primary motor cortex was preferentially associated with apathy, fatigue, and depression; whereas cingulum microstructure was associated with cognitive deficits across diagnoses. ConclusionsThese results demonstrate that different neurodegenerative diseases are characterised by dissociable brain changes, but also common transdiagnostic and symptom-associated features. This suggests that shared symptoms across neurodegeneration may in part be driven by overlapping impact on key brain systems, such as changes in medial frontal pole connectivity and cingulum microstructure. Our work highlights that multimodal imaging biomarkers can help understand and parse symptomatic heterogeneity in neurodegenerative and ageing populations.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-11-24",
+    "updated": "2026-11-24",
+    "primary_category": "neurology",
+    "categories": [
+      "neurology"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.16.26368132v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.16.26368132v1.full.pdf"
+      }
+    ],
+    "score": 51,
+    "infographic": {
+      "key_insight": "Across Alzheimer's disease, Parkinson's disease, and small vessel disease, MRI revealed both diagnosis-specific brain changes and shared features associated with cognitive and neuropsychiatric symptoms.",
+      "clinical_relevance": "These findings may help researchers understand symptom heterogeneity across neurological disorders, but do not establish clinically validated biomarkers.",
+      "method": [
+        "Studied 251 participants spanning three disease groups and age-matched healthy controls.",
+        "Combined harmonized cognitive and neuropsychiatric assessments with multimodal MRI using the UK Biobank protocol.",
+        "Compared diagnosis-specific imaging features and symptom–brain associations across diagnoses."
+      ],
+      "evidence_signal": "The study replicated established case–control brain differences and linked lower medial frontal pole–motor cortex connectivity to apathy, fatigue, and depression, while cingulum microstructure was associated with cognitive deficits across diagnoses.",
+      "watch_item": "The reported associations do not establish causality; this study concerns neurodegeneration, not AI-driven cancer drug discovery.",
+      "hashtags": [
+        "#Neurodegeneration",
+        "#Neuroimaging",
+        "#TransdiagnosticResearch",
+        "#BrainConnectivity",
+        "#ImagingBiomarkers"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-24-medrxiv-disease_specific_versus_symptom_specific_neuroimaging_phenotypes_across_alzheimer_s_diseas",
+      "paper_title": "Disease-specific versus symptom-specific neuroimaging phenotypes across Alzheimer's Disease, Parkinson's Disease, and Small Vessel Disease",
+      "paper_date": "2026-11-24",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-11-28T15:56:17",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-24-medrxiv-the_eeg_respiratory_gap_a_deep_learning_biomarker_associated_with_long_term_mortality_in_o",
+    "doi": "10.64898/2026.11.22.26368628",
+    "date": "2026-11-24",
+    "title": "The EEG-Respiratory Gap: a deep learning biomarker associated with long-term mortality in obstructive sleep apnea",
+    "authors": "Lee, H. K.; Park, K.; Choi, Y. R.; Lee, D.-e.; Kim, H.-S.; Shin, H.-W.",
+    "abstract": "The apnea-hypopnea index (AHI) summarizes respiratory events by frequency, but was not designed to reflect how strongly an individuals brain responds to them. We developed a deep-learning model that estimates AHI from a single EEG channel (AHIbrain), developed using 22,044 polysomnography recordings and validated in an internal test set (r = 0.88) and three external test sets (r = 0.50-0.62). From AHIbrain, we derived two complementary metrics that characterize the EEG-Respiratory Gap: {Delta}AHIbrain, reflecting whether a patients AHIbrain is higher or lower than expected for their measured AHI, and AHIbrain,event-free, estimated from epochs without scored respiratory events. Both were associated with sleep macro-, micro-, and epoch-level EEG features, suggesting that this discrepancy is not solely attributable to model error. Among participants free of cardiovascular disease, both metrics were associated with all-cause and non-CVD mortality after adjustment for AHI and clinical risk factors. After accounting for the same covariates, AHIbrain,event-free was also associated with CVD mortality in the highest-versus-lowest quartile comparison. These findings support the EEG-Respiratory Gap as an interpretable EEG-derived measure associated with prognostic information beyond AHI.",
+    "category": "Target Biology",
+    "source": "medRxiv",
+    "published": "2026-11-24",
+    "updated": "2026-11-24",
+    "primary_category": "respiratory medicine",
+    "categories": [
+      "respiratory medicine"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.22.26368628v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.22.26368628v1.full.pdf"
+      }
+    ],
+    "score": 49,
+    "infographic": {
+      "key_insight": "In obstructive sleep apnea, the EEG-Respiratory Gap captures differences between EEG-derived and measured respiratory-event burden associated with long-term mortality beyond AHI.",
+      "clinical_relevance": "These EEG-derived metrics may offer prognostic information beyond respiratory-event frequency, but clinical utility remains unestablished.",
+      "method": [
+        "Developed a deep-learning model to estimate AHI from a single EEG channel.",
+        "Calculated ΔAHIbrain to reflect EEG-derived AHI above or below expectations for measured AHI.",
+        "Estimated AHIbrain,event-free from epochs without scored respiratory events."
+      ],
+      "evidence_signal": "Developed using 22,044 sleep recordings, the model correlated with measured AHI internally (r = 0.88) and across three external test sets (r = 0.50–0.62); both gap metrics were associated with all-cause and non-CVD mortality among participants initially free of CVD after adjustment for AHI and clinical risk factors.",
+      "watch_item": "Lower external correlations raise generalizability concerns, and mortality associations do not establish causality or clinical benefit.",
+      "hashtags": [
+        "#SleepApnea",
+        "#EEG",
+        "#DeepLearning",
+        "#DigitalBiomarkers",
+        "#MortalityRisk"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-24-medrxiv-the_eeg_respiratory_gap_a_deep_learning_biomarker_associated_with_long_term_mortality_in_o",
+      "paper_title": "The EEG-Respiratory Gap: a deep learning biomarker associated with long-term mortality in obstructive sleep apnea",
+      "paper_date": "2026-11-24",
+      "paper_category": "Target Biology",
+      "generated_at": "2026-11-28T15:56:19",
       "generator": "openai"
     }
   },
@@ -342,23 +554,23 @@
         "url": "https://www.medrxiv.org/content/10.64898/2026.11.10.26367467v1.full.pdf"
       }
     ],
-    "score": 51,
+    "score": 46,
     "infographic": {
-      "key_insight": "Greater white matter hyperintensity (WMH) burden was more strongly associated with poorer verbal memory in non-Hispanic African American than non-Hispanic White older adults in two of three cohorts, with location-specific differences.",
-      "clinical_relevance": "Spatially resolved WMH mapping may help researchers characterize early vascular contributions to cognitive aging, but these findings do not establish a clinical decision tool.",
+      "key_insight": "White matter hyperintensities showed stronger associations with poorer verbal memory in non-Hispanic African American than non-Hispanic White older adults in two of three cohorts, with differences localized to specific white matter regions.",
+      "clinical_relevance": "Spatially resolved white matter measures may help characterize vascular contributions to cognitive aging, but these findings do not establish clinical utility or race-based care recommendations.",
       "method": [
-        "Analyzed 5,187 cognitively unimpaired older adults across three independent cohorts.",
-        "Mapped WMH by white matter depth and brain lobe using cross-sectional, longitudinal and machine learning analyses.",
-        "Evaluated associations after adjustment for cohort-specific biomarkers, vascular risks, structural imaging measures and APOE genotype."
+        "Mapped white matter hyperintensities by depth and brain lobe across three independent cohorts.",
+        "Used cross-sectional and longitudinal analyses plus generalized random forests.",
+        "Adjusted for cohort-specific Alzheimer’s biomarkers, vascular risks, structural imaging measures and APOE genotype."
       ],
-      "evidence_signal": "Group differences appeared in EHBS and a 34-center cohort but were not detected in the third cohort; baseline frontal juxtacortical WMH also showed a stronger association with subsequent AD-signature cortical thinning in African American participants in EHBS.",
-      "watch_item": "Observational associations and inconsistent replication across cohorts limit causal interpretation; racial categories should not be treated as biological explanations.",
+      "evidence_signal": "Among 5,187 cognitively unimpaired older adults, group differences appeared in EHBS and a 34-center cohort but were not detected in the third cohort; implicated regions also differed between cohorts.",
+      "watch_item": "Observational associations and inconsistent replication limit causal interpretation; racial categories should not be treated as biological mechanisms.",
       "hashtags": [
         "#BrainAging",
         "#WhiteMatterHyperintensities",
         "#VerbalMemory",
-        "#Neuroimaging",
-        "#HealthDisparities"
+        "#VascularBrainHealth",
+        "#Neuroimaging"
       ],
       "model": "gpt-6.1-sol",
       "service_tier": "ultrafast",
@@ -366,7 +578,60 @@
       "paper_title": "Spatially localized racial differences in the association between white matter hyperintensities and verbal memory in cognitively unimpaired adults",
       "paper_date": "2026-11-23",
       "paper_category": "Target Biology",
-      "generated_at": "2026-11-27T17:07:04",
+      "generated_at": "2026-11-28T15:56:21",
+      "generator": "openai"
+    }
+  },
+  {
+    "id": "2026-11-23-medrxiv-bacterial_sexually_transmitted_infections_and_oral_hiv_pre_exposure_prophylaxis_use_in_hvt",
+    "doi": "10.64898/2026.11.19.26368497",
+    "date": "2026-11-23",
+    "title": "Bacterial Sexually Transmitted Infections and Oral HIV Pre-Exposure Prophylaxis Use in HVTN 704/HPTN 085",
+    "authors": "Gallardo-Cartagena, J. A.; Hunidzarira, P.; Gillespie, K.; Juraska, M.; Veloso, V.; Edupuganti, S.; Konda, K.; Roxby, A.; Cohen, M.; Corey, L.; Karuna, S.; Sanchez, J.",
+    "abstract": "ObjectivesTo describe bacterial STI burden and examine its association with time-varying oral PrEP use among participants in a multinational HIV prevention efficacy trial. MethodsWe conducted a post-hoc analysis of HVTN 704/HPTN 085 (ClinicalTrials.gov NCT02716675), a randomized, placebo-controlled study of the VRC01 broadly neutralizing antibody for HIV prevention. Men and transgender persons who have sex with men were enrolled in Brazil, Peru, United States, and Switzerland (April 2016-October 2018). All participants received an enhanced prevention package including STI testing every six months and optional access to oral PrEP. Prevalence and incidence of chlamydia, gonorrhea, and syphilis were described. Cox proportional hazards models estimated associations between time-varying PrEP use and incident STIs. ResultsAmong 2,687 participants, 27.9% had a bacterial STI at enrollment (chlamydia 11.1%, gonorrhea 10.2%, syphilis 13.1%). Prevalence was higher in Brazil (36.7%) and Peru (34.9%) than in the United States/Switzerland (21.4%). Rectal and oropharyngeal infections predominated. Among participants negative at baseline, incidence of any bacterial STI was 29.4 per 100 person-years (95% CI: 27.2-31.7). Incidence was higher during periods of PrEP use than non-use (HR 1.75, 95% CI: 1.44-2.13), consistent across pathogens. ConclusionsIn this multinational HIV prevention trial, bacterial STI burden was high, particularly in Latin America and at extragenital sites. STI incidence was higher during periods of reported oral PrEP use. These findings highlight the importance of integrating multisite STI testing, treatment, counseling, and targeted prevention into HIV prevention services and future efficacy trials. SummaryParticipants in HVTN 704/HPTN 085 had high bacterial STI burden, especially in Latin America. Incidence was higher while on PrEP, highlighting need for integrated STI prevention within HIV prevention programs.",
+    "category": "Therapeutic Discovery",
+    "source": "medRxiv",
+    "published": "2026-11-23",
+    "updated": "2026-11-23",
+    "primary_category": "sexual and reproductive health",
+    "categories": [
+      "sexual and reproductive health"
+    ],
+    "links": [
+      {
+        "title": "medRxiv",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.19.26368497v1"
+      },
+      {
+        "title": "PDF",
+        "url": "https://www.medrxiv.org/content/10.64898/2026.11.19.26368497v1.full.pdf"
+      }
+    ],
+    "score": 46,
+    "infographic": {
+      "key_insight": "In HVTN 704/HPTN 085, bacterial STI burden was high, and reported oral PrEP use was associated with higher STI incidence.",
+      "clinical_relevance": "The findings support integrating multisite STI testing, treatment, counseling, and targeted prevention into HIV prevention services.",
+      "method": [
+        "Post-hoc analysis of 2,687 men and transgender persons who have sex with men across four countries.",
+        "STI testing every six months, with optional access to oral PrEP.",
+        "Cox models examined associations between time-varying PrEP use and incident bacterial STIs."
+      ],
+      "evidence_signal": "At enrollment, 27.9% had a bacterial STI; among those negative at baseline, incidence was 29.4 per 100 person-years, with higher incidence during PrEP use than non-use (HR 1.75; 95% CI 1.44–2.13).",
+      "watch_item": "PrEP use was not randomized, so this association does not establish that PrEP caused higher STI incidence; this paper concerns HIV/STI prevention, not AI cancer drug discovery.",
+      "hashtags": [
+        "#HIVPrevention",
+        "#PrEP",
+        "#SexualHealth",
+        "#STIResearch",
+        "#HPTN085"
+      ],
+      "model": "gpt-6.1-sol",
+      "service_tier": "ultrafast",
+      "paper_id": "2026-11-23-medrxiv-bacterial_sexually_transmitted_infections_and_oral_hiv_pre_exposure_prophylaxis_use_in_hvt",
+      "paper_title": "Bacterial Sexually Transmitted Infections and Oral HIV Pre-Exposure Prophylaxis Use in HVTN 704/HPTN 085",
+      "paper_date": "2026-11-23",
+      "paper_category": "Therapeutic Discovery",
+      "generated_at": "2026-11-28T15:56:23",
       "generator": "openai"
     }
   }

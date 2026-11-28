@@ -1,13 +1,13 @@
 {
-  "key_insight": "An interpretable AI model predicted 12-month liver cancer risk in people with cirrhosis better than two established risk scores while separately modeling competing death or transplantation.",
-  "clinical_relevance": "The model could support research into risk-tailored hepatocellular carcinoma surveillance, but this study does not establish improved patient outcomes.",
+  "key_insight": "An interpretable AI model predicted 12-month liver cancer risk in people with cirrhosis better than established scores while distinguishing cancer from competing death or transplantation.",
+  "clinical_relevance": "The model could support research into risk-stratified hepatocellular carcinoma surveillance, but clinical benefit has not been established.",
   "method": [
-    "Used regional routine health data from 17,177 adults with cirrhosis in Andalusia.",
-    "Trained an Explainable Boosting Machine using demographics, diagnosis codes and eight routine laboratory tests.",
-    "Predicted HCC, death or transplantation without HCC, or no event over 12 months."
+    "Trained an Explainable Boosting Machine on 17,177 adults with cirrhosis using demographics, diagnosis codes and eight routine laboratory tests.",
+    "Predicted three outcomes: hepatocellular carcinoma, death or liver transplantation without cancer, and event-free survival.",
+    "Used repeated cross-validation and routine-encounter comparisons with aMAP and the Toronto HCC Risk Index."
   ],
-  "evidence_signal": "Across 20 repeats of 5-fold cross-validation, HCC AUROC was 0.734; at routine encounters, time-dependent AUC exceeded aMAP (0.790 vs 0.688) and the Toronto HCC Risk Index (0.761 vs 0.703).",
-  "watch_item": "Evidence comes from one Spanish region; prospective validation elsewhere is needed before clinical implementation, and this is risk-prediction research rather than drug discovery.",
+  "evidence_signal": "Cross-validation HCC AUROC was 0.734; routine-encounter 12-month AUC was 0.790 versus 0.688 for aMAP and 0.761 versus 0.703 for the Toronto score in their respective comparisons.",
+  "watch_item": "The supplied abstract is truncated; reported validation is within Andalusia, leaving generalizability and prospective clinical utility uncertain.",
   "hashtags": [
     "#HepatocellularCarcinoma",
     "#Cirrhosis",
@@ -21,6 +21,6 @@
   "paper_title": "Interpretable competing-risk prediction of hepatocellular carcinoma in cirrhosis from region-wide routine health data",
   "paper_date": "2026-11-23",
   "paper_category": "Precision Oncology",
-  "generated_at": "2026-11-27T17:07:02",
+  "generated_at": "2026-11-28T15:56:14",
   "generator": "openai"
 }
